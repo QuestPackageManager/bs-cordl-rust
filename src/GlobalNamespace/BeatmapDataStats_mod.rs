@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapDataS
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapDataStats";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,32 +50,27 @@ impl crate::GlobalNamespace::BeatmapDataStats {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::Span_1<i32>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapDataItem,
-                                >,
-                            >,
-                        >),
-                        crate::System::Span_1<i32>,
-                        1usize,
-                    >("CountItems")
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+                        >,
+                    >), crate::System::Span_1<i32>, 1usize>("CountItems")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CountItems", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CountItems",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Span_1<i32> = unsafe {
-            cordl_method_info.invoke_unchecked((), (items))?
-        };
+        let __cordl_ret: crate::System::Span_1<i32> =
+            unsafe { cordl_method_info.invoke_unchecked((), (items))? };
         Ok(__cordl_ret.into())
     }
     pub fn CountItems_Span_1_Span_1_1(
@@ -86,46 +82,41 @@ impl crate::GlobalNamespace::BeatmapDataStats {
         objects: crate::System::Span_1<i32>,
         events: crate::System::Span_1<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapDataItem,
-                                    >,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
                             >,
-                            crate::System::Span_1<i32>,
-                            crate::System::Span_1<i32>,
-                        ),
-                        i32,
-                        3usize,
-                    >("CountItems")
+                        >,
+                        crate::System::Span_1<i32>,
+                        crate::System::Span_1<i32>,
+                    ), i32, 3usize>("CountItems")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CountItems", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CountItems",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (items, objects, events))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (items, objects, events))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateReport(
         counts: crate::System::Span_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Span_1<i32>),
@@ -140,34 +131,27 @@ impl crate::GlobalNamespace::BeatmapDataStats {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (counts))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (counts))? };
         Ok(__cordl_ret.into())
     }
-    pub fn SumCounts(
-        counts: crate::System::Span_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn SumCounts(counts: crate::System::Span_1<i32>) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::System::Span_1<i32>),
-                        i32,
-                        1usize,
-                    >("SumCounts")
+                    .find_static_method::<(crate::System::Span_1<i32>), i32, 1usize>("SumCounts")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SumCounts", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SumCounts",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (counts))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (counts))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -181,8 +165,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapDataSt
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataStats+Events")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum BeatmapDataStats_Events {
     #[default]
     BPM = 0i32,
@@ -195,8 +179,7 @@ pub enum BeatmapDataStats_Events {
     Translation = 6i32,
 }
 #[cfg(feature = "cordl_class_BeatmapDataStats+Events")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapDataStats_Events {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapDataStats_Events {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -215,18 +198,14 @@ for crate::GlobalNamespace::BeatmapDataStats_Events {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataStats+Events")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::BeatmapDataStats_Events {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::BeatmapDataStats_Events {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -236,8 +215,7 @@ for crate::GlobalNamespace::BeatmapDataStats_Events {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataStats+Events")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::BeatmapDataStats_Events {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::BeatmapDataStats_Events {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -250,23 +228,19 @@ for crate::GlobalNamespace::BeatmapDataStats_Events {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataStats+Events")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::BeatmapDataStats_Events {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::BeatmapDataStats_Events {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataStats+Events")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::BeatmapDataStats_Events {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::BeatmapDataStats_Events {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -279,8 +253,8 @@ for crate::GlobalNamespace::BeatmapDataStats_Events {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataStats+Objects")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum BeatmapDataStats_Objects {
     #[default]
     Notes = 0i32,
@@ -288,8 +262,7 @@ pub enum BeatmapDataStats_Objects {
     Sliders = 1i32,
 }
 #[cfg(feature = "cordl_class_BeatmapDataStats+Objects")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapDataStats_Objects {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapDataStats_Objects {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -308,18 +281,14 @@ for crate::GlobalNamespace::BeatmapDataStats_Objects {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataStats+Objects")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::BeatmapDataStats_Objects {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::BeatmapDataStats_Objects {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -329,8 +298,7 @@ for crate::GlobalNamespace::BeatmapDataStats_Objects {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataStats+Objects")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::BeatmapDataStats_Objects {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::BeatmapDataStats_Objects {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -343,23 +311,19 @@ for crate::GlobalNamespace::BeatmapDataStats_Objects {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataStats+Objects")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::BeatmapDataStats_Objects {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::BeatmapDataStats_Objects {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataStats+Objects")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::BeatmapDataStats_Objects {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::BeatmapDataStats_Objects {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

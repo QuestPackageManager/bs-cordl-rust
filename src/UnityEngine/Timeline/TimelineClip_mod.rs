@@ -9,9 +9,7 @@ pub struct TimelineClip {
     pub m_Asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     pub m_Duration: f64,
     pub m_TimeScale: f64,
-    pub m_ParentTrack: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Timeline::TrackAsset,
-    >,
+    pub m_ParentTrack: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
     pub m_EaseInDuration: f64,
     pub m_EaseOutDuration: f64,
     pub m_BlendInDuration: f64,
@@ -40,7 +38,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::Timeli
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
     const CLASS_NAME: &'static str = "TimelineClip";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -76,64 +75,56 @@ impl crate::UnityEngine::Timeline::TimelineClip {
     pub type TimelineClipUpgrade = crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade;
     #[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
     pub type Versions = crate::UnityEngine::Timeline::TimelineClip_Versions;
-    pub fn CalculateEasingRatio(
-        easeIn: f64,
-        easeOut: f64,
-    ) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn CalculateEasingRatio(easeIn: f64, easeOut: f64) -> quest_hook::libil2cpp::Result<f64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (f64, f64),
-                        f64,
-                        2usize,
-                    >("CalculateEasingRatio")
+                    .find_static_method::<(f64, f64), f64, 2usize>("CalculateEasingRatio")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculateEasingRatio", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CalculateEasingRatio",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (easeIn, easeOut))?
-        };
+        let __cordl_ret: f64 =
+            unsafe { cordl_method_info.invoke_unchecked((), (easeIn, easeOut))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConformEaseValues(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ConformEaseValues")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ConformEaseValues")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConformEaseValues", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ConformEaseValues",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCurves(
         &mut self,
         curvesClipName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -148,83 +139,74 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (curvesClipName))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (curvesClipName))? };
         Ok(__cordl_ret.into())
     }
-    pub fn EvaluateMixIn(
-        &mut self,
-        _cordl_time: f64,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn EvaluateMixIn(&mut self, _cordl_time: f64) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f64), f32, 1usize>("EvaluateMixIn")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EvaluateMixIn", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EvaluateMixIn",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_time))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
-    pub fn EvaluateMixOut(
-        &mut self,
-        _cordl_time: f64,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn EvaluateMixOut(&mut self, _cordl_time: f64) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f64), f32, 1usize>("EvaluateMixOut")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EvaluateMixOut", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EvaluateMixOut",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_time))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
-    pub fn FromLocalTimeUnbound(
-        &mut self,
-        _cordl_time: f64,
-    ) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn FromLocalTimeUnbound(&mut self, _cordl_time: f64) -> quest_hook::libil2cpp::Result<f64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f64), f64, 1usize>("FromLocalTimeUnbound")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FromLocalTimeUnbound", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FromLocalTimeUnbound",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_time))?
-        };
+        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetDefaultMixInCurve() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetDefaultMixInCurve(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -239,17 +221,17 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetDefaultMixOutCurve() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetDefaultMixOutCurve(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -264,9 +246,8 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetExtrapolatedTime(
@@ -274,30 +255,27 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         mode: crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation,
         duration: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            f64,
-                            crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation,
-                            f64,
-                        ),
+                    .find_static_method::<(
                         f64,
-                        3usize,
-                    >("GetExtrapolatedTime")
+                        crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation,
+                        f64,
+                    ), f64, 3usize>("GetExtrapolatedTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetExtrapolatedTime", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetExtrapolatedTime",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_time, mode, duration))?
-        };
+        let __cordl_ret: f64 =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_time, mode, duration))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetParentTrack(
@@ -305,9 +283,10 @@ impl crate::UnityEngine::Timeline::TimelineClip {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -324,21 +303,22 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Timeline::TrackAsset,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Hash(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("Hash")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Hash",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Hash",
                             0usize
                         )
                     })
@@ -346,112 +326,109 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn IsExtrapolatedTime(
-        &mut self,
-        sequenceTime: f64,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn IsExtrapolatedTime(&mut self, sequenceTime: f64) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f64), bool, 1usize>("IsExtrapolatedTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsExtrapolatedTime", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsExtrapolatedTime",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (sequenceTime))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (sequenceTime))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsPostExtrapolatedTime(
         &mut self,
         sequenceTime: f64,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f64), bool, 1usize>("IsPostExtrapolatedTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsPostExtrapolatedTime", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsPostExtrapolatedTime",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (sequenceTime))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (sequenceTime))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsPreExtrapolatedTime(
         &mut self,
         sequenceTime: f64,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f64), bool, 1usize>("IsPreExtrapolatedTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsPreExtrapolatedTime", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsPreExtrapolatedTime",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (sequenceTime))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (sequenceTime))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (parent))?;
         Ok(__cordl_object.into())
     }
-    pub fn SanitizeTimeValue(
-        value: f64,
-        defaultValue: f64,
-    ) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn SanitizeTimeValue(value: f64, defaultValue: f64) -> quest_hook::libil2cpp::Result<f64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, f64), f64, 2usize>("SanitizeTimeValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SanitizeTimeValue", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SanitizeTimeValue",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (value, defaultValue))?
-        };
+        let __cordl_ret: f64 =
+            unsafe { cordl_method_info.invoke_unchecked((), (value, defaultValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetParentTrack_Internal(
         &mut self,
-        newParentTrack: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Timeline::TrackAsset,
-        >,
+        newParentTrack: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -468,115 +445,106 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (newParentTrack))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (newParentTrack))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetPostExtrapolationTime(
         &mut self,
         _cordl_time: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetPostExtrapolationTime")
+                    .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>(
+                        "SetPostExtrapolationTime",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetPostExtrapolationTime", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetPostExtrapolationTime",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_time))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetPreExtrapolationTime(
         &mut self,
         _cordl_time: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetPreExtrapolationTime")
+                    .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>(
+                        "SetPreExtrapolationTime",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetPreExtrapolationTime", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetPreExtrapolationTime",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_time))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ToLocalTime(
-        &mut self,
-        _cordl_time: f64,
-    ) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ToLocalTime(&mut self, _cordl_time: f64) -> quest_hook::libil2cpp::Result<f64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f64), f64, 1usize>("ToLocalTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToLocalTime", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ToLocalTime",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_time))?
-        };
+        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ToLocalTimeUnbound(
-        &mut self,
-        _cordl_time: f64,
-    ) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ToLocalTimeUnbound(&mut self, _cordl_time: f64) -> quest_hook::libil2cpp::Result<f64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f64), f64, 1usize>("ToLocalTimeUnbound")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToLocalTimeUnbound", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ToLocalTimeUnbound",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f64 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_time))?
-        };
+        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -591,71 +559,65 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            <Self as quest_hook::libil2cpp::Type>::class(),
                             "UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            <Self as quest_hook::libil2cpp::Type>::class(),
                             "UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_Timeline_ICurvesOwner_get_assetOwner(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -670,19 +632,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_Timeline_ICurvesOwner_get_defaultCurvesName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -698,9 +659,8 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_Timeline_ICurvesOwner_get_targetTrack(
@@ -708,9 +668,10 @@ impl crate::UnityEngine::Timeline::TimelineClip {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -727,9 +688,8 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Timeline::TrackAsset,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateDirty(
@@ -737,60 +697,57 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         oldValue: f64,
         newValue: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f64, f64),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateDirty")
+                    .find_method::<(f64, f64), quest_hook::libil2cpp::Void, 2usize>("UpdateDirty")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateDirty", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateDirty",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (oldValue, newValue))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (oldValue, newValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpgradeToLatestVersion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("UpgradeToLatestVersion")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "UpgradeToLatestVersion",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpgradeToLatestVersion", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpgradeToLatestVersion",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -807,19 +764,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (parent))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_animationClip(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -834,19 +790,17 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_asset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -861,19 +815,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_blendInCurveMode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -888,22 +841,23 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_blendInDuration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_blendInDuration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_blendInDuration", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_blendInDuration",
+                            0usize
                         )
                     })
             });
@@ -912,12 +866,12 @@ impl crate::UnityEngine::Timeline::TimelineClip {
     }
     pub fn get_blendOutCurveMode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -932,22 +886,23 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_blendOutDuration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_blendOutDuration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_blendOutDuration", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_blendOutDuration",
+                            0usize
                         )
                     })
             });
@@ -955,16 +910,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_clipAssetDuration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_clipAssetDuration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_clipAssetDuration", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_clipAssetDuration",
+                            0usize
                         )
                     })
             });
@@ -974,39 +931,40 @@ impl crate::UnityEngine::Timeline::TimelineClip {
     pub fn get_clipCaps(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::ClipCaps> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::Timeline::ClipCaps,
-                        0usize,
-                    >("get_clipCaps")
+                    .find_method::<(), crate::UnityEngine::Timeline::ClipCaps, 0usize>(
+                        "get_clipCaps",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_clipCaps", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_clipCaps",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Timeline::ClipCaps = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Timeline::ClipCaps =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_clipIn(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_clipIn")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_clipIn", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_clipIn",
+                            0usize
                         )
                     })
             });
@@ -1015,12 +973,12 @@ impl crate::UnityEngine::Timeline::TimelineClip {
     }
     pub fn get_curves(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1035,19 +993,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_displayName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1062,22 +1019,23 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_duration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_duration", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_duration",
+                            0usize
                         )
                     })
             });
@@ -1085,16 +1043,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_easeInDuration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_easeInDuration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_easeInDuration", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_easeInDuration",
+                            0usize
                         )
                     })
             });
@@ -1102,16 +1062,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_easeOutDuration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_easeOutDuration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_easeOutDuration", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_easeOutDuration",
+                            0usize
                         )
                     })
             });
@@ -1119,16 +1081,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_easeOutTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_easeOutTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_easeOutTime", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_easeOutTime",
+                            0usize
                         )
                     })
             });
@@ -1136,16 +1100,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_eastOutTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_eastOutTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_eastOutTime", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_eastOutTime",
+                            0usize
                         )
                     })
             });
@@ -1153,15 +1119,17 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_end(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_end")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_end",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_end",
                             0usize
                         )
                     })
@@ -1178,26 +1146,22 @@ impl crate::UnityEngine::Timeline::TimelineClip {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         >,
-                        0usize,
-                    >("get_exposedParameters")
+                    >, 0usize>("get_exposedParameters")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_exposedParameters", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_exposedParameters",
+                            0usize
                         )
                     })
             });
@@ -1209,16 +1173,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_extrapolatedDuration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_extrapolatedDuration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_extrapolatedDuration", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_extrapolatedDuration",
+                            0usize
                         )
                     })
             });
@@ -1226,16 +1192,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_extrapolatedStart(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_extrapolatedStart")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_extrapolatedStart", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_extrapolatedStart",
+                            0usize
                         )
                     })
             });
@@ -1243,16 +1211,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_hasBlendIn(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasBlendIn")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_hasBlendIn", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_hasBlendIn",
+                            0usize
                         )
                     })
             });
@@ -1260,16 +1230,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_hasBlendOut(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasBlendOut")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_hasBlendOut", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_hasBlendOut",
+                            0usize
                         )
                     })
             });
@@ -1277,16 +1249,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_hasCurves(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasCurves")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_hasCurves", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_hasCurves",
+                            0usize
                         )
                     })
             });
@@ -1294,16 +1268,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_hasPostExtrapolation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasPostExtrapolation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_hasPostExtrapolation", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_hasPostExtrapolation",
+                            0usize
                         )
                     })
             });
@@ -1311,16 +1287,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_hasPreExtrapolation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasPreExtrapolation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_hasPreExtrapolation", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_hasPreExtrapolation",
+                            0usize
                         )
                     })
             });
@@ -1329,12 +1307,12 @@ impl crate::UnityEngine::Timeline::TimelineClip {
     }
     pub fn get_mixInCurve(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1349,22 +1327,23 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_mixInDuration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_mixInDuration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_mixInDuration", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_mixInDuration",
+                            0usize
                         )
                     })
             });
@@ -1372,16 +1351,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_mixInPercentage(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_mixInPercentage")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_mixInPercentage", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_mixInPercentage",
+                            0usize
                         )
                     })
             });
@@ -1390,12 +1371,12 @@ impl crate::UnityEngine::Timeline::TimelineClip {
     }
     pub fn get_mixOutCurve(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1410,22 +1391,23 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_mixOutDuration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_mixOutDuration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_mixOutDuration", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_mixOutDuration",
+                            0usize
                         )
                     })
             });
@@ -1433,16 +1415,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_mixOutPercentage(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_mixOutPercentage")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_mixOutPercentage", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_mixOutPercentage",
+                            0usize
                         )
                     })
             });
@@ -1450,16 +1434,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_mixOutTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_mixOutTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_mixOutTime", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_mixOutTime",
+                            0usize
                         )
                     })
             });
@@ -1471,9 +1457,10 @@ impl crate::UnityEngine::Timeline::TimelineClip {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1490,19 +1477,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Timeline::TrackAsset,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_postExtrapolationMode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1517,19 +1503,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_preExtrapolationMode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1544,22 +1529,23 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_recordable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_recordable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_recordable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_recordable",
+                            0usize
                         )
                     })
             });
@@ -1567,16 +1553,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_start(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_start", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_start",
+                            0usize
                         )
                     })
             });
@@ -1584,16 +1572,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
     pub fn get_timeScale(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_timeScale")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_timeScale", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_timeScale",
+                            0usize
                         )
                     })
             });
@@ -1602,12 +1592,11 @@ impl crate::UnityEngine::Timeline::TimelineClip {
     }
     pub fn get_underlyingAsset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1622,18 +1611,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_asset(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
@@ -1648,18 +1637,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_blendInCurveMode(
         &mut self,
         value: crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode),
@@ -1674,44 +1663,43 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_blendInDuration(
         &mut self,
         value: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_blendInDuration")
+                    .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_blendInDuration",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_blendInDuration", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_blendInDuration",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_blendOutCurveMode(
         &mut self,
         value: crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode),
@@ -1726,70 +1714,66 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_blendOutDuration(
         &mut self,
         value: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_blendOutDuration")
+                    .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_blendOutDuration",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_blendOutDuration", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_blendOutDuration",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_clipIn(
         &mut self,
         value: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_clipIn")
+                    .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>("set_clipIn")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_clipIn", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_clipIn",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_curves(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>),
@@ -1804,18 +1788,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_displayName(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -1830,96 +1814,89 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_duration(
         &mut self,
         value: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_duration")
+                    .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>("set_duration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_duration", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_duration",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_easeInDuration(
         &mut self,
         value: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_easeInDuration")
+                    .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>("set_easeInDuration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_easeInDuration", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_easeInDuration",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_easeOutDuration(
         &mut self,
         value: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_easeOutDuration")
+                    .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_easeOutDuration",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_easeOutDuration", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_easeOutDuration",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_mixInCurve(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>),
@@ -1934,18 +1911,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_mixOutCurve(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>),
@@ -1960,18 +1937,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_parentTrack(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1988,18 +1965,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_postExtrapolationMode(
         &mut self,
         value: crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation),
@@ -2014,18 +1991,18 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_preExtrapolationMode(
         &mut self,
         value: crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation),
@@ -2040,96 +2017,87 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_recordable(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_recordable")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_recordable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_recordable", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_recordable",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_start(
         &mut self,
         value: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_start")
+                    .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>("set_start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_start", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_start",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_timeScale(
         &mut self,
         value: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_timeScale")
+                    .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>("set_timeScale")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_timeScale", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_timeScale",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_underlyingAsset(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
@@ -2144,9 +2112,8 @@ impl crate::UnityEngine::Timeline::TimelineClip {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -2161,35 +2128,39 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::Timelin
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
 impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
-for crate::UnityEngine::Timeline::TimelineClip {
+    for crate::UnityEngine::Timeline::TimelineClip
+{
     fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
 impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
-for crate::UnityEngine::Timeline::TimelineClip {
+    for crate::UnityEngine::Timeline::TimelineClip
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
 impl AsRef<crate::UnityEngine::Timeline::ICurvesOwner>
-for crate::UnityEngine::Timeline::TimelineClip {
+    for crate::UnityEngine::Timeline::TimelineClip
+{
     fn as_ref(&self) -> &crate::UnityEngine::Timeline::ICurvesOwner {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
 impl AsMut<crate::UnityEngine::Timeline::ICurvesOwner>
-for crate::UnityEngine::Timeline::TimelineClip {
+    for crate::UnityEngine::Timeline::TimelineClip
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ICurvesOwner {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum TimelineClip_BlendCurveMode {
     #[default]
     Auto = 0i32,
@@ -2197,7 +2168,8 @@ pub enum TimelineClip_BlendCurveMode {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
+    for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
@@ -2216,18 +2188,16 @@ for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
+    for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2238,7 +2208,8 @@ for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
+    for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2252,22 +2223,22 @@ for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
+    for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
+    for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2280,8 +2251,8 @@ for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum TimelineClip_ClipExtrapolation {
     #[default]
     Continue = 4i32,
@@ -2292,7 +2263,8 @@ pub enum TimelineClip_ClipExtrapolation {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
+    for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
@@ -2311,18 +2283,16 @@ for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
+    for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2333,7 +2303,8 @@ for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
+    for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2347,22 +2318,22 @@ for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
+    for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
+    for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2382,13 +2353,15 @@ pub struct TimelineClip_TimelineClipUpgrade {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
+    for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
     const CLASS_NAME: &'static str = "TimelineClip/TimelineClipUpgrade";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2408,8 +2381,7 @@ impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineClip_TimelineClip
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
-impl std::ops::DerefMut
-for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
+impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2419,9 +2391,10 @@ impl crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
     pub fn UpgradeClipInFromGlobalToLocal(
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -2438,15 +2411,15 @@ impl crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (clip))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (clip))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
+    for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2455,16 +2428,15 @@ for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+Versions")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum TimelineClip_Versions {
     #[default]
     ClipInFromGlobalToLocal = 1i32,
     Initial = 0i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+Versions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Timeline::TimelineClip_Versions {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::TimelineClip_Versions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
@@ -2483,18 +2455,16 @@ for crate::UnityEngine::Timeline::TimelineClip_Versions {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+Versions")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Timeline::TimelineClip_Versions {
+    for crate::UnityEngine::Timeline::TimelineClip_Versions
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2505,7 +2475,8 @@ for crate::UnityEngine::Timeline::TimelineClip_Versions {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+Versions")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Timeline::TimelineClip_Versions {
+    for crate::UnityEngine::Timeline::TimelineClip_Versions
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2519,22 +2490,20 @@ for crate::UnityEngine::Timeline::TimelineClip_Versions {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+Versions")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Timeline::TimelineClip_Versions {
+    for crate::UnityEngine::Timeline::TimelineClip_Versions
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+Versions")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Timeline::TimelineClip_Versions {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Timeline::TimelineClip_Versions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

@@ -19,9 +19,8 @@ pub struct XmlReaderSettings {
     pub validationType: crate::System::Xml::ValidationType,
     pub validationFlags: crate::System::Xml::Schema::XmlSchemaValidationFlags,
     pub schemas: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
-    pub valEventHandler: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::ValidationEventHandler,
-    >,
+    pub valEventHandler:
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationEventHandler>,
     pub closeInput: bool,
     pub isReadOnly: bool,
     pub _IsXmlResolverSet_k__BackingField: bool,
@@ -33,7 +32,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlReaderSetting
     const NAMESPACE: &'static str = "System.Xml";
     const CLASS_NAME: &'static str = "XmlReaderSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -63,12 +63,12 @@ impl crate::System::Xml::XmlReaderSettings {
     pub fn AddValidation(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>),
@@ -83,18 +83,18 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (reader))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reader))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckReadOnly(
         &mut self,
         propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -109,9 +109,8 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (propertyName))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (propertyName))? };
         Ok(__cordl_ret.into())
     }
     pub fn Clone(
@@ -119,9 +118,10 @@ impl crate::System::Xml::XmlReaderSettings {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -136,17 +136,17 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::XmlReaderSettings,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn CreateDefaultResolver() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn CreateDefaultResolver(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -161,9 +161,8 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateDtdValidatingReader(
@@ -172,9 +171,10 @@ impl crate::System::Xml::XmlReaderSettings {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlValidatingReaderImpl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>),
@@ -191,9 +191,8 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::XmlValidatingReaderImpl,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (baseReader))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlValidatingReaderImpl> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (baseReader))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateReader_Stream_Uri_Il2CppString_XmlParserContext0(
@@ -202,32 +201,27 @@ impl crate::System::Xml::XmlReaderSettings {
         baseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         baseUriString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         inputContext: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                            quest_hook::libil2cpp::Gc<crate::System::Uri>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::XmlParserContext,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
-                        4usize,
-                    >("CreateReader")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                        quest_hook::libil2cpp::Gc<crate::System::Uri>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>, 4usize>(
+                        "CreateReader",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateReader", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateReader",
+                            4usize
                         )
                     })
             });
@@ -242,51 +236,47 @@ impl crate::System::Xml::XmlReaderSettings {
         input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
         baseUriString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         inputContext: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::XmlParserContext,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
-                        3usize,
-                    >("CreateReader")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>, 3usize>(
+                        "CreateReader",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateReader", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateReader",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (input, baseUriString, inputContext))?
+            cordl_method_info.invoke_unchecked(self, (input, baseUriString, inputContext))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EnableLegacyXmlSettings() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("EnableLegacyXmlSettings")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EnableLegacyXmlSettings", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EnableLegacyXmlSettings",
+                            0usize
                         )
                     })
             });
@@ -298,9 +288,10 @@ impl crate::System::Xml::XmlReaderSettings {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationEventHandler>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -324,12 +315,12 @@ impl crate::System::Xml::XmlReaderSettings {
     }
     pub fn GetXmlResolver(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -344,19 +335,18 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetXmlResolver_CheckConfig(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -371,39 +361,38 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Initialize_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Initialize_0(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Initialize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Initialize",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_XmlResolver1(
         &mut self,
         resolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>),
@@ -418,50 +407,50 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (resolver))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (resolver))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Async(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Async")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Async", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Async",
+                            0usize
                         )
                     })
             });
@@ -469,16 +458,18 @@ impl crate::System::Xml::XmlReaderSettings {
         Ok(__cordl_ret.into())
     }
     pub fn get_CheckCharacters(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_CheckCharacters")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_CheckCharacters", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_CheckCharacters",
+                            0usize
                         )
                     })
             });
@@ -486,16 +477,18 @@ impl crate::System::Xml::XmlReaderSettings {
         Ok(__cordl_ret.into())
     }
     pub fn get_CloseInput(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_CloseInput")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_CloseInput", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_CloseInput",
+                            0usize
                         )
                     })
             });
@@ -505,83 +498,83 @@ impl crate::System::Xml::XmlReaderSettings {
     pub fn get_ConformanceLevel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::ConformanceLevel> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::System::Xml::ConformanceLevel,
-                        0usize,
-                    >("get_ConformanceLevel")
+                    .find_method::<(), crate::System::Xml::ConformanceLevel, 0usize>(
+                        "get_ConformanceLevel",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ConformanceLevel", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ConformanceLevel",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Xml::ConformanceLevel = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Xml::ConformanceLevel =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_DtdProcessing(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::DtdProcessing> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::System::Xml::DtdProcessing,
-                        0usize,
-                    >("get_DtdProcessing")
+                    .find_method::<(), crate::System::Xml::DtdProcessing, 0usize>(
+                        "get_DtdProcessing",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_DtdProcessing", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_DtdProcessing",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Xml::DtdProcessing = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Xml::DtdProcessing =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IgnoreComments(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IgnoreComments")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IgnoreComments", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IgnoreComments",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_IgnoreProcessingInstructions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_IgnoreProcessingInstructions(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IgnoreProcessingInstructions")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IgnoreProcessingInstructions", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IgnoreProcessingInstructions",
+                            0usize
                         )
                     })
             });
@@ -589,16 +582,18 @@ impl crate::System::Xml::XmlReaderSettings {
         Ok(__cordl_ret.into())
     }
     pub fn get_IgnoreWhitespace(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IgnoreWhitespace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IgnoreWhitespace", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IgnoreWhitespace",
+                            0usize
                         )
                     })
             });
@@ -606,16 +601,18 @@ impl crate::System::Xml::XmlReaderSettings {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsXmlResolverSet(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsXmlResolverSet")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsXmlResolverSet", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsXmlResolverSet",
+                            0usize
                         )
                     })
             });
@@ -623,16 +620,18 @@ impl crate::System::Xml::XmlReaderSettings {
         Ok(__cordl_ret.into())
     }
     pub fn get_LineNumberOffset(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_LineNumberOffset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_LineNumberOffset", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_LineNumberOffset",
+                            0usize
                         )
                     })
             });
@@ -640,35 +639,37 @@ impl crate::System::Xml::XmlReaderSettings {
         Ok(__cordl_ret.into())
     }
     pub fn get_LinePositionOffset(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_LinePositionOffset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_LinePositionOffset", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_LinePositionOffset",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_MaxCharactersFromEntities(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_MaxCharactersFromEntities(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_MaxCharactersFromEntities")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_MaxCharactersFromEntities", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_MaxCharactersFromEntities",
+                            0usize
                         )
                     })
             });
@@ -676,16 +677,18 @@ impl crate::System::Xml::XmlReaderSettings {
         Ok(__cordl_ret.into())
     }
     pub fn get_MaxCharactersInDocument(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_MaxCharactersInDocument")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_MaxCharactersInDocument", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_MaxCharactersInDocument",
+                            0usize
                         )
                     })
             });
@@ -694,12 +697,12 @@ impl crate::System::Xml::XmlReaderSettings {
     }
     pub fn get_NameTable(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -714,9 +717,8 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Schemas(
@@ -724,9 +726,10 @@ impl crate::System::Xml::XmlReaderSettings {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -743,19 +746,17 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaSet,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ValidationFlags(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Xml::Schema::XmlSchemaValidationFlags,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlSchemaValidationFlags> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -770,121 +771,113 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Xml::Schema::XmlSchemaValidationFlags = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Xml::Schema::XmlSchemaValidationFlags =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ValidationType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::ValidationType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::System::Xml::ValidationType,
-                        0usize,
-                    >("get_ValidationType")
+                    .find_method::<(), crate::System::Xml::ValidationType, 0usize>(
+                        "get_ValidationType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ValidationType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ValidationType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Xml::ValidationType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Xml::ValidationType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Async(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_Async")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_Async")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_Async", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Async",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_CheckCharacters(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_CheckCharacters")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_CheckCharacters",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_CheckCharacters", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_CheckCharacters",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_CloseInput(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_CloseInput")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_CloseInput")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_CloseInput", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_CloseInput",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ConformanceLevel(
         &mut self,
         value: crate::System::Xml::ConformanceLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::ConformanceLevel),
@@ -899,18 +892,18 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_DtdProcessing(
         &mut self,
         value: crate::System::Xml::DtdProcessing,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::DtdProcessing),
@@ -925,226 +918,218 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_IgnoreComments(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_IgnoreComments")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_IgnoreComments",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_IgnoreComments", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_IgnoreComments",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_IgnoreProcessingInstructions(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_IgnoreProcessingInstructions")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_IgnoreProcessingInstructions",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_IgnoreProcessingInstructions", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_IgnoreProcessingInstructions",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_IgnoreWhitespace(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_IgnoreWhitespace")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_IgnoreWhitespace",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_IgnoreWhitespace", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_IgnoreWhitespace",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_IsXmlResolverSet(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_IsXmlResolverSet")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_IsXmlResolverSet",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_IsXmlResolverSet", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_IsXmlResolverSet",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_LineNumberOffset(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_LineNumberOffset")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_LineNumberOffset",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_LineNumberOffset", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_LineNumberOffset",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_LinePositionOffset(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_LinePositionOffset")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_LinePositionOffset",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_LinePositionOffset", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_LinePositionOffset",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_MaxCharactersFromEntities(
         &mut self,
         value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_MaxCharactersFromEntities")
+                    .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_MaxCharactersFromEntities",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_MaxCharactersFromEntities", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_MaxCharactersFromEntities",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_MaxCharactersInDocument(
         &mut self,
         value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_MaxCharactersInDocument")
+                    .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_MaxCharactersInDocument",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_MaxCharactersInDocument", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_MaxCharactersInDocument",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_NameTable(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>),
@@ -1159,44 +1144,41 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ReadOnly(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_ReadOnly")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_ReadOnly")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_ReadOnly", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_ReadOnly",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Schemas(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1213,18 +1195,18 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ValidationFlags(
         &mut self,
         value: crate::System::Xml::Schema::XmlSchemaValidationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::Schema::XmlSchemaValidationFlags),
@@ -1239,18 +1221,18 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ValidationType(
         &mut self,
         value: crate::System::Xml::ValidationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::ValidationType),
@@ -1265,18 +1247,18 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_XmlResolver(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>),
@@ -1291,9 +1273,8 @@ impl crate::System::Xml::XmlReaderSettings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -5,20 +5,19 @@ pub struct TouchInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::PointerInputModule,
     pub m_LastMousePosition: crate::UnityEngine::Vector2,
     pub m_MousePosition: crate::UnityEngine::Vector2,
-    pub m_InputPointerEvent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::PointerEventData,
-    >,
+    pub m_InputPointerEvent:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     pub m_ForceModuleActive: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+TouchInputModule")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::EventSystems::TouchInputModule {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::EventSystems::TouchInputModule {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.EventSystems";
     const CLASS_NAME: &'static str = "TouchInputModule";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -48,64 +47,58 @@ impl crate::UnityEngine::EventSystems::TouchInputModule {
     pub fn DeactivateModule(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("DeactivateModule")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("DeactivateModule")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DeactivateModule", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DeactivateModule",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn FakeTouches(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn FakeTouches(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("FakeTouches")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("FakeTouches")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FakeTouches", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FakeTouches",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsModuleSupported(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsModuleSupported")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsModuleSupported", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsModuleSupported",
+                            0usize
                         )
                     })
             });
@@ -113,105 +106,98 @@ impl crate::UnityEngine::EventSystems::TouchInputModule {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Process(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Process(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Process")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Process",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Process",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessTouchEvents(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ProcessTouchEvents")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ProcessTouchEvents")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessTouchEvents", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessTouchEvents",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessTouchPress(
         &mut self,
-        pointerEvent: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::PointerEventData,
-        >,
+        pointerEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         pressed: bool,
         released: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::EventSystems::PointerEventData,
-                            >,
-                            bool,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("ProcessTouchPress")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::PointerEventData,
+                        >,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 3usize>("ProcessTouchPress")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessTouchPress", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessTouchPress",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pointerEvent, pressed, released))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pointerEvent, pressed, released))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldActivateModule(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ShouldActivateModule")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ShouldActivateModule", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ShouldActivateModule",
+                            0usize
                         )
                     })
             });
@@ -220,12 +206,12 @@ impl crate::UnityEngine::EventSystems::TouchInputModule {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -240,87 +226,82 @@ impl crate::UnityEngine::EventSystems::TouchInputModule {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateModule(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn UpdateModule(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("UpdateModule")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdateModule")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateModule", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateModule",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UseFakeInput(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("UseFakeInput")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UseFakeInput", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UseFakeInput",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_allowActivationOnStandalone(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_allowActivationOnStandalone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_allowActivationOnStandalone")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_allowActivationOnStandalone", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_allowActivationOnStandalone",
+                            0usize
                         )
                     })
             });
@@ -328,16 +309,18 @@ impl crate::UnityEngine::EventSystems::TouchInputModule {
         Ok(__cordl_ret.into())
     }
     pub fn get_forceModuleActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_forceModuleActive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_forceModuleActive", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_forceModuleActive",
+                            0usize
                         )
                     })
             });
@@ -348,58 +331,55 @@ impl crate::UnityEngine::EventSystems::TouchInputModule {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_allowActivationOnStandalone")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_allowActivationOnStandalone",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_allowActivationOnStandalone", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_allowActivationOnStandalone",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_forceModuleActive(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_forceModuleActive")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_forceModuleActive",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_forceModuleActive", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_forceModuleActive",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+TouchInputModule")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::EventSystems::TouchInputModule {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::EventSystems::TouchInputModule {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

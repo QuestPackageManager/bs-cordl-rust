@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+VertexGradient")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct VertexGradient {
     pub topLeft: crate::UnityEngine::Color,
     pub topRight: crate::UnityEngine::Color,
@@ -27,13 +27,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::VertexGradient {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_TMPro+VertexGradient")]
@@ -67,9 +64,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::VertexGradient {
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -102,9 +97,10 @@ impl crate::TMPro::VertexGradient {
         &mut self,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
@@ -119,9 +115,8 @@ impl crate::TMPro::VertexGradient {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (color))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (color))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Color_Color_Color1(
@@ -131,31 +126,28 @@ impl crate::TMPro::VertexGradient {
         color2: crate::UnityEngine::Color,
         color3: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::Color,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (color0, color1, color2, color3))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (color0, color1, color2, color3))? };
         Ok(__cordl_ret.into())
     }
 }

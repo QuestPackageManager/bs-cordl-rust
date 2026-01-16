@@ -18,7 +18,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVRSimpleJSON::JSONObject {
     const NAMESPACE: &'static str = "OVRSimpleJSON";
     const CLASS_NAME: &'static str = "JSONObject";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -50,62 +51,56 @@ impl crate::OVRSimpleJSON::JSONObject {
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         aItem: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Add")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Add")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Add",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (aKey, aItem))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (aKey, aItem))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Clear",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -120,77 +115,72 @@ impl crate::OVRSimpleJSON::JSONObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::OVRSimpleJSON::JSONNode_Enumerator> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::OVRSimpleJSON::JSONNode_Enumerator,
-                        0usize,
-                    >("GetEnumerator")
+                    .find_method::<(), crate::OVRSimpleJSON::JSONNode_Enumerator, 0usize>(
+                        "GetEnumerator",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetEnumerator", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetEnumerator",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::OVRSimpleJSON::JSONNode_Enumerator = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::OVRSimpleJSON::JSONNode_Enumerator =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValueOrDefault(
         &mut self,
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         aDefault: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                        2usize,
-                    >("GetValueOrDefault")
+                    ), quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>, 2usize>(
+                        "GetValueOrDefault",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetValueOrDefault", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetValueOrDefault",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (aKey, aDefault))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (aKey, aDefault))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasKey(
         &mut self,
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -205,14 +195,12 @@ impl crate::OVRSimpleJSON::JSONObject {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (aKey))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (aKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -220,12 +208,12 @@ impl crate::OVRSimpleJSON::JSONObject {
     pub fn Remove_Il2CppString0(
         &mut self,
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -240,20 +228,19 @@ impl crate::OVRSimpleJSON::JSONObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (aKey))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (aKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn Remove_JSONNode2(
         &mut self,
         aNode: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>),
@@ -268,20 +255,19 @@ impl crate::OVRSimpleJSON::JSONObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (aNode))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (aNode))? };
         Ok(__cordl_ret.into())
     }
     pub fn Remove_i32_1(
         &mut self,
         aIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -296,9 +282,8 @@ impl crate::OVRSimpleJSON::JSONObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (aIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (aIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteToStringBuilder(
@@ -308,54 +293,50 @@ impl crate::OVRSimpleJSON::JSONObject {
         aIndentInc: i32,
         aMode: crate::OVRSimpleJSON::JSONTextMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Text::StringBuilder,
-                            >,
-                            i32,
-                            i32,
-                            crate::OVRSimpleJSON::JSONTextMode,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("WriteToStringBuilder")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                        i32,
+                        i32,
+                        crate::OVRSimpleJSON::JSONTextMode,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "WriteToStringBuilder"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteToStringBuilder", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteToStringBuilder",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (aSB, aIndent, aIndentInc, aMode))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (aSB, aIndent, aIndentInc, aMode))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Children(
@@ -367,24 +348,22 @@ impl crate::OVRSimpleJSON::JSONObject {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
                         >,
-                        0usize,
-                    >("get_Children")
+                    >, 0usize>("get_Children")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Children", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Children",
+                            0usize
                         )
                     })
             });
@@ -396,16 +375,18 @@ impl crate::OVRSimpleJSON::JSONObject {
         Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Count", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Count",
+                            0usize
                         )
                     })
             });
@@ -413,16 +394,18 @@ impl crate::OVRSimpleJSON::JSONObject {
         Ok(__cordl_ret.into())
     }
     pub fn get_Inline(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Inline")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Inline", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Inline",
+                            0usize
                         )
                     })
             });
@@ -430,16 +413,18 @@ impl crate::OVRSimpleJSON::JSONObject {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsObject(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsObject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsObject", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsObject",
+                            0usize
                         )
                     })
             });
@@ -449,12 +434,12 @@ impl crate::OVRSimpleJSON::JSONObject {
     pub fn get_Item_Il2CppString0(
         &mut self,
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -469,20 +454,19 @@ impl crate::OVRSimpleJSON::JSONObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (aKey))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (aKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item_i32_1(
         &mut self,
         aIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -497,60 +481,51 @@ impl crate::OVRSimpleJSON::JSONObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (aIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (aIndex))? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_Tag(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::OVRSimpleJSON::JSONNodeType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_Tag(&mut self) -> quest_hook::libil2cpp::Result<crate::OVRSimpleJSON::JSONNodeType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::OVRSimpleJSON::JSONNodeType,
-                        0usize,
-                    >("get_Tag")
+                    .find_method::<(), crate::OVRSimpleJSON::JSONNodeType, 0usize>("get_Tag")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_Tag",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Tag",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: crate::OVRSimpleJSON::JSONNodeType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::OVRSimpleJSON::JSONNodeType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Inline(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_Inline")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_Inline")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_Inline", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Inline",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Item_Il2CppString0(
@@ -558,31 +533,26 @@ impl crate::OVRSimpleJSON::JSONObject {
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_Item")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("set_Item")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_Item", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Item",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (aKey, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (aKey, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Item_i32_1(
@@ -590,26 +560,26 @@ impl crate::OVRSimpleJSON::JSONObject {
         aIndex: i32,
         value: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_Item")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("set_Item")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_Item", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Item",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (aIndex, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (aIndex, value))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -21,7 +21,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SpriteLightW
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "SpriteLightWithId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,14 +50,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SpriteLightWithId {
 #[cfg(feature = "SpriteLightWithId")]
 impl crate::GlobalNamespace::SpriteLightWithId {
     #[cfg(feature = "SpriteLightWithId+MultiplyColorByAlphaType")]
-    pub type MultiplyColorByAlphaType = crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType;
+    pub type MultiplyColorByAlphaType =
+        crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType;
     pub fn ColorWasSet(
         &mut self,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
@@ -71,58 +74,55 @@ impl crate::GlobalNamespace::SpriteLightWithId {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (color))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (color))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_color(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_color(&mut self) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::UnityEngine::Color, 0usize>("get_color")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_color", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_color",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Color =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -136,8 +136,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SpriteLightWi
     }
 }
 #[cfg(feature = "cordl_class_SpriteLightWithId+MultiplyColorByAlphaType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum SpriteLightWithId_MultiplyColorByAlphaType {
     #[default]
     AfterApplyingMinAlpha = 2i32,
@@ -146,7 +146,8 @@ pub enum SpriteLightWithId_MultiplyColorByAlphaType {
 }
 #[cfg(feature = "cordl_class_SpriteLightWithId+MultiplyColorByAlphaType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
+    for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -165,18 +166,16 @@ for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_SpriteLightWithId+MultiplyColorByAlphaType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
+    for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -187,7 +186,8 @@ for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
 }
 #[cfg(feature = "cordl_class_SpriteLightWithId+MultiplyColorByAlphaType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
+    for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -201,22 +201,22 @@ for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
 }
 #[cfg(feature = "cordl_class_SpriteLightWithId+MultiplyColorByAlphaType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
+    for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_SpriteLightWithId+MultiplyColorByAlphaType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
+    for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

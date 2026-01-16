@@ -1,25 +1,21 @@
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultVerifierCalculator"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultVerifierCalculator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultVerifierCalculator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mSignerSink: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IO::SignerSink,
-    >,
+    pub mSignerSink: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IO::SignerSink>,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultVerifierCalculator"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultVerifierCalculator")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
+    for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Operators";
     const CLASS_NAME: &'static str = "DefaultVerifierCalculator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,16 +28,14 @@ for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultVerifierCalculator")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultVerifierCalculator")]
-impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
+impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -50,12 +44,12 @@ for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
 impl crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
     pub fn GetResult(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -70,16 +64,15 @@ impl crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         signer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (signer))?;
         Ok(__cordl_object.into())
@@ -88,9 +81,10 @@ impl crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
         &mut self,
         signer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -107,19 +101,17 @@ impl crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (signer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (signer))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Stream(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IO::Stream>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -134,17 +126,15 @@ impl crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultVerifierCalculator"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultVerifierCalculator")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
+    for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -154,14 +144,16 @@ for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultVerifierCalculator")]
 impl AsRef<crate::Org::BouncyCastle::Crypto::IStreamCalculator>
-for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
+    for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator
+{
     fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IStreamCalculator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultVerifierCalculator")]
 impl AsMut<crate::Org::BouncyCastle::Crypto::IStreamCalculator>
-for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
+    for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator
+{
     fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IStreamCalculator {
         unsafe { std::mem::transmute(self) }
     }

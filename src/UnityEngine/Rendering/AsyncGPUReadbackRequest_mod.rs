@@ -1,13 +1,12 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AsyncGPUReadbackRequest")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct AsyncGPUReadbackRequest {
     pub m_Ptr: crate::System::IntPtr,
     pub m_Version: i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AsyncGPUReadbackRequest")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -26,18 +25,16 @@ for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AsyncGPUReadbackRequest")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
+    for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -48,7 +45,8 @@ for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AsyncGPUReadbackRequest")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
+    for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -62,22 +60,22 @@ for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AsyncGPUReadbackRequest")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
+    for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AsyncGPUReadbackRequest")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
+    for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -91,7 +89,8 @@ for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AsyncGPUReadbackRequest")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
+    for crate::UnityEngine::Rendering::AsyncGPUReadbackRequest
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -107,64 +106,67 @@ impl crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
         layer: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        crate::Unity::Collections::NativeArray_1<T>,
-                        1usize,
-                    >("GetData")
+                    .find_method::<(i32), crate::Unity::Collections::NativeArray_1<T>, 1usize>(
+                        "GetData",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetData",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetData",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::NativeArray_1<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (layer))?
-        };
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<T> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (layer))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDataRaw(
         &mut self,
         layer: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), crate::System::IntPtr, 1usize>("GetDataRaw")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetDataRaw", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetDataRaw",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::IntPtr = unsafe {
-            cordl_method_info.invoke_unchecked(self, (layer))?
-        };
+        let __cordl_ret: crate::System::IntPtr =
+            unsafe { cordl_method_info.invoke_unchecked(self, (layer))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLayerCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetLayerCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLayerCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLayerCount",
+                            0usize
                         )
                     })
             });
@@ -172,16 +174,18 @@ impl crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
         Ok(__cordl_ret.into())
     }
     pub fn GetLayerDataSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetLayerDataSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLayerDataSize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLayerDataSize",
+                            0usize
                         )
                     })
             });
@@ -189,16 +193,18 @@ impl crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
         Ok(__cordl_ret.into())
     }
     pub fn HasError(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("HasError")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HasError", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HasError",
+                            0usize
                         )
                     })
             });
@@ -207,51 +213,48 @@ impl crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
     }
     pub fn InvokeCallback(
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::Rendering::AsyncGPUReadbackRequest,
-            >,
+            crate::System::Action_1<crate::UnityEngine::Rendering::AsyncGPUReadbackRequest>,
         >,
         obj: crate::UnityEngine::Rendering::AsyncGPUReadbackRequest,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    crate::UnityEngine::Rendering::AsyncGPUReadbackRequest,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                crate::UnityEngine::Rendering::AsyncGPUReadbackRequest,
                             >,
-                            crate::UnityEngine::Rendering::AsyncGPUReadbackRequest,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("InvokeCallback")
+                        >,
+                        crate::UnityEngine::Rendering::AsyncGPUReadbackRequest,
+                    ), quest_hook::libil2cpp::Void, 2usize>("InvokeCallback")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InvokeCallback", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InvokeCallback",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (callback, obj))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (callback, obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsDone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsDone")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsDone",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsDone",
                             0usize
                         )
                     })
@@ -262,73 +265,69 @@ impl crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
     pub fn SetScriptingCallback(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::Rendering::AsyncGPUReadbackRequest,
-            >,
+            crate::System::Action_1<crate::UnityEngine::Rendering::AsyncGPUReadbackRequest>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::UnityEngine::Rendering::AsyncGPUReadbackRequest,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetScriptingCallback")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            crate::UnityEngine::Rendering::AsyncGPUReadbackRequest,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "SetScriptingCallback"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetScriptingCallback", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetScriptingCallback",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (callback))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (callback))? };
         Ok(__cordl_ret.into())
     }
     pub fn WaitForCompletion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("WaitForCompletion")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("WaitForCompletion")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WaitForCompletion", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WaitForCompletion",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_done(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_done")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_done", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_done",
+                            0usize
                         )
                     })
             });
@@ -336,16 +335,18 @@ impl crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
         Ok(__cordl_ret.into())
     }
     pub fn get_hasError(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasError")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_hasError", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_hasError",
+                            0usize
                         )
                     })
             });
@@ -353,16 +354,18 @@ impl crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
         Ok(__cordl_ret.into())
     }
     pub fn get_layerCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_layerCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_layerCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_layerCount",
+                            0usize
                         )
                     })
             });
@@ -370,16 +373,18 @@ impl crate::UnityEngine::Rendering::AsyncGPUReadbackRequest {
         Ok(__cordl_ret.into())
     }
     pub fn get_layerDataSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_layerDataSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_layerDataSize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_layerDataSize",
+                            0usize
                         )
                     })
             });

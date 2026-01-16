@@ -6,14 +6,14 @@ pub struct RenderPipeline {
     pub _disposed_k__BackingField: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderPipeline")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::RenderPipeline {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::RenderPipeline {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "RenderPipeline";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,29 +46,28 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Rendering::ScriptableRenderContext,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("BeginCameraRendering")
+                    .find_static_method::<(
+                        crate::UnityEngine::Rendering::ScriptableRenderContext,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "BeginCameraRendering"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginCameraRendering", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginCameraRendering",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (context, camera))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (context, camera))? };
         Ok(__cordl_ret.into())
     }
     pub fn BeginContextRendering(
@@ -79,109 +78,101 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Rendering::ScriptableRenderContext,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                                >,
+                    .find_static_method::<(
+                        crate::UnityEngine::Rendering::ScriptableRenderContext,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("BeginContextRendering")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "BeginContextRendering"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginContextRendering", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginContextRendering",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (context, cameras))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (context, cameras))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose_0(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
         disposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Dispose")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (disposing))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (disposing))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndCameraRendering(
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Rendering::ScriptableRenderContext,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("EndCameraRendering")
+                    .find_static_method::<(
+                        crate::UnityEngine::Rendering::ScriptableRenderContext,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("EndCameraRendering")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EndCameraRendering", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EndCameraRendering",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (context, camera))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (context, camera))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndContextRendering(
@@ -192,33 +183,32 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Rendering::ScriptableRenderContext,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                                >,
+                    .find_static_method::<(
+                        crate::UnityEngine::Rendering::ScriptableRenderContext,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("EndContextRendering")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "EndContextRendering"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EndContextRendering", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EndContextRendering",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (context, cameras))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (context, cameras))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalProcessRenderRequests<RequestData>(
@@ -228,33 +218,33 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         renderRequest: RequestData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        RequestData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        RequestData: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Rendering::ScriptableRenderContext,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            RequestData,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("InternalProcessRenderRequests")
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::ScriptableRenderContext,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        RequestData,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "InternalProcessRenderRequests"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InternalProcessRenderRequests", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InternalProcessRenderRequests",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context, camera, renderRequest))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context, camera, renderRequest))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalRender(
@@ -266,33 +256,30 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Rendering::ScriptableRenderContext,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                                >,
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::ScriptableRenderContext,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("InternalRender")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("InternalRender")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InternalRender", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InternalRender",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context, cameras))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context, cameras))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsRenderRequestSupported<RequestData>(
@@ -301,37 +288,35 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         data: RequestData,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        RequestData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        RequestData: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            RequestData,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsRenderRequestSupported")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        RequestData,
+                    ), bool, 2usize>("IsRenderRequestSupported")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsRenderRequestSupported", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsRenderRequestSupported",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (camera, data))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (camera, data))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -343,33 +328,33 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         renderRequest: RequestData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        RequestData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        RequestData: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Rendering::ScriptableRenderContext,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            RequestData,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("ProcessRenderRequests")
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::ScriptableRenderContext,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        RequestData,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "ProcessRenderRequests"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessRenderRequests", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessRenderRequests",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context, camera, renderRequest))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context, camera, renderRequest))? };
         Ok(__cordl_ret.into())
     }
     pub fn Render_Il2CppArray0(
@@ -381,33 +366,30 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Rendering::ScriptableRenderContext,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                                >,
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::ScriptableRenderContext,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Render")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Render")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Render",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Render",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context, cameras))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context, cameras))? };
         Ok(__cordl_ret.into())
     }
     pub fn Render_List_1_1(
@@ -419,79 +401,71 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Rendering::ScriptableRenderContext,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                                >,
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::ScriptableRenderContext,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Render")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Render")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Render",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Render",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context, cameras))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context, cameras))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_defaultSettings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::RenderPipelineGlobalSettings,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RenderPipelineGlobalSettings>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::RenderPipelineGlobalSettings,
-                        >,
-                        0usize,
-                    >("get_defaultSettings")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Rendering::RenderPipelineGlobalSettings,
+                    >, 0usize>("get_defaultSettings")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_defaultSettings", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_defaultSettings",
+                            0usize
                         )
                     })
             });
@@ -501,16 +475,18 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         Ok(__cordl_ret.into())
     }
     pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_disposed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_disposed", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_disposed",
+                            0usize
                         )
                     })
             });
@@ -521,32 +497,28 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_disposed")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_disposed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_disposed", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_disposed",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderPipeline")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::RenderPipeline {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::RenderPipeline {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -566,13 +538,15 @@ pub struct RenderPipeline_StandardRequest {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderPipeline+StandardRequest")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::RenderPipeline_StandardRequest {
+    for crate::UnityEngine::Rendering::RenderPipeline_StandardRequest
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "RenderPipeline/StandardRequest";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -592,8 +566,7 @@ impl std::ops::Deref for crate::UnityEngine::Rendering::RenderPipeline_StandardR
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderPipeline+StandardRequest")]
-impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::RenderPipeline_StandardRequest {
+impl std::ops::DerefMut for crate::UnityEngine::Rendering::RenderPipeline_StandardRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -602,7 +575,8 @@ for crate::UnityEngine::Rendering::RenderPipeline_StandardRequest {
 impl crate::UnityEngine::Rendering::RenderPipeline_StandardRequest {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderPipeline+StandardRequest")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::RenderPipeline_StandardRequest {
+    for crate::UnityEngine::Rendering::RenderPipeline_StandardRequest
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

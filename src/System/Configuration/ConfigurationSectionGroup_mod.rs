@@ -6,13 +6,15 @@ pub struct ConfigurationSectionGroup {
 }
 #[cfg(feature = "cordl_class_System+Configuration+ConfigurationSectionGroup")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Configuration::ConfigurationSectionGroup {
+    for crate::System::Configuration::ConfigurationSectionGroup
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Configuration";
     const CLASS_NAME: &'static str = "ConfigurationSectionGroup";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,8 +42,7 @@ impl std::ops::DerefMut for crate::System::Configuration::ConfigurationSectionGr
 #[cfg(feature = "System+Configuration+ConfigurationSectionGroup")]
 impl crate::System::Configuration::ConfigurationSectionGroup {}
 #[cfg(feature = "cordl_class_System+Configuration+ConfigurationSectionGroup")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Configuration::ConfigurationSectionGroup {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Configuration::ConfigurationSectionGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

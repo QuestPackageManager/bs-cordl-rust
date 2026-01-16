@@ -1,12 +1,10 @@
 #[cfg(feature = "cordl_class_LufsMetering+LoudnessData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LoudnessData {
     pub lufs: f32,
     pub blockDuration: f32,
-    pub momentaryValues: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<f32>,
-    >,
+    pub momentaryValues: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
 }
 #[cfg(feature = "cordl_class_LufsMetering+LoudnessData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::LoudnessData {
@@ -28,13 +26,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::LoudnessData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_LufsMetering+LoudnessData")]
@@ -68,9 +63,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LufsMetering::LoudnessDat
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -102,37 +95,30 @@ impl crate::LufsMetering::LoudnessData {
     pub fn _ctor(
         &mut self,
         lufs: f32,
-        momentaryValues: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<f32>,
-        >,
+        momentaryValues: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         blockDuration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<f32>,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (lufs, momentaryValues, blockDuration))?
+            cordl_method_info.invoke_unchecked(self, (lufs, momentaryValues, blockDuration))?
         };
         Ok(__cordl_ret.into())
     }

@@ -5,14 +5,14 @@ pub struct JitHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+JitHelpers")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::CompilerServices::JitHelpers {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Runtime::CompilerServices::JitHelpers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.CompilerServices";
     const CLASS_NAME: &'static str = "JitHelpers";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,12 +43,14 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -68,19 +70,22 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
     }
     pub fn UnsafeEnumCast<T>(val: T) -> quest_hook::libil2cpp::Result<i32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(T), i32, 1usize>("UnsafeEnumCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnsafeEnumCast", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnsafeEnumCast",
+                            1usize
                         )
                     })
             });
@@ -89,19 +94,22 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
     }
     pub fn UnsafeEnumCastLong<T>(val: T) -> quest_hook::libil2cpp::Result<i64>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(T), i64, 1usize>("UnsafeEnumCastLong")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnsafeEnumCastLong", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnsafeEnumCastLong",
+                            1usize
                         )
                     })
             });
@@ -110,8 +118,7 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
     }
 }
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+JitHelpers")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::CompilerServices::JitHelpers {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::CompilerServices::JitHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

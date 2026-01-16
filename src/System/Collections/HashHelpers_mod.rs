@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::HashHelp
     const NAMESPACE: &'static str = "System.Collections";
     const CLASS_NAME: &'static str = "HashHelpers";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,35 +40,37 @@ impl std::ops::DerefMut for crate::System::Collections::HashHelpers {
 #[cfg(feature = "System+Collections+HashHelpers")]
 impl crate::System::Collections::HashHelpers {
     pub fn ExpandPrime(oldSize: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("ExpandPrime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExpandPrime", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExpandPrime",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (oldSize))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (oldSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPrime(min: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("GetPrime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPrime", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPrime",
+                            1usize
                         )
                     })
             });
@@ -75,66 +78,58 @@ impl crate::System::Collections::HashHelpers {
         Ok(__cordl_ret.into())
     }
     pub fn IsPrime(candidate: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), bool, 1usize>("IsPrime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsPrime",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsPrime",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (candidate))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (candidate))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_SerializationInfoTable() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Runtime::Serialization::SerializationInfo,
-                >,
+                quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::SerializationInfo>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Runtime::Serialization::SerializationInfo,
-                                >,
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Runtime::Serialization::SerializationInfo,
                             >,
                         >,
-                        0usize,
-                    >("get_SerializationInfoTable")
+                    >, 0usize>("get_SerializationInfoTable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_SerializationInfoTable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_SerializationInfoTable",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Runtime::Serialization::SerializationInfo,
-                >,
+                quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::SerializationInfo>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

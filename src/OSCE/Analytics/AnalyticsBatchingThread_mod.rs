@@ -6,9 +6,7 @@ pub struct AnalyticsBatchingThread {
     pub _lock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _batchingThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
     pub _manager: quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::AnalyticsManager>,
-    pub _batchSendWaitEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::AutoResetEvent,
-    >,
+    pub _batchSendWaitEvent: quest_hook::libil2cpp::Gc<crate::System::Threading::AutoResetEvent>,
     pub _newBatchesToSend: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Queue_1<
             quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::LoggerAnalyticsBatch>,
@@ -29,14 +27,14 @@ pub struct AnalyticsBatchingThread {
     pub _isThreadActive: bool,
 }
 #[cfg(feature = "cordl_class_OSCE+Analytics+AnalyticsBatchingThread")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::OSCE::Analytics::AnalyticsBatchingThread {
+unsafe impl quest_hook::libil2cpp::Type for crate::OSCE::Analytics::AnalyticsBatchingThread {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OSCE.Analytics";
     const CLASS_NAME: &'static str = "AnalyticsBatchingThread";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -63,38 +61,36 @@ impl std::ops::DerefMut for crate::OSCE::Analytics::AnalyticsBatchingThread {
 }
 #[cfg(feature = "OSCE+Analytics+AnalyticsBatchingThread")]
 impl crate::OSCE::Analytics::AnalyticsBatchingThread {
-    pub fn BatchSent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn BatchSent(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("BatchSent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BatchSent", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BatchSent",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CollectThreadedMessagesIntoBatch(
         &mut self,
-        batchToSend: quest_hook::libil2cpp::Gc<
-            crate::OSCE::Analytics::LoggerAnalyticsBatch,
-        >,
+        batchToSend: quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::LoggerAnalyticsBatch>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::LoggerAnalyticsBatch>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -113,9 +109,8 @@ impl crate::OSCE::Analytics::AnalyticsBatchingThread {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::OSCE::Analytics::LoggerAnalyticsBatch,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (batchToSend))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::LoggerAnalyticsBatch> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (batchToSend))? };
         Ok(__cordl_ret.into())
     }
     pub fn FlushToSingleBatch(
@@ -124,9 +119,10 @@ impl crate::OSCE::Analytics::AnalyticsBatchingThread {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::LoggerAnalyticsBatch>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -145,22 +141,23 @@ impl crate::OSCE::Analytics::AnalyticsBatchingThread {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::OSCE::Analytics::LoggerAnalyticsBatch,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (batch))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::LoggerAnalyticsBatch> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (batch))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetActiveSends(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetActiveSends")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetActiveSends", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetActiveSends",
+                            0usize
                         )
                     })
             });
@@ -168,16 +165,18 @@ impl crate::OSCE::Analytics::AnalyticsBatchingThread {
         Ok(__cordl_ret.into())
     }
     pub fn IsBatchQueueEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsBatchQueueEmpty")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsBatchQueueEmpty", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsBatchQueueEmpty",
+                            0usize
                         )
                     })
             });
@@ -187,8 +186,8 @@ impl crate::OSCE::Analytics::AnalyticsBatchingThread {
     pub fn New(
         manager: quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::AnalyticsManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (manager))?;
         Ok(__cordl_object.into())
@@ -196,35 +195,33 @@ impl crate::OSCE::Analytics::AnalyticsBatchingThread {
     pub fn OnBatchAttempted(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("OnBatchAttempted")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnBatchAttempted")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnBatchAttempted", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnBatchAttempted",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn QueueBatch(
         &mut self,
         batch: quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::LoggerAnalyticsBatch>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -241,18 +238,18 @@ impl crate::OSCE::Analytics::AnalyticsBatchingThread {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (batch))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (batch))? };
         Ok(__cordl_ret.into())
     }
     pub fn QueueThreadedMessage(
         &mut self,
         newEvent: quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::BaseAnalyticsEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -269,148 +266,133 @@ impl crate::OSCE::Analytics::AnalyticsBatchingThread {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (newEvent))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (newEvent))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendBatchFromThread(
         &mut self,
-        batchToSend: quest_hook::libil2cpp::Gc<
-            crate::OSCE::Analytics::LoggerAnalyticsBatch,
-        >,
+        batchToSend: quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::LoggerAnalyticsBatch>,
         shouldFlush: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::OSCE::Analytics::LoggerAnalyticsBatch,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SendBatchFromThread")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::LoggerAnalyticsBatch>,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "SendBatchFromThread"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendBatchFromThread", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendBatchFromThread",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (batchToSend, shouldFlush))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (batchToSend, shouldFlush))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Shutdown(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Shutdown(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Shutdown")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Shutdown", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Shutdown",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ThreadedBatchSender(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ThreadedBatchSender")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ThreadedBatchSender")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ThreadedBatchSender", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ThreadedBatchSender",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn TriggerAsyncSend(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("TriggerAsyncSend")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("TriggerAsyncSend")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TriggerAsyncSend", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TriggerAsyncSend",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn TriggerImmediateSend(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("TriggerImmediateSend")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("TriggerImmediateSend")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TriggerImmediateSend", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TriggerImmediateSend",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         manager: quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::AnalyticsManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -427,22 +409,23 @@ impl crate::OSCE::Analytics::AnalyticsBatchingThread {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (manager))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (manager))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_TimeOfLastSend(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_TimeOfLastSend")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_TimeOfLastSend", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_TimeOfLastSend",
+                            0usize
                         )
                     })
             });
@@ -451,8 +434,7 @@ impl crate::OSCE::Analytics::AnalyticsBatchingThread {
     }
 }
 #[cfg(feature = "cordl_class_OSCE+Analytics+AnalyticsBatchingThread")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::OSCE::Analytics::AnalyticsBatchingThread {
+impl quest_hook::libil2cpp::ObjectType for crate::OSCE::Analytics::AnalyticsBatchingThread {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

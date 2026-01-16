@@ -3,22 +3,21 @@
 #[derive(Debug)]
 pub struct ExtendedPropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
-    pub _extenderInfo: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::ReflectPropertyDescriptor,
-    >,
-    pub _provider: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::IExtenderProvider,
-    >,
+    pub _extenderInfo:
+        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ReflectPropertyDescriptor>,
+    pub _provider: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IExtenderProvider>,
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+ExtendedPropertyDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::ComponentModel::ExtendedPropertyDescriptor {
+    for crate::System::ComponentModel::ExtendedPropertyDescriptor
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
     const CLASS_NAME: &'static str = "ExtendedPropertyDescriptor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,9 +48,10 @@ impl crate::System::ComponentModel::ExtendedPropertyDescriptor {
         &mut self,
         comp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -66,20 +66,18 @@ impl crate::System::ComponentModel::ExtendedPropertyDescriptor {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (comp))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (comp))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValue(
         &mut self,
         comp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -94,9 +92,8 @@ impl crate::System::ComponentModel::ExtendedPropertyDescriptor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (comp))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (comp))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -104,17 +101,13 @@ impl crate::System::ComponentModel::ExtendedPropertyDescriptor {
             crate::System::ComponentModel::ReflectPropertyDescriptor,
         >,
         receiverType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        provider: quest_hook::libil2cpp::Gc<
-            crate::System::ComponentModel::IExtenderProvider,
-        >,
+        provider: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IExtenderProvider>,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<crate::System::Attribute>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (extenderInfo, receiverType, provider, attributes))?;
         Ok(__cordl_object.into())
@@ -123,9 +116,10 @@ impl crate::System::ComponentModel::ExtendedPropertyDescriptor {
         &mut self,
         comp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -140,9 +134,8 @@ impl crate::System::ComponentModel::ExtendedPropertyDescriptor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (comp))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (comp))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetValue(
@@ -150,42 +143,36 @@ impl crate::System::ComponentModel::ExtendedPropertyDescriptor {
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetValue")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SetValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetValue", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetValue",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (component, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (component, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldSerializeValue(
         &mut self,
         comp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -200,9 +187,7 @@ impl crate::System::ComponentModel::ExtendedPropertyDescriptor {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (comp))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (comp))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -211,87 +196,75 @@ impl crate::System::ComponentModel::ExtendedPropertyDescriptor {
             crate::System::ComponentModel::ReflectPropertyDescriptor,
         >,
         receiverType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        provider: quest_hook::libil2cpp::Gc<
-            crate::System::ComponentModel::IExtenderProvider,
-        >,
+        provider: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IExtenderProvider>,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<crate::System::Attribute>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::ComponentModel::ReflectPropertyDescriptor,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::ComponentModel::ReflectPropertyDescriptor,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IExtenderProvider>,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::ComponentModel::IExtenderProvider,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (extenderInfo, receiverType, provider, attributes),
-                )?
+                .invoke_unchecked(self, (extenderInfo, receiverType, provider, attributes))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_ComponentType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        0usize,
-                    >("get_ComponentType")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<crate::System::Type>, 0usize>(
+                        "get_ComponentType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ComponentType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ComponentType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_DisplayName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -306,22 +279,23 @@ impl crate::System::ComponentModel::ExtendedPropertyDescriptor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsReadOnly")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsReadOnly", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsReadOnly",
+                            0usize
                         )
                     })
             });
@@ -331,32 +305,32 @@ impl crate::System::ComponentModel::ExtendedPropertyDescriptor {
     pub fn get_PropertyType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        0usize,
-                    >("get_PropertyType")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<crate::System::Type>, 0usize>(
+                        "get_PropertyType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_PropertyType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_PropertyType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+ExtendedPropertyDescriptor")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::ComponentModel::ExtendedPropertyDescriptor {
+    for crate::System::ComponentModel::ExtendedPropertyDescriptor
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -5,14 +5,14 @@ pub struct _cordl_Assert {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Assertions+Assert")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Assertions::_cordl_Assert {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Assertions::_cordl_Assert {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Assertions";
     const CLASS_NAME: &'static str = "Assert";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,32 +44,27 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
         actual: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("AreEqual")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("AreEqual")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AreEqual", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AreEqual",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (expected, actual, message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (expected, actual, message))? };
         Ok(__cordl_ret.into())
     }
     pub fn AreEqual_T_T0<T>(
@@ -77,29 +72,27 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
         actual: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (T, T),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("AreEqual")
+                    .find_static_method::<(T, T), quest_hook::libil2cpp::Void, 2usize>("AreEqual")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AreEqual", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AreEqual",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (expected, actual))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (expected, actual))? };
         Ok(__cordl_ret.into())
     }
     pub fn AreEqual_T_T_Il2CppString1<T>(
@@ -108,35 +101,31 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            T,
-                            T,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("AreEqual")
+                    .find_static_method::<(
+                        T,
+                        T,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("AreEqual")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AreEqual", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AreEqual",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (expected, actual, message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (expected, actual, message))? };
         Ok(__cordl_ret.into())
     }
     pub fn AreEqual_T_T_Il2CppString_IEqualityComparer_1_2<T>(
@@ -148,38 +137,34 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            T,
-                            T,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEqualityComparer_1<T>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("AreEqual")
+                    .find_static_method::<(
+                        T,
+                        T,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEqualityComparer_1<T>,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>("AreEqual")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AreEqual", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AreEqual",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (expected, actual, message, comparer))?
+            cordl_method_info.invoke_unchecked((), (expected, actual, message, comparer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -187,175 +172,150 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
         expected: i32,
         actual: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("AreEqual")
+                    .find_static_method::<(i32, i32), quest_hook::libil2cpp::Void, 2usize>(
+                        "AreEqual",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AreEqual", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AreEqual",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (expected, actual))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (expected, actual))? };
         Ok(__cordl_ret.into())
     }
     pub fn Fail(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Fail")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Fail")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Fail",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Fail",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (message, userMessage))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (message, userMessage))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsFalse_Il2CppString1(
         condition: bool,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IsFalse")
+                    .find_static_method::<(
+                        bool,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IsFalse")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsFalse",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsFalse",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (condition, message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (condition, message))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsFalse__cordl_bool0(
         condition: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("IsFalse")
+                    .find_static_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("IsFalse")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsFalse",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsFalse",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (condition))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (condition))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNotNull_Object_Il2CppString2(
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IsNotNull")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IsNotNull")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsNotNull", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsNotNull",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (value, message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (value, message))? };
         Ok(__cordl_ret.into())
     }
-    pub fn IsNotNull_T0<T>(
-        value: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn IsNotNull_T0<T>(value: T) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (T),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("IsNotNull")
+                    .find_static_method::<(T), quest_hook::libil2cpp::Void, 1usize>("IsNotNull")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsNotNull", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsNotNull",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNotNull_T_Il2CppString1<T>(
@@ -363,94 +323,81 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            T,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IsNotNull")
+                    .find_static_method::<(
+                        T,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IsNotNull")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsNotNull", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsNotNull",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (value, message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (value, message))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNull_Object_Il2CppString2(
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IsNull")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IsNull")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsNull",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsNull",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (value, message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (value, message))? };
         Ok(__cordl_ret.into())
     }
-    pub fn IsNull_T0<T>(
-        value: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn IsNull_T0<T>(value: T) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (T),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("IsNull")
+                    .find_static_method::<(T), quest_hook::libil2cpp::Void, 1usize>("IsNull")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsNull",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsNull",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNull_T_Il2CppString1<T>(
@@ -458,96 +405,83 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            T,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IsNull")
+                    .find_static_method::<(
+                        T,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IsNull")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsNull",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsNull",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (value, message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (value, message))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsTrue_Il2CppString1(
         condition: bool,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IsTrue")
+                    .find_static_method::<(
+                        bool,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IsTrue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsTrue",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsTrue",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (condition, message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (condition, message))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsTrue__cordl_bool0(
         condition: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("IsTrue")
+                    .find_static_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("IsTrue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsTrue",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsTrue",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (condition))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (condition))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Assertions+Assert")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Assertions::_cordl_Assert {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Assertions::_cordl_Assert {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -15,21 +15,16 @@ pub struct GameLiftPlayerSessionProvider {
             quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::UdpClient>,
         >,
     >,
-    pub _networkConfig: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::INetworkConfig,
-    >,
-    pub _graphAPIClient: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GraphAPIClient,
-    >,
+    pub _networkConfig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>,
+    pub _graphAPIClient: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GraphAPIClient>,
     pub _pingAverages: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RollingAverage>,
         >,
     >,
-    pub _multiplayerStatusModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerStatusModel,
-    >,
+    pub _multiplayerStatusModel:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerStatusModel>,
     pub _disposeInitiated: bool,
     pub _pingCount: i32,
     pub _lastPingTime: i64,
@@ -38,13 +33,15 @@ pub struct GameLiftPlayerSessionProvider {
 }
 #[cfg(feature = "cordl_class_BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
+    for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BGNet.Core.GameLift";
     const CLASS_NAME: &'static str = "GameLiftPlayerSessionProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -72,32 +69,32 @@ impl std::ops::DerefMut for crate::BGNet::Core::GameLift::GameLiftPlayerSessionP
 #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
 impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     pub const kCancelMatchmakingRequestTimeoutSeconds: i32 = 5i32;
-    pub const kCancelMatchmakingTicketPath: &'static str = "beat_saber_multiplayer_cancel_matchmaking_ticket";
+    pub const kCancelMatchmakingTicketPath: &'static str =
+        "beat_saber_multiplayer_cancel_matchmaking_ticket";
     pub const kGameLiftUdpPingBeaconEndpointPort: i32 = 7770i32;
     pub const kGameLiftUdpPingBeaconMessage: &'static str = "Ping";
     pub const kGetMatchmakingInstancePath: &'static str = "beat_saber_get_multiplayer_instance";
     pub const kMatchmakingTimeoutMs: i32 = 120000i32;
     pub const kMaxPingCount: i32 = 10i32;
     pub const kPingFrequencyMs: i32 = 3000i32;
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAverageLatencies(
@@ -110,27 +107,23 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                i64,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                            i64,
                         >,
-                        0usize,
-                    >("GetAverageLatencies")
+                    >, 0usize>("GetAverageLatencies")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetAverageLatencies", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetAverageLatencies",
+                            0usize
                         )
                     })
             });
@@ -144,12 +137,12 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     }
     pub fn GetAwsGameLiftRegionEndpoint(
         awsRegion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -164,9 +157,8 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (awsRegion))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (awsRegion))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGameLiftPlayerSessionInfo(
@@ -183,82 +175,69 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BGNet::Core::GameLift::PlayerSessionInfo,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BGNet::Core::GameLift::PlayerSessionInfo>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IAuthenticationTokenProvider,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::GlobalNamespace::BeatmapLevelSelectionMask,
-                            crate::GlobalNamespace::GameplayServerConfiguration,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::System::Threading::CancellationToken,
-                        ),
+                    .find_method::<(
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BGNet::Core::GameLift::PlayerSessionInfo,
-                                >,
+                            crate::GlobalNamespace::IAuthenticationTokenProvider,
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::GlobalNamespace::BeatmapLevelSelectionMask,
+                        crate::GlobalNamespace::GameplayServerConfiguration,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::System::Threading::CancellationToken,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::BGNet::Core::GameLift::PlayerSessionInfo,
                             >,
                         >,
-                        7usize,
-                    >("GetGameLiftPlayerSessionInfo")
+                    >, 7usize>("GetGameLiftPlayerSessionInfo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetGameLiftPlayerSessionInfo", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetGameLiftPlayerSessionInfo",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BGNet::Core::GameLift::PlayerSessionInfo,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BGNet::Core::GameLift::PlayerSessionInfo>,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        authenticationTokenProvider,
-                        userId,
-                        beatmapLevelSelectionMask,
-                        gameplayServerConfiguration,
-                        secret,
-                        code,
-                        cancellationToken,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    authenticationTokenProvider,
+                    userId,
+                    beatmapLevelSelectionMask,
+                    gameplayServerConfiguration,
+                    secret,
+                    code,
+                    cancellationToken,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetGameLiftUdpPingBeaconEndpoint(
         awsRegion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -273,9 +252,8 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (awsRegion))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (awsRegion))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMultiplayerStatusData(
@@ -283,9 +261,10 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -300,9 +279,8 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetXPlatformAccessToken(
@@ -319,30 +297,28 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IAuthenticationTokenProvider,
-                            >,
-                            crate::System::Threading::CancellationToken,
-                            bool,
-                        ),
+                    .find_method::<(
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::XPlatformAccessTokenData,
-                            >,
+                            crate::GlobalNamespace::IAuthenticationTokenProvider,
                         >,
-                        3usize,
-                    >("GetXPlatformAccessToken")
+                        crate::System::Threading::CancellationToken,
+                        bool,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            crate::GlobalNamespace::XPlatformAccessTokenData,
+                        >,
+                    >, 3usize>("GetXPlatformAccessToken")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetXPlatformAccessToken", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetXPlatformAccessToken",
+                            3usize
                         )
                     })
             });
@@ -351,11 +327,10 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
                 crate::GlobalNamespace::XPlatformAccessTokenData,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (authenticationTokenProvider, cancellationToken, skipCache),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (authenticationTokenProvider, cancellationToken, skipCache),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -365,8 +340,8 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
             crate::GlobalNamespace::IMultiplayerStatusModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (networkConfig, multiplayerStatusModel))?;
         Ok(__cordl_object.into())
@@ -374,52 +349,49 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     pub fn PingAllAwsGameLiftRegions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("PingAllAwsGameLiftRegions")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "PingAllAwsGameLiftRegions",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PingAllAwsGameLiftRegions", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PingAllAwsGameLiftRegions",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn PingAllAwsGameLiftRegionsUsingGameLiftUdpPingBeacons(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("PingAllAwsGameLiftRegionsUsingGameLiftUdpPingBeacons")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "PingAllAwsGameLiftRegionsUsingGameLiftUdpPingBeacons",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            <Self as quest_hook::libil2cpp::Type>::class(),
                             "PingAllAwsGameLiftRegionsUsingGameLiftUdpPingBeacons",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn PingRegionAsync(
@@ -435,9 +407,10 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -484,9 +457,10 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -520,25 +494,24 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (awsRegion))? };
         Ok(__cordl_ret.into())
     }
-    pub fn PollUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn PollUpdate(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("PollUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PollUpdate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PollUpdate",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _PingAllAwsGameLiftRegionsUsingGameLiftUdpPingBeacons_b__28_0(
@@ -554,9 +527,10 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -604,9 +578,10 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -647,40 +622,34 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
             crate::GlobalNamespace::IMultiplayerStatusModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::INetworkConfig,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMultiplayerStatusModel,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerStatusModel>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (networkConfig, multiplayerStatusModel))?
+            cordl_method_info.invoke_unchecked(self, (networkConfig, multiplayerStatusModel))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
+    for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -690,44 +659,48 @@ for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
 }
 #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
 impl AsRef<crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider>
-for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
+    for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider
+{
     fn as_ref(&self) -> &crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
 impl AsMut<crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider>
-for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
+    for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider
+{
+    fn as_mut(&mut self) -> &mut crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
 impl AsRef<crate::GlobalNamespace::IPollable>
-for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
+    for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
 impl AsMut<crate::GlobalNamespace::IPollable>
-for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
+    for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
 impl AsRef<crate::System::IDisposable>
-for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
+    for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
 impl AsMut<crate::System::IDisposable>
-for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
+    for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }

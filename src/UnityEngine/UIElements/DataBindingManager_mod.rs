@@ -10,12 +10,8 @@ pub struct DataBindingManager {
             >,
         >,
     >,
-    pub m_LogLevel: crate::System::Nullable_1<
-        crate::UnityEngine::UIElements::BindingLogLevel,
-    >,
-    pub m_Panel: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseVisualElementPanel,
-    >,
+    pub m_LogLevel: crate::System::Nullable_1<crate::UnityEngine::UIElements::BindingLogLevel>,
+    pub m_Panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseVisualElementPanel>,
     pub m_DataSourceTracker: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker,
     >,
@@ -29,14 +25,14 @@ pub struct DataBindingManager {
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::DataBindingManager {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::DataBindingManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "DataBindingManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -66,23 +62,25 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
     #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+BindingData")]
     pub type BindingData = crate::UnityEngine::UIElements::DataBindingManager_BindingData;
     #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+BindingDataCollection")]
-    pub type BindingDataCollection = crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection;
+    pub type BindingDataCollection =
+        crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection;
     #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+BindingRequest")]
     pub type BindingRequest = crate::UnityEngine::UIElements::DataBindingManager_BindingRequest;
     #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+ChangesFromUI")]
     pub type ChangesFromUI = crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI;
     #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+HierarchyBindingTracker")]
-    pub type HierarchyBindingTracker = crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker;
-    #[cfg(
-        feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker"
-    )]
-    pub type HierarchyDataSourceTracker = crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker;
+    pub type HierarchyBindingTracker =
+        crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker;
+    #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker")]
+    pub type HierarchyDataSourceTracker =
+        crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker;
     pub fn AnyPendingBindingRequests(
         element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -99,9 +97,7 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (element))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (element))? };
         Ok(__cordl_ret.into())
     }
     pub fn CacheSourceBindingResult(
@@ -111,31 +107,30 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
         >,
         result: crate::UnityEngine::UIElements::BindingResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                            >,
-                            crate::UnityEngine::UIElements::BindingResult,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CacheSourceBindingResult")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                        >,
+                        crate::UnityEngine::UIElements::BindingResult,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "CacheSourceBindingResult"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CacheSourceBindingResult", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CacheSourceBindingResult",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bindingData, result))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bindingData, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn CacheUIBindingResult(
@@ -145,40 +140,40 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
         >,
         result: crate::UnityEngine::UIElements::BindingResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                            >,
-                            crate::UnityEngine::UIElements::BindingResult,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CacheUIBindingResult")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                        >,
+                        crate::UnityEngine::UIElements::BindingResult,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "CacheUIBindingResult"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CacheUIBindingResult", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CacheUIBindingResult",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bindingData, result))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bindingData, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn ClearAllBindings(
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -195,18 +190,18 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element))? };
         Ok(__cordl_ret.into())
     }
     pub fn ClearChangesFromSource(
         &mut self,
         dataSource: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -221,119 +216,102 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (dataSource))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (dataSource))? };
         Ok(__cordl_ret.into())
     }
     pub fn ClearSourceCache(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ClearSourceCache")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearSourceCache")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ClearSourceCache", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ClearSourceCache",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateBindingRequest(
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        bindingId: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::BindingId,
-        >,
+        bindingId: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingId>,
         binding: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Binding>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BindingId,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::Binding,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CreateBindingRequest")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingId>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Binding>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "CreateBindingRequest"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateBindingRequest", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateBindingRequest",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (target, bindingId, binding))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (target, bindingId, binding))? };
         Ok(__cordl_ret.into())
     }
     pub fn DirtyBindingOrder(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("DirtyBindingOrder")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("DirtyBindingOrder")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DirtyBindingOrder", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DirtyBindingOrder",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindingData(
@@ -348,9 +326,10 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -391,26 +370,24 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
                             >,
                         >,
-                        0usize,
-                    >("GetBoundElements")
+                    >, 0usize>("GetBoundElements")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBoundElements", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBoundElements",
+                            0usize
                         )
                     })
             });
@@ -422,16 +399,18 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
         Ok(__cordl_ret.into())
     }
     pub fn GetBoundElementsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetBoundElementsCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBoundElementsCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBoundElementsCount",
+                            0usize
                         )
                     })
             });
@@ -443,14 +422,13 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
         dataSource: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                crate::Unity::Properties::PropertyPath,
-            >,
+            crate::System::Collections::Generic::HashSet_1<crate::Unity::Properties::PropertyPath>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -470,9 +448,7 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                crate::Unity::Properties::PropertyPath,
-            >,
+            crate::System::Collections::Generic::HashSet_1<crate::Unity::Properties::PropertyPath>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (dataSource))? };
         Ok(__cordl_ret.into())
     }
@@ -485,24 +461,22 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI,
                         >,
-                        0usize,
-                    >("GetChangedDetectedFromUI")
+                    >, 0usize>("GetChangedDetectedFromUI")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetChangedDetectedFromUI", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetChangedDetectedFromUI",
+                            0usize
                         )
                     })
             });
@@ -518,31 +492,25 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
         target: crate::UnityEngine::UIElements::BindingTarget,
         binding: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Binding>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DataBindingManager_BindingData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::BindingTarget,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::Binding,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                        >,
-                        2usize,
-                    >("GetPooledBindingData")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::BindingTarget,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Binding>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                    >, 2usize>("GetPooledBindingData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPooledBindingData", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPooledBindingData",
+                            2usize
                         )
                     })
             });
@@ -553,55 +521,50 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
     }
     pub fn GetResolvedDataSourceContext(
         &mut self,
-        element: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        >,
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         bindingData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::DataBindingManager_BindingData,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::DataSourceContext,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::DataSourceContext> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                            >,
-                        ),
-                        crate::UnityEngine::UIElements::DataSourceContext,
-                        2usize,
-                    >("GetResolvedDataSourceContext")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                        >,
+                    ), crate::UnityEngine::UIElements::DataSourceContext, 2usize>(
+                        "GetResolvedDataSourceContext",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetResolvedDataSourceContext", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetResolvedDataSourceContext",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::DataSourceContext = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element, bindingData))?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::DataSourceContext =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element, bindingData))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTrackedDataSourcesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetTrackedDataSourcesCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTrackedDataSourcesCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetTrackedDataSourcesCount",
+                            0usize
                         )
                     })
             });
@@ -621,51 +584,48 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::VisualElement,
-                                    >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualElement,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::VisualElement,
-                                    >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualElement,
                                 >,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("InvalidateCachedDataSource")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "InvalidateCachedDataSource"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InvalidateCachedDataSource", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InvalidateCachedDataSource",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (addedOrMovedElements, removedElements))?
+            cordl_method_info.invoke_unchecked(self, (addedOrMovedElements, removedElements))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        panel: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::BaseVisualElementPanel,
-        >,
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseVisualElementPanel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (panel))?;
         Ok(__cordl_object.into())
@@ -674,9 +634,10 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -693,51 +654,37 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element))? };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterBinding(
         &mut self,
-        element: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        >,
-        bindingId: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::BindingId,
-        >,
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        bindingId: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingId>,
         binding: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Binding>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BindingId,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::Binding,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("RegisterBinding")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingId>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Binding>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("RegisterBinding")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterBinding", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RegisterBinding",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element, bindingId, binding))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element, bindingId, binding))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReleasePoolBindingData(
@@ -746,53 +693,47 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
             crate::UnityEngine::UIElements::DataBindingManager_BindingData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("ReleasePoolBindingData")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "ReleasePoolBindingData"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReleasePoolBindingData", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReleasePoolBindingData",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (data))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (data))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ResetLogLevel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ResetLogLevel(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ResetLogLevel")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ResetLogLevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ResetLogLevel", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ResetLogLevel",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn TrackDataSource(
@@ -800,42 +741,36 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
         previous: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         current: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("TrackDataSource")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("TrackDataSource")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TrackDataSource", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TrackDataSource",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (previous, current))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (previous, current))? };
         Ok(__cordl_ret.into())
     }
     pub fn TransferBindingRequests(
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -852,102 +787,77 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetBindingData(
         &mut self,
-        element: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        >,
-        bindingId: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::BindingId,
-        >,
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        bindingId: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingId>,
         bindingData: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::UIElements::DataBindingManager_BindingData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingId>,
+                        quest_hook::libil2cpp::ByRefMut<
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
+                                crate::UnityEngine::UIElements::DataBindingManager_BindingData,
                             >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BindingId,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                                >,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("TryGetBindingData")
+                        >,
+                    ), bool, 3usize>("TryGetBindingData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetBindingData", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetBindingData",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element, bindingId, bindingData))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element, bindingId, bindingData))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetBindingRequest(
-        element: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        >,
-        bindingId: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::BindingId,
-        >,
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        bindingId: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingId>,
         binding: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Binding>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BindingId,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::Binding,
-                                >,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("TryGetBindingRequest")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingId>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Binding>,
+                        >,
+                    ), bool, 3usize>("TryGetBindingRequest")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetBindingRequest", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetBindingRequest",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (element, bindingId, binding))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (element, bindingId, binding))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetLastSourceBindingResult(
@@ -955,37 +865,32 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
         bindingData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::DataBindingManager_BindingData,
         >,
-        result: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::BindingResult,
-        >,
+        result: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingResult>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BindingResult,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetLastSourceBindingResult")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::BindingResult,
+                        >,
+                    ), bool, 2usize>("TryGetLastSourceBindingResult")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetLastSourceBindingResult", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetLastSourceBindingResult",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bindingData, result))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bindingData, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetLastUIBindingResult(
@@ -993,37 +898,32 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
         bindingData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::DataBindingManager_BindingData,
         >,
-        result: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::BindingResult,
-        >,
+        result: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingResult>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BindingResult,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetLastUIBindingResult")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::BindingResult,
+                        >,
+                    ), bool, 2usize>("TryGetLastUIBindingResult")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetLastUIBindingResult", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetLastUIBindingResult",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bindingData, result))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bindingData, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetLastVersion(
@@ -1031,69 +931,53 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         version: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i64>,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetLastVersion")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i64>,
+                    ), bool, 2usize>("TryGetLastVersion")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetLastVersion", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetLastVersion",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (source, version))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (source, version))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterBinding(
         &mut self,
-        element: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        >,
-        bindingId: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::BindingId,
-        >,
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        bindingId: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingId>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BindingId,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnregisterBinding")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingId>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnregisterBinding")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnregisterBinding", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnregisterBinding",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element, bindingId))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element, bindingId))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateVersion(
@@ -1101,95 +985,85 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         version: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateVersion")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i64,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UpdateVersion")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateVersion", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateVersion",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (source, version))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (source, version))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        panel: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::BaseVisualElementPanel,
-        >,
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseVisualElementPanel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::BaseVisualElementPanel,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::BaseVisualElementPanel,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (panel))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (panel))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_logLevel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::BindingLogLevel> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::UIElements::BindingLogLevel,
-                        0usize,
-                    >("get_logLevel")
+                    .find_method::<(), crate::UnityEngine::UIElements::BindingLogLevel, 0usize>(
+                        "get_logLevel",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_logLevel", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_logLevel",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::BindingLogLevel = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::BindingLogLevel =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_logLevel(
         &mut self,
         value: crate::UnityEngine::UIElements::BindingLogLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::BindingLogLevel),
@@ -1204,15 +1078,13 @@ impl crate::UnityEngine::UIElements::DataBindingManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::DataBindingManager {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::DataBindingManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1221,15 +1093,13 @@ for crate::UnityEngine::UIElements::DataBindingManager {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DataBindingManager")]
-impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::UIElements::DataBindingManager {
+impl AsRef<crate::System::IDisposable> for crate::UnityEngine::UIElements::DataBindingManager {
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DataBindingManager")]
-impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::UIElements::DataBindingManager {
+impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::DataBindingManager {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
@@ -1243,25 +1113,24 @@ pub struct DataBindingManager_BindingData {
     pub target: crate::UnityEngine::UIElements::BindingTarget,
     pub binding: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Binding>,
     pub m_LastContext: crate::UnityEngine::UIElements::DataSourceContext,
-    pub _localDataSource_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppObject,
-    >,
-    pub m_SourceToUILastUpdate: crate::System::Nullable_1<
-        crate::UnityEngine::UIElements::BindingResult,
-    >,
-    pub m_UIToSourceLastUpdate: crate::System::Nullable_1<
-        crate::UnityEngine::UIElements::BindingResult,
-    >,
+    pub _localDataSource_k__BackingField:
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_SourceToUILastUpdate:
+        crate::System::Nullable_1<crate::UnityEngine::UIElements::BindingResult>,
+    pub m_UIToSourceLastUpdate:
+        crate::System::Nullable_1<crate::UnityEngine::UIElements::BindingResult>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::DataBindingManager_BindingData {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "DataBindingManager/BindingData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1281,8 +1150,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::DataBindingManager_Bind
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+BindingData")]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::DataBindingManager_BindingData {
+impl std::ops::DerefMut for crate::UnityEngine::UIElements::DataBindingManager_BindingData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1290,62 +1158,60 @@ for crate::UnityEngine::UIElements::DataBindingManager_BindingData {
 #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+BindingData")]
 impl crate::UnityEngine::UIElements::DataBindingManager_BindingData {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reset",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_localDataSource(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1360,18 +1226,18 @@ impl crate::UnityEngine::UIElements::DataBindingManager_BindingData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_context(
         &mut self,
         value: crate::UnityEngine::UIElements::DataSourceContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::DataSourceContext),
@@ -1386,18 +1252,18 @@ impl crate::UnityEngine::UIElements::DataBindingManager_BindingData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_localDataSource(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -1412,15 +1278,15 @@ impl crate::UnityEngine::UIElements::DataBindingManager_BindingData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::DataBindingManager_BindingData {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1428,11 +1294,9 @@ for crate::UnityEngine::UIElements::DataBindingManager_BindingData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct DataBindingManager_BindingDataCollection {
     pub m_BindingPerId: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
@@ -1450,11 +1314,10 @@ pub struct DataBindingManager_BindingDataCollection {
         >,
     >,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -1473,20 +1336,16 @@ for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1495,11 +1354,10 @@ for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1511,28 +1369,24 @@ for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1544,11 +1398,10 @@ for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1565,36 +1418,34 @@ impl crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
             crate::UnityEngine::UIElements::DataBindingManager_BindingData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("AddBindingData")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                    >), quest_hook::libil2cpp::Void, 1usize>("AddBindingData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddBindingData", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddBindingData",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bindingData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bindingData))? };
         Ok(__cordl_ret.into())
     }
     pub fn Create() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -1609,43 +1460,43 @@ impl crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindingCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetBindingCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBindingCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBindingCount",
+                            0usize
                         )
                     })
             });
@@ -1663,26 +1514,24 @@ impl crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::DataBindingManager_BindingData,
                             >,
                         >,
-                        0usize,
-                    >("GetBindings")
+                    >, 0usize>("GetBindings")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBindings", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBindings",
+                            0usize
                         )
                     })
             });
@@ -1701,90 +1550,81 @@ impl crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
             crate::UnityEngine::UIElements::DataBindingManager_BindingData,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                        >),
-                        bool,
-                        1usize,
-                    >("RemoveBindingData")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                    >), bool, 1usize>("RemoveBindingData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RemoveBindingData", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RemoveBindingData",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bindingData))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (bindingData))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetBindingData(
         &mut self,
-        bindingId: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::BindingId,
-        >,
+        bindingId: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingId>,
         data: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::UIElements::DataBindingManager_BindingData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BindingId,
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingId>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::DataBindingManager_BindingData,
                             >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                                >,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetBindingData")
+                        >,
+                    ), bool, 2usize>("TryGetBindingData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetBindingData", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetBindingData",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bindingId, data))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bindingId, data))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+BindingDataCollection")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+BindingDataCollection")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingRequest")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct DataBindingManager_BindingRequest {
     pub bindingId: crate::UnityEngine::UIElements::BindingId,
     pub binding: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Binding>,
@@ -1792,7 +1632,8 @@ pub struct DataBindingManager_BindingRequest {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingRequest")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -1811,18 +1652,16 @@ for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingRequest")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1833,7 +1672,8 @@ for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingRequest")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1847,22 +1687,22 @@ for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingRequest")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingRequest")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1876,7 +1716,8 @@ for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingRequest")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest {
+    for crate::UnityEngine::UIElements::DataBindingManager_BindingRequest
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1892,9 +1733,10 @@ impl crate::UnityEngine::UIElements::DataBindingManager_BindingRequest {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::DataBindingManager_BindingRequest,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1909,64 +1751,54 @@ impl crate::UnityEngine::UIElements::DataBindingManager_BindingRequest {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::DataBindingManager_BindingRequest = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::DataBindingManager_BindingRequest =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        bindingId: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::BindingId,
-        >,
+        bindingId: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingId>,
         binding: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Binding>,
         shouldProcess: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BindingId,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::Binding,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::BindingId>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Binding>,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (bindingId, binding, shouldProcess))?
+            cordl_method_info.invoke_unchecked(self, (bindingId, binding, shouldProcess))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+ChangesFromUI")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct DataBindingManager_ChangesFromUI {
     pub version: i64,
     pub binding: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Binding>,
-    pub bindingData: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-    >,
+    pub bindingData:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DataBindingManager_BindingData>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+ChangesFromUI")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI {
+    for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -1985,18 +1817,16 @@ for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+ChangesFromUI")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI {
+    for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2007,7 +1837,8 @@ for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+ChangesFromUI")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI {
+    for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2021,22 +1852,22 @@ for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+ChangesFromUI")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI {
+    for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+ChangesFromUI")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI {
+    for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2050,7 +1881,8 @@ for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+ChangesFromUI")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI {
+    for crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2067,41 +1899,40 @@ impl crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI {
             crate::UnityEngine::UIElements::DataBindingManager_BindingData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bindingData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bindingData))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsValid", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsValid",
+                            0usize
                         )
                     })
             });
@@ -2109,9 +1940,7 @@ impl crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyBindingTracker"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyBindingTracker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataBindingManager_HierarchyBindingTracker {
@@ -2155,17 +1984,17 @@ pub struct DataBindingManager_HierarchyBindingTracker {
         >,
     >,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyBindingTracker"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyBindingTracker")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker {
+    for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "DataBindingManager/HierarchyBindingTracker";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2179,7 +2008,8 @@ for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker {
 }
 #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+HierarchyBindingTracker")]
 impl std::ops::Deref
-for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker {
+    for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -2187,7 +2017,8 @@ for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker {
 }
 #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+HierarchyBindingTracker")]
 impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker {
+    for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2198,25 +2029,24 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker 
         feature = "UnityEngine+UIElements+DataBindingManager+HierarchyBindingTracker+HierarchicalBindingsSorter"
     )]
     pub type HierarchicalBindingsSorter = crate::UnityEngine::UIElements::HierarchyBindingTracker_DataBindingManager_HierarchicalBindingsSorter;
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBoundElements(
@@ -2228,26 +2058,24 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker 
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
                             >,
                         >,
-                        0usize,
-                    >("GetBoundElements")
+                    >, 0usize>("GetBoundElements")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBoundElements", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBoundElements",
+                            0usize
                         )
                     })
             });
@@ -2259,16 +2087,18 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker 
         Ok(__cordl_ret.into())
     }
     pub fn GetTrackedElementsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetTrackedElementsCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTrackedElementsCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetTrackedElementsCount",
+                            0usize
                         )
                     })
             });
@@ -2279,9 +2109,10 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker 
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -2298,27 +2129,21 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker 
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (element))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        panel: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::BaseVisualElementPanel,
-        >,
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseVisualElementPanel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (panel))?;
         Ok(__cordl_object.into())
     }
     pub fn OnPropertyChanged(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::PropertyChangedEvent,
-        >,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PropertyChangedEvent>,
         bindingCollection: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -2326,7 +2151,8 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker 
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -2355,18 +2181,18 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker 
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (evt, bindingCollection))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (evt, bindingCollection))? };
         Ok(__cordl_ret.into())
     }
     pub fn OrderBindings(
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -2383,115 +2209,104 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker 
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (root))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (root))? };
         Ok(__cordl_ret.into())
     }
-    pub fn SetDirty(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn SetDirty(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetDirty")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetDirty", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetDirty",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn StartTrackingBinding(
         &mut self,
-        element: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        >,
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         binding: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::DataBindingManager_BindingData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("StartTrackingBinding")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "StartTrackingBinding"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StartTrackingBinding", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "StartTrackingBinding",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element, binding))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element, binding))? };
         Ok(__cordl_ret.into())
     }
     pub fn StopTrackingBinding(
         &mut self,
-        element: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        >,
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         binding: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::DataBindingManager_BindingData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("StopTrackingBinding")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "StopTrackingBinding"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StopTrackingBinding", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "StopTrackingBinding",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element, binding))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element, binding))? };
         Ok(__cordl_ret.into())
     }
     pub fn StopTrackingElement(
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -2508,21 +2323,19 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker 
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetBindingCollection(
         &mut self,
-        element: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        >,
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         collection: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::DataBindingManager_BindingDataCollection,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -2546,47 +2359,40 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker 
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element, collection))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element, collection))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        panel: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::BaseVisualElementPanel,
-        >,
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseVisualElementPanel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::BaseVisualElementPanel,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::BaseVisualElementPanel,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (panel))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (panel))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyBindingTracker"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyBindingTracker")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker {
+    for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2596,21 +2402,21 @@ for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker {
 }
 #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+HierarchyBindingTracker")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker {
+    for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+HierarchyBindingTracker")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker {
+    for crate::UnityEngine::UIElements::DataBindingManager_HierarchyBindingTracker
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataBindingManager_HierarchyDataSourceTracker {
@@ -2667,17 +2473,17 @@ pub struct DataBindingManager_HierarchyDataSourceTracker {
         >,
     >,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker {
+    for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "DataBindingManager/HierarchyDataSourceTracker";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2691,7 +2497,8 @@ for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracke
 }
 #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker")]
 impl std::ops::Deref
-for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker {
+    for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -2699,7 +2506,8 @@ for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracke
 }
 #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker")]
 impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker {
+    for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2717,14 +2525,16 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
     #[cfg(
         feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+SourceInfo"
     )]
-    pub type SourceInfo = crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_SourceInfo;
+    pub type SourceInfo =
+        crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_SourceInfo;
     pub fn ClearChangesFromSource(
         &mut self,
         dataSource: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -2739,34 +2549,30 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (dataSource))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (dataSource))? };
         Ok(__cordl_ret.into())
     }
     pub fn ClearSourceCache(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ClearSourceCache")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearSourceCache")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ClearSourceCache", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ClearSourceCache",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DecreaseBindingRefCount(
@@ -2777,39 +2583,39 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("DecreaseBindingRefCount")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "DecreaseBindingRefCount"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DecreaseBindingRefCount", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DecreaseBindingRefCount",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bindingData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bindingData))? };
         Ok(__cordl_ret.into())
     }
     pub fn DecreaseRefCount(
         &mut self,
         dataSource: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -2824,30 +2630,28 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (dataSource))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (dataSource))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetChangesFromSource(
@@ -2855,14 +2659,13 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
         dataSource: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                crate::Unity::Properties::PropertyPath,
-            >,
+            crate::System::Collections::Generic::HashSet_1<crate::Unity::Properties::PropertyPath>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -2882,21 +2685,18 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                crate::Unity::Properties::PropertyPath,
-            >,
+            crate::System::Collections::Generic::HashSet_1<crate::Unity::Properties::PropertyPath>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (dataSource))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHierarchicalDataSourceContext(
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::DataSourceContext,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::DataSourceContext> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -2913,9 +2713,8 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::DataSourceContext = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element))?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::DataSourceContext =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPooledSourceInfo(
@@ -2924,8 +2723,9 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_SourceInfo,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -2951,55 +2751,50 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
     }
     pub fn GetResolvedDataSourceContext(
         &mut self,
-        element: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        >,
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         bindingData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::DataBindingManager_BindingData,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::DataSourceContext,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::DataSourceContext> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                            >,
-                        ),
-                        crate::UnityEngine::UIElements::DataSourceContext,
-                        2usize,
-                    >("GetResolvedDataSourceContext")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                        >,
+                    ), crate::UnityEngine::UIElements::DataSourceContext, 2usize>(
+                        "GetResolvedDataSourceContext",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetResolvedDataSourceContext", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetResolvedDataSourceContext",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::DataSourceContext = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element, bindingData))?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::DataSourceContext =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element, bindingData))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTrackedDataSourcesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetTrackedDataSourcesCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTrackedDataSourcesCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetTrackedDataSourcesCount",
+                            0usize
                         )
                     })
             });
@@ -3014,39 +2809,39 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::DataBindingManager_BindingData,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("IncreaseBindingRefCount")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::DataBindingManager_BindingData,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "IncreaseBindingRefCount"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IncreaseBindingRefCount", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IncreaseBindingRefCount",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bindingData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bindingData))? };
         Ok(__cordl_ret.into())
     }
     pub fn IncreaseRefCount(
         &mut self,
         dataSource: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -3061,9 +2856,8 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (dataSource))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (dataSource))? };
         Ok(__cordl_ret.into())
     }
     pub fn InvalidateCachedDataSource(
@@ -3079,88 +2873,80 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::VisualElement,
-                                    >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualElement,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::VisualElement,
-                                    >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualElement,
                                 >,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("InvalidateCachedDataSource")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "InvalidateCachedDataSource"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InvalidateCachedDataSource", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InvalidateCachedDataSource",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (elements, removedElements))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (elements, removedElements))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        manager: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::DataBindingManager,
-        >,
+        manager: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DataBindingManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (manager))?;
         Ok(__cordl_object.into())
     }
     pub fn OnVisualElementPropertyChanged(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::PropertyChangedEvent,
-        >,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PropertyChangedEvent>,
         element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::PropertyChangedEvent,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("OnVisualElementPropertyChanged")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::PropertyChangedEvent,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "OnVisualElementPropertyChanged"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnVisualElementPropertyChanged", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnVisualElementPropertyChanged",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (evt, element))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (evt, element))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReleasePooledSourceInfo(
@@ -3169,7 +2955,8 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
             crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_SourceInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -3188,18 +2975,18 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (info))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (info))? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveHierarchyDataSourceContextFromElement(
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -3216,9 +3003,8 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element))? };
         Ok(__cordl_ret.into())
     }
     pub fn TrackPropertyChanges_BindablePropertyChangedEventArgs0(
@@ -3226,31 +3012,28 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
         sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         args: crate::UnityEngine::UIElements::BindablePropertyChangedEventArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            crate::UnityEngine::UIElements::BindablePropertyChangedEventArgs,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("TrackPropertyChanges")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        crate::UnityEngine::UIElements::BindablePropertyChangedEventArgs,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "TrackPropertyChanges"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TrackPropertyChanges", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TrackPropertyChanges",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (sender, args))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (sender, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn TrackPropertyChanges_PropertyPath1(
@@ -3258,31 +3041,28 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
         sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         propertyPath: crate::Unity::Properties::PropertyPath,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            crate::Unity::Properties::PropertyPath,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("TrackPropertyChanges")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        crate::Unity::Properties::PropertyPath,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "TrackPropertyChanges"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TrackPropertyChanges", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TrackPropertyChanges",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (sender, propertyPath))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (sender, propertyPath))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetLastVersion(
@@ -3290,31 +3070,26 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         version: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i64>,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetLastVersion")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i64>,
+                    ), bool, 2usize>("TryGetLastVersion")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetLastVersion", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetLastVersion",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (source, version))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (source, version))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateVersion(
@@ -3322,42 +3097,36 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         version: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateVersion")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i64,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UpdateVersion")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateVersion", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateVersion",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (source, version))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (source, version))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        manager: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::DataBindingManager,
-        >,
+        manager: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DataBindingManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -3374,17 +3143,15 @@ impl crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTrack
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (manager))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (manager))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker {
+    for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3394,14 +3161,16 @@ for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracke
 }
 #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker {
+    for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker {
+    for crate::UnityEngine::UIElements::DataBindingManager_HierarchyDataSourceTracker
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
@@ -3906,13 +3675,15 @@ pub struct HierarchyDataSourceTracker_DataBindingManager_ObjectComparer {
     feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+ObjectComparer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_ObjectComparer {
+    for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_ObjectComparer
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "DataBindingManager/HierarchyDataSourceTracker/ObjectComparer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -3928,7 +3699,8 @@ for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManage
     feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+ObjectComparer"
 )]
 impl std::ops::Deref
-for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_ObjectComparer {
+    for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_ObjectComparer
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -3938,7 +3710,8 @@ for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManage
     feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+ObjectComparer"
 )]
 impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_ObjectComparer {
+    for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_ObjectComparer
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -3948,8 +3721,8 @@ for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManage
 )]
 impl crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_ObjectComparer {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -3959,43 +3732,35 @@ impl crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManag
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >(
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), bool, 2usize>(
                         "System.Collections.Generic.IEqualityComparer<System.Object>.Equals",
                     )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            <Self as quest_hook::libil2cpp::Type>::class(),
                             "System.Collections.Generic.IEqualityComparer<System.Object>.Equals",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (x, y))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (x, y))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IEqualityComparer_System_Object__GetHashCode(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -4015,30 +3780,27 @@ impl crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManag
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -4046,7 +3808,8 @@ impl crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManag
     feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+ObjectComparer"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_ObjectComparer {
+    for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_ObjectComparer
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -4057,12 +3820,14 @@ for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManage
 #[cfg(
     feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+ObjectComparer"
 )]
-impl AsRef<
-    crate::System::Collections::Generic::IEqualityComparer_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >,
->
-for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_ObjectComparer {
+impl
+    AsRef<
+        crate::System::Collections::Generic::IEqualityComparer_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    >
+    for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_ObjectComparer
+{
     fn as_ref(
         &self,
     ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
@@ -4074,12 +3839,14 @@ for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManage
 #[cfg(
     feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+ObjectComparer"
 )]
-impl AsMut<
-    crate::System::Collections::Generic::IEqualityComparer_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >,
->
-for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_ObjectComparer {
+impl
+    AsMut<
+        crate::System::Collections::Generic::IEqualityComparer_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    >
+    for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_ObjectComparer
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
@@ -4096,9 +3863,7 @@ for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManage
 pub struct HierarchyDataSourceTracker_DataBindingManager_SourceInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_DetectedChanges: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            crate::Unity::Properties::PropertyPath,
-        >,
+        crate::System::Collections::Generic::HashSet_1<crate::Unity::Properties::PropertyPath>,
     >,
     pub _lastVersion_k__BackingField: i64,
     pub _refCount_k__BackingField: i32,
@@ -4107,13 +3872,15 @@ pub struct HierarchyDataSourceTracker_DataBindingManager_SourceInfo {
     feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+SourceInfo"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_SourceInfo {
+    for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_SourceInfo
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "DataBindingManager/HierarchyDataSourceTracker/SourceInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -4125,91 +3892,80 @@ for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManage
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+SourceInfo"
-)]
+#[cfg(feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+SourceInfo")]
 impl std::ops::Deref
-for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_SourceInfo {
+    for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_SourceInfo
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+SourceInfo"
-)]
+#[cfg(feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+SourceInfo")]
 impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_SourceInfo {
+    for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_SourceInfo
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+SourceInfo"
-)]
+#[cfg(feature = "UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+SourceInfo")]
 impl crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_SourceInfo {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_detectedChanges(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                crate::Unity::Properties::PropertyPath,
-            >,
+            crate::System::Collections::Generic::HashSet_1<crate::Unity::Properties::PropertyPath>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::HashSet_1<
-                                crate::Unity::Properties::PropertyPath,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::HashSet_1<
+                            crate::Unity::Properties::PropertyPath,
                         >,
-                        0usize,
-                    >("get_detectedChanges")
+                    >, 0usize>("get_detectedChanges")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_detectedChanges", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_detectedChanges",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                crate::Unity::Properties::PropertyPath,
-            >,
+            crate::System::Collections::Generic::HashSet_1<crate::Unity::Properties::PropertyPath>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -4217,50 +3973,46 @@ impl crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManag
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                crate::Unity::Properties::PropertyPath,
-            >,
+            crate::System::Collections::Generic::HashSet_1<crate::Unity::Properties::PropertyPath>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::HashSet_1<
-                                crate::Unity::Properties::PropertyPath,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::HashSet_1<
+                            crate::Unity::Properties::PropertyPath,
                         >,
-                        0usize,
-                    >("get_detectedChangesNoAlloc")
+                    >, 0usize>("get_detectedChangesNoAlloc")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_detectedChangesNoAlloc", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_detectedChangesNoAlloc",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                crate::Unity::Properties::PropertyPath,
-            >,
+            crate::System::Collections::Generic::HashSet_1<crate::Unity::Properties::PropertyPath>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_lastVersion(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_lastVersion")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_lastVersion", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_lastVersion",
+                            0usize
                         )
                     })
             });
@@ -4268,16 +4020,18 @@ impl crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManag
         Ok(__cordl_ret.into())
     }
     pub fn get_refCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_refCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_refCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_refCount",
+                            0usize
                         )
                     })
             });
@@ -4288,52 +4042,46 @@ impl crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManag
         &mut self,
         value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_lastVersion")
+                    .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>("set_lastVersion")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_lastVersion", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_lastVersion",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_refCount(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_refCount")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_refCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_refCount", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_refCount",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -4341,7 +4089,8 @@ impl crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManag
     feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+SourceInfo"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_SourceInfo {
+    for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManager_SourceInfo
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

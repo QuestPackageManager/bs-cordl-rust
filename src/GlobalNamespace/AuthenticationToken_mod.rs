@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AuthenticationToken")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct AuthenticationToken {
     pub platform: crate::GlobalNamespace::AuthenticationToken_PlatformType,
     pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -27,18 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Authenticati
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_AuthenticationToken")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::AuthenticationToken {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::AuthenticationToken {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -48,8 +44,7 @@ for crate::GlobalNamespace::AuthenticationToken {
     }
 }
 #[cfg(feature = "cordl_class_AuthenticationToken")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::AuthenticationToken {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::AuthenticationToken {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -62,23 +57,19 @@ for crate::GlobalNamespace::AuthenticationToken {
     }
 }
 #[cfg(feature = "cordl_class_AuthenticationToken")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::AuthenticationToken {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::AuthenticationToken {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_AuthenticationToken")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::AuthenticationToken {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::AuthenticationToken {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -91,8 +82,7 @@ for crate::GlobalNamespace::AuthenticationToken {
     }
 }
 #[cfg(feature = "cordl_class_AuthenticationToken")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::AuthenticationToken {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::AuthenticationToken {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -109,9 +99,10 @@ impl crate::GlobalNamespace::AuthenticationToken {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::AuthenticationToken> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -128,17 +119,17 @@ impl crate::GlobalNamespace::AuthenticationToken {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken = unsafe {
-            cordl_method_info.invoke_unchecked(self, (reader))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reader))? };
         Ok(__cordl_ret.into())
     }
     pub fn Deserialize(
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::AuthenticationToken> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -155,9 +146,8 @@ impl crate::GlobalNamespace::AuthenticationToken {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromHex(
@@ -165,9 +155,10 @@ impl crate::GlobalNamespace::AuthenticationToken {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -184,9 +175,8 @@ impl crate::GlobalNamespace::AuthenticationToken {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (str))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (str))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromUtf8(
@@ -194,9 +184,10 @@ impl crate::GlobalNamespace::AuthenticationToken {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -213,22 +204,23 @@ impl crate::GlobalNamespace::AuthenticationToken {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (str))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (str))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHexVal(c: char) -> quest_hook::libil2cpp::Result<u8> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), u8, 1usize>("GetHexVal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHexVal", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHexVal",
+                            1usize
                         )
                     })
             });
@@ -239,9 +231,10 @@ impl crate::GlobalNamespace::AuthenticationToken {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -258,19 +251,18 @@ impl crate::GlobalNamespace::AuthenticationToken {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (writer))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToHex(
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -287,19 +279,18 @@ impl crate::GlobalNamespace::AuthenticationToken {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (bytes))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (bytes))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToUtf8(
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -316,9 +307,8 @@ impl crate::GlobalNamespace::AuthenticationToken {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (bytes))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (bytes))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -328,61 +318,56 @@ impl crate::GlobalNamespace::AuthenticationToken {
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sessionToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::AuthenticationToken_PlatformType,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::GlobalNamespace::AuthenticationToken_PlatformType,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (platform, userId, userName, sessionToken))?
+            cordl_method_info.invoke_unchecked(self, (platform, userId, userName, sessionToken))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "AuthenticationToken")]
 impl AsRef<crate::LiteNetLib::Utils::INetImmutableSerializable>
-for crate::GlobalNamespace::AuthenticationToken {
+    for crate::GlobalNamespace::AuthenticationToken
+{
     fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetImmutableSerializable {
         todo!()
     }
 }
 #[cfg(feature = "AuthenticationToken")]
 impl AsMut<crate::LiteNetLib::Utils::INetImmutableSerializable>
-for crate::GlobalNamespace::AuthenticationToken {
+    for crate::GlobalNamespace::AuthenticationToken
+{
     fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable {
         todo!()
     }
 }
 #[cfg(feature = "AuthenticationToken")]
-impl AsRef<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::AuthenticationToken,
-    >,
-> for crate::GlobalNamespace::AuthenticationToken {
+impl
+    AsRef<
+        crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+            crate::GlobalNamespace::AuthenticationToken,
+        >,
+    > for crate::GlobalNamespace::AuthenticationToken
+{
     fn as_ref(
         &self,
     ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
@@ -392,11 +377,13 @@ impl AsRef<
     }
 }
 #[cfg(feature = "AuthenticationToken")]
-impl AsMut<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::AuthenticationToken,
-    >,
-> for crate::GlobalNamespace::AuthenticationToken {
+impl
+    AsMut<
+        crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+            crate::GlobalNamespace::AuthenticationToken,
+        >,
+    > for crate::GlobalNamespace::AuthenticationToken
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
@@ -406,8 +393,8 @@ impl AsMut<
     }
 }
 #[cfg(feature = "cordl_class_AuthenticationToken+PlatformType")]
-#[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(u8)]
 pub enum AuthenticationToken_PlatformType {
     #[default]
     Oculus = 2u8,
@@ -423,7 +410,8 @@ pub enum AuthenticationToken_PlatformType {
 }
 #[cfg(feature = "cordl_class_AuthenticationToken+PlatformType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::AuthenticationToken_PlatformType {
+    for crate::GlobalNamespace::AuthenticationToken_PlatformType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -442,18 +430,16 @@ for crate::GlobalNamespace::AuthenticationToken_PlatformType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_AuthenticationToken+PlatformType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::AuthenticationToken_PlatformType {
+    for crate::GlobalNamespace::AuthenticationToken_PlatformType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -464,7 +450,8 @@ for crate::GlobalNamespace::AuthenticationToken_PlatformType {
 }
 #[cfg(feature = "cordl_class_AuthenticationToken+PlatformType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::AuthenticationToken_PlatformType {
+    for crate::GlobalNamespace::AuthenticationToken_PlatformType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -478,22 +465,22 @@ for crate::GlobalNamespace::AuthenticationToken_PlatformType {
 }
 #[cfg(feature = "cordl_class_AuthenticationToken+PlatformType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::AuthenticationToken_PlatformType {
+    for crate::GlobalNamespace::AuthenticationToken_PlatformType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_AuthenticationToken+PlatformType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::AuthenticationToken_PlatformType {
+    for crate::GlobalNamespace::AuthenticationToken_PlatformType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

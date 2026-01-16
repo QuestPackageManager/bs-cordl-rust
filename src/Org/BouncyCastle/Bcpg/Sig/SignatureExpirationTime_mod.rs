@@ -6,13 +6,15 @@ pub struct SignatureExpirationTime {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+Sig+SignatureExpirationTime")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
+    for crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Bcpg.Sig";
     const CLASS_NAME: &'static str = "SignatureExpirationTime";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,8 +34,7 @@ impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpiratio
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+SignatureExpirationTime")]
-impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
+impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -45,8 +46,8 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
         isLongLength: bool,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (critical, isLongLength, data))?;
         Ok(__cordl_object.into())
@@ -55,8 +56,8 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
         critical: bool,
         seconds: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (critical, seconds))?;
         Ok(__cordl_object.into())
@@ -66,9 +67,10 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i64),
@@ -85,9 +87,8 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (t))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (t))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool_Il2CppArray0(
@@ -96,32 +97,27 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
         isLongLength: bool,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            bool,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        bool,
+                        bool,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (critical, isLongLength, data))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (critical, isLongLength, data))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i64_1(
@@ -129,39 +125,38 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
         critical: bool,
         seconds: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool, i64),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(bool, i64), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (critical, seconds))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (critical, seconds))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Time(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_Time")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Time", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Time",
+                            0usize
                         )
                     })
             });
@@ -171,7 +166,8 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+Sig+SignatureExpirationTime")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
+    for crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

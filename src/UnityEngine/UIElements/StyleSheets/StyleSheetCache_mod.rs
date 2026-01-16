@@ -6,13 +6,15 @@ pub struct StyleSheetCache {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
+    for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.StyleSheets";
     const CLASS_NAME: &'static str = "StyleSheetCache";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,8 +34,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::StyleSheets::StyleSheet
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
+impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -41,42 +42,38 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
 impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
     #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
-    pub type SheetHandleKey = crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey;
-    #[cfg(
-        feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
-    )]
-    pub type SheetHandleKeyComparer = crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer;
+    pub type SheetHandleKey =
+        crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey;
+    #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer")]
+    pub type SheetHandleKeyComparer =
+        crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer;
     pub fn GetPropertyId(
         rule: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleSheets::StylePropertyId>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleRule,
-                            >,
-                            i32,
-                        ),
-                        crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-                        2usize,
-                    >("GetPropertyId")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
+                        i32,
+                    ), crate::UnityEngine::UIElements::StyleSheets::StylePropertyId, 2usize>(
+                        "GetPropertyId",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPropertyId", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPropertyId",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId = unsafe {
-            cordl_method_info.invoke_unchecked((), (rule, index))?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId =
+            unsafe { cordl_method_info.invoke_unchecked((), (rule, index))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyIds_StyleRule1(
@@ -88,9 +85,10 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -128,29 +126,25 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheet,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-                            >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+                        i32,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
                         >,
-                        2usize,
-                    >("GetPropertyIds")
+                    >, 2usize>("GetPropertyIds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPropertyIds", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPropertyIds",
+                            2usize
                         )
                     })
             });
@@ -164,7 +158,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
+    for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -172,20 +167,17 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct StyleSheetCache_SheetHandleKey {
     pub sheetInstanceID: i32,
     pub index: i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
+    for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.StyleSheets";
@@ -204,20 +196,16 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey 
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
+    for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -226,11 +214,10 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
+    for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -242,28 +229,24 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey 
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
+    for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
+    for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -275,11 +258,10 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey 
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
+    for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -295,31 +277,26 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey
         sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheet,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (sheet, index))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (sheet, index))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -335,13 +312,15 @@ pub struct StyleSheetCache_SheetHandleKeyComparer {
     feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
+    for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.StyleSheets";
     const CLASS_NAME: &'static str = "StyleSheetCache/SheetHandleKeyComparer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -353,64 +332,57 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyC
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer")]
 impl std::ops::Deref
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
+    for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer")]
 impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
+    for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer")]
 impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
     pub fn Equals(
         &mut self,
         x: crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
         y: crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
-                            crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
-                        ),
-                        bool,
-                        2usize,
-                    >("Equals")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
+                        crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
+                    ), bool, 2usize>("Equals")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Equals",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (x, y))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (x, y))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(
         &mut self,
         key: crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -427,37 +399,34 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (key))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -465,7 +434,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey
     feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
+    for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -473,15 +443,14 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyC
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
-)]
-impl AsRef<
-    crate::System::Collections::Generic::IEqualityComparer_1<
-        crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
-    >,
->
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer")]
+impl
+    AsRef<
+        crate::System::Collections::Generic::IEqualityComparer_1<
+            crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
+        >,
+    > for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer
+{
     fn as_ref(
         &self,
     ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
@@ -490,15 +459,14 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyC
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
-)]
-impl AsMut<
-    crate::System::Collections::Generic::IEqualityComparer_1<
-        crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
-    >,
->
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer")]
+impl
+    AsMut<
+        crate::System::Collections::Generic::IEqualityComparer_1<
+            crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
+        >,
+    > for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<

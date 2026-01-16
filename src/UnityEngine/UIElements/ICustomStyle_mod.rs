@@ -1,18 +1,18 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ICustomStyle")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct ICustomStyle {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ICustomStyle")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::ICustomStyle {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::ICustomStyle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "ICustomStyle";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,29 +44,26 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
         property: crate::UnityEngine::UIElements::CustomStyleProperty_1<f32>,
         value: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::CustomStyleProperty_1<f32>,
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetValue")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::CustomStyleProperty_1<f32>,
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                    ), bool, 2usize>("TryGetValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetValue", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetValue",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (property, value))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (property, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut1(
@@ -74,63 +71,55 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
         property: crate::UnityEngine::UIElements::CustomStyleProperty_1<i32>,
         value: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::CustomStyleProperty_1<i32>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetValue")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::CustomStyleProperty_1<i32>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), bool, 2usize>("TryGetValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetValue", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetValue",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (property, value))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (property, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut2(
         &mut self,
-        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
-            crate::UnityEngine::Color,
-        >,
+        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<crate::UnityEngine::Color>,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::CustomStyleProperty_1<
-                                crate::UnityEngine::Color,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetValue")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::CustomStyleProperty_1<
+                            crate::UnityEngine::Color,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+                    ), bool, 2usize>("TryGetValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetValue", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetValue",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (property, value))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (property, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut3(
@@ -142,33 +131,30 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::CustomStyleProperty_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetValue")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::CustomStyleProperty_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                        >,
+                    ), bool, 2usize>("TryGetValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetValue", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetValue",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (property, value))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (property, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut4(
@@ -180,33 +166,30 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::CustomStyleProperty_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetValue")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::CustomStyleProperty_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+                        >,
+                    ), bool, 2usize>("TryGetValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetValue", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetValue",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (property, value))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (property, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut5(
@@ -218,37 +201,30 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VectorImage>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::CustomStyleProperty_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VectorImage,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VectorImage,
-                                >,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetValue")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::CustomStyleProperty_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VectorImage>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VectorImage>,
+                        >,
+                    ), bool, 2usize>("TryGetValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetValue", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetValue",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (property, value))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (property, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut6(
@@ -260,42 +236,33 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::CustomStyleProperty_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetValue")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::CustomStyleProperty_1<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        >,
+                    ), bool, 2usize>("TryGetValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetValue", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetValue",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (property, value))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (property, value))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }

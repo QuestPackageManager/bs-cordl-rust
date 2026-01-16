@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SaberSwingRa
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "SaberSwingRating";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -48,63 +49,65 @@ impl crate::GlobalNamespace::SaberSwingRating {
         angleDiff: f32,
         normalDiff: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32), f32, 2usize>("AfterCutStepRating")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AfterCutStepRating", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AfterCutStepRating",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (angleDiff, normalDiff))?
-        };
+        let __cordl_ret: f32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (angleDiff, normalDiff))? };
         Ok(__cordl_ret.into())
     }
     pub fn BeforeCutStepRating(
         angleDiff: f32,
         normalDiff: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32), f32, 2usize>("BeforeCutStepRating")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeforeCutStepRating", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeforeCutStepRating",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (angleDiff, normalDiff))?
-        };
+        let __cordl_ret: f32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (angleDiff, normalDiff))? };
         Ok(__cordl_ret.into())
     }
     pub fn NormalRating(normalDiff: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), f32, 1usize>("NormalRating")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "NormalRating", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "NormalRating",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (normalDiff))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (normalDiff))? };
         Ok(__cordl_ret.into())
     }
 }

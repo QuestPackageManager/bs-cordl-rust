@@ -5,14 +5,14 @@ pub struct PlayerSaveDataConvertor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_PlayerSaveDataConvertor")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PlayerSaveDataConvertor {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlayerSaveDataConvertor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PlayerSaveDataConvertor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,7 +42,8 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
     pub fn GetRuntimeData_PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData2(
         saveData: crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ArcVisibilityType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -59,17 +60,15 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::ArcVisibilityType = unsafe {
-            cordl_method_info.invoke_unchecked((), (saveData))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::ArcVisibilityType =
+            unsafe { cordl_method_info.invoke_unchecked((), (saveData))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRuntimeData_PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData0(
         saveData: crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentEffectsFilterPreset> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -86,17 +85,15 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::EnvironmentEffectsFilterPreset = unsafe {
-            cordl_method_info.invoke_unchecked((), (saveData))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentEffectsFilterPreset =
+            unsafe { cordl_method_info.invoke_unchecked((), (saveData))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRuntimeData_PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData1(
         saveData: crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::NoteJumpDurationTypeSettings,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteJumpDurationTypeSettings> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -113,9 +110,8 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::NoteJumpDurationTypeSettings = unsafe {
-            cordl_method_info.invoke_unchecked((), (saveData))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::NoteJumpDurationTypeSettings =
+            unsafe { cordl_method_info.invoke_unchecked((), (saveData))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSaveData_ArcVisibilityType2(
@@ -123,7 +119,8 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -149,8 +146,9 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
         data: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -176,8 +174,9 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
         data: crate::GlobalNamespace::NoteJumpDurationTypeSettings,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -201,8 +200,7 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
     }
 }
 #[cfg(feature = "cordl_class_PlayerSaveDataConvertor")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PlayerSaveDataConvertor {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveDataConvertor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

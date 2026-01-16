@@ -32,14 +32,14 @@ pub struct SliderSpawnInfoNetSerializable {
     pub rotation: f32,
 }
 #[cfg(feature = "cordl_class_SliderSpawnInfoNetSerializable")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "SliderSpawnInfoNetSerializable";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -70,9 +70,10 @@ impl crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -89,9 +90,8 @@ impl crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (reader))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reader))? };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -126,49 +126,47 @@ impl crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderSpawnInfoNetSerializable>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::ColorType,
-                            crate::GlobalNamespace::SliderData_Type,
-                            bool,
-                            f32,
-                            f32,
-                            i32,
-                            crate::GlobalNamespace::NoteLineLayer,
-                            crate::GlobalNamespace::NoteLineLayer,
-                            f32,
-                            crate::GlobalNamespace::NoteCutDirection,
-                            f32,
-                            bool,
-                            f32,
-                            i32,
-                            crate::GlobalNamespace::NoteLineLayer,
-                            crate::GlobalNamespace::NoteLineLayer,
-                            f32,
-                            crate::GlobalNamespace::NoteCutDirection,
-                            f32,
-                            crate::GlobalNamespace::SliderMidAnchorMode,
-                            i32,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
-                        >,
-                        27usize,
-                    >("Init")
+                    .find_method::<(
+                        crate::GlobalNamespace::ColorType,
+                        crate::GlobalNamespace::SliderData_Type,
+                        bool,
+                        f32,
+                        f32,
+                        i32,
+                        crate::GlobalNamespace::NoteLineLayer,
+                        crate::GlobalNamespace::NoteLineLayer,
+                        f32,
+                        crate::GlobalNamespace::NoteCutDirection,
+                        f32,
+                        bool,
+                        f32,
+                        i32,
+                        crate::GlobalNamespace::NoteLineLayer,
+                        crate::GlobalNamespace::NoteLineLayer,
+                        f32,
+                        crate::GlobalNamespace::NoteCutDirection,
+                        f32,
+                        crate::GlobalNamespace::SliderMidAnchorMode,
+                        i32,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        f32,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
+                    >, 27usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             27usize
                         )
                     })
@@ -176,45 +174,44 @@ impl crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        colorType,
-                        sliderType,
-                        hasHeadNote,
-                        headTime,
-                        headBeat,
-                        headLineIndex,
-                        headLineLayer,
-                        headBeforeJumpLineLayer,
-                        headControlPointLengthMultiplier,
-                        headCutDirection,
-                        headCutDirectionAngleOffset,
-                        hasTailNote,
-                        tailTime,
-                        tailLineIndex,
-                        tailLineLayer,
-                        tailBeforeJumpLineLayer,
-                        tailControlPointLengthMultiplier,
-                        tailCutDirection,
-                        tailCutDirectionAngleOffset,
-                        midAnchorMode,
-                        sliceCount,
-                        squishAmount,
-                        headNoteOffset,
-                        headGravityBase,
-                        tailNoteOffset,
-                        tailGravityBase,
-                        rotation,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    colorType,
+                    sliderType,
+                    hasHeadNote,
+                    headTime,
+                    headBeat,
+                    headLineIndex,
+                    headLineLayer,
+                    headBeforeJumpLineLayer,
+                    headControlPointLengthMultiplier,
+                    headCutDirection,
+                    headCutDirectionAngleOffset,
+                    hasTailNote,
+                    tailTime,
+                    tailLineIndex,
+                    tailLineLayer,
+                    tailBeforeJumpLineLayer,
+                    tailControlPointLengthMultiplier,
+                    tailCutDirection,
+                    tailCutDirectionAngleOffset,
+                    midAnchorMode,
+                    sliceCount,
+                    squishAmount,
+                    headNoteOffset,
+                    headGravityBase,
+                    tailNoteOffset,
+                    tailGravityBase,
+                    rotation,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -222,21 +219,19 @@ impl crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
     pub fn Obtain() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderSpawnInfoNetSerializable>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
-                        >,
-                        0usize,
-                    >("Obtain")
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
+                    >, 0usize>("Obtain")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Obtain",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Obtain",
                             0usize
                         )
                     })
@@ -250,9 +245,10 @@ impl crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -269,36 +265,33 @@ impl crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (writer))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_SliderSpawnInfoNetSerializable")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

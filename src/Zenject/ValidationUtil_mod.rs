@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ValidationUtil {
     const NAMESPACE: &'static str = "Zenject";
     const CLASS_NAME: &'static str = "ValidationUtil";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,37 +41,31 @@ impl std::ops::DerefMut for crate::Zenject::ValidationUtil {
 impl crate::Zenject::ValidationUtil {
     pub fn CreateDefaultArgs(
         argTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<crate::System::Type>>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::Zenject::TypeValuePair,
-                            >,
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
                         >,
-                        1usize,
-                    >("CreateDefaultArgs")
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+                    >, 1usize>("CreateDefaultArgs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateDefaultArgs", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateDefaultArgs",
+                            1usize
                         )
                     })
             });

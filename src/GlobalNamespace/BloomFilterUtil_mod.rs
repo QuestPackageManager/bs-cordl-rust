@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BloomFilterU
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BloomFilterUtil";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,36 +46,32 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         hashBits: i32,
     ) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            T,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         T,
-                        4usize,
-                    >("AddBloomFilterEntry")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                    ), T, 4usize>("AddBloomFilterEntry")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddBloomFilterEntry", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddBloomFilterEntry",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: T = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (bitMask, value, hashCount, hashBits))?
+            cordl_method_info.invoke_unchecked((), (bitMask, value, hashCount, hashBits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -85,23 +82,22 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         hashBits: i32,
     ) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (T, u32, i32, i32),
-                        T,
-                        4usize,
-                    >("AddBloomFilterEntryHash")
+                    .find_static_method::<(T, u32, i32, i32), T, 4usize>("AddBloomFilterEntryHash")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddBloomFilterEntryHash", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddBloomFilterEntryHash",
+                            4usize
                         )
                     })
             });
@@ -117,36 +113,32 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         hashBits: i32,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            T,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        bool,
-                        4usize,
-                    >("ContainsBloomFilterEntry")
+                    .find_static_method::<(
+                        T,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                    ), bool, 4usize>("ContainsBloomFilterEntry")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ContainsBloomFilterEntry", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ContainsBloomFilterEntry",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (bitMask, value, hashCount, hashBits))?
+            cordl_method_info.invoke_unchecked((), (bitMask, value, hashCount, hashBits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -157,23 +149,24 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         hashBits: i32,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (T, u32, i32, i32),
-                        bool,
-                        4usize,
-                    >("ContainsBloomFilterEntryHash")
+                    .find_static_method::<(T, u32, i32, i32), bool, 4usize>(
+                        "ContainsBloomFilterEntryHash",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ContainsBloomFilterEntryHash", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ContainsBloomFilterEntryHash",
+                            4usize
                         )
                     })
             });
@@ -192,78 +185,70 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         hashBits: i32,
     ) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            i32,
-                            i32,
-                        ),
-                        T,
-                        3usize,
-                    >("ToBloomFilter")
+                        >,
+                        i32,
+                        i32,
+                    ), T, 3usize>("ToBloomFilter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToBloomFilter", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ToBloomFilter",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: T = unsafe {
-            cordl_method_info.invoke_unchecked((), (strings, hashCount, hashBits))?
-        };
+        let __cordl_ret: T =
+            unsafe { cordl_method_info.invoke_unchecked((), (strings, hashCount, hashBits))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToBloomFilter_IEnumerable_1_2<T>(
-        hashes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<u32>,
-        >,
+        hashes: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<u32>>,
         hashCount: i32,
         hashBits: i32,
     ) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<u32>,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        T,
-                        3usize,
-                    >("ToBloomFilter")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<u32>,
+                        >,
+                        i32,
+                        i32,
+                    ), T, 3usize>("ToBloomFilter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToBloomFilter", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ToBloomFilter",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: T = unsafe {
-            cordl_method_info.invoke_unchecked((), (hashes, hashCount, hashBits))?
-        };
+        let __cordl_ret: T =
+            unsafe { cordl_method_info.invoke_unchecked((), (hashes, hashCount, hashBits))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToBloomFilter_Il2CppString0<T>(
@@ -272,35 +257,31 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         hashBits: i32,
     ) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        T,
-                        3usize,
-                    >("ToBloomFilter")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                    ), T, 3usize>("ToBloomFilter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToBloomFilter", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ToBloomFilter",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: T = unsafe {
-            cordl_method_info.invoke_unchecked((), (value, hashCount, hashBits))?
-        };
+        let __cordl_ret: T =
+            unsafe { cordl_method_info.invoke_unchecked((), (value, hashCount, hashBits))? };
         Ok(__cordl_ret.into())
     }
 }

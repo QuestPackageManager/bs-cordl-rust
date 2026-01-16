@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphRect")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GlyphRect {
     pub m_X: i32,
     pub m_Y: i32,
@@ -27,13 +27,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextCore::GlyphR
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphRect")]
@@ -47,8 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextCore::Gl
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphRect")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::TextCore::GlyphRect {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TextCore::GlyphRect {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -68,9 +64,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextCore::Gl
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -88,8 +82,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TextCore::Glyp
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphRect")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::TextCore::GlyphRect {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::TextCore::GlyphRect {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -104,35 +97,34 @@ impl crate::UnityEngine::TextCore::GlyphRect {
         &mut self,
         other: crate::UnityEngine::TextCore::GlyphRect,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::TextCore::GlyphRect),
-                        bool,
-                        1usize,
-                    >("Equals")
+                    .find_method::<(crate::UnityEngine::TextCore::GlyphRect), bool, 1usize>(
+                        "Equals",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Equals",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -147,22 +139,22 @@ impl crate::UnityEngine::TextCore::GlyphRect {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -176,39 +168,40 @@ impl crate::UnityEngine::TextCore::GlyphRect {
         width: i32,
         height: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(i32, i32, i32, i32), quest_hook::libil2cpp::Void, 4usize>(
+                        ".ctor",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (x, y, width, height))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (x, y, width, height))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_height")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_height", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_height",
+                            0usize
                         )
                     })
             });
@@ -216,16 +209,18 @@ impl crate::UnityEngine::TextCore::GlyphRect {
         Ok(__cordl_ret.into())
     }
     pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_width")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_width", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_width",
+                            0usize
                         )
                     })
             });
@@ -233,15 +228,17 @@ impl crate::UnityEngine::TextCore::GlyphRect {
         Ok(__cordl_ret.into())
     }
     pub fn get_x(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_x")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_x",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_x",
                             0usize
                         )
                     })
@@ -250,15 +247,17 @@ impl crate::UnityEngine::TextCore::GlyphRect {
         Ok(__cordl_ret.into())
     }
     pub fn get_y(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_y")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_y",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_y",
                             0usize
                         )
                     })
@@ -266,44 +265,41 @@ impl crate::UnityEngine::TextCore::GlyphRect {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_zero() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::TextCore::GlyphRect,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_zero() -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextCore::GlyphRect> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::UnityEngine::TextCore::GlyphRect,
-                        0usize,
-                    >("get_zero")
+                    .find_static_method::<(), crate::UnityEngine::TextCore::GlyphRect, 0usize>(
+                        "get_zero",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_zero", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_zero",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::TextCore::GlyphRect = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::TextCore::GlyphRect =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphRect>>
-for crate::UnityEngine::TextCore::GlyphRect {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphRect> {
+    for crate::UnityEngine::TextCore::GlyphRect
+{
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphRect> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
 impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphRect>>
-for crate::UnityEngine::TextCore::GlyphRect {
+    for crate::UnityEngine::TextCore::GlyphRect
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphRect> {

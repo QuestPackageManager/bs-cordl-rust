@@ -11,14 +11,14 @@ pub struct ChainBeatIndex {
     pub ci: i32,
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ChainBeatIndex")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
+unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatmapSaveDataVersion4";
     const CLASS_NAME: &'static str = "ChainBeatIndex";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,44 +46,45 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
 #[cfg(feature = "BeatmapSaveDataVersion4+ChainBeatIndex")]
 impl crate::BeatmapSaveDataVersion4::ChainBeatIndex {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_beat(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_beat")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_beat", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_beat",
+                            0usize
                         )
                     })
             });
@@ -92,8 +93,7 @@ impl crate::BeatmapSaveDataVersion4::ChainBeatIndex {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ChainBeatIndex")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
+impl quest_hook::libil2cpp::ObjectType for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -102,39 +102,40 @@ for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+ChainBeatIndex")]
-impl AsRef<crate::BeatmapSaveDataCommon::IBeat>
-for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
+impl AsRef<crate::BeatmapSaveDataCommon::IBeat> for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
     fn as_ref(&self) -> &crate::BeatmapSaveDataCommon::IBeat {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+ChainBeatIndex")]
-impl AsMut<crate::BeatmapSaveDataCommon::IBeat>
-for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
+impl AsMut<crate::BeatmapSaveDataCommon::IBeat> for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
     fn as_mut(&mut self) -> &mut crate::BeatmapSaveDataCommon::IBeat {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+ChainBeatIndex")]
-impl AsRef<
-    crate::System::IComparable_1<
-        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
-    >,
-> for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
+impl
+    AsRef<
+        crate::System::IComparable_1<
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
+        >,
+    > for crate::BeatmapSaveDataVersion4::ChainBeatIndex
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
-        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
-    > {
+    ) -> &crate::System::IComparable_1<quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>>
+    {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+ChainBeatIndex")]
-impl AsMut<
-    crate::System::IComparable_1<
-        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
-    >,
-> for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
+impl
+    AsMut<
+        crate::System::IComparable_1<
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
+        >,
+    > for crate::BeatmapSaveDataVersion4::ChainBeatIndex
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::IComparable_1<

@@ -22,13 +22,15 @@ pub struct ContentCatalogProvider {
     feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider {
+    for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.AddressableAssets.ResourceProviders";
     const CLASS_NAME: &'static str = "ContentCatalogProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,28 +42,24 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
-)]
+#[cfg(feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider")]
 impl std::ops::Deref
-for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider {
+    for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider
+{
     type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
-)]
+#[cfg(feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider")]
 impl std::ops::DerefMut
-for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider {
+    for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
-)]
+#[cfg(feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider")]
 impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider {
     #[cfg(
         feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
@@ -70,14 +68,15 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
     #[cfg(
         feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
     )]
-    pub type InternalOp = crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp;
+    pub type InternalOp =
+        crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp;
     pub fn New(
         resourceManagerInstance: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (resourceManagerInstance))?;
         Ok(__cordl_object.into())
@@ -86,9 +85,10 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
         &mut self,
         providerInterface: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle),
@@ -103,9 +103,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (providerInterface))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (providerInterface))? };
         Ok(__cordl_ret.into())
     }
     pub fn Release(
@@ -115,7 +114,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
         >,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -139,9 +139,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (location, obj))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (location, obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -150,28 +149,25 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
             crate::UnityEngine::ResourceManagement::ResourceManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ResourceManagement::ResourceManager,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ResourceManagement::ResourceManager,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (resourceManagerInstance))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (resourceManagerInstance))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -179,7 +175,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
     feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider {
+    for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -190,8 +187,8 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
 #[cfg(
     feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
 )]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ContentCatalogProvider_DependencyHashIndex {
     #[default]
     Cache = 1i32,
@@ -325,13 +322,15 @@ pub struct ContentCatalogProvider_InternalOp {
     feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp {
+    for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.AddressableAssets.ResourceProviders";
     const CLASS_NAME: &'static str = "ContentCatalogProvider/InternalOp";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -347,7 +346,8 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
 )]
 impl std::ops::Deref
-for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp {
+    for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -357,7 +357,8 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
 )]
 impl std::ops::DerefMut
-for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp {
+    for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -378,7 +379,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -402,9 +404,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (idToLoad, location))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (idToLoad, location))? };
         Ok(__cordl_ret.into())
     }
     pub fn CatalogLoadOpCompleteCallback(
@@ -415,7 +416,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -436,9 +438,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (op))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (op))? };
         Ok(__cordl_ret.into())
     }
     pub fn DetermineIdToLoad(
@@ -452,10 +453,10 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
             >,
         >,
         disableCatalogUpdateOnStart: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -484,14 +485,11 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (location, dependencyObjects, disableCatalogUpdateOnStart),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                self,
+                (location, dependencyObjects, disableCatalogUpdateOnStart),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -500,10 +498,10 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
         loc: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -522,9 +520,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (loc))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (loc))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadCatalog(
@@ -532,37 +529,32 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
         idToLoad: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         loadCatalogFromLocalBundle: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("LoadCatalog")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 2usize>("LoadCatalog")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LoadCatalog", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LoadCatalog",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (idToLoad, loadCatalogFromLocalBundle))?
+            cordl_method_info.invoke_unchecked(self, (idToLoad, loadCatalogFromLocalBundle))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -573,49 +565,45 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
             crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("OnCatalogLoaded")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+                    >), quest_hook::libil2cpp::Void, 1usize>("OnCatalogLoaded")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnCatalogLoaded", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnCatalogLoaded",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (ccd))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (ccd))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Release(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Release(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Release",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Release",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Start(
@@ -624,51 +612,50 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
         disableCatalogUpdateOnStart: bool,
         isLocalCatalogInBundle: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
-                            bool,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Start")
+                    .find_method::<(
+                        crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Start",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        providerInterface,
-                        disableCatalogUpdateOnStart,
-                        isLocalCatalogInBundle,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    providerInterface,
+                    disableCatalogUpdateOnStart,
+                    isLocalCatalogInBundle,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn WaitForCompletionCallback(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("WaitForCompletionCallback")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WaitForCompletionCallback", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WaitForCompletionCallback",
+                            0usize
                         )
                     })
             });
@@ -681,49 +668,47 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
             crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("<LoadCatalog>b__14_0")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "<LoadCatalog>b__14_0"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<LoadCatalog>b__14_0", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "<LoadCatalog>b__14_0",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (ccd))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (ccd))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -731,7 +716,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
     feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp {
+    for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -748,22 +734,16 @@ pub struct InternalOp_ContentCatalogProvider_BundledCatalog {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_BundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_OpInProgress: bool,
-    pub m_LoadBundleRequest: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AssetBundleCreateRequest,
-    >,
+    pub m_LoadBundleRequest:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleCreateRequest>,
     pub m_CatalogAssetBundle: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
-    pub m_LoadTextAssetRequest: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AssetBundleRequest,
-    >,
+    pub m_LoadTextAssetRequest: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleRequest>,
     pub m_CatalogData: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
     >,
-    pub m_WebRequestQueueOperation: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
-    >,
-    pub m_RequestOperation: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AsyncOperation,
-    >,
+    pub m_WebRequestQueueOperation:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceManagement::WebRequestQueueOperation>,
+    pub m_RequestOperation: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     pub m_WebRequestTimeout: i32,
     pub OnLoaded: quest_hook::libil2cpp::Gc<
         crate::System::Action_1<

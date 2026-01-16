@@ -6,13 +6,15 @@ pub struct JPakeUtilities {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+JPake+JPakeUtilities")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
+    for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Agreement.JPake";
     const CLASS_NAME: &'static str = "JPakeUtilities";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -25,16 +27,14 @@ for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeUtilities")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeUtilities")]
-impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
+impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -49,9 +49,10 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -81,9 +82,8 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (p, q, gA, x2s))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger> =
+            unsafe { cordl_method_info.invoke_unchecked((), (p, q, gA, x2s))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateGA(
@@ -94,9 +94,10 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -126,9 +127,8 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (p, gx1, gx3, gx4))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger> =
+            unsafe { cordl_method_info.invoke_unchecked((), (p, gx1, gx3, gx4))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateGx(
@@ -138,9 +138,10 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -167,9 +168,8 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (p, g, x))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger> =
+            unsafe { cordl_method_info.invoke_unchecked((), (p, g, x))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateHashForZeroKnowledgeProof(
@@ -181,9 +181,10 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -216,11 +217,8 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (g, gr, gx, participantId, digest))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger> =
+            unsafe { cordl_method_info.invoke_unchecked((), (g, gr, gx, participantId, digest))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateKeyingMaterial(
@@ -233,9 +231,10 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -271,69 +270,56 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (p, q, gx4, x2, s, B))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger> =
+            unsafe { cordl_method_info.invoke_unchecked((), (p, q, gx4, x2, s, B))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateMacKey(
-        keyingMaterial: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        >,
+        keyingMaterial: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IDigest,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<u8>,
-                        >,
-                        2usize,
-                    >("CalculateMacKey")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, 2usize>(
+                        "CalculateMacKey",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculateMacKey", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CalculateMacKey",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (keyingMaterial, digest))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (keyingMaterial, digest))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateMacTag(
         participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        partnerParticipantId: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        partnerParticipantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         gx1: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         gx2: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         gx3: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         gx4: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
-        keyingMaterial: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        >,
+        keyingMaterial: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -375,23 +361,20 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        participantId,
-                        partnerParticipantId,
-                        gx1,
-                        gx2,
-                        gx3,
-                        gx4,
-                        keyingMaterial,
-                        digest,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    participantId,
+                    partnerParticipantId,
+                    gx1,
+                    gx2,
+                    gx3,
+                    gx4,
+                    keyingMaterial,
+                    digest,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -400,9 +383,10 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -421,9 +405,8 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (password))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger> =
+            unsafe { cordl_method_info.invoke_unchecked((), (password))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateX2s(
@@ -433,9 +416,10 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -462,9 +446,8 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (q, x2, s))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger> =
+            unsafe { cordl_method_info.invoke_unchecked((), (q, x2, s))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateZeroKnowledgeProof(
@@ -475,9 +458,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
-        random: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Security::SecureRandom,
-        >,
+        random: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -485,51 +466,31 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IDigest,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Security::SecureRandom,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Org::BouncyCastle::Math::BigInteger,
-                                >,
-                            >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
                         >,
-                        8usize,
-                    >("CalculateZeroKnowledgeProof")
+                    >, 8usize>("CalculateZeroKnowledgeProof")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculateZeroKnowledgeProof", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CalculateZeroKnowledgeProof",
+                            8usize
                         )
                     })
             });
@@ -545,15 +506,14 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
     }
     pub fn GenerateX1(
         q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
-        random: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Security::SecureRandom,
-        >,
+        random: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -577,22 +537,20 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (q, random))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger> =
+            unsafe { cordl_method_info.invoke_unchecked((), (q, random))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateX2(
         q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
-        random: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Security::SecureRandom,
-        >,
+        random: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -616,9 +574,8 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (q, random))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger> =
+            unsafe { cordl_method_info.invoke_unchecked((), (q, random))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntToByteArray(
@@ -626,9 +583,10 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
@@ -645,14 +603,13 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (value))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -661,305 +618,249 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
         bigInteger: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IDigest,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateDigestIncludingSize")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "UpdateDigestIncludingSize"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateDigestIncludingSize", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateDigestIncludingSize",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (digest, bigInteger))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (digest, bigInteger))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateDigestIncludingSize_Il2CppArray2(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IDigest,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateDigestIncludingSize")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "UpdateDigestIncludingSize"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateDigestIncludingSize", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateDigestIncludingSize",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (digest, bytes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (digest, bytes))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateDigestIncludingSize_Il2CppString1(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IDigest,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateDigestIncludingSize")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "UpdateDigestIncludingSize"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateDigestIncludingSize", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateDigestIncludingSize",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (digest, str))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (digest, str))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateDigest_BigInteger0(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
         bigInteger: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IDigest,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateDigest")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UpdateDigest")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateDigest", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateDigest",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (digest, bigInteger))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (digest, bigInteger))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateDigest_Il2CppArray2(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IDigest,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateDigest")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UpdateDigest")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateDigest", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateDigest",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (digest, bytes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (digest, bytes))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateDigest_Il2CppString1(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IDigest,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateDigest")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UpdateDigest")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateDigest", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateDigest",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (digest, str))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (digest, str))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateMac_BigInteger0(
         mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
         bigInteger: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IMac,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateMac")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UpdateMac")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateMac", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateMac",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (mac, bigInteger))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (mac, bigInteger))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateMac_Il2CppArray2(
         mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IMac,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateMac")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UpdateMac")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateMac", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateMac",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (mac, bytes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (mac, bytes))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateMac_Il2CppString1(
         mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IMac,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateMac")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UpdateMac")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateMac", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateMac",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (mac, str))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (mac, str))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateGa(
         ga: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -976,17 +877,17 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (ga))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (ga))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateGx4(
         gx4: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1003,89 +904,61 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (gx4))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (gx4))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateMacTag(
         participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        partnerParticipantId: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        partnerParticipantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         gx1: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         gx2: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         gx3: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         gx4: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
-        keyingMaterial: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        >,
+        keyingMaterial: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
-        partnerMacTag: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        >,
+        partnerMacTag: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IDigest,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        9usize,
-                    >("ValidateMacTag")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                    ), quest_hook::libil2cpp::Void, 9usize>("ValidateMacTag")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValidateMacTag", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ValidateMacTag",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        participantId,
-                        partnerParticipantId,
-                        gx1,
-                        gx2,
-                        gx3,
-                        gx4,
-                        keyingMaterial,
-                        digest,
-                        partnerMacTag,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    participantId,
+                    partnerParticipantId,
+                    gx1,
+                    gx2,
+                    gx3,
+                    gx4,
+                    keyingMaterial,
+                    digest,
+                    partnerMacTag,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1093,103 +966,82 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ValidateNotNull")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ValidateNotNull")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValidateNotNull", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ValidateNotNull",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (obj, description))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (obj, description))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateParticipantIdsDiffer(
         participantId1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         participantId2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ValidateParticipantIdsDiffer")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "ValidateParticipantIdsDiffer"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValidateParticipantIdsDiffer", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ValidateParticipantIdsDiffer",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (participantId1, participantId2))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (participantId1, participantId2))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateParticipantIdsEqual(
-        expectedParticipantId: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
-        actualParticipantId: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        expectedParticipantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        actualParticipantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ValidateParticipantIdsEqual")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "ValidateParticipantIdsEqual"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValidateParticipantIdsEqual", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ValidateParticipantIdsEqual",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (expectedParticipantId, actualParticipantId))?
+            cordl_method_info.invoke_unchecked((), (expectedParticipantId, actualParticipantId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1206,83 +1058,68 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
         participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::Org::BouncyCastle::Math::BigInteger,
-                                    >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Org::BouncyCastle::Math::BigInteger,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IDigest,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("ValidateZeroKnowledgeProof")
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+                    ), quest_hook::libil2cpp::Void, 7usize>(
+                        "ValidateZeroKnowledgeProof"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValidateZeroKnowledgeProof", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ValidateZeroKnowledgeProof",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (p, q, g, gx, zeroKnowledgeProof, participantId, digest),
-                )?
+                .invoke_unchecked((), (p, q, g, gx, zeroKnowledgeProof, participantId, digest))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+JPake+JPakeUtilities")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
+    for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

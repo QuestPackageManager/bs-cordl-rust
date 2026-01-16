@@ -1,22 +1,20 @@
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Messaging+ConstructionCallDictionary"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+ConstructionCallDictionary")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConstructionCallDictionary {
     __cordl_parent: crate::System::Runtime::Remoting::Messaging::MessageDictionary,
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Messaging+ConstructionCallDictionary"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+ConstructionCallDictionary")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
+    for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Remoting.Messaging";
     const CLASS_NAME: &'static str = "ConstructionCallDictionary";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -29,8 +27,7 @@ for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ConstructionCallDictionary")]
-impl std::ops::Deref
-for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
+impl std::ops::Deref for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
     type Target = crate::System::Runtime::Remoting::Messaging::MessageDictionary;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -38,7 +35,8 @@ for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ConstructionCallDictionary")]
 impl std::ops::DerefMut
-for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
+    for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -48,12 +46,12 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
     pub fn GetMethodProperty(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -68,9 +66,8 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -78,8 +75,8 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
             crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (message))?;
         Ok(__cordl_object.into())
@@ -89,33 +86,26 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetMethodProperty")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SetMethodProperty")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetMethodProperty", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetMethodProperty",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (key, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (key, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -124,36 +114,32 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
             crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (message))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Messaging+ConstructionCallDictionary"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+ConstructionCallDictionary")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
+    for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

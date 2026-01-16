@@ -5,14 +5,14 @@ pub struct MeshBuilderNative {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::MeshBuilderNative {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::MeshBuilderNative {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "MeshBuilderNative";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,7 +40,8 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MeshBuilderNative {
 #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative")]
 impl crate::UnityEngine::UIElements::MeshBuilderNative {
     #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
-    pub type NativeBorderParams = crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams;
+    pub type NativeBorderParams =
+        crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams;
     #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
     pub type NativeColorPage = crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage;
     #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
@@ -48,32 +49,29 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
     pub fn MakeBorder(
         borderParams: crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams,
         posZ: f32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::MeshWriteDataInterface,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::MeshWriteDataInterface> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams,
-                            f32,
-                        ),
-                        crate::UnityEngine::UIElements::MeshWriteDataInterface,
-                        2usize,
-                    >("MakeBorder")
+                    .find_static_method::<(
+                        crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams,
+                        f32,
+                    ), crate::UnityEngine::UIElements::MeshWriteDataInterface, 2usize>(
+                        "MakeBorder"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeBorder", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MakeBorder",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
-            cordl_method_info.invoke_unchecked((), (borderParams, posZ))?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface =
+            unsafe { cordl_method_info.invoke_unchecked((), (borderParams, posZ))? };
         Ok(__cordl_ret.into())
     }
     pub fn MakeBorder_Injected(
@@ -85,65 +83,61 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams,
-                            >,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::MeshWriteDataInterface,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("MakeBorder_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams,
+                        >,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "MakeBorder_Injected"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeBorder_Injected", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MakeBorder_Injected",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (borderParams, posZ, ret))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (borderParams, posZ, ret))? };
         Ok(__cordl_ret.into())
     }
     pub fn MakeSolidRect(
         rectParams: crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
         posZ: f32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::MeshWriteDataInterface,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::MeshWriteDataInterface> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
-                            f32,
-                        ),
-                        crate::UnityEngine::UIElements::MeshWriteDataInterface,
-                        2usize,
-                    >("MakeSolidRect")
+                    .find_static_method::<(
+                        crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
+                        f32,
+                    ), crate::UnityEngine::UIElements::MeshWriteDataInterface, 2usize>(
+                        "MakeSolidRect",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeSolidRect", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MakeSolidRect",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
-            cordl_method_info.invoke_unchecked((), (rectParams, posZ))?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface =
+            unsafe { cordl_method_info.invoke_unchecked((), (rectParams, posZ))? };
         Ok(__cordl_ret.into())
     }
     pub fn MakeSolidRect_Injected(
@@ -155,65 +149,61 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
-                            >,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::MeshWriteDataInterface,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("MakeSolidRect_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
+                        >,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "MakeSolidRect_Injected"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeSolidRect_Injected", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MakeSolidRect_Injected",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (rectParams, posZ, ret))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (rectParams, posZ, ret))? };
         Ok(__cordl_ret.into())
     }
     pub fn MakeTexturedRect(
         rectParams: crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
         posZ: f32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::MeshWriteDataInterface,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::MeshWriteDataInterface> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
-                            f32,
-                        ),
-                        crate::UnityEngine::UIElements::MeshWriteDataInterface,
-                        2usize,
-                    >("MakeTexturedRect")
+                    .find_static_method::<(
+                        crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
+                        f32,
+                    ), crate::UnityEngine::UIElements::MeshWriteDataInterface, 2usize>(
+                        "MakeTexturedRect",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeTexturedRect", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MakeTexturedRect",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
-            cordl_method_info.invoke_unchecked((), (rectParams, posZ))?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface =
+            unsafe { cordl_method_info.invoke_unchecked((), (rectParams, posZ))? };
         Ok(__cordl_ret.into())
     }
     pub fn MakeTexturedRect_Injected(
@@ -225,34 +215,33 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
-                            >,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::MeshWriteDataInterface,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("MakeTexturedRect_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
+                        >,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "MakeTexturedRect_Injected"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeTexturedRect_Injected", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MakeTexturedRect_Injected",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (rectParams, posZ, ret))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (rectParams, posZ, ret))? };
         Ok(__cordl_ret.into())
     }
     pub fn MakeVectorGraphics9SliceBackground(
@@ -266,56 +255,51 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         sliceLTRB: crate::UnityEngine::Vector4,
         tint: crate::UnityEngine::Color,
         colorPage: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::MeshWriteDataInterface,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::MeshWriteDataInterface> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::UIElements::Vertex,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::UnityEngine::UIElements::Vertex,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u16>,
-                            >,
-                            f32,
-                            f32,
-                            crate::UnityEngine::Rect,
-                            crate::UnityEngine::Vector4,
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
-                        ),
-                        crate::UnityEngine::UIElements::MeshWriteDataInterface,
-                        8usize,
-                    >("MakeVectorGraphics9SliceBackground")
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+                        f32,
+                        f32,
+                        crate::UnityEngine::Rect,
+                        crate::UnityEngine::Vector4,
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
+                    ), crate::UnityEngine::UIElements::MeshWriteDataInterface, 8usize>(
+                        "MakeVectorGraphics9SliceBackground",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeVectorGraphics9SliceBackground", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MakeVectorGraphics9SliceBackground",
+                            8usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        svgVertices,
-                        svgIndices,
-                        svgWidth,
-                        svgHeight,
-                        targetRect,
-                        sliceLTRB,
-                        tint,
-                        colorPage,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    svgVertices,
+                    svgIndices,
+                    svgWidth,
+                    svgHeight,
+                    targetRect,
+                    sliceLTRB,
+                    tint,
+                    colorPage,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -338,57 +322,56 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
-                            >,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::MeshWriteDataInterface,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        9usize,
-                    >("MakeVectorGraphics9SliceBackground_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >,
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 9usize>(
+                        "MakeVectorGraphics9SliceBackground_Injected",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeVectorGraphics9SliceBackground_Injected", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MakeVectorGraphics9SliceBackground_Injected",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        svgVertices,
-                        svgIndices,
-                        svgWidth,
-                        svgHeight,
-                        targetRect,
-                        sliceLTRB,
-                        tint,
-                        colorPage,
-                        ret,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    svgVertices,
+                    svgIndices,
+                    svgWidth,
+                    svgHeight,
+                    targetRect,
+                    sliceLTRB,
+                    tint,
+                    colorPage,
+                    ret,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -404,58 +387,53 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         scaleMode: crate::UnityEngine::ScaleMode,
         tint: crate::UnityEngine::Color,
         colorPage: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::MeshWriteDataInterface,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::MeshWriteDataInterface> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::UIElements::Vertex,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::UnityEngine::UIElements::Vertex,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u16>,
-                            >,
-                            f32,
-                            f32,
-                            crate::UnityEngine::Rect,
-                            crate::UnityEngine::Rect,
-                            crate::UnityEngine::ScaleMode,
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
-                        ),
-                        crate::UnityEngine::UIElements::MeshWriteDataInterface,
-                        9usize,
-                    >("MakeVectorGraphicsStretchBackground")
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+                        f32,
+                        f32,
+                        crate::UnityEngine::Rect,
+                        crate::UnityEngine::Rect,
+                        crate::UnityEngine::ScaleMode,
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
+                    ), crate::UnityEngine::UIElements::MeshWriteDataInterface, 9usize>(
+                        "MakeVectorGraphicsStretchBackground",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeVectorGraphicsStretchBackground", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MakeVectorGraphicsStretchBackground",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        svgVertices,
-                        svgIndices,
-                        svgWidth,
-                        svgHeight,
-                        targetRect,
-                        sourceUV,
-                        scaleMode,
-                        tint,
-                        colorPage,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    svgVertices,
+                    svgIndices,
+                    svgWidth,
+                    svgHeight,
+                    targetRect,
+                    sourceUV,
+                    scaleMode,
+                    tint,
+                    colorPage,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -479,66 +457,64 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
-                            >,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
-                            crate::UnityEngine::ScaleMode,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::MeshWriteDataInterface,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        10usize,
-                    >("MakeVectorGraphicsStretchBackground_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >,
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+                        crate::UnityEngine::ScaleMode,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 10usize>(
+                        "MakeVectorGraphicsStretchBackground_Injected",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeVectorGraphicsStretchBackground_Injected", 10usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MakeVectorGraphicsStretchBackground_Injected",
+                            10usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        svgVertices,
-                        svgIndices,
-                        svgWidth,
-                        svgHeight,
-                        targetRect,
-                        sourceUV,
-                        scaleMode,
-                        tint,
-                        colorPage,
-                        ret,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    svgVertices,
+                    svgIndices,
+                    svgWidth,
+                    svgHeight,
+                    targetRect,
+                    sourceUV,
+                    scaleMode,
+                    tint,
+                    colorPage,
+                    ret,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::MeshBuilderNative {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::MeshBuilderNative {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -546,11 +522,9 @@ for crate::UnityEngine::UIElements::MeshBuilderNative {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct MeshBuilderNative_NativeBorderParams {
     pub rect: crate::UnityEngine::Rect,
     pub leftColor: crate::UnityEngine::Color,
@@ -570,11 +544,10 @@ pub struct MeshBuilderNative_NativeBorderParams {
     pub rightColorPage: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
     pub bottomColorPage: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -593,20 +566,16 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -615,11 +584,10 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -631,28 +599,24 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -664,11 +628,10 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -680,15 +643,16 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
 #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 impl crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct MeshBuilderNative_NativeColorPage {
     pub isValid: i32,
     pub pageAndID: crate::UnityEngine::Color32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -707,18 +671,16 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -729,7 +691,8 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -743,22 +706,22 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -772,7 +735,8 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -784,8 +748,8 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
 #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 impl crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct MeshBuilderNative_NativeRectParams {
     pub rect: crate::UnityEngine::Rect,
     pub subRect: crate::UnityEngine::Rect,
@@ -822,7 +786,8 @@ pub struct MeshBuilderNative_NativeRectParams {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -841,18 +806,16 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -863,7 +826,8 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -877,22 +841,22 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -906,7 +870,8 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
+    for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

@@ -3,20 +3,20 @@
 #[derive(Debug)]
 pub struct KeyGenerationParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub random: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Security::SecureRandom,
-    >,
+    pub random: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
     pub strength: i32,
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+KeyGenerationParameters")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::KeyGenerationParameters {
+    for crate::Org::BouncyCastle::Crypto::KeyGenerationParameters
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto";
     const CLASS_NAME: &'static str = "KeyGenerationParameters";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,49 +44,40 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::KeyGenerationParam
 #[cfg(feature = "Org+BouncyCastle+Crypto+KeyGenerationParameters")]
 impl crate::Org::BouncyCastle::Crypto::KeyGenerationParameters {
     pub fn New(
-        random: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Security::SecureRandom,
-        >,
+        random: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
         strength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (random, strength))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        random: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Security::SecureRandom,
-        >,
+        random: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
         strength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Security::SecureRandom,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (random, strength))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (random, strength))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Random(
@@ -94,9 +85,10 @@ impl crate::Org::BouncyCastle::Crypto::KeyGenerationParameters {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -119,16 +111,18 @@ impl crate::Org::BouncyCastle::Crypto::KeyGenerationParameters {
         Ok(__cordl_ret.into())
     }
     pub fn get_Strength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Strength")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Strength", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Strength",
+                            0usize
                         )
                     })
             });
@@ -138,7 +132,8 @@ impl crate::Org::BouncyCastle::Crypto::KeyGenerationParameters {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+KeyGenerationParameters")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::KeyGenerationParameters {
+    for crate::Org::BouncyCastle::Crypto::KeyGenerationParameters
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,21 +3,24 @@
 #[derive(Debug)]
 pub struct MultiplayerLevelCompletionResults {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _playerLevelEndState: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState,
-    pub _playerLevelEndReason: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason,
-    pub _levelCompletionResults: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LevelCompletionResults,
-    >,
+    pub _playerLevelEndState:
+        crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState,
+    pub _playerLevelEndReason:
+        crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason,
+    pub _levelCompletionResults:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
 }
 #[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "MultiplayerLevelCompletionResults";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,16 +48,19 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLevelCompletionRe
 #[cfg(feature = "MultiplayerLevelCompletionResults")]
 impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
     #[cfg(feature = "MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason")]
-    pub type MultiplayerPlayerLevelEndReason = crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason;
+    pub type MultiplayerPlayerLevelEndReason =
+        crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason;
     #[cfg(feature = "MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState")]
-    pub type MultiplayerPlayerLevelEndState = crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState;
+    pub type MultiplayerPlayerLevelEndState =
+        crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState;
     pub fn CompareTo(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -69,22 +75,19 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateFromSerializedData(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLevelCompletionResults>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -111,7 +114,8 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
     pub fn HasAnyResult(
         playerLevelEndState: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -128,14 +132,13 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerLevelEndState))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerLevelEndState))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -147,22 +150,26 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
             crate::GlobalNamespace::LevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (playerLevelEndState, playerLevelEndReason, levelCompletionResults),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                playerLevelEndState,
+                playerLevelEndReason,
+                levelCompletionResults,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn Serialize(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -179,30 +186,28 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (writer))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor_0(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState_MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason_LevelCompletionResults1(
@@ -213,7 +218,8 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
             crate::GlobalNamespace::LevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -237,25 +243,30 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (playerLevelEndState, playerLevelEndReason, levelCompletionResults),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    playerLevelEndState,
+                    playerLevelEndReason,
+                    levelCompletionResults,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_failedOrGivenUp(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_failedOrGivenUp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_failedOrGivenUp", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_failedOrGivenUp",
+                            0usize
                         )
                     })
             });
@@ -263,16 +274,18 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
         Ok(__cordl_ret.into())
     }
     pub fn get_hasAnyResults(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasAnyResults")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_hasAnyResults", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_hasAnyResults",
+                            0usize
                         )
                     })
             });
@@ -284,9 +297,10 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -303,9 +317,8 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelCompletionResults,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_playerLevelEndReason(
@@ -313,7 +326,8 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -340,7 +354,8 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -365,7 +380,8 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
 }
 #[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -375,73 +391,71 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
 }
 #[cfg(feature = "MultiplayerLevelCompletionResults")]
 impl AsRef<crate::LiteNetLib::Utils::INetImmutableSerializable>
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults
+{
     fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetImmutableSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerLevelCompletionResults")]
 impl AsMut<crate::LiteNetLib::Utils::INetImmutableSerializable>
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults
+{
     fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerLevelCompletionResults")]
-impl AsRef<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+impl
+    AsRef<
+        crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLevelCompletionResults>,
         >,
-    >,
-> for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    > for crate::GlobalNamespace::MultiplayerLevelCompletionResults
+{
     fn as_ref(
         &self,
     ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLevelCompletionResults>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerLevelCompletionResults")]
-impl AsMut<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+impl
+    AsMut<
+        crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLevelCompletionResults>,
         >,
-    >,
-> for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    > for crate::GlobalNamespace::MultiplayerLevelCompletionResults
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLevelCompletionResults>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerLevelCompletionResults")]
 impl AsRef<crate::System::IComparable>
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults
+{
     fn as_ref(&self) -> &crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerLevelCompletionResults")]
 impl AsMut<crate::System::IComparable>
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults
+{
     fn as_mut(&mut self) -> &mut crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason {
     #[default]
     Cleared = 0i32,
@@ -453,15 +467,15 @@ pub enum MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason {
     StartupFailed = 6i32,
     WasInactive = 5i32,
 }
-#[cfg(
-    feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason"
-)]
+#[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MultiplayerLevelCompletionResults/MultiplayerPlayerLevelEndReason";
+    const CLASS_NAME: &'static str =
+        "MultiplayerLevelCompletionResults/MultiplayerPlayerLevelEndReason";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -476,20 +490,16 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason"
-)]
+#[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -498,11 +508,10 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason"
-)]
+#[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -514,28 +523,24 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason"
-)]
+#[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason"
-)]
+#[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -547,26 +552,24 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState {
     #[default]
     NotFinished = 1i32,
     NotStarted = 2i32,
     SongFinished = 0i32,
 }
-#[cfg(
-    feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState"
-)]
+#[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MultiplayerLevelCompletionResults/MultiplayerPlayerLevelEndState";
+    const CLASS_NAME: &'static str =
+        "MultiplayerLevelCompletionResults/MultiplayerPlayerLevelEndState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -581,20 +584,16 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState"
-)]
+#[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -603,11 +602,10 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState"
-)]
+#[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -619,28 +617,24 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState"
-)]
+#[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState"
-)]
+#[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState {
+    for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

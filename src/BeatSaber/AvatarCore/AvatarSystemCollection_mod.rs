@@ -14,12 +14,10 @@ pub struct AvatarSystemCollection {
             quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
         >,
     >,
-    pub _supportedOptionalAvatarDataTypes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyCollection_1<u32>,
-    >,
-    pub _fallbackAvatarSystem: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::AvatarCore::IAvatarSystem,
-    >,
+    pub _supportedOptionalAvatarDataTypes:
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IReadOnlyCollection_1<u32>>,
+    pub _fallbackAvatarSystem:
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
     pub _availableAvatarSystemList: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::IReadOnlyList_1<
             quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
@@ -27,14 +25,14 @@ pub struct AvatarSystemCollection {
     >,
 }
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSystemCollection")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::AvatarCore::AvatarSystemCollection {
+unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.AvatarCore";
     const CLASS_NAME: &'static str = "AvatarSystemCollection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -65,33 +63,26 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
         system1: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
         system2: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::AvatarCore::IAvatarSystem,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::AvatarCore::IAvatarSystem,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("AvatarSystemBySelectionSortOrder")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+                        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+                    ), i32, 2usize>("AvatarSystemBySelectionSortOrder")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AvatarSystemBySelectionSortOrder", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AvatarSystemBySelectionSortOrder",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (system1, system2))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (system1, system2))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateDefaultAvatarsForAvatarSystemsWithoutUserCreatedAvatarAsync(
@@ -99,9 +90,10 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -119,9 +111,8 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAvatarSystem_AvatarSystemIdentifier1(
@@ -130,9 +121,10 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::BeatSaber::AvatarCore::AvatarSystemIdentifier),
@@ -149,11 +141,8 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::AvatarCore::IAvatarSystem,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (avatarSystemIdentifier))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (avatarSystemIdentifier))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAvatarSystem_IAvatarSystemMetadata0(
@@ -164,9 +153,10 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -185,22 +175,20 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::AvatarCore::IAvatarSystem,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (avatarSystemMetadata))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (avatarSystemMetadata))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAvatarSystem_Il2CppString2(
         &mut self,
-        avatarTypeIdentifier: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        avatarTypeIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -217,9 +205,8 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::AvatarCore::IAvatarSystem,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (avatarTypeIdentifier))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (avatarTypeIdentifier))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAvatarSystem_u32_3(
@@ -228,9 +215,10 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32),
@@ -247,11 +235,8 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::AvatarCore::IAvatarSystem,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (avatarTypeIdentifierHash))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (avatarTypeIdentifierHash))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMultiplayerAvatarOptionalDataProvider(
@@ -260,13 +245,12 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -285,9 +269,7 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (selectedAvatarTypeIdentifier))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (selectedAvatarTypeIdentifier))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMultiplayerAvatarsData(
@@ -297,14 +279,13 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::MultiplayerAvatarsData,
-            >,
+            crate::System::Threading::Tasks::Task_1<crate::GlobalNamespace::MultiplayerAvatarsData>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -324,34 +305,31 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::MultiplayerAvatarsData,
-            >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (selectedAvatarTypeIdentifier))?
-        };
+            crate::System::Threading::Tasks::Task_1<crate::GlobalNamespace::MultiplayerAvatarsData>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (selectedAvatarTypeIdentifier))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasAvatarSystem(
         &mut self,
         avatarTypeIdentifierHash: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), bool, 1usize>("HasAvatarSystem")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HasAvatarSystem", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HasAvatarSystem",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (avatarTypeIdentifierHash))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (avatarTypeIdentifierHash))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -361,8 +339,8 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (boundAvatarSystems))?;
         Ok(__cordl_object.into())
@@ -375,32 +353,27 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::AvatarCore::IAvatarSystem,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (boundAvatarSystems))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (boundAvatarSystems))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_anyAvatarCreated(
@@ -408,9 +381,10 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -427,9 +401,8 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_availableAvatarSystems(
@@ -437,40 +410,34 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
                             >,
                         >,
-                        0usize,
-                    >("get_availableAvatarSystems")
+                    >, 0usize>("get_availableAvatarSystems")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_availableAvatarSystems", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_availableAvatarSystems",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -480,40 +447,34 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
                             >,
                         >,
-                        0usize,
-                    >("get_selectableAvatarSystems")
+                    >, 0usize>("get_selectableAvatarSystems")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_selectableAvatarSystems", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_selectableAvatarSystems",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -521,28 +482,22 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     pub fn get_supportedOptionalAvatarDataType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyCollection_1<u32>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IReadOnlyCollection_1<u32>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyCollection_1<
-                                u32,
-                            >,
-                        >,
-                        0usize,
-                    >("get_supportedOptionalAvatarDataType")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyCollection_1<u32>,
+                    >, 0usize>("get_supportedOptionalAvatarDataType")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_supportedOptionalAvatarDataType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_supportedOptionalAvatarDataType",
+                            0usize
                         )
                     })
             });
@@ -553,8 +508,7 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSystemCollection")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::BeatSaber::AvatarCore::AvatarSystemCollection {
+impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

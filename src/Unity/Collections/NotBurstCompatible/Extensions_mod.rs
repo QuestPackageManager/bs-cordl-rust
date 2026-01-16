@@ -6,13 +6,15 @@ pub struct Extensions {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NotBurstCompatible+Extensions")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::NotBurstCompatible::Extensions {
+    for crate::Unity::Collections::NotBurstCompatible::Extensions
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Collections.NotBurstCompatible";
     const CLASS_NAME: &'static str = "Extensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,34 +46,30 @@ impl crate::Unity::Collections::NotBurstCompatible::Extensions {
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::NativeList_1<T>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CopyFromNBC")
+                    .find_static_method::<(
+                        crate::Unity::Collections::NativeList_1<T>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("CopyFromNBC")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CopyFromNBC", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CopyFromNBC",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (list, array))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (list, array))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToArrayNBC<T>(
@@ -80,12 +78,14 @@ impl crate::Unity::Collections::NotBurstCompatible::Extensions {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::NativeList_1<T>),
@@ -100,9 +100,8 @@ impl crate::Unity::Collections::NotBurstCompatible::Extensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToArray_NativeHashSet_1_0<T>(
@@ -111,12 +110,14 @@ impl crate::Unity::Collections::NotBurstCompatible::Extensions {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::NativeHashSet_1<T>),
@@ -131,9 +132,8 @@ impl crate::Unity::Collections::NotBurstCompatible::Extensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (set))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (set))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToArray_NativeParallelHashSet_1_1<T>(
@@ -142,12 +142,14 @@ impl crate::Unity::Collections::NotBurstCompatible::Extensions {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::NativeParallelHashSet_1<T>),
@@ -162,15 +164,15 @@ impl crate::Unity::Collections::NotBurstCompatible::Extensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (set))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (set))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NotBurstCompatible+Extensions")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Unity::Collections::NotBurstCompatible::Extensions {
+    for crate::Unity::Collections::NotBurstCompatible::Extensions
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

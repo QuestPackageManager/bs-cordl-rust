@@ -13,7 +13,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::HID
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
     const CLASS_NAME: &'static str = "HID";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,13 +48,15 @@ impl crate::UnityEngine::InputSystem::HID::HID {
     #[cfg(feature = "UnityEngine+InputSystem+HID+HID+GenericDesktop")]
     pub type GenericDesktop = crate::UnityEngine::InputSystem::HID::HID_GenericDesktop;
     #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
-    pub type HIDCollectionDescriptor = crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor;
+    pub type HIDCollectionDescriptor =
+        crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor;
     #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDCollectionType")]
     pub type HIDCollectionType = crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType;
     #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptor")]
     pub type HIDDeviceDescriptor = crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor;
     #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder")]
-    pub type HIDDeviceDescriptorBuilder = crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder;
+    pub type HIDDeviceDescriptorBuilder =
+        crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder;
     #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDElementDescriptor")]
     pub type HIDElementDescriptor = crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor;
     #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDElementFlags")]
@@ -67,8 +70,8 @@ impl crate::UnityEngine::InputSystem::HID::HID {
     #[cfg(feature = "UnityEngine+InputSystem+HID+HID+UsagePage")]
     pub type UsagePage = crate::UnityEngine::InputSystem::HID::HID_UsagePage;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -81,10 +84,10 @@ impl crate::UnityEngine::InputSystem::HID::HID {
         executeDeviceCommand: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::LowLevel::InputDeviceExecuteCommandDelegate,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -111,14 +114,9 @@ impl crate::UnityEngine::InputSystem::HID::HID {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (description, matchedLayout, executeDeviceCommand),
-                )?
+                .invoke_unchecked((), (description, matchedLayout, executeDeviceCommand))?
         };
         Ok(__cordl_ret.into())
     }
@@ -129,10 +127,10 @@ impl crate::UnityEngine::InputSystem::HID::HID {
         executeCommandDelegate: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::LowLevel::InputDeviceExecuteCommandDelegate,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -157,19 +155,18 @@ impl crate::UnityEngine::InputSystem::HID::HID {
                     })
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (deviceDescription, executeCommandDelegate))?
+            cordl_method_info.invoke_unchecked((), (deviceDescription, executeCommandDelegate))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UsagePageToString(
         usagePage: crate::UnityEngine::InputSystem::HID::HID_UsagePage,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::InputSystem::HID::HID_UsagePage),
@@ -184,20 +181,19 @@ impl crate::UnityEngine::InputSystem::HID::HID {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (usagePage))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (usagePage))? };
         Ok(__cordl_ret.into())
     }
     pub fn UsageToString(
         usagePage: crate::UnityEngine::InputSystem::HID::HID_UsagePage,
         usage: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::InputSystem::HID::HID_UsagePage, i32),
@@ -212,38 +208,36 @@ impl crate::UnityEngine::InputSystem::HID::HID {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (usagePage, usage))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (usagePage, usage))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_QueryHIDParsedReportDescriptorDeviceCommandType() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_QueryHIDParsedReportDescriptorDeviceCommandType(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::Utilities::FourCC> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -258,17 +252,16 @@ impl crate::UnityEngine::InputSystem::HID::HID {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_QueryHIDReportDescriptorDeviceCommandType() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_QueryHIDReportDescriptorDeviceCommandType(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::Utilities::FourCC> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -283,17 +276,16 @@ impl crate::UnityEngine::InputSystem::HID::HID {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_QueryHIDReportDescriptorSizeDeviceCommandType() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_QueryHIDReportDescriptorSizeDeviceCommandType(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::Utilities::FourCC> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -308,19 +300,18 @@ impl crate::UnityEngine::InputSystem::HID::HID {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_hidDescriptor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -335,9 +326,8 @@ impl crate::UnityEngine::InputSystem::HID::HID {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -351,8 +341,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::HID:
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+Button")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum HID_Button {
     #[default]
     Primary = 1i32,
@@ -361,8 +351,7 @@ pub enum HID_Button {
     Undefined = 0i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+Button")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::HID::HID_Button {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::HID::HID_Button {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
@@ -381,18 +370,14 @@ for crate::UnityEngine::InputSystem::HID::HID_Button {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+Button")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::HID::HID_Button {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::InputSystem::HID::HID_Button {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -402,8 +387,7 @@ for crate::UnityEngine::InputSystem::HID::HID_Button {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+Button")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::HID::HID_Button {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::InputSystem::HID::HID_Button {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -416,23 +400,19 @@ for crate::UnityEngine::InputSystem::HID::HID_Button {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+Button")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::HID::HID_Button {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::InputSystem::HID::HID_Button {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+Button")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::HID::HID_Button {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::InputSystem::HID::HID_Button {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -445,8 +425,8 @@ for crate::UnityEngine::InputSystem::HID::HID_Button {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+GenericDesktop")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum HID_GenericDesktop {
     #[default]
     ApplicationBreak = 165i32,
@@ -523,7 +503,8 @@ pub enum HID_GenericDesktop {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+GenericDesktop")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop {
+    for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
@@ -542,18 +523,16 @@ for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+GenericDesktop")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop {
+    for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -564,7 +543,8 @@ for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+GenericDesktop")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop {
+    for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -578,22 +558,22 @@ for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+GenericDesktop")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop {
+    for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+GenericDesktop")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop {
+    for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -606,8 +586,8 @@ for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct HID_HIDCollectionDescriptor {
     pub _cordl_type: crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType,
     pub usage: i32,
@@ -618,7 +598,8 @@ pub struct HID_HIDCollectionDescriptor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
@@ -637,18 +618,16 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -659,7 +638,8 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -673,22 +653,22 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -702,7 +682,8 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -714,8 +695,8 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
 impl crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum HID_HIDCollectionType {
     #[default]
     Application = 1i32,
@@ -728,7 +709,8 @@ pub enum HID_HIDCollectionType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
@@ -747,18 +729,16 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -769,7 +749,8 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -783,22 +764,22 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -811,8 +792,8 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptor")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct HID_HIDDeviceDescriptor {
     pub vendorId: i32,
     pub productId: i32,
@@ -834,7 +815,8 @@ pub struct HID_HIDDeviceDescriptor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
@@ -853,18 +835,16 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptor")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -875,7 +855,8 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptor")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -889,22 +870,22 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptor")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptor")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -918,7 +899,8 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptor")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -931,12 +913,12 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
 impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
     pub fn FromJson(
         json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -951,19 +933,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor = unsafe {
-            cordl_method_info.invoke_unchecked((), (json))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor =
+            unsafe { cordl_method_info.invoke_unchecked((), (json))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToJson(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -978,17 +959,14 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct HID_HIDDeviceDescriptorBuilder {
     pub usagePage: crate::UnityEngine::InputSystem::HID::HID_UsagePage,
     pub usage: i32,
@@ -1009,11 +987,10 @@ pub struct HID_HIDDeviceDescriptorBuilder {
     pub m_OutputReportSize: i32,
     pub m_FeatureReportSize: i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
@@ -1032,20 +1009,16 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1054,11 +1027,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1070,28 +1042,24 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1103,11 +1071,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1125,9 +1092,10 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::HID::HID_GenericDesktop, i32),
@@ -1142,9 +1110,8 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder = unsafe {
-            cordl_method_info.invoke_unchecked(self, (usage, sizeInBits))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder =
+            unsafe { cordl_method_info.invoke_unchecked(self, (usage, sizeInBits))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddElement_HID_UsagePage_i32_0(
@@ -1155,9 +1122,10 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::HID::HID_UsagePage, i32, i32),
@@ -1172,19 +1140,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder = unsafe {
-            cordl_method_info.invoke_unchecked(self, (usagePage, usage, sizeInBits))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder =
+            unsafe { cordl_method_info.invoke_unchecked(self, (usagePage, usage, sizeInBits))? };
         Ok(__cordl_ret.into())
     }
     pub fn Finish(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1199,9 +1166,8 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn StartReport(
@@ -1211,9 +1177,10 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::HID::HID_HIDReportType, i32),
@@ -1228,9 +1195,8 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder = unsafe {
-            cordl_method_info.invoke_unchecked(self, (reportType, reportId))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reportType, reportId))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithLogicalMinMax(
@@ -1240,9 +1206,10 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
@@ -1257,9 +1224,8 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder = unsafe {
-            cordl_method_info.invoke_unchecked(self, (min, max))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder =
+            unsafe { cordl_method_info.invoke_unchecked(self, (min, max))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithPhysicalMinMax(
@@ -1269,9 +1235,10 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
@@ -1286,18 +1253,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder = unsafe {
-            cordl_method_info.invoke_unchecked(self, (min, max))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder =
+            unsafe { cordl_method_info.invoke_unchecked(self, (min, max))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_HID_GenericDesktop1(
         &mut self,
         usage: crate::UnityEngine::InputSystem::HID::HID_GenericDesktop,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::HID::HID_GenericDesktop),
@@ -1312,9 +1279,8 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (usage))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (usage))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_HID_UsagePage_i32_0(
@@ -1322,9 +1288,10 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
         usagePage: crate::UnityEngine::InputSystem::HID::HID_UsagePage,
         usage: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::HID::HID_UsagePage, i32),
@@ -1339,15 +1306,14 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (usagePage, usage))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (usagePage, usage))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementDescriptor")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct HID_HIDElementDescriptor {
     pub usage: i32,
     pub usagePage: crate::UnityEngine::InputSystem::HID::HID_UsagePage,
@@ -1368,7 +1334,8 @@ pub struct HID_HIDElementDescriptor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
@@ -1387,18 +1354,16 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementDescriptor")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1409,7 +1374,8 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementDescriptor")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1423,22 +1389,22 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementDescriptor")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementDescriptor")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1452,7 +1418,8 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementDescriptor")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1475,7 +1442,8 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -1504,19 +1472,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element, controlName, builder))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element, controlName, builder))? };
         Ok(__cordl_ret.into())
     }
     pub fn DetermineAxisNormalizationParameters(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1531,19 +1498,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DetermineDefaultState(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::Utilities::PrimitiveValue>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1558,19 +1524,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DetermineDisplayName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1585,46 +1550,42 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DetermineFormat(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::Utilities::FourCC> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::InputSystem::Utilities::FourCC,
-                        0usize,
-                    >("DetermineFormat")
+                    .find_method::<(), crate::UnityEngine::InputSystem::Utilities::FourCC, 0usize>(
+                        "DetermineFormat",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DetermineFormat", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DetermineFormat",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DetermineLayout(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1639,19 +1600,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DetermineName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1666,19 +1626,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DetermineParameters(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1693,19 +1652,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DetermineProcessors(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1720,9 +1678,8 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DetermineUsages(
@@ -1734,24 +1691,22 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::InputSystem::Utilities::InternedString,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::InputSystem::Utilities::InternedString,
                         >,
-                        0usize,
-                    >("DetermineUsages")
+                    >, 0usize>("DetermineUsages")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DetermineUsages", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DetermineUsages",
+                            0usize
                         )
                     })
             });
@@ -1767,9 +1722,10 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
         usagePage: crate::UnityEngine::InputSystem::HID::HID_UsagePage,
         usage: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::HID::HID_UsagePage, i32),
@@ -1784,22 +1740,23 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (usagePage, usage))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (usagePage, usage))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsUsableElement(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsUsableElement")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsUsableElement", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsUsableElement",
+                            0usize
                         )
                     })
             });
@@ -1807,16 +1764,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
         Ok(__cordl_ret.into())
     }
     pub fn get_hasNullState(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasNullState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_hasNullState", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_hasNullState",
+                            0usize
                         )
                     })
             });
@@ -1824,16 +1783,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
         Ok(__cordl_ret.into())
     }
     pub fn get_hasPreferredState(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasPreferredState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_hasPreferredState", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_hasPreferredState",
+                            0usize
                         )
                     })
             });
@@ -1841,16 +1802,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
         Ok(__cordl_ret.into())
     }
     pub fn get_isArray(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isArray")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isArray", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isArray",
+                            0usize
                         )
                     })
             });
@@ -1858,16 +1821,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
         Ok(__cordl_ret.into())
     }
     pub fn get_isConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isConstant")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isConstant", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isConstant",
+                            0usize
                         )
                     })
             });
@@ -1875,16 +1840,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
         Ok(__cordl_ret.into())
     }
     pub fn get_isNonLinear(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isNonLinear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isNonLinear", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isNonLinear",
+                            0usize
                         )
                     })
             });
@@ -1892,16 +1859,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
         Ok(__cordl_ret.into())
     }
     pub fn get_isRelative(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isRelative")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isRelative", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isRelative",
+                            0usize
                         )
                     })
             });
@@ -1909,16 +1878,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
         Ok(__cordl_ret.into())
     }
     pub fn get_isSigned(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isSigned")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isSigned", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isSigned",
+                            0usize
                         )
                     })
             });
@@ -1926,16 +1897,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
         Ok(__cordl_ret.into())
     }
     pub fn get_isWrapping(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isWrapping")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isWrapping", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isWrapping",
+                            0usize
                         )
                     })
             });
@@ -1943,16 +1916,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
         Ok(__cordl_ret.into())
     }
     pub fn get_maxFloatValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_maxFloatValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_maxFloatValue", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_maxFloatValue",
+                            0usize
                         )
                     })
             });
@@ -1960,16 +1935,18 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
         Ok(__cordl_ret.into())
     }
     pub fn get_minFloatValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_minFloatValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_minFloatValue", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_minFloatValue",
+                            0usize
                         )
                     })
             });
@@ -1978,8 +1955,8 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementFlags")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum HID_HIDElementFlags {
     #[default]
     BufferedBytes = 256i32,
@@ -1994,7 +1971,8 @@ pub enum HID_HIDElementFlags {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementFlags")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
@@ -2013,18 +1991,16 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2035,7 +2011,8 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2049,22 +2026,22 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementFlags")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2088,13 +2065,15 @@ pub struct HID_HIDLayoutBuilder {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDLayoutBuilder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
     const CLASS_NAME: &'static str = "HID/HIDLayoutBuilder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2124,25 +2103,21 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder {
     pub fn Build(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Layouts::InputControlLayout>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
-                        >,
-                        0usize,
-                    >("Build")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+                    >, 0usize>("Build")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Build",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Build",
                             0usize
                         )
                     })
@@ -2153,37 +2128,37 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDLayoutBuilder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2192,8 +2167,8 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDReportType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum HID_HIDReportType {
     #[default]
     Feature = 3i32,
@@ -2203,7 +2178,8 @@ pub enum HID_HIDReportType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDReportType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::HID::HID_HIDReportType {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDReportType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
@@ -2222,18 +2198,16 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDReportType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDReportType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::HID::HID_HIDReportType {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDReportType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2244,7 +2218,8 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDReportType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDReportType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::HID::HID_HIDReportType {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDReportType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2258,22 +2233,22 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDReportType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDReportType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::HID::HID_HIDReportType {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDReportType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDReportType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::HID::HID_HIDReportType {
+    for crate::UnityEngine::InputSystem::HID::HID_HIDReportType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2286,8 +2261,8 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDReportType {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+Simulation")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum HID_Simulation {
     #[default]
     Accelerator = 196i32,
@@ -2344,8 +2319,7 @@ pub enum HID_Simulation {
     WingFlaps = 195i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+Simulation")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::HID::HID_Simulation {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::HID::HID_Simulation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
@@ -2364,18 +2338,16 @@ for crate::UnityEngine::InputSystem::HID::HID_Simulation {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+Simulation")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::HID::HID_Simulation {
+    for crate::UnityEngine::InputSystem::HID::HID_Simulation
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2386,7 +2358,8 @@ for crate::UnityEngine::InputSystem::HID::HID_Simulation {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+Simulation")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::HID::HID_Simulation {
+    for crate::UnityEngine::InputSystem::HID::HID_Simulation
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2400,22 +2373,20 @@ for crate::UnityEngine::InputSystem::HID::HID_Simulation {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+Simulation")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::HID::HID_Simulation {
+    for crate::UnityEngine::InputSystem::HID::HID_Simulation
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+Simulation")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::HID::HID_Simulation {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::InputSystem::HID::HID_Simulation {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2428,8 +2399,8 @@ for crate::UnityEngine::InputSystem::HID::HID_Simulation {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+UsagePage")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum HID_UsagePage {
     #[default]
     AlphanumericDisplay = 20i32,
@@ -2459,8 +2430,7 @@ pub enum HID_UsagePage {
     VendorDefined = 65280i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+UsagePage")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::HID::HID_UsagePage {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::HID::HID_UsagePage {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
@@ -2479,18 +2449,16 @@ for crate::UnityEngine::InputSystem::HID::HID_UsagePage {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+UsagePage")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::HID::HID_UsagePage {
+    for crate::UnityEngine::InputSystem::HID::HID_UsagePage
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2501,7 +2469,8 @@ for crate::UnityEngine::InputSystem::HID::HID_UsagePage {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+UsagePage")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::HID::HID_UsagePage {
+    for crate::UnityEngine::InputSystem::HID::HID_UsagePage
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2515,22 +2484,20 @@ for crate::UnityEngine::InputSystem::HID::HID_UsagePage {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+UsagePage")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::HID::HID_UsagePage {
+    for crate::UnityEngine::InputSystem::HID::HID_UsagePage
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+UsagePage")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::HID::HID_UsagePage {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::InputSystem::HID::HID_UsagePage {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

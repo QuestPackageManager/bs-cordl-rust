@@ -5,14 +5,14 @@ pub struct GraphQLUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+GraphQLUtils")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::OculusStudios::GraphQL::Client::GraphQLUtils {
+unsafe impl quest_hook::libil2cpp::Type for crate::OculusStudios::GraphQL::Client::GraphQLUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OculusStudios.GraphQL.Client";
     const CLASS_NAME: &'static str = "GraphQLUtils";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -55,38 +55,28 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLUtils {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IDictionary_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IDictionary_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IDictionary_2<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         >,
-                        1usize,
-                    >("Convert4Json")
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IDictionary_2<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        >,
+                    >, 1usize>("Convert4Json")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Convert4Json", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Convert4Json",
+                            1usize
                         )
                     })
             });
@@ -100,12 +90,12 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLUtils {
     }
     pub fn ConvertObject2Json(
         item: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -120,21 +110,22 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLUtils {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (item))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked((), (item))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertString2Enum_Il2CppString0<T>(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -162,12 +153,14 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLUtils {
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -190,9 +183,8 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLUtils {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (strList))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (strList))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeserializeAsync<T>(
@@ -201,12 +193,14 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLUtils {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -223,38 +217,37 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLUtils {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (data))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (data))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsUnknown<T>(enumValue: T) -> quest_hook::libil2cpp::Result<bool>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(T), bool, 1usize>("IsUnknown")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsUnknown", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsUnknown",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (enumValue))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (enumValue))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+GraphQLUtils")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::OculusStudios::GraphQL::Client::GraphQLUtils {
+impl quest_hook::libil2cpp::ObjectType for crate::OculusStudios::GraphQL::Client::GraphQLUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

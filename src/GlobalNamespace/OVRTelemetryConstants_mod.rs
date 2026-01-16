@@ -6,13 +6,15 @@ pub struct BB_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+BB+AnnotationType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BB_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::BB_OVRTelemetryConstants_AnnotationType
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/BB/AnnotationType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -25,16 +27,14 @@ for crate::GlobalNamespace::BB_OVRTelemetryConstants_AnnotationType {
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+BB+AnnotationType")]
-impl std::ops::Deref
-for crate::GlobalNamespace::BB_OVRTelemetryConstants_AnnotationType {
+impl std::ops::Deref for crate::GlobalNamespace::BB_OVRTelemetryConstants_AnnotationType {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+BB+AnnotationType")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::BB_OVRTelemetryConstants_AnnotationType {
+impl std::ops::DerefMut for crate::GlobalNamespace::BB_OVRTelemetryConstants_AnnotationType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -54,7 +54,8 @@ impl crate::GlobalNamespace::BB_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+BB+AnnotationType")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BB_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::BB_OVRTelemetryConstants_AnnotationType
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -70,13 +71,15 @@ pub struct BB_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+BB+MarkerId")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BB_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::BB_OVRTelemetryConstants_MarkerId
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/BB/MarkerId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -116,7 +119,8 @@ impl crate::GlobalNamespace::BB_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+BB+MarkerId")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BB_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::BB_OVRTelemetryConstants_MarkerId
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -132,13 +136,15 @@ pub struct BB_OVRTelemetryConstants_Origins {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+BB+Origins")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BB_OVRTelemetryConstants_Origins {
+    for crate::GlobalNamespace::BB_OVRTelemetryConstants_Origins
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/BB/Origins";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -167,7 +173,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BB_OVRTelemetryConstants_Ori
 impl crate::GlobalNamespace::BB_OVRTelemetryConstants_Origins {}
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+BB+Origins")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BB_OVRTelemetryConstants_Origins {
+    for crate::GlobalNamespace::BB_OVRTelemetryConstants_Origins
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -183,13 +190,15 @@ pub struct Editor_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor+AnnotationType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationType
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/Editor/AnnotationType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -202,16 +211,14 @@ for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationType {
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+Editor+AnnotationType")]
-impl std::ops::Deref
-for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationType {
+impl std::ops::Deref for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationType {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+Editor+AnnotationType")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationType {
+impl std::ops::DerefMut for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -225,7 +232,8 @@ impl crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor+AnnotationType")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationType
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -234,8 +242,8 @@ for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationType {
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor+AnnotationVariant")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum Editor_OVRTelemetryConstants_AnnotationVariant {
     #[default]
     Optional = 1i32,
@@ -243,7 +251,8 @@ pub enum Editor_OVRTelemetryConstants_AnnotationVariant {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor+AnnotationVariant")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant {
+    for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -262,18 +271,16 @@ for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor+AnnotationVariant")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant {
+    for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -284,7 +291,8 @@ for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor+AnnotationVariant")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant {
+    for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -298,22 +306,22 @@ for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor+AnnotationVariant")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant {
+    for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor+AnnotationVariant")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant {
+    for crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -333,13 +341,15 @@ pub struct Editor_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor+MarkerId")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Editor_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::Editor_OVRTelemetryConstants_MarkerId
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/Editor/MarkerId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -359,8 +369,7 @@ impl std::ops::Deref for crate::GlobalNamespace::Editor_OVRTelemetryConstants_Ma
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+Editor+MarkerId")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::Editor_OVRTelemetryConstants_MarkerId {
+impl std::ops::DerefMut for crate::GlobalNamespace::Editor_OVRTelemetryConstants_MarkerId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -374,7 +383,8 @@ impl crate::GlobalNamespace::Editor_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor+MarkerId")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::Editor_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::Editor_OVRTelemetryConstants_MarkerId
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -390,13 +400,15 @@ pub struct Feedback_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Feedback+AnnotationType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_AnnotationType
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/Feedback/AnnotationType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -409,16 +421,14 @@ for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_AnnotationType {
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+Feedback+AnnotationType")]
-impl std::ops::Deref
-for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_AnnotationType {
+impl std::ops::Deref for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_AnnotationType {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+Feedback+AnnotationType")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_AnnotationType {
+impl std::ops::DerefMut for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_AnnotationType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -429,7 +439,8 @@ impl crate::GlobalNamespace::Feedback_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Feedback+AnnotationType")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_AnnotationType
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -445,13 +456,15 @@ pub struct Feedback_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Feedback+MarkerId")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_MarkerId
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/Feedback/MarkerId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -464,16 +477,14 @@ for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_MarkerId {
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+Feedback+MarkerId")]
-impl std::ops::Deref
-for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_MarkerId {
+impl std::ops::Deref for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_MarkerId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+Feedback+MarkerId")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_MarkerId {
+impl std::ops::DerefMut for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_MarkerId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -484,7 +495,8 @@ impl crate::GlobalNamespace::Feedback_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Feedback+MarkerId")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::Feedback_OVRTelemetryConstants_MarkerId
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -500,13 +512,15 @@ pub struct GuidedSetup_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+GuidedSetup+AnnotationType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_AnnotationType
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/GuidedSetup/AnnotationType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -519,8 +533,7 @@ for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_AnnotationType {
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+GuidedSetup+AnnotationType")]
-impl std::ops::Deref
-for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_AnnotationType {
+impl std::ops::Deref for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_AnnotationType {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -528,7 +541,8 @@ for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "OVRTelemetryConstants+GuidedSetup+AnnotationType")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_AnnotationType
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -540,7 +554,8 @@ impl crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+GuidedSetup+AnnotationType")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_AnnotationType
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -556,13 +571,15 @@ pub struct GuidedSetup_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+GuidedSetup+MarkerId")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_MarkerId
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/GuidedSetup/MarkerId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -575,16 +592,14 @@ for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_MarkerId {
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+GuidedSetup+MarkerId")]
-impl std::ops::Deref
-for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_MarkerId {
+impl std::ops::Deref for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_MarkerId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+GuidedSetup+MarkerId")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_MarkerId {
+impl std::ops::DerefMut for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_MarkerId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -595,7 +610,8 @@ impl crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+GuidedSetup+MarkerId")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_MarkerId
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -611,13 +627,15 @@ pub struct OVRManager_OVRTelemetryConstants_AnnotationTypes {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager+AnnotationTypes")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes {
+    for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/OVRManager/AnnotationTypes";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -630,8 +648,7 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes {
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+OVRManager+AnnotationTypes")]
-impl std::ops::Deref
-for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes {
+impl std::ops::Deref for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -639,7 +656,8 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes {
 }
 #[cfg(feature = "OVRTelemetryConstants+OVRManager+AnnotationTypes")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes {
+    for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -654,7 +672,8 @@ impl crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager+AnnotationTypes")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes {
+    for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -663,8 +682,8 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes {
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager+ConsentOrigins")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum OVRManager_OVRTelemetryConstants_ConsentOrigins {
     #[default]
     Legacy = 2i32,
@@ -673,7 +692,8 @@ pub enum OVRManager_OVRTelemetryConstants_ConsentOrigins {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager+ConsentOrigins")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
+    for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -692,18 +712,16 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager+ConsentOrigins")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
+    for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -714,7 +732,8 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager+ConsentOrigins")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
+    for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -728,22 +747,22 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager+ConsentOrigins")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
+    for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager+ConsentOrigins")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
+    for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -763,13 +782,15 @@ pub struct OVRManager_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager+MarkerId")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_MarkerId
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/OVRManager/MarkerId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -782,16 +803,14 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_MarkerId {
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+OVRManager+MarkerId")]
-impl std::ops::Deref
-for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_MarkerId {
+impl std::ops::Deref for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_MarkerId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+OVRManager+MarkerId")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_MarkerId {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_MarkerId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -803,7 +822,8 @@ impl crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager+MarkerId")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_MarkerId
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -818,14 +838,14 @@ pub struct OVRTelemetryConstants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetryConstants {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTelemetryConstants {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -872,8 +892,7 @@ impl crate::GlobalNamespace::OVRTelemetryConstants {
     pub type XRSim = crate::GlobalNamespace::OVRTelemetryConstants_XRSim;
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRTelemetryConstants {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetryConstants {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -888,14 +907,14 @@ pub struct OVRTelemetryConstants_BB {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+BB")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetryConstants_BB {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTelemetryConstants_BB {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/BB";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -930,8 +949,7 @@ impl crate::GlobalNamespace::OVRTelemetryConstants_BB {
     pub type Origins = crate::GlobalNamespace::BB_OVRTelemetryConstants_Origins;
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+BB")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRTelemetryConstants_BB {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetryConstants_BB {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -946,14 +964,14 @@ pub struct OVRTelemetryConstants_Editor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetryConstants_Editor {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTelemetryConstants_Editor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/Editor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -983,13 +1001,13 @@ impl crate::GlobalNamespace::OVRTelemetryConstants_Editor {
     #[cfg(feature = "OVRTelemetryConstants+Editor+AnnotationType")]
     pub type AnnotationType = crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationType;
     #[cfg(feature = "OVRTelemetryConstants+Editor+AnnotationVariant")]
-    pub type AnnotationVariant = crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant;
+    pub type AnnotationVariant =
+        crate::GlobalNamespace::Editor_OVRTelemetryConstants_AnnotationVariant;
     #[cfg(feature = "OVRTelemetryConstants+Editor+MarkerId")]
     pub type MarkerId = crate::GlobalNamespace::Editor_OVRTelemetryConstants_MarkerId;
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRTelemetryConstants_Editor {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetryConstants_Editor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1004,14 +1022,14 @@ pub struct OVRTelemetryConstants_Feedback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Feedback")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetryConstants_Feedback {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTelemetryConstants_Feedback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/Feedback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1044,8 +1062,7 @@ impl crate::GlobalNamespace::OVRTelemetryConstants_Feedback {
     pub type MarkerId = crate::GlobalNamespace::Feedback_OVRTelemetryConstants_MarkerId;
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Feedback")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRTelemetryConstants_Feedback {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetryConstants_Feedback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1061,13 +1078,15 @@ pub struct OVRTelemetryConstants_GuidedSetup {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+GuidedSetup")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetryConstants_GuidedSetup {
+    for crate::GlobalNamespace::OVRTelemetryConstants_GuidedSetup
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/GuidedSetup";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1095,13 +1114,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetryConstants_Guided
 #[cfg(feature = "OVRTelemetryConstants+GuidedSetup")]
 impl crate::GlobalNamespace::OVRTelemetryConstants_GuidedSetup {
     #[cfg(feature = "OVRTelemetryConstants+GuidedSetup+AnnotationType")]
-    pub type AnnotationType = crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_AnnotationType;
+    pub type AnnotationType =
+        crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_AnnotationType;
     #[cfg(feature = "OVRTelemetryConstants+GuidedSetup+MarkerId")]
     pub type MarkerId = crate::GlobalNamespace::GuidedSetup_OVRTelemetryConstants_MarkerId;
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+GuidedSetup")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRTelemetryConstants_GuidedSetup {
+    for crate::GlobalNamespace::OVRTelemetryConstants_GuidedSetup
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1117,13 +1138,15 @@ pub struct OVRTelemetryConstants_OVRManager {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetryConstants_OVRManager {
+    for crate::GlobalNamespace::OVRTelemetryConstants_OVRManager
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/OVRManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1151,15 +1174,18 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetryConstants_OVRMan
 #[cfg(feature = "OVRTelemetryConstants+OVRManager")]
 impl crate::GlobalNamespace::OVRTelemetryConstants_OVRManager {
     #[cfg(feature = "OVRTelemetryConstants+OVRManager+AnnotationTypes")]
-    pub type AnnotationTypes = crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes;
+    pub type AnnotationTypes =
+        crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes;
     #[cfg(feature = "OVRTelemetryConstants+OVRManager+ConsentOrigins")]
-    pub type ConsentOrigins = crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins;
+    pub type ConsentOrigins =
+        crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins;
     #[cfg(feature = "OVRTelemetryConstants+OVRManager+MarkerId")]
     pub type MarkerId = crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_MarkerId;
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRTelemetryConstants_OVRManager {
+    for crate::GlobalNamespace::OVRTelemetryConstants_OVRManager
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1175,13 +1201,15 @@ pub struct OVRTelemetryConstants_ProjectSettings {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetryConstants_ProjectSettings {
+    for crate::GlobalNamespace::OVRTelemetryConstants_ProjectSettings
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/ProjectSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1201,8 +1229,7 @@ impl std::ops::Deref for crate::GlobalNamespace::OVRTelemetryConstants_ProjectSe
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+ProjectSettings")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::OVRTelemetryConstants_ProjectSettings {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetryConstants_ProjectSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1210,25 +1237,32 @@ for crate::GlobalNamespace::OVRTelemetryConstants_ProjectSettings {
 #[cfg(feature = "OVRTelemetryConstants+ProjectSettings")]
 impl crate::GlobalNamespace::OVRTelemetryConstants_ProjectSettings {
     #[cfg(feature = "OVRTelemetryConstants+ProjectSettings+AnnotationType")]
-    pub type AnnotationType = crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_AnnotationType;
+    pub type AnnotationType =
+        crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_AnnotationType;
     #[cfg(feature = "OVRTelemetryConstants+ProjectSettings+DepthSubmissionMode")]
-    pub type DepthSubmissionMode = crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode;
+    pub type DepthSubmissionMode =
+        crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode;
     #[cfg(feature = "OVRTelemetryConstants+ProjectSettings+FoveatedRenderingAPI")]
-    pub type FoveatedRenderingAPI = crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingAPI;
+    pub type FoveatedRenderingAPI =
+        crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingAPI;
     #[cfg(feature = "OVRTelemetryConstants+ProjectSettings+FoveatedRenderingMode")]
-    pub type FoveatedRenderingMode = crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingMode;
+    pub type FoveatedRenderingMode =
+        crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingMode;
     #[cfg(feature = "OVRTelemetryConstants+ProjectSettings+MarkerId")]
     pub type MarkerId = crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_MarkerId;
     #[cfg(feature = "OVRTelemetryConstants+ProjectSettings+RenderThreadingMode")]
-    pub type RenderThreadingMode = crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadingMode;
+    pub type RenderThreadingMode =
+        crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadingMode;
     #[cfg(feature = "OVRTelemetryConstants+ProjectSettings+RenderingPath")]
-    pub type RenderingPath = crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath;
+    pub type RenderingPath =
+        crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath;
     #[cfg(feature = "OVRTelemetryConstants+ProjectSettings+XrPlugin")]
     pub type XrPlugin = crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_XrPlugin;
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRTelemetryConstants_ProjectSettings {
+    for crate::GlobalNamespace::OVRTelemetryConstants_ProjectSettings
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1243,14 +1277,14 @@ pub struct OVRTelemetryConstants_Scene {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Scene")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetryConstants_Scene {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTelemetryConstants_Scene {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/Scene";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1283,8 +1317,7 @@ impl crate::GlobalNamespace::OVRTelemetryConstants_Scene {
     pub type MarkerId = crate::GlobalNamespace::Scene_OVRTelemetryConstants_MarkerId;
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Scene")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRTelemetryConstants_Scene {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetryConstants_Scene {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1299,14 +1332,14 @@ pub struct OVRTelemetryConstants_Utils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Utils")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetryConstants_Utils {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTelemetryConstants_Utils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/Utils";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1339,8 +1372,7 @@ impl crate::GlobalNamespace::OVRTelemetryConstants_Utils {
     pub type MarkerId = crate::GlobalNamespace::Utils_OVRTelemetryConstants_MarkerId;
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Utils")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRTelemetryConstants_Utils {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetryConstants_Utils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1355,14 +1387,14 @@ pub struct OVRTelemetryConstants_XRSim {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+XRSim")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetryConstants_XRSim {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTelemetryConstants_XRSim {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/XRSim";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1395,8 +1427,7 @@ impl crate::GlobalNamespace::OVRTelemetryConstants_XRSim {
     pub type MarkerId = crate::GlobalNamespace::XRSim_OVRTelemetryConstants_MarkerId;
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+XRSim")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRTelemetryConstants_XRSim {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetryConstants_XRSim {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1412,13 +1443,15 @@ pub struct ProjectSettings_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+AnnotationType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_AnnotationType
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/ProjectSettings/AnnotationType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1432,7 +1465,8 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_AnnotationType
 }
 #[cfg(feature = "OVRTelemetryConstants+ProjectSettings+AnnotationType")]
 impl std::ops::Deref
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_AnnotationType
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1440,7 +1474,8 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_AnnotationType
 }
 #[cfg(feature = "OVRTelemetryConstants+ProjectSettings+AnnotationType")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_AnnotationType
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1453,7 +1488,8 @@ impl crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_AnnotationTyp
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+AnnotationType")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_AnnotationType
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1462,8 +1498,8 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_AnnotationType
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+DepthSubmissionMode")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode {
     #[default]
     Depth16Bit = 2i32,
@@ -1473,7 +1509,8 @@ pub enum ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+DepthSubmissionMode")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1492,18 +1529,16 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissio
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+DepthSubmissionMode")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1514,7 +1549,8 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissio
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+DepthSubmissionMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1528,22 +1564,22 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissio
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+DepthSubmissionMode")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+DepthSubmissionMode")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1555,22 +1591,19 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_DepthSubmissio
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingAPI"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingAPI")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ProjectSettings_OVRTelemetryConstants_FoveatedRenderingAPI {
     #[default]
     Legacy = 1i32,
     SRP = 2i32,
     Unknown = 0i32,
 }
-#[cfg(
-    feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingAPI"
-)]
+#[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingAPI")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingAPI {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingAPI
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1589,20 +1622,16 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRender
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingAPI"
-)]
+#[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingAPI")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingAPI {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingAPI
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1611,11 +1640,10 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRender
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingAPI"
-)]
+#[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingAPI")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingAPI {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingAPI
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1627,28 +1655,24 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRender
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingAPI"
-)]
+#[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingAPI")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingAPI {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingAPI
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingAPI"
-)]
+#[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingAPI")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingAPI {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingAPI
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1660,22 +1684,19 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRender
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingMode"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingMode")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ProjectSettings_OVRTelemetryConstants_FoveatedRenderingMode {
     #[default]
     EyeTrackedFoveatedRendering = 2i32,
     FixedFoveatedRendering = 1i32,
     Unknown = 0i32,
 }
-#[cfg(
-    feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingMode"
-)]
+#[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingMode")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingMode
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1694,20 +1715,16 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRender
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingMode"
-)]
+#[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1716,11 +1733,10 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRender
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingMode"
-)]
+#[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1732,28 +1748,24 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRender
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingMode"
-)]
+#[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingMode"
-)]
+#[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingMode")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_FoveatedRenderingMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1773,13 +1785,15 @@ pub struct ProjectSettings_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+MarkerId")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_MarkerId
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/ProjectSettings/MarkerId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1792,16 +1806,14 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_MarkerId {
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+ProjectSettings+MarkerId")]
-impl std::ops::Deref
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_MarkerId {
+impl std::ops::Deref for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_MarkerId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+ProjectSettings+MarkerId")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_MarkerId {
+impl std::ops::DerefMut for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_MarkerId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1814,7 +1826,8 @@ impl crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+MarkerId")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_MarkerId
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1823,8 +1836,8 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_MarkerId {
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+RenderThreadingMode")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ProjectSettings_OVRTelemetryConstants_RenderThreadingMode {
     #[default]
     LegacyGraphicsJobs = 2i32,
@@ -1834,7 +1847,8 @@ pub enum ProjectSettings_OVRTelemetryConstants_RenderThreadingMode {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+RenderThreadingMode")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadingMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadingMode
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1853,18 +1867,16 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadin
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+RenderThreadingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadingMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadingMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1875,7 +1887,8 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadin
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+RenderThreadingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadingMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadingMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1889,22 +1902,22 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadin
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+RenderThreadingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadingMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadingMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+RenderThreadingMode")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadingMode {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadingMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1917,8 +1930,8 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderThreadin
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+RenderingPath")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ProjectSettings_OVRTelemetryConstants_RenderingPath {
     #[default]
     Deferred = 3i32,
@@ -1928,7 +1941,8 @@ pub enum ProjectSettings_OVRTelemetryConstants_RenderingPath {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+RenderingPath")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1947,18 +1961,16 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath 
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+RenderingPath")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1969,7 +1981,8 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath 
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+RenderingPath")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1983,22 +1996,22 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath 
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+RenderingPath")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+RenderingPath")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2011,8 +2024,8 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_RenderingPath 
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+XrPlugin")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ProjectSettings_OVRTelemetryConstants_XrPlugin {
     #[default]
     Oculus = 1i32,
@@ -2021,7 +2034,8 @@ pub enum ProjectSettings_OVRTelemetryConstants_XrPlugin {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+XrPlugin")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_XrPlugin {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_XrPlugin
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -2040,18 +2054,16 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_XrPlugin {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+XrPlugin")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_XrPlugin {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_XrPlugin
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2062,7 +2074,8 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_XrPlugin {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+XrPlugin")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_XrPlugin {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_XrPlugin
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2076,22 +2089,22 @@ for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_XrPlugin {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+XrPlugin")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_XrPlugin {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_XrPlugin
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+XrPlugin")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_XrPlugin {
+    for crate::GlobalNamespace::ProjectSettings_OVRTelemetryConstants_XrPlugin
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2111,13 +2124,15 @@ pub struct Scene_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Scene+AnnotationType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Scene_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::Scene_OVRTelemetryConstants_AnnotationType
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/Scene/AnnotationType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2130,16 +2145,14 @@ for crate::GlobalNamespace::Scene_OVRTelemetryConstants_AnnotationType {
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+Scene+AnnotationType")]
-impl std::ops::Deref
-for crate::GlobalNamespace::Scene_OVRTelemetryConstants_AnnotationType {
+impl std::ops::Deref for crate::GlobalNamespace::Scene_OVRTelemetryConstants_AnnotationType {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+Scene+AnnotationType")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::Scene_OVRTelemetryConstants_AnnotationType {
+impl std::ops::DerefMut for crate::GlobalNamespace::Scene_OVRTelemetryConstants_AnnotationType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2157,7 +2170,8 @@ impl crate::GlobalNamespace::Scene_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Scene+AnnotationType")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::Scene_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::Scene_OVRTelemetryConstants_AnnotationType
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2173,13 +2187,15 @@ pub struct Scene_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Scene+MarkerId")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Scene_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::Scene_OVRTelemetryConstants_MarkerId
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/Scene/MarkerId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2199,8 +2215,7 @@ impl std::ops::Deref for crate::GlobalNamespace::Scene_OVRTelemetryConstants_Mar
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::Scene_OVRTelemetryConstants_MarkerId {
+impl std::ops::DerefMut for crate::GlobalNamespace::Scene_OVRTelemetryConstants_MarkerId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2214,7 +2229,8 @@ impl crate::GlobalNamespace::Scene_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Scene+MarkerId")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::Scene_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::Scene_OVRTelemetryConstants_MarkerId
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2230,13 +2246,15 @@ pub struct Utils_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Utils+AnnotationType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Utils_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::Utils_OVRTelemetryConstants_AnnotationType
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/Utils/AnnotationType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2249,16 +2267,14 @@ for crate::GlobalNamespace::Utils_OVRTelemetryConstants_AnnotationType {
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+Utils+AnnotationType")]
-impl std::ops::Deref
-for crate::GlobalNamespace::Utils_OVRTelemetryConstants_AnnotationType {
+impl std::ops::Deref for crate::GlobalNamespace::Utils_OVRTelemetryConstants_AnnotationType {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+Utils+AnnotationType")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::Utils_OVRTelemetryConstants_AnnotationType {
+impl std::ops::DerefMut for crate::GlobalNamespace::Utils_OVRTelemetryConstants_AnnotationType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2271,7 +2287,8 @@ impl crate::GlobalNamespace::Utils_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Utils+AnnotationType")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::Utils_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::Utils_OVRTelemetryConstants_AnnotationType
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2287,13 +2304,15 @@ pub struct Utils_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Utils+MarkerId")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Utils_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::Utils_OVRTelemetryConstants_MarkerId
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/Utils/MarkerId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2313,8 +2332,7 @@ impl std::ops::Deref for crate::GlobalNamespace::Utils_OVRTelemetryConstants_Mar
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+Utils+MarkerId")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::Utils_OVRTelemetryConstants_MarkerId {
+impl std::ops::DerefMut for crate::GlobalNamespace::Utils_OVRTelemetryConstants_MarkerId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2325,7 +2343,8 @@ impl crate::GlobalNamespace::Utils_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Utils+MarkerId")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::Utils_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::Utils_OVRTelemetryConstants_MarkerId
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2341,13 +2360,15 @@ pub struct XRSim_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+XRSim+AnnotationType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_AnnotationType
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/XRSim/AnnotationType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2360,16 +2381,14 @@ for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_AnnotationType {
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+XRSim+AnnotationType")]
-impl std::ops::Deref
-for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_AnnotationType {
+impl std::ops::Deref for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_AnnotationType {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+XRSim+AnnotationType")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_AnnotationType {
+impl std::ops::DerefMut for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_AnnotationType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2383,7 +2402,8 @@ impl crate::GlobalNamespace::XRSim_OVRTelemetryConstants_AnnotationType {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+XRSim+AnnotationType")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_AnnotationType {
+    for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_AnnotationType
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2399,13 +2419,15 @@ pub struct XRSim_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+XRSim+MarkerId")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_MarkerId
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetryConstants/XRSim/MarkerId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2425,8 +2447,7 @@ impl std::ops::Deref for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_Mar
     }
 }
 #[cfg(feature = "OVRTelemetryConstants+XRSim+MarkerId")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_MarkerId {
+impl std::ops::DerefMut for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_MarkerId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2439,7 +2460,8 @@ impl crate::GlobalNamespace::XRSim_OVRTelemetryConstants_MarkerId {
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+XRSim+MarkerId")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_MarkerId {
+    for crate::GlobalNamespace::XRSim_OVRTelemetryConstants_MarkerId
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

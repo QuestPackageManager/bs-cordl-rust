@@ -1,8 +1,6 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionTestSubviewSettings"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionTestSubviewSettings")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct InstanceOcclusionTestSubviewSettings {
     pub testCount: i32,
     pub occluderSubviewIndices: i32,
@@ -10,11 +8,10 @@ pub struct InstanceOcclusionTestSubviewSettings {
     pub cullingSplitIndices: i32,
     pub cullingSplitMask: i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionTestSubviewSettings"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionTestSubviewSettings")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings {
+    for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -33,20 +30,16 @@ for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionTestSubviewSettings"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionTestSubviewSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings {
+    for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -55,11 +48,10 @@ for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionTestSubviewSettings"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionTestSubviewSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings {
+    for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -71,28 +63,24 @@ for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionTestSubviewSettings"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionTestSubviewSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings {
+    for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionTestSubviewSettings"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionTestSubviewSettings")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings {
+    for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -104,11 +92,10 @@ for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionTestSubviewSettings"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionTestSubviewSettings")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings {
+    for crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -126,9 +113,10 @@ impl crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::ReadOnlySpan_1<
@@ -145,9 +133,8 @@ impl crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings = unsafe {
-            cordl_method_info.invoke_unchecked((), (subviewOcclusionTests))?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings =
+            unsafe { cordl_method_info.invoke_unchecked((), (subviewOcclusionTests))? };
         Ok(__cordl_ret.into())
     }
 }

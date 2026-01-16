@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+RenderTargetSetup")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct RenderTargetSetup {
     pub color: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RenderBuffer>,
@@ -10,14 +10,10 @@ pub struct RenderTargetSetup {
     pub cubemapFace: crate::UnityEngine::CubemapFace,
     pub depthSlice: i32,
     pub colorLoad: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Rendering::RenderBufferLoadAction,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Rendering::RenderBufferLoadAction>,
     >,
     pub colorStore: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Rendering::RenderBufferStoreAction,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Rendering::RenderBufferStoreAction>,
     >,
     pub depthLoad: crate::UnityEngine::Rendering::RenderBufferLoadAction,
     pub depthStore: crate::UnityEngine::Rendering::RenderBufferStoreAction,
@@ -42,13 +38,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RenderTargetSetu
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+RenderTargetSetup")]
@@ -82,9 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RenderTarget
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -102,8 +93,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RenderTargetSe
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+RenderTargetSetup")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::RenderTargetSetup {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::RenderTargetSetup {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

@@ -11,21 +11,19 @@ pub struct LightRotationEventBox {
     pub i: crate::BeatmapSaveDataCommon::EaseType,
     pub l: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion3::LightRotationBaseData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightRotationBaseData>,
         >,
     >,
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightRotationEventBox")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatmapSaveDataVersion3::LightRotationEventBox {
+unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion3::LightRotationEventBox {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatmapSaveDataVersion3";
     const CLASS_NAME: &'static str = "LightRotationEventBox";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -53,9 +51,7 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::LightRotationEventBo
 #[cfg(feature = "BeatmapSaveDataVersion3+LightRotationEventBox")]
 impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
     pub fn New(
-        indexFilter: quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion3::IndexFilter,
-        >,
+        indexFilter: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
         beatDistributionParam: f32,
         beatDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
         rotationDistributionParam: f32,
@@ -66,17 +62,81 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
         flipRotation: bool,
         lightRotationBaseDataList: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::LightRotationBaseData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightRotationBaseData>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                indexFilter,
+                beatDistributionParam,
+                beatDistributionParamType,
+                rotationDistributionParam,
+                rotationDistributionParamType,
+                rotationDistributionShouldAffectFirstBaseEvent,
+                rotationDistributionEaseType,
+                axis,
+                flipRotation,
+                lightRotationBaseDataList,
+            ),
+        )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+        indexFilter: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
+        beatDistributionParam: f32,
+        beatDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
+        rotationDistributionParam: f32,
+        rotationDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
+        rotationDistributionShouldAffectFirstBaseEvent: bool,
+        rotationDistributionEaseType: crate::BeatmapSaveDataCommon::EaseType,
+        axis: crate::BeatmapSaveDataCommon::Axis,
+        flipRotation: bool,
+        lightRotationBaseDataList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightRotationBaseData>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
+                        f32,
+                        crate::BeatmapSaveDataCommon::DistributionParamType,
+                        f32,
+                        crate::BeatmapSaveDataCommon::DistributionParamType,
+                        bool,
+                        crate::BeatmapSaveDataCommon::EaseType,
+                        crate::BeatmapSaveDataCommon::Axis,
+                        bool,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+                                >,
+                            >,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 10usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
+                            10usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(
+                self,
                 (
                     indexFilter,
                     beatDistributionParam,
@@ -89,122 +149,45 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
                     flipRotation,
                     lightRotationBaseDataList,
                 ),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn _ctor(
-        &mut self,
-        indexFilter: quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion3::IndexFilter,
-        >,
-        beatDistributionParam: f32,
-        beatDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
-        rotationDistributionParam: f32,
-        rotationDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
-        rotationDistributionShouldAffectFirstBaseEvent: bool,
-        rotationDistributionEaseType: crate::BeatmapSaveDataCommon::EaseType,
-        axis: crate::BeatmapSaveDataCommon::Axis,
-        flipRotation: bool,
-        lightRotationBaseDataList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::LightRotationBaseData,
-                >,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataVersion3::IndexFilter,
-                            >,
-                            f32,
-                            crate::BeatmapSaveDataCommon::DistributionParamType,
-                            f32,
-                            crate::BeatmapSaveDataCommon::DistributionParamType,
-                            bool,
-                            crate::BeatmapSaveDataCommon::EaseType,
-                            crate::BeatmapSaveDataCommon::Axis,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::LightRotationBaseData,
-                                    >,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        10usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            10usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        indexFilter,
-                        beatDistributionParam,
-                        beatDistributionParamType,
-                        rotationDistributionParam,
-                        rotationDistributionParamType,
-                        rotationDistributionShouldAffectFirstBaseEvent,
-                        rotationDistributionEaseType,
-                        axis,
-                        flipRotation,
-                        lightRotationBaseDataList,
-                    ),
-                )?
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_axis(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::Axis> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::BeatmapSaveDataCommon::Axis,
-                        0usize,
-                    >("get_axis")
+                    .find_method::<(), crate::BeatmapSaveDataCommon::Axis, 0usize>("get_axis")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_axis", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_axis",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::BeatmapSaveDataCommon::Axis = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::BeatmapSaveDataCommon::Axis =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_flipRotation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_flipRotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_flipRotation", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_flipRotation",
+                            0usize
                         )
                     })
             });
@@ -216,40 +199,34 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::LightRotationBaseData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightRotationBaseData>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataVersion3::LightRotationBaseData,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatmapSaveDataVersion3::LightRotationBaseData,
                             >,
                         >,
-                        0usize,
-                    >("get_lightRotationBaseDataList")
+                    >, 0usize>("get_lightRotationBaseDataList")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_lightRotationBaseDataList", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_lightRotationBaseDataList",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::LightRotationBaseData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightRotationBaseData>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -257,41 +234,40 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
     pub fn get_rotationDistributionEaseType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::EaseType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::BeatmapSaveDataCommon::EaseType,
-                        0usize,
-                    >("get_rotationDistributionEaseType")
+                    .find_method::<(), crate::BeatmapSaveDataCommon::EaseType, 0usize>(
+                        "get_rotationDistributionEaseType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_rotationDistributionEaseType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_rotationDistributionEaseType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::BeatmapSaveDataCommon::EaseType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::BeatmapSaveDataCommon::EaseType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_rotationDistributionParam(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_rotationDistributionParam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_rotationDistributionParam")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_rotationDistributionParam", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_rotationDistributionParam",
+                            0usize
                         )
                     })
             });
@@ -300,48 +276,45 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
     }
     pub fn get_rotationDistributionParamType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::BeatmapSaveDataCommon::DistributionParamType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::DistributionParamType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::BeatmapSaveDataCommon::DistributionParamType,
-                        0usize,
-                    >("get_rotationDistributionParamType")
+                    .find_method::<(), crate::BeatmapSaveDataCommon::DistributionParamType, 0usize>(
+                        "get_rotationDistributionParamType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_rotationDistributionParamType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_rotationDistributionParamType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::BeatmapSaveDataCommon::DistributionParamType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::BeatmapSaveDataCommon::DistributionParamType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_rotationDistributionShouldAffectFirstBaseEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        bool,
-                        0usize,
-                    >("get_rotationDistributionShouldAffectFirstBaseEvent")
+                    .find_method::<(), bool, 0usize>(
+                        "get_rotationDistributionShouldAffectFirstBaseEvent",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_rotationDistributionShouldAffectFirstBaseEvent", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_rotationDistributionShouldAffectFirstBaseEvent",
+                            0usize
                         )
                     })
             });
@@ -350,8 +323,7 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightRotationEventBox")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::BeatmapSaveDataVersion3::LightRotationEventBox {
+impl quest_hook::libil2cpp::ObjectType for crate::BeatmapSaveDataVersion3::LightRotationEventBox {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

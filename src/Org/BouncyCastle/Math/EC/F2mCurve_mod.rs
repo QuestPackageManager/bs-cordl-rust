@@ -7,19 +7,17 @@ pub struct F2mCurve {
     pub k1: i32,
     pub k2: i32,
     pub k3: i32,
-    pub m_infinity: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::F2mPoint,
-    >,
+    pub m_infinity: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::F2mPoint>,
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Math::EC::F2mCurve {
+unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Math::EC::F2mCurve {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC";
     const CLASS_NAME: &'static str = "F2mCurve";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -48,15 +46,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::F2mCurve {
 impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
     pub const F2M_DEFAULT_COORDS: i32 = 6i32;
     #[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
-    pub type DefaultF2mLookupTable = crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable;
+    pub type DefaultF2mLookupTable =
+        crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable;
     pub fn CloneCurve(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -73,9 +73,8 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::ECCurve,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCacheSafeLookupTable(
@@ -90,9 +89,10 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECLookupTable>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -127,26 +127,22 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
     pub fn CreateDefaultMultiplier(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
-                        >,
-                        0usize,
-                    >("CreateDefaultMultiplier")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
+                    >, 0usize>("CreateDefaultMultiplier")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateDefaultMultiplier", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateDefaultMultiplier",
+                            0usize
                         )
                     })
             });
@@ -161,18 +157,17 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         zs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
             >,
         >,
         withCompression: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -204,11 +199,8 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::ECPoint,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (x, y, zs, withCompression))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (x, y, zs, withCompression))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateRawPoint__cordl_bool0(
@@ -219,9 +211,10 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -246,11 +239,8 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::ECPoint,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (x, y, withCompression))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (x, y, withCompression))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromBigInteger(
@@ -259,9 +249,10 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -286,16 +277,18 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         Ok(__cordl_ret.into())
     }
     pub fn IsTrinomial(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsTrinomial")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsTrinomial", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsTrinomial",
+                            0usize
                         )
                     })
             });
@@ -308,8 +301,8 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         a: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (m, k, a, b))?;
         Ok(__cordl_object.into())
@@ -322,8 +315,8 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         order: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         cofactor: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (m, k, a, b, order, cofactor))?;
         Ok(__cordl_object.into())
@@ -336,8 +329,8 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         a: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (m, k1, k2, k3, a, b))?;
         Ok(__cordl_object.into())
@@ -352,8 +345,8 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         order: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         cofactor: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (m, k1, k2, k3, a, b, order, cofactor))?;
         Ok(__cordl_object.into())
@@ -368,32 +361,29 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         order: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         cofactor: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (m, k1, k2, k3, a, b, order, cofactor))?;
         Ok(__cordl_object.into())
     }
-    pub fn SupportsCoordinateSystem(
-        &mut self,
-        coord: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn SupportsCoordinateSystem(&mut self, coord: i32) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("SupportsCoordinateSystem")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SupportsCoordinateSystem", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SupportsCoordinateSystem",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (coord))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (coord))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_BigInteger_BigInteger0(
@@ -403,35 +393,28 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         a: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (m, k, a, b))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (m, k, a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_BigInteger_BigInteger_BigInteger_BigInteger1(
@@ -443,41 +426,30 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         order: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         cofactor: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                    ), quest_hook::libil2cpp::Void, 6usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             6usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (m, k, a, b, order, cofactor))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (m, k, a, b, order, cofactor))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_BigInteger_BigInteger2(
@@ -489,37 +461,30 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         a: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                    ), quest_hook::libil2cpp::Void, 6usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             6usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (m, k1, k2, k3, a, b))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (m, k1, k2, k3, a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_BigInteger_BigInteger_BigInteger_BigInteger3(
@@ -533,43 +498,32 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         order: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         cofactor: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        8usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                    ), quest_hook::libil2cpp::Void, 8usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             8usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (m, k1, k2, k3, a, b, order, cofactor))?
+            cordl_method_info.invoke_unchecked(self, (m, k1, k2, k3, a, b, order, cofactor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -584,57 +538,52 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         order: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         cofactor: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        8usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                    ), quest_hook::libil2cpp::Void, 8usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             8usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (m, k1, k2, k3, a, b, order, cofactor))?
+            cordl_method_info.invoke_unchecked(self, (m, k1, k2, k3, a, b, order, cofactor))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_FieldSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_FieldSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_FieldSize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_FieldSize",
+                            0usize
                         )
                     })
             });
@@ -646,9 +595,10 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -665,21 +615,22 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::ECPoint,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_K1(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_K1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_K1",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_K1",
                             0usize
                         )
                     })
@@ -688,15 +639,17 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         Ok(__cordl_ret.into())
     }
     pub fn get_K2(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_K2")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_K2",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_K2",
                             0usize
                         )
                     })
@@ -705,15 +658,17 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         Ok(__cordl_ret.into())
     }
     pub fn get_K3(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_K3")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_K3",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_K3",
                             0usize
                         )
                     })
@@ -722,15 +677,17 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         Ok(__cordl_ret.into())
     }
     pub fn get_M(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_M")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_M",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_M",
                             0usize
                         )
                     })
@@ -759,13 +716,15 @@ pub struct F2mCurve_DefaultF2mLookupTable {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
+    for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC";
     const CLASS_NAME: &'static str = "F2mCurve/DefaultF2mLookupTable";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -778,16 +737,14 @@ for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
+impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
-impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
+impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -801,9 +758,10 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -827,9 +785,8 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::ECPoint,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (x, y))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (x, y))? };
         Ok(__cordl_ret.into())
     }
     pub fn Lookup(
@@ -838,9 +795,10 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -857,9 +815,8 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::ECPoint,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn LookupVar(
@@ -868,9 +825,10 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -887,9 +845,8 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::ECPoint,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -897,8 +854,8 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
         table: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (outer, table, _cordl_size))?;
         Ok(__cordl_object.into())
@@ -909,47 +866,42 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
         table: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::EC::F2mCurve,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<i64>,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::F2mCurve>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (outer, table, _cordl_size))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (outer, table, _cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Size(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Size")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Size", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Size",
+                            0usize
                         )
                     })
             });
@@ -959,7 +911,8 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
+    for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

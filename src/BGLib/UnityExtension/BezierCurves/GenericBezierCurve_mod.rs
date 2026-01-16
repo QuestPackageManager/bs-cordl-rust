@@ -10,13 +10,15 @@ pub struct GenericBezierCurve {
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+GenericBezierCurve")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
+    for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BGLib.UnityExtension.BezierCurves";
     const CLASS_NAME: &'static str = "GenericBezierCurve";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,8 +42,7 @@ impl std::ops::Deref for crate::BGLib::UnityExtension::BezierCurves::GenericBezi
     }
 }
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+GenericBezierCurve")]
-impl std::ops::DerefMut
-for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
+impl std::ops::DerefMut for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -50,12 +51,11 @@ for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
 impl crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
     pub fn GetBezierCurveData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::BGLib::UnityExtension::BezierCurves::CurveData,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::BGLib::UnityExtension::BezierCurves::CurveData> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -70,14 +70,13 @@ impl crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
                         )
                     })
             });
-        let __cordl_ret: crate::BGLib::UnityExtension::BezierCurves::CurveData = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::BGLib::UnityExtension::BezierCurves::CurveData =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -86,9 +85,10 @@ impl crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
         &mut self,
         newValue: crate::BGLib::UnityExtension::BezierCurves::CurveData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::BGLib::UnityExtension::BezierCurves::CurveData),
@@ -103,43 +103,43 @@ impl crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (newValue))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (newValue))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isReady(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isReady")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isReady", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isReady",
+                            0usize
                         )
                     })
             });
@@ -149,7 +149,8 @@ impl crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+GenericBezierCurve")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
+    for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,13 +6,15 @@ pub struct BeatmapCharacteristicExtensions {
 }
 #[cfg(feature = "cordl_class_BeatmapCharacteristicExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapCharacteristicExtensions {
+    for crate::GlobalNamespace::BeatmapCharacteristicExtensions
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapCharacteristicExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,12 +45,12 @@ impl crate::GlobalNamespace::BeatmapCharacteristicExtensions {
         beatmapCharacteristic: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCharacteristicSO,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -65,15 +67,13 @@ impl crate::GlobalNamespace::BeatmapCharacteristicExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (beatmapCharacteristic))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (beatmapCharacteristic))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapCharacteristicExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BeatmapCharacteristicExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapCharacteristicExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

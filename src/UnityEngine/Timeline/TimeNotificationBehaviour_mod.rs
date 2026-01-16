@@ -14,13 +14,15 @@ pub struct TimeNotificationBehaviour {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Timeline::TimeNotificationBehaviour {
+    for crate::UnityEngine::Timeline::TimeNotificationBehaviour
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
     const CLASS_NAME: &'static str = "TimeNotificationBehaviour";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -48,39 +50,35 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimeNotificationBehavi
 #[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour")]
 impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
     #[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
-    pub type NotificationEntry = crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry;
+    pub type NotificationEntry =
+        crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry;
     pub fn AddNotification(
         &mut self,
         _cordl_time: f64,
         payload: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification>,
         flags: crate::UnityEngine::Timeline::NotificationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            f64,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Playables::INotification,
-                            >,
-                            crate::UnityEngine::Timeline::NotificationFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("AddNotification")
+                    .find_method::<(
+                        f64,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification>,
+                        crate::UnityEngine::Timeline::NotificationFlags,
+                    ), quest_hook::libil2cpp::Void, 3usize>("AddNotification")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddNotification", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddNotification",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_time, payload, flags))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_time, payload, flags))? };
         Ok(__cordl_ret.into())
     }
     pub fn CanRestoreNotification(
@@ -89,25 +87,23 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         currentTime: f64,
         previousTime: f64,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
-                            crate::UnityEngine::Playables::FrameData,
-                            f64,
-                            f64,
-                        ),
-                        bool,
-                        4usize,
-                    >("CanRestoreNotification")
+                    .find_static_method::<(
+                        crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
+                        crate::UnityEngine::Playables::FrameData,
+                        f64,
+                        f64,
+                    ), bool, 4usize>("CanRestoreNotification")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CanRestoreNotification", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CanRestoreNotification",
+                            4usize
                         )
                     })
             });
@@ -122,48 +118,40 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         loopMode: crate::UnityEngine::Playables::DirectorWrapMode,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Playables::ScriptPlayable_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::Timeline::TimeNotificationBehaviour,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimeNotificationBehaviour>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Playables::PlayableGraph,
-                            f64,
-                            crate::UnityEngine::Playables::DirectorWrapMode,
-                        ),
-                        crate::UnityEngine::Playables::ScriptPlayable_1<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Timeline::TimeNotificationBehaviour,
-                            >,
+                    .find_static_method::<(
+                        crate::UnityEngine::Playables::PlayableGraph,
+                        f64,
+                        crate::UnityEngine::Playables::DirectorWrapMode,
+                    ), crate::UnityEngine::Playables::ScriptPlayable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Timeline::TimeNotificationBehaviour,
                         >,
-                        3usize,
-                    >("Create")
+                    >, 3usize>("Create")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Create",
                             3usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::Timeline::TimeNotificationBehaviour,
-            >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (graph, duration, loopMode))?
-        };
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimeNotificationBehaviour>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (graph, duration, loopMode))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -173,38 +161,36 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Playables::Playable,
-                            crate::UnityEngine::Playables::FrameData,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("OnBehaviourPause")
+                    .find_method::<(
+                        crate::UnityEngine::Playables::Playable,
+                        crate::UnityEngine::Playables::FrameData,
+                    ), quest_hook::libil2cpp::Void, 2usize>("OnBehaviourPause")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnBehaviourPause", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnBehaviourPause",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (playable, info))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (playable, info))? };
         Ok(__cordl_ret.into())
     }
     pub fn OnGraphStart(
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Playables::Playable),
@@ -219,9 +205,8 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (playable))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (playable))? };
         Ok(__cordl_ret.into())
     }
     pub fn PrepareFrame(
@@ -229,29 +214,26 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Playables::Playable,
-                            crate::UnityEngine::Playables::FrameData,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("PrepareFrame")
+                    .find_method::<(
+                        crate::UnityEngine::Playables::Playable,
+                        crate::UnityEngine::Playables::FrameData,
+                    ), quest_hook::libil2cpp::Void, 2usize>("PrepareFrame")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PrepareFrame", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PrepareFrame",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (playable, info))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (playable, info))? };
         Ok(__cordl_ret.into())
     }
     pub fn Restore_internal(
@@ -259,62 +241,57 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Restore_internal")
+                    .find_static_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
+                    >), quest_hook::libil2cpp::Void, 1usize>("Restore_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Restore_internal", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Restore_internal",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (e))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (e))? };
         Ok(__cordl_ret.into())
     }
     pub fn SortNotifications(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("SortNotifications")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SortNotifications")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SortNotifications", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SortNotifications",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SyncDurationWithExternalSource(
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Playables::Playable),
@@ -329,9 +306,8 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (playable))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (playable))? };
         Ok(__cordl_ret.into())
     }
     pub fn TriggerNotificationsInRange(
@@ -342,32 +318,31 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         playable: crate::UnityEngine::Playables::Playable,
         checkState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            f64,
-                            f64,
-                            crate::UnityEngine::Playables::FrameData,
-                            crate::UnityEngine::Playables::Playable,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("TriggerNotificationsInRange")
+                    .find_method::<(
+                        f64,
+                        f64,
+                        crate::UnityEngine::Playables::FrameData,
+                        crate::UnityEngine::Playables::Playable,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "TriggerNotificationsInRange"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TriggerNotificationsInRange", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TriggerNotificationsInRange",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (start, end, info, playable, checkState))?
+            cordl_method_info.invoke_unchecked(self, (start, end, info, playable, checkState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -378,7 +353,8 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -401,39 +377,38 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (playable, output, e))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (playable, output, e))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_timeSource(
         &mut self,
         value: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Playables::Playable),
@@ -448,15 +423,13 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Timeline::TimeNotificationBehaviour {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::TimeNotificationBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -464,22 +437,19 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TimeNotificationBehaviour_NotificationEntry {
     pub _cordl_time: f64,
     pub payload: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification>,
     pub notificationFired: bool,
     pub flags: crate::UnityEngine::Timeline::NotificationFlags,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
+    for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
@@ -498,20 +468,16 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
+    for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -520,11 +486,10 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
+    for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -536,28 +501,24 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
+    for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
+    for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -569,11 +530,10 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
+    for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -585,16 +545,18 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
 #[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
 impl crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
     pub fn get_prewarm(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_prewarm")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_prewarm", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_prewarm",
+                            0usize
                         )
                     })
             });
@@ -602,16 +564,18 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
         Ok(__cordl_ret.into())
     }
     pub fn get_triggerInEditor(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_triggerInEditor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_triggerInEditor", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_triggerInEditor",
+                            0usize
                         )
                     })
             });
@@ -619,16 +583,18 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
         Ok(__cordl_ret.into())
     }
     pub fn get_triggerOnce(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_triggerOnce")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_triggerOnce", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_triggerOnce",
+                            0usize
                         )
                     })
             });

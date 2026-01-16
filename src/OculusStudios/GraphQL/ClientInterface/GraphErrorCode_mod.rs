@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+GraphErrorCode")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum GraphErrorCode {
     #[default]
     GRAPH_QL__ADFINDER_EXCEPTION = 1675018i32,
@@ -48,7 +48,8 @@ pub enum GraphErrorCode {
 }
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+GraphErrorCode")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::OculusStudios::GraphQL::ClientInterface::GraphErrorCode {
+    for crate::OculusStudios::GraphQL::ClientInterface::GraphErrorCode
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "OculusStudios.GraphQL.ClientInterface";
@@ -67,18 +68,16 @@ for crate::OculusStudios::GraphQL::ClientInterface::GraphErrorCode {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+GraphErrorCode")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::OculusStudios::GraphQL::ClientInterface::GraphErrorCode {
+    for crate::OculusStudios::GraphQL::ClientInterface::GraphErrorCode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -89,7 +88,8 @@ for crate::OculusStudios::GraphQL::ClientInterface::GraphErrorCode {
 }
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+GraphErrorCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::OculusStudios::GraphQL::ClientInterface::GraphErrorCode {
+    for crate::OculusStudios::GraphQL::ClientInterface::GraphErrorCode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -103,22 +103,22 @@ for crate::OculusStudios::GraphQL::ClientInterface::GraphErrorCode {
 }
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+GraphErrorCode")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::OculusStudios::GraphQL::ClientInterface::GraphErrorCode {
+    for crate::OculusStudios::GraphQL::ClientInterface::GraphErrorCode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+GraphErrorCode")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::OculusStudios::GraphQL::ClientInterface::GraphErrorCode {
+    for crate::OculusStudios::GraphQL::ClientInterface::GraphErrorCode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

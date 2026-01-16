@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Ray2DExtensi
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "Ray2DExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,33 +45,28 @@ impl crate::GlobalNamespace::Ray2DExtensions {
         radius: f32,
         distances: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Ray2D,
-                            crate::UnityEngine::Vector2,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<f32>,
-                            >,
-                        ),
-                        i32,
-                        4usize,
-                    >("CircleIntersections")
+                    .find_static_method::<(
+                        crate::UnityEngine::Ray2D,
+                        crate::UnityEngine::Vector2,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+                    ), i32, 4usize>("CircleIntersections")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CircleIntersections", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CircleIntersections",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (ray, circleCenter, radius, distances))?
+            cordl_method_info.invoke_unchecked((), (ray, circleCenter, radius, distances))?
         };
         Ok(__cordl_ret.into())
     }

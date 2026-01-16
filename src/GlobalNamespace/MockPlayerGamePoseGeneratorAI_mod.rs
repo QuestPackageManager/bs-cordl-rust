@@ -3,16 +3,13 @@
 #[derive(Debug)]
 pub struct MockPlayerGamePoseGeneratorAI {
     __cordl_parent: crate::GlobalNamespace::MockPlayerGamePoseGenerator,
-    pub _scoreCalculator: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMockPlayerScoreCalculator,
-    >,
+    pub _scoreCalculator:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMockPlayerScoreCalculator>,
     pub _lastKnowScore: i32,
     pub _songStartTime: i64,
     pub _timeScale: f32,
     pub _onSongFinished: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GameplayModifiers,
-    >,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     pub _lastEventTime: f32,
     pub _lastHeadPose: crate::UnityEngine::Pose,
     pub _lastLeftHandPose: crate::UnityEngine::Pose,
@@ -55,14 +52,14 @@ pub struct MockPlayerGamePoseGeneratorAI {
     pub _isInited: bool,
 }
 #[cfg(feature = "cordl_class_MockPlayerGamePoseGeneratorAI")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "MockPlayerGamePoseGeneratorAI";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -96,62 +93,59 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
         currEnd: crate::UnityEngine::Vector3,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::UnityEngine::Vector3,
-                        5usize,
-                    >("Blerp")
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                    ), crate::UnityEngine::Vector3, 5usize>("Blerp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Blerp",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Blerp",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (prevStart, prevEnd, currStart, currEnd, t))?
+            cordl_method_info.invoke_unchecked((), (prevStart, prevEnd, currStart, currEnd, t))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCutDirection(
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::NoteCutDirection),
@@ -166,40 +160,34 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (cutDirection))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (cutDirection))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNotePosition(
         lineCount: i32,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MockNoteData,
-                            >,
-                        ),
-                        crate::UnityEngine::Vector3,
-                        2usize,
-                    >("GetNotePosition")
+                    .find_static_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+                    ), crate::UnityEngine::Vector3, 2usize>("GetNotePosition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetNotePosition", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetNotePosition",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (lineCount, noteData))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (lineCount, noteData))? };
         Ok(__cordl_ret.into())
     }
     pub fn HandleNoteWasSpawned(
@@ -211,38 +199,35 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
             crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i64,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("HandleNoteWasSpawned")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i64,
+                        f32,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "HandleNoteWasSpawned"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleNoteWasSpawned", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleNoteWasSpawned",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (userId, syncTime, songTime, noteSpawnInfoNetSerializable),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (userId, syncTime, songTime, noteSpawnInfoNetSerializable),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -255,38 +240,35 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
             crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i64,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("HandleObstacleWasSpawned")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i64,
+                        f32,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "HandleObstacleWasSpawned"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleObstacleWasSpawned", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleObstacleWasSpawned",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (userId, syncTime, songTime, obstacleSpawnInfoNetSerializable),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (userId, syncTime, songTime, obstacleSpawnInfoNetSerializable),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -299,38 +281,35 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
             crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i64,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("HandleSliderWasSpawned")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i64,
+                        f32,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "HandleSliderWasSpawned"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleSliderWasSpawned", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleSliderWasSpawned",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (userId, syncTime, songTime, sliderSpawnInfoNetSerializable),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (userId, syncTime, songTime, sliderSpawnInfoNetSerializable),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -338,43 +317,39 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
         &mut self,
         introStartTime: i64,
         beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
-        gameplayModifiers: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        >,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
         onSongFinished: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i64,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MockBeatmapData,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::GameplayModifiers,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Action>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("Init")
+                    .find_method::<(
+                        i64,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    ), quest_hook::libil2cpp::Void, 4usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (introStartTime, beatmapData, gameplayModifiers, onSongFinished),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    introStartTime,
+                    beatmapData,
+                    gameplayModifiers,
+                    onSongFinished,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -382,26 +357,23 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
-        gameplayRpcManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IGameplayRpcManager,
-        >,
+        gameplayRpcManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameplayRpcManager>,
         scoreCalculator: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IMockPlayerScoreCalculator,
         >,
         leftHanded: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    multiplayerSessionManager,
-                    gameplayRpcManager,
-                    scoreCalculator,
-                    leftHanded,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                multiplayerSessionManager,
+                gameplayRpcManager,
+                scoreCalculator,
+                leftHanded,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn ProcessNotes(
@@ -425,63 +397,56 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
         songTime: f32,
         wasHitOrMiss: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::MockNoteData,
-                                    >,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
                             >,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::MockNoteData,
-                                    >,
-                                >,
+                        >,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
                             >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<bool>,
-                        ),
-                        crate::UnityEngine::Pose,
-                        10usize,
-                    >("ProcessNotes")
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<bool>,
+                    ), crate::UnityEngine::Pose, 10usize>("ProcessNotes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessNotes", 10usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessNotes",
+                            10usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        notes,
-                        handDirection,
-                        noteIndex,
-                        prevHitScore,
-                        nextHitScore,
-                        bombs,
-                        bombIndex,
-                        lineCount,
-                        songTime,
-                        wasHitOrMiss,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    notes,
+                    handDirection,
+                    noteIndex,
+                    prevHitScore,
+                    nextHitScore,
+                    bombs,
+                    bombIndex,
+                    lineCount,
+                    songTime,
+                    wasHitOrMiss,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -499,98 +464,87 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
         rightHandPose: crate::UnityEngine::Pose,
         songTime: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::MockObstacleData,
-                                    >,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockObstacleData>,
                             >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            crate::UnityEngine::Pose,
-                            crate::UnityEngine::Pose,
-                            crate::UnityEngine::Pose,
-                            f32,
-                        ),
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
                         crate::UnityEngine::Pose,
-                        7usize,
-                    >("ProcessObstacles")
+                        crate::UnityEngine::Pose,
+                        crate::UnityEngine::Pose,
+                        f32,
+                    ), crate::UnityEngine::Pose, 7usize>("ProcessObstacles")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessObstacles", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessObstacles",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        obstacles,
-                        obstacleIndex,
-                        lineCount,
-                        prevHeadPose,
-                        leftHandPose,
-                        rightHandPose,
-                        songTime,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    obstacles,
+                    obstacleIndex,
+                    lineCount,
+                    prevHeadPose,
+                    leftHandPose,
+                    rightHandPose,
+                    songTime,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SimulateFail(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn SimulateFail(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("SimulateFail")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SimulateFail")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SimulateFail", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SimulateFail",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Tick(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Tick(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Tick")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Tick",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Tick",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateScore(
@@ -607,57 +561,50 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
         nextNoteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Pose,
-                            crate::UnityEngine::Pose,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MockNoteData,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MockNoteData,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        11usize,
-                    >("UpdateScore")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        i32,
+                        crate::UnityEngine::Pose,
+                        crate::UnityEngine::Pose,
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+                    ), quest_hook::libil2cpp::Void, 11usize>("UpdateScore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateScore", 11usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateScore",
+                            11usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        currentScore,
-                        currentCombo,
-                        currentMultiplier,
-                        hitScore,
-                        lineCount,
-                        lastPose,
-                        currentPose,
-                        lastSongTime,
-                        songTime,
-                        noteData,
-                        nextNoteData,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    currentScore,
+                    currentCombo,
+                    currentMultiplier,
+                    hitScore,
+                    lineCount,
+                    lastPose,
+                    currentPose,
+                    lastSongTime,
+                    songTime,
+                    noteData,
+                    nextNoteData,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -666,67 +613,62 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
-        gameplayRpcManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IGameplayRpcManager,
-        >,
+        gameplayRpcManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameplayRpcManager>,
         scoreCalculator: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IMockPlayerScoreCalculator,
         >,
         leftHanded: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IGameplayRpcManager,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMockPlayerScoreCalculator,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameplayRpcManager>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::IMockPlayerScoreCalculator,
+                        >,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        multiplayerSessionManager,
-                        gameplayRpcManager,
-                        scoreCalculator,
-                        leftHanded,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    multiplayerSessionManager,
+                    gameplayRpcManager,
+                    scoreCalculator,
+                    leftHanded,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_songTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_songTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_songTime", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_songTime",
+                            0usize
                         )
                     })
             });
@@ -735,8 +677,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
     }
 }
 #[cfg(feature = "cordl_class_MockPlayerGamePoseGeneratorAI")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

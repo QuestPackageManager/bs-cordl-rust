@@ -5,14 +5,14 @@ pub struct ExpressionVisitorUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_System+Dynamic+Utils+ExpressionVisitorUtils")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Dynamic::Utils::ExpressionVisitorUtils {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::Utils::ExpressionVisitorUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Dynamic.Utils";
     const CLASS_NAME: &'static str = "ExpressionVisitorUtils";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,12 +40,8 @@ impl std::ops::DerefMut for crate::System::Dynamic::Utils::ExpressionVisitorUtil
 #[cfg(feature = "System+Dynamic+Utils+ExpressionVisitorUtils")]
 impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
     pub fn VisitArguments(
-        visitor: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::ExpressionVisitor,
-        >,
-        nodes: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::IArgumentProvider,
-        >,
+        visitor: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ExpressionVisitor>,
+        nodes: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::IArgumentProvider>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -53,33 +49,29 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::ExpressionVisitor,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::IArgumentProvider,
-                            >,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::Expression,
-                                >,
-                            >,
+                            crate::System::Linq::Expressions::ExpressionVisitor,
                         >,
-                        2usize,
-                    >("VisitArguments")
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::IArgumentProvider,
+                        >,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+                        >,
+                    >, 2usize>("VisitArguments")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "VisitArguments", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "VisitArguments",
+                            2usize
                         )
                     })
             });
@@ -91,12 +83,8 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
         Ok(__cordl_ret.into())
     }
     pub fn VisitBlockExpressions(
-        visitor: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::ExpressionVisitor,
-        >,
-        block: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::BlockExpression,
-        >,
+        visitor: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ExpressionVisitor>,
+        block: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BlockExpression>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -104,33 +92,29 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::ExpressionVisitor,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::BlockExpression,
-                            >,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::Expression,
-                                >,
-                            >,
+                            crate::System::Linq::Expressions::ExpressionVisitor,
                         >,
-                        2usize,
-                    >("VisitBlockExpressions")
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::BlockExpression,
+                        >,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+                        >,
+                    >, 2usize>("VisitBlockExpressions")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "VisitBlockExpressions", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "VisitBlockExpressions",
+                            2usize
                         )
                     })
             });
@@ -142,70 +126,55 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
         Ok(__cordl_ret.into())
     }
     pub fn VisitParameters(
-        visitor: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::ExpressionVisitor,
-        >,
-        nodes: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::IParameterProvider,
-        >,
+        visitor: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ExpressionVisitor>,
+        nodes: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::IParameterProvider>,
         callerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::ParameterExpression,
-                >,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::ExpressionVisitor,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::IParameterProvider,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::ParameterExpression,
-                                >,
+                            crate::System::Linq::Expressions::ExpressionVisitor,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::IParameterProvider,
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::ParameterExpression,
                             >,
                         >,
-                        3usize,
-                    >("VisitParameters")
+                    >, 3usize>("VisitParameters")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "VisitParameters", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "VisitParameters",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::ParameterExpression,
-                >,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (visitor, nodes, callerName))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (visitor, nodes, callerName))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Dynamic+Utils+ExpressionVisitorUtils")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Dynamic::Utils::ExpressionVisitorUtils {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Dynamic::Utils::ExpressionVisitorUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

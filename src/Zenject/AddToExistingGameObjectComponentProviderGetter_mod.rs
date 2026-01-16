@@ -12,13 +12,15 @@ pub struct AddToExistingGameObjectComponentProviderGetter {
 }
 #[cfg(feature = "cordl_class_Zenject+AddToExistingGameObjectComponentProviderGetter")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Zenject::AddToExistingGameObjectComponentProviderGetter {
+    for crate::Zenject::AddToExistingGameObjectComponentProviderGetter
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject";
     const CLASS_NAME: &'static str = "AddToExistingGameObjectComponentProviderGetter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -38,8 +40,7 @@ impl std::ops::Deref for crate::Zenject::AddToExistingGameObjectComponentProvide
     }
 }
 #[cfg(feature = "Zenject+AddToExistingGameObjectComponentProviderGetter")]
-impl std::ops::DerefMut
-for crate::Zenject::AddToExistingGameObjectComponentProviderGetter {
+impl std::ops::DerefMut for crate::Zenject::AddToExistingGameObjectComponentProviderGetter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -49,12 +50,12 @@ impl crate::Zenject::AddToExistingGameObjectComponentProviderGetter {
     pub fn GetGameObject(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>),
@@ -69,9 +70,8 @@ impl crate::Zenject::AddToExistingGameObjectComponentProviderGetter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -86,9 +86,7 @@ impl crate::Zenject::AddToExistingGameObjectComponentProviderGetter {
         extraArguments: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         >,
-        concreteIdentifier: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        >,
+        concreteIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         instantiateCallback: quest_hook::libil2cpp::Gc<
             crate::System::Action_2<
                 quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
@@ -96,20 +94,19 @@ impl crate::Zenject::AddToExistingGameObjectComponentProviderGetter {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    gameObjectGetter,
-                    container,
-                    componentType,
-                    extraArguments,
-                    concreteIdentifier,
-                    instantiateCallback,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                gameObjectGetter,
+                container,
+                componentType,
+                extraArguments,
+                concreteIdentifier,
+                instantiateCallback,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -125,9 +122,7 @@ impl crate::Zenject::AddToExistingGameObjectComponentProviderGetter {
         extraArguments: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         >,
-        concreteIdentifier: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        >,
+        concreteIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         instantiateCallback: quest_hook::libil2cpp::Gc<
             crate::System::Action_2<
                 quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
@@ -135,75 +130,70 @@ impl crate::Zenject::AddToExistingGameObjectComponentProviderGetter {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::Zenject::TypeValuePair,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::Zenject::TypeValuePair,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >(".ctor")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 6usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        gameObjectGetter,
-                        container,
-                        componentType,
-                        extraArguments,
-                        concreteIdentifier,
-                        instantiateCallback,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    gameObjectGetter,
+                    container,
+                    componentType,
+                    extraArguments,
+                    concreteIdentifier,
+                    instantiateCallback,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_ShouldToggleActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ShouldToggleActive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ShouldToggleActive", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ShouldToggleActive",
+                            0usize
                         )
                     })
             });
@@ -213,7 +203,8 @@ impl crate::Zenject::AddToExistingGameObjectComponentProviderGetter {
 }
 #[cfg(feature = "cordl_class_Zenject+AddToExistingGameObjectComponentProviderGetter")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Zenject::AddToExistingGameObjectComponentProviderGetter {
+    for crate::Zenject::AddToExistingGameObjectComponentProviderGetter
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

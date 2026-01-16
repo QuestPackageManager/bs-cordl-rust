@@ -1,12 +1,10 @@
 #[cfg(feature = "cordl_class_OSCE+Analytics+IdResponse")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct IdResponse {
     pub rid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub platform_rid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub platform_account_id: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub platform_account_id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub game_specific_id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "cordl_class_OSCE+Analytics+IdResponse")]
@@ -29,13 +27,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OSCE::Analytics::IdResponse {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OSCE+Analytics+IdResponse")]
@@ -69,9 +64,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OSCE::Analytics::IdRespon
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }

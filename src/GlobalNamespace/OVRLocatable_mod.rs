@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRLocatable")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRLocatable {
     pub _Handle_k__BackingField: u64,
 }
@@ -24,13 +24,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRLocatable
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable")]
@@ -64,9 +61,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRLocat
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -84,8 +79,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRLocatab
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRLocatable {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRLocatable {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -101,11 +95,14 @@ impl crate::GlobalNamespace::OVRLocatable {
     #[cfg(feature = "OVRLocatable+GetSceneAnchorPosesJob")]
     pub type GetSceneAnchorPosesJob = crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob;
     #[cfg(feature = "OVRLocatable+GetSpatialAnchorPosesJob")]
-    pub type GetSpatialAnchorPosesJob = crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob;
+    pub type GetSpatialAnchorPosesJob =
+        crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob;
     #[cfg(feature = "OVRLocatable+SetLocalSpaceTransformsJob")]
-    pub type SetLocalSpaceTransformsJob = crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob;
+    pub type SetLocalSpaceTransformsJob =
+        crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob;
     #[cfg(feature = "OVRLocatable+SetWorldSpaceTransformsJob")]
-    pub type SetWorldSpaceTransformsJob = crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob;
+    pub type SetWorldSpaceTransformsJob =
+        crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob;
     #[cfg(feature = "OVRLocatable+TrackingSpacePose")]
     pub type TrackingSpacePose = crate::GlobalNamespace::OVRLocatable_TrackingSpacePose;
     #[cfg(feature = "OVRLocatable+TransformPosesJob")]
@@ -114,9 +111,10 @@ impl crate::GlobalNamespace::OVRLocatable {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -131,48 +129,44 @@ impl crate::GlobalNamespace::OVRLocatable {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_OVRLocatable0(
         &mut self,
         other: crate::GlobalNamespace::OVRLocatable,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::GlobalNamespace::OVRLocatable),
-                        bool,
-                        1usize,
-                    >("Equals")
+                    .find_method::<(crate::GlobalNamespace::OVRLocatable), bool, 1usize>("Equals")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Equals",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -183,9 +177,10 @@ impl crate::GlobalNamespace::OVRLocatable {
         &mut self,
         anchor: crate::GlobalNamespace::OVRAnchor,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRLocatable> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRAnchor),
@@ -200,28 +195,25 @@ impl crate::GlobalNamespace::OVRLocatable {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRLocatable = unsafe {
-            cordl_method_info.invoke_unchecked(self, (anchor))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRLocatable =
+            unsafe { cordl_method_info.invoke_unchecked(self, (anchor))? };
         Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRLocatable__get_Handle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        u64,
-                        0usize,
-                    >("IOVRAnchorComponent<OVRLocatable>.get_Handle")
+                    .find_method::<(), u64, 0usize>("IOVRAnchorComponent<OVRLocatable>.get_Handle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IOVRAnchorComponent<OVRLocatable>.get_Handle", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IOVRAnchorComponent<OVRLocatable>.get_Handle",
+                            0usize
                         )
                     })
             });
@@ -230,12 +222,11 @@ impl crate::GlobalNamespace::OVRLocatable {
     }
     pub fn IOVRAnchorComponent_OVRLocatable__get_Type(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_SpaceComponentType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -250,15 +241,12 @@ impl crate::GlobalNamespace::OVRLocatable {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ScheduleUpdateTransforms(
-        locatables: crate::Unity::Collections::NativeArray_1<
-            crate::GlobalNamespace::OVRLocatable,
-        >,
+        locatables: crate::Unity::Collections::NativeArray_1<crate::GlobalNamespace::OVRLocatable>,
         transforms: crate::UnityEngine::Jobs::TransformAccessArray,
         trackingSpaceToWorldSpaceTransform: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Transform,
@@ -268,45 +256,44 @@ impl crate::GlobalNamespace::OVRLocatable {
         >,
         inputDeps: crate::Unity::Jobs::JobHandle,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::NativeArray_1<
-                                crate::GlobalNamespace::OVRLocatable,
-                            >,
-                            crate::UnityEngine::Jobs::TransformAccessArray,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            crate::Unity::Collections::NativeArray_1<
-                                crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
-                            >,
-                            crate::Unity::Jobs::JobHandle,
-                        ),
+                    .find_static_method::<(
+                        crate::Unity::Collections::NativeArray_1<
+                            crate::GlobalNamespace::OVRLocatable,
+                        >,
+                        crate::UnityEngine::Jobs::TransformAccessArray,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                        crate::Unity::Collections::NativeArray_1<
+                            crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
+                        >,
                         crate::Unity::Jobs::JobHandle,
-                        5usize,
-                    >("ScheduleUpdateTransforms")
+                    ), crate::Unity::Jobs::JobHandle, 5usize>(
+                        "ScheduleUpdateTransforms"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ScheduleUpdateTransforms", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ScheduleUpdateTransforms",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        locatables,
-                        transforms,
-                        trackingSpaceToWorldSpaceTransform,
-                        posesOut,
-                        inputDeps,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    locatables,
+                    transforms,
+                    trackingSpaceToWorldSpaceTransform,
+                    posesOut,
+                    inputDeps,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -315,26 +302,25 @@ impl crate::GlobalNamespace::OVRLocatable {
         enabled: bool,
         timeout: f64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool, f64),
-                        crate::GlobalNamespace::OVRTask_1<bool>,
-                        2usize,
-                    >("SetEnabledAsync")
+                    .find_method::<(bool, f64), crate::GlobalNamespace::OVRTask_1<bool>, 2usize>(
+                        "SetEnabledAsync",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetEnabledAsync", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetEnabledAsync",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (enabled, timeout))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (enabled, timeout))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetEnabledSafeAsync(
@@ -342,36 +328,35 @@ impl crate::GlobalNamespace::OVRLocatable {
         enabled: bool,
         timeout: f64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool, f64),
-                        crate::GlobalNamespace::OVRTask_1<bool>,
-                        2usize,
-                    >("SetEnabledSafeAsync")
+                    .find_method::<(bool, f64), crate::GlobalNamespace::OVRTask_1<bool>, 2usize>(
+                        "SetEnabledSafeAsync",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetEnabledSafeAsync", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetEnabledSafeAsync",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (enabled, timeout))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (enabled, timeout))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -386,9 +371,8 @@ impl crate::GlobalNamespace::OVRLocatable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetSceneAnchorPose(
@@ -397,28 +381,24 @@ impl crate::GlobalNamespace::OVRLocatable {
             crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
-                        >),
-                        bool,
-                        1usize,
-                    >("TryGetSceneAnchorPose")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
+                    >), bool, 1usize>("TryGetSceneAnchorPose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetSceneAnchorPose", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetSceneAnchorPose",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pose))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (pose))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetSpatialAnchorPose(
@@ -427,28 +407,24 @@ impl crate::GlobalNamespace::OVRLocatable {
             crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
-                        >),
-                        bool,
-                        1usize,
-                    >("TryGetSpatialAnchorPose")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
+                    >), bool, 1usize>("TryGetSpatialAnchorPose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetSpatialAnchorPose", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetSpatialAnchorPose",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pose))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (pose))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateSceneAnchorTransforms(
@@ -469,53 +445,57 @@ impl crate::GlobalNamespace::OVRLocatable {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    crate::System::Collections::Generic::KeyValuePair_2<
-                                        crate::GlobalNamespace::OVRAnchor,
-                                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                                    >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                crate::System::Collections::Generic::KeyValuePair_2<
+                                    crate::GlobalNamespace::OVRAnchor,
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("UpdateSceneAnchorTransforms")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "UpdateSceneAnchorTransforms"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateSceneAnchorTransforms", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateSceneAnchorTransforms",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (anchors, trackingSpaceToWorldSpaceTransform, trackingSpacePoses),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    anchors,
+                    trackingSpaceToWorldSpaceTransform,
+                    trackingSpacePoses,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _UpdateSceneAnchorTransforms_g__GetLocatableOrDefault_34_0(
         anchor: crate::GlobalNamespace::OVRAnchor,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRLocatable> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRAnchor),
@@ -531,18 +511,18 @@ impl crate::GlobalNamespace::OVRLocatable {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRLocatable = unsafe {
-            cordl_method_info.invoke_unchecked((), (anchor))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRLocatable =
+            unsafe { cordl_method_info.invoke_unchecked((), (anchor))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         anchor: crate::GlobalNamespace::OVRAnchor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRAnchor),
@@ -557,22 +537,23 @@ impl crate::GlobalNamespace::OVRLocatable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (anchor))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (anchor))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u64, 0usize>("get_Handle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Handle", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Handle",
+                            0usize
                         )
                     })
             });
@@ -580,16 +561,18 @@ impl crate::GlobalNamespace::OVRLocatable {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsEnabled", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsEnabled",
+                            0usize
                         )
                     })
             });
@@ -597,16 +580,18 @@ impl crate::GlobalNamespace::OVRLocatable {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsNull")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsNull", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsNull",
+                            0usize
                         )
                     })
             });
@@ -615,12 +600,11 @@ impl crate::GlobalNamespace::OVRLocatable {
     }
     pub fn get_Type(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_SpaceComponentType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -635,115 +619,101 @@ impl crate::GlobalNamespace::OVRLocatable {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Equality(
         lhs: crate::GlobalNamespace::OVRLocatable,
         rhs: crate::GlobalNamespace::OVRLocatable,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::OVRLocatable,
-                            crate::GlobalNamespace::OVRLocatable,
-                        ),
-                        bool,
-                        2usize,
-                    >("op_Equality")
+                    .find_static_method::<(
+                        crate::GlobalNamespace::OVRLocatable,
+                        crate::GlobalNamespace::OVRLocatable,
+                    ), bool, 2usize>("op_Equality")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Equality", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Equality",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Inequality(
         lhs: crate::GlobalNamespace::OVRLocatable,
         rhs: crate::GlobalNamespace::OVRLocatable,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::OVRLocatable,
-                            crate::GlobalNamespace::OVRLocatable,
-                        ),
-                        bool,
-                        2usize,
-                    >("op_Inequality")
+                    .find_static_method::<(
+                        crate::GlobalNamespace::OVRLocatable,
+                        crate::GlobalNamespace::OVRLocatable,
+                    ), bool, 2usize>("op_Inequality")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Inequality", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Inequality",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRLocatable")]
-impl AsRef<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRLocatable>,
-> for crate::GlobalNamespace::OVRLocatable {
+impl AsRef<crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRLocatable>>
+    for crate::GlobalNamespace::OVRLocatable
+{
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRLocatable,
-    > {
+    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRLocatable> {
         todo!()
     }
 }
 #[cfg(feature = "OVRLocatable")]
-impl AsMut<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRLocatable>,
-> for crate::GlobalNamespace::OVRLocatable {
+impl AsMut<crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRLocatable>>
+    for crate::GlobalNamespace::OVRLocatable
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRLocatable,
-    > {
+    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRLocatable>
+    {
         todo!()
     }
 }
 #[cfg(feature = "OVRLocatable")]
 impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable>>
-for crate::GlobalNamespace::OVRLocatable {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable> {
+    for crate::GlobalNamespace::OVRLocatable
+{
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable> {
         todo!()
     }
 }
 #[cfg(feature = "OVRLocatable")]
 impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable>>
-for crate::GlobalNamespace::OVRLocatable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable> {
+    for crate::GlobalNamespace::OVRLocatable
+{
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable> {
         todo!()
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+CopyPosesJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRLocatable_CopyPosesJob {
     pub PosesIn: crate::Unity::Collections::NativeArray_1<
         crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
@@ -753,8 +723,7 @@ pub struct OVRLocatable_CopyPosesJob {
     >,
 }
 #[cfg(feature = "cordl_class_OVRLocatable+CopyPosesJob")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -773,18 +742,14 @@ for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+CopyPosesJob")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -794,8 +759,7 @@ for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+CopyPosesJob")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -808,23 +772,19 @@ for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+CopyPosesJob")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+CopyPosesJob")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -838,7 +798,8 @@ for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+CopyPosesJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_CopyPosesJob
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -853,53 +814,51 @@ impl crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRLocatable+CopyPosesJob")]
-impl AsRef<crate::Unity::Jobs::IJobFor>
-for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
+impl AsRef<crate::Unity::Jobs::IJobFor> for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
     fn as_ref(&self) -> &crate::Unity::Jobs::IJobFor {
         todo!()
     }
 }
 #[cfg(feature = "OVRLocatable+CopyPosesJob")]
-impl AsMut<crate::Unity::Jobs::IJobFor>
-for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
+impl AsMut<crate::Unity::Jobs::IJobFor> for crate::GlobalNamespace::OVRLocatable_CopyPosesJob {
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobFor {
         todo!()
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSceneAnchorPosesJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRLocatable_GetSceneAnchorPosesJob {
-    pub Locatables: crate::Unity::Collections::NativeArray_1<
-        crate::GlobalNamespace::OVRLocatable,
-    >,
+    pub Locatables: crate::Unity::Collections::NativeArray_1<crate::GlobalNamespace::OVRLocatable>,
     pub Poses: crate::Unity::Collections::NativeArray_1<
         crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
     >,
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSceneAnchorPosesJob")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -918,18 +877,16 @@ for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSceneAnchorPosesJob")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -940,7 +897,8 @@ for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSceneAnchorPosesJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -954,22 +912,22 @@ for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSceneAnchorPosesJob")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSceneAnchorPosesJob")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -983,7 +941,8 @@ for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSceneAnchorPosesJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -998,57 +957,57 @@ impl crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob {
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Unity.Jobs.IJobFor.Execute")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "Unity.Jobs.IJobFor.Execute",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Unity.Jobs.IJobFor.Execute", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Unity.Jobs.IJobFor.Execute",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRLocatable+GetSceneAnchorPosesJob")]
 impl AsRef<crate::Unity::Jobs::IJobFor>
-for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob
+{
     fn as_ref(&self) -> &crate::Unity::Jobs::IJobFor {
         todo!()
     }
 }
 #[cfg(feature = "OVRLocatable+GetSceneAnchorPosesJob")]
 impl AsMut<crate::Unity::Jobs::IJobFor>
-for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSceneAnchorPosesJob
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobFor {
         todo!()
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSpatialAnchorPosesJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRLocatable_GetSpatialAnchorPosesJob {
-    pub Locatables: crate::Unity::Collections::NativeArray_1<
-        crate::GlobalNamespace::OVRLocatable,
-    >,
+    pub Locatables: crate::Unity::Collections::NativeArray_1<crate::GlobalNamespace::OVRLocatable>,
     pub Poses: crate::Unity::Collections::NativeArray_1<
         crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
     >,
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSpatialAnchorPosesJob")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1067,18 +1026,16 @@ for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSpatialAnchorPosesJob")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1089,7 +1046,8 @@ for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSpatialAnchorPosesJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1103,22 +1061,22 @@ for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSpatialAnchorPosesJob")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSpatialAnchorPosesJob")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1132,7 +1090,8 @@ for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSpatialAnchorPosesJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1147,46 +1106,47 @@ impl crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob {
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Unity.Jobs.IJobFor.Execute")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "Unity.Jobs.IJobFor.Execute",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Unity.Jobs.IJobFor.Execute", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Unity.Jobs.IJobFor.Execute",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRLocatable+GetSpatialAnchorPosesJob")]
 impl AsRef<crate::Unity::Jobs::IJobFor>
-for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob
+{
     fn as_ref(&self) -> &crate::Unity::Jobs::IJobFor {
         todo!()
     }
 }
 #[cfg(feature = "OVRLocatable+GetSpatialAnchorPosesJob")]
 impl AsMut<crate::Unity::Jobs::IJobFor>
-for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_GetSpatialAnchorPosesJob
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobFor {
         todo!()
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetLocalSpaceTransformsJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRLocatable_SetLocalSpaceTransformsJob {
     pub Poses: crate::Unity::Collections::NativeArray_1<
         crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
@@ -1194,7 +1154,8 @@ pub struct OVRLocatable_SetLocalSpaceTransformsJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetLocalSpaceTransformsJob")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1213,18 +1174,16 @@ for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetLocalSpaceTransformsJob")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1235,7 +1194,8 @@ for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetLocalSpaceTransformsJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1249,22 +1209,22 @@ for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetLocalSpaceTransformsJob")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetLocalSpaceTransformsJob")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1278,7 +1238,8 @@ for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetLocalSpaceTransformsJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1294,9 +1255,10 @@ impl crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob {
         index: i32,
         transform: crate::UnityEngine::Jobs::TransformAccess,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::UnityEngine::Jobs::TransformAccess),
@@ -1311,29 +1273,30 @@ impl crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index, transform))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index, transform))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRLocatable+SetLocalSpaceTransformsJob")]
 impl AsRef<crate::UnityEngine::Jobs::IJobParallelForTransform>
-for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob
+{
     fn as_ref(&self) -> &crate::UnityEngine::Jobs::IJobParallelForTransform {
         todo!()
     }
 }
 #[cfg(feature = "OVRLocatable+SetLocalSpaceTransformsJob")]
 impl AsMut<crate::UnityEngine::Jobs::IJobParallelForTransform>
-for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetLocalSpaceTransformsJob
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::Jobs::IJobParallelForTransform {
         todo!()
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetWorldSpaceTransformsJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRLocatable_SetWorldSpaceTransformsJob {
     pub Poses: crate::Unity::Collections::NativeArray_1<
         crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
@@ -1341,7 +1304,8 @@ pub struct OVRLocatable_SetWorldSpaceTransformsJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetWorldSpaceTransformsJob")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1360,18 +1324,16 @@ for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetWorldSpaceTransformsJob")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1382,7 +1344,8 @@ for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetWorldSpaceTransformsJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1396,22 +1359,22 @@ for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetWorldSpaceTransformsJob")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetWorldSpaceTransformsJob")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1425,7 +1388,8 @@ for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetWorldSpaceTransformsJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1441,9 +1405,10 @@ impl crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob {
         index: i32,
         transform: crate::UnityEngine::Jobs::TransformAccess,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::UnityEngine::Jobs::TransformAccess),
@@ -1458,41 +1423,37 @@ impl crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index, transform))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index, transform))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRLocatable+SetWorldSpaceTransformsJob")]
 impl AsRef<crate::UnityEngine::Jobs::IJobParallelForTransform>
-for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob
+{
     fn as_ref(&self) -> &crate::UnityEngine::Jobs::IJobParallelForTransform {
         todo!()
     }
 }
 #[cfg(feature = "OVRLocatable+SetWorldSpaceTransformsJob")]
 impl AsMut<crate::UnityEngine::Jobs::IJobParallelForTransform>
-for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob {
+    for crate::GlobalNamespace::OVRLocatable_SetWorldSpaceTransformsJob
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::Jobs::IJobParallelForTransform {
         todo!()
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRLocatable_TrackingSpacePose {
-    pub _Position_k__BackingField: crate::System::Nullable_1<
-        crate::UnityEngine::Vector3,
-    >,
-    pub _Rotation_k__BackingField: crate::System::Nullable_1<
-        crate::UnityEngine::Quaternion,
-    >,
+    pub _Position_k__BackingField: crate::System::Nullable_1<crate::UnityEngine::Vector3>,
+    pub _Rotation_k__BackingField: crate::System::Nullable_1<crate::UnityEngine::Quaternion>,
     pub Flags: crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1511,18 +1472,16 @@ for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
+    for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1533,7 +1492,8 @@ for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
+    for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1547,22 +1507,22 @@ for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
+    for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
+    for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1576,7 +1536,8 @@ for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
+    for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1591,12 +1552,11 @@ impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
     pub fn ComputeWorldPosition_Camera0(
         &mut self,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<crate::UnityEngine::Vector3>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<crate::UnityEngine::Vector3>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>),
@@ -1611,9 +1571,8 @@ impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Nullable_1<crate::UnityEngine::Vector3> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (camera))?
-        };
+        let __cordl_ret: crate::System::Nullable_1<crate::UnityEngine::Vector3> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (camera))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeWorldPosition_Transform1(
@@ -1621,12 +1580,11 @@ impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
         trackingSpaceToWorldSpaceTransform: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Transform,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<crate::UnityEngine::Vector3>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<crate::UnityEngine::Vector3>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
@@ -1642,20 +1600,19 @@ impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
                     })
             });
         let __cordl_ret: crate::System::Nullable_1<crate::UnityEngine::Vector3> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (trackingSpaceToWorldSpaceTransform))?
+            cordl_method_info.invoke_unchecked(self, (trackingSpaceToWorldSpaceTransform))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeWorldRotation_Camera0(
         &mut self,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<crate::UnityEngine::Quaternion>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<crate::UnityEngine::Quaternion>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>),
@@ -1670,9 +1627,8 @@ impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Nullable_1<crate::UnityEngine::Quaternion> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (camera))?
-        };
+        let __cordl_ret: crate::System::Nullable_1<crate::UnityEngine::Quaternion> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (camera))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeWorldRotation_Transform1(
@@ -1680,12 +1636,12 @@ impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
         trackingSpaceToWorldSpaceTransform: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Transform,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<crate::UnityEngine::Quaternion>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<crate::UnityEngine::Quaternion>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
@@ -1701,8 +1657,7 @@ impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
                     })
             });
         let __cordl_ret: crate::System::Nullable_1<crate::UnityEngine::Quaternion> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (trackingSpaceToWorldSpaceTransform))?
+            cordl_method_info.invoke_unchecked(self, (trackingSpaceToWorldSpaceTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1712,43 +1667,42 @@ impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
         rotation: crate::UnityEngine::Quaternion,
         flags: crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                            crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                        crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (position, rotation, flags))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (position, rotation, flags))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsPositionTracked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsPositionTracked")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsPositionTracked", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsPositionTracked",
+                            0usize
                         )
                     })
             });
@@ -1756,16 +1710,18 @@ impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsRotationTracked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsRotationTracked")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsRotationTracked", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsRotationTracked",
+                            0usize
                         )
                     })
             });
@@ -1774,12 +1730,11 @@ impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
     }
     pub fn get_Position(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<crate::UnityEngine::Vector3>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<crate::UnityEngine::Vector3>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1794,19 +1749,18 @@ impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Nullable_1<crate::UnityEngine::Vector3> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Nullable_1<crate::UnityEngine::Vector3> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Rotation(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<crate::UnityEngine::Quaternion>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<crate::UnityEngine::Quaternion>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1821,15 +1775,14 @@ impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Nullable_1<crate::UnityEngine::Quaternion> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Nullable_1<crate::UnityEngine::Quaternion> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TransformPosesJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRLocatable_TransformPosesJob {
     pub Poses: crate::Unity::Collections::NativeArray_1<
         crate::GlobalNamespace::OVRLocatable_TrackingSpacePose,
@@ -1838,8 +1791,7 @@ pub struct OVRLocatable_TransformPosesJob {
     pub Rotation: crate::UnityEngine::Quaternion,
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TransformPosesJob")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1858,18 +1810,16 @@ for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TransformPosesJob")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_TransformPosesJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1880,7 +1830,8 @@ for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TransformPosesJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_TransformPosesJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1894,22 +1845,22 @@ for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TransformPosesJob")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_TransformPosesJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TransformPosesJob")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_TransformPosesJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1923,7 +1874,8 @@ for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TransformPosesJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
+    for crate::GlobalNamespace::OVRLocatable_TransformPosesJob
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1938,39 +1890,36 @@ impl crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Unity.Jobs.IJobFor.Execute")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "Unity.Jobs.IJobFor.Execute",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Unity.Jobs.IJobFor.Execute", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Unity.Jobs.IJobFor.Execute",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRLocatable+TransformPosesJob")]
-impl AsRef<crate::Unity::Jobs::IJobFor>
-for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
+impl AsRef<crate::Unity::Jobs::IJobFor> for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
     fn as_ref(&self) -> &crate::Unity::Jobs::IJobFor {
         todo!()
     }
 }
 #[cfg(feature = "OVRLocatable+TransformPosesJob")]
-impl AsMut<crate::Unity::Jobs::IJobFor>
-for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
+impl AsMut<crate::Unity::Jobs::IJobFor> for crate::GlobalNamespace::OVRLocatable_TransformPosesJob {
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobFor {
         todo!()
     }

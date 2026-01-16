@@ -20,14 +20,14 @@ pub struct ProbeBrickPool {
     pub m_ContainsSkyShadingDirection: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::ProbeBrickPool {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::ProbeBrickPool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "ProbeBrickPool";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -74,37 +74,32 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         >,
         ignoreErrorLog: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc,
-                                >,
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc,
                             >,
-                            bool,
-                        ),
+                        >,
                         bool,
-                        3usize,
-                    >("Allocate")
+                    ), bool, 3usize>("Allocate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Allocate", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Allocate",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (numberOfBrickChunks, outAllocations, ignoreErrorLog),
-                )?
+                .invoke_unchecked(self, (numberOfBrickChunks, outAllocations, ignoreErrorLog))?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,68 +109,65 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         height: i32,
         depth: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("AllocatePool")
+                    .find_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(
+                        "AllocatePool",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AllocatePool", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AllocatePool",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (width, height, depth))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (width, height, depth))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Cleanup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Cleanup(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Cleanup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Cleanup",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Cleanup",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Clear",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateDataLocation(
@@ -190,58 +182,54 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         allocateSkyShadingDirectionData: bool,
         allocateProbeOcclusionData: bool,
         allocatedBytes: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i32,
-                            bool,
-                            crate::UnityEngine::Rendering::ProbeVolumeSHBands,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                            bool,
-                            bool,
-                            bool,
-                            bool,
-                            bool,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation,
-                        11usize,
-                    >("CreateDataLocation")
+                    .find_static_method::<(
+                        i32,
+                        bool,
+                        crate::UnityEngine::Rendering::ProbeVolumeSHBands,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                        bool,
+                        bool,
+                        bool,
+                        bool,
+                        bool,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation, 11usize>(
+                        "CreateDataLocation",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateDataLocation", 11usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateDataLocation",
+                            11usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        numProbes,
-                        compressed,
-                        bands,
-                        name,
-                        allocateRendertexture,
-                        allocateValidityData,
-                        allocateRenderingLayers,
-                        allocateSkyOcclusionData,
-                        allocateSkyShadingDirectionData,
-                        allocateProbeOcclusionData,
-                        allocatedBytes,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    numProbes,
+                    compressed,
+                    bands,
+                    name,
+                    allocateRendertexture,
+                    allocateValidityData,
+                    allocateRenderingLayers,
+                    allocateSkyOcclusionData,
+                    allocateSkyShadingDirectionData,
+                    allocateProbeOcclusionData,
+                    allocatedBytes,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -253,50 +241,45 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         allocateRendertexture: bool,
         allocatedBytes: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                        7usize,
-                    >("CreateDataTexture")
+                    .find_static_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>, 7usize>(
+                        "CreateDataTexture",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateDataTexture", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateDataTexture",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        width,
-                        height,
-                        depth,
-                        format,
-                        name,
-                        allocateRendertexture,
-                        allocatedBytes,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    width,
+                    height,
+                    depth,
+                    format,
+                    name,
+                    allocateRendertexture,
+                    allocatedBytes,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -308,30 +291,27 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Deallocate")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>("Deallocate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Deallocate", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Deallocate",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (allocations))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (allocations))? };
         Ok(__cordl_ret.into())
     }
     pub fn DerivePoolSizeFromBudget(
@@ -340,25 +320,25 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         height: quest_hook::libil2cpp::ByRefMut<i32>,
         depth: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Rendering::ProbeVolumeTextureMemoryBudget,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("DerivePoolSizeFromBudget")
+                    .find_static_method::<(
+                        crate::UnityEngine::Rendering::ProbeVolumeTextureMemoryBudget,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "DerivePoolSizeFromBudget"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DerivePoolSizeFromBudget", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DerivePoolSizeFromBudget",
+                            4usize
                         )
                     })
             });
@@ -368,47 +348,44 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         Ok(__cordl_ret.into())
     }
     pub fn DivRoundUp(x: i32, y: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("DivRoundUp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DivRoundUp", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DivRoundUp",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (x, y))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (x, y))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureTextureValidity_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("EnsureTextureValidity")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("EnsureTextureValidity")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EnsureTextureValidity", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EnsureTextureValidity",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureTextureValidity__cordl_bool__cordl_bool__cordl_bool__cordl_bool1(
@@ -418,29 +395,26 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         skyDirection: bool,
         probeOcclusion: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool, bool, bool, bool),
-                        bool,
-                        4usize,
-                    >("EnsureTextureValidity")
+                    .find_method::<(bool, bool, bool, bool), bool, 4usize>("EnsureTextureValidity")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EnsureTextureValidity", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EnsureTextureValidity",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (renderingLayers, skyOcclusion, skyDirection, probeOcclusion),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (renderingLayers, skyOcclusion, skyDirection, probeOcclusion),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -450,31 +424,28 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         depth: i32,
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                        ),
+                    .find_static_method::<(
                         i32,
-                        4usize,
-                    >("EstimateMemoryCost")
+                        i32,
+                        i32,
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                    ), i32, 4usize>("EstimateMemoryCost")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EstimateMemoryCost", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EstimateMemoryCost",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (width, height, depth, format))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (width, height, depth, format))? };
         Ok(__cordl_ret.into())
     }
     pub fn EstimateMemoryCostForBlending(
@@ -482,62 +453,61 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         compressed: bool,
         bands: crate::UnityEngine::Rendering::ProbeVolumeSHBands,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Rendering::ProbeVolumeTextureMemoryBudget,
-                            bool,
-                            crate::UnityEngine::Rendering::ProbeVolumeSHBands,
-                        ),
-                        i32,
-                        3usize,
-                    >("EstimateMemoryCostForBlending")
+                    .find_static_method::<(
+                        crate::UnityEngine::Rendering::ProbeVolumeTextureMemoryBudget,
+                        bool,
+                        crate::UnityEngine::Rendering::ProbeVolumeSHBands,
+                    ), i32, 3usize>("EstimateMemoryCostForBlending")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EstimateMemoryCostForBlending", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EstimateMemoryCostForBlending",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (memoryBudget, compressed, bands))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (memoryBudget, compressed, bands))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetChunkCount(brickCount: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("GetChunkCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetChunkCount", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetChunkCount",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (brickCount))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (brickCount))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetChunkSizeInBrickCount() -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetChunkSizeInBrickCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetChunkSizeInBrickCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetChunkSizeInBrickCount",
+                            0usize
                         )
                     })
             });
@@ -545,16 +515,18 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         Ok(__cordl_ret.into())
     }
     pub fn GetChunkSizeInProbeCount() -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetChunkSizeInProbeCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetChunkSizeInProbeCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetChunkSizeInProbeCount",
+                            0usize
                         )
                     })
             });
@@ -564,39 +536,38 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
     pub fn GetPoolDimensions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::Vector3Int,
-                        0usize,
-                    >("GetPoolDimensions")
+                    .find_method::<(), crate::UnityEngine::Vector3Int, 0usize>("GetPoolDimensions")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPoolDimensions", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPoolDimensions",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3Int = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3Int =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPoolHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetPoolHeight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPoolHeight", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPoolHeight",
+                            0usize
                         )
                     })
             });
@@ -604,16 +575,18 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         Ok(__cordl_ret.into())
     }
     pub fn GetPoolWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetPoolWidth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPoolWidth", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPoolWidth",
+                            0usize
                         )
                     })
             });
@@ -622,12 +595,11 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
     }
     pub fn GetProbeOcclusionTexture(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -642,22 +614,23 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRemainingChunkCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetRemainingChunkCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetRemainingChunkCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetRemainingChunkCount",
+                            0usize
                         )
                     })
             });
@@ -670,38 +643,36 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
             crate::UnityEngine::Rendering::ProbeReferenceVolume_RuntimeResources,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::Rendering::ProbeReferenceVolume_RuntimeResources,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("GetRuntimeResources")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::Rendering::ProbeReferenceVolume_RuntimeResources,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "GetRuntimeResources"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetRuntimeResources", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetRuntimeResources",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (rr))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (rr))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSkyOcclusionTexture(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -716,19 +687,17 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSkyShadingDirectionIndicesTexture(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -743,19 +712,17 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValidityTexture(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -770,32 +737,28 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("Initialize")
+                    .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Initialize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Initialize",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -807,46 +770,44 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         allocateSkyShadingData: bool,
         allocateProbeOcclusionData: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    memoryBudget,
-                    shBands,
-                    allocateValidityData,
-                    allocateRenderingLayerData,
-                    allocateSkyOcclusion,
-                    allocateSkyShadingData,
-                    allocateProbeOcclusionData,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                memoryBudget,
+                shBands,
+                allocateValidityData,
+                allocateRenderingLayerData,
+                allocateSkyOcclusion,
+                allocateSkyShadingData,
+                allocateProbeOcclusionData,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn ProbeCountToDataLocSize(
         numProbes: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32),
-                        crate::UnityEngine::Vector3Int,
-                        1usize,
-                    >("ProbeCountToDataLocSize")
+                    .find_static_method::<(i32), crate::UnityEngine::Vector3Int, 1usize>(
+                        "ProbeCountToDataLocSize",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProbeCountToDataLocSize", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProbeCountToDataLocSize",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3Int = unsafe {
-            cordl_method_info.invoke_unchecked((), (numProbes))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3Int =
+            unsafe { cordl_method_info.invoke_unchecked((), (numProbes))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateValidity(
@@ -864,42 +825,37 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         >,
         destStartIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc,
-                                >,
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc,
                             >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("UpdateValidity")
+                        >,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("UpdateValidity")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateValidity", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateValidity",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (source, srcLocations, dstLocations, destStartIndex),
-                )?
+                .invoke_unchecked(self, (source, srcLocations, dstLocations, destStartIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -921,12 +877,11 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         skyOcclusion: bool,
         skyOcclusionTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         skyShadingDirections: bool,
-        skyShadingDirectionsTexture: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Texture,
-        >,
+        skyShadingDirectionsTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         probeOcclusion: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -965,24 +920,23 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        cmd,
-                        dataBuffer,
-                        layout,
-                        dstLocations,
-                        updateSharedData,
-                        validityTexture,
-                        bands,
-                        skyOcclusion,
-                        skyOcclusionTexture,
-                        skyShadingDirections,
-                        skyShadingDirectionsTexture,
-                        probeOcclusion,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    cmd,
+                    dataBuffer,
+                    layout,
+                    dstLocations,
+                    updateSharedData,
+                    validityTexture,
+                    bands,
+                    skyOcclusion,
+                    skyOcclusionTexture,
+                    skyShadingDirections,
+                    skyShadingDirectionsTexture,
+                    probeOcclusion,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1002,43 +956,40 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         destStartIndex: i32,
         bands: crate::UnityEngine::Rendering::ProbeVolumeSHBands,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc,
-                                >,
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc,
                             >,
-                            i32,
-                            crate::UnityEngine::Rendering::ProbeVolumeSHBands,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Update")
+                        >,
+                        i32,
+                        crate::UnityEngine::Rendering::ProbeVolumeSHBands,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Update",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (source, srcLocations, dstLocations, destStartIndex, bands),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (source, srcLocations, dstLocations, destStartIndex, bands),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1052,59 +1003,58 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         allocateSkyShadingData: bool,
         allocateProbeOcclusionData: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Rendering::ProbeVolumeTextureMemoryBudget,
-                            crate::UnityEngine::Rendering::ProbeVolumeSHBands,
-                            bool,
-                            bool,
-                            bool,
-                            bool,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::ProbeVolumeTextureMemoryBudget,
+                        crate::UnityEngine::Rendering::ProbeVolumeSHBands,
+                        bool,
+                        bool,
+                        bool,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 7usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        memoryBudget,
-                        shBands,
-                        allocateValidityData,
-                        allocateRenderingLayerData,
-                        allocateSkyOcclusion,
-                        allocateSkyShadingData,
-                        allocateProbeOcclusionData,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    memoryBudget,
+                    shBands,
+                    allocateValidityData,
+                    allocateRenderingLayerData,
+                    allocateSkyOcclusion,
+                    allocateSkyShadingData,
+                    allocateProbeOcclusionData,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_estimatedVMemCost(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_estimatedVMemCost")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_estimatedVMemCost", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_estimatedVMemCost",
+                            0usize
                         )
                     })
             });
@@ -1115,32 +1065,30 @@ impl crate::UnityEngine::Rendering::ProbeBrickPool {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_estimatedVMemCost")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_estimatedVMemCost",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_estimatedVMemCost", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_estimatedVMemCost",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::ProbeBrickPool {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::ProbeBrickPool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1149,8 +1097,8 @@ for crate::UnityEngine::Rendering::ProbeBrickPool {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool+BrickChunkAlloc")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ProbeBrickPool_BrickChunkAlloc {
     pub x: i32,
     pub y: i32,
@@ -1158,7 +1106,8 @@ pub struct ProbeBrickPool_BrickChunkAlloc {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool+BrickChunkAlloc")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc {
+    for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -1177,18 +1126,16 @@ for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool+BrickChunkAlloc")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc {
+    for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1199,7 +1146,8 @@ for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool+BrickChunkAlloc")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc {
+    for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1213,22 +1161,22 @@ for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool+BrickChunkAlloc")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc {
+    for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool+BrickChunkAlloc")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc {
+    for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1242,7 +1190,8 @@ for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool+BrickChunkAlloc")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc {
+    for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1253,33 +1202,29 @@ for crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc {
 }
 #[cfg(feature = "UnityEngine+Rendering+ProbeBrickPool+BrickChunkAlloc")]
 impl crate::UnityEngine::Rendering::ProbeBrickPool_BrickChunkAlloc {
-    pub fn flattenIndex(
-        &mut self,
-        sx: i32,
-        sy: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn flattenIndex(&mut self, sx: i32, sy: i32) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), i32, 2usize>("flattenIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "flattenIndex", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "flattenIndex",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (sx, sy))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (sx, sy))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool+DataLocation")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ProbeBrickPool_DataLocation {
     pub TexL0_L1rx: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub TexL1_G_ry: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
@@ -1291,16 +1236,15 @@ pub struct ProbeBrickPool_DataLocation {
     pub TexProbeOcclusion: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub TexValidity: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub TexSkyOcclusion: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-    pub TexSkyShadingDirectionIndices: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Texture,
-    >,
+    pub TexSkyShadingDirectionIndices: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub width: i32,
     pub height: i32,
     pub depth: i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool+DataLocation")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation {
+    for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -1319,18 +1263,16 @@ for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool+DataLocation")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation {
+    for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1341,7 +1283,8 @@ for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool+DataLocation")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation {
+    for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1355,22 +1298,22 @@ for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool+DataLocation")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation {
+    for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool+DataLocation")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation {
+    for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1384,7 +1327,8 @@ for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickPool+DataLocation")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation {
+    for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1395,25 +1339,24 @@ for crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation {
 }
 #[cfg(feature = "UnityEngine+Rendering+ProbeBrickPool+DataLocation")]
 impl crate::UnityEngine::Rendering::ProbeBrickPool_DataLocation {
-    pub fn Cleanup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Cleanup(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Cleanup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Cleanup",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Cleanup",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

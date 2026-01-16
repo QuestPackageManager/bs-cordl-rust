@@ -1,18 +1,20 @@
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+IOptionalAvatarDataProvider")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IOptionalAvatarDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+IOptionalAvatarDataProvider")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
+    for crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.AvatarCore";
     const CLASS_NAME: &'static str = "IOptionalAvatarDataProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,9 +45,10 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
         &mut self,
         avatarDisplayContext: crate::BeatSaber::AvatarCore::AvatarDisplayContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::BeatSaber::AvatarCore::AvatarDisplayContext),
@@ -60,9 +63,8 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (avatarDisplayContext))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (avatarDisplayContext))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_dataDidChangeEvent(
@@ -71,35 +73,30 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
             crate::System::Action_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::BeatSaber::AvatarCore::OptionalAvatarData,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_dataDidChangeEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_dataDidChangeEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_dataDidChangeEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_dataDidChangeEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_currentData(
@@ -112,25 +109,23 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                u32,
-                                crate::BeatSaber::AvatarCore::OptionalAvatarData,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            u32,
+                            crate::BeatSaber::AvatarCore::OptionalAvatarData,
                         >,
-                        0usize,
-                    >("get_currentData")
+                    >, 0usize>("get_currentData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_currentData", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_currentData",
+                            0usize
                         )
                     })
             });
@@ -143,16 +138,18 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
         Ok(__cordl_ret.into())
     }
     pub fn get_playbackDelayMs(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_playbackDelayMs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_playbackDelayMs", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_playbackDelayMs",
+                            0usize
                         )
                     })
             });
@@ -165,36 +162,34 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
             crate::System::Action_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::BeatSaber::AvatarCore::OptionalAvatarData,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_dataDidChangeEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_dataDidChangeEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_dataDidChangeEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_dataDidChangeEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+IOptionalAvatarDataProvider")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
+    for crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,20 +3,18 @@
 #[derive(Debug)]
 pub struct XPathParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _scanner: quest_hook::libil2cpp::Gc<
-        crate::MS::Internal::Xml::XPath::XPathScanner,
-    >,
+    pub _scanner: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::XPathScanner>,
     pub _parseDepth: i32,
 }
 #[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::MS::Internal::Xml::XPath::XPathParser {
+unsafe impl quest_hook::libil2cpp::Type for crate::MS::Internal::Xml::XPath::XPathParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "MS.Internal.Xml.XPath";
     const CLASS_NAME: &'static str = "XPathParser";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,9 +47,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
         &mut self,
         t: crate::System::Xml::XPath::XPathResultType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::XPath::XPathResultType),
@@ -66,18 +65,18 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (t))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckToken(
         &mut self,
         t: crate::MS::Internal::Xml::XPath::XPathScanner_LexKind,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::MS::Internal::Xml::XPath::XPathScanner_LexKind),
@@ -92,9 +91,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (t))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateAxesTable() -> quest_hook::libil2cpp::Result<
@@ -105,27 +103,23 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                crate::MS::Internal::Xml::XPath::Axis_AxisType,
-                            >,
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                            crate::MS::Internal::Xml::XPath::Axis_AxisType,
                         >,
-                        0usize,
-                    >("CreateAxesTable")
+                    >, 0usize>("CreateAxesTable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateAxesTable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateAxesTable",
+                            0usize
                         )
                     })
             });
@@ -141,44 +135,36 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
         quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<
-                    crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
-                >,
+                quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
-                                >,
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
                             >,
                         >,
-                        0usize,
-                    >("CreateFunctionTable")
+                    >, 0usize>("CreateFunctionTable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateFunctionTable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateFunctionTable",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<
-                    crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
-                >,
+                quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -186,34 +172,34 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     pub fn GetAxis(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::MS::Internal::Xml::XPath::Axis_AxisType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::MS::Internal::Xml::XPath::Axis_AxisType,
-                        0usize,
-                    >("GetAxis")
+                    .find_method::<(), crate::MS::Internal::Xml::XPath::Axis_AxisType, 0usize>(
+                        "GetAxis",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetAxis",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetAxis",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: crate::MS::Internal::Xml::XPath::Axis_AxisType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::MS::Internal::Xml::XPath::Axis_AxisType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNodeType(
         scaner: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::XPathScanner>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -230,17 +216,16 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (scaner))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (scaner))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsPrimaryExpr(
         scanner: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::XPathScanner>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -257,17 +242,16 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (scanner))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (scanner))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsStep(
         lexKind: crate::MS::Internal::Xml::XPath::XPathScanner_LexKind,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::MS::Internal::Xml::XPath::XPathScanner_LexKind),
@@ -282,39 +266,36 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (lexKind))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (lexKind))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         scanner: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::XPathScanner>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (scanner))?;
         Ok(__cordl_object.into())
     }
-    pub fn NextLex(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn NextLex(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("NextLex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "NextLex",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "NextLex",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseAdditiveExpr(
@@ -323,9 +304,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -344,9 +326,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseAndExpr(
@@ -355,9 +336,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -376,9 +358,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseEqualityExpr(
@@ -387,9 +368,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -408,9 +390,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseExpression(
@@ -419,9 +400,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -440,9 +422,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseFilterExpr(
@@ -451,9 +432,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -472,9 +454,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseLocationPath(
@@ -483,9 +464,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -504,9 +486,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseMethod(
@@ -515,9 +496,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -536,9 +518,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseMultiplicativeExpr(
@@ -547,9 +528,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -568,9 +550,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseNodeTest(
@@ -581,36 +562,29 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::MS::Internal::Xml::XPath::AstNode,
-                            >,
-                            crate::MS::Internal::Xml::XPath::Axis_AxisType,
-                            crate::System::Xml::XPath::XPathNodeType,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::MS::Internal::Xml::XPath::AstNode,
-                        >,
-                        3usize,
-                    >("ParseNodeTest")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+                        crate::MS::Internal::Xml::XPath::Axis_AxisType,
+                        crate::System::Xml::XPath::XPathNodeType,
+                    ), quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>, 3usize>(
+                        "ParseNodeTest",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ParseNodeTest", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ParseNodeTest",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (qyInput, axisType, nodeType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput, axisType, nodeType))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseOrExpr(
@@ -619,9 +593,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -640,9 +615,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParsePathExpr(
@@ -651,9 +625,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -672,9 +647,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParsePredicate(
@@ -683,9 +657,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -704,9 +679,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParsePrimaryExpr(
@@ -715,9 +689,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -736,9 +711,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseRelationalExpr(
@@ -747,9 +721,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -768,9 +743,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseRelativeLocationPath(
@@ -779,9 +753,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -800,9 +775,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseStep(
@@ -811,9 +785,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -832,9 +807,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseUnaryExpr(
@@ -843,9 +817,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -864,9 +839,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseUnionExpr(
@@ -875,9 +849,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -896,9 +871,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (qyInput))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseXPathExpression(
@@ -906,9 +880,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -925,18 +900,18 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::MS::Internal::Xml::XPath::AstNode,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (xpathExpression))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode> =
+            unsafe { cordl_method_info.invoke_unchecked((), (xpathExpression))? };
         Ok(__cordl_ret.into())
     }
     pub fn PassToken(
         &mut self,
         t: crate::MS::Internal::Xml::XPath::XPathScanner_LexKind,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::MS::Internal::Xml::XPath::XPathScanner_LexKind),
@@ -951,18 +926,18 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (t))? };
         Ok(__cordl_ret.into())
     }
     pub fn TestOp(
         &mut self,
         op: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -977,18 +952,17 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (op))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (op))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         scanner: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::XPathScanner>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1005,9 +979,8 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (scanner))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (scanner))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1033,14 +1006,14 @@ pub struct XPathParser_ParamInfo {
     >,
 }
 #[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
+unsafe impl quest_hook::libil2cpp::Type for crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "MS.Internal.Xml.XPath";
     const CLASS_NAME: &'static str = "XPathParser/ParamInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1072,13 +1045,11 @@ impl crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
         minargs: i32,
         maxargs: i32,
         argTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                crate::System::Xml::XPath::XPathResultType,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<crate::System::Xml::XPath::XPathResultType>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (ftype, minargs, maxargs, argTypes))?;
         Ok(__cordl_object.into())
@@ -1089,40 +1060,35 @@ impl crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
         minargs: i32,
         maxargs: i32,
         argTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                crate::System::Xml::XPath::XPathResultType,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<crate::System::Xml::XPath::XPathResultType>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::MS::Internal::Xml::XPath::Function_FunctionType,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::System::Xml::XPath::XPathResultType,
-                                >,
+                    .find_method::<(
+                        crate::MS::Internal::Xml::XPath::Function_FunctionType,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::System::Xml::XPath::XPathResultType,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (ftype, minargs, maxargs, argTypes))?
+            cordl_method_info.invoke_unchecked(self, (ftype, minargs, maxargs, argTypes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1130,47 +1096,40 @@ impl crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                crate::System::Xml::XPath::XPathResultType,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<crate::System::Xml::XPath::XPathResultType>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::System::Xml::XPath::XPathResultType,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::System::Xml::XPath::XPathResultType,
                         >,
-                        0usize,
-                    >("get_ArgTypes")
+                    >, 0usize>("get_ArgTypes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ArgTypes", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ArgTypes",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                crate::System::Xml::XPath::XPathResultType,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<crate::System::Xml::XPath::XPathResultType>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_FType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::MS::Internal::Xml::XPath::Function_FunctionType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::MS::Internal::Xml::XPath::Function_FunctionType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1185,22 +1144,23 @@ impl crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
                         )
                     })
             });
-        let __cordl_ret: crate::MS::Internal::Xml::XPath::Function_FunctionType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::MS::Internal::Xml::XPath::Function_FunctionType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Maxargs(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Maxargs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Maxargs", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Maxargs",
+                            0usize
                         )
                     })
             });
@@ -1208,16 +1168,18 @@ impl crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
         Ok(__cordl_ret.into())
     }
     pub fn get_Minargs(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Minargs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Minargs", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Minargs",
+                            0usize
                         )
                     })
             });
@@ -1226,8 +1188,7 @@ impl crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
     }
 }
 #[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
+impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,36 +3,28 @@
 #[derive(Debug)]
 pub struct V1TbsCertificateGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub version: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::DerTaggedObject,
-    >,
-    pub serialNumber: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::DerInteger,
-    >,
-    pub signature: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    >,
-    pub issuer: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    >,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerTaggedObject>,
+    pub serialNumber: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub signature:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier>,
+    pub issuer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     pub startDate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Time>,
     pub endDate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Time>,
-    pub subject: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    >,
-    pub subjectPublicKeyInfo: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
-    >,
+    pub subject: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
+    pub subjectPublicKeyInfo:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo>,
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
+    for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X509";
     const CLASS_NAME: &'static str = "V1TbsCertificateGenerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,16 +37,14 @@ for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
+impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
-impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
+impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -64,26 +54,22 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
     pub fn GenerateTbsCertificate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure,
-                        >,
-                        0usize,
-                    >("GenerateTbsCertificate")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure,
+                    >, 0usize>("GenerateTbsCertificate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GenerateTbsCertificate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GenerateTbsCertificate",
+                            0usize
                         )
                     })
             });
@@ -93,8 +79,8 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -103,9 +89,10 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
         &mut self,
         endDate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerUtcTime>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -122,18 +109,18 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (endDate))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (endDate))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetEndDate_Time0(
         &mut self,
         endDate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Time>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -150,18 +137,18 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (endDate))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (endDate))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetIssuer(
         &mut self,
         issuer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -178,20 +165,18 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (issuer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (issuer))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSerialNumber(
         &mut self,
-        serialNumber: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerInteger,
-        >,
+        serialNumber: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -208,9 +193,8 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (serialNumber))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (serialNumber))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSignature(
@@ -219,37 +203,35 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetSignature")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+                    >), quest_hook::libil2cpp::Void, 1usize>("SetSignature")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetSignature", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetSignature",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (signature))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (signature))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetStartDate_DerUtcTime1(
         &mut self,
         startDate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerUtcTime>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -266,18 +248,18 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (startDate))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (startDate))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetStartDate_Time0(
         &mut self,
         startDate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Time>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -294,20 +276,18 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (startDate))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (startDate))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubject(
         &mut self,
-        subject: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::X509Name,
-        >,
+        subject: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -324,9 +304,8 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (subject))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (subject))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubjectPublicKeyInfo(
@@ -335,55 +314,54 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
             crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetSubjectPublicKeyInfo")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "SetSubjectPublicKeyInfo"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetSubjectPublicKeyInfo", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetSubjectPublicKeyInfo",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pubKeyInfo))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pubKeyInfo))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
+    for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,12 +3,9 @@
 #[derive(Debug)]
 pub struct MultiplayerOutroAnimationController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _outroPlayableDirector: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableDirector,
-    >,
-    pub _localPlayerTrackName: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub _outroPlayableDirector:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+    pub _localPlayerTrackName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _playerTimelineTrackNames: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -41,41 +38,34 @@ pub struct MultiplayerOutroAnimationController {
     pub _badgeTimelinePropertyNames: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::PropertyName>,
     >,
-    pub _songPreviewTrackName: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub _resultsMocksActivationTrack: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub _multiplayerScoreRingManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MultiplayerScoreRingManager,
-    >,
-    pub _multiplayerResultsPyramidView: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MultiplayerResultsPyramidView,
-    >,
-    pub _multiplayerPlayersManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MultiplayerPlayersManager,
-    >,
-    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
-    >,
-    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GameplayCoreSceneSetupData,
-    >,
-    pub _layoutProvider: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MultiplayerLayoutProvider,
-    >,
+    pub _songPreviewTrackName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _resultsMocksActivationTrack:
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _multiplayerScoreRingManager:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerScoreRingManager>,
+    pub _multiplayerResultsPyramidView:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsPyramidView>,
+    pub _multiplayerPlayersManager:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerPlayersManager>,
+    pub _multiplayerSessionManager:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager>,
+    pub _sceneSetupData:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayCoreSceneSetupData>,
+    pub _layoutProvider:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLayoutProvider>,
     pub _onCompleted: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "cordl_class_MultiplayerOutroAnimationController")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MultiplayerOutroAnimationController {
+    for crate::GlobalNamespace::MultiplayerOutroAnimationController
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "MultiplayerOutroAnimationController";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -109,57 +99,49 @@ impl crate::GlobalNamespace::MultiplayerOutroAnimationController {
         >,
         onCompleted: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerResultsData,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Action>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("AnimateOutro")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("AnimateOutro")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AnimateOutro", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AnimateOutro",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (multiplayerResultsData, onCompleted))?
+            cordl_method_info.invoke_unchecked(self, (multiplayerResultsData, onCompleted))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn BindOutroTimeline(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("BindOutroTimeline")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("BindOutroTimeline")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BindOutroTimeline", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BindOutroTimeline",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindRingsAndAudio(
@@ -173,158 +155,151 @@ impl crate::GlobalNamespace::MultiplayerOutroAnimationController {
         isDuel: bool,
         resultsMocks: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             >,
-                            bool,
-                            bool,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("BindRingsAndAudio")
+                        >,
+                        bool,
+                        bool,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    ), quest_hook::libil2cpp::Void, 4usize>("BindRingsAndAudio")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BindRingsAndAudio", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BindRingsAndAudio",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (rings, isMock, isDuel, resultsMocks))?
+            cordl_method_info.invoke_unchecked(self, (rings, isMock, isDuel, resultsMocks))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Completed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Completed(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Completed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Completed", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Completed",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HandlePlayerSpawningDidFinish(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("HandlePlayerSpawningDidFinish")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "HandlePlayerSpawningDidFinish",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandlePlayerSpawningDidFinish", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandlePlayerSpawningDidFinish",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDestroy(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDestroy", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDestroy",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Start",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_MultiplayerOutroAnimationController")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::MultiplayerOutroAnimationController {
+    for crate::GlobalNamespace::MultiplayerOutroAnimationController
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,13 +6,15 @@ pub struct EnvironmentDepthUtils {
 }
 #[cfg(feature = "cordl_class_Meta+XR+EnvironmentDepth+EnvironmentDepthUtils")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::EnvironmentDepth::EnvironmentDepthUtils {
+    for crate::Meta::XR::EnvironmentDepth::EnvironmentDepthUtils
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Meta.XR.EnvironmentDepth";
     const CLASS_NAME: &'static str = "EnvironmentDepthUtils";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,42 +46,38 @@ impl crate::Meta::XR::EnvironmentDepth::EnvironmentDepthUtils {
         projMatrix: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
         viewMatrix: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Meta::XR::EnvironmentDepth::DepthFrameDesc,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Matrix4x4,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Matrix4x4,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CalculateDepthCameraMatrices")
+                    .find_static_method::<(
+                        crate::Meta::XR::EnvironmentDepth::DepthFrameDesc,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "CalculateDepthCameraMatrices"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculateDepthCameraMatrices", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CalculateDepthCameraMatrices",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (frameDesc, projMatrix, viewMatrix))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (frameDesc, projMatrix, viewMatrix))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateReprojection(
         frameDesc: crate::Meta::XR::EnvironmentDepth::DepthFrameDesc,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Meta::XR::EnvironmentDepth::DepthFrameDesc),
@@ -94,41 +92,40 @@ impl crate::Meta::XR::EnvironmentDepth::EnvironmentDepthUtils {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            cordl_method_info.invoke_unchecked((), (frameDesc))?
-        };
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 =
+            unsafe { cordl_method_info.invoke_unchecked((), (frameDesc))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeNdcToLinearDepthParameters(
         near: f32,
         far: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (f32, f32),
-                        crate::UnityEngine::Vector4,
-                        2usize,
-                    >("ComputeNdcToLinearDepthParameters")
+                    .find_static_method::<(f32, f32), crate::UnityEngine::Vector4, 2usize>(
+                        "ComputeNdcToLinearDepthParameters",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ComputeNdcToLinearDepthParameters", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ComputeNdcToLinearDepthParameters",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            cordl_method_info.invoke_unchecked((), (near, far))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector4 =
+            unsafe { cordl_method_info.invoke_unchecked((), (near, far))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+EnvironmentDepth+EnvironmentDepthUtils")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Meta::XR::EnvironmentDepth::EnvironmentDepthUtils {
+    for crate::Meta::XR::EnvironmentDepth::EnvironmentDepthUtils
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

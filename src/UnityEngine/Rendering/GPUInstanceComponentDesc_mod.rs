@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceComponentDesc")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GPUInstanceComponentDesc {
     pub propertyID: i32,
     pub byteSize: i32,
@@ -11,7 +11,8 @@ pub struct GPUInstanceComponentDesc {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceComponentDesc")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::GPUInstanceComponentDesc {
+    for crate::UnityEngine::Rendering::GPUInstanceComponentDesc
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -30,18 +31,16 @@ for crate::UnityEngine::Rendering::GPUInstanceComponentDesc {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceComponentDesc")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::GPUInstanceComponentDesc {
+    for crate::UnityEngine::Rendering::GPUInstanceComponentDesc
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -52,7 +51,8 @@ for crate::UnityEngine::Rendering::GPUInstanceComponentDesc {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceComponentDesc")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::GPUInstanceComponentDesc {
+    for crate::UnityEngine::Rendering::GPUInstanceComponentDesc
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -66,22 +66,22 @@ for crate::UnityEngine::Rendering::GPUInstanceComponentDesc {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceComponentDesc")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::GPUInstanceComponentDesc {
+    for crate::UnityEngine::Rendering::GPUInstanceComponentDesc
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceComponentDesc")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::GPUInstanceComponentDesc {
+    for crate::UnityEngine::Rendering::GPUInstanceComponentDesc
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -95,7 +95,8 @@ for crate::UnityEngine::Rendering::GPUInstanceComponentDesc {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceComponentDesc")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::GPUInstanceComponentDesc {
+    for crate::UnityEngine::Rendering::GPUInstanceComponentDesc
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -115,43 +116,40 @@ impl crate::UnityEngine::Rendering::GPUInstanceComponentDesc {
         inInstanceType: crate::UnityEngine::Rendering::InstanceType,
         inComponentType: crate::UnityEngine::Rendering::InstanceComponentGroup,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            bool,
-                            bool,
-                            crate::UnityEngine::Rendering::InstanceType,
-                            crate::UnityEngine::Rendering::InstanceComponentGroup,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        bool,
+                        bool,
+                        crate::UnityEngine::Rendering::InstanceType,
+                        crate::UnityEngine::Rendering::InstanceComponentGroup,
+                    ), quest_hook::libil2cpp::Void, 6usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        inPropertyID,
-                        inByteSize,
-                        inIsOverriden,
-                        inPerInstance,
-                        inInstanceType,
-                        inComponentType,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    inPropertyID,
+                    inByteSize,
+                    inIsOverriden,
+                    inPerInstance,
+                    inInstanceType,
+                    inComponentType,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }

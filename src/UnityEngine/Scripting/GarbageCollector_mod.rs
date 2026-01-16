@@ -5,14 +5,14 @@ pub struct GarbageCollector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+GarbageCollector")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Scripting::GarbageCollector {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Scripting::GarbageCollector {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Scripting";
     const CLASS_NAME: &'static str = "GarbageCollector";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,12 +41,12 @@ impl std::ops::DerefMut for crate::UnityEngine::Scripting::GarbageCollector {
 impl crate::UnityEngine::Scripting::GarbageCollector {
     #[cfg(feature = "UnityEngine+Scripting+GarbageCollector+Mode")]
     pub type Mode = crate::UnityEngine::Scripting::GarbageCollector_Mode;
-    pub fn GetMode() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Scripting::GarbageCollector_Mode,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetMode(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Scripting::GarbageCollector_Mode> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -61,17 +61,17 @@ impl crate::UnityEngine::Scripting::GarbageCollector {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Scripting::GarbageCollector_Mode = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Scripting::GarbageCollector_Mode =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetMode(
         mode: crate::UnityEngine::Scripting::GarbageCollector_Mode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Scripting::GarbageCollector_Mode),
@@ -86,17 +86,17 @@ impl crate::UnityEngine::Scripting::GarbageCollector {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (mode))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (mode))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_GCMode(
         value: crate::UnityEngine::Scripting::GarbageCollector_Mode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Scripting::GarbageCollector_Mode),
@@ -111,15 +111,13 @@ impl crate::UnityEngine::Scripting::GarbageCollector {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+GarbageCollector")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Scripting::GarbageCollector {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Scripting::GarbageCollector {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -128,8 +126,8 @@ for crate::UnityEngine::Scripting::GarbageCollector {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+GarbageCollector+Mode")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum GarbageCollector_Mode {
     #[default]
     Disabled = 0i32,
@@ -137,8 +135,7 @@ pub enum GarbageCollector_Mode {
     Manual = 2i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+GarbageCollector+Mode")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Scripting::GarbageCollector_Mode {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Scripting::GarbageCollector_Mode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Scripting";
@@ -157,18 +154,16 @@ for crate::UnityEngine::Scripting::GarbageCollector_Mode {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+GarbageCollector+Mode")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Scripting::GarbageCollector_Mode {
+    for crate::UnityEngine::Scripting::GarbageCollector_Mode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -179,7 +174,8 @@ for crate::UnityEngine::Scripting::GarbageCollector_Mode {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+GarbageCollector+Mode")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Scripting::GarbageCollector_Mode {
+    for crate::UnityEngine::Scripting::GarbageCollector_Mode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -193,22 +189,20 @@ for crate::UnityEngine::Scripting::GarbageCollector_Mode {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+GarbageCollector+Mode")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Scripting::GarbageCollector_Mode {
+    for crate::UnityEngine::Scripting::GarbageCollector_Mode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+GarbageCollector+Mode")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Scripting::GarbageCollector_Mode {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Scripting::GarbageCollector_Mode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

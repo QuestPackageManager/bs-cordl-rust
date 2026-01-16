@@ -16,7 +16,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Chan
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
     const CLASS_NAME: &'static str = "Changelog";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,7 +44,8 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Changelog {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Changelog")]
 impl crate::UnityEngine::ProBuilder::Changelog {
-    pub const k_ChangelogEntryPattern: &'static str = "(##\\s\\[[0-9]+\\.[0-9]+\\.[0-9]+(\\-[a-zA-Z]+(\\.[0-9]+)*)*\\])";
+    pub const k_ChangelogEntryPattern: &'static str =
+        "(##\\s\\[[0-9]+\\.[0-9]+\\.[0-9]+(\\-[a-zA-Z]+(\\.[0-9]+)*)*\\])";
     pub const k_VersionDatePattern: &'static str = "(?<=##\\s\\[.*\\]\\s-\\s)[0-9-]*";
     pub const k_VersionInfoPattern: &'static str = "(?<=##\\s\\[).*(?=\\])";
     pub fn CreateEntry(
@@ -53,9 +55,10 @@ impl crate::UnityEngine::ProBuilder::Changelog {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ChangelogEntry>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -79,16 +82,15 @@ impl crate::UnityEngine::ProBuilder::Changelog {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ChangelogEntry,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (version, contents))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ChangelogEntry> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (version, contents))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         log: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (log))?;
         Ok(__cordl_object.into())
@@ -97,9 +99,10 @@ impl crate::UnityEngine::ProBuilder::Changelog {
         &mut self,
         log: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -114,9 +117,8 @@ impl crate::UnityEngine::ProBuilder::Changelog {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (log))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (log))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_entries(
@@ -128,26 +130,24 @@ impl crate::UnityEngine::ProBuilder::Changelog {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ChangelogEntry,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ChangelogEntry,
                             >,
                         >,
-                        0usize,
-                    >("get_entries")
+                    >, 0usize>("get_entries")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_entries", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_entries",
+                            0usize
                         )
                     })
             });

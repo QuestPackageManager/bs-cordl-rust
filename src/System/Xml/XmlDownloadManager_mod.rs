@@ -12,7 +12,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlDownloadManag
     const NAMESPACE: &'static str = "System.Xml";
     const CLASS_NAME: &'static str = "XmlDownloadManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,39 +45,32 @@ impl crate::System::Xml::XmlDownloadManager {
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
         proxy: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
-        cachePolicy: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Cache::RequestCachePolicy,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        cachePolicy: quest_hook::libil2cpp::Gc<crate::System::Net::Cache::RequestCachePolicy>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IO::Stream>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Uri>,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Cache::RequestCachePolicy,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                        4usize,
-                    >("GetNonFileStream")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Uri>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Cache::RequestCachePolicy>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IO::Stream>, 4usize>(
+                        "GetNonFileStream",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetNonFileStream", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetNonFileStream",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (uri, credentials, proxy, cachePolicy))?
+            cordl_method_info.invoke_unchecked(self, (uri, credentials, proxy, cachePolicy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -85,9 +79,7 @@ impl crate::System::Xml::XmlDownloadManager {
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
         proxy: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
-        cachePolicy: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Cache::RequestCachePolicy,
-        >,
+        cachePolicy: quest_hook::libil2cpp::Gc<crate::System::Net::Cache::RequestCachePolicy>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
@@ -95,31 +87,27 @@ impl crate::System::Xml::XmlDownloadManager {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Uri>,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Cache::RequestCachePolicy,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                            >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Uri>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Cache::RequestCachePolicy>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
                         >,
-                        4usize,
-                    >("GetNonFileStreamAsync")
+                    >, 4usize>("GetNonFileStreamAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetNonFileStreamAsync", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetNonFileStreamAsync",
+                            4usize
                         )
                     })
             });
@@ -128,8 +116,7 @@ impl crate::System::Xml::XmlDownloadManager {
                 quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (uri, credentials, proxy, cachePolicy))?
+            cordl_method_info.invoke_unchecked(self, (uri, credentials, proxy, cachePolicy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -138,39 +125,32 @@ impl crate::System::Xml::XmlDownloadManager {
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
         proxy: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
-        cachePolicy: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Cache::RequestCachePolicy,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        cachePolicy: quest_hook::libil2cpp::Gc<crate::System::Net::Cache::RequestCachePolicy>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IO::Stream>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Uri>,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Cache::RequestCachePolicy,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                        4usize,
-                    >("GetStream")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Uri>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Cache::RequestCachePolicy>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IO::Stream>, 4usize>(
+                        "GetStream"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetStream", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetStream",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (uri, credentials, proxy, cachePolicy))?
+            cordl_method_info.invoke_unchecked(self, (uri, credentials, proxy, cachePolicy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -179,9 +159,7 @@ impl crate::System::Xml::XmlDownloadManager {
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
         proxy: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
-        cachePolicy: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Cache::RequestCachePolicy,
-        >,
+        cachePolicy: quest_hook::libil2cpp::Gc<crate::System::Net::Cache::RequestCachePolicy>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
@@ -189,31 +167,27 @@ impl crate::System::Xml::XmlDownloadManager {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Uri>,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Cache::RequestCachePolicy,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                            >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Uri>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Cache::RequestCachePolicy>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
                         >,
-                        4usize,
-                    >("GetStreamAsync")
+                    >, 4usize>("GetStreamAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetStreamAsync", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetStreamAsync",
+                            4usize
                         )
                     })
             });
@@ -222,14 +196,13 @@ impl crate::System::Xml::XmlDownloadManager {
                 quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (uri, credentials, proxy, cachePolicy))?
+            cordl_method_info.invoke_unchecked(self, (uri, credentials, proxy, cachePolicy))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -238,9 +211,10 @@ impl crate::System::Xml::XmlDownloadManager {
         &mut self,
         host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -255,30 +229,28 @@ impl crate::System::Xml::XmlDownloadManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (host))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (host))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

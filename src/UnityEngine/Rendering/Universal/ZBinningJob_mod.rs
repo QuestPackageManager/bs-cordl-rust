@@ -1,11 +1,9 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ZBinningJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ZBinningJob {
     pub bins: crate::Unity::Collections::NativeArray_1<u32>,
-    pub minMaxZs: crate::Unity::Collections::NativeArray_1<
-        crate::Unity::Mathematics::float2,
-    >,
+    pub minMaxZs: crate::Unity::Collections::NativeArray_1<crate::Unity::Mathematics::float2>,
     pub zBinScale: f32,
     pub zBinOffset: f32,
     pub binCount: i32,
@@ -17,8 +15,7 @@ pub struct ZBinningJob {
     pub isOrthographic: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ZBinningJob")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::ZBinningJob {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Universal::ZBinningJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
@@ -37,18 +34,16 @@ for crate::UnityEngine::Rendering::Universal::ZBinningJob {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ZBinningJob")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::Universal::ZBinningJob {
+    for crate::UnityEngine::Rendering::Universal::ZBinningJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -59,7 +54,8 @@ for crate::UnityEngine::Rendering::Universal::ZBinningJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ZBinningJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::Universal::ZBinningJob {
+    for crate::UnityEngine::Rendering::Universal::ZBinningJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -73,22 +69,22 @@ for crate::UnityEngine::Rendering::Universal::ZBinningJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ZBinningJob")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::Universal::ZBinningJob {
+    for crate::UnityEngine::Rendering::Universal::ZBinningJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ZBinningJob")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::Universal::ZBinningJob {
+    for crate::UnityEngine::Rendering::Universal::ZBinningJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -102,7 +98,8 @@ for crate::UnityEngine::Rendering::Universal::ZBinningJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ZBinningJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::Universal::ZBinningJob {
+    for crate::UnityEngine::Rendering::Universal::ZBinningJob
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -118,67 +115,67 @@ impl crate::UnityEngine::Rendering::Universal::ZBinningJob {
     pub fn DecodeHeader(
         zBin: u32,
     ) -> quest_hook::libil2cpp::Result<crate::System::ValueTuple_2<u32, u32>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u32),
-                        crate::System::ValueTuple_2<u32, u32>,
-                        1usize,
-                    >("DecodeHeader")
+                    .find_static_method::<(u32), crate::System::ValueTuple_2<u32, u32>, 1usize>(
+                        "DecodeHeader",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DecodeHeader", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DecodeHeader",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::ValueTuple_2<u32, u32> = unsafe {
-            cordl_method_info.invoke_unchecked((), (zBin))?
-        };
+        let __cordl_ret: crate::System::ValueTuple_2<u32, u32> =
+            unsafe { cordl_method_info.invoke_unchecked((), (zBin))? };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeHeader(min: u32, max: u32) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u32), u32, 2usize>("EncodeHeader")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EncodeHeader", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EncodeHeader",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (min, max))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), (min, max))? };
         Ok(__cordl_ret.into())
     }
     pub fn Execute(
         &mut self,
         jobIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (jobIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (jobIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn FillZBins(
@@ -191,9 +188,10 @@ impl crate::UnityEngine::Rendering::Universal::ZBinningJob {
         itemOffset: i32,
         binOffset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32, i32, i32, i32, i32),
@@ -209,33 +207,30 @@ impl crate::UnityEngine::Rendering::Universal::ZBinningJob {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        binStart,
-                        binEnd,
-                        itemStart,
-                        itemEnd,
-                        headerIndex,
-                        itemOffset,
-                        binOffset,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    binStart,
+                    binEnd,
+                    itemStart,
+                    itemEnd,
+                    headerIndex,
+                    itemOffset,
+                    binOffset,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+ZBinningJob")]
-impl AsRef<crate::Unity::Jobs::IJobFor>
-for crate::UnityEngine::Rendering::Universal::ZBinningJob {
+impl AsRef<crate::Unity::Jobs::IJobFor> for crate::UnityEngine::Rendering::Universal::ZBinningJob {
     fn as_ref(&self) -> &crate::Unity::Jobs::IJobFor {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+ZBinningJob")]
-impl AsMut<crate::Unity::Jobs::IJobFor>
-for crate::UnityEngine::Rendering::Universal::ZBinningJob {
+impl AsMut<crate::Unity::Jobs::IJobFor> for crate::UnityEngine::Rendering::Universal::ZBinningJob {
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobFor {
         todo!()
     }

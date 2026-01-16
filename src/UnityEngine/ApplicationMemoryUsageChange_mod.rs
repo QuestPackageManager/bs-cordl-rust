@@ -1,12 +1,11 @@
 #[cfg(feature = "cordl_class_UnityEngine+ApplicationMemoryUsageChange")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ApplicationMemoryUsageChange {
     pub _memoryUsage_k__BackingField: crate::UnityEngine::ApplicationMemoryUsage,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ApplicationMemoryUsageChange")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ApplicationMemoryUsageChange {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ApplicationMemoryUsageChange {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
@@ -25,18 +24,14 @@ for crate::UnityEngine::ApplicationMemoryUsageChange {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ApplicationMemoryUsageChange")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ApplicationMemoryUsageChange {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ApplicationMemoryUsageChange {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -46,8 +41,7 @@ for crate::UnityEngine::ApplicationMemoryUsageChange {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ApplicationMemoryUsageChange")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ApplicationMemoryUsageChange {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ApplicationMemoryUsageChange {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -60,23 +54,19 @@ for crate::UnityEngine::ApplicationMemoryUsageChange {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ApplicationMemoryUsageChange")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ApplicationMemoryUsageChange {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ApplicationMemoryUsageChange {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ApplicationMemoryUsageChange")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::ApplicationMemoryUsageChange {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ApplicationMemoryUsageChange {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -90,7 +80,8 @@ for crate::UnityEngine::ApplicationMemoryUsageChange {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ApplicationMemoryUsageChange")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ApplicationMemoryUsageChange {
+    for crate::UnityEngine::ApplicationMemoryUsageChange
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -105,9 +96,10 @@ impl crate::UnityEngine::ApplicationMemoryUsageChange {
         &mut self,
         usage: crate::UnityEngine::ApplicationMemoryUsage,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::ApplicationMemoryUsage),
@@ -122,18 +114,18 @@ impl crate::UnityEngine::ApplicationMemoryUsageChange {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (usage))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (usage))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_memoryUsage(
         &mut self,
         value: crate::UnityEngine::ApplicationMemoryUsage,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::ApplicationMemoryUsage),
@@ -148,9 +140,8 @@ impl crate::UnityEngine::ApplicationMemoryUsageChange {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }

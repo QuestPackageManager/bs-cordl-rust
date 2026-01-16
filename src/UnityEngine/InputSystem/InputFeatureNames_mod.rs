@@ -5,14 +5,14 @@ pub struct InputFeatureNames {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputFeatureNames")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputFeatureNames {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::InputFeatureNames {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
     const CLASS_NAME: &'static str = "InputFeatureNames";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,8 +47,7 @@ impl crate::UnityEngine::InputSystem::InputFeatureNames {
     pub const kUseReadValueCaching: &'static str = "USE_READ_VALUE_CACHING";
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputFeatureNames")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputFeatureNames {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::InputFeatureNames {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

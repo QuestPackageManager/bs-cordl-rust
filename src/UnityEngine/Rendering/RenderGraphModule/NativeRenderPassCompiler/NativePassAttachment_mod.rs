@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+NativePassAttachment"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct NativePassAttachment {
     pub handle: crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
     pub loadAction: crate::UnityEngine::Rendering::RenderBufferLoadAction,
@@ -121,4 +121,7 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::
 #[cfg(
     feature = "UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+NativePassAttachment"
 )]
-impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::NativePassAttachment {}
+impl
+    crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::NativePassAttachment
+{
+}

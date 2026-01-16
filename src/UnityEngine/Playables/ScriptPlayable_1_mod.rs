@@ -1,32 +1,28 @@
 #[cfg(feature = "cordl_class_UnityEngine+Playables+ScriptPlayable_1")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ScriptPlayable_1<T: quest_hook::libil2cpp::Type> {
     pub m_Handle: crate::UnityEngine::Playables::PlayableHandle,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+ScriptPlayable_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
+    for crate::UnityEngine::Playables::ScriptPlayable_1<T>
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Playables";
     const CLASS_NAME: &'static str = "ScriptPlayable`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "UnityEngine.Playables",
-                        "ScriptPlayable`1",
-                    )
-                    .unwrap()
-                    .make_generic::<(T)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find("UnityEngine.Playables", "ScriptPlayable`1")
+                .unwrap()
+                .make_generic::<(T)>()
+                .unwrap()
+                .unwrap()
+        })
     }
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
@@ -42,18 +38,16 @@ for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+ScriptPlayable_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
+    for crate::UnityEngine::Playables::ScriptPlayable_1<T>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -64,7 +58,8 @@ for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+ScriptPlayable_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
+    for crate::UnityEngine::Playables::ScriptPlayable_1<T>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -78,22 +73,22 @@ for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+ScriptPlayable_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
+    for crate::UnityEngine::Playables::ScriptPlayable_1<T>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+ScriptPlayable_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
-for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
+    for crate::UnityEngine::Playables::ScriptPlayable_1<T>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -107,7 +102,8 @@ for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+ScriptPlayable_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
+    for crate::UnityEngine::Playables::ScriptPlayable_1<T>
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -119,19 +115,18 @@ for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
 #[cfg(feature = "UnityEngine+Playables+ScriptPlayable_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayable_1<T> {
     pub fn CloneScriptInstance(
-        source: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Playables::IPlayableBehaviour,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableBehaviour>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -148,23 +143,23 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (source))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn CloneScriptInstanceFromEngineObject(
         source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
@@ -179,23 +174,23 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (source))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn CloneScriptInstanceFromIClonable(
         source: quest_hook::libil2cpp::Gc<crate::System::ICloneable>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::ICloneable>),
@@ -210,9 +205,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (source))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateHandle(
@@ -221,12 +215,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         inputCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Playables::PlayableGraph, T, i32),
@@ -246,16 +243,18 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CreateScriptInstance() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >
+    pub fn CreateScriptInstance(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -270,25 +269,25 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Create_T_i32_1(
         graph: crate::UnityEngine::Playables::PlayableGraph,
         _cordl_template: T,
         inputCount: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Playables::ScriptPlayable_1<T>,
-    >
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::ScriptPlayable_1<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Playables::PlayableGraph, T, i32),
@@ -311,16 +310,17 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
     pub fn Create_i32_0(
         graph: crate::UnityEngine::Playables::PlayableGraph,
         inputCount: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Playables::ScriptPlayable_1<T>,
-    >
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::ScriptPlayable_1<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Playables::PlayableGraph, i32),
@@ -335,9 +335,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (graph, inputCount))?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> =
+            unsafe { cordl_method_info.invoke_unchecked((), (graph, inputCount))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
@@ -345,12 +344,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         other: crate::UnityEngine::Playables::ScriptPlayable_1<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Playables::ScriptPlayable_1<T>),
@@ -365,26 +367,28 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBehaviour(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), T, 0usize>("GetBehaviour")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBehaviour", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBehaviour",
+                            0usize
                         )
                     })
             });
@@ -395,29 +399,30 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::Playables::PlayableHandle,
-                        0usize,
-                    >("GetHandle")
+                    .find_method::<(), crate::UnityEngine::Playables::PlayableHandle, 0usize>(
+                        "GetHandle",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHandle", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHandle",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -425,12 +430,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         handle: crate::UnityEngine::Playables::PlayableHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Playables::PlayableHandle),
@@ -445,21 +453,22 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (handle))? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_Null() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Playables::ScriptPlayable_1<T>,
-    >
+    pub fn get_Null(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::ScriptPlayable_1<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -474,23 +483,23 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit(
         playable: crate::UnityEngine::Playables::Playable,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Playables::ScriptPlayable_1<T>,
-    >
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::ScriptPlayable_1<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Playables::Playable),
@@ -505,21 +514,23 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (playable))?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> =
+            unsafe { cordl_method_info.invoke_unchecked((), (playable))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
         playable: crate::UnityEngine::Playables::ScriptPlayable_1<T>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Playables::ScriptPlayable_1<T>),
@@ -534,48 +545,45 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
-            cordl_method_info.invoke_unchecked((), (playable))?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::Playable =
+            unsafe { cordl_method_info.invoke_unchecked((), (playable))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Playables+ScriptPlayable_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IEquatable_1<crate::UnityEngine::Playables::ScriptPlayable_1<T>>>
-for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
+impl<T: quest_hook::libil2cpp::Type>
+    AsRef<crate::System::IEquatable_1<crate::UnityEngine::Playables::ScriptPlayable_1<T>>>
+    for crate::UnityEngine::Playables::ScriptPlayable_1<T>
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::UnityEngine::Playables::ScriptPlayable_1<T>,
-    > {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Playables::ScriptPlayable_1<T>> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Playables+ScriptPlayable_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IEquatable_1<crate::UnityEngine::Playables::ScriptPlayable_1<T>>>
-for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
+impl<T: quest_hook::libil2cpp::Type>
+    AsMut<crate::System::IEquatable_1<crate::UnityEngine::Playables::ScriptPlayable_1<T>>>
+    for crate::UnityEngine::Playables::ScriptPlayable_1<T>
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::UnityEngine::Playables::ScriptPlayable_1<T>,
-    > {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Playables::ScriptPlayable_1<T>> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Playables+ScriptPlayable_1")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::UnityEngine::Playables::IPlayable>
-for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
+    for crate::UnityEngine::Playables::ScriptPlayable_1<T>
+{
     fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Playables+ScriptPlayable_1")]
 impl<T: quest_hook::libil2cpp::Type> AsMut<crate::UnityEngine::Playables::IPlayable>
-for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
+    for crate::UnityEngine::Playables::ScriptPlayable_1<T>
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
         todo!()
     }

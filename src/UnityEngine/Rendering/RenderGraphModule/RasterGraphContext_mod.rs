@@ -1,21 +1,16 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterGraphContext"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterGraphContext")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct RasterGraphContext {
     pub wrappedContext: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::RenderGraphModule::InternalRenderGraphContext,
     >,
-    pub cmd: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::RasterCommandBuffer,
-    >,
+    pub cmd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RasterCommandBuffer>,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterGraphContext"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterGraphContext")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
+    for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.RenderGraphModule";
@@ -34,20 +29,16 @@ for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterGraphContext"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterGraphContext")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
+    for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -56,11 +47,10 @@ for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterGraphContext"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterGraphContext")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
+    for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -72,28 +62,24 @@ for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterGraphContext"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterGraphContext")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
+    for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterGraphContext"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterGraphContext")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
+    for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -105,11 +91,10 @@ for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterGraphContext"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterGraphContext")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
+    for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -126,7 +111,8 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
             crate::UnityEngine::Rendering::RenderGraphModule::InternalRenderGraphContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -145,9 +131,8 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_defaultResources(
@@ -157,7 +142,8 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
             crate::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -188,22 +174,20 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
             crate::UnityEngine::Rendering::RenderGraphModule::RenderGraphObjectPool,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::RenderGraphModule::RenderGraphObjectPool,
-                        >,
-                        0usize,
-                    >("get_renderGraphPool")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Rendering::RenderGraphModule::RenderGraphObjectPool,
+                    >, 0usize>("get_renderGraphPool")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_renderGraphPool", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_renderGraphPool",
+                            0usize
                         )
                     })
             });
@@ -215,7 +199,8 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderGraphModule+RasterGraphContext")]
 impl AsRef<crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContext>
-for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
+    for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext
+{
     fn as_ref(
         &self,
     ) -> &crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContext {
@@ -224,7 +209,8 @@ for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderGraphModule+RasterGraphContext")]
 impl AsMut<crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContext>
-for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext {
+    for crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContext {

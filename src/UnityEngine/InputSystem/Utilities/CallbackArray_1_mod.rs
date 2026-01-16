@@ -1,41 +1,34 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+CallbackArray_1")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CallbackArray_1<TDelegate: quest_hook::libil2cpp::Type> {
     pub m_CannotMutateCallbacksArray: bool,
-    pub m_Callbacks: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
-        TDelegate,
-    >,
-    pub m_CallbacksToAdd: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
-        TDelegate,
-    >,
-    pub m_CallbacksToRemove: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
-        TDelegate,
-    >,
+    pub m_Callbacks: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TDelegate>,
+    pub m_CallbacksToAdd: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TDelegate>,
+    pub m_CallbacksToRemove: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TDelegate>,
     __cordl_phantom_TDelegate: std::marker::PhantomData<TDelegate>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+CallbackArray_1")]
 unsafe impl<TDelegate: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
+    for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate>
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
     const CLASS_NAME: &'static str = "CallbackArray`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "UnityEngine.InputSystem.Utilities",
-                        "CallbackArray`1",
-                    )
-                    .unwrap()
-                    .make_generic::<(TDelegate)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find(
+                "UnityEngine.InputSystem.Utilities",
+                "CallbackArray`1",
+            )
+            .unwrap()
+            .make_generic::<(TDelegate)>()
+            .unwrap()
+            .unwrap()
+        })
     }
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
@@ -51,18 +44,16 @@ for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+CallbackArray_1")]
 unsafe impl<TDelegate: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
+    for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -73,7 +64,8 @@ for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+CallbackArray_1")]
 unsafe impl<TDelegate: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
+    for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -87,22 +79,22 @@ for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+CallbackArray_1")]
 unsafe impl<TDelegate: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
+    for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+CallbackArray_1")]
 unsafe impl<TDelegate: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
+    for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -116,7 +108,8 @@ for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+CallbackArray_1")]
 unsafe impl<TDelegate: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
+    for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate>
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -126,89 +119,88 @@ for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+CallbackArray_1")]
-impl<
-    TDelegate: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
+impl<TDelegate: quest_hook::libil2cpp::Type>
+    crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate>
+{
     pub fn AddCallback(
         &mut self,
         dlg: TDelegate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TDelegate: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (TDelegate),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("AddCallback")
+                    .find_method::<(TDelegate), quest_hook::libil2cpp::Void, 1usize>("AddCallback")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddCallback", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddCallback",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (dlg))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (dlg))? };
         Ok(__cordl_ret.into())
     }
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TDelegate: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Clear",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn LockForChanges(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn LockForChanges(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TDelegate: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("LockForChanges")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LockForChanges")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LockForChanges", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LockForChanges",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveCallback(
@@ -216,98 +208,102 @@ impl<
         dlg: TDelegate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TDelegate: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (TDelegate),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("RemoveCallback")
+                    .find_method::<(TDelegate), quest_hook::libil2cpp::Void, 1usize>(
+                        "RemoveCallback",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RemoveCallback", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RemoveCallback",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (dlg))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (dlg))? };
         Ok(__cordl_ret.into())
     }
-    pub fn UnlockForChanges(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    pub fn UnlockForChanges(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TDelegate: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("UnlockForChanges")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UnlockForChanges")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnlockForChanges", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnlockForChanges",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<TDelegate>
     where
-        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TDelegate: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), TDelegate, 1usize>("get_Item")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Item", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Item",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: TDelegate = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: TDelegate = unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
-        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TDelegate: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_length")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_length", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_length",
+                            0usize
                         )
                     })
             });

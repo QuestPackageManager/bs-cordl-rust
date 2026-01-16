@@ -3,19 +3,17 @@
 #[derive(Debug)]
 pub struct ObjectIdRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _destination_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::RenderTexture,
-    >,
+    pub _destination_k__BackingField: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ObjectIdRequest")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::ObjectIdRequest {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::ObjectIdRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "ObjectIdRequest";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,12 +42,12 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::ObjectIdRequest {
 impl crate::UnityEngine::Rendering::ObjectIdRequest {
     pub fn get_destination(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -64,15 +62,13 @@ impl crate::UnityEngine::Rendering::ObjectIdRequest {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ObjectIdRequest")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::ObjectIdRequest {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::ObjectIdRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

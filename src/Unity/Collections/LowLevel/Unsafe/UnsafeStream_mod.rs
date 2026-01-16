@@ -1,12 +1,13 @@
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct UnsafeStream {
     pub m_BlockData: crate::Unity::Collections::AllocatorManager_Block,
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections.LowLevel.Unsafe";
@@ -25,18 +26,16 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,7 +46,8 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -61,22 +61,22 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -90,7 +90,8 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -104,7 +105,8 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
     #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob")]
     pub type ConstructJob = crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob;
     #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList")]
-    pub type ConstructJobList = crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList;
+    pub type ConstructJobList =
+        crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList;
     #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream+DisposeJob")]
     pub type DisposeJob = crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob;
     #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream+Reader")]
@@ -117,57 +119,51 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
         >,
         allocator: crate::Unity::Collections::AllocatorManager_AllocatorHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
-                            >,
-                            crate::Unity::Collections::AllocatorManager_AllocatorHandle,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("AllocateBlock")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
+                        >,
+                        crate::Unity::Collections::AllocatorManager_AllocatorHandle,
+                    ), quest_hook::libil2cpp::Void, 2usize>("AllocateBlock")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AllocateBlock", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AllocateBlock",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (stream, allocator))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (stream, allocator))? };
         Ok(__cordl_ret.into())
     }
     pub fn AllocateForEach(
         &mut self,
         forEachCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("AllocateForEach")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("AllocateForEach")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AllocateForEach", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AllocateForEach",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (forEachCount))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (forEachCount))? };
         Ok(__cordl_ret.into())
     }
     pub fn AsReader(
@@ -175,9 +171,10 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
     ) -> quest_hook::libil2cpp::Result<
         crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -192,9 +189,8 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn AsWriter(
@@ -202,9 +198,10 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
     ) -> quest_hook::libil2cpp::Result<
         crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -219,21 +216,22 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("Count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Count",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Count",
                             0usize
                         )
                     })
@@ -241,55 +239,54 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Deallocate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Deallocate(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Deallocate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Deallocate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Deallocate",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose_0(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose_JobHandle1(
         &mut self,
         inputDeps: crate::Unity::Jobs::JobHandle,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Jobs::JobHandle),
@@ -304,21 +301,22 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inputDeps))?
-        };
+        let __cordl_ret: crate::Unity::Jobs::JobHandle =
+            unsafe { cordl_method_info.invoke_unchecked(self, (inputDeps))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsEmpty")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsEmpty",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsEmpty",
                             0usize
                         )
                     })
@@ -334,33 +332,32 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
         dependency: crate::Unity::Jobs::JobHandle,
         allocator: crate::Unity::Collections::AllocatorManager_AllocatorHandle,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
-                            >,
-                            crate::Unity::Collections::NativeArray_1<i32>,
-                            crate::Unity::Jobs::JobHandle,
-                            crate::Unity::Collections::AllocatorManager_AllocatorHandle,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
+                        >,
+                        crate::Unity::Collections::NativeArray_1<i32>,
                         crate::Unity::Jobs::JobHandle,
-                        4usize,
-                    >("ScheduleConstruct")
+                        crate::Unity::Collections::AllocatorManager_AllocatorHandle,
+                    ), crate::Unity::Jobs::JobHandle, 4usize>(
+                        "ScheduleConstruct"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ScheduleConstruct", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ScheduleConstruct",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (stream, bufferCount, dependency, allocator))?
+            cordl_method_info.invoke_unchecked((), (stream, bufferCount, dependency, allocator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -373,36 +370,36 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
         allocator: crate::Unity::Collections::AllocatorManager_AllocatorHandle,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
-                            >,
-                            crate::Unity::Collections::NativeList_1<T>,
-                            crate::Unity::Jobs::JobHandle,
-                            crate::Unity::Collections::AllocatorManager_AllocatorHandle,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
+                        >,
+                        crate::Unity::Collections::NativeList_1<T>,
                         crate::Unity::Jobs::JobHandle,
-                        4usize,
-                    >("ScheduleConstruct")
+                        crate::Unity::Collections::AllocatorManager_AllocatorHandle,
+                    ), crate::Unity::Jobs::JobHandle, 4usize>(
+                        "ScheduleConstruct"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ScheduleConstruct", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ScheduleConstruct",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (stream, bufferCount, dependency, allocator))?
+            cordl_method_info.invoke_unchecked((), (stream, bufferCount, dependency, allocator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -411,12 +408,14 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
         allocator: crate::Unity::Collections::AllocatorManager_AllocatorHandle,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Collections::AllocatorManager_AllocatorHandle),
@@ -431,9 +430,8 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::NativeArray_1<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (allocator))?
-        };
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<T> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (allocator))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -441,42 +439,41 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
         bufferCount: i32,
         allocator: crate::Unity::Collections::AllocatorManager_AllocatorHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            crate::Unity::Collections::AllocatorManager_AllocatorHandle,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        crate::Unity::Collections::AllocatorManager_AllocatorHandle,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bufferCount, allocator))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bufferCount, allocator))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ForEachCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ForEachCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ForEachCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ForEachCount",
+                            0usize
                         )
                     })
             });
@@ -484,16 +481,18 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsCreated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsCreated")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsCreated", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsCreated",
+                            0usize
                         )
                     })
             });
@@ -503,46 +502,47 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream")]
 impl AsRef<crate::System::IDisposable>
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream")]
 impl AsMut<crate::System::IDisposable>
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream")]
 impl AsRef<crate::Unity::Collections::INativeDisposable>
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream
+{
     fn as_ref(&self) -> &crate::Unity::Collections::INativeDisposable {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream")]
 impl AsMut<crate::Unity::Collections::INativeDisposable>
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Collections::INativeDisposable {
         todo!()
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct UnsafeStream_ConstructJob {
     pub Container: crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
     pub Length: crate::Unity::Collections::NativeArray_1<i32>,
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections.LowLevel.Unsafe";
@@ -561,20 +561,16 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -583,11 +579,10 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -599,28 +594,24 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -632,11 +623,10 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -647,56 +637,54 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob {
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob")]
 impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob {
-    pub fn Execute(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Execute(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob")]
 impl AsRef<crate::Unity::Jobs::IJob>
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob
+{
     fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob")]
 impl AsMut<crate::Unity::Jobs::IJob>
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJob
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
         todo!()
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct UnsafeStream_ConstructJobList {
     pub Container: crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
     pub List: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections.LowLevel.Unsafe";
@@ -715,20 +703,16 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -737,11 +721,10 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -753,28 +736,24 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -786,11 +765,10 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -801,51 +779,53 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList {
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList")]
 impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList {
-    pub fn Execute(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Execute(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList")]
 impl AsRef<crate::Unity::Jobs::IJob>
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList
+{
     fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList")]
 impl AsMut<crate::Unity::Jobs::IJob>
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_ConstructJobList
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
         todo!()
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+DisposeJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct UnsafeStream_DisposeJob {
     pub Container: crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+DisposeJob")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections.LowLevel.Unsafe";
@@ -864,18 +844,16 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+DisposeJob")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -886,7 +864,8 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+DisposeJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -900,22 +879,22 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+DisposeJob")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+DisposeJob")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -929,7 +908,8 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+DisposeJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -940,58 +920,58 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob {
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream+DisposeJob")]
 impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob {
-    pub fn Execute(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Execute(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream+DisposeJob")]
 impl AsRef<crate::Unity::Jobs::IJob>
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob
+{
     fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream+DisposeJob")]
 impl AsMut<crate::Unity::Jobs::IJob>
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_DisposeJob
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
         todo!()
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Reader")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct UnsafeStream_Reader {
     pub m_BlockData: crate::Unity::Collections::AllocatorManager_Block,
     pub m_CurrentBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_CurrentPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub m_CurrentBlockEnd: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppObject,
-    >,
+    pub m_CurrentBlockEnd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_RemainingItemCount: i32,
     pub m_LastBlockSize: i32,
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Reader")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections.LowLevel.Unsafe";
@@ -1010,18 +990,16 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Reader")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1032,7 +1010,8 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Reader")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1046,22 +1025,22 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Reader")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Reader")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1075,7 +1054,8 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Reader")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1086,38 +1066,37 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeStream+Reader")]
 impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
-    pub fn BeginForEachIndex(
-        &mut self,
-        foreachIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn BeginForEachIndex(&mut self, foreachIndex: i32) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("BeginForEachIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginForEachIndex", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginForEachIndex",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (foreachIndex))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (foreachIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("Count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Count",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Count",
                             0usize
                         )
                     })
@@ -1128,95 +1107,84 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
     pub fn EndForEachIndex(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("EndForEachIndex")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("EndForEachIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EndForEachIndex", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Peek<T>(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::ByRefMut<T>,
-                        0usize,
-                    >("Peek")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Peek",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EndForEachIndex",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Read<T>(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
+    pub fn Peek<T>(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::ByRefMut<T>,
-                        0usize,
-                    >("Read")
+                    .find_method::<(), quest_hook::libil2cpp::ByRefMut<T>, 0usize>("Peek")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Peek",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Read<T>(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
+    where
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::ByRefMut<T>, 0usize>("Read")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Read",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUnsafePtr(
         &mut self,
         _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -1231,9 +1199,8 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_size))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -1242,41 +1209,40 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
             crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (stream))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (stream))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ForEachCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ForEachCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ForEachCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ForEachCount",
+                            0usize
                         )
                     })
             });
@@ -1284,16 +1250,18 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
         Ok(__cordl_ret.into())
     }
     pub fn get_RemainingItemCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_RemainingItemCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_RemainingItemCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_RemainingItemCount",
+                            0usize
                         )
                     })
             });
@@ -1302,15 +1270,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Writer")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct UnsafeStream_Writer {
     pub m_BlockData: crate::Unity::Collections::AllocatorManager_Block,
     pub m_CurrentBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_CurrentPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub m_CurrentBlockEnd: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppObject,
-    >,
+    pub m_CurrentBlockEnd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_ForeachIndex: i32,
     pub m_ElementCount: i32,
     pub m_FirstBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1320,7 +1286,8 @@ pub struct UnsafeStream_Writer {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Writer")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections.LowLevel.Unsafe";
@@ -1339,18 +1306,16 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Writer")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1361,7 +1326,8 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Writer")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1375,22 +1341,22 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Writer")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Writer")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1404,7 +1370,8 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Writer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer {
+    for crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1419,40 +1386,38 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::ByRefMut<T>,
-                        0usize,
-                    >("Allocate")
+                    .find_method::<(), quest_hook::libil2cpp::ByRefMut<T>, 0usize>("Allocate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Allocate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Allocate",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Allocate_i32_1(
         &mut self,
         _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -1467,60 +1432,53 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_size))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn BeginForEachIndex(
         &mut self,
         foreachIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("BeginForEachIndex")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("BeginForEachIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginForEachIndex", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginForEachIndex",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (foreachIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (foreachIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndForEachIndex(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("EndForEachIndex")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("EndForEachIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EndForEachIndex", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EndForEachIndex",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Write<T>(
@@ -1528,25 +1486,27 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer {
         value: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(T), quest_hook::libil2cpp::Void, 1usize>("Write")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Write",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -1555,41 +1515,40 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer {
             crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (stream))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (stream))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ForEachCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ForEachCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ForEachCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ForEachCount",
+                            0usize
                         )
                     })
             });

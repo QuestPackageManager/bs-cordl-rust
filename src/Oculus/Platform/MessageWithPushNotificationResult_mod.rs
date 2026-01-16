@@ -3,20 +3,20 @@
 #[derive(Debug)]
 pub struct MessageWithPushNotificationResult {
     __cordl_parent: crate::Oculus::Platform::Message_1<
-        quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Models::PushNotificationResult,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PushNotificationResult>,
     >,
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+MessageWithPushNotificationResult")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Oculus::Platform::MessageWithPushNotificationResult {
+    for crate::Oculus::Platform::MessageWithPushNotificationResult
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Oculus.Platform";
     const CLASS_NAME: &'static str = "MessageWithPushNotificationResult";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -31,9 +31,7 @@ for crate::Oculus::Platform::MessageWithPushNotificationResult {
 #[cfg(feature = "Oculus+Platform+MessageWithPushNotificationResult")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithPushNotificationResult {
     type Target = crate::Oculus::Platform::Message_1<
-        quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Models::PushNotificationResult,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PushNotificationResult>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -51,26 +49,22 @@ impl crate::Oculus::Platform::MessageWithPushNotificationResult {
         &mut self,
         c_message: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Models::PushNotificationResult,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PushNotificationResult>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::System::IntPtr),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Models::PushNotificationResult,
-                        >,
-                        1usize,
-                    >("GetDataFromMessage")
+                    .find_method::<(crate::System::IntPtr), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Models::PushNotificationResult,
+                    >, 1usize>("GetDataFromMessage")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetDataFromMessage", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetDataFromMessage",
+                            1usize
                         )
                     })
             });
@@ -82,26 +76,22 @@ impl crate::Oculus::Platform::MessageWithPushNotificationResult {
     pub fn GetPushNotificationResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Models::PushNotificationResult,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PushNotificationResult>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Models::PushNotificationResult,
-                        >,
-                        0usize,
-                    >("GetPushNotificationResult")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Models::PushNotificationResult,
+                    >, 0usize>("GetPushNotificationResult")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPushNotificationResult", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPushNotificationResult",
+                            0usize
                         )
                     })
             });
@@ -113,8 +103,8 @@ impl crate::Oculus::Platform::MessageWithPushNotificationResult {
     pub fn New(
         c_message: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (c_message))?;
         Ok(__cordl_object.into())
@@ -123,32 +113,32 @@ impl crate::Oculus::Platform::MessageWithPushNotificationResult {
         &mut self,
         c_message: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::System::IntPtr),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(crate::System::IntPtr), quest_hook::libil2cpp::Void, 1usize>(
+                        ".ctor",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (c_message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (c_message))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+MessageWithPushNotificationResult")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Oculus::Platform::MessageWithPushNotificationResult {
+    for crate::Oculus::Platform::MessageWithPushNotificationResult
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

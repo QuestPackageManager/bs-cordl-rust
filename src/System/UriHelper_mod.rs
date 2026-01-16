@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::UriHelper {
     const NAMESPACE: &'static str = "System";
     const CLASS_NAME: &'static str = "UriHelper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,53 +50,44 @@ impl crate::System::UriHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<char>,
-                            >,
-                            i32,
-                            i16,
-                            i16,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<char>,
-                        >,
-                        7usize,
-                    >("EnsureDestinationSize")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                        i32,
+                        i16,
+                        i16,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>, 7usize>(
+                        "EnsureDestinationSize",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EnsureDestinationSize", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EnsureDestinationSize",
+                            7usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<char>,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        pStr,
-                        dest,
-                        currentInputPos,
-                        charsToAdd,
-                        minReallocateChars,
-                        destPos,
-                        prevInputPos,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    pStr,
+                    dest,
+                    currentInputPos,
+                    charsToAdd,
+                    minReallocateChars,
+                    destPos,
+                    prevInputPos,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,32 +96,27 @@ impl crate::System::UriHelper {
         to: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         pos: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            char,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<char>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("EscapeAsciiChar")
+                    .find_static_method::<(
+                        char,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("EscapeAsciiChar")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EscapeAsciiChar", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EscapeAsciiChar",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (ch, to, pos))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (ch, to, pos))? };
         Ok(__cordl_ret.into())
     }
     pub fn EscapeString(
@@ -145,80 +132,83 @@ impl crate::System::UriHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<char>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                            char,
-                            char,
-                            char,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<char>,
-                        >,
-                        9usize,
-                    >("EscapeString")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                        char,
+                        char,
+                        char,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>, 9usize>(
+                        "EscapeString",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EscapeString", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EscapeString",
+                            9usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<char>,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (input, start, end, dest, destPos, isUriString, force1, force2, rsvd),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    input,
+                    start,
+                    end,
+                    dest,
+                    destPos,
+                    isUriString,
+                    force1,
+                    force2,
+                    rsvd,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EscapedAscii(digit: char, next: char) -> quest_hook::libil2cpp::Result<char> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char, char), char, 2usize>("EscapedAscii")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EscapedAscii", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EscapedAscii",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: char = unsafe {
-            cordl_method_info.invoke_unchecked((), (digit, next))?
-        };
+        let __cordl_ret: char = unsafe { cordl_method_info.invoke_unchecked((), (digit, next))? };
         Ok(__cordl_ret.into())
     }
     pub fn Is3986Unreserved(c: char) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("Is3986Unreserved")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Is3986Unreserved", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Is3986Unreserved",
+                            1usize
                         )
                     })
             });
@@ -226,16 +216,18 @@ impl crate::System::UriHelper {
         Ok(__cordl_ret.into())
     }
     pub fn IsNotSafeForUnescape(ch: char) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("IsNotSafeForUnescape")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsNotSafeForUnescape", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsNotSafeForUnescape",
+                            1usize
                         )
                     })
             });
@@ -243,20 +235,18 @@ impl crate::System::UriHelper {
         Ok(__cordl_ret.into())
     }
     pub fn IsReservedUnreservedOrHash(c: char) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (char),
-                        bool,
-                        1usize,
-                    >("IsReservedUnreservedOrHash")
+                    .find_static_method::<(char), bool, 1usize>("IsReservedUnreservedOrHash")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsReservedUnreservedOrHash", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsReservedUnreservedOrHash",
+                            1usize
                         )
                     })
             });
@@ -264,16 +254,18 @@ impl crate::System::UriHelper {
         Ok(__cordl_ret.into())
     }
     pub fn IsUnreserved(c: char) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("IsUnreserved")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsUnreserved", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsUnreserved",
+                            1usize
                         )
                     })
             });
@@ -284,66 +276,53 @@ impl crate::System::UriHelper {
         pDest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         destOffset: quest_hook::libil2cpp::ByRefMut<i32>,
-        unescapedChars: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<char>,
-        >,
+        unescapedChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         charCount: i32,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         byteCount: i32,
         isQuery: bool,
         iriParsing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<char>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<char>,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            bool,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        9usize,
-                    >("MatchUTF8Sequence")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 9usize>("MatchUTF8Sequence")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MatchUTF8Sequence", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MatchUTF8Sequence",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        pDest,
-                        dest,
-                        destOffset,
-                        unescapedChars,
-                        charCount,
-                        bytes,
-                        byteCount,
-                        isQuery,
-                        iriParsing,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    pDest,
+                    dest,
+                    destOffset,
+                    unescapedChars,
+                    charCount,
+                    bytes,
+                    byteCount,
+                    isQuery,
+                    iriParsing,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -354,36 +333,29 @@ impl crate::System::UriHelper {
         sheLength: u16,
         ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            u16,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            u16,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        u16,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        u16,
                         bool,
-                        5usize,
-                    >("TestForSubPath")
+                    ), bool, 5usize>("TestForSubPath")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TestForSubPath", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TestForSubPath",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (pMe, meLength, pShe, sheLength, ignoreCase))?
+            cordl_method_info.invoke_unchecked((), (pMe, meLength, pShe, sheLength, ignoreCase))?
         };
         Ok(__cordl_ret.into())
     }
@@ -402,9 +374,10 @@ impl crate::System::UriHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -437,26 +410,23 @@ impl crate::System::UriHelper {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<char>,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        pStr,
-                        start,
-                        end,
-                        dest,
-                        destPosition,
-                        rsvd1,
-                        rsvd2,
-                        rsvd3,
-                        unescapeMode,
-                        syntax,
-                        isQuery,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    pStr,
+                    start,
+                    end,
+                    dest,
+                    destPosition,
+                    rsvd1,
+                    rsvd2,
+                    rsvd3,
+                    unescapeMode,
+                    syntax,
+                    isQuery,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -475,9 +445,10 @@ impl crate::System::UriHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -510,26 +481,23 @@ impl crate::System::UriHelper {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<char>,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        input,
-                        start,
-                        end,
-                        dest,
-                        destPosition,
-                        rsvd1,
-                        rsvd2,
-                        rsvd3,
-                        unescapeMode,
-                        syntax,
-                        isQuery,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    input,
+                    start,
+                    end,
+                    dest,
+                    destPosition,
+                    rsvd1,
+                    rsvd2,
+                    rsvd3,
+                    unescapeMode,
+                    syntax,
+                    isQuery,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }

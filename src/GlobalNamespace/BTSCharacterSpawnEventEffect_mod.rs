@@ -4,26 +4,16 @@
 pub struct BTSCharacterSpawnEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _animationStartAheadTime: f32,
-    pub _btsCharacterDataModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BTSCharacterDataModel,
-    >,
+    pub _btsCharacterDataModel:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacterDataModel>,
     pub _characterWrapper: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapCallbacksController,
-    >,
-    pub _beatmapData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IReadonlyBeatmapData,
-    >,
-    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IAudioTimeSource,
-    >,
-    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GameplayModifiers,
-    >,
+    pub _beatmapCallbacksController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCallbacksController>,
+    pub _beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAudioTimeSource>,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     pub startCharacterAnimationEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
-        >,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>>,
     >,
     pub _idsToCharacterPrefabsDictionary: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
@@ -44,9 +34,8 @@ pub struct BTSCharacterSpawnEventEffect {
         >,
     >,
     pub _isInitialized: bool,
-    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    >,
+    pub _beatmapDataCallbackWrapper:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallbackWrapper>,
     pub _asyncOperationHandles: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
@@ -54,14 +43,14 @@ pub struct BTSCharacterSpawnEventEffect {
     >,
 }
 #[cfg(feature = "cordl_class_BTSCharacterSpawnEventEffect")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BTSCharacterSpawnEventEffect";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -91,26 +80,23 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
     pub fn CleanupAddressables(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("CleanupAddressables")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CleanupAddressables")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CleanupAddressables", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CleanupAddressables",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCharacterWithAnimationClip(
@@ -136,44 +122,38 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    i32,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BTSCharacter,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    i32,
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Tuple_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BTSCharacter,
-                                >,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                i32,
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                i32,
                                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
                             >,
                         >,
-                        4usize,
-                    >("GetCharacterWithAnimationClip")
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Tuple_2<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                        >,
+                    >, 4usize>("GetCharacterWithAnimationClip")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCharacterWithAnimationClip", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCharacterWithAnimationClip",
+                            4usize
                         )
                     })
             });
@@ -184,10 +164,7 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
             >,
         > = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (charDictionary, animDictionary, prefabId, animationId),
-                )?
+                .invoke_unchecked((), (charDictionary, animDictionary, prefabId, animationId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -197,9 +174,10 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
             crate::GlobalNamespace::BasicBeatmapEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -216,104 +194,97 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (basicBeatmapEventData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (basicBeatmapEventData))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAddressables(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("LoadAddressables")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LoadAddressables")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LoadAddressables", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LoadAddressables",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDestroy(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDestroy", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDestroy",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Start",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn add_startCharacterAnimationEvent(
@@ -324,45 +295,44 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BTSCharacter,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_startCharacterAnimationEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_startCharacterAnimationEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_startCharacterAnimationEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_startCharacterAnimationEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isInitialized")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isInitialized", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isInitialized",
+                            0usize
                         )
                     })
             });
@@ -377,38 +347,34 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BTSCharacter,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_startCharacterAnimationEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_startCharacterAnimationEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_startCharacterAnimationEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_startCharacterAnimationEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BTSCharacterSpawnEventEffect")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

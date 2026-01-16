@@ -1,22 +1,20 @@
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Channels+IServerChannelSinkProvider"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+IServerChannelSinkProvider")]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IServerChannelSinkProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Channels+IServerChannelSinkProvider"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+IServerChannelSinkProvider")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Remoting::Channels::IServerChannelSinkProvider {
+    for crate::System::Runtime::Remoting::Channels::IServerChannelSinkProvider
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Remoting.Channels";
     const CLASS_NAME: &'static str = "IServerChannelSinkProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -29,25 +27,21 @@ for crate::System::Runtime::Remoting::Channels::IServerChannelSinkProvider {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+IServerChannelSinkProvider")]
-impl std::ops::Deref
-for crate::System::Runtime::Remoting::Channels::IServerChannelSinkProvider {
+impl std::ops::Deref for crate::System::Runtime::Remoting::Channels::IServerChannelSinkProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+IServerChannelSinkProvider")]
-impl std::ops::DerefMut
-for crate::System::Runtime::Remoting::Channels::IServerChannelSinkProvider {
+impl std::ops::DerefMut for crate::System::Runtime::Remoting::Channels::IServerChannelSinkProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+IServerChannelSinkProvider")]
 impl crate::System::Runtime::Remoting::Channels::IServerChannelSinkProvider {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn set_Next(
@@ -56,36 +50,32 @@ impl crate::System::Runtime::Remoting::Channels::IServerChannelSinkProvider {
             crate::System::Runtime::Remoting::Channels::IServerChannelSinkProvider,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::Remoting::Channels::IServerChannelSinkProvider,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_Next")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Remoting::Channels::IServerChannelSinkProvider,
+                    >), quest_hook::libil2cpp::Void, 1usize>("set_Next")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_Next", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Next",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Channels+IServerChannelSinkProvider"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+IServerChannelSinkProvider")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Remoting::Channels::IServerChannelSinkProvider {
+    for crate::System::Runtime::Remoting::Channels::IServerChannelSinkProvider
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

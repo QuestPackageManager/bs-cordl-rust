@@ -3,9 +3,7 @@
 #[derive(Debug)]
 pub struct TypeLimiter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_instanceScope: quest_hook::libil2cpp::Gc<
-        crate::System::Data::TypeLimiter_Scope,
-    >,
+    pub m_instanceScope: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter_Scope>,
 }
 #[cfg(feature = "cordl_class_System+Data+TypeLimiter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::TypeLimiter {
@@ -14,7 +12,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::TypeLimiter {
     const NAMESPACE: &'static str = "System.Data";
     const CLASS_NAME: &'static str = "TypeLimiter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,12 +42,13 @@ impl std::ops::DerefMut for crate::System::Data::TypeLimiter {
 impl crate::System::Data::TypeLimiter {
     #[cfg(feature = "System+Data+TypeLimiter+Scope")]
     pub type Scope = crate::System::Data::TypeLimiter_Scope;
-    pub fn Capture() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Capture(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -63,48 +63,45 @@ impl crate::System::Data::TypeLimiter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureTypeIsAllowed(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         capturedLimiter: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("EnsureTypeIsAllowed")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "EnsureTypeIsAllowed"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EnsureTypeIsAllowed", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EnsureTypeIsAllowed",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_type, capturedLimiter))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type, capturedLimiter))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnterRestrictedScope_DataSet0(
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IDisposable>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
@@ -119,19 +116,17 @@ impl crate::System::Data::TypeLimiter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = unsafe {
-            cordl_method_info.invoke_unchecked((), (dataSet))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> =
+            unsafe { cordl_method_info.invoke_unchecked((), (dataSet))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnterRestrictedScope_DataTable1(
         dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IDisposable>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
@@ -146,9 +141,8 @@ impl crate::System::Data::TypeLimiter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = unsafe {
-            cordl_method_info.invoke_unchecked((), (dataTable))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> =
+            unsafe { cordl_method_info.invoke_unchecked((), (dataTable))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreviouslyDeclaredDataTypes_DataSet1(
@@ -160,9 +154,10 @@ impl crate::System::Data::TypeLimiter {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
@@ -197,9 +192,10 @@ impl crate::System::Data::TypeLimiter {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
@@ -228,8 +224,8 @@ impl crate::System::Data::TypeLimiter {
     pub fn New(
         scope: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter_Scope>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (scope))?;
         Ok(__cordl_object.into())
@@ -238,9 +234,10 @@ impl crate::System::Data::TypeLimiter {
         &mut self,
         scope: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter_Scope>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -257,22 +254,23 @@ impl crate::System::Data::TypeLimiter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (scope))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (scope))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsTypeLimitingDisabled() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsTypeLimitingDisabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsTypeLimitingDisabled", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsTypeLimitingDisabled",
+                            0usize
                         )
                     })
             });
@@ -299,9 +297,7 @@ pub struct TypeLimiter_Scope {
             quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     >,
-    pub m_previousScope: quest_hook::libil2cpp::Gc<
-        crate::System::Data::TypeLimiter_Scope,
-    >,
+    pub m_previousScope: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter_Scope>,
 }
 #[cfg(feature = "cordl_class_System+Data+TypeLimiter+Scope")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::TypeLimiter_Scope {
@@ -310,7 +306,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::TypeLimiter_Sco
     const NAMESPACE: &'static str = "System.Data";
     const CLASS_NAME: &'static str = "TypeLimiter/Scope";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -337,59 +334,57 @@ impl std::ops::DerefMut for crate::System::Data::TypeLimiter_Scope {
 }
 #[cfg(feature = "System+Data+TypeLimiter+Scope")]
 impl crate::System::Data::TypeLimiter_Scope {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsAllowedType(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Type>),
-                        bool,
-                        1usize,
-                    >("IsAllowedType")
+                    .find_method::<(quest_hook::libil2cpp::Gc<crate::System::Type>), bool, 1usize>(
+                        "IsAllowedType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsAllowedType", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsAllowedType",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsTypeUnconditionallyAllowed(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
@@ -404,9 +399,7 @@ impl crate::System::Data::TypeLimiter_Scope {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_type))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -417,8 +410,8 @@ impl crate::System::Data::TypeLimiter_Scope {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (previousScope, allowedTypes))?;
         Ok(__cordl_object.into())
@@ -432,35 +425,30 @@ impl crate::System::Data::TypeLimiter_Scope {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Data::TypeLimiter_Scope,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter_Scope>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (previousScope, allowedTypes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (previousScope, allowedTypes))? };
         Ok(__cordl_ret.into())
     }
 }

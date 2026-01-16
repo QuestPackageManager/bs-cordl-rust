@@ -1,6 +1,4 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCacheAllocationStrategy"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCacheAllocationStrategy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LRUCacheAllocationStrategy {
@@ -28,17 +26,17 @@ pub struct LRUCacheAllocationStrategy {
         >,
     >,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCacheAllocationStrategy"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCacheAllocationStrategy")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
+    for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
     const CLASS_NAME: &'static str = "LRUCacheAllocationStrategy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -51,8 +49,7 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCacheAllocationStrategy")]
-impl std::ops::Deref
-for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
+impl std::ops::Deref for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -60,7 +57,8 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCacheAllocationStrategy")]
 impl std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
+    for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -76,25 +74,21 @@ impl crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         >,
-                        0usize,
-                    >("GetPool")
+                    >, 0usize>("GetPool")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetPool",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPool",
                             0usize
                         )
                     })
@@ -110,12 +104,12 @@ impl crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         typeHash: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, i32),
@@ -130,11 +124,8 @@ impl crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type, typeHash))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type, typeHash))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -143,13 +134,17 @@ impl crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
         poolCacheMaxSize: i32,
         initialPoolCacheCapacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (poolMaxSize, poolCapacity, poolCacheMaxSize, initialPoolCacheCapacity),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                poolMaxSize,
+                poolCapacity,
+                poolCacheMaxSize,
+                initialPoolCacheCapacity,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn Release(
@@ -157,31 +152,26 @@ impl crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
         typeHash: i32,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Release")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Release")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Release",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Release",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (typeHash, obj))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (typeHash, obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReleasePool(
@@ -192,32 +182,27 @@ impl crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("ReleasePool")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>("ReleasePool")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReleasePool", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReleasePool",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pool))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pool))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -227,43 +212,41 @@ impl crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
         poolCacheMaxSize: i32,
         initialPoolCacheCapacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(i32, i32, i32, i32), quest_hook::libil2cpp::Void, 4usize>(
+                        ".ctor",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        poolMaxSize,
-                        poolCapacity,
-                        poolCacheMaxSize,
-                        initialPoolCacheCapacity,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    poolMaxSize,
+                    poolCapacity,
+                    poolCacheMaxSize,
+                    initialPoolCacheCapacity,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCacheAllocationStrategy"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCacheAllocationStrategy")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
+    for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -273,19 +256,17 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCacheAllocationStrategy")]
 impl AsRef<crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy>
-for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
-    fn as_ref(
-        &self,
-    ) -> &crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy {
+    for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy
+{
+    fn as_ref(&self) -> &crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCacheAllocationStrategy")]
 impl AsMut<crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy>
-for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy {
+    for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy
+{
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy {
         unsafe { std::mem::transmute(self) }
     }
 }

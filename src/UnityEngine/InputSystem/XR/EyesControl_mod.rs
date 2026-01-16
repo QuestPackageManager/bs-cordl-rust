@@ -2,40 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EyesControl {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<
-        crate::UnityEngine::InputSystem::XR::Eyes,
-    >,
-    pub _leftEyePosition_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    >,
-    pub _leftEyeRotation_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-    >,
-    pub _rightEyePosition_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    >,
-    pub _rightEyeRotation_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-    >,
-    pub _fixationPoint_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    >,
-    pub _leftEyeOpenAmount_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::AxisControl,
-    >,
-    pub _rightEyeOpenAmount_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::AxisControl,
-    >,
+    __cordl_parent:
+        crate::UnityEngine::InputSystem::InputControl_1<crate::UnityEngine::InputSystem::XR::Eyes>,
+    pub _leftEyePosition_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
+    pub _leftEyeRotation_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::QuaternionControl>,
+    pub _rightEyePosition_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
+    pub _rightEyeRotation_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::QuaternionControl>,
+    pub _fixationPoint_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
+    pub _leftEyeOpenAmount_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
+    pub _rightEyeOpenAmount_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+EyesControl")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::XR::EyesControl {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::XR::EyesControl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.XR";
     const CLASS_NAME: &'static str = "EyesControl";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,9 +41,8 @@ for crate::UnityEngine::InputSystem::XR::EyesControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+EyesControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::EyesControl {
-    type Target = crate::UnityEngine::InputSystem::InputControl_1<
-        crate::UnityEngine::InputSystem::XR::Eyes,
-    >;
+    type Target =
+        crate::UnityEngine::InputSystem::InputControl_1<crate::UnityEngine::InputSystem::XR::Eyes>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,34 +55,29 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::EyesControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+EyesControl")]
 impl crate::UnityEngine::InputSystem::XR::EyesControl {
-    pub fn FinishSetup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn FinishSetup(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("FinishSetup")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("FinishSetup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FinishSetup", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FinishSetup",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -100,9 +86,10 @@ impl crate::UnityEngine::InputSystem::XR::EyesControl {
         &mut self,
         statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::XR::Eyes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -117,9 +104,8 @@ impl crate::UnityEngine::InputSystem::XR::EyesControl {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::XR::Eyes = unsafe {
-            cordl_method_info.invoke_unchecked(self, (statePtr))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::XR::Eyes =
+            unsafe { cordl_method_info.invoke_unchecked(self, (statePtr))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteValueIntoState(
@@ -127,77 +113,69 @@ impl crate::UnityEngine::InputSystem::XR::EyesControl {
         value: crate::UnityEngine::InputSystem::XR::Eyes,
         statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::InputSystem::XR::Eyes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("WriteValueIntoState")
+                    .find_method::<(
+                        crate::UnityEngine::InputSystem::XR::Eyes,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "WriteValueIntoState"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteValueIntoState", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteValueIntoState",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value, statePtr))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value, statePtr))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_fixationPoint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                        >,
-                        0usize,
-                    >("get_fixationPoint")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                    >, 0usize>("get_fixationPoint")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_fixationPoint", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_fixationPoint",
+                            0usize
                         )
                     })
             });
@@ -211,22 +189,20 @@ impl crate::UnityEngine::InputSystem::XR::EyesControl {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::AxisControl,
-                        >,
-                        0usize,
-                    >("get_leftEyeOpenAmount")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::AxisControl,
+                    >, 0usize>("get_leftEyeOpenAmount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_leftEyeOpenAmount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_leftEyeOpenAmount",
+                            0usize
                         )
                     })
             });
@@ -238,26 +214,22 @@ impl crate::UnityEngine::InputSystem::XR::EyesControl {
     pub fn get_leftEyePosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                        >,
-                        0usize,
-                    >("get_leftEyePosition")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                    >, 0usize>("get_leftEyePosition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_leftEyePosition", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_leftEyePosition",
+                            0usize
                         )
                     })
             });
@@ -269,26 +241,22 @@ impl crate::UnityEngine::InputSystem::XR::EyesControl {
     pub fn get_leftEyeRotation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::QuaternionControl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                        >,
-                        0usize,
-                    >("get_leftEyeRotation")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                    >, 0usize>("get_leftEyeRotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_leftEyeRotation", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_leftEyeRotation",
+                            0usize
                         )
                     })
             });
@@ -302,22 +270,20 @@ impl crate::UnityEngine::InputSystem::XR::EyesControl {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::AxisControl,
-                        >,
-                        0usize,
-                    >("get_rightEyeOpenAmount")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::AxisControl,
+                    >, 0usize>("get_rightEyeOpenAmount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_rightEyeOpenAmount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_rightEyeOpenAmount",
+                            0usize
                         )
                     })
             });
@@ -329,26 +295,22 @@ impl crate::UnityEngine::InputSystem::XR::EyesControl {
     pub fn get_rightEyePosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                        >,
-                        0usize,
-                    >("get_rightEyePosition")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                    >, 0usize>("get_rightEyePosition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_rightEyePosition", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_rightEyePosition",
+                            0usize
                         )
                     })
             });
@@ -360,26 +322,22 @@ impl crate::UnityEngine::InputSystem::XR::EyesControl {
     pub fn get_rightEyeRotation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::QuaternionControl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                        >,
-                        0usize,
-                    >("get_rightEyeRotation")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                    >, 0usize>("get_rightEyeRotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_rightEyeRotation", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_rightEyeRotation",
+                            0usize
                         )
                     })
             });
@@ -390,92 +348,81 @@ impl crate::UnityEngine::InputSystem::XR::EyesControl {
     }
     pub fn set_fixationPoint(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_fixationPoint")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                    >), quest_hook::libil2cpp::Void, 1usize>("set_fixationPoint")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_fixationPoint", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_fixationPoint",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_leftEyeOpenAmount(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::AxisControl,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::AxisControl,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_leftEyeOpenAmount")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::AxisControl,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_leftEyeOpenAmount"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_leftEyeOpenAmount", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_leftEyeOpenAmount",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_leftEyePosition(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_leftEyePosition")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_leftEyePosition"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_leftEyePosition", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_leftEyePosition",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_leftEyeRotation(
@@ -484,88 +431,81 @@ impl crate::UnityEngine::InputSystem::XR::EyesControl {
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_leftEyeRotation")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_leftEyeRotation"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_leftEyeRotation", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_leftEyeRotation",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_rightEyeOpenAmount(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::AxisControl,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::AxisControl,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_rightEyeOpenAmount")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::AxisControl,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_rightEyeOpenAmount"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_rightEyeOpenAmount", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_rightEyeOpenAmount",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_rightEyePosition(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_rightEyePosition")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_rightEyePosition"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_rightEyePosition", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_rightEyePosition",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_rightEyeRotation(
@@ -574,34 +514,32 @@ impl crate::UnityEngine::InputSystem::XR::EyesControl {
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_rightEyeRotation")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_rightEyeRotation"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_rightEyeRotation", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_rightEyeRotation",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+EyesControl")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::XR::EyesControl {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::XR::EyesControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -7,20 +7,23 @@ pub struct TwoModifiersComposite {
     pub modifier2: i32,
     pub binding: i32,
     pub overrideModifiersNeedToBePressedFirst: bool,
-    pub modifiersOrder: crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_ModifiersOrder,
+    pub modifiersOrder:
+        crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_ModifiersOrder,
     pub m_ValueSizeInBytes: i32,
     pub m_ValueType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub m_BindingIsButton: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+TwoModifiersComposite")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
+    for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Composites";
     const CLASS_NAME: &'static str = "TwoModifiersComposite";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -33,54 +36,47 @@ for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Composites+TwoModifiersComposite")]
-impl std::ops::Deref
-for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
+impl std::ops::Deref for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
     type Target = crate::UnityEngine::InputSystem::InputBindingComposite;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Composites+TwoModifiersComposite")]
-impl std::ops::DerefMut
-for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
+impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Composites+TwoModifiersComposite")]
 impl crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
-    #[cfg(
-        feature = "UnityEngine+InputSystem+Composites+TwoModifiersComposite+ModifiersOrder"
-    )]
-    pub type ModifiersOrder = crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_ModifiersOrder;
+    #[cfg(feature = "UnityEngine+InputSystem+Composites+TwoModifiersComposite+ModifiersOrder")]
+    pub type ModifiersOrder =
+        crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_ModifiersOrder;
     pub fn EvaluateMagnitude(
         &mut self,
         context: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputBindingCompositeContext,
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::InputSystem::InputBindingCompositeContext,
-                        >),
-                        f32,
-                        1usize,
-                    >("EvaluateMagnitude")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputBindingCompositeContext,
+                    >), f32, 1usize>("EvaluateMagnitude")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EvaluateMagnitude", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EvaluateMagnitude",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
     pub fn FinishSetup(
@@ -89,28 +85,25 @@ impl crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
             crate::UnityEngine::InputSystem::InputBindingCompositeContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::InputSystem::InputBindingCompositeContext,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("FinishSetup")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputBindingCompositeContext,
+                    >), quest_hook::libil2cpp::Void, 1usize>("FinishSetup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FinishSetup", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FinishSetup",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
     pub fn ModifiersArePressed(
@@ -119,33 +112,29 @@ impl crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
             crate::UnityEngine::InputSystem::InputBindingCompositeContext,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::InputSystem::InputBindingCompositeContext,
-                        >),
-                        bool,
-                        1usize,
-                    >("ModifiersArePressed")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputBindingCompositeContext,
+                    >), bool, 1usize>("ModifiersArePressed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ModifiersArePressed", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ModifiersArePressed",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -158,34 +147,29 @@ impl crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bufferSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::InputSystem::InputBindingCompositeContext,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("ReadValue")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::InputSystem::InputBindingCompositeContext,
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("ReadValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadValue", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadValue",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context, buffer, bufferSize))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context, buffer, bufferSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadValueAsObject(
@@ -193,65 +177,64 @@ impl crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
         context: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputBindingCompositeContext,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::InputSystem::InputBindingCompositeContext,
-                        >),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                        1usize,
-                    >("ReadValueAsObject")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputBindingCompositeContext,
+                    >), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, 1usize>(
+                        "ReadValueAsObject",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadValueAsObject", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadValueAsObject",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_valueSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_valueSizeInBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_valueSizeInBytes", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_valueSizeInBytes",
+                            0usize
                         )
                     })
             });
@@ -261,32 +244,32 @@ impl crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
     pub fn get_valueType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        0usize,
-                    >("get_valueType")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<crate::System::Type>, 0usize>(
+                        "get_valueType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_valueType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_valueType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+TwoModifiersComposite")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
+    for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -297,8 +280,8 @@ for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+Composites+TwoModifiersComposite+ModifiersOrder"
 )]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum TwoModifiersComposite_ModifiersOrder {
     #[default]
     Default = 0i32,
@@ -309,7 +292,8 @@ pub enum TwoModifiersComposite_ModifiersOrder {
     feature = "cordl_class_UnityEngine+InputSystem+Composites+TwoModifiersComposite+ModifiersOrder"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_ModifiersOrder {
+    for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_ModifiersOrder
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Composites";
@@ -328,20 +312,18 @@ for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_Modifiers
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+Composites+TwoModifiersComposite+ModifiersOrder"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_ModifiersOrder {
+    for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_ModifiersOrder
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -354,7 +336,8 @@ for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_Modifiers
     feature = "cordl_class_UnityEngine+InputSystem+Composites+TwoModifiersComposite+ModifiersOrder"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_ModifiersOrder {
+    for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_ModifiersOrder
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -370,16 +353,15 @@ for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_Modifiers
     feature = "cordl_class_UnityEngine+InputSystem+Composites+TwoModifiersComposite+ModifiersOrder"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_ModifiersOrder {
+    for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_ModifiersOrder
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -387,7 +369,8 @@ for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_Modifiers
     feature = "cordl_class_UnityEngine+InputSystem+Composites+TwoModifiersComposite+ModifiersOrder"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_ModifiersOrder {
+    for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite_ModifiersOrder
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

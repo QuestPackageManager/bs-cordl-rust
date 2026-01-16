@@ -2,19 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsPropertyBag {
-    __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
-        crate::UnityEngine::Bounds,
-    >,
+    __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<crate::UnityEngine::Bounds>,
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Properties::Internal::BoundsPropertyBag {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Properties::Internal::BoundsPropertyBag {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
     const CLASS_NAME: &'static str = "BoundsPropertyBag";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -28,9 +26,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag {
 }
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::BoundsPropertyBag {
-    type Target = crate::Unity::Properties::ContainerPropertyBag_1<
-        crate::UnityEngine::Bounds,
-    >;
+    type Target = crate::Unity::Properties::ContainerPropertyBag_1<crate::UnityEngine::Bounds>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,39 +42,38 @@ impl crate::Unity::Properties::Internal::BoundsPropertyBag {
     #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+CenterProperty")]
     pub type CenterProperty = crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty;
     #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty")]
-    pub type ExtentsProperty = crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty;
+    pub type ExtentsProperty =
+        crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Unity::Properties::Internal::BoundsPropertyBag {
+impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::Internal::BoundsPropertyBag {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -86,9 +81,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+CenterProperty"
-)]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+CenterProperty")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsPropertyBag_CenterProperty {
@@ -97,17 +90,17 @@ pub struct BoundsPropertyBag_CenterProperty {
         crate::UnityEngine::Vector3,
     >,
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+CenterProperty"
-)]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+CenterProperty")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
+    for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
     const CLASS_NAME: &'static str = "BoundsPropertyBag/CenterProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -120,8 +113,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+CenterProperty")]
-impl std::ops::Deref
-for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
+impl std::ops::Deref for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
     type Target = crate::Unity::Properties::Property_2<
         crate::UnityEngine::Bounds,
         crate::UnityEngine::Vector3,
@@ -131,8 +123,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+CenterProperty")]
-impl std::ops::DerefMut
-for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
+impl std::ops::DerefMut for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -143,9 +134,10 @@ impl crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
         &mut self,
         container: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>),
@@ -160,14 +152,13 @@ impl crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (container))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (container))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -177,63 +168,61 @@ impl crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
         container: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
-                            crate::UnityEngine::Vector3,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetValue")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+                        crate::UnityEngine::Vector3,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SetValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetValue", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetValue",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (container, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (container, value))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsReadOnly")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsReadOnly", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsReadOnly",
+                            0usize
                         )
                     })
             });
@@ -242,12 +231,12 @@ impl crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -262,17 +251,15 @@ impl crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+CenterProperty"
-)]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+CenterProperty")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
+    for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -280,9 +267,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty"
-)]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsPropertyBag_ExtentsProperty {
@@ -291,17 +276,17 @@ pub struct BoundsPropertyBag_ExtentsProperty {
         crate::UnityEngine::Vector3,
     >,
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty"
-)]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
+    for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
     const CLASS_NAME: &'static str = "BoundsPropertyBag/ExtentsProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -314,8 +299,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty")]
-impl std::ops::Deref
-for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
+impl std::ops::Deref for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
     type Target = crate::Unity::Properties::Property_2<
         crate::UnityEngine::Bounds,
         crate::UnityEngine::Vector3,
@@ -325,8 +309,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty")]
-impl std::ops::DerefMut
-for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
+impl std::ops::DerefMut for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -337,9 +320,10 @@ impl crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
         &mut self,
         container: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>),
@@ -354,14 +338,13 @@ impl crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (container))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (container))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -371,63 +354,61 @@ impl crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
         container: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
-                            crate::UnityEngine::Vector3,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetValue")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+                        crate::UnityEngine::Vector3,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SetValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetValue", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetValue",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (container, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (container, value))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsReadOnly")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsReadOnly", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsReadOnly",
+                            0usize
                         )
                     })
             });
@@ -436,12 +417,12 @@ impl crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -456,17 +437,15 @@ impl crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty"
-)]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
+    for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

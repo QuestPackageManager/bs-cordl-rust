@@ -14,20 +14,21 @@ pub struct TempMeshAllocatorImpl {
             crate::UnityEngine::UIElements::Vertex,
         >,
     >,
-    pub m_IndexPool: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
-    >,
+    pub m_IndexPool:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>>,
     pub _disposed_k__BackingField: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl {
+    for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
     const CLASS_NAME: &'static str = "TempMeshAllocatorImpl";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -62,29 +63,29 @@ impl crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl {
         alignment: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeSlice_1<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32),
-                        crate::Unity::Collections::NativeSlice_1<T>,
-                        2usize,
-                    >("Allocate")
+                    .find_method::<(i32, i32), crate::Unity::Collections::NativeSlice_1<T>, 2usize>(
+                        "Allocate",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Allocate", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Allocate",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (count, alignment))?
-        };
+        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<T> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (count, alignment))? };
         Ok(__cordl_ret.into())
     }
     pub fn AllocateTempMesh(
@@ -92,39 +93,33 @@ impl crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl {
         vertexCount: i32,
         indexCount: i32,
         vertices: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeSlice_1<
-                crate::UnityEngine::UIElements::Vertex,
-            >,
+            crate::Unity::Collections::NativeSlice_1<crate::UnityEngine::UIElements::Vertex>,
         >,
-        indices: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeSlice_1<u16>,
-        >,
+        indices: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeSlice_1<u16>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeSlice_1<
-                                    crate::UnityEngine::UIElements::Vertex,
-                                >,
+                    .find_method::<(
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeSlice_1<
+                                crate::UnityEngine::UIElements::Vertex,
                             >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeSlice_1<u16>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("AllocateTempMesh")
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeSlice_1<u16>,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>("AllocateTempMesh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AllocateTempMesh", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AllocateTempMesh",
+                            4usize
                         )
                     })
             });
@@ -134,25 +129,24 @@ impl crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Clear",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNativeHandle(
@@ -161,116 +155,112 @@ impl crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl {
             crate::UnityEngine::UIElements::TempMeshAllocator,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::UIElements::TempMeshAllocator,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("CreateNativeHandle")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::TempMeshAllocator,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "CreateNativeHandle"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateNativeHandle", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateNativeHandle",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (allocator))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (allocator))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose_0(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
         disposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Dispose")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (disposing))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (disposing))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_disposed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_disposed", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_disposed",
+                            0usize
                         )
                     })
             });
@@ -281,32 +271,30 @@ impl crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_disposed")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_disposed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_disposed", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_disposed",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl {
+    for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -316,33 +304,32 @@ for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+TempMeshAllocatorImpl")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl {
+    for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+TempMeshAllocatorImpl")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl {
+    for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl+ThreadData"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl+ThreadData")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TempMeshAllocatorImpl_ThreadData {
     pub allocations: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<crate::System::IntPtr>,
     >,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl+ThreadData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl+ThreadData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData {
+    for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
@@ -361,20 +348,16 @@ for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl+ThreadData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl+ThreadData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData {
+    for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -383,11 +366,10 @@ for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl+ThreadData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl+ThreadData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData {
+    for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -399,28 +381,24 @@ for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl+ThreadData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl+ThreadData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData {
+    for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl+ThreadData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl+ThreadData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData {
+    for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -432,11 +410,10 @@ for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl+ThreadData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TempMeshAllocatorImpl+ThreadData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData {
+    for crate::UnityEngine::UIElements::UIR::TempMeshAllocatorImpl_ThreadData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

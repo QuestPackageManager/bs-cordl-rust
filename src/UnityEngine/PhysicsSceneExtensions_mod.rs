@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PhysicsSceneExte
     const NAMESPACE: &'static str = "UnityEngine";
     const CLASS_NAME: &'static str = "PhysicsSceneExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,9 +42,10 @@ impl crate::UnityEngine::PhysicsSceneExtensions {
     pub fn GetPhysicsScene(
         scene: crate::UnityEngine::SceneManagement::Scene,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::PhysicsScene> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::SceneManagement::Scene),
@@ -58,17 +60,17 @@ impl crate::UnityEngine::PhysicsSceneExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::PhysicsScene = unsafe {
-            cordl_method_info.invoke_unchecked((), (scene))?
-        };
+        let __cordl_ret: crate::UnityEngine::PhysicsScene =
+            unsafe { cordl_method_info.invoke_unchecked((), (scene))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPhysicsScene_Internal(
         scene: crate::UnityEngine::SceneManagement::Scene,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::PhysicsScene> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::SceneManagement::Scene),
@@ -83,44 +85,36 @@ impl crate::UnityEngine::PhysicsSceneExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::PhysicsScene = unsafe {
-            cordl_method_info.invoke_unchecked((), (scene))?
-        };
+        let __cordl_ret: crate::UnityEngine::PhysicsScene =
+            unsafe { cordl_method_info.invoke_unchecked((), (scene))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPhysicsScene_Internal_Injected(
-        scene: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::SceneManagement::Scene,
-        >,
+        scene: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SceneManagement::Scene>,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::SceneManagement::Scene,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::PhysicsScene,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("GetPhysicsScene_Internal_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SceneManagement::Scene>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "GetPhysicsScene_Internal_Injected"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPhysicsScene_Internal_Injected", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPhysicsScene_Internal_Injected",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (scene, ret))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (scene, ret))? };
         Ok(__cordl_ret.into())
     }
 }

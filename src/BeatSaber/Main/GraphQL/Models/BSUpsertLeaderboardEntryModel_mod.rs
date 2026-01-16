@@ -1,6 +1,4 @@
-#[cfg(
-    feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSUpsertLeaderboardEntryModel"
-)]
+#[cfg(feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSUpsertLeaderboardEntryModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BSUpsertLeaderboardEntryModel {
@@ -9,17 +7,17 @@ pub struct BSUpsertLeaderboardEntryModel {
         crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel_XocBeatGamesBeatmapLeaderboardEntryUpsertModel,
     >,
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSUpsertLeaderboardEntryModel"
-)]
+#[cfg(feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSUpsertLeaderboardEntryModel")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel {
+    for crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.Main.GraphQL.Models";
     const CLASS_NAME: &'static str = "BSUpsertLeaderboardEntryModel";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,16 +30,14 @@ for crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel {
     }
 }
 #[cfg(feature = "BeatSaber+Main+GraphQL+Models+BSUpsertLeaderboardEntryModel")]
-impl std::ops::Deref
-for crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel {
+impl std::ops::Deref for crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel {
     type Target = crate::OculusStudios::GraphQL::Client::GraphQLModel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatSaber+Main+GraphQL+Models+BSUpsertLeaderboardEntryModel")]
-impl std::ops::DerefMut
-for crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel {
+impl std::ops::DerefMut for crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -53,31 +49,30 @@ impl crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel {
     )]
     pub type XocBeatGamesBeatmapLeaderboardEntryUpsertModel = crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel_XocBeatGamesBeatmapLeaderboardEntryUpsertModel;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_XocBeatGamesBeatmapLeaderboardEntryUpsert(
@@ -86,8 +81,9 @@ impl crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel {
         quest_hook::libil2cpp::Gc<
             crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel_XocBeatGamesBeatmapLeaderboardEntryUpsertModel,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -117,7 +113,8 @@ impl crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel {
             crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel_XocBeatGamesBeatmapLeaderboardEntryUpsertModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -136,17 +133,15 @@ impl crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSUpsertLeaderboardEntryModel"
-)]
+#[cfg(feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSUpsertLeaderboardEntryModel")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel {
+    for crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -161,9 +156,8 @@ for crate::BeatSaber::Main::GraphQL::Models::BSUpsertLeaderboardEntryModel {
 #[derive(Debug)]
 pub struct BSUpsertLeaderboardEntryModel_XocBeatGamesBeatmapLeaderboardEntryUpsertModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
-    pub _ClientMutationId_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub _ClientMutationId_k__BackingField:
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(
     feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSUpsertLeaderboardEntryModel+XocBeatGamesBeatmapLeaderboardEntryUpsertModel"

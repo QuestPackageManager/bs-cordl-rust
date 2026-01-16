@@ -5,9 +5,8 @@ pub struct Compute_DT_EventArgs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub EventType: crate::TMPro::Compute_DistanceTransform_EventTypes,
     pub ProgressPercentage: f32,
-    pub Colors: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
-    >,
+    pub Colors:
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>>,
 }
 #[cfg(feature = "cordl_class_TMPro+Compute_DT_EventArgs")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::Compute_DT_EventArgs {
@@ -16,7 +15,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::Compute_DT_EventArgs {
     const NAMESPACE: &'static str = "TMPro";
     const CLASS_NAME: &'static str = "Compute_DT_EventArgs";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,8 +49,8 @@ impl crate::TMPro::Compute_DT_EventArgs {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_type, colors))?;
         Ok(__cordl_object.into())
@@ -59,8 +59,8 @@ impl crate::TMPro::Compute_DT_EventArgs {
         _cordl_type: crate::TMPro::Compute_DistanceTransform_EventTypes,
         progress: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_type, progress))?;
         Ok(__cordl_object.into())
@@ -72,33 +72,28 @@ impl crate::TMPro::Compute_DT_EventArgs {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::TMPro::Compute_DistanceTransform_EventTypes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::Color,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::TMPro::Compute_DistanceTransform_EventTypes,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type, colors))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type, colors))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_0(
@@ -106,9 +101,10 @@ impl crate::TMPro::Compute_DT_EventArgs {
         _cordl_type: crate::TMPro::Compute_DistanceTransform_EventTypes,
         progress: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::TMPro::Compute_DistanceTransform_EventTypes, f32),
@@ -123,9 +119,8 @@ impl crate::TMPro::Compute_DT_EventArgs {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type, progress))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type, progress))? };
         Ok(__cordl_ret.into())
     }
 }

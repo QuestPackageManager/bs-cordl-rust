@@ -1,16 +1,13 @@
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ConfiguredValueTaskAwaitable {
     pub _value: crate::System::Threading::Tasks::ValueTask,
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
+    for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Runtime.CompilerServices";
@@ -29,20 +26,16 @@ for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
+    for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -51,11 +44,10 @@ for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
+    for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -67,28 +59,24 @@ for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
+    for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
+    for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -100,11 +88,10 @@ for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
+    for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -123,8 +110,9 @@ impl crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -150,9 +138,10 @@ impl crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
         &mut self,
         value: crate::System::Threading::Tasks::ValueTask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::Tasks::ValueTask),
@@ -167,17 +156,16 @@ impl crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(
     feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable+ConfiguredValueTaskAwaiter"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter {
     pub _value: crate::System::Threading::Tasks::ValueTask,
 }

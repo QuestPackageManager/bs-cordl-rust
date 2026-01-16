@@ -6,37 +6,26 @@ pub struct FireEffect {
     pub _groupId: i32,
     pub _elementId: i32,
     pub _lightId: i32,
-    pub _flipBookPropertyBlockController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MaterialPropertyBlockController,
-    >,
-    pub _bloomPropertyBlockController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MaterialPropertyBlockController,
-    >,
+    pub _flipBookPropertyBlockController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MaterialPropertyBlockController>,
+    pub _bloomPropertyBlockController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MaterialPropertyBlockController>,
     pub _useEmissionColor: bool,
-    pub _privatePointLightPropertyBlockController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MaterialPropertyBlockController,
-    >,
-    pub _emissionTextureColorPropertyBlockController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MaterialPropertyBlockController,
-    >,
-    pub _bloomPrePassRenderer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer,
-    >,
+    pub _privatePointLightPropertyBlockController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MaterialPropertyBlockController>,
+    pub _emissionTextureColorPropertyBlockController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MaterialPropertyBlockController>,
+    pub _bloomPrePassRenderer:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer>,
     pub _bloomIntensityMultiplier: f32,
     pub _pointLightColor: crate::UnityEngine::Color,
     pub _contributeCustomLightColor: bool,
-    pub _customLightColorContribution: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ColorSO,
-    >,
-    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapCallbacksController,
-    >,
-    pub _lightWithIdManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LightWithIdManager,
-    >,
-    pub _lightColorBeatmapEventCallbackWrapper: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    >,
+    pub _customLightColorContribution: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _beatmapCallbacksController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCallbacksController>,
+    pub _lightWithIdManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIdManager>,
+    pub _lightColorBeatmapEventCallbackWrapper:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallbackWrapper>,
 }
 #[cfg(feature = "cordl_class_FireEffect")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FireEffect {
@@ -45,7 +34,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FireEffect {
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "FireEffect";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -76,9 +66,10 @@ impl crate::GlobalNamespace::FireEffect {
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorBeatmapEventData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -95,14 +86,13 @@ impl crate::GlobalNamespace::FireEffect {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (e))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (e))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -111,115 +101,110 @@ impl crate::GlobalNamespace::FireEffect {
         &mut self,
         currentAlpha: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("NotifyAlphaWasChanged")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(
+                        "NotifyAlphaWasChanged",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "NotifyAlphaWasChanged", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "NotifyAlphaWasChanged",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (currentAlpha))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (currentAlpha))? };
         Ok(__cordl_ret.into())
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDestroy(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDestroy", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDestroy",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetRenderersEnabled(
         &mut self,
         enabled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetRenderersEnabled")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "SetRenderersEnabled",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetRenderersEnabled", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetRenderersEnabled",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (enabled))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (enabled))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Start",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

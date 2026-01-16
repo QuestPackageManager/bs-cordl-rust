@@ -1,11 +1,10 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RemoveDrawInstanceIndicesJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct RemoveDrawInstanceIndicesJob {
     pub drawInstanceIndices: crate::Unity::Collections::NativeArray_1<i32>,
-    pub drawInstances: crate::Unity::Collections::NativeList_1<
-        crate::UnityEngine::Rendering::DrawInstance,
-    >,
+    pub drawInstances:
+        crate::Unity::Collections::NativeList_1<crate::UnityEngine::Rendering::DrawInstance>,
     pub rangeHash: crate::Unity::Collections::NativeParallelHashMap_2<
         crate::UnityEngine::Rendering::RangeKey,
         i32,
@@ -14,16 +13,15 @@ pub struct RemoveDrawInstanceIndicesJob {
         crate::UnityEngine::Rendering::DrawKey,
         i32,
     >,
-    pub drawRanges: crate::Unity::Collections::NativeList_1<
-        crate::UnityEngine::Rendering::DrawRange,
-    >,
-    pub drawBatches: crate::Unity::Collections::NativeList_1<
-        crate::UnityEngine::Rendering::DrawBatch,
-    >,
+    pub drawRanges:
+        crate::Unity::Collections::NativeList_1<crate::UnityEngine::Rendering::DrawRange>,
+    pub drawBatches:
+        crate::Unity::Collections::NativeList_1<crate::UnityEngine::Rendering::DrawBatch>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RemoveDrawInstanceIndicesJob")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
+    for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -42,18 +40,16 @@ for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RemoveDrawInstanceIndicesJob")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
+    for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -64,7 +60,8 @@ for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RemoveDrawInstanceIndicesJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
+    for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -78,22 +75,22 @@ for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RemoveDrawInstanceIndicesJob")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
+    for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RemoveDrawInstanceIndicesJob")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
+    for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -107,7 +104,8 @@ for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RemoveDrawInstanceIndicesJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
+    for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -118,34 +116,34 @@ for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
 }
 #[cfg(feature = "UnityEngine+Rendering+RemoveDrawInstanceIndicesJob")]
 impl crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
-    pub fn Execute(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Execute(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveDrawBatch(
         &mut self,
         key: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rendering::DrawKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -162,18 +160,18 @@ impl crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (key))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveDrawRange(
         &mut self,
         key: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rendering::RangeKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -190,22 +188,23 @@ impl crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (key))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+RemoveDrawInstanceIndicesJob")]
 impl AsRef<crate::Unity::Jobs::IJob>
-for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
+    for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob
+{
     fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+RemoveDrawInstanceIndicesJob")]
 impl AsMut<crate::Unity::Jobs::IJob>
-for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob {
+    for crate::UnityEngine::Rendering::RemoveDrawInstanceIndicesJob
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
         todo!()
     }

@@ -3,9 +3,7 @@
 #[derive(Debug)]
 pub struct RegexTree {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Root: quest_hook::libil2cpp::Gc<
-        crate::System::Text::RegularExpressions::RegexNode,
-    >,
+    pub Root: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexNode>,
     pub Caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub CapNumList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub CapTop: i32,
@@ -18,14 +16,14 @@ pub struct RegexTree {
     pub Options: crate::System::Text::RegularExpressions::RegexOptions,
 }
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexTree")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Text::RegularExpressions::RegexTree {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::RegularExpressions::RegexTree {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Text.RegularExpressions";
     const CLASS_NAME: &'static str = "RegexTree";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -53,9 +51,7 @@ impl std::ops::DerefMut for crate::System::Text::RegularExpressions::RegexTree {
 #[cfg(feature = "System+Text+RegularExpressions+RegexTree")]
 impl crate::System::Text::RegularExpressions::RegexTree {
     pub fn New(
-        root: quest_hook::libil2cpp::Gc<
-            crate::System::Text::RegularExpressions::RegexNode,
-        >,
+        root: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexNode>,
         caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
         capNumList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         capTop: i32,
@@ -67,20 +63,17 @@ impl crate::System::Text::RegularExpressions::RegexTree {
         >,
         options: crate::System::Text::RegularExpressions::RegexOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (root, caps, capNumList, capTop, capNames, capsList, options),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (root, caps, capNumList, capTop, capNames, capsList, options),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        root: quest_hook::libil2cpp::Gc<
-            crate::System::Text::RegularExpressions::RegexNode,
-        >,
+        root: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexNode>,
         caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
         capNumList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         capTop: i32,
@@ -92,58 +85,46 @@ impl crate::System::Text::RegularExpressions::RegexTree {
         >,
         options: crate::System::Text::RegularExpressions::RegexOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Text::RegularExpressions::RegexNode,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Text::RegularExpressions::RegexNode,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Hashtable,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<i32>,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Hashtable,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
-                            >,
-                            crate::System::Text::RegularExpressions::RegexOptions,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >(".ctor")
+                        >,
+                        crate::System::Text::RegularExpressions::RegexOptions,
+                    ), quest_hook::libil2cpp::Void, 7usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (root, caps, capNumList, capTop, capNames, capsList, options),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (root, caps, capNumList, capTop, capNames, capsList, options),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexTree")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Text::RegularExpressions::RegexTree {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Text::RegularExpressions::RegexTree {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

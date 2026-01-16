@@ -10,13 +10,15 @@ pub struct MetaQuestTouchProControllerProfile {
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+MetaQuestTouchProControllerProfile"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProControllerProfile {
+    for crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProControllerProfile
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.XR.OpenXR.Features.Interactions";
     const CLASS_NAME: &'static str = "MetaQuestTouchProControllerProfile";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -28,28 +30,24 @@ for crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProCon
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+XR+OpenXR+Features+Interactions+MetaQuestTouchProControllerProfile"
-)]
+#[cfg(feature = "UnityEngine+XR+OpenXR+Features+Interactions+MetaQuestTouchProControllerProfile")]
 impl std::ops::Deref
-for crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProControllerProfile {
+    for crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProControllerProfile
+{
     type Target = crate::UnityEngine::XR::OpenXR::Features::OpenXRInteractionFeature;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+XR+OpenXR+Features+Interactions+MetaQuestTouchProControllerProfile"
-)]
+#[cfg(feature = "UnityEngine+XR+OpenXR+Features+Interactions+MetaQuestTouchProControllerProfile")]
 impl std::ops::DerefMut
-for crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProControllerProfile {
+    for crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProControllerProfile
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+XR+OpenXR+Features+Interactions+MetaQuestTouchProControllerProfile"
-)]
+#[cfg(feature = "UnityEngine+XR+OpenXR+Features+Interactions+MetaQuestTouchProControllerProfile")]
 impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProControllerProfile {
     pub const aim: &'static str = "/input/aim/pose";
     pub const buttonA: &'static str = "/input/a/click";
@@ -88,12 +86,12 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProCo
     pub type QuestProTouchController = crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProControllerProfile_QuestProTouchController;
     pub fn GetDeviceLayoutName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -108,134 +106,124 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProCo
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnInstanceCreate(
-        &mut self,
-        instance: u64,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnInstanceCreate(&mut self, instance: u64) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u64), bool, 1usize>("OnInstanceCreate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnInstanceCreate", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnInstanceCreate",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (instance))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (instance))? };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterActionMapsWithRuntime(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("RegisterActionMapsWithRuntime")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "RegisterActionMapsWithRuntime",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterActionMapsWithRuntime", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RegisterActionMapsWithRuntime",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterDeviceLayout(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("RegisterDeviceLayout")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RegisterDeviceLayout")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterDeviceLayout", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RegisterDeviceLayout",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterDeviceLayout(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("UnregisterDeviceLayout")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "UnregisterDeviceLayout",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnregisterDeviceLayout", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnregisterDeviceLayout",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -243,7 +231,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProCo
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+MetaQuestTouchProControllerProfile"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProControllerProfile {
+    for crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProControllerProfile
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -258,99 +247,68 @@ for crate::UnityEngine::XR::OpenXR::Features::Interactions::MetaQuestTouchProCon
 #[derive(Debug)]
 pub struct MetaQuestTouchProControllerProfile_QuestProTouchController {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
-    pub _thumbstick_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    >,
-    pub _grip_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::AxisControl,
-    >,
-    pub _gripPressed_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _menu_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _primaryButton_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _primaryTouched_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _secondaryButton_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _secondaryTouched_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _trigger_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::AxisControl,
-    >,
-    pub _triggerPressed_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _triggerTouched_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _thumbstickClicked_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _thumbstickTouched_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _thumbrestTouched_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _devicePose_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::XR::OpenXR::Input::PoseControl,
-    >,
-    pub _pointer_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::XR::OpenXR::Input::PoseControl,
-    >,
-    pub _isTracked_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _trackingState_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::IntegerControl,
-    >,
-    pub _devicePosition_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    >,
-    pub _deviceRotation_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-    >,
-    pub _pointerPosition_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    >,
-    pub _pointerRotation_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-    >,
-    pub _haptic_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::XR::OpenXR::Input::HapticControl,
-    >,
-    pub _thumbrestForce_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::AxisControl,
-    >,
-    pub _stylusForce_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::AxisControl,
-    >,
-    pub _triggerCurl_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::AxisControl,
-    >,
-    pub _triggerSlide_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::AxisControl,
-    >,
-    pub _triggerProximity_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _thumbProximity_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _hapticTrigger_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::XR::OpenXR::Input::HapticControl,
-    >,
-    pub _hapticThumb_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::XR::OpenXR::Input::HapticControl,
-    >,
+    pub _thumbstick_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector2Control>,
+    pub _grip_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
+    pub _gripPressed_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _menu_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _primaryButton_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _primaryTouched_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _secondaryButton_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _secondaryTouched_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _trigger_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
+    pub _triggerPressed_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _triggerTouched_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _thumbstickClicked_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _thumbstickTouched_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _thumbrestTouched_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _devicePose_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::OpenXR::Input::PoseControl>,
+    pub _pointer_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::OpenXR::Input::PoseControl>,
+    pub _isTracked_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _trackingState_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::IntegerControl>,
+    pub _devicePosition_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
+    pub _deviceRotation_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::QuaternionControl>,
+    pub _pointerPosition_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
+    pub _pointerRotation_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::QuaternionControl>,
+    pub _haptic_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::OpenXR::Input::HapticControl>,
+    pub _thumbrestForce_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
+    pub _stylusForce_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
+    pub _triggerCurl_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
+    pub _triggerSlide_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
+    pub _triggerProximity_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _thumbProximity_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _hapticTrigger_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::OpenXR::Input::HapticControl>,
+    pub _hapticThumb_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::OpenXR::Input::HapticControl>,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+MetaQuestTouchProControllerProfile+QuestProTouchController"

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+ILayoutGroup")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct ILayoutGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::ILayoutGroup
     const NAMESPACE: &'static str = "UnityEngine.UI";
     const CLASS_NAME: &'static str = "ILayoutGroup";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -38,9 +39,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::ILayoutGroup {
 }
 #[cfg(feature = "UnityEngine+UI+ILayoutGroup")]
 impl crate::UnityEngine::UI::ILayoutGroup {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
@@ -54,15 +53,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::ILayoutGroup 
     }
 }
 #[cfg(feature = "UnityEngine+UI+ILayoutGroup")]
-impl AsRef<crate::UnityEngine::UI::ILayoutController>
-for crate::UnityEngine::UI::ILayoutGroup {
+impl AsRef<crate::UnityEngine::UI::ILayoutController> for crate::UnityEngine::UI::ILayoutGroup {
     fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutController {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+ILayoutGroup")]
-impl AsMut<crate::UnityEngine::UI::ILayoutController>
-for crate::UnityEngine::UI::ILayoutGroup {
+impl AsMut<crate::UnityEngine::UI::ILayoutController> for crate::UnityEngine::UI::ILayoutGroup {
     fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutController {
         unsafe { std::mem::transmute(self) }
     }

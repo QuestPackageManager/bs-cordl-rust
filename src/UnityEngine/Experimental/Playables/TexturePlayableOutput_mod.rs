@@ -1,12 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Playables+TexturePlayableOutput")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TexturePlayableOutput {
     pub m_Handle: crate::UnityEngine::Playables::PlayableOutputHandle,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Playables+TexturePlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
+    for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Experimental.Playables";
@@ -25,18 +26,16 @@ for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Playables+TexturePlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
+    for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,7 +46,8 @@ for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Playables+TexturePlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
+    for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -61,22 +61,22 @@ for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Playables+TexturePlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
+    for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Playables+TexturePlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
+    for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -90,7 +90,8 @@ for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Playables+TexturePlayableOutput")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
+    for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -103,42 +104,41 @@ for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
 impl crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
     pub fn GetHandle(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Playables::PlayableOutputHandle,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableOutputHandle> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::Playables::PlayableOutputHandle,
-                        0usize,
-                    >("GetHandle")
+                    .find_method::<(), crate::UnityEngine::Playables::PlayableOutputHandle, 0usize>(
+                        "GetHandle",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHandle", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHandle",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutputHandle = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutputHandle =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Playables+TexturePlayableOutput")]
 impl AsRef<crate::UnityEngine::Playables::IPlayableOutput>
-for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
+    for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput
+{
     fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayableOutput {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Playables+TexturePlayableOutput")]
 impl AsMut<crate::UnityEngine::Playables::IPlayableOutput>
-for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
+    for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayableOutput {
         todo!()
     }

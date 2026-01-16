@@ -6,13 +6,15 @@ pub struct EndoUtilities {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
+    for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Endo";
     const CLASS_NAME: &'static str = "EndoUtilities";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,7 +42,8 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilit
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
 impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
     #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
-    pub type MapPointCallback = crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback;
+    pub type MapPointCallback =
+        crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback;
     pub fn CalculateB(
         k: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -48,9 +51,10 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -75,9 +79,8 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (k, g, t))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger> =
+            unsafe { cordl_method_info.invoke_unchecked((), (k, g, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn DecomposeScalar(
@@ -92,33 +95,27 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::EC::Endo::ScalarSplitParameters,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::BigInteger,
-                            >,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Org::BouncyCastle::Math::BigInteger,
-                                >,
-                            >,
+                            crate::Org::BouncyCastle::Math::EC::Endo::ScalarSplitParameters,
                         >,
-                        2usize,
-                    >("DecomposeScalar")
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                        >,
+                    >, 2usize>("DecomposeScalar")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DecomposeScalar", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DecomposeScalar",
+                            2usize
                         )
                     })
             });
@@ -137,9 +134,10 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -163,43 +161,40 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::ECPoint,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (endomorphism, p))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint> =
+            unsafe { cordl_method_info.invoke_unchecked((), (endomorphism, p))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
+impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -207,29 +202,26 @@ for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EndoUtilities_MapPointCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_endomorphism: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
-    >,
+    pub m_endomorphism:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism>,
     pub m_point: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
+    for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Endo";
     const CLASS_NAME: &'static str = "EndoUtilities/MapPointCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -242,8 +234,7 @@ for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
+impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -251,7 +242,8 @@ for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
+    for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -267,33 +259,30 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
             crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::EC::Endo::EndoPreCompInfo,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("CheckExisting")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Math::EC::Endo::EndoPreCompInfo,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
+                        >,
+                    ), bool, 2usize>("CheckExisting")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckExisting", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckExisting",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (existingEndo, endomorphism))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (existingEndo, endomorphism))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -302,8 +291,8 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
         >,
         point: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (endomorphism, point))?;
         Ok(__cordl_object.into())
@@ -314,28 +303,24 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
             crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
-                        >,
-                        1usize,
-                    >("Precompute")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+                    >, 1usize>("Precompute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Precompute", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Precompute",
+                            1usize
                         )
                     })
             });
@@ -351,41 +336,35 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
         >,
         point: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Math::EC::ECPoint,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (endomorphism, point))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (endomorphism, point))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
+    for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -395,19 +374,17 @@ for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
 impl AsRef<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
-for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
-    fn as_ref(
-        &self,
-    ) -> &crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
+    for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback
+{
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
 impl AsMut<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
-for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
+    for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback
+{
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
         unsafe { std::mem::transmute(self) }
     }
 }

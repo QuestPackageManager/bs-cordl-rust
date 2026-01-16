@@ -1,8 +1,6 @@
-#[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum InternalMemberValueE {
     #[default]
     Empty = 0i32,
@@ -11,11 +9,10 @@ pub enum InternalMemberValueE {
     Null = 4i32,
     Reference = 3i32,
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE {
+    for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Runtime.Serialization.Formatters.Binary";
@@ -34,20 +31,16 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberVal
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE {
+    for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -56,11 +49,10 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberVal
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE {
+    for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -72,28 +64,24 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberVal
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE {
+    for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE {
+    for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

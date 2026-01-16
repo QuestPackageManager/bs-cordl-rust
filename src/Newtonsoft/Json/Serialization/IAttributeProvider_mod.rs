@@ -1,18 +1,20 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+IAttributeProvider")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IAttributeProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+IAttributeProvider")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Newtonsoft::Json::Serialization::IAttributeProvider {
+    for crate::Newtonsoft::Json::Serialization::IAttributeProvider
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Serialization";
     const CLASS_NAME: &'static str = "IAttributeProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -50,9 +52,10 @@ impl crate::Newtonsoft::Json::Serialization::IAttributeProvider {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, bool),
@@ -75,9 +78,7 @@ impl crate::Newtonsoft::Json::Serialization::IAttributeProvider {
             crate::System::Collections::Generic::IList_1<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (attributeType, inherit))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (attributeType, inherit))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAttributes__cordl_bool0(
@@ -90,24 +91,22 @@ impl crate::Newtonsoft::Json::Serialization::IAttributeProvider {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-                            >,
+                    .find_method::<(bool), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
                         >,
-                        1usize,
-                    >("GetAttributes")
+                    >, 1usize>("GetAttributes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetAttributes", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetAttributes",
+                            1usize
                         )
                     })
             });
@@ -118,15 +117,14 @@ impl crate::Newtonsoft::Json::Serialization::IAttributeProvider {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (inherit))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+IAttributeProvider")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Newtonsoft::Json::Serialization::IAttributeProvider {
+    for crate::Newtonsoft::Json::Serialization::IAttributeProvider
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTelemetry
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetry";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -51,9 +52,10 @@ impl crate::GlobalNamespace::OVRTelemetry {
     pub fn AddPlayModeOrigin(
         marker: crate::GlobalNamespace::OVRTelemetryMarker,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRTelemetryMarker),
@@ -68,17 +70,17 @@ impl crate::GlobalNamespace::OVRTelemetry {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = unsafe {
-            cordl_method_info.invoke_unchecked((), (marker))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker =
+            unsafe { cordl_method_info.invoke_unchecked((), (marker))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddSDKVersionAnnotation(
         marker: crate::GlobalNamespace::OVRTelemetryMarker,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRTelemetryMarker),
@@ -93,17 +95,17 @@ impl crate::GlobalNamespace::OVRTelemetry {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = unsafe {
-            cordl_method_info.invoke_unchecked((), (marker))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker =
+            unsafe { cordl_method_info.invoke_unchecked((), (marker))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetPlayModeOrigin() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetPlayModeOrigin(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -118,19 +120,18 @@ impl crate::GlobalNamespace::OVRTelemetry {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTelemetrySettingString(
         value: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
@@ -145,18 +146,18 @@ impl crate::GlobalNamespace::OVRTelemetry {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (value))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendEvent(
         markerId: i32,
         result: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::GlobalNamespace::Qpl_OVRPlugin_ResultType),
@@ -171,9 +172,8 @@ impl crate::GlobalNamespace::OVRTelemetry {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (markerId, result))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (markerId, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn Start(
@@ -181,9 +181,10 @@ impl crate::GlobalNamespace::OVRTelemetry {
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, i64),
@@ -206,9 +207,10 @@ impl crate::GlobalNamespace::OVRTelemetry {
     pub fn get_Client() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTelemetry_TelemetryClient>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -231,16 +233,18 @@ impl crate::GlobalNamespace::OVRTelemetry {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsActive() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsActive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsActive", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsActive",
+                            0usize
                         )
                     })
             });
@@ -258,14 +262,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetry 
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+MarkerPoint")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRTelemetry_MarkerPoint {
     pub _NameHandle_k__BackingField: i32,
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+MarkerPoint")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -284,18 +287,14 @@ for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+MarkerPoint")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -305,8 +304,7 @@ for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+MarkerPoint")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -319,23 +317,19 @@ for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+MarkerPoint")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+MarkerPoint")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -349,7 +343,8 @@ for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+MarkerPoint")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
+    for crate::GlobalNamespace::OVRTelemetry_MarkerPoint
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -360,34 +355,34 @@ for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
 }
 #[cfg(feature = "OVRTelemetry+MarkerPoint")]
 impl crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -402,22 +397,23 @@ impl crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (name))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_NameHandle(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_NameHandle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_NameHandle", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_NameHandle",
+                            0usize
                         )
                     })
             });
@@ -426,15 +422,13 @@ impl crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     }
 }
 #[cfg(feature = "OVRTelemetry+MarkerPoint")]
-impl AsRef<crate::System::IDisposable>
-for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "OVRTelemetry+MarkerPoint")]
-impl AsMut<crate::System::IDisposable>
-for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
@@ -446,14 +440,14 @@ pub struct OVRTelemetry_MarkersAttribute {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+MarkersAttribute")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetry_MarkersAttribute {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTelemetry_MarkersAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetry/MarkersAttribute";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -481,37 +475,35 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetry_MarkersAttribut
 #[cfg(feature = "OVRTelemetry+MarkersAttribute")]
 impl crate::GlobalNamespace::OVRTelemetry_MarkersAttribute {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+MarkersAttribute")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRTelemetry_MarkersAttribute {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetry_MarkersAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -527,13 +519,15 @@ pub struct OVRTelemetry_NullTelemetryClient {
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+NullTelemetryClient")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
+    for crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetry/NullTelemetryClient";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -565,53 +559,45 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nameHandle: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        bool,
-                        2usize,
-                    >("CreateMarkerHandle")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), bool, 2usize>("CreateMarkerHandle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateMarkerHandle", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateMarkerHandle",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (name, nameHandle))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (name, nameHandle))? };
         Ok(__cordl_ret.into())
     }
-    pub fn DestroyMarkerHandle(
-        &mut self,
-        nameHandle: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn DestroyMarkerHandle(&mut self, nameHandle: i32) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("DestroyMarkerHandle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DestroyMarkerHandle", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DestroyMarkerHandle",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (nameHandle))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (nameHandle))? };
         Ok(__cordl_ret.into())
     }
     pub fn MarkerAnnotation_Il2CppString1(
@@ -621,38 +607,31 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
         annotationValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerAnnotation")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerAnnotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerAnnotation", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerAnnotation",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, annotationKey, annotationValue, instanceKey),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (markerId, annotationKey, annotationValue, instanceKey),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -663,33 +642,28 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
         value: crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerAnnotation")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerAnnotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerAnnotation", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerAnnotation",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (markerId, key, value, instanceKey))?
+            cordl_method_info.invoke_unchecked(self, (markerId, key, value, instanceKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -700,34 +674,29 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
-                            i32,
-                            i64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerEnd")
+                    .find_method::<(
+                        i32,
+                        crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
+                        i32,
+                        i64,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerEnd")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerEnd", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerEnd",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, resultTypeId, instanceKey, timestampMs),
-                )?
+                .invoke_unchecked(self, (markerId, resultTypeId, instanceKey, timestampMs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -738,29 +707,26 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32, i64),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerPointCached")
+                    .find_method::<(i32, i32, i32, i64), quest_hook::libil2cpp::Void, 4usize>(
+                        "MarkerPointCached",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerPointCached", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerPointCached",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, nameHandle, instanceKey, timestampMs),
-                )?
+                .invoke_unchecked(self, (markerId, nameHandle, instanceKey, timestampMs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -773,47 +739,40 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            i32,
-                            i64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("MarkerPoint")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                        i32,
+                        i64,
+                    ), quest_hook::libil2cpp::Void, 6usize>("MarkerPoint")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerPoint", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerPoint",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        markerId,
-                        name,
-                        annotations,
-                        annotationCount,
-                        instanceKey,
-                        timestampMs,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    markerId,
+                    name,
+                    annotations,
+                    annotationCount,
+                    instanceKey,
+                    timestampMs,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -824,33 +783,28 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerPoint")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i64,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerPoint")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerPoint", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerPoint",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (markerId, name, instanceKey, timestampMs))?
+            cordl_method_info.invoke_unchecked(self, (markerId, name, instanceKey, timestampMs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -861,27 +815,23 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
         timestampMs: i64,
         joinId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerStart")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i64,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerStart")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerStart", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerStart",
+                            4usize
                         )
                     })
             });
@@ -892,37 +842,37 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+NullTelemetryClient")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
+    for crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -938,13 +888,15 @@ pub struct OVRTelemetry_QPLTelemetryClient {
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+QPLTelemetryClient")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
+    for crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetry/QPLTelemetryClient";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -976,53 +928,45 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nameHandle: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        bool,
-                        2usize,
-                    >("CreateMarkerHandle")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), bool, 2usize>("CreateMarkerHandle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateMarkerHandle", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateMarkerHandle",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (name, nameHandle))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (name, nameHandle))? };
         Ok(__cordl_ret.into())
     }
-    pub fn DestroyMarkerHandle(
-        &mut self,
-        nameHandle: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn DestroyMarkerHandle(&mut self, nameHandle: i32) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("DestroyMarkerHandle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DestroyMarkerHandle", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DestroyMarkerHandle",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (nameHandle))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (nameHandle))? };
         Ok(__cordl_ret.into())
     }
     pub fn MarkerAnnotation_Il2CppString0(
@@ -1032,38 +976,31 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
         annotationValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerAnnotation")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerAnnotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerAnnotation", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerAnnotation",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, annotationKey, annotationValue, instanceKey),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (markerId, annotationKey, annotationValue, instanceKey),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1074,33 +1011,28 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
         value: crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerAnnotation")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerAnnotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerAnnotation", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerAnnotation",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (markerId, key, value, instanceKey))?
+            cordl_method_info.invoke_unchecked(self, (markerId, key, value, instanceKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1111,34 +1043,29 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
-                            i32,
-                            i64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerEnd")
+                    .find_method::<(
+                        i32,
+                        crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
+                        i32,
+                        i64,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerEnd")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerEnd", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerEnd",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, resultTypeId, instanceKey, timestampMs),
-                )?
+                .invoke_unchecked(self, (markerId, resultTypeId, instanceKey, timestampMs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1149,29 +1076,26 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32, i64),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerPointCached")
+                    .find_method::<(i32, i32, i32, i64), quest_hook::libil2cpp::Void, 4usize>(
+                        "MarkerPointCached",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerPointCached", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerPointCached",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, nameHandle, instanceKey, timestampMs),
-                )?
+                .invoke_unchecked(self, (markerId, nameHandle, instanceKey, timestampMs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1184,47 +1108,40 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            i32,
-                            i64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("MarkerPoint")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                        i32,
+                        i64,
+                    ), quest_hook::libil2cpp::Void, 6usize>("MarkerPoint")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerPoint", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerPoint",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        markerId,
-                        name,
-                        annotations,
-                        annotationCount,
-                        instanceKey,
-                        timestampMs,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    markerId,
+                    name,
+                    annotations,
+                    annotationCount,
+                    instanceKey,
+                    timestampMs,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1235,33 +1152,28 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerPoint")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i64,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerPoint")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerPoint", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerPoint",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (markerId, name, instanceKey, timestampMs))?
+            cordl_method_info.invoke_unchecked(self, (markerId, name, instanceKey, timestampMs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1272,27 +1184,23 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
         timestampMs: i64,
         joinId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerStart")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i64,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerStart")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerStart", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerStart",
+                            4usize
                         )
                     })
             });
@@ -1303,37 +1211,35 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+QPLTelemetryClient")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1348,14 +1254,14 @@ pub struct OVRTelemetry_TelemetryClient {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+TelemetryClient")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRTelemetry/TelemetryClient";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1387,53 +1293,45 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nameHandle: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        bool,
-                        2usize,
-                    >("CreateMarkerHandle")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), bool, 2usize>("CreateMarkerHandle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateMarkerHandle", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateMarkerHandle",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (name, nameHandle))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (name, nameHandle))? };
         Ok(__cordl_ret.into())
     }
-    pub fn DestroyMarkerHandle(
-        &mut self,
-        nameHandle: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn DestroyMarkerHandle(&mut self, nameHandle: i32) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("DestroyMarkerHandle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DestroyMarkerHandle", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DestroyMarkerHandle",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (nameHandle))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (nameHandle))? };
         Ok(__cordl_ret.into())
     }
     pub fn MarkerAnnotation_Il2CppObject_i32_5(
@@ -1444,39 +1342,38 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         count: i32,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("MarkerAnnotation")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("MarkerAnnotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerAnnotation", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerAnnotation",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, annotationKey, annotationValues, count, instanceKey),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    markerId,
+                    annotationKey,
+                    annotationValues,
+                    count,
+                    instanceKey,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1488,39 +1385,38 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         count: i32,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("MarkerAnnotation")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("MarkerAnnotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerAnnotation", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerAnnotation",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, annotationKey, annotationValues, count, instanceKey),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    markerId,
+                    annotationKey,
+                    annotationValues,
+                    count,
+                    instanceKey,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1532,39 +1428,38 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         count: i32,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("MarkerAnnotation")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("MarkerAnnotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerAnnotation", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerAnnotation",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, annotationKey, annotationValues, count, instanceKey),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    markerId,
+                    annotationKey,
+                    annotationValues,
+                    count,
+                    instanceKey,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1576,39 +1471,38 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         count: i32,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("MarkerAnnotation")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("MarkerAnnotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerAnnotation", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerAnnotation",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, annotationKey, annotationValues, count, instanceKey),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    markerId,
+                    annotationKey,
+                    annotationValues,
+                    count,
+                    instanceKey,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1619,38 +1513,31 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         annotationValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerAnnotation")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerAnnotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerAnnotation", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerAnnotation",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, annotationKey, annotationValue, instanceKey),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (markerId, annotationKey, annotationValue, instanceKey),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1661,33 +1548,28 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         value: crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerAnnotation")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerAnnotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerAnnotation", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerAnnotation",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (markerId, key, value, instanceKey))?
+            cordl_method_info.invoke_unchecked(self, (markerId, key, value, instanceKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1698,36 +1580,31 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         annotationValue: bool,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerAnnotation")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerAnnotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerAnnotation", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerAnnotation",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, annotationKey, annotationValue, instanceKey),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (markerId, annotationKey, annotationValue, instanceKey),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1738,36 +1615,31 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         annotationValue: f64,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f64,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerAnnotation")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f64,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerAnnotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerAnnotation", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerAnnotation",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, annotationKey, annotationValue, instanceKey),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (markerId, annotationKey, annotationValue, instanceKey),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1778,36 +1650,31 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         annotationValue: i64,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i64,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerAnnotation")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i64,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerAnnotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerAnnotation", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerAnnotation",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, annotationKey, annotationValue, instanceKey),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (markerId, annotationKey, annotationValue, instanceKey),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1818,34 +1685,29 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
-                            i32,
-                            i64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerEnd")
+                    .find_method::<(
+                        i32,
+                        crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
+                        i32,
+                        i64,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerEnd")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerEnd", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerEnd",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, resultTypeId, instanceKey, timestampMs),
-                )?
+                .invoke_unchecked(self, (markerId, resultTypeId, instanceKey, timestampMs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1856,29 +1718,26 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32, i64),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerPointCached")
+                    .find_method::<(i32, i32, i32, i64), quest_hook::libil2cpp::Void, 4usize>(
+                        "MarkerPointCached",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerPointCached", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerPointCached",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (markerId, nameHandle, instanceKey, timestampMs),
-                )?
+                .invoke_unchecked(self, (markerId, nameHandle, instanceKey, timestampMs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1891,47 +1750,40 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            i32,
-                            i64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("MarkerPoint")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                        i32,
+                        i64,
+                    ), quest_hook::libil2cpp::Void, 6usize>("MarkerPoint")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerPoint", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerPoint",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        markerId,
-                        name,
-                        annotations,
-                        annotationCount,
-                        instanceKey,
-                        timestampMs,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    markerId,
+                    name,
+                    annotations,
+                    annotationCount,
+                    instanceKey,
+                    timestampMs,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1942,33 +1794,28 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerPoint")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i64,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerPoint")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerPoint", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerPoint",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (markerId, name, instanceKey, timestampMs))?
+            cordl_method_info.invoke_unchecked(self, (markerId, name, instanceKey, timestampMs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1979,27 +1826,23 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         timestampMs: i64,
         joinId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("MarkerStart")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i64,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 4usize>("MarkerStart")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkerStart", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkerStart",
+                            4usize
                         )
                     })
             });
@@ -2010,37 +1853,35 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+TelemetryClient")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

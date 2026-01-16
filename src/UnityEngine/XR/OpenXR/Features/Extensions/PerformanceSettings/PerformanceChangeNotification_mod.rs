@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Extensions+PerformanceSettings+PerformanceChangeNotification"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PerformanceChangeNotification {
     pub domain: crate::UnityEngine::XR::OpenXR::Features::Extensions::PerformanceSettings::PerformanceDomain,
     pub subDomain: crate::UnityEngine::XR::OpenXR::Features::Extensions::PerformanceSettings::PerformanceSubDomain,

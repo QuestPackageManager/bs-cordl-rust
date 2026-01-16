@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::PanelAnimation {
     const NAMESPACE: &'static str = "HMUI";
     const CLASS_NAME: &'static str = "PanelAnimation";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,81 +44,60 @@ impl crate::HMUI::PanelAnimation {
         duration: f32,
         canvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
         parentCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
-        scaleXAnimationCurve: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AnimationCurve,
-        >,
-        scaleYAnimationCurve: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AnimationCurve,
-        >,
-        alphaAnimationCurve: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AnimationCurve,
-        >,
-        parentAlphaAnimationCurve: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AnimationCurve,
-        >,
+        scaleXAnimationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+        scaleYAnimationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+        alphaAnimationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+        parentAlphaAnimationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            f32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::AnimationCurve,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::AnimationCurve,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::AnimationCurve,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::AnimationCurve,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Action>,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::IEnumerator,
-                        >,
-                        8usize,
-                    >("AnimationCoroutine")
+                    .find_method::<(
+                        f32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>, 8usize>(
+                        "AnimationCoroutine",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AnimationCoroutine", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AnimationCoroutine",
+                            8usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEnumerator,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        duration,
-                        canvasGroup,
-                        parentCanvasGroup,
-                        scaleXAnimationCurve,
-                        scaleYAnimationCurve,
-                        alphaAnimationCurve,
-                        parentAlphaAnimationCurve,
-                        finishedCallback,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    duration,
+                    canvasGroup,
+                    parentCanvasGroup,
+                    scaleXAnimationCurve,
+                    scaleYAnimationCurve,
+                    alphaAnimationCurve,
+                    parentAlphaAnimationCurve,
+                    finishedCallback,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -127,91 +107,71 @@ impl crate::HMUI::PanelAnimation {
         canvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
         parentCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
         duration: f32,
-        scaleXAnimationCurve: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AnimationCurve,
-        >,
-        scaleYAnimationCurve: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AnimationCurve,
-        >,
-        alphaAnimationCurve: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AnimationCurve,
-        >,
-        parentAlphaAnimationCurve: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AnimationCurve,
-        >,
+        scaleXAnimationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+        scaleYAnimationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+        alphaAnimationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+        parentAlphaAnimationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::AnimationCurve,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::AnimationCurve,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::AnimationCurve,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::AnimationCurve,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Action>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        8usize,
-                    >("StartAnimation")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+                        f32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    ), quest_hook::libil2cpp::Void, 8usize>("StartAnimation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StartAnimation", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "StartAnimation",
+                            8usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        canvasGroup,
-                        parentCanvasGroup,
-                        duration,
-                        scaleXAnimationCurve,
-                        scaleYAnimationCurve,
-                        alphaAnimationCurve,
-                        parentAlphaAnimationCurve,
-                        finishedCallback,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    canvasGroup,
+                    parentCanvasGroup,
+                    duration,
+                    scaleXAnimationCurve,
+                    scaleYAnimationCurve,
+                    alphaAnimationCurve,
+                    parentAlphaAnimationCurve,
+                    finishedCallback,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

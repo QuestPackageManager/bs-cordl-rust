@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+ExecutionContextSwitcher")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ExecutionContextSwitcher {
     pub outerEC: crate::System::Threading::ExecutionContext_Reader,
     pub outerECBelongsToScope: bool,
@@ -8,8 +8,7 @@ pub struct ExecutionContextSwitcher {
     pub thread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
 }
 #[cfg(feature = "cordl_class_System+Threading+ExecutionContextSwitcher")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Threading::ExecutionContextSwitcher {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::ExecutionContextSwitcher {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Threading";
@@ -28,18 +27,14 @@ for crate::System::Threading::ExecutionContextSwitcher {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+ExecutionContextSwitcher")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Threading::ExecutionContextSwitcher {
+unsafe impl quest_hook::libil2cpp::Argument for crate::System::Threading::ExecutionContextSwitcher {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -50,7 +45,8 @@ for crate::System::Threading::ExecutionContextSwitcher {
 }
 #[cfg(feature = "cordl_class_System+Threading+ExecutionContextSwitcher")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Threading::ExecutionContextSwitcher {
+    for crate::System::Threading::ExecutionContextSwitcher
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -63,23 +59,19 @@ for crate::System::Threading::ExecutionContextSwitcher {
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+ExecutionContextSwitcher")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Threading::ExecutionContextSwitcher {
+unsafe impl quest_hook::libil2cpp::Returned for crate::System::Threading::ExecutionContextSwitcher {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+ExecutionContextSwitcher")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Threading::ExecutionContextSwitcher {
+unsafe impl quest_hook::libil2cpp::Return for crate::System::Threading::ExecutionContextSwitcher {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -93,7 +85,8 @@ for crate::System::Threading::ExecutionContextSwitcher {
 }
 #[cfg(feature = "cordl_class_System+Threading+ExecutionContextSwitcher")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Threading::ExecutionContextSwitcher {
+    for crate::System::Threading::ExecutionContextSwitcher
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -104,38 +97,39 @@ for crate::System::Threading::ExecutionContextSwitcher {
 }
 #[cfg(feature = "System+Threading+ExecutionContextSwitcher")]
 impl crate::System::Threading::ExecutionContextSwitcher {
-    pub fn Undo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Undo(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Undo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Undo",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Undo",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UndoNoThrow(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("UndoNoThrow")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UndoNoThrow", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UndoNoThrow",
+                            0usize
                         )
                     })
             });

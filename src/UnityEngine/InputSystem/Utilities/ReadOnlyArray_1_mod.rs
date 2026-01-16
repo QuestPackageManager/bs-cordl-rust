@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ReadOnlyArray_1<TValue: quest_hook::libil2cpp::Type> {
     pub m_Array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
     pub m_StartIndex: i32,
@@ -9,26 +9,25 @@ pub struct ReadOnlyArray_1<TValue: quest_hook::libil2cpp::Type> {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
     const CLASS_NAME: &'static str = "ReadOnlyArray`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "UnityEngine.InputSystem.Utilities",
-                        "ReadOnlyArray`1",
-                    )
-                    .unwrap()
-                    .make_generic::<(TValue)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find(
+                "UnityEngine.InputSystem.Utilities",
+                "ReadOnlyArray`1",
+            )
+            .unwrap()
+            .make_generic::<(TValue)>()
+            .unwrap()
+            .unwrap()
+        })
     }
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
@@ -44,18 +43,16 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -66,7 +63,8 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -80,22 +78,22 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -109,7 +107,8 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -119,25 +118,27 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
+impl<TValue: quest_hook::libil2cpp::Type>
+    crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
     #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
-    pub type Enumerator = crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<
-        TValue,
-    >;
+    pub type Enumerator =
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>;
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>,
     >
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -164,12 +165,15 @@ impl<
         predicate: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<TValue>>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Predicate_1<TValue>>),
@@ -184,37 +188,34 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (predicate))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (predicate))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IEnumerable_TValue__GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<TValue>>,
     >
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-                        >,
-                        0usize,
-                    >("System.Collections.Generic.IEnumerable<TValue>.GetEnumerator")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerator_1<TValue>,
+                    >, 0usize>(
+                        "System.Collections.Generic.IEnumerable<TValue>.GetEnumerator"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            <Self as quest_hook::libil2cpp::Type>::class(),
                             "System.Collections.Generic.IEnumerable<TValue>.GetEnumerator",
                             0usize
                         )
@@ -231,12 +232,15 @@ impl<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     >
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -253,9 +257,8 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEnumerator,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToArray(
@@ -264,12 +267,15 @@ impl<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
     >
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -286,9 +292,8 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<TValue>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray0(
@@ -296,12 +301,15 @@ impl<
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -318,9 +326,8 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (array))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_1(
@@ -330,52 +337,53 @@ impl<
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<TValue>,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (array, index, length))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (array, index, length))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Count", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Count",
+                            0usize
                         )
                     })
             });
@@ -384,25 +392,27 @@ impl<
     }
     pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<TValue>
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), TValue, 1usize>("get_Item")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Item", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Item",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: TValue = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: TValue = unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
@@ -411,12 +421,15 @@ impl<
         crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>,
     >
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -435,48 +448,43 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            TValue,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> =
+            unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerable_1<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
+impl<TValue: quest_hook::libil2cpp::Type>
+    AsRef<crate::System::Collections::Generic::IEnumerable_1<TValue>>
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
     fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TValue> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerable_1<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TValue> {
+impl<TValue: quest_hook::libil2cpp::Type>
+    AsMut<crate::System::Collections::Generic::IEnumerable_1<TValue>>
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<TValue> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IReadOnlyCollection_1<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<TValue> {
+impl<TValue: quest_hook::libil2cpp::Type>
+    AsRef<crate::System::Collections::Generic::IReadOnlyCollection_1<TValue>>
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<TValue> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IReadOnlyCollection_1<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
+impl<TValue: quest_hook::libil2cpp::Type>
+    AsMut<crate::System::Collections::Generic::IReadOnlyCollection_1<TValue>>
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<TValue> {
@@ -484,44 +492,42 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IReadOnlyList_1<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
+impl<TValue: quest_hook::libil2cpp::Type>
+    AsRef<crate::System::Collections::Generic::IReadOnlyList_1<TValue>>
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
     fn as_ref(&self) -> &crate::System::Collections::Generic::IReadOnlyList_1<TValue> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IReadOnlyList_1<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IReadOnlyList_1<TValue> {
+impl<TValue: quest_hook::libil2cpp::Type>
+    AsMut<crate::System::Collections::Generic::IReadOnlyList_1<TValue>>
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IReadOnlyList_1<TValue> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>
+{
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         todo!()
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ReadOnlyArray_1_Enumerator<TValue: quest_hook::libil2cpp::Type> {
     pub m_Array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
     pub m_IndexStart: i32,
@@ -529,30 +535,27 @@ pub struct ReadOnlyArray_1_Enumerator<TValue: quest_hook::libil2cpp::Type> {
     pub m_Index: i32,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
     const CLASS_NAME: &'static str = "ReadOnlyArray`1/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "UnityEngine.InputSystem.Utilities",
-                        "ReadOnlyArray`1/Enumerator",
-                    )
-                    .unwrap()
-                    .make_generic::<(TValue)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find(
+                "UnityEngine.InputSystem.Utilities",
+                "ReadOnlyArray`1/Enumerator",
+            )
+            .unwrap()
+            .make_generic::<(TValue)>()
+            .unwrap()
+            .unwrap()
+        })
     }
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
@@ -568,20 +571,16 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValu
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -590,11 +589,10 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValu
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -606,28 +604,24 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValu
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -639,11 +633,10 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValu
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -653,49 +646,54 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValu
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+impl<TValue: quest_hook::libil2cpp::Type>
+    crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>
+{
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("MoveNext")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MoveNext", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MoveNext",
+                            0usize
                         )
                     })
             });
@@ -704,39 +702,43 @@ impl<
     }
     pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reset",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -751,9 +753,8 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -763,105 +764,106 @@ impl<
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<TValue>,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (array, index, length))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (array, index, length))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<TValue>
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), TValue, 0usize>("get_Current")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Current", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Current",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: TValue = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: TValue = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerator_1<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
+impl<TValue: quest_hook::libil2cpp::Type>
+    AsRef<crate::System::Collections::Generic::IEnumerator_1<TValue>>
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>
+{
     fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<TValue> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerator_1<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<TValue> {
+impl<TValue: quest_hook::libil2cpp::Type>
+    AsMut<crate::System::Collections::Generic::IEnumerator_1<TValue>>
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>
+{
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<TValue> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>
+{
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>
+{
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
-for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
+    for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue>
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }

@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::Encodi
     const NAMESPACE: &'static str = "System.Globalization";
     const CLASS_NAME: &'static str = "EncodingTable";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,34 +42,29 @@ impl crate::System::Globalization::EncodingTable {
     pub fn ENC(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cp: u16,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Globalization::InternalEncodingDataItem,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::InternalEncodingDataItem> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            u16,
-                        ),
-                        crate::System::Globalization::InternalEncodingDataItem,
-                        2usize,
-                    >("ENC")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        u16,
+                    ), crate::System::Globalization::InternalEncodingDataItem, 2usize>(
+                        "ENC"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "ENC",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ENC",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Globalization::InternalEncodingDataItem = unsafe {
-            cordl_method_info.invoke_unchecked((), (name, cp))?
-        };
+        let __cordl_ret: crate::System::Globalization::InternalEncodingDataItem =
+            unsafe { cordl_method_info.invoke_unchecked((), (name, cp))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCodePageDataItem(
@@ -76,9 +72,10 @@ impl crate::System::Globalization::EncodingTable {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::CodePageDataItem>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
@@ -95,17 +92,17 @@ impl crate::System::Globalization::EncodingTable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Globalization::CodePageDataItem,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (codepage))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Globalization::CodePageDataItem> =
+            unsafe { cordl_method_info.invoke_unchecked((), (codepage))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCodePageFromName(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -120,22 +117,22 @@ impl crate::System::Globalization::EncodingTable {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (name))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNumEncodingItems() -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetNumEncodingItems")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetNumEncodingItems", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetNumEncodingItems",
+                            0usize
                         )
                     })
             });
@@ -147,44 +144,40 @@ impl crate::System::Globalization::EncodingTable {
         fcp: u16,
         names: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         flags: u32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Globalization::InternalCodePageDataItem,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::InternalCodePageDataItem> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            u16,
-                            u16,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            u32,
-                        ),
-                        crate::System::Globalization::InternalCodePageDataItem,
-                        4usize,
-                    >("MapCodePageDataItem")
+                    .find_static_method::<(
+                        u16,
+                        u16,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        u32,
+                    ), crate::System::Globalization::InternalCodePageDataItem, 4usize>(
+                        "MapCodePageDataItem",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MapCodePageDataItem", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MapCodePageDataItem",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Globalization::InternalCodePageDataItem = unsafe {
-            cordl_method_info.invoke_unchecked((), (cp, fcp, names, flags))?
-        };
+        let __cordl_ret: crate::System::Globalization::InternalCodePageDataItem =
+            unsafe { cordl_method_info.invoke_unchecked((), (cp, fcp, names, flags))? };
         Ok(__cordl_ret.into())
     }
     pub fn internalGetCodePageFromName(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -199,9 +192,7 @@ impl crate::System::Globalization::EncodingTable {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (name))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
 }

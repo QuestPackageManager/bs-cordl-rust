@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_IAudioTimeSource")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IAudioTimeSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IAudioTimeSo
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "IAudioTimeSource";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,22 +41,22 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IAudioTimeSource {
 impl crate::GlobalNamespace::IAudioTimeSource {
     #[cfg(feature = "IAudioTimeSource+State")]
     pub type State = crate::GlobalNamespace::IAudioTimeSource_State;
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_isReady(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isReady")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isReady", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isReady",
+                            0usize
                         )
                     })
             });
@@ -63,16 +64,18 @@ impl crate::GlobalNamespace::IAudioTimeSource {
         Ok(__cordl_ret.into())
     }
     pub fn get_lastFrameDeltaSongTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_lastFrameDeltaSongTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_lastFrameDeltaSongTime", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_lastFrameDeltaSongTime",
+                            0usize
                         )
                     })
             });
@@ -80,16 +83,18 @@ impl crate::GlobalNamespace::IAudioTimeSource {
         Ok(__cordl_ret.into())
     }
     pub fn get_songEndTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_songEndTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_songEndTime", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_songEndTime",
+                            0usize
                         )
                     })
             });
@@ -97,16 +102,18 @@ impl crate::GlobalNamespace::IAudioTimeSource {
         Ok(__cordl_ret.into())
     }
     pub fn get_songLength(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_songLength")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_songLength", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_songLength",
+                            0usize
                         )
                     })
             });
@@ -114,16 +121,18 @@ impl crate::GlobalNamespace::IAudioTimeSource {
         Ok(__cordl_ret.into())
     }
     pub fn get_songTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_songTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_songTime", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_songTime",
+                            0usize
                         )
                     })
             });
@@ -133,39 +142,40 @@ impl crate::GlobalNamespace::IAudioTimeSource {
     pub fn get_state(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::IAudioTimeSource_State> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::GlobalNamespace::IAudioTimeSource_State,
-                        0usize,
-                    >("get_state")
+                    .find_method::<(), crate::GlobalNamespace::IAudioTimeSource_State, 0usize>(
+                        "get_state",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_state", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_state",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::IAudioTimeSource_State = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::IAudioTimeSource_State =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_timeScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_timeScale")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_timeScale", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_timeScale",
+                            0usize
                         )
                     })
             });
@@ -183,8 +193,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IAudioTimeSou
     }
 }
 #[cfg(feature = "cordl_class_IAudioTimeSource+State")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum IAudioTimeSource_State {
     #[default]
     Paused = 1i32,
@@ -192,8 +202,7 @@ pub enum IAudioTimeSource_State {
     Stopped = 2i32,
 }
 #[cfg(feature = "cordl_class_IAudioTimeSource+State")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::IAudioTimeSource_State {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IAudioTimeSource_State {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -212,18 +221,14 @@ for crate::GlobalNamespace::IAudioTimeSource_State {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_IAudioTimeSource+State")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::IAudioTimeSource_State {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::IAudioTimeSource_State {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -233,8 +238,7 @@ for crate::GlobalNamespace::IAudioTimeSource_State {
     }
 }
 #[cfg(feature = "cordl_class_IAudioTimeSource+State")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::IAudioTimeSource_State {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::IAudioTimeSource_State {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -247,23 +251,19 @@ for crate::GlobalNamespace::IAudioTimeSource_State {
     }
 }
 #[cfg(feature = "cordl_class_IAudioTimeSource+State")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::IAudioTimeSource_State {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::IAudioTimeSource_State {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_IAudioTimeSource+State")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::IAudioTimeSource_State {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::IAudioTimeSource_State {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

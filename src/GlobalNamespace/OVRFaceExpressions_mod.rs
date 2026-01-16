@@ -9,9 +9,7 @@ pub struct OVRFaceExpressions {
     pub _AreVisemesValid_k__BackingField: bool,
     pub _currentFaceVisemesState: crate::GlobalNamespace::OVRPlugin_FaceVisemesState,
     pub _onPermissionGranted: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>,
     >,
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions")]
@@ -21,7 +19,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRFaceExpre
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRFaceExpressions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -51,84 +50,77 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
     #[cfg(feature = "OVRFaceExpressions+FaceExpression")]
     pub type FaceExpression = crate::GlobalNamespace::OVRFaceExpressions_FaceExpression;
     #[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
-    pub type FaceExpressionsEnumerator = crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator;
+    pub type FaceExpressionsEnumerator =
+        crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator;
     #[cfg(feature = "OVRFaceExpressions+FaceRegionConfidence")]
     pub type FaceRegionConfidence = crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence;
     #[cfg(feature = "OVRFaceExpressions+FaceTrackingDataSource")]
-    pub type FaceTrackingDataSource = crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource;
+    pub type FaceTrackingDataSource =
+        crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource;
     #[cfg(feature = "OVRFaceExpressions+FaceViseme")]
     pub type FaceViseme = crate::GlobalNamespace::OVRFaceExpressions_FaceViseme;
     #[cfg(feature = "OVRFaceExpressions+WeightProvider")]
     type WeightProvider = crate::GlobalNamespace::OVRFaceExpressions_WeightProvider;
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Awake(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Awake",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn CheckValidity(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn CheckValidity(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("CheckValidity")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CheckValidity")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckValidity", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckValidity",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckVisemesValidity(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("CheckVisemesValidity")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CheckVisemesValidity")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckVisemesValidity", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckVisemesValidity",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CopyTo(
@@ -136,31 +128,26 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<f32>,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CopyTo")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 2usize>("CopyTo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "CopyTo",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CopyTo",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (array, startIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (array, startIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn CopyVisemesTo(
@@ -168,31 +155,26 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<f32>,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CopyVisemesTo")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 2usize>("CopyVisemesTo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CopyVisemesTo", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CopyVisemesTo",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (array, startIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (array, startIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
@@ -200,9 +182,10 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -217,9 +200,8 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRequestedFaceTrackingDataSources(
@@ -231,24 +213,22 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::GlobalNamespace::OVRPlugin_FaceTrackingDataSource,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::GlobalNamespace::OVRPlugin_FaceTrackingDataSource,
                         >,
-                        0usize,
-                    >("GetRequestedFaceTrackingDataSources")
+                    >, 0usize>("GetRequestedFaceTrackingDataSources")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetRequestedFaceTrackingDataSources", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetRequestedFaceTrackingDataSources",
+                            0usize
                         )
                     })
             });
@@ -263,9 +243,10 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
         &mut self,
         viseme: crate::GlobalNamespace::OVRFaceExpressions_FaceViseme,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRFaceExpressions_FaceViseme),
@@ -280,18 +261,17 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (viseme))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, (viseme))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetWeight(
         &mut self,
         expression: crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRFaceExpressions_FaceExpression),
@@ -306,88 +286,84 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (expression))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, (expression))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDestroy(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDestroy", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDestroy",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn OnDisable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDisable(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDisable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDisable",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnEnable(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnEnable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnEnable",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn OnPermissionGranted(
         &mut self,
         permissionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -402,22 +378,23 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (permissionId))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (permissionId))? };
         Ok(__cordl_ret.into())
     }
     pub fn StartFaceTracking(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("StartFaceTracking")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StartFaceTracking", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "StartFaceTracking",
+                            0usize
                         )
                     })
             });
@@ -427,27 +404,22 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
     pub fn System_Collections_Generic_IEnumerable_System_Single__GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<f32>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<f32>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<f32>,
-                        >,
-                        0usize,
-                    >(
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerator_1<f32>,
+                    >, 0usize>(
                         "System.Collections.Generic.IEnumerable<System.Single>.GetEnumerator",
                     )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            <Self as quest_hook::libil2cpp::Type>::class(),
                             "System.Collections.Generic.IEnumerable<System.Single>.GetEnumerator",
                             0usize
                         )
@@ -463,9 +435,10 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -482,9 +455,8 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEnumerator,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToArray(
@@ -492,9 +464,10 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -511,9 +484,8 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<f32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetFaceExpressionWeight(
@@ -521,29 +493,26 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
         expression: crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
         weight: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetFaceExpressionWeight")
+                    .find_method::<(
+                        crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                    ), bool, 2usize>("TryGetFaceExpressionWeight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetFaceExpressionWeight", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetFaceExpressionWeight",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (expression, weight))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (expression, weight))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetFaceTrackingDataSource(
@@ -552,28 +521,24 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
             crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource,
-                        >),
-                        bool,
-                        1usize,
-                    >("TryGetFaceTrackingDataSource")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource,
+                    >), bool, 1usize>("TryGetFaceTrackingDataSource")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetFaceTrackingDataSource", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetFaceTrackingDataSource",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (dataSource))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (dataSource))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetFaceViseme(
@@ -581,29 +546,26 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
         viseme: crate::GlobalNamespace::OVRFaceExpressions_FaceViseme,
         weight: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::OVRFaceExpressions_FaceViseme,
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetFaceViseme")
+                    .find_method::<(
+                        crate::GlobalNamespace::OVRFaceExpressions_FaceViseme,
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                    ), bool, 2usize>("TryGetFaceViseme")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetFaceViseme", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetFaceViseme",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (viseme, weight))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (viseme, weight))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetWeightConfidence(
@@ -611,84 +573,81 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
         region: crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence,
         weightConfidence: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence,
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetWeightConfidence")
+                    .find_method::<(
+                        crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence,
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                    ), bool, 2usize>("TryGetWeightConfidence")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetWeightConfidence", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetWeightConfidence",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (region, weightConfidence))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (region, weightConfidence))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Update(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Update",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_AreVisemesValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_AreVisemesValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_AreVisemesValid", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_AreVisemesValid",
+                            0usize
                         )
                     })
             });
@@ -696,35 +655,37 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
         Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Count", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Count",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_EyeFollowingBlendshapesValid(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_EyeFollowingBlendshapesValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_EyeFollowingBlendshapesValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_EyeFollowingBlendshapesValid", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_EyeFollowingBlendshapesValid",
+                            0usize
                         )
                     })
             });
@@ -732,16 +693,18 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
         Ok(__cordl_ret.into())
     }
     pub fn get_FaceTrackingEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_FaceTrackingEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_FaceTrackingEnabled", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_FaceTrackingEnabled",
+                            0usize
                         )
                     })
             });
@@ -752,9 +715,10 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
         &mut self,
         expression: crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRFaceExpressions_FaceExpression),
@@ -769,22 +733,22 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (expression))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, (expression))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ValidExpressions(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ValidExpressions")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ValidExpressions", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ValidExpressions",
+                            0usize
                         )
                     })
             });
@@ -795,78 +759,75 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_AreVisemesValid")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_AreVisemesValid",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_AreVisemesValid", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_AreVisemesValid",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_EyeFollowingBlendshapesValid(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_EyeFollowingBlendshapesValid")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_EyeFollowingBlendshapesValid",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_EyeFollowingBlendshapesValid", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_EyeFollowingBlendshapesValid",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ValidExpressions(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_ValidExpressions")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_ValidExpressions",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_ValidExpressions", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_ValidExpressions",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -881,71 +842,67 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRFaceExpres
 }
 #[cfg(feature = "OVRFaceExpressions")]
 impl AsRef<crate::GlobalNamespace::OVRFaceExpressions_WeightProvider>
-for crate::GlobalNamespace::OVRFaceExpressions {
+    for crate::GlobalNamespace::OVRFaceExpressions
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::OVRFaceExpressions_WeightProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRFaceExpressions")]
 impl AsMut<crate::GlobalNamespace::OVRFaceExpressions_WeightProvider>
-for crate::GlobalNamespace::OVRFaceExpressions {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::GlobalNamespace::OVRFaceExpressions_WeightProvider {
+    for crate::GlobalNamespace::OVRFaceExpressions
+{
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::OVRFaceExpressions_WeightProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRFaceExpressions")]
 impl AsRef<crate::System::Collections::Generic::IEnumerable_1<f32>>
-for crate::GlobalNamespace::OVRFaceExpressions {
+    for crate::GlobalNamespace::OVRFaceExpressions
+{
     fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<f32> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRFaceExpressions")]
 impl AsMut<crate::System::Collections::Generic::IEnumerable_1<f32>>
-for crate::GlobalNamespace::OVRFaceExpressions {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<f32> {
+    for crate::GlobalNamespace::OVRFaceExpressions
+{
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<f32> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRFaceExpressions")]
 impl AsRef<crate::System::Collections::Generic::IReadOnlyCollection_1<f32>>
-for crate::GlobalNamespace::OVRFaceExpressions {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<f32> {
+    for crate::GlobalNamespace::OVRFaceExpressions
+{
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<f32> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRFaceExpressions")]
 impl AsMut<crate::System::Collections::Generic::IReadOnlyCollection_1<f32>>
-for crate::GlobalNamespace::OVRFaceExpressions {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<f32> {
+    for crate::GlobalNamespace::OVRFaceExpressions
+{
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<f32> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRFaceExpressions")]
-impl AsRef<crate::System::Collections::IEnumerable>
-for crate::GlobalNamespace::OVRFaceExpressions {
+impl AsRef<crate::System::Collections::IEnumerable> for crate::GlobalNamespace::OVRFaceExpressions {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRFaceExpressions")]
-impl AsMut<crate::System::Collections::IEnumerable>
-for crate::GlobalNamespace::OVRFaceExpressions {
+impl AsMut<crate::System::Collections::IEnumerable> for crate::GlobalNamespace::OVRFaceExpressions {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpression")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum OVRFaceExpressions_FaceExpression {
     #[default]
     BrowLowererL = 0i32,
@@ -1023,7 +980,8 @@ pub enum OVRFaceExpressions_FaceExpression {
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpression")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1042,18 +1000,16 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpression")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1064,7 +1020,8 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpression")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1078,22 +1035,22 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpression")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpression")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1106,18 +1063,17 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRFaceExpressions_FaceExpressionsEnumerator {
-    pub _faceExpressions: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<f32>,
-    >,
+    pub _faceExpressions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub _index: i32,
     pub _count: i32,
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1136,18 +1092,16 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1158,7 +1112,8 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1172,22 +1127,22 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1201,7 +1156,8 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1212,73 +1168,73 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
 }
 #[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
 impl crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("MoveNext")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MoveNext", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MoveNext",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reset",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1293,18 +1249,18 @@ impl crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1321,22 +1277,23 @@ impl crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (array))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_Current")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Current", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Current",
+                            0usize
                         )
                     })
             });
@@ -1346,51 +1303,55 @@ impl crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
 }
 #[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
 impl AsRef<crate::System::Collections::Generic::IEnumerator_1<f32>>
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator
+{
     fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<f32> {
         todo!()
     }
 }
 #[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
 impl AsMut<crate::System::Collections::Generic::IEnumerator_1<f32>>
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<f32> {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator
+{
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<f32> {
         todo!()
     }
 }
 #[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
 impl AsRef<crate::System::Collections::IEnumerator>
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator
+{
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         todo!()
     }
 }
 #[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
 impl AsMut<crate::System::Collections::IEnumerator>
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator
+{
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
         todo!()
     }
 }
 #[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
 impl AsRef<crate::System::IDisposable>
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
 impl AsMut<crate::System::IDisposable>
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceRegionConfidence")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum OVRFaceExpressions_FaceRegionConfidence {
     #[default]
     Lower = 0i32,
@@ -1399,7 +1360,8 @@ pub enum OVRFaceExpressions_FaceRegionConfidence {
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceRegionConfidence")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1418,18 +1380,16 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceRegionConfidence")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1440,7 +1400,8 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceRegionConfidence")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1454,22 +1415,22 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceRegionConfidence")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceRegionConfidence")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1482,8 +1443,8 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceTrackingDataSource")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum OVRFaceExpressions_FaceTrackingDataSource {
     #[default]
     Audio = 1i32,
@@ -1492,7 +1453,8 @@ pub enum OVRFaceExpressions_FaceTrackingDataSource {
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceTrackingDataSource")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1511,18 +1473,16 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceTrackingDataSource")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1533,7 +1493,8 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource {
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceTrackingDataSource")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1547,22 +1508,22 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource {
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceTrackingDataSource")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceTrackingDataSource")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1575,8 +1536,8 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceTrackingDataSource {
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceViseme")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum OVRFaceExpressions_FaceViseme {
     #[default]
     AA = 10i32,
@@ -1598,8 +1559,7 @@ pub enum OVRFaceExpressions_FaceViseme {
     TH = 3i32,
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceViseme")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRFaceExpressions_FaceViseme {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRFaceExpressions_FaceViseme {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1618,18 +1578,16 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceViseme {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceViseme")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRFaceExpressions_FaceViseme {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceViseme
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1640,7 +1598,8 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceViseme {
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceViseme")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRFaceExpressions_FaceViseme {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceViseme
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1654,22 +1613,22 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceViseme {
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceViseme")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRFaceExpressions_FaceViseme {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceViseme
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceViseme")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRFaceExpressions_FaceViseme {
+    for crate::GlobalNamespace::OVRFaceExpressions_FaceViseme
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1682,20 +1641,22 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceViseme {
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+WeightProvider")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct OVRFaceExpressions_WeightProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+WeightProvider")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRFaceExpressions_WeightProvider {
+    for crate::GlobalNamespace::OVRFaceExpressions_WeightProvider
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRFaceExpressions/WeightProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1726,9 +1687,10 @@ impl crate::GlobalNamespace::OVRFaceExpressions_WeightProvider {
         &mut self,
         expression: crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRFaceExpressions_FaceExpression),
@@ -1743,20 +1705,17 @@ impl crate::GlobalNamespace::OVRFaceExpressions_WeightProvider {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (expression))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, (expression))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+WeightProvider")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRFaceExpressions_WeightProvider {
+    for crate::GlobalNamespace::OVRFaceExpressions_WeightProvider
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

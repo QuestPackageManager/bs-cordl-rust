@@ -4,19 +4,20 @@
 pub struct RandomizeAvatarColorMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _totalIndices_k__BackingField: i32,
-    pub _colorIndices_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<i32>,
-    >,
+    pub _colorIndices_k__BackingField:
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+RandomizeAvatarColorMap")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap {
+    for crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.BeatAvatarSDK";
     const CLASS_NAME: &'static str = "RandomizeAvatarColorMap";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -53,22 +54,21 @@ impl crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap {
         clothesSecondaryColorIndex: i32,
         clothesDetailColorIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    headTopPrimaryColorIndex,
-                    headTopSecondaryColorIndex,
-                    glassesColorIndex,
-                    facialHairColorIndex,
-                    handsColorIndex,
-                    clothesPrimaryColorIndex,
-                    clothesSecondaryColorIndex,
-                    clothesDetailColorIndex,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                headTopPrimaryColorIndex,
+                headTopSecondaryColorIndex,
+                glassesColorIndex,
+                facialHairColorIndex,
+                handsColorIndex,
+                clothesPrimaryColorIndex,
+                clothesSecondaryColorIndex,
+                clothesDetailColorIndex,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -82,9 +82,10 @@ impl crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap {
         clothesSecondaryColorIndex: i32,
         clothesDetailColorIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32, i32, i32, i32, i32, i32),
@@ -100,20 +101,19 @@ impl crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        headTopPrimaryColorIndex,
-                        headTopSecondaryColorIndex,
-                        glassesColorIndex,
-                        facialHairColorIndex,
-                        handsColorIndex,
-                        clothesPrimaryColorIndex,
-                        clothesSecondaryColorIndex,
-                        clothesDetailColorIndex,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    headTopPrimaryColorIndex,
+                    headTopSecondaryColorIndex,
+                    glassesColorIndex,
+                    facialHairColorIndex,
+                    handsColorIndex,
+                    clothesPrimaryColorIndex,
+                    clothesSecondaryColorIndex,
+                    clothesDetailColorIndex,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -122,9 +122,10 @@ impl crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -141,22 +142,23 @@ impl crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_totalIndices(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_totalIndices")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_totalIndices", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_totalIndices",
+                            0usize
                         )
                     })
             });
@@ -166,7 +168,8 @@ impl crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap {
 }
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+RandomizeAvatarColorMap")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap {
+    for crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

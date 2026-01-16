@@ -10,15 +10,11 @@ pub struct OVRSkeletonRenderer {
     pub _systemGestureBehavior: crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior,
     pub _renderPhysicsCapsules: bool,
     pub _skeletonMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-    pub _skeletonDefaultMaterial: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Material,
-    >,
+    pub _skeletonDefaultMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _capsuleMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _capsuleDefaultMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _systemGestureMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-    pub _systemGestureDefaultMaterial: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Material,
-    >,
+    pub _systemGestureDefaultMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _boneVisualizations: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             quest_hook::libil2cpp::Gc<
@@ -48,7 +44,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSkeletonR
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRSkeletonRenderer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -79,176 +76,178 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer {
     #[cfg(feature = "OVRSkeletonRenderer+BoneVisualization")]
     pub type BoneVisualization = crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization;
     #[cfg(feature = "OVRSkeletonRenderer+CapsuleVisualization")]
-    pub type CapsuleVisualization = crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization;
+    pub type CapsuleVisualization =
+        crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization;
     #[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
     pub type ConfidenceBehavior = crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior;
     #[cfg(feature = "OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
-    type IOVRSkeletonRendererDataProvider = crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider;
+    type IOVRSkeletonRendererDataProvider =
+        crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider;
     #[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
-    pub type SkeletonRendererData = crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData;
+    pub type SkeletonRendererData =
+        crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData;
     #[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
-    pub type SystemGestureBehavior = crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior;
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub type SystemGestureBehavior =
+        crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior;
+    pub fn Awake(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Awake",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Initialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Initialize(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Initialize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Initialize",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDestroy(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDestroy", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDestroy",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldInitialize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ShouldInitialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ShouldInitialize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ShouldInitialize",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Start",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Update(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Update",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsDataHighConfidence(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsDataHighConfidence")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsDataHighConfidence", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsDataHighConfidence",
+                            0usize
                         )
                     })
             });
@@ -256,16 +255,18 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsDataValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsDataValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsDataValid", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsDataValid",
+                            0usize
                         )
                     })
             });
@@ -273,39 +274,37 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsInitialized")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsInitialized", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsInitialized",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_ShouldUseSystemGestureMaterial(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_ShouldUseSystemGestureMaterial(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        bool,
-                        0usize,
-                    >("get_ShouldUseSystemGestureMaterial")
+                    .find_method::<(), bool, 0usize>("get_ShouldUseSystemGestureMaterial")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ShouldUseSystemGestureMaterial", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ShouldUseSystemGestureMaterial",
+                            0usize
                         )
                     })
             });
@@ -316,104 +315,96 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_IsDataHighConfidence")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_IsDataHighConfidence",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_IsDataHighConfidence", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_IsDataHighConfidence",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_IsDataValid(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_IsDataValid")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_IsDataValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_IsDataValid", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_IsDataValid",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_IsInitialized(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_IsInitialized")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_IsInitialized")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_IsInitialized", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_IsInitialized",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ShouldUseSystemGestureMaterial(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_ShouldUseSystemGestureMaterial")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_ShouldUseSystemGestureMaterial",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_ShouldUseSystemGestureMaterial", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_ShouldUseSystemGestureMaterial",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -440,13 +431,15 @@ pub struct OVRSkeletonRenderer_BoneVisualization {
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+BoneVisualization")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRSkeletonRenderer/BoneVisualization";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -466,8 +459,7 @@ impl std::ops::Deref for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisuali
     }
 }
 #[cfg(feature = "OVRSkeletonRenderer+BoneVisualization")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -482,13 +474,12 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
         begin: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         end: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (rootGO, renderMat, systemGestureMat, scale, begin, end),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (rootGO, renderMat, systemGestureMat, scale, begin, end),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn Update(
@@ -499,41 +490,38 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
         confidenceBehavior: crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior,
         systemGestureBehavior: crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            f32,
-                            bool,
-                            bool,
-                            crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior,
-                            crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Update")
+                    .find_method::<(
+                        f32,
+                        bool,
+                        bool,
+                        crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior,
+                        crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Update",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        scale,
-                        shouldRender,
-                        shouldUseSystemGestureMaterial,
-                        confidenceBehavior,
-                        systemGestureBehavior,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    scale,
+                    shouldRender,
+                    shouldUseSystemGestureMaterial,
+                    confidenceBehavior,
+                    systemGestureBehavior,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -546,43 +534,41 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
         begin: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         end: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            f32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        f32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                    ), quest_hook::libil2cpp::Void, 6usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (rootGO, renderMat, systemGestureMat, scale, begin, end),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (rootGO, renderMat, systemGestureMat, scale, begin, end),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+BoneVisualization")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -604,13 +590,15 @@ pub struct OVRSkeletonRenderer_CapsuleVisualization {
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+CapsuleVisualization")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRSkeletonRenderer/CapsuleVisualization";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -623,16 +611,14 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
     }
 }
 #[cfg(feature = "OVRSkeletonRenderer+CapsuleVisualization")]
-impl std::ops::Deref
-for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
+impl std::ops::Deref for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSkeletonRenderer+CapsuleVisualization")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -646,13 +632,12 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
         scale: f32,
         boneCapsule: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (rootGO, renderMat, systemGestureMat, scale, boneCapsule),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (rootGO, renderMat, systemGestureMat, scale, boneCapsule),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn Update(
@@ -663,41 +648,38 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
         confidenceBehavior: crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior,
         systemGestureBehavior: crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            f32,
-                            bool,
-                            bool,
-                            crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior,
-                            crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Update")
+                    .find_method::<(
+                        f32,
+                        bool,
+                        bool,
+                        crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior,
+                        crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Update",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        scale,
-                        shouldRender,
-                        shouldUseSystemGestureMaterial,
-                        confidenceBehavior,
-                        systemGestureBehavior,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    scale,
+                    shouldRender,
+                    shouldUseSystemGestureMaterial,
+                    confidenceBehavior,
+                    systemGestureBehavior,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -709,44 +691,40 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
         scale: f32,
         boneCapsule: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRBoneCapsule,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        f32,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (rootGO, renderMat, systemGestureMat, scale, boneCapsule),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (rootGO, renderMat, systemGestureMat, scale, boneCapsule),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+CapsuleVisualization")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -755,8 +733,8 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+ConfidenceBehavior")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum OVRSkeletonRenderer_ConfidenceBehavior {
     #[default]
     None = 0i32,
@@ -764,7 +742,8 @@ pub enum OVRSkeletonRenderer_ConfidenceBehavior {
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -783,18 +762,16 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -805,7 +782,8 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -819,22 +797,22 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -847,20 +825,22 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRSkeletonRenderer/IOVRSkeletonRendererDataProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -874,7 +854,8 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider
 }
 #[cfg(feature = "OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
 impl std::ops::Deref
-for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -882,7 +863,8 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider
 }
 #[cfg(feature = "OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -894,9 +876,10 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvide
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -911,20 +894,18 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvide
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -933,8 +914,8 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRSkeletonRenderer_SkeletonRendererData {
     pub _RootScale_k__BackingField: f32,
     pub _IsDataValid_k__BackingField: bool,
@@ -943,7 +924,8 @@ pub struct OVRSkeletonRenderer_SkeletonRendererData {
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -962,18 +944,16 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -984,7 +964,8 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -998,22 +979,22 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1027,7 +1008,8 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1039,16 +1021,18 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
 #[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
 impl crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
     pub fn get_IsDataHighConfidence(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsDataHighConfidence")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsDataHighConfidence", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsDataHighConfidence",
+                            0usize
                         )
                     })
             });
@@ -1056,16 +1040,18 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsDataValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsDataValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsDataValid", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsDataValid",
+                            0usize
                         )
                     })
             });
@@ -1073,39 +1059,37 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
         Ok(__cordl_ret.into())
     }
     pub fn get_RootScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_RootScale")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_RootScale", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_RootScale",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_ShouldUseSystemGestureMaterial(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_ShouldUseSystemGestureMaterial(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        bool,
-                        0usize,
-                    >("get_ShouldUseSystemGestureMaterial")
+                    .find_method::<(), bool, 0usize>("get_ShouldUseSystemGestureMaterial")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ShouldUseSystemGestureMaterial", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ShouldUseSystemGestureMaterial",
+                            0usize
                         )
                     })
             });
@@ -1116,110 +1100,102 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_IsDataHighConfidence")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_IsDataHighConfidence",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_IsDataHighConfidence", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_IsDataHighConfidence",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_IsDataValid(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_IsDataValid")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_IsDataValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_IsDataValid", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_IsDataValid",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_RootScale(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_RootScale")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("set_RootScale")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_RootScale", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_RootScale",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ShouldUseSystemGestureMaterial(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_ShouldUseSystemGestureMaterial")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_ShouldUseSystemGestureMaterial",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_ShouldUseSystemGestureMaterial", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_ShouldUseSystemGestureMaterial",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SystemGestureBehavior")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum OVRSkeletonRenderer_SystemGestureBehavior {
     #[default]
     None = 0i32,
@@ -1227,7 +1203,8 @@ pub enum OVRSkeletonRenderer_SystemGestureBehavior {
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1246,18 +1223,16 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1268,7 +1243,8 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1282,22 +1258,22 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
+    for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

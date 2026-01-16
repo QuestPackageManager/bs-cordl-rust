@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString {
     const NAMESPACE: &'static str = "Unity.Burst";
     const CLASS_NAME: &'static str = "BurstString";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -71,34 +72,29 @@ impl crate::Unity::Burst::BurstString {
         align: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            i32,
-                            i32,
-                        ),
-                        bool,
-                        5usize,
-                    >("AlignLeft")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        i32,
+                        i32,
+                    ), bool, 5usize>("AlignLeft")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AlignLeft", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AlignLeft",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (dest, destIndex, destLength, align, length))?
+            cordl_method_info.invoke_unchecked((), (dest, destIndex, destLength, align, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -109,195 +105,148 @@ impl crate::Unity::Burst::BurstString {
         align: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            i32,
-                            i32,
-                        ),
-                        bool,
-                        5usize,
-                    >("AlignRight")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        i32,
+                        i32,
+                    ), bool, 5usize>("AlignRight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AlignRight", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AlignRight",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (dest, destIndex, destLength, align, length))?
+            cordl_method_info.invoke_unchecked((), (dest, destIndex, destLength, align, length))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn BigInt_Add(
-        pResult: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
+        pResult: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         lhs: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         rhs: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("BigInt_Add")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("BigInt_Add")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BigInt_Add", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BigInt_Add",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pResult, lhs, rhs))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pResult, lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn BigInt_Add_internal(
-        pResult: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
-        pLarge: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
+        pResult: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+        pLarge: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         pSmall: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("BigInt_Add_internal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "BigInt_Add_internal"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BigInt_Add_internal", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BigInt_Add_internal",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pResult, pLarge, pSmall))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pResult, pLarge, pSmall))? };
         Ok(__cordl_ret.into())
     }
     pub fn BigInt_Compare(
         lhs: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         rhs: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("BigInt_Compare")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                    ), i32, 2usize>("BigInt_Compare")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BigInt_Compare", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BigInt_Compare",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn BigInt_DivideWithRemainder_MaxQuotient9(
-        pDividend: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
-        divisor: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
+        pDividend: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+        divisor: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                        ),
-                        u32,
-                        2usize,
-                    >("BigInt_DivideWithRemainder_MaxQuotient9")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                    ), u32, 2usize>("BigInt_DivideWithRemainder_MaxQuotient9")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BigInt_DivideWithRemainder_MaxQuotient9", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BigInt_DivideWithRemainder_MaxQuotient9",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (pDividend, divisor))?
-        };
+        let __cordl_ret: u32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (pDividend, divisor))? };
         Ok(__cordl_ret.into())
     }
     pub fn BigInt_Multiply10(
-        pResult: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
+        pResult: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -314,54 +263,43 @@ impl crate::Unity::Burst::BurstString {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pResult))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pResult))? };
         Ok(__cordl_ret.into())
     }
     pub fn BigInt_Multiply2_ByRefMut0(
-        pResult: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
+        pResult: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         input: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("BigInt_Multiply2")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("BigInt_Multiply2")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BigInt_Multiply2", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BigInt_Multiply2",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pResult, input))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pResult, input))? };
         Ok(__cordl_ret.into())
     }
     pub fn BigInt_Multiply2_ByRefMut1(
-        pResult: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
+        pResult: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -378,262 +316,202 @@ impl crate::Unity::Burst::BurstString {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pResult))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pResult))? };
         Ok(__cordl_ret.into())
     }
     pub fn BigInt_MultiplyPow10(
-        pResult: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
+        pResult: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         input: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         exponent: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            u32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("BigInt_MultiplyPow10")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        u32,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "BigInt_MultiplyPow10"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BigInt_MultiplyPow10", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BigInt_MultiplyPow10",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pResult, input, exponent))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pResult, input, exponent))? };
         Ok(__cordl_ret.into())
     }
     pub fn BigInt_Multiply_ByRefMut0(
-        pResult: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
+        pResult: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         lhs: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         rhs: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("BigInt_Multiply")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("BigInt_Multiply")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BigInt_Multiply", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BigInt_Multiply",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pResult, lhs, rhs))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pResult, lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn BigInt_Multiply_internal(
-        pResult: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
-        pLarge: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
+        pResult: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+        pLarge: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         pSmall: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("BigInt_Multiply_internal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "BigInt_Multiply_internal"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BigInt_Multiply_internal", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BigInt_Multiply_internal",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pResult, pLarge, pSmall))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pResult, pLarge, pSmall))? };
         Ok(__cordl_ret.into())
     }
     pub fn BigInt_Multiply_u32_1(
-        pResult: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
+        pResult: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         lhs: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         rhs: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            u32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("BigInt_Multiply")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        u32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("BigInt_Multiply")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BigInt_Multiply", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BigInt_Multiply",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pResult, lhs, rhs))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pResult, lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn BigInt_Pow10(
-        pResult: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
+        pResult: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         exponent: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            u32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("BigInt_Pow10")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        u32,
+                    ), quest_hook::libil2cpp::Void, 2usize>("BigInt_Pow10")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BigInt_Pow10", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BigInt_Pow10",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pResult, exponent))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pResult, exponent))? };
         Ok(__cordl_ret.into())
     }
     pub fn BigInt_Pow2(
-        pResult: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
+        pResult: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         exponent: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            u32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("BigInt_Pow2")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        u32,
+                    ), quest_hook::libil2cpp::Void, 2usize>("BigInt_Pow2")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BigInt_Pow2", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BigInt_Pow2",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pResult, exponent))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pResult, exponent))? };
         Ok(__cordl_ret.into())
     }
     pub fn BigInt_ShiftLeft(
-        pResult: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_tBigInt,
-        >,
+        pResult: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
         shift: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_tBigInt,
-                            >,
-                            u32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("BigInt_ShiftLeft")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+                        u32,
+                    ), quest_hook::libil2cpp::Void, 2usize>("BigInt_ShiftLeft")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BigInt_ShiftLeft", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BigInt_ShiftLeft",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pResult, shift))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pResult, shift))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertDoubleToString(
@@ -643,37 +521,32 @@ impl crate::Unity::Burst::BurstString {
         value: f64,
         formatOptions: crate::Unity::Burst::BurstString_FormatOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            f64,
-                            crate::Unity::Burst::BurstString_FormatOptions,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("ConvertDoubleToString")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        f64,
+                        crate::Unity::Burst::BurstString_FormatOptions,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "ConvertDoubleToString"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConvertDoubleToString", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ConvertDoubleToString",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, value, formatOptions),
-                )?
+                .invoke_unchecked((), (dest, destIndex, destLength, value, formatOptions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -684,37 +557,32 @@ impl crate::Unity::Burst::BurstString {
         value: f32,
         formatOptions: crate::Unity::Burst::BurstString_FormatOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            f32,
-                            crate::Unity::Burst::BurstString_FormatOptions,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("ConvertFloatToString")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        f32,
+                        crate::Unity::Burst::BurstString_FormatOptions,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "ConvertFloatToString"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConvertFloatToString", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ConvertFloatToString",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, value, formatOptions),
-                )?
+                .invoke_unchecked((), (dest, destIndex, destLength, value, formatOptions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -725,34 +593,31 @@ impl crate::Unity::Burst::BurstString {
         value: i64,
         options: crate::Unity::Burst::BurstString_FormatOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            i64,
-                            crate::Unity::Burst::BurstString_FormatOptions,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("ConvertIntegerToString")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        i64,
+                        crate::Unity::Burst::BurstString_FormatOptions,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "ConvertIntegerToString"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConvertIntegerToString", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ConvertIntegerToString",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (dest, destIndex, destLength, value, options))?
+            cordl_method_info.invoke_unchecked((), (dest, destIndex, destLength, value, options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -763,34 +628,31 @@ impl crate::Unity::Burst::BurstString {
         value: u64,
         options: crate::Unity::Burst::BurstString_FormatOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            u64,
-                            crate::Unity::Burst::BurstString_FormatOptions,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("ConvertUnsignedIntegerToString")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        u64,
+                        crate::Unity::Burst::BurstString_FormatOptions,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "ConvertUnsignedIntegerToString"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConvertUnsignedIntegerToString", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ConvertUnsignedIntegerToString",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (dest, destIndex, destLength, value, options))?
+            cordl_method_info.invoke_unchecked((), (dest, destIndex, destLength, value, options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -800,35 +662,28 @@ impl crate::Unity::Burst::BurstString {
         src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         srcLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("CopyFixedString")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("CopyFixedString")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CopyFixedString", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CopyFixedString",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (dest, destLength, src, srcLength))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (dest, destLength, src, srcLength))? };
         Ok(__cordl_ret.into())
     }
     pub fn Dragon4(
@@ -842,51 +697,46 @@ impl crate::Unity::Burst::BurstString {
         bufferSize: u32,
         pOutExponent: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            u64,
-                            i32,
-                            u32,
-                            bool,
-                            crate::Unity::Burst::BurstString_CutoffMode,
-                            u32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            u32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
+                    .find_static_method::<(
+                        u64,
+                        i32,
                         u32,
-                        9usize,
-                    >("Dragon4")
+                        bool,
+                        crate::Unity::Burst::BurstString_CutoffMode,
+                        u32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        u32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), u32, 9usize>("Dragon4")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dragon4",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dragon4",
                             9usize
                         )
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        mantissa,
-                        exponent,
-                        mantissaHighBitIdx,
-                        hasUnequalMargins,
-                        cutoffMode,
-                        cutoffNumber,
-                        pOutBuffer,
-                        bufferSize,
-                        pOutExponent,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    mantissa,
+                    exponent,
+                    mantissaHighBitIdx,
+                    hasUnequalMargins,
+                    cutoffMode,
+                    cutoffNumber,
+                    pOutBuffer,
+                    bufferSize,
+                    pOutExponent,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -894,53 +744,48 @@ impl crate::Unity::Burst::BurstString {
         dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         destLength: i32,
-        number: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_NumberBuffer,
-        >,
+        number: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_NumberBuffer>,
         zeroPadding: i32,
         outputPositiveSign: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_NumberBuffer,
-                            >,
-                            i32,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("FormatDecimalOrHexadecimal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Burst::BurstString_NumberBuffer,
+                        >,
+                        i32,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "FormatDecimalOrHexadecimal"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FormatDecimalOrHexadecimal", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FormatDecimalOrHexadecimal",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        dest,
-                        destIndex,
-                        destLength,
-                        number,
-                        zeroPadding,
-                        outputPositiveSign,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    dest,
+                    destIndex,
+                    destLength,
+                    number,
+                    zeroPadding,
+                    outputPositiveSign,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -948,46 +793,39 @@ impl crate::Unity::Burst::BurstString {
         dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         destLength: i32,
-        number: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_NumberBuffer,
-        >,
+        number: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_NumberBuffer>,
         nMaxDigits: i32,
         expChar: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_NumberBuffer,
-                            >,
-                            i32,
-                            u8,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("FormatGeneral")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Burst::BurstString_NumberBuffer,
+                        >,
+                        i32,
+                        u8,
+                    ), quest_hook::libil2cpp::Void, 6usize>("FormatGeneral")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FormatGeneral", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FormatGeneral",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, number, nMaxDigits, expChar),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (dest, destIndex, destLength, number, nMaxDigits, expChar),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -999,38 +837,40 @@ impl crate::Unity::Burst::BurstString {
         isNegative: bool,
         formatOptions: crate::Unity::Burst::BurstString_FormatOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            u64,
-                            bool,
-                            crate::Unity::Burst::BurstString_FormatOptions,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("FormatInfinityNaN")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        u64,
+                        bool,
+                        crate::Unity::Burst::BurstString_FormatOptions,
+                    ), quest_hook::libil2cpp::Void, 6usize>("FormatInfinityNaN")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FormatInfinityNaN", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FormatInfinityNaN",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, mantissa, isNegative, formatOptions),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    dest,
+                    destIndex,
+                    destLength,
+                    mantissa,
+                    isNegative,
+                    formatOptions,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1038,46 +878,39 @@ impl crate::Unity::Burst::BurstString {
         dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         destLength: i32,
-        number: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_NumberBuffer,
-        >,
+        number: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_NumberBuffer>,
         nMaxDigits: i32,
         options: crate::Unity::Burst::BurstString_FormatOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_NumberBuffer,
-                            >,
-                            i32,
-                            crate::Unity::Burst::BurstString_FormatOptions,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("FormatNumber")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Burst::BurstString_NumberBuffer,
+                        >,
+                        i32,
+                        crate::Unity::Burst::BurstString_FormatOptions,
+                    ), quest_hook::libil2cpp::Void, 6usize>("FormatNumber")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FormatNumber", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FormatNumber",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, number, nMaxDigits, options),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (dest, destIndex, destLength, number, nMaxDigits, options),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1090,47 +923,42 @@ impl crate::Unity::Burst::BurstString {
         hasUnequalMargins: bool,
         precision: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            u32,
-                            u64,
-                            i32,
-                            u32,
-                            bool,
-                            i32,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        u32,
+                        u64,
                         i32,
-                        7usize,
-                    >("FormatPositional")
+                        u32,
+                        bool,
+                        i32,
+                    ), i32, 7usize>("FormatPositional")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FormatPositional", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FormatPositional",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        pOutBuffer,
-                        bufferSize,
-                        mantissa,
-                        exponent,
-                        mantissaHighBitIdx,
-                        hasUnequalMargins,
-                        precision,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    pOutBuffer,
+                    bufferSize,
+                    mantissa,
+                    exponent,
+                    mantissaHighBitIdx,
+                    hasUnequalMargins,
+                    precision,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1143,47 +971,42 @@ impl crate::Unity::Burst::BurstString {
         hasUnequalMargins: bool,
         precision: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            u32,
-                            u64,
-                            i32,
-                            u32,
-                            bool,
-                            i32,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        u32,
+                        u64,
                         i32,
-                        7usize,
-                    >("FormatScientific")
+                        u32,
+                        bool,
+                        i32,
+                    ), i32, 7usize>("FormatScientific")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FormatScientific", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FormatScientific",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        pOutBuffer,
-                        bufferSize,
-                        mantissa,
-                        exponent,
-                        mantissaHighBitIdx,
-                        hasUnequalMargins,
-                        precision,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    pOutBuffer,
+                    bufferSize,
+                    mantissa,
+                    exponent,
+                    mantissaHighBitIdx,
+                    hasUnequalMargins,
+                    precision,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1195,40 +1018,40 @@ impl crate::Unity::Burst::BurstString {
         srcLength: i32,
         formatOptionsRaw: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("Format")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>("Format")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, src, srcLength, formatOptionsRaw),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    dest,
+                    destIndex,
+                    destLength,
+                    src,
+                    srcLength,
+                    formatOptionsRaw,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1239,37 +1062,30 @@ impl crate::Unity::Burst::BurstString {
         value: bool,
         formatOptionsRaw: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            bool,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Format")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        bool,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Format")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, value, formatOptionsRaw),
-                )?
+                .invoke_unchecked((), (dest, destIndex, destLength, value, formatOptionsRaw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1280,37 +1096,30 @@ impl crate::Unity::Burst::BurstString {
         value: char,
         formatOptionsRaw: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            char,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Format")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        char,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Format")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, value, formatOptionsRaw),
-                )?
+                .invoke_unchecked((), (dest, destIndex, destLength, value, formatOptionsRaw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1321,37 +1130,30 @@ impl crate::Unity::Burst::BurstString {
         value: f32,
         formatOptionsRaw: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            f32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Format")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        f32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Format")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, value, formatOptionsRaw),
-                )?
+                .invoke_unchecked((), (dest, destIndex, destLength, value, formatOptionsRaw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1362,37 +1164,30 @@ impl crate::Unity::Burst::BurstString {
         value: f64,
         formatOptionsRaw: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            f64,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Format")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        f64,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Format")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, value, formatOptionsRaw),
-                )?
+                .invoke_unchecked((), (dest, destIndex, destLength, value, formatOptionsRaw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1403,37 +1198,30 @@ impl crate::Unity::Burst::BurstString {
         value: i16,
         formatOptionsRaw: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            i16,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Format")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        i16,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Format")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, value, formatOptionsRaw),
-                )?
+                .invoke_unchecked((), (dest, destIndex, destLength, value, formatOptionsRaw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1444,37 +1232,30 @@ impl crate::Unity::Burst::BurstString {
         value: i32,
         formatOptionsRaw: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Format")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Format")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, value, formatOptionsRaw),
-                )?
+                .invoke_unchecked((), (dest, destIndex, destLength, value, formatOptionsRaw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1485,37 +1266,30 @@ impl crate::Unity::Burst::BurstString {
         value: i64,
         formatOptionsRaw: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            i64,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Format")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        i64,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Format")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, value, formatOptionsRaw),
-                )?
+                .invoke_unchecked((), (dest, destIndex, destLength, value, formatOptionsRaw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1526,37 +1300,30 @@ impl crate::Unity::Burst::BurstString {
         value: i8,
         formatOptionsRaw: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            i8,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Format")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        i8,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Format")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, value, formatOptionsRaw),
-                )?
+                .invoke_unchecked((), (dest, destIndex, destLength, value, formatOptionsRaw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1567,37 +1334,30 @@ impl crate::Unity::Burst::BurstString {
         value: u16,
         formatOptionsRaw: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            u16,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Format")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        u16,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Format")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, value, formatOptionsRaw),
-                )?
+                .invoke_unchecked((), (dest, destIndex, destLength, value, formatOptionsRaw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1608,37 +1368,30 @@ impl crate::Unity::Burst::BurstString {
         value: u32,
         formatOptionsRaw: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            u32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Format")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        u32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Format")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, value, formatOptionsRaw),
-                )?
+                .invoke_unchecked((), (dest, destIndex, destLength, value, formatOptionsRaw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1649,37 +1402,30 @@ impl crate::Unity::Burst::BurstString {
         value: u64,
         formatOptionsRaw: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            u64,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Format")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        u64,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Format")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, value, formatOptionsRaw),
-                )?
+                .invoke_unchecked((), (dest, destIndex, destLength, value, formatOptionsRaw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1690,71 +1436,59 @@ impl crate::Unity::Burst::BurstString {
         value: u8,
         formatOptionsRaw: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            i32,
-                            u8,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Format")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        i32,
+                        u8,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Format")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (dest, destIndex, destLength, value, formatOptionsRaw),
-                )?
+                .invoke_unchecked((), (dest, destIndex, destLength, value, formatOptionsRaw))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetLengthForFormatGeneral(
-        number: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_NumberBuffer,
-        >,
+        number: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_NumberBuffer>,
         nMaxDigits: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_NumberBuffer,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Burst::BurstString_NumberBuffer,
+                        >,
                         i32,
-                        2usize,
-                    >("GetLengthForFormatGeneral")
+                    ), i32, 2usize>("GetLengthForFormatGeneral")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLengthForFormatGeneral", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLengthForFormatGeneral",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (number, nMaxDigits))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (number, nMaxDigits))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLengthIntegerToString(
@@ -1762,39 +1496,38 @@ impl crate::Unity::Burst::BurstString {
         basis: i32,
         zeroPadding: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i64, i32, i32),
-                        i32,
-                        3usize,
-                    >("GetLengthIntegerToString")
+                    .find_static_method::<(i64, i32, i32), i32, 3usize>("GetLengthIntegerToString")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLengthIntegerToString", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLengthIntegerToString",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (value, basis, zeroPadding))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (value, basis, zeroPadding))? };
         Ok(__cordl_ret.into())
     }
     pub fn LogBase2(val: u32) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), u32, 1usize>("LogBase2")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LogBase2", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LogBase2",
+                            1usize
                         )
                     })
             });
@@ -1810,48 +1543,40 @@ impl crate::Unity::Burst::BurstString {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("OptsSplit")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>("OptsSplit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OptsSplit", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OptsSplit",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (fullFormat, padding, format))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (fullFormat, padding, format))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseFormatToFormatOptions(
         fullFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::BurstString_FormatOptions> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -1866,44 +1591,38 @@ impl crate::Unity::Burst::BurstString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Burst::BurstString_FormatOptions = unsafe {
-            cordl_method_info.invoke_unchecked((), (fullFormat))?
-        };
+        let __cordl_ret: crate::Unity::Burst::BurstString_FormatOptions =
+            unsafe { cordl_method_info.invoke_unchecked((), (fullFormat))? };
         Ok(__cordl_ret.into())
     }
     pub fn RoundNumber(
-        number: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Burst::BurstString_NumberBuffer,
-        >,
+        number: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_NumberBuffer>,
         pos: i32,
         isCorrectlyRounded: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Burst::BurstString_NumberBuffer,
-                            >,
-                            i32,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("RoundNumber")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Burst::BurstString_NumberBuffer,
+                        >,
+                        i32,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 3usize>("RoundNumber")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RoundNumber", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RoundNumber",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (number, pos, isCorrectlyRounded))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (number, pos, isCorrectlyRounded))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldRoundUp(
@@ -1911,79 +1630,71 @@ impl crate::Unity::Burst::BurstString {
         i: i32,
         isCorrectlyRounded: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
                         bool,
-                        3usize,
-                    >("ShouldRoundUp")
+                    ), bool, 3usize>("ShouldRoundUp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ShouldRoundUp", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ShouldRoundUp",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (dig, i, isCorrectlyRounded))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (dig, i, isCorrectlyRounded))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ValueToIntegerChar(
-        value: i32,
-        uppercase: bool,
-    ) -> quest_hook::libil2cpp::Result<u8> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ValueToIntegerChar(value: i32, uppercase: bool) -> quest_hook::libil2cpp::Result<u8> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, bool), u8, 2usize>("ValueToIntegerChar")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValueToIntegerChar", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ValueToIntegerChar",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: u8 = unsafe {
-            cordl_method_info.invoke_unchecked((), (value, uppercase))?
-        };
+        let __cordl_ret: u8 =
+            unsafe { cordl_method_info.invoke_unchecked((), (value, uppercase))? };
         Ok(__cordl_ret.into())
     }
     pub fn g_PowerOf10_Big(
         i: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::BurstString_tBigInt> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32),
-                        crate::Unity::Burst::BurstString_tBigInt,
-                        1usize,
-                    >("g_PowerOf10_Big")
+                    .find_static_method::<(i32), crate::Unity::Burst::BurstString_tBigInt, 1usize>(
+                        "g_PowerOf10_Big",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "g_PowerOf10_Big", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "g_PowerOf10_Big",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Burst::BurstString_tBigInt = unsafe {
-            cordl_method_info.invoke_unchecked((), (i))?
-        };
+        let __cordl_ret: crate::Unity::Burst::BurstString_tBigInt =
+            unsafe { cordl_method_info.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1997,8 +1708,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstString {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+CutoffMode")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum BurstString_CutoffMode {
     #[default]
     FractionLength = 2i32,
@@ -2025,18 +1736,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_Cut
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+CutoffMode")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Burst::BurstString_CutoffMode {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::BurstString_CutoffMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2046,8 +1753,7 @@ for crate::Unity::Burst::BurstString_CutoffMode {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+CutoffMode")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Burst::BurstString_CutoffMode {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::BurstString_CutoffMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2060,23 +1766,19 @@ for crate::Unity::Burst::BurstString_CutoffMode {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+CutoffMode")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Burst::BurstString_CutoffMode {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::BurstString_CutoffMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+CutoffMode")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Burst::BurstString_CutoffMode {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_CutoffMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2089,8 +1791,8 @@ for crate::Unity::Burst::BurstString_CutoffMode {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BurstString_FormatOptions {
     pub Kind: crate::Unity::Burst::BurstString_NumberFormatKind,
     pub AlignAndSize: i8,
@@ -2098,8 +1800,7 @@ pub struct BurstString_FormatOptions {
     pub Lowercase: bool,
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Burst::BurstString_FormatOptions {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_FormatOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
@@ -2118,18 +1819,14 @@ for crate::Unity::Burst::BurstString_FormatOptions {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Burst::BurstString_FormatOptions {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::BurstString_FormatOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2139,8 +1836,7 @@ for crate::Unity::Burst::BurstString_FormatOptions {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Burst::BurstString_FormatOptions {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::BurstString_FormatOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2153,23 +1849,19 @@ for crate::Unity::Burst::BurstString_FormatOptions {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Burst::BurstString_FormatOptions {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::BurstString_FormatOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Burst::BurstString_FormatOptions {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_FormatOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2182,8 +1874,7 @@ for crate::Unity::Burst::BurstString_FormatOptions {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Burst::BurstString_FormatOptions {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Burst::BurstString_FormatOptions {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2195,16 +1886,18 @@ for crate::Unity::Burst::BurstString_FormatOptions {
 #[cfg(feature = "Unity+Burst+BurstString+FormatOptions")]
 impl crate::Unity::Burst::BurstString_FormatOptions {
     pub fn EncodeToRaw(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("EncodeToRaw")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EncodeToRaw", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EncodeToRaw",
+                            0usize
                         )
                     })
             });
@@ -2212,15 +1905,17 @@ impl crate::Unity::Burst::BurstString_FormatOptions {
         Ok(__cordl_ret.into())
     }
     pub fn GetBase(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetBase")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetBase",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBase",
                             0usize
                         )
                     })
@@ -2230,12 +1925,12 @@ impl crate::Unity::Burst::BurstString_FormatOptions {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2250,9 +1945,8 @@ impl crate::Unity::Burst::BurstString_FormatOptions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -2262,45 +1956,44 @@ impl crate::Unity::Burst::BurstString_FormatOptions {
         specifier: u8,
         lowercase: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::Unity::Burst::BurstString_NumberFormatKind,
-                            i8,
-                            u8,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::Unity::Burst::BurstString_NumberFormatKind,
+                        i8,
+                        u8,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (kind, alignAndSize, specifier, lowercase))?
+            cordl_method_info.invoke_unchecked(self, (kind, alignAndSize, specifier, lowercase))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Uppercase(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Uppercase")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Uppercase", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Uppercase",
+                            0usize
                         )
                     })
             });
@@ -2309,8 +2002,8 @@ impl crate::Unity::Burst::BurstString_FormatOptions {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BurstString_NumberBuffer {
     pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Kind: crate::Unity::Burst::BurstString_NumberBufferKind,
@@ -2319,8 +2012,7 @@ pub struct BurstString_NumberBuffer {
     pub IsNegative: bool,
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Burst::BurstString_NumberBuffer {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_NumberBuffer {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
@@ -2339,18 +2031,14 @@ for crate::Unity::Burst::BurstString_NumberBuffer {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Burst::BurstString_NumberBuffer {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::BurstString_NumberBuffer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2360,8 +2048,7 @@ for crate::Unity::Burst::BurstString_NumberBuffer {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Burst::BurstString_NumberBuffer {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::BurstString_NumberBuffer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2374,23 +2061,19 @@ for crate::Unity::Burst::BurstString_NumberBuffer {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Burst::BurstString_NumberBuffer {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::BurstString_NumberBuffer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Burst::BurstString_NumberBuffer {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_NumberBuffer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2403,8 +2086,7 @@ for crate::Unity::Burst::BurstString_NumberBuffer {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Burst::BurstString_NumberBuffer {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Burst::BurstString_NumberBuffer {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2417,12 +2099,12 @@ for crate::Unity::Burst::BurstString_NumberBuffer {
 impl crate::Unity::Burst::BurstString_NumberBuffer {
     pub fn GetDigitsPointer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2437,9 +2119,8 @@ impl crate::Unity::Burst::BurstString_NumberBuffer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -2450,27 +2131,23 @@ impl crate::Unity::Burst::BurstString_NumberBuffer {
         scale: i32,
         isNegative: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::Unity::Burst::BurstString_NumberBufferKind,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            i32,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::Unity::Burst::BurstString_NumberBufferKind,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                        i32,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
@@ -2483,16 +2160,15 @@ impl crate::Unity::Burst::BurstString_NumberBuffer {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBufferKind")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum BurstString_NumberBufferKind {
     #[default]
     Float = 1i32,
     Integer = 0i32,
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBufferKind")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Burst::BurstString_NumberBufferKind {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_NumberBufferKind {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
@@ -2511,18 +2187,14 @@ for crate::Unity::Burst::BurstString_NumberBufferKind {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBufferKind")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Burst::BurstString_NumberBufferKind {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::BurstString_NumberBufferKind {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2532,8 +2204,7 @@ for crate::Unity::Burst::BurstString_NumberBufferKind {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBufferKind")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Burst::BurstString_NumberBufferKind {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::BurstString_NumberBufferKind {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2546,23 +2217,19 @@ for crate::Unity::Burst::BurstString_NumberBufferKind {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBufferKind")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Burst::BurstString_NumberBufferKind {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::BurstString_NumberBufferKind {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBufferKind")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Burst::BurstString_NumberBufferKind {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_NumberBufferKind {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2575,8 +2242,8 @@ for crate::Unity::Burst::BurstString_NumberBufferKind {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberFormatKind")]
-#[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(u8)]
 pub enum BurstString_NumberFormatKind {
     #[default]
     Decimal = 1u8,
@@ -2585,8 +2252,7 @@ pub enum BurstString_NumberFormatKind {
     Hexadecimal = 3u8,
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberFormatKind")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Burst::BurstString_NumberFormatKind {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_NumberFormatKind {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
@@ -2605,18 +2271,14 @@ for crate::Unity::Burst::BurstString_NumberFormatKind {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberFormatKind")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Burst::BurstString_NumberFormatKind {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::BurstString_NumberFormatKind {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2626,8 +2288,7 @@ for crate::Unity::Burst::BurstString_NumberFormatKind {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberFormatKind")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Burst::BurstString_NumberFormatKind {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::BurstString_NumberFormatKind {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2640,23 +2301,19 @@ for crate::Unity::Burst::BurstString_NumberFormatKind {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberFormatKind")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Burst::BurstString_NumberFormatKind {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::BurstString_NumberFormatKind {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberFormatKind")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Burst::BurstString_NumberFormatKind {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_NumberFormatKind {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2675,14 +2332,14 @@ pub struct BurstString_PreserveAttribute {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+PreserveAttribute")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Burst::BurstString_PreserveAttribute {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_PreserveAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst";
     const CLASS_NAME: &'static str = "BurstString/PreserveAttribute";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2710,37 +2367,35 @@ impl std::ops::DerefMut for crate::Unity::Burst::BurstString_PreserveAttribute {
 #[cfg(feature = "Unity+Burst+BurstString+PreserveAttribute")]
 impl crate::Unity::Burst::BurstString_PreserveAttribute {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+PreserveAttribute")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Unity::Burst::BurstString_PreserveAttribute {
+impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstString_PreserveAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2749,16 +2404,15 @@ for crate::Unity::Burst::BurstString_PreserveAttribute {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+PrintFloatFormat")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum BurstString_PrintFloatFormat {
     #[default]
     Positional = 0i32,
     Scientific = 1i32,
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+PrintFloatFormat")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Burst::BurstString_PrintFloatFormat {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_PrintFloatFormat {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
@@ -2777,18 +2431,14 @@ for crate::Unity::Burst::BurstString_PrintFloatFormat {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+PrintFloatFormat")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Burst::BurstString_PrintFloatFormat {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::BurstString_PrintFloatFormat {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2798,8 +2448,7 @@ for crate::Unity::Burst::BurstString_PrintFloatFormat {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+PrintFloatFormat")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Burst::BurstString_PrintFloatFormat {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::BurstString_PrintFloatFormat {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2812,23 +2461,19 @@ for crate::Unity::Burst::BurstString_PrintFloatFormat {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+PrintFloatFormat")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Burst::BurstString_PrintFloatFormat {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::BurstString_PrintFloatFormat {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+PrintFloatFormat")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Burst::BurstString_PrintFloatFormat {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_PrintFloatFormat {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2841,8 +2486,8 @@ for crate::Unity::Burst::BurstString_PrintFloatFormat {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BurstString_tBigInt {
     pub m_length: i32,
     pub m_blocks: crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer,
@@ -2867,18 +2512,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_tBi
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Burst::BurstString_tBigInt {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::BurstString_tBigInt {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2888,8 +2529,7 @@ for crate::Unity::Burst::BurstString_tBigInt {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Burst::BurstString_tBigInt {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::BurstString_tBigInt {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2902,17 +2542,14 @@ for crate::Unity::Burst::BurstString_tBigInt {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Burst::BurstString_tBigInt {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::BurstString_tBigInt {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -2930,8 +2567,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_t
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Burst::BurstString_tBigInt {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Burst::BurstString_tBigInt {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2944,37 +2580,40 @@ for crate::Unity::Burst::BurstString_tBigInt {
 impl crate::Unity::Burst::BurstString_tBigInt {
     pub const c_BigInt_MaxBlocks: i32 = 35i32;
     #[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
-    pub type _m_blocks_e__FixedBuffer = crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer;
+    pub type _m_blocks_e__FixedBuffer =
+        crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer;
     pub fn GetBlock(&mut self, idx: i32) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), u32, 1usize>("GetBlock")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBlock", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBlock",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (idx))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (idx))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetLength")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLength", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLength",
+                            0usize
                         )
                     })
             });
@@ -2982,15 +2621,17 @@ impl crate::Unity::Burst::BurstString_tBigInt {
         Ok(__cordl_ret.into())
     }
     pub fn GetU32(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("GetU32")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetU32",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetU32",
                             0usize
                         )
                     })
@@ -2999,15 +2640,17 @@ impl crate::Unity::Burst::BurstString_tBigInt {
         Ok(__cordl_ret.into())
     }
     pub fn IsZero(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsZero")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsZero",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsZero",
                             0usize
                         )
                     })
@@ -3019,77 +2662,77 @@ impl crate::Unity::Burst::BurstString_tBigInt {
         &mut self,
         val: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>("SetU32")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetU32",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetU32",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (val))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetU64(
         &mut self,
         val: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u64), quest_hook::libil2cpp::Void, 1usize>("SetU64")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetU64",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetU64",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (val))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (val))? };
         Ok(__cordl_ret.into())
     }
-    pub fn SetZero(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn SetZero(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetZero")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetZero",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetZero",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BurstString_tFloatUnion32 {
     padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Burst::BurstString_tFloatUnion32 {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_tFloatUnion32 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
@@ -3108,18 +2751,14 @@ for crate::Unity::Burst::BurstString_tFloatUnion32 {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Burst::BurstString_tFloatUnion32 {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::BurstString_tFloatUnion32 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -3129,8 +2768,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion32 {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Burst::BurstString_tFloatUnion32 {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::BurstString_tFloatUnion32 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -3143,23 +2781,19 @@ for crate::Unity::Burst::BurstString_tFloatUnion32 {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Burst::BurstString_tFloatUnion32 {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::BurstString_tFloatUnion32 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Burst::BurstString_tFloatUnion32 {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_tFloatUnion32 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -3172,8 +2806,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion32 {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Burst::BurstString_tFloatUnion32 {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Burst::BurstString_tFloatUnion32 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -3185,16 +2818,18 @@ for crate::Unity::Burst::BurstString_tFloatUnion32 {
 #[cfg(feature = "Unity+Burst+BurstString+tFloatUnion32")]
 impl crate::Unity::Burst::BurstString_tFloatUnion32 {
     pub fn GetExponent(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("GetExponent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetExponent", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetExponent",
+                            0usize
                         )
                     })
             });
@@ -3202,16 +2837,18 @@ impl crate::Unity::Burst::BurstString_tFloatUnion32 {
         Ok(__cordl_ret.into())
     }
     pub fn GetMantissa(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("GetMantissa")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetMantissa", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetMantissa",
+                            0usize
                         )
                     })
             });
@@ -3219,16 +2856,18 @@ impl crate::Unity::Burst::BurstString_tFloatUnion32 {
         Ok(__cordl_ret.into())
     }
     pub fn IsNegative(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsNegative")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsNegative", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsNegative",
+                            0usize
                         )
                     })
             });
@@ -3237,14 +2876,13 @@ impl crate::Unity::Burst::BurstString_tFloatUnion32 {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BurstString_tFloatUnion64 {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Burst::BurstString_tFloatUnion64 {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_tFloatUnion64 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
@@ -3263,18 +2901,14 @@ for crate::Unity::Burst::BurstString_tFloatUnion64 {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Burst::BurstString_tFloatUnion64 {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::BurstString_tFloatUnion64 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -3284,8 +2918,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion64 {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Burst::BurstString_tFloatUnion64 {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::BurstString_tFloatUnion64 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -3298,23 +2931,19 @@ for crate::Unity::Burst::BurstString_tFloatUnion64 {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Burst::BurstString_tFloatUnion64 {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::BurstString_tFloatUnion64 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Burst::BurstString_tFloatUnion64 {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_tFloatUnion64 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -3327,8 +2956,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion64 {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Burst::BurstString_tFloatUnion64 {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Burst::BurstString_tFloatUnion64 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -3340,16 +2968,18 @@ for crate::Unity::Burst::BurstString_tFloatUnion64 {
 #[cfg(feature = "Unity+Burst+BurstString+tFloatUnion64")]
 impl crate::Unity::Burst::BurstString_tFloatUnion64 {
     pub fn GetExponent(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("GetExponent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetExponent", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetExponent",
+                            0usize
                         )
                     })
             });
@@ -3357,16 +2987,18 @@ impl crate::Unity::Burst::BurstString_tFloatUnion64 {
         Ok(__cordl_ret.into())
     }
     pub fn GetMantissa(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u64, 0usize>("GetMantissa")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetMantissa", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetMantissa",
+                            0usize
                         )
                     })
             });
@@ -3374,16 +3006,18 @@ impl crate::Unity::Burst::BurstString_tFloatUnion64 {
         Ok(__cordl_ret.into())
     }
     pub fn IsNegative(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsNegative")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsNegative", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsNegative",
+                            0usize
                         )
                     })
             });
@@ -3392,14 +3026,15 @@ impl crate::Unity::Burst::BurstString_tFloatUnion64 {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct tBigInt_BurstString__m_blocks_e__FixedBuffer {
     pub FixedElementField: u32,
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
+    for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
@@ -3418,18 +3053,16 @@ for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
+    for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -3440,7 +3073,8 @@ for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
+    for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -3454,22 +3088,22 @@ for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
+    for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
+    for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -3483,7 +3117,8 @@ for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
+    for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

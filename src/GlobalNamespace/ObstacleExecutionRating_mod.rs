@@ -6,14 +6,14 @@ pub struct ObstacleExecutionRating {
     pub _rating_k__BackingField: crate::GlobalNamespace::ObstacleExecutionRating_Rating,
 }
 #[cfg(feature = "cordl_class_ObstacleExecutionRating")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ObstacleExecutionRating {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ObstacleExecutionRating {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "ObstacleExecutionRating";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,8 +46,8 @@ impl crate::GlobalNamespace::ObstacleExecutionRating {
         _cordl_time: f32,
         rating: crate::GlobalNamespace::ObstacleExecutionRating_Rating,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_time, rating))?;
         Ok(__cordl_object.into())
@@ -57,9 +57,10 @@ impl crate::GlobalNamespace::ObstacleExecutionRating {
         _cordl_time: f32,
         rating: crate::GlobalNamespace::ObstacleExecutionRating_Rating,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, crate::GlobalNamespace::ObstacleExecutionRating_Rating),
@@ -74,19 +75,17 @@ impl crate::GlobalNamespace::ObstacleExecutionRating {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_time, rating))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_time, rating))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_rating(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::ObstacleExecutionRating_Rating,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ObstacleExecutionRating_Rating> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -101,15 +100,13 @@ impl crate::GlobalNamespace::ObstacleExecutionRating {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::ObstacleExecutionRating_Rating = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::ObstacleExecutionRating_Rating =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_ObstacleExecutionRating")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::ObstacleExecutionRating {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ObstacleExecutionRating {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -118,16 +115,15 @@ for crate::GlobalNamespace::ObstacleExecutionRating {
     }
 }
 #[cfg(feature = "cordl_class_ObstacleExecutionRating+Rating")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ObstacleExecutionRating_Rating {
     #[default]
     NotGood = 1i32,
     OK = 0i32,
 }
 #[cfg(feature = "cordl_class_ObstacleExecutionRating+Rating")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -146,18 +142,16 @@ for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_ObstacleExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
+    for crate::GlobalNamespace::ObstacleExecutionRating_Rating
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -168,7 +162,8 @@ for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
 }
 #[cfg(feature = "cordl_class_ObstacleExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
+    for crate::GlobalNamespace::ObstacleExecutionRating_Rating
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -182,22 +177,22 @@ for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
 }
 #[cfg(feature = "cordl_class_ObstacleExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
+    for crate::GlobalNamespace::ObstacleExecutionRating_Rating
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_ObstacleExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
+    for crate::GlobalNamespace::ObstacleExecutionRating_Rating
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

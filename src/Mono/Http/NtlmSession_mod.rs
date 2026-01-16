@@ -3,9 +3,7 @@
 #[derive(Debug)]
 pub struct NtlmSession {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub message: quest_hook::libil2cpp::Gc<
-        crate::Mono::Security::Protocol::Ntlm::MessageBase,
-    >,
+    pub message: quest_hook::libil2cpp::Gc<crate::Mono::Security::Protocol::Ntlm::MessageBase>,
 }
 #[cfg(feature = "cordl_class_Mono+Http+NtlmSession")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Http::NtlmSession {
@@ -14,7 +12,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Http::NtlmSession {
     const NAMESPACE: &'static str = "Mono.Http";
     const CLASS_NAME: &'static str = "NtlmSession";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,64 +45,59 @@ impl crate::Mono::Http::NtlmSession {
         challenge: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         webRequest: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
         credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
-                        3usize,
-                    >("Authenticate")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>, 3usize>(
+                        "Authenticate",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Authenticate", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Authenticate",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Authorization> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (challenge, webRequest, credentials))?
+            cordl_method_info.invoke_unchecked(self, (challenge, webRequest, credentials))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

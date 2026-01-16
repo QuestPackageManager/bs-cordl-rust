@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+ResourceUnversionedData"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ResourceUnversionedData {
     pub isImported: bool,
     pub isShared: bool,

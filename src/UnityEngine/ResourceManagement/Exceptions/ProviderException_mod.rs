@@ -1,6 +1,4 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ProviderException"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ProviderException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProviderException {
@@ -9,17 +7,17 @@ pub struct ProviderException {
         crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     >,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ProviderException"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ProviderException")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
+    for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Exceptions";
     const CLASS_NAME: &'static str = "ProviderException";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,16 +30,14 @@ for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ProviderException")]
-impl std::ops::Deref
-for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
+impl std::ops::Deref for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
     type Target = crate::UnityEngine::ResourceManagement::Exceptions::OperationException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ProviderException")]
-impl std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
+impl std::ops::DerefMut for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -55,8 +51,8 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
         >,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (message, location, innerException))?;
         Ok(__cordl_object.into())
@@ -69,7 +65,8 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
         >,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -95,8 +92,7 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (message, location, innerException))?
+            cordl_method_info.invoke_unchecked(self, (message, location, innerException))?
         };
         Ok(__cordl_ret.into())
     }
@@ -107,7 +103,8 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -132,11 +129,10 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ProviderException"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ProviderException")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
+    for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

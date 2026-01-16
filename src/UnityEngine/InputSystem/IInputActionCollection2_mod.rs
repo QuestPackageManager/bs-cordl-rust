@@ -1,18 +1,20 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+IInputActionCollection2")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IInputActionCollection2 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+IInputActionCollection2")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::IInputActionCollection2 {
+    for crate::UnityEngine::InputSystem::IInputActionCollection2
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
     const CLASS_NAME: &'static str = "IInputActionCollection2";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,9 +48,10 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -70,11 +73,8 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection2 {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (actionNameOrId, throwIfNotFound))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (actionNameOrId, throwIfNotFound))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindBinding(
@@ -84,38 +84,30 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection2 {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::InputSystem::InputBinding,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::InputAction,
-                                >,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("FindBinding")
+                    .find_method::<(
+                        crate::UnityEngine::InputSystem::InputBinding,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+                        >,
+                    ), i32, 2usize>("FindBinding")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindBinding", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindBinding",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (mask, action))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (mask, action))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_bindings(
@@ -127,24 +119,22 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection2 {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::UnityEngine::InputSystem::InputBinding,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            crate::UnityEngine::InputSystem::InputBinding,
                         >,
-                        0usize,
-                    >("get_bindings")
+                    >, 0usize>("get_bindings")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_bindings", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_bindings",
+                            0usize
                         )
                     })
             });
@@ -158,7 +148,8 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection2 {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+IInputActionCollection2")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::IInputActionCollection2 {
+    for crate::UnityEngine::InputSystem::IInputActionCollection2
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -167,11 +158,13 @@ for crate::UnityEngine::InputSystem::IInputActionCollection2 {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection2")]
-impl AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
-    >,
-> for crate::UnityEngine::InputSystem::IInputActionCollection2 {
+impl
+    AsRef<
+        crate::System::Collections::Generic::IEnumerable_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        >,
+    > for crate::UnityEngine::InputSystem::IInputActionCollection2
+{
     fn as_ref(
         &self,
     ) -> &crate::System::Collections::Generic::IEnumerable_1<
@@ -181,11 +174,13 @@ impl AsRef<
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection2")]
-impl AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
-    >,
-> for crate::UnityEngine::InputSystem::IInputActionCollection2 {
+impl
+    AsMut<
+        crate::System::Collections::Generic::IEnumerable_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        >,
+    > for crate::UnityEngine::InputSystem::IInputActionCollection2
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
@@ -196,31 +191,33 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection2")]
 impl AsRef<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::InputSystem::IInputActionCollection2 {
+    for crate::UnityEngine::InputSystem::IInputActionCollection2
+{
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection2")]
 impl AsMut<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::InputSystem::IInputActionCollection2 {
+    for crate::UnityEngine::InputSystem::IInputActionCollection2
+{
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection2")]
 impl AsRef<crate::UnityEngine::InputSystem::IInputActionCollection>
-for crate::UnityEngine::InputSystem::IInputActionCollection2 {
+    for crate::UnityEngine::InputSystem::IInputActionCollection2
+{
     fn as_ref(&self) -> &crate::UnityEngine::InputSystem::IInputActionCollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection2")]
 impl AsMut<crate::UnityEngine::InputSystem::IInputActionCollection>
-for crate::UnityEngine::InputSystem::IInputActionCollection2 {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::IInputActionCollection {
+    for crate::UnityEngine::InputSystem::IInputActionCollection2
+{
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::InputSystem::IInputActionCollection {
         unsafe { std::mem::transmute(self) }
     }
 }

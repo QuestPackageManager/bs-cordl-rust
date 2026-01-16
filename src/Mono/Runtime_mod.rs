@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Runtime {
     const NAMESPACE: &'static str = "Mono";
     const CLASS_NAME: &'static str = "Runtime";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false

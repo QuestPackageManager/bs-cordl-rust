@@ -4,22 +4,20 @@
 pub struct OculusDeeplinkManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub didReceiveDeeplinkEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
-        >,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>>,
     >,
     pub _currentDeeplink: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
     pub _oculusPlatformWasInitialized: bool,
 }
 #[cfg(feature = "cordl_class_OculusDeeplinkManager")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OculusDeeplinkManager {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OculusDeeplinkManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OculusDeeplinkManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,34 +44,34 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OculusDeeplinkManager {
 }
 #[cfg(feature = "OculusDeeplinkManager")]
 impl crate::GlobalNamespace::OculusDeeplinkManager {
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsAtLeastOneFieldPopulated(
         &mut self,
         deeplink: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>),
@@ -88,17 +86,16 @@ impl crate::GlobalNamespace::OculusDeeplinkManager {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (deeplink))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (deeplink))? };
         Ok(__cordl_ret.into())
     }
     pub fn Log(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -113,14 +110,13 @@ impl crate::GlobalNamespace::OculusDeeplinkManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (message))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -128,64 +124,60 @@ impl crate::GlobalNamespace::OculusDeeplinkManager {
     pub fn OculusPlatformWasInitialized(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("OculusPlatformWasInitialized")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "OculusPlatformWasInitialized",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OculusPlatformWasInitialized", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OculusPlatformWasInitialized",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetJoinIntentReceivedNotificationCallback(
         &mut self,
         message: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Message_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::GroupPresenceJoinIntent>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
-                                >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Message_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetJoinIntentReceivedNotificationCallback")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "SetJoinIntentReceivedNotificationCallback",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetJoinIntentReceivedNotificationCallback", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetJoinIntentReceivedNotificationCallback",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (message))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateDeeplinkMessage(
@@ -193,102 +185,93 @@ impl crate::GlobalNamespace::OculusDeeplinkManager {
         joinIntent: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
         >,
-        launchDetails: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Models::LaunchDetails,
-        >,
+        launchDetails: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LaunchDetails>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::LaunchDetails,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateDeeplinkMessage")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LaunchDetails>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "UpdateDeeplinkMessage"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateDeeplinkMessage", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateDeeplinkMessage",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (joinIntent, launchDetails))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (joinIntent, launchDetails))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn add_didReceiveDeeplinkEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
-            >,
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_didReceiveDeeplinkEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_didReceiveDeeplinkEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_didReceiveDeeplinkEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_didReceiveDeeplinkEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_currentDeeplink(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -303,49 +286,44 @@ impl crate::GlobalNamespace::OculusDeeplinkManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_didReceiveDeeplinkEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
-            >,
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_didReceiveDeeplinkEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_didReceiveDeeplinkEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_didReceiveDeeplinkEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_didReceiveDeeplinkEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_OculusDeeplinkManager")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OculusDeeplinkManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OculusDeeplinkManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -355,14 +333,16 @@ for crate::GlobalNamespace::OculusDeeplinkManager {
 }
 #[cfg(feature = "OculusDeeplinkManager")]
 impl AsRef<crate::GlobalNamespace::IDeeplinkManager>
-for crate::GlobalNamespace::OculusDeeplinkManager {
+    for crate::GlobalNamespace::OculusDeeplinkManager
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IDeeplinkManager {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusDeeplinkManager")]
 impl AsMut<crate::GlobalNamespace::IDeeplinkManager>
-for crate::GlobalNamespace::OculusDeeplinkManager {
+    for crate::GlobalNamespace::OculusDeeplinkManager
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IDeeplinkManager {
         unsafe { std::mem::transmute(self) }
     }

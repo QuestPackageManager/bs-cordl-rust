@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LufsMetering+CalculateRmsJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CalculateRmsJob {
     pub inputData: crate::Unity::Collections::NativeArray_1<f32>,
     pub outputData: crate::Unity::Collections::NativeArray_1<f32>,
@@ -28,13 +28,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::CalculateRmsJob
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_LufsMetering+CalculateRmsJob")]
@@ -68,9 +65,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LufsMetering::CalculateRm
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -88,8 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::LufsMetering::CalculateRmsJ
     }
 }
 #[cfg(feature = "cordl_class_LufsMetering+CalculateRmsJob")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::LufsMetering::CalculateRmsJob {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::LufsMetering::CalculateRmsJob {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -104,22 +98,23 @@ impl crate::LufsMetering::CalculateRmsJob {
         &mut self,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (i))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -130,25 +125,23 @@ impl crate::LufsMetering::CalculateRmsJob {
         timeGate: f32,
         rate: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::Unity::Collections::NativeArray_1<f32>,
-                            crate::Unity::Collections::NativeArray_1<f32>,
-                            f32,
-                            f32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::Unity::Collections::NativeArray_1<f32>,
+                        crate::Unity::Collections::NativeArray_1<f32>,
+                        f32,
+                        f32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
@@ -161,15 +154,13 @@ impl crate::LufsMetering::CalculateRmsJob {
     }
 }
 #[cfg(feature = "LufsMetering+CalculateRmsJob")]
-impl AsRef<crate::Unity::Jobs::IJobParallelFor>
-for crate::LufsMetering::CalculateRmsJob {
+impl AsRef<crate::Unity::Jobs::IJobParallelFor> for crate::LufsMetering::CalculateRmsJob {
     fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }
 }
 #[cfg(feature = "LufsMetering+CalculateRmsJob")]
-impl AsMut<crate::Unity::Jobs::IJobParallelFor>
-for crate::LufsMetering::CalculateRmsJob {
+impl AsMut<crate::Unity::Jobs::IJobParallelFor> for crate::LufsMetering::CalculateRmsJob {
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OccluderDepthPyramidConstants {
     pub _InvViewProjMatrix: crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___InvViewProjMatrix_e__FixedBuffer,
     pub _SilhouettePlanes: crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SilhouettePlanes_e__FixedBuffer,
@@ -17,7 +17,8 @@ pub struct OccluderDepthPyramidConstants {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants {
+    for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -36,18 +37,16 @@ for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants {
+    for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -58,7 +57,8 @@ for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants {
+    for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -72,22 +72,22 @@ for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants {
+    for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants {
+    for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -101,7 +101,8 @@ for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants {
+    for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -127,13 +128,14 @@ impl crate::UnityEngine::Rendering::OccluderDepthPyramidConstants {
     #[cfg(
         feature = "UnityEngine+Rendering+OccluderDepthPyramidConstants+__SrcOffset_e__FixedBuffer"
     )]
-    pub type __SrcOffset_e__FixedBuffer = crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer;
+    pub type __SrcOffset_e__FixedBuffer =
+        crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer;
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants+__InvViewProjMatrix_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OccluderDepthPyramidConstants___InvViewProjMatrix_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -247,12 +249,15 @@ for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___InvViewProjMa
 #[cfg(
     feature = "UnityEngine+Rendering+OccluderDepthPyramidConstants+__InvViewProjMatrix_e__FixedBuffer"
 )]
-impl crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___InvViewProjMatrix_e__FixedBuffer {}
+impl
+    crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___InvViewProjMatrix_e__FixedBuffer
+{
+}
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants+__MipOffsetAndSize_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OccluderDepthPyramidConstants___MipOffsetAndSize_e__FixedBuffer {
     pub FixedElementField: u32,
 }
@@ -366,12 +371,15 @@ for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___MipOffsetAndS
 #[cfg(
     feature = "UnityEngine+Rendering+OccluderDepthPyramidConstants+__MipOffsetAndSize_e__FixedBuffer"
 )]
-impl crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___MipOffsetAndSize_e__FixedBuffer {}
+impl
+    crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___MipOffsetAndSize_e__FixedBuffer
+{
+}
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants+__SilhouettePlanes_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OccluderDepthPyramidConstants___SilhouettePlanes_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -485,12 +493,15 @@ for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SilhouettePla
 #[cfg(
     feature = "UnityEngine+Rendering+OccluderDepthPyramidConstants+__SilhouettePlanes_e__FixedBuffer"
 )]
-impl crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SilhouettePlanes_e__FixedBuffer {}
+impl
+    crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SilhouettePlanes_e__FixedBuffer
+{
+}
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants+__SrcOffset_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer {
     pub FixedElementField: u32,
 }
@@ -498,7 +509,8 @@ pub struct OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants+__SrcOffset_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -517,20 +529,18 @@ for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants+__SrcOffset_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -543,7 +553,8 @@ for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__
     feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants+__SrcOffset_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -559,16 +570,15 @@ for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__
     feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants+__SrcOffset_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -576,7 +586,8 @@ for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__
     feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants+__SrcOffset_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -592,7 +603,8 @@ for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__
     feature = "cordl_class_UnityEngine+Rendering+OccluderDepthPyramidConstants+__SrcOffset_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -601,7 +613,5 @@ for crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+OccluderDepthPyramidConstants+__SrcOffset_e__FixedBuffer"
-)]
+#[cfg(feature = "UnityEngine+Rendering+OccluderDepthPyramidConstants+__SrcOffset_e__FixedBuffer")]
 impl crate::UnityEngine::Rendering::OccluderDepthPyramidConstants___SrcOffset_e__FixedBuffer {}

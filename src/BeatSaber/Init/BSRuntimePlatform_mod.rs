@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Init::BSRuntimePla
     const NAMESPACE: &'static str = "BeatSaber.Init";
     const CLASS_NAME: &'static str = "BSRuntimePlatform";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -38,42 +39,42 @@ impl std::ops::DerefMut for crate::BeatSaber::Init::BSRuntimePlatform {
 }
 #[cfg(feature = "BeatSaber+Init+BSRuntimePlatform")]
 impl crate::BeatSaber::Init::BSRuntimePlatform {
-    pub fn GetPlatformType() -> quest_hook::libil2cpp::Result<
-        crate::BeatSaber::Init::RuntimePlatformType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetPlatformType(
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::RuntimePlatformType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::BeatSaber::Init::RuntimePlatformType,
-                        0usize,
-                    >("GetPlatformType")
+                    .find_static_method::<(), crate::BeatSaber::Init::RuntimePlatformType, 0usize>(
+                        "GetPlatformType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPlatformType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPlatformType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::BeatSaber::Init::RuntimePlatformType = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::BeatSaber::Init::RuntimePlatformType =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsSteam() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsSteam")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsSteam", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsSteam",
+                            0usize
                         )
                     })
             });

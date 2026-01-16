@@ -3,25 +3,24 @@
 #[derive(Debug)]
 pub struct AdvancingFront {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Head: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-    >,
-    pub Tail: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-    >,
-    pub Search: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-    >,
+    pub Head:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode>,
+    pub Tail:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode>,
+    pub Search:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+AdvancingFront")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
+    for crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder.Poly2Tri";
     const CLASS_NAME: &'static str = "AdvancingFront";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -54,54 +53,47 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("AddNode")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                    >), quest_hook::libil2cpp::Void, 1usize>("AddNode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddNode",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddNode",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (node))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindSearchNode(
         &mut self,
         x: f64,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f64),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-                        >,
-                        1usize,
-                    >("FindSearchNode")
+                    .find_method::<(f64), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                    >, 1usize>("FindSearchNode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindSearchNode", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindSearchNode",
+                            1usize
                         )
                     })
             });
@@ -116,28 +108,24 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-                        >,
-                        1usize,
-                    >("LocateNode")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                    >, 1usize>("LocateNode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LocateNode", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LocateNode",
+                            1usize
                         )
                     })
             });
@@ -150,26 +138,22 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
         &mut self,
         x: f64,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f64),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-                        >,
-                        1usize,
-                    >("LocateNode")
+                    .find_method::<(f64), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                    >, 1usize>("LocateNode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LocateNode", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LocateNode",
+                            1usize
                         )
                     })
             });
@@ -184,28 +168,24 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-                        >,
-                        1usize,
-                    >("LocatePoint")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                    >, 1usize>("LocatePoint")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LocatePoint", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LocatePoint",
+                            1usize
                         )
                     })
             });
@@ -222,8 +202,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (head, tail))?;
         Ok(__cordl_object.into())
@@ -234,38 +214,35 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("RemoveNode")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                    >), quest_hook::libil2cpp::Void, 1usize>("RemoveNode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RemoveNode", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RemoveNode",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (node))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -280,9 +257,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -294,39 +270,37 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (head, tail))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (head, tail))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+AdvancingFront")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
+    for crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

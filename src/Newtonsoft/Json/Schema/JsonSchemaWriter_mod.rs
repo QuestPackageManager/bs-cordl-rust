@@ -4,19 +4,17 @@
 pub struct JsonSchemaWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
-    pub _resolver: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
-    >,
+    pub _resolver: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaResolver>,
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaWriter")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
+unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Schema";
     const CLASS_NAME: &'static str = "JsonSchemaWriter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,12 +43,10 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
 impl crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
     pub fn New(
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
-        resolver: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
-        >,
+        resolver: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaResolver>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (writer, resolver))?;
         Ok(__cordl_object.into())
@@ -59,9 +55,10 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
         &mut self,
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -78,18 +75,18 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (schema))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (schema))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteItems(
         &mut self,
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -106,9 +103,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (schema))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (schema))? };
         Ok(__cordl_ret.into())
     }
     pub fn WritePropertyIfNotNull(
@@ -117,45 +113,39 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
         propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::JsonWriter,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("WritePropertyIfNotNull")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "WritePropertyIfNotNull"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WritePropertyIfNotNull", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WritePropertyIfNotNull",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer, propertyName, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (writer, propertyName, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteSchema(
         &mut self,
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -172,9 +162,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (schema))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (schema))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteSchemaDictionaryIfNotNull(
@@ -188,37 +177,31 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::JsonWriter,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IDictionary_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::Newtonsoft::Json::Schema::JsonSchema,
-                                    >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IDictionary_2<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Schema::JsonSchema,
                                 >,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("WriteSchemaDictionaryIfNotNull")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "WriteSchemaDictionaryIfNotNull"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteSchemaDictionaryIfNotNull", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteSchemaDictionaryIfNotNull",
+                            3usize
                         )
                     })
             });
@@ -233,77 +216,62 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         _cordl_type: crate::Newtonsoft::Json::Schema::JsonSchemaType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::JsonWriter,
-                            >,
-                            crate::Newtonsoft::Json::Schema::JsonSchemaType,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("WriteType")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+                        crate::Newtonsoft::Json::Schema::JsonSchemaType,
+                    ), quest_hook::libil2cpp::Void, 3usize>("WriteType")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteType", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteType",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (propertyName, writer, _cordl_type))?
+            cordl_method_info.invoke_unchecked(self, (propertyName, writer, _cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
-        resolver: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
-        >,
+        resolver: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaResolver>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::JsonWriter,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer, resolver))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (writer, resolver))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaWriter")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
+impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

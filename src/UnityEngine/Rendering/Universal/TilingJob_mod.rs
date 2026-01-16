@@ -1,10 +1,9 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+TilingJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TilingJob {
-    pub lights: crate::Unity::Collections::NativeArray_1<
-        crate::UnityEngine::Rendering::VisibleLight,
-    >,
+    pub lights:
+        crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Rendering::VisibleLight>,
     pub reflectionProbes: crate::Unity::Collections::NativeArray_1<
         crate::UnityEngine::Rendering::VisibleReflectionProbe,
     >,
@@ -13,16 +12,14 @@ pub struct TilingJob {
     >,
     pub itemsPerTile: i32,
     pub rangesPerItem: i32,
-    pub worldToViews: crate::UnityEngine::Rendering::Universal::Fixed2_1<
-        crate::Unity::Mathematics::float4x4,
-    >,
+    pub worldToViews:
+        crate::UnityEngine::Rendering::Universal::Fixed2_1<crate::Unity::Mathematics::float4x4>,
     pub tileScale: crate::Unity::Mathematics::float2,
     pub tileScaleInv: crate::Unity::Mathematics::float2,
     pub viewPlaneBottoms: crate::UnityEngine::Rendering::Universal::Fixed2_1<f32>,
     pub viewPlaneTops: crate::UnityEngine::Rendering::Universal::Fixed2_1<f32>,
-    pub viewToViewportScaleBiases: crate::UnityEngine::Rendering::Universal::Fixed2_1<
-        crate::Unity::Mathematics::float4,
-    >,
+    pub viewToViewportScaleBiases:
+        crate::UnityEngine::Rendering::Universal::Fixed2_1<crate::Unity::Mathematics::float4>,
     pub tileCount: crate::Unity::Mathematics::int2,
     pub near: f32,
     pub isOrthographic: bool,
@@ -32,8 +29,7 @@ pub struct TilingJob {
     pub m_CenterOffset: crate::Unity::Mathematics::float2,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+TilingJob")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::TilingJob {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Universal::TilingJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
@@ -52,18 +48,16 @@ for crate::UnityEngine::Rendering::Universal::TilingJob {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+TilingJob")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::Universal::TilingJob {
+    for crate::UnityEngine::Rendering::Universal::TilingJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -74,7 +68,8 @@ for crate::UnityEngine::Rendering::Universal::TilingJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+TilingJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::Universal::TilingJob {
+    for crate::UnityEngine::Rendering::Universal::TilingJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -88,22 +83,20 @@ for crate::UnityEngine::Rendering::Universal::TilingJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+TilingJob")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::Universal::TilingJob {
+    for crate::UnityEngine::Rendering::Universal::TilingJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+TilingJob")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::Universal::TilingJob {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::Universal::TilingJob {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -117,7 +110,8 @@ for crate::UnityEngine::Rendering::Universal::TilingJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+TilingJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::Universal::TilingJob {
+    for crate::UnityEngine::Rendering::Universal::TilingJob
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -137,65 +131,66 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
         v: crate::Unity::Mathematics::float3,
         theta: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            f32,
-                            crate::Unity::Mathematics::float3,
-                            crate::Unity::Mathematics::float3,
-                            f32,
-                            crate::Unity::Mathematics::float3,
-                            crate::Unity::Mathematics::float3,
-                            f32,
-                        ),
+                    .find_static_method::<(
+                        f32,
                         crate::Unity::Mathematics::float3,
-                        7usize,
-                    >("EvaluateNearConic")
+                        crate::Unity::Mathematics::float3,
+                        f32,
+                        crate::Unity::Mathematics::float3,
+                        crate::Unity::Mathematics::float3,
+                        f32,
+                    ), crate::Unity::Mathematics::float3, 7usize>(
+                        "EvaluateNearConic"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EvaluateNearConic", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EvaluateNearConic",
+                            7usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Mathematics::float3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (near, o, d, r, u, v, theta))?
-        };
+        let __cordl_ret: crate::Unity::Mathematics::float3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (near, o, d, r, u, v, theta))? };
         Ok(__cordl_ret.into())
     }
     pub fn Execute(
         &mut self,
         jobIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (jobIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (jobIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExpandOrthographic(
         &mut self,
         positionVS: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::float3),
@@ -210,9 +205,8 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (positionVS))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (positionVS))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExpandRangeOrthographic(
@@ -222,40 +216,40 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
         >,
         xVS: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::Universal::InclusiveRange,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExpandRangeOrthographic")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::Universal::InclusiveRange,
+                        >,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "ExpandRangeOrthographic"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExpandRangeOrthographic", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExpandRangeOrthographic",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (range, xVS))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (range, xVS))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExpandY(
         &mut self,
         positionVS: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::float3),
@@ -270,9 +264,8 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (positionVS))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (positionVS))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindNearConicTangentTheta(
@@ -282,32 +275,31 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
         u: crate::Unity::Mathematics::float2,
         v: crate::Unity::Mathematics::float2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float2> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Mathematics::float2,
-                            crate::Unity::Mathematics::float2,
-                            f32,
-                            crate::Unity::Mathematics::float2,
-                            crate::Unity::Mathematics::float2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Mathematics::float2,
-                        5usize,
-                    >("FindNearConicTangentTheta")
+                        crate::Unity::Mathematics::float2,
+                        f32,
+                        crate::Unity::Mathematics::float2,
+                        crate::Unity::Mathematics::float2,
+                    ), crate::Unity::Mathematics::float2, 5usize>(
+                        "FindNearConicTangentTheta"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindNearConicTangentTheta", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindNearConicTangentTheta",
+                            5usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Mathematics::float2 = unsafe {
-            cordl_method_info.invoke_unchecked((), (o, d, r, u, v))?
-        };
+        let __cordl_ret: crate::Unity::Mathematics::float2 =
+            unsafe { cordl_method_info.invoke_unchecked((), (o, d, r, u, v))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindNearConicYTheta(
@@ -319,34 +311,33 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
         v: crate::Unity::Mathematics::float3,
         y: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float2> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            f32,
-                            crate::Unity::Mathematics::float3,
-                            crate::Unity::Mathematics::float3,
-                            f32,
-                            crate::Unity::Mathematics::float3,
-                            crate::Unity::Mathematics::float3,
-                            f32,
-                        ),
-                        crate::Unity::Mathematics::float2,
-                        7usize,
-                    >("FindNearConicYTheta")
+                    .find_static_method::<(
+                        f32,
+                        crate::Unity::Mathematics::float3,
+                        crate::Unity::Mathematics::float3,
+                        f32,
+                        crate::Unity::Mathematics::float3,
+                        crate::Unity::Mathematics::float3,
+                        f32,
+                    ), crate::Unity::Mathematics::float2, 7usize>(
+                        "FindNearConicYTheta"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindNearConicYTheta", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindNearConicYTheta",
+                            7usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Mathematics::float2 = unsafe {
-            cordl_method_info.invoke_unchecked((), (near, o, d, r, u, v, y))?
-        };
+        let __cordl_ret: crate::Unity::Mathematics::float2 =
+            unsafe { cordl_method_info.invoke_unchecked((), (near, o, d, r, u, v, y))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCircleClipPoints(
@@ -357,40 +348,31 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
         p0: quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
         p1: quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Mathematics::float3,
-                            crate::Unity::Mathematics::float3,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Mathematics::float3,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Mathematics::float3,
-                            >,
-                        ),
-                        bool,
-                        6usize,
-                    >("GetCircleClipPoints")
+                    .find_static_method::<(
+                        crate::Unity::Mathematics::float3,
+                        crate::Unity::Mathematics::float3,
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
+                    ), bool, 6usize>("GetCircleClipPoints")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCircleClipPoints", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCircleClipPoints",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (circleCenter, circleNormal, circleRadius, near, p0, p1),
-                )?
+                .invoke_unchecked((), (circleCenter, circleNormal, circleRadius, near, p0, p1))?
         };
         Ok(__cordl_ret.into())
     }
@@ -406,55 +388,50 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
         l1: quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
         l2: quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Mathematics::float3,
-                            crate::Unity::Mathematics::float3,
-                            f32,
-                            f32,
-                            f32,
-                            f32,
-                            crate::Unity::Mathematics::float3,
-                            crate::Unity::Mathematics::float3,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Mathematics::float3,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Mathematics::float3,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        10usize,
-                    >("GetConeSideTangentPoints")
+                    .find_static_method::<(
+                        crate::Unity::Mathematics::float3,
+                        crate::Unity::Mathematics::float3,
+                        f32,
+                        f32,
+                        f32,
+                        f32,
+                        crate::Unity::Mathematics::float3,
+                        crate::Unity::Mathematics::float3,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
+                    ), quest_hook::libil2cpp::Void, 10usize>(
+                        "GetConeSideTangentPoints"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetConeSideTangentPoints", 10usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetConeSideTangentPoints",
+                            10usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        vertex,
-                        axis,
-                        cosHalfAngle,
-                        circleRadius,
-                        coneHeight,
-                        range,
-                        circleU,
-                        circleV,
-                        l1,
-                        l2,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    vertex,
+                    axis,
+                    cosHalfAngle,
+                    circleRadius,
+                    coneHeight,
+                    range,
+                    circleU,
+                    circleV,
+                    l1,
+                    l2,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -466,37 +443,32 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
         uv1: quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float2>,
         uv2: quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Mathematics::float2,
-                            f32,
-                            crate::Unity::Mathematics::float2,
-                            crate::Unity::Mathematics::float2,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Mathematics::float2,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Mathematics::float2,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("GetProjectedCircleHorizon")
+                    .find_static_method::<(
+                        crate::Unity::Mathematics::float2,
+                        f32,
+                        crate::Unity::Mathematics::float2,
+                        crate::Unity::Mathematics::float2,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float2>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float2>,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "GetProjectedCircleHorizon"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetProjectedCircleHorizon", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetProjectedCircleHorizon",
+                            6usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (center, radius, U, V, uv1, uv2))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (center, radius, U, V, uv1, uv2))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSphereHorizon(
@@ -507,37 +479,30 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
         p0: quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float2>,
         p1: quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Mathematics::float2,
-                            f32,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Mathematics::float2,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Mathematics::float2,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("GetSphereHorizon")
+                    .find_static_method::<(
+                        crate::Unity::Mathematics::float2,
+                        f32,
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float2>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float2>,
+                    ), quest_hook::libil2cpp::Void, 6usize>("GetSphereHorizon")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSphereHorizon", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSphereHorizon",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (center, radius, near, clipRadius, p0, p1))?
+            cordl_method_info.invoke_unchecked((), (center, radius, near, clipRadius, p0, p1))?
         };
         Ok(__cordl_ret.into())
     }
@@ -550,41 +515,34 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
         left: quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
         right: quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Mathematics::float3,
-                            f32,
-                            f32,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Mathematics::float3,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Mathematics::float3,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("GetSphereYPlaneHorizon")
+                    .find_static_method::<(
+                        crate::Unity::Mathematics::float3,
+                        f32,
+                        f32,
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
+                    ), quest_hook::libil2cpp::Void, 7usize>(
+                        "GetSphereYPlaneHorizon"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSphereYPlaneHorizon", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSphereYPlaneHorizon",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (center, sphereRadius, near, clipRadius, y, left, right),
-                )?
+                .invoke_unchecked((), (center, sphereRadius, near, clipRadius, y, left, right))?
         };
         Ok(__cordl_ret.into())
     }
@@ -598,51 +556,44 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
         p1: quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
         p2: quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            f32,
-                            crate::Unity::Mathematics::float3,
-                            crate::Unity::Mathematics::float3,
-                            crate::Unity::Mathematics::float3,
-                            crate::Unity::Mathematics::float3,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Mathematics::float3,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Mathematics::float3,
-                            >,
-                        ),
-                        bool,
-                        8usize,
-                    >("IntersectCircleYPlane")
+                    .find_static_method::<(
+                        f32,
+                        crate::Unity::Mathematics::float3,
+                        crate::Unity::Mathematics::float3,
+                        crate::Unity::Mathematics::float3,
+                        crate::Unity::Mathematics::float3,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::float3>,
+                    ), bool, 8usize>("IntersectCircleYPlane")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectCircleYPlane", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectCircleYPlane",
+                            8usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        y,
-                        circleCenter,
-                        circleNormal,
-                        circleU,
-                        circleV,
-                        circleRadius,
-                        p1,
-                        p2,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    y,
+                    circleCenter,
+                    circleNormal,
+                    circleU,
+                    circleV,
+                    circleRadius,
+                    p1,
+                    p2,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -651,9 +602,10 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
         b: f32,
         line: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::System::ValueTuple_2<f32, f32>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, crate::Unity::Mathematics::float3),
@@ -668,96 +620,91 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
                         )
                     })
             });
-        let __cordl_ret: crate::System::ValueTuple_2<f32, f32> = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b, line))?
-        };
+        let __cordl_ret: crate::System::ValueTuple_2<f32, f32> =
+            unsafe { cordl_method_info.invoke_unchecked((), (a, b, line))? };
         Ok(__cordl_ret.into())
     }
     pub fn TileLight(
         &mut self,
         lightIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("TileLight")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("TileLight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TileLight", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TileLight",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (lightIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (lightIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn TileLightOrthographic(
         &mut self,
         lightIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("TileLightOrthographic")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "TileLightOrthographic",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TileLightOrthographic", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TileLightOrthographic",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (lightIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (lightIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn TileReflectionProbe(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("TileReflectionProbe")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "TileReflectionProbe",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TileReflectionProbe", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TileReflectionProbe",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn ViewToTileSpace(
         &mut self,
         positionVS: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float2> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::float3),
@@ -772,18 +719,18 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Mathematics::float2 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (positionVS))?
-        };
+        let __cordl_ret: crate::Unity::Mathematics::float2 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (positionVS))? };
         Ok(__cordl_ret.into())
     }
     pub fn ViewToTileSpaceOrthographic(
         &mut self,
         positionVS: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float2> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::float3),
@@ -798,9 +745,8 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Mathematics::float2 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (positionVS))?
-        };
+        let __cordl_ret: crate::Unity::Mathematics::float2 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (positionVS))? };
         Ok(__cordl_ret.into())
     }
     pub fn _TileLightOrthographic_g__SpherePointIsValid_20_0(
@@ -809,33 +755,30 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Mathematics::float3,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("<TileLightOrthographic>g__SpherePointIsValid|20_0")
+                    .find_static_method::<(
+                        crate::Unity::Mathematics::float3,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        >,
+                    ), bool, 2usize>(
+                        "<TileLightOrthographic>g__SpherePointIsValid|20_0"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<TileLightOrthographic>g__SpherePointIsValid|20_0", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "<TileLightOrthographic>g__SpherePointIsValid|20_0",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (p, _cordl_fixed_empty_name_whitespace))?
+            cordl_method_info.invoke_unchecked((), (p, _cordl_fixed_empty_name_whitespace))?
         };
         Ok(__cordl_ret.into())
     }
@@ -845,33 +788,28 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Mathematics::float3,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("<TileLight>g__ConicPointIsValid|19_1")
+                    .find_static_method::<(
+                        crate::Unity::Mathematics::float3,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        >,
+                    ), bool, 2usize>("<TileLight>g__ConicPointIsValid|19_1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<TileLight>g__ConicPointIsValid|19_1", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "<TileLight>g__ConicPointIsValid|19_1",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (p, _cordl_fixed_empty_name_whitespace))?
+            cordl_method_info.invoke_unchecked((), (p, _cordl_fixed_empty_name_whitespace))?
         };
         Ok(__cordl_ret.into())
     }
@@ -881,46 +819,43 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Mathematics::float3,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("<TileLight>g__SpherePointIsValid|19_0")
+                    .find_static_method::<(
+                        crate::Unity::Mathematics::float3,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        >,
+                    ), bool, 2usize>("<TileLight>g__SpherePointIsValid|19_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<TileLight>g__SpherePointIsValid|19_0", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "<TileLight>g__SpherePointIsValid|19_0",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (p, _cordl_fixed_empty_name_whitespace))?
+            cordl_method_info.invoke_unchecked((), (p, _cordl_fixed_empty_name_whitespace))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn square(x: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), f32, 1usize>("square")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "square",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "square",
                             1usize
                         )
                     })
@@ -930,15 +865,13 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+TilingJob")]
-impl AsRef<crate::Unity::Jobs::IJobFor>
-for crate::UnityEngine::Rendering::Universal::TilingJob {
+impl AsRef<crate::Unity::Jobs::IJobFor> for crate::UnityEngine::Rendering::Universal::TilingJob {
     fn as_ref(&self) -> &crate::Unity::Jobs::IJobFor {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+TilingJob")]
-impl AsMut<crate::Unity::Jobs::IJobFor>
-for crate::UnityEngine::Rendering::Universal::TilingJob {
+impl AsMut<crate::Unity::Jobs::IJobFor> for crate::UnityEngine::Rendering::Universal::TilingJob {
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobFor {
         todo!()
     }

@@ -6,13 +6,15 @@ pub struct BeatmapEventDataLightsExtensions {
 }
 #[cfg(feature = "cordl_class_BeatmapEventDataLightsExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
+    for crate::GlobalNamespace::BeatmapEventDataLightsExtensions
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapEventDataLightsExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,13 +42,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEventDataLightsExtens
 #[cfg(feature = "BeatmapEventDataLightsExtensions")]
 impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
     #[cfg(feature = "BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues")]
-    pub type LightSwitchEventEffectDataValues = crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues;
+    pub type LightSwitchEventEffectDataValues =
+        crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues;
     pub fn GetLightColorTypeFromEventDataValue(
         beatmapEventValue: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentColorType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
@@ -61,9 +65,8 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::EnvironmentColorType = unsafe {
-            cordl_method_info.invoke_unchecked((), (beatmapEventValue))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentColorType =
+            unsafe { cordl_method_info.invoke_unchecked((), (beatmapEventValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasFixedDurationLightSwitchEventDataValue_BasicBeatmapEventData0(
@@ -71,9 +74,10 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
             crate::GlobalNamespace::BasicBeatmapEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -90,34 +94,32 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (basicBeatmapEventData))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (basicBeatmapEventData))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasFixedDurationLightSwitchEventDataValue_i32_1(
         beatmapEventValue: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32),
-                        bool,
-                        1usize,
-                    >("HasFixedDurationLightSwitchEventDataValue")
+                    .find_static_method::<(i32), bool, 1usize>(
+                        "HasFixedDurationLightSwitchEventDataValue",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HasFixedDurationLightSwitchEventDataValue", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HasFixedDurationLightSwitchEventDataValue",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (beatmapEventValue))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (beatmapEventValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasLightFadeEventDataValue(
@@ -125,9 +127,10 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
             crate::GlobalNamespace::BasicBeatmapEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -144,9 +147,8 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (basicBeatmapEventData))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (basicBeatmapEventData))? };
         Ok(__cordl_ret.into())
     }
     pub fn LightColorTypeFromEventDataValue(
@@ -154,9 +156,10 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
             crate::GlobalNamespace::BasicBeatmapEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentColorType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -173,15 +176,15 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::EnvironmentColorType = unsafe {
-            cordl_method_info.invoke_unchecked((), (basicBeatmapEventData))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentColorType =
+            unsafe { cordl_method_info.invoke_unchecked((), (basicBeatmapEventData))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapEventDataLightsExtensions")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
+    for crate::GlobalNamespace::BeatmapEventDataLightsExtensions
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -189,25 +192,24 @@ for crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues"
-)]
+#[cfg(feature = "cordl_class_BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(
-    feature = "cordl_class_BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues"
-)]
+#[cfg(feature = "cordl_class_BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues {
+    for crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BeatmapEventDataLightsExtensions/LightSwitchEventEffectDataValues";
+    const CLASS_NAME: &'static str =
+        "BeatmapEventDataLightsExtensions/LightSwitchEventEffectDataValues";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -221,7 +223,8 @@ for crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEff
 }
 #[cfg(feature = "BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues")]
 impl std::ops::Deref
-for crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues {
+    for crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -229,7 +232,8 @@ for crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEff
 }
 #[cfg(feature = "BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues {
+    for crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -251,11 +255,10 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEf
     pub const kOnB: i32 = 5i32;
     pub const kOnW: i32 = 9i32;
 }
-#[cfg(
-    feature = "cordl_class_BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues"
-)]
+#[cfg(feature = "cordl_class_BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues {
+    for crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

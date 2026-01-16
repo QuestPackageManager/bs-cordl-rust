@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Math::Prime::PrimalityT
     const NAMESPACE: &'static str = "Mono.Math.Prime";
     const CLASS_NAME: &'static str = "PrimalityTests";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,116 +43,101 @@ impl crate::Mono::Math::Prime::PrimalityTests {
         bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         confidence: crate::Mono::Math::Prime::ConfidenceFactor,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-                            crate::Mono::Math::Prime::ConfidenceFactor,
-                        ),
-                        i32,
-                        2usize,
-                    >("GetSPPRounds")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+                        crate::Mono::Math::Prime::ConfidenceFactor,
+                    ), i32, 2usize>("GetSPPRounds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSPPRounds", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSPPRounds",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (bi, confidence))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (bi, confidence))? };
         Ok(__cordl_ret.into())
     }
     pub fn RabinMillerTest(
         n: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         confidence: crate::Mono::Math::Prime::ConfidenceFactor,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-                            crate::Mono::Math::Prime::ConfidenceFactor,
-                        ),
-                        bool,
-                        2usize,
-                    >("RabinMillerTest")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+                        crate::Mono::Math::Prime::ConfidenceFactor,
+                    ), bool, 2usize>("RabinMillerTest")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RabinMillerTest", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RabinMillerTest",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (n, confidence))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (n, confidence))? };
         Ok(__cordl_ret.into())
     }
     pub fn SmallPrimeSppTest(
         bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         confidence: crate::Mono::Math::Prime::ConfidenceFactor,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-                            crate::Mono::Math::Prime::ConfidenceFactor,
-                        ),
-                        bool,
-                        2usize,
-                    >("SmallPrimeSppTest")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+                        crate::Mono::Math::Prime::ConfidenceFactor,
+                    ), bool, 2usize>("SmallPrimeSppTest")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SmallPrimeSppTest", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SmallPrimeSppTest",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (bi, confidence))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (bi, confidence))? };
         Ok(__cordl_ret.into())
     }
     pub fn Test(
         n: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         confidence: crate::Mono::Math::Prime::ConfidenceFactor,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-                            crate::Mono::Math::Prime::ConfidenceFactor,
-                        ),
-                        bool,
-                        2usize,
-                    >("Test")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+                        crate::Mono::Math::Prime::ConfidenceFactor,
+                    ), bool, 2usize>("Test")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Test",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Test",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (n, confidence))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (n, confidence))? };
         Ok(__cordl_ret.into())
     }
 }

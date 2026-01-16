@@ -59,9 +59,8 @@ pub struct BeatmapData {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     >,
-    pub _beatmapObjectsInTimeRowProcessor: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor,
-    >,
+    pub _beatmapObjectsInTimeRowProcessor:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor>,
     pub _prevAddedBeatmapObjectDataTime: f32,
     pub _isCreatingFilteredCopy: bool,
 }
@@ -72,7 +71,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapData 
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -101,16 +101,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapData {
 impl crate::GlobalNamespace::BeatmapData {
     pub const kDefaultNumberOfLines: i32 = 4i32;
     #[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
-    pub type BeatmapDataBinaryHeapItem = crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem;
+    pub type BeatmapDataBinaryHeapItem =
+        crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem;
     pub fn AddBeatmapObjectData(
         &mut self,
-        beatmapObjectData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapObjectData,
-        >,
+        beatmapObjectData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -127,20 +127,18 @@ impl crate::GlobalNamespace::BeatmapData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (beatmapObjectData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (beatmapObjectData))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddBeatmapObjectDataInOrder(
         &mut self,
-        beatmapObjectData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapObjectData,
-        >,
+        beatmapObjectData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -157,9 +155,8 @@ impl crate::GlobalNamespace::BeatmapData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (beatmapObjectData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (beatmapObjectData))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddSpecialBasicBeatmapEventKeyword(
@@ -168,9 +165,10 @@ impl crate::GlobalNamespace::BeatmapData {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -185,9 +183,8 @@ impl crate::GlobalNamespace::BeatmapData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (specialBasicBeatmapEventKeyword))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (specialBasicBeatmapEventKeyword))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBeatmapDataItems<T>(
@@ -197,12 +194,14 @@ impl crate::GlobalNamespace::BeatmapData {
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -221,9 +220,7 @@ impl crate::GlobalNamespace::BeatmapData {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (subtypeGroupIdentifier))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (subtypeGroupIdentifier))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBeatmapDataItemsCount<T>(
@@ -231,42 +228,44 @@ impl crate::GlobalNamespace::BeatmapData {
         subtypeGroupIdentifier: i32,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("GetBeatmapDataItemsCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBeatmapDataItemsCount", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBeatmapDataItemsCount",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (subtypeGroupIdentifier))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (subtypeGroupIdentifier))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBeatmapDataItemsMerged<T>(
         &mut self,
-        subtypeGroupIdentifiers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<i32>,
-        >,
+        subtypeGroupIdentifiers: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -287,24 +286,22 @@ impl crate::GlobalNamespace::BeatmapData {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (subtypeGroupIdentifiers))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (subtypeGroupIdentifiers))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBeatmapDataItemsMergedCount<T>(
         &mut self,
-        subtypeGroupIdentifiers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<i32>,
-        >,
+        subtypeGroupIdentifiers: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -321,19 +318,18 @@ impl crate::GlobalNamespace::BeatmapData {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (subtypeGroupIdentifiers))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (subtypeGroupIdentifiers))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCopy(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -348,9 +344,8 @@ impl crate::GlobalNamespace::BeatmapData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapData,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFilteredCopy(
@@ -361,49 +356,42 @@ impl crate::GlobalNamespace::BeatmapData {
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
             >,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapDataItem,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapDataItem,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
-                        1usize,
-                    >("GetFilteredCopy")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Func_2<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+                        >,
+                    >), quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>, 1usize>(
+                        "GetFilteredCopy",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetFilteredCopy", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetFilteredCopy",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapData,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (processDataItem))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (processDataItem))? };
         Ok(__cordl_ret.into())
     }
     pub fn InsertBeatmapEventData(
         &mut self,
-        beatmapEventData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapEventData,
-        >,
+        beatmapEventData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -420,20 +408,18 @@ impl crate::GlobalNamespace::BeatmapData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (beatmapEventData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (beatmapEventData))? };
         Ok(__cordl_ret.into())
     }
     pub fn InsertBeatmapEventDataInOrder(
         &mut self,
-        beatmapEventData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapEventData,
-        >,
+        beatmapEventData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -450,16 +436,13 @@ impl crate::GlobalNamespace::BeatmapData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (beatmapEventData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (beatmapEventData))? };
         Ok(__cordl_ret.into())
     }
     pub fn InsertToAllBeatmapData(
         &mut self,
-        beatmapDataItem: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataItem,
-        >,
+        beatmapDataItem: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
         node: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::LinkedListNode_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
@@ -472,37 +455,29 @@ impl crate::GlobalNamespace::BeatmapData {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDataItem,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::LinkedListNode_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapDataItem,
-                                    >,
-                                >,
-                            >,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
                         quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::LinkedListNode_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapDataItem,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
                             >,
                         >,
-                        2usize,
-                    >("InsertToAllBeatmapData")
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::LinkedListNode_1<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+                        >,
+                    >, 2usize>("InsertToAllBeatmapData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InsertToAllBeatmapData", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InsertToAllBeatmapData",
+                            2usize
                         )
                     })
             });
@@ -510,18 +485,17 @@ impl crate::GlobalNamespace::BeatmapData {
             crate::System::Collections::Generic::LinkedListNode_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (beatmapDataItem, node))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (beatmapDataItem, node))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsBasicEventSpecialKeywordEnabled(
         &mut self,
         keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -536,16 +510,14 @@ impl crate::GlobalNamespace::BeatmapData {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (keyword))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (keyword))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         numberOfLines: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (numberOfLines))?;
         Ok(__cordl_object.into())
@@ -553,62 +525,57 @@ impl crate::GlobalNamespace::BeatmapData {
     pub fn ProcessAndSortBeatmapData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ProcessAndSortBeatmapData")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "ProcessAndSortBeatmapData",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessAndSortBeatmapData", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessAndSortBeatmapData",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessRemainingData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ProcessRemainingData")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ProcessRemainingData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessRemainingData", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessRemainingData",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveBeatmapEventData(
         &mut self,
-        beatmapEventData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapEventData,
-        >,
+        beatmapEventData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -625,31 +592,31 @@ impl crate::GlobalNamespace::BeatmapData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (beatmapEventData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (beatmapEventData))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         numberOfLines: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (numberOfLines))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (numberOfLines))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_beatmapEventDataWasInsertedEvent(
@@ -659,47 +626,42 @@ impl crate::GlobalNamespace::BeatmapData {
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
                 quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::LinkedListNode_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::BeatmapDataItem,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
                     >,
                 >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapEventData,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::LinkedListNode_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::GlobalNamespace::BeatmapDataItem,
-                                        >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_2<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::LinkedListNode_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapDataItem,
                                     >,
                                 >,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_beatmapEventDataWasInsertedEvent")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_beatmapEventDataWasInsertedEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_beatmapEventDataWasInsertedEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_beatmapEventDataWasInsertedEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_beatmapEventDataWasRemovedEvent(
@@ -710,32 +672,29 @@ impl crate::GlobalNamespace::BeatmapData {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapEventData,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_beatmapEventDataWasRemovedEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_beatmapEventDataWasRemovedEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_beatmapEventDataWasRemovedEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_beatmapEventDataWasRemovedEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_beatmapEventDataWillBeRemovedEvent(
@@ -745,47 +704,42 @@ impl crate::GlobalNamespace::BeatmapData {
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
                 quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::LinkedListNode_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::BeatmapDataItem,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
                     >,
                 >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapEventData,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::LinkedListNode_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::GlobalNamespace::BeatmapDataItem,
-                                        >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_2<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::LinkedListNode_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapDataItem,
                                     >,
                                 >,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_beatmapEventDataWillBeRemovedEvent")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_beatmapEventDataWillBeRemovedEvent",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_beatmapEventDataWillBeRemovedEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_beatmapEventDataWillBeRemovedEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_allBeatmapDataItems(
@@ -797,26 +751,22 @@ impl crate::GlobalNamespace::BeatmapData {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapDataItem,
-                                >,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::LinkedList_1<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
                         >,
-                        0usize,
-                    >("get_allBeatmapDataItems")
+                    >, 0usize>("get_allBeatmapDataItems")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_allBeatmapDataItems", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_allBeatmapDataItems",
+                            0usize
                         )
                     })
             });
@@ -828,16 +778,18 @@ impl crate::GlobalNamespace::BeatmapData {
         Ok(__cordl_ret.into())
     }
     pub fn get_areValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_areValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_areValid", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_areValid",
+                            0usize
                         )
                     })
             });
@@ -845,16 +797,18 @@ impl crate::GlobalNamespace::BeatmapData {
         Ok(__cordl_ret.into())
     }
     pub fn get_bombsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_bombsCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_bombsCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_bombsCount",
+                            0usize
                         )
                     })
             });
@@ -862,35 +816,37 @@ impl crate::GlobalNamespace::BeatmapData {
         Ok(__cordl_ret.into())
     }
     pub fn get_cuttableNotesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_cuttableNotesCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_cuttableNotesCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_cuttableNotesCount",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_cuttableScoringObjectsCount(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_cuttableScoringObjectsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_cuttableScoringObjectsCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_cuttableScoringObjectsCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_cuttableScoringObjectsCount",
+                            0usize
                         )
                     })
             });
@@ -898,16 +854,18 @@ impl crate::GlobalNamespace::BeatmapData {
         Ok(__cordl_ret.into())
     }
     pub fn get_numberOfLines(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_numberOfLines")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_numberOfLines", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_numberOfLines",
+                            0usize
                         )
                     })
             });
@@ -915,16 +873,18 @@ impl crate::GlobalNamespace::BeatmapData {
         Ok(__cordl_ret.into())
     }
     pub fn get_obstaclesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_obstaclesCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_obstaclesCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_obstaclesCount",
+                            0usize
                         )
                     })
             });
@@ -940,26 +900,22 @@ impl crate::GlobalNamespace::BeatmapData {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         >,
-                        0usize,
-                    >("get_specialBasicBeatmapEventKeywords")
+                    >, 0usize>("get_specialBasicBeatmapEventKeywords")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_specialBasicBeatmapEventKeywords", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_specialBasicBeatmapEventKeywords",
+                            0usize
                         )
                     })
             });
@@ -970,19 +926,19 @@ impl crate::GlobalNamespace::BeatmapData {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_updateAllBeatmapDataOnInsert(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_updateAllBeatmapDataOnInsert(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_updateAllBeatmapDataOnInsert")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_updateAllBeatmapDataOnInsert", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_updateAllBeatmapDataOnInsert",
+                            0usize
                         )
                     })
             });
@@ -996,47 +952,42 @@ impl crate::GlobalNamespace::BeatmapData {
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
                 quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::LinkedListNode_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::BeatmapDataItem,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
                     >,
                 >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapEventData,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::LinkedListNode_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::GlobalNamespace::BeatmapDataItem,
-                                        >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_2<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::LinkedListNode_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapDataItem,
                                     >,
                                 >,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_beatmapEventDataWasInsertedEvent")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_beatmapEventDataWasInsertedEvent",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_beatmapEventDataWasInsertedEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_beatmapEventDataWasInsertedEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_beatmapEventDataWasRemovedEvent(
@@ -1047,32 +998,29 @@ impl crate::GlobalNamespace::BeatmapData {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapEventData,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_beatmapEventDataWasRemovedEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_beatmapEventDataWasRemovedEvent",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_beatmapEventDataWasRemovedEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_beatmapEventDataWasRemovedEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_beatmapEventDataWillBeRemovedEvent(
@@ -1082,177 +1030,163 @@ impl crate::GlobalNamespace::BeatmapData {
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
                 quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::LinkedListNode_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::BeatmapDataItem,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
                     >,
                 >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapEventData,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::LinkedListNode_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::GlobalNamespace::BeatmapDataItem,
-                                        >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_2<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::LinkedListNode_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapDataItem,
                                     >,
                                 >,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_beatmapEventDataWillBeRemovedEvent")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_beatmapEventDataWillBeRemovedEvent",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_beatmapEventDataWillBeRemovedEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_beatmapEventDataWillBeRemovedEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_bombsCount(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_bombsCount")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_bombsCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_bombsCount", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_bombsCount",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_cuttableNotesCount(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_cuttableNotesCount")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_cuttableNotesCount",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_cuttableNotesCount", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_cuttableNotesCount",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_cuttableScoringObjectsCount(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_cuttableScoringObjectsCount")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_cuttableScoringObjectsCount",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_cuttableScoringObjectsCount", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_cuttableScoringObjectsCount",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_obstaclesCount(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_obstaclesCount")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_obstaclesCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_obstaclesCount", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_obstaclesCount",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_updateAllBeatmapDataOnInsert(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_updateAllBeatmapDataOnInsert")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_updateAllBeatmapDataOnInsert",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_updateAllBeatmapDataOnInsert", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_updateAllBeatmapDataOnInsert",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1266,15 +1200,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapData {
     }
 }
 #[cfg(feature = "BeatmapData")]
-impl AsRef<crate::GlobalNamespace::IReadonlyBeatmapData>
-for crate::GlobalNamespace::BeatmapData {
+impl AsRef<crate::GlobalNamespace::IReadonlyBeatmapData> for crate::GlobalNamespace::BeatmapData {
     fn as_ref(&self) -> &crate::GlobalNamespace::IReadonlyBeatmapData {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapData")]
-impl AsMut<crate::GlobalNamespace::IReadonlyBeatmapData>
-for crate::GlobalNamespace::BeatmapData {
+impl AsMut<crate::GlobalNamespace::IReadonlyBeatmapData> for crate::GlobalNamespace::BeatmapData {
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IReadonlyBeatmapData {
         unsafe { std::mem::transmute(self) }
     }
@@ -1292,13 +1224,15 @@ pub struct BeatmapData_BeatmapDataBinaryHeapItem {
 }
 #[cfg(feature = "cordl_class_BeatmapData+BeatmapDataBinaryHeapItem")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
+    for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapData/BeatmapDataBinaryHeapItem";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1318,8 +1252,7 @@ impl std::ops::Deref for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHe
     }
 }
 #[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1332,28 +1265,24 @@ impl crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
             crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem,
-                        >),
-                        i32,
-                        1usize,
-                    >("CompareTo")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem,
+                    >), i32, 1usize>("CompareTo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompareTo", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompareTo",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -1363,8 +1292,8 @@ impl crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (node))?;
         Ok(__cordl_object.into())
@@ -1377,38 +1306,34 @@ impl crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapDataItem,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::LinkedListNode_1<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (node))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapData+BeatmapDataBinaryHeapItem")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
+    for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1417,37 +1342,37 @@ for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
     }
 }
 #[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
-impl AsRef<
-    crate::System::IComparable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem,
+impl
+    AsRef<
+        crate::System::IComparable_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem,
+            >,
         >,
-    >,
-> for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
+    > for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem
+{
     fn as_ref(
         &self,
     ) -> &crate::System::IComparable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
-impl AsMut<
-    crate::System::IComparable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem,
+impl
+    AsMut<
+        crate::System::IComparable_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem,
+            >,
         >,
-    >,
-> for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
+    > for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::IComparable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem>,
     > {
         unsafe { std::mem::transmute(self) }
     }

@@ -6,13 +6,15 @@ pub struct SerializationEventsCache {
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEventsCache")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Serialization::SerializationEventsCache {
+    for crate::System::Runtime::Serialization::SerializationEventsCache
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Serialization";
     const CLASS_NAME: &'static str = "SerializationEventsCache";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -25,16 +27,14 @@ for crate::System::Runtime::Serialization::SerializationEventsCache {
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+SerializationEventsCache")]
-impl std::ops::Deref
-for crate::System::Runtime::Serialization::SerializationEventsCache {
+impl std::ops::Deref for crate::System::Runtime::Serialization::SerializationEventsCache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+SerializationEventsCache")]
-impl std::ops::DerefMut
-for crate::System::Runtime::Serialization::SerializationEventsCache {
+impl std::ops::DerefMut for crate::System::Runtime::Serialization::SerializationEventsCache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -44,13 +44,12 @@ impl crate::System::Runtime::Serialization::SerializationEventsCache {
     pub fn GetSerializationEventsForType(
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Serialization::SerializationEvents,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::SerializationEvents>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
@@ -75,7 +74,8 @@ impl crate::System::Runtime::Serialization::SerializationEventsCache {
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEventsCache")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Serialization::SerializationEventsCache {
+    for crate::System::Runtime::Serialization::SerializationEventsCache
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

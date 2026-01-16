@@ -6,13 +6,15 @@ pub struct BeatmapDifficultySerializedMethods {
 }
 #[cfg(feature = "cordl_class_BeatmapDifficultySerializedMethods")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
+    for crate::GlobalNamespace::BeatmapDifficultySerializedMethods
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapDifficultySerializedMethods";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -48,47 +50,38 @@ impl crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
     pub const kDifficultyUnknownSerializedName: &'static str = "Unknown";
     pub fn BeatmapDifficultyFromSerializedName(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        difficulty: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapDifficulty,
-        >,
+        difficulty: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapDifficulty>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::BeatmapDifficulty,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("BeatmapDifficultyFromSerializedName")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapDifficulty>,
+                    ), bool, 2usize>("BeatmapDifficultyFromSerializedName")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeatmapDifficultyFromSerializedName", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeatmapDifficultyFromSerializedName",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (name, difficulty))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (name, difficulty))? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializedName(
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::BeatmapDifficulty),
@@ -103,15 +96,15 @@ impl crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (difficulty))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (difficulty))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDifficultySerializedMethods")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
+    for crate::GlobalNamespace::BeatmapDifficultySerializedMethods
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -7,14 +7,14 @@ pub struct PlayerSortOrderPacket {
     pub sortIndex: i32,
 }
 #[cfg(feature = "cordl_class_PlayerSortOrderPacket")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PlayerSortOrderPacket {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlayerSortOrderPacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PlayerSortOrderPacket";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,9 +45,10 @@ impl crate::GlobalNamespace::PlayerSortOrderPacket {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -64,9 +65,8 @@ impl crate::GlobalNamespace::PlayerSortOrderPacket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (reader))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reader))? };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -76,9 +76,10 @@ impl crate::GlobalNamespace::PlayerSortOrderPacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSortOrderPacket>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -100,46 +101,45 @@ impl crate::GlobalNamespace::PlayerSortOrderPacket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSortOrderPacket,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (userId, sortIndex))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSortOrderPacket> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (userId, sortIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Release(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Release(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Release",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Release",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Serialize(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -156,30 +156,28 @@ impl crate::GlobalNamespace::PlayerSortOrderPacket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (writer))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_pool() -> quest_hook::libil2cpp::Result<
@@ -189,26 +187,24 @@ impl crate::GlobalNamespace::PlayerSortOrderPacket {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::PacketPool_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::PlayerSortOrderPacket,
-                                >,
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::PacketPool_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PlayerSortOrderPacket,
                             >,
                         >,
-                        0usize,
-                    >("get_pool")
+                    >, 0usize>("get_pool")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_pool", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_pool",
+                            0usize
                         )
                     })
             });
@@ -221,8 +217,7 @@ impl crate::GlobalNamespace::PlayerSortOrderPacket {
     }
 }
 #[cfg(feature = "cordl_class_PlayerSortOrderPacket")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PlayerSortOrderPacket {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSortOrderPacket {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -232,28 +227,32 @@ for crate::GlobalNamespace::PlayerSortOrderPacket {
 }
 #[cfg(feature = "PlayerSortOrderPacket")]
 impl AsRef<crate::GlobalNamespace::IPoolablePacket>
-for crate::GlobalNamespace::PlayerSortOrderPacket {
+    for crate::GlobalNamespace::PlayerSortOrderPacket
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PlayerSortOrderPacket")]
 impl AsMut<crate::GlobalNamespace::IPoolablePacket>
-for crate::GlobalNamespace::PlayerSortOrderPacket {
+    for crate::GlobalNamespace::PlayerSortOrderPacket
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PlayerSortOrderPacket")]
 impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
-for crate::GlobalNamespace::PlayerSortOrderPacket {
+    for crate::GlobalNamespace::PlayerSortOrderPacket
+{
     fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PlayerSortOrderPacket")]
 impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
-for crate::GlobalNamespace::PlayerSortOrderPacket {
+    for crate::GlobalNamespace::PlayerSortOrderPacket
+{
     fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
         unsafe { std::mem::transmute(self) }
     }

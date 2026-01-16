@@ -6,13 +6,15 @@ pub struct Kdf2BytesGenerator {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+Kdf2BytesGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::Generators::Kdf2BytesGenerator {
+    for crate::Org::BouncyCastle::Crypto::Generators::Kdf2BytesGenerator
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Generators";
     const CLASS_NAME: &'static str = "Kdf2BytesGenerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -25,16 +27,14 @@ for crate::Org::BouncyCastle::Crypto::Generators::Kdf2BytesGenerator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Kdf2BytesGenerator")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::Generators::Kdf2BytesGenerator {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Generators::Kdf2BytesGenerator {
     type Target = crate::Org::BouncyCastle::Crypto::Generators::BaseKdfBytesGenerator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Kdf2BytesGenerator")]
-impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::Generators::Kdf2BytesGenerator {
+impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Generators::Kdf2BytesGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -44,8 +44,8 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Kdf2BytesGenerator {
     pub fn New(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (digest))?;
         Ok(__cordl_object.into())
@@ -54,9 +54,10 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Kdf2BytesGenerator {
         &mut self,
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -73,15 +74,15 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Kdf2BytesGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (digest))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (digest))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+Kdf2BytesGenerator")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::Generators::Kdf2BytesGenerator {
+    for crate::Org::BouncyCastle::Crypto::Generators::Kdf2BytesGenerator
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

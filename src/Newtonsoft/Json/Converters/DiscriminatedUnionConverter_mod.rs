@@ -6,13 +6,15 @@ pub struct DiscriminatedUnionConverter {
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
+    for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Converters";
     const CLASS_NAME: &'static str = "DiscriminatedUnionConverter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -25,16 +27,14 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
-impl std::ops::Deref
-for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
+impl std::ops::Deref for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
     type Target = crate::Newtonsoft::Json::JsonConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
-impl std::ops::DerefMut
-for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
+impl std::ops::DerefMut for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -51,26 +51,24 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
         &mut self,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Type>),
-                        bool,
-                        1usize,
-                    >("CanConvert")
+                    .find_method::<(quest_hook::libil2cpp::Gc<crate::System::Type>), bool, 1usize>(
+                        "CanConvert",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CanConvert", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CanConvert",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (objectType))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (objectType))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateUnion(
@@ -80,9 +78,10 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
             crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
@@ -107,9 +106,10 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
     pub fn CreateUnionTypeLookup(
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
@@ -124,14 +124,13 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            cordl_method_info.invoke_unchecked((), (t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> =
+            unsafe { cordl_method_info.invoke_unchecked((), (t))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -142,40 +141,31 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         existingValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::JsonReader,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::JsonSerializer,
-                            >,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                        4usize,
-                    >("ReadJson")
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, 4usize>(
+                        "ReadJson",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadJson", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadJson",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (reader, objectType, existingValue, serializer))?
         };
@@ -187,63 +177,54 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::JsonWriter,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::JsonSerializer,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("WriteJson")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("WriteJson")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteJson", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteJson",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer, value, serializer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (writer, value, serializer))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
+    for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -251,16 +232,12 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union"
-)]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiscriminatedUnionConverter_Union {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub TagReader: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Utilities::FSharpFunction,
-    >,
+    pub TagReader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::FSharpFunction>,
     pub Cases: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             quest_hook::libil2cpp::Gc<
@@ -269,17 +246,17 @@ pub struct DiscriminatedUnionConverter_Union {
         >,
     >,
 }
-#[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union"
-)]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
+    for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Converters";
     const CLASS_NAME: &'static str = "DiscriminatedUnionConverter/Union";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -292,16 +269,14 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
-impl std::ops::Deref
-for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
+impl std::ops::Deref for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
-impl std::ops::DerefMut
-for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
+impl std::ops::DerefMut for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -309,9 +284,7 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
 impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
     pub fn New(
-        tagReader: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Utilities::FSharpFunction,
-        >,
+        tagReader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::FSharpFunction>,
         cases: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<
@@ -320,17 +293,15 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (tagReader, cases))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        tagReader: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Utilities::FSharpFunction,
-        >,
+        tagReader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::FSharpFunction>,
         cases: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<
@@ -339,7 +310,8 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -367,17 +339,15 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (tagReader, cases))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (tagReader, cases))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union"
-)]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
+    for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -385,9 +355,7 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase"
-)]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiscriminatedUnionConverter_UnionCase {
@@ -399,24 +367,20 @@ pub struct DiscriminatedUnionConverter_UnionCase {
             quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
         >,
     >,
-    pub FieldReader: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Utilities::FSharpFunction,
-    >,
-    pub Constructor: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Utilities::FSharpFunction,
-    >,
+    pub FieldReader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::FSharpFunction>,
+    pub Constructor: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::FSharpFunction>,
 }
-#[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase"
-)]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
+    for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Converters";
     const CLASS_NAME: &'static str = "DiscriminatedUnionConverter/UnionCase";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -430,7 +394,8 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
 impl std::ops::Deref
-for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
+    for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -438,7 +403,8 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
 impl std::ops::DerefMut
-for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
+    for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -453,15 +419,11 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase 
                 quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
             >,
         >,
-        fieldReader: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Utilities::FSharpFunction,
-        >,
-        constructor: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Utilities::FSharpFunction,
-        >,
+        fieldReader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::FSharpFunction>,
+        constructor: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::FSharpFunction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (tag, name, fields, fieldReader, constructor))?;
         Ok(__cordl_object.into())
@@ -475,44 +437,34 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase 
                 quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
             >,
         >,
-        fieldReader: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Utilities::FSharpFunction,
-        >,
-        constructor: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Utilities::FSharpFunction,
-        >,
+        fieldReader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::FSharpFunction>,
+        constructor: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::FSharpFunction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Reflection::PropertyInfo,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Utilities::FSharpFunction,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Utilities::FSharpFunction,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Newtonsoft::Json::Utilities::FSharpFunction,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Newtonsoft::Json::Utilities::FSharpFunction,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
@@ -524,11 +476,10 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase"
-)]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
+    for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

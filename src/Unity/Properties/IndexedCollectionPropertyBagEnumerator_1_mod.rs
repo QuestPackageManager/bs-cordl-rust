@@ -1,9 +1,7 @@
 #[cfg(feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBagEnumerator_1")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
-pub struct IndexedCollectionPropertyBagEnumerator_1<
-    TContainer: quest_hook::libil2cpp::Type,
-> {
+#[repr(C)]
+pub struct IndexedCollectionPropertyBagEnumerator_1<TContainer: quest_hook::libil2cpp::Type> {
     pub m_Impl: quest_hook::libil2cpp::Gc<
         crate::Unity::Properties::IIndexedCollectionPropertyBagEnumerator_1<TContainer>,
     >,
@@ -14,26 +12,25 @@ pub struct IndexedCollectionPropertyBagEnumerator_1<
 }
 #[cfg(feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBagEnumerator_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer> {
+    for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer>
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Properties";
     const CLASS_NAME: &'static str = "IndexedCollectionPropertyBagEnumerator`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "Unity.Properties",
-                        "IndexedCollectionPropertyBagEnumerator`1",
-                    )
-                    .unwrap()
-                    .make_generic::<(TContainer)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find(
+                "Unity.Properties",
+                "IndexedCollectionPropertyBagEnumerator`1",
+            )
+            .unwrap()
+            .make_generic::<(TContainer)>()
+            .unwrap()
+            .unwrap()
+        })
     }
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
@@ -49,18 +46,16 @@ for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContaine
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBagEnumerator_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
-for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer> {
+    for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -71,7 +66,8 @@ for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContaine
 }
 #[cfg(feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBagEnumerator_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
-for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer> {
+    for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -85,22 +81,22 @@ for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContaine
 }
 #[cfg(feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBagEnumerator_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
-for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer> {
+    for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBagEnumerator_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
-for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer> {
+    for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -114,7 +110,8 @@ for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContaine
 }
 #[cfg(feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBagEnumerator_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer> {
+    for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer>
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -124,49 +121,54 @@ for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContaine
     }
 }
 #[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBagEnumerator_1")]
-impl<
-    TContainer: quest_hook::libil2cpp::Type,
-> crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer> {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+impl<TContainer: quest_hook::libil2cpp::Type>
+    crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer>
+{
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContainer: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContainer: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("MoveNext")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MoveNext", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MoveNext",
+                            0usize
                         )
                     })
             });
@@ -175,39 +177,43 @@ impl<
     }
     pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContainer: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reset",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
     where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContainer: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -222,51 +228,47 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         _cordl_impl: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IIndexedCollectionPropertyBagEnumerator_1<
-                TContainer,
-            >,
+            crate::Unity::Properties::IIndexedCollectionPropertyBagEnumerator_1<TContainer>,
         >,
         container: TContainer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContainer: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Unity::Properties::IIndexedCollectionPropertyBagEnumerator_1<
-                                    TContainer,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::Unity::Properties::IIndexedCollectionPropertyBagEnumerator_1<
+                                TContainer,
                             >,
-                            TContainer,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                        >,
+                        TContainer,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_impl, container))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_impl, container))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Current(
@@ -275,12 +277,15 @@ impl<
         quest_hook::libil2cpp::Gc<crate::Unity::Properties::IProperty_1<TContainer>>,
     >
     where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContainer: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -304,13 +309,13 @@ impl<
     }
 }
 #[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBagEnumerator_1")]
-impl<
-    TContainer: quest_hook::libil2cpp::Type,
-> AsRef<
-    crate::System::Collections::Generic::IEnumerator_1<
-        quest_hook::libil2cpp::Gc<crate::Unity::Properties::IProperty_1<TContainer>>,
-    >,
-> for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer> {
+impl<TContainer: quest_hook::libil2cpp::Type>
+    AsRef<
+        crate::System::Collections::Generic::IEnumerator_1<
+            quest_hook::libil2cpp::Gc<crate::Unity::Properties::IProperty_1<TContainer>>,
+        >,
+    > for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer>
+{
     fn as_ref(
         &self,
     ) -> &crate::System::Collections::Generic::IEnumerator_1<
@@ -320,13 +325,13 @@ impl<
     }
 }
 #[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBagEnumerator_1")]
-impl<
-    TContainer: quest_hook::libil2cpp::Type,
-> AsMut<
-    crate::System::Collections::Generic::IEnumerator_1<
-        quest_hook::libil2cpp::Gc<crate::Unity::Properties::IProperty_1<TContainer>>,
-    >,
-> for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer> {
+impl<TContainer: quest_hook::libil2cpp::Type>
+    AsMut<
+        crate::System::Collections::Generic::IEnumerator_1<
+            quest_hook::libil2cpp::Gc<crate::Unity::Properties::IProperty_1<TContainer>>,
+        >,
+    > for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer>
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
@@ -336,33 +341,33 @@ impl<
     }
 }
 #[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBagEnumerator_1")]
-impl<
-    TContainer: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IEnumerator>
-for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer> {
+impl<TContainer: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
+    for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer>
+{
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBagEnumerator_1")]
-impl<
-    TContainer: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IEnumerator>
-for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer> {
+impl<TContainer: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
+    for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer>
+{
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBagEnumerator_1")]
 impl<TContainer: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
-for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer> {
+    for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer>
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBagEnumerator_1")]
 impl<TContainer: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
-for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer> {
+    for crate::Unity::Properties::IndexedCollectionPropertyBagEnumerator_1<TContainer>
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }

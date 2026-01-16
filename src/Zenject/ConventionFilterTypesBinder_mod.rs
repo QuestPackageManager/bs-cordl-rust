@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ConventionFilterType
     const NAMESPACE: &'static str = "Zenject";
     const CLASS_NAME: &'static str = "ConventionFilterTypesBinder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,12 +45,14 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -66,9 +69,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DerivingFromOrEqual_Type1(
@@ -77,9 +79,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
@@ -96,9 +99,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (parentType))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (parentType))? };
         Ok(__cordl_ret.into())
     }
     pub fn DerivingFrom_0<T>(
@@ -107,12 +109,14 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -129,9 +133,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DerivingFrom_Type1(
@@ -140,9 +143,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
@@ -159,9 +163,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (parentType))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (parentType))? };
         Ok(__cordl_ret.into())
     }
     pub fn InNamespace(
@@ -170,9 +173,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -189,9 +193,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (ns))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (ns))? };
         Ok(__cordl_ret.into())
     }
     pub fn InNamespaces_IEnumerable_1_1(
@@ -204,9 +207,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -229,9 +233,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (namespaces))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (namespaces))? };
         Ok(__cordl_ret.into())
     }
     pub fn InNamespaces_Il2CppArray0(
@@ -244,9 +247,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -269,40 +273,34 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (namespaces))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (namespaces))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsInNamespace(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         requiredNs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsInNamespace")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), bool, 2usize>("IsInNamespace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsInNamespace", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsInNamespace",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_type, requiredNs))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type, requiredNs))? };
         Ok(__cordl_ret.into())
     }
     pub fn MatchingRegex_Il2CppString0(
@@ -311,9 +309,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -330,9 +329,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (pattern))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
     }
     pub fn MatchingRegex_Il2CppString_RegexOptions1(
@@ -342,9 +340,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -366,9 +365,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (pattern, options))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pattern, options))? };
         Ok(__cordl_ret.into())
     }
     pub fn MatchingRegex_Regex2(
@@ -377,9 +375,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -398,16 +397,15 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (regex))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (regex))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindInfo))?;
         Ok(__cordl_object.into())
@@ -420,9 +418,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -444,9 +443,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (predicate))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (predicate))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithAttributeWhere<T>(
@@ -456,12 +454,14 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Func_2<T, bool>>),
@@ -478,9 +478,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (predicate))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (predicate))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithAttribute_0<T>(
@@ -489,12 +488,14 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -511,9 +512,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn WithAttribute_Type1(
@@ -522,9 +522,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
@@ -541,9 +542,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (attribute))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (attribute))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithPrefix(
@@ -552,9 +552,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -571,9 +572,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (prefix))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (prefix))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithSuffix(
@@ -582,9 +582,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -601,9 +602,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (suffix))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (suffix))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithoutAttribute_0<T>(
@@ -612,12 +612,14 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -634,9 +636,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn WithoutAttribute_Type1(
@@ -645,9 +646,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
@@ -664,18 +666,18 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (attribute))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (attribute))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::ConventionBindInfo>),
@@ -690,9 +692,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bindInfo))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bindInfo))? };
         Ok(__cordl_ret.into())
     }
 }

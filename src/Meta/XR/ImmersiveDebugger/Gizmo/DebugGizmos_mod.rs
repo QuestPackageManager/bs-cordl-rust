@@ -11,19 +11,18 @@ pub struct DebugGizmos {
     >,
     pub _index: i32,
     pub _addedSegmentSinceLastUpdate: bool,
-    pub _polylineRenderer: quest_hook::libil2cpp::Gc<
-        crate::Meta::XR::ImmersiveDebugger::Gizmo::PolylineRenderer,
-    >,
+    pub _polylineRenderer:
+        quest_hook::libil2cpp::Gc<crate::Meta::XR::ImmersiveDebugger::Gizmo::PolylineRenderer>,
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Gizmo+DebugGizmos")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
+unsafe impl quest_hook::libil2cpp::Type for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Meta.XR.ImmersiveDebugger.Gizmo";
     const CLASS_NAME: &'static str = "DebugGizmos";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -60,66 +59,59 @@ impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
         color0: crate::UnityEngine::Color,
         color1: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("AddSegment")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::Color,
+                    ), quest_hook::libil2cpp::Void, 5usize>("AddSegment")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddSegment", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddSegment",
+                            5usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (p0, p1, width, color0, color1))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (p0, p1, width, color0, color1))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ClearSegments(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ClearSegments(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ClearSegments")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearSegments")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ClearSegments", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ClearSegments",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DrawAxis_Pose_f32_1(
         pose: crate::UnityEngine::Pose,
         _cordl_size: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Pose, f32),
@@ -134,35 +126,34 @@ impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pose, _cordl_size))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pose, _cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn DrawAxis_Transform_f32_2(
         t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         _cordl_size: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>, f32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("DrawAxis")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 2usize>("DrawAxis")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawAxis", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawAxis",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (t, _cordl_size))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (t, _cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn DrawAxis_Vector3_Quaternion_f32_0(
@@ -170,30 +161,27 @@ impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
         rotation: crate::UnityEngine::Quaternion,
         _cordl_size: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("DrawAxis")
+                    .find_static_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("DrawAxis")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawAxis", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawAxis",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (position, rotation, _cordl_size))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (position, rotation, _cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn DrawBox_Pose_f32__cordl_bool1(
@@ -203,9 +191,10 @@ impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
         depth: f32,
         isPivotTopSurface: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Pose, f32, f32, f32, bool),
@@ -234,36 +223,33 @@ impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
         depth: f32,
         isPivotTopSurface: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                            f32,
-                            f32,
-                            f32,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("DrawBox")
+                    .find_static_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                        f32,
+                        f32,
+                        f32,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 6usize>("DrawBox")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "DrawBox",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawBox",
                             6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (position, rotation, width, height, depth, isPivotTopSurface),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (position, rotation, width, height, depth, isPivotTopSurface),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -272,30 +258,27 @@ impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
         p1: crate::UnityEngine::Vector3,
         t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("DrawLine")
+                    .find_static_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("DrawLine")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawLine", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawLine",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (p0, p1, t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (p0, p1, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn DrawPlane_Pose_f32_1(
@@ -303,9 +286,10 @@ impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
         width: f32,
         height: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Pose, f32, f32),
@@ -320,9 +304,8 @@ impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pose, width, height))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pose, width, height))? };
         Ok(__cordl_ret.into())
     }
     pub fn DrawPlane_Vector3_Quaternion_f32_0(
@@ -331,60 +314,54 @@ impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
         width: f32,
         height: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                            f32,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("DrawPlane")
+                    .find_static_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                        f32,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("DrawPlane")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawPlane", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawPlane",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (position, rotation, width, height))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (position, rotation, width, height))? };
         Ok(__cordl_ret.into())
     }
     pub fn DrawPoint(
         p0: crate::UnityEngine::Vector3,
         t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("DrawPoint")
+                    .find_static_method::<(
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("DrawPoint")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawPoint", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawPoint",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (p0, t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (p0, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn DrawWireCube(
@@ -392,182 +369,169 @@ impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
         _cordl_size: f32,
         t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("DrawWireCube")
+                    .find_static_method::<(
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("DrawWireCube")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawWireCube", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawWireCube",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (center, _cordl_size, t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (center, _cordl_size, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn Init() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("Init")
+                    .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn LateUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn LateUpdate(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LateUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LateUpdate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LateUpdate",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDisable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDisable(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDisable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDisable",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnEnable(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnEnable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnEnable",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn RenderSegments(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn RenderSegments(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("RenderSegments")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RenderSegments")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RenderSegments", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RenderSegments",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_RenderSinglePass() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_RenderSinglePass")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_RenderSinglePass", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_RenderSinglePass",
+                            0usize
                         )
                     })
             });
@@ -577,26 +541,22 @@ impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
     pub fn get_Renderer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Meta::XR::ImmersiveDebugger::Gizmo::PolylineRenderer,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Meta::XR::ImmersiveDebugger::Gizmo::PolylineRenderer>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Meta::XR::ImmersiveDebugger::Gizmo::PolylineRenderer,
-                        >,
-                        0usize,
-                    >("get_Renderer")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::Meta::XR::ImmersiveDebugger::Gizmo::PolylineRenderer,
+                    >, 0usize>("get_Renderer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Renderer", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Renderer",
+                            0usize
                         )
                     })
             });
@@ -608,22 +568,20 @@ impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
     pub fn get_Root() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos,
-                        >,
-                        0usize,
-                    >("get_Root")
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos,
+                    >, 0usize>("get_Root")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Root", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Root",
+                            0usize
                         )
                     })
             });
@@ -635,32 +593,30 @@ impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
     pub fn set_RenderSinglePass(
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_RenderSinglePass")
+                    .find_static_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_RenderSinglePass",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_RenderSinglePass", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_RenderSinglePass",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Gizmo+DebugGizmos")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
+impl quest_hook::libil2cpp::ObjectType for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -669,14 +625,15 @@ for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos {
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Gizmo+DebugGizmos+ColorScope")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct DebugGizmos_ColorScope {
     pub _savedColor: crate::UnityEngine::Color,
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Gizmo+DebugGizmos+ColorScope")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
+    for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Meta.XR.ImmersiveDebugger.Gizmo";
@@ -695,18 +652,16 @@ for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Gizmo+DebugGizmos+ColorScope")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
+    for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -717,7 +672,8 @@ for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Gizmo+DebugGizmos+ColorScope")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
+    for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -731,22 +687,22 @@ for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Gizmo+DebugGizmos+ColorScope")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
+    for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Gizmo+DebugGizmos+ColorScope")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
+    for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -760,7 +716,8 @@ for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Gizmo+DebugGizmos+ColorScope")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
+    for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -771,34 +728,34 @@ for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+Gizmo+DebugGizmos+ColorScope")]
 impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
@@ -813,22 +770,23 @@ impl crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (color))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (color))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+Gizmo+DebugGizmos+ColorScope")]
 impl AsRef<crate::System::IDisposable>
-for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
+    for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+Gizmo+DebugGizmos+ColorScope")]
 impl AsMut<crate::System::IDisposable>
-for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope {
+    for crate::Meta::XR::ImmersiveDebugger::Gizmo::DebugGizmos_ColorScope
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }

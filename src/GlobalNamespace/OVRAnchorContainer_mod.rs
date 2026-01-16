@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRAnchorContainer")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRAnchorContainer {
     pub _Handle_k__BackingField: u64,
 }
@@ -24,18 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRAnchorCon
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchorContainer")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRAnchorContainer {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRAnchorContainer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -45,8 +41,7 @@ for crate::GlobalNamespace::OVRAnchorContainer {
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchorContainer")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRAnchorContainer {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRAnchorContainer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -59,23 +54,19 @@ for crate::GlobalNamespace::OVRAnchorContainer {
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchorContainer")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRAnchorContainer {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRAnchorContainer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchorContainer")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRAnchorContainer {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRAnchorContainer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -88,8 +79,7 @@ for crate::GlobalNamespace::OVRAnchorContainer {
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchorContainer")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRAnchorContainer {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRAnchorContainer {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -104,9 +94,10 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -121,92 +112,80 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_OVRAnchorContainer0(
         &mut self,
         other: crate::GlobalNamespace::OVRAnchorContainer,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::GlobalNamespace::OVRAnchorContainer),
-                        bool,
-                        1usize,
-                    >("Equals")
+                    .find_method::<(crate::GlobalNamespace::OVRAnchorContainer), bool, 1usize>(
+                        "Equals",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Equals",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn FetchAnchorsAsync(
         &mut self,
         anchors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::OVRAnchor,
-            >,
+            crate::System::Collections::Generic::List_1<crate::GlobalNamespace::OVRAnchor>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRTask_1<
             crate::GlobalNamespace::OVRResult_2<
                 quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        crate::GlobalNamespace::OVRAnchor,
-                    >,
+                    crate::System::Collections::Generic::List_1<crate::GlobalNamespace::OVRAnchor>,
                 >,
                 crate::GlobalNamespace::OVRAnchor_FetchResult,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::GlobalNamespace::OVRAnchor,
-                            >,
-                        >),
-                        crate::GlobalNamespace::OVRTask_1<
-                            crate::GlobalNamespace::OVRResult_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        crate::GlobalNamespace::OVRAnchor,
-                                    >,
-                                >,
-                                crate::GlobalNamespace::OVRAnchor_FetchResult,
-                            >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::GlobalNamespace::OVRAnchor,
                         >,
-                        1usize,
-                    >("FetchAnchorsAsync")
+                    >), crate::GlobalNamespace::OVRTask_1<
+                        crate::GlobalNamespace::OVRResult_2<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::GlobalNamespace::OVRAnchor,
+                                >,
+                            >,
+                            crate::GlobalNamespace::OVRAnchor_FetchResult,
+                        >,
+                    >, 1usize>("FetchAnchorsAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FetchAnchorsAsync", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FetchAnchorsAsync",
+                            1usize
                         )
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<
             crate::GlobalNamespace::OVRResult_2<
                 quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        crate::GlobalNamespace::OVRAnchor,
-                    >,
+                    crate::System::Collections::Generic::List_1<crate::GlobalNamespace::OVRAnchor>,
                 >,
                 crate::GlobalNamespace::OVRAnchor_FetchResult,
             >,
@@ -216,48 +195,47 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
     pub fn FetchChildrenAsync(
         &mut self,
         anchors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::OVRAnchor,
-            >,
+            crate::System::Collections::Generic::List_1<crate::GlobalNamespace::OVRAnchor>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::GlobalNamespace::OVRAnchor,
-                            >,
-                        >),
-                        crate::GlobalNamespace::OVRTask_1<bool>,
-                        1usize,
-                    >("FetchChildrenAsync")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::GlobalNamespace::OVRAnchor,
+                        >,
+                    >), crate::GlobalNamespace::OVRTask_1<bool>, 1usize>(
+                        "FetchChildrenAsync"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FetchChildrenAsync", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FetchChildrenAsync",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (anchors))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (anchors))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -268,9 +246,10 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
         &mut self,
         anchor: crate::GlobalNamespace::OVRAnchor,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRAnchorContainer> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRAnchor),
@@ -285,9 +264,8 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRAnchorContainer = unsafe {
-            cordl_method_info.invoke_unchecked(self, (anchor))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRAnchorContainer =
+            unsafe { cordl_method_info.invoke_unchecked(self, (anchor))? };
         Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRAnchorContainer__SetEnabledAsync(
@@ -295,46 +273,44 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
         enabled: bool,
         timeout: f64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool, f64),
-                        crate::GlobalNamespace::OVRTask_1<bool>,
-                        2usize,
-                    >("IOVRAnchorComponent<OVRAnchorContainer>.SetEnabledAsync")
+                    .find_method::<(bool, f64), crate::GlobalNamespace::OVRTask_1<bool>, 2usize>(
+                        "IOVRAnchorComponent<OVRAnchorContainer>.SetEnabledAsync",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            <Self as quest_hook::libil2cpp::Type>::class(),
                             "IOVRAnchorComponent<OVRAnchorContainer>.SetEnabledAsync",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (enabled, timeout))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (enabled, timeout))? };
         Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRAnchorContainer__get_Handle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        u64,
-                        0usize,
-                    >("IOVRAnchorComponent<OVRAnchorContainer>.get_Handle")
+                    .find_method::<(), u64, 0usize>(
+                        "IOVRAnchorComponent<OVRAnchorContainer>.get_Handle",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IOVRAnchorComponent<OVRAnchorContainer>.get_Handle", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IOVRAnchorComponent<OVRAnchorContainer>.get_Handle",
+                            0usize
                         )
                     })
             });
@@ -343,12 +319,11 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
     }
     pub fn IOVRAnchorComponent_OVRAnchorContainer__get_Type(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_SpaceComponentType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -363,19 +338,18 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -390,18 +364,18 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         anchor: crate::GlobalNamespace::OVRAnchor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRAnchor),
@@ -416,22 +390,23 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (anchor))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (anchor))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u64, 0usize>("get_Handle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Handle", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Handle",
+                            0usize
                         )
                     })
             });
@@ -439,16 +414,18 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsEnabled", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsEnabled",
+                            0usize
                         )
                     })
             });
@@ -456,16 +433,18 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsNull")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsNull", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsNull",
+                            0usize
                         )
                     })
             });
@@ -474,12 +453,11 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
     }
     pub fn get_Type(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_SpaceComponentType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -494,34 +472,29 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Uuids(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>,
-                        >,
-                        0usize,
-                    >("get_Uuids")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>,
+                    >, 0usize>("get_Uuids")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Uuids", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Uuids",
+                            0usize
                         )
                     })
             });
@@ -534,81 +507,70 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
         lhs: crate::GlobalNamespace::OVRAnchorContainer,
         rhs: crate::GlobalNamespace::OVRAnchorContainer,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::OVRAnchorContainer,
-                            crate::GlobalNamespace::OVRAnchorContainer,
-                        ),
-                        bool,
-                        2usize,
-                    >("op_Equality")
+                    .find_static_method::<(
+                        crate::GlobalNamespace::OVRAnchorContainer,
+                        crate::GlobalNamespace::OVRAnchorContainer,
+                    ), bool, 2usize>("op_Equality")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Equality", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Equality",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Inequality(
         lhs: crate::GlobalNamespace::OVRAnchorContainer,
         rhs: crate::GlobalNamespace::OVRAnchorContainer,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::OVRAnchorContainer,
-                            crate::GlobalNamespace::OVRAnchorContainer,
-                        ),
-                        bool,
-                        2usize,
-                    >("op_Inequality")
+                    .find_static_method::<(
+                        crate::GlobalNamespace::OVRAnchorContainer,
+                        crate::GlobalNamespace::OVRAnchorContainer,
+                    ), bool, 2usize>("op_Inequality")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Inequality", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Inequality",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRAnchorContainer")]
-impl AsRef<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRAnchorContainer,
-    >,
-> for crate::GlobalNamespace::OVRAnchorContainer {
+impl
+    AsRef<crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRAnchorContainer>>
+    for crate::GlobalNamespace::OVRAnchorContainer
+{
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRAnchorContainer,
-    > {
+    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRAnchorContainer>
+    {
         todo!()
     }
 }
 #[cfg(feature = "OVRAnchorContainer")]
-impl AsMut<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRAnchorContainer,
-    >,
-> for crate::GlobalNamespace::OVRAnchorContainer {
+impl
+    AsMut<crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRAnchorContainer>>
+    for crate::GlobalNamespace::OVRAnchorContainer
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
@@ -619,16 +581,16 @@ impl AsMut<
 }
 #[cfg(feature = "OVRAnchorContainer")]
 impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchorContainer>>
-for crate::GlobalNamespace::OVRAnchorContainer {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchorContainer> {
+    for crate::GlobalNamespace::OVRAnchorContainer
+{
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchorContainer> {
         todo!()
     }
 }
 #[cfg(feature = "OVRAnchorContainer")]
 impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchorContainer>>
-for crate::GlobalNamespace::OVRAnchorContainer {
+    for crate::GlobalNamespace::OVRAnchorContainer
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchorContainer> {

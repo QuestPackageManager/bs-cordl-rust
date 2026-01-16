@@ -5,14 +5,14 @@ pub struct CipherUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Security::CipherUtilities {
+unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Security::CipherUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Security";
     const CLASS_NAME: &'static str = "CipherUtilities";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -50,9 +50,10 @@ impl crate::Org::BouncyCastle::Security::CipherUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm),
@@ -69,21 +70,18 @@ impl crate::Org::BouncyCastle::Security::CipherUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::IBlockCipher,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (cipherAlgorithm))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher> =
+            unsafe { cordl_method_info.invoke_unchecked((), (cipherAlgorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAlgorithmName(
-        oid: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        oid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -100,21 +98,19 @@ impl crate::Org::BouncyCastle::Security::CipherUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (oid))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (oid))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCipher_DerObjectIdentifier0(
-        oid: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
+        oid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBufferedCipher>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -143,9 +139,10 @@ impl crate::Org::BouncyCastle::Security::CipherUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBufferedCipher>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -170,9 +167,10 @@ impl crate::Org::BouncyCastle::Security::CipherUtilities {
     pub fn GetDigitIndex(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -195,9 +193,10 @@ impl crate::Org::BouncyCastle::Security::CipherUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -220,39 +219,39 @@ impl crate::Org::BouncyCastle::Security::CipherUtilities {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Algorithms() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -269,15 +268,13 @@ impl crate::Org::BouncyCastle::Security::CipherUtilities {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ICollection,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Security::CipherUtilities {
+impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Security::CipherUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -286,8 +283,8 @@ for crate::Org::BouncyCastle::Security::CipherUtilities {
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum CipherUtilities_CipherAlgorithm {
     #[default]
     AES = 0i32,
@@ -332,7 +329,8 @@ pub enum CipherUtilities_CipherAlgorithm {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Security";
@@ -351,18 +349,16 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -373,7 +369,8 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -387,22 +384,22 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -415,8 +412,8 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum CipherUtilities_CipherMode {
     #[default]
     CBC = 2i32,
@@ -436,7 +433,8 @@ pub enum CipherUtilities_CipherMode {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Security";
@@ -455,18 +453,16 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -477,7 +473,8 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -491,22 +488,22 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -519,8 +516,8 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum CipherUtilities_CipherPadding {
     #[default]
     ISO10126D2PADDING = 3i32,
@@ -558,7 +555,8 @@ pub enum CipherUtilities_CipherPadding {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Security";
@@ -577,18 +575,16 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -599,7 +595,8 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -613,22 +610,22 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
+    for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

@@ -5,9 +5,8 @@ pub struct NoteDebris {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _meshTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _physics: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebrisPhysics>,
-    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MaterialPropertyBlockController,
-    >,
+    pub _materialPropertyBlockController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MaterialPropertyBlockController>,
     pub _cutoutCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _maxCutPointCenterDistance: f32,
     pub _centroidComputationMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -27,7 +26,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteDebris {
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "NoteDebris";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -56,25 +56,24 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoteDebris {
 impl crate::GlobalNamespace::NoteDebris {
     #[cfg(feature = "NoteDebris+Pool")]
     pub type Pool = crate::GlobalNamespace::NoteDebris_Pool;
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Awake(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Awake",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -94,109 +93,104 @@ impl crate::GlobalNamespace::NoteDebris {
         cutoutOffset: crate::UnityEngine::Vector3,
         forceOnlySimplePhysics: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::ColorType,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        14usize,
-                    >("Init")
+                    .find_method::<(
+                        crate::GlobalNamespace::ColorType,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 14usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             14usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        colorType,
-                        notePos,
-                        noteRot,
-                        noteMoveVec,
-                        noteScale,
-                        positionOffset,
-                        rotationOffset,
-                        cutPoint,
-                        cutNormal,
-                        force,
-                        torque,
-                        lifeTime,
-                        cutoutOffset,
-                        forceOnlySimplePhysics,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    colorType,
+                    notePos,
+                    noteRot,
+                    noteMoveVec,
+                    noteScale,
+                    positionOffset,
+                    rotationOffset,
+                    cutPoint,
+                    cutNormal,
+                    force,
+                    torque,
+                    lifeTime,
+                    cutoutOffset,
+                    forceOnlySimplePhysics,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Update(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Update",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_didFinishEvent(
@@ -204,40 +198,34 @@ impl crate::GlobalNamespace::NoteDebris {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ILazyCopyHashSet_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::INoteDebrisDidFinishEvent,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteDebrisDidFinishEvent>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::INoteDebrisDidFinishEvent,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::ILazyCopyHashSet_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::INoteDebrisDidFinishEvent,
                             >,
                         >,
-                        0usize,
-                    >("get_didFinishEvent")
+                    >, 0usize>("get_didFinishEvent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_didFinishEvent", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_didFinishEvent",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ILazyCopyHashSet_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::INoteDebrisDidFinishEvent,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteDebrisDidFinishEvent>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -267,7 +255,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteDebris_P
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "NoteDebris/Pool";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -297,31 +286,30 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoteDebris_Pool {
 #[cfg(feature = "NoteDebris+Pool")]
 impl crate::GlobalNamespace::NoteDebris_Pool {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

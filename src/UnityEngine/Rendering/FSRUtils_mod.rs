@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::FSRUt
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "FSRUtils";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,16 +45,18 @@ impl crate::UnityEngine::Rendering::FSRUtils {
     #[cfg(feature = "UnityEngine+Rendering+FSRUtils+ShaderConstants")]
     pub type ShaderConstants = crate::UnityEngine::Rendering::FSRUtils_ShaderConstants;
     pub fn IsSupported() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("IsSupported")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsSupported", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsSupported",
+                            0usize
                         )
                     })
             });
@@ -66,41 +69,36 @@ impl crate::UnityEngine::Rendering::FSRUtils {
         inputImageSizeInPixels: crate::UnityEngine::Vector2,
         outputImageSizeInPixels: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::BaseCommandBuffer,
-                            >,
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::Vector2,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetEasuConstants")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::BaseCommandBuffer>,
+                        crate::UnityEngine::Vector2,
+                        crate::UnityEngine::Vector2,
+                        crate::UnityEngine::Vector2,
+                    ), quest_hook::libil2cpp::Void, 4usize>("SetEasuConstants")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetEasuConstants", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetEasuConstants",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        cmd,
-                        inputViewportSizeInPixels,
-                        inputImageSizeInPixels,
-                        outputImageSizeInPixels,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    cmd,
+                    inputViewportSizeInPixels,
+                    inputImageSizeInPixels,
+                    outputImageSizeInPixels,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -110,41 +108,36 @@ impl crate::UnityEngine::Rendering::FSRUtils {
         inputImageSizeInPixels: crate::UnityEngine::Vector2,
         outputImageSizeInPixels: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::Vector2,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetEasuConstants")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        crate::UnityEngine::Vector2,
+                        crate::UnityEngine::Vector2,
+                        crate::UnityEngine::Vector2,
+                    ), quest_hook::libil2cpp::Void, 4usize>("SetEasuConstants")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetEasuConstants", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetEasuConstants",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        cmd,
-                        inputViewportSizeInPixels,
-                        inputImageSizeInPixels,
-                        outputImageSizeInPixels,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    cmd,
+                    inputViewportSizeInPixels,
+                    inputImageSizeInPixels,
+                    outputImageSizeInPixels,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -152,95 +145,84 @@ impl crate::UnityEngine::Rendering::FSRUtils {
         cmd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
         sharpnessStops: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetRcasConstants")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SetRcasConstants")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetRcasConstants", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetRcasConstants",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (cmd, sharpnessStops))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (cmd, sharpnessStops))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetRcasConstantsLinear_CommandBuffer0(
         cmd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
         sharpnessLinear: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetRcasConstantsLinear")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "SetRcasConstantsLinear"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetRcasConstantsLinear", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetRcasConstantsLinear",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (cmd, sharpnessLinear))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (cmd, sharpnessLinear))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetRcasConstantsLinear_RasterCommandBuffer1(
-        cmd: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::RasterCommandBuffer,
-        >,
+        cmd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RasterCommandBuffer>,
         sharpnessLinear: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::RasterCommandBuffer,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetRcasConstantsLinear")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RasterCommandBuffer,
+                        >,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "SetRcasConstantsLinear"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetRcasConstantsLinear", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetRcasConstantsLinear",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (cmd, sharpnessLinear))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (cmd, sharpnessLinear))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -261,13 +243,15 @@ pub struct FSRUtils_ShaderConstants {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+FSRUtils+ShaderConstants")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::FSRUtils_ShaderConstants {
+    for crate::UnityEngine::Rendering::FSRUtils_ShaderConstants
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "FSRUtils/ShaderConstants";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -295,8 +279,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::FSRUtils_ShaderConsta
 #[cfg(feature = "UnityEngine+Rendering+FSRUtils+ShaderConstants")]
 impl crate::UnityEngine::Rendering::FSRUtils_ShaderConstants {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+FSRUtils+ShaderConstants")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::FSRUtils_ShaderConstants {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::FSRUtils_ShaderConstants {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

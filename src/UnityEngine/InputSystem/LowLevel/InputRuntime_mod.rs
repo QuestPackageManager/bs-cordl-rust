@@ -6,13 +6,15 @@ pub struct InputRuntime {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputRuntime")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::LowLevel::InputRuntime {
+    for crate::UnityEngine::InputSystem::LowLevel::InputRuntime
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
     const CLASS_NAME: &'static str = "InputRuntime";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,8 +42,7 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::LowLevel::InputRunt
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputRuntime")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputRuntime {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputRuntime")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::LowLevel::InputRuntime {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::LowLevel::InputRuntime {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

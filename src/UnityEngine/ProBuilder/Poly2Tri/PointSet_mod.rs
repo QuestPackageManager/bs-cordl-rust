@@ -5,28 +5,24 @@ pub struct PointSet {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Points_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::IList_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint>,
         >,
     >,
     pub _Triangles_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::IList_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle>,
         >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PointSet")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder.Poly2Tri";
     const CLASS_NAME: &'static str = "PointSet";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -55,32 +51,27 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
 impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     pub fn AddTriangle(
         &mut self,
-        t: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-        >,
+        t: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("AddTriangle")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+                    >), quest_hook::libil2cpp::Void, 1usize>("AddTriangle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddTriangle", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddTriangle",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (t))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddTriangles(
@@ -93,57 +84,49 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-                                >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("AddTriangles")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>("AddTriangles")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddTriangles", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddTriangles",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (list))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (list))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ClearTriangles(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ClearTriangles(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ClearTriangles")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearTriangles")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ClearTriangles", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ClearTriangles",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -155,8 +138,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (points))?;
         Ok(__cordl_object.into())
@@ -167,28 +150,25 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Prepare")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
+                    >), quest_hook::libil2cpp::Void, 1usize>("Prepare")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Prepare",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Prepare",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (tcx))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (tcx))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -201,32 +181,29 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                                >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (points))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (points))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Points(
@@ -240,26 +217,24 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
                             >,
                         >,
-                        0usize,
-                    >("get_Points")
+                    >, 0usize>("get_Points")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Points", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Points",
+                            0usize
                         )
                     })
             });
@@ -283,26 +258,24 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
                             >,
                         >,
-                        0usize,
-                    >("get_Triangles")
+                    >, 0usize>("get_Triangles")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Triangles", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Triangles",
+                            0usize
                         )
                     })
             });
@@ -317,12 +290,12 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     }
     pub fn get_TriangulationMode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -337,9 +310,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Points(
@@ -352,32 +324,29 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                                >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_Points")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>("set_Points")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_Points", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Points",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Triangles(
@@ -390,38 +359,34 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-                                >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_Triangles")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>("set_Triangles")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_Triangles", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Triangles",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PointSet")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -431,17 +396,17 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointSet")]
 impl AsRef<crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable>
-for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
+    for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet
+{
     fn as_ref(&self) -> &crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointSet")]
 impl AsMut<crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable>
-for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable {
+    for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet
+{
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable {
         unsafe { std::mem::transmute(self) }
     }
 }

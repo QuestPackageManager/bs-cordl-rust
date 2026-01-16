@@ -6,13 +6,15 @@ pub struct MultiplayerUnavailableReasonMethods {
 }
 #[cfg(feature = "cordl_class_MultiplayerUnavailableReasonMethods")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MultiplayerUnavailableReasonMethods {
+    for crate::GlobalNamespace::MultiplayerUnavailableReasonMethods
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "MultiplayerUnavailableReasonMethods";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,18 +41,21 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerUnavailableReason
 }
 #[cfg(feature = "MultiplayerUnavailableReasonMethods")]
 impl crate::GlobalNamespace::MultiplayerUnavailableReasonMethods {
-    pub const kMultiplayerUnavailableMaintenanceMode: &'static str = "MULTIPLAYER_UNAVAILABLE_MAINTENANCE_MODE";
-    pub const kMultiplayerUnavailableServerOffline: &'static str = "MULTIPLAYER_UNAVAILABLE_SERVER_OFFLINE";
+    pub const kMultiplayerUnavailableMaintenanceMode: &'static str =
+        "MULTIPLAYER_UNAVAILABLE_MAINTENANCE_MODE";
+    pub const kMultiplayerUnavailableServerOffline: &'static str =
+        "MULTIPLAYER_UNAVAILABLE_SERVER_OFFLINE";
     pub const kMultiplayerUnavailableTryAgain: &'static str = "MULTIPLAYER_UNAVAILABLE_TRY_AGAIN";
-    pub const kMultiplayerUnavailableUpdateRequired: &'static str = "MULTIPLAYER_UNAVAILABLE_UPDATE_REQUIRED";
+    pub const kMultiplayerUnavailableUpdateRequired: &'static str =
+        "MULTIPLAYER_UNAVAILABLE_UPDATE_REQUIRED";
     pub fn ErrorCode(
         multiplayerUnavailableReason: crate::GlobalNamespace::MultiplayerUnavailableReason,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::MultiplayerUnavailableReason),
@@ -65,54 +70,47 @@ impl crate::GlobalNamespace::MultiplayerUnavailableReasonMethods {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (multiplayerUnavailableReason))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (multiplayerUnavailableReason))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLocalizedMessage(
         data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
         language: crate::BGLib::Polyglot::LocalizationLanguage,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerStatusData,
-                            >,
-                            crate::BGLib::Polyglot::LocalizationLanguage,
-                        ),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        2usize,
-                    >("GetLocalizedMessage")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
+                        crate::BGLib::Polyglot::LocalizationLanguage,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, 2usize>(
+                        "GetLocalizedMessage",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLocalizedMessage", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLocalizedMessage",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (data, language))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (data, language))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocalizedKey(
         multiplayerUnavailableReason: crate::GlobalNamespace::MultiplayerUnavailableReason,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::MultiplayerUnavailableReason),
@@ -127,11 +125,8 @@ impl crate::GlobalNamespace::MultiplayerUnavailableReasonMethods {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (multiplayerUnavailableReason))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (multiplayerUnavailableReason))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetMultiplayerUnavailableReason(
@@ -140,72 +135,60 @@ impl crate::GlobalNamespace::MultiplayerUnavailableReasonMethods {
             crate::GlobalNamespace::MultiplayerUnavailableReason,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerStatusData,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::MultiplayerUnavailableReason,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetMultiplayerUnavailableReason")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::MultiplayerUnavailableReason,
+                        >,
+                    ), bool, 2usize>("TryGetMultiplayerUnavailableReason")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetMultiplayerUnavailableReason", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetMultiplayerUnavailableReason",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (data, reason))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (data, reason))? };
         Ok(__cordl_ret.into())
     }
     pub fn VersionLessThan(
         currentVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         minVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("VersionLessThan")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), bool, 2usize>("VersionLessThan")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "VersionLessThan", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "VersionLessThan",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (currentVersion, minVersion))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (currentVersion, minVersion))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_MultiplayerUnavailableReasonMethods")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::MultiplayerUnavailableReasonMethods {
+    for crate::GlobalNamespace::MultiplayerUnavailableReasonMethods
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

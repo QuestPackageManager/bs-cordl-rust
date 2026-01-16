@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Texture2DArray {
     const NAMESPACE: &'static str = "UnityEngine";
     const CLASS_NAME: &'static str = "Texture2DArray";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -48,59 +49,50 @@ impl crate::UnityEngine::Texture2DArray {
         colorSpace: crate::UnityEngine::TextureColorSpace,
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
         ignoreMipmapLimit: bool,
-        mipmapLimitGroupName: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        mipmapLimitGroupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Texture2DArray,
-                            >,
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                            crate::UnityEngine::TextureColorSpace,
-                            crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        10usize,
-                    >("Internal_Create")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2DArray>,
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        crate::UnityEngine::TextureColorSpace,
+                        crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+                        bool,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 10usize>("Internal_Create")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_Create", 10usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_Create",
+                            10usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        mono,
-                        w,
-                        h,
-                        d,
-                        mipCount,
-                        format,
-                        colorSpace,
-                        flags,
-                        ignoreMipmapLimit,
-                        mipmapLimitGroupName,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    mono,
+                    w,
+                    h,
+                    d,
+                    mipCount,
+                    format,
+                    colorSpace,
+                    flags,
+                    ignoreMipmapLimit,
+                    mipmapLimitGroupName,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,59 +106,50 @@ impl crate::UnityEngine::Texture2DArray {
         colorSpace: crate::UnityEngine::TextureColorSpace,
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
         ignoreMipmapLimit: bool,
-        mipmapLimitGroupName: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        mipmapLimitGroupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Texture2DArray,
-                            >,
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                            crate::UnityEngine::TextureColorSpace,
-                            crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2DArray>,
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        crate::UnityEngine::TextureColorSpace,
+                        crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
                         bool,
-                        10usize,
-                    >("Internal_CreateImpl")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), bool, 10usize>("Internal_CreateImpl")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_CreateImpl", 10usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_CreateImpl",
+                            10usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        mono,
-                        w,
-                        h,
-                        d,
-                        mipCount,
-                        format,
-                        colorSpace,
-                        flags,
-                        ignoreMipmapLimit,
-                        mipmapLimitGroupName,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    mono,
+                    w,
+                    h,
+                    d,
+                    mipCount,
+                    format,
+                    colorSpace,
+                    flags,
+                    ignoreMipmapLimit,
+                    mipmapLimitGroupName,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -184,55 +167,50 @@ impl crate::UnityEngine::Texture2DArray {
             crate::UnityEngine::Bindings::ManagedSpanWrapper,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Texture2DArray,
-                            >,
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                            crate::UnityEngine::TextureColorSpace,
-                            crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
-                            bool,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
-                            >,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2DArray>,
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        crate::UnityEngine::TextureColorSpace,
+                        crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
                         bool,
-                        10usize,
-                    >("Internal_CreateImpl_Injected")
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >,
+                    ), bool, 10usize>("Internal_CreateImpl_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_CreateImpl_Injected", 10usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_CreateImpl_Injected",
+                            10usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        mono,
-                        w,
-                        h,
-                        d,
-                        mipCount,
-                        format,
-                        colorSpace,
-                        flags,
-                        ignoreMipmapLimit,
-                        mipmapLimitGroupName,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    mono,
+                    w,
+                    h,
+                    d,
+                    mipCount,
+                    format,
+                    colorSpace,
+                    flags,
+                    ignoreMipmapLimit,
+                    mipmapLimitGroupName,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -243,8 +221,8 @@ impl crate::UnityEngine::Texture2DArray {
         format: crate::UnityEngine::Experimental::Rendering::DefaultFormat,
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (width, height, depth, format, flags))?;
         Ok(__cordl_object.into())
@@ -257,8 +235,8 @@ impl crate::UnityEngine::Texture2DArray {
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
         mipCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (width, height, depth, format, flags, mipCount))?;
         Ok(__cordl_object.into())
@@ -272,13 +250,20 @@ impl crate::UnityEngine::Texture2DArray {
         mipCount: i32,
         mipmapLimitDescriptor: crate::UnityEngine::MipmapLimitDescriptor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (width, height, depth, format, flags, mipCount, mipmapLimitDescriptor),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                width,
+                height,
+                depth,
+                format,
+                flags,
+                mipCount,
+                mipmapLimitDescriptor,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn New_GraphicsFormat_TextureCreationFlags3(
@@ -288,8 +273,8 @@ impl crate::UnityEngine::Texture2DArray {
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (width, height, depth, format, flags))?;
         Ok(__cordl_object.into())
@@ -302,8 +287,8 @@ impl crate::UnityEngine::Texture2DArray {
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
         mipCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (width, height, depth, format, flags, mipCount))?;
         Ok(__cordl_object.into())
@@ -317,13 +302,20 @@ impl crate::UnityEngine::Texture2DArray {
         mipCount: i32,
         mipmapLimitDescriptor: crate::UnityEngine::MipmapLimitDescriptor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (width, height, depth, format, flags, mipCount, mipmapLimitDescriptor),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                width,
+                height,
+                depth,
+                format,
+                flags,
+                mipCount,
+                mipmapLimitDescriptor,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn New_TextureFormat__cordl_bool11(
@@ -333,8 +325,8 @@ impl crate::UnityEngine::Texture2DArray {
         textureFormat: crate::UnityEngine::TextureFormat,
         mipChain: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (width, height, depth, textureFormat, mipChain))?;
         Ok(__cordl_object.into())
@@ -347,13 +339,12 @@ impl crate::UnityEngine::Texture2DArray {
         mipChain: bool,
         linear: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (width, height, depth, textureFormat, mipChain, linear),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (width, height, depth, textureFormat, mipChain, linear),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn New_TextureFormat__cordl_bool__cordl_bool__cordl_bool9(
@@ -365,21 +356,20 @@ impl crate::UnityEngine::Texture2DArray {
         linear: bool,
         createUninitialized: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    width,
-                    height,
-                    depth,
-                    textureFormat,
-                    mipChain,
-                    linear,
-                    createUninitialized,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                width,
+                height,
+                depth,
+                textureFormat,
+                mipChain,
+                linear,
+                createUninitialized,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn New_TextureFormat_i32__cordl_bool8(
@@ -390,13 +380,12 @@ impl crate::UnityEngine::Texture2DArray {
         mipCount: i32,
         linear: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (width, height, depth, textureFormat, mipCount, linear),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (width, height, depth, textureFormat, mipCount, linear),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn New_TextureFormat_i32__cordl_bool__cordl_bool7(
@@ -408,21 +397,20 @@ impl crate::UnityEngine::Texture2DArray {
         linear: bool,
         createUninitialized: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    width,
-                    height,
-                    depth,
-                    textureFormat,
-                    mipCount,
-                    linear,
-                    createUninitialized,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                width,
+                height,
+                depth,
+                textureFormat,
+                mipCount,
+                linear,
+                createUninitialized,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn New_TextureFormat_i32__cordl_bool__cordl_bool_MipmapLimitDescriptor6(
@@ -435,22 +423,21 @@ impl crate::UnityEngine::Texture2DArray {
         createUninitialized: bool,
         mipmapLimitDescriptor: crate::UnityEngine::MipmapLimitDescriptor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    width,
-                    height,
-                    depth,
-                    textureFormat,
-                    mipCount,
-                    linear,
-                    createUninitialized,
-                    mipmapLimitDescriptor,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                width,
+                height,
+                depth,
+                textureFormat,
+                mipCount,
+                linear,
+                createUninitialized,
+                mipmapLimitDescriptor,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn ValidateFormat_GraphicsFormat1(
@@ -459,30 +446,27 @@ impl crate::UnityEngine::Texture2DArray {
         width: i32,
         height: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                            i32,
-                            i32,
-                        ),
-                        bool,
-                        3usize,
-                    >("ValidateFormat")
+                    .find_method::<(
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        i32,
+                        i32,
+                    ), bool, 3usize>("ValidateFormat")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValidateFormat", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ValidateFormat",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (format, width, height))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (format, width, height))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateFormat_TextureFormat0(
@@ -491,34 +475,34 @@ impl crate::UnityEngine::Texture2DArray {
         width: i32,
         height: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::TextureFormat, i32, i32),
-                        bool,
-                        3usize,
-                    >("ValidateFormat")
+                    .find_method::<(crate::UnityEngine::TextureFormat, i32, i32), bool, 3usize>(
+                        "ValidateFormat",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValidateFormat", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ValidateFormat",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (format, width, height))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (format, width, height))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateIsNotCrunched(
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Experimental::Rendering::TextureCreationFlags),
@@ -533,9 +517,8 @@ impl crate::UnityEngine::Texture2DArray {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (flags))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (flags))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DefaultFormat_TextureCreationFlags0(
@@ -546,32 +529,29 @@ impl crate::UnityEngine::Texture2DArray {
         format: crate::UnityEngine::Experimental::Rendering::DefaultFormat,
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Experimental::Rendering::DefaultFormat,
-                            crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        crate::UnityEngine::Experimental::Rendering::DefaultFormat,
+                        crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (width, height, depth, format, flags))?
+            cordl_method_info.invoke_unchecked(self, (width, height, depth, format, flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -584,26 +564,24 @@ impl crate::UnityEngine::Texture2DArray {
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
         mipCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Experimental::Rendering::DefaultFormat,
-                            crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        crate::UnityEngine::Experimental::Rendering::DefaultFormat,
+                        crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             6usize
                         )
                     })
@@ -624,45 +602,42 @@ impl crate::UnityEngine::Texture2DArray {
         mipCount: i32,
         mipmapLimitDescriptor: crate::UnityEngine::MipmapLimitDescriptor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Experimental::Rendering::DefaultFormat,
-                            crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
-                            i32,
-                            crate::UnityEngine::MipmapLimitDescriptor,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        crate::UnityEngine::Experimental::Rendering::DefaultFormat,
+                        crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+                        i32,
+                        crate::UnityEngine::MipmapLimitDescriptor,
+                    ), quest_hook::libil2cpp::Void, 7usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        width,
-                        height,
-                        depth,
-                        format,
-                        flags,
-                        mipCount,
-                        mipmapLimitDescriptor,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    width,
+                    height,
+                    depth,
+                    format,
+                    flags,
+                    mipCount,
+                    mipmapLimitDescriptor,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -674,32 +649,29 @@ impl crate::UnityEngine::Texture2DArray {
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                            crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (width, height, depth, format, flags))?
+            cordl_method_info.invoke_unchecked(self, (width, height, depth, format, flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -712,26 +684,24 @@ impl crate::UnityEngine::Texture2DArray {
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
         mipCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                            crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             6usize
                         )
                     })
@@ -752,45 +722,42 @@ impl crate::UnityEngine::Texture2DArray {
         mipCount: i32,
         mipmapLimitDescriptor: crate::UnityEngine::MipmapLimitDescriptor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                            crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
-                            i32,
-                            crate::UnityEngine::MipmapLimitDescriptor,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+                        i32,
+                        crate::UnityEngine::MipmapLimitDescriptor,
+                    ), quest_hook::libil2cpp::Void, 7usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        width,
-                        height,
-                        depth,
-                        format,
-                        flags,
-                        mipCount,
-                        mipmapLimitDescriptor,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    width,
+                    height,
+                    depth,
+                    format,
+                    flags,
+                    mipCount,
+                    mipmapLimitDescriptor,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -802,9 +769,10 @@ impl crate::UnityEngine::Texture2DArray {
         textureFormat: crate::UnityEngine::TextureFormat,
         mipChain: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32, crate::UnityEngine::TextureFormat, bool),
@@ -834,9 +802,10 @@ impl crate::UnityEngine::Texture2DArray {
         mipChain: bool,
         linear: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32, crate::UnityEngine::TextureFormat, bool, bool),
@@ -852,11 +821,10 @@ impl crate::UnityEngine::Texture2DArray {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (width, height, depth, textureFormat, mipChain, linear),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (width, height, depth, textureFormat, mipChain, linear),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -870,45 +838,42 @@ impl crate::UnityEngine::Texture2DArray {
         linear: bool,
         createUninitialized: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            crate::UnityEngine::TextureFormat,
-                            bool,
-                            bool,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        crate::UnityEngine::TextureFormat,
+                        bool,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 7usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        width,
-                        height,
-                        depth,
-                        textureFormat,
-                        mipChain,
-                        linear,
-                        createUninitialized,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    width,
+                    height,
+                    depth,
+                    textureFormat,
+                    mipChain,
+                    linear,
+                    createUninitialized,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -921,9 +886,10 @@ impl crate::UnityEngine::Texture2DArray {
         mipCount: i32,
         linear: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32, crate::UnityEngine::TextureFormat, i32, bool),
@@ -939,11 +905,10 @@ impl crate::UnityEngine::Texture2DArray {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (width, height, depth, textureFormat, mipCount, linear),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (width, height, depth, textureFormat, mipCount, linear),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -957,45 +922,42 @@ impl crate::UnityEngine::Texture2DArray {
         linear: bool,
         createUninitialized: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            crate::UnityEngine::TextureFormat,
-                            i32,
-                            bool,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        crate::UnityEngine::TextureFormat,
+                        i32,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 7usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        width,
-                        height,
-                        depth,
-                        textureFormat,
-                        mipCount,
-                        linear,
-                        createUninitialized,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    width,
+                    height,
+                    depth,
+                    textureFormat,
+                    mipCount,
+                    linear,
+                    createUninitialized,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1010,61 +972,60 @@ impl crate::UnityEngine::Texture2DArray {
         createUninitialized: bool,
         mipmapLimitDescriptor: crate::UnityEngine::MipmapLimitDescriptor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            crate::UnityEngine::TextureFormat,
-                            i32,
-                            bool,
-                            bool,
-                            crate::UnityEngine::MipmapLimitDescriptor,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        8usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        crate::UnityEngine::TextureFormat,
+                        i32,
+                        bool,
+                        bool,
+                        crate::UnityEngine::MipmapLimitDescriptor,
+                    ), quest_hook::libil2cpp::Void, 8usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             8usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        width,
-                        height,
-                        depth,
-                        textureFormat,
-                        mipCount,
-                        linear,
-                        createUninitialized,
-                        mipmapLimitDescriptor,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    width,
+                    height,
+                    depth,
+                    textureFormat,
+                    mipCount,
+                    linear,
+                    createUninitialized,
+                    mipmapLimitDescriptor,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_allSlices() -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_allSlices")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_allSlices", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_allSlices",
+                            0usize
                         )
                     })
             });
@@ -1072,16 +1033,18 @@ impl crate::UnityEngine::Texture2DArray {
         Ok(__cordl_ret.into())
     }
     pub fn get_isReadable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isReadable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isReadable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isReadable",
+                            0usize
                         )
                     })
             });
@@ -1091,26 +1054,24 @@ impl crate::UnityEngine::Texture2DArray {
     pub fn get_isReadable_Injected(
         _unity_self: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::System::IntPtr),
-                        bool,
-                        1usize,
-                    >("get_isReadable_Injected")
+                    .find_static_method::<(crate::System::IntPtr), bool, 1usize>(
+                        "get_isReadable_Injected",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isReadable_Injected", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isReadable_Injected",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (_unity_self))? };
         Ok(__cordl_ret.into())
     }
 }

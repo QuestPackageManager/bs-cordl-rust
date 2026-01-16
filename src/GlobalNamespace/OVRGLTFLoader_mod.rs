@@ -24,9 +24,7 @@ pub struct OVRGLTFLoader {
             i32,
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::OVRGLTFAnimatinonNode,
-                    >,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAnimatinonNode>,
                 >,
             >,
         >,
@@ -64,9 +62,7 @@ pub struct OVRGLTFLoader {
         >,
     >,
     pub m_processingNodesStart: f32,
-    pub _dataAccessor: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRGLTFAccessor,
-    >,
+    pub _dataAccessor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAccessor>,
 }
 #[cfg(feature = "cordl_class_OVRGLTFLoader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGLTFLoader {
@@ -75,7 +71,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGLTFLoade
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRGLTFLoader";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -109,43 +106,42 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::OVRTextureQualityFiltering,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ApplyTextureQuality")
+                    .find_static_method::<(
+                        crate::GlobalNamespace::OVRTextureQualityFiltering,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "ApplyTextureQuality"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ApplyTextureQuality", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ApplyTextureQuality",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (qualityLevel, destTexture))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (qualityLevel, destTexture))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateUnityMaterial(
         &mut self,
         matData: crate::GlobalNamespace::OVRMaterialData,
         loadMips: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRMaterialData, bool),
@@ -160,40 +156,36 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (matData, loadMips))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (matData, loadMips))? };
         Ok(__cordl_ret.into())
     }
     pub fn DetectTextureQuality(
         srcTexture: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRTextureQualityFiltering,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTextureQualityFiltering> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-                        >),
-                        crate::GlobalNamespace::OVRTextureQualityFiltering,
-                        1usize,
-                    >("DetectTextureQuality")
+                    .find_static_method::<(quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                    >), crate::GlobalNamespace::OVRTextureQualityFiltering, 1usize>(
+                        "DetectTextureQuality",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DetectTextureQuality", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DetectTextureQuality",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRTextureQualityFiltering = unsafe {
-            cordl_method_info.invoke_unchecked((), (srcTexture))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRTextureQualityFiltering =
+            unsafe { cordl_method_info.invoke_unchecked((), (srcTexture))? };
         Ok(__cordl_ret.into())
     }
     pub fn FlipTriangleIndices(
@@ -201,39 +193,37 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<i32>,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("FlipTriangleIndices")
+                    .find_static_method::<(quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "FlipTriangleIndices"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FlipTriangleIndices", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FlipTriangleIndices",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (indices))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (indices))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetInputNodeType(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRGLTFInputNode> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -248,19 +238,18 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRGLTFInputNode = unsafe {
-            cordl_method_info.invoke_unchecked(self, (name))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRGLTFInputNode =
+            unsafe { cordl_method_info.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeGLBLoad(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -275,9 +264,8 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadGLB(
@@ -285,26 +273,25 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         supportAnimation: bool,
         loadMips: bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRGLTFScene> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool, bool),
-                        crate::GlobalNamespace::OVRGLTFScene,
-                        2usize,
-                    >("LoadGLB")
+                    .find_method::<(bool, bool), crate::GlobalNamespace::OVRGLTFScene, 2usize>(
+                        "LoadGLB",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "LoadGLB",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LoadGLB",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRGLTFScene = unsafe {
-            cordl_method_info.invoke_unchecked(self, (supportAnimation, loadMips))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRGLTFScene =
+            unsafe { cordl_method_info.invoke_unchecked(self, (supportAnimation, loadMips))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadGLBCoroutine(
@@ -314,9 +301,10 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
@@ -333,11 +321,8 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEnumerator,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (supportAnimation, loadMips))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (supportAnimation, loadMips))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadGLTF(
@@ -347,9 +332,10 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
@@ -366,11 +352,8 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEnumerator,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (supportAnimation, loadMips))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (supportAnimation, loadMips))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_Func_1_2(
@@ -378,8 +361,8 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             crate::System::Func_1<quest_hook::libil2cpp::Gc<crate::System::IO::Stream>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (deferredStream))?;
         Ok(__cordl_object.into())
@@ -387,8 +370,8 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
     pub fn New_Il2CppArray1(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (data))?;
         Ok(__cordl_object.into())
@@ -396,8 +379,8 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
     pub fn New_Il2CppString0(
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (fileName))?;
         Ok(__cordl_object.into())
@@ -407,9 +390,10 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -426,35 +410,33 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEnumerator,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessMaterial(
         &mut self,
         matId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMaterialData> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        crate::GlobalNamespace::OVRMaterialData,
-                        1usize,
-                    >("ProcessMaterial")
+                    .find_method::<(i32), crate::GlobalNamespace::OVRMaterialData, 1usize>(
+                        "ProcessMaterial",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessMaterial", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessMaterial",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRMaterialData = unsafe {
-            cordl_method_info.invoke_unchecked(self, (matId))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRMaterialData =
+            unsafe { cordl_method_info.invoke_unchecked(self, (matId))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessMesh(
@@ -462,29 +444,28 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         meshNode: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         loadMips: bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMeshData> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            bool,
-                        ),
-                        crate::GlobalNamespace::OVRMeshData,
-                        2usize,
-                    >("ProcessMesh")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                        bool,
+                    ), crate::GlobalNamespace::OVRMeshData, 2usize>(
+                        "ProcessMesh"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessMesh", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessMesh",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRMeshData = unsafe {
-            cordl_method_info.invoke_unchecked(self, (meshNode, loadMips))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRMeshData =
+            unsafe { cordl_method_info.invoke_unchecked(self, (meshNode, loadMips))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessNode(
@@ -496,35 +477,30 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONArray>,
-                            i32,
-                            bool,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::IEnumerator,
-                        >,
-                        4usize,
-                    >("ProcessNode")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONArray>,
+                        i32,
+                        bool,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>, 4usize>(
+                        "ProcessNode",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessNode", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessNode",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEnumerator,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (nodes, nodeId, loadMips, parent))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (nodes, nodeId, loadMips, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessSkin(
@@ -532,57 +508,51 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         skinNode: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::SkinnedMeshRenderer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::SkinnedMeshRenderer,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ProcessSkin")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::SkinnedMeshRenderer>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ProcessSkin")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessSkin", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessSkin",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (skinNode, renderer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (skinNode, renderer))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessTexture(
         &mut self,
         textureId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTextureData> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        crate::GlobalNamespace::OVRTextureData,
-                        1usize,
-                    >("ProcessTexture")
+                    .find_method::<(i32), crate::GlobalNamespace::OVRTextureData, 1usize>(
+                        "ProcessTexture",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessTexture", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessTexture",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRTextureData = unsafe {
-            cordl_method_info.invoke_unchecked(self, (textureId))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRTextureData =
+            unsafe { cordl_method_info.invoke_unchecked(self, (textureId))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadChunk(
@@ -591,31 +561,28 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                            crate::GlobalNamespace::OVRChunkType,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<u8>,
-                        >,
-                        2usize,
-                    >("ReadChunk")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                        crate::GlobalNamespace::OVRChunkType,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, 2usize>(
+                        "ReadChunk",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadChunk", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadChunk",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (glbStream, _cordl_type))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (glbStream, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadMeshAttributes(
@@ -624,33 +591,30 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         totalVertexCount: i32,
         vertexOffset: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMeshAttributes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            i32,
-                            i32,
-                        ),
-                        crate::GlobalNamespace::OVRMeshAttributes,
-                        3usize,
-                    >("ReadMeshAttributes")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                        i32,
+                        i32,
+                    ), crate::GlobalNamespace::OVRMeshAttributes, 3usize>(
+                        "ReadMeshAttributes"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadMeshAttributes", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadMeshAttributes",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRMeshAttributes = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (jsonAttributes, totalVertexCount, vertexOffset),
-                )?
+                .invoke_unchecked(self, (jsonAttributes, totalVertexCount, vertexOffset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -658,35 +622,33 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         &mut self,
         loadedTexturesMipmapBiasing: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetMipMapBias")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("SetMipMapBias")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetMipMapBias", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetMipMapBias",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (loadedTexturesMipmapBiasing))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (loadedTexturesMipmapBiasing))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetModelAlphaBlendShader(
         &mut self,
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>),
@@ -701,18 +663,18 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (shader))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (shader))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetModelShader(
         &mut self,
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>),
@@ -727,18 +689,18 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (shader))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (shader))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetTextureQualityFiltering(
         &mut self,
         loadedTexturesQuality: crate::GlobalNamespace::OVRTextureQualityFiltering,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRTextureQualityFiltering),
@@ -753,20 +715,18 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (loadedTexturesQuality))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (loadedTexturesQuality))? };
         Ok(__cordl_ret.into())
     }
     pub fn TranscodeTexture(
         &mut self,
-        textureData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::OVRTextureData,
-        >,
+        textureData: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRTextureData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -783,9 +743,8 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (textureData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (textureData))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateChunk(
@@ -793,39 +752,37 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         _cordl_type: crate::GlobalNamespace::OVRChunkType,
         chunkLength: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                            crate::GlobalNamespace::OVRChunkType,
-                            quest_hook::libil2cpp::ByRefMut<u32>,
-                        ),
-                        bool,
-                        3usize,
-                    >("ValidateChunk")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                        crate::GlobalNamespace::OVRChunkType,
+                        quest_hook::libil2cpp::ByRefMut<u32>,
+                    ), bool, 3usize>("ValidateChunk")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValidateChunk", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ValidateChunk",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (glbStream, _cordl_type, chunkLength))?
+            cordl_method_info.invoke_unchecked((), (glbStream, _cordl_type, chunkLength))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateGLB(
         glbStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
@@ -840,19 +797,17 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (glbStream))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (glbStream))? };
         Ok(__cordl_ret.into())
     }
     pub fn _LoadGLBCoroutine_b__26_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -867,9 +822,8 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Func_1_2(
@@ -878,39 +832,35 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             crate::System::Func_1<quest_hook::libil2cpp::Gc<crate::System::IO::Stream>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_1<
-                                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Func_1<quest_hook::libil2cpp::Gc<crate::System::IO::Stream>>,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (deferredStream))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (deferredStream))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -927,18 +877,18 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (data))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (data))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString0(
         &mut self,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -953,9 +903,8 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (fileName))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (fileName))? };
         Ok(__cordl_ret.into())
     }
 }

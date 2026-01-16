@@ -1,15 +1,12 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+Category")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Category {
     pub Id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub Item: quest_hook::libil2cpp::Gc<
-        crate::Meta::XR::ImmersiveDebugger::Hierarchy::Item,
-    >,
+    pub Item: quest_hook::libil2cpp::Gc<crate::Meta::XR::ImmersiveDebugger::Hierarchy::Item>,
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+Category")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::ImmersiveDebugger::Manager::Category {
+unsafe impl quest_hook::libil2cpp::Type for crate::Meta::XR::ImmersiveDebugger::Manager::Category {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Meta.XR.ImmersiveDebugger.Manager";
@@ -28,18 +25,16 @@ for crate::Meta::XR::ImmersiveDebugger::Manager::Category {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+Category")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Meta::XR::ImmersiveDebugger::Manager::Category {
+    for crate::Meta::XR::ImmersiveDebugger::Manager::Category
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -50,7 +45,8 @@ for crate::Meta::XR::ImmersiveDebugger::Manager::Category {
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+Category")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Meta::XR::ImmersiveDebugger::Manager::Category {
+    for crate::Meta::XR::ImmersiveDebugger::Manager::Category
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -64,22 +60,22 @@ for crate::Meta::XR::ImmersiveDebugger::Manager::Category {
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+Category")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Meta::XR::ImmersiveDebugger::Manager::Category {
+    for crate::Meta::XR::ImmersiveDebugger::Manager::Category
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+Category")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Meta::XR::ImmersiveDebugger::Manager::Category {
+    for crate::Meta::XR::ImmersiveDebugger::Manager::Category
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -93,7 +89,8 @@ for crate::Meta::XR::ImmersiveDebugger::Manager::Category {
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+Category")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Meta::XR::ImmersiveDebugger::Manager::Category {
+    for crate::Meta::XR::ImmersiveDebugger::Manager::Category
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -109,9 +106,10 @@ impl crate::Meta::XR::ImmersiveDebugger::Manager::Category {
         &mut self,
         other: crate::Meta::XR::ImmersiveDebugger::Manager::Category,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Meta::XR::ImmersiveDebugger::Manager::Category),
@@ -126,18 +124,17 @@ impl crate::Meta::XR::ImmersiveDebugger::Manager::Category {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -152,22 +149,22 @@ impl crate::Meta::XR::ImmersiveDebugger::Manager::Category {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -176,12 +173,12 @@ impl crate::Meta::XR::ImmersiveDebugger::Manager::Category {
     }
     pub fn get_Label(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -196,19 +193,18 @@ impl crate::Meta::XR::ImmersiveDebugger::Manager::Category {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Uid(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -223,33 +219,29 @@ impl crate::Meta::XR::ImmersiveDebugger::Manager::Category {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+Manager+Category")]
-impl AsRef<
-    crate::System::IEquatable_1<crate::Meta::XR::ImmersiveDebugger::Manager::Category>,
-> for crate::Meta::XR::ImmersiveDebugger::Manager::Category {
+impl AsRef<crate::System::IEquatable_1<crate::Meta::XR::ImmersiveDebugger::Manager::Category>>
+    for crate::Meta::XR::ImmersiveDebugger::Manager::Category
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::Meta::XR::ImmersiveDebugger::Manager::Category,
-    > {
+    ) -> &crate::System::IEquatable_1<crate::Meta::XR::ImmersiveDebugger::Manager::Category> {
         todo!()
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+Manager+Category")]
-impl AsMut<
-    crate::System::IEquatable_1<crate::Meta::XR::ImmersiveDebugger::Manager::Category>,
-> for crate::Meta::XR::ImmersiveDebugger::Manager::Category {
+impl AsMut<crate::System::IEquatable_1<crate::Meta::XR::ImmersiveDebugger::Manager::Category>>
+    for crate::Meta::XR::ImmersiveDebugger::Manager::Category
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::Meta::XR::ImmersiveDebugger::Manager::Category,
-    > {
+    ) -> &mut crate::System::IEquatable_1<crate::Meta::XR::ImmersiveDebugger::Manager::Category>
+    {
         todo!()
     }
 }

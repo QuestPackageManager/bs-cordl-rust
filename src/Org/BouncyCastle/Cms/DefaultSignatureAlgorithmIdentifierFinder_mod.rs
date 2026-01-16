@@ -1,22 +1,20 @@
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultSignatureAlgorithmIdentifierFinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
+    for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Cms";
     const CLASS_NAME: &'static str = "DefaultSignatureAlgorithmIdentifierFinder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -29,8 +27,7 @@ for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -38,7 +35,8 @@ for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
+    for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -51,31 +49,27 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
         >,
         saltSize: i32,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Pkcs::RsassaPssParameters,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Pkcs::RsassaPssParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Asn1::Pkcs::RsassaPssParameters,
+                            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
                         >,
-                        2usize,
-                    >("CreatePssParams")
+                        i32,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::Pkcs::RsassaPssParameters,
+                    >, 2usize>("CreatePssParams")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreatePssParams", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreatePssParams",
+                            2usize
                         )
                     })
             });
@@ -88,13 +82,12 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
         &mut self,
         sigAlgName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -117,17 +110,14 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
         Ok(__cordl_ret.into())
     }
     pub fn Generate(
-        signatureAlgorithm: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        signatureAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -150,39 +140,37 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
+    for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

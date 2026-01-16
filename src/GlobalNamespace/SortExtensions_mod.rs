@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SortExtensio
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "SortExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,35 +45,31 @@ impl crate::GlobalNamespace::SortExtensions {
         getSortIndex: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
-                            T,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("InsertSorted")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+                        T,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("InsertSorted")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InsertSorted", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InsertSorted",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (list, item, getSortIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (list, item, getSortIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn Sort<T>(
@@ -80,34 +77,30 @@ impl crate::GlobalNamespace::SortExtensions {
         getSortIndex: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Sort")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Sort")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Sort",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Sort",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (list, getSortIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (list, getSortIndex))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -1,18 +1,14 @@
 #[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GetMultiplayerInstanceRequest {
     pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub serviceEnvironment: crate::GlobalNamespace::ServiceEnvironment,
-    pub singleUseAuthToken: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub singleUseAuthToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
     pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub privateGameSecret: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub privateGameSecret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub privateGameCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub platform: crate::GlobalNamespace::AuthenticationToken_PlatformType,
     pub authUserId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -28,7 +24,8 @@ pub struct GetMultiplayerInstanceRequest {
 }
 #[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
+    for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BGNet.Core.GameLift";
@@ -47,18 +44,16 @@ for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
+    for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -69,7 +64,8 @@ for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
 }
 #[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
+    for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -83,22 +79,22 @@ for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
 }
 #[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
+    for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
+    for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -112,7 +108,8 @@ for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
 }
 #[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
+    for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -132,12 +129,8 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
         gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
         platform: crate::GlobalNamespace::AuthenticationToken_PlatformType,
         authUserId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        singleUseAuthToken: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
-        privateGameSecret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        singleUseAuthToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        privateGameSecret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         privateGameCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         gameliftRegionLatencies: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<
@@ -149,84 +142,61 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
         placementId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         customLocation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::GlobalNamespace::ServiceEnvironment,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::GlobalNamespace::BeatmapLevelSelectionMask,
+                        crate::GlobalNamespace::GameplayServerConfiguration,
+                        crate::GlobalNamespace::AuthenticationToken_PlatformType,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                                i64,
                             >,
-                            crate::GlobalNamespace::ServiceEnvironment,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::GlobalNamespace::BeatmapLevelSelectionMask,
-                            crate::GlobalNamespace::GameplayServerConfiguration,
-                            crate::GlobalNamespace::AuthenticationToken_PlatformType,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    i64,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        14usize,
-                    >(".ctor")
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 14usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             14usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        version,
-                        serviceEnvironment,
-                        userId,
-                        beatmapLevelSelectionMask,
-                        gameplayServerConfiguration,
-                        platform,
-                        authUserId,
-                        singleUseAuthToken,
-                        privateGameSecret,
-                        privateGameCode,
-                        gameliftRegionLatencies,
-                        ticketId,
-                        placementId,
-                        customLocation,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    version,
+                    serviceEnvironment,
+                    userId,
+                    beatmapLevelSelectionMask,
+                    gameplayServerConfiguration,
+                    platform,
+                    authUserId,
+                    singleUseAuthToken,
+                    privateGameSecret,
+                    privateGameCode,
+                    gameliftRegionLatencies,
+                    ticketId,
+                    placementId,
+                    customLocation,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }

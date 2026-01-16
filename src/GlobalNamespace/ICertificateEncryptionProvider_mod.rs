@@ -1,18 +1,18 @@
 #[cfg(feature = "cordl_class_ICertificateEncryptionProvider")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct ICertificateEncryptionProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_ICertificateEncryptionProvider")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ICertificateEncryptionProvider {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ICertificateEncryptionProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "ICertificateEncryptionProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,45 +47,37 @@ impl crate::GlobalNamespace::ICertificateEncryptionProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<u8>,
-                        >,
-                        3usize,
-                    >("SignData")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, 3usize>(
+                        "SignData",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SignData", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SignData",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (data, offset, length))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (data, offset, length))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_ICertificateEncryptionProvider")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::ICertificateEncryptionProvider {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ICertificateEncryptionProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -94,15 +86,13 @@ for crate::GlobalNamespace::ICertificateEncryptionProvider {
     }
 }
 #[cfg(feature = "ICertificateEncryptionProvider")]
-impl AsRef<crate::System::IDisposable>
-for crate::GlobalNamespace::ICertificateEncryptionProvider {
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::ICertificateEncryptionProvider {
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ICertificateEncryptionProvider")]
-impl AsMut<crate::System::IDisposable>
-for crate::GlobalNamespace::ICertificateEncryptionProvider {
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::ICertificateEncryptionProvider {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }

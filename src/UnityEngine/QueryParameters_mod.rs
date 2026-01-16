@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+QueryParameters")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct QueryParameters {
     pub layerMask: i32,
     pub hitMultipleFaces: bool,
@@ -27,13 +27,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::QueryParameters 
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+QueryParameters")]
@@ -67,9 +64,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::QueryParamet
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -105,9 +100,10 @@ impl crate::UnityEngine::QueryParameters {
         hitTriggers: crate::UnityEngine::QueryTriggerInteraction,
         hitBackfaces: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, bool, crate::UnityEngine::QueryTriggerInteraction, bool),
@@ -123,37 +119,33 @@ impl crate::UnityEngine::QueryParameters {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (layerMask, hitMultipleFaces, hitTriggers, hitBackfaces),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (layerMask, hitMultipleFaces, hitTriggers, hitBackfaces),
+            )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn get_Default() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::QueryParameters,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_Default() -> quest_hook::libil2cpp::Result<crate::UnityEngine::QueryParameters> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::UnityEngine::QueryParameters,
-                        0usize,
-                    >("get_Default")
+                    .find_static_method::<(), crate::UnityEngine::QueryParameters, 0usize>(
+                        "get_Default",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Default", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Default",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::QueryParameters = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::QueryParameters =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

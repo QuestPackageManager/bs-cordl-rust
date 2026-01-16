@@ -1,12 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct IMECompositionString {
     padding: quest_hook::libil2cpp::ValueTypePadding<132usize>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
@@ -25,18 +26,16 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,7 +46,8 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -61,22 +61,22 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -90,7 +90,8 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -102,34 +103,30 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
     #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
-    pub type Enumerator = crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
-    )]
-    pub type _buffer_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer;
+    pub type Enumerator =
+        crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator;
+    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer")]
+    pub type _buffer_e__FixedBuffer =
+        crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer;
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<char>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<char>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<char>,
-                        >,
-                        0usize,
-                    >("GetEnumerator")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerator_1<char>,
+                    >, 0usize>("GetEnumerator")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetEnumerator", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetEnumerator",
+                            0usize
                         )
                     })
             });
@@ -143,9 +140,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -162,19 +160,18 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEnumerator,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -189,18 +186,18 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         characters: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -215,22 +212,23 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (characters))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (characters))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Count", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Count",
+                            0usize
                         )
                     })
             });
@@ -238,70 +236,69 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
         Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<char> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), char, 1usize>("get_Item")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Item", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Item",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: char = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: char = unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 impl AsRef<crate::System::Collections::Generic::IEnumerable_1<char>>
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString
+{
     fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<char> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 impl AsMut<crate::System::Collections::Generic::IEnumerable_1<char>>
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<char> {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString
+{
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<char> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 impl AsRef<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString
+{
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 impl AsMut<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString
+{
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         todo!()
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct IMECompositionString_Enumerator {
     pub m_CompositionString: crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
     pub m_CurrentCharacter: char,
     pub m_CurrentIndex: i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
@@ -320,20 +317,16 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -342,11 +335,10 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -358,28 +350,24 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -391,11 +379,10 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -406,73 +393,73 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("MoveNext")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MoveNext", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MoveNext",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reset",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -487,18 +474,18 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator 
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         compositionString: crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::LowLevel::IMECompositionString),
@@ -513,22 +500,23 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator 
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (compositionString))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (compositionString))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<char> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), char, 0usize>("get_Current")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Current", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Current",
+                            0usize
                         )
                     })
             });
@@ -538,44 +526,48 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator 
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 impl AsRef<crate::System::Collections::Generic::IEnumerator_1<char>>
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator
+{
     fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<char> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 impl AsMut<crate::System::Collections::Generic::IEnumerator_1<char>>
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<char> {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator
+{
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<char> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 impl AsRef<crate::System::Collections::IEnumerator>
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator
+{
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 impl AsMut<crate::System::Collections::IEnumerator>
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator
+{
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
@@ -583,8 +575,8 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct IMECompositionString__buffer_e__FixedBuffer {
     pub FixedElementField: char,
 }
@@ -592,7 +584,8 @@ pub struct IMECompositionString__buffer_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
@@ -611,20 +604,18 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__F
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -637,7 +628,8 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__F
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -653,16 +645,15 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__F
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -670,7 +661,8 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__F
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -686,7 +678,8 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__F
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer {
+    for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -695,7 +688,5 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__F
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer")]
 impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer {}

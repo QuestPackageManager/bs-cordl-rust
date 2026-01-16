@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Update {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PlayerLoop::Update {
@@ -22,13 +22,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PlayerLoop::Upda
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update")]
@@ -62,9 +59,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::PlayerLoop::
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -82,8 +77,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::PlayerLoop::Up
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::PlayerLoop::Update {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::PlayerLoop::Update {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -97,19 +91,20 @@ impl crate::UnityEngine::PlayerLoop::Update {
     #[cfg(feature = "UnityEngine+PlayerLoop+Update+DirectorUpdate")]
     pub type DirectorUpdate = crate::UnityEngine::PlayerLoop::Update_DirectorUpdate;
     #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
-    pub type ScriptRunBehaviourUpdate = crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate;
+    pub type ScriptRunBehaviourUpdate =
+        crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate;
     #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
-    pub type ScriptRunDelayedDynamicFrameRate = crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate;
+    pub type ScriptRunDelayedDynamicFrameRate =
+        crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate;
     #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunDelayedTasks")]
     pub type ScriptRunDelayedTasks = crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks;
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+DirectorUpdate")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Update_DirectorUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+DirectorUpdate")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
@@ -128,18 +123,16 @@ for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+DirectorUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {
+    for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -150,7 +143,8 @@ for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+DirectorUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {
+    for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -164,22 +158,22 @@ for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+DirectorUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {
+    for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+DirectorUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {
+    for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -193,7 +187,8 @@ for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+DirectorUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {
+    for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -205,12 +200,13 @@ for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {
 #[cfg(feature = "UnityEngine+PlayerLoop+Update+DirectorUpdate")]
 impl crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Update_ScriptRunBehaviourUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
@@ -229,18 +225,16 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -251,7 +245,8 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -265,22 +260,22 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -294,7 +289,8 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -305,17 +301,14 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
 impl crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {}
-#[cfg(
-    feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Update_ScriptRunDelayedDynamicFrameRate {}
-#[cfg(
-    feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
@@ -334,20 +327,16 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -356,11 +345,10 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -372,28 +360,24 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -405,11 +389,10 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -421,12 +404,13 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {
 #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
 impl crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedTasks")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Update_ScriptRunDelayedTasks {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedTasks")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
@@ -445,18 +429,16 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedTasks")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -467,7 +449,8 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks {
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedTasks")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -481,22 +464,22 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks {
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedTasks")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedTasks")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -510,7 +493,8 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks {
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedTasks")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks {
+    for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

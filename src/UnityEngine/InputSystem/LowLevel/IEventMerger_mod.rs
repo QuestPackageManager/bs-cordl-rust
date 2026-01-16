@@ -1,18 +1,20 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IEventMerger")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IEventMerger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IEventMerger")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::LowLevel::IEventMerger {
+    for crate::UnityEngine::InputSystem::LowLevel::IEventMerger
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
     const CLASS_NAME: &'static str = "IEventMerger";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,40 +46,34 @@ impl crate::UnityEngine::InputSystem::LowLevel::IEventMerger {
         currentEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         nextEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                        ),
-                        bool,
-                        2usize,
-                    >("MergeForward")
+                    .find_method::<(
+                        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                    ), bool, 2usize>("MergeForward")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MergeForward", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MergeForward",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (currentEventPtr, nextEventPtr))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (currentEventPtr, nextEventPtr))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IEventMerger")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::LowLevel::IEventMerger {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::LowLevel::IEventMerger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+WordWrapState")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct WordWrapState {
     pub previous_WordBreak: i32,
     pub total_CharacterCount: i32,
@@ -49,35 +49,24 @@ pub struct WordWrapState {
     pub basicStyleStack: crate::TMPro::TMP_FontStyleStack,
     pub italicAngleStack: crate::TMPro::TMP_TextProcessingStack_1<i32>,
     pub colorStack: crate::TMPro::TMP_TextProcessingStack_1<crate::UnityEngine::Color32>,
-    pub underlineColorStack: crate::TMPro::TMP_TextProcessingStack_1<
-        crate::UnityEngine::Color32,
-    >,
-    pub strikethroughColorStack: crate::TMPro::TMP_TextProcessingStack_1<
-        crate::UnityEngine::Color32,
-    >,
-    pub highlightColorStack: crate::TMPro::TMP_TextProcessingStack_1<
-        crate::UnityEngine::Color32,
-    >,
-    pub highlightStateStack: crate::TMPro::TMP_TextProcessingStack_1<
-        crate::TMPro::HighlightState,
-    >,
+    pub underlineColorStack: crate::TMPro::TMP_TextProcessingStack_1<crate::UnityEngine::Color32>,
+    pub strikethroughColorStack:
+        crate::TMPro::TMP_TextProcessingStack_1<crate::UnityEngine::Color32>,
+    pub highlightColorStack: crate::TMPro::TMP_TextProcessingStack_1<crate::UnityEngine::Color32>,
+    pub highlightStateStack: crate::TMPro::TMP_TextProcessingStack_1<crate::TMPro::HighlightState>,
     pub colorGradientStack: crate::TMPro::TMP_TextProcessingStack_1<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_ColorGradient>,
     >,
     pub sizeStack: crate::TMPro::TMP_TextProcessingStack_1<f32>,
     pub indentStack: crate::TMPro::TMP_TextProcessingStack_1<f32>,
-    pub fontWeightStack: crate::TMPro::TMP_TextProcessingStack_1<
-        crate::TMPro::FontWeight,
-    >,
+    pub fontWeightStack: crate::TMPro::TMP_TextProcessingStack_1<crate::TMPro::FontWeight>,
     pub styleStack: crate::TMPro::TMP_TextProcessingStack_1<i32>,
     pub baselineStack: crate::TMPro::TMP_TextProcessingStack_1<f32>,
     pub actionStack: crate::TMPro::TMP_TextProcessingStack_1<i32>,
-    pub materialReferenceStack: crate::TMPro::TMP_TextProcessingStack_1<
-        crate::TMPro::MaterialReference,
-    >,
-    pub lineJustificationStack: crate::TMPro::TMP_TextProcessingStack_1<
-        crate::TMPro::HorizontalAlignmentOptions,
-    >,
+    pub materialReferenceStack:
+        crate::TMPro::TMP_TextProcessingStack_1<crate::TMPro::MaterialReference>,
+    pub lineJustificationStack:
+        crate::TMPro::TMP_TextProcessingStack_1<crate::TMPro::HorizontalAlignmentOptions>,
     pub spriteAnimationID: i32,
     pub currentFontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     pub currentSpriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
@@ -109,13 +98,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::WordWrapState {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_TMPro+WordWrapState")]
@@ -149,9 +135,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::WordWrapState {
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }

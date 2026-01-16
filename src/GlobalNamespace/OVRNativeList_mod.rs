@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRNativeLis
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRNativeList";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,34 +48,34 @@ impl crate::GlobalNamespace::OVRNativeList {
         allocator: crate::Unity::Collections::Allocator,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRNativeList_1<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
-                            crate::Unity::Collections::Allocator,
-                        ),
-                        crate::GlobalNamespace::OVRNativeList_1<T>,
-                        2usize,
-                    >("ToNativeList")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<T>,
+                        >,
+                        crate::Unity::Collections::Allocator,
+                    ), crate::GlobalNamespace::OVRNativeList_1<T>, 2usize>(
+                        "ToNativeList"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToNativeList", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ToNativeList",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRNativeList_1<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (collection, allocator))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRNativeList_1<T> =
+            unsafe { cordl_method_info.invoke_unchecked((), (collection, allocator))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithSuggestedCapacityFrom_ByRefMut1<T>(
@@ -84,40 +85,36 @@ impl crate::GlobalNamespace::OVRNativeList {
         nonAllocatingEnumerable: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::OVREnumerable_1<T>,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRNativeList_CapacityHelper,
-    >
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRNativeList_CapacityHelper>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::OVREnumerable_1<T>,
-                            >,
-                        ),
-                        crate::GlobalNamespace::OVRNativeList_CapacityHelper,
-                        2usize,
-                    >("WithSuggestedCapacityFrom")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<T>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVREnumerable_1<T>>,
+                    ), crate::GlobalNamespace::OVRNativeList_CapacityHelper, 2usize>(
+                        "WithSuggestedCapacityFrom",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WithSuggestedCapacityFrom", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WithSuggestedCapacityFrom",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::OVRNativeList_CapacityHelper = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (collection, nonAllocatingEnumerable))?
+            cordl_method_info.invoke_unchecked((), (collection, nonAllocatingEnumerable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -125,35 +122,33 @@ impl crate::GlobalNamespace::OVRNativeList {
         collection: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRNativeList_CapacityHelper,
-    >
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRNativeList_CapacityHelper>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<T>,
-                        >),
-                        crate::GlobalNamespace::OVRNativeList_CapacityHelper,
-                        1usize,
-                    >("WithSuggestedCapacityFrom")
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<T>,
+                    >), crate::GlobalNamespace::OVRNativeList_CapacityHelper, 1usize>(
+                        "WithSuggestedCapacityFrom",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WithSuggestedCapacityFrom", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WithSuggestedCapacityFrom",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRNativeList_CapacityHelper = unsafe {
-            cordl_method_info.invoke_unchecked((), (collection))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRNativeList_CapacityHelper =
+            unsafe { cordl_method_info.invoke_unchecked((), (collection))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -167,14 +162,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRNativeList
     }
 }
 #[cfg(feature = "cordl_class_OVRNativeList+CapacityHelper")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRNativeList_CapacityHelper {
     pub _count: crate::System::Nullable_1<i32>,
 }
 #[cfg(feature = "cordl_class_OVRNativeList+CapacityHelper")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRNativeList_CapacityHelper {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRNativeList_CapacityHelper {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -193,18 +187,16 @@ for crate::GlobalNamespace::OVRNativeList_CapacityHelper {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRNativeList+CapacityHelper")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRNativeList_CapacityHelper {
+    for crate::GlobalNamespace::OVRNativeList_CapacityHelper
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -215,7 +207,8 @@ for crate::GlobalNamespace::OVRNativeList_CapacityHelper {
 }
 #[cfg(feature = "cordl_class_OVRNativeList+CapacityHelper")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRNativeList_CapacityHelper {
+    for crate::GlobalNamespace::OVRNativeList_CapacityHelper
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -229,22 +222,20 @@ for crate::GlobalNamespace::OVRNativeList_CapacityHelper {
 }
 #[cfg(feature = "cordl_class_OVRNativeList+CapacityHelper")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRNativeList_CapacityHelper {
+    for crate::GlobalNamespace::OVRNativeList_CapacityHelper
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRNativeList+CapacityHelper")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRNativeList_CapacityHelper {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRNativeList_CapacityHelper {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -258,7 +249,8 @@ for crate::GlobalNamespace::OVRNativeList_CapacityHelper {
 }
 #[cfg(feature = "cordl_class_OVRNativeList+CapacityHelper")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRNativeList_CapacityHelper {
+    for crate::GlobalNamespace::OVRNativeList_CapacityHelper
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -274,12 +266,14 @@ impl crate::GlobalNamespace::OVRNativeList_CapacityHelper {
         allocator: crate::Unity::Collections::Allocator,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRNativeList_1<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Collections::Allocator),
@@ -294,18 +288,18 @@ impl crate::GlobalNamespace::OVRNativeList_CapacityHelper {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRNativeList_1<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (allocator))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRNativeList_1<T> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (allocator))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         count: crate::System::Nullable_1<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Nullable_1<i32>),
@@ -320,9 +314,8 @@ impl crate::GlobalNamespace::OVRNativeList_CapacityHelper {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (count))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (count))? };
         Ok(__cordl_ret.into())
     }
 }

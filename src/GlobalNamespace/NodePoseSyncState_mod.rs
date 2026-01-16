@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NodePoseSyncState")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct NodePoseSyncState {
     pub _head: crate::GlobalNamespace::PoseSerializable,
     pub _leftController: crate::GlobalNamespace::PoseSerializable,
@@ -26,18 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NodePoseSync
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_NodePoseSyncState")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::NodePoseSyncState {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NodePoseSyncState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,8 +43,7 @@ for crate::GlobalNamespace::NodePoseSyncState {
     }
 }
 #[cfg(feature = "cordl_class_NodePoseSyncState")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::NodePoseSyncState {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::NodePoseSyncState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -61,17 +56,14 @@ for crate::GlobalNamespace::NodePoseSyncState {
     }
 }
 #[cfg(feature = "cordl_class_NodePoseSyncState")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::NodePoseSyncState {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NodePoseSyncState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -89,8 +81,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NodePoseSy
     }
 }
 #[cfg(feature = "cordl_class_NodePoseSyncState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::NodePoseSyncState {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::NodePoseSyncState {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -107,9 +98,10 @@ impl crate::GlobalNamespace::NodePoseSyncState {
         &mut self,
         delta: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NodePoseSyncState>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NodePoseSyncState> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -126,18 +118,18 @@ impl crate::GlobalNamespace::NodePoseSyncState {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::NodePoseSyncState = unsafe {
-            cordl_method_info.invoke_unchecked(self, (delta))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::NodePoseSyncState =
+            unsafe { cordl_method_info.invoke_unchecked(self, (delta))? };
         Ok(__cordl_ret.into())
     }
     pub fn Deserialize(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -154,18 +146,18 @@ impl crate::GlobalNamespace::NodePoseSyncState {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (reader))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reader))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         other: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NodePoseSyncState>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -182,20 +174,17 @@ impl crate::GlobalNamespace::NodePoseSyncState {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDelta(
         &mut self,
-        latest: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::NodePoseSyncState,
-        >,
+        latest: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NodePoseSyncState>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NodePoseSyncState> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -212,21 +201,22 @@ impl crate::GlobalNamespace::NodePoseSyncState {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::NodePoseSyncState = unsafe {
-            cordl_method_info.invoke_unchecked(self, (latest))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::NodePoseSyncState =
+            unsafe { cordl_method_info.invoke_unchecked(self, (latest))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetSize",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSize",
                             0usize
                         )
                     })
@@ -238,9 +228,10 @@ impl crate::GlobalNamespace::NodePoseSyncState {
         &mut self,
         nodePose: crate::GlobalNamespace::NodePoseSyncState_NodePose,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PoseSerializable> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::NodePoseSyncState_NodePose),
@@ -255,18 +246,18 @@ impl crate::GlobalNamespace::NodePoseSyncState {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::PoseSerializable = unsafe {
-            cordl_method_info.invoke_unchecked(self, (nodePose))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::PoseSerializable =
+            unsafe { cordl_method_info.invoke_unchecked(self, (nodePose))? };
         Ok(__cordl_ret.into())
     }
     pub fn IEquatableByReference_NodePoseSyncState__Equals(
         &mut self,
         other: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NodePoseSyncState>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -283,16 +274,15 @@ impl crate::GlobalNamespace::NodePoseSyncState {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IStateTable_NodePoseSyncState_NodePoseSyncState_NodePose_PoseSerializable__ApplyDelta(
         &mut self,
         delta: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NodePoseSyncState>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NodePoseSyncState> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -314,18 +304,16 @@ impl crate::GlobalNamespace::NodePoseSyncState {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::NodePoseSyncState = unsafe {
-            cordl_method_info.invoke_unchecked(self, (delta))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::NodePoseSyncState =
+            unsafe { cordl_method_info.invoke_unchecked(self, (delta))? };
         Ok(__cordl_ret.into())
     }
     pub fn IStateTable_NodePoseSyncState_NodePoseSyncState_NodePose_PoseSerializable__GetDelta(
         &mut self,
-        stateTable: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::NodePoseSyncState,
-        >,
+        stateTable: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NodePoseSyncState>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NodePoseSyncState> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -347,18 +335,18 @@ impl crate::GlobalNamespace::NodePoseSyncState {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::NodePoseSyncState = unsafe {
-            cordl_method_info.invoke_unchecked(self, (stateTable))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::NodePoseSyncState =
+            unsafe { cordl_method_info.invoke_unchecked(self, (stateTable))? };
         Ok(__cordl_ret.into())
     }
     pub fn Serialize(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -375,9 +363,8 @@ impl crate::GlobalNamespace::NodePoseSyncState {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (writer))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetState(
@@ -385,52 +372,48 @@ impl crate::GlobalNamespace::NodePoseSyncState {
         nodePose: crate::GlobalNamespace::NodePoseSyncState_NodePose,
         pose: crate::GlobalNamespace::PoseSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::NodePoseSyncState_NodePose,
-                            crate::GlobalNamespace::PoseSerializable,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetState")
+                    .find_method::<(
+                        crate::GlobalNamespace::NodePoseSyncState_NodePose,
+                        crate::GlobalNamespace::PoseSerializable,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SetState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetState", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetState",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (nodePose, pose))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (nodePose, pose))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "NodePoseSyncState")]
-impl AsRef<
-    crate::GlobalNamespace::IEquatableByReference_1<
-        crate::GlobalNamespace::NodePoseSyncState,
-    >,
-> for crate::GlobalNamespace::NodePoseSyncState {
+impl
+    AsRef<
+        crate::GlobalNamespace::IEquatableByReference_1<crate::GlobalNamespace::NodePoseSyncState>,
+    > for crate::GlobalNamespace::NodePoseSyncState
+{
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::IEquatableByReference_1<
-        crate::GlobalNamespace::NodePoseSyncState,
-    > {
+    ) -> &crate::GlobalNamespace::IEquatableByReference_1<crate::GlobalNamespace::NodePoseSyncState>
+    {
         todo!()
     }
 }
 #[cfg(feature = "NodePoseSyncState")]
-impl AsMut<
-    crate::GlobalNamespace::IEquatableByReference_1<
-        crate::GlobalNamespace::NodePoseSyncState,
-    >,
-> for crate::GlobalNamespace::NodePoseSyncState {
+impl
+    AsMut<
+        crate::GlobalNamespace::IEquatableByReference_1<crate::GlobalNamespace::NodePoseSyncState>,
+    > for crate::GlobalNamespace::NodePoseSyncState
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::GlobalNamespace::IEquatableByReference_1<
@@ -440,13 +423,15 @@ impl AsMut<
     }
 }
 #[cfg(feature = "NodePoseSyncState")]
-impl AsRef<
-    crate::GlobalNamespace::IStateTable_3<
-        crate::GlobalNamespace::NodePoseSyncState,
-        crate::GlobalNamespace::NodePoseSyncState_NodePose,
-        crate::GlobalNamespace::PoseSerializable,
-    >,
-> for crate::GlobalNamespace::NodePoseSyncState {
+impl
+    AsRef<
+        crate::GlobalNamespace::IStateTable_3<
+            crate::GlobalNamespace::NodePoseSyncState,
+            crate::GlobalNamespace::NodePoseSyncState_NodePose,
+            crate::GlobalNamespace::PoseSerializable,
+        >,
+    > for crate::GlobalNamespace::NodePoseSyncState
+{
     fn as_ref(
         &self,
     ) -> &crate::GlobalNamespace::IStateTable_3<
@@ -458,13 +443,15 @@ impl AsRef<
     }
 }
 #[cfg(feature = "NodePoseSyncState")]
-impl AsMut<
-    crate::GlobalNamespace::IStateTable_3<
-        crate::GlobalNamespace::NodePoseSyncState,
-        crate::GlobalNamespace::NodePoseSyncState_NodePose,
-        crate::GlobalNamespace::PoseSerializable,
-    >,
-> for crate::GlobalNamespace::NodePoseSyncState {
+impl
+    AsMut<
+        crate::GlobalNamespace::IStateTable_3<
+            crate::GlobalNamespace::NodePoseSyncState,
+            crate::GlobalNamespace::NodePoseSyncState_NodePose,
+            crate::GlobalNamespace::PoseSerializable,
+        >,
+    > for crate::GlobalNamespace::NodePoseSyncState
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::GlobalNamespace::IStateTable_3<
@@ -477,21 +464,23 @@ impl AsMut<
 }
 #[cfg(feature = "NodePoseSyncState")]
 impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
-for crate::GlobalNamespace::NodePoseSyncState {
+    for crate::GlobalNamespace::NodePoseSyncState
+{
     fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
         todo!()
     }
 }
 #[cfg(feature = "NodePoseSyncState")]
 impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
-for crate::GlobalNamespace::NodePoseSyncState {
+    for crate::GlobalNamespace::NodePoseSyncState
+{
     fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
         todo!()
     }
 }
 #[cfg(feature = "cordl_class_NodePoseSyncState+NodePose")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum NodePoseSyncState_NodePose {
     #[default]
     Count = 3i32,
@@ -500,8 +489,7 @@ pub enum NodePoseSyncState_NodePose {
     RightController = 2i32,
 }
 #[cfg(feature = "cordl_class_NodePoseSyncState+NodePose")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::NodePoseSyncState_NodePose {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NodePoseSyncState_NodePose {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -520,18 +508,14 @@ for crate::GlobalNamespace::NodePoseSyncState_NodePose {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_NodePoseSyncState+NodePose")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::NodePoseSyncState_NodePose {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NodePoseSyncState_NodePose {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -542,7 +526,8 @@ for crate::GlobalNamespace::NodePoseSyncState_NodePose {
 }
 #[cfg(feature = "cordl_class_NodePoseSyncState+NodePose")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::NodePoseSyncState_NodePose {
+    for crate::GlobalNamespace::NodePoseSyncState_NodePose
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -555,23 +540,19 @@ for crate::GlobalNamespace::NodePoseSyncState_NodePose {
     }
 }
 #[cfg(feature = "cordl_class_NodePoseSyncState+NodePose")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::NodePoseSyncState_NodePose {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NodePoseSyncState_NodePose {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_NodePoseSyncState+NodePose")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::NodePoseSyncState_NodePose {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NodePoseSyncState_NodePose {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

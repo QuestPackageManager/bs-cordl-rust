@@ -1,13 +1,14 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+NativeTypes+XrVector2f")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct XrVector2f {
     pub X: f32,
     pub Y: f32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+NativeTypes+XrVector2f")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f {
+    for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.XR.OpenXR.NativeTypes";
@@ -26,18 +27,16 @@ for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+NativeTypes+XrVector2f")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f {
+    for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -48,7 +47,8 @@ for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f {
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+NativeTypes+XrVector2f")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f {
+    for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -62,22 +62,22 @@ for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f {
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+NativeTypes+XrVector2f")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f {
+    for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+NativeTypes+XrVector2f")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f {
+    for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -91,7 +91,8 @@ for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f {
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+NativeTypes+XrVector2f")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f {
+    for crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -106,9 +107,10 @@ impl crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f {
         &mut self,
         value: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
@@ -123,9 +125,8 @@ impl crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_0(
@@ -133,26 +134,23 @@ impl crate::UnityEngine::XR::OpenXR::NativeTypes::XrVector2f {
         x: f32,
         y: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32, f32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(f32, f32), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (x, y))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (x, y))? };
         Ok(__cordl_ret.into())
     }
 }

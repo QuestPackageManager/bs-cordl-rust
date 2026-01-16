@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Collections+UnsafeQueueBlockPoolData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct UnsafeQueueBlockPoolData {
     pub m_FirstBlock: crate::System::IntPtr,
     pub m_NumBlocks: i32,
@@ -8,8 +8,7 @@ pub struct UnsafeQueueBlockPoolData {
     pub m_AllocLock: i32,
 }
 #[cfg(feature = "cordl_class_Unity+Collections+UnsafeQueueBlockPoolData")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::UnsafeQueueBlockPoolData {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Collections::UnsafeQueueBlockPoolData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections";
@@ -28,18 +27,16 @@ for crate::Unity::Collections::UnsafeQueueBlockPoolData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+UnsafeQueueBlockPoolData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::UnsafeQueueBlockPoolData {
+    for crate::Unity::Collections::UnsafeQueueBlockPoolData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -50,7 +47,8 @@ for crate::Unity::Collections::UnsafeQueueBlockPoolData {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+UnsafeQueueBlockPoolData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::UnsafeQueueBlockPoolData {
+    for crate::Unity::Collections::UnsafeQueueBlockPoolData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -64,22 +62,20 @@ for crate::Unity::Collections::UnsafeQueueBlockPoolData {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+UnsafeQueueBlockPoolData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::UnsafeQueueBlockPoolData {
+    for crate::Unity::Collections::UnsafeQueueBlockPoolData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+UnsafeQueueBlockPoolData")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Collections::UnsafeQueueBlockPoolData {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Collections::UnsafeQueueBlockPoolData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -93,7 +89,8 @@ for crate::Unity::Collections::UnsafeQueueBlockPoolData {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+UnsafeQueueBlockPoolData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::UnsafeQueueBlockPoolData {
+    for crate::Unity::Collections::UnsafeQueueBlockPoolData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -107,12 +104,12 @@ impl crate::Unity::Collections::UnsafeQueueBlockPoolData {
     pub const m_BlockSize: i32 = 16384i32;
     pub fn AllocateBlock(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -127,18 +124,18 @@ impl crate::Unity::Collections::UnsafeQueueBlockPoolData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FreeBlock(
         &mut self,
         block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -153,9 +150,8 @@ impl crate::Unity::Collections::UnsafeQueueBlockPoolData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (block))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (block))? };
         Ok(__cordl_ret.into())
     }
 }

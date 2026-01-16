@@ -13,23 +13,21 @@ pub struct ColorSaturationValueSlider {
     pub _lightColor: crate::UnityEngine::Color,
     pub colorSaturationOrValueDidChangeEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_3<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::ColorSaturationValueSlider,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSaturationValueSlider>,
             crate::UnityEngine::Vector2,
             crate::GlobalNamespace::ColorChangeUIEventType,
         >,
     >,
 }
 #[cfg(feature = "cordl_class_ColorSaturationValueSlider")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ColorSaturationValueSlider {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ColorSaturationValueSlider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "ColorSaturationValueSlider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -56,25 +54,24 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ColorSaturationValueSlider {
 }
 #[cfg(feature = "ColorSaturationValueSlider")]
 impl crate::GlobalNamespace::ColorSaturationValueSlider {
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Awake(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Awake",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HandleNormalizedValueDidChange(
@@ -82,68 +79,65 @@ impl crate::GlobalNamespace::ColorSaturationValueSlider {
         slider: quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
         normalizedValue: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
-                            crate::UnityEngine::Vector2,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleNormalizedValueDidChange")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
+                        crate::UnityEngine::Vector2,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "HandleNormalizedValueDidChange"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleNormalizedValueDidChange", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleNormalizedValueDidChange",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (slider, normalizedValue))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (slider, normalizedValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDestroy(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDestroy", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDestroy",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn OnPointerUp(
         &mut self,
-        eventData: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::PointerEventData,
-        >,
+        eventData: quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -160,167 +154,154 @@ impl crate::GlobalNamespace::ColorSaturationValueSlider {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (eventData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (eventData))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetHue(
         &mut self,
         hue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("SetHue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetHue",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetHue",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (hue))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (hue))? };
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateVisuals(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn UpdateVisuals(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("UpdateVisuals")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdateVisuals")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateVisuals", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateVisuals",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn add_colorSaturationOrValueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             crate::System::Action_3<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::ColorSaturationValueSlider,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSaturationValueSlider>,
                 crate::UnityEngine::Vector2,
                 crate::GlobalNamespace::ColorChangeUIEventType,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_3<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ColorSaturationValueSlider,
-                                >,
-                                crate::UnityEngine::Vector2,
-                                crate::GlobalNamespace::ColorChangeUIEventType,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_3<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ColorSaturationValueSlider,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_colorSaturationOrValueDidChangeEvent")
+                            crate::UnityEngine::Vector2,
+                            crate::GlobalNamespace::ColorChangeUIEventType,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_colorSaturationOrValueDidChangeEvent",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_colorSaturationOrValueDidChangeEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_colorSaturationOrValueDidChangeEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_colorSaturationOrValueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             crate::System::Action_3<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::ColorSaturationValueSlider,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSaturationValueSlider>,
                 crate::UnityEngine::Vector2,
                 crate::GlobalNamespace::ColorChangeUIEventType,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_3<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ColorSaturationValueSlider,
-                                >,
-                                crate::UnityEngine::Vector2,
-                                crate::GlobalNamespace::ColorChangeUIEventType,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_3<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ColorSaturationValueSlider,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_colorSaturationOrValueDidChangeEvent")
+                            crate::UnityEngine::Vector2,
+                            crate::GlobalNamespace::ColorChangeUIEventType,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_colorSaturationOrValueDidChangeEvent",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_colorSaturationOrValueDidChangeEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_colorSaturationOrValueDidChangeEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_ColorSaturationValueSlider")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::ColorSaturationValueSlider {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSaturationValueSlider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -330,28 +311,32 @@ for crate::GlobalNamespace::ColorSaturationValueSlider {
 }
 #[cfg(feature = "ColorSaturationValueSlider")]
 impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::GlobalNamespace::ColorSaturationValueSlider {
+    for crate::GlobalNamespace::ColorSaturationValueSlider
+{
     fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ColorSaturationValueSlider")]
 impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::GlobalNamespace::ColorSaturationValueSlider {
+    for crate::GlobalNamespace::ColorSaturationValueSlider
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ColorSaturationValueSlider")]
 impl AsRef<crate::UnityEngine::EventSystems::IPointerUpHandler>
-for crate::GlobalNamespace::ColorSaturationValueSlider {
+    for crate::GlobalNamespace::ColorSaturationValueSlider
+{
     fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerUpHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ColorSaturationValueSlider")]
 impl AsMut<crate::UnityEngine::EventSystems::IPointerUpHandler>
-for crate::GlobalNamespace::ColorSaturationValueSlider {
+    for crate::GlobalNamespace::ColorSaturationValueSlider
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerUpHandler {
         unsafe { std::mem::transmute(self) }
     }

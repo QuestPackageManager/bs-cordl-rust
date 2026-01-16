@@ -22,7 +22,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlBinaryReaderS
     const NAMESPACE: &'static str = "System.Xml";
     const CLASS_NAME: &'static str = "XmlBinaryReaderSession";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -56,33 +57,27 @@ impl crate::System::Xml::XmlBinaryReaderSession {
             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDictionaryString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Xml::XmlDictionaryString,
-                                >,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryLookup")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDictionaryString>,
+                        >,
+                    ), bool, 2usize>("TryLookup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryLookup", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryLookup",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (key, result))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (key, result))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -96,15 +91,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBinaryReaderSe
     }
 }
 #[cfg(feature = "System+Xml+XmlBinaryReaderSession")]
-impl AsRef<crate::System::Xml::IXmlDictionary>
-for crate::System::Xml::XmlBinaryReaderSession {
+impl AsRef<crate::System::Xml::IXmlDictionary> for crate::System::Xml::XmlBinaryReaderSession {
     fn as_ref(&self) -> &crate::System::Xml::IXmlDictionary {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlBinaryReaderSession")]
-impl AsMut<crate::System::Xml::IXmlDictionary>
-for crate::System::Xml::XmlBinaryReaderSession {
+impl AsMut<crate::System::Xml::IXmlDictionary> for crate::System::Xml::XmlBinaryReaderSession {
     fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlDictionary {
         unsafe { std::mem::transmute(self) }
     }

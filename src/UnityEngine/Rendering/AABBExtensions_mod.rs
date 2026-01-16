@@ -5,14 +5,14 @@ pub struct AABBExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AABBExtensions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::AABBExtensions {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::AABBExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "AABBExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,9 +42,10 @@ impl crate::UnityEngine::Rendering::AABBExtensions {
     pub fn ToAABB(
         bounds: crate::UnityEngine::Bounds,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::AABB> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Bounds),
@@ -59,17 +60,17 @@ impl crate::UnityEngine::Rendering::AABBExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::AABB = unsafe {
-            cordl_method_info.invoke_unchecked((), (bounds))?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::AABB =
+            unsafe { cordl_method_info.invoke_unchecked((), (bounds))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToBounds(
         aabb: crate::UnityEngine::Rendering::AABB,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Rendering::AABB),
@@ -84,15 +85,13 @@ impl crate::UnityEngine::Rendering::AABBExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Bounds = unsafe {
-            cordl_method_info.invoke_unchecked((), (aabb))?
-        };
+        let __cordl_ret: crate::UnityEngine::Bounds =
+            unsafe { cordl_method_info.invoke_unchecked((), (aabb))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AABBExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::AABBExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::AABBExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

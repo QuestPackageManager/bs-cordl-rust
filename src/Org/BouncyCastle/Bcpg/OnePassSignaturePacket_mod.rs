@@ -11,14 +11,14 @@ pub struct OnePassSignaturePacket {
     pub nested: i32,
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OnePassSignaturePacket")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
+unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Bcpg";
     const CLASS_NAME: &'static str = "OnePassSignaturePacket";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,13 +47,12 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::OnePassSignaturePack
 impl crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
     pub fn Encode(
         &mut self,
-        bcpgOut: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
-        >,
+        bcpgOut: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::BcpgOutputStream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -70,18 +69,15 @@ impl crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bcpgOut))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bcpgOut))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_BcpgInputStream0(
-        bcpgIn: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
-        >,
+        bcpgIn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::BcpgInputStream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bcpgIn))?;
         Ok(__cordl_object.into())
@@ -93,24 +89,22 @@ impl crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
         keyId: i64,
         isNested: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (sigType, hashAlgorithm, keyAlgorithm, keyId, isNested),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (sigType, hashAlgorithm, keyAlgorithm, keyId, isNested),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor_BcpgInputStream0(
         &mut self,
-        bcpgIn: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
-        >,
+        bcpgIn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::BcpgInputStream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -127,9 +121,8 @@ impl crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bcpgIn))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bcpgIn))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_HashAlgorithmTag_PublicKeyAlgorithmTag_i64__cordl_bool1(
@@ -140,73 +133,66 @@ impl crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
         keyId: i64,
         isNested: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-                            crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-                            i64,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
+                        crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+                        i64,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (sigType, hashAlgorithm, keyAlgorithm, keyId, isNested),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (sigType, hashAlgorithm, keyAlgorithm, keyId, isNested),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_HashAlgorithm(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-                        0usize,
-                    >("get_HashAlgorithm")
+                    .find_method::<(), crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag, 0usize>(
+                        "get_HashAlgorithm",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_HashAlgorithm", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_HashAlgorithm",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_KeyAlgorithm(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -221,22 +207,23 @@ impl crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
                         )
                     })
             });
-        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_KeyId(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_KeyId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_KeyId", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_KeyId",
+                            0usize
                         )
                     })
             });
@@ -244,16 +231,18 @@ impl crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
         Ok(__cordl_ret.into())
     }
     pub fn get_SignatureType(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_SignatureType")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_SignatureType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_SignatureType",
+                            0usize
                         )
                     })
             });
@@ -262,8 +251,7 @@ impl crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OnePassSignaturePacket")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
+impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

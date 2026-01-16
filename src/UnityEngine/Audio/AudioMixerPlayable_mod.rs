@@ -1,12 +1,11 @@
 #[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixerPlayable")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct AudioMixerPlayable {
     pub m_Handle: crate::UnityEngine::Playables::PlayableHandle,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixerPlayable")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Audio::AudioMixerPlayable {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Audio::AudioMixerPlayable {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Audio";
@@ -25,18 +24,14 @@ for crate::UnityEngine::Audio::AudioMixerPlayable {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixerPlayable")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Audio::AudioMixerPlayable {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Audio::AudioMixerPlayable {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -46,8 +41,7 @@ for crate::UnityEngine::Audio::AudioMixerPlayable {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixerPlayable")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Audio::AudioMixerPlayable {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Audio::AudioMixerPlayable {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -60,23 +54,19 @@ for crate::UnityEngine::Audio::AudioMixerPlayable {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixerPlayable")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Audio::AudioMixerPlayable {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Audio::AudioMixerPlayable {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixerPlayable")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Audio::AudioMixerPlayable {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Audio::AudioMixerPlayable {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -89,8 +79,7 @@ for crate::UnityEngine::Audio::AudioMixerPlayable {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixerPlayable")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Audio::AudioMixerPlayable {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Audio::AudioMixerPlayable {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -106,9 +95,10 @@ impl crate::UnityEngine::Audio::AudioMixerPlayable {
         inputCount: i32,
         normalizeInputVolumes: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Audio::AudioMixerPlayable> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Playables::PlayableGraph, i32, bool),
@@ -124,48 +114,40 @@ impl crate::UnityEngine::Audio::AudioMixerPlayable {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Audio::AudioMixerPlayable = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (graph, inputCount, normalizeInputVolumes))?
+            cordl_method_info.invoke_unchecked((), (graph, inputCount, normalizeInputVolumes))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CreateAudioMixerPlayableInternal(
-        graph: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Playables::PlayableGraph,
-        >,
+        graph: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Playables::PlayableGraph>,
         normalizeInputVolumes: bool,
-        handle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Playables::PlayableHandle,
-        >,
+        handle: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Playables::PlayableHandle>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Playables::PlayableGraph,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Playables::PlayableHandle,
-                            >,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Playables::PlayableGraph,
+                        >,
                         bool,
-                        3usize,
-                    >("CreateAudioMixerPlayableInternal")
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Playables::PlayableHandle,
+                        >,
+                    ), bool, 3usize>("CreateAudioMixerPlayableInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateAudioMixerPlayableInternal", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateAudioMixerPlayableInternal",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (graph, normalizeInputVolumes, handle))?
+            cordl_method_info.invoke_unchecked((), (graph, normalizeInputVolumes, handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -174,9 +156,10 @@ impl crate::UnityEngine::Audio::AudioMixerPlayable {
         inputCount: i32,
         normalizeInputVolumes: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Playables::PlayableGraph, i32, bool),
@@ -192,8 +175,7 @@ impl crate::UnityEngine::Audio::AudioMixerPlayable {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (graph, inputCount, normalizeInputVolumes))?
+            cordl_method_info.invoke_unchecked((), (graph, inputCount, normalizeInputVolumes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -201,60 +183,58 @@ impl crate::UnityEngine::Audio::AudioMixerPlayable {
         &mut self,
         other: crate::UnityEngine::Audio::AudioMixerPlayable,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Audio::AudioMixerPlayable),
-                        bool,
-                        1usize,
-                    >("Equals")
+                    .find_method::<(crate::UnityEngine::Audio::AudioMixerPlayable), bool, 1usize>(
+                        "Equals",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Equals",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::Playables::PlayableHandle,
-                        0usize,
-                    >("GetHandle")
+                    .find_method::<(), crate::UnityEngine::Playables::PlayableHandle, 0usize>(
+                        "GetHandle",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHandle", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHandle",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         handle: crate::UnityEngine::Playables::PlayableHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Playables::PlayableHandle),
@@ -269,17 +249,17 @@ impl crate::UnityEngine::Audio::AudioMixerPlayable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit(
         playable: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Audio::AudioMixerPlayable> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Playables::Playable),
@@ -294,17 +274,17 @@ impl crate::UnityEngine::Audio::AudioMixerPlayable {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Audio::AudioMixerPlayable = unsafe {
-            cordl_method_info.invoke_unchecked((), (playable))?
-        };
+        let __cordl_ret: crate::UnityEngine::Audio::AudioMixerPlayable =
+            unsafe { cordl_method_info.invoke_unchecked((), (playable))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
         playable: crate::UnityEngine::Audio::AudioMixerPlayable,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Audio::AudioMixerPlayable),
@@ -319,15 +299,15 @@ impl crate::UnityEngine::Audio::AudioMixerPlayable {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
-            cordl_method_info.invoke_unchecked((), (playable))?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::Playable =
+            unsafe { cordl_method_info.invoke_unchecked((), (playable))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Audio+AudioMixerPlayable")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Audio::AudioMixerPlayable>>
-for crate::UnityEngine::Audio::AudioMixerPlayable {
+    for crate::UnityEngine::Audio::AudioMixerPlayable
+{
     fn as_ref(
         &self,
     ) -> &crate::System::IEquatable_1<crate::UnityEngine::Audio::AudioMixerPlayable> {
@@ -336,25 +316,26 @@ for crate::UnityEngine::Audio::AudioMixerPlayable {
 }
 #[cfg(feature = "UnityEngine+Audio+AudioMixerPlayable")]
 impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Audio::AudioMixerPlayable>>
-for crate::UnityEngine::Audio::AudioMixerPlayable {
+    for crate::UnityEngine::Audio::AudioMixerPlayable
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::UnityEngine::Audio::AudioMixerPlayable,
-    > {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Audio::AudioMixerPlayable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Audio+AudioMixerPlayable")]
 impl AsRef<crate::UnityEngine::Playables::IPlayable>
-for crate::UnityEngine::Audio::AudioMixerPlayable {
+    for crate::UnityEngine::Audio::AudioMixerPlayable
+{
     fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Audio+AudioMixerPlayable")]
 impl AsMut<crate::UnityEngine::Playables::IPlayable>
-for crate::UnityEngine::Audio::AudioMixerPlayable {
+    for crate::UnityEngine::Audio::AudioMixerPlayable
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
         todo!()
     }

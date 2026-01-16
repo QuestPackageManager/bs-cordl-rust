@@ -11,16 +11,12 @@ pub struct MirrorRendererSO {
     pub _maxAntiAliasing: i32,
     pub _disableDepthTexture: bool,
     pub _enableBloomPrePass: bool,
-    pub _bloomPrePassRenderer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BloomPrePassRendererSO,
-    >,
-    pub _bloomPrePassEffect: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BloomPrePassEffectSO,
-    >,
+    pub _bloomPrePassRenderer:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassRendererSO>,
+    pub _bloomPrePassEffect:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassEffectSO>,
     pub _clearDepthShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
-    pub _bloomPrePassRenderTexture: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::RenderTexture,
-    >,
+    pub _bloomPrePassRenderTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     pub _mirrorCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _antialiasing: i32,
     pub _renderTextures: quest_hook::libil2cpp::Gc<
@@ -40,7 +36,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MirrorRender
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "MirrorRendererSO";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -70,33 +67,33 @@ impl crate::GlobalNamespace::MirrorRendererSO {
     pub const kWaterLayer: i32 = 4i32;
     #[cfg(feature = "MirrorRendererSO+CameraTransformData")]
     pub type CameraTransformData = crate::GlobalNamespace::MirrorRendererSO_CameraTransformData;
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Awake(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Awake",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateReflectionMatrix(
         plane: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector4),
@@ -111,9 +108,8 @@ impl crate::GlobalNamespace::MirrorRendererSO {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            cordl_method_info.invoke_unchecked((), (plane))?
-        };
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 =
+            unsafe { cordl_method_info.invoke_unchecked((), (plane))? };
         Ok(__cordl_ret.into())
     }
     pub fn CameraSpacePlane(
@@ -121,30 +117,27 @@ impl crate::GlobalNamespace::MirrorRendererSO {
         pos: crate::UnityEngine::Vector3,
         normal: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Matrix4x4,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                        ),
-                        crate::UnityEngine::Vector4,
-                        3usize,
-                    >("CameraSpacePlane")
+                    .find_static_method::<(
+                        crate::UnityEngine::Matrix4x4,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                    ), crate::UnityEngine::Vector4, 3usize>("CameraSpacePlane")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CameraSpacePlane", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CameraSpacePlane",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            cordl_method_info.invoke_unchecked((), (worldToCameraMatrix, pos, normal))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector4 =
+            unsafe { cordl_method_info.invoke_unchecked((), (worldToCameraMatrix, pos, normal))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateOrUpdateMirrorCamera(
@@ -152,29 +145,28 @@ impl crate::GlobalNamespace::MirrorRendererSO {
         currentCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         renderTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CreateOrUpdateMirrorCamera")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "CreateOrUpdateMirrorCamera"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateOrUpdateMirrorCamera", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateOrUpdateMirrorCamera",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (currentCamera, renderTexture))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (currentCamera, renderTexture))? };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -187,9 +179,10 @@ impl crate::GlobalNamespace::MirrorRendererSO {
         maxAntiAliasing: i32,
         enableBloomPrePass: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::LayerMask, i32, i32, i32, i32, i32, bool),
@@ -205,78 +198,76 @@ impl crate::GlobalNamespace::MirrorRendererSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        reflectLayers,
-                        stereoTextureWidth,
-                        stereoTextureHeight,
-                        monoTextureWidth,
-                        monoTextureHeight,
-                        maxAntiAliasing,
-                        enableBloomPrePass,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    reflectLayers,
+                    stereoTextureWidth,
+                    stereoTextureHeight,
+                    monoTextureWidth,
+                    monoTextureHeight,
+                    maxAntiAliasing,
+                    enableBloomPrePass,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDisable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDisable(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDisable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDisable",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn OnValidate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnValidate(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnValidate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnValidate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnValidate",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Plane(
         pos: crate::UnityEngine::Vector3,
         normal: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3),
@@ -291,34 +282,30 @@ impl crate::GlobalNamespace::MirrorRendererSO {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            cordl_method_info.invoke_unchecked((), (pos, normal))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector4 =
+            unsafe { cordl_method_info.invoke_unchecked((), (pos, normal))? };
         Ok(__cordl_ret.into())
     }
     pub fn PrepareForNextFrame(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("PrepareForNextFrame")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("PrepareForNextFrame")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PrepareForNextFrame", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PrepareForNextFrame",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RenderMirror(
@@ -330,43 +317,40 @@ impl crate::GlobalNamespace::MirrorRendererSO {
         reclectionPlanePos: crate::UnityEngine::Vector3,
         reflectionPlaneNormal: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                            crate::UnityEngine::Matrix4x4,
-                            crate::UnityEngine::Rect,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("RenderMirror")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                        crate::UnityEngine::Matrix4x4,
+                        crate::UnityEngine::Rect,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                    ), quest_hook::libil2cpp::Void, 6usize>("RenderMirror")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RenderMirror", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RenderMirror",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        camPosition,
-                        camRotation,
-                        camProjectionMatrix,
-                        screenRect,
-                        reclectionPlanePos,
-                        reflectionPlaneNormal,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    camPosition,
+                    camRotation,
+                    camProjectionMatrix,
+                    screenRect,
+                    reclectionPlanePos,
+                    reflectionPlaneNormal,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -375,83 +359,74 @@ impl crate::GlobalNamespace::MirrorRendererSO {
         currentCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         reflectionPlanePos: crate::UnityEngine::Vector3,
         reflectionPlaneNormal: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                        3usize,
-                    >("RenderMirrorTexture")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                    ), quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>, 3usize>(
+                        "RenderMirrorTexture",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RenderMirrorTexture", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RenderMirrorTexture",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (currentCamera, reflectionPlanePos, reflectionPlaneNormal),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (currentCamera, reflectionPlanePos, reflectionPlaneNormal),
+            )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ValidateParams(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ValidateParams(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ValidateParams")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ValidateParams")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValidateParams", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ValidateParams",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -465,8 +440,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MirrorRendere
     }
 }
 #[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct MirrorRendererSO_CameraTransformData {
     pub position: crate::UnityEngine::Vector3,
     pub rotation: crate::UnityEngine::Quaternion,
@@ -476,7 +451,8 @@ pub struct MirrorRendererSO_CameraTransformData {
 }
 #[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
+    for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -495,18 +471,16 @@ for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
+    for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -517,7 +491,8 @@ for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
 }
 #[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
+    for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -531,22 +506,22 @@ for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
 }
 #[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
+    for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
+    for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -560,7 +535,8 @@ for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
 }
 #[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
+    for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -575,9 +551,10 @@ impl crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -592,18 +569,17 @@ impl crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_MirrorRendererSO_CameraTransformData0(
         &mut self,
         other: crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::MirrorRendererSO_CameraTransformData),
@@ -618,22 +594,22 @@ impl crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -644,81 +620,70 @@ impl crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
         left: crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
         right: crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
-                            crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
-                        ),
-                        bool,
-                        2usize,
-                    >("op_Equality")
+                    .find_static_method::<(
+                        crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+                        crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+                    ), bool, 2usize>("op_Equality")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Equality", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Equality",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (left, right))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (left, right))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Inequality(
         left: crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
         right: crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
-                            crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
-                        ),
-                        bool,
-                        2usize,
-                    >("op_Inequality")
+                    .find_static_method::<(
+                        crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+                        crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+                    ), bool, 2usize>("op_Inequality")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Inequality", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Inequality",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (left, right))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (left, right))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MirrorRendererSO+CameraTransformData")]
-impl AsRef<
-    crate::System::IEquatable_1<
-        crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
-    >,
-> for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
+impl
+    AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::MirrorRendererSO_CameraTransformData>>
+    for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
-    > {
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::MirrorRendererSO_CameraTransformData>
+    {
         todo!()
     }
 }
 #[cfg(feature = "MirrorRendererSO+CameraTransformData")]
-impl AsMut<
-    crate::System::IEquatable_1<
-        crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
-    >,
-> for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
+impl
+    AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::MirrorRendererSO_CameraTransformData>>
+    for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::IEquatable_1<

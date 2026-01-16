@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::BinaryCompatibil
     const NAMESPACE: &'static str = "System.Xml";
     const CLASS_NAME: &'static str = "BinaryCompatibility";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,20 +40,18 @@ impl std::ops::DerefMut for crate::System::Xml::BinaryCompatibility {
 #[cfg(feature = "System+Xml+BinaryCompatibility")]
 impl crate::System::Xml::BinaryCompatibility {
     pub fn get_TargetsAtLeast_Desktop_V4_5_2() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        bool,
-                        0usize,
-                    >("get_TargetsAtLeast_Desktop_V4_5_2")
+                    .find_static_method::<(), bool, 0usize>("get_TargetsAtLeast_Desktop_V4_5_2")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_TargetsAtLeast_Desktop_V4_5_2", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_TargetsAtLeast_Desktop_V4_5_2",
+                            0usize
                         )
                     })
             });

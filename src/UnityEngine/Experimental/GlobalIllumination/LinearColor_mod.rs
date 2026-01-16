@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LinearColor")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LinearColor {
     pub m_red: f32,
     pub m_green: f32,
@@ -9,7 +9,8 @@ pub struct LinearColor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LinearColor")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
+    for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Experimental.GlobalIllumination";
@@ -28,18 +29,16 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LinearColor")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
+    for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -50,7 +49,8 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LinearColor")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
+    for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -64,22 +64,22 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LinearColor")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
+    for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LinearColor")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
+    for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -93,7 +93,8 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LinearColor")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
+    for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -107,9 +108,10 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
     pub fn Black() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::GlobalIllumination::LinearColor,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -124,9 +126,8 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Experimental::GlobalIllumination::LinearColor = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Experimental::GlobalIllumination::LinearColor =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Convert(
@@ -135,9 +136,10 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::GlobalIllumination::LinearColor,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, f32),
@@ -152,22 +154,23 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Experimental::GlobalIllumination::LinearColor = unsafe {
-            cordl_method_info.invoke_unchecked((), (color, intensity))?
-        };
+        let __cordl_ret: crate::UnityEngine::Experimental::GlobalIllumination::LinearColor =
+            unsafe { cordl_method_info.invoke_unchecked((), (color, intensity))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_blue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_blue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_blue", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_blue",
+                            0usize
                         )
                     })
             });
@@ -175,16 +178,18 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
         Ok(__cordl_ret.into())
     }
     pub fn get_green(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_green")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_green", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_green",
+                            0usize
                         )
                     })
             });
@@ -192,15 +197,17 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
         Ok(__cordl_ret.into())
     }
     pub fn get_red(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_red")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_red",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_red",
                             0usize
                         )
                     })
@@ -212,74 +219,69 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_blue")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("set_blue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_blue", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_blue",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_green(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_green")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("set_green")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_green", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_green",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_red(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("set_red")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_red",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_red",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -3,29 +3,26 @@
 #[derive(Debug)]
 pub struct ContextualMenuPopulateEvent {
     __cordl_parent: crate::UnityEngine::UIElements::MouseEventBase_1<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ContextualMenuPopulateEvent>,
     >,
-    pub _menu_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::DropdownMenu,
-    >,
-    pub _triggerEvent_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::EventBase,
-    >,
-    pub m_ContextualMenuManager: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::ContextualMenuManager,
-    >,
+    pub _menu_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenu>,
+    pub _triggerEvent_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    pub m_ContextualMenuManager:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ContextualMenuManager>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ContextualMenuPopulateEvent")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
+    for crate::UnityEngine::UIElements::ContextualMenuPopulateEvent
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "ContextualMenuPopulateEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,9 +37,7 @@ for crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
 #[cfg(feature = "UnityEngine+UIElements+ContextualMenuPopulateEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
     type Target = crate::UnityEngine::UIElements::MouseEventBase_1<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ContextualMenuPopulateEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -57,104 +52,89 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ContextualMenuPopula
 #[cfg(feature = "UnityEngine+UIElements+ContextualMenuPopulateEvent")]
 impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
     pub fn GetPooled(
-        triggerEvent: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventBase,
-        >,
+        triggerEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         menu: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenu>,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
         menuManager: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::ContextualMenuManager,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ContextualMenuPopulateEvent>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::EventBase,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::DropdownMenu,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::IEventHandler,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::ContextualMenuManager,
-                            >,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenu>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+                            crate::UnityEngine::UIElements::ContextualMenuManager,
                         >,
-                        4usize,
-                    >("GetPooled")
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+                    >, 4usize>("GetPooled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPooled", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPooled",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (triggerEvent, menu, target, menuManager))?
+            cordl_method_info.invoke_unchecked((), (triggerEvent, menu, target, menuManager))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn LocalInit(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn LocalInit(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LocalInit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LocalInit", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LocalInit",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -163,9 +143,10 @@ impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
         &mut self,
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -182,30 +163,28 @@ impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (panel))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (panel))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_menu(
@@ -213,9 +192,10 @@ impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenu>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -232,9 +212,8 @@ impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::DropdownMenu,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenu> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_triggerEvent(
@@ -242,9 +221,10 @@ impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -261,18 +241,18 @@ impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventBase,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_menu(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenu>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -289,18 +269,18 @@ impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_triggerEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -317,15 +297,15 @@ impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ContextualMenuPopulateEvent")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
+    for crate::UnityEngine::UIElements::ContextualMenuPopulateEvent
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

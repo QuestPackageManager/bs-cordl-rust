@@ -1,18 +1,20 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+IInitializableObject")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IInitializableObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+IInitializableObject")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
+    for crate::UnityEngine::ResourceManagement::Util::IInitializableObject
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
     const CLASS_NAME: &'static str = "IInitializableObject";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -25,16 +27,14 @@ for crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+IInitializableObject")]
-impl std::ops::Deref
-for crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
+impl std::ops::Deref for crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+IInitializableObject")]
-impl std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
+impl std::ops::DerefMut for crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -46,48 +46,37 @@ impl crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("Initialize")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), bool, 2usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Initialize", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Initialize",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (id, data))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (id, data))? };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeAsync(
         &mut self,
-        rm: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::ResourceManager,
-        >,
+        rm: quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceManagement::ResourceManager>,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            bool,
-        >,
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<bool>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -121,15 +110,14 @@ impl crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (rm, id, data))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+IInitializableObject")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
+    for crate::UnityEngine::ResourceManagement::Util::IInitializableObject
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

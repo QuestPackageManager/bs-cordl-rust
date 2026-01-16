@@ -1,13 +1,12 @@
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ArticulationReducedSpace {
     pub x: crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer,
     pub dofCount: i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ArticulationReducedSpace {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ArticulationReducedSpace {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
@@ -26,18 +25,14 @@ for crate::UnityEngine::ArticulationReducedSpace {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ArticulationReducedSpace {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ArticulationReducedSpace {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,8 +42,7 @@ for crate::UnityEngine::ArticulationReducedSpace {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ArticulationReducedSpace {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ArticulationReducedSpace {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -61,23 +55,19 @@ for crate::UnityEngine::ArticulationReducedSpace {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ArticulationReducedSpace {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ArticulationReducedSpace {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::ArticulationReducedSpace {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ArticulationReducedSpace {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -90,8 +80,7 @@ for crate::UnityEngine::ArticulationReducedSpace {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ArticulationReducedSpace {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::ArticulationReducedSpace {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -108,22 +97,23 @@ impl crate::UnityEngine::ArticulationReducedSpace {
         &mut self,
         a: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (a))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_1(
@@ -131,26 +121,23 @@ impl crate::UnityEngine::ArticulationReducedSpace {
         a: f32,
         b: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32, f32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(f32, f32), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (a, b))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_2(
@@ -159,39 +146,38 @@ impl crate::UnityEngine::ArticulationReducedSpace {
         b: f32,
         c: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32, f32, f32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(f32, f32, f32), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (a, b, c))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (a, b, c))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f32, 1usize>("get_Item")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Item", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Item",
+                            1usize
                         )
                     })
             });
@@ -203,38 +189,36 @@ impl crate::UnityEngine::ArticulationReducedSpace {
         i: i32,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, f32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_Item")
+                    .find_method::<(i32, f32), quest_hook::libil2cpp::Void, 2usize>("set_Item")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_Item", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Item",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (i, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (i, value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ArticulationReducedSpace__x_e__FixedBuffer {
     pub FixedElementField: f32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
+    for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
@@ -253,18 +237,16 @@ for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
+    for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -275,7 +257,8 @@ for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
+    for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -289,22 +272,22 @@ for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
+    for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
+    for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -318,7 +301,8 @@ for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
+    for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

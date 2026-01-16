@@ -12,7 +12,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ProviderBindingFinal
     const NAMESPACE: &'static str = "Zenject";
     const CLASS_NAME: &'static str = "ProviderBindingFinalizer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,9 +44,10 @@ impl crate::Zenject::ProviderBindingFinalizer {
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
@@ -60,37 +62,35 @@ impl crate::Zenject::ProviderBindingFinalizer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (container))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (container))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetScope(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::Zenject::ScopeTypes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetScope(&mut self) -> quest_hook::libil2cpp::Result<crate::Zenject::ScopeTypes> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Zenject::ScopeTypes, 0usize>("GetScope")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetScope", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetScope",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::Zenject::ScopeTypes = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::Zenject::ScopeTypes =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindInfo))?;
         Ok(__cordl_object.into())
@@ -99,9 +99,10 @@ impl crate::Zenject::ProviderBindingFinalizer {
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
@@ -116,9 +117,8 @@ impl crate::Zenject::ProviderBindingFinalizer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (container))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (container))? };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterProviderForAllContracts(
@@ -126,29 +126,28 @@ impl crate::Zenject::ProviderBindingFinalizer {
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("RegisterProviderForAllContracts")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "RegisterProviderForAllContracts"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterProviderForAllContracts", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RegisterProviderForAllContracts",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (container, provider))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (container, provider))? };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterProviderPerContract(
@@ -162,35 +161,34 @@ impl crate::Zenject::ProviderBindingFinalizer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_3<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_3<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("RegisterProviderPerContract")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "RegisterProviderPerContract"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterProviderPerContract", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RegisterProviderPerContract",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (container, providerFunc))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (container, providerFunc))? };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterProvider_IProvider0<TContract>(
@@ -199,32 +197,30 @@ impl crate::Zenject::ProviderBindingFinalizer {
         provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("RegisterProvider")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("RegisterProvider")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterProvider", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RegisterProvider",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (container, provider))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (container, provider))? };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterProvider_Type_IProvider1(
@@ -233,30 +229,27 @@ impl crate::Zenject::ProviderBindingFinalizer {
         contractType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("RegisterProvider")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("RegisterProvider")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterProvider", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RegisterProvider",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (container, contractType, provider))?
+            cordl_method_info.invoke_unchecked(self, (container, contractType, provider))?
         };
         Ok(__cordl_ret.into())
     }
@@ -276,40 +269,39 @@ impl crate::Zenject::ProviderBindingFinalizer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_3<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_3<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("RegisterProvidersForAllContractsPerConcreteType")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "RegisterProvidersForAllContractsPerConcreteType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterProvidersForAllContractsPerConcreteType", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RegisterProvidersForAllContractsPerConcreteType",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (container, concreteTypes, providerFunc))?
+            cordl_method_info.invoke_unchecked(self, (container, concreteTypes, providerFunc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -329,40 +321,39 @@ impl crate::Zenject::ProviderBindingFinalizer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_3<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_3<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("RegisterProvidersPerContractAndConcreteType")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "RegisterProvidersPerContractAndConcreteType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterProvidersPerContractAndConcreteType", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RegisterProvidersPerContractAndConcreteType",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (container, concreteTypes, providerFunc))?
+            cordl_method_info.invoke_unchecked(self, (container, concreteTypes, providerFunc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -371,38 +362,36 @@ impl crate::Zenject::ProviderBindingFinalizer {
         concreteType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         contractType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        ),
-                        bool,
-                        2usize,
-                    >("ValidateBindTypes")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    ), bool, 2usize>("ValidateBindTypes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValidateBindTypes", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ValidateBindTypes",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (concreteType, contractType))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (concreteType, contractType))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>),
@@ -417,70 +406,66 @@ impl crate::Zenject::ProviderBindingFinalizer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bindInfo))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bindInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_BindInfo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
-                        0usize,
-                    >("get_BindInfo")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>, 0usize>(
+                        "get_BindInfo",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_BindInfo", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_BindInfo",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_BindingInheritanceMethod(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Zenject::BindingInheritanceMethods> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::Zenject::BindingInheritanceMethods,
-                        0usize,
-                    >("get_BindingInheritanceMethod")
+                    .find_method::<(), crate::Zenject::BindingInheritanceMethods, 0usize>(
+                        "get_BindingInheritanceMethod",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_BindingInheritanceMethod", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_BindingInheritanceMethod",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::Zenject::BindingInheritanceMethods = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::Zenject::BindingInheritanceMethods =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_BindInfo(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>),
@@ -495,9 +480,8 @@ impl crate::Zenject::ProviderBindingFinalizer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -511,15 +495,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ProviderBindingFinali
     }
 }
 #[cfg(feature = "Zenject+ProviderBindingFinalizer")]
-impl AsRef<crate::Zenject::IBindingFinalizer>
-for crate::Zenject::ProviderBindingFinalizer {
+impl AsRef<crate::Zenject::IBindingFinalizer> for crate::Zenject::ProviderBindingFinalizer {
     fn as_ref(&self) -> &crate::Zenject::IBindingFinalizer {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+ProviderBindingFinalizer")]
-impl AsMut<crate::Zenject::IBindingFinalizer>
-for crate::Zenject::ProviderBindingFinalizer {
+impl AsMut<crate::Zenject::IBindingFinalizer> for crate::Zenject::ProviderBindingFinalizer {
     fn as_mut(&mut self) -> &mut crate::Zenject::IBindingFinalizer {
         unsafe { std::mem::transmute(self) }
     }

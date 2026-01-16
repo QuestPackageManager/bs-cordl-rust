@@ -3,25 +3,22 @@
 #[derive(Debug)]
 pub struct ControllerConfiguration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _positionActionReference_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputActionReference,
-    >,
-    pub _orientationActionReference_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputActionReference,
-    >,
-    pub _thumbstickActionReference_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputActionReference,
-    >,
+    pub _positionActionReference_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
+    pub _orientationActionReference_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
+    pub _thumbstickActionReference_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
 }
 #[cfg(feature = "cordl_class_ControllerConfiguration")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ControllerConfiguration {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ControllerConfiguration {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "ControllerConfiguration";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -54,9 +51,10 @@ impl crate::GlobalNamespace::ControllerConfiguration {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UnityXRController>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::XR::XRNode),
@@ -73,37 +71,35 @@ impl crate::GlobalNamespace::ControllerConfiguration {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::UnityXRController,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (node))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UnityXRController> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_orientationActionReference(
@@ -111,9 +107,10 @@ impl crate::GlobalNamespace::ControllerConfiguration {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -140,9 +137,10 @@ impl crate::GlobalNamespace::ControllerConfiguration {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -169,9 +167,10 @@ impl crate::GlobalNamespace::ControllerConfiguration {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -195,98 +194,88 @@ impl crate::GlobalNamespace::ControllerConfiguration {
     }
     pub fn set_orientationActionReference(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputActionReference,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputActionReference,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_orientationActionReference")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionReference,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_orientationActionReference"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_orientationActionReference", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_orientationActionReference",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_positionActionReference(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputActionReference,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputActionReference,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_positionActionReference")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionReference,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_positionActionReference"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_positionActionReference", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_positionActionReference",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_thumbstickActionReference(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputActionReference,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputActionReference,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_thumbstickActionReference")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionReference,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_thumbstickActionReference"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_thumbstickActionReference", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_thumbstickActionReference",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_ControllerConfiguration")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::ControllerConfiguration {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ControllerConfiguration {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

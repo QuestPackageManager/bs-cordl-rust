@@ -3,12 +3,10 @@
 #[derive(Debug)]
 pub struct GameplayLevelSceneTransitionEvents {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _standardLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-    >,
-    pub _missionLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-    >,
+    pub _standardLevelScenesTransitionSetupData:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO>,
+    pub _missionLevelScenesTransitionSetupData:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO>,
     pub _multiplayerLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
     >,
@@ -16,13 +14,15 @@ pub struct GameplayLevelSceneTransitionEvents {
 }
 #[cfg(feature = "cordl_class_GameplayLevelSceneTransitionEvents")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
+    for crate::GlobalNamespace::GameplayLevelSceneTransitionEvents
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "GameplayLevelSceneTransitionEvents";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,25 +49,24 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameplayLevelSceneTransition
 }
 #[cfg(feature = "GameplayLevelSceneTransitionEvents")]
 impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
-    pub fn Finalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Finalize(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Finalize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Finalize",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HandleMissionLevelDidFinish(
@@ -79,36 +78,36 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
             crate::GlobalNamespace::MissionCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MissionCompletionResults,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleMissionLevelDidFinish")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "HandleMissionLevelDidFinish"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleMissionLevelDidFinish", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleMissionLevelDidFinish",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (missionLevelScenesTransitionSetupData, missionCompletionResults),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    missionLevelScenesTransitionSetupData,
+                    missionCompletionResults,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -119,34 +118,36 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
         >,
         disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-                            >,
-                            crate::GlobalNamespace::DisconnectedReason,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleMultiplayerLevelDidDisconnect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                        >,
+                        crate::GlobalNamespace::DisconnectedReason,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "HandleMultiplayerLevelDidDisconnect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleMultiplayerLevelDidDisconnect", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleMultiplayerLevelDidDisconnect",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (multiplayerLevelScenesTransitionSetupData, disconnectedReason),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    multiplayerLevelScenesTransitionSetupData,
+                    disconnectedReason,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,36 +160,36 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
             crate::GlobalNamespace::MultiplayerResultsData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerResultsData,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleMultiplayerLevelDidFinish")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "HandleMultiplayerLevelDidFinish"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleMultiplayerLevelDidFinish", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleMultiplayerLevelDidFinish",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (multiplayerLevelScenesTransitionSetupData, multiplayerResultsData),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    multiplayerLevelScenesTransitionSetupData,
+                    multiplayerResultsData,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -201,62 +202,61 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
             crate::GlobalNamespace::LevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleStandardLevelDidFinish")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "HandleStandardLevelDidFinish"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleStandardLevelDidFinish", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleStandardLevelDidFinish",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (standardLevelScenesTransitionSetupData, levelCompletionResults),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    standardLevelScenesTransitionSetupData,
+                    levelCompletionResults,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeAnyGameplayLevelDidFinish(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("InvokeAnyGameplayLevelDidFinish")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "InvokeAnyGameplayLevelDidFinish",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InvokeAnyGameplayLevelDidFinish", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InvokeAnyGameplayLevelDidFinish",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -270,17 +270,16 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
             crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    standardLevelScenesTransitionSetupData,
-                    missionLevelScenesTransitionSetupData,
-                    multiplayerLevelScenesTransitionSetupData,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                standardLevelScenesTransitionSetupData,
+                missionLevelScenesTransitionSetupData,
+                multiplayerLevelScenesTransitionSetupData,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -295,43 +294,40 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
             crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        standardLevelScenesTransitionSetupData,
-                        missionLevelScenesTransitionSetupData,
-                        multiplayerLevelScenesTransitionSetupData,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    standardLevelScenesTransitionSetupData,
+                    missionLevelScenesTransitionSetupData,
+                    multiplayerLevelScenesTransitionSetupData,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -339,9 +335,10 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
@@ -356,18 +353,18 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_anyGameplayLevelDidFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
@@ -382,15 +379,15 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_GameplayLevelSceneTransitionEvents")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
+    for crate::GlobalNamespace::GameplayLevelSceneTransitionEvents
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

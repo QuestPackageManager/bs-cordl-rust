@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LufsMetering+SplitAudioJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct SplitAudioJob {
     pub channelData: crate::Unity::Collections::NativeArray_1<f32>,
     pub interleavedData: crate::Unity::Collections::NativeArray_1<f32>,
@@ -27,13 +27,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::SplitAudioJob {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_LufsMetering+SplitAudioJob")]
@@ -67,9 +64,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LufsMetering::SplitAudioJ
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -104,34 +99,29 @@ impl crate::LufsMetering::SplitAudioJob {
         numChannels: i32,
         channel: i32,
     ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::SplitAudioJob> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::NativeArray_1<f32>,
-                            crate::Unity::Collections::NativeArray_1<f32>,
-                            i32,
-                            i32,
-                        ),
-                        crate::LufsMetering::SplitAudioJob,
-                        4usize,
-                    >("Create")
+                    .find_static_method::<(
+                        crate::Unity::Collections::NativeArray_1<f32>,
+                        crate::Unity::Collections::NativeArray_1<f32>,
+                        i32,
+                        i32,
+                    ), crate::LufsMetering::SplitAudioJob, 4usize>("Create")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Create",
                             4usize
                         )
                     })
             });
         let __cordl_ret: crate::LufsMetering::SplitAudioJob = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (interleavedData, channelData, numChannels, channel),
-                )?
+                .invoke_unchecked((), (interleavedData, channelData, numChannels, channel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -139,22 +129,23 @@ impl crate::LufsMetering::SplitAudioJob {
         &mut self,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (i))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (i))? };
         Ok(__cordl_ret.into())
     }
 }

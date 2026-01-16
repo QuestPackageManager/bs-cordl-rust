@@ -1,6 +1,4 @@
-#[cfg(
-    feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+ProxyController_1"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+ProxyController_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProxyController_1<ControllerType: quest_hook::libil2cpp::Type> {
@@ -8,35 +6,33 @@ pub struct ProxyController_1<ControllerType: quest_hook::libil2cpp::Type> {
     pub _Target_k__BackingField: ControllerType,
     __cordl_phantom_ControllerType: std::marker::PhantomData<ControllerType>,
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+ProxyController_1"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+ProxyController_1")]
 unsafe impl<ControllerType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ProxyController_1<
-    ControllerType,
-> {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ProxyController_1<
+        ControllerType,
+    >
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Meta.XR.ImmersiveDebugger.UserInterface.Generic";
     const CLASS_NAME: &'static str = "ProxyController`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "Meta.XR.ImmersiveDebugger.UserInterface.Generic",
-                        "ProxyController`1",
-                    )
-                    .unwrap()
-                    .make_generic::<(ControllerType)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find(
+                "Meta.XR.ImmersiveDebugger.UserInterface.Generic",
+                "ProxyController`1",
+            )
+            .unwrap()
+            .make_generic::<(ControllerType)>()
+            .unwrap()
+            .unwrap()
+        })
     }
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -50,9 +46,10 @@ for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ProxyController_
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+Generic+ProxyController_1")]
 impl<ControllerType: quest_hook::libil2cpp::Type> std::ops::Deref
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ProxyController_1<
-    ControllerType,
-> {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ProxyController_1<
+        ControllerType,
+    >
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -60,42 +57,42 @@ for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ProxyController_
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+Generic+ProxyController_1")]
 impl<ControllerType: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ProxyController_1<
-    ControllerType,
-> {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ProxyController_1<
+        ControllerType,
+    >
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+Generic+ProxyController_1")]
-impl<
-    ControllerType: quest_hook::libil2cpp::Type,
-> crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ProxyController_1<
-    ControllerType,
-> {
-    pub fn Fill_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+impl<ControllerType: quest_hook::libil2cpp::Type>
+    crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ProxyController_1<ControllerType>
+{
+    pub fn Fill_1(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        ControllerType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        ControllerType: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Fill")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Fill",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Fill",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Fill_ControllerType_Dictionary_2_0(
@@ -113,10 +110,13 @@ impl<
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        ControllerType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        ControllerType: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -145,66 +145,72 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (target, targets))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (target, targets))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
-        ControllerType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        ControllerType: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        ControllerType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        ControllerType: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Target(&mut self) -> quest_hook::libil2cpp::Result<ControllerType>
     where
-        ControllerType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        ControllerType: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), ControllerType, 0usize>("get_Target")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Target", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Target",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: ControllerType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: ControllerType = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Target(
@@ -212,39 +218,39 @@ impl<
         value: ControllerType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        ControllerType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        ControllerType: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (ControllerType),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_Target")
+                    .find_method::<(ControllerType), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_Target",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_Target", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Target",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+ProxyController_1"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+ProxyController_1")]
 impl<ControllerType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ProxyController_1<
-    ControllerType,
-> {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ProxyController_1<
+        ControllerType,
+    >
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

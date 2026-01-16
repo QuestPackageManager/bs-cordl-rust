@@ -17,9 +17,7 @@ pub struct KawaseBlurRendererSO {
     >,
     pub _bloomKernels: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel>,
         >,
     >,
     pub _blurTextures: quest_hook::libil2cpp::Gc<
@@ -29,14 +27,14 @@ pub struct KawaseBlurRendererSO {
     >,
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::KawaseBlurRendererSO {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::KawaseBlurRendererSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "KawaseBlurRendererSO";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -77,29 +75,26 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
         src: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("AlphaWeights")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("AlphaWeights")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AlphaWeights", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AlphaWeights",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (src, dest))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (src, dest))? };
         Ok(__cordl_ret.into())
     }
     pub fn Bloom(
@@ -111,53 +106,46 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
         boost: f32,
         alphaWeights: f32,
         blurStartWeightsType: crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType,
-        bloomIterationWeights: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<f32>,
-        >,
+        bloomIterationWeights: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                            i32,
-                            i32,
-                            f32,
-                            f32,
-                            crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<f32>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        8usize,
-                    >("Bloom")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                        i32,
+                        i32,
+                        f32,
+                        f32,
+                        crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+                    ), quest_hook::libil2cpp::Void, 8usize>("Bloom")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Bloom",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Bloom",
                             8usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        src,
-                        dest,
-                        iterationsStart,
-                        iterations,
-                        boost,
-                        alphaWeights,
-                        blurStartWeightsType,
-                        bloomIterationWeights,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    src,
+                    dest,
+                    iterationsStart,
+                    iterations,
+                    boost,
+                    alphaWeights,
+                    blurStartWeightsType,
+                    bloomIterationWeights,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -166,33 +154,31 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
         src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         kernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
         downsample: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-                        3usize,
-                    >("Blur")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
+                        i32,
+                    ), quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>, 3usize>(
+                        "Blur"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Blur",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Blur",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (src, kernelSize, downsample))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (src, kernelSize, downsample))? };
         Ok(__cordl_ret.into())
     }
     pub fn Blur_RenderTexture_Il2CppArray_f32_i32_i32_i32_f32_f32__cordl_bool__cordl_bool_KawaseBlurRendererSO_WeightsType2(
@@ -210,57 +196,52 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
         gammaCorrection: bool,
         blurStartWeightsType: crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<i32>,
-                            >,
-                            f32,
-                            i32,
-                            i32,
-                            i32,
-                            f32,
-                            f32,
-                            bool,
-                            bool,
-                            crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        12usize,
-                    >("Blur")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                        f32,
+                        i32,
+                        i32,
+                        i32,
+                        f32,
+                        f32,
+                        bool,
+                        bool,
+                        crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType,
+                    ), quest_hook::libil2cpp::Void, 12usize>("Blur")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Blur",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Blur",
                             12usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        src,
-                        dest,
-                        kernel,
-                        boost,
-                        downsample,
-                        startIdx,
-                        length,
-                        alphaWeights,
-                        additiveAlpha,
-                        additivelyBlendToDest,
-                        gammaCorrection,
-                        blurStartWeightsType,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    src,
+                    dest,
+                    kernel,
+                    boost,
+                    downsample,
+                    startIdx,
+                    length,
+                    alphaWeights,
+                    additiveAlpha,
+                    additivelyBlendToDest,
+                    gammaCorrection,
+                    blurStartWeightsType,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -272,32 +253,29 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
         boost: f32,
         downsample: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                            crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
-                            f32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Blur")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                        crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
+                        f32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Blur")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Blur",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Blur",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (src, dest, kernelSize, boost, downsample))?
+            cordl_method_info.invoke_unchecked(self, (src, dest, kernelSize, boost, downsample))?
         };
         Ok(__cordl_ret.into())
     }
@@ -305,17 +283,16 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
         &mut self,
         width: i32,
         height: i32,
-        globalTextureName: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        globalTextureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         kernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
         boost: f32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -340,14 +317,9 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::CommandBuffer,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer> = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (width, height, globalTextureName, kernelSize, boost),
-                )?
+                .invoke_unchecked(self, (width, height, globalTextureName, kernelSize, boost))?
         };
         Ok(__cordl_ret.into())
     }
@@ -363,49 +335,46 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
         downsample: i32,
         gammaCorrection: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                            crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
-                            f32,
-                            crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
-                            f32,
-                            f32,
-                            i32,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        9usize,
-                    >("DoubleBlur")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                        crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
+                        f32,
+                        crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
+                        f32,
+                        f32,
+                        i32,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 9usize>("DoubleBlur")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DoubleBlur", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DoubleBlur",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        src,
-                        dest,
-                        kernelSize0,
-                        boost0,
-                        kernelSize1,
-                        boost1,
-                        secondBlurAlpha,
-                        downsample,
-                        gammaCorrection,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    src,
+                    dest,
+                    kernelSize0,
+                    boost0,
+                    kernelSize1,
+                    boost1,
+                    secondBlurAlpha,
+                    downsample,
+                    gammaCorrection,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -415,9 +384,10 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize),
@@ -434,79 +404,75 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (kernelSize))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (kernelSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDisable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDisable(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDisable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDisable",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnEnable(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnEnable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnEnable",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -529,13 +495,15 @@ pub struct KawaseBlurRendererSO_BloomKernel {
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+BloomKernel")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
+    for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "KawaseBlurRendererSO/BloomKernel";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -563,37 +531,37 @@ impl std::ops::DerefMut for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKe
 #[cfg(feature = "KawaseBlurRendererSO+BloomKernel")]
 impl crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+BloomKernel")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
+    for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -602,8 +570,8 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+KernelSize")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum KawaseBlurRendererSO_KernelSize {
     #[default]
     Kernel127 = 5i32,
@@ -617,7 +585,8 @@ pub enum KawaseBlurRendererSO_KernelSize {
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+KernelSize")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
+    for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -636,18 +605,16 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+KernelSize")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
+    for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -658,7 +625,8 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+KernelSize")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
+    for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -672,22 +640,22 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+KernelSize")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
+    for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+KernelSize")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
+    for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -700,8 +668,8 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+Pass")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum KawaseBlurRendererSO_Pass {
     #[default]
     AlphaAndDepthWeights = 4i32,
@@ -713,8 +681,7 @@ pub enum KawaseBlurRendererSO_Pass {
     BlurWithAlphaWeights = 3i32,
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+Pass")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -733,18 +700,14 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+Pass")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -754,8 +717,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+Pass")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -768,23 +730,19 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+Pass")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+Pass")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -797,8 +755,8 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+WeightsType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum KawaseBlurRendererSO_WeightsType {
     #[default]
     AlphaAndDepthWeights = 2i32,
@@ -807,7 +765,8 @@ pub enum KawaseBlurRendererSO_WeightsType {
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+WeightsType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
+    for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -826,18 +785,16 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+WeightsType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
+    for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -848,7 +805,8 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+WeightsType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
+    for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -862,22 +820,22 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+WeightsType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
+    for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+WeightsType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
+    for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

@@ -5,14 +5,14 @@ pub struct BindingsAllocator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+BindingsAllocator")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Bindings::BindingsAllocator {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Bindings::BindingsAllocator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Bindings";
     const CLASS_NAME: &'static str = "BindingsAllocator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,9 +44,10 @@ impl crate::UnityEngine::Bindings::BindingsAllocator {
     pub fn Free(
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -61,17 +62,17 @@ impl crate::UnityEngine::Bindings::BindingsAllocator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (ptr))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (ptr))? };
         Ok(__cordl_ret.into())
     }
     pub fn FreeNativeOwnedMemory(
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -86,19 +87,18 @@ impl crate::UnityEngine::Bindings::BindingsAllocator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (ptr))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (ptr))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNativeOwnedDataPointer(
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -113,15 +113,13 @@ impl crate::UnityEngine::Bindings::BindingsAllocator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (ptr))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked((), (ptr))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+BindingsAllocator")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Bindings::BindingsAllocator {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Bindings::BindingsAllocator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -130,14 +128,15 @@ for crate::UnityEngine::Bindings::BindingsAllocator {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+BindingsAllocator+NativeOwnedMemory")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BindingsAllocator_NativeOwnedMemory {
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+BindingsAllocator+NativeOwnedMemory")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory {
+    for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Bindings";
@@ -156,18 +155,16 @@ for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+BindingsAllocator+NativeOwnedMemory")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory {
+    for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -178,7 +175,8 @@ for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+BindingsAllocator+NativeOwnedMemory")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory {
+    for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -192,22 +190,22 @@ for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+BindingsAllocator+NativeOwnedMemory")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory {
+    for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+BindingsAllocator+NativeOwnedMemory")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory {
+    for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -221,7 +219,8 @@ for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+BindingsAllocator+NativeOwnedMemory")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory {
+    for crate::UnityEngine::Bindings::BindingsAllocator_NativeOwnedMemory
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

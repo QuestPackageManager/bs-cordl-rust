@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+EnvironmentDepth+DepthFrameDesc")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct DepthFrameDesc {
     pub createPoseLocation: crate::UnityEngine::Vector3,
     pub createPoseRotation: crate::UnityEngine::Quaternion,
@@ -12,8 +12,7 @@ pub struct DepthFrameDesc {
     pub farZ: f32,
 }
 #[cfg(feature = "cordl_class_Meta+XR+EnvironmentDepth+DepthFrameDesc")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
+unsafe impl quest_hook::libil2cpp::Type for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Meta.XR.EnvironmentDepth";
@@ -32,18 +31,14 @@ for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+EnvironmentDepth+DepthFrameDesc")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -53,8 +48,7 @@ for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+EnvironmentDepth+DepthFrameDesc")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -67,23 +61,19 @@ for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+EnvironmentDepth+DepthFrameDesc")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+EnvironmentDepth+DepthFrameDesc")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
+unsafe impl quest_hook::libil2cpp::Return for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -97,7 +87,8 @@ for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
 }
 #[cfg(feature = "cordl_class_Meta+XR+EnvironmentDepth+DepthFrameDesc")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc {
+    for crate::Meta::XR::EnvironmentDepth::DepthFrameDesc
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

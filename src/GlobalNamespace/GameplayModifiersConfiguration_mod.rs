@@ -5,14 +5,14 @@ pub struct GameplayModifiersConfiguration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_GameplayModifiersConfiguration")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GameplayModifiersConfiguration {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameplayModifiersConfiguration {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "GameplayModifiersConfiguration";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,15 +40,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifiersConfigurati
 #[cfg(feature = "GameplayModifiersConfiguration")]
 impl crate::GlobalNamespace::GameplayModifiersConfiguration {
     #[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
-    pub type CutAngleTolerance = crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance;
+    pub type CutAngleTolerance =
+        crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance;
     #[cfg(feature = "GameplayModifiersConfiguration+NoteUniformScale")]
-    pub type NoteUniformScale = crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale;
+    pub type NoteUniformScale =
+        crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale;
     #[cfg(feature = "GameplayModifiersConfiguration+SongSpeed")]
     pub type SongSpeed = crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed;
 }
 #[cfg(feature = "cordl_class_GameplayModifiersConfiguration")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::GameplayModifiersConfiguration {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameplayModifiersConfiguration {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -64,13 +65,15 @@ pub struct GameplayModifiersConfiguration_CutAngleTolerance {
 }
 #[cfg(feature = "cordl_class_GameplayModifiersConfiguration+CutAngleTolerance")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
+    for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "GameplayModifiersConfiguration/CutAngleTolerance";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -83,8 +86,7 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
     }
 }
 #[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
-impl std::ops::Deref
-for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
+impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -92,7 +94,8 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
 }
 #[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
+    for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -104,7 +107,8 @@ impl crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
 }
 #[cfg(feature = "cordl_class_GameplayModifiersConfiguration+CutAngleTolerance")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
+    for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -120,13 +124,15 @@ pub struct GameplayModifiersConfiguration_NoteUniformScale {
 }
 #[cfg(feature = "cordl_class_GameplayModifiersConfiguration+NoteUniformScale")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
+    for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "GameplayModifiersConfiguration/NoteUniformScale";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -139,8 +145,7 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
     }
 }
 #[cfg(feature = "GameplayModifiersConfiguration+NoteUniformScale")]
-impl std::ops::Deref
-for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
+impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -148,7 +153,8 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
 }
 #[cfg(feature = "GameplayModifiersConfiguration+NoteUniformScale")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
+    for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -160,7 +166,8 @@ impl crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
 }
 #[cfg(feature = "cordl_class_GameplayModifiersConfiguration+NoteUniformScale")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
+    for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -176,13 +183,15 @@ pub struct GameplayModifiersConfiguration_SongSpeed {
 }
 #[cfg(feature = "cordl_class_GameplayModifiersConfiguration+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
+    for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "GameplayModifiersConfiguration/SongSpeed";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -195,16 +204,14 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
     }
 }
 #[cfg(feature = "GameplayModifiersConfiguration+SongSpeed")]
-impl std::ops::Deref
-for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
+impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiersConfiguration+SongSpeed")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -218,7 +225,8 @@ impl crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
 }
 #[cfg(feature = "cordl_class_GameplayModifiersConfiguration+SongSpeed")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
+    for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

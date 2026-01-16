@@ -6,14 +6,14 @@ pub struct DownloadHandlerTexture {
     pub m_NativeData: crate::Unity::Collections::NativeArray_1<u8>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandlerTexture")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Networking::DownloadHandlerTexture {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Networking::DownloadHandlerTexture {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Networking";
     const CLASS_NAME: &'static str = "DownloadHandlerTexture";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,106 +41,96 @@ impl std::ops::DerefMut for crate::UnityEngine::Networking::DownloadHandlerTextu
 #[cfg(feature = "UnityEngine+Networking+DownloadHandlerTexture")]
 impl crate::UnityEngine::Networking::DownloadHandlerTexture {
     #[cfg(feature = "UnityEngine+Networking+DownloadHandlerTexture+BindingsMarshaller")]
-    pub type BindingsMarshaller = crate::UnityEngine::Networking::DownloadHandlerTexture_BindingsMarshaller;
+    pub type BindingsMarshaller =
+        crate::UnityEngine::Networking::DownloadHandlerTexture_BindingsMarshaller;
     pub fn Create(
-        obj: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Networking::DownloadHandlerTexture,
-        >,
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::DownloadHandlerTexture>,
         parameters: crate::UnityEngine::Networking::DownloadedTextureParams,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Networking::DownloadHandlerTexture,
-                            >,
-                            crate::UnityEngine::Networking::DownloadedTextureParams,
-                        ),
-                        crate::System::IntPtr,
-                        2usize,
-                    >("Create")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Networking::DownloadHandlerTexture,
+                        >,
+                        crate::UnityEngine::Networking::DownloadedTextureParams,
+                    ), crate::System::IntPtr, 2usize>("Create")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Create",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::IntPtr = unsafe {
-            cordl_method_info.invoke_unchecked((), (obj, parameters))?
-        };
+        let __cordl_ret: crate::System::IntPtr =
+            unsafe { cordl_method_info.invoke_unchecked((), (obj, parameters))? };
         Ok(__cordl_ret.into())
     }
     pub fn Create_Injected(
-        obj: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Networking::DownloadHandlerTexture,
-        >,
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::DownloadHandlerTexture>,
         parameters: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Networking::DownloadedTextureParams,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Networking::DownloadHandlerTexture,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Networking::DownloadedTextureParams,
-                            >,
-                        ),
-                        crate::System::IntPtr,
-                        2usize,
-                    >("Create_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Networking::DownloadHandlerTexture,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Networking::DownloadedTextureParams,
+                        >,
+                    ), crate::System::IntPtr, 2usize>("Create_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Create_Injected", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Create_Injected",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::IntPtr = unsafe {
-            cordl_method_info.invoke_unchecked((), (obj, parameters))?
-        };
+        let __cordl_ret: crate::System::IntPtr =
+            unsafe { cordl_method_info.invoke_unchecked((), (obj, parameters))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetContent(
         www: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -157,43 +147,42 @@ impl crate::UnityEngine::Networking::DownloadHandlerTexture {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            cordl_method_info.invoke_unchecked((), (www))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> =
+            unsafe { cordl_method_info.invoke_unchecked((), (www))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNativeData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<u8>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::Unity::Collections::NativeArray_1<u8>,
-                        0usize,
-                    >("GetNativeData")
+                    .find_method::<(), crate::Unity::Collections::NativeArray_1<u8>, 0usize>(
+                        "GetNativeData",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetNativeData", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetNativeData",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::NativeArray_1<u8> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<u8> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalCreateTexture(
         &mut self,
         parameters: crate::UnityEngine::Networking::DownloadedTextureParams,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Networking::DownloadedTextureParams),
@@ -208,19 +197,18 @@ impl crate::UnityEngine::Networking::DownloadHandlerTexture {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (parameters))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (parameters))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalGetTextureNative(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -235,41 +223,37 @@ impl crate::UnityEngine::Networking::DownloadHandlerTexture {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalGetTextureNative_Injected(
         _unity_self: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::System::IntPtr),
-                        crate::System::IntPtr,
-                        1usize,
-                    >("InternalGetTextureNative_Injected")
+                    .find_static_method::<(crate::System::IntPtr), crate::System::IntPtr, 1usize>(
+                        "InternalGetTextureNative_Injected",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InternalGetTextureNative_Injected", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InternalGetTextureNative_Injected",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::IntPtr = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
+        let __cordl_ret: crate::System::IntPtr =
+            unsafe { cordl_method_info.invoke_unchecked((), (_unity_self))? };
         Ok(__cordl_ret.into())
     }
-    pub fn New(
-        readable: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+    pub fn New(readable: bool) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (readable))?;
         Ok(__cordl_object.into())
@@ -278,32 +262,33 @@ impl crate::UnityEngine::Networking::DownloadHandlerTexture {
         &mut self,
         readable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (readable))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (readable))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_texture(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -318,15 +303,13 @@ impl crate::UnityEngine::Networking::DownloadHandlerTexture {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandlerTexture")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Networking::DownloadHandlerTexture {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Networking::DownloadHandlerTexture {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -334,25 +317,23 @@ for crate::UnityEngine::Networking::DownloadHandlerTexture {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Networking+DownloadHandlerTexture+BindingsMarshaller"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandlerTexture+BindingsMarshaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DownloadHandlerTexture_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Networking+DownloadHandlerTexture+BindingsMarshaller"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandlerTexture+BindingsMarshaller")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Networking::DownloadHandlerTexture_BindingsMarshaller {
+    for crate::UnityEngine::Networking::DownloadHandlerTexture_BindingsMarshaller
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Networking";
     const CLASS_NAME: &'static str = "DownloadHandlerTexture/BindingsMarshaller";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -365,8 +346,7 @@ for crate::UnityEngine::Networking::DownloadHandlerTexture_BindingsMarshaller {
     }
 }
 #[cfg(feature = "UnityEngine+Networking+DownloadHandlerTexture+BindingsMarshaller")]
-impl std::ops::Deref
-for crate::UnityEngine::Networking::DownloadHandlerTexture_BindingsMarshaller {
+impl std::ops::Deref for crate::UnityEngine::Networking::DownloadHandlerTexture_BindingsMarshaller {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -374,7 +354,8 @@ for crate::UnityEngine::Networking::DownloadHandlerTexture_BindingsMarshaller {
 }
 #[cfg(feature = "UnityEngine+Networking+DownloadHandlerTexture+BindingsMarshaller")]
 impl std::ops::DerefMut
-for crate::UnityEngine::Networking::DownloadHandlerTexture_BindingsMarshaller {
+    for crate::UnityEngine::Networking::DownloadHandlerTexture_BindingsMarshaller
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -382,40 +363,34 @@ for crate::UnityEngine::Networking::DownloadHandlerTexture_BindingsMarshaller {
 #[cfg(feature = "UnityEngine+Networking+DownloadHandlerTexture+BindingsMarshaller")]
 impl crate::UnityEngine::Networking::DownloadHandlerTexture_BindingsMarshaller {
     pub fn ConvertToNative(
-        handler: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Networking::DownloadHandlerTexture,
-        >,
+        handler: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::DownloadHandlerTexture>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Networking::DownloadHandlerTexture,
-                        >),
-                        crate::System::IntPtr,
-                        1usize,
-                    >("ConvertToNative")
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Networking::DownloadHandlerTexture,
+                    >), crate::System::IntPtr, 1usize>("ConvertToNative")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConvertToNative", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ConvertToNative",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::IntPtr = unsafe {
-            cordl_method_info.invoke_unchecked((), (handler))?
-        };
+        let __cordl_ret: crate::System::IntPtr =
+            unsafe { cordl_method_info.invoke_unchecked((), (handler))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Networking+DownloadHandlerTexture+BindingsMarshaller"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandlerTexture+BindingsMarshaller")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Networking::DownloadHandlerTexture_BindingsMarshaller {
+    for crate::UnityEngine::Networking::DownloadHandlerTexture_BindingsMarshaller
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

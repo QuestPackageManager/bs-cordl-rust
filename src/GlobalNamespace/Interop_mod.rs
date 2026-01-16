@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop {
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "Interop";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -55,38 +56,33 @@ impl crate::GlobalNamespace::Interop {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    crate::GlobalNamespace::Interop_ErrorInfo,
-                                    crate::GlobalNamespace::Interop_ErrorInfo,
-                                >,
-                            >,
-                        ),
+                    .find_static_method::<(
                         i32,
-                        4usize,
-                    >("CheckIo")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<
+                                crate::GlobalNamespace::Interop_ErrorInfo,
+                                crate::GlobalNamespace::Interop_ErrorInfo,
+                            >,
+                        >,
+                    ), i32, 4usize>("CheckIo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "CheckIo",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckIo",
                             4usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (result, path, isDirectory, errorRewriter))?
+            cordl_method_info.invoke_unchecked((), (result, path, isDirectory, errorRewriter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,38 +97,33 @@ impl crate::GlobalNamespace::Interop {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    crate::GlobalNamespace::Interop_ErrorInfo,
-                                    crate::GlobalNamespace::Interop_ErrorInfo,
-                                >,
-                            >,
-                        ),
+                    .find_static_method::<(
                         i64,
-                        4usize,
-                    >("CheckIo")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<
+                                crate::GlobalNamespace::Interop_ErrorInfo,
+                                crate::GlobalNamespace::Interop_ErrorInfo,
+                            >,
+                        >,
+                    ), i64, 4usize>("CheckIo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "CheckIo",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckIo",
                             4usize
                         )
                     })
             });
         let __cordl_ret: i64 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (result, path, isDirectory, errorRewriter))?
+            cordl_method_info.invoke_unchecked((), (result, path, isDirectory, errorRewriter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -140,45 +131,39 @@ impl crate::GlobalNamespace::Interop {
         errorInfo: crate::GlobalNamespace::Interop_ErrorInfo,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isDirectory: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Exception>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::Interop_ErrorInfo,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-                        3usize,
-                    >("GetExceptionForIoErrno")
+                    .find_static_method::<(
+                        crate::GlobalNamespace::Interop_ErrorInfo,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Exception>, 3usize>(
+                        "GetExceptionForIoErrno",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetExceptionForIoErrno", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetExceptionForIoErrno",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            cordl_method_info.invoke_unchecked((), (errorInfo, path, isDirectory))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> =
+            unsafe { cordl_method_info.invoke_unchecked((), (errorInfo, path, isDirectory))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetIOException(
         errorInfo: crate::GlobalNamespace::Interop_ErrorInfo,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Exception>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::Interop_ErrorInfo),
@@ -193,40 +178,34 @@ impl crate::GlobalNamespace::Interop {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            cordl_method_info.invoke_unchecked((), (errorInfo))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> =
+            unsafe { cordl_method_info.invoke_unchecked((), (errorInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRandomBytes(
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("GetRandomBytes")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 2usize>("GetRandomBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetRandomBytes", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetRandomBytes",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (buffer, length))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (buffer, length))? };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowExceptionForIoErrno(
@@ -240,38 +219,35 @@ impl crate::GlobalNamespace::Interop {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::Interop_ErrorInfo,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                    .find_static_method::<(
+                        crate::GlobalNamespace::Interop_ErrorInfo,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<
+                                crate::GlobalNamespace::Interop_ErrorInfo,
+                                crate::GlobalNamespace::Interop_ErrorInfo,
                             >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    crate::GlobalNamespace::Interop_ErrorInfo,
-                                    crate::GlobalNamespace::Interop_ErrorInfo,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("ThrowExceptionForIoErrno")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "ThrowExceptionForIoErrno"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ThrowExceptionForIoErrno", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ThrowExceptionForIoErrno",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (errorInfo, path, isDirectory, errorRewriter))?
+            cordl_method_info.invoke_unchecked((), (errorInfo, path, isDirectory, errorRewriter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -286,8 +262,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Error")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum Interop_Error {
     #[default]
     _cordl_E2BIG = 65537i32,
@@ -390,13 +366,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop_Erro
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Interop+Error")]
@@ -430,9 +403,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::Interop_
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -450,8 +421,8 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Interop_Er
     }
 }
 #[cfg(feature = "cordl_class_Interop+ErrorInfo")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Interop_ErrorInfo {
     pub _error: crate::GlobalNamespace::Interop_Error,
     pub _rawErrno: i32,
@@ -476,18 +447,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop_Erro
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Interop+ErrorInfo")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::Interop_ErrorInfo {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::Interop_ErrorInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -497,8 +464,7 @@ for crate::GlobalNamespace::Interop_ErrorInfo {
     }
 }
 #[cfg(feature = "cordl_class_Interop+ErrorInfo")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::Interop_ErrorInfo {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::Interop_ErrorInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -511,17 +477,14 @@ for crate::GlobalNamespace::Interop_ErrorInfo {
     }
 }
 #[cfg(feature = "cordl_class_Interop+ErrorInfo")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::Interop_ErrorInfo {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::Interop_ErrorInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -539,8 +502,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Interop_Er
     }
 }
 #[cfg(feature = "cordl_class_Interop+ErrorInfo")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::Interop_ErrorInfo {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::Interop_ErrorInfo {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -553,12 +515,12 @@ for crate::GlobalNamespace::Interop_ErrorInfo {
 impl crate::GlobalNamespace::Interop_ErrorInfo {
     pub fn GetErrorMessage(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -573,19 +535,18 @@ impl crate::GlobalNamespace::Interop_ErrorInfo {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -600,18 +561,18 @@ impl crate::GlobalNamespace::Interop_ErrorInfo {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Interop_Error1(
         &mut self,
         error: crate::GlobalNamespace::Interop_Error,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::Interop_Error),
@@ -626,69 +587,68 @@ impl crate::GlobalNamespace::Interop_ErrorInfo {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (error))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_0(
         &mut self,
         _cordl_errno: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_errno))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_errno))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Error(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Interop_Error> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::GlobalNamespace::Interop_Error,
-                        0usize,
-                    >("get_Error")
+                    .find_method::<(), crate::GlobalNamespace::Interop_Error, 0usize>("get_Error")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Error", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Error",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::Interop_Error = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::Interop_Error =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_RawErrno(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_RawErrno")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_RawErrno", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_RawErrno",
+                            0usize
                         )
                     })
             });
@@ -709,7 +669,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop_Sys 
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "Interop/Sys";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -747,20 +708,18 @@ impl crate::GlobalNamespace::Interop_Sys {
     #[cfg(feature = "Interop+Sys+Permissions")]
     pub type Permissions = crate::GlobalNamespace::Sys_Interop_Permissions;
     pub fn CloseDir(dir: crate::System::IntPtr) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::System::IntPtr),
-                        i32,
-                        1usize,
-                    >("CloseDir")
+                    .find_static_method::<(crate::System::IntPtr), i32, 1usize>("CloseDir")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CloseDir", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CloseDir",
+                            1usize
                         )
                     })
             });
@@ -770,88 +729,80 @@ impl crate::GlobalNamespace::Interop_Sys {
     pub fn ConvertErrorPalToPlatform(
         error: crate::GlobalNamespace::Interop_Error,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::GlobalNamespace::Interop_Error),
-                        i32,
-                        1usize,
-                    >("ConvertErrorPalToPlatform")
+                    .find_static_method::<(crate::GlobalNamespace::Interop_Error), i32, 1usize>(
+                        "ConvertErrorPalToPlatform",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConvertErrorPalToPlatform", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ConvertErrorPalToPlatform",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (error))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (error))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertErrorPlatformToPal(
         platformErrno: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Interop_Error> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32),
-                        crate::GlobalNamespace::Interop_Error,
-                        1usize,
-                    >("ConvertErrorPlatformToPal")
+                    .find_static_method::<(i32), crate::GlobalNamespace::Interop_Error, 1usize>(
+                        "ConvertErrorPlatformToPal",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConvertErrorPlatformToPal", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ConvertErrorPlatformToPal",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::Interop_Error = unsafe {
-            cordl_method_info.invoke_unchecked((), (platformErrno))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::Interop_Error =
+            unsafe { cordl_method_info.invoke_unchecked((), (platformErrno))? };
         Ok(__cordl_ret.into())
     }
     pub fn CopyFile(
-        source: quest_hook::libil2cpp::Gc<
-            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-        >,
+        source: quest_hook::libil2cpp::Gc<crate::Microsoft::Win32::SafeHandles::SafeFileHandle>,
         destination: quest_hook::libil2cpp::Gc<
             crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("CopyFile")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+                        >,
+                    ), i32, 2usize>("CopyFile")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CopyFile", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CopyFile",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (source, destination))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (source, destination))? };
         Ok(__cordl_ret.into())
     }
     pub fn DoubleToString(
@@ -860,48 +811,43 @@ impl crate::GlobalNamespace::Interop_Sys {
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bufferLength: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            f64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
+                        f64,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         i32,
-                        4usize,
-                    >("DoubleToString")
+                    ), i32, 4usize>("DoubleToString")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DoubleToString", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DoubleToString",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (value, format, buffer, bufferLength))?
+            cordl_method_info.invoke_unchecked((), (value, format, buffer, bufferLength))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetEGid() -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u32, 0usize>("GetEGid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetEGid",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetEGid",
                             0usize
                         )
                     })
@@ -910,15 +856,17 @@ impl crate::GlobalNamespace::Interop_Sys {
         Ok(__cordl_ret.into())
     }
     pub fn GetEUid() -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u32, 0usize>("GetEUid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetEUid",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetEUid",
                             0usize
                         )
                     })
@@ -926,73 +874,70 @@ impl crate::GlobalNamespace::Interop_Sys {
         let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetLastErrorInfo() -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::Interop_ErrorInfo,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetLastErrorInfo(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Interop_ErrorInfo> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::GlobalNamespace::Interop_ErrorInfo,
-                        0usize,
-                    >("GetLastErrorInfo")
+                    .find_static_method::<(), crate::GlobalNamespace::Interop_ErrorInfo, 0usize>(
+                        "GetLastErrorInfo",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLastErrorInfo", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLastErrorInfo",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::Interop_ErrorInfo = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::Interop_ErrorInfo =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNonCryptographicallySecureRandomBytes(
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("GetNonCryptographicallySecureRandomBytes")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "GetNonCryptographicallySecureRandomBytes",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetNonCryptographicallySecureRandomBytes", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetNonCryptographicallySecureRandomBytes",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (buffer, length))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (buffer, length))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetReadDirRBufferSize() -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetReadDirRBufferSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetReadDirRBufferSize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetReadDirRBufferSize",
+                            0usize
                         )
                     })
             });
@@ -1000,16 +945,18 @@ impl crate::GlobalNamespace::Interop_Sys {
         Ok(__cordl_ret.into())
     }
     pub fn LChflagsCanSetHiddenFlag() -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("LChflagsCanSetHiddenFlag")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LChflagsCanSetHiddenFlag", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LChflagsCanSetHiddenFlag",
+                            0usize
                         )
                     })
             });
@@ -1018,175 +965,142 @@ impl crate::GlobalNamespace::Interop_Sys {
     }
     pub fn LStat_ByRefMut1(
         path: quest_hook::libil2cpp::ByRefMut<u8>,
-        output: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::Sys_Interop_FileStatus,
-        >,
+        output: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::Sys_Interop_FileStatus>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<u8>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::Sys_Interop_FileStatus,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("LStat")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<u8>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::Sys_Interop_FileStatus,
+                        >,
+                    ), i32, 2usize>("LStat")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "LStat",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LStat",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (path, output))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (path, output))? };
         Ok(__cordl_ret.into())
     }
     pub fn LStat_Il2CppString0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        output: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::Sys_Interop_FileStatus,
-        >,
+        output: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::Sys_Interop_FileStatus>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::Sys_Interop_FileStatus,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("LStat")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::Sys_Interop_FileStatus,
+                        >,
+                    ), i32, 2usize>("LStat")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "LStat",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LStat",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (path, output))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (path, output))? };
         Ok(__cordl_ret.into())
     }
     pub fn LStat_ReadOnlySpan_1_2(
         path: crate::System::ReadOnlySpan_1<char>,
-        output: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::Sys_Interop_FileStatus,
-        >,
+        output: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::Sys_Interop_FileStatus>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::ReadOnlySpan_1<char>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::Sys_Interop_FileStatus,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("LStat")
+                    .find_static_method::<(
+                        crate::System::ReadOnlySpan_1<char>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::Sys_Interop_FileStatus,
+                        >,
+                    ), i32, 2usize>("LStat")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "LStat",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LStat",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (path, output))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (path, output))? };
         Ok(__cordl_ret.into())
     }
     pub fn Link(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         link: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("Link")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), i32, 2usize>("Link")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Link",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Link",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (source, link))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (source, link))? };
         Ok(__cordl_ret.into())
     }
     pub fn MkDir(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         i32,
-                        2usize,
-                    >("MkDir")
+                    ), i32, 2usize>("MkDir")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "MkDir",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MkDir",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (path, mode))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (path, mode))? };
         Ok(__cordl_ret.into())
     }
     pub fn OpenDir(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -1201,9 +1115,8 @@ impl crate::GlobalNamespace::Interop_Sys {
                         )
                     })
             });
-        let __cordl_ret: crate::System::IntPtr = unsafe {
-            cordl_method_info.invoke_unchecked((), (path))?
-        };
+        let __cordl_ret: crate::System::IntPtr =
+            unsafe { cordl_method_info.invoke_unchecked((), (path))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadDirR(
@@ -1214,35 +1127,30 @@ impl crate::GlobalNamespace::Interop_Sys {
             crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
-                            >,
-                        ),
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         i32,
-                        4usize,
-                    >("ReadDirR")
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
+                        >,
+                    ), i32, 4usize>("ReadDirR")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadDirR", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadDirR",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (dir, buffer, bufferSize, outputEntry))?
+            cordl_method_info.invoke_unchecked((), (dir, buffer, bufferSize, outputEntry))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1251,44 +1159,37 @@ impl crate::GlobalNamespace::Interop_Sys {
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         bufferSize: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         i32,
-                        3usize,
-                    >("ReadLink")
+                    ), i32, 3usize>("ReadLink")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadLink", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadLink",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (path, buffer, bufferSize))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (path, buffer, bufferSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadLink_Il2CppString1(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -1303,50 +1204,43 @@ impl crate::GlobalNamespace::Interop_Sys {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (path))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (path))? };
         Ok(__cordl_ret.into())
     }
     pub fn Rename(
         oldPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         newPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("Rename")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), i32, 2usize>("Rename")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Rename",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Rename",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (oldPath, newPath))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (oldPath, newPath))? };
         Ok(__cordl_ret.into())
     }
     pub fn RmDir(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -1361,120 +1255,98 @@ impl crate::GlobalNamespace::Interop_Sys {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (path))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (path))? };
         Ok(__cordl_ret.into())
     }
     pub fn Stat_ByRefMut1(
         path: quest_hook::libil2cpp::ByRefMut<u8>,
-        output: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::Sys_Interop_FileStatus,
-        >,
+        output: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::Sys_Interop_FileStatus>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<u8>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::Sys_Interop_FileStatus,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("Stat")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<u8>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::Sys_Interop_FileStatus,
+                        >,
+                    ), i32, 2usize>("Stat")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Stat",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Stat",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (path, output))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (path, output))? };
         Ok(__cordl_ret.into())
     }
     pub fn Stat_Il2CppString0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        output: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::Sys_Interop_FileStatus,
-        >,
+        output: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::Sys_Interop_FileStatus>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::Sys_Interop_FileStatus,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("Stat")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::Sys_Interop_FileStatus,
+                        >,
+                    ), i32, 2usize>("Stat")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Stat",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Stat",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (path, output))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (path, output))? };
         Ok(__cordl_ret.into())
     }
     pub fn Stat_ReadOnlySpan_1_2(
         path: crate::System::ReadOnlySpan_1<char>,
-        output: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::Sys_Interop_FileStatus,
-        >,
+        output: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::Sys_Interop_FileStatus>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::ReadOnlySpan_1<char>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::Sys_Interop_FileStatus,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("Stat")
+                    .find_static_method::<(
+                        crate::System::ReadOnlySpan_1<char>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::Sys_Interop_FileStatus,
+                        >,
+                    ), i32, 2usize>("Stat")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Stat",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Stat",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (path, output))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (path, output))? };
         Ok(__cordl_ret.into())
     }
     pub fn StrError(
         platformErrno: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
@@ -1489,87 +1361,74 @@ impl crate::GlobalNamespace::Interop_Sys {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (platformErrno))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (platformErrno))? };
         Ok(__cordl_ret.into())
     }
     pub fn StrErrorR(
         platformErrno: i32,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bufferSize: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
+                        i32,
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                        3usize,
-                    >("StrErrorR")
+                        i32,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, 3usize>(
+                        "StrErrorR",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StrErrorR", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "StrErrorR",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (platformErrno, buffer, bufferSize))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked((), (platformErrno, buffer, bufferSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn Symlink(
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         linkPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("Symlink")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), i32, 2usize>("Symlink")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Symlink",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Symlink",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (target, linkPath))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (target, linkPath))? };
         Ok(__cordl_ret.into())
     }
     pub fn Unlink(
         pathname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -1584,9 +1443,7 @@ impl crate::GlobalNamespace::Interop_Sys {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (pathname))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (pathname))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1600,16 +1457,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop_Sys {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Sys_Interop_DirectoryEntry {
     pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub NameLength: i32,
     pub InodeType: crate::GlobalNamespace::Sys_Interop_NodeType,
 }
 #[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1628,18 +1484,14 @@ for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1650,7 +1502,8 @@ for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
 }
 #[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
+    for crate::GlobalNamespace::Sys_Interop_DirectoryEntry
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1663,23 +1516,19 @@ for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1693,7 +1542,8 @@ for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
 }
 #[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
+    for crate::GlobalNamespace::Sys_Interop_DirectoryEntry
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1708,9 +1558,10 @@ impl crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
         &mut self,
         buffer: crate::System::Span_1<char>,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Span_1<char>),
@@ -1725,15 +1576,14 @@ impl crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
                         )
                     })
             });
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (buffer))?
-        };
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffer))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Sys_Interop_FileStatus {
     pub Flags: crate::GlobalNamespace::Sys_Interop_FileStatusFlags,
     pub Mode: i32,
@@ -1753,8 +1603,7 @@ pub struct Sys_Interop_FileStatus {
     pub UserFlags: u32,
 }
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Sys_Interop_FileStatus {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1773,18 +1622,14 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::Sys_Interop_FileStatus {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1794,8 +1639,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::Sys_Interop_FileStatus {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1808,23 +1652,19 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::Sys_Interop_FileStatus {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::Sys_Interop_FileStatus {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1837,8 +1677,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::Sys_Interop_FileStatus {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1850,16 +1689,15 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
 #[cfg(feature = "Interop+Sys+FileStatus")]
 impl crate::GlobalNamespace::Sys_Interop_FileStatus {}
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatusFlags")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum Sys_Interop_FileStatusFlags {
     #[default]
     HasBirthTime = 1i32,
     None = 0i32,
 }
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatusFlags")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1878,18 +1716,16 @@ for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
+    for crate::GlobalNamespace::Sys_Interop_FileStatusFlags
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1900,7 +1736,8 @@ for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
 }
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
+    for crate::GlobalNamespace::Sys_Interop_FileStatusFlags
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1914,22 +1751,20 @@ for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
 }
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
+    for crate::GlobalNamespace::Sys_Interop_FileStatusFlags
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatusFlags")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1942,8 +1777,8 @@ for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+NodeType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum Sys_Interop_NodeType {
     #[default]
     DT_BLK = 6i32,
@@ -1957,8 +1792,7 @@ pub enum Sys_Interop_NodeType {
     DT_WHT = 14i32,
 }
 #[cfg(feature = "cordl_class_Interop+Sys+NodeType")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Sys_Interop_NodeType {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1977,18 +1811,14 @@ for crate::GlobalNamespace::Sys_Interop_NodeType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+NodeType")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::Sys_Interop_NodeType {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1998,8 +1828,7 @@ for crate::GlobalNamespace::Sys_Interop_NodeType {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+NodeType")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::Sys_Interop_NodeType {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2012,23 +1841,19 @@ for crate::GlobalNamespace::Sys_Interop_NodeType {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+NodeType")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::Sys_Interop_NodeType {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+NodeType")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::Sys_Interop_NodeType {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2041,8 +1866,8 @@ for crate::GlobalNamespace::Sys_Interop_NodeType {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+Permissions")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum Sys_Interop_Permissions {
     #[default]
     Mask = 511i32,
@@ -2060,8 +1885,7 @@ pub enum Sys_Interop_Permissions {
     S_IXUSR = 64i32,
 }
 #[cfg(feature = "cordl_class_Interop+Sys+Permissions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Sys_Interop_Permissions {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -2080,18 +1904,14 @@ for crate::GlobalNamespace::Sys_Interop_Permissions {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+Permissions")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::Sys_Interop_Permissions {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2101,8 +1921,7 @@ for crate::GlobalNamespace::Sys_Interop_Permissions {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+Permissions")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::Sys_Interop_Permissions {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2115,23 +1934,19 @@ for crate::GlobalNamespace::Sys_Interop_Permissions {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+Permissions")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::Sys_Interop_Permissions {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+Permissions")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::Sys_Interop_Permissions {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

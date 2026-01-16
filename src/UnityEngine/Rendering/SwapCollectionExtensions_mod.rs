@@ -6,13 +6,15 @@ pub struct SwapCollectionExtensions {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SwapCollectionExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::SwapCollectionExtensions {
+    for crate::UnityEngine::Rendering::SwapCollectionExtensions
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "SwapCollectionExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,54 +42,47 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::SwapCollectionExtensi
 #[cfg(feature = "UnityEngine+Rendering+SwapCollectionExtensions")]
 impl crate::UnityEngine::Rendering::SwapCollectionExtensions {
     pub fn TrySwap<TValue>(
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<TValue>,
-        >,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<TValue>>,
         from: i32,
         to: i32,
-        error: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::System::Exception>,
-        >,
+        error: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<crate::System::Exception>>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<TValue>,
-                            >,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::System::Exception>,
-                            >,
-                        ),
-                        bool,
-                        4usize,
-                    >("TrySwap")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<TValue>,
+                        >,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                        >,
+                    ), bool, 4usize>("TrySwap")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "TrySwap",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TrySwap",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (list, from, to, error))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (list, from, to, error))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SwapCollectionExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::SwapCollectionExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::SwapCollectionExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

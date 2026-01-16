@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Collections+Long1024")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Long1024 {
     pub f0: crate::Unity::Collections::Long512,
     pub f1: crate::Unity::Collections::Long512,
@@ -25,13 +25,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Collections::Long1024 
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+Long1024")]
@@ -65,9 +62,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Collections::Long1
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -100,39 +95,38 @@ impl crate::Unity::Collections::Long1024 {
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<i64>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::ByRefMut<i64>,
-                        1usize,
-                    >("ElementAt")
+                    .find_method::<(i32), quest_hook::libil2cpp::ByRefMut<i64>, 1usize>("ElementAt")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ElementAt", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ElementAt",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<i64> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<i64> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Length")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Length", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Length",
+                            0usize
                         )
                     })
             });
@@ -143,39 +137,34 @@ impl crate::Unity::Collections::Long1024 {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_Length")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_Length")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_Length", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Length",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+Collections+Long1024")]
-impl AsRef<crate::Unity::Collections::IIndexable_1<i64>>
-for crate::Unity::Collections::Long1024 {
+impl AsRef<crate::Unity::Collections::IIndexable_1<i64>> for crate::Unity::Collections::Long1024 {
     fn as_ref(&self) -> &crate::Unity::Collections::IIndexable_1<i64> {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Collections+Long1024")]
-impl AsMut<crate::Unity::Collections::IIndexable_1<i64>>
-for crate::Unity::Collections::Long1024 {
+impl AsMut<crate::Unity::Collections::IIndexable_1<i64>> for crate::Unity::Collections::Long1024 {
     fn as_mut(&mut self) -> &mut crate::Unity::Collections::IIndexable_1<i64> {
         todo!()
     }

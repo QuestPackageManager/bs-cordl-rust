@@ -3,19 +3,17 @@
 #[derive(Debug)]
 pub struct RevocationDetails {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub revDetails: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
-    >,
+    pub revDetails: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::RevDetails>,
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cmp+RevocationDetails")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Cmp::RevocationDetails {
+unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Cmp::RevocationDetails {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Cmp";
     const CLASS_NAME: &'static str = "RevocationDetails";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,12 +41,10 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cmp::RevocationDetails {
 #[cfg(feature = "Org+BouncyCastle+Cmp+RevocationDetails")]
 impl crate::Org::BouncyCastle::Cmp::RevocationDetails {
     pub fn New(
-        revDetails: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
-        >,
+        revDetails: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::RevDetails>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (revDetails))?;
         Ok(__cordl_object.into())
@@ -58,9 +54,10 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetails {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::RevDetails>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -84,13 +81,12 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetails {
     }
     pub fn _ctor(
         &mut self,
-        revDetails: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
-        >,
+        revDetails: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::RevDetails>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -107,9 +103,8 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetails {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (revDetails))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (revDetails))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Issuer(
@@ -117,9 +112,10 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetails {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -136,9 +132,8 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetails {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::X509Name,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_SerialNumber(
@@ -146,9 +141,10 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetails {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -165,9 +161,8 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetails {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Subject(
@@ -175,9 +170,10 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetails {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -194,15 +190,13 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetails {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::X509Name,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cmp+RevocationDetails")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Cmp::RevocationDetails {
+impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Cmp::RevocationDetails {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -5,21 +5,18 @@ pub struct PowerOfTwoTextureAtlas {
     __cordl_parent: crate::UnityEngine::Rendering::Texture2DAtlas,
     pub m_MipPadding: i32,
     pub m_RequestedTextures: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            crate::UnityEngine::Vector2Int,
-        >,
+        crate::System::Collections::Generic::Dictionary_2<i32, crate::UnityEngine::Vector2Int>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+PowerOfTwoTextureAtlas")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "PowerOfTwoTextureAtlas";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -58,38 +55,33 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         height: i32,
         overrideInstanceID: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            i32,
-                            i32,
-                            i32,
-                        ),
-                        bool,
-                        6usize,
-                    >("AllocateTexture")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        i32,
+                        i32,
+                        i32,
+                    ), bool, 6usize>("AllocateTexture")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AllocateTexture", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AllocateTexture",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (cmd, scaleOffset, texture, width, height, overrideInstanceID),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (cmd, scaleOffset, texture, width, height, overrideInstanceID),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -102,38 +94,40 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         blitMips: bool,
         blitType: crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            crate::UnityEngine::Vector4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            crate::UnityEngine::Vector4,
-                            bool,
-                            crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("Blit2DTexture")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        crate::UnityEngine::Vector4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        crate::UnityEngine::Vector4,
+                        bool,
+                        crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType,
+                    ), quest_hook::libil2cpp::Void, 6usize>("Blit2DTexture")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Blit2DTexture", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Blit2DTexture",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (cmd, scaleOffset, texture, sourceScaleOffset, blitMips, blitType),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    cmd,
+                    scaleOffset,
+                    texture,
+                    sourceScaleOffset,
+                    blitMips,
+                    blitType,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -146,45 +140,42 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         blitMips: bool,
         overrideInstanceID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            crate::UnityEngine::Vector4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            crate::UnityEngine::Vector4,
-                            bool,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("BlitOctahedralTexture")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        crate::UnityEngine::Vector4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        crate::UnityEngine::Vector4,
+                        bool,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "BlitOctahedralTexture"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BlitOctahedralTexture", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BlitOctahedralTexture",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        cmd,
-                        scaleOffset,
-                        texture,
-                        sourceScaleOffset,
-                        blitMips,
-                        overrideInstanceID,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    cmd,
+                    scaleOffset,
+                    texture,
+                    sourceScaleOffset,
+                    blitMips,
+                    overrideInstanceID,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -197,45 +188,42 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         blitMips: bool,
         overrideInstanceID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            crate::UnityEngine::Vector4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            crate::UnityEngine::Vector4,
-                            bool,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("BlitOctahedralTextureMultiply")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        crate::UnityEngine::Vector4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        crate::UnityEngine::Vector4,
+                        bool,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "BlitOctahedralTextureMultiply"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BlitOctahedralTextureMultiply", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BlitOctahedralTextureMultiply",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        cmd,
-                        scaleOffset,
-                        texture,
-                        sourceScaleOffset,
-                        blitMips,
-                        overrideInstanceID,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    cmd,
+                    scaleOffset,
+                    texture,
+                    sourceScaleOffset,
+                    blitMips,
+                    overrideInstanceID,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -248,45 +236,40 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         blitMips: bool,
         overrideInstanceID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            crate::UnityEngine::Vector4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            crate::UnityEngine::Vector4,
-                            bool,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("BlitTexture")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        crate::UnityEngine::Vector4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        crate::UnityEngine::Vector4,
+                        bool,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>("BlitTexture")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BlitTexture", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BlitTexture",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        cmd,
-                        scaleOffset,
-                        texture,
-                        sourceScaleOffset,
-                        blitMips,
-                        overrideInstanceID,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    cmd,
+                    scaleOffset,
+                    texture,
+                    sourceScaleOffset,
+                    blitMips,
+                    overrideInstanceID,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -299,45 +282,42 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         blitMips: bool,
         overrideInstanceID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            crate::UnityEngine::Vector4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            crate::UnityEngine::Vector4,
-                            bool,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("BlitTextureMultiply")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        crate::UnityEngine::Vector4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        crate::UnityEngine::Vector4,
+                        bool,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "BlitTextureMultiply"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BlitTextureMultiply", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BlitTextureMultiply",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        cmd,
-                        scaleOffset,
-                        texture,
-                        sourceScaleOffset,
-                        blitMips,
-                        overrideInstanceID,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    cmd,
+                    scaleOffset,
+                    texture,
+                    sourceScaleOffset,
+                    blitMips,
+                    overrideInstanceID,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -347,31 +327,28 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         hasMipmap: bool,
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i32,
-                            i32,
-                            bool,
-                            crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                        ),
-                        i64,
-                        4usize,
-                    >("GetApproxCacheSizeInByte")
+                    .find_static_method::<(
+                        i32,
+                        i32,
+                        bool,
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                    ), i64, 4usize>("GetApproxCacheSizeInByte")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetApproxCacheSizeInByte", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetApproxCacheSizeInByte",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: i64 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (nbElement, resolution, hasMipmap, format))?
+            cordl_method_info.invoke_unchecked((), (nbElement, resolution, hasMipmap, format))?
         };
         Ok(__cordl_ret.into())
     }
@@ -380,30 +357,27 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         hasMipmap: bool,
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i32,
-                            bool,
-                            crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                        ),
+                    .find_static_method::<(
                         i32,
-                        3usize,
-                    >("GetMaxCacheSizeForWeightInByte")
+                        bool,
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                    ), i32, 3usize>("GetMaxCacheSizeForWeightInByte")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetMaxCacheSizeForWeightInByte", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetMaxCacheSizeForWeightInByte",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (weight, hasMipmap, format))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (weight, hasMipmap, format))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPayloadScaleOffset_ByRefMut_ByRefMut1(
@@ -411,30 +385,29 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         paddingSize: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
         scaleOffset: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-                        ),
-                        crate::UnityEngine::Vector4,
-                        3usize,
-                    >("GetPayloadScaleOffset")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+                    ), crate::UnityEngine::Vector4, 3usize>(
+                        "GetPayloadScaleOffset"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPayloadScaleOffset", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPayloadScaleOffset",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (textureSize, paddingSize, scaleOffset))?
+            cordl_method_info.invoke_unchecked((), (textureSize, paddingSize, scaleOffset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -443,38 +416,38 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         scaleOffset: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-                        ),
-                        crate::UnityEngine::Vector4,
-                        2usize,
-                    >("GetPayloadScaleOffset")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+                    ), crate::UnityEngine::Vector4, 2usize>(
+                        "GetPayloadScaleOffset"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPayloadScaleOffset", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPayloadScaleOffset",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (texture, scaleOffset))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector4 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (texture, scaleOffset))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPowerOfTwoTextureSize(
         &mut self,
         texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>),
@@ -489,22 +462,23 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (texture))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector2 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (texture))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTexturePadding(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetTexturePadding")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTexturePadding", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetTexturePadding",
+                            0usize
                         )
                     })
             });
@@ -519,26 +493,27 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         useMipMap: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (_cordl_size, mipPadding, format, filterMode, name, useMipMap),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (_cordl_size, mipPadding, format, filterMode, name, useMipMap),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn RelayoutEntries(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("RelayoutEntries")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RelayoutEntries", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RelayoutEntries",
+                            0usize
                         )
                     })
             });
@@ -549,9 +524,10 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         &mut self,
         texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>),
@@ -566,9 +542,7 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (texture))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (texture))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReserveSpace_Texture_Texture_i32_i32_2(
@@ -578,31 +552,28 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         width: i32,
         height: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            i32,
-                            i32,
-                        ),
-                        bool,
-                        4usize,
-                    >("ReserveSpace")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        i32,
+                        i32,
+                    ), bool, 4usize>("ReserveSpace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReserveSpace", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReserveSpace",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (textureA, textureB, width, height))?
+            cordl_method_info.invoke_unchecked(self, (textureA, textureB, width, height))?
         };
         Ok(__cordl_ret.into())
     }
@@ -612,30 +583,27 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         width: i32,
         height: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            i32,
-                            i32,
-                        ),
-                        bool,
-                        3usize,
-                    >("ReserveSpace")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        i32,
+                        i32,
+                    ), bool, 3usize>("ReserveSpace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReserveSpace", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReserveSpace",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (texture, width, height))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (texture, width, height))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReserveSpace_i32_i32_i32_3(
@@ -644,47 +612,45 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         width: i32,
         height: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, i32), bool, 3usize>("ReserveSpace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReserveSpace", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReserveSpace",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (id, width, height))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (id, width, height))? };
         Ok(__cordl_ret.into())
     }
     pub fn ResetRequestedTexture(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ResetRequestedTexture")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ResetRequestedTexture")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ResetRequestedTexture", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ResetRequestedTexture",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn TextureSizeToPowerOfTwo(
@@ -693,30 +659,29 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         width: quest_hook::libil2cpp::ByRefMut<i32>,
         height: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("TextureSizeToPowerOfTwo")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "TextureSizeToPowerOfTwo"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TextureSizeToPowerOfTwo", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TextureSizeToPowerOfTwo",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (texture, width, height))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (texture, width, height))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -728,52 +693,49 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         useMipMap: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
-                            crate::UnityEngine::FilterMode,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                        crate::UnityEngine::FilterMode,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 6usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (_cordl_size, mipPadding, format, filterMode, name, useMipMap),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (_cordl_size, mipPadding, format, filterMode, name, useMipMap),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_mipPadding(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_mipPadding")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_mipPadding", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_mipPadding",
+                            0usize
                         )
                     })
             });
@@ -782,8 +744,7 @@ impl crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+PowerOfTwoTextureAtlas")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -792,8 +753,8 @@ for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+PowerOfTwoTextureAtlas+BlitType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum PowerOfTwoTextureAtlas_BlitType {
     #[default]
     OctahedralPadding = 2i32,
@@ -803,7 +764,8 @@ pub enum PowerOfTwoTextureAtlas_BlitType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+PowerOfTwoTextureAtlas+BlitType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType {
+    for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -822,18 +784,16 @@ for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+PowerOfTwoTextureAtlas+BlitType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType {
+    for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -844,7 +804,8 @@ for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+PowerOfTwoTextureAtlas+BlitType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType {
+    for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -858,22 +819,22 @@ for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+PowerOfTwoTextureAtlas+BlitType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType {
+    for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+PowerOfTwoTextureAtlas+BlitType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType {
+    for crate::UnityEngine::Rendering::PowerOfTwoTextureAtlas_BlitType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

@@ -5,14 +5,14 @@ pub struct KeyBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+KeyBuilder")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Mono::Security::Cryptography::KeyBuilder {
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::Cryptography::KeyBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Security.Cryptography";
     const CLASS_NAME: &'static str = "KeyBuilder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,14 +39,44 @@ impl std::ops::DerefMut for crate::Mono::Security::Cryptography::KeyBuilder {
 }
 #[cfg(feature = "Mono+Security+Cryptography+KeyBuilder")]
 impl crate::Mono::Security::Cryptography::KeyBuilder {
+    pub fn IV(
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<u8>,
+                        >,
+                        1usize,
+                    >("IV")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IV",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_size))? };
+        Ok(__cordl_ret.into())
+    }
     pub fn Key(
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
@@ -63,31 +93,26 @@ impl crate::Mono::Security::Cryptography::KeyBuilder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_size))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Rng() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::RandomNumberGenerator,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RandomNumberGenerator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Security::Cryptography::RandomNumberGenerator,
-                        >,
-                        0usize,
-                    >("get_Rng")
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::RandomNumberGenerator,
+                    >, 0usize>("get_Rng")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_Rng",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Rng",
                             0usize
                         )
                     })
@@ -99,8 +124,7 @@ impl crate::Mono::Security::Cryptography::KeyBuilder {
     }
 }
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+KeyBuilder")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Mono::Security::Cryptography::KeyBuilder {
+impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::Cryptography::KeyBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,9 +3,8 @@
 #[derive(Debug)]
 pub struct DirectionalLightWithIdsGroupEntry {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _directionalLightWithIds: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::DirectionalLightWithIds,
-    >,
+    pub _directionalLightWithIds:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DirectionalLightWithIds>,
     pub _groupLightData: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             quest_hook::libil2cpp::Gc<
@@ -20,20 +19,20 @@ pub struct DirectionalLightWithIdsGroupEntry {
             >,
         >,
     >,
-    pub _excludedLightIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<i32>,
-    >,
+    pub _excludedLightIds: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _groupLightsWeighting: crate::GlobalNamespace::ColorMixAndWeightingApproach,
 }
 #[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
+    for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "DirectionalLightWithIdsGroupEntry";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -61,35 +60,36 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DirectionalLightWithIdsGroup
 #[cfg(feature = "DirectionalLightWithIdsGroupEntry")]
 impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
     #[cfg(feature = "DirectionalLightWithIdsGroupEntry+GroupLightData")]
-    pub type GroupLightData = crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData;
+    pub type GroupLightData =
+        crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData;
     #[cfg(feature = "DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
-    pub type LightIntensitiesWithId = crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId;
+    pub type LightIntensitiesWithId =
+        crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_groupLightData(
@@ -103,7 +103,8 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -137,12 +138,11 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
     }
     pub fn get_groupLightsWeighting(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::ColorMixAndWeightingApproach,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorMixAndWeightingApproach> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -157,9 +157,8 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::ColorMixAndWeightingApproach = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::ColorMixAndWeightingApproach =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_individualLightData(
@@ -172,8 +171,9 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
                 >,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -208,7 +208,8 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
 }
 #[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
+    for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -226,13 +227,15 @@ pub struct DirectionalLightWithIdsGroupEntry_GroupLightData {
 }
 #[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+GroupLightData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
+    for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "DirectionalLightWithIdsGroupEntry/GroupLightData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -245,8 +248,7 @@ for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
     }
 }
 #[cfg(feature = "DirectionalLightWithIdsGroupEntry+GroupLightData")]
-impl std::ops::Deref
-for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
+impl std::ops::Deref for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -254,7 +256,8 @@ for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
 }
 #[cfg(feature = "DirectionalLightWithIdsGroupEntry+GroupLightData")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
+    for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -264,8 +267,8 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
     pub fn New(
         lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (lightGroup))?;
         Ok(__cordl_object.into())
@@ -274,9 +277,10 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
         &mut self,
         lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -293,22 +297,23 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (lightGroup))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (lightGroup))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_groupIntensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_groupIntensity")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_groupIntensity", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_groupIntensity",
+                            0usize
                         )
                     })
             });
@@ -320,9 +325,10 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -337,15 +343,15 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LightGroupSO,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+GroupLightData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
+    for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -363,13 +369,15 @@ pub struct DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId {
 }
 #[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId {
+    for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "DirectionalLightWithIdsGroupEntry/LightIntensitiesWithId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -383,7 +391,8 @@ for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWi
 }
 #[cfg(feature = "DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
 impl std::ops::Deref
-for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId {
+    for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -391,7 +400,8 @@ for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWi
 }
 #[cfg(feature = "DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId {
+    for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -402,8 +412,8 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesW
         lightId: i32,
         lightIntensity: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (lightId, lightIntensity))?;
         Ok(__cordl_object.into())
@@ -413,39 +423,38 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesW
         lightId: i32,
         lightIntensity: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, f32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(i32, f32), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (lightId, lightIntensity))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (lightId, lightIntensity))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_intensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_intensity")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_intensity", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_intensity",
+                            0usize
                         )
                     })
             });
@@ -453,16 +462,18 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesW
         Ok(__cordl_ret.into())
     }
     pub fn get_lightId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_lightId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_lightId", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_lightId",
+                            0usize
                         )
                     })
             });
@@ -472,7 +483,8 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesW
 }
 #[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId {
+    for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

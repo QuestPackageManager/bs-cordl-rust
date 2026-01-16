@@ -1,18 +1,18 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+ISignerInfoGenerator")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct ISignerInfoGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+ISignerInfoGenerator")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Cms::ISignerInfoGenerator {
+unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Cms::ISignerInfoGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Cms";
     const CLASS_NAME: &'static str = "ISignerInfoGenerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,21 +41,18 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::ISignerInfoGenerator 
 impl crate::Org::BouncyCastle::Cms::ISignerInfoGenerator {
     pub fn Generate(
         &mut self,
-        contentType: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
+        contentType: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
         digestAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
-        calculatedDigest: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
+        calculatedDigest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::SignerInfo>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -86,22 +83,16 @@ impl crate::Org::BouncyCastle::Cms::ISignerInfoGenerator {
             crate::Org::BouncyCastle::Asn1::Cms::SignerInfo,
         > = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (contentType, digestAlgorithm, calculatedDigest),
-                )?
+                .invoke_unchecked(self, (contentType, digestAlgorithm, calculatedDigest))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+ISignerInfoGenerator")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Cms::ISignerInfoGenerator {
+impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Cms::ISignerInfoGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

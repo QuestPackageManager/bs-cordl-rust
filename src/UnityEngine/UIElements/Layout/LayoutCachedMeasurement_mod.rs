@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutCachedMeasurement")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LayoutCachedMeasurement {
     pub AvailableWidth: f32,
     pub AvailableHeight: f32,
@@ -13,7 +13,8 @@ pub struct LayoutCachedMeasurement {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutCachedMeasurement")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement {
+    for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Layout";
@@ -32,18 +33,16 @@ for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutCachedMeasurement")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement {
+    for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -54,7 +53,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutCachedMeasurement")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement {
+    for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -68,22 +68,22 @@ for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutCachedMeasurement")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement {
+    for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutCachedMeasurement")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement {
+    for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -97,7 +97,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutCachedMeasurement")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement {
+    for crate::UnityEngine::UIElements::Layout::LayoutCachedMeasurement
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

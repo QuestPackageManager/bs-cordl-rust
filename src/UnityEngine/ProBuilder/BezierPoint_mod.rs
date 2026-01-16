@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierPoint")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BezierPoint {
     pub position: crate::UnityEngine::Vector3,
     pub tangentIn: crate::UnityEngine::Vector3,
@@ -27,18 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Bezi
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierPoint")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ProBuilder::BezierPoint {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ProBuilder::BezierPoint {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -48,8 +44,7 @@ for crate::UnityEngine::ProBuilder::BezierPoint {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierPoint")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ProBuilder::BezierPoint {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ProBuilder::BezierPoint {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -62,23 +57,19 @@ for crate::UnityEngine::ProBuilder::BezierPoint {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierPoint")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ProBuilder::BezierPoint {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ProBuilder::BezierPoint {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierPoint")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::ProBuilder::BezierPoint {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ProBuilder::BezierPoint {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -91,8 +82,7 @@ for crate::UnityEngine::ProBuilder::BezierPoint {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierPoint")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ProBuilder::BezierPoint {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::ProBuilder::BezierPoint {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -108,30 +98,27 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         b: crate::UnityEngine::ProBuilder::BezierPoint,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::ProBuilder::BezierPoint,
-                            crate::UnityEngine::ProBuilder::BezierPoint,
-                            f32,
-                        ),
-                        crate::UnityEngine::Vector3,
-                        3usize,
-                    >("CubicPosition")
+                    .find_static_method::<(
+                        crate::UnityEngine::ProBuilder::BezierPoint,
+                        crate::UnityEngine::ProBuilder::BezierPoint,
+                        f32,
+                    ), crate::UnityEngine::Vector3, 3usize>("CubicPosition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CubicPosition", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CubicPosition",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b, t))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (a, b, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnforceTangentMode(
@@ -139,29 +126,26 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         master: crate::UnityEngine::ProBuilder::BezierTangentDirection,
         mode: crate::UnityEngine::ProBuilder::BezierTangentMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::ProBuilder::BezierTangentDirection,
-                            crate::UnityEngine::ProBuilder::BezierTangentMode,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("EnforceTangentMode")
+                    .find_method::<(
+                        crate::UnityEngine::ProBuilder::BezierTangentDirection,
+                        crate::UnityEngine::ProBuilder::BezierTangentMode,
+                    ), quest_hook::libil2cpp::Void, 2usize>("EnforceTangentMode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EnforceTangentMode", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EnforceTangentMode",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (master, mode))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (master, mode))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLookDirection(
@@ -174,35 +158,32 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         previous: i32,
         next: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::ProBuilder::BezierPoint,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::ProBuilder::BezierPoint,
                             >,
-                            i32,
-                            i32,
-                            i32,
-                        ),
-                        crate::UnityEngine::Vector3,
-                        4usize,
-                    >("GetLookDirection")
+                        >,
+                        i32,
+                        i32,
+                        i32,
+                    ), crate::UnityEngine::Vector3, 4usize>("GetLookDirection")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLookDirection", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLookDirection",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (points, index, previous, next))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (points, index, previous, next))? };
         Ok(__cordl_ret.into())
     }
     pub fn QuadraticPosition(
@@ -210,39 +191,37 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         b: crate::UnityEngine::ProBuilder::BezierPoint,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::ProBuilder::BezierPoint,
-                            crate::UnityEngine::ProBuilder::BezierPoint,
-                            f32,
-                        ),
-                        crate::UnityEngine::Vector3,
-                        3usize,
-                    >("QuadraticPosition")
+                    .find_static_method::<(
+                        crate::UnityEngine::ProBuilder::BezierPoint,
+                        crate::UnityEngine::ProBuilder::BezierPoint,
+                        f32,
+                    ), crate::UnityEngine::Vector3, 3usize>("QuadraticPosition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "QuadraticPosition", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "QuadraticPosition",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b, t))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (a, b, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetPosition(
         &mut self,
         position: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3),
@@ -257,9 +236,8 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (position))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (position))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetTangentIn(
@@ -267,29 +245,26 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         tangent: crate::UnityEngine::Vector3,
         mode: crate::UnityEngine::ProBuilder::BezierTangentMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::ProBuilder::BezierTangentMode,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetTangentIn")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::ProBuilder::BezierTangentMode,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SetTangentIn")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTangentIn", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetTangentIn",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (tangent, mode))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (tangent, mode))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetTangentOut(
@@ -297,29 +272,26 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         tangent: crate::UnityEngine::Vector3,
         mode: crate::UnityEngine::ProBuilder::BezierTangentMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::ProBuilder::BezierTangentMode,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetTangentOut")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::ProBuilder::BezierTangentMode,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SetTangentOut")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTangentOut", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetTangentOut",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (tangent, mode))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (tangent, mode))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -329,31 +301,28 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         tangentOut: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (position, tangentIn, tangentOut, rotation))?
+            cordl_method_info.invoke_unchecked(self, (position, tangentIn, tangentOut, rotation))?
         };
         Ok(__cordl_ret.into())
     }

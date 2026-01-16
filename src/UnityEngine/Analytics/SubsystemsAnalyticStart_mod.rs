@@ -5,14 +5,14 @@ pub struct SubsystemsAnalyticStart {
     __cordl_parent: crate::UnityEngine::Analytics::SubsystemsAnalyticBase,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Analytics+SubsystemsAnalyticStart")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Analytics::SubsystemsAnalyticStart {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Analytics::SubsystemsAnalyticStart {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Analytics";
     const CLASS_NAME: &'static str = "SubsystemsAnalyticStart";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,22 +42,20 @@ impl crate::UnityEngine::Analytics::SubsystemsAnalyticStart {
     pub fn CreateSubsystemsAnalyticStart() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Analytics::SubsystemsAnalyticStart>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Analytics::SubsystemsAnalyticStart,
-                        >,
-                        0usize,
-                    >("CreateSubsystemsAnalyticStart")
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Analytics::SubsystemsAnalyticStart,
+                    >, 0usize>("CreateSubsystemsAnalyticStart")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateSubsystemsAnalyticStart", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateSubsystemsAnalyticStart",
+                            0usize
                         )
                     })
             });
@@ -67,37 +65,35 @@ impl crate::UnityEngine::Analytics::SubsystemsAnalyticStart {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Analytics+SubsystemsAnalyticStart")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Analytics::SubsystemsAnalyticStart {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Analytics::SubsystemsAnalyticStart {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

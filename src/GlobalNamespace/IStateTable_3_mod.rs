@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_IStateTable_3")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IStateTable_3<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -13,30 +13,30 @@ pub struct IStateTable_3<
 }
 #[cfg(feature = "cordl_class_IStateTable_3")]
 unsafe impl<
-    TStateTable: quest_hook::libil2cpp::Type,
-    TType: quest_hook::libil2cpp::Type,
-    TState: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState> {
+        TStateTable: quest_hook::libil2cpp::Type,
+        TType: quest_hook::libil2cpp::Type,
+        TState: quest_hook::libil2cpp::Type,
+    > quest_hook::libil2cpp::Type
+    for crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState>
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "IStateTable`3";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "IStateTable`3")
-                    .unwrap()
-                    .make_generic::<(TStateTable, TType, TState)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find("", "IStateTable`3")
+                .unwrap()
+                .make_generic::<(TStateTable, TType, TState)>()
+                .unwrap()
+                .unwrap()
+        })
     }
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -50,10 +50,11 @@ for crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState> {
 }
 #[cfg(feature = "IStateTable_3")]
 impl<
-    TStateTable: quest_hook::libil2cpp::Type,
-    TType: quest_hook::libil2cpp::Type,
-    TState: quest_hook::libil2cpp::Type,
-> std::ops::Deref for crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState> {
+        TStateTable: quest_hook::libil2cpp::Type,
+        TType: quest_hook::libil2cpp::Type,
+        TState: quest_hook::libil2cpp::Type,
+    > std::ops::Deref for crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState>
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -61,36 +62,44 @@ impl<
 }
 #[cfg(feature = "IStateTable_3")]
 impl<
-    TStateTable: quest_hook::libil2cpp::Type,
-    TType: quest_hook::libil2cpp::Type,
-    TState: quest_hook::libil2cpp::Type,
-> std::ops::DerefMut
-for crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState> {
+        TStateTable: quest_hook::libil2cpp::Type,
+        TType: quest_hook::libil2cpp::Type,
+        TState: quest_hook::libil2cpp::Type,
+    > std::ops::DerefMut for crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState>
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IStateTable_3")]
 impl<
-    TStateTable: quest_hook::libil2cpp::Type,
-    TType: quest_hook::libil2cpp::Type,
-    TState: quest_hook::libil2cpp::Type,
-> crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState> {
+        TStateTable: quest_hook::libil2cpp::Type,
+        TType: quest_hook::libil2cpp::Type,
+        TState: quest_hook::libil2cpp::Type,
+    > crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState>
+{
     pub fn ApplyDelta(
         &mut self,
         delta: quest_hook::libil2cpp::ByRefMut<TStateTable>,
     ) -> quest_hook::libil2cpp::Result<TStateTable>
     where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStateTable: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<TStateTable>),
@@ -105,9 +114,8 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: TStateTable = unsafe {
-            cordl_method_info.invoke_unchecked(self, (delta))?
-        };
+        let __cordl_ret: TStateTable =
+            unsafe { cordl_method_info.invoke_unchecked(self, (delta))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDelta(
@@ -115,16 +123,23 @@ impl<
         stateTable: quest_hook::libil2cpp::ByRefMut<TStateTable>,
     ) -> quest_hook::libil2cpp::Result<TStateTable>
     where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStateTable: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<TStateTable>),
@@ -139,29 +154,36 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: TStateTable = unsafe {
-            cordl_method_info.invoke_unchecked(self, (stateTable))?
-        };
+        let __cordl_ret: TStateTable =
+            unsafe { cordl_method_info.invoke_unchecked(self, (stateTable))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStateTable: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetSize",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSize",
                             0usize
                         )
                     })
@@ -169,34 +191,38 @@ impl<
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetState(
-        &mut self,
-        _cordl_type: TType,
-    ) -> quest_hook::libil2cpp::Result<TState>
+    pub fn GetState(&mut self, _cordl_type: TType) -> quest_hook::libil2cpp::Result<TState>
     where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStateTable: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(TType), TState, 1usize>("GetState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetState", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetState",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: TState = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type))?
-        };
+        let __cordl_ret: TState =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetState(
@@ -205,48 +231,50 @@ impl<
         state: TState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStateTable: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TType: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (TType, TState),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetState")
+                    .find_method::<(TType, TState), quest_hook::libil2cpp::Void, 2usize>("SetState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetState", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetState",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type, state))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type, state))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_IStateTable_3")]
 impl<
-    TStateTable: quest_hook::libil2cpp::Type,
-    TType: quest_hook::libil2cpp::Type,
-    TState: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState> {
+        TStateTable: quest_hook::libil2cpp::Type,
+        TType: quest_hook::libil2cpp::Type,
+        TState: quest_hook::libil2cpp::Type,
+    > quest_hook::libil2cpp::ObjectType
+    for crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState>
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

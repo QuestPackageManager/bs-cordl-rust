@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::VFX::VFXManager 
     const NAMESPACE: &'static str = "UnityEngine.VFX";
     const CLASS_NAME: &'static str = "VFXManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,33 +45,30 @@ impl crate::UnityEngine::VFX::VFXManager {
         camXRSettings: crate::UnityEngine::VFX::VFXCameraXRSettings,
         cullResults: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            crate::UnityEngine::VFX::VFXCameraXRSettings,
-                            crate::System::IntPtr,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("Internal_ProcessCameraCommand")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        crate::UnityEngine::VFX::VFXCameraXRSettings,
+                        crate::System::IntPtr,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "Internal_ProcessCameraCommand"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_ProcessCameraCommand", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_ProcessCameraCommand",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (cam, cmd, camXRSettings, cullResults))?
+            cordl_method_info.invoke_unchecked((), (cam, cmd, camXRSettings, cullResults))?
         };
         Ok(__cordl_ret.into())
     }
@@ -82,42 +80,42 @@ impl crate::UnityEngine::VFX::VFXManager {
         >,
         cullResults: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::VFX::VFXCameraXRSettings,
-                            >,
-                            crate::System::IntPtr,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("Internal_ProcessCameraCommand_Injected")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::VFX::VFXCameraXRSettings,
+                        >,
+                        crate::System::IntPtr,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "Internal_ProcessCameraCommand_Injected",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_ProcessCameraCommand_Injected", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_ProcessCameraCommand_Injected",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (cam, cmd, camXRSettings, cullResults))?
+            cordl_method_info.invoke_unchecked((), (cam, cmd, camXRSettings, cullResults))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsCameraBufferNeeded(
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::VFX::VFXCameraBufferTypes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>),
@@ -132,17 +130,17 @@ impl crate::UnityEngine::VFX::VFXManager {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::VFX::VFXCameraBufferTypes = unsafe {
-            cordl_method_info.invoke_unchecked((), (cam))?
-        };
+        let __cordl_ret: crate::UnityEngine::VFX::VFXCameraBufferTypes =
+            unsafe { cordl_method_info.invoke_unchecked((), (cam))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsCameraBufferNeeded_Injected(
         cam: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::VFX::VFXCameraBufferTypes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
@@ -157,9 +155,8 @@ impl crate::UnityEngine::VFX::VFXManager {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::VFX::VFXCameraBufferTypes = unsafe {
-            cordl_method_info.invoke_unchecked((), (cam))?
-        };
+        let __cordl_ret: crate::UnityEngine::VFX::VFXCameraBufferTypes =
+            unsafe { cordl_method_info.invoke_unchecked((), (cam))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessCameraCommand(
@@ -168,33 +165,30 @@ impl crate::UnityEngine::VFX::VFXManager {
         camXRSettings: crate::UnityEngine::VFX::VFXCameraXRSettings,
         results: crate::UnityEngine::Rendering::CullingResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            crate::UnityEngine::VFX::VFXCameraXRSettings,
-                            crate::UnityEngine::Rendering::CullingResults,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("ProcessCameraCommand")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        crate::UnityEngine::VFX::VFXCameraXRSettings,
+                        crate::UnityEngine::Rendering::CullingResults,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "ProcessCameraCommand"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessCameraCommand", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessCameraCommand",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (cam, cmd, camXRSettings, results))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (cam, cmd, camXRSettings, results))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetCameraBuffer(
@@ -206,28 +200,26 @@ impl crate::UnityEngine::VFX::VFXManager {
         width: i32,
         height: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            crate::UnityEngine::VFX::VFXCameraBufferTypes,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("SetCameraBuffer")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        crate::UnityEngine::VFX::VFXCameraBufferTypes,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 7usize>("SetCameraBuffer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetCameraBuffer", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetCameraBuffer",
+                            7usize
                         )
                     })
             });
@@ -246,28 +238,28 @@ impl crate::UnityEngine::VFX::VFXManager {
         width: i32,
         height: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            crate::UnityEngine::VFX::VFXCameraBufferTypes,
-                            crate::System::IntPtr,
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("SetCameraBuffer_Injected")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        crate::UnityEngine::VFX::VFXCameraBufferTypes,
+                        crate::System::IntPtr,
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 7usize>(
+                        "SetCameraBuffer_Injected"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetCameraBuffer_Injected", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetCameraBuffer_Injected",
+                            7usize
                         )
                     })
             });

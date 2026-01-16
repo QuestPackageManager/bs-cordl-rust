@@ -7,13 +7,15 @@ pub struct CrossAppDomainSink {
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
+    for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Remoting.Channels";
     const CLASS_NAME: &'static str = "CrossAppDomainSink";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -33,54 +35,46 @@ impl std::ops::Deref for crate::System::Runtime::Remoting::Channels::CrossAppDom
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink")]
-impl std::ops::DerefMut
-for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
+impl std::ops::DerefMut for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink")]
 impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
-    #[cfg(
-        feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
-    )]
-    pub type ProcessMessageRes = crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes;
+    #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes")]
+    pub type ProcessMessageRes =
+        crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes;
     pub fn AsyncProcessMessage(
         &mut self,
-        reqMsg: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Messaging::IMessage,
-        >,
+        reqMsg: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
         replySink: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessageCtrl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::Remoting::Messaging::IMessage,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::Remoting::Messaging::IMessageSink,
-                            >,
-                        ),
+                    .find_method::<(
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+                            crate::System::Runtime::Remoting::Messaging::IMessage,
                         >,
-                        2usize,
-                    >("AsyncProcessMessage")
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::Remoting::Messaging::IMessageSink,
+                        >,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+                    >, 2usize>("AsyncProcessMessage")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AsyncProcessMessage", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AsyncProcessMessage",
+                            2usize
                         )
                     })
             });
@@ -92,25 +86,21 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
     pub fn GetSink(
         domainID: i32,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Channels::CrossAppDomainSink,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Channels::CrossAppDomainSink>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::Remoting::Channels::CrossAppDomainSink,
-                        >,
-                        1usize,
-                    >("GetSink")
+                    .find_static_method::<(i32), quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Remoting::Channels::CrossAppDomainSink,
+                    >, 1usize>("GetSink")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetSink",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSink",
                             1usize
                         )
                     })
@@ -120,11 +110,9 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         > = unsafe { cordl_method_info.invoke_unchecked((), (domainID))? };
         Ok(__cordl_ret.into())
     }
-    pub fn New(
-        domainID: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+    pub fn New(domainID: i32) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (domainID))?;
         Ok(__cordl_object.into())
@@ -137,7 +125,8 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -170,9 +159,10 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -187,9 +177,8 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (data))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (data))? };
         Ok(__cordl_ret.into())
     }
     pub fn SyncProcessMessage(
@@ -200,9 +189,10 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -230,9 +220,10 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -247,44 +238,46 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (data))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (data))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         domainID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (domainID))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (domainID))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_TargetDomainId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_TargetDomainId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_TargetDomainId", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_TargetDomainId",
+                            0usize
                         )
                     })
             });
@@ -294,7 +287,8 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
+    for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -304,25 +298,25 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink")]
 impl AsRef<crate::System::Runtime::Remoting::Messaging::IMessageSink>
-for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
+    for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink
+{
     fn as_ref(&self) -> &crate::System::Runtime::Remoting::Messaging::IMessageSink {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink")]
 impl AsMut<crate::System::Runtime::Remoting::Messaging::IMessageSink>
-for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Runtime::Remoting::Messaging::IMessageSink {
+    for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink
+{
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::Messaging::IMessageSink {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CrossAppDomainSink_ProcessMessageRes {
     pub arrResponse: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub cadMrm: quest_hook::libil2cpp::Gc<
@@ -333,7 +327,8 @@ pub struct CrossAppDomainSink_ProcessMessageRes {
     feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes {
+    for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Runtime.Remoting.Channels";
@@ -352,20 +347,18 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessag
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes {
+    for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -378,7 +371,8 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessag
     feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes {
+    for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -394,16 +388,15 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessag
     feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes {
+    for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -411,7 +404,8 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessag
     feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes {
+    for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -427,7 +421,8 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessag
     feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes {
+    for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

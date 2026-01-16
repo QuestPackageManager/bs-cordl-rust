@@ -5,14 +5,14 @@ pub struct TaskTrace {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Internal+Threading+Tasks+Tracing+TaskTrace")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Internal::Threading::Tasks::Tracing::TaskTrace {
+unsafe impl quest_hook::libil2cpp::Type for crate::Internal::Threading::Tasks::Tracing::TaskTrace {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Internal.Threading.Tasks.Tracing";
     const CLASS_NAME: &'static str = "TaskTrace";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,9 +46,10 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
         CreatingTaskID: i32,
         TaskCreationOptions: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, i32, i32, i32),
@@ -64,17 +65,16 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        OriginatingTaskSchedulerID,
-                        OriginatingTaskID,
-                        TaskID,
-                        CreatingTaskID,
-                        TaskCreationOptions,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    OriginatingTaskSchedulerID,
+                    OriginatingTaskID,
+                    TaskID,
+                    CreatingTaskID,
+                    TaskCreationOptions,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -83,29 +83,26 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
         OriginatingTaskID: i32,
         TaskID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("TaskWaitBegin_Asynchronous")
+                    .find_static_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(
+                        "TaskWaitBegin_Asynchronous",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TaskWaitBegin_Asynchronous", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TaskWaitBegin_Asynchronous",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
-                )?
+                .invoke_unchecked((), (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,29 +111,26 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
         OriginatingTaskID: i32,
         TaskID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("TaskWaitBegin_Synchronous")
+                    .find_static_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(
+                        "TaskWaitBegin_Synchronous",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TaskWaitBegin_Synchronous", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TaskWaitBegin_Synchronous",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
-                )?
+                .invoke_unchecked((), (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -145,43 +139,42 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
         OriginatingTaskID: i32,
         TaskID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("TaskWaitEnd")
+                    .find_static_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(
+                        "TaskWaitEnd",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TaskWaitEnd", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TaskWaitEnd",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
-                )?
+                .invoke_unchecked((), (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Enabled() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_Enabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Enabled", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Enabled",
+                            0usize
                         )
                     })
             });
@@ -190,8 +183,7 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
     }
 }
 #[cfg(feature = "cordl_class_Internal+Threading+Tasks+Tracing+TaskTrace")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Internal::Threading::Tasks::Tracing::TaskTrace {
+impl quest_hook::libil2cpp::ObjectType for crate::Internal::Threading::Tasks::Tracing::TaskTrace {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

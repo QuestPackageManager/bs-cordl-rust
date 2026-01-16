@@ -11,14 +11,14 @@ pub struct RotationTimeProcessor {
     pub currentBpmChangesDataIdx: i32,
 }
 #[cfg(feature = "cordl_class_RotationTimeProcessor")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::RotationTimeProcessor {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RotationTimeProcessor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "RotationTimeProcessor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,39 +47,34 @@ impl std::ops::DerefMut for crate::GlobalNamespace::RotationTimeProcessor {
 impl crate::GlobalNamespace::RotationTimeProcessor {
     #[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
     pub type RotationChangeData = crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData;
-    pub fn ConvertBeatToRotation(
-        &mut self,
-        beat: f32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ConvertBeatToRotation(&mut self, beat: f32) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), i32, 1usize>("ConvertBeatToRotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConvertBeatToRotation", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ConvertBeatToRotation",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (beat))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (beat))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_IReadOnlyList_1_0(
         events: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (events))?;
         Ok(__cordl_object.into())
@@ -87,142 +82,124 @@ impl crate::GlobalNamespace::RotationTimeProcessor {
     pub fn New_IReadOnlyList_1_1(
         rotationEventsSaveData: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::RotationEventData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::RotationEventData>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (rotationEventsSaveData))?;
         Ok(__cordl_object.into())
     }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reset",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SpawnRotationForEventValue(index: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32),
-                        i32,
-                        1usize,
-                    >("SpawnRotationForEventValue")
+                    .find_static_method::<(i32), i32, 1usize>("SpawnRotationForEventValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SpawnRotationForEventValue", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SpawnRotationForEventValue",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (index))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IReadOnlyList_1_0(
         &mut self,
         events: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
-                                >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (events))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (events))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IReadOnlyList_1_1(
         &mut self,
         rotationEventsSaveData: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::RotationEventData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::RotationEventData>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataVersion3::RotationEventData,
-                                >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatmapSaveDataVersion3::RotationEventData,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (rotationEventsSaveData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (rotationEventsSaveData))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_RotationTimeProcessor")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::RotationTimeProcessor {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RotationTimeProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -231,15 +208,16 @@ for crate::GlobalNamespace::RotationTimeProcessor {
     }
 }
 #[cfg(feature = "cordl_class_RotationTimeProcessor+RotationChangeData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct RotationTimeProcessor_RotationChangeData {
     pub beat: f32,
     pub rotation: i32,
 }
 #[cfg(feature = "cordl_class_RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
+    for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -258,18 +236,16 @@ for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
+    for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -280,7 +256,8 @@ for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
 }
 #[cfg(feature = "cordl_class_RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
+    for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -294,22 +271,22 @@ for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
 }
 #[cfg(feature = "cordl_class_RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
+    for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
+    for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -323,7 +300,8 @@ for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
 }
 #[cfg(feature = "cordl_class_RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
+    for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -339,26 +317,23 @@ impl crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
         beat: f32,
         rotation: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32, i32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(f32, i32), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (beat, rotation))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (beat, rotation))? };
         Ok(__cordl_ret.into())
     }
 }

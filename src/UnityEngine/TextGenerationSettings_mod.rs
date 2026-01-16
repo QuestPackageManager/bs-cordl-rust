@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextGenerationSettings")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TextGenerationSettings {
     pub font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     pub color: crate::UnityEngine::Color,
@@ -41,18 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextGenerationSe
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextGenerationSettings")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::TextGenerationSettings {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextGenerationSettings {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -62,8 +58,7 @@ for crate::UnityEngine::TextGenerationSettings {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextGenerationSettings")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::TextGenerationSettings {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TextGenerationSettings {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -76,23 +71,19 @@ for crate::UnityEngine::TextGenerationSettings {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextGenerationSettings")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::TextGenerationSettings {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextGenerationSettings {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextGenerationSettings")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::TextGenerationSettings {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TextGenerationSettings {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -105,8 +96,7 @@ for crate::UnityEngine::TextGenerationSettings {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextGenerationSettings")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::TextGenerationSettings {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::TextGenerationSettings {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -122,9 +112,10 @@ impl crate::UnityEngine::TextGenerationSettings {
         left: crate::UnityEngine::Color,
         right: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color, crate::UnityEngine::Color),
@@ -139,9 +130,7 @@ impl crate::UnityEngine::TextGenerationSettings {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (left, right))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (left, right))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompareVector2(
@@ -149,9 +138,10 @@ impl crate::UnityEngine::TextGenerationSettings {
         left: crate::UnityEngine::Vector2,
         right: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2),
@@ -166,35 +156,31 @@ impl crate::UnityEngine::TextGenerationSettings {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (left, right))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (left, right))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::TextGenerationSettings,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::TextGenerationSettings),
-                        bool,
-                        1usize,
-                    >("Equals")
+                    .find_method::<(crate::UnityEngine::TextGenerationSettings), bool, 1usize>(
+                        "Equals",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Equals",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
 }

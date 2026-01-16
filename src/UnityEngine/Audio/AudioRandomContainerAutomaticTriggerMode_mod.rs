@@ -1,18 +1,15 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+Audio+AudioRandomContainerAutomaticTriggerMode"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioRandomContainerAutomaticTriggerMode")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum AudioRandomContainerAutomaticTriggerMode {
     #[default]
     Offset = 1i32,
     Pulse = 0i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Audio+AudioRandomContainerAutomaticTriggerMode"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioRandomContainerAutomaticTriggerMode")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Audio::AudioRandomContainerAutomaticTriggerMode {
+    for crate::UnityEngine::Audio::AudioRandomContainerAutomaticTriggerMode
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Audio";
@@ -31,20 +28,16 @@ for crate::UnityEngine::Audio::AudioRandomContainerAutomaticTriggerMode {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Audio+AudioRandomContainerAutomaticTriggerMode"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioRandomContainerAutomaticTriggerMode")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Audio::AudioRandomContainerAutomaticTriggerMode {
+    for crate::UnityEngine::Audio::AudioRandomContainerAutomaticTriggerMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -53,11 +46,10 @@ for crate::UnityEngine::Audio::AudioRandomContainerAutomaticTriggerMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Audio+AudioRandomContainerAutomaticTriggerMode"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioRandomContainerAutomaticTriggerMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Audio::AudioRandomContainerAutomaticTriggerMode {
+    for crate::UnityEngine::Audio::AudioRandomContainerAutomaticTriggerMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -69,28 +61,24 @@ for crate::UnityEngine::Audio::AudioRandomContainerAutomaticTriggerMode {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Audio+AudioRandomContainerAutomaticTriggerMode"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioRandomContainerAutomaticTriggerMode")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Audio::AudioRandomContainerAutomaticTriggerMode {
+    for crate::UnityEngine::Audio::AudioRandomContainerAutomaticTriggerMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Audio+AudioRandomContainerAutomaticTriggerMode"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioRandomContainerAutomaticTriggerMode")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Audio::AudioRandomContainerAutomaticTriggerMode {
+    for crate::UnityEngine::Audio::AudioRandomContainerAutomaticTriggerMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

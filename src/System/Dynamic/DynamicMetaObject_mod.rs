@@ -4,12 +4,10 @@
 pub struct DynamicMetaObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub _Expression_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Expression,
-    >,
-    pub _Restrictions_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Dynamic::BindingRestrictions,
-    >,
+    pub _Expression_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    pub _Restrictions_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
 }
 #[cfg(feature = "cordl_class_System+Dynamic+DynamicMetaObject")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::DynamicMetaObject {
@@ -18,7 +16,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::DynamicMetaO
     const NAMESPACE: &'static str = "System.Dynamic";
     const CLASS_NAME: &'static str = "DynamicMetaObject";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -52,9 +51,10 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -78,9 +78,8 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (binder, arg))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (binder, arg))? };
         Ok(__cordl_ret.into())
     }
     pub fn BindConvert(
@@ -89,9 +88,10 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -110,9 +110,8 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (binder))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (binder))? };
         Ok(__cordl_ret.into())
     }
     pub fn BindCreateInstance(
@@ -126,9 +125,10 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -156,9 +156,8 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (binder, args))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (binder, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn BindDeleteIndex(
@@ -172,9 +171,10 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -202,9 +202,8 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (binder, indexes))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (binder, indexes))? };
         Ok(__cordl_ret.into())
     }
     pub fn BindDeleteMember(
@@ -213,9 +212,10 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -234,9 +234,8 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (binder))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (binder))? };
         Ok(__cordl_ret.into())
     }
     pub fn BindGetIndex(
@@ -250,9 +249,10 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -280,9 +280,8 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (binder, indexes))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (binder, indexes))? };
         Ok(__cordl_ret.into())
     }
     pub fn BindGetMember(
@@ -291,9 +290,10 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -312,9 +312,8 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (binder))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (binder))? };
         Ok(__cordl_ret.into())
     }
     pub fn BindInvoke(
@@ -328,9 +327,10 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -358,9 +358,8 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (binder, args))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (binder, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn BindInvokeMember(
@@ -374,9 +373,10 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -404,9 +404,8 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (binder, args))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (binder, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn BindSetIndex(
@@ -421,9 +420,10 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -454,11 +454,8 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (binder, indexes, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (binder, indexes, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn BindSetMember(
@@ -468,9 +465,10 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -494,9 +492,8 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (binder, value))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (binder, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn BindUnaryOperation(
@@ -505,9 +502,10 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -526,22 +524,20 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (binder))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (binder))? };
         Ok(__cordl_ret.into())
     }
     pub fn Create(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        expression: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression,
-        >,
+        expression: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -565,9 +561,8 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (value, expression))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject> =
+            unsafe { cordl_method_info.invoke_unchecked((), (value, expression))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDynamicMemberNames(
@@ -579,26 +574,22 @@ impl crate::System::Dynamic::DynamicMetaObject {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         >,
-                        0usize,
-                    >("GetDynamicMemberNames")
+                    >, 0usize>("GetDynamicMemberNames")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetDynamicMemberNames", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetDynamicMemberNames",
+                            0usize
                         )
                     })
             });
@@ -610,112 +601,80 @@ impl crate::System::Dynamic::DynamicMetaObject {
         Ok(__cordl_ret.into())
     }
     pub fn New_Expression_BindingRestrictions0(
-        expression: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression,
-        >,
-        restrictions: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::BindingRestrictions,
-        >,
+        expression: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        restrictions: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (expression, restrictions))?;
         Ok(__cordl_object.into())
     }
     pub fn New_Il2CppObject1(
-        expression: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression,
-        >,
-        restrictions: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::BindingRestrictions,
-        >,
+        expression: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        restrictions: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (expression, restrictions, value))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor_Expression_BindingRestrictions0(
         &mut self,
-        expression: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression,
-        >,
-        restrictions: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::BindingRestrictions,
-        >,
+        expression: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        restrictions: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::Expression,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Dynamic::BindingRestrictions,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+                        quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (expression, restrictions))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (expression, restrictions))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppObject1(
         &mut self,
-        expression: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression,
-        >,
-        restrictions: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::BindingRestrictions,
-        >,
+        expression: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        restrictions: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::Expression,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Dynamic::BindingRestrictions,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+                        quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (expression, restrictions, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (expression, restrictions, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Expression(
@@ -723,9 +682,10 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -742,22 +702,23 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_HasValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_HasValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_HasValue", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_HasValue",
+                            0usize
                         )
                     })
             });
@@ -767,26 +728,25 @@ impl crate::System::Dynamic::DynamicMetaObject {
     pub fn get_LimitType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        0usize,
-                    >("get_LimitType")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<crate::System::Type>, 0usize>(
+                        "get_LimitType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_LimitType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_LimitType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Restrictions(
@@ -794,9 +754,10 @@ impl crate::System::Dynamic::DynamicMetaObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -813,44 +774,42 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::BindingRestrictions,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_RuntimeType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        0usize,
-                    >("get_RuntimeType")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<crate::System::Type>, 0usize>(
+                        "get_RuntimeType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_RuntimeType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_RuntimeType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -865,9 +824,8 @@ impl crate::System::Dynamic::DynamicMetaObject {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

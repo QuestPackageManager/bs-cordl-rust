@@ -1,23 +1,19 @@
 #[cfg(feature = "cordl_class_OculusStudios+Platform+Core+RichPresenceRuntimeInstance")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct RichPresenceRuntimeInstance {
-    pub _definition_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::OculusStudios::Platform::Core::IRichPresenceDefinition,
-    >,
-    pub _state_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub _partyInfo_k__BackingField: crate::System::Nullable_1<
-        crate::OculusStudios::Platform::Core::PartyInfo,
-    >,
-    pub _timestamp_k__BackingField: crate::System::Nullable_1<
-        crate::OculusStudios::Platform::Core::RichPresenceTimestamp,
-    >,
+    pub _definition_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IRichPresenceDefinition>,
+    pub _state_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _partyInfo_k__BackingField:
+        crate::System::Nullable_1<crate::OculusStudios::Platform::Core::PartyInfo>,
+    pub _timestamp_k__BackingField:
+        crate::System::Nullable_1<crate::OculusStudios::Platform::Core::RichPresenceTimestamp>,
 }
 #[cfg(feature = "cordl_class_OculusStudios+Platform+Core+RichPresenceRuntimeInstance")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance {
+    for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "OculusStudios.Platform.Core";
@@ -36,18 +32,16 @@ for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OculusStudios+Platform+Core+RichPresenceRuntimeInstance")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance {
+    for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -58,7 +52,8 @@ for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance {
 }
 #[cfg(feature = "cordl_class_OculusStudios+Platform+Core+RichPresenceRuntimeInstance")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance {
+    for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -72,22 +67,22 @@ for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance {
 }
 #[cfg(feature = "cordl_class_OculusStudios+Platform+Core+RichPresenceRuntimeInstance")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance {
+    for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OculusStudios+Platform+Core+RichPresenceRuntimeInstance")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance {
+    for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -101,7 +96,8 @@ for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance {
 }
 #[cfg(feature = "cordl_class_OculusStudios+Platform+Core+RichPresenceRuntimeInstance")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance {
+    for crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -118,72 +114,59 @@ impl crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance {
             crate::OculusStudios::Platform::Core::IRichPresenceDefinition,
         >,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        partyInfo: crate::System::Nullable_1<
-            crate::OculusStudios::Platform::Core::PartyInfo,
-        >,
+        partyInfo: crate::System::Nullable_1<crate::OculusStudios::Platform::Core::PartyInfo>,
         timestamp: crate::System::Nullable_1<
             crate::OculusStudios::Platform::Core::RichPresenceTimestamp,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::OculusStudios::Platform::Core::IRichPresenceDefinition,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::System::Nullable_1<
-                                crate::OculusStudios::Platform::Core::PartyInfo,
-                            >,
-                            crate::System::Nullable_1<
-                                crate::OculusStudios::Platform::Core::RichPresenceTimestamp,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::OculusStudios::Platform::Core::IRichPresenceDefinition,
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::System::Nullable_1<crate::OculusStudios::Platform::Core::PartyInfo>,
+                        crate::System::Nullable_1<
+                            crate::OculusStudios::Platform::Core::RichPresenceTimestamp,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (definition, state, partyInfo, timestamp))?
+            cordl_method_info.invoke_unchecked(self, (definition, state, partyInfo, timestamp))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_definition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::OculusStudios::Platform::Core::IRichPresenceDefinition,
-        >,
+        quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IRichPresenceDefinition>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::OculusStudios::Platform::Core::IRichPresenceDefinition,
-                        >,
-                        0usize,
-                    >("get_definition")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::OculusStudios::Platform::Core::IRichPresenceDefinition,
+                    >, 0usize>("get_definition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_definition", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_definition",
+                            0usize
                         )
                     })
             });
@@ -197,9 +180,10 @@ impl crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::OculusStudios::Platform::Core::PartyInfo>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -223,12 +207,12 @@ impl crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance {
     }
     pub fn get_state(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -243,34 +227,29 @@ impl crate::OculusStudios::Platform::Core::RichPresenceRuntimeInstance {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_timestamp(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<
-            crate::OculusStudios::Platform::Core::RichPresenceTimestamp,
-        >,
+        crate::System::Nullable_1<crate::OculusStudios::Platform::Core::RichPresenceTimestamp>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::System::Nullable_1<
-                            crate::OculusStudios::Platform::Core::RichPresenceTimestamp,
-                        >,
-                        0usize,
-                    >("get_timestamp")
+                    .find_method::<(), crate::System::Nullable_1<
+                        crate::OculusStudios::Platform::Core::RichPresenceTimestamp,
+                    >, 0usize>("get_timestamp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_timestamp", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_timestamp",
+                            0usize
                         )
                     })
             });

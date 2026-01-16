@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKVector3")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct SDKVector3 {
     pub x: f32,
     pub y: f32,
@@ -26,13 +26,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKVector3 {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKVector3")]
@@ -66,9 +63,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKVecto
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -99,12 +94,12 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::LIV::SDK::Unity::SDKV
 impl crate::LIV::SDK::Unity::SDKVector3 {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -119,171 +114,149 @@ impl crate::LIV::SDK::Unity::SDKVector3 {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_forward() -> quest_hook::libil2cpp::Result<
-        crate::LIV::SDK::Unity::SDKVector3,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_forward() -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::LIV::SDK::Unity::SDKVector3,
-                        0usize,
-                    >("get_forward")
+                    .find_static_method::<(), crate::LIV::SDK::Unity::SDKVector3, 0usize>(
+                        "get_forward",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_forward", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_one() -> quest_hook::libil2cpp::Result<
-        crate::LIV::SDK::Unity::SDKVector3,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::LIV::SDK::Unity::SDKVector3,
-                        0usize,
-                    >("get_one")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_one",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_forward",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_right() -> quest_hook::libil2cpp::Result<
-        crate::LIV::SDK::Unity::SDKVector3,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_one() -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::LIV::SDK::Unity::SDKVector3,
-                        0usize,
-                    >("get_right")
+                    .find_static_method::<(), crate::LIV::SDK::Unity::SDKVector3, 0usize>("get_one")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_right", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_up() -> quest_hook::libil2cpp::Result<
-        crate::LIV::SDK::Unity::SDKVector3,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::LIV::SDK::Unity::SDKVector3,
-                        0usize,
-                    >("get_up")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_up",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_one",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_zero() -> quest_hook::libil2cpp::Result<
-        crate::LIV::SDK::Unity::SDKVector3,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_right() -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::LIV::SDK::Unity::SDKVector3,
-                        0usize,
-                    >("get_zero")
+                    .find_static_method::<(), crate::LIV::SDK::Unity::SDKVector3, 0usize>(
+                        "get_right",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_zero", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_right",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_up() -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(), crate::LIV::SDK::Unity::SDKVector3, 0usize>("get_up")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_up",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_zero() -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(), crate::LIV::SDK::Unity::SDKVector3, 0usize>(
+                        "get_zero",
+                    )
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_zero",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Addition(
         lhs: crate::LIV::SDK::Unity::SDKVector3,
         rhs: crate::LIV::SDK::Unity::SDKVector3,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::LIV::SDK::Unity::SDKVector3,
-                            crate::LIV::SDK::Unity::SDKVector3,
-                        ),
+                    .find_static_method::<(
                         crate::LIV::SDK::Unity::SDKVector3,
-                        2usize,
-                    >("op_Addition")
+                        crate::LIV::SDK::Unity::SDKVector3,
+                    ), crate::LIV::SDK::Unity::SDKVector3, 2usize>("op_Addition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Addition", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Addition",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
-        };
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_SDKVector3_0(
         v: crate::LIV::SDK::Unity::SDKVector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::LIV::SDK::Unity::SDKVector3),
@@ -298,17 +271,17 @@ impl crate::LIV::SDK::Unity::SDKVector3 {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (v))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_Vector3_1(
         v: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector3),
@@ -323,47 +296,44 @@ impl crate::LIV::SDK::Unity::SDKVector3 {
                         )
                     })
             });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (v))?
-        };
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Multiply_SDKVector3_0(
         lhs: crate::LIV::SDK::Unity::SDKVector3,
         rhs: crate::LIV::SDK::Unity::SDKVector3,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::LIV::SDK::Unity::SDKVector3,
-                            crate::LIV::SDK::Unity::SDKVector3,
-                        ),
+                    .find_static_method::<(
                         crate::LIV::SDK::Unity::SDKVector3,
-                        2usize,
-                    >("op_Multiply")
+                        crate::LIV::SDK::Unity::SDKVector3,
+                    ), crate::LIV::SDK::Unity::SDKVector3, 2usize>("op_Multiply")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Multiply", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Multiply",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
-        };
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Multiply_f32_1(
         lhs: crate::LIV::SDK::Unity::SDKVector3,
         rhs: f32,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::LIV::SDK::Unity::SDKVector3, f32),
@@ -378,38 +348,36 @@ impl crate::LIV::SDK::Unity::SDKVector3 {
                         )
                     })
             });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
-        };
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Subtraction(
         lhs: crate::LIV::SDK::Unity::SDKVector3,
         rhs: crate::LIV::SDK::Unity::SDKVector3,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::LIV::SDK::Unity::SDKVector3,
-                            crate::LIV::SDK::Unity::SDKVector3,
-                        ),
+                    .find_static_method::<(
                         crate::LIV::SDK::Unity::SDKVector3,
-                        2usize,
-                    >("op_Subtraction")
+                        crate::LIV::SDK::Unity::SDKVector3,
+                    ), crate::LIV::SDK::Unity::SDKVector3, 2usize>(
+                        "op_Subtraction"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Subtraction", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Subtraction",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
-        };
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
 }

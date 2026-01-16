@@ -1,11 +1,10 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AllocateBinsPerBatch")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct AllocateBinsPerBatch {
     pub binningConfig: crate::UnityEngine::Rendering::BinningConfig,
-    pub drawBatches: crate::Unity::Collections::NativeList_1<
-        crate::UnityEngine::Rendering::DrawBatch,
-    >,
+    pub drawBatches:
+        crate::Unity::Collections::NativeList_1<crate::UnityEngine::Rendering::DrawBatch>,
     pub drawInstanceIndices: crate::Unity::Collections::NativeArray_1<i32>,
     pub instanceData: crate::UnityEngine::Rendering::CPUInstanceData_ReadOnly,
     pub rendererVisibilityMasks: crate::Unity::Collections::NativeArray_1<u8>,
@@ -18,8 +17,7 @@ pub struct AllocateBinsPerBatch {
     pub splitDebugCounters: crate::Unity::Collections::NativeArray_1<i32>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AllocateBinsPerBatch")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::AllocateBinsPerBatch {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::AllocateBinsPerBatch {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -38,18 +36,16 @@ for crate::UnityEngine::Rendering::AllocateBinsPerBatch {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AllocateBinsPerBatch")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::AllocateBinsPerBatch {
+    for crate::UnityEngine::Rendering::AllocateBinsPerBatch
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -60,7 +56,8 @@ for crate::UnityEngine::Rendering::AllocateBinsPerBatch {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AllocateBinsPerBatch")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::AllocateBinsPerBatch {
+    for crate::UnityEngine::Rendering::AllocateBinsPerBatch
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -74,22 +71,20 @@ for crate::UnityEngine::Rendering::AllocateBinsPerBatch {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AllocateBinsPerBatch")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::AllocateBinsPerBatch {
+    for crate::UnityEngine::Rendering::AllocateBinsPerBatch
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AllocateBinsPerBatch")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::AllocateBinsPerBatch {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::AllocateBinsPerBatch {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -103,7 +98,8 @@ for crate::UnityEngine::Rendering::AllocateBinsPerBatch {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AllocateBinsPerBatch")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::AllocateBinsPerBatch {
+    for crate::UnityEngine::Rendering::AllocateBinsPerBatch
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -118,57 +114,58 @@ impl crate::UnityEngine::Rendering::AllocateBinsPerBatch {
         &mut self,
         batchIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (batchIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (batchIndex))? };
         Ok(__cordl_ret.into())
     }
-    pub fn IsInstanceFlipped(
-        &mut self,
-        rendererIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn IsInstanceFlipped(&mut self, rendererIndex: i32) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("IsInstanceFlipped")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsInstanceFlipped", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsInstanceFlipped",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (rendererIndex))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (rendererIndex))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+AllocateBinsPerBatch")]
 impl AsRef<crate::Unity::Jobs::IJobParallelFor>
-for crate::UnityEngine::Rendering::AllocateBinsPerBatch {
+    for crate::UnityEngine::Rendering::AllocateBinsPerBatch
+{
     fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+AllocateBinsPerBatch")]
 impl AsMut<crate::Unity::Jobs::IJobParallelFor>
-for crate::UnityEngine::Rendering::AllocateBinsPerBatch {
+    for crate::UnityEngine::Rendering::AllocateBinsPerBatch
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }

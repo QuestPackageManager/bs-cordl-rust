@@ -1,13 +1,12 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValueHandle")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct StyleValueHandle {
     pub m_ValueType: crate::UnityEngine::UIElements::StyleValueType,
     pub valueIndex: i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValueHandle")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::StyleValueHandle {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::StyleValueHandle {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -26,18 +25,14 @@ for crate::UnityEngine::UIElements::StyleValueHandle {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValueHandle")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::StyleValueHandle {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::StyleValueHandle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,8 +42,7 @@ for crate::UnityEngine::UIElements::StyleValueHandle {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValueHandle")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::StyleValueHandle {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements::StyleValueHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -61,23 +55,19 @@ for crate::UnityEngine::UIElements::StyleValueHandle {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValueHandle")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::StyleValueHandle {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::StyleValueHandle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValueHandle")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::StyleValueHandle {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::StyleValueHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -91,7 +81,8 @@ for crate::UnityEngine::UIElements::StyleValueHandle {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValueHandle")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::StyleValueHandle {
+    for crate::UnityEngine::UIElements::StyleValueHandle
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -105,35 +96,35 @@ impl crate::UnityEngine::UIElements::StyleValueHandle {
     pub fn get_valueType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleValueType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::UIElements::StyleValueType,
-                        0usize,
-                    >("get_valueType")
+                    .find_method::<(), crate::UnityEngine::UIElements::StyleValueType, 0usize>(
+                        "get_valueType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_valueType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_valueType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleValueType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleValueType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_valueType(
         &mut self,
         value: crate::UnityEngine::UIElements::StyleValueType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::StyleValueType),
@@ -148,9 +139,8 @@ impl crate::UnityEngine::UIElements::StyleValueHandle {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }

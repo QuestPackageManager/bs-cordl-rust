@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::FastBitCon
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
     const CLASS_NAME: &'static str = "FastBitConverter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,7 +40,8 @@ impl std::ops::DerefMut for crate::LiteNetLib::Utils::FastBitConverter {
 #[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
 impl crate::LiteNetLib::Utils::FastBitConverter {
     #[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
-    pub type ConverterHelperDouble = crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble;
+    pub type ConverterHelperDouble =
+        crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble;
     #[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
     pub type ConverterHelperFloat = crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat;
     pub fn GetBytes_f32_1(
@@ -47,32 +49,27 @@ impl crate::LiteNetLib::Utils::FastBitConverter {
         startIndex: i32,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("GetBytes")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("GetBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBytes", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBytes",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_f64_0(
@@ -80,32 +77,27 @@ impl crate::LiteNetLib::Utils::FastBitConverter {
         startIndex: i32,
         value: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            f64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("GetBytes")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        f64,
+                    ), quest_hook::libil2cpp::Void, 3usize>("GetBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBytes", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBytes",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_i16_2(
@@ -113,32 +105,27 @@ impl crate::LiteNetLib::Utils::FastBitConverter {
         startIndex: i32,
         value: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i16,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("GetBytes")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i16,
+                    ), quest_hook::libil2cpp::Void, 3usize>("GetBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBytes", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBytes",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_i32_4(
@@ -146,32 +133,27 @@ impl crate::LiteNetLib::Utils::FastBitConverter {
         startIndex: i32,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("GetBytes")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("GetBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBytes", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBytes",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_i64_6(
@@ -179,32 +161,27 @@ impl crate::LiteNetLib::Utils::FastBitConverter {
         startIndex: i32,
         value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("GetBytes")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i64,
+                    ), quest_hook::libil2cpp::Void, 3usize>("GetBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBytes", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBytes",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_u16_3(
@@ -212,32 +189,27 @@ impl crate::LiteNetLib::Utils::FastBitConverter {
         startIndex: i32,
         value: u16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            u16,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("GetBytes")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        u16,
+                    ), quest_hook::libil2cpp::Void, 3usize>("GetBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBytes", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBytes",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_u32_5(
@@ -245,32 +217,27 @@ impl crate::LiteNetLib::Utils::FastBitConverter {
         startIndex: i32,
         value: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            u32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("GetBytes")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        u32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("GetBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBytes", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBytes",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_u64_7(
@@ -278,32 +245,27 @@ impl crate::LiteNetLib::Utils::FastBitConverter {
         startIndex: i32,
         value: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            u64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("GetBytes")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        u64,
+                    ), quest_hook::libil2cpp::Void, 3usize>("GetBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBytes", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBytes",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (bytes, startIndex, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteLittleEndian_i16_2(
@@ -311,32 +273,27 @@ impl crate::LiteNetLib::Utils::FastBitConverter {
         offset: i32,
         data: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i16,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("WriteLittleEndian")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i16,
+                    ), quest_hook::libil2cpp::Void, 3usize>("WriteLittleEndian")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteLittleEndian", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteLittleEndian",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (buffer, offset, data))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (buffer, offset, data))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteLittleEndian_i32_1(
@@ -344,32 +301,27 @@ impl crate::LiteNetLib::Utils::FastBitConverter {
         offset: i32,
         data: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("WriteLittleEndian")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("WriteLittleEndian")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteLittleEndian", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteLittleEndian",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (buffer, offset, data))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (buffer, offset, data))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteLittleEndian_u64_0(
@@ -377,32 +329,27 @@ impl crate::LiteNetLib::Utils::FastBitConverter {
         offset: i32,
         data: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            u64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("WriteLittleEndian")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        u64,
+                    ), quest_hook::libil2cpp::Void, 3usize>("WriteLittleEndian")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteLittleEndian", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteLittleEndian",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (buffer, offset, data))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (buffer, offset, data))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -416,14 +363,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::FastBitConv
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct FastBitConverter_ConverterHelperDouble {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
+    for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
@@ -442,18 +390,16 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
+    for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -464,7 +410,8 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
+    for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -478,22 +425,22 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
+    for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
+    for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -507,7 +454,8 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
+    for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -519,14 +467,15 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
 #[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 impl crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {}
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct FastBitConverter_ConverterHelperFloat {
     padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
+    for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
@@ -545,18 +494,16 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
+    for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -567,7 +514,8 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
+    for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -581,22 +529,22 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
+    for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
+    for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -610,7 +558,8 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
+    for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

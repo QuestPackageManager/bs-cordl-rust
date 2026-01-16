@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ChangeUsageMsg_InputRemoting_Data {
     pub deviceId: i32,
     pub usages: quest_hook::libil2cpp::Gc<
@@ -11,7 +11,8 @@ pub struct ChangeUsageMsg_InputRemoting_Data {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
@@ -30,18 +31,16 @@ for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -52,7 +51,8 @@ for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -66,22 +66,22 @@ for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -95,7 +95,8 @@ for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -112,14 +113,10 @@ impl crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {}
 pub struct InputRemoting {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Flags: crate::UnityEngine::InputSystem::InputRemoting_Flags,
-    pub m_LocalManager: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputManager,
-    >,
+    pub m_LocalManager: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputManager>,
     pub m_Subscribers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::InputSystem::InputRemoting_Subscriber,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting_Subscriber>,
         >,
     >,
     pub m_Senders: quest_hook::libil2cpp::Gc<
@@ -129,14 +126,14 @@ pub struct InputRemoting {
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::InputRemoting {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
     const CLASS_NAME: &'static str = "InputRemoting";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -195,12 +192,12 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
     pub type Subscriber = crate::UnityEngine::InputSystem::InputRemoting_Subscriber;
     pub fn BuildLayoutNamespace(
         senderId: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::Utilities::InternedString>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
@@ -215,21 +212,22 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = unsafe {
-            cordl_method_info.invoke_unchecked((), (senderId))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString =
+            unsafe { cordl_method_info.invoke_unchecked((), (senderId))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeserializeData<TData>(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<TData>
     where
-        TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TData: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -246,9 +244,7 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
                         )
                     })
             });
-        let __cordl_ret: TData = unsafe {
-            cordl_method_info.invoke_unchecked((), (data))?
-        };
+        let __cordl_ret: TData = unsafe { cordl_method_info.invoke_unchecked((), (data))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindLocalDeviceId(
@@ -256,54 +252,53 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         remoteDeviceId: i32,
         senderIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), i32, 2usize>("FindLocalDeviceId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindLocalDeviceId", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindLocalDeviceId",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (remoteDeviceId, senderIndex))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (remoteDeviceId, senderIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindOrCreateSenderRecord(
         &mut self,
         senderId: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("FindOrCreateSenderRecord")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindOrCreateSenderRecord", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindOrCreateSenderRecord",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (senderId))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (senderId))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        manager: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputManager,
-        >,
+        manager: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputManager>,
         startSendingOnConnect: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (manager, startSendingOnConnect))?;
         Ok(__cordl_object.into())
@@ -312,35 +307,35 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         &mut self,
         participantId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("RemoveRemoteDevices")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "RemoveRemoteDevices",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RemoveRemoteDevices", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RemoveRemoteDevices",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (participantId))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (participantId))? };
         Ok(__cordl_ret.into())
     }
     pub fn Send(
         &mut self,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputRemoting_Message),
@@ -355,68 +350,62 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (msg))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (msg))? };
         Ok(__cordl_ret.into())
     }
-    pub fn SendAllDevices(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn SendAllDevices(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("SendAllDevices")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SendAllDevices")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendAllDevices", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendAllDevices",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SendAllGeneratedLayouts(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("SendAllGeneratedLayouts")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "SendAllGeneratedLayouts",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendAllGeneratedLayouts", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendAllGeneratedLayouts",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SendDevice(
         &mut self,
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -433,9 +422,8 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (device))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (device))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendDeviceChange(
@@ -443,31 +431,26 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         change: crate::UnityEngine::InputSystem::InputDeviceChange,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputDevice,
-                            >,
-                            crate::UnityEngine::InputSystem::InputDeviceChange,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SendDeviceChange")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                        crate::UnityEngine::InputSystem::InputDeviceChange,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SendDeviceChange")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendDeviceChange", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendDeviceChange",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (device, change))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (device, change))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendEvent(
@@ -475,65 +458,58 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputDevice,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SendEvent")
+                    .find_method::<(
+                        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SendEvent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendEvent", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendEvent",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (eventPtr, device))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (eventPtr, device))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendInitialMessages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("SendInitialMessages")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SendInitialMessages")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendInitialMessages", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendInitialMessages",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SendLayout(
         &mut self,
         layoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -548,9 +524,8 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (layoutName))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (layoutName))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendLayoutChange(
@@ -558,31 +533,26 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         layout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         change: crate::UnityEngine::InputSystem::InputControlLayoutChange,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::UnityEngine::InputSystem::InputControlLayoutChange,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SendLayoutChange")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::UnityEngine::InputSystem::InputControlLayoutChange,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SendLayoutChange")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendLayoutChange", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendLayoutChange",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (layout, change))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (layout, change))? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializeData<TData>(
@@ -591,12 +561,14 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     >
     where
-        TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TData: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (TData),
@@ -613,101 +585,86 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (data))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (data))? };
         Ok(__cordl_ret.into())
     }
-    pub fn StartSending(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn StartSending(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("StartSending")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("StartSending")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StartSending", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "StartSending",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn StopSending(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn StopSending(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("StopSending")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("StopSending")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StopSending", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "StopSending",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Subscribe(
         &mut self,
         observer: quest_hook::libil2cpp::Gc<
-            crate::System::IObserver_1<
-                crate::UnityEngine::InputSystem::InputRemoting_Message,
-            >,
+            crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IDisposable>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::IObserver_1<
-                                crate::UnityEngine::InputSystem::InputRemoting_Message,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
-                        1usize,
-                    >("Subscribe")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::IObserver_1<
+                            crate::UnityEngine::InputSystem::InputRemoting_Message,
+                        >,
+                    >), quest_hook::libil2cpp::Gc<crate::System::IDisposable>, 1usize>(
+                        "Subscribe"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Subscribe", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Subscribe",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (observer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (observer))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnCompleted(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -727,16 +684,16 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnError(
         &mut self,
         error: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -756,16 +713,16 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (error))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnNext(
         &mut self,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -785,9 +742,8 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (msg))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetDeviceByRemoteId(
@@ -797,9 +753,10 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
@@ -816,45 +773,35 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputDevice,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (remoteDeviceId, senderIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (remoteDeviceId, senderIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        manager: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputManager,
-        >,
+        manager: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputManager>,
         startSendingOnConnect: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputManager,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputManager>,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (manager, startSendingOnConnect))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (manager, startSendingOnConnect))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_manager(
@@ -862,9 +809,10 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputManager>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -881,22 +829,23 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputManager,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputManager> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_sending(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_sending")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_sending", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_sending",
+                            0usize
                         )
                     })
             });
@@ -907,32 +856,28 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_sending")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_sending")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_sending", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_sending",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputRemoting {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::InputRemoting {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -941,50 +886,44 @@ for crate::UnityEngine::InputSystem::InputRemoting {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
-impl AsRef<
-    crate::System::IObservable_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
-> for crate::UnityEngine::InputSystem::InputRemoting {
+impl AsRef<crate::System::IObservable_1<crate::UnityEngine::InputSystem::InputRemoting_Message>>
+    for crate::UnityEngine::InputSystem::InputRemoting
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IObservable_1<
-        crate::UnityEngine::InputSystem::InputRemoting_Message,
-    > {
+    ) -> &crate::System::IObservable_1<crate::UnityEngine::InputSystem::InputRemoting_Message> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
-impl AsMut<
-    crate::System::IObservable_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
-> for crate::UnityEngine::InputSystem::InputRemoting {
+impl AsMut<crate::System::IObservable_1<crate::UnityEngine::InputSystem::InputRemoting_Message>>
+    for crate::UnityEngine::InputSystem::InputRemoting
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IObservable_1<
-        crate::UnityEngine::InputSystem::InputRemoting_Message,
-    > {
+    ) -> &mut crate::System::IObservable_1<crate::UnityEngine::InputSystem::InputRemoting_Message>
+    {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
-impl AsRef<
-    crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
-> for crate::UnityEngine::InputSystem::InputRemoting {
+impl AsRef<crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemoting_Message>>
+    for crate::UnityEngine::InputSystem::InputRemoting
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IObserver_1<
-        crate::UnityEngine::InputSystem::InputRemoting_Message,
-    > {
+    ) -> &crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemoting_Message> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
-impl AsMut<
-    crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
-> for crate::UnityEngine::InputSystem::InputRemoting {
+impl AsMut<crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemoting_Message>>
+    for crate::UnityEngine::InputSystem::InputRemoting
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IObserver_1<
-        crate::UnityEngine::InputSystem::InputRemoting_Message,
-    > {
+    ) -> &mut crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemoting_Message>
+    {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -996,13 +935,15 @@ pub struct InputRemoting_ChangeUsageMsg {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
     const CLASS_NAME: &'static str = "InputRemoting/ChangeUsageMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1022,8 +963,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_ChangeUs
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
-impl std::ops::DerefMut
-for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
+impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1034,12 +974,11 @@ impl crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
     pub type Data = crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data;
     pub fn Create(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputRemoting_Message,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputRemoting_Message> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1056,48 +995,41 @@ impl crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = unsafe {
-            cordl_method_info.invoke_unchecked((), (device))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message =
+            unsafe { cordl_method_info.invoke_unchecked((), (device))? };
         Ok(__cordl_ret.into())
     }
     pub fn Process(
-        receiver: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputRemoting,
-        >,
+        receiver: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputRemoting,
-                            >,
-                            crate::UnityEngine::InputSystem::InputRemoting_Message,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Process")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
+                        crate::UnityEngine::InputSystem::InputRemoting_Message,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Process")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Process",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Process",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (receiver, msg))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (receiver, msg))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1113,13 +1045,15 @@ pub struct InputRemoting_ConnectMsg {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
     const CLASS_NAME: &'static str = "InputRemoting/ConnectMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1147,13 +1081,12 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_Conne
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
 impl crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
     pub fn Process(
-        receiver: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputRemoting,
-        >,
+        receiver: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1170,15 +1103,15 @@ impl crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (receiver))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (receiver))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1194,13 +1127,15 @@ pub struct InputRemoting_DisconnectMsg {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
     const CLASS_NAME: &'static str = "InputRemoting/DisconnectMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1220,8 +1155,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_Disconne
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
-impl std::ops::DerefMut
-for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
+impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1229,42 +1163,36 @@ for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
 impl crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
     pub fn Process(
-        receiver: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputRemoting,
-        >,
+        receiver: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputRemoting,
-                            >,
-                            crate::UnityEngine::InputSystem::InputRemoting_Message,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Process")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
+                        crate::UnityEngine::InputSystem::InputRemoting_Message,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Process")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Process",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Process",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (receiver, msg))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (receiver, msg))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1273,16 +1201,15 @@ for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Flags")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum InputRemoting_Flags {
     #[default]
     Sending = 1i32,
     StartSendingOnConnect = 2i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Flags")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_Flags {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::InputRemoting_Flags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
@@ -1301,18 +1228,16 @@ for crate::UnityEngine::InputSystem::InputRemoting_Flags {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::InputRemoting_Flags {
+    for crate::UnityEngine::InputSystem::InputRemoting_Flags
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1323,7 +1248,8 @@ for crate::UnityEngine::InputSystem::InputRemoting_Flags {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::InputRemoting_Flags {
+    for crate::UnityEngine::InputSystem::InputRemoting_Flags
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1337,22 +1263,20 @@ for crate::UnityEngine::InputSystem::InputRemoting_Flags {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::InputRemoting_Flags {
+    for crate::UnityEngine::InputSystem::InputRemoting_Flags
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Flags")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::InputRemoting_Flags {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::InputSystem::InputRemoting_Flags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1365,16 +1289,15 @@ for crate::UnityEngine::InputSystem::InputRemoting_Flags {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Message")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct InputRemoting_Message {
     pub participantId: i32,
     pub _cordl_type: crate::UnityEngine::InputSystem::InputRemoting_MessageType,
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Message")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_Message {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::InputRemoting_Message {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
@@ -1393,18 +1316,16 @@ for crate::UnityEngine::InputSystem::InputRemoting_Message {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Message")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::InputRemoting_Message {
+    for crate::UnityEngine::InputSystem::InputRemoting_Message
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1415,7 +1336,8 @@ for crate::UnityEngine::InputSystem::InputRemoting_Message {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Message")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::InputRemoting_Message {
+    for crate::UnityEngine::InputSystem::InputRemoting_Message
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1429,22 +1351,22 @@ for crate::UnityEngine::InputSystem::InputRemoting_Message {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Message")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::InputRemoting_Message {
+    for crate::UnityEngine::InputSystem::InputRemoting_Message
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Message")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::InputRemoting_Message {
+    for crate::UnityEngine::InputSystem::InputRemoting_Message
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1458,7 +1380,8 @@ for crate::UnityEngine::InputSystem::InputRemoting_Message {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Message")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::InputRemoting_Message {
+    for crate::UnityEngine::InputSystem::InputRemoting_Message
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1470,8 +1393,8 @@ for crate::UnityEngine::InputSystem::InputRemoting_Message {
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
 impl crate::UnityEngine::InputSystem::InputRemoting_Message {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+MessageType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum InputRemoting_MessageType {
     #[default]
     ChangeUsages = 7i32,
@@ -1487,7 +1410,8 @@ pub enum InputRemoting_MessageType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+MessageType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
+    for crate::UnityEngine::InputSystem::InputRemoting_MessageType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
@@ -1506,18 +1430,16 @@ for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+MessageType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
+    for crate::UnityEngine::InputSystem::InputRemoting_MessageType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1528,7 +1450,8 @@ for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+MessageType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
+    for crate::UnityEngine::InputSystem::InputRemoting_MessageType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1542,22 +1465,22 @@ for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+MessageType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
+    for crate::UnityEngine::InputSystem::InputRemoting_MessageType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+MessageType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
+    for crate::UnityEngine::InputSystem::InputRemoting_MessageType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1577,13 +1500,15 @@ pub struct InputRemoting_NewDeviceMsg {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
     const CLASS_NAME: &'static str = "InputRemoting/NewDeviceMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1614,12 +1539,11 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
     pub type Data = crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data;
     pub fn Create(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputRemoting_Message,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputRemoting_Message> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1636,48 +1560,41 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = unsafe {
-            cordl_method_info.invoke_unchecked((), (device))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message =
+            unsafe { cordl_method_info.invoke_unchecked((), (device))? };
         Ok(__cordl_ret.into())
     }
     pub fn Process(
-        receiver: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputRemoting,
-        >,
+        receiver: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputRemoting,
-                            >,
-                            crate::UnityEngine::InputSystem::InputRemoting_Message,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Process")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
+                        crate::UnityEngine::InputSystem::InputRemoting_Message,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Process")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Process",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Process",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (receiver, msg))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (receiver, msg))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1693,13 +1610,15 @@ pub struct InputRemoting_NewEventsMsg {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
     const CLASS_NAME: &'static str = "InputRemoting/NewEventsMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1729,77 +1648,66 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
     pub fn Create(
         events: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         eventCount: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputRemoting_Message,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputRemoting_Message> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                        ),
-                        crate::UnityEngine::InputSystem::InputRemoting_Message,
-                        2usize,
-                    >("Create")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                    ), crate::UnityEngine::InputSystem::InputRemoting_Message, 2usize>(
+                        "Create"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Create",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = unsafe {
-            cordl_method_info.invoke_unchecked((), (events, eventCount))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message =
+            unsafe { cordl_method_info.invoke_unchecked((), (events, eventCount))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateResetEvent(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         isHardReset: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputRemoting_Message,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputRemoting_Message> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputDevice,
-                            >,
-                            bool,
-                        ),
-                        crate::UnityEngine::InputSystem::InputRemoting_Message,
-                        2usize,
-                    >("CreateResetEvent")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                        bool,
+                    ), crate::UnityEngine::InputSystem::InputRemoting_Message, 2usize>(
+                        "CreateResetEvent",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateResetEvent", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateResetEvent",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = unsafe {
-            cordl_method_info.invoke_unchecked((), (device, isHardReset))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message =
+            unsafe { cordl_method_info.invoke_unchecked((), (device, isHardReset))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateStateEvent(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputRemoting_Message,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputRemoting_Message> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1816,48 +1724,41 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = unsafe {
-            cordl_method_info.invoke_unchecked((), (device))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message =
+            unsafe { cordl_method_info.invoke_unchecked((), (device))? };
         Ok(__cordl_ret.into())
     }
     pub fn Process(
-        receiver: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputRemoting,
-        >,
+        receiver: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputRemoting,
-                            >,
-                            crate::UnityEngine::InputSystem::InputRemoting_Message,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Process")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
+                        crate::UnityEngine::InputSystem::InputRemoting_Message,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Process")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Process",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Process",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (receiver, msg))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (receiver, msg))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1873,13 +1774,15 @@ pub struct InputRemoting_NewLayoutMsg {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
     const CLASS_NAME: &'static str = "InputRemoting/NewLayoutMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1909,35 +1812,27 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
     pub type Data = crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data;
     pub fn Create(
-        sender: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputRemoting,
-        >,
+        sender: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
         layoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputRemoting,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        crate::System::Nullable_1<
-                            crate::UnityEngine::InputSystem::InputRemoting_Message,
-                        >,
-                        2usize,
-                    >("Create")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::System::Nullable_1<
+                        crate::UnityEngine::InputSystem::InputRemoting_Message,
+                    >, 2usize>("Create")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Create",
                             2usize
                         )
                     })
@@ -1948,42 +1843,36 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
         Ok(__cordl_ret.into())
     }
     pub fn Process(
-        receiver: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputRemoting,
-        >,
+        receiver: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputRemoting,
-                            >,
-                            crate::UnityEngine::InputSystem::InputRemoting_Message,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Process")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
+                        crate::UnityEngine::InputSystem::InputRemoting_Message,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Process")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Process",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Process",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (receiver, msg))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (receiver, msg))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1992,8 +1881,8 @@ for crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct InputRemoting_RemoteInputDevice {
     pub remoteId: i32,
     pub localId: i32,
@@ -2001,7 +1890,8 @@ pub struct InputRemoting_RemoteInputDevice {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
+    for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
@@ -2020,18 +1910,16 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
+    for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2042,7 +1930,8 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
+    for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2056,22 +1945,22 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
+    for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
+    for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2085,7 +1974,8 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
+    for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2097,8 +1987,8 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 impl crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteSender")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct InputRemoting_RemoteSender {
     pub senderId: i32,
     pub layouts: quest_hook::libil2cpp::Gc<
@@ -2114,7 +2004,8 @@ pub struct InputRemoting_RemoteSender {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteSender")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
+    for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
@@ -2133,18 +2024,16 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteSender")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
+    for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2155,7 +2044,8 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteSender")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
+    for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2169,22 +2059,22 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteSender")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
+    for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteSender")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
+    for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2198,7 +2088,8 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteSender")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
+    for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2217,13 +2108,15 @@ pub struct InputRemoting_RemoveDeviceMsg {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
     const CLASS_NAME: &'static str = "InputRemoting/RemoveDeviceMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2243,8 +2136,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_RemoveDe
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
-impl std::ops::DerefMut
-for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
+impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2253,12 +2145,11 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
 impl crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
     pub fn Create(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputRemoting_Message,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputRemoting_Message> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -2275,48 +2166,41 @@ impl crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = unsafe {
-            cordl_method_info.invoke_unchecked((), (device))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message =
+            unsafe { cordl_method_info.invoke_unchecked((), (device))? };
         Ok(__cordl_ret.into())
     }
     pub fn Process(
-        receiver: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputRemoting,
-        >,
+        receiver: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputRemoting,
-                            >,
-                            crate::UnityEngine::InputSystem::InputRemoting_Message,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Process")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
+                        crate::UnityEngine::InputSystem::InputRemoting_Message,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Process")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Process",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Process",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (receiver, msg))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (receiver, msg))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2332,13 +2216,15 @@ pub struct InputRemoting_StartSendingMsg {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
     const CLASS_NAME: &'static str = "InputRemoting/StartSendingMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2358,8 +2244,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_StartSen
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
-impl std::ops::DerefMut
-for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
+impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2367,13 +2252,12 @@ for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
 impl crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
     pub fn Process(
-        receiver: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputRemoting,
-        >,
+        receiver: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -2390,15 +2274,15 @@ impl crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (receiver))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (receiver))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2414,13 +2298,15 @@ pub struct InputRemoting_StopSendingMsg {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
     const CLASS_NAME: &'static str = "InputRemoting/StopSendingMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2440,8 +2326,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_StopSend
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
-impl std::ops::DerefMut
-for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
+impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2449,13 +2334,12 @@ for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
 impl crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
     pub fn Process(
-        receiver: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputRemoting,
-        >,
+        receiver: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -2472,15 +2356,15 @@ impl crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (receiver))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (receiver))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
+    for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2495,20 +2379,20 @@ pub struct InputRemoting_Subscriber {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
     pub observer: quest_hook::libil2cpp::Gc<
-        crate::System::IObserver_1<
-            crate::UnityEngine::InputSystem::InputRemoting_Message,
-        >,
+        crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Subscriber")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
+    for crate::UnityEngine::InputSystem::InputRemoting_Subscriber
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
     const CLASS_NAME: &'static str = "InputRemoting/Subscriber";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2535,59 +2419,58 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_Subsc
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
 impl crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Subscriber")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
+    for crate::UnityEngine::InputSystem::InputRemoting_Subscriber
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2597,21 +2480,23 @@ for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
+    for crate::UnityEngine::InputSystem::InputRemoting_Subscriber
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
+    for crate::UnityEngine::InputSystem::InputRemoting_Subscriber
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct NewDeviceMsg_InputRemoting_Data {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub layout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2625,7 +2510,8 @@ pub struct NewDeviceMsg_InputRemoting_Data {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
@@ -2644,18 +2530,16 @@ for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2666,7 +2550,8 @@ for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2680,22 +2565,22 @@ for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2709,7 +2594,8 @@ for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2721,8 +2607,8 @@ for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 impl crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct NewLayoutMsg_InputRemoting_Data {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub layoutJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2730,7 +2616,8 @@ pub struct NewLayoutMsg_InputRemoting_Data {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
@@ -2749,18 +2636,16 @@ for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2771,7 +2656,8 @@ for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2785,22 +2671,22 @@ for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2814,7 +2700,8 @@ for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
+    for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

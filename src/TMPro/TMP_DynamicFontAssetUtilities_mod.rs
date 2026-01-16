@@ -23,7 +23,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_DynamicFontAssetUt
     const NAMESPACE: &'static str = "TMPro";
     const CLASS_NAME: &'static str = "TMP_DynamicFontAssetUtilities";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -55,31 +56,30 @@ impl crate::TMPro::TMP_DynamicFontAssetUtilities {
     pub fn InitializeSystemFontReferenceCache(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("InitializeSystemFontReferenceCache")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "InitializeSystemFontReferenceCache",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InitializeSystemFontReferenceCache", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InitializeSystemFontReferenceCache",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -92,36 +92,29 @@ impl crate::TMPro::TMP_DynamicFontAssetUtilities {
             crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("TryGetSystemFontReferenceInternal")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference,
+                        >,
+                    ), bool, 3usize>("TryGetSystemFontReferenceInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetSystemFontReferenceInternal", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetSystemFontReferenceInternal",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (familyName, styleName, fontRef))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (familyName, styleName, fontRef))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetSystemFontReference_ByRefMut0(
@@ -130,33 +123,28 @@ impl crate::TMPro::TMP_DynamicFontAssetUtilities {
             crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryGetSystemFontReference")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference,
+                        >,
+                    ), bool, 2usize>("TryGetSystemFontReference")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetSystemFontReference", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetSystemFontReference",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (familyName, fontRef))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (familyName, fontRef))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetSystemFontReference_Il2CppString_ByRefMut1(
@@ -166,57 +154,49 @@ impl crate::TMPro::TMP_DynamicFontAssetUtilities {
             crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("TryGetSystemFontReference")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference,
+                        >,
+                    ), bool, 3usize>("TryGetSystemFontReference")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetSystemFontReference", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetSystemFontReference",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (familyName, styleName, fontRef))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (familyName, styleName, fontRef))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -230,8 +210,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_DynamicFontAssetUti
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_DynamicFontAssetUtilities+FontReference")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TMP_DynamicFontAssetUtilities_FontReference {
     pub familyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub styleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -241,7 +221,8 @@ pub struct TMP_DynamicFontAssetUtilities_FontReference {
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_DynamicFontAssetUtilities+FontReference")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference {
+    for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro";
@@ -260,18 +241,16 @@ for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_DynamicFontAssetUtilities+FontReference")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference {
+    for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -282,7 +261,8 @@ for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference {
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_DynamicFontAssetUtilities+FontReference")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference {
+    for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -296,22 +276,22 @@ for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference {
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_DynamicFontAssetUtilities+FontReference")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference {
+    for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_DynamicFontAssetUtilities+FontReference")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference {
+    for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -325,7 +305,8 @@ for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference {
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_DynamicFontAssetUtilities+FontReference")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference {
+    for crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -342,34 +323,27 @@ impl crate::TMPro::TMP_DynamicFontAssetUtilities_FontReference {
         faceNameAndStyle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (fontFilePath, faceNameAndStyle, index))?
+            cordl_method_info.invoke_unchecked(self, (fontFilePath, faceNameAndStyle, index))?
         };
         Ok(__cordl_ret.into())
     }

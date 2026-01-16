@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction+ButtonClickMode"
 )]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ButtonClickAction_ControllerButtonsMapper_ButtonClickMode {
     #[default]
     OnButton = 2i32,
@@ -13,7 +13,8 @@ pub enum ButtonClickAction_ControllerButtonsMapper_ButtonClickMode {
     feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction+ButtonClickMode"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode {
+    for crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Meta.XR.BuildingBlocks";
@@ -32,20 +33,18 @@ for crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_B
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction+ButtonClickMode"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode {
+    for crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -58,7 +57,8 @@ for crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_B
     feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction+ButtonClickMode"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode {
+    for crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -74,16 +74,15 @@ for crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_B
     feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction+ButtonClickMode"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode {
+    for crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -91,7 +90,8 @@ for crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_B
     feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction+ButtonClickMode"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode {
+    for crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -116,13 +116,15 @@ pub struct ControllerButtonsMapper {
 }
 #[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper {
+    for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Meta.XR.BuildingBlocks";
     const CLASS_NAME: &'static str = "ControllerButtonsMapper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -152,11 +154,13 @@ impl crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper {
     pub const UseLegacyInputSystem: bool = true;
     pub const UseNewInputSystem: bool = true;
     #[cfg(feature = "Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction")]
-    pub type ButtonClickAction = crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction;
+    pub type ButtonClickAction =
+        crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction;
     pub fn IsActionTriggered(
         buttonClickAction: crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -173,16 +177,16 @@ impl crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (buttonClickAction))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (buttonClickAction))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsLegacyInputActionTriggered(
         buttonMode: crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode,
         button: crate::GlobalNamespace::OVRInput_Button,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -202,15 +206,15 @@ impl crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (buttonMode, button))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (buttonMode, button))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNewInputSystemActionTriggered(
         buttonClickAction: crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -227,100 +231,95 @@ impl crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (buttonClickAction))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (buttonClickAction))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDisable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDisable(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDisable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDisable",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnEnable(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnEnable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnEnable",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Update(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Update",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ButtonClickActions(
@@ -332,7 +331,8 @@ impl crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -368,7 +368,8 @@ impl crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -389,15 +390,15 @@ impl crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper {
+    for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -405,18 +406,16 @@ for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ControllerButtonsMapper_ButtonClickAction {
     pub Title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Button: crate::GlobalNamespace::OVRInput_Button,
-    pub ButtonMode: crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode,
-    pub InputActionReference: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputActionReference,
-    >,
+    pub ButtonMode:
+        crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode,
+    pub InputActionReference:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
     pub CallbackWithContext: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Events::UnityEvent_1<
             crate::UnityEngine::InputSystem::InputAction_CallbackContext,
@@ -424,11 +423,10 @@ pub struct ControllerButtonsMapper_ButtonClickAction {
     >,
     pub Callback: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction {
+    for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Meta.XR.BuildingBlocks";
@@ -447,20 +445,16 @@ for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction {
+    for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -469,11 +463,10 @@ for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction {
+    for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -485,28 +478,24 @@ for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction {
+    for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction {
+    for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -518,11 +507,10 @@ for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction {
+    for crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -536,14 +524,16 @@ impl crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction 
     #[cfg(
         feature = "Meta+XR+BuildingBlocks+ControllerButtonsMapper+ButtonClickAction+ButtonClickMode"
     )]
-    pub type ButtonClickMode = crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode;
+    pub type ButtonClickMode =
+        crate::Meta::XR::BuildingBlocks::ButtonClickAction_ControllerButtonsMapper_ButtonClickMode;
     pub fn OnCallbackWithContext(
         &mut self,
         callbackContext: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputAction_CallbackContext),
@@ -558,9 +548,8 @@ impl crate::Meta::XR::BuildingBlocks::ControllerButtonsMapper_ButtonClickAction 
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (callbackContext))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (callbackContext))? };
         Ok(__cordl_ret.into())
     }
 }

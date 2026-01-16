@@ -1,25 +1,22 @@
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AdditionalInformationSyntax {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub information: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
-    >,
+    pub information:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X500::DirectoryString>,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
+    for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.IsisMtt.X509";
     const CLASS_NAME: &'static str = "AdditionalInformationSyntax";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -33,7 +30,8 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
 impl std::ops::Deref
-for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
+    for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax
+{
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -41,7 +39,8 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
+    for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -55,7 +54,8 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax 
             crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -84,8 +84,8 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax 
             crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (information))?;
         Ok(__cordl_object.into())
@@ -93,8 +93,8 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax 
     pub fn New_Il2CppString1(
         information: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (information))?;
         Ok(__cordl_object.into())
@@ -104,9 +104,10 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -123,9 +124,8 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax 
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Asn1Object,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DirectoryString0(
@@ -134,37 +134,35 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax 
             crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (information))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (information))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString1(
         &mut self,
         information: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -179,9 +177,8 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax 
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (information))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (information))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Information(
@@ -189,9 +186,10 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X500::DirectoryString>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -214,11 +212,10 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
+    for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

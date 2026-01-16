@@ -3,54 +3,39 @@
 #[derive(Debug)]
 pub struct MobileAuthenticatedStream {
     __cordl_parent: crate::System::Net::Security::AuthenticatedStream,
-    pub xobileTlsContext: quest_hook::libil2cpp::Gc<
-        crate::Mono::Net::Security::MobileTlsContext,
-    >,
-    pub lastException: quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
-    >,
-    pub asyncHandshakeRequest: quest_hook::libil2cpp::Gc<
-        crate::Mono::Net::Security::AsyncProtocolRequest,
-    >,
-    pub asyncReadRequest: quest_hook::libil2cpp::Gc<
-        crate::Mono::Net::Security::AsyncProtocolRequest,
-    >,
-    pub asyncWriteRequest: quest_hook::libil2cpp::Gc<
-        crate::Mono::Net::Security::AsyncProtocolRequest,
-    >,
-    pub readBuffer: quest_hook::libil2cpp::Gc<
-        crate::Mono::Net::Security::BufferOffsetSize2,
-    >,
-    pub writeBuffer: quest_hook::libil2cpp::Gc<
-        crate::Mono::Net::Security::BufferOffsetSize2,
-    >,
+    pub xobileTlsContext: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsContext>,
+    pub lastException:
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo>,
+    pub asyncHandshakeRequest:
+        quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::AsyncProtocolRequest>,
+    pub asyncReadRequest:
+        quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::AsyncProtocolRequest>,
+    pub asyncWriteRequest:
+        quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::AsyncProtocolRequest>,
+    pub readBuffer: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::BufferOffsetSize2>,
+    pub writeBuffer: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::BufferOffsetSize2>,
     pub ioLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub closeRequested: i32,
     pub shutdown: bool,
     pub operation: crate::Mono::Net::Security::MobileAuthenticatedStream_Operation,
-    pub _SslStream_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Net::Security::SslStream,
-    >,
-    pub _Settings_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::Mono::Security::Interface::MonoTlsSettings,
-    >,
-    pub _Provider_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::Mono::Net::Security::MobileTlsProvider,
-    >,
-    pub _TargetHost_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub _SslStream_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
+    pub _Settings_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
+    pub _Provider_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsProvider>,
+    pub _TargetHost_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cordl_ID: i32,
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Mono::Net::Security::MobileAuthenticatedStream {
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Net::Security::MobileAuthenticatedStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Net.Security";
     const CLASS_NAME: &'static str = "MobileAuthenticatedStream";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -90,7 +75,8 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         enabledSslProtocols: crate::System::Security::Authentication::SslProtocols,
         checkCertificateRevocation: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -117,16 +103,15 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        targetHost,
-                        clientCertificates,
-                        enabledSslProtocols,
-                        checkCertificateRevocation,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    targetHost,
+                    clientCertificates,
+                    enabledSslProtocols,
+                    checkCertificateRevocation,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -141,7 +126,8 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -167,19 +153,16 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        targetHost,
-                        clientCertificates,
-                        enabledSslProtocols,
-                        checkCertificateRevocation,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    targetHost,
+                    clientCertificates,
+                    enabledSslProtocols,
+                    checkCertificateRevocation,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -192,7 +175,8 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         enabledSslProtocols: crate::System::Security::Authentication::SslProtocols,
         checkCertificateRevocation: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -217,16 +201,15 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        serverCertificate,
-                        clientCertificateRequired,
-                        enabledSslProtocols,
-                        checkCertificateRevocation,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    serverCertificate,
+                    clientCertificateRequired,
+                    enabledSslProtocols,
+                    checkCertificateRevocation,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -235,26 +218,23 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         authSuccessCheck: bool,
         shutdownCheck: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool, bool),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CheckThrow")
+                    .find_method::<(bool, bool), quest_hook::libil2cpp::Void, 2usize>("CheckThrow")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckThrow", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckThrow",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (authSuccessCheck, shutdownCheck))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (authSuccessCheck, shutdownCheck))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateContext(
@@ -265,9 +245,10 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsContext>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -286,97 +267,87 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Mono::Net::Security::MobileTlsContext,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (options))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsContext> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (options))? };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
         disposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Dispose")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (disposing))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (disposing))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Flush(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Flush(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Flush")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Flush",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Flush",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetIOException(
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Exception>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Exception>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<crate::System::Exception>,
-                        2usize,
-                    >("GetIOException")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Exception>, 2usize>(
+                        "GetIOException",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetIOException", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetIOException",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            cordl_method_info.invoke_unchecked((), (e, message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> =
+            unsafe { cordl_method_info.invoke_unchecked((), (e, message))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetInternalError() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetInternalError(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Exception>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -391,17 +362,16 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetInvalidNestedCallException() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetInvalidNestedCallException(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Exception>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -416,19 +386,17 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSSPIException(
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Exception>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Exception>),
@@ -443,9 +411,8 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            cordl_method_info.invoke_unchecked((), (e))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> =
+            unsafe { cordl_method_info.invoke_unchecked((), (e))? };
         Ok(__cordl_ret.into())
     }
     pub fn InnerRead(
@@ -456,9 +423,10 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, i32, crate::System::Threading::CancellationToken),
@@ -475,11 +443,8 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (sync, requestedSize, cancellationToken))?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (sync, requestedSize, cancellationToken))?
         };
         Ok(__cordl_ret.into())
     }
@@ -490,9 +455,10 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, crate::System::Threading::CancellationToken),
@@ -507,60 +473,46 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (sync, cancellationToken))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (sync, cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalRead_AsyncProtocolRequest_BufferOffsetSize_Il2CppArray_i32_i32_1(
         &mut self,
-        asyncRequest: quest_hook::libil2cpp::Gc<
-            crate::Mono::Net::Security::AsyncProtocolRequest,
-        >,
-        internalBuffer: quest_hook::libil2cpp::Gc<
-            crate::Mono::Net::Security::BufferOffsetSize,
-        >,
+        asyncRequest: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::AsyncProtocolRequest>,
+        internalBuffer: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::BufferOffsetSize>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::ValueTuple_2<i32, bool>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Mono::Net::Security::AsyncProtocolRequest,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Mono::Net::Security::BufferOffsetSize,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        crate::System::ValueTuple_2<i32, bool>,
-                        5usize,
-                    >("InternalRead")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::AsyncProtocolRequest>,
+                        quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::BufferOffsetSize>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                    ), crate::System::ValueTuple_2<i32, bool>, 5usize>(
+                        "InternalRead"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InternalRead", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InternalRead",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: crate::System::ValueTuple_2<i32, bool> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (asyncRequest, internalBuffer, buffer, offset, _cordl_size),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (asyncRequest, internalBuffer, buffer, offset, _cordl_size),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -571,83 +523,65 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         _cordl_size: i32,
         outWantMore: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<bool>,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         i32,
-                        4usize,
-                    >("InternalRead")
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<bool>,
+                    ), i32, 4usize>("InternalRead")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InternalRead", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InternalRead",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (buffer, offset, _cordl_size, outWantMore))?
+            cordl_method_info.invoke_unchecked(self, (buffer, offset, _cordl_size, outWantMore))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InternalWrite_AsyncProtocolRequest_BufferOffsetSize2_Il2CppArray_i32_i32_1(
         &mut self,
-        asyncRequest: quest_hook::libil2cpp::Gc<
-            crate::Mono::Net::Security::AsyncProtocolRequest,
-        >,
-        internalBuffer: quest_hook::libil2cpp::Gc<
-            crate::Mono::Net::Security::BufferOffsetSize2,
-        >,
+        asyncRequest: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::AsyncProtocolRequest>,
+        internalBuffer: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::BufferOffsetSize2>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Mono::Net::Security::AsyncProtocolRequest,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Mono::Net::Security::BufferOffsetSize2,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        bool,
-                        5usize,
-                    >("InternalWrite")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::AsyncProtocolRequest>,
+                        quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::BufferOffsetSize2>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                    ), bool, 5usize>("InternalWrite")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InternalWrite", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InternalWrite",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (asyncRequest, internalBuffer, buffer, offset, _cordl_size),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (asyncRequest, internalBuffer, buffer, offset, _cordl_size),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -657,52 +591,42 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        bool,
-                        3usize,
-                    >("InternalWrite")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                    ), bool, 3usize>("InternalWrite")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InternalWrite", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InternalWrite",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (buffer, offset, _cordl_size))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffer, offset, _cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         leaveInnerStreamOpen: bool,
         owner: quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
-        settings: quest_hook::libil2cpp::Gc<
-            crate::Mono::Security::Interface::MonoTlsSettings,
-        >,
-        provider: quest_hook::libil2cpp::Gc<
-            crate::Mono::Net::Security::MobileTlsProvider,
-        >,
+        settings: quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
+        provider: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsProvider>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (innerStream, leaveInnerStreamOpen, owner, settings, provider),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (innerStream, leaveInnerStreamOpen, owner, settings, provider),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn ProcessAuthentication(
@@ -715,32 +639,30 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Mono::Net::Security::MonoSslAuthenticationOptions,
-                            >,
-                            crate::System::Threading::CancellationToken,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-                        3usize,
-                    >("ProcessAuthentication")
+                    .find_method::<(
+                        bool,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Mono::Net::Security::MonoSslAuthenticationOptions,
+                        >,
+                        crate::System::Threading::CancellationToken,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>, 3usize>(
+                        "ProcessAuthentication",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessAuthentication", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessAuthentication",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (runSynchronously, options, cancellationToken))?
         };
@@ -750,12 +672,11 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         &mut self,
         status: crate::Mono::Net::Security::AsyncOperationStatus,
         renegotiate: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Mono::Net::Security::AsyncOperationStatus,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::Mono::Net::Security::AsyncOperationStatus> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Mono::Net::Security::AsyncOperationStatus, bool),
@@ -770,20 +691,18 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: crate::Mono::Net::Security::AsyncOperationStatus = unsafe {
-            cordl_method_info.invoke_unchecked(self, (status, renegotiate))?
-        };
+        let __cordl_ret: crate::Mono::Net::Security::AsyncOperationStatus =
+            unsafe { cordl_method_info.invoke_unchecked(self, (status, renegotiate))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessRead(
         &mut self,
-        userBuffer: quest_hook::libil2cpp::Gc<
-            crate::Mono::Net::Security::BufferOffsetSize,
-        >,
+        userBuffer: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::BufferOffsetSize>,
     ) -> quest_hook::libil2cpp::Result<crate::System::ValueTuple_2<i32, bool>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -800,20 +719,18 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: crate::System::ValueTuple_2<i32, bool> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (userBuffer))?
-        };
+        let __cordl_ret: crate::System::ValueTuple_2<i32, bool> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (userBuffer))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessWrite(
         &mut self,
-        userBuffer: quest_hook::libil2cpp::Gc<
-            crate::Mono::Net::Security::BufferOffsetSize,
-        >,
+        userBuffer: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::BufferOffsetSize>,
     ) -> quest_hook::libil2cpp::Result<crate::System::ValueTuple_2<i32, bool>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -830,9 +747,8 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: crate::System::ValueTuple_2<i32, bool> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (userBuffer))?
-        };
+        let __cordl_ret: crate::System::ValueTuple_2<i32, bool> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (userBuffer))? };
         Ok(__cordl_ret.into())
     }
     pub fn Read(
@@ -841,32 +757,27 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         offset: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         i32,
-                        3usize,
-                    >("Read")
+                        i32,
+                    ), i32, 3usize>("Read")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Read",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (buffer, offset, count))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffer, offset, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAsync(
@@ -878,9 +789,10 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -904,11 +816,8 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (buffer, offset, count, cancellationToken))?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (buffer, offset, count, cancellationToken))?
         };
         Ok(__cordl_ret.into())
     }
@@ -917,39 +826,35 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         offset: i64,
         origin: crate::System::IO::SeekOrigin,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i64, crate::System::IO::SeekOrigin),
-                        i64,
-                        2usize,
-                    >("Seek")
+                    .find_method::<(i64, crate::System::IO::SeekOrigin), i64, 2usize>("Seek")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Seek",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Seek",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (offset, origin))?
-        };
+        let __cordl_ret: i64 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (offset, origin))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetException(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Exception>),
@@ -975,41 +880,37 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         &mut self,
         value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetLength")
+                    .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>("SetLength")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetLength", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetLength",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn StartOperation(
         &mut self,
         _cordl_type: crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType,
-        asyncRequest: quest_hook::libil2cpp::Gc<
-            crate::Mono::Net::Security::AsyncProtocolRequest,
-        >,
+        asyncRequest: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::AsyncProtocolRequest>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -1032,9 +933,7 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>> = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (_cordl_type, asyncRequest, cancellationToken))?
         };
@@ -1046,32 +945,27 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         offset: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Write")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Write")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Write",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (buffer, offset, count))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffer, offset, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteAsync(
@@ -1083,61 +977,53 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            crate::System::Threading::CancellationToken,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-                        4usize,
-                    >("WriteAsync")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                        crate::System::Threading::CancellationToken,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>, 4usize>(
+                        "WriteAsync",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteAsync", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteAsync",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (buffer, offset, count, cancellationToken))?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (buffer, offset, count, cancellationToken))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _InnerWrite_b__67_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("<InnerWrite>b__67_0")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("<InnerWrite>b__67_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<InnerWrite>b__67_0", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "<InnerWrite>b__67_0",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -1145,62 +1031,53 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         leaveInnerStreamOpen: bool,
         owner: quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
-        settings: quest_hook::libil2cpp::Gc<
-            crate::Mono::Security::Interface::MonoTlsSettings,
-        >,
-        provider: quest_hook::libil2cpp::Gc<
-            crate::Mono::Net::Security::MobileTlsProvider,
-        >,
+        settings: quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
+        provider: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsProvider>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Security::SslStream,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Mono::Security::Interface::MonoTlsSettings,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Mono::Net::Security::MobileTlsProvider,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                        bool,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Mono::Security::Interface::MonoTlsSettings,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsProvider>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (innerStream, leaveInnerStreamOpen, owner, settings, provider),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (innerStream, leaveInnerStreamOpen, owner, settings, provider),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_CanRead")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_CanRead", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_CanRead",
+                            0usize
                         )
                     })
             });
@@ -1208,16 +1085,18 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         Ok(__cordl_ret.into())
     }
     pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_CanSeek")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_CanSeek", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_CanSeek",
+                            0usize
                         )
                     })
             });
@@ -1225,16 +1104,18 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         Ok(__cordl_ret.into())
     }
     pub fn get_CanTimeout(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_CanTimeout")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_CanTimeout", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_CanTimeout",
+                            0usize
                         )
                     })
             });
@@ -1242,16 +1123,18 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         Ok(__cordl_ret.into())
     }
     pub fn get_CanWrite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_CanWrite")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_CanWrite", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_CanWrite",
+                            0usize
                         )
                     })
             });
@@ -1265,22 +1148,20 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-                        >,
-                        0usize,
-                    >("get_InternalLocalCertificate")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+                    >, 0usize>("get_InternalLocalCertificate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_InternalLocalCertificate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_InternalLocalCertificate",
+                            0usize
                         )
                     })
             });
@@ -1290,16 +1171,18 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsAuthenticated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsAuthenticated")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsAuthenticated", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsAuthenticated",
+                            0usize
                         )
                     })
             });
@@ -1307,16 +1190,18 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         Ok(__cordl_ret.into())
     }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_Length")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Length", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Length",
+                            0usize
                         )
                     })
             });
@@ -1330,22 +1215,20 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-                        >,
-                        0usize,
-                    >("get_LocalCertificate")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+                    >, 0usize>("get_LocalCertificate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_LocalCertificate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_LocalCertificate",
+                            0usize
                         )
                     })
             });
@@ -1355,16 +1238,18 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         Ok(__cordl_ret.into())
     }
     pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_Position")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Position", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Position",
+                            0usize
                         )
                     })
             });
@@ -1376,9 +1261,10 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsProvider>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1395,22 +1281,23 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Mono::Net::Security::MobileTlsProvider,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsProvider> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ReadTimeout(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ReadTimeout")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ReadTimeout", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ReadTimeout",
+                            0usize
                         )
                     })
             });
@@ -1422,9 +1309,10 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1451,9 +1339,10 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1470,19 +1359,18 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Security::SslStream,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_TargetHost(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1497,22 +1385,23 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_WriteTimeout(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_WriteTimeout")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_WriteTimeout", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_WriteTimeout",
+                            0usize
                         )
                     })
             });
@@ -1523,61 +1412,56 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         &mut self,
         value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_Position")
+                    .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>("set_Position")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_Position", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Position",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ReadTimeout(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_ReadTimeout")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_ReadTimeout")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_ReadTimeout", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_ReadTimeout",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_TargetHost(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -1592,41 +1476,36 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_WriteTimeout(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_WriteTimeout")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_WriteTimeout")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_WriteTimeout", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_WriteTimeout",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Mono::Net::Security::MobileAuthenticatedStream {
+impl quest_hook::libil2cpp::ObjectType for crate::Mono::Net::Security::MobileAuthenticatedStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1635,22 +1514,20 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream {
     }
 }
 #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream")]
-impl AsRef<crate::System::IDisposable>
-for crate::Mono::Net::Security::MobileAuthenticatedStream {
+impl AsRef<crate::System::IDisposable> for crate::Mono::Net::Security::MobileAuthenticatedStream {
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream")]
-impl AsMut<crate::System::IDisposable>
-for crate::Mono::Net::Security::MobileAuthenticatedStream {
+impl AsMut<crate::System::IDisposable> for crate::Mono::Net::Security::MobileAuthenticatedStream {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream+Operation")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum MobileAuthenticatedStream_Operation {
     #[default]
     Authenticated = 2i32,
@@ -1663,7 +1540,8 @@ pub enum MobileAuthenticatedStream_Operation {
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream+Operation")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
+    for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Net.Security";
@@ -1682,18 +1560,16 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream+Operation")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
+    for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1704,7 +1580,8 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream+Operation")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
+    for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1718,22 +1595,22 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream+Operation")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
+    for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream+Operation")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
+    for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1746,8 +1623,8 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
     }
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream+OperationType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum MobileAuthenticatedStream_OperationType {
     #[default]
     Read = 0i32,
@@ -1757,7 +1634,8 @@ pub enum MobileAuthenticatedStream_OperationType {
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream+OperationType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
+    for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Net.Security";
@@ -1776,18 +1654,16 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream+OperationType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
+    for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1798,7 +1674,8 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream+OperationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
+    for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1812,22 +1689,22 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream+OperationType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
+    for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream+OperationType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
+    for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

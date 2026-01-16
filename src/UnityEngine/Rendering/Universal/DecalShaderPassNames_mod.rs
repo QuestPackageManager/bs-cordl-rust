@@ -6,13 +6,15 @@ pub struct DecalShaderPassNames {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DecalShaderPassNames")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::DecalShaderPassNames {
+    for crate::UnityEngine::Rendering::Universal::DecalShaderPassNames
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
     const CLASS_NAME: &'static str = "DecalShaderPassNames";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,8 +34,7 @@ impl std::ops::Deref for crate::UnityEngine::Rendering::Universal::DecalShaderPa
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+DecalShaderPassNames")]
-impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::Universal::DecalShaderPassNames {
+impl std::ops::DerefMut for crate::UnityEngine::Rendering::Universal::DecalShaderPassNames {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -56,7 +57,8 @@ impl crate::UnityEngine::Rendering::Universal::DecalShaderPassNames {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DecalShaderPassNames")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::Universal::DecalShaderPassNames {
+    for crate::UnityEngine::Rendering::Universal::DecalShaderPassNames
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -11,14 +11,14 @@ pub struct ReflectEventDescriptor {
     pub _filledMethods: bool,
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+ReflectEventDescriptor")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::ComponentModel::ReflectEventDescriptor {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::ComponentModel::ReflectEventDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
     const CLASS_NAME: &'static str = "ReflectEventDescriptor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,9 +49,10 @@ impl crate::System::ComponentModel::ReflectEventDescriptor {
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>),
@@ -66,9 +67,8 @@ impl crate::System::ComponentModel::ReflectEventDescriptor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (attributes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (attributes))? };
         Ok(__cordl_ret.into())
     }
     pub fn FillEventInfoAttribute(
@@ -76,56 +76,48 @@ impl crate::System::ComponentModel::ReflectEventDescriptor {
         realEventInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
         attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::EventInfo,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("FillEventInfoAttribute")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
+                        quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "FillEventInfoAttribute"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FillEventInfoAttribute", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FillEventInfoAttribute",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (realEventInfo, attributes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (realEventInfo, attributes))? };
         Ok(__cordl_ret.into())
     }
-    pub fn FillMethods(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn FillMethods(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("FillMethods")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("FillMethods")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FillMethods", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FillMethods",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FillSingleMethodAttribute(
@@ -133,39 +125,36 @@ impl crate::System::ComponentModel::ReflectEventDescriptor {
         realMethodInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::MethodInfo,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("FillSingleMethodAttribute")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+                        quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "FillSingleMethodAttribute"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FillSingleMethodAttribute", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FillSingleMethodAttribute",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (realMethodInfo, attributes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (realMethodInfo, attributes))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
         eventInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (componentClass, eventInfo))?;
         Ok(__cordl_object.into())
@@ -175,37 +164,31 @@ impl crate::System::ComponentModel::ReflectEventDescriptor {
         componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
         eventInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::EventInfo,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (componentClass, eventInfo))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (componentClass, eventInfo))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+ReflectEventDescriptor")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::ComponentModel::ReflectEventDescriptor {
+impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::ReflectEventDescriptor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

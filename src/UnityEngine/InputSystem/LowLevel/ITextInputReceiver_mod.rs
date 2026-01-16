@@ -1,18 +1,20 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+ITextInputReceiver")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct ITextInputReceiver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+ITextInputReceiver")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
+    for crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
     const CLASS_NAME: &'static str = "ITextInputReceiver";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,8 +34,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::LowLevel::ITextInputRe
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+ITextInputReceiver")]
-impl std::ops::DerefMut
-for crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
+impl std::ops::DerefMut for crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -44,9 +45,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
         &mut self,
         compositionString: crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::LowLevel::IMECompositionString),
@@ -61,46 +63,41 @@ impl crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (compositionString))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (compositionString))? };
         Ok(__cordl_ret.into())
     }
     pub fn OnTextInput(
         &mut self,
         character: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (char),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("OnTextInput")
+                    .find_method::<(char), quest_hook::libil2cpp::Void, 1usize>("OnTextInput")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnTextInput", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnTextInput",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (character))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (character))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+ITextInputReceiver")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
+    for crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

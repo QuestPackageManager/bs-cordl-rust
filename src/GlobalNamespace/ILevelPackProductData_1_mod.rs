@@ -1,32 +1,32 @@
 #[cfg(feature = "cordl_class_ILevelPackProductData_1")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct ILevelPackProductData_1<TLevelProductData: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_TLevelProductData: std::marker::PhantomData<TLevelProductData>,
 }
 #[cfg(feature = "cordl_class_ILevelPackProductData_1")]
 unsafe impl<TLevelProductData: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
+    for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData>
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "ILevelPackProductData`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "ILevelPackProductData`1")
-                    .unwrap()
-                    .make_generic::<(TLevelProductData)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find("", "ILevelPackProductData`1")
+                .unwrap()
+                .make_generic::<(TLevelProductData)>()
+                .unwrap()
+                .unwrap()
+        })
     }
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,7 +40,8 @@ for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
 }
 #[cfg(feature = "ILevelPackProductData_1")]
 impl<TLevelProductData: quest_hook::libil2cpp::Type> std::ops::Deref
-for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
+    for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData>
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -48,32 +49,32 @@ for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
 }
 #[cfg(feature = "ILevelPackProductData_1")]
 impl<TLevelProductData: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
+    for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData>
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILevelPackProductData_1")]
-impl<
-    TLevelProductData: quest_hook::libil2cpp::Type,
-> crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+impl<TLevelProductData: quest_hook::libil2cpp::Type>
+    crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData>
+{
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_levelPackId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
     where
-        TLevelProductData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TLevelProductData: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -88,9 +89,8 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_levelProductsData(
@@ -101,27 +101,25 @@ impl<
         >,
     >
     where
-        TLevelProductData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TLevelProductData: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                TLevelProductData,
-                            >,
-                        >,
-                        0usize,
-                    >("get_levelProductsData")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<TLevelProductData>,
+                    >, 0usize>("get_levelProductsData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_levelProductsData", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_levelProductsData",
+                            0usize
                         )
                     })
             });
@@ -133,7 +131,8 @@ impl<
 }
 #[cfg(feature = "cordl_class_ILevelPackProductData_1")]
 impl<TLevelProductData: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
+    for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData>
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

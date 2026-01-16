@@ -1,22 +1,20 @@
-#[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryConverter"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryConverter"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryConverter")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter {
+    for crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Serialization.Formatters.Binary";
     const CLASS_NAME: &'static str = "BinaryConverter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -30,7 +28,8 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter {
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryConverter")]
 impl std::ops::Deref
-for crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter {
+    for crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -38,7 +37,8 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter {
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryConverter")]
 impl std::ops::DerefMut
-for crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter {
+    for crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -61,7 +61,8 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -96,18 +97,17 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
                     })
             });
         let __cordl_ret: crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        _cordl_type,
-                        objectInfo,
-                        typeName,
-                        objectWriter,
-                        typeInformation,
-                        assemId,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    _cordl_type,
+                    objectInfo,
+                    typeName,
+                    objectWriter,
+                    typeInformation,
+                    assemId,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -119,9 +119,10 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -143,9 +144,8 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
                         )
                     })
             });
-        let __cordl_ret: crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_type, typeInformation))?
-        };
+        let __cordl_ret: crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type, typeInformation))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadTypeInfo(
@@ -154,10 +154,10 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
             crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser,
         >,
         assemId: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -180,11 +180,8 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (binaryTypeEnum, input, assemId))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked((), (binaryTypeEnum, input, assemId))? };
         Ok(__cordl_ret.into())
     }
     pub fn TypeFromInfo(
@@ -207,7 +204,8 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
         >,
         isVariant: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -248,20 +246,19 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        binaryTypeEnum,
-                        typeInformation,
-                        objectReader,
-                        assemblyInfo,
-                        primitiveTypeEnum,
-                        typeString,
-                        _cordl_type,
-                        isVariant,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    binaryTypeEnum,
+                    typeInformation,
+                    objectReader,
+                    assemblyInfo,
+                    primitiveTypeEnum,
+                    typeString,
+                    _cordl_type,
+                    isVariant,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -273,7 +270,8 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
             crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -306,11 +304,10 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryConverter"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryConverter")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter {
+    for crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

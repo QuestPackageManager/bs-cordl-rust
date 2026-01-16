@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::GroupPresen
     const NAMESPACE: &'static str = "Oculus.Platform";
     const CLASS_NAME: &'static str = "GroupPresence";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -38,12 +39,13 @@ impl std::ops::DerefMut for crate::Oculus::Platform::GroupPresence {
 }
 #[cfg(feature = "Oculus+Platform+GroupPresence")]
 impl crate::Oculus::Platform::GroupPresence {
-    pub fn Clear() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Clear(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -58,9 +60,8 @@ impl crate::Oculus::Platform::GroupPresence {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetInvitableUsers(
@@ -72,9 +73,10 @@ impl crate::Oculus::Platform::GroupPresence {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -105,48 +107,40 @@ impl crate::Oculus::Platform::GroupPresence {
         Ok(__cordl_ret.into())
     }
     pub fn GetNextApplicationInviteListPage(
-        list: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Models::ApplicationInviteList,
-        >,
+        list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationInviteList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ApplicationInviteList,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationInviteList>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Models::ApplicationInviteList,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::ApplicationInviteList,
-                                >,
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Models::ApplicationInviteList,
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::ApplicationInviteList,
                             >,
                         >,
-                        1usize,
-                    >("GetNextApplicationInviteListPage")
+                    >, 1usize>("GetNextApplicationInviteListPage")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetNextApplicationInviteListPage", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetNextApplicationInviteListPage",
+                            1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ApplicationInviteList,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationInviteList>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
@@ -154,40 +148,34 @@ impl crate::Oculus::Platform::GroupPresence {
     pub fn GetSentInvites() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ApplicationInviteList,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationInviteList>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::ApplicationInviteList,
-                                >,
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::ApplicationInviteList,
                             >,
                         >,
-                        0usize,
-                    >("GetSentInvites")
+                    >, 0usize>("GetSentInvites")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSentInvites", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSentInvites",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ApplicationInviteList,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationInviteList>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -197,15 +185,14 @@ impl crate::Oculus::Platform::GroupPresence {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::InvitePanelResultInfo,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::InvitePanelResultInfo>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -230,23 +217,19 @@ impl crate::Oculus::Platform::GroupPresence {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::InvitePanelResultInfo,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::InvitePanelResultInfo>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (options))? };
         Ok(__cordl_ret.into())
     }
     pub fn LaunchMultiplayerErrorDialog(
-        options: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::MultiplayerErrorOptions,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        options: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::MultiplayerErrorOptions>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -263,82 +246,66 @@ impl crate::Oculus::Platform::GroupPresence {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
-            cordl_method_info.invoke_unchecked((), (options))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> =
+            unsafe { cordl_method_info.invoke_unchecked((), (options))? };
         Ok(__cordl_ret.into())
     }
     pub fn LaunchRejoinDialog(
         lobby_session_id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         match_session_id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        destination_api_name: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        destination_api_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::RejoinDialogResult,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::RejoinDialogResult>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::RejoinDialogResult,
-                                >,
+                                crate::Oculus::Platform::Models::RejoinDialogResult,
                             >,
                         >,
-                        3usize,
-                    >("LaunchRejoinDialog")
+                    >, 3usize>("LaunchRejoinDialog")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LaunchRejoinDialog", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LaunchRejoinDialog",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::RejoinDialogResult,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::RejoinDialogResult>,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (lobby_session_id, match_session_id, destination_api_name),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (lobby_session_id, match_session_id, destination_api_name),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LaunchRosterPanel(
         options: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::RosterOptions>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -355,9 +322,8 @@ impl crate::Oculus::Platform::GroupPresence {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
-            cordl_method_info.invoke_unchecked((), (options))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> =
+            unsafe { cordl_method_info.invoke_unchecked((), (options))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendInvites(
@@ -365,15 +331,14 @@ impl crate::Oculus::Platform::GroupPresence {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::SendInvitesResult,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SendInvitesResult>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -398,9 +363,7 @@ impl crate::Oculus::Platform::GroupPresence {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::SendInvitesResult,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SendInvitesResult>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userIDs))? };
         Ok(__cordl_ret.into())
@@ -409,12 +372,12 @@ impl crate::Oculus::Platform::GroupPresence {
         groupPresenceOptions: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::GroupPresenceOptions,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -431,19 +394,18 @@ impl crate::Oculus::Platform::GroupPresence {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
-            cordl_method_info.invoke_unchecked((), (groupPresenceOptions))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> =
+            unsafe { cordl_method_info.invoke_unchecked((), (groupPresenceOptions))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetDeeplinkMessageOverride(
         deeplink_message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -458,19 +420,18 @@ impl crate::Oculus::Platform::GroupPresence {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
-            cordl_method_info.invoke_unchecked((), (deeplink_message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> =
+            unsafe { cordl_method_info.invoke_unchecked((), (deeplink_message))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetDestination(
         api_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -485,9 +446,8 @@ impl crate::Oculus::Platform::GroupPresence {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
-            cordl_method_info.invoke_unchecked((), (api_name))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> =
+            unsafe { cordl_method_info.invoke_unchecked((), (api_name))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetInvitationsSentNotificationCallback(
@@ -499,42 +459,41 @@ impl crate::Oculus::Platform::GroupPresence {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1_Callback<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::LaunchInvitePanelFlowResult,
-                                >,
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Message_1_Callback<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::LaunchInvitePanelFlowResult,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetInvitationsSentNotificationCallback")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "SetInvitationsSentNotificationCallback",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetInvitationsSentNotificationCallback", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetInvitationsSentNotificationCallback",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (callback))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (callback))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetIsJoinable(
         is_joinable: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
@@ -549,46 +508,42 @@ impl crate::Oculus::Platform::GroupPresence {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
-            cordl_method_info.invoke_unchecked((), (is_joinable))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> =
+            unsafe { cordl_method_info.invoke_unchecked((), (is_joinable))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetJoinIntentReceivedNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Message_1_Callback<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::GroupPresenceJoinIntent>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1_Callback<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
-                                >,
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Message_1_Callback<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetJoinIntentReceivedNotificationCallback")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "SetJoinIntentReceivedNotificationCallback",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetJoinIntentReceivedNotificationCallback", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetJoinIntentReceivedNotificationCallback",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (callback))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (callback))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetLeaveIntentReceivedNotificationCallback(
@@ -600,42 +555,41 @@ impl crate::Oculus::Platform::GroupPresence {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1_Callback<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::GroupPresenceLeaveIntent,
-                                >,
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Message_1_Callback<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::GroupPresenceLeaveIntent,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetLeaveIntentReceivedNotificationCallback")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "SetLeaveIntentReceivedNotificationCallback",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetLeaveIntentReceivedNotificationCallback", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetLeaveIntentReceivedNotificationCallback",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (callback))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (callback))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetLobbySession(
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -650,19 +604,18 @@ impl crate::Oculus::Platform::GroupPresence {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
-            cordl_method_info.invoke_unchecked((), (id))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> =
+            unsafe { cordl_method_info.invoke_unchecked((), (id))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetMatchSession(
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -677,9 +630,8 @@ impl crate::Oculus::Platform::GroupPresence {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
-            cordl_method_info.invoke_unchecked((), (id))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> =
+            unsafe { cordl_method_info.invoke_unchecked((), (id))? };
         Ok(__cordl_ret.into())
     }
 }

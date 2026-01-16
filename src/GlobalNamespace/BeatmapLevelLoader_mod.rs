@@ -4,9 +4,7 @@
 pub struct BeatmapLevelLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelDownloadingUpdateEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate,
-        >,
+        crate::System::Action_1<crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate>,
     >,
     pub _loadedBeatmapLevelDataCache: quest_hook::libil2cpp::Gc<
         crate::BGLib::DotnetExtension::Collections::LRUCache_2<
@@ -14,15 +12,12 @@ pub struct BeatmapLevelLoader {
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
         >,
     >,
-    pub _beatmapLevelDataLoader: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapLevelDataLoader,
-    >,
-    pub _beatmapDataAssetFileModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IBeatmapDataAssetFileModel,
-    >,
-    pub _audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AudioClipAsyncLoader,
-    >,
+    pub _beatmapLevelDataLoader:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelDataLoader>,
+    pub _beatmapDataAssetFileModel:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapDataAssetFileModel>,
+    pub _audioClipAsyncLoader:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioClipAsyncLoader>,
 }
 #[cfg(feature = "cordl_class_BeatmapLevelLoader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapLevelLoader {
@@ -31,7 +26,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapLevel
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapLevelLoader";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -61,7 +57,8 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
     #[cfg(feature = "BeatmapLevelLoader+InitData")]
     pub type InitData = crate::GlobalNamespace::BeatmapLevelLoader_InitData;
     #[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
-    pub type LevelDownloadingUpdate = crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate;
+    pub type LevelDownloadingUpdate =
+        crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate;
     pub fn CheckBeatmapLevelDataExistsAsync(
         &mut self,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -70,9 +67,10 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -95,14 +93,11 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (beatmapLevel, beatmapLevelDataVersion, cancellationToken),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                self,
+                (beatmapLevel, beatmapLevelDataVersion, cancellationToken),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,9 +109,10 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -139,9 +135,7 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>> = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (beatmapLevel, beatmapLevelDataVersion, token))?
         };
@@ -151,9 +145,10 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
         &mut self,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -170,51 +165,48 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (beatmapLevel))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (beatmapLevel))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ClearCache(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ClearCache(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearCache")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ClearCache", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ClearCache",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DownloadAssetBundleAndGetPath(
@@ -229,30 +221,26 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
-                            >,
-                            crate::GlobalNamespace::BeatmapLevelDataVersion,
-                            crate::System::Threading::CancellationToken,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::GetAssetBundleFileResult,
-                            >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                        crate::GlobalNamespace::BeatmapLevelDataVersion,
+                        crate::System::Threading::CancellationToken,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            crate::GlobalNamespace::GetAssetBundleFileResult,
                         >,
-                        3usize,
-                    >("DownloadAssetBundleAndGetPath")
+                    >, 3usize>("DownloadAssetBundleAndGetPath")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DownloadAssetBundleAndGetPath", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DownloadAssetBundleAndGetPath",
+                            3usize
                         )
                     })
             });
@@ -269,46 +257,40 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
     pub fn HandleItemWillBeRemovedFromCache(
         &mut self,
         beatmapLevelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        beatmapLevel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IBeatmapLevelData,
-        >,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IBeatmapLevelData,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleItemWillBeRemovedFromCache")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "HandleItemWillBeRemovedFromCache"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleItemWillBeRemovedFromCache", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleItemWillBeRemovedFromCache",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (beatmapLevelId, beatmapLevel))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (beatmapLevelId, beatmapLevel))? };
         Ok(__cordl_ret.into())
     }
     pub fn HandleLevelDataAssetDownloadUpdate(
         &mut self,
         update: crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::LevelDataAssetDownloadUpdate),
@@ -323,9 +305,8 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (update))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (update))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBeatmapLevelDataAsync(
@@ -340,30 +321,26 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
-                            >,
-                            crate::GlobalNamespace::BeatmapLevelDataVersion,
-                            crate::System::Threading::CancellationToken,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::LoadBeatmapLevelDataResult,
-                            >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                        crate::GlobalNamespace::BeatmapLevelDataVersion,
+                        crate::System::Threading::CancellationToken,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            crate::GlobalNamespace::LoadBeatmapLevelDataResult,
                         >,
-                        3usize,
-                    >("LoadBeatmapLevelDataAsync")
+                    >, 3usize>("LoadBeatmapLevelDataAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LoadBeatmapLevelDataAsync", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LoadBeatmapLevelDataAsync",
+                            3usize
                         )
                     })
             });
@@ -372,11 +349,10 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
                 crate::GlobalNamespace::LoadBeatmapLevelDataResult,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (beatmapLevel, beatmapLevelDataVersion, cancellationToken),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (beatmapLevel, beatmapLevelDataVersion, cancellationToken),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -392,32 +368,26 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
-                            >,
-                            crate::GlobalNamespace::BeatmapLevelDataVersion,
-                            crate::System::Threading::CancellationToken,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IBeatmapLevelData,
-                                >,
-                            >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                        crate::GlobalNamespace::BeatmapLevelDataVersion,
+                        crate::System::Threading::CancellationToken,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
                         >,
-                        3usize,
-                    >("LoadBeatmapLevelDataFromAssetBundle")
+                    >, 3usize>("LoadBeatmapLevelDataFromAssetBundle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LoadBeatmapLevelDataFromAssetBundle", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LoadBeatmapLevelDataFromAssetBundle",
+                            3usize
                         )
                     })
             });
@@ -437,9 +407,10 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -458,9 +429,8 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IBeatmapLevelData,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (beatmapLevel))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (beatmapLevel))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -473,22 +443,19 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
         >,
-        initData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapLevelLoader_InitData,
-        >,
+        initData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelLoader_InitData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    beatmapLevelDataLoader,
-                    beatmapDataAssetFileModel,
-                    audioClipAsyncLoader,
-                    initData,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                beatmapLevelDataLoader,
+                beatmapDataAssetFileModel,
+                audioClipAsyncLoader,
+                initData,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -502,51 +469,42 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
         >,
-        initData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapLevelLoader_InitData,
-        >,
+        initData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelLoader_InitData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevelDataLoader,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IBeatmapDataAssetFileModel,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::AudioClipAsyncLoader,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevelLoader_InitData,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelDataLoader>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::IBeatmapDataAssetFileModel,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioClipAsyncLoader>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapLevelLoader_InitData,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        beatmapLevelDataLoader,
-                        beatmapDataAssetFileModel,
-                        audioClipAsyncLoader,
-                        initData,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    beatmapLevelDataLoader,
+                    beatmapDataAssetFileModel,
+                    audioClipAsyncLoader,
+                    initData,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -558,43 +516,44 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_levelDownloadingUpdateEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_levelDownloadingUpdateEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_levelDownloadingUpdateEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_levelDownloadingUpdateEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_cachedLoadRequestCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_cachedLoadRequestCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_cachedLoadRequestCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_cachedLoadRequestCount",
+                            0usize
                         )
                     })
             });
@@ -609,30 +568,29 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_levelDownloadingUpdateEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_levelDownloadingUpdateEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_levelDownloadingUpdateEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_levelDownloadingUpdateEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -647,14 +605,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelL
 }
 #[cfg(feature = "BeatmapLevelLoader")]
 impl AsRef<crate::GlobalNamespace::IBeatmapLevelLoader>
-for crate::GlobalNamespace::BeatmapLevelLoader {
+    for crate::GlobalNamespace::BeatmapLevelLoader
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapLevelLoader {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapLevelLoader")]
 impl AsMut<crate::GlobalNamespace::IBeatmapLevelLoader>
-for crate::GlobalNamespace::BeatmapLevelLoader {
+    for crate::GlobalNamespace::BeatmapLevelLoader
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapLevelLoader {
         unsafe { std::mem::transmute(self) }
     }
@@ -679,14 +639,14 @@ pub struct BeatmapLevelLoader_InitData {
     pub maxCachedBeatmapLevels: i32,
 }
 #[cfg(feature = "cordl_class_BeatmapLevelLoader+InitData")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapLevelLoader/InitData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -716,8 +676,8 @@ impl crate::GlobalNamespace::BeatmapLevelLoader_InitData {
     pub fn New(
         maxCachedBeatmapLevels: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (maxCachedBeatmapLevels))?;
         Ok(__cordl_object.into())
@@ -726,28 +686,28 @@ impl crate::GlobalNamespace::BeatmapLevelLoader_InitData {
         &mut self,
         maxCachedBeatmapLevels: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (maxCachedBeatmapLevels))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (maxCachedBeatmapLevels))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelLoader+InitData")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -756,16 +716,18 @@ for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BeatmapLevelLoader_LevelDownloadingUpdate {
     pub levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub progress: f32,
-    pub downloadingState: crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState,
+    pub downloadingState:
+        crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState,
 }
 #[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
+    for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -784,18 +746,16 @@ for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
+    for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -806,7 +766,8 @@ for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
 }
 #[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
+    for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -820,22 +781,22 @@ for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
 }
 #[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
+    for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
+    for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -849,7 +810,8 @@ for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
 }
 #[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
+    for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -861,14 +823,16 @@ for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
 #[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
 impl crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
     #[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
-    pub type DownloadingState = crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState;
+    pub type DownloadingState =
+        crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState;
     pub fn _ctor(
         &mut self,
         levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         progress: f32,
         downloadingState: crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -892,28 +856,24 @@ impl crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (levelID, progress, downloadingState))?
+            cordl_method_info.invoke_unchecked(self, (levelID, progress, downloadingState))?
         };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
     #[default]
     Completed = 2i32,
     Downloading = 1i32,
     PreparingToDownload = 0i32,
 }
-#[cfg(
-    feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState"
-)]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
+    for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -932,20 +892,16 @@ for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_Downloadin
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState"
-)]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
+    for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -954,11 +910,10 @@ for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_Downloadin
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState"
-)]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
+    for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -970,28 +925,24 @@ for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_Downloadin
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState"
-)]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
+    for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState"
-)]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
+    for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

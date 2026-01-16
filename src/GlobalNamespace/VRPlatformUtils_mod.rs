@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::VRPlatformUt
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "VRPlatformUtils";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,13 +45,12 @@ impl crate::GlobalNamespace::VRPlatformUtils {
     pub const kTriggerLeftHand: &'static str = "TriggerLeftHand";
     pub const kTriggerRightHand: &'static str = "TriggerRightHand";
     pub fn GetAnyJoystickMaxAxisDefaultImplementation(
-        vrPlatformHelper: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IVRPlatformHelper,
-        >,
+        vrPlatformHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -67,49 +67,44 @@ impl crate::GlobalNamespace::VRPlatformUtils {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            cordl_method_info.invoke_unchecked((), (vrPlatformHelper))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector2 =
+            unsafe { cordl_method_info.invoke_unchecked((), (vrPlatformHelper))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMenuButtonDefaultImplementation() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        bool,
-                        0usize,
-                    >("GetMenuButtonDefaultImplementation")
+                    .find_static_method::<(), bool, 0usize>("GetMenuButtonDefaultImplementation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetMenuButtonDefaultImplementation", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetMenuButtonDefaultImplementation",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetMenuButtonDownDefaultImplementation() -> quest_hook::libil2cpp::Result<
-        bool,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetMenuButtonDownDefaultImplementation() -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        bool,
-                        0usize,
-                    >("GetMenuButtonDownDefaultImplementation")
+                    .find_static_method::<(), bool, 0usize>(
+                        "GetMenuButtonDownDefaultImplementation",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetMenuButtonDownDefaultImplementation", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetMenuButtonDownDefaultImplementation",
+                            0usize
                         )
                     })
             });
@@ -119,9 +114,10 @@ impl crate::GlobalNamespace::VRPlatformUtils {
     pub fn StopXR(
         logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -138,34 +134,31 @@ impl crate::GlobalNamespace::VRPlatformUtils {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (logger))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (logger))? };
         Ok(__cordl_ret.into())
     }
     pub fn TriggerValueDefaultImplementation(
         node: crate::UnityEngine::XR::XRNode,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::UnityEngine::XR::XRNode),
-                        f32,
-                        1usize,
-                    >("TriggerValueDefaultImplementation")
+                    .find_static_method::<(crate::UnityEngine::XR::XRNode), f32, 1usize>(
+                        "TriggerValueDefaultImplementation",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TriggerValueDefaultImplementation", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TriggerValueDefaultImplementation",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (node))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (node))? };
         Ok(__cordl_ret.into())
     }
 }

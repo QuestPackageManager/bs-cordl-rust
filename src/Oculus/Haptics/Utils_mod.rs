@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Utils {
     const NAMESPACE: &'static str = "Oculus.Haptics";
     const CLASS_NAME: &'static str = "Utils";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,9 +42,10 @@ impl crate::Oculus::Haptics::Utils {
     pub fn ControllerToFfiController(
         controller: crate::Oculus::Haptics::Controller,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Controller> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Oculus::Haptics::Controller),
@@ -58,9 +60,8 @@ impl crate::Oculus::Haptics::Utils {
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Controller = unsafe {
-            cordl_method_info.invoke_unchecked((), (controller))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Controller =
+            unsafe { cordl_method_info.invoke_unchecked((), (controller))? };
         Ok(__cordl_ret.into())
     }
     pub fn Map(
@@ -70,22 +71,23 @@ impl crate::Oculus::Haptics::Utils {
         outMin: i32,
         outMax: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32, i32, i32, i32), f32, 5usize>("Map")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Map",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Map",
                             5usize
                         )
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (input, inMin, inMax, outMin, outMax))?
+            cordl_method_info.invoke_unchecked((), (input, inMin, inMax, outMin, outMax))?
         };
         Ok(__cordl_ret.into())
     }

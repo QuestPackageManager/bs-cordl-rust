@@ -4,28 +4,19 @@
 pub struct NoteCutCoreEffectsSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _shockWaveYPos: f32,
-    pub _noteCutParticlesEffect: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::NoteCutParticlesEffect,
-    >,
-    pub _noteDebrisSpawner: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::NoteDebrisSpawner,
-    >,
-    pub _noteCutHapticEffect: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::NoteCutHapticEffect,
-    >,
-    pub _shockwaveEffect: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ShockwaveEffect,
-    >,
-    pub _bombExplosionEffect: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BombExplosionEffect,
-    >,
+    pub _noteCutParticlesEffect:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutParticlesEffect>,
+    pub _noteDebrisSpawner: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebrisSpawner>,
+    pub _noteCutHapticEffect:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutHapticEffect>,
+    pub _shockwaveEffect: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ShockwaveEffect>,
+    pub _bombExplosionEffect:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombExplosionEffect>,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
-    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapObjectManager,
-    >,
-    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AudioTimeSyncController,
-    >,
+    pub _beatmapObjectManager:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectManager>,
+    pub _audioTimeSyncController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioTimeSyncController>,
     pub _sliderInteractionManagers: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
@@ -39,14 +30,14 @@ pub struct NoteCutCoreEffectsSpawner {
     >,
 }
 #[cfg(feature = "cordl_class_NoteCutCoreEffectsSpawner")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "NoteCutCoreEffectsSpawner";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -79,92 +70,80 @@ impl crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
     pub const kNormalNoteSparkleParticlesCount: i32 = 150i32;
     pub fn HandleNoteWasCut(
         &mut self,
-        noteController: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::NoteController,
-        >,
+        noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
         noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteController,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::NoteCutInfo,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleNoteWasCut")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+                        quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("HandleNoteWasCut")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleNoteWasCut", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleNoteWasCut",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (noteController, noteCutInfo))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (noteController, noteCutInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsArcHapticsCurrentlyActive(
         &mut self,
         colorType: crate::GlobalNamespace::ColorType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::GlobalNamespace::ColorType),
-                        bool,
-                        1usize,
-                    >("IsArcHapticsCurrentlyActive")
+                    .find_method::<(crate::GlobalNamespace::ColorType), bool, 1usize>(
+                        "IsArcHapticsCurrentlyActive",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsArcHapticsCurrentlyActive", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsArcHapticsCurrentlyActive",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (colorType))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (colorType))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDestroy(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDestroy", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDestroy",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn PlayHitChainNoteHapticEffect(
@@ -172,9 +151,10 @@ impl crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
         noteCutInfo: crate::GlobalNamespace::NoteCutInfo,
         isChainHead: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::NoteCutInfo, bool),
@@ -189,9 +169,8 @@ impl crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (noteCutInfo, isChainHead))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (noteCutInfo, isChainHead))? };
         Ok(__cordl_ret.into())
     }
     pub fn PlayHitNoteHapticEffect(
@@ -199,164 +178,140 @@ impl crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
         noteCutInfo: crate::GlobalNamespace::NoteCutInfo,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::NoteCutInfo,
-                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("PlayHitNoteHapticEffect")
+                    .find_method::<(
+                        crate::GlobalNamespace::NoteCutInfo,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "PlayHitNoteHapticEffect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PlayHitNoteHapticEffect", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PlayHitNoteHapticEffect",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (noteCutInfo, noteData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (noteCutInfo, noteData))? };
         Ok(__cordl_ret.into())
     }
     pub fn SpawnBombCutEffect(
         &mut self,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::NoteCutInfo,
-        >,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
         noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::NoteCutInfo,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteController,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SpawnBombCutEffect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SpawnBombCutEffect")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SpawnBombCutEffect", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SpawnBombCutEffect",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (noteCutInfo, noteController))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (noteCutInfo, noteController))? };
         Ok(__cordl_ret.into())
     }
     pub fn SpawnNoteCutEffect(
         &mut self,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::NoteCutInfo,
-        >,
-        noteController: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::NoteController,
-        >,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
+        noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
         sparkleParticlesCount: i32,
         explosionParticlesCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::NoteCutInfo,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteController,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SpawnNoteCutEffect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("SpawnNoteCutEffect")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SpawnNoteCutEffect", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SpawnNoteCutEffect",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        noteCutInfo,
-                        noteController,
-                        sparkleParticlesCount,
-                        explosionParticlesCount,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    noteCutInfo,
+                    noteController,
+                    sparkleParticlesCount,
+                    explosionParticlesCount,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Start",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_NoteCutCoreEffectsSpawner")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

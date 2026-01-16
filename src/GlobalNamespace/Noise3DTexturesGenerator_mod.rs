@@ -10,14 +10,14 @@ pub struct Noise3DTexturesGenerator {
     >,
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Noise3DTexturesGenerator {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Noise3DTexturesGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "Noise3DTexturesGenerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,28 +45,29 @@ impl std::ops::DerefMut for crate::GlobalNamespace::Noise3DTexturesGenerator {
 #[cfg(feature = "Noise3DTexturesGenerator")]
 impl crate::GlobalNamespace::Noise3DTexturesGenerator {
     #[cfg(feature = "Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
-    pub type MaterialPropertyNameCouple = crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple;
+    pub type MaterialPropertyNameCouple =
+        crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple;
     #[cfg(feature = "Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
-    pub type MaterialTextureParamsCouple = crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple;
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub type MaterialTextureParamsCouple =
+        crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple;
+    pub fn Awake(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Awake",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNoisePixels(
@@ -77,28 +78,22 @@ impl crate::GlobalNamespace::Noise3DTexturesGenerator {
         repeat: i32,
         contrast: f32,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32, i32, f32, i32, f32),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::Color32,
-                            >,
-                        >,
-                        6usize,
-                    >("CreateNoisePixels")
+                    .find_static_method::<(i32, i32, i32, f32, i32, f32), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+                    >, 6usize>("CreateNoisePixels")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateNoisePixels", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateNoisePixels",
+                            6usize
                         )
                     })
             });
@@ -111,37 +106,35 @@ impl crate::GlobalNamespace::Noise3DTexturesGenerator {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::Noise3DTexturesGenerator {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Noise3DTexturesGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -150,17 +143,16 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator {
     }
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Noise3DTexturesGenerator_MaterialPropertyNameCouple {
-    pub texturePropertyName: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub texturePropertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple {
+    for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -179,18 +171,16 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple 
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple {
+    for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -201,7 +191,8 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple 
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple {
+    for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -215,22 +206,22 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple 
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple {
+    for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple {
+    for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -244,7 +235,8 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple 
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple {
+    for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -256,12 +248,10 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple 
 #[cfg(feature = "Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
 impl crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple {}
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Noise3DTexturesGenerator_MaterialTextureParamsCouple {
-    pub globalPropertyName: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub globalPropertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub materialPropertyNameCouples: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple,
@@ -270,7 +260,8 @@ pub struct Noise3DTexturesGenerator_MaterialTextureParamsCouple {
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple {
+    for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -289,18 +280,16 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple {
+    for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -311,7 +300,8 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple {
+    for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -325,22 +315,22 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple {
+    for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple {
+    for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -354,7 +344,8 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple {
+    for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

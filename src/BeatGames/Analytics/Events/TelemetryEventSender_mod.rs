@@ -3,19 +3,19 @@
 #[derive(Debug)]
 pub struct TelemetryEventSender {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _analyticsManager: quest_hook::libil2cpp::Gc<
-        crate::OSCE::Analytics::AnalyticsManager,
-    >,
+    pub _analyticsManager: quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::AnalyticsManager>,
 }
 #[cfg(feature = "cordl_class_BeatGames+Analytics+Events+TelemetryEventSender")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatGames::Analytics::Events::TelemetryEventSender {
+    for crate::BeatGames::Analytics::Events::TelemetryEventSender
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatGames.Analytics.Events";
     const CLASS_NAME: &'static str = "TelemetryEventSender";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,12 +43,10 @@ impl std::ops::DerefMut for crate::BeatGames::Analytics::Events::TelemetryEventS
 #[cfg(feature = "BeatGames+Analytics+Events+TelemetryEventSender")]
 impl crate::BeatGames::Analytics::Events::TelemetryEventSender {
     pub fn New(
-        analyticsManager: quest_hook::libil2cpp::Gc<
-            crate::OSCE::Analytics::AnalyticsManager,
-        >,
+        analyticsManager: quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::AnalyticsManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (analyticsManager))?;
         Ok(__cordl_object.into())
@@ -66,60 +64,55 @@ impl crate::BeatGames::Analytics::Events::TelemetryEventSender {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("SendTelemetryEvent")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 6usize>("SendTelemetryEvent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendTelemetryEvent", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendTelemetryEvent",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (eventName, eventFamily, stringValue, intValue, durationMS, tags),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    eventName,
+                    eventFamily,
+                    stringValue,
+                    intValue,
+                    durationMS,
+                    tags,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        analyticsManager: quest_hook::libil2cpp::Gc<
-            crate::OSCE::Analytics::AnalyticsManager,
-        >,
+        analyticsManager: quest_hook::libil2cpp::Gc<crate::OSCE::Analytics::AnalyticsManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -136,15 +129,15 @@ impl crate::BeatGames::Analytics::Events::TelemetryEventSender {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (analyticsManager))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (analyticsManager))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatGames+Analytics+Events+TelemetryEventSender")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BeatGames::Analytics::Events::TelemetryEventSender {
+    for crate::BeatGames::Analytics::Events::TelemetryEventSender
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

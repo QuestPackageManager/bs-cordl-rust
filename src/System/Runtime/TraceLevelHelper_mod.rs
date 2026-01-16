@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Runtime::TraceLevelHe
     const NAMESPACE: &'static str = "System.Runtime";
     const CLASS_NAME: &'static str = "TraceLevelHelper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,9 +42,10 @@ impl crate::System::Runtime::TraceLevelHelper {
     pub fn GetTraceEventType(
         level: crate::System::Runtime::TraceEventLevel,
     ) -> quest_hook::libil2cpp::Result<crate::System::Diagnostics::TraceEventType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Runtime::TraceEventLevel),
@@ -58,40 +60,37 @@ impl crate::System::Runtime::TraceLevelHelper {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Diagnostics::TraceEventType = unsafe {
-            cordl_method_info.invoke_unchecked((), (level))?
-        };
+        let __cordl_ret: crate::System::Diagnostics::TraceEventType =
+            unsafe { cordl_method_info.invoke_unchecked((), (level))? };
         Ok(__cordl_ret.into())
     }
     pub fn LookupSeverity(
         level: crate::System::Runtime::TraceEventLevel,
         opcode: crate::System::Runtime::TraceEventOpcode,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::Runtime::TraceEventLevel,
-                            crate::System::Runtime::TraceEventOpcode,
-                        ),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        2usize,
-                    >("LookupSeverity")
+                    .find_static_method::<(
+                        crate::System::Runtime::TraceEventLevel,
+                        crate::System::Runtime::TraceEventOpcode,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, 2usize>(
+                        "LookupSeverity",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LookupSeverity", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LookupSeverity",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (level, opcode))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (level, opcode))? };
         Ok(__cordl_ret.into())
     }
 }

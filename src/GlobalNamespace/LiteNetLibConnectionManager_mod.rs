@@ -3,13 +3,9 @@
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _unconnectedPacketHeader: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<u8>,
-    >,
+    pub _unconnectedPacketHeader: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _netManager: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
-    pub _encryptionLayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PacketEncryptionLayer,
-    >,
+    pub _encryptionLayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PacketEncryptionLayer>,
     pub _taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
     pub _connections: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
@@ -39,24 +35,19 @@ pub struct LiteNetLibConnectionManager {
     >,
     pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub _connectionRequestHandler: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectionRequestHandler,
-    >,
+    pub _connectionRequestHandler:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionRequestHandler>,
     pub _mode: crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode,
     pub _connectionState: crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState,
-    pub _backgroundSentryDisconnectCts: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::CancellationTokenSource,
-    >,
-    pub _backgroundSentryShutdownCts: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::CancellationTokenSource,
-    >,
+    pub _backgroundSentryDisconnectCts:
+        quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationTokenSource>,
+    pub _backgroundSentryShutdownCts:
+        quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationTokenSource>,
     pub _sentryDisconnected: bool,
     pub _sentryShutdown: bool,
     pub _lastPollUpdateTime: i64,
     pub _lastStatisticsUpdateTime: i64,
-    pub _compatibilityVersion: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub _compatibilityVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub onInitializedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub onConnectedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub onDisconnectedEvent: quest_hook::libil2cpp::Gc<
@@ -66,9 +57,7 @@ pub struct LiteNetLibConnectionManager {
         crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
     >,
     pub onConnectionConnectedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
-        >,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>>,
     >,
     pub onConnectionDisconnectedEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_2<
@@ -94,14 +83,14 @@ pub struct LiteNetLibConnectionManager {
     >,
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LiteNetLibConnectionManager {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LiteNetLibConnectionManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LiteNetLibConnectionManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -132,44 +121,49 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     pub const kBackgroundShutdownTimeout: i64 = 9000000000i64;
     pub const kStatisticsUpdateInterval: i64 = 300000000i64;
     #[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
-    pub type ConnectToServerParams = crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams;
+    pub type ConnectToServerParams =
+        crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams;
     #[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
     pub type ConnectionState = crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState;
     #[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
-    pub type LiteNetLibConnectionParamsBase = crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
+    pub type LiteNetLibConnectionParamsBase =
+        crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
     #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
-    pub type NetPeerConnection = crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection;
+    pub type NetPeerConnection =
+        crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection;
     #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
-    pub type NetPeerConnectionRequest = crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest;
+    pub type NetPeerConnectionRequest =
+        crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest;
     #[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
     pub type NetworkMode = crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode;
     #[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
-    pub type StartClientParams = crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams;
+    pub type StartClientParams =
+        crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams;
     #[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
-    pub type StartServerParams = crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams;
+    pub type StartServerParams =
+        crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams;
     pub fn AcceptAllPendingRequests(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("AcceptAllPendingRequests")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "AcceptAllPendingRequests",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AcceptAllPendingRequests", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AcceptAllPendingRequests",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BackgroundDisconnectSentry(
@@ -177,9 +171,10 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -194,9 +189,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BackgroundShutdownSentry(
@@ -204,9 +198,10 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -221,34 +216,30 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckSentryState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("CheckSentryState")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CheckSentryState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckSentryState", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckSentryState",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ConnectToEndPoint(
@@ -260,51 +251,40 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         remoteUserName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         remoteUserIsConnectionOwner: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("ConnectToEndPoint")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 6usize>("ConnectToEndPoint")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConnectToEndPoint", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ConnectToEndPoint",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        userId,
-                        userName,
-                        remoteEndPoint,
-                        remoteUserId,
-                        remoteUserName,
-                        remoteUserIsConnectionOwner,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    userId,
+                    userName,
+                    remoteEndPoint,
+                    remoteUserId,
+                    remoteUserName,
+                    remoteUserIsConnectionOwner,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -314,45 +294,42 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isConnectionOwner: bool,
-        compatibilityVersion: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        compatibilityVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("CreatePendingConnection")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "CreatePendingConnection"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreatePendingConnection", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreatePendingConnection",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (peer, userId, userName, isConnectionOwner, compatibilityVersion),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    peer,
+                    userId,
+                    userName,
+                    isConnectionOwner,
+                    compatibilityVersion,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -360,9 +337,10 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         &mut self,
         disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::DisconnectedReason),
@@ -377,9 +355,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (disconnectedReason))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (disconnectedReason))? };
         Ok(__cordl_ret.into())
     }
     pub fn DisconnectInternal(
@@ -387,23 +364,21 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
         connectionFailedReason: crate::GlobalNamespace::ConnectionFailedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::DisconnectedReason,
-                            crate::GlobalNamespace::ConnectionFailedReason,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("DisconnectInternal")
+                    .find_method::<(
+                        crate::GlobalNamespace::DisconnectedReason,
+                        crate::GlobalNamespace::ConnectionFailedReason,
+                    ), quest_hook::libil2cpp::Void, 2usize>("DisconnectInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DisconnectInternal", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DisconnectInternal",
+                            2usize
                         )
                     })
             });
@@ -413,83 +388,79 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DisposeAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::System::Threading::Tasks::ValueTask,
-                        0usize,
-                    >("DisposeAsync")
+                    .find_method::<(), crate::System::Threading::Tasks::ValueTask, 0usize>(
+                        "DisposeAsync",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DisposeAsync", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DisposeAsync",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Threading::Tasks::ValueTask =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DisposeInternal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("DisposeInternal")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("DisposeInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DisposeInternal", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DisposeInternal",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FromLiteNetDeliveryMethod(
         deliveryMethod: crate::LiteNetLib::DeliveryMethod,
     ) -> quest_hook::libil2cpp::Result<crate::BGNet::Core::DeliveryMethod> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::LiteNetLib::DeliveryMethod),
@@ -504,9 +475,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: crate::BGNet::Core::DeliveryMethod = unsafe {
-            cordl_method_info.invoke_unchecked((), (deliveryMethod))?
-        };
+        let __cordl_ret: crate::BGNet::Core::DeliveryMethod =
+            unsafe { cordl_method_info.invoke_unchecked((), (deliveryMethod))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetConnectionMessage(
@@ -514,9 +484,10 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -533,9 +504,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::LiteNetLib::Utils::NetDataWriter,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetConnection_NetPeer1(
@@ -546,9 +516,10 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>),
@@ -573,12 +544,12 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     pub fn GetConnection_i32_0(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -593,88 +564,78 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnection,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLogFormatConnection(
         netPeerConnection: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
-                        >),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        1usize,
-                    >("GetLogFormatConnection")
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+                    >), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, 1usize>(
+                        "GetLogFormatConnection",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLogFormatConnection", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLogFormatConnection",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (netPeerConnection))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (netPeerConnection))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLogFormatUserInfo(
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ipEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        3usize,
-                    >("GetLogFormatUserInfo")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, 3usize>(
+                        "GetLogFormatUserInfo",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLogFormatUserInfo", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLogFormatUserInfo",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (userName, userId, ipEndPoint))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (userName, userId, ipEndPoint))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasConnectionToEndPoint(
         &mut self,
         endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>),
@@ -689,18 +650,17 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (endPoint))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (endPoint))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasPendingConnectionToEndPoint(
         &mut self,
         endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>),
@@ -715,24 +675,22 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (endPoint))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (endPoint))? };
         Ok(__cordl_ret.into())
     }
     pub fn Init<T>(
         &mut self,
-        initParams: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectionInitParams_1<T>,
-        >,
+        initParams: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionInitParams_1<T>>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -749,18 +707,17 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (initParams))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (initParams))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsConnectedToUser(
         &mut self,
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -775,18 +732,17 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (userId))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (userId))? };
         Ok(__cordl_ret.into())
     }
     pub fn LiteNetLib_INetEventListener_OnConnectionRequest(
         &mut self,
         request: quest_hook::libil2cpp::Gc<crate::LiteNetLib::ConnectionRequest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -803,9 +759,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (request))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (request))? };
         Ok(__cordl_ret.into())
     }
     pub fn LiteNetLib_INetEventListener_OnNetworkError(
@@ -813,29 +768,28 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         socketError: crate::System::Net::Sockets::SocketError,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-                            crate::System::Net::Sockets::SocketError,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("LiteNetLib.INetEventListener.OnNetworkError")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                        crate::System::Net::Sockets::SocketError,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "LiteNetLib.INetEventListener.OnNetworkError",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LiteNetLib.INetEventListener.OnNetworkError", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LiteNetLib.INetEventListener.OnNetworkError",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (endPoint, socketError))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (endPoint, socketError))? };
         Ok(__cordl_ret.into())
     }
     pub fn LiteNetLib_INetEventListener_OnNetworkLatencyUpdate(
@@ -843,9 +797,10 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         peer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
         latencyMs: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>, i32),
@@ -860,9 +815,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (peer, latencyMs))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (peer, latencyMs))? };
         Ok(__cordl_ret.into())
     }
     pub fn LiteNetLib_INetEventListener_OnNetworkReceive(
@@ -871,32 +825,29 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketReader>,
         deliveryMethod: crate::LiteNetLib::DeliveryMethod,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::LiteNetLib::NetPacketReader,
-                            >,
-                            crate::LiteNetLib::DeliveryMethod,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("LiteNetLib.INetEventListener.OnNetworkReceive")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketReader>,
+                        crate::LiteNetLib::DeliveryMethod,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "LiteNetLib.INetEventListener.OnNetworkReceive",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LiteNetLib.INetEventListener.OnNetworkReceive", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LiteNetLib.INetEventListener.OnNetworkReceive",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (peer, reader, deliveryMethod))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (peer, reader, deliveryMethod))? };
         Ok(__cordl_ret.into())
     }
     pub fn LiteNetLib_INetEventListener_OnNetworkReceiveUnconnected(
@@ -905,33 +856,29 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketReader>,
         messageType: crate::LiteNetLib::UnconnectedMessageType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::LiteNetLib::NetPacketReader,
-                            >,
-                            crate::LiteNetLib::UnconnectedMessageType,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("LiteNetLib.INetEventListener.OnNetworkReceiveUnconnected")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketReader>,
+                        crate::LiteNetLib::UnconnectedMessageType,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "LiteNetLib.INetEventListener.OnNetworkReceiveUnconnected",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            <Self as quest_hook::libil2cpp::Type>::class(),
                             "LiteNetLib.INetEventListener.OnNetworkReceiveUnconnected",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (remoteEndPoint, reader, messageType))?
+            cordl_method_info.invoke_unchecked(self, (remoteEndPoint, reader, messageType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -939,9 +886,10 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         &mut self,
         peer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>),
@@ -956,9 +904,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (peer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (peer))? };
         Ok(__cordl_ret.into())
     }
     pub fn LiteNetLib_INetEventListener_OnPeerDisconnected(
@@ -966,38 +913,38 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         peer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
         disconnectInfo: crate::LiteNetLib::DisconnectInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-                            crate::LiteNetLib::DisconnectInfo,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("LiteNetLib.INetEventListener.OnPeerDisconnected")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+                        crate::LiteNetLib::DisconnectInfo,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "LiteNetLib.INetEventListener.OnPeerDisconnected",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LiteNetLib.INetEventListener.OnPeerDisconnected", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LiteNetLib.INetEventListener.OnPeerDisconnected",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (peer, disconnectInfo))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (peer, disconnectInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn Log(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -1012,18 +959,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (msg))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn LogError(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -1038,14 +985,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (msg))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -1054,56 +1000,52 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (timeProvider, taskUtility))?;
         Ok(__cordl_object.into())
     }
-    pub fn NoDomainReloadInit() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Void,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn NoDomainReloadInit() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("NoDomainReloadInit")
+                    .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "NoDomainReloadInit",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "NoDomainReloadInit", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "NoDomainReloadInit",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn PollUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn PollUpdate(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("PollUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PollUpdate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PollUpdate",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveConnection(
@@ -1111,61 +1053,50 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         netPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
         reason: crate::LiteNetLib::DisconnectReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-                            crate::LiteNetLib::DisconnectReason,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("RemoveConnection")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+                        crate::LiteNetLib::DisconnectReason,
+                    ), quest_hook::libil2cpp::Void, 2usize>("RemoveConnection")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RemoveConnection", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RemoveConnection",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (netPeer, reason))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (netPeer, reason))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendToAll_IConnection1(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         deliveryMethod: crate::BGNet::Core::DeliveryMethod,
-        excludingConnection: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnection,
-        >,
+        excludingConnection: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::LiteNetLib::Utils::NetDataWriter,
-                            >,
-                            crate::BGNet::Core::DeliveryMethod,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IConnection,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("SendToAll")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+                        crate::BGNet::Core::DeliveryMethod,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("SendToAll")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendToAll", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendToAll",
+                            3usize
                         )
                     })
             });
@@ -1180,31 +1111,26 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         deliveryMethod: crate::BGNet::Core::DeliveryMethod,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::LiteNetLib::Utils::NetDataWriter,
-                            >,
-                            crate::BGNet::Core::DeliveryMethod,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SendToAll")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+                        crate::BGNet::Core::DeliveryMethod,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SendToAll")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendToAll", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendToAll",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer, deliveryMethod))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (writer, deliveryMethod))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendUnconnectedMessage(
@@ -1212,65 +1138,60 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::LiteNetLib::Utils::NetDataWriter,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SendUnconnectedMessage")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "SendUnconnectedMessage"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendUnconnectedMessage", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendUnconnectedMessage",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (remoteEndPoint, writer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (remoteEndPoint, writer))? };
         Ok(__cordl_ret.into())
     }
     pub fn StartBackgroundSentry(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("StartBackgroundSentry")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("StartBackgroundSentry")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StartBackgroundSentry", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "StartBackgroundSentry",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToConnectionFailedReason(
         &mut self,
         disconnectReason: crate::LiteNetLib::DisconnectReason,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ConnectionFailedReason> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::LiteNetLib::DisconnectReason),
@@ -1285,18 +1206,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::ConnectionFailedReason = unsafe {
-            cordl_method_info.invoke_unchecked(self, (disconnectReason))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::ConnectionFailedReason =
+            unsafe { cordl_method_info.invoke_unchecked(self, (disconnectReason))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToDisconnectedReason(
         &mut self,
         disconnectReason: crate::LiteNetLib::DisconnectReason,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::DisconnectedReason> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::LiteNetLib::DisconnectReason),
@@ -1311,17 +1232,17 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::DisconnectedReason = unsafe {
-            cordl_method_info.invoke_unchecked(self, (disconnectReason))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::DisconnectedReason =
+            unsafe { cordl_method_info.invoke_unchecked(self, (disconnectReason))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToLiteNetDeliveryMethod(
         deliveryMethod: crate::BGNet::Core::DeliveryMethod,
     ) -> quest_hook::libil2cpp::Result<crate::LiteNetLib::DeliveryMethod> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BGNet::Core::DeliveryMethod),
@@ -1336,9 +1257,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: crate::LiteNetLib::DeliveryMethod = unsafe {
-            cordl_method_info.invoke_unchecked((), (deliveryMethod))?
-        };
+        let __cordl_ret: crate::LiteNetLib::DeliveryMethod =
+            unsafe { cordl_method_info.invoke_unchecked((), (deliveryMethod))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryAccept(
@@ -1347,47 +1267,40 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isConnectionOwner: bool,
-        compatibilityVersion: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        compatibilityVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::LiteNetLib::ConnectionRequest,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("TryAccept")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::ConnectionRequest>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 5usize>("TryAccept")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryAccept", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryAccept",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (request, userId, userName, isConnectionOwner, compatibilityVersion),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    request,
+                    userId,
+                    userName,
+                    isConnectionOwner,
+                    compatibilityVersion,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1395,9 +1308,10 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         &mut self,
         reason: crate::LiteNetLib::DisconnectReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::LiteNetLib::DisconnectReason),
@@ -1412,9 +1326,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (reason))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reason))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryStartNetManager(
@@ -1422,93 +1335,89 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         port: i32,
         enableBackgroundSentry: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, bool), bool, 2usize>("TryStartNetManager")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryStartNetManager", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryStartNetManager",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (port, enableBackgroundSentry))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (port, enableBackgroundSentry))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateStatistics(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("UpdateStatistics")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdateStatistics")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateStatistics", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateStatistics",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _DisposeAsync_b__101_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("<DisposeAsync>b__101_0")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "<DisposeAsync>b__101_0",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<DisposeAsync>b__101_0", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "<DisposeAsync>b__101_0",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor_0(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_ITimeProvider_ITaskUtility1(
@@ -1516,38 +1425,36 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
-                            quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
+                        quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (timeProvider, taskUtility))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (timeProvider, taskUtility))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_onConnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
@@ -1562,45 +1469,39 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_onConnectionConnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
-            >,
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnection,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_onConnectionConnectedEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_onConnectionConnectedEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_onConnectionConnectedEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_onConnectionConnectedEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_onConnectionDisconnectedEvent(
@@ -1612,33 +1513,30 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnection,
-                                >,
-                                crate::GlobalNamespace::DisconnectedReason,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_onConnectionDisconnectedEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_2<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+                            crate::GlobalNamespace::DisconnectedReason,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_onConnectionDisconnectedEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_onConnectionDisconnectedEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_onConnectionDisconnectedEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_onConnectionFailedEvent(
@@ -1647,30 +1545,27 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::ConnectionFailedReason,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_onConnectionFailedEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_onConnectionFailedEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_onConnectionFailedEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_onConnectionFailedEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_onDisconnectedEvent(
@@ -1679,39 +1574,37 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::DisconnectedReason,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_onDisconnectedEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_onDisconnectedEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_onDisconnectedEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_onDisconnectedEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_onInitializedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
@@ -1726,9 +1619,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_onReceiveUnconnectedDataEvent(
@@ -1740,33 +1632,30 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::LiteNetLib::Utils::NetDataReader,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_onReceiveUnconnectedDataEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_2<
+                            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_onReceiveUnconnectedDataEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_onReceiveUnconnectedDataEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_onReceiveUnconnectedDataEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_onReceivedDataEvent(
@@ -1779,36 +1668,31 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_3<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnection,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::LiteNetLib::Utils::NetDataReader,
-                                >,
-                                crate::BGNet::Core::DeliveryMethod,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_onReceivedDataEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_3<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+                            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+                            crate::BGNet::Core::DeliveryMethod,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_onReceivedDataEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_onReceivedDataEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_onReceivedDataEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_onStatisticsUpdatedEvent(
@@ -1817,7 +1701,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -1836,19 +1721,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_compatibilityVersion(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1863,22 +1747,23 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_connectionCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_connectionCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_connectionCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_connectionCount",
+                            0usize
                         )
                     })
             });
@@ -1890,9 +1775,10 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionRequestHandler>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1919,9 +1805,10 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PacketEncryptionLayer>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1938,22 +1825,23 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PacketEncryptionLayer,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PacketEncryptionLayer> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_hasConnectionOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasConnectionOwner")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_hasConnectionOwner", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_hasConnectionOwner",
+                            0usize
                         )
                     })
             });
@@ -1961,16 +1849,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         Ok(__cordl_ret.into())
     }
     pub fn get_isClient(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isClient")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isClient", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isClient",
+                            0usize
                         )
                     })
             });
@@ -1978,16 +1868,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         Ok(__cordl_ret.into())
     }
     pub fn get_isConnected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isConnected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isConnected", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isConnected",
+                            0usize
                         )
                     })
             });
@@ -1995,16 +1887,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         Ok(__cordl_ret.into())
     }
     pub fn get_isConnecting(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isConnecting")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isConnecting", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isConnecting",
+                            0usize
                         )
                     })
             });
@@ -2012,16 +1906,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         Ok(__cordl_ret.into())
     }
     pub fn get_isConnectionOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isConnectionOwner")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isConnectionOwner", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isConnectionOwner",
+                            0usize
                         )
                     })
             });
@@ -2029,16 +1925,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         Ok(__cordl_ret.into())
     }
     pub fn get_isDisconnecting(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isDisconnecting")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isDisconnecting", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isDisconnecting",
+                            0usize
                         )
                     })
             });
@@ -2046,16 +1944,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         Ok(__cordl_ret.into())
     }
     pub fn get_isDisposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isDisposed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isDisposed", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isDisposed",
+                            0usize
                         )
                     })
             });
@@ -2063,16 +1963,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         Ok(__cordl_ret.into())
     }
     pub fn get_isServer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isServer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isServer", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isServer",
+                            0usize
                         )
                     })
             });
@@ -2080,16 +1982,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         Ok(__cordl_ret.into())
     }
     pub fn get_port(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_port")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_port", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_port",
+                            0usize
                         )
                     })
             });
@@ -2101,9 +2005,10 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2120,19 +2025,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_userId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2147,19 +2051,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_userName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2174,18 +2077,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_onConnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
@@ -2200,45 +2103,39 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_onConnectionConnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
-            >,
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnection,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_onConnectionConnectedEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_onConnectionConnectedEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_onConnectionConnectedEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_onConnectionConnectedEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_onConnectionDisconnectedEvent(
@@ -2250,33 +2147,30 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnection,
-                                >,
-                                crate::GlobalNamespace::DisconnectedReason,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_onConnectionDisconnectedEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_2<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+                            crate::GlobalNamespace::DisconnectedReason,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_onConnectionDisconnectedEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_onConnectionDisconnectedEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_onConnectionDisconnectedEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_onConnectionFailedEvent(
@@ -2285,30 +2179,27 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::ConnectionFailedReason,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_onConnectionFailedEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_onConnectionFailedEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_onConnectionFailedEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_onConnectionFailedEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_onDisconnectedEvent(
@@ -2317,39 +2208,37 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::DisconnectedReason,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_onDisconnectedEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_onDisconnectedEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_onDisconnectedEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_onDisconnectedEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_onInitializedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
@@ -2364,9 +2253,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_onReceiveUnconnectedDataEvent(
@@ -2378,33 +2266,30 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::LiteNetLib::Utils::NetDataReader,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_onReceiveUnconnectedDataEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_2<
+                            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_onReceiveUnconnectedDataEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_onReceiveUnconnectedDataEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_onReceiveUnconnectedDataEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_onReceivedDataEvent(
@@ -2417,36 +2302,31 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_3<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnection,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::LiteNetLib::Utils::NetDataReader,
-                                >,
-                                crate::BGNet::Core::DeliveryMethod,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_onReceivedDataEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_3<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+                            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+                            crate::BGNet::Core::DeliveryMethod,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_onReceivedDataEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_onReceivedDataEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_onReceivedDataEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_onStatisticsUpdatedEvent(
@@ -2455,7 +2335,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -2474,15 +2355,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LiteNetLibConnectionManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LiteNetLibConnectionManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2492,70 +2371,76 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager {
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
 impl AsRef<crate::GlobalNamespace::IConnectionManager>
-for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IConnectionManager {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
 impl AsMut<crate::GlobalNamespace::IConnectionManager>
-for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnectionManager {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
 impl AsRef<crate::GlobalNamespace::IPollable>
-for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
 impl AsMut<crate::GlobalNamespace::IPollable>
-for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
 impl AsRef<crate::LiteNetLib::INetEventListener>
-for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager
+{
     fn as_ref(&self) -> &crate::LiteNetLib::INetEventListener {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
 impl AsMut<crate::LiteNetLib::INetEventListener>
-for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager
+{
     fn as_mut(&mut self) -> &mut crate::LiteNetLib::INetEventListener {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
 impl AsRef<crate::System::IAsyncDisposable>
-for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager
+{
     fn as_ref(&self) -> &crate::System::IAsyncDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
 impl AsMut<crate::System::IAsyncDisposable>
-for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager
+{
     fn as_mut(&mut self) -> &mut crate::System::IAsyncDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
-impl AsRef<crate::System::IDisposable>
-for crate::GlobalNamespace::LiteNetLibConnectionManager {
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::LiteNetLibConnectionManager {
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
-impl AsMut<crate::System::IDisposable>
-for crate::GlobalNamespace::LiteNetLibConnectionManager {
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::LiteNetLibConnectionManager {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
@@ -2564,7 +2449,8 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_ConnectToServerParams {
-    __cordl_parent: crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,
+    __cordl_parent:
+        crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,
     pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -2574,13 +2460,15 @@ pub struct LiteNetLibConnectionManager_ConnectToServerParams {
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectToServerParams")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LiteNetLibConnectionManager/ConnectToServerParams";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2593,16 +2481,17 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
-impl std::ops::Deref
-for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
-    type Target = crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
+impl std::ops::Deref for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
+    type Target =
+        crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2610,37 +2499,37 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
 #[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
 impl crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectToServerParams")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2649,8 +2538,8 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectionState")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum LiteNetLibConnectionManager_ConnectionState {
     #[default]
     Connected = 2i32,
@@ -2660,7 +2549,8 @@ pub enum LiteNetLibConnectionManager_ConnectionState {
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -2679,18 +2569,16 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2701,7 +2589,8 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2715,22 +2604,22 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2742,37 +2631,32 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase"
-)]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub connectionRequestHandler: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectionRequestHandler,
-    >,
+    pub connectionRequestHandler:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionRequestHandler>,
     pub port: i32,
     pub filterUnencryptedTraffic: bool,
     pub enableUnconnectedMessages: bool,
     pub enableBackgroundSentry: bool,
     pub enableStatistics: bool,
     pub disconnectTimeoutMs: i32,
-    pub compatibilityVersion: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub compatibilityVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(
-    feature = "cordl_class_LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase"
-)]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LiteNetLibConnectionManager/LiteNetLibConnectionParamsBase";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2786,7 +2670,8 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionPara
 }
 #[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
 impl std::ops::Deref
-for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -2794,7 +2679,8 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionPara
 }
 #[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2802,39 +2688,37 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionPara
 #[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
 impl crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase"
-)]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2843,12 +2727,13 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionPara
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
-impl AsRef<
-    crate::GlobalNamespace::IConnectionInitParams_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LiteNetLibConnectionManager>,
-    >,
->
-for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
+impl
+    AsRef<
+        crate::GlobalNamespace::IConnectionInitParams_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LiteNetLibConnectionManager>,
+        >,
+    > for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase
+{
     fn as_ref(
         &self,
     ) -> &crate::GlobalNamespace::IConnectionInitParams_1<
@@ -2858,12 +2743,13 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionPara
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
-impl AsMut<
-    crate::GlobalNamespace::IConnectionInitParams_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LiteNetLibConnectionManager>,
-    >,
->
-for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
+impl
+    AsMut<
+        crate::GlobalNamespace::IConnectionInitParams_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LiteNetLibConnectionManager>,
+        >,
+    > for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::GlobalNamespace::IConnectionInitParams_1<
@@ -2881,19 +2767,19 @@ pub struct LiteNetLibConnectionManager_NetPeerConnection {
     pub _userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _isConnectionOwner: bool,
     pub netPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-    pub _compatibilityVersion: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub _compatibilityVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnection")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LiteNetLibConnectionManager/NetPeerConnection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2906,50 +2792,48 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
-impl std::ops::Deref
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
+impl std::ops::Deref for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
+impl std::ops::DerefMut for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
 impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
-    pub fn Disconnect(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Disconnect(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Disconnect")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Disconnect", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Disconnect",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -2964,9 +2848,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_LiteNetLibConnectionManager_NetPeerConnection0(
@@ -2975,41 +2857,39 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
             crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
-                        >),
-                        bool,
-                        1usize,
-                    >("Equals")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+                    >), bool, 1usize>("Equals")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Equals",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -3021,17 +2901,20 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isConnectionOwner: bool,
-        compatibilityVersion: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        compatibilityVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (netPeer, userId, userName, isConnectionOwner, compatibilityVersion),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                netPeer,
+                userId,
+                userName,
+                isConnectionOwner,
+                compatibilityVersion,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn Send(
@@ -3039,31 +2922,26 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         deliveryMethod: crate::BGNet::Core::DeliveryMethod,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::LiteNetLib::Utils::NetDataWriter,
-                            >,
-                            crate::BGNet::Core::DeliveryMethod,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Send")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+                        crate::BGNet::Core::DeliveryMethod,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Send")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Send",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Send",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer, deliveryMethod))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (writer, deliveryMethod))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -3072,56 +2950,51 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isConnectionOwner: bool,
-        compatibilityVersion: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        compatibilityVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (netPeer, userId, userName, isConnectionOwner, compatibilityVersion),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    netPeer,
+                    userId,
+                    userName,
+                    isConnectionOwner,
+                    compatibilityVersion,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_compatibilityVersion(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3136,22 +3009,23 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isConnectionOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isConnectionOwner")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isConnectionOwner", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isConnectionOwner",
+                            0usize
                         )
                     })
             });
@@ -3160,12 +3034,12 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
     }
     pub fn get_userId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3180,19 +3054,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_userName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3207,15 +3080,15 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnection")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3225,26 +3098,30 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
 impl AsRef<crate::GlobalNamespace::IConnection>
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IConnection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
 impl AsMut<crate::GlobalNamespace::IConnection>
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
-impl AsRef<
-    crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+impl
+    AsRef<
+        crate::System::IEquatable_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+            >,
         >,
-    >,
-> for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
+    > for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection
+{
     fn as_ref(
         &self,
     ) -> &crate::System::IEquatable_1<
@@ -3256,13 +3133,15 @@ impl AsRef<
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
-impl AsMut<
-    crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+impl
+    AsMut<
+        crate::System::IEquatable_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+            >,
         >,
-    >,
-> for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
+    > for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::IEquatable_1<
@@ -3282,19 +3161,19 @@ pub struct LiteNetLibConnectionManager_NetPeerConnectionRequest {
     pub _userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _isConnectionOwner: bool,
     pub _request: quest_hook::libil2cpp::Gc<crate::LiteNetLib::ConnectionRequest>,
-    pub _compatibilityVersion: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub _compatibilityVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnectionRequest")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LiteNetLibConnectionManager/NetPeerConnectionRequest";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -3308,7 +3187,8 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
 impl std::ops::Deref
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -3316,7 +3196,8 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -3325,12 +3206,11 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest
 impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest {
     pub fn Accept(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3345,9 +3225,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -3355,17 +3234,20 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isConnectionOwner: bool,
-        compatibilityVersion: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        compatibilityVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (request, userId, userName, isConnectionOwner, compatibilityVersion),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                request,
+                userId,
+                userName,
+                isConnectionOwner,
+                compatibilityVersion,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -3374,58 +3256,51 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isConnectionOwner: bool,
-        compatibilityVersion: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        compatibilityVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::LiteNetLib::ConnectionRequest,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::ConnectionRequest>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (request, userId, userName, isConnectionOwner, compatibilityVersion),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    request,
+                    userId,
+                    userName,
+                    isConnectionOwner,
+                    compatibilityVersion,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_compatibilityVersion(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3440,19 +3315,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_endPoint(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3467,22 +3341,23 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isConnectionOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isConnectionOwner")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isConnectionOwner", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isConnectionOwner",
+                            0usize
                         )
                     })
             });
@@ -3491,12 +3366,12 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
     }
     pub fn get_userId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3511,19 +3386,18 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_userName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3538,15 +3412,15 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnectionRequest")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3555,8 +3429,8 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetworkMode")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum LiteNetLibConnectionManager_NetworkMode {
     #[default]
     Client = 1i32,
@@ -3565,7 +3439,8 @@ pub enum LiteNetLibConnectionManager_NetworkMode {
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetworkMode")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -3584,18 +3459,16 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetworkMode")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -3606,7 +3479,8 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetworkMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -3620,22 +3494,22 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetworkMode")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetworkMode")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -3651,17 +3525,20 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_StartClientParams {
-    __cordl_parent: crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,
+    __cordl_parent:
+        crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartClientParams")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LiteNetLibConnectionManager/StartClientParams";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -3674,16 +3551,15 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
-impl std::ops::Deref
-for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
-    type Target = crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
+impl std::ops::Deref for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
+    type Target =
+        crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
+impl std::ops::DerefMut for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -3691,37 +3567,37 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
 #[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
 impl crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartClientParams")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3733,19 +3609,22 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_StartServerParams {
-    __cordl_parent: crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,
+    __cordl_parent:
+        crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,
     pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartServerParams")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LiteNetLibConnectionManager/StartServerParams";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -3758,16 +3637,15 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
-impl std::ops::Deref
-for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
-    type Target = crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
+impl std::ops::Deref for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
+    type Target =
+        crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
+impl std::ops::DerefMut for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -3775,37 +3653,37 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
 #[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
 impl crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartServerParams")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
+    for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

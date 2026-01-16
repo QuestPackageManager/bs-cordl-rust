@@ -1,18 +1,15 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ExpressionMultiplier {
     pub m_Type: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplierType,
     pub min: i32,
     pub max: i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
+    for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.StyleSheets.Syntax";
@@ -31,20 +28,16 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
+    for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -53,11 +46,10 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
+    for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -69,28 +61,24 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
+    for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
+    for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -102,11 +90,10 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
+    for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -122,7 +109,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplierType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -139,16 +127,16 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         _cordl_type: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplierType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -165,9 +153,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_type(
@@ -175,7 +162,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplierType,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -201,7 +189,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplierType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -218,9 +207,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -2,21 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatRangeParameter {
-    __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<
-        crate::UnityEngine::Vector2,
-    >,
+    __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<crate::UnityEngine::Vector2>,
     pub min: f32,
     pub max: f32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+FloatRangeParameter")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::FloatRangeParameter {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::FloatRangeParameter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "FloatRangeParameter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -30,9 +28,7 @@ for crate::UnityEngine::Rendering::FloatRangeParameter {
 }
 #[cfg(feature = "UnityEngine+Rendering+FloatRangeParameter")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::FloatRangeParameter {
-    type Target = crate::UnityEngine::Rendering::VolumeParameter_1<
-        crate::UnityEngine::Vector2,
-    >;
+    type Target = crate::UnityEngine::Rendering::VolumeParameter_1<crate::UnityEngine::Vector2>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,26 +47,27 @@ impl crate::UnityEngine::Rendering::FloatRangeParameter {
         to: crate::UnityEngine::Vector2,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2, f32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Interp")
+                    .find_method::<(
+                        crate::UnityEngine::Vector2,
+                        crate::UnityEngine::Vector2,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Interp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Interp",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Interp",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (from, to, t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (from, to, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -79,8 +76,8 @@ impl crate::UnityEngine::Rendering::FloatRangeParameter {
         max: f32,
         overrideState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (value, min, max, overrideState))?;
         Ok(__cordl_object.into())
@@ -92,9 +89,10 @@ impl crate::UnityEngine::Rendering::FloatRangeParameter {
         max: f32,
         overrideState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2, f32, f32, bool),
@@ -109,39 +107,38 @@ impl crate::UnityEngine::Rendering::FloatRangeParameter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value, min, max, overrideState))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value, min, max, overrideState))? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_value(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::UnityEngine::Vector2, 0usize>("get_value")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_value", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_value",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector2 =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_value(
         &mut self,
         value: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
@@ -156,15 +153,13 @@ impl crate::UnityEngine::Rendering::FloatRangeParameter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+FloatRangeParameter")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::FloatRangeParameter {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::FloatRangeParameter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

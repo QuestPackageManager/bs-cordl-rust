@@ -1,18 +1,18 @@
 #[cfg(feature = "cordl_class_UnityEngine+Playables+IPlayableOutput")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IPlayableOutput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+IPlayableOutput")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Playables::IPlayableOutput {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Playables::IPlayableOutput {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Playables";
     const CLASS_NAME: &'static str = "IPlayableOutput";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,40 +41,34 @@ impl std::ops::DerefMut for crate::UnityEngine::Playables::IPlayableOutput {
 impl crate::UnityEngine::Playables::IPlayableOutput {
     pub fn GetHandle(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Playables::PlayableOutputHandle,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableOutputHandle> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::Playables::PlayableOutputHandle,
-                        0usize,
-                    >("GetHandle")
+                    .find_method::<(), crate::UnityEngine::Playables::PlayableOutputHandle, 0usize>(
+                        "GetHandle",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHandle", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHandle",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutputHandle = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutputHandle =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+IPlayableOutput")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Playables::IPlayableOutput {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Playables::IPlayableOutput {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

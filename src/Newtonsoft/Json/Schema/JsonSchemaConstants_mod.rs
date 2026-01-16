@@ -5,14 +5,14 @@ pub struct JsonSchemaConstants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaConstants")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Newtonsoft::Json::Schema::JsonSchemaConstants {
+unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Schema::JsonSchemaConstants {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Schema";
     const CLASS_NAME: &'static str = "JsonSchemaConstants";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -73,8 +73,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaConstants {
     pub const UniqueItemsPropertyName: &'static str = "uniqueItems";
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaConstants")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Newtonsoft::Json::Schema::JsonSchemaConstants {
+impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Schema::JsonSchemaConstants {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

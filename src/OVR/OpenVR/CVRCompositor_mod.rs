@@ -12,7 +12,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::CVRCompositor {
     const NAMESPACE: &'static str = "OVR.OpenVR";
     const CLASS_NAME: &'static str = "CVRCompositor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,16 +41,18 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRCompositor {
 #[cfg(feature = "OVR+OpenVR+CVRCompositor")]
 impl crate::OVR::OpenVR::CVRCompositor {
     pub fn CanRenderScene(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("CanRenderScene")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CanRenderScene", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CanRenderScene",
+                            0usize
                         )
                     })
             });
@@ -59,151 +62,135 @@ impl crate::OVR::OpenVR::CVRCompositor {
     pub fn ClearLastSubmittedFrame(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ClearLastSubmittedFrame")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "ClearLastSubmittedFrame",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ClearLastSubmittedFrame", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ClearLastSubmittedFrame",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ClearSkyboxOverride(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ClearSkyboxOverride")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearSkyboxOverride")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ClearSkyboxOverride", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ClearSkyboxOverride",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CompositorBringToFront(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("CompositorBringToFront")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "CompositorBringToFront",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompositorBringToFront", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompositorBringToFront",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CompositorDumpImages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("CompositorDumpImages")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CompositorDumpImages")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompositorDumpImages", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompositorDumpImages",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CompositorGoToBack(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("CompositorGoToBack")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CompositorGoToBack")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompositorGoToBack", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompositorGoToBack",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn CompositorQuit(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn CompositorQuit(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("CompositorQuit")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CompositorQuit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompositorQuit", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompositorQuit",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FadeGrid(
@@ -211,26 +198,23 @@ impl crate::OVR::OpenVR::CVRCompositor {
         fSeconds: f32,
         bFadeIn: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32, bool),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("FadeGrid")
+                    .find_method::<(f32, bool), quest_hook::libil2cpp::Void, 2usize>("FadeGrid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FadeGrid", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FadeGrid",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (fSeconds, bFadeIn))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (fSeconds, bFadeIn))? };
         Ok(__cordl_ret.into())
     }
     pub fn FadeToColor(
@@ -242,9 +226,10 @@ impl crate::OVR::OpenVR::CVRCompositor {
         fAlpha: f32,
         bBackground: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, f32, f32, f32, f32, bool),
@@ -261,10 +246,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (fSeconds, fRed, fGreen, fBlue, fAlpha, bBackground),
-                )?
+                .invoke_unchecked(self, (fSeconds, fRed, fGreen, fBlue, fAlpha, bBackground))?
         };
         Ok(__cordl_ret.into())
     }
@@ -272,124 +254,116 @@ impl crate::OVR::OpenVR::CVRCompositor {
         &mut self,
         bOverride: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("ForceInterleavedReprojectionOn")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "ForceInterleavedReprojectionOn",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ForceInterleavedReprojectionOn", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ForceInterleavedReprojectionOn",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bOverride))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bOverride))? };
         Ok(__cordl_ret.into())
     }
     pub fn ForceReconnectProcess(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ForceReconnectProcess")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ForceReconnectProcess")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ForceReconnectProcess", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ForceReconnectProcess",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCumulativeStats(
         &mut self,
-        pStats: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::Compositor_CumulativeStats,
-        >,
+        pStats: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::Compositor_CumulativeStats>,
         nStatsSizeInBytes: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::OVR::OpenVR::Compositor_CumulativeStats,
-                            >,
-                            u32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("GetCumulativeStats")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::OVR::OpenVR::Compositor_CumulativeStats,
+                        >,
+                        u32,
+                    ), quest_hook::libil2cpp::Void, 2usize>("GetCumulativeStats")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCumulativeStats", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCumulativeStats",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pStats, nStatsSizeInBytes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pStats, nStatsSizeInBytes))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentFadeColor(
         &mut self,
         bBackground: bool,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::HmdColor_t> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        crate::OVR::OpenVR::HmdColor_t,
-                        1usize,
-                    >("GetCurrentFadeColor")
+                    .find_method::<(bool), crate::OVR::OpenVR::HmdColor_t, 1usize>(
+                        "GetCurrentFadeColor",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCurrentFadeColor", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCurrentFadeColor",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::OVR::OpenVR::HmdColor_t = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bBackground))?
-        };
+        let __cordl_ret: crate::OVR::OpenVR::HmdColor_t =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bBackground))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentGridAlpha(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("GetCurrentGridAlpha")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCurrentGridAlpha", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCurrentGridAlpha",
+                            0usize
                         )
                     })
             });
@@ -397,16 +371,18 @@ impl crate::OVR::OpenVR::CVRCompositor {
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentSceneFocusProcess(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("GetCurrentSceneFocusProcess")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCurrentSceneFocusProcess", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCurrentSceneFocusProcess",
+                            0usize
                         )
                     })
             });
@@ -414,16 +390,18 @@ impl crate::OVR::OpenVR::CVRCompositor {
         Ok(__cordl_ret.into())
     }
     pub fn GetFrameTimeRemaining(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("GetFrameTimeRemaining")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetFrameTimeRemaining", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetFrameTimeRemaining",
+                            0usize
                         )
                     })
             });
@@ -432,83 +410,71 @@ impl crate::OVR::OpenVR::CVRCompositor {
     }
     pub fn GetFrameTiming(
         &mut self,
-        pTiming: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::Compositor_FrameTiming,
-        >,
+        pTiming: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::Compositor_FrameTiming>,
         unFramesAgo: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::OVR::OpenVR::Compositor_FrameTiming,
-                            >,
-                            u32,
-                        ),
-                        bool,
-                        2usize,
-                    >("GetFrameTiming")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::Compositor_FrameTiming>,
+                        u32,
+                    ), bool, 2usize>("GetFrameTiming")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetFrameTiming", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetFrameTiming",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pTiming, unFramesAgo))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pTiming, unFramesAgo))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFrameTimings(
         &mut self,
-        pTiming: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::Compositor_FrameTiming,
-        >,
+        pTiming: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::Compositor_FrameTiming>,
         nFrames: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::OVR::OpenVR::Compositor_FrameTiming,
-                            >,
-                            u32,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::Compositor_FrameTiming>,
                         u32,
-                        2usize,
-                    >("GetFrameTimings")
+                    ), u32, 2usize>("GetFrameTimings")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetFrameTimings", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetFrameTimings",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pTiming, nFrames))?
-        };
+        let __cordl_ret: u32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pTiming, nFrames))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLastFrameRenderer(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("GetLastFrameRenderer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLastFrameRenderer", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLastFrameRenderer",
+                            0usize
                         )
                     })
             });
@@ -518,35 +484,27 @@ impl crate::OVR::OpenVR::CVRCompositor {
     pub fn GetLastPoseForTrackedDeviceIndex(
         &mut self,
         unDeviceIndex: u32,
-        pOutputPose: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::TrackedDevicePose_t,
-        >,
-        pOutputGamePose: quest_hook::libil2cpp::ByRefMut<
-            crate::OVR::OpenVR::TrackedDevicePose_t,
-        >,
+        pOutputPose: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::TrackedDevicePose_t>,
+        pOutputGamePose: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::TrackedDevicePose_t>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRCompositorError> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            u32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::OVR::OpenVR::TrackedDevicePose_t,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::OVR::OpenVR::TrackedDevicePose_t,
-                            >,
-                        ),
-                        crate::OVR::OpenVR::EVRCompositorError,
-                        3usize,
-                    >("GetLastPoseForTrackedDeviceIndex")
+                    .find_method::<(
+                        u32,
+                        quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::TrackedDevicePose_t>,
+                        quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::TrackedDevicePose_t>,
+                    ), crate::OVR::OpenVR::EVRCompositorError, 3usize>(
+                        "GetLastPoseForTrackedDeviceIndex",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLastPoseForTrackedDeviceIndex", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLastPoseForTrackedDeviceIndex",
+                            3usize
                         )
                     })
             });
@@ -565,31 +523,31 @@ impl crate::OVR::OpenVR::CVRCompositor {
             quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::TrackedDevicePose_t>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRCompositorError> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::OVR::OpenVR::TrackedDevicePose_t,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::OVR::OpenVR::TrackedDevicePose_t,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::OVR::OpenVR::TrackedDevicePose_t,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::OVR::OpenVR::TrackedDevicePose_t,
                             >,
-                        ),
-                        crate::OVR::OpenVR::EVRCompositorError,
-                        2usize,
-                    >("GetLastPoses")
+                        >,
+                    ), crate::OVR::OpenVR::EVRCompositorError, 2usize>(
+                        "GetLastPoses"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLastPoses", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLastPoses",
+                            2usize
                         )
                     })
             });
@@ -604,33 +562,32 @@ impl crate::OVR::OpenVR::CVRCompositor {
         pD3D11DeviceOrResource: crate::System::IntPtr,
         ppD3D11ShaderResourceView: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRCompositorError> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::OVR::OpenVR::EVREye,
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
-                        ),
-                        crate::OVR::OpenVR::EVRCompositorError,
-                        3usize,
-                    >("GetMirrorTextureD3D11")
+                    .find_method::<(
+                        crate::OVR::OpenVR::EVREye,
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                    ), crate::OVR::OpenVR::EVRCompositorError, 3usize>(
+                        "GetMirrorTextureD3D11"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetMirrorTextureD3D11", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetMirrorTextureD3D11",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRCompositorError = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (eEye, pD3D11DeviceOrResource, ppD3D11ShaderResourceView),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (eEye, pD3D11DeviceOrResource, ppD3D11ShaderResourceView),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -640,24 +597,24 @@ impl crate::OVR::OpenVR::CVRCompositor {
         pglTextureId: quest_hook::libil2cpp::ByRefMut<u32>,
         pglSharedTextureHandle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRCompositorError> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::OVR::OpenVR::EVREye,
-                            quest_hook::libil2cpp::ByRefMut<u32>,
-                            crate::System::IntPtr,
-                        ),
-                        crate::OVR::OpenVR::EVRCompositorError,
-                        3usize,
-                    >("GetMirrorTextureGL")
+                    .find_method::<(
+                        crate::OVR::OpenVR::EVREye,
+                        quest_hook::libil2cpp::ByRefMut<u32>,
+                        crate::System::IntPtr,
+                    ), crate::OVR::OpenVR::EVRCompositorError, 3usize>(
+                        "GetMirrorTextureGL"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetMirrorTextureGL", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetMirrorTextureGL",
+                            3usize
                         )
                     })
             });
@@ -670,26 +627,25 @@ impl crate::OVR::OpenVR::CVRCompositor {
     pub fn GetTrackingSpace(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::ETrackingUniverseOrigin> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::OVR::OpenVR::ETrackingUniverseOrigin,
-                        0usize,
-                    >("GetTrackingSpace")
+                    .find_method::<(), crate::OVR::OpenVR::ETrackingUniverseOrigin, 0usize>(
+                        "GetTrackingSpace",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTrackingSpace", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetTrackingSpace",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::OVR::OpenVR::ETrackingUniverseOrigin = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::OVR::OpenVR::ETrackingUniverseOrigin =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetVulkanDeviceExtensionsRequired(
@@ -698,32 +654,27 @@ impl crate::OVR::OpenVR::CVRCompositor {
         pchValue: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         unBufferSize: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Text::StringBuilder,
-                            >,
-                            u32,
-                        ),
+                    .find_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
                         u32,
-                        3usize,
-                    >("GetVulkanDeviceExtensionsRequired")
+                    ), u32, 3usize>("GetVulkanDeviceExtensionsRequired")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetVulkanDeviceExtensionsRequired", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetVulkanDeviceExtensionsRequired",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (pPhysicalDevice, pchValue, unBufferSize))?
+            cordl_method_info.invoke_unchecked(self, (pPhysicalDevice, pchValue, unBufferSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -732,69 +683,63 @@ impl crate::OVR::OpenVR::CVRCompositor {
         pchValue: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         unBufferSize: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Text::StringBuilder,
-                            >,
-                            u32,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
                         u32,
-                        2usize,
-                    >("GetVulkanInstanceExtensionsRequired")
+                    ), u32, 2usize>("GetVulkanInstanceExtensionsRequired")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetVulkanInstanceExtensionsRequired", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetVulkanInstanceExtensionsRequired",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pchValue, unBufferSize))?
-        };
+        let __cordl_ret: u32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pchValue, unBufferSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn HideMirrorWindow(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("HideMirrorWindow")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("HideMirrorWindow")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HideMirrorWindow", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HideMirrorWindow",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsFullscreen(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsFullscreen")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsFullscreen", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsFullscreen",
+                            0usize
                         )
                     })
             });
@@ -802,16 +747,18 @@ impl crate::OVR::OpenVR::CVRCompositor {
         Ok(__cordl_ret.into())
     }
     pub fn IsMirrorWindowVisible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsMirrorWindowVisible")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsMirrorWindowVisible", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsMirrorWindowVisible",
+                            0usize
                         )
                     })
             });
@@ -822,33 +769,32 @@ impl crate::OVR::OpenVR::CVRCompositor {
         &mut self,
         glSharedTextureHandle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::System::IntPtr),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("LockGLSharedTextureForAccess")
+                    .find_method::<(crate::System::IntPtr), quest_hook::libil2cpp::Void, 1usize>(
+                        "LockGLSharedTextureForAccess",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LockGLSharedTextureForAccess", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LockGLSharedTextureForAccess",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (glSharedTextureHandle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (glSharedTextureHandle))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pInterface))?;
         Ok(__cordl_object.into())
@@ -856,52 +802,48 @@ impl crate::OVR::OpenVR::CVRCompositor {
     pub fn PostPresentHandoff(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("PostPresentHandoff")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("PostPresentHandoff")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PostPresentHandoff", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PostPresentHandoff",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ReleaseMirrorTextureD3D11(
         &mut self,
         pD3D11ShaderResourceView: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::System::IntPtr),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("ReleaseMirrorTextureD3D11")
+                    .find_method::<(crate::System::IntPtr), quest_hook::libil2cpp::Void, 1usize>(
+                        "ReleaseMirrorTextureD3D11",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReleaseMirrorTextureD3D11", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReleaseMirrorTextureD3D11",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pD3D11ShaderResourceView))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pD3D11ShaderResourceView))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReleaseSharedGLTexture(
@@ -909,26 +851,25 @@ impl crate::OVR::OpenVR::CVRCompositor {
         glTextureId: u32,
         glSharedTextureHandle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32, crate::System::IntPtr),
-                        bool,
-                        2usize,
-                    >("ReleaseSharedGLTexture")
+                    .find_method::<(u32, crate::System::IntPtr), bool, 2usize>(
+                        "ReleaseSharedGLTexture",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReleaseSharedGLTexture", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReleaseSharedGLTexture",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (glTextureId, glSharedTextureHandle))?
+            cordl_method_info.invoke_unchecked(self, (glTextureId, glSharedTextureHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -936,9 +877,10 @@ impl crate::OVR::OpenVR::CVRCompositor {
         &mut self,
         eTimingMode: crate::OVR::OpenVR::EVRCompositorTimingMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::OVR::OpenVR::EVRCompositorTimingMode),
@@ -953,9 +895,8 @@ impl crate::OVR::OpenVR::CVRCompositor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (eTimingMode))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (eTimingMode))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSkyboxOverride(
@@ -964,39 +905,37 @@ impl crate::OVR::OpenVR::CVRCompositor {
             quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::Texture_t>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRCompositorError> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::OVR::OpenVR::Texture_t,
-                            >,
-                        >),
-                        crate::OVR::OpenVR::EVRCompositorError,
-                        1usize,
-                    >("SetSkyboxOverride")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::Texture_t>,
+                    >), crate::OVR::OpenVR::EVRCompositorError, 1usize>(
+                        "SetSkyboxOverride"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetSkyboxOverride", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetSkyboxOverride",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::OVR::OpenVR::EVRCompositorError = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pTextures))?
-        };
+        let __cordl_ret: crate::OVR::OpenVR::EVRCompositorError =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pTextures))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetTrackingSpace(
         &mut self,
         eOrigin: crate::OVR::OpenVR::ETrackingUniverseOrigin,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::OVR::OpenVR::ETrackingUniverseOrigin),
@@ -1011,24 +950,23 @@ impl crate::OVR::OpenVR::CVRCompositor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (eOrigin))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (eOrigin))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ShouldAppRenderWithLowResources(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ShouldAppRenderWithLowResources(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ShouldAppRenderWithLowResources")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ShouldAppRenderWithLowResources", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ShouldAppRenderWithLowResources",
+                            0usize
                         )
                     })
             });
@@ -1038,26 +976,23 @@ impl crate::OVR::OpenVR::CVRCompositor {
     pub fn ShowMirrorWindow(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ShowMirrorWindow")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ShowMirrorWindow")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ShowMirrorWindow", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ShowMirrorWindow",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Submit(
@@ -1067,113 +1002,101 @@ impl crate::OVR::OpenVR::CVRCompositor {
         pBounds: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VRTextureBounds_t>,
         nSubmitFlags: crate::OVR::OpenVR::EVRSubmitFlags,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRCompositorError> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::OVR::OpenVR::EVREye,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::OVR::OpenVR::Texture_t,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::OVR::OpenVR::VRTextureBounds_t,
-                            >,
-                            crate::OVR::OpenVR::EVRSubmitFlags,
-                        ),
-                        crate::OVR::OpenVR::EVRCompositorError,
-                        4usize,
-                    >("Submit")
+                    .find_method::<(
+                        crate::OVR::OpenVR::EVREye,
+                        quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::Texture_t>,
+                        quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VRTextureBounds_t>,
+                        crate::OVR::OpenVR::EVRSubmitFlags,
+                    ), crate::OVR::OpenVR::EVRCompositorError, 4usize>("Submit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Submit",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Submit",
                             4usize
                         )
                     })
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRCompositorError = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (eEye, pTexture, pBounds, nSubmitFlags))?
+            cordl_method_info.invoke_unchecked(self, (eEye, pTexture, pBounds, nSubmitFlags))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SubmitExplicitTimingData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRCompositorError> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::OVR::OpenVR::EVRCompositorError,
-                        0usize,
-                    >("SubmitExplicitTimingData")
+                    .find_method::<(), crate::OVR::OpenVR::EVRCompositorError, 0usize>(
+                        "SubmitExplicitTimingData",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SubmitExplicitTimingData", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SubmitExplicitTimingData",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::OVR::OpenVR::EVRCompositorError = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::OVR::OpenVR::EVRCompositorError =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SuspendRendering(
         &mut self,
         bSuspend: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SuspendRendering")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("SuspendRendering")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SuspendRendering", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SuspendRendering",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bSuspend))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bSuspend))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnlockGLSharedTextureForAccess(
         &mut self,
         glSharedTextureHandle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::System::IntPtr),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("UnlockGLSharedTextureForAccess")
+                    .find_method::<(crate::System::IntPtr), quest_hook::libil2cpp::Void, 1usize>(
+                        "UnlockGLSharedTextureForAccess",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnlockGLSharedTextureForAccess", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnlockGLSharedTextureForAccess",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (glSharedTextureHandle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (glSharedTextureHandle))? };
         Ok(__cordl_ret.into())
     }
     pub fn WaitGetPoses(
@@ -1185,31 +1108,31 @@ impl crate::OVR::OpenVR::CVRCompositor {
             quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::TrackedDevicePose_t>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRCompositorError> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::OVR::OpenVR::TrackedDevicePose_t,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::OVR::OpenVR::TrackedDevicePose_t,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::OVR::OpenVR::TrackedDevicePose_t,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::OVR::OpenVR::TrackedDevicePose_t,
                             >,
-                        ),
-                        crate::OVR::OpenVR::EVRCompositorError,
-                        2usize,
-                    >("WaitGetPoses")
+                        >,
+                    ), crate::OVR::OpenVR::EVRCompositorError, 2usize>(
+                        "WaitGetPoses"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WaitGetPoses", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WaitGetPoses",
+                            2usize
                         )
                     })
             });
@@ -1222,26 +1145,25 @@ impl crate::OVR::OpenVR::CVRCompositor {
         &mut self,
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::System::IntPtr),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(crate::System::IntPtr), quest_hook::libil2cpp::Void, 1usize>(
+                        ".ctor",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pInterface))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pInterface))? };
         Ok(__cordl_ret.into())
     }
 }

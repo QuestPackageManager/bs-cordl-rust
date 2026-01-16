@@ -10,13 +10,15 @@ pub struct AutoCompletePathVisitor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Internal";
     const CLASS_NAME: &'static str = "AutoCompletePathVisitor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -29,88 +31,81 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor")]
-impl std::ops::Deref
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
+impl std::ops::Deref for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor")]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
+impl std::ops::DerefMut for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor")]
 impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
-    #[cfg(
-        feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1"
-    )]
-    pub type InspectedTypeScope_1<TContainer: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
-        TContainer,
-    >;
-    #[cfg(
-        feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitContext"
-    )]
-    pub type VisitContext = crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitContext;
-    #[cfg(
-        feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope"
-    )]
-    pub type VisitedPropertyScope = crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope;
+    #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1")]
+    pub type InspectedTypeScope_1<TContainer: quest_hook::libil2cpp::Type> =
+        crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
+            TContainer,
+        >;
+    #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitContext")]
+    pub type VisitContext =
+        crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitContext;
+    #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope")]
+    pub type VisitedPropertyScope =
+        crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope;
     pub fn HasReachedEnd(
         &mut self,
         containerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Type>),
-                        bool,
-                        1usize,
-                    >("HasReachedEnd")
+                    .find_method::<(quest_hook::libil2cpp::Gc<crate::System::Type>), bool, 1usize>(
+                        "HasReachedEnd",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HasReachedEnd", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HasReachedEnd",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (containerType))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (containerType))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reset",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Unity_Properties_IListPropertyVisitor_Visit<TContainer, TList, TElement>(
@@ -122,77 +117,77 @@ impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
         list: quest_hook::libil2cpp::ByRefMut<TList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContainer: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TList: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TList: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TElement: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Unity::Properties::Property_2<TContainer, TList>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<TContainer>,
-                            quest_hook::libil2cpp::ByRefMut<TList>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Unity.Properties.IListPropertyVisitor.Visit")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::Unity::Properties::Property_2<TContainer, TList>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<TContainer>,
+                        quest_hook::libil2cpp::ByRefMut<TList>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "Unity.Properties.IListPropertyVisitor.Visit",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Unity.Properties.IListPropertyVisitor.Visit", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Unity.Properties.IListPropertyVisitor.Visit",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (property, container, list))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (property, container, list))? };
         Ok(__cordl_ret.into())
     }
     pub fn Unity_Properties_IPropertyBagVisitor_Visit<TContainer>(
         &mut self,
-        properties: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<TContainer>,
-        >,
+        properties: quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag_1<TContainer>>,
         container: quest_hook::libil2cpp::ByRefMut<TContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContainer: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Unity::Properties::IPropertyBag_1<TContainer>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<TContainer>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Unity.Properties.IPropertyBagVisitor.Visit")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::Unity::Properties::IPropertyBag_1<TContainer>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<TContainer>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "Unity.Properties.IPropertyBagVisitor.Visit",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Unity.Properties.IPropertyBagVisitor.Visit", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Unity.Properties.IPropertyBagVisitor.Visit",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (properties, container))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (properties, container))? };
         Ok(__cordl_ret.into())
     }
     pub fn Unity_Properties_IPropertyVisitor_Visit<TContainer, TValue>(
@@ -203,74 +198,76 @@ impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
         container: quest_hook::libil2cpp::ByRefMut<TContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContainer: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Unity::Properties::Property_2<TContainer, TValue>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<TContainer>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Unity.Properties.IPropertyVisitor.Visit")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::Unity::Properties::Property_2<TContainer, TValue>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<TContainer>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "Unity.Properties.IPropertyVisitor.Visit",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Unity.Properties.IPropertyVisitor.Visit", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Unity.Properties.IPropertyVisitor.Visit",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (property, container))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (property, container))? };
         Ok(__cordl_ret.into())
     }
     pub fn Unity_Properties_ITypeVisitor_Visit<TContainer>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContainer: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("Unity.Properties.ITypeVisitor.Visit")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "Unity.Properties.ITypeVisitor.Visit",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Unity.Properties.ITypeVisitor.Visit", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Unity.Properties.ITypeVisitor.Visit",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn VisitPropertyType(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
@@ -285,43 +282,43 @@ impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_maxDepth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_maxDepth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_maxDepth", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_maxDepth",
+                            0usize
                         )
                     })
             });
@@ -331,7 +328,8 @@ impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -341,56 +339,64 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor")]
 impl AsRef<crate::Unity::Properties::IListPropertyVisitor>
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor
+{
     fn as_ref(&self) -> &crate::Unity::Properties::IListPropertyVisitor {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor")]
 impl AsMut<crate::Unity::Properties::IListPropertyVisitor>
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Properties::IListPropertyVisitor {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor")]
 impl AsRef<crate::Unity::Properties::IPropertyBagVisitor>
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor
+{
     fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBagVisitor {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor")]
 impl AsMut<crate::Unity::Properties::IPropertyBagVisitor>
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBagVisitor {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor")]
 impl AsRef<crate::Unity::Properties::IPropertyVisitor>
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor
+{
     fn as_ref(&self) -> &crate::Unity::Properties::IPropertyVisitor {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor")]
 impl AsMut<crate::Unity::Properties::IPropertyVisitor>
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyVisitor {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor")]
 impl AsRef<crate::Unity::Properties::ITypeVisitor>
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor
+{
     fn as_ref(&self) -> &crate::Unity::Properties::ITypeVisitor {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor")]
 impl AsMut<crate::Unity::Properties::ITypeVisitor>
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Properties::ITypeVisitor {
         unsafe { std::mem::transmute(self) }
     }
@@ -398,11 +404,9 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor {
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
-pub struct AutoCompletePathVisitor_InspectedTypeScope_1<
-    TContainer: quest_hook::libil2cpp::Type,
-> {
+#[repr(C)]
+pub struct AutoCompletePathVisitor_InspectedTypeScope_1<TContainer: quest_hook::libil2cpp::Type> {
     pub m_VisitContext: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitContext,
     >,
@@ -412,28 +416,27 @@ pub struct AutoCompletePathVisitor_InspectedTypeScope_1<
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1"
 )]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
-    TContainer,
-> {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
+        TContainer,
+    >
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Internal";
     const CLASS_NAME: &'static str = "AutoCompletePathVisitor/InspectedTypeScope`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "UnityEngine.UIElements.Internal",
-                        "AutoCompletePathVisitor/InspectedTypeScope`1",
-                    )
-                    .unwrap()
-                    .make_generic::<(TContainer)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find(
+                "UnityEngine.UIElements.Internal",
+                "AutoCompletePathVisitor/InspectedTypeScope`1",
+            )
+            .unwrap()
+            .make_generic::<(TContainer)>()
+            .unwrap()
+            .unwrap()
+        })
     }
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
@@ -449,22 +452,20 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedT
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1"
 )]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
-    TContainer,
-> {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
+        TContainer,
+    >
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -477,9 +478,10 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedT
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1"
 )]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
-    TContainer,
-> {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
+        TContainer,
+    >
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -495,18 +497,17 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedT
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1"
 )]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
-    TContainer,
-> {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
+        TContainer,
+    >
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -514,9 +515,10 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedT
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1"
 )]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
-    TContainer,
-> {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
+        TContainer,
+    >
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -532,9 +534,10 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedT
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1"
 )]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
-    TContainer,
-> {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
+        TContainer,
+    >
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -543,37 +546,36 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedT
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1"
-)]
-impl<
-    TContainer: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
-    TContainer,
-> {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+#[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1")]
+impl<TContainer: quest_hook::libil2cpp::Type>
+    crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
+        TContainer,
+    >
+{
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContainer: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -583,10 +585,13 @@ impl<
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContainer: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -605,37 +610,32 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1")]
 impl<TContainer: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
-    TContainer,
-> {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
+        TContainer,
+    >
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1")]
 impl<TContainer: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
-    TContainer,
-> {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_InspectedTypeScope_1<
+        TContainer,
+    >
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitContext"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AutoCompletePathVisitor_VisitContext {
@@ -653,17 +653,17 @@ pub struct AutoCompletePathVisitor_VisitContext {
     pub _current_k__BackingField: crate::Unity::Properties::PropertyPath,
     pub _currentDepth_k__BackingField: i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitContext"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitContext")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitContext {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitContext
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Internal";
     const CLASS_NAME: &'static str = "AutoCompletePathVisitor/VisitContext";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -677,7 +677,8 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitConte
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitContext")]
 impl std::ops::Deref
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitContext {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitContext
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -685,7 +686,8 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitConte
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitContext")]
 impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitContext {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitContext
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -693,69 +695,69 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitConte
 #[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitContext")]
 impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitContext {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_current(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Properties::PropertyPath> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::Unity::Properties::PropertyPath,
-                        0usize,
-                    >("get_current")
+                    .find_method::<(), crate::Unity::Properties::PropertyPath, 0usize>(
+                        "get_current",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_current", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_current",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Properties::PropertyPath = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::Unity::Properties::PropertyPath =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_currentDepth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_currentDepth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_currentDepth", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_currentDepth",
+                            0usize
                         )
                     })
             });
@@ -771,24 +773,22 @@ impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitCont
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::UIElements::PropertyPathInfo,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::UIElements::PropertyPathInfo,
                         >,
-                        0usize,
-                    >("get_propertyPathInfos")
+                    >, 0usize>("get_propertyPathInfos")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_propertyPathInfos", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_propertyPathInfos",
+                            0usize
                         )
                     })
             });
@@ -808,24 +808,22 @@ impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitCont
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::HashSet_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::HashSet_1<
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
                         >,
-                        0usize,
-                    >("get_types")
+                    >, 0usize>("get_types")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_types", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_types",
+                            0usize
                         )
                     })
             });
@@ -840,9 +838,10 @@ impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitCont
         &mut self,
         value: crate::Unity::Properties::PropertyPath,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Properties::PropertyPath),
@@ -857,35 +856,31 @@ impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitCont
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_currentDepth(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_currentDepth")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_currentDepth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_currentDepth", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_currentDepth",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_propertyPathInfos(
@@ -896,38 +891,36 @@ impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitCont
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::UIElements::PropertyPathInfo,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_propertyPathInfos")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::UIElements::PropertyPathInfo,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_propertyPathInfos"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_propertyPathInfos", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_propertyPathInfos",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitContext"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitContext")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitContext {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitContext
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -938,8 +931,8 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitConte
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct AutoCompletePathVisitor_VisitedPropertyScope {
     pub m_VisitContext: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitContext,
@@ -949,7 +942,8 @@ pub struct AutoCompletePathVisitor_VisitedPropertyScope {
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Internal";
@@ -968,20 +962,18 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPro
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -994,7 +986,8 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPro
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1010,16 +1003,15 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPro
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -1027,7 +1019,8 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPro
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1043,7 +1036,8 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPro
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1052,29 +1046,26 @@ for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPro
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope")]
 impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IProperty0(
@@ -1084,7 +1075,8 @@ impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPr
         >,
         property: quest_hook::libil2cpp::Gc<crate::Unity::Properties::IProperty>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -1108,9 +1100,8 @@ impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPr
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context, property))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context, property))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_Type1(
@@ -1121,7 +1112,8 @@ impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPr
         index: i32,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -1144,26 +1136,23 @@ impl crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPr
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context, index, _cordl_type))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context, index, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope {
+    for crate::UnityEngine::UIElements::Internal::AutoCompletePathVisitor_VisitedPropertyScope
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }

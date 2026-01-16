@@ -6,13 +6,15 @@ pub struct ExtrudeElements {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+ExtrudeElements")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
+    for crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder.MeshOperations";
     const CLASS_NAME: &'static str = "ExtrudeElements";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -25,16 +27,14 @@ for crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ExtrudeElements")]
-impl std::ops::Deref
-for crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
+impl std::ops::Deref for crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ExtrudeElements")]
-impl std::ops::DerefMut
-for crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
+impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -55,37 +55,29 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
-                                >,
-                            >,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
-                                >,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
                             >,
                         >,
-                        2usize,
-                    >("DetachFaces")
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                        >,
+                    >, 2usize>("DetachFaces")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DetachFaces", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DetachFaces",
+                            2usize
                         )
                     })
             });
@@ -111,38 +103,30 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
-                                >,
-                            >,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
-                                >,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
                             >,
                         >,
-                        3usize,
-                    >("DetachFaces")
+                        bool,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                        >,
+                    >, 3usize>("DetachFaces")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DetachFaces", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DetachFaces",
+                            3usize
                         )
                     })
             });
@@ -150,9 +134,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (mesh, faces, deleteSourceFaces))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mesh, faces, deleteSourceFaces))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExtrudeAsGroups(
@@ -171,39 +153,31 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
-                                >,
-                            >,
-                            bool,
-                            f32,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
-                                >,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
                             >,
                         >,
-                        4usize,
-                    >("ExtrudeAsGroups")
+                        bool,
+                        f32,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                        >,
+                    >, 4usize>("ExtrudeAsGroups")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExtrudeAsGroups", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExtrudeAsGroups",
+                            4usize
                         )
                     })
             });
@@ -213,10 +187,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
             >,
         > = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (mesh, faces, compensateAngleVertexDistance, distance),
-                )?
+                .invoke_unchecked((), (mesh, faces, compensateAngleVertexDistance, distance))?
         };
         Ok(__cordl_ret.into())
     }
@@ -235,38 +206,30 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
-                                >,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
-                                >,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
                             >,
                         >,
-                        3usize,
-                    >("ExtrudePerFace")
+                        f32,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                        >,
+                    >, 3usize>("ExtrudePerFace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExtrudePerFace", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExtrudePerFace",
+                            3usize
                         )
                     })
             });
@@ -293,38 +256,30 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
-                                >,
-                            >,
-                            crate::UnityEngine::ProBuilder::ExtrudeMethod,
-                            f32,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
-                                >,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
                             >,
                         >,
-                        4usize,
-                    >("Extrude")
+                        crate::UnityEngine::ProBuilder::ExtrudeMethod,
+                        f32,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                        >,
+                    >, 4usize>("Extrude")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Extrude",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Extrude",
                             4usize
                         )
                     })
@@ -333,9 +288,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (mesh, faces, method, distance))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (mesh, faces, method, distance))? };
         Ok(__cordl_ret.into())
     }
     pub fn Extrude_f32__cordl_bool__cordl_bool1(
@@ -353,35 +306,29 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    crate::UnityEngine::ProBuilder::Edge,
-                                >,
-                            >,
-                            f32,
-                            bool,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
+                            crate::System::Collections::Generic::IEnumerable_1<
                                 crate::UnityEngine::ProBuilder::Edge,
                             >,
                         >,
-                        5usize,
-                    >("Extrude")
+                        f32,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
+                    >, 5usize>("Extrude")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Extrude",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Extrude",
                             5usize
                         )
                     })
@@ -389,11 +336,10 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (mesh, edges, distance, extrudeAsGroup, enableManifoldExtrude),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (mesh, edges, distance, extrudeAsGroup, enableManifoldExtrude),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -414,36 +360,30 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::WingedEdge,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::HashSet_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::UnityEngine::ProBuilder::Face,
-                                        >,
-                                    >,
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+                        >,
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::HashSet_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
                                 >,
                             >,
                         >,
-                        1usize,
-                    >("GetFaceGroups")
+                    >, 1usize>("GetFaceGroups")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetFaceGroups", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetFaceGroups",
+                            1usize
                         )
                     })
             });
@@ -475,38 +415,32 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-                            >,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                crate::UnityEngine::ProBuilder::EdgeLookup,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
-                                >,
+                            crate::System::Collections::Generic::HashSet_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
                             >,
                         >,
-                        2usize,
-                    >("GetPerimeterEdges")
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+                        >,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            crate::UnityEngine::ProBuilder::EdgeLookup,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                        >,
+                    >, 2usize>("GetPerimeterEdges")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPerimeterEdges", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPerimeterEdges",
+                            2usize
                         )
                     })
             });
@@ -521,7 +455,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+ExtrudeElements")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
+    for crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

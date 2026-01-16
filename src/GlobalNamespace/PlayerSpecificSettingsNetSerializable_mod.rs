@@ -13,13 +13,15 @@ pub struct PlayerSpecificSettingsNetSerializable {
 }
 #[cfg(feature = "cordl_class_PlayerSpecificSettingsNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
+    for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PlayerSpecificSettingsNetSerializable";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,8 +41,7 @@ impl std::ops::Deref for crate::GlobalNamespace::PlayerSpecificSettingsNetSerial
     }
 }
 #[cfg(feature = "PlayerSpecificSettingsNetSerializable")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -51,9 +52,10 @@ impl crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -70,14 +72,13 @@ impl crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (reader))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reader))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -97,36 +98,36 @@ impl crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
         environmentColor0Boost: crate::UnityEngine::Color,
         environmentColor1Boost: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    userId,
-                    userName,
-                    leftHanded,
-                    automaticPlayerHeight,
-                    playerHeight,
-                    headPosToPlayerHeightOffset,
-                    saberAColor,
-                    saberBColor,
-                    obstaclesColor,
-                    environmentColor0,
-                    environmentColor1,
-                    environmentColor0Boost,
-                    environmentColor1Boost,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                userId,
+                userName,
+                leftHanded,
+                automaticPlayerHeight,
+                playerHeight,
+                headPosToPlayerHeightOffset,
+                saberAColor,
+                saberBColor,
+                obstaclesColor,
+                environmentColor0,
+                environmentColor1,
+                environmentColor0Boost,
+                environmentColor1Boost,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn Serialize(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -143,30 +144,28 @@ impl crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (writer))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor_0(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_Il2CppString__cordl_bool__cordl_bool_f32_f32_Color_Color_Color_Color_Color_Color_Color1(
@@ -185,68 +184,62 @@ impl crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
         environmentColor0Boost: crate::UnityEngine::Color,
         environmentColor1Boost: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                            bool,
-                            f32,
-                            f32,
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        13usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                        bool,
+                        f32,
+                        f32,
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::Color,
+                    ), quest_hook::libil2cpp::Void, 13usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             13usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        userId,
-                        userName,
-                        leftHanded,
-                        automaticPlayerHeight,
-                        playerHeight,
-                        headPosToPlayerHeightOffset,
-                        saberAColor,
-                        saberBColor,
-                        obstaclesColor,
-                        environmentColor0,
-                        environmentColor1,
-                        environmentColor0Boost,
-                        environmentColor1Boost,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    userId,
+                    userName,
+                    leftHanded,
+                    automaticPlayerHeight,
+                    playerHeight,
+                    headPosToPlayerHeightOffset,
+                    saberAColor,
+                    saberBColor,
+                    obstaclesColor,
+                    environmentColor0,
+                    environmentColor1,
+                    environmentColor0Boost,
+                    environmentColor1Boost,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_PlayerSpecificSettingsNetSerializable")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
+    for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -256,14 +249,16 @@ for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
 }
 #[cfg(feature = "PlayerSpecificSettingsNetSerializable")]
 impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
-for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
+    for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable
+{
     fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PlayerSpecificSettingsNetSerializable")]
 impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
-for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
+    for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable
+{
     fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
         unsafe { std::mem::transmute(self) }
     }

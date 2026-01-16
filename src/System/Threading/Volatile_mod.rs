@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Volatile {
     const NAMESPACE: &'static str = "System.Threading";
     const CLASS_NAME: &'static str = "Volatile";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,80 +48,73 @@ impl crate::System::Threading::Volatile {
     pub fn Read_ByRefMut0(
         location: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<bool>),
-                        bool,
-                        1usize,
-                    >("Read")
+                    .find_static_method::<(quest_hook::libil2cpp::ByRefMut<bool>), bool, 1usize>(
+                        "Read",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Read",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (location))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (location))? };
         Ok(__cordl_ret.into())
     }
     pub fn Read_ByRefMut1(
         location: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<i32>),
-                        i32,
-                        1usize,
-                    >("Read")
+                    .find_static_method::<(quest_hook::libil2cpp::ByRefMut<i32>), i32, 1usize>(
+                        "Read",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Read",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (location))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (location))? };
         Ok(__cordl_ret.into())
     }
     pub fn Read_ByRefMut2<T>(
         location: quest_hook::libil2cpp::ByRefMut<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<T>),
-                        T,
-                        1usize,
-                    >("Read")
+                    .find_static_method::<(quest_hook::libil2cpp::ByRefMut<T>), T, 1usize>("Read")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Read",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: T = unsafe {
-            cordl_method_info.invoke_unchecked((), (location))?
-        };
+        let __cordl_ret: T = unsafe { cordl_method_info.invoke_unchecked((), (location))? };
         Ok(__cordl_ret.into())
     }
     pub fn Write_T2<T>(
@@ -128,12 +122,14 @@ impl crate::System::Threading::Volatile {
         value: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<T>, T),
@@ -148,18 +144,18 @@ impl crate::System::Threading::Volatile {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (location, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (location, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn Write__cordl_bool0(
         location: quest_hook::libil2cpp::ByRefMut<bool>,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<bool>, bool),
@@ -174,18 +170,18 @@ impl crate::System::Threading::Volatile {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (location, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (location, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn Write_i32_1(
         location: quest_hook::libil2cpp::ByRefMut<i32>,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<i32>, i32),
@@ -200,9 +196,8 @@ impl crate::System::Threading::Volatile {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (location, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (location, value))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -216,14 +211,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Volatile {
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileBoolean")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Volatile_VolatileBoolean {
     pub Value: bool,
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileBoolean")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Threading::Volatile_VolatileBoolean {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Volatile_VolatileBoolean {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Threading";
@@ -242,18 +236,14 @@ for crate::System::Threading::Volatile_VolatileBoolean {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileBoolean")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Threading::Volatile_VolatileBoolean {
+unsafe impl quest_hook::libil2cpp::Argument for crate::System::Threading::Volatile_VolatileBoolean {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -264,7 +254,8 @@ for crate::System::Threading::Volatile_VolatileBoolean {
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileBoolean")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Threading::Volatile_VolatileBoolean {
+    for crate::System::Threading::Volatile_VolatileBoolean
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -277,23 +268,19 @@ for crate::System::Threading::Volatile_VolatileBoolean {
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileBoolean")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Threading::Volatile_VolatileBoolean {
+unsafe impl quest_hook::libil2cpp::Returned for crate::System::Threading::Volatile_VolatileBoolean {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileBoolean")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Threading::Volatile_VolatileBoolean {
+unsafe impl quest_hook::libil2cpp::Return for crate::System::Threading::Volatile_VolatileBoolean {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -307,7 +294,8 @@ for crate::System::Threading::Volatile_VolatileBoolean {
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileBoolean")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Threading::Volatile_VolatileBoolean {
+    for crate::System::Threading::Volatile_VolatileBoolean
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -319,14 +307,13 @@ for crate::System::Threading::Volatile_VolatileBoolean {
 #[cfg(feature = "System+Threading+Volatile+VolatileBoolean")]
 impl crate::System::Threading::Volatile_VolatileBoolean {}
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileInt32")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Volatile_VolatileInt32 {
     pub Value: i32,
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileInt32")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Threading::Volatile_VolatileInt32 {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Volatile_VolatileInt32 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Threading";
@@ -345,18 +332,14 @@ for crate::System::Threading::Volatile_VolatileInt32 {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileInt32")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Threading::Volatile_VolatileInt32 {
+unsafe impl quest_hook::libil2cpp::Argument for crate::System::Threading::Volatile_VolatileInt32 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -366,8 +349,7 @@ for crate::System::Threading::Volatile_VolatileInt32 {
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileInt32")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Threading::Volatile_VolatileInt32 {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Threading::Volatile_VolatileInt32 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -380,23 +362,19 @@ for crate::System::Threading::Volatile_VolatileInt32 {
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileInt32")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Threading::Volatile_VolatileInt32 {
+unsafe impl quest_hook::libil2cpp::Returned for crate::System::Threading::Volatile_VolatileInt32 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileInt32")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Threading::Volatile_VolatileInt32 {
+unsafe impl quest_hook::libil2cpp::Return for crate::System::Threading::Volatile_VolatileInt32 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -410,7 +388,8 @@ for crate::System::Threading::Volatile_VolatileInt32 {
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileInt32")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Threading::Volatile_VolatileInt32 {
+    for crate::System::Threading::Volatile_VolatileInt32
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -422,14 +401,13 @@ for crate::System::Threading::Volatile_VolatileInt32 {
 #[cfg(feature = "System+Threading+Volatile+VolatileInt32")]
 impl crate::System::Threading::Volatile_VolatileInt32 {}
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileObject")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Volatile_VolatileObject {
     pub Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileObject")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Threading::Volatile_VolatileObject {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Volatile_VolatileObject {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Threading";
@@ -448,18 +426,14 @@ for crate::System::Threading::Volatile_VolatileObject {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileObject")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Threading::Volatile_VolatileObject {
+unsafe impl quest_hook::libil2cpp::Argument for crate::System::Threading::Volatile_VolatileObject {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -469,8 +443,7 @@ for crate::System::Threading::Volatile_VolatileObject {
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileObject")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Threading::Volatile_VolatileObject {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Threading::Volatile_VolatileObject {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -483,23 +456,19 @@ for crate::System::Threading::Volatile_VolatileObject {
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileObject")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Threading::Volatile_VolatileObject {
+unsafe impl quest_hook::libil2cpp::Returned for crate::System::Threading::Volatile_VolatileObject {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileObject")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Threading::Volatile_VolatileObject {
+unsafe impl quest_hook::libil2cpp::Return for crate::System::Threading::Volatile_VolatileObject {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -513,7 +482,8 @@ for crate::System::Threading::Volatile_VolatileObject {
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileObject")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Threading::Volatile_VolatileObject {
+    for crate::System::Threading::Volatile_VolatileObject
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

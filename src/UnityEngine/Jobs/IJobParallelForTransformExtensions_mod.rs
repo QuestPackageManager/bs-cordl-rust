@@ -6,13 +6,15 @@ pub struct IJobParallelForTransformExtensions {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Jobs+IJobParallelForTransformExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Jobs::IJobParallelForTransformExtensions {
+    for crate::UnityEngine::Jobs::IJobParallelForTransformExtensions
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Jobs";
     const CLASS_NAME: &'static str = "IJobParallelForTransformExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,8 +34,7 @@ impl std::ops::Deref for crate::UnityEngine::Jobs::IJobParallelForTransformExten
     }
 }
 #[cfg(feature = "UnityEngine+Jobs+IJobParallelForTransformExtensions")]
-impl std::ops::DerefMut
-for crate::UnityEngine::Jobs::IJobParallelForTransformExtensions {
+impl std::ops::DerefMut for crate::UnityEngine::Jobs::IJobParallelForTransformExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -48,29 +49,27 @@ impl crate::UnityEngine::Jobs::IJobParallelForTransformExtensions {
     >;
     pub fn GetReflectionData<T>() -> quest_hook::libil2cpp::Result<crate::System::IntPtr>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::System::IntPtr,
-                        0usize,
-                    >("GetReflectionData")
+                    .find_static_method::<(), crate::System::IntPtr, 0usize>("GetReflectionData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetReflectionData", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetReflectionData",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::IntPtr = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::System::IntPtr =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Schedule<T>(
@@ -79,39 +78,38 @@ impl crate::UnityEngine::Jobs::IJobParallelForTransformExtensions {
         dependsOn: crate::Unity::Jobs::JobHandle,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            T,
-                            crate::UnityEngine::Jobs::TransformAccessArray,
-                            crate::Unity::Jobs::JobHandle,
-                        ),
+                    .find_static_method::<(
+                        T,
+                        crate::UnityEngine::Jobs::TransformAccessArray,
                         crate::Unity::Jobs::JobHandle,
-                        3usize,
-                    >("Schedule")
+                    ), crate::Unity::Jobs::JobHandle, 3usize>("Schedule")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Schedule", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Schedule",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
-            cordl_method_info.invoke_unchecked((), (jobData, transforms, dependsOn))?
-        };
+        let __cordl_ret: crate::Unity::Jobs::JobHandle =
+            unsafe { cordl_method_info.invoke_unchecked((), (jobData, transforms, dependsOn))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Jobs+IJobParallelForTransformExtensions")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Jobs::IJobParallelForTransformExtensions {
+    for crate::UnityEngine::Jobs::IJobParallelForTransformExtensions
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -122,8 +120,8 @@ for crate::UnityEngine::Jobs::IJobParallelForTransformExtensions {
 #[cfg(
     feature = "cordl_class_UnityEngine+Jobs+IJobParallelForTransformExtensions+TransformParallelForLoopStruct_1"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct IJobParallelForTransformExtensions_TransformParallelForLoopStruct_1<
     T: quest_hook::libil2cpp::Type,
 > {
@@ -267,11 +265,9 @@ for crate::UnityEngine::Jobs::IJobParallelForTransformExtensions_TransformParall
 #[cfg(
     feature = "UnityEngine+Jobs+IJobParallelForTransformExtensions+TransformParallelForLoopStruct_1"
 )]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::Jobs::IJobParallelForTransformExtensions_TransformParallelForLoopStruct_1<
-    T,
-> {
+impl<T: quest_hook::libil2cpp::Type>
+    crate::UnityEngine::Jobs::IJobParallelForTransformExtensions_TransformParallelForLoopStruct_1<T>
+{
     #[cfg(
         feature = "UnityEngine+Jobs+IJobParallelForTransformExtensions+TransformParallelForLoopStruct_1+ExecuteJobFunction"
     )]
@@ -288,74 +284,70 @@ impl<
         jobData: quest_hook::libil2cpp::ByRefMut<T>,
         jobData2: crate::System::IntPtr,
         bufferRangePatchData: crate::System::IntPtr,
-        ranges: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Jobs::LowLevel::Unsafe::JobRanges,
-        >,
+        ranges: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::LowLevel::Unsafe::JobRanges>,
         jobIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<T>,
-                            crate::System::IntPtr,
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Jobs::LowLevel::Unsafe::JobRanges,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Execute")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<T>,
+                        crate::System::IntPtr,
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Jobs::LowLevel::Unsafe::JobRanges,
+                        >,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (jobData, jobData2, bufferRangePatchData, ranges, jobIndex),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (jobData, jobData2, bufferRangePatchData, ranges, jobIndex),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("Initialize")
+                    .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Initialize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Initialize",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -557,8 +549,8 @@ for crate::UnityEngine::Jobs::TransformParallelForLoopStruct_1_IJobParallelForTr
 #[cfg(
     feature = "cordl_class_UnityEngine+Jobs+IJobParallelForTransformExtensions+TransformParallelForLoopStruct_1+TransformJobData"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TransformParallelForLoopStruct_1_IJobParallelForTransformExtensions_TransformJobData<
     T: quest_hook::libil2cpp::Type,
 > {

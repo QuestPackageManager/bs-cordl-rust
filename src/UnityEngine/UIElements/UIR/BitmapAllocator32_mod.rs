@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BitmapAllocator32 {
     pub m_PageHeight: i32,
     pub m_Pages: quest_hook::libil2cpp::Gc<
@@ -8,15 +8,12 @@ pub struct BitmapAllocator32 {
             crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page,
         >,
     >,
-    pub m_AllocMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<u32>,
-    >,
+    pub m_AllocMap: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<u32>>,
     pub m_EntryWidth: i32,
     pub m_EntryHeight: i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
@@ -35,18 +32,16 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
+    for crate::UnityEngine::UIElements::UIR::BitmapAllocator32
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -57,7 +52,8 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
+    for crate::UnityEngine::UIElements::UIR::BitmapAllocator32
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -71,22 +67,22 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
+    for crate::UnityEngine::UIElements::UIR::BitmapAllocator32
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
+    for crate::UnityEngine::UIElements::UIR::BitmapAllocator32
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -100,7 +96,8 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
+    for crate::UnityEngine::UIElements::UIR::BitmapAllocator32
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -119,28 +116,27 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
             crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,
-                        >),
-                        crate::UnityEngine::UIElements::UIR::BMPAlloc,
-                        1usize,
-                    >("Allocate")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,
+                    >), crate::UnityEngine::UIElements::UIR::BMPAlloc, 1usize>(
+                        "Allocate"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Allocate", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Allocate",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc = unsafe {
-            cordl_method_info.invoke_unchecked(self, (storage))?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc =
+            unsafe { cordl_method_info.invoke_unchecked(self, (storage))? };
         Ok(__cordl_ret.into())
     }
     pub fn Construct(
@@ -149,40 +145,41 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         entryWidth: i32,
         entryHeight: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Construct")
+                    .find_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(
+                        "Construct",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Construct", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Construct",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (pageHeight, entryWidth, entryHeight))?
+            cordl_method_info.invoke_unchecked(self, (pageHeight, entryWidth, entryHeight))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CountTrailingZeroes(val: u32) -> quest_hook::libil2cpp::Result<u8> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), u8, 1usize>("CountTrailingZeroes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CountTrailingZeroes", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CountTrailingZeroes",
+                            1usize
                         )
                     })
             });
@@ -194,35 +191,35 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         firstPageX: u16,
         firstPageY: u16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u16, u16),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ForceFirstAlloc")
+                    .find_method::<(u16, u16), quest_hook::libil2cpp::Void, 2usize>(
+                        "ForceFirstAlloc",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ForceFirstAlloc", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ForceFirstAlloc",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (firstPageX, firstPageY))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (firstPageX, firstPageY))? };
         Ok(__cordl_ret.into())
     }
     pub fn Free(
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::UIR::BMPAlloc),
@@ -237,9 +234,8 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (alloc))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (alloc))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllocPageAtlasLocation(
@@ -248,43 +244,44 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         x: quest_hook::libil2cpp::ByRefMut<u16>,
         y: quest_hook::libil2cpp::ByRefMut<u16>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<u16>,
-                            quest_hook::libil2cpp::ByRefMut<u16>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("GetAllocPageAtlasLocation")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<u16>,
+                        quest_hook::libil2cpp::ByRefMut<u16>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "GetAllocPageAtlasLocation"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetAllocPageAtlasLocation", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetAllocPageAtlasLocation",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (page, x, y))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (page, x, y))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_entryHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_entryHeight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_entryHeight", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_entryHeight",
+                            0usize
                         )
                     })
             });
@@ -292,16 +289,18 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         Ok(__cordl_ret.into())
     }
     pub fn get_entryWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_entryWidth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_entryWidth", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_entryWidth",
+                            0usize
                         )
                     })
             });
@@ -310,8 +309,8 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BitmapAllocator32_Page {
     pub x: u16,
     pub y: u16,
@@ -319,7 +318,8 @@ pub struct BitmapAllocator32_Page {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
+    for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
@@ -338,18 +338,16 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
+    for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -360,7 +358,8 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
+    for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -374,22 +373,22 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
+    for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
+    for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -403,7 +402,8 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
+    for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

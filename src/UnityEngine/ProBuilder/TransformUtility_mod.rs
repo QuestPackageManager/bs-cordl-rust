@@ -5,14 +5,14 @@ pub struct TransformUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+TransformUtility")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ProBuilder::TransformUtility {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::TransformUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
     const CLASS_NAME: &'static str = "TransformUtility";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,41 +45,37 @@ impl crate::UnityEngine::ProBuilder::TransformUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Vertex,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::Vertex,
-                        >,
-                        2usize,
-                    >("InverseTransformVertex")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+                    ), quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>, 2usize>(
+                        "InverseTransformVertex",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InverseTransformVertex", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InverseTransformVertex",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Vertex,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (transform, vertex))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex> =
+            unsafe { cordl_method_info.invoke_unchecked((), (transform, vertex))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReparentChildren(
         t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
@@ -94,9 +90,8 @@ impl crate::UnityEngine::ProBuilder::TransformUtility {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (t))? };
         Ok(__cordl_ret.into())
     }
     pub fn TransformVertex(
@@ -105,41 +100,37 @@ impl crate::UnityEngine::ProBuilder::TransformUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Vertex,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::Vertex,
-                        >,
-                        2usize,
-                    >("TransformVertex")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+                    ), quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>, 2usize>(
+                        "TransformVertex",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TransformVertex", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TransformVertex",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Vertex,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (transform, vertex))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex> =
+            unsafe { cordl_method_info.invoke_unchecked((), (transform, vertex))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnparentChildren(
         t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
@@ -154,15 +145,13 @@ impl crate::UnityEngine::ProBuilder::TransformUtility {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (t))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+TransformUtility")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ProBuilder::TransformUtility {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::TransformUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

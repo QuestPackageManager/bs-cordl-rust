@@ -33,23 +33,17 @@ pub struct CloudsMeshGenerator {
     pub _flipNormals: bool,
     pub _curveMesh: bool,
     pub _clouds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            crate::GlobalNamespace::CloudsMeshGenerator_Cloud,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::CloudsMeshGenerator_Cloud>,
     >,
     pub _meshCount: i32,
     pub _vertexCount: i32,
     pub _generatedMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub _meshBounds: crate::UnityEngine::Bounds,
     pub _radiusChunks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk>,
     >,
     pub _rings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            crate::GlobalNamespace::CloudsMeshGenerator_Ring,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::CloudsMeshGenerator_Ring>,
     >,
     pub _sortedProhibitedRadii: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -64,7 +58,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CloudsMeshGe
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "CloudsMeshGenerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -100,31 +95,30 @@ impl crate::GlobalNamespace::CloudsMeshGenerator {
     #[cfg(feature = "CloudsMeshGenerator+Ring")]
     pub type Ring = crate::GlobalNamespace::CloudsMeshGenerator_Ring;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -138,8 +132,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CloudsMeshGen
     }
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Cloud")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CloudsMeshGenerator_Cloud {
     pub precisionOpaqueMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub lowPolyMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -151,8 +145,7 @@ pub struct CloudsMeshGenerator_Cloud {
     pub generatedCount: i32,
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Cloud")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -171,18 +164,14 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Cloud")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -192,8 +181,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
     }
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Cloud")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -206,23 +194,19 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
     }
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Cloud")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Cloud")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -236,7 +220,8 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Cloud")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
+    for crate::GlobalNamespace::CloudsMeshGenerator_Cloud
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -248,8 +233,8 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
 #[cfg(feature = "CloudsMeshGenerator+Cloud")]
 impl crate::GlobalNamespace::CloudsMeshGenerator_Cloud {}
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+ProhibitedRadius")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CloudsMeshGenerator_ProhibitedRadius {
     pub transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub distance: f32,
@@ -257,7 +242,8 @@ pub struct CloudsMeshGenerator_ProhibitedRadius {
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+ProhibitedRadius")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
+    for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -276,18 +262,16 @@ for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+ProhibitedRadius")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
+    for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -298,7 +282,8 @@ for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+ProhibitedRadius")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
+    for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -312,22 +297,22 @@ for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+ProhibitedRadius")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
+    for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+ProhibitedRadius")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
+    for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -341,7 +326,8 @@ for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+ProhibitedRadius")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
+    for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -353,8 +339,8 @@ for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
 #[cfg(feature = "CloudsMeshGenerator+ProhibitedRadius")]
 impl crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {}
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+RadiusChunk")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CloudsMeshGenerator_RadiusChunk {
     pub normalizedStart: f32,
     pub normalizedEnd: f32,
@@ -363,7 +349,8 @@ pub struct CloudsMeshGenerator_RadiusChunk {
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+RadiusChunk")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
+    for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -382,18 +369,16 @@ for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+RadiusChunk")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
+    for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -404,7 +389,8 @@ for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+RadiusChunk")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
+    for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -418,22 +404,22 @@ for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+RadiusChunk")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
+    for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+RadiusChunk")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
+    for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -447,7 +433,8 @@ for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+RadiusChunk")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
+    for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -459,8 +446,8 @@ for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
 #[cfg(feature = "CloudsMeshGenerator+RadiusChunk")]
 impl crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {}
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Ring")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CloudsMeshGenerator_Ring {
     pub radius: f32,
     pub normalizedRadius: f32,
@@ -469,8 +456,7 @@ pub struct CloudsMeshGenerator_Ring {
     pub sizeMultiplier: f32,
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Ring")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -489,18 +475,14 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Ring")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -510,8 +492,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
     }
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Ring")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -524,23 +505,19 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
     }
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Ring")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Ring")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -554,7 +531,8 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Ring")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
+    for crate::GlobalNamespace::CloudsMeshGenerator_Ring
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

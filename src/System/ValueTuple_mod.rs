@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ValueTuple")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ValueTuple {}
 #[cfg(feature = "cordl_class_System+ValueTuple")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ValueTuple {
@@ -22,13 +22,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ValueTuple {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+ValueTuple")]
@@ -62,9 +59,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::ValueTuple {
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -93,53 +88,42 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::ValueTuple {
 }
 #[cfg(feature = "System+ValueTuple")]
 impl crate::System::ValueTuple {
-    pub fn CombineHashCodes_i32_1(
-        h1: i32,
-        h2: i32,
-        h3: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn CombineHashCodes_i32_1(h1: i32, h2: i32, h3: i32) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32, i32),
-                        i32,
-                        3usize,
-                    >("CombineHashCodes")
+                    .find_static_method::<(i32, i32, i32), i32, 3usize>("CombineHashCodes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CombineHashCodes", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CombineHashCodes",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (h1, h2, h3))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (h1, h2, h3))? };
         Ok(__cordl_ret.into())
     }
-    pub fn CombineHashCodes_i32_i32_0(
-        h1: i32,
-        h2: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn CombineHashCodes_i32_i32_0(h1: i32, h2: i32) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("CombineHashCodes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CombineHashCodes", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CombineHashCodes",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (h1, h2))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (h1, h2))? };
         Ok(__cordl_ret.into())
     }
     pub fn CombineHashCodes_i32_i32_2(
@@ -148,26 +132,22 @@ impl crate::System::ValueTuple {
         h3: i32,
         h4: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32, i32, i32),
-                        i32,
-                        4usize,
-                    >("CombineHashCodes")
+                    .find_static_method::<(i32, i32, i32, i32), i32, 4usize>("CombineHashCodes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CombineHashCodes", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CombineHashCodes",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4))? };
         Ok(__cordl_ret.into())
     }
     pub fn CombineHashCodes_i32_i32_i32_3(
@@ -177,26 +157,25 @@ impl crate::System::ValueTuple {
         h4: i32,
         h5: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32, i32, i32, i32),
-                        i32,
-                        5usize,
-                    >("CombineHashCodes")
+                    .find_static_method::<(i32, i32, i32, i32, i32), i32, 5usize>(
+                        "CombineHashCodes",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CombineHashCodes", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CombineHashCodes",
+                            5usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4, h5))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4, h5))? };
         Ok(__cordl_ret.into())
     }
     pub fn CombineHashCodes_i32_i32_i32_i32_4(
@@ -207,26 +186,25 @@ impl crate::System::ValueTuple {
         h5: i32,
         h6: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32, i32, i32, i32, i32),
-                        i32,
-                        6usize,
-                    >("CombineHashCodes")
+                    .find_static_method::<(i32, i32, i32, i32, i32, i32), i32, 6usize>(
+                        "CombineHashCodes",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CombineHashCodes", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CombineHashCodes",
+                            6usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4, h5, h6))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4, h5, h6))? };
         Ok(__cordl_ret.into())
     }
     pub fn CombineHashCodes_i32_i32_i32_i32_i32_5(
@@ -238,26 +216,25 @@ impl crate::System::ValueTuple {
         h6: i32,
         h7: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32, i32, i32, i32, i32, i32),
-                        i32,
-                        7usize,
-                    >("CombineHashCodes")
+                    .find_static_method::<(i32, i32, i32, i32, i32, i32, i32), i32, 7usize>(
+                        "CombineHashCodes",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CombineHashCodes", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CombineHashCodes",
+                            7usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4, h5, h6, h7))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4, h5, h6, h7))? };
         Ok(__cordl_ret.into())
     }
     pub fn CombineHashCodes_i32_i32_i32_i32_i32_i32_6(
@@ -270,48 +247,47 @@ impl crate::System::ValueTuple {
         h7: i32,
         h8: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32, i32, i32, i32, i32, i32, i32),
-                        i32,
-                        8usize,
-                    >("CombineHashCodes")
+                    .find_static_method::<(i32, i32, i32, i32, i32, i32, i32, i32), i32, 8usize>(
+                        "CombineHashCodes",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CombineHashCodes", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CombineHashCodes",
+                            8usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4, h5, h6, h7, h8))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (h1, h2, h3, h4, h5, h6, h7, h8))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompareTo(
         &mut self,
         other: crate::System::ValueTuple,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(crate::System::ValueTuple), i32, 1usize>("CompareTo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompareTo", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompareTo",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Create<T1, T2>(
@@ -319,40 +295,42 @@ impl crate::System::ValueTuple {
         item2: T2,
     ) -> quest_hook::libil2cpp::Result<crate::System::ValueTuple_2<T1, T2>>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (T1, T2),
-                        crate::System::ValueTuple_2<T1, T2>,
-                        2usize,
-                    >("Create")
+                    .find_static_method::<(T1, T2), crate::System::ValueTuple_2<T1, T2>, 2usize>(
+                        "Create",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Create",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::ValueTuple_2<T1, T2> = unsafe {
-            cordl_method_info.invoke_unchecked((), (item1, item2))?
-        };
+        let __cordl_ret: crate::System::ValueTuple_2<T1, T2> =
+            unsafe { cordl_method_info.invoke_unchecked((), (item1, item2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -367,44 +345,44 @@ impl crate::System::ValueTuple {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_ValueTuple1(
         &mut self,
         other: crate::System::ValueTuple,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(crate::System::ValueTuple), bool, 1usize>("Equals")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Equals",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -416,80 +394,67 @@ impl crate::System::ValueTuple {
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::IComparer,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("System.Collections.IStructuralComparable.CompareTo")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+                    ), i32, 2usize>(
+                        "System.Collections.IStructuralComparable.CompareTo"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "System.Collections.IStructuralComparable.CompareTo", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "System.Collections.IStructuralComparable.CompareTo",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other, comparer))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (other, comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IStructuralEquatable_Equals(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEqualityComparer,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::IEqualityComparer,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("System.Collections.IStructuralEquatable.Equals")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer>,
+                    ), bool, 2usize>(
+                        "System.Collections.IStructuralEquatable.Equals"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "System.Collections.IStructuralEquatable.Equals", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "System.Collections.IStructuralEquatable.Equals",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other, comparer))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (other, comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IStructuralEquatable_GetHashCode(
         &mut self,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEqualityComparer,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -506,18 +471,17 @@ impl crate::System::ValueTuple {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (comparer))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_IComparable_CompareTo(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -532,20 +496,17 @@ impl crate::System::ValueTuple {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_IValueTupleInternal_GetHashCode(
         &mut self,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEqualityComparer,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -562,19 +523,17 @@ impl crate::System::ValueTuple {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (comparer))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_IValueTupleInternal_ToStringEnd(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -589,28 +548,27 @@ impl crate::System::ValueTuple {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Runtime_CompilerServices_ITuple_get_Length(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        i32,
-                        0usize,
-                    >("System.Runtime.CompilerServices.ITuple.get_Length")
+                    .find_method::<(), i32, 0usize>(
+                        "System.Runtime.CompilerServices.ITuple.get_Length",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "System.Runtime.CompilerServices.ITuple.get_Length", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "System.Runtime.CompilerServices.ITuple.get_Length",
+                            0usize
                         )
                     })
             });
@@ -619,12 +577,12 @@ impl crate::System::ValueTuple {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -639,36 +597,31 @@ impl crate::System::ValueTuple {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+ValueTuple")]
-impl AsRef<crate::System::Collections::IStructuralComparable>
-for crate::System::ValueTuple {
+impl AsRef<crate::System::Collections::IStructuralComparable> for crate::System::ValueTuple {
     fn as_ref(&self) -> &crate::System::Collections::IStructuralComparable {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple")]
-impl AsMut<crate::System::Collections::IStructuralComparable>
-for crate::System::ValueTuple {
+impl AsMut<crate::System::Collections::IStructuralComparable> for crate::System::ValueTuple {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IStructuralComparable {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple")]
-impl AsRef<crate::System::Collections::IStructuralEquatable>
-for crate::System::ValueTuple {
+impl AsRef<crate::System::Collections::IStructuralEquatable> for crate::System::ValueTuple {
     fn as_ref(&self) -> &crate::System::Collections::IStructuralEquatable {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple")]
-impl AsMut<crate::System::Collections::IStructuralEquatable>
-for crate::System::ValueTuple {
+impl AsMut<crate::System::Collections::IStructuralEquatable> for crate::System::ValueTuple {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IStructuralEquatable {
         todo!()
     }
@@ -686,31 +639,25 @@ impl AsMut<crate::System::IComparable> for crate::System::ValueTuple {
     }
 }
 #[cfg(feature = "System+ValueTuple")]
-impl AsRef<crate::System::IComparable_1<crate::System::ValueTuple>>
-for crate::System::ValueTuple {
+impl AsRef<crate::System::IComparable_1<crate::System::ValueTuple>> for crate::System::ValueTuple {
     fn as_ref(&self) -> &crate::System::IComparable_1<crate::System::ValueTuple> {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple")]
-impl AsMut<crate::System::IComparable_1<crate::System::ValueTuple>>
-for crate::System::ValueTuple {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::IComparable_1<crate::System::ValueTuple> {
+impl AsMut<crate::System::IComparable_1<crate::System::ValueTuple>> for crate::System::ValueTuple {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<crate::System::ValueTuple> {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple")]
-impl AsRef<crate::System::IEquatable_1<crate::System::ValueTuple>>
-for crate::System::ValueTuple {
+impl AsRef<crate::System::IEquatable_1<crate::System::ValueTuple>> for crate::System::ValueTuple {
     fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::ValueTuple> {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple")]
-impl AsMut<crate::System::IEquatable_1<crate::System::ValueTuple>>
-for crate::System::ValueTuple {
+impl AsMut<crate::System::IEquatable_1<crate::System::ValueTuple>> for crate::System::ValueTuple {
     fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::System::ValueTuple> {
         todo!()
     }
@@ -728,15 +675,13 @@ impl AsMut<crate::System::IValueTupleInternal> for crate::System::ValueTuple {
     }
 }
 #[cfg(feature = "System+ValueTuple")]
-impl AsRef<crate::System::Runtime::CompilerServices::ITuple>
-for crate::System::ValueTuple {
+impl AsRef<crate::System::Runtime::CompilerServices::ITuple> for crate::System::ValueTuple {
     fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::ITuple {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple")]
-impl AsMut<crate::System::Runtime::CompilerServices::ITuple>
-for crate::System::ValueTuple {
+impl AsMut<crate::System::Runtime::CompilerServices::ITuple> for crate::System::ValueTuple {
     fn as_mut(&mut self) -> &mut crate::System::Runtime::CompilerServices::ITuple {
         todo!()
     }

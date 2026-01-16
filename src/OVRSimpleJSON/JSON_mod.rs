@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVRSimpleJSON::JSON {
     const NAMESPACE: &'static str = "OVRSimpleJSON";
     const CLASS_NAME: &'static str = "JSON";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,12 +41,12 @@ impl std::ops::DerefMut for crate::OVRSimpleJSON::JSON {
 impl crate::OVRSimpleJSON::JSON {
     pub fn Parse(
         aJSON: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -60,9 +61,8 @@ impl crate::OVRSimpleJSON::JSON {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> = unsafe {
-            cordl_method_info.invoke_unchecked((), (aJSON))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> =
+            unsafe { cordl_method_info.invoke_unchecked((), (aJSON))? };
         Ok(__cordl_ret.into())
     }
 }

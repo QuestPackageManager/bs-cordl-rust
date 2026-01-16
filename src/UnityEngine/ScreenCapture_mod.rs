@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ScreenCapture {
     const NAMESPACE: &'static str = "UnityEngine";
     const CLASS_NAME: &'static str = "ScreenCapture";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,9 +44,10 @@ impl crate::UnityEngine::ScreenCapture {
     pub fn CaptureScreenshot_Il2CppString0(
         filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -60,44 +62,40 @@ impl crate::UnityEngine::ScreenCapture {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (filename))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (filename))? };
         Ok(__cordl_ret.into())
     }
     pub fn CaptureScreenshot_Injected(
-        filename: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Bindings::ManagedSpanWrapper,
-        >,
+        filename: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bindings::ManagedSpanWrapper>,
         superSize: i32,
         CaptureMode: crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
-                            >,
-                            i32,
-                            crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CaptureScreenshot_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >,
+                        i32,
+                        crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "CaptureScreenshot_Injected"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CaptureScreenshot_Injected", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CaptureScreenshot_Injected",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (filename, superSize, CaptureMode))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (filename, superSize, CaptureMode))? };
         Ok(__cordl_ret.into())
     }
     pub fn CaptureScreenshot_i32_ScreenCapture_StereoScreenCaptureMode1(
@@ -105,32 +103,27 @@ impl crate::UnityEngine::ScreenCapture {
         superSize: i32,
         CaptureMode: crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CaptureScreenshot")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode,
+                    ), quest_hook::libil2cpp::Void, 3usize>("CaptureScreenshot")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CaptureScreenshot", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CaptureScreenshot",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (filename, superSize, CaptureMode))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (filename, superSize, CaptureMode))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -144,8 +137,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ScreenCapture {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ScreenCapture_StereoScreenCaptureMode {
     #[default]
     BothEyes = 3i32,
@@ -155,7 +148,8 @@ pub enum ScreenCapture_StereoScreenCaptureMode {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
+    for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
@@ -174,18 +168,16 @@ for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
+    for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -196,7 +188,8 @@ for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
+    for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -210,22 +203,22 @@ for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
+    for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
+    for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

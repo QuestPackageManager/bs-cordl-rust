@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+Settings+RoomSettings")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct RoomSettings {
     pub center: crate::Unity::Mathematics::float3,
     pub rotation: f32,
@@ -25,18 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::RoomSett
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+RoomSettings")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::BeatSaber::Settings::RoomSettings {
+unsafe impl quest_hook::libil2cpp::Argument for crate::BeatSaber::Settings::RoomSettings {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -46,8 +42,7 @@ for crate::BeatSaber::Settings::RoomSettings {
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+RoomSettings")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::BeatSaber::Settings::RoomSettings {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatSaber::Settings::RoomSettings {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -60,17 +55,14 @@ for crate::BeatSaber::Settings::RoomSettings {
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+RoomSettings")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::BeatSaber::Settings::RoomSettings {
+unsafe impl quest_hook::libil2cpp::Returned for crate::BeatSaber::Settings::RoomSettings {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -88,8 +80,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::BeatSaber::Settings::RoomSe
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+RoomSettings")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::BeatSaber::Settings::RoomSettings {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::BeatSaber::Settings::RoomSettings {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

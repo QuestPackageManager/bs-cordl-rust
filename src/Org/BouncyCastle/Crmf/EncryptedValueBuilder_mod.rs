@@ -3,25 +3,20 @@
 #[derive(Debug)]
 pub struct EncryptedValueBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub wrapper: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IKeyWrapper,
-    >,
-    pub encryptor: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey,
-    >,
-    pub padder: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder,
-    >,
+    pub wrapper: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IKeyWrapper>,
+    pub encryptor:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey>,
+    pub padder: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder>,
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+EncryptedValueBuilder")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
+unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crmf";
     const CLASS_NAME: &'static str = "EncryptedValueBuilder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -50,15 +45,14 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crmf::EncryptedValueBuilde
 impl crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
     pub fn Build_Il2CppArray0(
         &mut self,
-        revocationPassphrase: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<char>,
-        >,
+        revocationPassphrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -90,9 +84,10 @@ impl crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -118,15 +113,14 @@ impl crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
     }
     pub fn Build_X509Certificate1(
         &mut self,
-        holder: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::X509::X509Certificate,
-        >,
+        holder: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -156,9 +150,10 @@ impl crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -183,32 +178,26 @@ impl crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
         Ok(__cordl_ret.into())
     }
     pub fn New_IEncryptedValuePadder1(
-        wrapper: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::IKeyWrapper,
-        >,
+        wrapper: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IKeyWrapper>,
         encryptor: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey,
         >,
-        padder: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder,
-        >,
+        padder: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (wrapper, encryptor, padder))?;
         Ok(__cordl_object.into())
     }
     pub fn New_IKeyWrapper_ICipherBuilderWithKey0(
-        wrapper: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::IKeyWrapper,
-        >,
+        wrapper: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IKeyWrapper>,
         encryptor: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (wrapper, encryptor))?;
         Ok(__cordl_object.into())
@@ -219,9 +208,10 @@ impl crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -240,97 +230,79 @@ impl crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (data))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (data))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IEncryptedValuePadder1(
         &mut self,
-        wrapper: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::IKeyWrapper,
-        >,
+        wrapper: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IKeyWrapper>,
         encryptor: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey,
         >,
-        padder: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder,
-        >,
+        padder: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IKeyWrapper,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IKeyWrapper>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (wrapper, encryptor, padder))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (wrapper, encryptor, padder))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IKeyWrapper_ICipherBuilderWithKey0(
         &mut self,
-        wrapper: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::IKeyWrapper,
-        >,
+        wrapper: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IKeyWrapper>,
         encryptor: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::IKeyWrapper,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IKeyWrapper>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (wrapper, encryptor))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (wrapper, encryptor))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+EncryptedValueBuilder")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
+impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

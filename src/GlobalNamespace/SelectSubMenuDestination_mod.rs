@@ -6,14 +6,14 @@ pub struct SelectSubMenuDestination {
     pub menuDestination: crate::GlobalNamespace::SelectSubMenuDestination_Destination,
 }
 #[cfg(feature = "cordl_class_SelectSubMenuDestination")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::SelectSubMenuDestination {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SelectSubMenuDestination {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "SelectSubMenuDestination";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,8 +45,8 @@ impl crate::GlobalNamespace::SelectSubMenuDestination {
     pub fn New(
         menuDestination: crate::GlobalNamespace::SelectSubMenuDestination_Destination,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (menuDestination))?;
         Ok(__cordl_object.into())
@@ -55,9 +55,10 @@ impl crate::GlobalNamespace::SelectSubMenuDestination {
         &mut self,
         menuDestination: crate::GlobalNamespace::SelectSubMenuDestination_Destination,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::SelectSubMenuDestination_Destination),
@@ -72,15 +73,13 @@ impl crate::GlobalNamespace::SelectSubMenuDestination {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (menuDestination))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (menuDestination))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_SelectSubMenuDestination")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::SelectSubMenuDestination {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SelectSubMenuDestination {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -89,8 +88,8 @@ for crate::GlobalNamespace::SelectSubMenuDestination {
     }
 }
 #[cfg(feature = "cordl_class_SelectSubMenuDestination+Destination")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum SelectSubMenuDestination_Destination {
     #[default]
     Campaign = 1i32,
@@ -103,7 +102,8 @@ pub enum SelectSubMenuDestination_Destination {
 }
 #[cfg(feature = "cordl_class_SelectSubMenuDestination+Destination")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
+    for crate::GlobalNamespace::SelectSubMenuDestination_Destination
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -122,18 +122,16 @@ for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_SelectSubMenuDestination+Destination")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
+    for crate::GlobalNamespace::SelectSubMenuDestination_Destination
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -144,7 +142,8 @@ for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
 }
 #[cfg(feature = "cordl_class_SelectSubMenuDestination+Destination")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
+    for crate::GlobalNamespace::SelectSubMenuDestination_Destination
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -158,22 +157,22 @@ for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
 }
 #[cfg(feature = "cordl_class_SelectSubMenuDestination+Destination")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
+    for crate::GlobalNamespace::SelectSubMenuDestination_Destination
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_SelectSubMenuDestination+Destination")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
+    for crate::GlobalNamespace::SelectSubMenuDestination_Destination
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

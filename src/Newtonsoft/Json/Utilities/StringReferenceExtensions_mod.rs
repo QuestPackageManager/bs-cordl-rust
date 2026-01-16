@@ -6,13 +6,15 @@ pub struct StringReferenceExtensions {
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringReferenceExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
+    for crate::Newtonsoft::Json::Utilities::StringReferenceExtensions
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Utilities";
     const CLASS_NAME: &'static str = "StringReferenceExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,8 +34,7 @@ impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::StringReferenceExte
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+StringReferenceExtensions")]
-impl std::ops::DerefMut
-for crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
+impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -44,31 +45,25 @@ impl crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
         s: crate::Newtonsoft::Json::Utilities::StringReference,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Newtonsoft::Json::Utilities::StringReference,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("EndsWith")
+                    .find_static_method::<(
+                        crate::Newtonsoft::Json::Utilities::StringReference,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), bool, 2usize>("EndsWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EndsWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EndsWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (s, text))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (s, text))? };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf(
@@ -77,68 +72,60 @@ impl crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
         startIndex: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Newtonsoft::Json::Utilities::StringReference,
-                            char,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
+                        crate::Newtonsoft::Json::Utilities::StringReference,
+                        char,
                         i32,
-                        4usize,
-                    >("IndexOf")
+                        i32,
+                    ), i32, 4usize>("IndexOf")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IndexOf",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (s, c, startIndex, length))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (s, c, startIndex, length))? };
         Ok(__cordl_ret.into())
     }
     pub fn StartsWith(
         s: crate::Newtonsoft::Json::Utilities::StringReference,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Newtonsoft::Json::Utilities::StringReference,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("StartsWith")
+                    .find_static_method::<(
+                        crate::Newtonsoft::Json::Utilities::StringReference,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), bool, 2usize>("StartsWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StartsWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "StartsWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (s, text))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (s, text))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringReferenceExtensions")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
+    for crate::Newtonsoft::Json::Utilities::StringReferenceExtensions
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

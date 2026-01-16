@@ -1,18 +1,18 @@
 #[cfg(feature = "cordl_class_Unity+Properties+ISetPropertyBagVisitor")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct ISetPropertyBagVisitor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Unity+Properties+ISetPropertyBagVisitor")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Properties::ISetPropertyBagVisitor {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Properties::ISetPropertyBagVisitor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties";
     const CLASS_NAME: &'static str = "ISetPropertyBagVisitor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,47 +47,43 @@ impl crate::Unity::Properties::ISetPropertyBagVisitor {
         container: quest_hook::libil2cpp::ByRefMut<TSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TSet: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TSet: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Unity::Properties::ISetPropertyBag_2<TSet, TValue>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<TSet>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Visit")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::Unity::Properties::ISetPropertyBag_2<TSet, TValue>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<TSet>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Visit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Visit",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Visit",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (properties, container))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (properties, container))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Properties+ISetPropertyBagVisitor")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Unity::Properties::ISetPropertyBagVisitor {
+impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::ISetPropertyBagVisitor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeChildren")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct HierarchyNodeChildren {
     pub m_Hierarchy: quest_hook::libil2cpp::Gc<crate::Unity::Hierarchy::Hierarchy>,
     pub m_Ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -8,8 +8,7 @@ pub struct HierarchyNodeChildren {
     pub m_Count: i32,
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeChildren")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Hierarchy::HierarchyNodeChildren {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Hierarchy::HierarchyNodeChildren {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Hierarchy";
@@ -28,18 +27,14 @@ for crate::Unity::Hierarchy::HierarchyNodeChildren {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeChildren")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Hierarchy::HierarchyNodeChildren {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Hierarchy::HierarchyNodeChildren {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -49,8 +44,7 @@ for crate::Unity::Hierarchy::HierarchyNodeChildren {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeChildren")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Hierarchy::HierarchyNodeChildren {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Hierarchy::HierarchyNodeChildren {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -63,23 +57,19 @@ for crate::Unity::Hierarchy::HierarchyNodeChildren {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeChildren")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Hierarchy::HierarchyNodeChildren {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Hierarchy::HierarchyNodeChildren {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeChildren")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Hierarchy::HierarchyNodeChildren {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Hierarchy::HierarchyNodeChildren {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -92,8 +82,7 @@ for crate::Unity::Hierarchy::HierarchyNodeChildren {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeChildren")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Hierarchy::HierarchyNodeChildren {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Hierarchy::HierarchyNodeChildren {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -108,12 +97,12 @@ impl crate::Unity::Hierarchy::HierarchyNodeChildren {
     pub type Enumerator = crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator;
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -128,34 +117,30 @@ impl crate::Unity::Hierarchy::HierarchyNodeChildren {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowIfVersionChanged(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ThrowIfVersionChanged")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ThrowIfVersionChanged")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ThrowIfVersionChanged", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ThrowIfVersionChanged",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -163,44 +148,40 @@ impl crate::Unity::Hierarchy::HierarchyNodeChildren {
         hierarchy: quest_hook::libil2cpp::Gc<crate::Unity::Hierarchy::Hierarchy>,
         nodeChildrenPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Unity::Hierarchy::Hierarchy,
-                            >,
-                            crate::System::IntPtr,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Unity::Hierarchy::Hierarchy>,
+                        crate::System::IntPtr,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (hierarchy, nodeChildrenPtr))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (hierarchy, nodeChildrenPtr))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeChildren+Enumerator")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct HierarchyNodeChildren_Enumerator {
     pub m_Enumerable: crate::Unity::Hierarchy::HierarchyNodeChildren,
     pub m_Index: i32,
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeChildren+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
+    for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Hierarchy";
@@ -219,18 +200,16 @@ for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeChildren+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
+    for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -241,7 +220,8 @@ for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeChildren+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
+    for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -255,22 +235,22 @@ for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeChildren+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
+    for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeChildren+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
+    for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -284,7 +264,8 @@ for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeChildren+Enumerator")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
+    for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -296,16 +277,18 @@ for crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
 #[cfg(feature = "Unity+Hierarchy+HierarchyNodeChildren+Enumerator")]
 impl crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("MoveNext")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MoveNext", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MoveNext",
+                            0usize
                         )
                     })
             });
@@ -314,32 +297,27 @@ impl crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
     }
     pub fn _ctor(
         &mut self,
-        enumerable: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Hierarchy::HierarchyNodeChildren,
-        >,
+        enumerable: quest_hook::libil2cpp::ByRefMut<crate::Unity::Hierarchy::HierarchyNodeChildren>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::Unity::Hierarchy::HierarchyNodeChildren,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Hierarchy::HierarchyNodeChildren,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (enumerable))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (enumerable))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Current(
@@ -347,9 +325,10 @@ impl crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::ByRefMut<crate::Unity::Hierarchy::HierarchyNode>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -366,9 +345,8 @@ impl crate::Unity::Hierarchy::HierarchyNodeChildren_Enumerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Hierarchy::HierarchyNode,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Hierarchy::HierarchyNode> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

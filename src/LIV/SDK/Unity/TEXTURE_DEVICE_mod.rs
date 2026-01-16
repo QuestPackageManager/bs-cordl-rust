@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+TEXTURE_DEVICE")]
-#[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(u32)]
 pub enum TEXTURE_DEVICE {
     #[default]
     DIRECTX = 2u32,
@@ -30,13 +30,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::TEXTURE_DEVI
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+TEXTURE_DEVICE")]
@@ -70,9 +67,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::TEXTURE_
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }

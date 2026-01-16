@@ -15,14 +15,14 @@ pub struct PosesRecordingInfoSaveData {
     pub _dataFileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "cordl_class_PosesRecordingInfoSaveData")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PosesRecordingInfoSaveData {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PosesRecordingInfoSaveData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PosesRecordingInfoSaveData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -51,7 +51,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PosesRecordingInfoSaveData {
 impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
     pub const kCurrentVersion: &'static str = "1.0.0";
     #[cfg(feature = "PosesRecordingInfoSaveData+ExternalCameraCalibrationSaveData")]
-    pub type ExternalCameraCalibrationSaveData = crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData;
+    pub type ExternalCameraCalibrationSaveData =
+        crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData;
     pub fn New(
         objectIds: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -63,10 +64,12 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
         >,
         dataFileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (objectIds, externalCameraCalibration, dataFileName))?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (objectIds, externalCameraCalibration, dataFileName),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -81,7 +84,8 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
         >,
         dataFileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -114,21 +118,18 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (objectIds, externalCameraCalibration, dataFileName),
-                )?
+                .invoke_unchecked(self, (objectIds, externalCameraCalibration, dataFileName))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_dataFileName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -143,9 +144,8 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_externalCameraCalibration(
@@ -155,7 +155,8 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
             crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -188,26 +189,22 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         >,
-                        0usize,
-                    >("get_objectIds")
+                    >, 0usize>("get_objectIds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_objectIds", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_objectIds",
+                            0usize
                         )
                     })
             });
@@ -220,12 +217,12 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
     }
     pub fn get_version(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -240,15 +237,13 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_PosesRecordingInfoSaveData")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PosesRecordingInfoSaveData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PosesRecordingInfoSaveData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -256,9 +251,7 @@ for crate::GlobalNamespace::PosesRecordingInfoSaveData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_PosesRecordingInfoSaveData+ExternalCameraCalibrationSaveData"
-)]
+#[cfg(feature = "cordl_class_PosesRecordingInfoSaveData+ExternalCameraCalibrationSaveData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData {
@@ -269,17 +262,17 @@ pub struct PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData {
     pub _hmdOffset: f32,
     pub _nearOffset: f32,
 }
-#[cfg(
-    feature = "cordl_class_PosesRecordingInfoSaveData+ExternalCameraCalibrationSaveData"
-)]
+#[cfg(feature = "cordl_class_PosesRecordingInfoSaveData+ExternalCameraCalibrationSaveData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData {
+    for crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PosesRecordingInfoSaveData/ExternalCameraCalibrationSaveData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -293,7 +286,8 @@ for crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibration
 }
 #[cfg(feature = "PosesRecordingInfoSaveData+ExternalCameraCalibrationSaveData")]
 impl std::ops::Deref
-for crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData {
+    for crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -301,7 +295,8 @@ for crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibration
 }
 #[cfg(feature = "PosesRecordingInfoSaveData+ExternalCameraCalibrationSaveData")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData {
+    for crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -315,13 +310,12 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibratio
         hmdOffset: f32,
         nearOffset: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (fieldOfVision, nearClip, farClip, hmdOffset, nearOffset),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (fieldOfVision, nearClip, farClip, hmdOffset, nearOffset),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -332,43 +326,44 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibratio
         hmdOffset: f32,
         nearOffset: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32, f32, f32, f32, f32),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(f32, f32, f32, f32, f32), quest_hook::libil2cpp::Void, 5usize>(
+                        ".ctor",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (fieldOfVision, nearClip, farClip, hmdOffset, nearOffset),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (fieldOfVision, nearClip, farClip, hmdOffset, nearOffset),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_farClip(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_farClip")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_farClip", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_farClip",
+                            0usize
                         )
                     })
             });
@@ -376,16 +371,18 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibratio
         Ok(__cordl_ret.into())
     }
     pub fn get_fieldOfVision(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_fieldOfVision")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_fieldOfVision", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_fieldOfVision",
+                            0usize
                         )
                     })
             });
@@ -393,16 +390,18 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibratio
         Ok(__cordl_ret.into())
     }
     pub fn get_hmdOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_hmdOffset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_hmdOffset", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_hmdOffset",
+                            0usize
                         )
                     })
             });
@@ -410,16 +409,18 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibratio
         Ok(__cordl_ret.into())
     }
     pub fn get_nearClip(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_nearClip")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_nearClip", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_nearClip",
+                            0usize
                         )
                     })
             });
@@ -427,16 +428,18 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibratio
         Ok(__cordl_ret.into())
     }
     pub fn get_nearOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_nearOffset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_nearOffset", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_nearOffset",
+                            0usize
                         )
                     })
             });
@@ -444,11 +447,10 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibratio
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_PosesRecordingInfoSaveData+ExternalCameraCalibrationSaveData"
-)]
+#[cfg(feature = "cordl_class_PosesRecordingInfoSaveData+ExternalCameraCalibrationSaveData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData {
+    for crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

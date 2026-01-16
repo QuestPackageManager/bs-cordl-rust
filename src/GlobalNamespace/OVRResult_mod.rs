@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRResult {
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRResult";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,18 +42,19 @@ impl crate::GlobalNamespace::OVRResult {
     pub fn From_TResult_TStatus1<TResult, TStatus>(
         result: TResult,
         status: TStatus,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRResult_2<TResult, TStatus>,
-    >
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRResult_2<TResult, TStatus>>
     where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TResult: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TStatus: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TStatus: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (TResult, TStatus),
@@ -67,21 +69,22 @@ impl crate::GlobalNamespace::OVRResult {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRResult_2<TResult, TStatus> = unsafe {
-            cordl_method_info.invoke_unchecked((), (result, status))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRResult_2<TResult, TStatus> =
+            unsafe { cordl_method_info.invoke_unchecked((), (result, status))? };
         Ok(__cordl_ret.into())
     }
     pub fn From_TStatus0<TStatus>(
         status: TStatus,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRResult_1<TStatus>>
     where
-        TStatus: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TStatus: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (TStatus),
@@ -96,9 +99,8 @@ impl crate::GlobalNamespace::OVRResult {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRResult_1<TStatus> = unsafe {
-            cordl_method_info.invoke_unchecked((), (status))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRResult_1<TStatus> =
+            unsafe { cordl_method_info.invoke_unchecked((), (status))? };
         Ok(__cordl_ret.into())
     }
 }

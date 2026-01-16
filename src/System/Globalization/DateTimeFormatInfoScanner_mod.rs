@@ -12,13 +12,15 @@ pub struct DateTimeFormatInfoScanner {
 }
 #[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfoScanner")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Globalization::DateTimeFormatInfoScanner {
+    for crate::System::Globalization::DateTimeFormatInfoScanner
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Globalization";
     const CLASS_NAME: &'static str = "DateTimeFormatInfoScanner";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,39 +48,35 @@ impl std::ops::DerefMut for crate::System::Globalization::DateTimeFormatInfoScan
 #[cfg(feature = "System+Globalization+DateTimeFormatInfoScanner")]
 impl crate::System::Globalization::DateTimeFormatInfoScanner {
     #[cfg(feature = "System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern")]
-    pub type FoundDatePattern = crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern;
+    pub type FoundDatePattern =
+        crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern;
     pub fn AddDateWordOrPostfix(
         &mut self,
         formatPostfix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("AddDateWordOrPostfix")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "AddDateWordOrPostfix"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddDateWordOrPostfix", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddDateWordOrPostfix",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (formatPostfix, str))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (formatPostfix, str))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddDateWords(
@@ -87,43 +85,37 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
         index: i32,
         formatPostfix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         i32,
-                        3usize,
-                    >("AddDateWords")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), i32, 3usize>("AddDateWords")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddDateWords", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddDateWords",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pattern, index, formatPostfix))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pattern, index, formatPostfix))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddIgnorableSymbols(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -138,9 +130,8 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (text))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (text))? };
         Ok(__cordl_ret.into())
     }
     pub fn ArrayElementsBeginWithDigit(
@@ -150,32 +141,26 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
-                        >),
-                        bool,
-                        1usize,
-                    >("ArrayElementsBeginWithDigit")
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        >,
+                    >), bool, 1usize>("ArrayElementsBeginWithDigit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ArrayElementsBeginWithDigit", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ArrayElementsBeginWithDigit",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (array))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn ArrayElementsHaveSpace(
@@ -185,32 +170,26 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
-                        >),
-                        bool,
-                        1usize,
-                    >("ArrayElementsHaveSpace")
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        >,
+                    >), bool, 1usize>("ArrayElementsHaveSpace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ArrayElementsHaveSpace", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ArrayElementsHaveSpace",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (array))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn EqualStringArrays(
@@ -225,41 +204,34 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                        ),
-                        bool,
-                        2usize,
-                    >("EqualStringArrays")
+                        >,
+                    ), bool, 2usize>("EqualStringArrays")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EqualStringArrays", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EqualStringArrays",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (array1, array2))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (array1, array2))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDateWordsOfDTFI(
@@ -272,9 +244,10 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -326,89 +299,79 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::FORMATFLAGS> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                        ),
-                        crate::System::Globalization::FORMATFLAGS,
-                        4usize,
-                    >("GetFormatFlagGenitiveMonth")
+                        >,
+                    ), crate::System::Globalization::FORMATFLAGS, 4usize>(
+                        "GetFormatFlagGenitiveMonth",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetFormatFlagGenitiveMonth", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetFormatFlagGenitiveMonth",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: crate::System::Globalization::FORMATFLAGS = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        monthNames,
-                        genitveMonthNames,
-                        abbrevMonthNames,
-                        genetiveAbbrevMonthNames,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    monthNames,
+                    genitveMonthNames,
+                    abbrevMonthNames,
+                    genetiveAbbrevMonthNames,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetFormatFlagUseHebrewCalendar(
         calID: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::FORMATFLAGS> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32),
-                        crate::System::Globalization::FORMATFLAGS,
-                        1usize,
-                    >("GetFormatFlagUseHebrewCalendar")
+                    .find_static_method::<(i32), crate::System::Globalization::FORMATFLAGS, 1usize>(
+                        "GetFormatFlagUseHebrewCalendar",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetFormatFlagUseHebrewCalendar", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetFormatFlagUseHebrewCalendar",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Globalization::FORMATFLAGS = unsafe {
-            cordl_method_info.invoke_unchecked((), (calID))?
-        };
+        let __cordl_ret: crate::System::Globalization::FORMATFLAGS =
+            unsafe { cordl_method_info.invoke_unchecked((), (calID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFormatFlagUseSpaceInDayNames(
@@ -423,41 +386,36 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::FORMATFLAGS> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                        ),
-                        crate::System::Globalization::FORMATFLAGS,
-                        2usize,
-                    >("GetFormatFlagUseSpaceInDayNames")
+                        >,
+                    ), crate::System::Globalization::FORMATFLAGS, 2usize>(
+                        "GetFormatFlagUseSpaceInDayNames",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetFormatFlagUseSpaceInDayNames", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetFormatFlagUseSpaceInDayNames",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Globalization::FORMATFLAGS = unsafe {
-            cordl_method_info.invoke_unchecked((), (dayNames, abbrevDayNames))?
-        };
+        let __cordl_ret: crate::System::Globalization::FORMATFLAGS =
+            unsafe { cordl_method_info.invoke_unchecked((), (dayNames, abbrevDayNames))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFormatFlagUseSpaceInMonthNames(
@@ -482,69 +440,60 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::FORMATFLAGS> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                        ),
-                        crate::System::Globalization::FORMATFLAGS,
-                        4usize,
-                    >("GetFormatFlagUseSpaceInMonthNames")
+                        >,
+                    ), crate::System::Globalization::FORMATFLAGS, 4usize>(
+                        "GetFormatFlagUseSpaceInMonthNames",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetFormatFlagUseSpaceInMonthNames", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetFormatFlagUseSpaceInMonthNames",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: crate::System::Globalization::FORMATFLAGS = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        monthNames,
-                        genitveMonthNames,
-                        abbrevMonthNames,
-                        genetiveAbbrevMonthNames,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    monthNames,
+                    genitveMonthNames,
+                    abbrevMonthNames,
+                    genetiveAbbrevMonthNames,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -553,9 +502,10 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
         &mut self,
         pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -570,9 +520,8 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pattern))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
     }
     pub fn ScanRepeatChar(
@@ -581,85 +530,74 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
         index: i32,
         count: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            char,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        char,
                         i32,
-                        4usize,
-                    >("ScanRepeatChar")
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), i32, 4usize>("ScanRepeatChar")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ScanRepeatChar", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ScanRepeatChar",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (pattern, ch, index, count))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (pattern, ch, index, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn SkipWhiteSpacesAndNonLetter(
         pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         currentIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         i32,
-                        2usize,
-                    >("SkipWhiteSpacesAndNonLetter")
+                    ), i32, 2usize>("SkipWhiteSpacesAndNonLetter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SkipWhiteSpacesAndNonLetter", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SkipWhiteSpacesAndNonLetter",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (pattern, currentIndex))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (pattern, currentIndex))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_KnownWords() -> quest_hook::libil2cpp::Result<
@@ -670,29 +608,23 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         >,
-                        0usize,
-                    >("get_KnownWords")
+                    >, 0usize>("get_KnownWords")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_KnownWords", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_KnownWords",
+                            0usize
                         )
                     })
             });
@@ -706,8 +638,7 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfoScanner")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Globalization::DateTimeFormatInfoScanner {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::DateTimeFormatInfoScanner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -715,11 +646,9 @@ for crate::System::Globalization::DateTimeFormatInfoScanner {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum DateTimeFormatInfoScanner_FoundDatePattern {
     #[default]
     FoundDayPatternFlag = 4i32,
@@ -728,11 +657,10 @@ pub enum DateTimeFormatInfoScanner_FoundDatePattern {
     FoundYearPatternFlag = 1i32,
     None = 0i32,
 }
-#[cfg(
-    feature = "cordl_class_System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern"
-)]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
+    for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
@@ -751,20 +679,16 @@ for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern"
-)]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
+    for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -773,11 +697,10 @@ for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern"
-)]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
+    for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -789,28 +712,24 @@ for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern"
-)]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
+    for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern"
-)]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
+    for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

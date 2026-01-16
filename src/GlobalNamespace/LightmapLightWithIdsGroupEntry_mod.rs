@@ -3,9 +3,8 @@
 #[derive(Debug)]
 pub struct LightmapLightWithIdsGroupEntry {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightmapLightWithIds: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LightmapLightWithIds,
-    >,
+    pub _lightmapLightWithIds:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds>,
     pub _groupLightData: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             quest_hook::libil2cpp::Gc<
@@ -20,20 +19,18 @@ pub struct LightmapLightWithIdsGroupEntry {
             >,
         >,
     >,
-    pub _excludedLightIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<i32>,
-    >,
+    pub _excludedLightIds: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _groupLightsWeighting: crate::GlobalNamespace::ColorMixAndWeightingApproach,
 }
 #[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LightmapLightWithIdsGroupEntry";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -63,33 +60,33 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
     #[cfg(feature = "LightmapLightWithIdsGroupEntry+GroupLightData")]
     pub type GroupLightData = crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData;
     #[cfg(feature = "LightmapLightWithIdsGroupEntry+LightIntensitiesWithId")]
-    pub type LightIntensitiesWithId = crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId;
+    pub type LightIntensitiesWithId =
+        crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_groupLightData(
@@ -103,7 +100,8 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -137,12 +135,11 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
     }
     pub fn get_groupLightsWeighting(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::ColorMixAndWeightingApproach,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorMixAndWeightingApproach> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -157,9 +154,8 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::ColorMixAndWeightingApproach = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::ColorMixAndWeightingApproach =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_individualLightData(
@@ -173,7 +169,8 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -210,9 +207,10 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -229,15 +227,13 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LightmapLightWithIds,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -256,13 +252,15 @@ pub struct LightmapLightWithIdsGroupEntry_GroupLightData {
 }
 #[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry+GroupLightData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
+    for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LightmapLightWithIdsGroupEntry/GroupLightData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -275,16 +273,14 @@ for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
     }
 }
 #[cfg(feature = "LightmapLightWithIdsGroupEntry+GroupLightData")]
-impl std::ops::Deref
-for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
+impl std::ops::Deref for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightmapLightWithIdsGroupEntry+GroupLightData")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -296,13 +292,16 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
         groupIntensity: f32,
         groupProbeHighlightsIntensityMultiplier: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (lightGroup, groupIntensity, groupProbeHighlightsIntensityMultiplier),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                lightGroup,
+                groupIntensity,
+                groupProbeHighlightsIntensityMultiplier,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -311,49 +310,50 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
         groupIntensity: f32,
         groupProbeHighlightsIntensityMultiplier: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LightGroupSO,
-                            >,
-                            f32,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
+                        f32,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (lightGroup, groupIntensity, groupProbeHighlightsIntensityMultiplier),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    lightGroup,
+                    groupIntensity,
+                    groupProbeHighlightsIntensityMultiplier,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_groupIntensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_groupIntensity")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_groupIntensity", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_groupIntensity",
+                            0usize
                         )
                     })
             });
@@ -363,20 +363,18 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
     pub fn get_groupProbeHighlightsIntensityMultiplier(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        f32,
-                        0usize,
-                    >("get_groupProbeHighlightsIntensityMultiplier")
+                    .find_method::<(), f32, 0usize>("get_groupProbeHighlightsIntensityMultiplier")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_groupProbeHighlightsIntensityMultiplier", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_groupProbeHighlightsIntensityMultiplier",
+                            0usize
                         )
                     })
             });
@@ -388,9 +386,10 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -405,15 +404,15 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LightGroupSO,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry+GroupLightData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
+    for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -432,13 +431,15 @@ pub struct LightmapLightWithIdsGroupEntry_LightIntensitiesWithId {
 }
 #[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry+LightIntensitiesWithId")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId {
+    for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LightmapLightWithIdsGroupEntry/LightIntensitiesWithId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -452,7 +453,8 @@ for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithI
 }
 #[cfg(feature = "LightmapLightWithIdsGroupEntry+LightIntensitiesWithId")]
 impl std::ops::Deref
-for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId {
+    for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -460,7 +462,8 @@ for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithI
 }
 #[cfg(feature = "LightmapLightWithIdsGroupEntry+LightIntensitiesWithId")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId {
+    for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -472,13 +475,12 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWith
         intensity: f32,
         probeHighlightsIntensityMultiplier: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (lightId, intensity, probeHighlightsIntensityMultiplier),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (lightId, intensity, probeHighlightsIntensityMultiplier),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -487,43 +489,42 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWith
         intensity: f32,
         probeHighlightsIntensityMultiplier: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, f32, f32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(i32, f32, f32), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (lightId, intensity, probeHighlightsIntensityMultiplier),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (lightId, intensity, probeHighlightsIntensityMultiplier),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_intensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_intensity")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_intensity", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_intensity",
+                            0usize
                         )
                     })
             });
@@ -531,39 +532,37 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWith
         Ok(__cordl_ret.into())
     }
     pub fn get_lightId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_lightId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_lightId", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_lightId",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_probeHighlightsIntensityMultiplier(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_probeHighlightsIntensityMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        f32,
-                        0usize,
-                    >("get_probeHighlightsIntensityMultiplier")
+                    .find_method::<(), f32, 0usize>("get_probeHighlightsIntensityMultiplier")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_probeHighlightsIntensityMultiplier", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_probeHighlightsIntensityMultiplier",
+                            0usize
                         )
                     })
             });
@@ -573,7 +572,8 @@ impl crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWith
 }
 #[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry+LightIntensitiesWithId")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId {
+    for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

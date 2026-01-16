@@ -3,30 +3,27 @@
 #[derive(Debug)]
 pub struct SwitchExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _SwitchValue_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Expression,
-    >,
+    pub _SwitchValue_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     pub _Cases_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
             quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::SwitchCase>,
         >,
     >,
-    pub _DefaultBody_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Expression,
-    >,
-    pub _Comparison_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Reflection::MethodInfo,
-    >,
+    pub _DefaultBody_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    pub _Comparison_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+SwitchExpression")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Linq::Expressions::SwitchExpression {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Linq::Expressions::SwitchExpression {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
     const CLASS_NAME: &'static str = "SwitchExpression";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -62,26 +59,22 @@ impl crate::System::Linq::Expressions::SwitchExpression {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::SwitchCase,
-                                >,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::SwitchCase>,
                         >,
-                        0usize,
-                    >("get_Cases")
+                    >, 0usize>("get_Cases")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Cases", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Cases",
+                            0usize
                         )
                     })
             });
@@ -97,9 +90,10 @@ impl crate::System::Linq::Expressions::SwitchExpression {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -114,9 +108,8 @@ impl crate::System::Linq::Expressions::SwitchExpression {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Reflection::MethodInfo,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_DefaultBody(
@@ -124,9 +117,10 @@ impl crate::System::Linq::Expressions::SwitchExpression {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -143,9 +137,8 @@ impl crate::System::Linq::Expressions::SwitchExpression {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_SwitchValue(
@@ -153,9 +146,10 @@ impl crate::System::Linq::Expressions::SwitchExpression {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -172,15 +166,13 @@ impl crate::System::Linq::Expressions::SwitchExpression {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+SwitchExpression")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Linq::Expressions::SwitchExpression {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Linq::Expressions::SwitchExpression {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

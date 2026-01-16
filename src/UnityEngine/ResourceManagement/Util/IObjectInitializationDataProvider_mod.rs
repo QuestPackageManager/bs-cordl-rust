@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+IObjectInitializationDataProvider"
 )]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IObjectInitializationDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -10,13 +10,15 @@ pub struct IObjectInitializationDataProvider {
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+IObjectInitializationDataProvider"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvider {
+    for crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvider
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
     const CLASS_NAME: &'static str = "IObjectInitializationDataProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -30,7 +32,8 @@ for crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvi
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+IObjectInitializationDataProvider")]
 impl std::ops::Deref
-for crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvider {
+    for crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvider
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -38,7 +41,8 @@ for crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvi
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+IObjectInitializationDataProvider")]
 impl std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvider {
+    for crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvider
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -50,9 +54,10 @@ impl crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProv
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -67,24 +72,21 @@ impl crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProv
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -99,9 +101,8 @@ impl crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProv
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -109,7 +110,8 @@ impl crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProv
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+IObjectInitializationDataProvider"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvider {
+    for crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvider
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

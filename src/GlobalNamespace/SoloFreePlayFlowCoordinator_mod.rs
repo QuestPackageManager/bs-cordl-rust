@@ -3,40 +3,30 @@
 #[derive(Debug)]
 pub struct SoloFreePlayFlowCoordinator {
     __cordl_parent: crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
-    pub _defaultLightsPreset: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MenuLightsPresetSO,
-    >,
-    pub _resultsClearedLightsPreset: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MenuLightsPresetSO,
-    >,
-    pub _resultsFailedLightsPreset: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MenuLightsPresetSO,
-    >,
-    pub _menuLightsManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MenuLightsManager,
-    >,
-    pub _resultsViewController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ResultsViewController,
-    >,
-    pub _platformLeaderboardViewController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlatformLeaderboardViewController,
-    >,
-    pub _platformLeaderboardsModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlatformLeaderboardsModel,
-    >,
-    pub _beatLeaderboards: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::Main::Leaderboards::BeatLeaderboards,
-    >,
+    pub _defaultLightsPreset: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuLightsPresetSO>,
+    pub _resultsClearedLightsPreset:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuLightsPresetSO>,
+    pub _resultsFailedLightsPreset:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuLightsPresetSO>,
+    pub _menuLightsManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuLightsManager>,
+    pub _resultsViewController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
+    pub _platformLeaderboardViewController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformLeaderboardViewController>,
+    pub _platformLeaderboardsModel:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformLeaderboardsModel>,
+    pub _beatLeaderboards:
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::Main::Leaderboards::BeatLeaderboards>,
 }
 #[cfg(feature = "cordl_class_SoloFreePlayFlowCoordinator")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "SoloFreePlayFlowCoordinator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -65,13 +55,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SoloFreePlayFlowCoordinator 
 impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
     pub fn HandleResultsViewControllerContinueButtonPressed(
         &mut self,
-        viewController: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ResultsViewController,
-        >,
+        viewController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -88,9 +77,8 @@ impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (viewController))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (viewController))? };
         Ok(__cordl_ret.into())
     }
     pub fn HandleResultsViewControllerRestartButtonPressed(
@@ -99,9 +87,10 @@ impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
             crate::GlobalNamespace::ResultsViewController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -118,9 +107,8 @@ impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (resultsViewController))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (resultsViewController))? };
         Ok(__cordl_ret.into())
     }
     pub fn HandleStandardLevelWasRestarted(
@@ -128,81 +116,67 @@ impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
         so: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
         >,
-        results: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelCompletionResults,
-        >,
+        results: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleStandardLevelWasRestarted")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "HandleStandardLevelWasRestarted"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleStandardLevelWasRestarted", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleStandardLevelWasRestarted",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (so, results))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (so, results))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNewHighScore(
         &mut self,
-        playerLevelStats: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerLevelStatsData,
-        >,
+        playerLevelStats: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerLevelStatsData>,
         levelCompletionResults: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerLevelStatsData,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsNewHighScore")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerLevelStatsData>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+                    ), bool, 2usize>("IsNewHighScore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsNewHighScore", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsNewHighScore",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (playerLevelStats, levelCompletionResults))?
+            cordl_method_info.invoke_unchecked(self, (playerLevelStats, levelCompletionResults))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -220,73 +194,63 @@ impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
         modifiers: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
         practice: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IReadonlyBeatmapData,
-                            >,
-                            crate::GlobalNamespace::BeatmapKey,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::GameplayModifiers,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("ProcessLevelCompletionResultsAfterLevelDidFinish")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
+                        crate::GlobalNamespace::BeatmapKey,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "ProcessLevelCompletionResultsAfterLevelDidFinish",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessLevelCompletionResultsAfterLevelDidFinish", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessLevelCompletionResultsAfterLevelDidFinish",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        levelCompletionResults,
-                        transformedBeatmapData,
-                        beatmapKey,
-                        beatmapLevel,
-                        modifiers,
-                        practice,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    levelCompletionResults,
+                    transformedBeatmapData,
+                    beatmapKey,
+                    beatmapLevel,
+                    modifiers,
+                    practice,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Refresh(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Refresh(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Refresh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Refresh",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Refresh",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SinglePlayerLevelSelectionFlowCoordinatorDidActivate(
@@ -294,27 +258,25 @@ impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
         firstActivation: bool,
         addedToHierarchy: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool, bool),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SinglePlayerLevelSelectionFlowCoordinatorDidActivate")
+                    .find_method::<(bool, bool), quest_hook::libil2cpp::Void, 2usize>(
+                        "SinglePlayerLevelSelectionFlowCoordinatorDidActivate",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            <Self as quest_hook::libil2cpp::Type>::class(),
                             "SinglePlayerLevelSelectionFlowCoordinatorDidActivate",
                             2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (firstActivation, addedToHierarchy))?
+            cordl_method_info.invoke_unchecked(self, (firstActivation, addedToHierarchy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -322,27 +284,25 @@ impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
         &mut self,
         removedFromHierarchy: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SinglePlayerLevelSelectionFlowCoordinatorDidDeactivate")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "SinglePlayerLevelSelectionFlowCoordinatorDidDeactivate",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            <Self as quest_hook::libil2cpp::Type>::class(),
                             "SinglePlayerLevelSelectionFlowCoordinatorDidDeactivate",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (removedFromHierarchy))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (removedFromHierarchy))? };
         Ok(__cordl_ret.into())
     }
     pub fn __SetupFromDestination(
@@ -351,9 +311,10 @@ impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
             crate::GlobalNamespace::RunLevelMenuDestination,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -370,40 +331,38 @@ impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (runLevelMenuDestination))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (runLevelMenuDestination))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_gameMode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -418,9 +377,8 @@ impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_leaderboardViewController(
@@ -428,9 +386,10 @@ impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardViewController>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -454,12 +413,12 @@ impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
     }
     pub fn get_mainTitle(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -474,28 +433,25 @@ impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_showBackButtonForMainViewController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        bool,
-                        0usize,
-                    >("get_showBackButtonForMainViewController")
+                    .find_method::<(), bool, 0usize>("get_showBackButtonForMainViewController")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_showBackButtonForMainViewController", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_showBackButtonForMainViewController",
+                            0usize
                         )
                     })
             });
@@ -504,8 +460,7 @@ impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
     }
 }
 #[cfg(feature = "cordl_class_SoloFreePlayFlowCoordinator")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

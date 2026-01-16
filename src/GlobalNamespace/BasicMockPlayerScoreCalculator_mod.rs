@@ -9,14 +9,14 @@ pub struct BasicMockPlayerScoreCalculator {
     pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
 }
 #[cfg(feature = "cordl_class_BasicMockPlayerScoreCalculator")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BasicMockPlayerScoreCalculator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,9 +47,10 @@ impl crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
         &mut self,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -66,9 +67,7 @@ impl crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (noteData))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (noteData))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -76,8 +75,8 @@ impl crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
         minScore: i32,
         maxScore: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (hitFrequency, minScore, maxScore))?;
         Ok(__cordl_object.into())
@@ -88,19 +87,17 @@ impl crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
         minScore: i32,
         maxScore: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(f32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
@@ -112,8 +109,7 @@ impl crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
     }
 }
 #[cfg(feature = "cordl_class_BasicMockPlayerScoreCalculator")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -123,14 +119,16 @@ for crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
 }
 #[cfg(feature = "BasicMockPlayerScoreCalculator")]
 impl AsRef<crate::GlobalNamespace::IMockPlayerScoreCalculator>
-for crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
+    for crate::GlobalNamespace::BasicMockPlayerScoreCalculator
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IMockPlayerScoreCalculator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BasicMockPlayerScoreCalculator")]
 impl AsMut<crate::GlobalNamespace::IMockPlayerScoreCalculator>
-for crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
+    for crate::GlobalNamespace::BasicMockPlayerScoreCalculator
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMockPlayerScoreCalculator {
         unsafe { std::mem::transmute(self) }
     }

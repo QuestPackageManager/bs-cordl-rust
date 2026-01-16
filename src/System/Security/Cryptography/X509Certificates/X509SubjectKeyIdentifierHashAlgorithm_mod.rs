@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierHashAlgorithm"
 )]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum X509SubjectKeyIdentifierHashAlgorithm {
     #[default]
     CapiSha1 = 2i32,

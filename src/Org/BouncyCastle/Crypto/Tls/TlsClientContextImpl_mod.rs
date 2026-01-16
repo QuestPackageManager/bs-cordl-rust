@@ -6,13 +6,15 @@ pub struct TlsClientContextImpl {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsClientContextImpl")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl {
+    for crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Tls";
     const CLASS_NAME: &'static str = "TlsClientContextImpl";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,48 +42,40 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsClientCont
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsClientContextImpl")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl {
     pub fn New(
-        secureRandom: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Security::SecureRandom,
-        >,
+        secureRandom: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
         securityParameters: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (secureRandom, securityParameters))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        secureRandom: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Security::SecureRandom,
-        >,
+        secureRandom: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
         securityParameters: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Security::SecureRandom,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
@@ -92,16 +86,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsServer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsServer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsServer", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsServer",
+                            0usize
                         )
                     })
             });
@@ -111,7 +107,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsClientContextImpl")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl {
+    for crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -121,30 +118,32 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsClientContextImpl")]
 impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsClientContext>
-for crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl {
+    for crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl
+{
     fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsClientContext {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsClientContextImpl")]
 impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsClientContext>
-for crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsClientContext {
+    for crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl
+{
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsClientContext {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsClientContextImpl")]
 impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsContext>
-for crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl {
+    for crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl
+{
     fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsContext {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsClientContextImpl")]
 impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsContext>
-for crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl {
+    for crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl
+{
     fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext {
         unsafe { std::mem::transmute(self) }
     }

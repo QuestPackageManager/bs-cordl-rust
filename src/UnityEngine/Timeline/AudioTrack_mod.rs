@@ -3,9 +3,8 @@
 #[derive(Debug)]
 pub struct AudioTrack {
     __cordl_parent: crate::UnityEngine::Timeline::TrackAsset,
-    pub m_TrackProperties: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Timeline::AudioMixerProperties,
-    >,
+    pub m_TrackProperties:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::AudioMixerProperties>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioTrack")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::AudioTrack {
@@ -14,7 +13,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::AudioT
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
     const CLASS_NAME: &'static str = "AudioTrack";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -56,43 +56,42 @@ impl crate::UnityEngine::Timeline::AudioTrack {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Playables::PlayableGraph,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::Timeline::TimelineClip,
-                                    >,
+                    .find_method::<(
+                        crate::UnityEngine::Playables::PlayableGraph,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Timeline::TimelineClip,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Timeline::IntervalTree_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::Timeline::RuntimeElement,
-                                    >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Timeline::IntervalTree_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Timeline::RuntimeElement,
                                 >,
                             >,
-                        ),
-                        crate::UnityEngine::Playables::Playable,
-                        4usize,
-                    >("CompileClips")
+                        >,
+                    ), crate::UnityEngine::Playables::Playable, 4usize>(
+                        "CompileClips"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileClips", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileClips",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
-            cordl_method_info.invoke_unchecked(self, (graph, go, timelineClips, tree))?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::Playable =
+            unsafe { cordl_method_info.invoke_unchecked(self, (graph, go, timelineClips, tree))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateClip(
@@ -101,9 +100,10 @@ impl crate::UnityEngine::Timeline::AudioTrack {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>),
@@ -120,58 +120,55 @@ impl crate::UnityEngine::Timeline::AudioTrack {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Timeline::TimelineClip,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (clip))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (clip))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnValidate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnValidate(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnValidate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnValidate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnValidate",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_outputs(
@@ -183,24 +180,22 @@ impl crate::UnityEngine::Timeline::AudioTrack {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::UnityEngine::Playables::PlayableBinding,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            crate::UnityEngine::Playables::PlayableBinding,
                         >,
-                        0usize,
-                    >("get_outputs")
+                    >, 0usize>("get_outputs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_outputs", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_outputs",
+                            0usize
                         )
                     })
             });

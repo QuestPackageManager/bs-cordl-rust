@@ -12,9 +12,8 @@ pub struct ObjectDispatcher {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
         >,
     >,
-    pub m_TypeDataCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::UnityEngine::TypeDispatchData>,
-    >,
+    pub m_TypeDataCallback:
+        quest_hook::libil2cpp::Gc<crate::System::Action_1<crate::UnityEngine::TypeDispatchData>>,
     pub m_TransformDataCallback: quest_hook::libil2cpp::Gc<
         crate::System::Action_1<crate::UnityEngine::TransformDispatchData>,
     >,
@@ -35,7 +34,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ObjectDispatcher
     const NAMESPACE: &'static str = "UnityEngine";
     const CLASS_NAME: &'static str = "ObjectDispatcher";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -66,37 +66,35 @@ impl crate::UnityEngine::ObjectDispatcher {
     pub type TransformTrackingType = crate::UnityEngine::ObjectDispatcher_TransformTrackingType;
     #[cfg(feature = "UnityEngine+ObjectDispatcher+TypeTrackingFlags")]
     pub type TypeTrackingFlags = crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags;
-    pub fn CreateDispatchSystemHandle() -> quest_hook::libil2cpp::Result<
-        crate::System::IntPtr,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn CreateDispatchSystemHandle() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::System::IntPtr,
-                        0usize,
-                    >("CreateDispatchSystemHandle")
+                    .find_static_method::<(), crate::System::IntPtr, 0usize>(
+                        "CreateDispatchSystemHandle",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateDispatchSystemHandle", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateDispatchSystemHandle",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::IntPtr = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::System::IntPtr =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DestroyDispatchSystemHandle(
         ptr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
@@ -111,9 +109,8 @@ impl crate::UnityEngine::ObjectDispatcher {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (ptr))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (ptr))? };
         Ok(__cordl_ret.into())
     }
     pub fn DispatchCallback_Il2CppArray2(
@@ -124,39 +121,37 @@ impl crate::UnityEngine::ObjectDispatcher {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("DispatchCallback")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>("DispatchCallback")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DispatchCallback", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DispatchCallback",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (components))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (components))? };
         Ok(__cordl_ret.into())
     }
     pub fn DispatchCallback_TransformDispatchData1(
         &mut self,
         data: crate::UnityEngine::TransformDispatchData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::TransformDispatchData),
@@ -171,18 +166,18 @@ impl crate::UnityEngine::ObjectDispatcher {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (data))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (data))? };
         Ok(__cordl_ret.into())
     }
     pub fn DispatchCallback_TypeDispatchData0(
         &mut self,
         data: crate::UnityEngine::TypeDispatchData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::TypeDispatchData),
@@ -197,9 +192,8 @@ impl crate::UnityEngine::ObjectDispatcher {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (data))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (data))? };
         Ok(__cordl_ret.into())
     }
     pub fn DispatchTransformChangesAndClear(
@@ -210,34 +204,31 @@ impl crate::UnityEngine::ObjectDispatcher {
             crate::System::Action_1<crate::UnityEngine::TransformDispatchData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    crate::UnityEngine::TransformDispatchData,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("DispatchTransformChangesAndClear")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::UnityEngine::TransformDispatchData>,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "DispatchTransformChangesAndClear"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DispatchTransformChangesAndClear", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DispatchTransformChangesAndClear",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (_cordl_type, trackingType, callback))?
+            cordl_method_info.invoke_unchecked(self, (_cordl_type, trackingType, callback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -263,45 +254,43 @@ impl crate::UnityEngine::ObjectDispatcher {
             crate::System::Action_1<crate::UnityEngine::TransformDispatchData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_8<
-                                    crate::System::IntPtr,
-                                    crate::System::IntPtr,
-                                    crate::System::IntPtr,
-                                    crate::System::IntPtr,
-                                    crate::System::IntPtr,
-                                    crate::System::IntPtr,
-                                    i32,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Action_1<
-                                            crate::UnityEngine::TransformDispatchData,
-                                        >,
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Action_8<
+                                crate::System::IntPtr,
+                                crate::System::IntPtr,
+                                crate::System::IntPtr,
+                                crate::System::IntPtr,
+                                crate::System::IntPtr,
+                                crate::System::IntPtr,
+                                i32,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Action_1<
+                                        crate::UnityEngine::TransformDispatchData,
                                     >,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    crate::UnityEngine::TransformDispatchData,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("DispatchTransformDataChangesAndClear")
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::UnityEngine::TransformDispatchData>,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "DispatchTransformDataChangesAndClear"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DispatchTransformDataChangesAndClear", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DispatchTransformDataChangesAndClear",
+                            5usize
                         )
                     })
             });
@@ -336,64 +325,59 @@ impl crate::UnityEngine::ObjectDispatcher {
             crate::System::Action_1<crate::UnityEngine::TypeDispatchData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_6<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppArray<
-                                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-                                        >,
-                                    >,
-                                    crate::System::IntPtr,
-                                    crate::System::IntPtr,
-                                    i32,
-                                    i32,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Action_1<
-                                            crate::UnityEngine::TypeDispatchData,
-                                        >,
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Action_6<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
                                     >,
                                 >,
-                            >,
-                            bool,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    crate::UnityEngine::TypeDispatchData,
+                                crate::System::IntPtr,
+                                crate::System::IntPtr,
+                                i32,
+                                i32,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Action_1<crate::UnityEngine::TypeDispatchData>,
                                 >,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("DispatchTypeChangesAndClear")
+                        >,
+                        bool,
+                        bool,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::UnityEngine::TypeDispatchData>,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "DispatchTypeChangesAndClear"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DispatchTypeChangesAndClear", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DispatchTypeChangesAndClear",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        ptr,
-                        _cordl_type,
-                        callback,
-                        sortByInstanceID,
-                        noScriptingArray,
-                        param,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    ptr,
+                    _cordl_type,
+                    callback,
+                    sortByInstanceID,
+                    noScriptingArray,
+                    param,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -406,86 +390,79 @@ impl crate::UnityEngine::ObjectDispatcher {
         sortByInstanceID: bool,
         noScriptingArray: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    crate::UnityEngine::TypeDispatchData,
-                                >,
-                            >,
-                            bool,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("DispatchTypeChangesAndClear")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::UnityEngine::TypeDispatchData>,
+                        >,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "DispatchTypeChangesAndClear"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DispatchTypeChangesAndClear", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DispatchTypeChangesAndClear",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (_cordl_type, callback, sortByInstanceID, noScriptingArray),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (_cordl_type, callback, sortByInstanceID, noScriptingArray),
+            )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose_0(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
         disposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Dispose")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (disposing))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (disposing))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnableTransformTracking_IntPtr_Type_ObjectDispatcher_TransformTrackingType2(
@@ -493,30 +470,29 @@ impl crate::UnityEngine::ObjectDispatcher {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         trackingType: crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("EnableTransformTracking")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "EnableTransformTracking"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EnableTransformTracking", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EnableTransformTracking",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (ptr, _cordl_type, trackingType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (ptr, _cordl_type, trackingType))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnableTransformTracking_ObjectDispatcher_TransformTrackingType1<T>(
@@ -524,12 +500,14 @@ impl crate::UnityEngine::ObjectDispatcher {
         trackingType: crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::ObjectDispatcher_TransformTrackingType),
@@ -544,47 +522,43 @@ impl crate::UnityEngine::ObjectDispatcher {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (trackingType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (trackingType))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnableTransformTracking_ObjectDispatcher_TransformTrackingType_Il2CppArray0(
         &mut self,
         trackingType: crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<crate::System::Type>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                >,
+                    .find_method::<(
+                        crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("EnableTransformTracking")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "EnableTransformTracking"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EnableTransformTracking", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EnableTransformTracking",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (trackingType, types))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (trackingType, types))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnableTypeTracking_IntPtr_Type_ObjectDispatcher_TypeTrackingFlags2(
@@ -592,24 +566,22 @@ impl crate::UnityEngine::ObjectDispatcher {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         typeTrackingMask: crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("EnableTypeTracking")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags,
+                    ), quest_hook::libil2cpp::Void, 3usize>("EnableTypeTracking")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EnableTypeTracking", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EnableTypeTracking",
+                            3usize
                         )
                     })
             });
@@ -623,12 +595,14 @@ impl crate::UnityEngine::ObjectDispatcher {
         typeTrackingMask: crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags),
@@ -643,104 +617,95 @@ impl crate::UnityEngine::ObjectDispatcher {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (typeTrackingMask))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (typeTrackingMask))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnableTypeTracking_ObjectDispatcher_TypeTrackingFlags_Il2CppArray0(
         &mut self,
         typeTrackingMask: crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<crate::System::Type>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                >,
+                    .find_method::<(
+                        crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("EnableTypeTracking")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("EnableTypeTracking")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EnableTypeTracking", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EnableTypeTracking",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (typeTrackingMask, types))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (typeTrackingMask, types))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Finalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Finalize(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Finalize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Finalize",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetTransformChangesAndClear_ObjectDispatcher_TransformTrackingType_Allocator1<
-        T,
-    >(
+    pub fn GetTransformChangesAndClear_ObjectDispatcher_TransformTrackingType_Allocator1<T>(
         &mut self,
         trackingType: crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
         allocator: crate::Unity::Collections::Allocator,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TransformDispatchData>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
-                            crate::Unity::Collections::Allocator,
-                        ),
-                        crate::UnityEngine::TransformDispatchData,
-                        2usize,
-                    >("GetTransformChangesAndClear")
+                    .find_method::<(
+                        crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
+                        crate::Unity::Collections::Allocator,
+                    ), crate::UnityEngine::TransformDispatchData, 2usize>(
+                        "GetTransformChangesAndClear",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTransformChangesAndClear", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetTransformChangesAndClear",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::TransformDispatchData = unsafe {
-            cordl_method_info.invoke_unchecked(self, (trackingType, allocator))?
-        };
+        let __cordl_ret: crate::UnityEngine::TransformDispatchData =
+            unsafe { cordl_method_info.invoke_unchecked(self, (trackingType, allocator))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTransformChangesAndClear_Type_ObjectDispatcher_TransformTrackingType_Allocator0(
@@ -749,30 +714,29 @@ impl crate::UnityEngine::ObjectDispatcher {
         trackingType: crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
         allocator: crate::Unity::Collections::Allocator,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TransformDispatchData> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
-                            crate::Unity::Collections::Allocator,
-                        ),
-                        crate::UnityEngine::TransformDispatchData,
-                        3usize,
-                    >("GetTransformChangesAndClear")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        crate::UnityEngine::ObjectDispatcher_TransformTrackingType,
+                        crate::Unity::Collections::Allocator,
+                    ), crate::UnityEngine::TransformDispatchData, 3usize>(
+                        "GetTransformChangesAndClear",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTransformChangesAndClear", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetTransformChangesAndClear",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::TransformDispatchData = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (_cordl_type, trackingType, allocator))?
+            cordl_method_info.invoke_unchecked(self, (_cordl_type, trackingType, allocator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -783,12 +747,14 @@ impl crate::UnityEngine::ObjectDispatcher {
         noScriptingArray: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TypeDispatchData>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Collections::Allocator, bool, bool),
@@ -816,40 +782,39 @@ impl crate::UnityEngine::ObjectDispatcher {
         sortByInstanceID: bool,
         noScriptingArray: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TypeDispatchData> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            crate::Unity::Collections::Allocator,
-                            bool,
-                            bool,
-                        ),
-                        crate::UnityEngine::TypeDispatchData,
-                        4usize,
-                    >("GetTypeChangesAndClear")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        crate::Unity::Collections::Allocator,
+                        bool,
+                        bool,
+                    ), crate::UnityEngine::TypeDispatchData, 4usize>(
+                        "GetTypeChangesAndClear"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTypeChangesAndClear", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetTypeChangesAndClear",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::TypeDispatchData = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (_cordl_type, allocator, sortByInstanceID, noScriptingArray),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (_cordl_type, allocator, sortByInstanceID, noScriptingArray),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -858,9 +823,10 @@ impl crate::UnityEngine::ObjectDispatcher {
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
@@ -875,43 +841,42 @@ impl crate::UnityEngine::ObjectDispatcher {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateSystemHandleAndThrow(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ValidateSystemHandleAndThrow")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "ValidateSystemHandleAndThrow",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValidateSystemHandleAndThrow", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ValidateSystemHandleAndThrow",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateTypeAndThrow(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
@@ -926,43 +891,43 @@ impl crate::UnityEngine::ObjectDispatcher {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_valid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_valid", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_valid",
+                            0usize
                         )
                     })
             });
@@ -992,8 +957,8 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::ObjectDispatcher 
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher+TransformTrackingType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ObjectDispatcher_TransformTrackingType {
     #[default]
     GlobalTRS = 0i32,
@@ -1002,7 +967,8 @@ pub enum ObjectDispatcher_TransformTrackingType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher+TransformTrackingType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ObjectDispatcher_TransformTrackingType {
+    for crate::UnityEngine::ObjectDispatcher_TransformTrackingType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
@@ -1021,18 +987,16 @@ for crate::UnityEngine::ObjectDispatcher_TransformTrackingType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher+TransformTrackingType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ObjectDispatcher_TransformTrackingType {
+    for crate::UnityEngine::ObjectDispatcher_TransformTrackingType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1043,7 +1007,8 @@ for crate::UnityEngine::ObjectDispatcher_TransformTrackingType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher+TransformTrackingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ObjectDispatcher_TransformTrackingType {
+    for crate::UnityEngine::ObjectDispatcher_TransformTrackingType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1057,22 +1022,22 @@ for crate::UnityEngine::ObjectDispatcher_TransformTrackingType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher+TransformTrackingType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ObjectDispatcher_TransformTrackingType {
+    for crate::UnityEngine::ObjectDispatcher_TransformTrackingType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher+TransformTrackingType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::ObjectDispatcher_TransformTrackingType {
+    for crate::UnityEngine::ObjectDispatcher_TransformTrackingType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1085,8 +1050,8 @@ for crate::UnityEngine::ObjectDispatcher_TransformTrackingType {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher+TypeTrackingFlags")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ObjectDispatcher_TypeTrackingFlags {
     #[default]
     All = 7i32,
@@ -1096,8 +1061,7 @@ pub enum ObjectDispatcher_TypeTrackingFlags {
     SceneObjects = 1i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher+TypeTrackingFlags")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
@@ -1116,18 +1080,16 @@ for crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher+TypeTrackingFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags {
+    for crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1138,7 +1100,8 @@ for crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher+TypeTrackingFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags {
+    for crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1152,22 +1115,22 @@ for crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher+TypeTrackingFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags {
+    for crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher+TypeTrackingFlags")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags {
+    for crate::UnityEngine::ObjectDispatcher_TypeTrackingFlags
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

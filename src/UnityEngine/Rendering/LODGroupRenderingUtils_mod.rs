@@ -5,14 +5,14 @@ pub struct LODGroupRenderingUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupRenderingUtils")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::LODGroupRenderingUtils {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::LODGroupRenderingUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "LODGroupRenderingUtils";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,51 +39,46 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::LODGroupRenderingUtil
 }
 #[cfg(feature = "UnityEngine+Rendering+LODGroupRenderingUtils")]
 impl crate::UnityEngine::Rendering::LODGroupRenderingUtils {
-    pub fn CalculateFOVHalfAngle(
-        fieldOfView: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn CalculateFOVHalfAngle(fieldOfView: f32) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), f32, 1usize>("CalculateFOVHalfAngle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculateFOVHalfAngle", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CalculateFOVHalfAngle",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (fieldOfView))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (fieldOfView))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateLODDistance(
         relativeScreenHeight: f32,
         _cordl_size: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (f32, f32),
-                        f32,
-                        2usize,
-                    >("CalculateLODDistance")
+                    .find_static_method::<(f32, f32), f32, 2usize>("CalculateLODDistance")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculateLODDistance", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CalculateLODDistance",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (relativeScreenHeight, _cordl_size))?
-        };
+        let __cordl_ret: f32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (relativeScreenHeight, _cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculatePerspectiveDistance(
@@ -91,29 +86,28 @@ impl crate::UnityEngine::Rendering::LODGroupRenderingUtils {
         camPosition: crate::UnityEngine::Vector3,
         sqrScreenRelativeMetric: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, f32),
+                    .find_static_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
                         f32,
-                        3usize,
-                    >("CalculatePerspectiveDistance")
+                    ), f32, 3usize>("CalculatePerspectiveDistance")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculatePerspectiveDistance", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CalculatePerspectiveDistance",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: f32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (objPosition, camPosition, sqrScreenRelativeMetric),
-                )?
+                .invoke_unchecked((), (objPosition, camPosition, sqrScreenRelativeMetric))?
         };
         Ok(__cordl_ret.into())
     }
@@ -121,9 +115,10 @@ impl crate::UnityEngine::Rendering::LODGroupRenderingUtils {
         lodParams: crate::UnityEngine::Rendering::LODParameters,
         lodBias: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Rendering::LODParameters, f32),
@@ -138,9 +133,8 @@ impl crate::UnityEngine::Rendering::LODGroupRenderingUtils {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (lodParams, lodBias))?
-        };
+        let __cordl_ret: f32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (lodParams, lodBias))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateSqrPerspectiveDistance(
@@ -148,38 +142,38 @@ impl crate::UnityEngine::Rendering::LODGroupRenderingUtils {
         camPosition: crate::UnityEngine::Vector3,
         sqrScreenRelativeMetric: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, f32),
+                    .find_static_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
                         f32,
-                        3usize,
-                    >("CalculateSqrPerspectiveDistance")
+                    ), f32, 3usize>("CalculateSqrPerspectiveDistance")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculateSqrPerspectiveDistance", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CalculateSqrPerspectiveDistance",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: f32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (objPosition, camPosition, sqrScreenRelativeMetric),
-                )?
+                .invoke_unchecked((), (objPosition, camPosition, sqrScreenRelativeMetric))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetWorldReferencePoint(
         lodGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::LODGroup>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::LODGroup>),
@@ -194,17 +188,17 @@ impl crate::UnityEngine::Rendering::LODGroupRenderingUtils {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (lodGroup))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (lodGroup))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetWorldSpaceScale(
         lodGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::LODGroup>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::LODGroup>),
@@ -219,17 +213,16 @@ impl crate::UnityEngine::Rendering::LODGroupRenderingUtils {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (lodGroup))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (lodGroup))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetWorldSpaceSize(
         lodGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::LODGroup>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::LODGroup>),
@@ -244,15 +237,12 @@ impl crate::UnityEngine::Rendering::LODGroupRenderingUtils {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (lodGroup))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (lodGroup))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupRenderingUtils")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::LODGroupRenderingUtils {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::LODGroupRenderingUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

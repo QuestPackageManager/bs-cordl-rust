@@ -1,46 +1,44 @@
-#[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ParseRecord"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ParseRecord")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParseRecord {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub PRparseTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalParseTypeE,
-    pub PRobjectTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE,
-    pub PRarrayTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE,
-    pub PRmemberTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE,
-    pub PRmemberValueEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE,
-    pub PRobjectPositionEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectPositionE,
+    pub PRparseTypeEnum:
+        crate::System::Runtime::Serialization::Formatters::Binary::InternalParseTypeE,
+    pub PRobjectTypeEnum:
+        crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE,
+    pub PRarrayTypeEnum:
+        crate::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE,
+    pub PRmemberTypeEnum:
+        crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE,
+    pub PRmemberValueEnum:
+        crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE,
+    pub PRobjectPositionEnum:
+        crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectPositionE,
     pub PRname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub PRvalue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub PRvarValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub PRkeyDt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub PRdtType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    pub PRdtTypeCode: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
+    pub PRdtTypeCode:
+        crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
     pub PRisEnum: bool,
     pub PRobjectId: i64,
     pub PRidRef: i64,
-    pub PRarrayElementTypeString: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub PRarrayElementTypeString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub PRarrayElementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub PRisArrayVariant: bool,
-    pub PRarrayElementTypeCode: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
+    pub PRarrayElementTypeCode:
+        crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
     pub PRrank: i32,
     pub PRlengthA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub PRpositionA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-    pub PRlowerBoundA: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<i32>,
-    >,
-    pub PRupperBoundA: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<i32>,
-    >,
+    pub PRlowerBoundA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub PRupperBoundA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub PRindexMap: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub PRmemberIndex: i32,
     pub PRlinearlength: i32,
-    pub PRrectangularMap: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<i32>,
-    >,
+    pub PRrectangularMap: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub PRisLowerBound: bool,
     pub PRtopId: i64,
     pub PRheaderId: i64,
@@ -63,22 +61,20 @@ pub struct ParseRecord {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     >,
-    pub PRsi: quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::SerializationInfo,
-    >,
+    pub PRsi: quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::SerializationInfo>,
     pub PRnullCount: i32,
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ParseRecord"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ParseRecord")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
+    for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Serialization.Formatters.Binary";
     const CLASS_NAME: &'static str = "ParseRecord";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -91,77 +87,72 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ParseRecord")]
-impl std::ops::Deref
-for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
+impl std::ops::Deref for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ParseRecord")]
-impl std::ops::DerefMut
-for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
+impl std::ops::DerefMut for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ParseRecord")]
 impl crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ParseRecord"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ParseRecord")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
+    for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

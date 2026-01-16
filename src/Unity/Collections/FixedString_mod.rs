@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Collections::FixedStri
     const NAMESPACE: &'static str = "Unity.Collections";
     const CLASS_NAME: &'static str = "FixedString";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,31 +43,28 @@ impl crate::Unity::Collections::FixedString {
         formatString: crate::Unity::Collections::FixedString128Bytes,
         arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        2usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 2usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_Il2CppString330(
@@ -74,34 +72,29 @@ impl crate::Unity::Collections::FixedString {
         arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        3usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 3usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_Il2CppString_Il2CppString298(
@@ -110,37 +103,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_Il2CppString_T1_314<T1>(
@@ -150,38 +136,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_Il2CppString_f32_282(
@@ -190,35 +172,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_Il2CppString_i32_266(
@@ -227,35 +204,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_T1_334<T1>(
@@ -264,35 +236,33 @@ impl crate::Unity::Collections::FixedString {
         arg1: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        3usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                    ), crate::Unity::Collections::FixedString128Bytes, 3usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_T1_Il2CppString302<T1>(
@@ -302,38 +272,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_T1_T2_318<T1, T2>(
@@ -343,38 +309,37 @@ impl crate::Unity::Collections::FixedString {
         arg2: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        T2,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_T1_f32_286<T1>(
@@ -384,36 +349,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        f32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_T1_i32_270<T1>(
@@ -423,36 +386,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        i32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_f32_326(
@@ -460,32 +421,29 @@ impl crate::Unity::Collections::FixedString {
         arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg1: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        3usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 3usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_f32_Il2CppString294(
@@ -494,35 +452,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: f32,
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_f32_T1_310<T1>(
@@ -532,36 +485,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_f32_f32_278(
@@ -570,33 +521,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: f32,
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_f32_i32_262(
@@ -605,33 +553,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: f32,
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_i32_322(
@@ -639,32 +584,29 @@ impl crate::Unity::Collections::FixedString {
         arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg1: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        3usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 3usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_i32_Il2CppString290(
@@ -673,35 +615,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: i32,
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_i32_T1_306<T1>(
@@ -711,36 +648,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_i32_f32_274(
@@ -749,33 +684,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: i32,
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_Il2CppString_i32_i32_258(
@@ -784,33 +716,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: i32,
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_339<T1>(
@@ -818,12 +747,14 @@ impl crate::Unity::Collections::FixedString {
         arg0: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, T1),
@@ -838,9 +769,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_Il2CppString331<T1>(
@@ -849,35 +779,33 @@ impl crate::Unity::Collections::FixedString {
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        3usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 3usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_Il2CppString_Il2CppString299<T1>(
@@ -887,38 +815,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_Il2CppString_T2_315<T1, T2>(
@@ -928,38 +852,37 @@ impl crate::Unity::Collections::FixedString {
         arg2: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T2,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_Il2CppString_f32_283<T1>(
@@ -969,36 +892,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_Il2CppString_i32_267<T1>(
@@ -1008,36 +929,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_T2_335<T1, T2>(
@@ -1046,14 +965,17 @@ impl crate::Unity::Collections::FixedString {
         arg1: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, T1, T2),
@@ -1068,9 +990,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_T2_Il2CppString303<T1, T2>(
@@ -1080,38 +1001,37 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            T1,
-                            T2,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_T2_T3_319<T1, T2, T3>(
@@ -1121,16 +1041,20 @@ impl crate::Unity::Collections::FixedString {
         arg2: T3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, T1, T2, T3),
@@ -1145,9 +1069,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_T2_f32_287<T1, T2>(
@@ -1157,14 +1080,17 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, T1, T2, f32),
@@ -1179,9 +1105,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_T2_i32_271<T1, T2>(
@@ -1191,14 +1116,17 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, T1, T2, i32),
@@ -1213,9 +1141,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_f32_327<T1>(
@@ -1224,12 +1151,14 @@ impl crate::Unity::Collections::FixedString {
         arg1: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, T1, f32),
@@ -1244,9 +1173,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_f32_Il2CppString295<T1>(
@@ -1256,36 +1184,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            T1,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_f32_T2_311<T1, T2>(
@@ -1295,14 +1221,17 @@ impl crate::Unity::Collections::FixedString {
         arg2: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, T1, f32, T2),
@@ -1317,9 +1246,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_f32_f32_279<T1>(
@@ -1329,12 +1257,14 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, T1, f32, f32),
@@ -1349,9 +1279,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_f32_i32_263<T1>(
@@ -1361,12 +1290,14 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, T1, f32, i32),
@@ -1381,9 +1312,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_i32_323<T1>(
@@ -1392,12 +1322,14 @@ impl crate::Unity::Collections::FixedString {
         arg1: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, T1, i32),
@@ -1412,9 +1344,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_i32_Il2CppString291<T1>(
@@ -1424,36 +1355,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            T1,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_i32_T2_307<T1, T2>(
@@ -1463,14 +1392,17 @@ impl crate::Unity::Collections::FixedString {
         arg2: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, T1, i32, T2),
@@ -1485,9 +1417,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_i32_f32_275<T1>(
@@ -1497,12 +1428,14 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, T1, i32, f32),
@@ -1517,9 +1450,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_T1_i32_i32_259<T1>(
@@ -1529,12 +1461,14 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, T1, i32, i32),
@@ -1549,18 +1483,18 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_337(
         formatString: crate::Unity::Collections::FixedString128Bytes,
         arg0: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, f32),
@@ -1575,9 +1509,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_Il2CppString329(
@@ -1585,32 +1518,29 @@ impl crate::Unity::Collections::FixedString {
         arg0: f32,
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        3usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 3usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_Il2CppString_Il2CppString297(
@@ -1619,35 +1549,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_Il2CppString_T1_313<T1>(
@@ -1657,36 +1582,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_Il2CppString_f32_281(
@@ -1695,33 +1618,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_Il2CppString_i32_265(
@@ -1730,33 +1650,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_T1_333<T1>(
@@ -1765,12 +1682,14 @@ impl crate::Unity::Collections::FixedString {
         arg1: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, f32, T1),
@@ -1785,9 +1704,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_T1_Il2CppString301<T1>(
@@ -1797,36 +1715,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            f32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_T1_T2_317<T1, T2>(
@@ -1836,14 +1752,17 @@ impl crate::Unity::Collections::FixedString {
         arg2: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, f32, T1, T2),
@@ -1858,9 +1777,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_T1_f32_285<T1>(
@@ -1870,12 +1788,14 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, f32, T1, f32),
@@ -1890,9 +1810,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_T1_i32_269<T1>(
@@ -1902,12 +1821,14 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, f32, T1, i32),
@@ -1922,9 +1843,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_f32_325(
@@ -1932,9 +1852,10 @@ impl crate::Unity::Collections::FixedString {
         arg0: f32,
         arg1: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, f32, f32),
@@ -1949,9 +1870,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_f32_Il2CppString293(
@@ -1960,33 +1880,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: f32,
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_f32_T1_309<T1>(
@@ -1996,12 +1913,14 @@ impl crate::Unity::Collections::FixedString {
         arg2: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, f32, f32, T1),
@@ -2016,9 +1935,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_f32_f32_277(
@@ -2027,26 +1945,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: f32,
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::Unity::Collections::FixedString128Bytes, f32, f32, f32),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_f32_i32_261(
@@ -2055,26 +1977,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: f32,
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::Unity::Collections::FixedString128Bytes, f32, f32, i32),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_i32_321(
@@ -2082,9 +2008,10 @@ impl crate::Unity::Collections::FixedString {
         arg0: f32,
         arg1: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, f32, i32),
@@ -2099,9 +2026,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_i32_Il2CppString289(
@@ -2110,33 +2036,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: i32,
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            f32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_i32_T1_305<T1>(
@@ -2146,12 +2069,14 @@ impl crate::Unity::Collections::FixedString {
         arg2: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, f32, i32, T1),
@@ -2166,9 +2091,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_i32_f32_273(
@@ -2177,26 +2101,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: i32,
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::Unity::Collections::FixedString128Bytes, f32, i32, f32),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_f32_i32_i32_257(
@@ -2205,35 +2133,40 @@ impl crate::Unity::Collections::FixedString {
         arg1: i32,
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::Unity::Collections::FixedString128Bytes, f32, i32, i32),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_336(
         formatString: crate::Unity::Collections::FixedString128Bytes,
         arg0: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, i32),
@@ -2248,9 +2181,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_Il2CppString328(
@@ -2258,32 +2190,29 @@ impl crate::Unity::Collections::FixedString {
         arg0: i32,
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        3usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 3usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_Il2CppString_Il2CppString296(
@@ -2292,35 +2221,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_Il2CppString_T1_312<T1>(
@@ -2330,36 +2254,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_Il2CppString_f32_280(
@@ -2368,33 +2290,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_Il2CppString_i32_264(
@@ -2403,33 +2322,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_T1_332<T1>(
@@ -2438,12 +2354,14 @@ impl crate::Unity::Collections::FixedString {
         arg1: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, i32, T1),
@@ -2458,9 +2376,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_T1_Il2CppString300<T1>(
@@ -2470,36 +2387,34 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            i32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_T1_T2_316<T1, T2>(
@@ -2509,14 +2424,17 @@ impl crate::Unity::Collections::FixedString {
         arg2: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, i32, T1, T2),
@@ -2531,9 +2449,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_T1_f32_284<T1>(
@@ -2543,12 +2460,14 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, i32, T1, f32),
@@ -2563,9 +2482,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_T1_i32_268<T1>(
@@ -2575,12 +2493,14 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, i32, T1, i32),
@@ -2595,9 +2515,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_f32_324(
@@ -2605,9 +2524,10 @@ impl crate::Unity::Collections::FixedString {
         arg0: i32,
         arg1: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, i32, f32),
@@ -2622,9 +2542,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_f32_Il2CppString292(
@@ -2633,33 +2552,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: f32,
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            i32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_f32_T1_308<T1>(
@@ -2669,12 +2585,14 @@ impl crate::Unity::Collections::FixedString {
         arg2: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, i32, f32, T1),
@@ -2689,9 +2607,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_f32_f32_276(
@@ -2700,26 +2617,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: f32,
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::Unity::Collections::FixedString128Bytes, i32, f32, f32),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_f32_i32_260(
@@ -2728,26 +2649,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: f32,
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::Unity::Collections::FixedString128Bytes, i32, f32, i32),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_i32_320(
@@ -2755,9 +2680,10 @@ impl crate::Unity::Collections::FixedString {
         arg0: i32,
         arg1: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, i32, i32),
@@ -2772,9 +2698,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_i32_Il2CppString288(
@@ -2783,33 +2708,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: i32,
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString128Bytes,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_i32_T1_304<T1>(
@@ -2819,12 +2741,14 @@ impl crate::Unity::Collections::FixedString {
         arg2: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::FixedString128Bytes, i32, i32, T1),
@@ -2839,9 +2763,8 @@ impl crate::Unity::Collections::FixedString {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_i32_f32_272(
@@ -2850,26 +2773,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: i32,
         arg2: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::Unity::Collections::FixedString128Bytes, i32, i32, f32),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString128Bytes_i32_i32_i32_256(
@@ -2878,26 +2805,30 @@ impl crate::Unity::Collections::FixedString {
         arg1: i32,
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString128Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::Unity::Collections::FixedString128Bytes, i32, i32, i32),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString128Bytes,
-                        4usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString128Bytes, 4usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes = unsafe {
-            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))?
-        };
+        let __cordl_ret: crate::Unity::Collections::FixedString128Bytes =
+            unsafe { cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_FixedString512Bytes_Il2CppString_Il2CppString_Il2CppString_Il2CppString170(
@@ -2907,40 +2838,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2952,41 +2874,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2997,38 +2913,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3039,38 +2948,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3082,41 +2984,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3128,41 +3024,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3174,39 +3067,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3218,39 +3107,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3261,38 +3146,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3304,39 +3182,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3347,36 +3221,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3387,36 +3256,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3427,38 +3291,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3470,39 +3327,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3513,36 +3366,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3553,36 +3401,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3594,41 +3437,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3640,41 +3477,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3686,39 +3520,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3730,39 +3560,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3774,41 +3600,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            T2,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        T2,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3820,41 +3643,41 @@ impl crate::Unity::Collections::FixedString {
         arg3: T3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            T2,
-                            T3,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        T2,
+                        T3,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3866,39 +3689,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            T2,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        T2,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3910,39 +3732,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            T2,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        T2,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3954,39 +3775,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3998,39 +3815,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            f32,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        f32,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4042,37 +3858,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4084,37 +3898,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4126,39 +3938,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4170,39 +3978,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            i32,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        i32,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4214,37 +4021,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4256,37 +4061,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4297,38 +4100,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4340,39 +4136,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4383,36 +4175,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4423,36 +4210,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4464,39 +4246,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4508,39 +4286,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            T1,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        T1,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4552,37 +4329,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            T1,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        T1,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4594,37 +4369,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            T1,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        T1,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4635,36 +4408,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4676,37 +4444,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            f32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        f32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4717,34 +4483,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4755,34 +4518,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4793,36 +4553,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4834,37 +4589,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            i32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        i32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4875,34 +4628,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4913,34 +4663,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4951,38 +4698,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4994,39 +4734,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5037,36 +4773,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5077,36 +4808,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5118,39 +4844,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5162,39 +4884,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            T1,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        T1,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5206,37 +4927,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            T1,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        T1,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5248,37 +4967,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            T1,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        T1,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5289,36 +5006,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5330,37 +5042,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            f32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        f32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5371,34 +5081,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5409,34 +5116,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5447,36 +5151,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5488,37 +5187,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5529,34 +5226,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5567,34 +5261,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5606,41 +5297,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5652,41 +5337,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5698,39 +5380,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5742,39 +5420,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5786,41 +5460,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T2,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T2,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5832,41 +5503,41 @@ impl crate::Unity::Collections::FixedString {
         arg3: T3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T2,
-                            T3,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T2,
+                        T3,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5878,39 +5549,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T2,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T2,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5922,39 +5592,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T2,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T2,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5966,39 +5635,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6010,39 +5675,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6054,37 +5718,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6096,37 +5758,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6138,39 +5798,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6182,39 +5838,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6226,37 +5881,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6268,37 +5921,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6310,41 +5961,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6356,41 +6004,41 @@ impl crate::Unity::Collections::FixedString {
         arg3: T3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T3,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T3,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6402,39 +6050,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6446,39 +6093,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6490,41 +6136,41 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            T3,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        T3,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6536,35 +6182,44 @@ impl crate::Unity::Collections::FixedString {
         arg3: T4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::Unity::Collections::FixedString512Bytes, T1, T2, T3, T4),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        T3,
+                        T4,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6576,39 +6231,41 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            T3,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        T3,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6620,39 +6277,41 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            T3,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        T3,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6664,39 +6323,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6708,39 +6366,41 @@ impl crate::Unity::Collections::FixedString {
         arg3: T3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            f32,
-                            T3,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        f32,
+                        T3,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6752,37 +6412,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6794,37 +6455,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6836,39 +6498,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6880,39 +6541,41 @@ impl crate::Unity::Collections::FixedString {
         arg3: T3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            i32,
-                            T3,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        i32,
+                        T3,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6924,37 +6587,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6966,37 +6630,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            T2,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        T2,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7008,39 +6673,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7052,39 +6713,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7096,37 +6756,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7138,37 +6796,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7180,39 +6836,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            T2,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        T2,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7224,39 +6879,41 @@ impl crate::Unity::Collections::FixedString {
         arg3: T3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            T2,
-                            T3,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        T2,
+                        T3,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7268,37 +6925,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            T2,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        T2,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7310,37 +6968,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            T2,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        T2,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7352,37 +7011,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7394,37 +7051,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            f32,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        f32,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7436,35 +7094,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7476,35 +7134,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7516,37 +7174,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7558,37 +7214,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            i32,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        i32,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7600,35 +7257,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7640,35 +7297,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            f32,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        f32,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7680,39 +7337,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7724,39 +7377,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7768,37 +7420,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7810,37 +7460,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7852,39 +7500,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            T2,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        T2,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7896,39 +7543,41 @@ impl crate::Unity::Collections::FixedString {
         arg3: T3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            T2,
-                            T3,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        T2,
+                        T3,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7940,37 +7589,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            T2,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        T2,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7982,37 +7632,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            T2,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        T2,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8024,37 +7675,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8066,37 +7715,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            f32,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        f32,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8108,35 +7758,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8148,35 +7798,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8188,37 +7838,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8230,37 +7878,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            i32,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        i32,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8272,35 +7921,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8312,35 +7961,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            T1,
-                            i32,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        T1,
+                        i32,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8351,38 +8000,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8394,39 +8036,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8437,36 +8075,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8477,36 +8110,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8518,39 +8146,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8562,39 +8186,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8606,37 +8229,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8648,37 +8269,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8689,36 +8308,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8730,37 +8344,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8771,34 +8383,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8809,34 +8418,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8847,36 +8453,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8888,37 +8489,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8929,34 +8528,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8967,34 +8563,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9006,39 +8599,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9050,39 +8639,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9094,37 +8682,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9136,37 +8722,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9178,39 +8762,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            T2,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        T2,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9222,39 +8805,41 @@ impl crate::Unity::Collections::FixedString {
         arg3: T3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            T2,
-                            T3,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        T2,
+                        T3,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9266,37 +8851,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            T2,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        T2,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9308,37 +8894,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            T2,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        T2,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9350,37 +8937,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9392,37 +8977,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            f32,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        f32,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9434,35 +9020,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9474,35 +9060,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9514,37 +9100,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9556,37 +9140,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            i32,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        i32,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9598,35 +9183,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9638,35 +9223,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            T1,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        T1,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9677,36 +9262,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9718,37 +9298,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9759,34 +9337,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9797,34 +9372,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9836,37 +9408,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9878,37 +9448,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            T1,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        T1,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9920,35 +9491,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            T1,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        T1,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9960,35 +9531,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            T1,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        T1,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9999,34 +9570,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10038,35 +9606,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            f32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        f32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10077,32 +9645,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10113,32 +9680,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10149,34 +9715,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10188,35 +9751,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            i32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        i32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10227,32 +9790,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10263,32 +9825,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            f32,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        f32,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10299,36 +9860,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10340,37 +9896,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10381,34 +9935,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10419,34 +9970,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10458,37 +10006,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10500,37 +10046,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            T1,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        T1,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10542,35 +10089,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            T1,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        T1,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10582,35 +10129,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            T1,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        T1,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10621,34 +10168,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10660,35 +10204,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            f32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        f32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10699,32 +10243,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10735,32 +10278,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10771,34 +10313,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10810,35 +10349,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            i32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        i32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10849,32 +10388,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10885,32 +10423,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            f32,
-                            i32,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        f32,
+                        i32,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10921,38 +10458,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -10964,39 +10494,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11007,36 +10533,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11047,36 +10568,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11088,39 +10604,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11132,39 +10644,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11176,37 +10687,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11218,37 +10727,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11259,36 +10766,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11300,37 +10802,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11341,34 +10841,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11379,34 +10876,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11417,36 +10911,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11458,37 +10947,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11499,34 +10986,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11537,34 +11021,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11576,39 +11057,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11620,39 +11097,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11664,37 +11140,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11706,37 +11180,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11748,39 +11220,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            T2,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        T2,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11792,39 +11263,41 @@ impl crate::Unity::Collections::FixedString {
         arg3: T3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            T2,
-                            T3,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        T2,
+                        T3,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11836,37 +11309,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            T2,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        T2,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11878,37 +11352,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            T2,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        T2,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11920,37 +11395,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -11962,37 +11435,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            f32,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        f32,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12004,35 +11478,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12044,35 +11518,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12084,37 +11558,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12126,37 +11598,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            i32,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        i32,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12168,35 +11641,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12208,35 +11681,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            T1,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        T1,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12247,36 +11720,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12288,37 +11756,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12329,34 +11795,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12367,34 +11830,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12406,37 +11866,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12448,37 +11906,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            T1,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        T1,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12490,35 +11949,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            T1,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        T1,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12530,35 +11989,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            T1,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        T1,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12569,34 +12028,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12608,35 +12064,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            f32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        f32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12647,32 +12103,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12683,32 +12138,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12719,34 +12173,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12758,35 +12209,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            i32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        i32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12797,32 +12248,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12833,32 +12283,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            f32,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        f32,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12869,36 +12318,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12910,37 +12354,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12951,34 +12393,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -12989,34 +12428,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13028,37 +12464,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            T1,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        T1,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13070,37 +12504,38 @@ impl crate::Unity::Collections::FixedString {
         arg3: T2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            T1,
-                            T2,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        T1,
+                        T2,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13112,35 +12547,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            T1,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        T1,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13152,35 +12587,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            T1,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        T1,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13191,34 +12626,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13230,35 +12662,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            f32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        f32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13269,32 +12701,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            f32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        f32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13305,32 +12736,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: f32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            f32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        f32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13341,34 +12771,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13380,35 +12807,35 @@ impl crate::Unity::Collections::FixedString {
         arg3: T1,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            i32,
-                            T1,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        i32,
+                        T1,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13419,32 +12846,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            i32,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        i32,
+                        f32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -13455,32 +12881,31 @@ impl crate::Unity::Collections::FixedString {
         arg2: i32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::FixedString512Bytes> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::FixedString512Bytes,
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                        ),
+                    .find_static_method::<(
                         crate::Unity::Collections::FixedString512Bytes,
-                        5usize,
-                    >("Format")
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                    ), crate::Unity::Collections::FixedString512Bytes, 5usize>(
+                        "Format"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
                             5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Collections::FixedString512Bytes = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
+            cordl_method_info.invoke_unchecked((), (formatString, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }

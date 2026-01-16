@@ -1,15 +1,12 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataSourceContext")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct DataSourceContext {
-    pub _dataSource_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppObject,
-    >,
+    pub _dataSource_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _dataSourcePath_k__BackingField: crate::Unity::Properties::PropertyPath,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataSourceContext")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::DataSourceContext {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::DataSourceContext {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -28,18 +25,14 @@ for crate::UnityEngine::UIElements::DataSourceContext {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataSourceContext")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::DataSourceContext {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::DataSourceContext {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -49,8 +42,7 @@ for crate::UnityEngine::UIElements::DataSourceContext {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataSourceContext")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::DataSourceContext {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements::DataSourceContext {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -63,23 +55,19 @@ for crate::UnityEngine::UIElements::DataSourceContext {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataSourceContext")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::DataSourceContext {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::DataSourceContext {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataSourceContext")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::DataSourceContext {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::DataSourceContext {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -93,7 +81,8 @@ for crate::UnityEngine::UIElements::DataSourceContext {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataSourceContext")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::DataSourceContext {
+    for crate::UnityEngine::UIElements::DataSourceContext
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -107,47 +96,38 @@ impl crate::UnityEngine::UIElements::DataSourceContext {
     pub fn _ctor(
         &mut self,
         dataSource: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        dataSourcePath: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Properties::PropertyPath,
-        >,
+        dataSourcePath: quest_hook::libil2cpp::ByRefMut<crate::Unity::Properties::PropertyPath>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Properties::PropertyPath,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Properties::PropertyPath>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (dataSource, dataSourcePath))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (dataSource, dataSourcePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_dataSource(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -162,34 +142,32 @@ impl crate::UnityEngine::UIElements::DataSourceContext {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_dataSourcePath(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Properties::PropertyPath> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::Unity::Properties::PropertyPath,
-                        0usize,
-                    >("get_dataSourcePath")
+                    .find_method::<(), crate::Unity::Properties::PropertyPath, 0usize>(
+                        "get_dataSourcePath",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_dataSourcePath", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_dataSourcePath",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Properties::PropertyPath = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::Unity::Properties::PropertyPath =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

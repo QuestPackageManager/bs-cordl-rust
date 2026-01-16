@@ -1,12 +1,11 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CountingBloomFilter {
     pub m_Counters: crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::CountingBloomFilter {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::CountingBloomFilter {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -25,18 +24,16 @@ for crate::UnityEngine::UIElements::CountingBloomFilter {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::CountingBloomFilter {
+    for crate::UnityEngine::UIElements::CountingBloomFilter
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,7 +44,8 @@ for crate::UnityEngine::UIElements::CountingBloomFilter {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::CountingBloomFilter {
+    for crate::UnityEngine::UIElements::CountingBloomFilter
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -61,22 +59,20 @@ for crate::UnityEngine::UIElements::CountingBloomFilter {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::CountingBloomFilter {
+    for crate::UnityEngine::UIElements::CountingBloomFilter
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::CountingBloomFilter {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::CountingBloomFilter {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -90,7 +86,8 @@ for crate::UnityEngine::UIElements::CountingBloomFilter {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::CountingBloomFilter {
+    for crate::UnityEngine::UIElements::CountingBloomFilter
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -101,171 +98,161 @@ for crate::UnityEngine::UIElements::CountingBloomFilter {
 }
 #[cfg(feature = "UnityEngine+UIElements+CountingBloomFilter")]
 impl crate::UnityEngine::UIElements::CountingBloomFilter {
-    #[cfg(
-        feature = "UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer"
-    )]
-    pub type _m_Counters_e__FixedBuffer = crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer;
+    #[cfg(feature = "UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer")]
+    pub type _m_Counters_e__FixedBuffer =
+        crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer;
     pub fn AdjustSlot(
         &mut self,
         index: u32,
         increment: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32, bool),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("AdjustSlot")
+                    .find_method::<(u32, bool), quest_hook::libil2cpp::Void, 2usize>("AdjustSlot")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AdjustSlot", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AdjustSlot",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index, increment))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index, increment))? };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsHash(&mut self, hash: u32) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), bool, 1usize>("ContainsHash")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ContainsHash", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ContainsHash",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (hash))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (hash))? };
         Ok(__cordl_ret.into())
     }
     pub fn Hash1(&mut self, hash: u32) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), u32, 1usize>("Hash1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Hash1",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Hash1",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (hash))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (hash))? };
         Ok(__cordl_ret.into())
     }
     pub fn Hash2(&mut self, hash: u32) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), u32, 1usize>("Hash2")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Hash2",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Hash2",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (hash))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (hash))? };
         Ok(__cordl_ret.into())
     }
     pub fn InsertHash(
         &mut self,
         hash: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("InsertHash")
+                    .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>("InsertHash")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InsertHash", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InsertHash",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (hash))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (hash))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsSlotEmpty(&mut self, index: u32) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), bool, 1usize>("IsSlotEmpty")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsSlotEmpty", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsSlotEmpty",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveHash(
         &mut self,
         hash: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("RemoveHash")
+                    .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>("RemoveHash")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RemoveHash", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RemoveHash",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (hash))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (hash))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CountingBloomFilter__m_Counters_e__FixedBuffer {
     pub FixedElementField: u8,
 }
@@ -273,7 +260,8 @@ pub struct CountingBloomFilter__m_Counters_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -292,20 +280,18 @@ for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuff
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -318,7 +304,8 @@ for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuff
     feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -334,16 +321,15 @@ for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuff
     feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -351,7 +337,8 @@ for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuff
     feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -367,7 +354,8 @@ for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuff
     feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

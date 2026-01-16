@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_GlyphAdjustmentRecord")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TMP_GlyphAdjustmentRecord {
     pub m_GlyphIndex: u32,
     pub m_GlyphValueRecord: crate::TMPro::TMP_GlyphValueRecord,
@@ -25,13 +25,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_GlyphAdjustmentRec
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_GlyphAdjustmentRecord")]
@@ -45,8 +42,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_GlyphAdjustmen
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_GlyphAdjustmentRecord")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::TMPro::TMP_GlyphAdjustmentRecord {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_GlyphAdjustmentRecord {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -66,9 +62,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_GlyphAdjustmen
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -86,8 +80,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_GlyphAdjustmentR
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_GlyphAdjustmentRecord")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::TMPro::TMP_GlyphAdjustmentRecord {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_GlyphAdjustmentRecord {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -102,9 +95,10 @@ impl crate::TMPro::TMP_GlyphAdjustmentRecord {
         &mut self,
         adjustmentRecord: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord),
@@ -119,9 +113,8 @@ impl crate::TMPro::TMP_GlyphAdjustmentRecord {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (adjustmentRecord))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (adjustmentRecord))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_TMP_GlyphValueRecord0(
@@ -129,9 +122,10 @@ impl crate::TMPro::TMP_GlyphAdjustmentRecord {
         glyphIndex: u32,
         glyphValueRecord: crate::TMPro::TMP_GlyphValueRecord,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32, crate::TMPro::TMP_GlyphValueRecord),
@@ -146,22 +140,23 @@ impl crate::TMPro::TMP_GlyphAdjustmentRecord {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (glyphIndex, glyphValueRecord))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (glyphIndex, glyphValueRecord))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_glyphIndex(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_glyphIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_glyphIndex", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_glyphIndex",
+                            0usize
                         )
                     })
             });
@@ -171,61 +166,58 @@ impl crate::TMPro::TMP_GlyphAdjustmentRecord {
     pub fn get_glyphValueRecord(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::TMPro::TMP_GlyphValueRecord> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::TMPro::TMP_GlyphValueRecord,
-                        0usize,
-                    >("get_glyphValueRecord")
+                    .find_method::<(), crate::TMPro::TMP_GlyphValueRecord, 0usize>(
+                        "get_glyphValueRecord",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_glyphValueRecord", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_glyphValueRecord",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::TMPro::TMP_GlyphValueRecord = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::TMPro::TMP_GlyphValueRecord =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_glyphIndex(
         &mut self,
         value: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_glyphIndex")
+                    .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>("set_glyphIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_glyphIndex", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_glyphIndex",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_glyphValueRecord(
         &mut self,
         value: crate::TMPro::TMP_GlyphValueRecord,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::TMPro::TMP_GlyphValueRecord),
@@ -240,9 +232,8 @@ impl crate::TMPro::TMP_GlyphAdjustmentRecord {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }

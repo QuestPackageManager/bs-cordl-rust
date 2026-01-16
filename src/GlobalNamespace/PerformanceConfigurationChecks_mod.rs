@@ -16,14 +16,14 @@ pub struct PerformanceConfigurationChecks {
     >,
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PerformanceConfigurationChecks {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PerformanceConfigurationChecks {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PerformanceConfigurationChecks";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -62,12 +62,12 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
     pub type XRConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig;
     pub fn CreateErrorLog(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -82,21 +82,22 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsValid",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsValid",
                             0usize
                         )
                     })
@@ -105,8 +106,8 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -114,48 +115,33 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
     pub fn SetExpected(
         &mut self,
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
-        playerSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSpecificSettings,
-        >,
+        playerSettings: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
         modifiers: crate::GlobalNamespace::GameplayModifierMask,
-        recPlayState: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::RecPlayBehaviour_State,
-        >,
+        recPlayState: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecPlayBehaviour_State>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::BeatSaber::Settings::Settings,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerSpecificSettings,
-                            >,
-                            crate::GlobalNamespace::GameplayModifierMask,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::RecPlayBehaviour_State,
-                            >,
-                        ),
-                        bool,
-                        4usize,
-                    >("SetExpected")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
+                        crate::GlobalNamespace::GameplayModifierMask,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecPlayBehaviour_State>,
+                    ), bool, 4usize>("SetExpected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetExpected", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetExpected",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (settings, playerSettings, modifiers, recPlayState),
-                )?
+                .invoke_unchecked(self, (settings, playerSettings, modifiers, recPlayState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -166,110 +152,89 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
         actual: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            T,
-                            T,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("VerifyEntry")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        T,
+                        T,
+                    ), quest_hook::libil2cpp::Void, 3usize>("VerifyEntry")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "VerifyEntry", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "VerifyEntry",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (name, expected, actual))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (name, expected, actual))? };
         Ok(__cordl_ret.into())
     }
     pub fn VerifyExpected(
         &mut self,
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
-        playerSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSpecificSettings,
-        >,
+        playerSettings: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
         modifiers: crate::GlobalNamespace::GameplayModifierMask,
-        recPlayState: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::RecPlayBehaviour_State,
-        >,
+        recPlayState: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecPlayBehaviour_State>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::BeatSaber::Settings::Settings,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerSpecificSettings,
-                            >,
-                            crate::GlobalNamespace::GameplayModifierMask,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::RecPlayBehaviour_State,
-                            >,
-                        ),
-                        bool,
-                        4usize,
-                    >("VerifyExpected")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
+                        crate::GlobalNamespace::GameplayModifierMask,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecPlayBehaviour_State>,
+                    ), bool, 4usize>("VerifyExpected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "VerifyExpected", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "VerifyExpected",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (settings, playerSettings, modifiers, recPlayState),
-                )?
+                .invoke_unchecked(self, (settings, playerSettings, modifiers, recPlayState))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PerformanceConfigurationChecks {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PerformanceConfigurationChecks {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -278,8 +243,8 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks {
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PerformanceConfigurationChecks_AppConfig {
     pub targetFrameRate: i32,
     pub systemLanguage: crate::UnityEngine::SystemLanguage,
@@ -288,7 +253,8 @@ pub struct PerformanceConfigurationChecks_AppConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -307,18 +273,16 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -329,7 +293,8 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -343,22 +308,22 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -372,7 +337,8 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -384,14 +350,15 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
 #[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {}
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PerformanceConfigurationChecks_LevelConfig {
     pub modifiers: crate::GlobalNamespace::GameplayModifierMask,
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -410,18 +377,16 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -432,7 +397,8 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -446,22 +412,22 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -475,7 +441,8 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -487,15 +454,16 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
 #[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {}
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PerformanceConfigurationChecks_Mismatch {
     pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub frames: i32,
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -514,18 +482,16 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -536,7 +502,8 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -550,22 +517,22 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -579,7 +546,8 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -591,8 +559,8 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
 #[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {}
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PerformanceConfigurationChecks_PlayerConfig {
     pub leftHanded: bool,
     pub automaticPlayerHeight: bool,
@@ -612,12 +580,15 @@ pub struct PerformanceConfigurationChecks_PlayerConfig {
     pub advancedHud: bool,
     pub sfxVolume: f32,
     pub adaptiveSfx: bool,
-    pub environmentEffectsFilterDefaultPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
-    pub environmentEffectsFilterExpertPlusPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+    pub environmentEffectsFilterDefaultPreset:
+        crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+    pub environmentEffectsFilterExpertPlusPreset:
+        crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -636,18 +607,16 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -658,7 +627,8 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -672,22 +642,22 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -701,7 +671,8 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -713,8 +684,8 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
 #[cfg(feature = "PerformanceConfigurationChecks+PlayerConfig")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {}
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PerformanceConfigurationChecks_XRConfig {
     pub enabled: bool,
     pub isDeviceActive: bool,
@@ -730,7 +701,8 @@ pub struct PerformanceConfigurationChecks_XRConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -749,18 +721,16 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -771,7 +741,8 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -785,22 +756,22 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -814,7 +785,8 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
+    for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

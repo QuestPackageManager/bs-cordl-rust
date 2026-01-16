@@ -3,26 +3,23 @@
 #[derive(Debug)]
 pub struct MultiplayerBadgeAwardData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _awardedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
-    >,
+    pub _awardedPlayer:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
     pub _weight: f32,
     pub _title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _subtitle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-    pub _badgeData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MultiplayerBadgeDataSO,
-    >,
+    pub _badgeData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
 }
 #[cfg(feature = "cordl_class_MultiplayerBadgeAwardData")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MultiplayerBadgeAwardData {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MultiplayerBadgeAwardData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "MultiplayerBadgeAwardData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -53,9 +50,10 @@ impl crate::GlobalNamespace::MultiplayerBadgeAwardData {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -70,77 +68,56 @@ impl crate::GlobalNamespace::MultiplayerBadgeAwardData {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        awardedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
-        >,
+        awardedPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         weight: f32,
         title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         subtitle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        badgeData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerBadgeDataSO,
-        >,
+        badgeData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (awardedPlayer, weight, title, subtitle, badgeData))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        awardedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
-        >,
+        awardedPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         weight: f32,
         title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         subtitle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        badgeData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerBadgeDataSO,
-        >,
+        badgeData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IBeatSaberConnectedPlayer,
-                            >,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerBadgeDataSO,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                        >,
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (awardedPlayer, weight, title, subtitle, badgeData),
-                )?
+                .invoke_unchecked(self, (awardedPlayer, weight, title, subtitle, badgeData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -149,9 +126,10 @@ impl crate::GlobalNamespace::MultiplayerBadgeAwardData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -168,19 +146,17 @@ impl crate::GlobalNamespace::MultiplayerBadgeAwardData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_icon(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -195,19 +171,18 @@ impl crate::GlobalNamespace::MultiplayerBadgeAwardData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_subtitle(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -222,19 +197,18 @@ impl crate::GlobalNamespace::MultiplayerBadgeAwardData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_title(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -249,19 +223,18 @@ impl crate::GlobalNamespace::MultiplayerBadgeAwardData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_titleLocalizationKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -276,15 +249,13 @@ impl crate::GlobalNamespace::MultiplayerBadgeAwardData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_MultiplayerBadgeAwardData")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::MultiplayerBadgeAwardData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MultiplayerBadgeAwardData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -293,15 +264,13 @@ for crate::GlobalNamespace::MultiplayerBadgeAwardData {
     }
 }
 #[cfg(feature = "MultiplayerBadgeAwardData")]
-impl AsRef<crate::System::IComparable>
-for crate::GlobalNamespace::MultiplayerBadgeAwardData {
+impl AsRef<crate::System::IComparable> for crate::GlobalNamespace::MultiplayerBadgeAwardData {
     fn as_ref(&self) -> &crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerBadgeAwardData")]
-impl AsMut<crate::System::IComparable>
-for crate::GlobalNamespace::MultiplayerBadgeAwardData {
+impl AsMut<crate::System::IComparable> for crate::GlobalNamespace::MultiplayerBadgeAwardData {
     fn as_mut(&mut self) -> &mut crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }

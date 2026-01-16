@@ -5,9 +5,7 @@ pub struct BTSCharacterDataModel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _prefabsWithIds: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId>,
         >,
     >,
     pub _animationClipsWithIds: quest_hook::libil2cpp::Gc<
@@ -19,14 +17,14 @@ pub struct BTSCharacterDataModel {
     >,
 }
 #[cfg(feature = "cordl_class_BTSCharacterDataModel")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BTSCharacterDataModel {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BTSCharacterDataModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BTSCharacterDataModel";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -54,35 +52,35 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BTSCharacterDataModel {
 #[cfg(feature = "BTSCharacterDataModel")]
 impl crate::GlobalNamespace::BTSCharacterDataModel {
     #[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
-    pub type AnimationClipWithId = crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId;
+    pub type AnimationClipWithId =
+        crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId;
     #[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
     pub type PrefabWithId = crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_animationClipsWithIds(
@@ -96,26 +94,24 @@ impl crate::GlobalNamespace::BTSCharacterDataModel {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId,
                             >,
                         >,
-                        0usize,
-                    >("get_animationClipsWithIds")
+                    >, 0usize>("get_animationClipsWithIds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_animationClipsWithIds", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_animationClipsWithIds",
+                            0usize
                         )
                     })
             });
@@ -139,26 +135,24 @@ impl crate::GlobalNamespace::BTSCharacterDataModel {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId,
                             >,
                         >,
-                        0usize,
-                    >("get_prefabsWithIds")
+                    >, 0usize>("get_prefabsWithIds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_prefabsWithIds", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_prefabsWithIds",
+                            0usize
                         )
                     })
             });
@@ -173,8 +167,7 @@ impl crate::GlobalNamespace::BTSCharacterDataModel {
     }
 }
 #[cfg(feature = "cordl_class_BTSCharacterDataModel")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BTSCharacterDataModel {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BTSCharacterDataModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -188,19 +181,20 @@ for crate::GlobalNamespace::BTSCharacterDataModel {
 pub struct BTSCharacterDataModel_AnimationClipWithId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _id: i32,
-    pub _animationClipAssetReference: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReference,
-    >,
+    pub _animationClipAssetReference:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReference>,
 }
 #[cfg(feature = "cordl_class_BTSCharacterDataModel+AnimationClipWithId")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
+    for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BTSCharacterDataModel/AnimationClipWithId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -213,16 +207,14 @@ for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
     }
 }
 #[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
-impl std::ops::Deref
-for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
+impl std::ops::Deref for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
+impl std::ops::DerefMut for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -230,31 +222,30 @@ for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
 #[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
 impl crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_animationClipAssetReference(
@@ -262,9 +253,10 @@ impl crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReference>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -287,15 +279,17 @@ impl crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
         Ok(__cordl_ret.into())
     }
     pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_id")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_id",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_id",
                             0usize
                         )
                     })
@@ -306,7 +300,8 @@ impl crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
 }
 #[cfg(feature = "cordl_class_BTSCharacterDataModel+AnimationClipWithId")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
+    for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -320,19 +315,20 @@ for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
 pub struct BTSCharacterDataModel_PrefabWithId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _id: i32,
-    pub _prefabAssetReference: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReference,
-    >,
+    pub _prefabAssetReference:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReference>,
 }
 #[cfg(feature = "cordl_class_BTSCharacterDataModel+PrefabWithId")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
+    for crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BTSCharacterDataModel/PrefabWithId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -360,43 +356,44 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BTSCharacterDataModel_Prefab
 #[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
 impl crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_id")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_id",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_id",
                             0usize
                         )
                     })
@@ -409,9 +406,10 @@ impl crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReference>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -436,7 +434,8 @@ impl crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
 }
 #[cfg(feature = "cordl_class_BTSCharacterDataModel+PrefabWithId")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
+    for crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

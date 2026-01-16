@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AnimationEventBlittable")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct AnimationEventBlittable {
     pub m_Time: f32,
     pub m_FunctionName: crate::System::IntPtr,
@@ -34,18 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AnimationEventBl
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+AnimationEventBlittable")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::AnimationEventBlittable {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AnimationEventBlittable {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -55,8 +51,7 @@ for crate::UnityEngine::AnimationEventBlittable {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+AnimationEventBlittable")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::AnimationEventBlittable {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AnimationEventBlittable {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -69,23 +64,19 @@ for crate::UnityEngine::AnimationEventBlittable {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+AnimationEventBlittable")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::AnimationEventBlittable {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AnimationEventBlittable {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+AnimationEventBlittable")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::AnimationEventBlittable {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AnimationEventBlittable {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -98,8 +89,7 @@ for crate::UnityEngine::AnimationEventBlittable {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+AnimationEventBlittable")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::AnimationEventBlittable {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::AnimationEventBlittable {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -110,34 +100,34 @@ for crate::UnityEngine::AnimationEventBlittable {
 }
 #[cfg(feature = "UnityEngine+AnimationEventBlittable")]
 impl crate::UnityEngine::AnimationEventBlittable {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DisposeEvents(
         animationEventBlittableArray: crate::System::IntPtr,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, i32),
@@ -153,17 +143,17 @@ impl crate::UnityEngine::AnimationEventBlittable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (animationEventBlittableArray, _cordl_size))?
+            cordl_method_info.invoke_unchecked((), (animationEventBlittableArray, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FreeEventsInternal(
         value: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
@@ -178,17 +168,17 @@ impl crate::UnityEngine::AnimationEventBlittable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromAnimationEvent(
         animationEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::AnimationEventBlittable> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent>),
@@ -203,9 +193,8 @@ impl crate::UnityEngine::AnimationEventBlittable {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::AnimationEventBlittable = unsafe {
-            cordl_method_info.invoke_unchecked((), (animationEvent))?
-        };
+        let __cordl_ret: crate::UnityEngine::AnimationEventBlittable =
+            unsafe { cordl_method_info.invoke_unchecked((), (animationEvent))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromAnimationEvents(
@@ -214,52 +203,45 @@ impl crate::UnityEngine::AnimationEventBlittable {
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent>,
             >,
         >,
-        animationEventBlittables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        >,
+        animationEventBlittables: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::AnimationEvent,
-                                    >,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("FromAnimationEvents")
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "FromAnimationEvents"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FromAnimationEvents", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FromAnimationEvents",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (animationEvents, animationEventBlittables))?
+            cordl_method_info.invoke_unchecked((), (animationEvents, animationEventBlittables))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn PointerToAnimationEvent(
         animationEventBlittable: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
@@ -274,9 +256,8 @@ impl crate::UnityEngine::AnimationEventBlittable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent> = unsafe {
-            cordl_method_info.invoke_unchecked((), (animationEventBlittable))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent> =
+            unsafe { cordl_method_info.invoke_unchecked((), (animationEventBlittable))? };
         Ok(__cordl_ret.into())
     }
     pub fn PointerToAnimationEvents(
@@ -289,26 +270,22 @@ impl crate::UnityEngine::AnimationEventBlittable {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::System::IntPtr, i32),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::AnimationEvent,
-                                >,
-                            >,
+                    .find_static_method::<(crate::System::IntPtr, i32), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent>,
                         >,
-                        2usize,
-                    >("PointerToAnimationEvents")
+                    >, 2usize>("PointerToAnimationEvents")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PointerToAnimationEvents", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PointerToAnimationEvents",
+                            2usize
                         )
                     })
             });
@@ -317,19 +294,18 @@ impl crate::UnityEngine::AnimationEventBlittable {
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent>,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (animationEventBlittableArray, _cordl_size))?
+            cordl_method_info.invoke_unchecked((), (animationEventBlittableArray, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ToAnimationEvent(
         animationEventBlittable: crate::UnityEngine::AnimationEventBlittable,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::AnimationEventBlittable),
@@ -344,9 +320,8 @@ impl crate::UnityEngine::AnimationEventBlittable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent> = unsafe {
-            cordl_method_info.invoke_unchecked((), (animationEventBlittable))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent> =
+            unsafe { cordl_method_info.invoke_unchecked((), (animationEventBlittable))? };
         Ok(__cordl_ret.into())
     }
 }

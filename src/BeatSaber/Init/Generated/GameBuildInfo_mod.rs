@@ -5,14 +5,14 @@ pub struct GameBuildInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_BeatSaber+Init+Generated+GameBuildInfo")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::Init::Generated::GameBuildInfo {
+unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Init::Generated::GameBuildInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.Init.Generated";
     const CLASS_NAME: &'static str = "GameBuildInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,8 +43,7 @@ impl crate::BeatSaber::Init::Generated::GameBuildInfo {
     pub const kPreReleaseLabel: &'static str = "";
 }
 #[cfg(feature = "cordl_class_BeatSaber+Init+Generated+GameBuildInfo")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::BeatSaber::Init::Generated::GameBuildInfo {
+impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::Init::Generated::GameBuildInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

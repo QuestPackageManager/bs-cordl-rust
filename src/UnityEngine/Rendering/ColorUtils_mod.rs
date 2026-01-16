@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Color
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "ColorUtils";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,52 +43,50 @@ impl crate::UnityEngine::Rendering::ColorUtils {
         x: f32,
         y: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (f32, f32),
-                        crate::UnityEngine::Vector3,
-                        2usize,
-                    >("CIExyToLMS")
+                    .find_static_method::<(f32, f32), crate::UnityEngine::Vector3, 2usize>(
+                        "CIExyToLMS",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CIExyToLMS", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CIExyToLMS",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (x, y))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (x, y))? };
         Ok(__cordl_ret.into())
     }
     pub fn ColorBalanceToLMSCoeffs(
         temperature: f32,
         tint: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (f32, f32),
-                        crate::UnityEngine::Vector3,
-                        2usize,
-                    >("ColorBalanceToLMSCoeffs")
+                    .find_static_method::<(f32, f32), crate::UnityEngine::Vector3, 2usize>(
+                        "ColorBalanceToLMSCoeffs",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ColorBalanceToLMSCoeffs", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ColorBalanceToLMSCoeffs",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (temperature, tint))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (temperature, tint))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeEV100(
@@ -95,47 +94,42 @@ impl crate::UnityEngine::Rendering::ColorUtils {
         shutterSpeed: f32,
         ISO: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32, f32), f32, 3usize>("ComputeEV100")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ComputeEV100", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ComputeEV100",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (aperture, shutterSpeed, ISO))?
-        };
+        let __cordl_ret: f32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (aperture, shutterSpeed, ISO))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ComputeEV100FromAvgLuminance(
-        avgLuminance: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ComputeEV100FromAvgLuminance(avgLuminance: f32) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (f32),
-                        f32,
-                        1usize,
-                    >("ComputeEV100FromAvgLuminance")
+                    .find_static_method::<(f32), f32, 1usize>("ComputeEV100FromAvgLuminance")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ComputeEV100FromAvgLuminance", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ComputeEV100FromAvgLuminance",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (avgLuminance))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (avgLuminance))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeISO(
@@ -143,69 +137,71 @@ impl crate::UnityEngine::Rendering::ColorUtils {
         shutterSpeed: f32,
         targetEV100: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32, f32), f32, 3usize>("ComputeISO")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ComputeISO", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ComputeISO",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (aperture, shutterSpeed, targetEV100))?
+            cordl_method_info.invoke_unchecked((), (aperture, shutterSpeed, targetEV100))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertEV100ToExposure(EV100: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), f32, 1usize>("ConvertEV100ToExposure")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConvertEV100ToExposure", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ConvertEV100ToExposure",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (EV100))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (EV100))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertExposureToEV100(exposure: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), f32, 1usize>("ConvertExposureToEV100")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConvertExposureToEV100", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ConvertExposureToEV100",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (exposure))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (exposure))? };
         Ok(__cordl_ret.into())
     }
     pub fn Luminance(
         color: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>),
@@ -220,9 +216,7 @@ impl crate::UnityEngine::Rendering::ColorUtils {
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (color))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (color))? };
         Ok(__cordl_ret.into())
     }
     pub fn PrepareLiftGammaGain(
@@ -236,28 +230,26 @@ impl crate::UnityEngine::Rendering::ColorUtils {
             crate::UnityEngine::Vector4,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-                        ),
-                        crate::System::ValueTuple_3<
-                            crate::UnityEngine::Vector4,
-                            crate::UnityEngine::Vector4,
-                            crate::UnityEngine::Vector4,
-                        >,
-                        3usize,
-                    >("PrepareLiftGammaGain")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+                    ), crate::System::ValueTuple_3<
+                        crate::UnityEngine::Vector4,
+                        crate::UnityEngine::Vector4,
+                        crate::UnityEngine::Vector4,
+                    >, 3usize>("PrepareLiftGammaGain")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PrepareLiftGammaGain", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PrepareLiftGammaGain",
+                            3usize
                         )
                     })
             });
@@ -265,9 +257,7 @@ impl crate::UnityEngine::Rendering::ColorUtils {
             crate::UnityEngine::Vector4,
             crate::UnityEngine::Vector4,
             crate::UnityEngine::Vector4,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (inLift, inGamma, inGain))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (inLift, inGamma, inGain))? };
         Ok(__cordl_ret.into())
     }
     pub fn PrepareShadowsMidtonesHighlights(
@@ -281,28 +271,26 @@ impl crate::UnityEngine::Rendering::ColorUtils {
             crate::UnityEngine::Vector4,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-                        ),
-                        crate::System::ValueTuple_3<
-                            crate::UnityEngine::Vector4,
-                            crate::UnityEngine::Vector4,
-                            crate::UnityEngine::Vector4,
-                        >,
-                        3usize,
-                    >("PrepareShadowsMidtonesHighlights")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+                    ), crate::System::ValueTuple_3<
+                        crate::UnityEngine::Vector4,
+                        crate::UnityEngine::Vector4,
+                        crate::UnityEngine::Vector4,
+                    >, 3usize>("PrepareShadowsMidtonesHighlights")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PrepareShadowsMidtonesHighlights", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PrepareShadowsMidtonesHighlights",
+                            3usize
                         )
                     })
             });
@@ -311,8 +299,7 @@ impl crate::UnityEngine::Rendering::ColorUtils {
             crate::UnityEngine::Vector4,
             crate::UnityEngine::Vector4,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (inShadows, inMidtones, inHighlights))?
+            cordl_method_info.invoke_unchecked((), (inShadows, inMidtones, inHighlights))?
         };
         Ok(__cordl_ret.into())
     }
@@ -321,54 +308,49 @@ impl crate::UnityEngine::Rendering::ColorUtils {
         inHighlights: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
         balance: f32,
     ) -> quest_hook::libil2cpp::Result<
-        crate::System::ValueTuple_2<
-            crate::UnityEngine::Vector4,
-            crate::UnityEngine::Vector4,
-        >,
+        crate::System::ValueTuple_2<crate::UnityEngine::Vector4, crate::UnityEngine::Vector4>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-                            f32,
-                        ),
-                        crate::System::ValueTuple_2<
-                            crate::UnityEngine::Vector4,
-                            crate::UnityEngine::Vector4,
-                        >,
-                        3usize,
-                    >("PrepareSplitToning")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+                        f32,
+                    ), crate::System::ValueTuple_2<
+                        crate::UnityEngine::Vector4,
+                        crate::UnityEngine::Vector4,
+                    >, 3usize>("PrepareSplitToning")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PrepareSplitToning", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PrepareSplitToning",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: crate::System::ValueTuple_2<
             crate::UnityEngine::Vector4,
             crate::UnityEngine::Vector4,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (inShadows, inHighlights, balance))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (inShadows, inHighlights, balance))? };
         Ok(__cordl_ret.into())
     }
     pub fn StandardIlluminantY(x: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), f32, 1usize>("StandardIlluminantY")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StandardIlluminantY", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "StandardIlluminantY",
+                            1usize
                         )
                     })
             });
@@ -376,19 +358,17 @@ impl crate::UnityEngine::Rendering::ColorUtils {
         Ok(__cordl_ret.into())
     }
     pub fn ToHex(c: crate::UnityEngine::Color) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::UnityEngine::Color),
-                        u32,
-                        1usize,
-                    >("ToHex")
+                    .find_static_method::<(crate::UnityEngine::Color), u32, 1usize>("ToHex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToHex",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ToHex",
                             1usize
                         )
                     })
@@ -397,43 +377,38 @@ impl crate::UnityEngine::Rendering::ColorUtils {
         Ok(__cordl_ret.into())
     }
     pub fn ToRGBA(hex: u32) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u32),
-                        crate::UnityEngine::Color,
-                        1usize,
-                    >("ToRGBA")
+                    .find_static_method::<(u32), crate::UnityEngine::Color, 1usize>("ToRGBA")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToRGBA",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ToRGBA",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            cordl_method_info.invoke_unchecked((), (hex))?
-        };
+        let __cordl_ret: crate::UnityEngine::Color =
+            unsafe { cordl_method_info.invoke_unchecked((), (hex))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_lensImperfectionExposureScale() -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        f32,
-                        0usize,
-                    >("get_lensImperfectionExposureScale")
+                    .find_static_method::<(), f32, 0usize>("get_lensImperfectionExposureScale")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_lensImperfectionExposureScale", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_lensImperfectionExposureScale",
+                            0usize
                         )
                     })
             });

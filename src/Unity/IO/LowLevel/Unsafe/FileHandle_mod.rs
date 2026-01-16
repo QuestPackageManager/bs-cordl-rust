@@ -1,13 +1,12 @@
 #[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+FileHandle")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct FileHandle {
     pub fileCommandPtr: crate::System::IntPtr,
     pub version: i32,
 }
 #[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+FileHandle")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.IO.LowLevel.Unsafe";
@@ -26,18 +25,14 @@ for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+FileHandle")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,8 +42,7 @@ for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
     }
 }
 #[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+FileHandle")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -61,23 +55,19 @@ for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
     }
 }
 #[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+FileHandle")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+FileHandle")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -90,8 +80,7 @@ for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
     }
 }
 #[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+FileHandle")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::IO::LowLevel::Unsafe::FileHandle {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -106,9 +95,10 @@ impl crate::Unity::IO::LowLevel::Unsafe::FileHandle {
         &mut self,
         dependency: crate::Unity::Jobs::JobHandle,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Jobs::JobHandle),
@@ -123,114 +113,101 @@ impl crate::Unity::IO::LowLevel::Unsafe::FileHandle {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
-            cordl_method_info.invoke_unchecked(self, (dependency))?
-        };
+        let __cordl_ret: crate::Unity::Jobs::JobHandle =
+            unsafe { cordl_method_info.invoke_unchecked(self, (dependency))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetJobHandle_Internal(
-        handle: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::IO::LowLevel::Unsafe::FileHandle,
-        >,
+        handle: quest_hook::libil2cpp::ByRefMut<crate::Unity::IO::LowLevel::Unsafe::FileHandle>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::Unity::IO::LowLevel::Unsafe::FileHandle,
-                        >),
-                        crate::Unity::Jobs::JobHandle,
-                        1usize,
-                    >("GetJobHandle_Internal")
+                    .find_static_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::IO::LowLevel::Unsafe::FileHandle,
+                    >), crate::Unity::Jobs::JobHandle, 1usize>(
+                        "GetJobHandle_Internal"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetJobHandle_Internal", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetJobHandle_Internal",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle))?
-        };
+        let __cordl_ret: crate::Unity::Jobs::JobHandle =
+            unsafe { cordl_method_info.invoke_unchecked((), (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetJobHandle_Internal_Injected(
-        handle: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::IO::LowLevel::Unsafe::FileHandle,
-        >,
+        handle: quest_hook::libil2cpp::ByRefMut<crate::Unity::IO::LowLevel::Unsafe::FileHandle>,
         ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::IO::LowLevel::Unsafe::FileHandle,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Jobs::JobHandle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("GetJobHandle_Internal_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::IO::LowLevel::Unsafe::FileHandle,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "GetJobHandle_Internal_Injected"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetJobHandle_Internal_Injected", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetJobHandle_Internal_Injected",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle, ret))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (handle, ret))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsFileHandleValid(
-        handle: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::IO::LowLevel::Unsafe::FileHandle,
-        >,
+        handle: quest_hook::libil2cpp::ByRefMut<crate::Unity::IO::LowLevel::Unsafe::FileHandle>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::Unity::IO::LowLevel::Unsafe::FileHandle,
-                        >),
-                        bool,
-                        1usize,
-                    >("IsFileHandleValid")
+                    .find_static_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::IO::LowLevel::Unsafe::FileHandle,
+                    >), bool, 1usize>("IsFileHandleValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsFileHandleValid", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsFileHandleValid",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsValid",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsValid",
                             0usize
                         )
                     })
@@ -241,26 +218,23 @@ impl crate::Unity::IO::LowLevel::Unsafe::FileHandle {
     pub fn get_JobHandle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::Unity::Jobs::JobHandle,
-                        0usize,
-                    >("get_JobHandle")
+                    .find_method::<(), crate::Unity::Jobs::JobHandle, 0usize>("get_JobHandle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_JobHandle", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_JobHandle",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::Unity::Jobs::JobHandle =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

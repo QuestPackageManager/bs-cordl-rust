@@ -16,13 +16,15 @@ pub struct MarshalAsAttribute {
 }
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+MarshalAsAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::InteropServices::MarshalAsAttribute {
+    for crate::System::Runtime::InteropServices::MarshalAsAttribute
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.InteropServices";
     const CLASS_NAME: &'static str = "MarshalAsAttribute";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -52,25 +54,21 @@ impl crate::System::Runtime::InteropServices::MarshalAsAttribute {
     pub fn Copy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::InteropServices::MarshalAsAttribute,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::InteropServices::MarshalAsAttribute>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::InteropServices::MarshalAsAttribute,
-                        >,
-                        0usize,
-                    >("Copy")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::InteropServices::MarshalAsAttribute,
+                    >, 0usize>("Copy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Copy",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Copy",
                             0usize
                         )
                     })
@@ -83,8 +81,8 @@ impl crate::System::Runtime::InteropServices::MarshalAsAttribute {
     pub fn New(
         unmanagedType: crate::System::Runtime::InteropServices::UnmanagedType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (unmanagedType))?;
         Ok(__cordl_object.into())
@@ -93,9 +91,10 @@ impl crate::System::Runtime::InteropServices::MarshalAsAttribute {
         &mut self,
         unmanagedType: crate::System::Runtime::InteropServices::UnmanagedType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Runtime::InteropServices::UnmanagedType),
@@ -110,19 +109,17 @@ impl crate::System::Runtime::InteropServices::MarshalAsAttribute {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (unmanagedType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (unmanagedType))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Runtime::InteropServices::UnmanagedType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Runtime::InteropServices::UnmanagedType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -137,15 +134,15 @@ impl crate::System::Runtime::InteropServices::MarshalAsAttribute {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Runtime::InteropServices::UnmanagedType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Runtime::InteropServices::UnmanagedType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+MarshalAsAttribute")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::InteropServices::MarshalAsAttribute {
+    for crate::System::Runtime::InteropServices::MarshalAsAttribute
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

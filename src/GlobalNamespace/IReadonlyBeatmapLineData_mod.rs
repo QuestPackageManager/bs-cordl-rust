@@ -1,18 +1,18 @@
 #[cfg(feature = "cordl_class_IReadonlyBeatmapLineData")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IReadonlyBeatmapLineData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_IReadonlyBeatmapLineData")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::IReadonlyBeatmapLineData {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IReadonlyBeatmapLineData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "IReadonlyBeatmapLineData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,9 +39,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IReadonlyBeatmapLineData {
 }
 #[cfg(feature = "IReadonlyBeatmapLineData")]
 impl crate::GlobalNamespace::IReadonlyBeatmapLineData {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_beatmapObjectsData(
@@ -53,26 +51,22 @@ impl crate::GlobalNamespace::IReadonlyBeatmapLineData {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapObjectData,
-                                >,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
                         >,
-                        0usize,
-                    >("get_beatmapObjectsData")
+                    >, 0usize>("get_beatmapObjectsData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_beatmapObjectsData", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_beatmapObjectsData",
+                            0usize
                         )
                     })
             });
@@ -85,8 +79,7 @@ impl crate::GlobalNamespace::IReadonlyBeatmapLineData {
     }
 }
 #[cfg(feature = "cordl_class_IReadonlyBeatmapLineData")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::IReadonlyBeatmapLineData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IReadonlyBeatmapLineData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

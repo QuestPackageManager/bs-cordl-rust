@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeNameParser {
     const NAMESPACE: &'static str = "System";
     const CLASS_NAME: &'static str = "TypeNameParser";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -56,71 +57,56 @@ impl crate::System::TypeNameParser {
         >,
         throwOnError: bool,
         ignoreCase: bool,
-        stackMark: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Threading::StackCrawlMark,
-        >,
+        stackMark: quest_hook::libil2cpp::ByRefMut<crate::System::Threading::StackCrawlMark>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<crate::System::Reflection::AssemblyName>,
+                                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Reflection::AssemblyName,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Reflection::Assembly,
-                                    >,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_4<
+                                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                                bool,
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_4<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Reflection::Assembly,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    bool,
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                >,
-                            >,
-                            bool,
-                            bool,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Threading::StackCrawlMark,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        6usize,
-                    >("GetType")
+                        >,
+                        bool,
+                        bool,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Threading::StackCrawlMark>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Type>, 6usize>(
+                        "GetType"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetType",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetType",
                             6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        typeName,
-                        assemblyResolver,
-                        typeResolver,
-                        throwOnError,
-                        ignoreCase,
-                        stackMark,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    typeName,
+                    assemblyResolver,
+                    typeResolver,
+                    throwOnError,
+                    ignoreCase,
+                    stackMark,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }

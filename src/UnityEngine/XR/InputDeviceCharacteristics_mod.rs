@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+InputDeviceCharacteristics")]
-#[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(u32)]
 pub enum InputDeviceCharacteristics {
     #[default]
     Camera = 2u32,
@@ -17,8 +17,7 @@ pub enum InputDeviceCharacteristics {
     TrackingReference = 128u32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+InputDeviceCharacteristics")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::XR::InputDeviceCharacteristics {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::InputDeviceCharacteristics {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.XR";
@@ -37,18 +36,14 @@ for crate::UnityEngine::XR::InputDeviceCharacteristics {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+InputDeviceCharacteristics")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::XR::InputDeviceCharacteristics {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::XR::InputDeviceCharacteristics {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -59,7 +54,8 @@ for crate::UnityEngine::XR::InputDeviceCharacteristics {
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+InputDeviceCharacteristics")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::XR::InputDeviceCharacteristics {
+    for crate::UnityEngine::XR::InputDeviceCharacteristics
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -72,23 +68,19 @@ for crate::UnityEngine::XR::InputDeviceCharacteristics {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+InputDeviceCharacteristics")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::XR::InputDeviceCharacteristics {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::XR::InputDeviceCharacteristics {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+InputDeviceCharacteristics")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::XR::InputDeviceCharacteristics {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::XR::InputDeviceCharacteristics {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

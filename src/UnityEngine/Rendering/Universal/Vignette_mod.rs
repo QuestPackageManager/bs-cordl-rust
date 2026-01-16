@@ -4,26 +4,20 @@
 pub struct Vignette {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeComponent,
     pub color: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ColorParameter>,
-    pub center: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::Vector2Parameter,
-    >,
-    pub intensity: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::ClampedFloatParameter,
-    >,
-    pub smoothness: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::ClampedFloatParameter,
-    >,
+    pub center: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::Vector2Parameter>,
+    pub intensity: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ClampedFloatParameter>,
+    pub smoothness: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ClampedFloatParameter>,
     pub rounded: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::BoolParameter>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Vignette")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::Vignette {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Universal::Vignette {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
     const CLASS_NAME: &'static str = "Vignette";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -51,16 +45,18 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::Universal::Vignette {
 #[cfg(feature = "UnityEngine+Rendering+Universal+Vignette")]
 impl crate::UnityEngine::Rendering::Universal::Vignette {
     pub fn IsActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsActive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsActive", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsActive",
+                            0usize
                         )
                     })
             });
@@ -68,16 +64,18 @@ impl crate::UnityEngine::Rendering::Universal::Vignette {
         Ok(__cordl_ret.into())
     }
     pub fn IsTileCompatible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsTileCompatible")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsTileCompatible", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsTileCompatible",
+                            0usize
                         )
                     })
             });
@@ -85,37 +83,35 @@ impl crate::UnityEngine::Rendering::Universal::Vignette {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Vignette")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::Universal::Vignette {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Universal::Vignette {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -125,14 +121,16 @@ for crate::UnityEngine::Rendering::Universal::Vignette {
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+Vignette")]
 impl AsRef<crate::UnityEngine::Rendering::IPostProcessComponent>
-for crate::UnityEngine::Rendering::Universal::Vignette {
+    for crate::UnityEngine::Rendering::Universal::Vignette
+{
     fn as_ref(&self) -> &crate::UnityEngine::Rendering::IPostProcessComponent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+Vignette")]
 impl AsMut<crate::UnityEngine::Rendering::IPostProcessComponent>
-for crate::UnityEngine::Rendering::Universal::Vignette {
+    for crate::UnityEngine::Rendering::Universal::Vignette
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::Rendering::IPostProcessComponent {
         unsafe { std::mem::transmute(self) }
     }

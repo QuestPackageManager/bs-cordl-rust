@@ -3,20 +3,18 @@
 #[derive(Debug)]
 pub struct EventHandlerList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _head: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::EventHandlerList_ListEntry,
-    >,
+    pub _head: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventHandlerList_ListEntry>,
     pub _parent: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::Component>,
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::ComponentModel::EventHandlerList {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::ComponentModel::EventHandlerList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
     const CLASS_NAME: &'static str = "EventHandlerList";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,13 +47,12 @@ impl crate::System::ComponentModel::EventHandlerList {
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::ComponentModel::EventHandlerList_ListEntry,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventHandlerList_ListEntry>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -80,12 +77,11 @@ impl crate::System::ComponentModel::EventHandlerList {
     pub fn get_Item(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Delegate>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -100,15 +96,13 @@ impl crate::System::ComponentModel::EventHandlerList {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (key))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::ComponentModel::EventHandlerList {
+impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::EventHandlerList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -121,21 +115,21 @@ for crate::System::ComponentModel::EventHandlerList {
 #[derive(Debug)]
 pub struct EventHandlerList_ListEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _next: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::EventHandlerList_ListEntry,
-    >,
+    pub _next: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventHandlerList_ListEntry>,
     pub _key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _handler: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList+ListEntry")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::ComponentModel::EventHandlerList_ListEntry {
+    for crate::System::ComponentModel::EventHandlerList_ListEntry
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
     const CLASS_NAME: &'static str = "EventHandlerList/ListEntry";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -164,7 +158,8 @@ impl std::ops::DerefMut for crate::System::ComponentModel::EventHandlerList_List
 impl crate::System::ComponentModel::EventHandlerList_ListEntry {}
 #[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList+ListEntry")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::ComponentModel::EventHandlerList_ListEntry {
+    for crate::System::ComponentModel::EventHandlerList_ListEntry
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

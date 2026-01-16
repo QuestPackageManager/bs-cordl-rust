@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_IHealthCheckService")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IHealthCheckService {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IHealthCheck
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "IHealthCheckService";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -38,9 +39,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IHealthCheckService {
 }
 #[cfg(feature = "IHealthCheckService")]
 impl crate::GlobalNamespace::IHealthCheckService {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
@@ -54,15 +53,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IHealthCheckS
     }
 }
 #[cfg(feature = "IHealthCheckService")]
-impl AsRef<crate::GlobalNamespace::IPollable>
-for crate::GlobalNamespace::IHealthCheckService {
+impl AsRef<crate::GlobalNamespace::IPollable> for crate::GlobalNamespace::IHealthCheckService {
     fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IHealthCheckService")]
-impl AsMut<crate::GlobalNamespace::IPollable>
-for crate::GlobalNamespace::IHealthCheckService {
+impl AsMut<crate::GlobalNamespace::IPollable> for crate::GlobalNamespace::IHealthCheckService {
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
         unsafe { std::mem::transmute(self) }
     }

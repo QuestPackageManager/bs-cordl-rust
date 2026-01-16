@@ -3,9 +3,8 @@
 #[derive(Debug)]
 pub struct MemberInitExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _NewExpression_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::NewExpression,
-    >,
+    pub _NewExpression_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::NewExpression>,
     pub _Bindings_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
             quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberBinding>,
@@ -13,14 +12,14 @@ pub struct MemberInitExpression {
     >,
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+MemberInitExpression")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Linq::Expressions::MemberInitExpression {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Linq::Expressions::MemberInitExpression {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
     const CLASS_NAME: &'static str = "MemberInitExpression";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -52,40 +51,34 @@ impl crate::System::Linq::Expressions::MemberInitExpression {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::MemberBinding,
-                >,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberBinding>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::MemberBinding,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::MemberBinding,
                             >,
                         >,
-                        0usize,
-                    >("get_Bindings")
+                    >, 0usize>("get_Bindings")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Bindings", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Bindings",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::MemberBinding,
-                >,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberBinding>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -95,9 +88,10 @@ impl crate::System::Linq::Expressions::MemberInitExpression {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::NewExpression>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -121,8 +115,7 @@ impl crate::System::Linq::Expressions::MemberInitExpression {
     }
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+MemberInitExpression")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Linq::Expressions::MemberInitExpression {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Linq::Expressions::MemberInitExpression {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

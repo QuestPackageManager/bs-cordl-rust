@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Clip
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
     const CLASS_NAME: &'static str = "Clipping";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,12 +45,11 @@ impl crate::UnityEngine::ProBuilder::Clipping {
         rect: crate::UnityEngine::Rect,
         x: f32,
         y: f32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ProBuilder::Clipping_OutCode,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Clipping_OutCode> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Rect, f32, f32),
@@ -64,9 +64,8 @@ impl crate::UnityEngine::ProBuilder::Clipping {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::ProBuilder::Clipping_OutCode = unsafe {
-            cordl_method_info.invoke_unchecked((), (rect, x, y))?
-        };
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Clipping_OutCode =
+            unsafe { cordl_method_info.invoke_unchecked((), (rect, x, y))? };
         Ok(__cordl_ret.into())
     }
     pub fn RectContainsLineSegment(
@@ -76,9 +75,10 @@ impl crate::UnityEngine::ProBuilder::Clipping {
         x1: f32,
         y1: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Rect, f32, f32, f32, f32),
@@ -93,9 +93,8 @@ impl crate::UnityEngine::ProBuilder::Clipping {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (rect, x0, y0, x1, y1))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (rect, x0, y0, x1, y1))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -109,8 +108,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Clipp
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping+OutCode")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum Clipping_OutCode {
     #[default]
     Bottom = 4i32,
@@ -120,8 +119,7 @@ pub enum Clipping_OutCode {
     Top = 8i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping+OutCode")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ProBuilder::Clipping_OutCode {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
@@ -140,18 +138,14 @@ for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping+OutCode")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ProBuilder::Clipping_OutCode {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -161,8 +155,7 @@ for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping+OutCode")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ProBuilder::Clipping_OutCode {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -175,23 +168,19 @@ for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping+OutCode")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ProBuilder::Clipping_OutCode {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping+OutCode")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::ProBuilder::Clipping_OutCode {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

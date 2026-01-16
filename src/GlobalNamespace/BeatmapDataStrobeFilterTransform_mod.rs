@@ -6,13 +6,15 @@ pub struct BeatmapDataStrobeFilterTransform {
 }
 #[cfg(feature = "cordl_class_BeatmapDataStrobeFilterTransform")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
+    for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapDataStrobeFilterTransform";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,20 +43,20 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataStrobeFilterTrans
 impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
     pub const kMaxSecondsToConsiderStrobe: f32 = 0.1f32;
     #[cfg(feature = "BeatmapDataStrobeFilterTransform+StrobeStreakData")]
-    pub type StrobeStreakData = crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData;
+    pub type StrobeStreakData =
+        crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData;
     pub fn CreateTransformedData(
-        beatmapData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IReadonlyBeatmapData,
-        >,
+        beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
         environmentIntensityReductionOptions: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentIntensityReductionOptions,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -78,23 +80,19 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IReadonlyBeatmapData,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData> = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (beatmapData, environmentIntensityReductionOptions),
-                )?
+                .invoke_unchecked((), (beatmapData, environmentIntensityReductionOptions))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetFlashAndFadeToBlackEventDataValue(
         lightColorType: crate::GlobalNamespace::EnvironmentColorType,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::EnvironmentColorType),
@@ -109,17 +107,16 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (lightColorType))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (lightColorType))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOnEventDataValue(
         lightColorType: crate::GlobalNamespace::EnvironmentColorType,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::EnvironmentColorType),
@@ -134,15 +131,14 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (lightColorType))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (lightColorType))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataStrobeFilterTransform")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
+    for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -161,20 +157,21 @@ pub struct BeatmapDataStrobeFilterTransform_StrobeStreakData {
     pub lastSwitchTime: f32,
     pub lastColorType: crate::GlobalNamespace::EnvironmentColorType,
     pub lastIsOn: bool,
-    pub originalBasicBeatmapEventData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BasicBeatmapEventData,
-    >,
+    pub originalBasicBeatmapEventData:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BasicBeatmapEventData>,
     pub _foundFirstColoredEventData: bool,
 }
 #[cfg(feature = "cordl_class_BeatmapDataStrobeFilterTransform+StrobeStreakData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
+    for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapDataStrobeFilterTransform/StrobeStreakData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -187,8 +184,7 @@ for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
     }
 }
 #[cfg(feature = "BeatmapDataStrobeFilterTransform+StrobeStreakData")]
-impl std::ops::Deref
-for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -196,7 +192,8 @@ for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
 }
 #[cfg(feature = "BeatmapDataStrobeFilterTransform+StrobeStreakData")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
+    for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -209,9 +206,10 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
             crate::GlobalNamespace::BasicBeatmapEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -228,14 +226,13 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (basicBeatmapEventData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (basicBeatmapEventData))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -246,9 +243,10 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
             crate::GlobalNamespace::BasicBeatmapEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -265,36 +263,35 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (startBasicBeatmapEventData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (startBasicBeatmapEventData))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataStrobeFilterTransform+StrobeStreakData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
+    for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,22 +3,20 @@
 #[derive(Debug)]
 pub struct RectangularVertexClipper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_WorldCorners: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-    >,
-    pub m_CanvasCorners: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-    >,
+    pub m_WorldCorners:
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>>,
+    pub m_CanvasCorners:
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+RectangularVertexClipper")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UI::RectangularVertexClipper {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::RectangularVertexClipper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
     const CLASS_NAME: &'static str = "RectangularVertexClipper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -50,63 +48,58 @@ impl crate::UnityEngine::UI::RectangularVertexClipper {
         t: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         c: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
-                        ),
-                        crate::UnityEngine::Rect,
-                        2usize,
-                    >("GetCanvasRect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+                    ), crate::UnityEngine::Rect, 2usize>("GetCanvasRect")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCanvasRect", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCanvasRect",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rect = unsafe {
-            cordl_method_info.invoke_unchecked(self, (t, c))?
-        };
+        let __cordl_ret: crate::UnityEngine::Rect =
+            unsafe { cordl_method_info.invoke_unchecked(self, (t, c))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+RectangularVertexClipper")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UI::RectangularVertexClipper {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::RectangularVertexClipper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

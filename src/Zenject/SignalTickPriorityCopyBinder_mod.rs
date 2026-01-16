@@ -3,19 +3,18 @@
 #[derive(Debug)]
 pub struct SignalTickPriorityCopyBinder {
     __cordl_parent: crate::Zenject::SignalCopyBinder,
-    pub _SignalBindInfo_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::Zenject::SignalDeclarationBindInfo,
-    >,
+    pub _SignalBindInfo_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
 }
 #[cfg(feature = "cordl_class_Zenject+SignalTickPriorityCopyBinder")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Zenject::SignalTickPriorityCopyBinder {
+unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalTickPriorityCopyBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject";
     const CLASS_NAME: &'static str = "SignalTickPriorityCopyBinder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,12 +42,10 @@ impl std::ops::DerefMut for crate::Zenject::SignalTickPriorityCopyBinder {
 #[cfg(feature = "Zenject+SignalTickPriorityCopyBinder")]
 impl crate::Zenject::SignalTickPriorityCopyBinder {
     pub fn New(
-        signalBindInfo: quest_hook::libil2cpp::Gc<
-            crate::Zenject::SignalDeclarationBindInfo,
-        >,
+        signalBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (signalBindInfo))?;
         Ok(__cordl_object.into())
@@ -56,12 +53,12 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
     pub fn WithTickPriority(
         &mut self,
         priority: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -76,20 +73,18 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (priority))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (priority))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        signalBindInfo: quest_hook::libil2cpp::Gc<
-            crate::Zenject::SignalDeclarationBindInfo,
-        >,
+        signalBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -106,9 +101,8 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (signalBindInfo))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (signalBindInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_SignalBindInfo(
@@ -116,9 +110,10 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -135,18 +130,18 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::SignalDeclarationBindInfo,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_SignalBindInfo(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -163,9 +158,8 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }

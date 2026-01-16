@@ -3,14 +3,10 @@
 #[derive(Debug)]
 pub struct MockedEntitlements {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub logger: quest_hook::libil2cpp::Gc<
-        crate::OculusStudios::Platform::Core::IPlatformLogger,
-    >,
+    pub logger: quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IPlatformLogger>,
     pub productDefinitions: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::OculusStudios::Platform::Core::IProductDefinition,
-            >,
+            quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IProductDefinition>,
         >,
     >,
     pub productInstances: quest_hook::libil2cpp::Gc<
@@ -21,13 +17,15 @@ pub struct MockedEntitlements {
 }
 #[cfg(feature = "cordl_class_OculusStudios+Platform+Core+MockedEntitlements")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::OculusStudios::Platform::Core::MockedEntitlements {
+    for crate::OculusStudios::Platform::Core::MockedEntitlements
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OculusStudios.Platform.Core";
     const CLASS_NAME: &'static str = "MockedEntitlements";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -61,38 +59,34 @@ impl crate::OculusStudios::Platform::Core::MockedEntitlements {
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IReadOnlyList_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::OculusStudios::Platform::Core::Product,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::Product>,
                     >,
                 >,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IReadOnlyList_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::OculusStudios::Platform::Core::Product,
-                                        >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::OculusStudios::Platform::Core::Product,
                                     >,
                                 >,
                             >,
                         >,
-                        0usize,
-                    >("GetAllProductsAsync")
+                    >, 0usize>("GetAllProductsAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetAllProductsAsync", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetAllProductsAsync",
+                            0usize
                         )
                     })
             });
@@ -100,9 +94,7 @@ impl crate::OculusStudios::Platform::Core::MockedEntitlements {
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IReadOnlyList_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::OculusStudios::Platform::Core::Product,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::Product>,
                     >,
                 >,
             >,
@@ -114,8 +106,8 @@ impl crate::OculusStudios::Platform::Core::MockedEntitlements {
             crate::OculusStudios::Platform::Core::PlatformInitParams,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (initParams))?;
         Ok(__cordl_object.into())
@@ -124,38 +116,35 @@ impl crate::OculusStudios::Platform::Core::MockedEntitlements {
         &mut self,
         productDefinitions: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::OculusStudios::Platform::Core::IProductDefinition,
-                >,
+                quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IProductDefinition>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::OculusStudios::Platform::Core::IProductDefinition,
-                                >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::OculusStudios::Platform::Core::IProductDefinition,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("RegisterNewProducts")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "RegisterNewProducts"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterNewProducts", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RegisterNewProducts",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (productDefinitions))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (productDefinitions))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -164,34 +153,32 @@ impl crate::OculusStudios::Platform::Core::MockedEntitlements {
             crate::OculusStudios::Platform::Core::PlatformInitParams,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::OculusStudios::Platform::Core::PlatformInitParams,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::OculusStudios::Platform::Core::PlatformInitParams,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (initParams))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (initParams))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_OculusStudios+Platform+Core+MockedEntitlements")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::OculusStudios::Platform::Core::MockedEntitlements {
+    for crate::OculusStudios::Platform::Core::MockedEntitlements
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -201,17 +188,17 @@ for crate::OculusStudios::Platform::Core::MockedEntitlements {
 }
 #[cfg(feature = "OculusStudios+Platform+Core+MockedEntitlements")]
 impl AsRef<crate::OculusStudios::Platform::Core::IPlatformEntitlements>
-for crate::OculusStudios::Platform::Core::MockedEntitlements {
+    for crate::OculusStudios::Platform::Core::MockedEntitlements
+{
     fn as_ref(&self) -> &crate::OculusStudios::Platform::Core::IPlatformEntitlements {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusStudios+Platform+Core+MockedEntitlements")]
 impl AsMut<crate::OculusStudios::Platform::Core::IPlatformEntitlements>
-for crate::OculusStudios::Platform::Core::MockedEntitlements {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::OculusStudios::Platform::Core::IPlatformEntitlements {
+    for crate::OculusStudios::Platform::Core::MockedEntitlements
+{
+    fn as_mut(&mut self) -> &mut crate::OculusStudios::Platform::Core::IPlatformEntitlements {
         unsafe { std::mem::transmute(self) }
     }
 }

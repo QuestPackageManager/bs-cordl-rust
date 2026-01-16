@@ -3,9 +3,8 @@
 #[derive(Debug)]
 pub struct Socket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cachedTaskEventArgs: quest_hook::libil2cpp::Gc<
-        crate::System::Net::Sockets::Socket_CachedEventArgs,
-    >,
+    pub _cachedTaskEventArgs:
+        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket_CachedEventArgs>,
     pub is_closed: bool,
     pub is_listening: bool,
     pub useOverlappedIO: bool,
@@ -13,9 +12,7 @@ pub struct Socket {
     pub addressFamily: crate::System::Net::Sockets::AddressFamily,
     pub socketType: crate::System::Net::Sockets::SocketType,
     pub protocolType: crate::System::Net::Sockets::ProtocolType,
-    pub m_Handle: quest_hook::libil2cpp::Gc<
-        crate::System::Net::Sockets::SafeSocketHandle,
-    >,
+    pub m_Handle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
     pub seed_endpoint: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
     pub ReadSem: quest_hook::libil2cpp::Gc<crate::System::Threading::SemaphoreSlim>,
     pub WriteSem: quest_hook::libil2cpp::Gc<crate::System::Threading::SemaphoreSlim>,
@@ -33,7 +30,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::Socket 
     const NAMESPACE: &'static str = "System.Net.Sockets";
     const CLASS_NAME: &'static str = "Socket";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -64,24 +62,26 @@ impl crate::System::Net::Sockets::Socket {
     pub const SOCKET_CLOSED_CODE: i32 = 10004i32;
     pub const TIMEOUT_EXCEPTION_MSG: &'static str = "A connection attempt failed because the connected party did not properly respondafter a period of time, or established connection failed because connected host has failed to respond";
     #[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
-    pub type AwaitableSocketAsyncEventArgs = crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs;
+    pub type AwaitableSocketAsyncEventArgs =
+        crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs;
     #[cfg(feature = "System+Net+Sockets+Socket+CachedEventArgs")]
     pub type CachedEventArgs = crate::System::Net::Sockets::Socket_CachedEventArgs;
     #[cfg(feature = "System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
-    pub type Int32TaskSocketAsyncEventArgs = crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs;
+    pub type Int32TaskSocketAsyncEventArgs =
+        crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs;
     #[cfg(feature = "System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
-    pub type TaskSocketAsyncEventArgs_1<TResult: quest_hook::libil2cpp::Type> = crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<
-        TResult,
-    >;
+    pub type TaskSocketAsyncEventArgs_1<TResult: quest_hook::libil2cpp::Type> =
+        crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult>;
     #[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
     pub type WSABUF = crate::System::Net::Sockets::Socket_WSABUF;
     pub fn AcceptAsync(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncEventArgs>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -98,19 +98,17 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (e))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (e))? };
         Ok(__cordl_ret.into())
     }
     pub fn Accept_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -125,18 +123,18 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::Socket,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Accept_Socket1(
         &mut self,
         acceptSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>),
@@ -151,9 +149,8 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (acceptSocket))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (acceptSocket))? };
         Ok(__cordl_ret.into())
     }
     pub fn Accept_icall(
@@ -161,44 +158,40 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
+                    .find_static_method::<(
                         crate::System::IntPtr,
-                        3usize,
-                    >("Accept_icall")
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), crate::System::IntPtr, 3usize>("Accept_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Accept_icall", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Accept_icall",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::IntPtr = unsafe {
-            cordl_method_info.invoke_unchecked((), (sock, error, blocking))?
-        };
+        let __cordl_ret: crate::System::IntPtr =
+            unsafe { cordl_method_info.invoke_unchecked((), (sock, error, blocking))? };
         Ok(__cordl_ret.into())
     }
     pub fn Accept_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -221,20 +214,18 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (safeHandle, error, blocking))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle> =
+            unsafe { cordl_method_info.invoke_unchecked((), (safeHandle, error, blocking))? };
         Ok(__cordl_ret.into())
     }
     pub fn Available_icall(
         socket: crate::System::IntPtr,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, quest_hook::libil2cpp::ByRefMut<i32>),
@@ -249,76 +240,62 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (socket, error))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (socket, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn Available_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        i32,
-                        2usize,
-                    >("Available_internal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), i32, 2usize>("Available_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Available_internal", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Available_internal",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (safeHandle, error))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (safeHandle, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn BeginAccept(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        2usize,
-                    >("BeginAccept")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 2usize>(
+                        "BeginAccept",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginAccept", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginAccept",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (callback, state))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (callback, state))? };
         Ok(__cordl_ret.into())
     }
     pub fn BeginConnect_EndPoint_AsyncCallback_Il2CppObject2(
@@ -326,35 +303,30 @@ impl crate::System::Net::Sockets::Socket {
         remoteEP: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        3usize,
-                    >("BeginConnect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 3usize>(
+                        "BeginConnect",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginConnect", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginConnect",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (remoteEP, callback, state))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (remoteEP, callback, state))? };
         Ok(__cordl_ret.into())
     }
     pub fn BeginConnect_IPAddress_i32_AsyncCallback_Il2CppObject0(
@@ -363,36 +335,31 @@ impl crate::System::Net::Sockets::Socket {
         port: i32,
         requestCallback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        4usize,
-                    >("BeginConnect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 4usize>(
+                        "BeginConnect",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginConnect", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginConnect",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (address, port, requestCallback, state))?
+            cordl_method_info.invoke_unchecked(self, (address, port, requestCallback, state))?
         };
         Ok(__cordl_ret.into())
     }
@@ -402,48 +369,40 @@ impl crate::System::Net::Sockets::Socket {
         port: i32,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        4usize,
-                    >("BeginConnect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 4usize>(
+                        "BeginConnect",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginConnect", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginConnect",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (host, port, callback, state))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (host, port, callback, state))? };
         Ok(__cordl_ret.into())
     }
     pub fn BeginMConnect(
-        sockares: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SocketAsyncResult,
-        >,
+        sockares: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -460,9 +419,7 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (sockares))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (sockares))? };
         Ok(__cordl_ret.into())
     }
     pub fn BeginReceiveFrom(
@@ -476,46 +433,47 @@ impl crate::System::Net::Sockets::Socket {
         >,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        7usize,
-                    >("BeginReceiveFrom")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 7usize>(
+                        "BeginReceiveFrom",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginReceiveFrom", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginReceiveFrom",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (buffer, offset, _cordl_size, socketFlags, remoteEP, callback, state),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    buffer,
+                    offset,
+                    _cordl_size,
+                    socketFlags,
+                    remoteEP,
+                    callback,
+                    state,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -527,43 +485,36 @@ impl crate::System::Net::Sockets::Socket {
         socketFlags: crate::System::Net::Sockets::SocketFlags,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        6usize,
-                    >("BeginReceive")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 6usize>(
+                        "BeginReceive",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginReceive", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginReceive",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (buffer, offset, _cordl_size, socketFlags, callback, state),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (buffer, offset, _cordl_size, socketFlags, callback, state),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -573,70 +524,58 @@ impl crate::System::Net::Sockets::Socket {
         offset: i32,
         _cordl_size: i32,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
-        errorCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Net::Sockets::SocketError,
-        >,
+        errorCode: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Net::Sockets::SocketError,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        7usize,
-                    >("BeginReceive")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 7usize>(
+                        "BeginReceive",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginReceive", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginReceive",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        buffer,
-                        offset,
-                        _cordl_size,
-                        socketFlags,
-                        errorCode,
-                        callback,
-                        state,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    buffer,
+                    offset,
+                    _cordl_size,
+                    socketFlags,
+                    errorCode,
+                    callback,
+                    state,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn BeginSConnect(
-        sockares: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SocketAsyncResult,
-        >,
+        sockares: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -653,42 +592,33 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (sockares))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (sockares))? };
         Ok(__cordl_ret.into())
     }
     pub fn BeginSendCallback(
-        sockares: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SocketAsyncResult,
-        >,
+        sockares: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncResult>,
         sent_so_far: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SocketAsyncResult,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("BeginSendCallback")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncResult>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 2usize>("BeginSendCallback")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginSendCallback", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginSendCallback",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (sockares, sent_so_far))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (sockares, sent_so_far))? };
         Ok(__cordl_ret.into())
     }
     pub fn BeginSendTo(
@@ -700,78 +630,74 @@ impl crate::System::Net::Sockets::Socket {
         remoteEP: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        7usize,
-                    >("BeginSendTo")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 7usize>(
+                        "BeginSendTo",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginSendTo", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginSendTo",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (buffer, offset, _cordl_size, socketFlags, remoteEP, callback, state),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    buffer,
+                    offset,
+                    _cordl_size,
+                    socketFlags,
+                    remoteEP,
+                    callback,
+                    state,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn BeginSendToCallback(
-        sockares: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SocketAsyncResult,
-        >,
+        sockares: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncResult>,
         sent_so_far: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SocketAsyncResult,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("BeginSendToCallback")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncResult>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "BeginSendToCallback"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginSendToCallback", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginSendToCallback",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (sockares, sent_so_far))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (sockares, sent_so_far))? };
         Ok(__cordl_ret.into())
     }
     pub fn BeginSend_AsyncCallback_Il2CppObject0(
@@ -782,43 +708,36 @@ impl crate::System::Net::Sockets::Socket {
         socketFlags: crate::System::Net::Sockets::SocketFlags,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        6usize,
-                    >("BeginSend")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 6usize>(
+                        "BeginSend"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginSend", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginSend",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (buffer, offset, _cordl_size, socketFlags, callback, state),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (buffer, offset, _cordl_size, socketFlags, callback, state),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -828,59 +747,48 @@ impl crate::System::Net::Sockets::Socket {
         offset: i32,
         _cordl_size: i32,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
-        errorCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Net::Sockets::SocketError,
-        >,
+        errorCode: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Net::Sockets::SocketError,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        7usize,
-                    >("BeginSend")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 7usize>(
+                        "BeginSend"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginSend", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginSend",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        buffer,
-                        offset,
-                        _cordl_size,
-                        socketFlags,
-                        errorCode,
-                        callback,
-                        state,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    buffer,
+                    offset,
+                    _cordl_size,
+                    socketFlags,
+                    errorCode,
+                    callback,
+                    state,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -888,9 +796,10 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         localEP: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>),
@@ -905,9 +814,8 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (localEP))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (localEP))? };
         Ok(__cordl_ret.into())
     }
     pub fn Bind_icall(
@@ -915,65 +823,55 @@ impl crate::System::Net::Sockets::Socket {
         sa: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Bind_icall")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Bind_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Bind_icall", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Bind_icall",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (sock, sa, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (sock, sa, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn Bind_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         sa: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Bind_internal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Bind_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Bind_internal", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Bind_internal",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (safeHandle, sa, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (safeHandle, sa, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn Blocking_icall(
@@ -981,143 +879,132 @@ impl crate::System::Net::Sockets::Socket {
         block: bool,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            bool,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Blocking_icall")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        bool,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Blocking_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Blocking_icall", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Blocking_icall",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (socket, block, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (socket, block, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn Blocking_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         block: bool,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Blocking_internal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        bool,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Blocking_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Blocking_internal", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Blocking_internal",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (safeHandle, block, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (safeHandle, block, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn CanTryAddressFamily(
         &mut self,
         family: crate::System::Net::Sockets::AddressFamily,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::System::Net::Sockets::AddressFamily),
-                        bool,
-                        1usize,
-                    >("CanTryAddressFamily")
+                    .find_method::<(crate::System::Net::Sockets::AddressFamily), bool, 1usize>(
+                        "CanTryAddressFamily",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CanTryAddressFamily", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CanTryAddressFamily",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (family))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (family))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Close_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Close_0(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Close",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Close",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Close_i32_1(
         &mut self,
         timeout: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Close")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Close",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Close",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (timeout))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (timeout))? };
         Ok(__cordl_ret.into())
     }
     pub fn Close_icall(
         socket: crate::System::IntPtr,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, quest_hook::libil2cpp::ByRefMut<i32>),
@@ -1132,9 +1019,8 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (socket, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (socket, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompleteAccept(
@@ -1145,37 +1031,30 @@ impl crate::System::Net::Sockets::Socket {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::Socket,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Net::Sockets::Socket,
-                                    >,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CompleteAccept")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("CompleteAccept")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompleteAccept", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompleteAccept",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (s, saea))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (s, saea))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompleteSendReceive(
@@ -1185,43 +1064,41 @@ impl crate::System::Net::Sockets::Socket {
         >,
         isReceive: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::Socket,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CompleteSendReceive")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs,
+                        >,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "CompleteSendReceive"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompleteSendReceive", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompleteSendReceive",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (s, saea, isReceive))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (s, saea, isReceive))? };
         Ok(__cordl_ret.into())
     }
     pub fn Connect_EndPoint1(
         &mut self,
         remoteEP: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>),
@@ -1236,9 +1113,8 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (remoteEP))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (remoteEP))? };
         Ok(__cordl_ret.into())
     }
     pub fn Connect_IPAddress_i32_0(
@@ -1246,26 +1122,26 @@ impl crate::System::Net::Sockets::Socket {
         address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
         port: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>, i32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Connect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Connect")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Connect",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Connect",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (address, port))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (address, port))? };
         Ok(__cordl_ret.into())
     }
     pub fn Connect_icall(
@@ -1274,94 +1150,81 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("Connect_icall")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 4usize>("Connect_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Connect_icall", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Connect_icall",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (sock, sa, error, blocking))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (sock, sa, error, blocking))? };
         Ok(__cordl_ret.into())
     }
     pub fn Connect_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         sa: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("Connect_internal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 4usize>("Connect_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Connect_internal", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Connect_internal",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (safeHandle, sa, error, blocking))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (safeHandle, sa, error, blocking))? };
         Ok(__cordl_ret.into())
     }
     pub fn Disconnect(
         &mut self,
         reuseSocket: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Disconnect")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Disconnect")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Disconnect", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Disconnect",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (reuseSocket))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reuseSocket))? };
         Ok(__cordl_ret.into())
     }
     pub fn Disconnect_icall(
@@ -1369,112 +1232,100 @@ impl crate::System::Net::Sockets::Socket {
         reuse: bool,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            bool,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Disconnect_icall")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        bool,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Disconnect_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Disconnect_icall", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Disconnect_icall",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (sock, reuse, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (sock, reuse, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn Disconnect_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         reuse: bool,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Disconnect_internal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        bool,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "Disconnect_internal"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Disconnect_internal", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Disconnect_internal",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (safeHandle, reuse, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (safeHandle, reuse, error))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose_0(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
         disposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Dispose")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (disposing))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (disposing))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndAccept_ByRefMut_ByRefMut_IAsyncResult1(
@@ -1484,51 +1335,45 @@ impl crate::System::Net::Sockets::Socket {
         >,
         bytesTransferred: quest_hook::libil2cpp::ByRefMut<i32>,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<u8>,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
-                        3usize,
-                    >("EndAccept")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>, 3usize>(
+                        "EndAccept",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EndAccept", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EndAccept",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::Socket,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (buffer, bytesTransferred, asyncResult))?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (buffer, bytesTransferred, asyncResult))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EndAccept_IAsyncResult0(
         &mut self,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
@@ -1543,18 +1388,18 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::Socket,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (asyncResult))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (asyncResult))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndConnect(
         &mut self,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
@@ -1569,18 +1414,18 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (asyncResult))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (asyncResult))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndDisconnect(
         &mut self,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
@@ -1595,9 +1440,8 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (asyncResult))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (asyncResult))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndReceiveFrom(
@@ -1607,112 +1451,94 @@ impl crate::System::Net::Sockets::Socket {
             quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("EndReceiveFrom")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
+                        >,
+                    ), i32, 2usize>("EndReceiveFrom")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EndReceiveFrom", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EndReceiveFrom",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (asyncResult, endPoint))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (asyncResult, endPoint))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndReceiveFrom_internal(
         &mut self,
-        sockares: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SocketAsyncResult,
-        >,
-        ares: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SocketAsyncEventArgs,
-        >,
+        sockares: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncResult>,
+        ares: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncEventArgs>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SocketAsyncResult,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SocketAsyncEventArgs,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("EndReceiveFrom_internal")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncResult>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Sockets::SocketAsyncEventArgs,
+                        >,
+                    ), i32, 2usize>("EndReceiveFrom_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EndReceiveFrom_internal", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EndReceiveFrom_internal",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (sockares, ares))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (sockares, ares))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndReceive_ByRefMut1(
         &mut self,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-        errorCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Net::Sockets::SocketError,
-        >,
+        errorCode: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Net::Sockets::SocketError,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("EndReceive")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
+                    ), i32, 2usize>("EndReceive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EndReceive", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EndReceive",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (asyncResult, errorCode))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (asyncResult, errorCode))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndReceive_IAsyncResult0(
         &mut self,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
@@ -1727,18 +1553,17 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (asyncResult))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (asyncResult))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndSendTo(
         &mut self,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
@@ -1753,52 +1578,44 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (asyncResult))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (asyncResult))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndSend_ByRefMut1(
         &mut self,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-        errorCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Net::Sockets::SocketError,
-        >,
+        errorCode: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Net::Sockets::SocketError,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("EndSend")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
+                    ), i32, 2usize>("EndSend")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "EndSend",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EndSend",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (asyncResult, errorCode))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (asyncResult, errorCode))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndSend_IAsyncResult0(
         &mut self,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
@@ -1813,41 +1630,37 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (asyncResult))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (asyncResult))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Finalize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Finalize(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Finalize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Finalize",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetException(
         error: crate::System::Net::Sockets::SocketError,
         wrapExceptionsInIOExceptions: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Exception>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Net::Sockets::SocketError, bool),
@@ -1863,8 +1676,7 @@ impl crate::System::Net::Sockets::Socket {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (error, wrapExceptionsInIOExceptions))?
+            cordl_method_info.invoke_unchecked((), (error, wrapExceptionsInIOExceptions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1872,34 +1684,30 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         optionLevel: crate::System::Net::Sockets::SocketOptionLevel,
         optionName: crate::System::Net::Sockets::SocketOptionName,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Net::Sockets::SocketOptionLevel,
-                            crate::System::Net::Sockets::SocketOptionName,
-                        ),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                        2usize,
-                    >("GetSocketOption")
+                    .find_method::<(
+                        crate::System::Net::Sockets::SocketOptionLevel,
+                        crate::System::Net::Sockets::SocketOptionName,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, 2usize>(
+                        "GetSocketOption",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSocketOption", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSocketOption",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (optionLevel, optionName))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (optionLevel, optionName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSocketOption_obj_icall(
@@ -1911,43 +1719,38 @@ impl crate::System::Net::Sockets::Socket {
         >,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            crate::System::Net::Sockets::SocketOptionLevel,
-                            crate::System::Net::Sockets::SocketOptionName,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("GetSocketOption_obj_icall")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        crate::System::Net::Sockets::SocketOptionLevel,
+                        crate::System::Net::Sockets::SocketOptionName,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "GetSocketOption_obj_icall"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSocketOption_obj_icall", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSocketOption_obj_icall",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (socket, level, name, obj_val, error))?
+            cordl_method_info.invoke_unchecked((), (socket, level, name, obj_val, error))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetSocketOption_obj_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         level: crate::System::Net::Sockets::SocketOptionLevel,
         name: crate::System::Net::Sockets::SocketOptionName,
         obj_val: quest_hook::libil2cpp::ByRefMut<
@@ -1955,38 +1758,33 @@ impl crate::System::Net::Sockets::Socket {
         >,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            crate::System::Net::Sockets::SocketOptionLevel,
-                            crate::System::Net::Sockets::SocketOptionName,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("GetSocketOption_obj_internal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        crate::System::Net::Sockets::SocketOptionLevel,
+                        crate::System::Net::Sockets::SocketOptionName,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "GetSocketOption_obj_internal"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSocketOption_obj_internal", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSocketOption_obj_internal",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (safeHandle, level, name, obj_val, error))?
+            cordl_method_info.invoke_unchecked((), (safeHandle, level, name, obj_val, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1996,28 +1794,22 @@ impl crate::System::Net::Sockets::Socket {
         optionInValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         optionOutValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Net::Sockets::IOControlCode,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
-                        i32,
-                        3usize,
-                    >("IOControl")
+                    .find_method::<(
+                        crate::System::Net::Sockets::IOControlCode,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    ), i32, 3usize>("IOControl")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IOControl", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IOControl",
+                            3usize
                         )
                     })
             });
@@ -2033,28 +1825,22 @@ impl crate::System::Net::Sockets::Socket {
         optionInValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         optionOutValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
+                    .find_method::<(
                         i32,
-                        3usize,
-                    >("IOControl")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    ), i32, 3usize>("IOControl")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IOControl", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IOControl",
+                            3usize
                         )
                     })
             });
@@ -2071,74 +1857,57 @@ impl crate::System::Net::Sockets::Socket {
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
+                    .find_static_method::<(
+                        crate::System::IntPtr,
                         i32,
-                        5usize,
-                    >("IOControl_icall")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), i32, 5usize>("IOControl_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IOControl_icall", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IOControl_icall",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (sock, ioctl_code, input, output, error))?
+            cordl_method_info.invoke_unchecked((), (sock, ioctl_code, input, output, error))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IOControl_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         ioctl_code: i32,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
                         i32,
-                        5usize,
-                    >("IOControl_internal")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), i32, 5usize>("IOControl_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IOControl_internal", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IOControl_internal",
+                            5usize
                         )
                     })
             });
@@ -2155,69 +1924,64 @@ impl crate::System::Net::Sockets::Socket {
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         operation: crate::System::Net::Sockets::SocketOperation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SocketAsyncEventArgs,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            crate::System::Net::Sockets::SocketOperation,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("InitSocketAsyncEventArgs")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Sockets::SocketAsyncEventArgs,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        crate::System::Net::Sockets::SocketOperation,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "InitSocketAsyncEventArgs"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InitSocketAsyncEventArgs", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InitSocketAsyncEventArgs",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (e, callback, state, operation))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (e, callback, state, operation))? };
         Ok(__cordl_ret.into())
     }
-    pub fn InitializeSockets() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Void,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn InitializeSockets() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("InitializeSockets")
+                    .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "InitializeSockets",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InitializeSockets", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InitializeSockets",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalShutdown(
         &mut self,
         how: crate::System::Net::Sockets::SocketShutdown,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Net::Sockets::SocketShutdown),
@@ -2232,17 +1996,17 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (how))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (how))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsProtocolSupported(
         networkInterface: crate::System::Net::NetworkInformation::NetworkInterfaceComponent,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Net::NetworkInformation::NetworkInterfaceComponent),
@@ -2257,17 +2021,17 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (networkInterface))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (networkInterface))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsProtocolSupported_internal(
         networkInterface: crate::System::Net::NetworkInformation::NetworkInterfaceComponent,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Net::NetworkInformation::NetworkInterfaceComponent),
@@ -2282,57 +2046,56 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (networkInterface))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (networkInterface))? };
         Ok(__cordl_ret.into())
     }
     pub fn Linger(
         &mut self,
         handle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::System::IntPtr),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Linger")
+                    .find_method::<(crate::System::IntPtr), quest_hook::libil2cpp::Void, 1usize>(
+                        "Linger",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Linger",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Linger",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn Listen(
         &mut self,
         backlog: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Listen")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Listen",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Listen",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (backlog))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (backlog))? };
         Ok(__cordl_ret.into())
     }
     pub fn Listen_icall(
@@ -2340,135 +2103,117 @@ impl crate::System::Net::Sockets::Socket {
         backlog: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Listen_icall")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Listen_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Listen_icall", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Listen_icall",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (sock, backlog, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (sock, backlog, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn Listen_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         backlog: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Listen_internal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Listen_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Listen_internal", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Listen_internal",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (safeHandle, backlog, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (safeHandle, backlog, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocalEndPoint_icall(
         socket: crate::System::IntPtr,
         family: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-                        3usize,
-                    >("LocalEndPoint_icall")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>, 3usize>(
+                        "LocalEndPoint_icall",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LocalEndPoint_icall", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LocalEndPoint_icall",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> = unsafe {
-            cordl_method_info.invoke_unchecked((), (socket, family, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> =
+            unsafe { cordl_method_info.invoke_unchecked((), (socket, family, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocalEndPoint_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         family: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-                        3usize,
-                    >("LocalEndPoint_internal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>, 3usize>(
+                        "LocalEndPoint_internal",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LocalEndPoint_internal", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LocalEndPoint_internal",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> = unsafe {
-            cordl_method_info.invoke_unchecked((), (safeHandle, family, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> =
+            unsafe { cordl_method_info.invoke_unchecked((), (safeHandle, family, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_AddressFamily_SocketType_ProtocolType0(
@@ -2476,8 +2221,8 @@ impl crate::System::Net::Sockets::Socket {
         socketType: crate::System::Net::Sockets::SocketType,
         protocolType: crate::System::Net::Sockets::ProtocolType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (addressFamily, socketType, protocolType))?;
         Ok(__cordl_object.into())
@@ -2486,12 +2231,10 @@ impl crate::System::Net::Sockets::Socket {
         family: crate::System::Net::Sockets::AddressFamily,
         _cordl_type: crate::System::Net::Sockets::SocketType,
         proto: crate::System::Net::Sockets::ProtocolType,
-        safe_handle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safe_handle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (family, _cordl_type, proto, safe_handle))?;
         Ok(__cordl_object.into())
@@ -2501,26 +2244,25 @@ impl crate::System::Net::Sockets::Socket {
         microSeconds: i32,
         mode: crate::System::Net::Sockets::SelectMode,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, crate::System::Net::Sockets::SelectMode),
-                        bool,
-                        2usize,
-                    >("Poll")
+                    .find_method::<(i32, crate::System::Net::Sockets::SelectMode), bool, 2usize>(
+                        "Poll",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Poll",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Poll",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (microSeconds, mode))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (microSeconds, mode))? };
         Ok(__cordl_ret.into())
     }
     pub fn Poll_icall(
@@ -2529,68 +2271,58 @@ impl crate::System::Net::Sockets::Socket {
         timeout: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            crate::System::Net::Sockets::SelectMode,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        bool,
-                        4usize,
-                    >("Poll_icall")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        crate::System::Net::Sockets::SelectMode,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), bool, 4usize>("Poll_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Poll_icall", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Poll_icall",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (socket, mode, timeout, error))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (socket, mode, timeout, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn Poll_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         mode: crate::System::Net::Sockets::SelectMode,
         timeout: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            crate::System::Net::Sockets::SelectMode,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        bool,
-                        4usize,
-                    >("Poll_internal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        crate::System::Net::Sockets::SelectMode,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), bool, 4usize>("Poll_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Poll_internal", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Poll_internal",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (safeHandle, mode, timeout, error))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (safeHandle, mode, timeout, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn QueueIOSelectorJob(
@@ -2599,32 +2331,27 @@ impl crate::System::Net::Sockets::Socket {
         handle: crate::System::IntPtr,
         job: quest_hook::libil2cpp::Gc<crate::System::IOSelectorJob>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Threading::SemaphoreSlim,
-                            >,
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<crate::System::IOSelectorJob>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("QueueIOSelectorJob")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Threading::SemaphoreSlim>,
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<crate::System::IOSelectorJob>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("QueueIOSelectorJob")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "QueueIOSelectorJob", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "QueueIOSelectorJob",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (sem, handle, job))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (sem, handle, job))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReceiveAsyncApm(
@@ -2634,9 +2361,10 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -2656,9 +2384,8 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (buffer, socketFlags))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffer, socketFlags))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReceiveAsync_Memory_1_SocketFlags__cordl_bool_CancellationToken0(
@@ -2667,37 +2394,34 @@ impl crate::System::Net::Sockets::Socket {
         socketFlags: crate::System::Net::Sockets::SocketFlags,
         fromNetworkStream: bool,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Threading::Tasks::ValueTask_1<i32>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask_1<i32>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Memory_1<u8>,
-                            crate::System::Net::Sockets::SocketFlags,
-                            bool,
-                            crate::System::Threading::CancellationToken,
-                        ),
-                        crate::System::Threading::Tasks::ValueTask_1<i32>,
-                        4usize,
-                    >("ReceiveAsync")
+                    .find_method::<(
+                        crate::System::Memory_1<u8>,
+                        crate::System::Net::Sockets::SocketFlags,
+                        bool,
+                        crate::System::Threading::CancellationToken,
+                    ), crate::System::Threading::Tasks::ValueTask_1<i32>, 4usize>(
+                        "ReceiveAsync"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReceiveAsync", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReceiveAsync",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: crate::System::Threading::Tasks::ValueTask_1<i32> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (buffer, socketFlags, fromNetworkStream, cancellationToken),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (buffer, socketFlags, fromNetworkStream, cancellationToken),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2705,9 +2429,10 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncEventArgs>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -2724,9 +2449,7 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (e))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (e))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReceiveFrom_Il2CppArray0(
@@ -2739,39 +2462,32 @@ impl crate::System::Net::Sockets::Socket {
             quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
-                            >,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         i32,
-                        5usize,
-                    >("ReceiveFrom")
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
+                        >,
+                    ), i32, 5usize>("ReceiveFrom")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReceiveFrom", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReceiveFrom",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (buffer, offset, _cordl_size, socketFlags, remoteEP),
-                )?
+                .invoke_unchecked(self, (buffer, offset, _cordl_size, socketFlags, remoteEP))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2784,46 +2500,44 @@ impl crate::System::Net::Sockets::Socket {
         remoteEP: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
         >,
-        errorCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Net::Sockets::SocketError,
-        >,
+        errorCode: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Net::Sockets::SocketError,
-                            >,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         i32,
-                        6usize,
-                    >("ReceiveFrom")
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
+                    ), i32, 6usize>("ReceiveFrom")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReceiveFrom", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReceiveFrom",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (buffer, offset, _cordl_size, socketFlags, remoteEP, errorCode),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    buffer,
+                    offset,
+                    _cordl_size,
+                    socketFlags,
+                    remoteEP,
+                    errorCode,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2836,44 +2550,44 @@ impl crate::System::Net::Sockets::Socket {
         remoteEP: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
         >,
-        errorCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Net::Sockets::SocketError,
-        >,
+        errorCode: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Memory_1<u8>,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Net::Sockets::SocketError,
-                            >,
-                        ),
+                    .find_method::<(
+                        crate::System::Memory_1<u8>,
                         i32,
-                        6usize,
-                    >("ReceiveFrom")
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
+                    ), i32, 6usize>("ReceiveFrom")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReceiveFrom", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReceiveFrom",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (buffer, offset, _cordl_size, socketFlags, remoteEP, errorCode),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    buffer,
+                    offset,
+                    _cordl_size,
+                    socketFlags,
+                    remoteEP,
+                    errorCode,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2888,48 +2602,39 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         i32,
-                        7usize,
-                    >("ReceiveFrom_icall")
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), i32, 7usize>("ReceiveFrom_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReceiveFrom_icall", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReceiveFrom_icall",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (sock, buffer, count, flags, sockaddr, error, blocking),
-                )?
+                .invoke_unchecked((), (sock, buffer, count, flags, sockaddr, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ReceiveFrom_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
         flags: crate::System::Net::Sockets::SocketFlags,
@@ -2939,126 +2644,105 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         i32,
-                        7usize,
-                    >("ReceiveFrom_internal")
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), i32, 7usize>("ReceiveFrom_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReceiveFrom_internal", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReceiveFrom_internal",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (safeHandle, buffer, count, flags, sockaddr, error, blocking),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (safeHandle, buffer, count, flags, sockaddr, error, blocking),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Receive_IList_1_SocketFlags1(
         &mut self,
         buffers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::System::ArraySegment_1<u8>,
-            >,
+            crate::System::Collections::Generic::IList_1<crate::System::ArraySegment_1<u8>>,
         >,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::System::ArraySegment_1<u8>,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::System::ArraySegment_1<u8>,
                             >,
-                            crate::System::Net::Sockets::SocketFlags,
-                        ),
-                        i32,
-                        2usize,
-                    >("Receive")
+                        >,
+                        crate::System::Net::Sockets::SocketFlags,
+                    ), i32, 2usize>("Receive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Receive",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Receive",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (buffers, socketFlags))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffers, socketFlags))? };
         Ok(__cordl_ret.into())
     }
     pub fn Receive_IList_1_SocketFlags_ByRefMut4(
         &mut self,
         buffers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::System::ArraySegment_1<u8>,
-            >,
+            crate::System::Collections::Generic::IList_1<crate::System::ArraySegment_1<u8>>,
         >,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
-        errorCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Net::Sockets::SocketError,
-        >,
+        errorCode: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::System::ArraySegment_1<u8>,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::System::ArraySegment_1<u8>,
                             >,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Net::Sockets::SocketError,
-                            >,
-                        ),
-                        i32,
-                        3usize,
-                    >("Receive")
+                        >,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
+                    ), i32, 3usize>("Receive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Receive",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Receive",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (buffers, socketFlags, errorCode))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffers, socketFlags, errorCode))? };
         Ok(__cordl_ret.into())
     }
     pub fn Receive_Il2CppArray_i32_i32_SocketFlags0(
@@ -3068,33 +2752,28 @@ impl crate::System::Net::Sockets::Socket {
         _cordl_size: i32,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         i32,
-                        4usize,
-                    >("Receive")
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                    ), i32, 4usize>("Receive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Receive",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Receive",
                             4usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (buffer, offset, _cordl_size, socketFlags))?
+            cordl_method_info.invoke_unchecked(self, (buffer, offset, _cordl_size, socketFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3104,43 +2783,32 @@ impl crate::System::Net::Sockets::Socket {
         offset: i32,
         _cordl_size: i32,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
-        errorCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Net::Sockets::SocketError,
-        >,
+        errorCode: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Net::Sockets::SocketError,
-                            >,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         i32,
-                        5usize,
-                    >("Receive")
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
+                    ), i32, 5usize>("Receive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Receive",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Receive",
                             5usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (buffer, offset, _cordl_size, socketFlags, errorCode),
-                )?
+                .invoke_unchecked(self, (buffer, offset, _cordl_size, socketFlags, errorCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3150,41 +2818,32 @@ impl crate::System::Net::Sockets::Socket {
         offset: i32,
         _cordl_size: i32,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
-        errorCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Net::Sockets::SocketError,
-        >,
+        errorCode: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Memory_1<u8>,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Net::Sockets::SocketError,
-                            >,
-                        ),
+                    .find_method::<(
+                        crate::System::Memory_1<u8>,
                         i32,
-                        5usize,
-                    >("Receive")
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
+                    ), i32, 5usize>("Receive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Receive",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Receive",
                             5usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (buffer, offset, _cordl_size, socketFlags, errorCode),
-                )?
+                .invoke_unchecked(self, (buffer, offset, _cordl_size, socketFlags, errorCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3192,36 +2851,29 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         buffer: crate::System::Span_1<u8>,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
-        errorCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Net::Sockets::SocketError,
-        >,
+        errorCode: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Span_1<u8>,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Net::Sockets::SocketError,
-                            >,
-                        ),
-                        i32,
-                        3usize,
-                    >("Receive")
+                    .find_method::<(
+                        crate::System::Span_1<u8>,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
+                    ), i32, 3usize>("Receive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Receive",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Receive",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (buffer, socketFlags, errorCode))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffer, socketFlags, errorCode))? };
         Ok(__cordl_ret.into())
     }
     pub fn Receive_array_icall(
@@ -3232,29 +2884,25 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         i32,
-                        6usize,
-                    >("Receive_array_icall")
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), i32, 6usize>("Receive_array_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Receive_array_icall", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Receive_array_icall",
+                            6usize
                         )
                     })
             });
@@ -3272,141 +2920,114 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         i32,
-                        6usize,
-                    >("Receive_icall")
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), i32, 6usize>("Receive_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Receive_icall", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Receive_icall",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (sock, buffer, count, flags, error, blocking))?
+            cordl_method_info.invoke_unchecked((), (sock, buffer, count, flags, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Receive_internal_SafeSocketHandle_Il2CppObject_i32_SocketFlags_ByRefMut__cordl_bool0(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         bufarray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
         flags: crate::System::Net::Sockets::SocketFlags,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         i32,
-                        6usize,
-                    >("Receive_internal")
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), i32, 6usize>("Receive_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Receive_internal", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Receive_internal",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (safeHandle, bufarray, count, flags, error, blocking),
-                )?
+                .invoke_unchecked((), (safeHandle, bufarray, count, flags, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Receive_internal_SafeSocketHandle_Il2CppObject_i32_SocketFlags_ByRefMut__cordl_bool1(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
         flags: crate::System::Net::Sockets::SocketFlags,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         i32,
-                        6usize,
-                    >("Receive_internal")
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), i32, 6usize>("Receive_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Receive_internal", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Receive_internal",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (safeHandle, buffer, count, flags, error, blocking),
-                )?
+                .invoke_unchecked((), (safeHandle, buffer, count, flags, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RemapIPEndPoint(
         &mut self,
         input: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>),
@@ -3421,79 +3042,70 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (input))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoteEndPoint_icall(
         socket: crate::System::IntPtr,
         family: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-                        3usize,
-                    >("RemoteEndPoint_icall")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>, 3usize>(
+                        "RemoteEndPoint_icall",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RemoteEndPoint_icall", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RemoteEndPoint_icall",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> = unsafe {
-            cordl_method_info.invoke_unchecked((), (socket, family, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> =
+            unsafe { cordl_method_info.invoke_unchecked((), (socket, family, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoteEndPoint_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         family: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-                        3usize,
-                    >("RemoteEndPoint_internal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>, 3usize>(
+                        "RemoteEndPoint_internal",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RemoteEndPoint_internal", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RemoteEndPoint_internal",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> = unsafe {
-            cordl_method_info.invoke_unchecked((), (safeHandle, family, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> =
+            unsafe { cordl_method_info.invoke_unchecked((), (safeHandle, family, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReturnSocketAsyncEventArgs_Socket_Int32TaskSocketAsyncEventArgs__cordl_bool0(
@@ -3503,31 +3115,30 @@ impl crate::System::Net::Sockets::Socket {
         >,
         isReceive: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ReturnSocketAsyncEventArgs")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs,
+                        >,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "ReturnSocketAsyncEventArgs"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReturnSocketAsyncEventArgs", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReturnSocketAsyncEventArgs",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (saea, isReceive))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (saea, isReceive))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReturnSocketAsyncEventArgs_Socket_TaskSocketAsyncEventArgs_1_1(
@@ -3538,41 +3149,39 @@ impl crate::System::Net::Sockets::Socket {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Net::Sockets::Socket,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("ReturnSocketAsyncEventArgs")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<
+                            quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "ReturnSocketAsyncEventArgs"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReturnSocketAsyncEventArgs", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReturnSocketAsyncEventArgs",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (saea))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (saea))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendAsync(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncEventArgs>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -3589,9 +3198,7 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (e))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (e))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendAsyncApm(
@@ -3601,9 +3208,10 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -3623,9 +3231,8 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (buffer, socketFlags))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffer, socketFlags))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendAsyncForNetworkStream(
@@ -3634,30 +3241,29 @@ impl crate::System::Net::Sockets::Socket {
         socketFlags: crate::System::Net::Sockets::SocketFlags,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::ReadOnlyMemory_1<u8>,
-                            crate::System::Net::Sockets::SocketFlags,
-                            crate::System::Threading::CancellationToken,
-                        ),
-                        crate::System::Threading::Tasks::ValueTask,
-                        3usize,
-                    >("SendAsyncForNetworkStream")
+                    .find_method::<(
+                        crate::System::ReadOnlyMemory_1<u8>,
+                        crate::System::Net::Sockets::SocketFlags,
+                        crate::System::Threading::CancellationToken,
+                    ), crate::System::Threading::Tasks::ValueTask, 3usize>(
+                        "SendAsyncForNetworkStream",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendAsyncForNetworkStream", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendAsyncForNetworkStream",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: crate::System::Threading::Tasks::ValueTask = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (buffer, socketFlags, cancellationToken))?
+            cordl_method_info.invoke_unchecked(self, (buffer, socketFlags, cancellationToken))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3669,37 +3275,30 @@ impl crate::System::Net::Sockets::Socket {
         socketFlags: crate::System::Net::Sockets::SocketFlags,
         remoteEP: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         i32,
-                        5usize,
-                    >("SendTo")
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
+                    ), i32, 5usize>("SendTo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SendTo",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendTo",
                             5usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (buffer, offset, _cordl_size, socketFlags, remoteEP),
-                )?
+                .invoke_unchecked(self, (buffer, offset, _cordl_size, socketFlags, remoteEP))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3711,35 +3310,30 @@ impl crate::System::Net::Sockets::Socket {
         socketFlags: crate::System::Net::Sockets::SocketFlags,
         remoteEP: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Memory_1<u8>,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
-                        ),
+                    .find_method::<(
+                        crate::System::Memory_1<u8>,
                         i32,
-                        5usize,
-                    >("SendTo")
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
+                    ), i32, 5usize>("SendTo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SendTo",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendTo",
                             5usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (buffer, offset, _cordl_size, socketFlags, remoteEP),
-                )?
+                .invoke_unchecked(self, (buffer, offset, _cordl_size, socketFlags, remoteEP))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3752,30 +3346,26 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         i32,
-                        7usize,
-                    >("SendTo_icall")
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), i32, 7usize>("SendTo_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendTo_icall", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendTo_icall",
+                            7usize
                         )
                     })
             });
@@ -3786,9 +3376,7 @@ impl crate::System::Net::Sockets::Socket {
         Ok(__cordl_ret.into())
     }
     pub fn SendTo_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
         flags: crate::System::Net::Sockets::SocketFlags,
@@ -3796,124 +3384,101 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         i32,
-                        7usize,
-                    >("SendTo_internal")
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), i32, 7usize>("SendTo_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendTo_internal", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendTo_internal",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (safeHandle, buffer, count, flags, sa, error, blocking),
-                )?
+                .invoke_unchecked((), (safeHandle, buffer, count, flags, sa, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Send_IList_1_SocketFlags0(
         &mut self,
         buffers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::System::ArraySegment_1<u8>,
-            >,
+            crate::System::Collections::Generic::IList_1<crate::System::ArraySegment_1<u8>>,
         >,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::System::ArraySegment_1<u8>,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::System::ArraySegment_1<u8>,
                             >,
-                            crate::System::Net::Sockets::SocketFlags,
-                        ),
-                        i32,
-                        2usize,
-                    >("Send")
+                        >,
+                        crate::System::Net::Sockets::SocketFlags,
+                    ), i32, 2usize>("Send")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Send",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Send",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (buffers, socketFlags))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffers, socketFlags))? };
         Ok(__cordl_ret.into())
     }
     pub fn Send_IList_1_SocketFlags_ByRefMut4(
         &mut self,
         buffers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::System::ArraySegment_1<u8>,
-            >,
+            crate::System::Collections::Generic::IList_1<crate::System::ArraySegment_1<u8>>,
         >,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
-        errorCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Net::Sockets::SocketError,
-        >,
+        errorCode: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::System::ArraySegment_1<u8>,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::System::ArraySegment_1<u8>,
                             >,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Net::Sockets::SocketError,
-                            >,
-                        ),
-                        i32,
-                        3usize,
-                    >("Send")
+                        >,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
+                    ), i32, 3usize>("Send")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Send",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Send",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (buffers, socketFlags, errorCode))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffers, socketFlags, errorCode))? };
         Ok(__cordl_ret.into())
     }
     pub fn Send_Il2CppArray_i32_i32_SocketFlags1(
@@ -3923,33 +3488,28 @@ impl crate::System::Net::Sockets::Socket {
         _cordl_size: i32,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         i32,
-                        4usize,
-                    >("Send")
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                    ), i32, 4usize>("Send")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Send",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Send",
                             4usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (buffer, offset, _cordl_size, socketFlags))?
+            cordl_method_info.invoke_unchecked(self, (buffer, offset, _cordl_size, socketFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3959,43 +3519,32 @@ impl crate::System::Net::Sockets::Socket {
         offset: i32,
         _cordl_size: i32,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
-        errorCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Net::Sockets::SocketError,
-        >,
+        errorCode: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Net::Sockets::SocketError,
-                            >,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         i32,
-                        5usize,
-                    >("Send")
+                        i32,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
+                    ), i32, 5usize>("Send")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Send",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Send",
                             5usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (buffer, offset, _cordl_size, socketFlags, errorCode),
-                )?
+                .invoke_unchecked(self, (buffer, offset, _cordl_size, socketFlags, errorCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4003,36 +3552,29 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         buffer: crate::System::ReadOnlySpan_1<u8>,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
-        errorCode: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Net::Sockets::SocketError,
-        >,
+        errorCode: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::ReadOnlySpan_1<u8>,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Net::Sockets::SocketError,
-                            >,
-                        ),
-                        i32,
-                        3usize,
-                    >("Send")
+                    .find_method::<(
+                        crate::System::ReadOnlySpan_1<u8>,
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Net::Sockets::SocketError>,
+                    ), i32, 3usize>("Send")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Send",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Send",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (buffer, socketFlags, errorCode))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffer, socketFlags, errorCode))? };
         Ok(__cordl_ret.into())
     }
     pub fn Send_array_icall(
@@ -4043,29 +3585,25 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         i32,
-                        6usize,
-                    >("Send_array_icall")
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), i32, 6usize>("Send_array_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Send_array_icall", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Send_array_icall",
+                            6usize
                         )
                     })
             });
@@ -4083,129 +3621,102 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         i32,
-                        6usize,
-                    >("Send_icall")
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), i32, 6usize>("Send_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Send_icall", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Send_icall",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (sock, buffer, count, flags, error, blocking))?
+            cordl_method_info.invoke_unchecked((), (sock, buffer, count, flags, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Send_internal_SafeSocketHandle_Il2CppObject_i32_SocketFlags_ByRefMut__cordl_bool0(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         bufarray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
         flags: crate::System::Net::Sockets::SocketFlags,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         i32,
-                        6usize,
-                    >("Send_internal")
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), i32, 6usize>("Send_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Send_internal", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Send_internal",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (safeHandle, bufarray, count, flags, error, blocking),
-                )?
+                .invoke_unchecked((), (safeHandle, bufarray, count, flags, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Send_internal_SafeSocketHandle_Il2CppObject_i32_SocketFlags_ByRefMut__cordl_bool1(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
         flags: crate::System::Net::Sockets::SocketFlags,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            crate::System::Net::Sockets::SocketFlags,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         i32,
-                        6usize,
-                    >("Send_internal")
+                        crate::System::Net::Sockets::SocketFlags,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        bool,
+                    ), i32, 6usize>("Send_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Send_internal", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Send_internal",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (safeHandle, buffer, count, flags, error, blocking),
-                )?
+                .invoke_unchecked((), (safeHandle, buffer, count, flags, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4213,9 +3724,10 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         level: crate::System::Net::Sockets::IPProtectionLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Net::Sockets::IPProtectionLevel),
@@ -4230,9 +3742,8 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (level))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (level))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSocketOption__cordl_bool1(
@@ -4241,30 +3752,27 @@ impl crate::System::Net::Sockets::Socket {
         optionName: crate::System::Net::Sockets::SocketOptionName,
         optionValue: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Net::Sockets::SocketOptionLevel,
-                            crate::System::Net::Sockets::SocketOptionName,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("SetSocketOption")
+                    .find_method::<(
+                        crate::System::Net::Sockets::SocketOptionLevel,
+                        crate::System::Net::Sockets::SocketOptionName,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 3usize>("SetSocketOption")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetSocketOption", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetSocketOption",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (optionLevel, optionName, optionValue))?
+            cordl_method_info.invoke_unchecked(self, (optionLevel, optionName, optionValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4274,30 +3782,27 @@ impl crate::System::Net::Sockets::Socket {
         optionName: crate::System::Net::Sockets::SocketOptionName,
         optionValue: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Net::Sockets::SocketOptionLevel,
-                            crate::System::Net::Sockets::SocketOptionName,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("SetSocketOption")
+                    .find_method::<(
+                        crate::System::Net::Sockets::SocketOptionLevel,
+                        crate::System::Net::Sockets::SocketOptionName,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("SetSocketOption")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetSocketOption", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetSocketOption",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (optionLevel, optionName, optionValue))?
+            cordl_method_info.invoke_unchecked(self, (optionLevel, optionName, optionValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4308,25 +3813,23 @@ impl crate::System::Net::Sockets::Socket {
         optionValue: i32,
         silent: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Net::Sockets::SocketOptionLevel,
-                            crate::System::Net::Sockets::SocketOptionName,
-                            i32,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetSocketOption")
+                    .find_method::<(
+                        crate::System::Net::Sockets::SocketOptionLevel,
+                        crate::System::Net::Sockets::SocketOptionName,
+                        i32,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 4usize>("SetSocketOption")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetSocketOption", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetSocketOption",
+                            4usize
                         )
                     })
             });
@@ -4345,48 +3848,39 @@ impl crate::System::Net::Sockets::Socket {
         int_val: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            crate::System::Net::Sockets::SocketOptionLevel,
-                            crate::System::Net::Sockets::SocketOptionName,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("SetSocketOption_icall")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        crate::System::Net::Sockets::SocketOptionLevel,
+                        crate::System::Net::Sockets::SocketOptionName,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 7usize>(
+                        "SetSocketOption_icall"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetSocketOption_icall", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetSocketOption_icall",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (socket, level, name, obj_val, byte_val, int_val, error),
-                )?
+                .invoke_unchecked((), (socket, level, name, obj_val, byte_val, int_val, error))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetSocketOption_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         level: crate::System::Net::Sockets::SocketOptionLevel,
         name: crate::System::Net::Sockets::SocketOptionName,
         obj_val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -4394,43 +3888,36 @@ impl crate::System::Net::Sockets::Socket {
         int_val: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            crate::System::Net::Sockets::SocketOptionLevel,
-                            crate::System::Net::Sockets::SocketOptionName,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("SetSocketOption_internal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        crate::System::Net::Sockets::SocketOptionLevel,
+                        crate::System::Net::Sockets::SocketOptionName,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 7usize>(
+                        "SetSocketOption_internal"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetSocketOption_internal", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetSocketOption_internal",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (safeHandle, level, name, obj_val, byte_val, int_val, error),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (safeHandle, level, name, obj_val, byte_val, int_val, error),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -4438,9 +3925,10 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         how: crate::System::Net::Sockets::SocketShutdown,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Net::Sockets::SocketShutdown),
@@ -4455,9 +3943,8 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (how))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (how))? };
         Ok(__cordl_ret.into())
     }
     pub fn Shutdown_icall(
@@ -4465,101 +3952,85 @@ impl crate::System::Net::Sockets::Socket {
         how: crate::System::Net::Sockets::SocketShutdown,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            crate::System::Net::Sockets::SocketShutdown,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Shutdown_icall")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        crate::System::Net::Sockets::SocketShutdown,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Shutdown_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Shutdown_icall", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Shutdown_icall",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (socket, how, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (socket, how, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn Shutdown_internal(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safeHandle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
         how: crate::System::Net::Sockets::SocketShutdown,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                            crate::System::Net::Sockets::SocketShutdown,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Shutdown_internal")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                        crate::System::Net::Sockets::SocketShutdown,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Shutdown_internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Shutdown_internal", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Shutdown_internal",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (safeHandle, how, error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (safeHandle, how, error))? };
         Ok(__cordl_ret.into())
     }
-    pub fn SocketDefaults(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn SocketDefaults(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("SocketDefaults")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SocketDefaults")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SocketDefaults", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SocketDefaults",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SocketOperationToSocketAsyncOperation(
         &mut self,
         op: crate::System::Net::Sockets::SocketOperation,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Net::Sockets::SocketAsyncOperation,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Net::Sockets::SocketAsyncOperation> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Net::Sockets::SocketOperation),
@@ -4574,9 +4045,8 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Net::Sockets::SocketAsyncOperation = unsafe {
-            cordl_method_info.invoke_unchecked(self, (op))?
-        };
+        let __cordl_ret: crate::System::Net::Sockets::SocketAsyncOperation =
+            unsafe { cordl_method_info.invoke_unchecked(self, (op))? };
         Ok(__cordl_ret.into())
     }
     pub fn Socket_icall(
@@ -4585,40 +4055,38 @@ impl crate::System::Net::Sockets::Socket {
         proto: crate::System::Net::Sockets::ProtocolType,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::Net::Sockets::AddressFamily,
-                            crate::System::Net::Sockets::SocketType,
-                            crate::System::Net::Sockets::ProtocolType,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        crate::System::IntPtr,
-                        4usize,
-                    >("Socket_icall")
+                    .find_static_method::<(
+                        crate::System::Net::Sockets::AddressFamily,
+                        crate::System::Net::Sockets::SocketType,
+                        crate::System::Net::Sockets::ProtocolType,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), crate::System::IntPtr, 4usize>("Socket_icall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Socket_icall", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Socket_icall",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::IntPtr = unsafe {
-            cordl_method_info.invoke_unchecked((), (family, _cordl_type, proto, error))?
-        };
+        let __cordl_ret: crate::System::IntPtr =
+            unsafe { cordl_method_info.invoke_unchecked((), (family, _cordl_type, proto, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowIfBufferNull(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -4635,9 +4103,8 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (buffer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffer))? };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowIfBufferOutOfRange(
@@ -4646,78 +4113,73 @@ impl crate::System::Net::Sockets::Socket {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("ThrowIfBufferOutOfRange")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "ThrowIfBufferOutOfRange"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ThrowIfBufferOutOfRange", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ThrowIfBufferOutOfRange",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (buffer, offset, _cordl_size))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffer, offset, _cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowIfDisposedAndClosed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ThrowIfDisposedAndClosed")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "ThrowIfDisposedAndClosed",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ThrowIfDisposedAndClosed", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ThrowIfDisposedAndClosed",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn ThrowIfUdp(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ThrowIfUdp(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ThrowIfUdp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ThrowIfUdp", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ThrowIfUdp",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateEndIAsyncResult(
@@ -4728,9 +4190,10 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncResult>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -4755,11 +4218,8 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SocketAsyncResult,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (ares, methodName, argName))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncResult> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (ares, methodName, argName))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_AddressFamily_SocketType_ProtocolType0(
@@ -4768,30 +4228,27 @@ impl crate::System::Net::Sockets::Socket {
         socketType: crate::System::Net::Sockets::SocketType,
         protocolType: crate::System::Net::Sockets::ProtocolType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Net::Sockets::AddressFamily,
-                            crate::System::Net::Sockets::SocketType,
-                            crate::System::Net::Sockets::ProtocolType,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::System::Net::Sockets::AddressFamily,
+                        crate::System::Net::Sockets::SocketType,
+                        crate::System::Net::Sockets::ProtocolType,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (addressFamily, socketType, protocolType))?
+            cordl_method_info.invoke_unchecked(self, (addressFamily, socketType, protocolType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4800,46 +4257,40 @@ impl crate::System::Net::Sockets::Socket {
         family: crate::System::Net::Sockets::AddressFamily,
         _cordl_type: crate::System::Net::Sockets::SocketType,
         proto: crate::System::Net::Sockets::ProtocolType,
-        safe_handle: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SafeSocketHandle,
-        >,
+        safe_handle: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Net::Sockets::AddressFamily,
-                            crate::System::Net::Sockets::SocketType,
-                            crate::System::Net::Sockets::ProtocolType,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Sockets::SafeSocketHandle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::System::Net::Sockets::AddressFamily,
+                        crate::System::Net::Sockets::SocketType,
+                        crate::System::Net::Sockets::ProtocolType,
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (family, _cordl_type, proto, safe_handle))?
+            cordl_method_info.invoke_unchecked(self, (family, _cordl_type, proto, safe_handle))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn cancel_blocking_socket_operation(
         thread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>),
@@ -4854,47 +4305,47 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (thread))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (thread))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_AddressFamily(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::Sockets::AddressFamily> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::System::Net::Sockets::AddressFamily,
-                        0usize,
-                    >("get_AddressFamily")
+                    .find_method::<(), crate::System::Net::Sockets::AddressFamily, 0usize>(
+                        "get_AddressFamily",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_AddressFamily", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_AddressFamily",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Net::Sockets::AddressFamily = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Net::Sockets::AddressFamily =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Available(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Available")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Available", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Available",
+                            0usize
                         )
                     })
             });
@@ -4902,16 +4353,18 @@ impl crate::System::Net::Sockets::Socket {
         Ok(__cordl_ret.into())
     }
     pub fn get_Blocking(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Blocking")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Blocking", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Blocking",
+                            0usize
                         )
                     })
             });
@@ -4919,16 +4372,18 @@ impl crate::System::Net::Sockets::Socket {
         Ok(__cordl_ret.into())
     }
     pub fn get_CleanedUp(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_CleanedUp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_CleanedUp", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_CleanedUp",
+                            0usize
                         )
                     })
             });
@@ -4936,16 +4391,18 @@ impl crate::System::Net::Sockets::Socket {
         Ok(__cordl_ret.into())
     }
     pub fn get_Connected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Connected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Connected", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Connected",
+                            0usize
                         )
                     })
             });
@@ -4953,16 +4410,18 @@ impl crate::System::Net::Sockets::Socket {
         Ok(__cordl_ret.into())
     }
     pub fn get_DualMode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_DualMode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_DualMode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_DualMode",
+                            0usize
                         )
                     })
             });
@@ -4970,49 +4429,51 @@ impl crate::System::Net::Sockets::Socket {
         Ok(__cordl_ret.into())
     }
     pub fn get_FamilyHint() -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_FamilyHint")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_FamilyHint", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_FamilyHint",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_Handle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::System::IntPtr, 0usize>("get_Handle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Handle", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Handle",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::IntPtr = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::IntPtr =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_InternalSyncObject() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_InternalSyncObject(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -5027,22 +4488,23 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsBound(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsBound")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsBound", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsBound",
+                            0usize
                         )
                     })
             });
@@ -5050,16 +4512,18 @@ impl crate::System::Net::Sockets::Socket {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsDualMode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsDualMode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsDualMode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsDualMode",
+                            0usize
                         )
                     })
             });
@@ -5068,12 +4532,12 @@ impl crate::System::Net::Sockets::Socket {
     }
     pub fn get_LocalEndPoint(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -5088,22 +4552,23 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_OSSupportsIPv4() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_OSSupportsIPv4")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_OSSupportsIPv4", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_OSSupportsIPv4",
+                            0usize
                         )
                     })
             });
@@ -5111,16 +4576,18 @@ impl crate::System::Net::Sockets::Socket {
         Ok(__cordl_ret.into())
     }
     pub fn get_OSSupportsIPv6() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_OSSupportsIPv6")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_OSSupportsIPv6", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_OSSupportsIPv6",
+                            0usize
                         )
                     })
             });
@@ -5130,36 +4597,35 @@ impl crate::System::Net::Sockets::Socket {
     pub fn get_ProtocolType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::Sockets::ProtocolType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::System::Net::Sockets::ProtocolType,
-                        0usize,
-                    >("get_ProtocolType")
+                    .find_method::<(), crate::System::Net::Sockets::ProtocolType, 0usize>(
+                        "get_ProtocolType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ProtocolType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ProtocolType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Net::Sockets::ProtocolType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Net::Sockets::ProtocolType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_RemoteEndPoint(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -5174,46 +4640,46 @@ impl crate::System::Net::Sockets::Socket {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_SocketType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::Sockets::SocketType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::System::Net::Sockets::SocketType,
-                        0usize,
-                    >("get_SocketType")
+                    .find_method::<(), crate::System::Net::Sockets::SocketType, 0usize>(
+                        "get_SocketType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_SocketType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_SocketType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Net::Sockets::SocketType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Net::Sockets::SocketType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Ttl(&mut self) -> quest_hook::libil2cpp::Result<i16> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i16, 0usize>("get_Ttl")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_Ttl",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Ttl",
                             0usize
                         )
                     })
@@ -5225,282 +4691,259 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_Blocking")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_Blocking")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_Blocking", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Blocking",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_DontFragment(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_DontFragment")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_DontFragment")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_DontFragment", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_DontFragment",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_DualMode(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_DualMode")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_DualMode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_DualMode", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_DualMode",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_EnableBroadcast(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_EnableBroadcast")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_EnableBroadcast",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_EnableBroadcast", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_EnableBroadcast",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ExclusiveAddressUse(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_ExclusiveAddressUse")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_ExclusiveAddressUse",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_ExclusiveAddressUse", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_ExclusiveAddressUse",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_NoDelay(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_NoDelay")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_NoDelay")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_NoDelay", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_NoDelay",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ReceiveBufferSize(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_ReceiveBufferSize")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_ReceiveBufferSize",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_ReceiveBufferSize", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_ReceiveBufferSize",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ReceiveTimeout(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_ReceiveTimeout")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_ReceiveTimeout")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_ReceiveTimeout", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_ReceiveTimeout",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_SendBufferSize(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_SendBufferSize")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_SendBufferSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_SendBufferSize", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_SendBufferSize",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_SendTimeout(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_SendTimeout")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_SendTimeout")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_SendTimeout", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_SendTimeout",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Ttl(
         &mut self,
         value: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i16), quest_hook::libil2cpp::Void, 1usize>("set_Ttl")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_Ttl",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Ttl",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -5531,26 +4974,24 @@ impl AsMut<crate::System::IDisposable> for crate::System::Net::Sockets::Socket {
 pub struct Socket_AwaitableSocketAsyncEventArgs {
     __cordl_parent: crate::System::Net::Sockets::SocketAsyncEventArgs,
     pub _continuation: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>,
     >,
-    pub _executionContext: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::ExecutionContext,
-    >,
+    pub _executionContext: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
     pub _scheduler: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _token: i16,
     pub _WrapExceptionsInIOExceptions_k__BackingField: bool,
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
+    for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Sockets";
     const CLASS_NAME: &'static str = "Socket/AwaitableSocketAsyncEventArgs";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -5563,16 +5004,14 @@ for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     }
 }
 #[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
-impl std::ops::Deref
-for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
+impl std::ops::Deref for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     type Target = crate::System::Net::Sockets::SocketAsyncEventArgs;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
-impl std::ops::DerefMut
-for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
+impl std::ops::DerefMut for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -5582,12 +5021,11 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     pub fn CreateException(
         &mut self,
         error: crate::System::Net::Sockets::SocketError,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Exception>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Net::Sockets::SocketError),
@@ -5602,28 +5040,27 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (error))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetResult(&mut self, token: i16) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i16), i32, 1usize>("GetResult")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetResult", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetResult",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (token))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStatus(
@@ -5632,9 +5069,10 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i16),
@@ -5649,58 +5087,48 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus = unsafe {
-            cordl_method_info.invoke_unchecked(self, (token))?
-        };
+        let __cordl_ret: crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus =
+            unsafe { cordl_method_info.invoke_unchecked(self, (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeContinuation(
         &mut self,
         continuation: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>,
         >,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         forceAsync: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("InvokeContinuation")
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 3usize>("InvokeContinuation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InvokeContinuation", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InvokeContinuation",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (continuation, state, forceAsync))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (continuation, state, forceAsync))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -5708,59 +5136,49 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     pub fn OnCompleted_Action_1_Il2CppObject_i16_ValueTaskSourceOnCompletedFlags1(
         &mut self,
         continuation: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>,
         >,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         token: i16,
         flags: crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i16,
-                            crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("OnCompleted")
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i16,
+                        crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags,
+                    ), quest_hook::libil2cpp::Void, 4usize>("OnCompleted")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnCompleted", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnCompleted",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (continuation, state, token, flags))?
+            cordl_method_info.invoke_unchecked(self, (continuation, state, token, flags))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn OnCompleted_SocketAsyncEventArgs0(
         &mut self,
-        _cordl__: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Sockets::SocketAsyncEventArgs,
-        >,
+        _cordl__: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncEventArgs>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -5777,20 +5195,18 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl__))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl__))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReceiveAsync(
         &mut self,
         socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Threading::Tasks::ValueTask_1<i32>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask_1<i32>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>),
@@ -5805,42 +5221,42 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Threading::Tasks::ValueTask_1<i32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (socket))?
-        };
+        let __cordl_ret: crate::System::Threading::Tasks::ValueTask_1<i32> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (socket))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Release(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Release(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Release",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Release",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Reserve(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("Reserve")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reserve",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reserve",
                             0usize
                         )
                     })
@@ -5852,9 +5268,10 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
         &mut self,
         socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>),
@@ -5869,45 +5286,43 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = unsafe {
-            cordl_method_info.invoke_unchecked(self, (socket))?
-        };
+        let __cordl_ret: crate::System::Threading::Tasks::ValueTask =
+            unsafe { cordl_method_info.invoke_unchecked(self, (socket))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Threading_Tasks_Sources_IValueTaskSource_GetResult(
         &mut self,
         token: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i16),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("System.Threading.Tasks.Sources.IValueTaskSource.GetResult")
+                    .find_method::<(i16), quest_hook::libil2cpp::Void, 1usize>(
+                        "System.Threading.Tasks.Sources.IValueTaskSource.GetResult",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            <Self as quest_hook::libil2cpp::Type>::class(),
                             "System.Threading.Tasks.Sources.IValueTaskSource.GetResult",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (token))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowException(
         &mut self,
         error: crate::System::Net::Sockets::SocketError,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Net::Sockets::SocketError),
@@ -5922,95 +5337,91 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (error))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (error))? };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowIncorrectTokenException(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ThrowIncorrectTokenException")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "ThrowIncorrectTokenException",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ThrowIncorrectTokenException", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ThrowIncorrectTokenException",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowMultipleContinuationsException(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ThrowMultipleContinuationsException")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "ThrowMultipleContinuationsException",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ThrowMultipleContinuationsException", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ThrowMultipleContinuationsException",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_WrapExceptionsInIOExceptions(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_WrapExceptionsInIOExceptions(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_WrapExceptionsInIOExceptions")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_WrapExceptionsInIOExceptions", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_WrapExceptionsInIOExceptions",
+                            0usize
                         )
                     })
             });
@@ -6021,32 +5432,32 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_WrapExceptionsInIOExceptions")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_WrapExceptionsInIOExceptions",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_WrapExceptionsInIOExceptions", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_WrapExceptionsInIOExceptions",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
+    for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -6056,35 +5467,33 @@ for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
 }
 #[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 impl AsRef<crate::System::Threading::Tasks::Sources::IValueTaskSource>
-for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
+    for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs
+{
     fn as_ref(&self) -> &crate::System::Threading::Tasks::Sources::IValueTaskSource {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 impl AsMut<crate::System::Threading::Tasks::Sources::IValueTaskSource>
-for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Threading::Tasks::Sources::IValueTaskSource {
+    for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs
+{
+    fn as_mut(&mut self) -> &mut crate::System::Threading::Tasks::Sources::IValueTaskSource {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 impl AsRef<crate::System::Threading::Tasks::Sources::IValueTaskSource_1<i32>>
-for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Threading::Tasks::Sources::IValueTaskSource_1<i32> {
+    for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs
+{
+    fn as_ref(&self) -> &crate::System::Threading::Tasks::Sources::IValueTaskSource_1<i32> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 impl AsMut<crate::System::Threading::Tasks::Sources::IValueTaskSource_1<i32>>
-for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Threading::Tasks::Sources::IValueTaskSource_1<i32> {
+    for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs
+{
+    fn as_mut(&mut self) -> &mut crate::System::Threading::Tasks::Sources::IValueTaskSource_1<i32> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -6112,14 +5521,14 @@ pub struct Socket_CachedEventArgs {
     >,
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+CachedEventArgs")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Net::Sockets::Socket_CachedEventArgs {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::Socket_CachedEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Sockets";
     const CLASS_NAME: &'static str = "Socket/CachedEventArgs";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -6147,37 +5556,35 @@ impl std::ops::DerefMut for crate::System::Net::Sockets::Socket_CachedEventArgs 
 #[cfg(feature = "System+Net+Sockets+Socket+CachedEventArgs")]
 impl crate::System::Net::Sockets::Socket_CachedEventArgs {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+CachedEventArgs")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Net::Sockets::Socket_CachedEventArgs {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Sockets::Socket_CachedEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -6194,13 +5601,15 @@ pub struct Socket_Int32TaskSocketAsyncEventArgs {
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
+    for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Sockets";
     const CLASS_NAME: &'static str = "Socket/Int32TaskSocketAsyncEventArgs";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -6213,16 +5622,14 @@ for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
     }
 }
 #[cfg(feature = "System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
-impl std::ops::Deref
-for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
+impl std::ops::Deref for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
     type Target = crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
-impl std::ops::DerefMut
-for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
+impl std::ops::DerefMut for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -6230,37 +5637,37 @@ for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
 #[cfg(feature = "System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
 impl crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
+    for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -6273,37 +5680,35 @@ for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
 #[derive(Debug)]
 pub struct Socket_TaskSocketAsyncEventArgs_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Net::Sockets::SocketAsyncEventArgs,
-    pub _builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<
-        TResult,
-    >,
+    pub _builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<TResult>,
     pub _accessed: bool,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
+    for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult>
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Sockets";
     const CLASS_NAME: &'static str = "Socket/TaskSocketAsyncEventArgs`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "System.Net.Sockets",
-                        "Socket/TaskSocketAsyncEventArgs`1",
-                    )
-                    .unwrap()
-                    .make_generic::<(TResult)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find(
+                "System.Net.Sockets",
+                "Socket/TaskSocketAsyncEventArgs`1",
+            )
+            .unwrap()
+            .make_generic::<(TResult)>()
+            .unwrap()
+            .unwrap()
+        })
     }
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -6317,7 +5722,8 @@ for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
 }
 #[cfg(feature = "System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
-for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
+    for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult>
+{
     type Target = crate::System::Net::Sockets::SocketAsyncEventArgs;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -6325,15 +5731,16 @@ for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
 }
 #[cfg(feature = "System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
+    for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult>
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
-impl<
-    TResult: quest_hook::libil2cpp::Type,
-> crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
+impl<TResult: quest_hook::libil2cpp::Type>
+    crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult>
+{
     pub fn GetCompletionResponsibility(
         &mut self,
         responsibleForReturningToPool: quest_hook::libil2cpp::ByRefMut<bool>,
@@ -6341,12 +5748,15 @@ impl<
         crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<TResult>,
     >
     where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TResult: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<bool>),
@@ -6365,49 +5775,53 @@ impl<
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<
             TResult,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (responsibleForReturningToPool))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (responsibleForReturningToPool))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TResult: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TResult: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
 impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
+    for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult>
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -6416,8 +5830,8 @@ for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+WSABUF")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Socket_WSABUF {
     pub len: i32,
     pub buf: crate::System::IntPtr,
@@ -6442,18 +5856,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::Socket_
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+WSABUF")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Net::Sockets::Socket_WSABUF {
+unsafe impl quest_hook::libil2cpp::Argument for crate::System::Net::Sockets::Socket_WSABUF {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -6463,8 +5873,7 @@ for crate::System::Net::Sockets::Socket_WSABUF {
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+WSABUF")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Net::Sockets::Socket_WSABUF {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Net::Sockets::Socket_WSABUF {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -6477,23 +5886,19 @@ for crate::System::Net::Sockets::Socket_WSABUF {
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+WSABUF")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Net::Sockets::Socket_WSABUF {
+unsafe impl quest_hook::libil2cpp::Returned for crate::System::Net::Sockets::Socket_WSABUF {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+WSABUF")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Net::Sockets::Socket_WSABUF {
+unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::Sockets::Socket_WSABUF {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -6506,8 +5911,7 @@ for crate::System::Net::Sockets::Socket_WSABUF {
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+WSABUF")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Net::Sockets::Socket_WSABUF {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Net::Sockets::Socket_WSABUF {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

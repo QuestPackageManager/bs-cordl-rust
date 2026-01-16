@@ -5,22 +5,19 @@ pub struct DebugUIHandlerGroup {
     __cordl_parent: crate::UnityEngine::Rendering::UI::DebugUIHandlerWidget,
     pub nameLabel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     pub header: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-    pub m_Field: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::DebugUI_Container,
-    >,
-    pub m_Container: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::UI::DebugUIHandlerContainer,
-    >,
+    pub m_Field: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::DebugUI_Container>,
+    pub m_Container:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::UI::DebugUIHandlerContainer>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UI+DebugUIHandlerGroup")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::UI::DebugUIHandlerGroup {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::UI::DebugUIHandlerGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.UI";
     const CLASS_NAME: &'static str = "DebugUIHandlerGroup";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -48,8 +45,8 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::UI::DebugUIHandlerGro
 #[cfg(feature = "UnityEngine+Rendering+UI+DebugUIHandlerGroup")]
 impl crate::UnityEngine::Rendering::UI::DebugUIHandlerGroup {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -57,25 +54,21 @@ impl crate::UnityEngine::Rendering::UI::DebugUIHandlerGroup {
     pub fn Next(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::UI::DebugUIHandlerWidget,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::UI::DebugUIHandlerWidget>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::UI::DebugUIHandlerWidget,
-                        >,
-                        0usize,
-                    >("Next")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Rendering::UI::DebugUIHandlerWidget,
+                    >, 0usize>("Next")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Next",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Next",
                             0usize
                         )
                     })
@@ -92,40 +85,38 @@ impl crate::UnityEngine::Rendering::UI::DebugUIHandlerGroup {
             crate::UnityEngine::Rendering::UI::DebugUIHandlerWidget,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::UI::DebugUIHandlerWidget,
-                            >,
-                        ),
+                    .find_method::<(
                         bool,
-                        2usize,
-                    >("OnSelection")
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::UI::DebugUIHandlerWidget,
+                        >,
+                    ), bool, 2usize>("OnSelection")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnSelection", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnSelection",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (fromNext, previous))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (fromNext, previous))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetWidget(
         &mut self,
         widget: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::DebugUI_Widget>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -142,36 +133,33 @@ impl crate::UnityEngine::Rendering::UI::DebugUIHandlerGroup {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (widget))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (widget))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UI+DebugUIHandlerGroup")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::UI::DebugUIHandlerGroup {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::UI::DebugUIHandlerGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

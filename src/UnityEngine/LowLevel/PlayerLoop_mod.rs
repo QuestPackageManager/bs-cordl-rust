@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LowLevel::Player
     const NAMESPACE: &'static str = "UnityEngine.LowLevel";
     const CLASS_NAME: &'static str = "PlayerLoop";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -38,12 +39,12 @@ impl std::ops::DerefMut for crate::UnityEngine::LowLevel::PlayerLoop {
 }
 #[cfg(feature = "UnityEngine+LowLevel+PlayerLoop")]
 impl crate::UnityEngine::LowLevel::PlayerLoop {
-    pub fn GetCurrentPlayerLoop() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::LowLevel::PlayerLoopSystem,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetCurrentPlayerLoop(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LowLevel::PlayerLoopSystem> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -58,9 +59,8 @@ impl crate::UnityEngine::LowLevel::PlayerLoop {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::LowLevel::PlayerLoopSystem = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::LowLevel::PlayerLoopSystem =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentPlayerLoopInternal() -> quest_hook::libil2cpp::Result<
@@ -70,24 +70,22 @@ impl crate::UnityEngine::LowLevel::PlayerLoop {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::LowLevel::PlayerLoopSystemInternal,
-                            >,
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::LowLevel::PlayerLoopSystemInternal,
                         >,
-                        0usize,
-                    >("GetCurrentPlayerLoopInternal")
+                    >, 0usize>("GetCurrentPlayerLoopInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCurrentPlayerLoopInternal", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCurrentPlayerLoopInternal",
+                            0usize
                         )
                     })
             });
@@ -106,33 +104,32 @@ impl crate::UnityEngine::LowLevel::PlayerLoop {
         >,
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LowLevel::PlayerLoopSystem> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::LowLevel::PlayerLoopSystemInternal,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::UnityEngine::LowLevel::PlayerLoopSystemInternal,
                             >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        crate::UnityEngine::LowLevel::PlayerLoopSystem,
-                        2usize,
-                    >("InternalToPlayerLoopSystem")
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), crate::UnityEngine::LowLevel::PlayerLoopSystem, 2usize>(
+                        "InternalToPlayerLoopSystem",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InternalToPlayerLoopSystem", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InternalToPlayerLoopSystem",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::LowLevel::PlayerLoopSystem = unsafe {
-            cordl_method_info.invoke_unchecked((), (internalSys, offset))?
-        };
+        let __cordl_ret: crate::UnityEngine::LowLevel::PlayerLoopSystem =
+            unsafe { cordl_method_info.invoke_unchecked((), (internalSys, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn PlayerLoopSystemToInternal(
@@ -145,43 +142,41 @@ impl crate::UnityEngine::LowLevel::PlayerLoop {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::LowLevel::PlayerLoopSystem,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        crate::UnityEngine::LowLevel::PlayerLoopSystemInternal,
-                                    >,
+                    .find_static_method::<(
+                        crate::UnityEngine::LowLevel::PlayerLoopSystem,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::LowLevel::PlayerLoopSystemInternal,
                                 >,
                             >,
-                        ),
-                        i32,
-                        2usize,
-                    >("PlayerLoopSystemToInternal")
+                        >,
+                    ), i32, 2usize>("PlayerLoopSystemToInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PlayerLoopSystemToInternal", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PlayerLoopSystemToInternal",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (sys, internalSys))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (sys, internalSys))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetPlayerLoop(
         _cordl_loop: crate::UnityEngine::LowLevel::PlayerLoopSystem,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::LowLevel::PlayerLoopSystem),
@@ -196,9 +191,8 @@ impl crate::UnityEngine::LowLevel::PlayerLoop {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_loop))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_loop))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetPlayerLoopInternal(
@@ -208,30 +202,29 @@ impl crate::UnityEngine::LowLevel::PlayerLoop {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::LowLevel::PlayerLoopSystemInternal,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetPlayerLoopInternal")
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::LowLevel::PlayerLoopSystemInternal,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "SetPlayerLoopInternal"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetPlayerLoopInternal", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetPlayerLoopInternal",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_loop))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_loop))? };
         Ok(__cordl_ret.into())
     }
 }

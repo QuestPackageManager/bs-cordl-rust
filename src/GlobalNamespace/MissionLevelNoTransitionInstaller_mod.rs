@@ -3,12 +3,9 @@
 #[derive(Debug)]
 pub struct MissionLevelNoTransitionInstaller {
     __cordl_parent: crate::Zenject::NoTransitionInstaller,
-    pub _beatmapLevelSo: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapLevelSO,
-    >,
-    pub _beatmapCharacteristic: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapCharacteristicSO,
-    >,
+    pub _beatmapLevelSo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
+    pub _beatmapCharacteristic:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
     pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub _colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
     pub _missionObjectives: quest_hook::libil2cpp::Gc<
@@ -16,29 +13,25 @@ pub struct MissionLevelNoTransitionInstaller {
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
         >,
     >,
-    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GameplayModifiers,
-    >,
-    pub _playerSpecificSettings: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlayerSpecificSettings,
-    >,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+    pub _playerSpecificSettings:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
     pub _backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub _scenesTransitionSetupData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-    >,
-    pub _settingsManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SettingsManager,
-    >,
+    pub _scenesTransitionSetupData:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO>,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
 }
 #[cfg(feature = "cordl_class_MissionLevelNoTransitionInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MissionLevelNoTransitionInstaller {
+    for crate::GlobalNamespace::MissionLevelNoTransitionInstaller
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "MissionLevelNoTransitionInstaller";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -69,9 +62,10 @@ impl crate::GlobalNamespace::MissionLevelNoTransitionInstaller {
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
@@ -86,43 +80,42 @@ impl crate::GlobalNamespace::MissionLevelNoTransitionInstaller {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (container))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (container))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_MissionLevelNoTransitionInstaller")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::MissionLevelNoTransitionInstaller {
+    for crate::GlobalNamespace::MissionLevelNoTransitionInstaller
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

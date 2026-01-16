@@ -6,13 +6,15 @@ pub struct ShorthandApplicator {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ShorthandApplicator")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
+    for crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.StyleSheets";
     const CLASS_NAME: &'static str = "ShorthandApplicator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -25,16 +27,14 @@ for crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+ShorthandApplicator")]
-impl std::ops::Deref
-for crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
+impl std::ops::Deref for crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+ShorthandApplicator")]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
+impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -49,33 +49,32 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::ComputedStyle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ApplyBackgroundPosition")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::ComputedStyle,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "ApplyBackgroundPosition"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ApplyBackgroundPosition", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ApplyBackgroundPosition",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, computedStyle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, computedStyle))? };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyBorderColor(
@@ -86,33 +85,30 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::ComputedStyle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ApplyBorderColor")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::ComputedStyle,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ApplyBorderColor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ApplyBorderColor", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ApplyBorderColor",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, computedStyle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, computedStyle))? };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyBorderRadius(
@@ -123,33 +119,30 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::ComputedStyle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ApplyBorderRadius")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::ComputedStyle,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ApplyBorderRadius")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ApplyBorderRadius", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ApplyBorderRadius",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, computedStyle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, computedStyle))? };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyBorderWidth(
@@ -160,33 +153,30 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::ComputedStyle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ApplyBorderWidth")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::ComputedStyle,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ApplyBorderWidth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ApplyBorderWidth", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ApplyBorderWidth",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, computedStyle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, computedStyle))? };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyFlex(
@@ -197,33 +187,30 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::ComputedStyle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ApplyFlex")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::ComputedStyle,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ApplyFlex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ApplyFlex", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ApplyFlex",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, computedStyle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, computedStyle))? };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyMargin(
@@ -234,33 +221,30 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::ComputedStyle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ApplyMargin")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::ComputedStyle,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ApplyMargin")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ApplyMargin", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ApplyMargin",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, computedStyle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, computedStyle))? };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyPadding(
@@ -271,33 +255,30 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::ComputedStyle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ApplyPadding")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::ComputedStyle,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ApplyPadding")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ApplyPadding", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ApplyPadding",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, computedStyle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, computedStyle))? };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyTransition(
@@ -308,33 +289,30 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::ComputedStyle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ApplyTransition")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::ComputedStyle,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ApplyTransition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ApplyTransition", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ApplyTransition",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, computedStyle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, computedStyle))? };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyUnityBackgroundScaleMode(
@@ -345,33 +323,32 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::ComputedStyle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ApplyUnityBackgroundScaleMode")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::ComputedStyle,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "ApplyUnityBackgroundScaleMode"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ApplyUnityBackgroundScaleMode", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ApplyUnityBackgroundScaleMode",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, computedStyle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, computedStyle))? };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyUnityTextOutline(
@@ -382,33 +359,32 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::ComputedStyle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ApplyUnityTextOutline")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::ComputedStyle,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "ApplyUnityTextOutline"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ApplyUnityTextOutline", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ApplyUnityTextOutline",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, computedStyle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, computedStyle))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileBackgroundPosition(
@@ -422,39 +398,36 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::BackgroundPosition,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BackgroundPosition,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BackgroundPosition,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CompileBackgroundPosition")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::BackgroundPosition,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::BackgroundPosition,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "CompileBackgroundPosition"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileBackgroundPosition", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileBackgroundPosition",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (reader, backgroundPositionX, backgroundPositionY),
-                )?
+                .invoke_unchecked((), (reader, backgroundPositionX, backgroundPositionY))?
         };
         Ok(__cordl_ret.into())
     }
@@ -467,42 +440,33 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         bottom: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
         left: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::Length,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::Length,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::Length,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::Length,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("CompileBorderRadius")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "CompileBorderRadius"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileBorderRadius", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileBorderRadius",
+                            5usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, top, right, bottom, left))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, top, right, bottom, left))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileBoxArea_StylePropertyReader_ByRefMut_ByRefMut_ByRefMut_ByRefMut0(
@@ -514,42 +478,31 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         bottom: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
         left: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::Length,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::Length,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::Length,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::Length,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("CompileBoxArea")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
+                    ), quest_hook::libil2cpp::Void, 5usize>("CompileBoxArea")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileBoxArea", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileBoxArea",
+                            5usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, top, right, bottom, left))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, top, right, bottom, left))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileBoxArea_StylePropertyReader_ByRefMut_ByRefMut_ByRefMut_ByRefMut1(
@@ -561,34 +514,31 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         bottom: quest_hook::libil2cpp::ByRefMut<f32>,
         left: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("CompileBoxArea")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                    ), quest_hook::libil2cpp::Void, 5usize>("CompileBoxArea")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileBoxArea", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileBoxArea",
+                            5usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, top, right, bottom, left))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, top, right, bottom, left))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileBoxArea_StylePropertyReader_ByRefMut_ByRefMut_ByRefMut_ByRefMut2(
@@ -600,34 +550,31 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         bottom: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
         left: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("CompileBoxArea")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+                    ), quest_hook::libil2cpp::Void, 5usize>("CompileBoxArea")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileBoxArea", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileBoxArea",
+                            5usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, top, right, bottom, left))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, top, right, bottom, left))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileFlexShorthand(
@@ -638,35 +585,30 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         shrink: quest_hook::libil2cpp::ByRefMut<f32>,
         basis: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::Length,
-                            >,
-                        ),
-                        bool,
-                        4usize,
-                    >("CompileFlexShorthand")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
+                    ), bool, 4usize>("CompileFlexShorthand")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileFlexShorthand", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileFlexShorthand",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, grow, shrink, basis))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, grow, shrink, basis))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileTextOutline(
@@ -676,26 +618,24 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         outlineColor: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
         outlineWidth: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CompileTextOutline")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("CompileTextOutline")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileTextOutline", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileTextOutline",
+                            3usize
                         )
                     })
             });
@@ -737,61 +677,64 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        crate::UnityEngine::UIElements::TimeValue,
-                                    >,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::TimeValue,
                                 >,
                             >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        crate::UnityEngine::UIElements::TimeValue,
-                                    >,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::TimeValue,
                                 >,
                             >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        crate::UnityEngine::UIElements::StylePropertyName,
-                                    >,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::StylePropertyName,
                                 >,
                             >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        crate::UnityEngine::UIElements::EasingFunction,
-                                    >,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::EasingFunction,
                                 >,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("CompileTransition")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 5usize>("CompileTransition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileTransition", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileTransition",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (reader, outDelay, outDuration, outProperty, outTimingFunction),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    reader,
+                    outDelay,
+                    outDuration,
+                    outProperty,
+                    outTimingFunction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -812,51 +755,50 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::BackgroundSize,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BackgroundPosition,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BackgroundPosition,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BackgroundRepeat,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BackgroundSize,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("CompileUnityBackgroundScaleMode")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::BackgroundPosition,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::BackgroundPosition,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::BackgroundRepeat,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::BackgroundSize,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "CompileUnityBackgroundScaleMode"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileUnityBackgroundScaleMode", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileUnityBackgroundScaleMode",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        reader,
-                        backgroundPositionX,
-                        backgroundPositionY,
-                        backgroundRepeat,
-                        backgroundSize,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    reader,
+                    backgroundPositionX,
+                    backgroundPositionY,
+                    backgroundRepeat,
+                    backgroundSize,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -868,39 +810,39 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::BackgroundPositionKeyword,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BackgroundPositionKeyword,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::BackgroundPositionKeyword,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("<CompileBackgroundPosition>g__SwapKeyword|16_0")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::BackgroundPositionKeyword,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::BackgroundPositionKeyword,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "<CompileBackgroundPosition>g__SwapKeyword|16_0",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<CompileBackgroundPosition>g__SwapKeyword|16_0", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "<CompileBackgroundPosition>g__SwapKeyword|16_0",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ShorthandApplicator")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
+    for crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+PassRandomWriteData"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PassRandomWriteData {
     pub resource: crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
     pub index: i32,
@@ -118,18 +118,22 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::
 #[cfg(
     feature = "UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+PassRandomWriteData"
 )]
-impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassRandomWriteData {
+impl
+    crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassRandomWriteData
+{
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });

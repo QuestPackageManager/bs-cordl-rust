@@ -6,13 +6,15 @@ pub struct LightColorBaseDataConverter {
 }
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
+    for crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatmapDataLoaderVersion4";
     const CLASS_NAME: &'static str = "LightColorBaseDataConverter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,8 +34,7 @@ impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::LightColorBaseDataCon
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
-impl std::ops::DerefMut
-for crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
+impl std::ops::DerefMut for crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -46,9 +47,10 @@ impl crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorBaseData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, crate::BeatmapSaveDataVersion4::LightColorEvent),
@@ -65,15 +67,15 @@ impl crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LightColorBaseData,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (beat, lightColorEvent))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorBaseData> =
+            unsafe { cordl_method_info.invoke_unchecked((), (beat, lightColorEvent))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
+    for crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

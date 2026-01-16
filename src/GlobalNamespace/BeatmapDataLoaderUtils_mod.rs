@@ -5,14 +5,14 @@ pub struct BeatmapDataLoaderUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_BeatmapDataLoaderUtils")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapDataLoaderUtils {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapDataLoaderUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapDataLoaderUtils";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,16 +40,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataLoaderUtils {
 #[cfg(feature = "BeatmapDataLoaderUtils")]
 impl crate::GlobalNamespace::BeatmapDataLoaderUtils {
     pub fn GetEnvironmentKeywords(
-        environmentInfo: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IEnvironmentInfo,
-        >,
+        environmentInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>,
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentKeywords>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -71,24 +70,20 @@ impl crate::GlobalNamespace::BeatmapDataLoaderUtils {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentKeywords,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (environmentInfo, beatmapLevelDataVersion))?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentKeywords> = unsafe {
+            cordl_method_info.invoke_unchecked((), (environmentInfo, beatmapLevelDataVersion))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetEnvironmentLightGroups(
-        environmentInfo: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IEnvironmentInfo,
-        >,
+        environmentInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentLightGroups>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -114,8 +109,7 @@ impl crate::GlobalNamespace::BeatmapDataLoaderUtils {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataLoaderUtils")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BeatmapDataLoaderUtils {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapDataLoaderUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

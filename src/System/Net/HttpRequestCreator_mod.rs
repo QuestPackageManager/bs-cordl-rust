@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::HttpRequestCreat
     const NAMESPACE: &'static str = "System.Net";
     const CLASS_NAME: &'static str = "HttpRequestCreator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,12 +42,12 @@ impl crate::System::Net::HttpRequestCreator {
     pub fn Create(
         &mut self,
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Uri>),
@@ -61,37 +62,35 @@ impl crate::System::Net::HttpRequestCreator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (uri))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -105,15 +104,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::HttpRequestCreato
     }
 }
 #[cfg(feature = "System+Net+HttpRequestCreator")]
-impl AsRef<crate::System::Net::IWebRequestCreate>
-for crate::System::Net::HttpRequestCreator {
+impl AsRef<crate::System::Net::IWebRequestCreate> for crate::System::Net::HttpRequestCreator {
     fn as_ref(&self) -> &crate::System::Net::IWebRequestCreate {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+HttpRequestCreator")]
-impl AsMut<crate::System::Net::IWebRequestCreate>
-for crate::System::Net::HttpRequestCreator {
+impl AsMut<crate::System::Net::IWebRequestCreate> for crate::System::Net::HttpRequestCreator {
     fn as_mut(&mut self) -> &mut crate::System::Net::IWebRequestCreate {
         unsafe { std::mem::transmute(self) }
     }

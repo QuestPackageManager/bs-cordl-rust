@@ -1,13 +1,12 @@
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyPropertyDescriptor")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct HierarchyPropertyDescriptor {
     pub m_Size: i32,
     pub m_Type: crate::Unity::Hierarchy::HierarchyPropertyStorageType,
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyPropertyDescriptor")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Hierarchy::HierarchyPropertyDescriptor {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Hierarchy::HierarchyPropertyDescriptor {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Hierarchy";
@@ -26,18 +25,16 @@ for crate::Unity::Hierarchy::HierarchyPropertyDescriptor {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyPropertyDescriptor")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Hierarchy::HierarchyPropertyDescriptor {
+    for crate::Unity::Hierarchy::HierarchyPropertyDescriptor
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -48,7 +45,8 @@ for crate::Unity::Hierarchy::HierarchyPropertyDescriptor {
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyPropertyDescriptor")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Hierarchy::HierarchyPropertyDescriptor {
+    for crate::Unity::Hierarchy::HierarchyPropertyDescriptor
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -62,22 +60,20 @@ for crate::Unity::Hierarchy::HierarchyPropertyDescriptor {
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyPropertyDescriptor")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Hierarchy::HierarchyPropertyDescriptor {
+    for crate::Unity::Hierarchy::HierarchyPropertyDescriptor
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyPropertyDescriptor")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Hierarchy::HierarchyPropertyDescriptor {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Hierarchy::HierarchyPropertyDescriptor {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -91,7 +87,8 @@ for crate::Unity::Hierarchy::HierarchyPropertyDescriptor {
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyPropertyDescriptor")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Hierarchy::HierarchyPropertyDescriptor {
+    for crate::Unity::Hierarchy::HierarchyPropertyDescriptor
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -106,35 +103,33 @@ impl crate::Unity::Hierarchy::HierarchyPropertyDescriptor {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_Size")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_Size")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_Size", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Size",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Type(
         &mut self,
         value: crate::Unity::Hierarchy::HierarchyPropertyStorageType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Hierarchy::HierarchyPropertyStorageType),
@@ -149,9 +144,8 @@ impl crate::Unity::Hierarchy::HierarchyPropertyDescriptor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }

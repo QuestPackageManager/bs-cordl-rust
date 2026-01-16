@@ -7,21 +7,21 @@ pub struct UnityWebRequestOperation {
     __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     >,
-    pub m_UWR: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Networking::UnityWebRequest,
-    >,
+    pub m_UWR: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation {
+    for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.AsyncOperations";
     const CLASS_NAME: &'static str = "UnityWebRequestOperation";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -33,11 +33,10 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOper
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation")]
 impl std::ops::Deref
-for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation {
+    for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation
+{
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     >;
@@ -45,47 +44,41 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOper
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation")]
 impl std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation {
+    for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation")]
 impl crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation {
-    pub fn Execute(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Execute(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        webRequest: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Networking::UnityWebRequest,
-        >,
+        webRequest: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (webRequest))?;
         Ok(__cordl_object.into())
@@ -94,9 +87,10 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOpe
         &mut self,
         request: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>),
@@ -111,20 +105,18 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOpe
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (request))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (request))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        webRequest: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Networking::UnityWebRequest,
-        >,
+        webRequest: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -141,9 +133,8 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOpe
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (webRequest))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (webRequest))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -151,7 +142,8 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOpe
     feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation {
+    for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

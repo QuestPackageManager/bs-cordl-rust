@@ -3,20 +3,23 @@
 #[derive(Debug)]
 pub struct EventTrackDefinitionSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _dataTransformationType: crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType,
+    pub _dataTransformationType:
+        crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType,
     pub _markerType: crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType,
     pub _visible: bool,
     pub _needsFiltering: bool,
 }
 #[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
+    for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.TrackDefinitions";
     const CLASS_NAME: &'static str = "EventTrackDefinitionSO";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,38 +46,36 @@ impl std::ops::DerefMut for crate::BeatSaber::TrackDefinitions::EventTrackDefini
 }
 #[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
 impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
-    #[cfg(
-        feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
-    )]
-    pub type DataTransformationType = crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType;
+    #[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType")]
+    pub type DataTransformationType =
+        crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType;
     #[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
     pub type MarkerType = crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_dataTransformation(
@@ -82,7 +83,8 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -109,9 +111,10 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -126,22 +129,23 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
                         )
                     })
             });
-        let __cordl_ret: crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_needsFiltering(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_needsFiltering")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_needsFiltering", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_needsFiltering",
+                            0usize
                         )
                     })
             });
@@ -149,16 +153,18 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
         Ok(__cordl_ret.into())
     }
     pub fn get_visible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_visible")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_visible", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_visible",
+                            0usize
                         )
                     })
             });
@@ -168,7 +174,8 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
 }
 #[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
+    for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -179,8 +186,8 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
 #[cfg(
     feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
 )]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum EventTrackDefinitionSO_DataTransformationType {
     #[default]
     DeltaRotation = 2i32,
@@ -194,7 +201,8 @@ pub enum EventTrackDefinitionSO_DataTransformationType {
     feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType {
+    for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.TrackDefinitions";
@@ -213,20 +221,18 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformatio
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType {
+    for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -239,7 +245,8 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformatio
     feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType {
+    for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -255,16 +262,15 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformatio
     feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType {
+    for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -272,7 +278,8 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformatio
     feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType {
+    for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -284,11 +291,9 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformatio
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum EventTrackDefinitionSO_MarkerType {
     #[default]
     BasicMarker = 0i32,
@@ -297,11 +302,10 @@ pub enum EventTrackDefinitionSO_MarkerType {
     TextMarker = 3i32,
     TooltipMarker = 4i32,
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType"
-)]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
+    for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.TrackDefinitions";
@@ -320,20 +324,16 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType"
-)]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
+    for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -342,11 +342,10 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType"
-)]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
+    for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -358,28 +357,24 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType"
-)]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
+    for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType"
-)]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
+    for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

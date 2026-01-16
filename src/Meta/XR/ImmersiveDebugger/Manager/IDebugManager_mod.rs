@@ -1,18 +1,20 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+IDebugManager")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IDebugManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+IDebugManager")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::ImmersiveDebugger::Manager::IDebugManager {
+    for crate::Meta::XR::ImmersiveDebugger::Manager::IDebugManager
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Meta.XR.ImmersiveDebugger.Manager";
     const CLASS_NAME: &'static str = "IDebugManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,35 +45,34 @@ impl crate::Meta::XR::ImmersiveDebugger::Manager::IDebugManager {
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Type>),
-                        i32,
-                        1usize,
-                    >("GetCountPerType")
+                    .find_method::<(quest_hook::libil2cpp::Gc<crate::System::Type>), i32, 1usize>(
+                        "GetCountPerType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCountPerType", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCountPerType",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessType(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
@@ -86,45 +87,39 @@ impl crate::Meta::XR::ImmersiveDebugger::Manager::IDebugManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessTypeFromHierarchy(
         &mut self,
-        item: quest_hook::libil2cpp::Gc<
-            crate::Meta::XR::ImmersiveDebugger::Hierarchy::Item,
-        >,
+        item: quest_hook::libil2cpp::Gc<crate::Meta::XR::ImmersiveDebugger::Hierarchy::Item>,
         memberInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Meta::XR::ImmersiveDebugger::Hierarchy::Item,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::MemberInfo,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ProcessTypeFromHierarchy")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::Meta::XR::ImmersiveDebugger::Hierarchy::Item,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "ProcessTypeFromHierarchy"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessTypeFromHierarchy", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessTypeFromHierarchy",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (item, memberInfo))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (item, memberInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessTypeFromInspector(
@@ -132,42 +127,33 @@ impl crate::Meta::XR::ImmersiveDebugger::Manager::IDebugManager {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         handle: crate::Meta::XR::ImmersiveDebugger::Utils::InstanceHandle,
         memberInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
-        memberAttribute: quest_hook::libil2cpp::Gc<
-            crate::Meta::XR::ImmersiveDebugger::DebugMember,
-        >,
+        memberAttribute: quest_hook::libil2cpp::Gc<crate::Meta::XR::ImmersiveDebugger::DebugMember>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            crate::Meta::XR::ImmersiveDebugger::Utils::InstanceHandle,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::MemberInfo,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Meta::XR::ImmersiveDebugger::DebugMember,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("ProcessTypeFromInspector")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        crate::Meta::XR::ImmersiveDebugger::Utils::InstanceHandle,
+                        quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                        quest_hook::libil2cpp::Gc<crate::Meta::XR::ImmersiveDebugger::DebugMember>,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "ProcessTypeFromInspector"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessTypeFromInspector", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessTypeFromInspector",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (_cordl_type, handle, memberInfo, memberAttribute),
-                )?
+                .invoke_unchecked(self, (_cordl_type, handle, memberInfo, memberAttribute))?
         };
         Ok(__cordl_ret.into())
     }
@@ -176,52 +162,45 @@ impl crate::Meta::XR::ImmersiveDebugger::Manager::IDebugManager {
         panel: quest_hook::libil2cpp::Gc<
             crate::Meta::XR::ImmersiveDebugger::UserInterface::IDebugUIPanel,
         >,
-        cache: quest_hook::libil2cpp::Gc<
-            crate::Meta::XR::ImmersiveDebugger::Utils::InstanceCache,
-        >,
+        cache: quest_hook::libil2cpp::Gc<crate::Meta::XR::ImmersiveDebugger::Utils::InstanceCache>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Meta::XR::ImmersiveDebugger::UserInterface::IDebugUIPanel,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Meta::XR::ImmersiveDebugger::Utils::InstanceCache,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Setup")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::Meta::XR::ImmersiveDebugger::UserInterface::IDebugUIPanel,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Meta::XR::ImmersiveDebugger::Utils::InstanceCache,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Setup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Setup",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Setup",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (panel, cache))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (panel, cache))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_TelemetryAnnotation(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -236,15 +215,15 @@ impl crate::Meta::XR::ImmersiveDebugger::Manager::IDebugManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+IDebugManager")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Meta::XR::ImmersiveDebugger::Manager::IDebugManager {
+    for crate::Meta::XR::ImmersiveDebugger::Manager::IDebugManager
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -10,22 +10,21 @@ pub struct BeatmapObjectAvoidanceYOffsetEvaluator {
             crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData,
         >,
     >,
-    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IAudioTimeSource,
-    >,
-    pub _jumpOffsetYProvider: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IJumpOffsetYProvider,
-    >,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAudioTimeSource>,
+    pub _jumpOffsetYProvider:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IJumpOffsetYProvider>,
 }
 #[cfg(feature = "cordl_class_BeatmapObjectAvoidanceYOffsetEvaluator")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
+    for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapObjectAvoidanceYOffsetEvaluator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,8 +44,7 @@ impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEv
     }
 }
 #[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -61,57 +59,47 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
         &mut self,
         lastDeltaTime: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        f32,
-                        1usize,
-                    >("GetJumpOffsetYAtJumpStartSongTime")
+                    .find_method::<(f32), f32, 1usize>("GetJumpOffsetYAtJumpStartSongTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetJumpOffsetYAtJumpStartSongTime", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetJumpOffsetYAtJumpStartSongTime",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (lastDeltaTime))?
-        };
+        let __cordl_ret: f32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (lastDeltaTime))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ManualUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ManualUpdate(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ManualUpdate")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ManualUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ManualUpdate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ManualUpdate",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        audioTimeSource: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IAudioTimeSource,
-        >,
+        audioTimeSource: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAudioTimeSource>,
         jumpOffsetYProvider: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IJumpOffsetYProvider,
         >,
@@ -120,25 +108,22 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
         >,
         moveToPlayerHeadTParam: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    audioTimeSource,
-                    jumpOffsetYProvider,
-                    variableMovementDataProvider,
-                    moveToPlayerHeadTParam,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                audioTimeSource,
+                jumpOffsetYProvider,
+                variableMovementDataProvider,
+                moveToPlayerHeadTParam,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        audioTimeSource: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IAudioTimeSource,
-        >,
+        audioTimeSource: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAudioTimeSource>,
         jumpOffsetYProvider: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IJumpOffsetYProvider,
         >,
@@ -147,52 +132,46 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
         >,
         moveToPlayerHeadTParam: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IAudioTimeSource,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IJumpOffsetYProvider,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IVariableMovementDataProvider,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAudioTimeSource>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IJumpOffsetYProvider>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::IVariableMovementDataProvider,
+                        >,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        audioTimeSource,
-                        jumpOffsetYProvider,
-                        variableMovementDataProvider,
-                        moveToPlayerHeadTParam,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    audioTimeSource,
+                    jumpOffsetYProvider,
+                    variableMovementDataProvider,
+                    moveToPlayerHeadTParam,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapObjectAvoidanceYOffsetEvaluator")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
+    for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -201,15 +180,16 @@ for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapObjectAvoidanceYOffsetEvaluator+BufferData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
     pub songTime: f32,
     pub yOffset: f32,
 }
 #[cfg(feature = "cordl_class_BeatmapObjectAvoidanceYOffsetEvaluator+BufferData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
+    for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -228,18 +208,16 @@ for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapObjectAvoidanceYOffsetEvaluator+BufferData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
+    for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -250,7 +228,8 @@ for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
 }
 #[cfg(feature = "cordl_class_BeatmapObjectAvoidanceYOffsetEvaluator+BufferData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
+    for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -264,22 +243,22 @@ for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
 }
 #[cfg(feature = "cordl_class_BeatmapObjectAvoidanceYOffsetEvaluator+BufferData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
+    for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BeatmapObjectAvoidanceYOffsetEvaluator+BufferData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
+    for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -293,7 +272,8 @@ for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
 }
 #[cfg(feature = "cordl_class_BeatmapObjectAvoidanceYOffsetEvaluator+BufferData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
+    for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -309,26 +289,23 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
         songTime: f32,
         yOffset: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32, f32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(f32, f32), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (songTime, yOffset))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (songTime, yOffset))? };
         Ok(__cordl_ret.into())
     }
 }

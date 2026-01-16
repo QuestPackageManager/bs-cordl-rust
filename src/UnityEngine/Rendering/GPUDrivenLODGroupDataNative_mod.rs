@@ -1,38 +1,28 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUDrivenLODGroupDataNative")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GPUDrivenLODGroupDataNative {
     pub lodGroupID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub lodOffset: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub lodCount: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub fadeMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub worldSpaceReferencePoint: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppObject,
-    >,
+    pub worldSpaceReferencePoint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub worldSpaceSize: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub renderersCount: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub lastLODIsBillboard: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppObject,
-    >,
+    pub lastLODIsBillboard: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub lodGroupCount: i32,
-    pub invalidLODGroupID: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppObject,
-    >,
+    pub invalidLODGroupID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub invalidLODGroupCount: i32,
-    pub lodRenderersCount: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppObject,
-    >,
-    pub lodScreenRelativeTransitionHeight: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppObject,
-    >,
-    pub lodFadeTransitionWidth: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppObject,
-    >,
+    pub lodRenderersCount: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub lodScreenRelativeTransitionHeight:
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub lodFadeTransitionWidth: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub lodDataCount: i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUDrivenLODGroupDataNative")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative {
+    for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -51,18 +41,16 @@ for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUDrivenLODGroupDataNative")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative {
+    for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -73,7 +61,8 @@ for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUDrivenLODGroupDataNative")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative {
+    for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -87,22 +76,22 @@ for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUDrivenLODGroupDataNative")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative {
+    for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUDrivenLODGroupDataNative")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative {
+    for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -116,7 +105,8 @@ for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUDrivenLODGroupDataNative")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative {
+    for crate::UnityEngine::Rendering::GPUDrivenLODGroupDataNative
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

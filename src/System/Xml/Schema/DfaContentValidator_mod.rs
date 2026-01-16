@@ -8,19 +8,17 @@ pub struct DfaContentValidator {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
     >,
-    pub symbols: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::SymbolsDictionary,
-    >,
+    pub symbols: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SymbolsDictionary>,
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+DfaContentValidator")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Xml::Schema::DfaContentValidator {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::DfaContentValidator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
     const CLASS_NAME: &'static str = "DfaContentValidator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -51,9 +49,10 @@ impl crate::System::Xml::Schema::DfaContentValidator {
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -70,9 +69,7 @@ impl crate::System::Xml::Schema::DfaContentValidator {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExpectedElements(
@@ -82,33 +79,28 @@ impl crate::System::Xml::Schema::DfaContentValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::ValidationState,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
-                        2usize,
-                    >("ExpectedElements")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
+                        bool,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>, 2usize>(
+                        "ExpectedElements",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExpectedElements", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExpectedElements",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ArrayList,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context, isRequiredOnly))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context, isRequiredOnly))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExpectedParticles(
@@ -119,36 +111,29 @@ impl crate::System::Xml::Schema::DfaContentValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::ValidationState,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaSet,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
-                        3usize,
-                    >("ExpectedParticles")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
+                        bool,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>, 3usize>(
+                        "ExpectedParticles",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExpectedParticles", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExpectedParticles",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ArrayList,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (context, isRequiredOnly, schemaSet))?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (context, isRequiredOnly, schemaSet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -156,9 +141,10 @@ impl crate::System::Xml::Schema::DfaContentValidator {
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -175,9 +161,8 @@ impl crate::System::Xml::Schema::DfaContentValidator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -186,20 +171,17 @@ impl crate::System::Xml::Schema::DfaContentValidator {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
             >,
         >,
-        symbols: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::SymbolsDictionary,
-        >,
+        symbols: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SymbolsDictionary>,
         contentType: crate::System::Xml::Schema::XmlSchemaContentType,
         isOpen: bool,
         isEmptiable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (transitionTable, symbols, contentType, isOpen, isEmptiable),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (transitionTable, symbols, contentType, isOpen, isEmptiable),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn ValidateElement(
@@ -207,39 +189,31 @@ impl crate::System::Xml::Schema::DfaContentValidator {
         name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
         context: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
         errorCode: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::XmlQualifiedName,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::ValidationState,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                        3usize,
-                    >("ValidateElement")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, 3usize>(
+                        "ValidateElement",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValidateElement", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ValidateElement",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (name, context, errorCode))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (name, context, errorCode))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -249,57 +223,47 @@ impl crate::System::Xml::Schema::DfaContentValidator {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
             >,
         >,
-        symbols: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::SymbolsDictionary,
-        >,
+        symbols: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SymbolsDictionary>,
         contentType: crate::System::Xml::Schema::XmlSchemaContentType,
         isOpen: bool,
         isEmptiable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppArray<i32>,
-                                    >,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::SymbolsDictionary,
-                            >,
-                            crate::System::Xml::Schema::XmlSchemaContentType,
-                            bool,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SymbolsDictionary>,
+                        crate::System::Xml::Schema::XmlSchemaContentType,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (transitionTable, symbols, contentType, isOpen, isEmptiable),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (transitionTable, symbols, contentType, isOpen, isEmptiable),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+DfaContentValidator")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::Schema::DfaContentValidator {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::DfaContentValidator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

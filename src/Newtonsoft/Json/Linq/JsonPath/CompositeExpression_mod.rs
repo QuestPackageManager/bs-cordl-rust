@@ -5,21 +5,21 @@ pub struct CompositeExpression {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
     pub _Expressions_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression>,
         >,
     >,
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
+    for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Linq.JsonPath";
     const CLASS_NAME: &'static str = "CompositeExpression";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,8 +39,7 @@ impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpre
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
-impl std::ops::DerefMut
-for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
+impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -51,47 +50,38 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         t: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-        settings: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::JsonSelectSettings,
-        >,
+        settings: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JsonSelectSettings>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Linq::JToken,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Linq::JToken,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Linq::JsonSelectSettings,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("IsMatch")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+                        >,
+                    ), bool, 3usize>("IsMatch")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsMatch",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsMatch",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (root, t, settings))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (root, t, settings))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         _cordl_operator: crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_operator))?;
         Ok(__cordl_object.into())
@@ -100,9 +90,10 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
         &mut self,
         _cordl_operator: crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator),
@@ -117,9 +108,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_operator))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_operator))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Expressions(
@@ -127,40 +117,34 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
                             >,
                         >,
-                        0usize,
-                    >("get_Expressions")
+                    >, 0usize>("get_Expressions")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Expressions", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Expressions",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -169,44 +153,40 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-                                >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_Expressions")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>("set_Expressions")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_Expressions", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_Expressions",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
+    for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

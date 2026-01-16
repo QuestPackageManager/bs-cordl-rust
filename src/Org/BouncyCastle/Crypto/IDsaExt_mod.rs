@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+IDsaExt")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IDsaExt {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Crypto::ID
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto";
     const CLASS_NAME: &'static str = "IDsaExt";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -38,9 +39,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IDsaExt {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IDsaExt")]
 impl crate::Org::BouncyCastle::Crypto::IDsaExt {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_Order(
@@ -48,9 +47,10 @@ impl crate::Org::BouncyCastle::Crypto::IDsaExt {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -67,9 +67,8 @@ impl crate::Org::BouncyCastle::Crypto::IDsaExt {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -83,15 +82,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Crypto::IDs
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IDsaExt")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IDsa>
-for crate::Org::BouncyCastle::Crypto::IDsaExt {
+impl AsRef<crate::Org::BouncyCastle::Crypto::IDsa> for crate::Org::BouncyCastle::Crypto::IDsaExt {
     fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDsa {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IDsaExt")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IDsa>
-for crate::Org::BouncyCastle::Crypto::IDsaExt {
+impl AsMut<crate::Org::BouncyCastle::Crypto::IDsa> for crate::Org::BouncyCastle::Crypto::IDsaExt {
     fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDsa {
         unsafe { std::mem::transmute(self) }
     }

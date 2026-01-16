@@ -6,13 +6,15 @@ pub struct BeatSaberConnectedPlayerFactory {
 }
 #[cfg(feature = "cordl_class_BeatSaberConnectedPlayerFactory")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatSaberConnectedPlayerFactory {
+    for crate::GlobalNamespace::BeatSaberConnectedPlayerFactory
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatSaberConnectedPlayerFactory";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,12 +45,8 @@ impl crate::GlobalNamespace::BeatSaberConnectedPlayerFactory {
         &mut self,
         manager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_3<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatSaberConnectedPlayer,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatSaberConnectedPlayer>,
                 crate::GlobalNamespace::BeatSaberPlayerIdentityPacketData,
             >,
         >,
@@ -57,9 +55,10 @@ impl crate::GlobalNamespace::BeatSaberConnectedPlayerFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatSaberConnectedPlayer>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -95,8 +94,7 @@ impl crate::GlobalNamespace::BeatSaberConnectedPlayerFactory {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatSaberConnectedPlayer,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (manager, connectionId, connection))?
+            cordl_method_info.invoke_unchecked(self, (manager, connectionId, connection))?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,31 +102,24 @@ impl crate::GlobalNamespace::BeatSaberConnectedPlayerFactory {
         &mut self,
         manager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_3<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatSaberConnectedPlayer,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatSaberConnectedPlayer>,
                 crate::GlobalNamespace::BeatSaberPlayerIdentityPacketData,
             >,
         >,
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isConnectionOwner: bool,
-        publicEncryptionKey: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
+        publicEncryptionKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         random: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        compatibilityVersion: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        compatibilityVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatSaberConnectedPlayer>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -176,19 +167,18 @@ impl crate::GlobalNamespace::BeatSaberConnectedPlayerFactory {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatSaberConnectedPlayer,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        manager,
-                        userId,
-                        userName,
-                        isConnectionOwner,
-                        publicEncryptionKey,
-                        random,
-                        compatibilityVersion,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    manager,
+                    userId,
+                    userName,
+                    isConnectionOwner,
+                    publicEncryptionKey,
+                    random,
+                    compatibilityVersion,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -196,26 +186,21 @@ impl crate::GlobalNamespace::BeatSaberConnectedPlayerFactory {
         &mut self,
         manager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_3<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatSaberConnectedPlayer,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatSaberConnectedPlayer>,
                 crate::GlobalNamespace::BeatSaberPlayerIdentityPacketData,
             >,
         >,
         connectionId: u8,
         packet: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerConnectedPacket>,
-        parent: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatSaberConnectedPlayer,
-        >,
+        parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatSaberConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatSaberConnectedPlayer>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -254,43 +239,40 @@ impl crate::GlobalNamespace::BeatSaberConnectedPlayerFactory {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatSaberConnectedPlayer,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (manager, connectionId, packet, parent))?
+            cordl_method_info.invoke_unchecked(self, (manager, connectionId, packet, parent))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatSaberConnectedPlayerFactory")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BeatSaberConnectedPlayerFactory {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatSaberConnectedPlayerFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -299,13 +281,15 @@ for crate::GlobalNamespace::BeatSaberConnectedPlayerFactory {
     }
 }
 #[cfg(feature = "BeatSaberConnectedPlayerFactory")]
-impl AsRef<
-    crate::GlobalNamespace::IConnectedPlayerFactory_3<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatSaberConnectedPlayer>,
-        crate::GlobalNamespace::BeatSaberPlayerIdentityPacketData,
-    >,
-> for crate::GlobalNamespace::BeatSaberConnectedPlayerFactory {
+impl
+    AsRef<
+        crate::GlobalNamespace::IConnectedPlayerFactory_3<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatSaberConnectedPlayer>,
+            crate::GlobalNamespace::BeatSaberPlayerIdentityPacketData,
+        >,
+    > for crate::GlobalNamespace::BeatSaberConnectedPlayerFactory
+{
     fn as_ref(
         &self,
     ) -> &crate::GlobalNamespace::IConnectedPlayerFactory_3<
@@ -317,13 +301,15 @@ impl AsRef<
     }
 }
 #[cfg(feature = "BeatSaberConnectedPlayerFactory")]
-impl AsMut<
-    crate::GlobalNamespace::IConnectedPlayerFactory_3<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatSaberConnectedPlayer>,
-        crate::GlobalNamespace::BeatSaberPlayerIdentityPacketData,
-    >,
-> for crate::GlobalNamespace::BeatSaberConnectedPlayerFactory {
+impl
+    AsMut<
+        crate::GlobalNamespace::IConnectedPlayerFactory_3<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatSaberConnectedPlayer>,
+            crate::GlobalNamespace::BeatSaberPlayerIdentityPacketData,
+        >,
+    > for crate::GlobalNamespace::BeatSaberConnectedPlayerFactory
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::GlobalNamespace::IConnectedPlayerFactory_3<

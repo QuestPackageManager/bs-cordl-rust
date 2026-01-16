@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Numerics::ConstantHel
     const NAMESPACE: &'static str = "System.Numerics";
     const CLASS_NAME: &'static str = "ConstantHelper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,16 +40,18 @@ impl std::ops::DerefMut for crate::System::Numerics::ConstantHelper {
 #[cfg(feature = "System+Numerics+ConstantHelper")]
 impl crate::System::Numerics::ConstantHelper {
     pub fn GetByteWithAllBitsSet() -> quest_hook::libil2cpp::Result<u8> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u8, 0usize>("GetByteWithAllBitsSet")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetByteWithAllBitsSet", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetByteWithAllBitsSet",
+                            0usize
                         )
                     })
             });
@@ -56,16 +59,18 @@ impl crate::System::Numerics::ConstantHelper {
         Ok(__cordl_ret.into())
     }
     pub fn GetDoubleWithAllBitsSet() -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f64, 0usize>("GetDoubleWithAllBitsSet")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetDoubleWithAllBitsSet", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetDoubleWithAllBitsSet",
+                            0usize
                         )
                     })
             });
@@ -73,16 +78,18 @@ impl crate::System::Numerics::ConstantHelper {
         Ok(__cordl_ret.into())
     }
     pub fn GetInt16WithAllBitsSet() -> quest_hook::libil2cpp::Result<i16> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i16, 0usize>("GetInt16WithAllBitsSet")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetInt16WithAllBitsSet", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetInt16WithAllBitsSet",
+                            0usize
                         )
                     })
             });
@@ -90,16 +97,18 @@ impl crate::System::Numerics::ConstantHelper {
         Ok(__cordl_ret.into())
     }
     pub fn GetInt32WithAllBitsSet() -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetInt32WithAllBitsSet")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetInt32WithAllBitsSet", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetInt32WithAllBitsSet",
+                            0usize
                         )
                     })
             });
@@ -107,16 +116,18 @@ impl crate::System::Numerics::ConstantHelper {
         Ok(__cordl_ret.into())
     }
     pub fn GetInt64WithAllBitsSet() -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i64, 0usize>("GetInt64WithAllBitsSet")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetInt64WithAllBitsSet", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetInt64WithAllBitsSet",
+                            0usize
                         )
                     })
             });
@@ -124,16 +135,18 @@ impl crate::System::Numerics::ConstantHelper {
         Ok(__cordl_ret.into())
     }
     pub fn GetSByteWithAllBitsSet() -> quest_hook::libil2cpp::Result<i8> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i8, 0usize>("GetSByteWithAllBitsSet")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSByteWithAllBitsSet", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSByteWithAllBitsSet",
+                            0usize
                         )
                     })
             });
@@ -141,16 +154,18 @@ impl crate::System::Numerics::ConstantHelper {
         Ok(__cordl_ret.into())
     }
     pub fn GetSingleWithAllBitsSet() -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("GetSingleWithAllBitsSet")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSingleWithAllBitsSet", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSingleWithAllBitsSet",
+                            0usize
                         )
                     })
             });
@@ -158,16 +173,18 @@ impl crate::System::Numerics::ConstantHelper {
         Ok(__cordl_ret.into())
     }
     pub fn GetUInt16WithAllBitsSet() -> quest_hook::libil2cpp::Result<u16> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u16, 0usize>("GetUInt16WithAllBitsSet")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetUInt16WithAllBitsSet", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetUInt16WithAllBitsSet",
+                            0usize
                         )
                     })
             });
@@ -175,16 +192,18 @@ impl crate::System::Numerics::ConstantHelper {
         Ok(__cordl_ret.into())
     }
     pub fn GetUInt32WithAllBitsSet() -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u32, 0usize>("GetUInt32WithAllBitsSet")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetUInt32WithAllBitsSet", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetUInt32WithAllBitsSet",
+                            0usize
                         )
                     })
             });
@@ -192,16 +211,18 @@ impl crate::System::Numerics::ConstantHelper {
         Ok(__cordl_ret.into())
     }
     pub fn GetUInt64WithAllBitsSet() -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u64, 0usize>("GetUInt64WithAllBitsSet")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetUInt64WithAllBitsSet", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetUInt64WithAllBitsSet",
+                            0usize
                         )
                     })
             });

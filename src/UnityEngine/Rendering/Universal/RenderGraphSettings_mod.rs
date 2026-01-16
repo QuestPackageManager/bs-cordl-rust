@@ -8,13 +8,15 @@ pub struct RenderGraphSettings {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphSettings")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::RenderGraphSettings {
+    for crate::UnityEngine::Rendering::Universal::RenderGraphSettings
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
     const CLASS_NAME: &'static str = "RenderGraphSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -34,8 +36,7 @@ impl std::ops::Deref for crate::UnityEngine::Rendering::Universal::RenderGraphSe
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+RenderGraphSettings")]
-impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::Universal::RenderGraphSettings {
+impl std::ops::DerefMut for crate::UnityEngine::Rendering::Universal::RenderGraphSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -45,8 +46,8 @@ impl crate::UnityEngine::Rendering::Universal::RenderGraphSettings {
     #[cfg(feature = "UnityEngine+Rendering+Universal+RenderGraphSettings+Version")]
     pub type Version = crate::UnityEngine::Rendering::Universal::RenderGraphSettings_Version;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -54,7 +55,8 @@ impl crate::UnityEngine::Rendering::Universal::RenderGraphSettings {
     pub fn UnityEngine_Rendering_IRenderPipelineGraphicsSettings_get_isAvailableInPlayerBuild(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -77,40 +79,39 @@ impl crate::UnityEngine::Rendering::Universal::RenderGraphSettings {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_enableRenderCompatibilityMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_enableRenderCompatibilityMode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_enableRenderCompatibilityMode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_enableRenderCompatibilityMode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_enableRenderCompatibilityMode",
+                            0usize
                         )
                     })
             });
@@ -118,16 +119,18 @@ impl crate::UnityEngine::Rendering::Universal::RenderGraphSettings {
         Ok(__cordl_ret.into())
     }
     pub fn get_version(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_version")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_version", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_version",
+                            0usize
                         )
                     })
             });
@@ -138,32 +141,32 @@ impl crate::UnityEngine::Rendering::Universal::RenderGraphSettings {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_enableRenderCompatibilityMode")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_enableRenderCompatibilityMode",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_enableRenderCompatibilityMode", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_enableRenderCompatibilityMode",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphSettings")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::Universal::RenderGraphSettings {
+    for crate::UnityEngine::Rendering::Universal::RenderGraphSettings
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -173,34 +176,31 @@ for crate::UnityEngine::Rendering::Universal::RenderGraphSettings {
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+RenderGraphSettings")]
 impl AsRef<crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings>
-for crate::UnityEngine::Rendering::Universal::RenderGraphSettings {
+    for crate::UnityEngine::Rendering::Universal::RenderGraphSettings
+{
     fn as_ref(&self) -> &crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+RenderGraphSettings")]
 impl AsMut<crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings>
-for crate::UnityEngine::Rendering::Universal::RenderGraphSettings {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings {
+    for crate::UnityEngine::Rendering::Universal::RenderGraphSettings
+{
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphSettings+Version"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphSettings+Version")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum RenderGraphSettings_Version {
     #[default]
     Initial = 0i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphSettings+Version"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphSettings+Version")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::RenderGraphSettings_Version {
+    for crate::UnityEngine::Rendering::Universal::RenderGraphSettings_Version
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
@@ -219,20 +219,16 @@ for crate::UnityEngine::Rendering::Universal::RenderGraphSettings_Version {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphSettings+Version"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphSettings+Version")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::Universal::RenderGraphSettings_Version {
+    for crate::UnityEngine::Rendering::Universal::RenderGraphSettings_Version
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -241,11 +237,10 @@ for crate::UnityEngine::Rendering::Universal::RenderGraphSettings_Version {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphSettings+Version"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphSettings+Version")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::Universal::RenderGraphSettings_Version {
+    for crate::UnityEngine::Rendering::Universal::RenderGraphSettings_Version
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -257,28 +252,24 @@ for crate::UnityEngine::Rendering::Universal::RenderGraphSettings_Version {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphSettings+Version"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphSettings+Version")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::Universal::RenderGraphSettings_Version {
+    for crate::UnityEngine::Rendering::Universal::RenderGraphSettings_Version
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphSettings+Version"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphSettings+Version")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::Universal::RenderGraphSettings_Version {
+    for crate::UnityEngine::Rendering::Universal::RenderGraphSettings_Version
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

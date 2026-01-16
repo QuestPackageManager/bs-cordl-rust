@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PosePredicti
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PosePrediction";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,9 +44,10 @@ impl crate::GlobalNamespace::PosePrediction {
         curr: crate::UnityEngine::Pose,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Pose, crate::UnityEngine::Pose, f32),
@@ -60,9 +62,8 @@ impl crate::GlobalNamespace::PosePrediction {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            cordl_method_info.invoke_unchecked((), (prev, curr, t))?
-        };
+        let __cordl_ret: crate::UnityEngine::Pose =
+            unsafe { cordl_method_info.invoke_unchecked((), (prev, curr, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn InterpolatePoseSerializable(
@@ -70,35 +71,34 @@ impl crate::GlobalNamespace::PosePrediction {
         b: crate::GlobalNamespace::PoseSerializable,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PoseSerializable> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::PoseSerializable,
-                            crate::GlobalNamespace::PoseSerializable,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::GlobalNamespace::PoseSerializable,
-                        3usize,
-                    >("InterpolatePoseSerializable")
+                        crate::GlobalNamespace::PoseSerializable,
+                        f32,
+                    ), crate::GlobalNamespace::PoseSerializable, 3usize>(
+                        "InterpolatePoseSerializable",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InterpolatePoseSerializable", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InterpolatePoseSerializable",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::PoseSerializable = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b, t))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::PoseSerializable =
+            unsafe { cordl_method_info.invoke_unchecked((), (a, b, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -110,32 +110,29 @@ impl crate::GlobalNamespace::PosePrediction {
         currTime: i64,
         _cordl_time: i64,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Pose,
-                            i64,
-                            crate::UnityEngine::Pose,
-                            i64,
-                            i64,
-                        ),
+                    .find_static_method::<(
                         crate::UnityEngine::Pose,
-                        5usize,
-                    >("PredictPose")
+                        i64,
+                        crate::UnityEngine::Pose,
+                        i64,
+                        i64,
+                    ), crate::UnityEngine::Pose, 5usize>("PredictPose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PredictPose", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PredictPose",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (prev, prevTime, curr, currTime, _cordl_time))?
+            cordl_method_info.invoke_unchecked((), (prev, prevTime, curr, currTime, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -146,54 +143,52 @@ impl crate::GlobalNamespace::PosePrediction {
         currTime: i64,
         _cordl_time: i64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PoseSerializable> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::PoseSerializable,
-                            i64,
-                            crate::GlobalNamespace::PoseSerializable,
-                            i64,
-                            i64,
-                        ),
+                    .find_static_method::<(
                         crate::GlobalNamespace::PoseSerializable,
-                        5usize,
-                    >("PredictPoseSerializable")
+                        i64,
+                        crate::GlobalNamespace::PoseSerializable,
+                        i64,
+                        i64,
+                    ), crate::GlobalNamespace::PoseSerializable, 5usize>(
+                        "PredictPoseSerializable"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PredictPoseSerializable", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PredictPoseSerializable",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::PoseSerializable = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (prev, prevTime, curr, currTime, _cordl_time))?
+            cordl_method_info.invoke_unchecked((), (prev, prevTime, curr, currTime, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

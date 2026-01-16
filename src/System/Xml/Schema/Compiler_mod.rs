@@ -3,43 +3,21 @@
 #[derive(Debug)]
 pub struct Compiler {
     __cordl_parent: crate::System::Xml::Schema::BaseProcessor,
-    pub restrictionErrorMsg: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub attributes: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaObjectTable,
-    >,
-    pub attributeGroups: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaObjectTable,
-    >,
-    pub elements: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaObjectTable,
-    >,
-    pub schemaTypes: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaObjectTable,
-    >,
-    pub groups: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaObjectTable,
-    >,
-    pub notations: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaObjectTable,
-    >,
-    pub examplars: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaObjectTable,
-    >,
-    pub identityConstraints: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaObjectTable,
-    >,
+    pub restrictionErrorMsg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub attributes: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObjectTable>,
+    pub attributeGroups:
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObjectTable>,
+    pub elements: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObjectTable>,
+    pub schemaTypes: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObjectTable>,
+    pub groups: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObjectTable>,
+    pub notations: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObjectTable>,
+    pub examplars: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObjectTable>,
+    pub identityConstraints:
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObjectTable>,
     pub complexTypeStack: quest_hook::libil2cpp::Gc<crate::System::Collections::Stack>,
-    pub schemasToCompile: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Hashtable,
-    >,
-    pub importedSchemas: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Hashtable,
-    >,
-    pub schemaForSchema: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchema,
-    >,
+    pub schemasToCompile: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub importedSchemas: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub schemaForSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+Compiler")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::Compiler {
@@ -48,7 +26,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::Compiler
     const NAMESPACE: &'static str = "System.Xml.Schema";
     const CLASS_NAME: &'static str = "Compiler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -80,73 +59,61 @@ impl crate::System::Xml::Schema::Compiler {
         contentValidator: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::ParticleContentValidator,
         >,
-        particle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
+        particle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::ParticleContentValidator,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaParticle,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("BuildParticleContentModel")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::ParticleContentValidator,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+                    ), bool, 2usize>("BuildParticleContentModel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BuildParticleContentModel", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BuildParticleContentModel",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (contentValidator, particle))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (contentValidator, particle))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateEffectiveTotalRange(
         &mut self,
-        particle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
+        particle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
         minOccurs: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
         maxOccurs: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaParticle,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
-                            quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CalculateEffectiveTotalRange")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "CalculateEffectiveTotalRange"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculateEffectiveTotalRange", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CalculateEffectiveTotalRange",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (particle, minOccurs, maxOccurs))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (particle, minOccurs, maxOccurs))? };
         Ok(__cordl_ret.into())
     }
     pub fn CannonicalizeAll(
@@ -156,9 +123,10 @@ impl crate::System::Xml::Schema::Compiler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -180,9 +148,8 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (all, root))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (all, root))? };
         Ok(__cordl_ret.into())
     }
     pub fn CannonicalizeChoice(
@@ -192,9 +159,10 @@ impl crate::System::Xml::Schema::Compiler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -216,9 +184,8 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (choice, root))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (choice, root))? };
         Ok(__cordl_ret.into())
     }
     pub fn CannonicalizeElement(
@@ -227,9 +194,10 @@ impl crate::System::Xml::Schema::Compiler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -248,23 +216,21 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (element))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element))? };
         Ok(__cordl_ret.into())
     }
     pub fn CannonicalizeGroupRef(
         &mut self,
-        groupRef: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaGroupRef,
-        >,
+        groupRef: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroupRef>,
         root: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -286,23 +252,21 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (groupRef, root))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (groupRef, root))? };
         Ok(__cordl_ret.into())
     }
     pub fn CannonicalizeParticle(
         &mut self,
-        particle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
+        particle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
         root: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -324,22 +288,20 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (particle, root))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (particle, root))? };
         Ok(__cordl_ret.into())
     }
     pub fn CannonicalizePointlessRoot(
         &mut self,
-        particle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
+        particle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -358,23 +320,21 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (particle))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (particle))? };
         Ok(__cordl_ret.into())
     }
     pub fn CannonicalizeSequence(
         &mut self,
-        sequence: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaSequence,
-        >,
+        sequence: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSequence>,
         root: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -396,9 +356,8 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (sequence, root))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (sequence, root))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckAtrributeGroupRestriction(
@@ -410,45 +369,43 @@ impl crate::System::Xml::Schema::Compiler {
             crate::System::Xml::Schema::XmlSchemaAttributeGroup,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAttributeGroup,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAttributeGroup,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CheckAtrributeGroupRestriction")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaAttributeGroup,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaAttributeGroup,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "CheckAtrributeGroupRestriction"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckAtrributeGroupRestriction", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckAtrributeGroupRestriction",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (baseAttributeGroup, derivedAttributeGroup))?
+            cordl_method_info.invoke_unchecked(self, (baseAttributeGroup, derivedAttributeGroup))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckParticleDerivation_XmlSchemaComplexType0(
         &mut self,
-        complexType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
+        complexType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -465,106 +422,78 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (complexType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (complexType))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckParticleDerivation_XmlSchemaParticle_XmlSchemaParticle1(
         &mut self,
-        derivedParticle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
-        baseParticle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
+        derivedParticle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+        baseParticle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaParticle,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaParticle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CheckParticleDerivation")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "CheckParticleDerivation"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckParticleDerivation", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckParticleDerivation",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (derivedParticle, baseParticle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (derivedParticle, baseParticle))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckUnionType(
         &mut self,
-        unionMember: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaSimpleType,
-        >,
-        memberTypeDefinitions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ArrayList,
-        >,
-        parentType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaSimpleType,
-        >,
+        unionMember: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
+        memberTypeDefinitions: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+        parentType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaSimpleType,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::ArrayList,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaSimpleType,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CheckUnionType")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
+                        quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("CheckUnionType")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckUnionType", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckUnionType",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (unionMember, memberTypeDefinitions, parentType),
-                )?
+                .invoke_unchecked(self, (unionMember, memberTypeDefinitions, parentType))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CleanupAttribute(
         &mut self,
-        attribute: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaAttribute,
-        >,
+        attribute: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAttribute>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -581,9 +510,8 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (attribute))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (attribute))? };
         Ok(__cordl_ret.into())
     }
     pub fn CleanupAttributeGroup(
@@ -592,9 +520,10 @@ impl crate::System::Xml::Schema::Compiler {
             crate::System::Xml::Schema::XmlSchemaAttributeGroup,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -611,9 +540,8 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (attributeGroup))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (attributeGroup))? };
         Ok(__cordl_ret.into())
     }
     pub fn CleanupAttributes(
@@ -622,39 +550,35 @@ impl crate::System::Xml::Schema::Compiler {
             crate::System::Xml::Schema::XmlSchemaObjectCollection,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Xml::Schema::XmlSchemaObjectCollection,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("CleanupAttributes")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+                    >), quest_hook::libil2cpp::Void, 1usize>("CleanupAttributes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CleanupAttributes", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CleanupAttributes",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (attributes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (attributes))? };
         Ok(__cordl_ret.into())
     }
     pub fn CleanupComplexType(
         &mut self,
-        complexType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
+        complexType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -671,18 +595,18 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (complexType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (complexType))? };
         Ok(__cordl_ret.into())
     }
     pub fn CleanupElement(
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -699,18 +623,18 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (element))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (element))? };
         Ok(__cordl_ret.into())
     }
     pub fn CleanupGroup(
         &mut self,
         group: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroup>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -727,20 +651,18 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (group))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (group))? };
         Ok(__cordl_ret.into())
     }
     pub fn CleanupParticle(
         &mut self,
-        particle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
+        particle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -757,20 +679,18 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (particle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (particle))? };
         Ok(__cordl_ret.into())
     }
     pub fn CleanupSimpleType(
         &mut self,
-        simpleType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaSimpleType,
-        >,
+        simpleType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -787,21 +707,22 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (simpleType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (simpleType))? };
         Ok(__cordl_ret.into())
     }
     pub fn Compile(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("Compile")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Compile",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Compile",
                             0usize
                         )
                     })
@@ -816,9 +737,10 @@ impl crate::System::Xml::Schema::Compiler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnyAttribute>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -854,9 +776,10 @@ impl crate::System::Xml::Schema::Compiler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnyAttribute>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -889,9 +812,10 @@ impl crate::System::Xml::Schema::Compiler {
         &mut self,
         xa: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAttribute>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -908,9 +832,8 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (xa))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (xa))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileAttributeGroup(
@@ -919,9 +842,10 @@ impl crate::System::Xml::Schema::Compiler {
             crate::System::Xml::Schema::XmlSchemaAttributeGroup,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -938,28 +862,24 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (attributeGroup))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (attributeGroup))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileBaseMemberTypes(
         &mut self,
-        simpleType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaSimpleType,
-        >,
+        simpleType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Xml::Schema::XmlSchemaSimpleType,
-                >,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -984,24 +904,21 @@ impl crate::System::Xml::Schema::Compiler {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Xml::Schema::XmlSchemaSimpleType,
-                >,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (simpleType))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileComplexContent(
         &mut self,
-        complexType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
+        complexType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ContentValidator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1020,16 +937,13 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::ContentValidator,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (complexType))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ContentValidator> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (complexType))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileComplexContentExtension(
         &mut self,
-        complexType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
+        complexType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
         complexContent: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaComplexContent,
         >,
@@ -1037,30 +951,28 @@ impl crate::System::Xml::Schema::Compiler {
             crate::System::Xml::Schema::XmlSchemaComplexContentExtension,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaComplexType,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaComplexContent,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaComplexContentExtension,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CompileComplexContentExtension")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaComplexContent,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaComplexContentExtension,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "CompileComplexContentExtension"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileComplexContentExtension", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileComplexContentExtension",
+                            3usize
                         )
                     })
             });
@@ -1072,9 +984,7 @@ impl crate::System::Xml::Schema::Compiler {
     }
     pub fn CompileComplexContentRestriction(
         &mut self,
-        complexType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
+        complexType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
         complexContent: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaComplexContent,
         >,
@@ -1082,51 +992,45 @@ impl crate::System::Xml::Schema::Compiler {
             crate::System::Xml::Schema::XmlSchemaComplexContentRestriction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaComplexType,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaComplexContent,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaComplexContentRestriction,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CompileComplexContentRestriction")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaComplexContent,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaComplexContentRestriction,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "CompileComplexContentRestriction"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileComplexContentRestriction", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileComplexContentRestriction",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (complexType, complexContent, complexRestriction),
-                )?
+                .invoke_unchecked(self, (complexType, complexContent, complexRestriction))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CompileComplexType(
         &mut self,
-        complexType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
+        complexType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1143,20 +1047,18 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (complexType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (complexType))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileComplexTypeElements(
         &mut self,
-        complexType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
+        complexType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1173,22 +1075,20 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (complexType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (complexType))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileContentTypeParticle(
         &mut self,
-        particle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
+        particle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1207,18 +1107,18 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (particle))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (particle))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileElement(
         &mut self,
         xe: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1235,18 +1135,18 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (xe))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (xe))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileGroup(
         &mut self,
         group: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroup>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1263,144 +1163,119 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (group))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (group))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileIdentityConstraint(
         &mut self,
-        xi: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
-        >,
+        xi: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaIdentityConstraint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("CompileIdentityConstraint")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "CompileIdentityConstraint"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileIdentityConstraint", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileIdentityConstraint",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (xi))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (xi))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileLocalAttributes(
         &mut self,
-        baseType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
-        derivedType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
+        baseType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+        derivedType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
         attributes: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaObjectCollection,
         >,
-        anyAttribute: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-        >,
+        anyAttribute: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnyAttribute>,
         derivedBy: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaComplexType,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaComplexType,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaObjectCollection,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-                            >,
-                            crate::System::Xml::Schema::XmlSchemaDerivationMethod,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("CompileLocalAttributes")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+                        >,
+                        crate::System::Xml::Schema::XmlSchemaDerivationMethod,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "CompileLocalAttributes"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileLocalAttributes", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileLocalAttributes",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (baseType, derivedType, attributes, anyAttribute, derivedBy),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (baseType, derivedType, attributes, anyAttribute, derivedBy),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CompileParticleElements_XmlSchemaComplexType_XmlSchemaParticle0(
         &mut self,
-        complexType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
-        particle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
+        complexType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+        particle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaComplexType,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaParticle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CompileParticleElements")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "CompileParticleElements"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileParticleElements", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileParticleElements",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (complexType, particle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (complexType, particle))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileParticleElements_XmlSchemaParticle1(
         &mut self,
-        particle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
+        particle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1417,96 +1292,84 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (particle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (particle))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileSimpleContentExtension(
         &mut self,
-        complexType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
+        complexType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
         simpleExtension: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaComplexType,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CompileSimpleContentExtension")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "CompileSimpleContentExtension"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileSimpleContentExtension", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileSimpleContentExtension",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (complexType, simpleExtension))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (complexType, simpleExtension))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileSimpleContentRestriction(
         &mut self,
-        complexType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
+        complexType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
         simpleRestriction: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaSimpleContentRestriction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaComplexType,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaSimpleContentRestriction,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CompileSimpleContentRestriction")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaSimpleContentRestriction,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "CompileSimpleContentRestriction"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileSimpleContentRestriction", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileSimpleContentRestriction",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (complexType, simpleRestriction))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (complexType, simpleRestriction))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileSimpleType(
         &mut self,
-        simpleType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaSimpleType,
-        >,
+        simpleType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1523,9 +1386,8 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (simpleType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (simpleType))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompileSubstitutionGroup(
@@ -1534,28 +1396,27 @@ impl crate::System::Xml::Schema::Compiler {
             crate::System::Xml::Schema::XmlSchemaSubstitutionGroup,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Xml::Schema::XmlSchemaSubstitutionGroup,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("CompileSubstitutionGroup")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaSubstitutionGroup,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "CompileSubstitutionGroup"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompileSubstitutionGroup", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CompileSubstitutionGroup",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (substitutionGroup))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (substitutionGroup))? };
         Ok(__cordl_ret.into())
     }
     pub fn CopyPosition(
@@ -1564,70 +1425,54 @@ impl crate::System::Xml::Schema::Compiler {
         from: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnnotated>,
         copyParent: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAnnotated,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAnnotated,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CopyPosition")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnnotated>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnnotated>,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 3usize>("CopyPosition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CopyPosition", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CopyPosition",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (to, from, copyParent))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (to, from, copyParent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Execute(
         &mut self,
         schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
-        schemaCompiledInfo: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::SchemaInfo,
-        >,
+        schemaCompiledInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaSet,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::SchemaInfo,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("Execute")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
+                    ), bool, 2usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (schemaSet, schemaCompiledInfo))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (schemaSet, schemaCompiledInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAnySchemaType(
@@ -1636,9 +1481,10 @@ impl crate::System::Xml::Schema::Compiler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1657,9 +1503,8 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaType,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (name))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetComplexType(
@@ -1668,9 +1513,10 @@ impl crate::System::Xml::Schema::Compiler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1696,86 +1542,68 @@ impl crate::System::Xml::Schema::Compiler {
     }
     pub fn GetMappingParticle(
         &mut self,
-        particle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
+        particle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
         collection: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaObjectCollection,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaParticle,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaObjectCollection,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("GetMappingParticle")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+                        >,
+                    ), i32, 2usize>("GetMappingParticle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetMappingParticle", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetMappingParticle",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (particle, collection))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (particle, collection))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSchemaContentType(
         &mut self,
-        complexType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
+        complexType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
         complexContent: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaComplexContent,
         >,
-        particle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Xml::Schema::XmlSchemaContentType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        particle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlSchemaContentType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaComplexType,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaComplexContent,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaParticle,
-                            >,
-                        ),
-                        crate::System::Xml::Schema::XmlSchemaContentType,
-                        3usize,
-                    >("GetSchemaContentType")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaComplexContent,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+                    ), crate::System::Xml::Schema::XmlSchemaContentType, 3usize>(
+                        "GetSchemaContentType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSchemaContentType", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSchemaContentType",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: crate::System::Xml::Schema::XmlSchemaContentType = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (complexType, complexContent, particle))?
+            cordl_method_info.invoke_unchecked(self, (complexType, complexContent, particle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1785,9 +1613,10 @@ impl crate::System::Xml::Schema::Compiler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1815,9 +1644,10 @@ impl crate::System::Xml::Schema::Compiler {
         &mut self,
         schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1834,9 +1664,8 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (schemaSet))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (schemaSet))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsAnyFromAny(
@@ -1844,310 +1673,229 @@ impl crate::System::Xml::Schema::Compiler {
         derivedAny: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAny>,
         baseAny: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAny>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAny,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAny,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsAnyFromAny")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAny>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAny>,
+                    ), bool, 2usize>("IsAnyFromAny")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsAnyFromAny", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsAnyFromAny",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (derivedAny, baseAny))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (derivedAny, baseAny))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsChoiceFromChoiceSubstGroup(
         &mut self,
-        derivedChoice: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaChoice,
-        >,
-        baseChoice: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaChoice,
-        >,
+        derivedChoice: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaChoice>,
+        baseChoice: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaChoice>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaChoice,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaChoice,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsChoiceFromChoiceSubstGroup")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaChoice>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaChoice>,
+                    ), bool, 2usize>("IsChoiceFromChoiceSubstGroup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsChoiceFromChoiceSubstGroup", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsChoiceFromChoiceSubstGroup",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (derivedChoice, baseChoice))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (derivedChoice, baseChoice))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsElementFromAny(
         &mut self,
-        derivedElement: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaElement,
-        >,
+        derivedElement: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
         baseAny: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAny>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaElement,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAny,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsElementFromAny")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAny>,
+                    ), bool, 2usize>("IsElementFromAny")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsElementFromAny", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsElementFromAny",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (derivedElement, baseAny))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (derivedElement, baseAny))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsElementFromElement(
         &mut self,
-        derivedElement: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaElement,
-        >,
-        baseElement: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaElement,
-        >,
+        derivedElement: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+        baseElement: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaElement,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaElement,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsElementFromElement")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+                    ), bool, 2usize>("IsElementFromElement")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsElementFromElement", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsElementFromElement",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (derivedElement, baseElement))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (derivedElement, baseElement))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsElementFromGroupBase(
         &mut self,
-        derivedElement: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaElement,
-        >,
-        baseGroupBase: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaGroupBase,
-        >,
+        derivedElement: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+        baseGroupBase: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroupBase>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaElement,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaGroupBase,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsElementFromGroupBase")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroupBase>,
+                    ), bool, 2usize>("IsElementFromGroupBase")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsElementFromGroupBase", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsElementFromGroupBase",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (derivedElement, baseGroupBase))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (derivedElement, baseGroupBase))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsFixedEqual(
         &mut self,
         baseDecl: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaDeclBase>,
-        derivedDecl: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::SchemaDeclBase,
-        >,
+        derivedDecl: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaDeclBase>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::SchemaDeclBase,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::SchemaDeclBase,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsFixedEqual")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaDeclBase>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaDeclBase>,
+                    ), bool, 2usize>("IsFixedEqual")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsFixedEqual", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsFixedEqual",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (baseDecl, derivedDecl))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (baseDecl, derivedDecl))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsGroupBaseFromAny(
         &mut self,
-        derivedGroupBase: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaGroupBase,
-        >,
+        derivedGroupBase: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroupBase>,
         baseAny: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAny>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaGroupBase,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAny,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsGroupBaseFromAny")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroupBase>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAny>,
+                    ), bool, 2usize>("IsGroupBaseFromAny")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsGroupBaseFromAny", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsGroupBaseFromAny",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (derivedGroupBase, baseAny))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (derivedGroupBase, baseAny))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsGroupBaseFromGroupBase(
         &mut self,
-        derivedGroupBase: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaGroupBase,
-        >,
-        baseGroupBase: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaGroupBase,
-        >,
+        derivedGroupBase: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroupBase>,
+        baseGroupBase: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroupBase>,
         skipEmptableOnly: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaGroupBase,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaGroupBase,
-                            >,
-                            bool,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroupBase>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroupBase>,
                         bool,
-                        3usize,
-                    >("IsGroupBaseFromGroupBase")
+                    ), bool, 3usize>("IsGroupBaseFromGroupBase")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsGroupBaseFromGroupBase", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsGroupBaseFromGroupBase",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (derivedGroupBase, baseGroupBase, skipEmptableOnly),
-                )?
+                .invoke_unchecked(self, (derivedGroupBase, baseGroupBase, skipEmptableOnly))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsParticleEmptiable(
         &mut self,
-        particle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
+        particle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -2164,16 +1912,12 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (particle))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (particle))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsProcessContentsRestricted(
         &mut self,
-        baseType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
+        baseType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
         derivedAttributeWildcard: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaAnyAttribute,
         >,
@@ -2181,114 +1925,89 @@ impl crate::System::Xml::Schema::Compiler {
             crate::System::Xml::Schema::XmlSchemaAnyAttribute,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaComplexType,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("IsProcessContentsRestricted")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+                        >,
+                    ), bool, 3usize>("IsProcessContentsRestricted")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsProcessContentsRestricted", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsProcessContentsRestricted",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (baseType, derivedAttributeWildcard, baseAttributeWildcard),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (baseType, derivedAttributeWildcard, baseAttributeWildcard),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsSequenceFromAll(
         &mut self,
-        derivedSequence: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaSequence,
-        >,
+        derivedSequence: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSequence>,
         baseAll: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAll>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaSequence,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAll,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsSequenceFromAll")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSequence>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAll>,
+                    ), bool, 2usize>("IsSequenceFromAll")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsSequenceFromAll", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsSequenceFromAll",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (derivedSequence, baseAll))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (derivedSequence, baseAll))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsSequenceFromChoice(
         &mut self,
-        derivedSequence: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaSequence,
-        >,
-        baseChoice: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaChoice,
-        >,
+        derivedSequence: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSequence>,
+        baseChoice: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaChoice>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaSequence,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaChoice,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsSequenceFromChoice")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSequence>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaChoice>,
+                    ), bool, 2usize>("IsSequenceFromChoice")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsSequenceFromChoice", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsSequenceFromChoice",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (derivedSequence, baseChoice))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (derivedSequence, baseChoice))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidOccurrenceRangeRestriction_Decimal_Decimal_Decimal_Decimal1(
@@ -2298,141 +2017,115 @@ impl crate::System::Xml::Schema::Compiler {
         baseMinOccurs: crate::System::Decimal,
         baseMaxOccurs: crate::System::Decimal,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Decimal,
-                            crate::System::Decimal,
-                            crate::System::Decimal,
-                            crate::System::Decimal,
-                        ),
-                        bool,
-                        4usize,
-                    >("IsValidOccurrenceRangeRestriction")
+                    .find_method::<(
+                        crate::System::Decimal,
+                        crate::System::Decimal,
+                        crate::System::Decimal,
+                        crate::System::Decimal,
+                    ), bool, 4usize>("IsValidOccurrenceRangeRestriction")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsValidOccurrenceRangeRestriction", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsValidOccurrenceRangeRestriction",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (minOccurs, maxOccurs, baseMinOccurs, baseMaxOccurs),
-                )?
+                .invoke_unchecked(self, (minOccurs, maxOccurs, baseMinOccurs, baseMaxOccurs))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidOccurrenceRangeRestriction_XmlSchemaParticle_XmlSchemaParticle0(
         &mut self,
-        derivedParticle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
-        baseParticle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
+        derivedParticle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+        baseParticle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaParticle,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaParticle,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsValidOccurrenceRangeRestriction")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+                    ), bool, 2usize>("IsValidOccurrenceRangeRestriction")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsValidOccurrenceRangeRestriction", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsValidOccurrenceRangeRestriction",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (derivedParticle, baseParticle))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (derivedParticle, baseParticle))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidRestriction(
         &mut self,
-        derivedParticle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
-        baseParticle: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaParticle,
-        >,
+        derivedParticle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+        baseParticle: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaParticle,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaParticle,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsValidRestriction")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+                    ), bool, 2usize>("IsValidRestriction")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsValidRestriction", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsValidRestriction",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (derivedParticle, baseParticle))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (derivedParticle, baseParticle))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
-        eventHandler: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::ValidationEventHandler,
-        >,
-        schemaForSchema: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchema,
-        >,
+        eventHandler: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationEventHandler>,
+        schemaForSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
         compilationSettings: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaCompilationSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (nameTable, eventHandler, schemaForSchema, compilationSettings),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                nameTable,
+                eventHandler,
+                schemaForSchema,
+                compilationSettings,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn Output(
         &mut self,
         schemaInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -2449,9 +2142,8 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (schemaInfo))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (schemaInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn Prepare(
@@ -2459,67 +2151,60 @@ impl crate::System::Xml::Schema::Compiler {
         schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
         cleanup: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchema,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Prepare")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Prepare")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Prepare",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Prepare",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (schema, cleanup))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (schema, cleanup))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessSubstitutionGroups(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ProcessSubstitutionGroups")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "ProcessSubstitutionGroups",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessSubstitutionGroups", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessSubstitutionGroups",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn PushComplexType(
         &mut self,
-        complexType: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaComplexType,
-        >,
+        complexType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -2536,9 +2221,8 @@ impl crate::System::Xml::Schema::Compiler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (complexType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (complexType))? };
         Ok(__cordl_ret.into())
     }
     pub fn RecursivelyCheckRedefinedAttributeGroups(
@@ -2550,70 +2234,62 @@ impl crate::System::Xml::Schema::Compiler {
             crate::System::Xml::Schema::XmlSchemaAttributeGroup,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAttributeGroup,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAttributeGroup,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("RecursivelyCheckRedefinedAttributeGroups")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaAttributeGroup,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaAttributeGroup,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "RecursivelyCheckRedefinedAttributeGroups",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RecursivelyCheckRedefinedAttributeGroups", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RecursivelyCheckRedefinedAttributeGroups",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (attributeGroup, baseAttributeGroup))?
+            cordl_method_info.invoke_unchecked(self, (attributeGroup, baseAttributeGroup))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RecursivelyCheckRedefinedGroups(
         &mut self,
-        redefinedGroup: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaGroup,
-        >,
+        redefinedGroup: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroup>,
         baseGroup: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroup>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaGroup,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaGroup,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("RecursivelyCheckRedefinedGroups")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroup>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroup>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "RecursivelyCheckRedefinedGroups"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RecursivelyCheckRedefinedGroups", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RecursivelyCheckRedefinedGroups",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (redefinedGroup, baseGroup))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (redefinedGroup, baseGroup))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetDefaultFixed(
@@ -2621,107 +2297,95 @@ impl crate::System::Xml::Schema::Compiler {
         xa: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAttribute>,
         decl: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaAttribute,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::SchemaAttDef,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetDefaultFixed")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAttribute>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SetDefaultFixed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetDefaultFixed", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetDefaultFixed",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (xa, decl))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (xa, decl))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateSForSSimpleTypes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("UpdateSForSSimpleTypes")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "UpdateSForSSimpleTypes",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateSForSSimpleTypes", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateSForSSimpleTypes",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
-        eventHandler: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::ValidationEventHandler,
-        >,
-        schemaForSchema: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchema,
-        >,
+        eventHandler: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationEventHandler>,
+        schemaForSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
         compilationSettings: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaCompilationSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::ValidationEventHandler,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchema,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::XmlSchemaCompilationSettings,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::ValidationEventHandler,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaCompilationSettings,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (nameTable, eventHandler, schemaForSchema, compilationSettings),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    nameTable,
+                    eventHandler,
+                    schemaForSchema,
+                    compilationSettings,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }

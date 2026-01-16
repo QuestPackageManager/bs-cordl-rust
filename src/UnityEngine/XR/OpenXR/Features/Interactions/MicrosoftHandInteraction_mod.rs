@@ -1,22 +1,20 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+MicrosoftHandInteraction"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+MicrosoftHandInteraction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MicrosoftHandInteraction {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Features::OpenXRInteractionFeature,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+MicrosoftHandInteraction"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+MicrosoftHandInteraction")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction {
+    for crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.XR.OpenXR.Features.Interactions";
     const CLASS_NAME: &'static str = "MicrosoftHandInteraction";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -30,7 +28,8 @@ for crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInterac
 }
 #[cfg(feature = "UnityEngine+XR+OpenXR+Features+Interactions+MicrosoftHandInteraction")]
 impl std::ops::Deref
-for crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction {
+    for crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction
+{
     type Target = crate::UnityEngine::XR::OpenXR::Features::OpenXRInteractionFeature;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -38,7 +37,8 @@ for crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInterac
 }
 #[cfg(feature = "UnityEngine+XR+OpenXR+Features+Interactions+MicrosoftHandInteraction")]
 impl std::ops::DerefMut
-for crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction {
+    for crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -59,12 +59,12 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     pub type HoloLensHand = crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand;
     pub fn GetDeviceLayoutName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -79,14 +79,13 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -94,105 +93,98 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     pub fn RegisterActionMapsWithRuntime(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("RegisterActionMapsWithRuntime")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "RegisterActionMapsWithRuntime",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterActionMapsWithRuntime", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RegisterActionMapsWithRuntime",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterDeviceLayout(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("RegisterDeviceLayout")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RegisterDeviceLayout")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterDeviceLayout", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RegisterDeviceLayout",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterDeviceLayout(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("UnregisterDeviceLayout")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "UnregisterDeviceLayout",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnregisterDeviceLayout", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnregisterDeviceLayout",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+MicrosoftHandInteraction"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+MicrosoftHandInteraction")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction {
+    for crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -207,42 +199,30 @@ for crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInterac
 #[derive(Debug)]
 pub struct MicrosoftHandInteraction_HoloLensHand {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRController,
-    pub _select_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::AxisControl,
-    >,
-    pub _selectPressed_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _squeeze_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::AxisControl,
-    >,
-    pub _squeezePressed_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _devicePose_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::XR::OpenXR::Input::PoseControl,
-    >,
-    pub _pointer_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::XR::OpenXR::Input::PoseControl,
-    >,
-    pub _isTracked_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    >,
-    pub _trackingState_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::IntegerControl,
-    >,
-    pub _devicePosition_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    >,
-    pub _deviceRotation_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-    >,
-    pub _pointerPosition_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    >,
-    pub _pointerRotation_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-    >,
+    pub _select_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
+    pub _selectPressed_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _squeeze_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
+    pub _squeezePressed_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _devicePose_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::OpenXR::Input::PoseControl>,
+    pub _pointer_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::OpenXR::Input::PoseControl>,
+    pub _isTracked_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
+    pub _trackingState_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::IntegerControl>,
+    pub _devicePosition_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
+    pub _deviceRotation_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::QuaternionControl>,
+    pub _pointerPosition_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
+    pub _pointerRotation_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::QuaternionControl>,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+MicrosoftHandInteraction+HoloLensHand"
@@ -289,57 +269,51 @@ for crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInterac
     feature = "UnityEngine+XR+OpenXR+Features+Interactions+MicrosoftHandInteraction+HoloLensHand"
 )]
 impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand {
-    pub fn FinishSetup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn FinishSetup(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("FinishSetup")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("FinishSetup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FinishSetup", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FinishSetup",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_devicePose(
@@ -347,9 +321,10 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::OpenXR::Input::PoseControl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -374,26 +349,22 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     pub fn get_devicePosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                        >,
-                        0usize,
-                    >("get_devicePosition")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                    >, 0usize>("get_devicePosition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_devicePosition", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_devicePosition",
+                            0usize
                         )
                     })
             });
@@ -405,26 +376,22 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     pub fn get_deviceRotation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::QuaternionControl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                        >,
-                        0usize,
-                    >("get_deviceRotation")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                    >, 0usize>("get_deviceRotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_deviceRotation", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_deviceRotation",
+                            0usize
                         )
                     })
             });
@@ -436,26 +403,22 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     pub fn get_isTracked(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::ButtonControl,
-                        >,
-                        0usize,
-                    >("get_isTracked")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                    >, 0usize>("get_isTracked")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isTracked", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isTracked",
+                            0usize
                         )
                     })
             });
@@ -469,9 +432,10 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::OpenXR::Input::PoseControl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -496,26 +460,22 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     pub fn get_pointerPosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                        >,
-                        0usize,
-                    >("get_pointerPosition")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                    >, 0usize>("get_pointerPosition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_pointerPosition", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_pointerPosition",
+                            0usize
                         )
                     })
             });
@@ -527,26 +487,22 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     pub fn get_pointerRotation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::QuaternionControl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                        >,
-                        0usize,
-                    >("get_pointerRotation")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                    >, 0usize>("get_pointerRotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_pointerRotation", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_pointerRotation",
+                            0usize
                         )
                     })
             });
@@ -560,22 +516,20 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::AxisControl,
-                        >,
-                        0usize,
-                    >("get_select")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::AxisControl,
+                    >, 0usize>("get_select")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_select", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_select",
+                            0usize
                         )
                     })
             });
@@ -587,26 +541,22 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     pub fn get_selectPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::ButtonControl,
-                        >,
-                        0usize,
-                    >("get_selectPressed")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                    >, 0usize>("get_selectPressed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_selectPressed", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_selectPressed",
+                            0usize
                         )
                     })
             });
@@ -620,22 +570,20 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::AxisControl,
-                        >,
-                        0usize,
-                    >("get_squeeze")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::AxisControl,
+                    >, 0usize>("get_squeeze")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_squeeze", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_squeeze",
+                            0usize
                         )
                     })
             });
@@ -647,26 +595,22 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     pub fn get_squeezePressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::ButtonControl,
-                        >,
-                        0usize,
-                    >("get_squeezePressed")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                    >, 0usize>("get_squeezePressed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_squeezePressed", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_squeezePressed",
+                            0usize
                         )
                     })
             });
@@ -678,26 +622,22 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     pub fn get_trackingState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::IntegerControl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::IntegerControl,
-                        >,
-                        0usize,
-                    >("get_trackingState")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::IntegerControl,
+                    >, 0usize>("get_trackingState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_trackingState", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_trackingState",
+                            0usize
                         )
                     })
             });
@@ -708,13 +648,12 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
     }
     pub fn set_devicePose(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::XR::OpenXR::Input::PoseControl,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::OpenXR::Input::PoseControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -731,39 +670,35 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_devicePosition(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_devicePosition")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_devicePosition"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_devicePosition", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_devicePosition",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_deviceRotation(
@@ -772,69 +707,62 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_deviceRotation")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_deviceRotation"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_deviceRotation", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_deviceRotation",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_isTracked(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::ButtonControl,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_isTracked")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                    >), quest_hook::libil2cpp::Void, 1usize>("set_isTracked")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_isTracked", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_isTracked",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_pointer(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::XR::OpenXR::Input::PoseControl,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::OpenXR::Input::PoseControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -851,39 +779,35 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_pointerPosition(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::Vector3Control>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::Vector3Control,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_pointerPosition")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_pointerPosition"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_pointerPosition", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_pointerPosition",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_pointerRotation(
@@ -892,178 +816,154 @@ impl crate::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandIntera
             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_pointerRotation")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_pointerRotation"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_pointerRotation", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_pointerRotation",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_select(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::AxisControl,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::AxisControl,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_select")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::AxisControl,
+                    >), quest_hook::libil2cpp::Void, 1usize>("set_select")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_select", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_select",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_selectPressed(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::ButtonControl,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_selectPressed")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                    >), quest_hook::libil2cpp::Void, 1usize>("set_selectPressed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_selectPressed", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_selectPressed",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_squeeze(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::AxisControl,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::AxisControl,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_squeeze")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::AxisControl,
+                    >), quest_hook::libil2cpp::Void, 1usize>("set_squeeze")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_squeeze", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_squeeze",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_squeezePressed(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::ButtonControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::ButtonControl,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_squeezePressed")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_squeezePressed"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_squeezePressed", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_squeezePressed",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_trackingState(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::IntegerControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Controls::IntegerControl,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_trackingState")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Controls::IntegerControl,
+                    >), quest_hook::libil2cpp::Void, 1usize>("set_trackingState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_trackingState", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_trackingState",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -15,13 +15,15 @@ pub struct FinalBlitPass {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal.Internal";
     const CLASS_NAME: &'static str = "FinalBlitPass";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -34,53 +36,48 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass")]
-impl std::ops::Deref
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
+impl std::ops::Deref for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
     type Target = crate::UnityEngine::Rendering::Universal::ScriptableRenderPass;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass")]
-impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
+impl std::ops::DerefMut for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass")]
 impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
-    #[cfg(
-        feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitMaterialData"
-    )]
-    pub type BlitMaterialData = crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData;
-    #[cfg(
-        feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitPassNames"
-    )]
-    pub type BlitPassNames = crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNames;
+    #[cfg(feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitMaterialData")]
+    pub type BlitMaterialData =
+        crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData;
+    #[cfg(feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitPassNames")]
+    pub type BlitPassNames =
+        crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNames;
     #[cfg(feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitType")]
     pub type BlitType = crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType;
     #[cfg(feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass+PassData")]
     pub type PassData = crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData;
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Execute(
@@ -90,37 +87,32 @@ impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
             crate::UnityEngine::Rendering::Universal::RenderingData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Rendering::ScriptableRenderContext,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::Universal::RenderingData,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Execute")
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::ScriptableRenderContext,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::Universal::RenderingData,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context, renderingData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context, renderingData))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExecutePass(
-        cmd: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::RasterCommandBuffer,
-        >,
+        cmd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RasterCommandBuffer>,
         data: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData,
         >,
@@ -130,7 +122,8 @@ impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
             crate::UnityEngine::Rendering::Universal::UniversalCameraData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -164,8 +157,7 @@ impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (cmd, data, source, destination, cameraData))?
+            cordl_method_info.invoke_unchecked((), (cmd, data, source, destination, cameraData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -182,7 +174,8 @@ impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
         blitType: crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType,
         enableAlphaOutput: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -212,10 +205,7 @@ impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (cameraData, passData, blitType, enableAlphaOutput),
-                )?
+                .invoke_unchecked(self, (cameraData, passData, blitType, enableAlphaOutput))?
         };
         Ok(__cordl_ret.into())
     }
@@ -224,8 +214,8 @@ impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
         blitMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         blitHDRMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (evt, blitMaterial, blitHDRMaterial))?;
         Ok(__cordl_object.into())
@@ -237,33 +227,28 @@ impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
             crate::UnityEngine::Rendering::Universal::RenderingData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::Universal::RenderingData,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("OnCameraSetup")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::Universal::RenderingData,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("OnCameraSetup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnCameraSetup", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnCameraSetup",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (cmd, renderingData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cmd, renderingData))? };
         Ok(__cordl_ret.into())
     }
     pub fn Render(
@@ -271,9 +256,7 @@ impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
         renderGraph: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
         >,
-        frameData: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::ContextContainer,
-        >,
+        frameData: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ContextContainer>,
         cameraData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Rendering::Universal::UniversalCameraData,
         >,
@@ -285,46 +268,48 @@ impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
         >,
         overlayUITexture: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::ContextContainer,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::Universal::UniversalCameraData,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
-                            >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ContextContainer>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::Universal::UniversalCameraData,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
                             crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("Render")
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
+                        >,
+                        crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
+                    ), quest_hook::libil2cpp::Void, 6usize>("Render")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Render",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Render",
                             6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (renderGraph, frameData, cameraData, src, dest, overlayUITexture),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    renderGraph,
+                    frameData,
+                    cameraData,
+                    src,
+                    dest,
+                    overlayUITexture,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -335,41 +320,38 @@ impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
         hdrOutputParameters: crate::UnityEngine::Vector4,
         rendersOverlayUI: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::ColorGamut,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            crate::UnityEngine::Rendering::HDROutputUtils_Operation,
-                            crate::UnityEngine::Vector4,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("SetupHDROutput")
+                    .find_static_method::<(
+                        crate::UnityEngine::ColorGamut,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        crate::UnityEngine::Rendering::HDROutputUtils_Operation,
+                        crate::UnityEngine::Vector4,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 5usize>("SetupHDROutput")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetupHDROutput", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetupHDROutput",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        hdrDisplayColorGamut,
-                        material,
-                        hdrOperation,
-                        hdrOutputParameters,
-                        rendersOverlayUI,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    hdrDisplayColorGamut,
+                    material,
+                    hdrOperation,
+                    hdrOutputParameters,
+                    rendersOverlayUI,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -378,31 +360,26 @@ impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
         baseDescriptor: crate::UnityEngine::RenderTextureDescriptor,
         colorHandle: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::RenderTextureDescriptor,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::RTHandle,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Setup")
+                    .find_method::<(
+                        crate::UnityEngine::RenderTextureDescriptor,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Setup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Setup",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Setup",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (baseDescriptor, colorHandle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (baseDescriptor, colorHandle))? };
         Ok(__cordl_ret.into())
     }
     pub fn Setup_RenderTargetHandle0(
@@ -410,29 +387,26 @@ impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
         baseDescriptor: crate::UnityEngine::RenderTextureDescriptor,
         colorHandle: crate::UnityEngine::Rendering::Universal::RenderTargetHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::RenderTextureDescriptor,
-                            crate::UnityEngine::Rendering::Universal::RenderTargetHandle,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Setup")
+                    .find_method::<(
+                        crate::UnityEngine::RenderTextureDescriptor,
+                        crate::UnityEngine::Rendering::Universal::RenderTargetHandle,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Setup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Setup",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Setup",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (baseDescriptor, colorHandle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (baseDescriptor, colorHandle))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -441,37 +415,35 @@ impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
         blitMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         blitHDRMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Rendering::Universal::RenderPassEvent,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::Universal::RenderPassEvent,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (evt, blitMaterial, blitHDRMaterial))?
+            cordl_method_info.invoke_unchecked(self, (evt, blitMaterial, blitHDRMaterial))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -482,8 +454,8 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass {
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitMaterialData"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct FinalBlitPass_BlitMaterialData {
     pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub nearestSamplerPass: i32,
@@ -493,7 +465,8 @@ pub struct FinalBlitPass_BlitMaterialData {
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitMaterialData"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal.Internal";
@@ -512,20 +485,18 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMateri
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitMaterialData"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -538,7 +509,8 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMateri
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitMaterialData"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -554,16 +526,15 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMateri
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitMaterialData"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -571,7 +542,8 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMateri
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitMaterialData"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -587,7 +559,8 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMateri
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitMaterialData"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -596,29 +569,25 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMateri
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitMaterialData"
-)]
+#[cfg(feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitMaterialData")]
 impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData {}
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitPassNames"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitPassNames")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FinalBlitPass_BlitPassNames {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitPassNames"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitPassNames")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNames {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNames
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal.Internal";
     const CLASS_NAME: &'static str = "FinalBlitPass/BlitPassNames";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -632,7 +601,8 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNa
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitPassNames")]
 impl std::ops::Deref
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNames {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNames
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -640,7 +610,8 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNa
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitPassNames")]
 impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNames {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNames
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -650,11 +621,10 @@ impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassN
     pub const BilinearSampler: &'static str = "BilinearDebugDraw";
     pub const NearestSampler: &'static str = "NearestDebugDraw";
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitPassNames"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitPassNames")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNames {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNames
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -662,22 +632,19 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitType"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitType")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum FinalBlitPass_BlitType {
     #[default]
     Core = 0i32,
     Count = 2i32,
     HDR = 1i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitType"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal.Internal";
@@ -696,20 +663,16 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitType"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -718,11 +681,10 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitType"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -734,28 +696,24 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitType"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitType"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -767,9 +725,7 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitType {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+PassData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+PassData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FinalBlitPass_PassData {
@@ -780,22 +736,22 @@ pub struct FinalBlitPass_PassData {
     pub hdrOutputLuminanceParams: crate::UnityEngine::Vector4,
     pub requireSrgbConversion: bool,
     pub enableAlphaOutput: bool,
-    pub blitMaterialData: crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData,
-    pub cameraData: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::Universal::UniversalCameraData,
-    >,
+    pub blitMaterialData:
+        crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData,
+    pub cameraData:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::Universal::UniversalCameraData>,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+PassData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+PassData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal.Internal";
     const CLASS_NAME: &'static str = "FinalBlitPass/PassData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -809,7 +765,8 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData {
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass+PassData")]
 impl std::ops::Deref
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -817,7 +774,8 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData {
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass+PassData")]
 impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -825,39 +783,37 @@ for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData {
 #[cfg(feature = "UnityEngine+Rendering+Universal+Internal+FinalBlitPass+PassData")]
 impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+PassData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+PassData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData {
+    for crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

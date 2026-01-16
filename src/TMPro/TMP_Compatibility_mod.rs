@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Compatibility {
     const NAMESPACE: &'static str = "TMPro";
     const CLASS_NAME: &'static str = "TMP_Compatibility";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,9 +44,10 @@ impl crate::TMPro::TMP_Compatibility {
     pub fn ConvertTextAlignmentEnumValues(
         oldValue: crate::TMPro::TextAlignmentOptions,
     ) -> quest_hook::libil2cpp::Result<crate::TMPro::TextAlignmentOptions> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::TMPro::TextAlignmentOptions),
@@ -60,9 +62,8 @@ impl crate::TMPro::TMP_Compatibility {
                         )
                     })
             });
-        let __cordl_ret: crate::TMPro::TextAlignmentOptions = unsafe {
-            cordl_method_info.invoke_unchecked((), (oldValue))?
-        };
+        let __cordl_ret: crate::TMPro::TextAlignmentOptions =
+            unsafe { cordl_method_info.invoke_unchecked((), (oldValue))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -76,8 +77,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Compatibility {
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Compatibility+AnchorPositions")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum TMP_Compatibility_AnchorPositions {
     #[default]
     BaseLine = 9i32,
@@ -93,8 +94,7 @@ pub enum TMP_Compatibility_AnchorPositions {
     TopRight = 2i32,
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Compatibility+AnchorPositions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::TMPro::TMP_Compatibility_AnchorPositions {
+unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Compatibility_AnchorPositions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro";
@@ -113,18 +113,14 @@ for crate::TMPro::TMP_Compatibility_AnchorPositions {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Compatibility+AnchorPositions")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::TMPro::TMP_Compatibility_AnchorPositions {
+unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Compatibility_AnchorPositions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -134,8 +130,7 @@ for crate::TMPro::TMP_Compatibility_AnchorPositions {
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Compatibility+AnchorPositions")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::TMPro::TMP_Compatibility_AnchorPositions {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_Compatibility_AnchorPositions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -148,23 +143,19 @@ for crate::TMPro::TMP_Compatibility_AnchorPositions {
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Compatibility+AnchorPositions")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::TMPro::TMP_Compatibility_AnchorPositions {
+unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Compatibility_AnchorPositions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Compatibility+AnchorPositions")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::TMPro::TMP_Compatibility_AnchorPositions {
+unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Compatibility_AnchorPositions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

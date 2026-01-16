@@ -10,13 +10,15 @@ pub struct PanelInputModule {
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Meta.XR.ImmersiveDebugger.UserInterface";
     const CLASS_NAME: &'static str = "PanelInputModule";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -29,53 +31,50 @@ for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule")]
-impl std::ops::Deref
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
+impl std::ops::Deref for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
     type Target = crate::UnityEngine::EventSystems::OVRInputModule;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule")]
-impl std::ops::DerefMut
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
+impl std::ops::DerefMut for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule")]
 impl crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
-    #[cfg(
-        feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer"
-    )]
-    pub type RaycastComparer = crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer;
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer")]
+    pub type RaycastComparer =
+        crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer;
+    pub fn Awake(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Awake",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ChooseBestController(
         previousController: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_Controller> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRInput_Controller),
@@ -90,9 +89,8 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRInput_Controller = unsafe {
-            cordl_method_info.invoke_unchecked((), (previousController))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_Controller =
+            unsafe { cordl_method_info.invoke_unchecked((), (previousController))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeControllerState(
@@ -100,9 +98,10 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::EventSystems::PointerEventData_FramePressState,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRInput_Controller),
@@ -117,9 +116,8 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::EventSystems::PointerEventData_FramePressState = unsafe {
-            cordl_method_info.invoke_unchecked((), (controller))?
-        };
+        let __cordl_ret: crate::UnityEngine::EventSystems::PointerEventData_FramePressState =
+            unsafe { cordl_method_info.invoke_unchecked((), (controller))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMouseStateFromRaycast(
@@ -127,50 +125,46 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
         controller: crate::GlobalNamespace::OVRInput_Controller,
         rayOrigin: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerInputModule_MouseState>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::OVRInput_Controller,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
-                        >,
-                        2usize,
-                    >("GetMouseStateFromRaycast")
+                    .find_method::<(
+                        crate::GlobalNamespace::OVRInput_Controller,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
+                    >, 2usize>("GetMouseStateFromRaycast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetMouseStateFromRaycast", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetMouseStateFromRaycast",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (controller, rayOrigin))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (controller, rayOrigin))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsModuleSupported(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsModuleSupported")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsModuleSupported", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsModuleSupported",
+                            0usize
                         )
                     })
             });
@@ -178,69 +172,61 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Process(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Process(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Process")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Process",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Process",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Raycast(
         &mut self,
-        data: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::PointerEventData,
-        >,
-        raycast: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::EventSystems::RaycastResult,
-        >,
+        data: quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
+        raycast: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::EventSystems::RaycastResult>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::EventSystems::PointerEventData,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::EventSystems::RaycastResult,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("Raycast")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::PointerEventData,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::EventSystems::RaycastResult,
+                        >,
+                    ), bool, 2usize>("Raycast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Raycast",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (data, raycast))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (data, raycast))? };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterRaycaster(
@@ -248,28 +234,25 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
             crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelRaycaster,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelRaycaster,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("RegisterRaycaster")
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelRaycaster,
+                    >), quest_hook::libil2cpp::Void, 1usize>("RegisterRaycaster")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterRaycaster", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RegisterRaycaster",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (raycaster))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (raycaster))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetDebugInterface(
@@ -278,41 +261,40 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
             crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Interface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Interface,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetDebugInterface")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Interface,
+                    >), quest_hook::libil2cpp::Void, 1usize>("SetDebugInterface")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetDebugInterface", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetDebugInterface",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (debugInterface))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (debugInterface))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldActivateModule(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ShouldActivateModule")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ShouldActivateModule", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ShouldActivateModule",
+                            0usize
                         )
                     })
             });
@@ -324,49 +306,47 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
             crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelRaycaster,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelRaycaster,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("UnregisterRaycaster")
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelRaycaster,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "UnregisterRaycaster"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnregisterRaycaster", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnregisterRaycaster",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (raycaster))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (raycaster))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Update(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Update",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateRayTransform(
@@ -374,56 +354,53 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
         rayTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         controller: crate::GlobalNamespace::OVRInput_Controller,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            crate::GlobalNamespace::OVRInput_Controller,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateRayTransform")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                        crate::GlobalNamespace::OVRInput_Controller,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UpdateRayTransform")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateRayTransform", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateRayTransform",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (rayTransform, controller))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (rayTransform, controller))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -443,13 +420,15 @@ pub struct PanelInputModule_RaycastComparer {
     feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Meta.XR.ImmersiveDebugger.UserInterface";
     const CLASS_NAME: &'static str = "PanelInputModule/RaycastComparer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -461,85 +440,76 @@ for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastC
         false
     }
 }
-#[cfg(
-    feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer"
-)]
+#[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer")]
 impl std::ops::Deref
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer"
-)]
+#[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer")]
 impl std::ops::DerefMut
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer"
-)]
+#[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer")]
 impl crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer {
     pub fn Compare(
         &mut self,
         lhs: crate::UnityEngine::EventSystems::RaycastResult,
         rhs: crate::UnityEngine::EventSystems::RaycastResult,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::EventSystems::RaycastResult,
-                            crate::UnityEngine::EventSystems::RaycastResult,
-                        ),
-                        i32,
-                        2usize,
-                    >("Compare")
+                    .find_method::<(
+                        crate::UnityEngine::EventSystems::RaycastResult,
+                        crate::UnityEngine::EventSystems::RaycastResult,
+                    ), i32, 2usize>("Compare")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Compare",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Compare",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (lhs, rhs))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -547,7 +517,8 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_Raycast
     feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -555,15 +526,14 @@ for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastC
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer"
-)]
-impl AsRef<
-    crate::System::Collections::Generic::IComparer_1<
-        crate::UnityEngine::EventSystems::RaycastResult,
-    >,
->
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer {
+#[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer")]
+impl
+    AsRef<
+        crate::System::Collections::Generic::IComparer_1<
+            crate::UnityEngine::EventSystems::RaycastResult,
+        >,
+    > for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer
+{
     fn as_ref(
         &self,
     ) -> &crate::System::Collections::Generic::IComparer_1<
@@ -572,15 +542,14 @@ for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastC
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer"
-)]
-impl AsMut<
-    crate::System::Collections::Generic::IComparer_1<
-        crate::UnityEngine::EventSystems::RaycastResult,
-    >,
->
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer {
+#[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer")]
+impl
+    AsMut<
+        crate::System::Collections::Generic::IComparer_1<
+            crate::UnityEngine::EventSystems::RaycastResult,
+        >,
+    > for crate::Meta::XR::ImmersiveDebugger::UserInterface::PanelInputModule_RaycastComparer
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Collections::Generic::IComparer_1<

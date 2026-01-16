@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CameraProperties {
     pub screenRect: crate::UnityEngine::Rect,
     pub viewDir: crate::UnityEngine::Vector3,
@@ -24,11 +24,14 @@ pub struct CameraProperties {
     pub velocity: crate::UnityEngine::Vector3,
     pub farPlaneWorldSpaceLength: f32,
     pub rendererCount: u32,
-    pub m_ShadowCullPlanes: crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer,
-    pub m_CameraCullPlanes: crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer,
+    pub m_ShadowCullPlanes:
+        crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer,
+    pub m_CameraCullPlanes:
+        crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer,
     pub baseFarDistance: f32,
     pub shadowCullCenter: crate::UnityEngine::Vector3,
-    pub layerCullDistances: crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer,
+    pub layerCullDistances:
+        crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer,
     pub layerCullSpherical: i32,
     pub coreCameraValues: crate::UnityEngine::Rendering::CoreCameraValues,
     pub cameraType: u32,
@@ -37,8 +40,7 @@ pub struct CameraProperties {
     pub useInteractiveLightBakingData: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::CameraProperties {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::CameraProperties {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -57,18 +59,14 @@ for crate::UnityEngine::Rendering::CameraProperties {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::CameraProperties {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Rendering::CameraProperties {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -78,8 +76,7 @@ for crate::UnityEngine::Rendering::CameraProperties {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::CameraProperties {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Rendering::CameraProperties {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -92,23 +89,19 @@ for crate::UnityEngine::Rendering::CameraProperties {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::CameraProperties {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Rendering::CameraProperties {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::CameraProperties {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::CameraProperties {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -122,7 +115,8 @@ for crate::UnityEngine::Rendering::CameraProperties {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::CameraProperties {
+    for crate::UnityEngine::Rendering::CameraProperties
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -135,51 +129,47 @@ for crate::UnityEngine::Rendering::CameraProperties {
 impl crate::UnityEngine::Rendering::CameraProperties {
     pub const k_NumLayers: i32 = 32i32;
     pub const k_PlaneCount: i32 = 6i32;
-    #[cfg(
-        feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
-    )]
-    pub type _layerCullDistances_e__FixedBuffer = crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer;
-    #[cfg(
-        feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
-    )]
-    pub type _m_CameraCullPlanes_e__FixedBuffer = crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer;
-    #[cfg(
-        feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
-    )]
-    pub type _m_ShadowCullPlanes_e__FixedBuffer = crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer;
+    #[cfg(feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer")]
+    pub type _layerCullDistances_e__FixedBuffer =
+        crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer;
+    #[cfg(feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer")]
+    pub type _m_CameraCullPlanes_e__FixedBuffer =
+        crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer;
+    #[cfg(feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer")]
+    pub type _m_ShadowCullPlanes_e__FixedBuffer =
+        crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer;
     pub fn Equals_CameraProperties0(
         &mut self,
         other: crate::UnityEngine::Rendering::CameraProperties,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Rendering::CameraProperties),
-                        bool,
-                        1usize,
-                    >("Equals")
+                    .find_method::<(crate::UnityEngine::Rendering::CameraProperties), bool, 1usize>(
+                        "Equals",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Equals",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -194,48 +184,47 @@ impl crate::UnityEngine::Rendering::CameraProperties {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCameraCullingPlane(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Plane> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        crate::UnityEngine::Plane,
-                        1usize,
-                    >("GetCameraCullingPlane")
+                    .find_method::<(i32), crate::UnityEngine::Plane, 1usize>(
+                        "GetCameraCullingPlane",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCameraCullingPlane", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCameraCullingPlane",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Plane = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: crate::UnityEngine::Plane =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -246,32 +235,32 @@ impl crate::UnityEngine::Rendering::CameraProperties {
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Plane> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        crate::UnityEngine::Plane,
-                        1usize,
-                    >("GetShadowCullingPlane")
+                    .find_method::<(i32), crate::UnityEngine::Plane, 1usize>(
+                        "GetShadowCullingPlane",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetShadowCullingPlane", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetShadowCullingPlane",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Plane = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: crate::UnityEngine::Plane =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::CameraProperties>>
-for crate::UnityEngine::Rendering::CameraProperties {
+    for crate::UnityEngine::Rendering::CameraProperties
+{
     fn as_ref(
         &self,
     ) -> &crate::System::IEquatable_1<crate::UnityEngine::Rendering::CameraProperties> {
@@ -280,20 +269,19 @@ for crate::UnityEngine::Rendering::CameraProperties {
 }
 #[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
 impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::CameraProperties>>
-for crate::UnityEngine::Rendering::CameraProperties {
+    for crate::UnityEngine::Rendering::CameraProperties
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::UnityEngine::Rendering::CameraProperties,
-    > {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Rendering::CameraProperties> {
         todo!()
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CameraProperties__layerCullDistances_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -301,7 +289,8 @@ pub struct CameraProperties__layerCullDistances_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -320,20 +309,18 @@ for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixed
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -346,7 +333,8 @@ for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -362,16 +350,15 @@ for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -379,7 +366,8 @@ for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -395,7 +383,8 @@ for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -404,15 +393,13 @@ for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixed
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
-)]
+#[cfg(feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer")]
 impl crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer {}
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
     pub FixedElementField: u8,
 }
@@ -420,7 +407,8 @@ pub struct CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -439,20 +427,18 @@ for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixed
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -465,7 +451,8 @@ for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -481,16 +468,15 @@ for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -498,7 +484,8 @@ for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -514,7 +501,8 @@ for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -523,15 +511,13 @@ for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixed
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
-)]
+#[cfg(feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer")]
 impl crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer {}
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
     pub FixedElementField: u8,
 }
@@ -539,7 +525,8 @@ pub struct CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -558,20 +545,18 @@ for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__Fixed
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -584,7 +569,8 @@ for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -600,16 +586,15 @@ for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -617,7 +602,8 @@ for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -633,7 +619,8 @@ for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -642,7 +629,5 @@ for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__Fixed
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
-)]
+#[cfg(feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer")]
 impl crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {}

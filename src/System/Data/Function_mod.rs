@@ -10,9 +10,7 @@ pub struct Function {
     pub _isVariantArgumentList: bool,
     pub _argumentCount: i32,
     pub _parameters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<crate::System::Type>>,
     >,
 }
 #[cfg(feature = "cordl_class_System+Data+Function")]
@@ -22,7 +20,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::Function {
     const NAMESPACE: &'static str = "System.Data";
     const CLASS_NAME: &'static str = "Function";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -60,23 +59,22 @@ impl crate::System::Data::Function {
         a2: quest_hook::libil2cpp::Gc<crate::System::Type>,
         a3: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    name,
-                    id,
-                    result,
-                    IsValidateArguments,
-                    IsVariantArgumentList,
-                    argumentCount,
-                    a1,
-                    a2,
-                    a3,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                name,
+                id,
+                result,
+                IsValidateArguments,
+                IsVariantArgumentList,
+                argumentCount,
+                a1,
+                a2,
+                a3,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -91,51 +89,46 @@ impl crate::System::Data::Function {
         a2: quest_hook::libil2cpp::Gc<crate::System::Type>,
         a3: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::System::Data::FunctionId,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            bool,
-                            bool,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        9usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::System::Data::FunctionId,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        bool,
+                        bool,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    ), quest_hook::libil2cpp::Void, 9usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             9usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        name,
-                        id,
-                        result,
-                        IsValidateArguments,
-                        IsVariantArgumentList,
-                        argumentCount,
-                        a1,
-                        a2,
-                        a3,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    name,
+                    id,
+                    result,
+                    IsValidateArguments,
+                    IsVariantArgumentList,
+                    argumentCount,
+                    a1,
+                    a2,
+                    a3,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }

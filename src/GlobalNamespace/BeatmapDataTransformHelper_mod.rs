@@ -5,14 +5,14 @@ pub struct BeatmapDataTransformHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_BeatmapDataTransformHelper")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapDataTransformHelper {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapDataTransformHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapDataTransformHelper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -55,61 +55,58 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
         squishAmount: f32,
         beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            f32,
-                            f32,
-                            f32,
-                            i32,
-                            i32,
-                            crate::GlobalNamespace::NoteLineLayer,
-                            crate::GlobalNamespace::NoteCutDirection,
-                            i32,
-                            i32,
-                            crate::GlobalNamespace::NoteLineLayer,
-                            crate::GlobalNamespace::NoteCutDirection,
-                            i32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapData,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        14usize,
-                    >("AddTestBurstSlider")
+                    .find_static_method::<(
+                        f32,
+                        f32,
+                        f32,
+                        i32,
+                        i32,
+                        crate::GlobalNamespace::NoteLineLayer,
+                        crate::GlobalNamespace::NoteCutDirection,
+                        i32,
+                        i32,
+                        crate::GlobalNamespace::NoteLineLayer,
+                        crate::GlobalNamespace::NoteCutDirection,
+                        i32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+                    ), quest_hook::libil2cpp::Void, 14usize>(
+                        "AddTestBurstSlider"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddTestBurstSlider", 14usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddTestBurstSlider",
+                            14usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        _cordl_time,
-                        beat,
-                        duration,
-                        headRotation,
-                        headLineIndex,
-                        headNoteLineLayer,
-                        headCutDirection,
-                        tailRotation,
-                        tailLineIndex,
-                        tailNoteLineLayer,
-                        tailCutDirection,
-                        sliceCount,
-                        squishAmount,
-                        beatmapData,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    _cordl_time,
+                    beat,
+                    duration,
+                    headRotation,
+                    headLineIndex,
+                    headNoteLineLayer,
+                    headCutDirection,
+                    tailRotation,
+                    tailLineIndex,
+                    tailNoteLineLayer,
+                    tailCutDirection,
+                    sliceCount,
+                    squishAmount,
+                    beatmapData,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -131,76 +128,67 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
         hasTailNote: bool,
         beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            f32,
-                            f32,
-                            f32,
-                            i32,
-                            i32,
-                            crate::GlobalNamespace::NoteLineLayer,
-                            crate::GlobalNamespace::NoteCutDirection,
-                            f32,
-                            i32,
-                            i32,
-                            crate::GlobalNamespace::NoteLineLayer,
-                            crate::GlobalNamespace::NoteCutDirection,
-                            f32,
-                            bool,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapData,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        16usize,
-                    >("AddTestSlider")
+                    .find_static_method::<(
+                        f32,
+                        f32,
+                        f32,
+                        i32,
+                        i32,
+                        crate::GlobalNamespace::NoteLineLayer,
+                        crate::GlobalNamespace::NoteCutDirection,
+                        f32,
+                        i32,
+                        i32,
+                        crate::GlobalNamespace::NoteLineLayer,
+                        crate::GlobalNamespace::NoteCutDirection,
+                        f32,
+                        bool,
+                        bool,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+                    ), quest_hook::libil2cpp::Void, 16usize>("AddTestSlider")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddTestSlider", 16usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddTestSlider",
+                            16usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        _cordl_time,
-                        beat,
-                        duration,
-                        headRotation,
-                        headLineIndex,
-                        headNoteLineLayer,
-                        headCutDirection,
-                        headControlPointLength,
-                        tailRotation,
-                        tailLineIndex,
-                        tailNoteLineLayer,
-                        tailCutDirection,
-                        tailControlPointLength,
-                        hasHeadNote,
-                        hasTailNote,
-                        beatmapData,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    _cordl_time,
+                    beat,
+                    duration,
+                    headRotation,
+                    headLineIndex,
+                    headNoteLineLayer,
+                    headCutDirection,
+                    headControlPointLength,
+                    tailRotation,
+                    tailLineIndex,
+                    tailNoteLineLayer,
+                    tailCutDirection,
+                    tailControlPointLength,
+                    hasHeadNote,
+                    hasTailNote,
+                    beatmapData,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CreateTransformedBeatmapData(
-        beatmapData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IReadonlyBeatmapData,
-        >,
+        beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-        gameplayModifiers: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        >,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
         leftHanded: bool,
         environmentEffectsFilterPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
         environmentIntensityReductionOptions: quest_hook::libil2cpp::Gc<
@@ -210,9 +198,10 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -247,22 +236,19 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IReadonlyBeatmapData,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        beatmapData,
-                        beatmapLevel,
-                        gameplayModifiers,
-                        leftHanded,
-                        environmentEffectsFilterPreset,
-                        environmentIntensityReductionOptions,
-                        settings,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    beatmapData,
+                    beatmapLevel,
+                    gameplayModifiers,
+                    leftHanded,
+                    environmentEffectsFilterPreset,
+                    environmentIntensityReductionOptions,
+                    settings,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -270,25 +256,21 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         screenDisplacementEffectsEnabled: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
-                            >,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
                         bool,
-                        2usize,
-                    >("IsObstaclesMergingNeeded")
+                    ), bool, 2usize>("IsObstaclesMergingNeeded")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsObstaclesMergingNeeded", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsObstaclesMergingNeeded",
+                            2usize
                         )
                     })
             });
@@ -300,8 +282,7 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataTransformHelper")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BeatmapDataTransformHelper {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapDataTransformHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

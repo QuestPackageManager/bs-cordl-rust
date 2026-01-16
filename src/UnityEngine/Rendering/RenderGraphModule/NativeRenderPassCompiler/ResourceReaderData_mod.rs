@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+ResourceReaderData"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ResourceReaderData {
     pub passId: i32,
     pub inputSlot: i32,
@@ -117,4 +117,7 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::
 #[cfg(
     feature = "UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+ResourceReaderData"
 )]
-impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::ResourceReaderData {}
+impl
+    crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::ResourceReaderData
+{
+}

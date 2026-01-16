@@ -1,14 +1,13 @@
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+Player")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Player {
     pub playerId: u64,
     pub oculusId: u64,
     pub colocationGroupId: u32,
 }
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+Player")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
+unsafe impl quest_hook::libil2cpp::Type for crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Meta.XR.MultiplayerBlocks.Colocation";
@@ -27,18 +26,16 @@ for crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+Player")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::Player
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -49,7 +46,8 @@ for crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
 }
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+Player")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::Player
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -63,22 +61,22 @@ for crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
 }
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+Player")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::Player
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+Player")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::Player
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -92,7 +90,8 @@ for crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
 }
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+Player")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::Player
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -107,9 +106,10 @@ impl crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
         &mut self,
         other: crate::Meta::XR::MultiplayerBlocks::Colocation::Player,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Meta::XR::MultiplayerBlocks::Colocation::Player),
@@ -124,9 +124,7 @@ impl crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -135,51 +133,45 @@ impl crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
         oculusId: u64,
         colocationGroupId: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u64, u64, u32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(u64, u64, u32), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (playerId, oculusId, colocationGroupId))?
+            cordl_method_info.invoke_unchecked(self, (playerId, oculusId, colocationGroupId))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Meta+XR+MultiplayerBlocks+Colocation+Player")]
-impl AsRef<
-    crate::System::IEquatable_1<crate::Meta::XR::MultiplayerBlocks::Colocation::Player>,
-> for crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
+impl AsRef<crate::System::IEquatable_1<crate::Meta::XR::MultiplayerBlocks::Colocation::Player>>
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::Player
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::Meta::XR::MultiplayerBlocks::Colocation::Player,
-    > {
+    ) -> &crate::System::IEquatable_1<crate::Meta::XR::MultiplayerBlocks::Colocation::Player> {
         todo!()
     }
 }
 #[cfg(feature = "Meta+XR+MultiplayerBlocks+Colocation+Player")]
-impl AsMut<
-    crate::System::IEquatable_1<crate::Meta::XR::MultiplayerBlocks::Colocation::Player>,
-> for crate::Meta::XR::MultiplayerBlocks::Colocation::Player {
+impl AsMut<crate::System::IEquatable_1<crate::Meta::XR::MultiplayerBlocks::Colocation::Player>>
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::Player
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::Meta::XR::MultiplayerBlocks::Colocation::Player,
-    > {
+    ) -> &mut crate::System::IEquatable_1<crate::Meta::XR::MultiplayerBlocks::Colocation::Player>
+    {
         todo!()
     }
 }

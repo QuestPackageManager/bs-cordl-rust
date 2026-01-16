@@ -1,18 +1,18 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IExperimentalFeatures")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IExperimentalFeatures {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IExperimentalFeatures")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::IExperimentalFeatures {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::IExperimentalFeatures {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "IExperimentalFeatures";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,9 +39,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IExperimentalFeature
 }
 #[cfg(feature = "UnityEngine+UIElements+IExperimentalFeatures")]
 impl crate::UnityEngine::UIElements::IExperimentalFeatures {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_animation(
@@ -51,22 +49,20 @@ impl crate::UnityEngine::UIElements::IExperimentalFeatures {
             crate::UnityEngine::UIElements::Experimental::ITransitionAnimations,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::Experimental::ITransitionAnimations,
-                        >,
-                        0usize,
-                    >("get_animation")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::Experimental::ITransitionAnimations,
+                    >, 0usize>("get_animation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_animation", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_animation",
+                            0usize
                         )
                     })
             });
@@ -77,8 +73,7 @@ impl crate::UnityEngine::UIElements::IExperimentalFeatures {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IExperimentalFeatures")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::IExperimentalFeatures {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::IExperimentalFeatures {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

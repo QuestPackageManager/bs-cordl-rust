@@ -5,14 +5,14 @@ pub struct InteropErrorExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_InteropErrorExtensions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::InteropErrorExtensions {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::InteropErrorExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "InteropErrorExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,9 +42,10 @@ impl crate::GlobalNamespace::InteropErrorExtensions {
     pub fn Info(
         error: crate::GlobalNamespace::Interop_Error,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Interop_ErrorInfo> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::Interop_Error),
@@ -59,15 +60,13 @@ impl crate::GlobalNamespace::InteropErrorExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::Interop_ErrorInfo = unsafe {
-            cordl_method_info.invoke_unchecked((), (error))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::Interop_ErrorInfo =
+            unsafe { cordl_method_info.invoke_unchecked((), (error))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_InteropErrorExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::InteropErrorExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::InteropErrorExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

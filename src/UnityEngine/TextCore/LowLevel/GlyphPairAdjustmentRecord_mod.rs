@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GlyphPairAdjustmentRecord {
     pub m_FirstAdjustmentRecord: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
     pub m_SecondAdjustmentRecord: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
@@ -8,7 +8,8 @@ pub struct GlyphPairAdjustmentRecord {
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
+    for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.TextCore.LowLevel";
@@ -27,18 +28,16 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
+    for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -49,7 +48,8 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
+    for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -63,22 +63,22 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
+    for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
+    for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -92,7 +92,8 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
+    for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -107,9 +108,10 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
         &mut self,
         other: crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord),
@@ -124,18 +126,17 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -150,22 +151,22 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -177,22 +178,20 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
         firstAdjustmentRecord: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
         secondAdjustmentRecord: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
-                            crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
+                        crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
@@ -205,12 +204,12 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
     }
     pub fn get_featureLookupFlags(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::TextCore::LowLevel::FontFeatureLookupFlags,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextCore::LowLevel::FontFeatureLookupFlags>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -225,19 +224,18 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontFeatureLookupFlags = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontFeatureLookupFlags =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_firstAdjustmentRecord(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -252,19 +250,18 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_secondAdjustmentRecord(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -279,18 +276,18 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_firstAdjustmentRecord(
         &mut self,
         value: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord),
@@ -305,18 +302,19 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
-impl AsRef<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
-    >,
-> for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
+impl
+    AsRef<
+        crate::System::IEquatable_1<
+            crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
+        >,
+    > for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord
+{
     fn as_ref(
         &self,
     ) -> &crate::System::IEquatable_1<
@@ -326,11 +324,13 @@ impl AsRef<
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
-impl AsMut<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
-    >,
-> for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
+impl
+    AsMut<
+        crate::System::IEquatable_1<
+            crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
+        >,
+    > for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::IEquatable_1<

@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_TextUtilities {
     const NAMESPACE: &'static str = "TMPro";
     const CLASS_NAME: &'static str = "TMP_TextUtilities";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,30 +48,26 @@ impl crate::TMPro::TMP_TextUtilities {
         b: crate::UnityEngine::Vector3,
         point: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                        ),
-                        f32,
-                        3usize,
-                    >("DistanceToLine")
+                    .find_static_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                    ), f32, 3usize>("DistanceToLine")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DistanceToLine", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DistanceToLine",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b, point))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (a, b, point))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindIntersectingCharacter(
@@ -79,31 +76,28 @@ impl crate::TMPro::TMP_TextUtilities {
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         visibleOnly: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            bool,
-                        ),
-                        i32,
-                        4usize,
-                    >("FindIntersectingCharacter")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        bool,
+                    ), i32, 4usize>("FindIntersectingCharacter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindIntersectingCharacter", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindIntersectingCharacter",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (text, position, camera, visibleOnly))?
+            cordl_method_info.invoke_unchecked((), (text, position, camera, visibleOnly))?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,30 +106,27 @@ impl crate::TMPro::TMP_TextUtilities {
         position: crate::UnityEngine::Vector3,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                        ),
-                        i32,
-                        3usize,
-                    >("FindIntersectingLine")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    ), i32, 3usize>("FindIntersectingLine")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindIntersectingLine", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindIntersectingLine",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (text, position, camera))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (text, position, camera))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindIntersectingLink(
@@ -143,30 +134,27 @@ impl crate::TMPro::TMP_TextUtilities {
         position: crate::UnityEngine::Vector3,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                        ),
-                        i32,
-                        3usize,
-                    >("FindIntersectingLink")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    ), i32, 3usize>("FindIntersectingLink")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindIntersectingLink", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindIntersectingLink",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (text, position, camera))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (text, position, camera))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindIntersectingWord(
@@ -174,30 +162,27 @@ impl crate::TMPro::TMP_TextUtilities {
         position: crate::UnityEngine::Vector3,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                        ),
-                        i32,
-                        3usize,
-                    >("FindIntersectingWord")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    ), i32, 3usize>("FindIntersectingWord")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindIntersectingWord", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindIntersectingWord",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (text, position, camera))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (text, position, camera))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindNearestCharacter(
@@ -206,31 +191,28 @@ impl crate::TMPro::TMP_TextUtilities {
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         visibleOnly: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            bool,
-                        ),
-                        i32,
-                        4usize,
-                    >("FindNearestCharacter")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        bool,
+                    ), i32, 4usize>("FindNearestCharacter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindNearestCharacter", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindNearestCharacter",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (text, position, camera, visibleOnly))?
+            cordl_method_info.invoke_unchecked((), (text, position, camera, visibleOnly))?
         };
         Ok(__cordl_ret.into())
     }
@@ -241,32 +223,29 @@ impl crate::TMPro::TMP_TextUtilities {
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         visibleOnly: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
-                            crate::UnityEngine::Vector3,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+                        crate::UnityEngine::Vector3,
                         i32,
-                        5usize,
-                    >("FindNearestCharacterOnLine")
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        bool,
+                    ), i32, 5usize>("FindNearestCharacterOnLine")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindNearestCharacterOnLine", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindNearestCharacterOnLine",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (text, position, line, camera, visibleOnly))?
+            cordl_method_info.invoke_unchecked((), (text, position, line, camera, visibleOnly))?
         };
         Ok(__cordl_ret.into())
     }
@@ -275,30 +254,27 @@ impl crate::TMPro::TMP_TextUtilities {
         position: crate::UnityEngine::Vector3,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                        ),
-                        i32,
-                        3usize,
-                    >("FindNearestLine")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    ), i32, 3usize>("FindNearestLine")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindNearestLine", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindNearestLine",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (text, position, camera))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (text, position, camera))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindNearestLink(
@@ -306,30 +282,27 @@ impl crate::TMPro::TMP_TextUtilities {
         position: crate::UnityEngine::Vector3,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                        ),
-                        i32,
-                        3usize,
-                    >("FindNearestLink")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    ), i32, 3usize>("FindNearestLink")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindNearestLink", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindNearestLink",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (text, position, camera))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (text, position, camera))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindNearestWord(
@@ -337,30 +310,27 @@ impl crate::TMPro::TMP_TextUtilities {
         position: crate::UnityEngine::Vector3,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                        ),
-                        i32,
-                        3usize,
-                    >("FindNearestWord")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    ), i32, 3usize>("FindNearestWord")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindNearestWord", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindNearestWord",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (text, position, camera))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (text, position, camera))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCursorIndexFromPosition_ByRefMut1(
@@ -369,31 +339,28 @@ impl crate::TMPro::TMP_TextUtilities {
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         cursor: quest_hook::libil2cpp::ByRefMut<crate::TMPro::CaretPosition>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            quest_hook::libil2cpp::ByRefMut<crate::TMPro::CaretPosition>,
-                        ),
-                        i32,
-                        4usize,
-                    >("GetCursorIndexFromPosition")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        quest_hook::libil2cpp::ByRefMut<crate::TMPro::CaretPosition>,
+                    ), i32, 4usize>("GetCursorIndexFromPosition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCursorIndexFromPosition", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCursorIndexFromPosition",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (textComponent, position, camera, cursor))?
+            cordl_method_info.invoke_unchecked((), (textComponent, position, camera, cursor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -402,38 +369,36 @@ impl crate::TMPro::TMP_TextUtilities {
         position: crate::UnityEngine::Vector3,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                        ),
-                        i32,
-                        3usize,
-                    >("GetCursorIndexFromPosition")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    ), i32, 3usize>("GetCursorIndexFromPosition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCursorIndexFromPosition", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCursorIndexFromPosition",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (textComponent, position, camera))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (textComponent, position, camera))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -454,9 +419,10 @@ impl crate::TMPro::TMP_TextUtilities {
     pub fn GetHashCodeCaseInSensitive(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -477,9 +443,10 @@ impl crate::TMPro::TMP_TextUtilities {
     pub fn GetSimpleHashCode(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -500,9 +467,10 @@ impl crate::TMPro::TMP_TextUtilities {
     pub fn GetSimpleHashCodeLowercase(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -521,16 +489,18 @@ impl crate::TMPro::TMP_TextUtilities {
         Ok(__cordl_ret.into())
     }
     pub fn HexToInt(hex: char) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), i32, 1usize>("HexToInt")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HexToInt", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HexToInt",
+                            1usize
                         )
                     })
             });
@@ -543,31 +513,28 @@ impl crate::TMPro::TMP_TextUtilities {
         normal: crate::UnityEngine::Vector3,
         intersectingPoint: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::TMPro::TMP_TextUtilities_LineSegment,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                        ),
-                        bool,
-                        4usize,
-                    >("IntersectLinePlane")
+                    .find_static_method::<(
+                        crate::TMPro::TMP_TextUtilities_LineSegment,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                    ), bool, 4usize>("IntersectLinePlane")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectLinePlane", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectLinePlane",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (line, point, normal, intersectingPoint))?
+            cordl_method_info.invoke_unchecked((), (line, point, normal, intersectingPoint))?
         };
         Ok(__cordl_ret.into())
     }
@@ -576,30 +543,27 @@ impl crate::TMPro::TMP_TextUtilities {
         position: crate::UnityEngine::Vector3,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                        ),
-                        bool,
-                        3usize,
-                    >("IsIntersectingRectTransform")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    ), bool, 3usize>("IsIntersectingRectTransform")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsIntersectingRectTransform", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsIntersectingRectTransform",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (rectTransform, position, camera))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (rectTransform, position, camera))? };
         Ok(__cordl_ret.into())
     }
     pub fn PointIntersectRectangle(
@@ -609,32 +573,28 @@ impl crate::TMPro::TMP_TextUtilities {
         c: crate::UnityEngine::Vector3,
         d: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                        ),
-                        bool,
-                        5usize,
-                    >("PointIntersectRectangle")
+                    .find_static_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                    ), bool, 5usize>("PointIntersectRectangle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PointIntersectRectangle", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PointIntersectRectangle",
+                            5usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (m, a, b, c, d))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (m, a, b, c, d))? };
         Ok(__cordl_ret.into())
     }
     pub fn ScreenPointToWorldPointInRectangle(
@@ -643,40 +603,38 @@ impl crate::TMPro::TMP_TextUtilities {
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         worldPoint: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            crate::UnityEngine::Vector2,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                        ),
-                        bool,
-                        4usize,
-                    >("ScreenPointToWorldPointInRectangle")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                        crate::UnityEngine::Vector2,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                    ), bool, 4usize>("ScreenPointToWorldPointInRectangle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ScreenPointToWorldPointInRectangle", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ScreenPointToWorldPointInRectangle",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (transform, screenPoint, cam, worldPoint))?
+            cordl_method_info.invoke_unchecked((), (transform, screenPoint, cam, worldPoint))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn StringHexToInt(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -695,16 +653,18 @@ impl crate::TMPro::TMP_TextUtilities {
         Ok(__cordl_ret.into())
     }
     pub fn ToLowerFast(c: char) -> quest_hook::libil2cpp::Result<char> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), char, 1usize>("ToLowerFast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToLowerFast", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ToLowerFast",
+                            1usize
                         )
                     })
             });
@@ -712,16 +672,18 @@ impl crate::TMPro::TMP_TextUtilities {
         Ok(__cordl_ret.into())
     }
     pub fn ToUpperASCIIFast(c: u32) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), u32, 1usize>("ToUpperASCIIFast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToUpperASCIIFast", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ToUpperASCIIFast",
+                            1usize
                         )
                     })
             });
@@ -729,16 +691,18 @@ impl crate::TMPro::TMP_TextUtilities {
         Ok(__cordl_ret.into())
     }
     pub fn ToUpperFast(c: char) -> quest_hook::libil2cpp::Result<char> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), char, 1usize>("ToUpperFast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToUpperFast", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ToUpperFast",
+                            1usize
                         )
                     })
             });
@@ -756,8 +720,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_TextUtilities {
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities+LineSegment")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TMP_TextUtilities_LineSegment {
     pub Point1: crate::UnityEngine::Vector3,
     pub Point2: crate::UnityEngine::Vector3,
@@ -782,18 +746,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_TextUtilities_Line
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities+LineSegment")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::TMPro::TMP_TextUtilities_LineSegment {
+unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -803,8 +763,7 @@ for crate::TMPro::TMP_TextUtilities_LineSegment {
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities+LineSegment")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::TMPro::TMP_TextUtilities_LineSegment {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -817,23 +776,19 @@ for crate::TMPro::TMP_TextUtilities_LineSegment {
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities+LineSegment")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::TMPro::TMP_TextUtilities_LineSegment {
+unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities+LineSegment")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::TMPro::TMP_TextUtilities_LineSegment {
+unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -846,8 +801,7 @@ for crate::TMPro::TMP_TextUtilities_LineSegment {
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities+LineSegment")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::TMPro::TMP_TextUtilities_LineSegment {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -863,9 +817,10 @@ impl crate::TMPro::TMP_TextUtilities_LineSegment {
         p1: crate::UnityEngine::Vector3,
         p2: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3),
@@ -880,9 +835,8 @@ impl crate::TMPro::TMP_TextUtilities_LineSegment {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (p1, p2))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (p1, p2))? };
         Ok(__cordl_ret.into())
     }
 }

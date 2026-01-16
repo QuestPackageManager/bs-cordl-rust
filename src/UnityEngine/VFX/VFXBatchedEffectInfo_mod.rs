@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+VFX+VFXBatchedEffectInfo")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct VFXBatchedEffectInfo {
     pub vfxAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::VFX::VisualEffectAsset>,
     pub activeBatchCount: u32,
@@ -13,8 +13,7 @@ pub struct VFXBatchedEffectInfo {
     pub totalCPUSizeInBytes: u64,
 }
 #[cfg(feature = "cordl_class_UnityEngine+VFX+VFXBatchedEffectInfo")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.VFX";
@@ -33,18 +32,14 @@ for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+VFX+VFXBatchedEffectInfo")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -54,8 +49,7 @@ for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+VFX+VFXBatchedEffectInfo")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -68,23 +62,19 @@ for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+VFX+VFXBatchedEffectInfo")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+VFX+VFXBatchedEffectInfo")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -97,8 +87,7 @@ for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+VFX+VFXBatchedEffectInfo")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::VFX::VFXBatchedEffectInfo {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

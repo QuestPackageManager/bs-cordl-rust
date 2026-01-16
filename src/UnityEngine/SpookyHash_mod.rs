@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SpookyHash {
     const NAMESPACE: &'static str = "UnityEngine";
     const CLASS_NAME: &'static str = "SpookyHash";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,20 +42,18 @@ impl crate::UnityEngine::SpookyHash {
     #[cfg(feature = "UnityEngine+SpookyHash+U")]
     pub type U = crate::UnityEngine::SpookyHash_U;
     pub fn AttemptDetectAllowUnalignedRead() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        bool,
-                        0usize,
-                    >("AttemptDetectAllowUnalignedRead")
+                    .find_static_method::<(), bool, 0usize>("AttemptDetectAllowUnalignedRead")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AttemptDetectAllowUnalignedRead", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AttemptDetectAllowUnalignedRead",
+                            0usize
                         )
                     })
             });
@@ -76,45 +75,38 @@ impl crate::UnityEngine::SpookyHash {
         h10: quest_hook::libil2cpp::ByRefMut<u64>,
         h11: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        13usize,
-                    >("End")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                    ), quest_hook::libil2cpp::Void, 13usize>("End")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "End",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "End",
                             13usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (data, h0, h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11),
-                )?
+                .invoke_unchecked((), (data, h0, h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11))?
         };
         Ok(__cordl_ret.into())
     }
@@ -132,42 +124,37 @@ impl crate::UnityEngine::SpookyHash {
         h10: quest_hook::libil2cpp::ByRefMut<u64>,
         h11: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        12usize,
-                    >("EndPartial")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                    ), quest_hook::libil2cpp::Void, 12usize>("EndPartial")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EndPartial", 12usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EndPartial",
+                            12usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (h0, h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11),
-                )?
+                .invoke_unchecked((), (h0, h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11))?
         };
         Ok(__cordl_ret.into())
     }
@@ -177,37 +164,28 @@ impl crate::UnityEngine::SpookyHash {
         hash1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         hash2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            u64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("Hash")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        u64,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Void, 4usize>("Hash")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Hash",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Hash",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (message, length, hash1, hash2))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (message, length, hash1, hash2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Mix(
@@ -225,45 +203,38 @@ impl crate::UnityEngine::SpookyHash {
         s10: quest_hook::libil2cpp::ByRefMut<u64>,
         s11: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        13usize,
-                    >("Mix")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                    ), quest_hook::libil2cpp::Void, 13usize>("Mix")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Mix",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Mix",
                             13usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (data, s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11),
-                )?
+                .invoke_unchecked((), (data, s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11))?
         };
         Ok(__cordl_ret.into())
     }
@@ -271,9 +242,10 @@ impl crate::UnityEngine::SpookyHash {
         x: quest_hook::libil2cpp::ByRefMut<u64>,
         k: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<u64>, i32),
@@ -288,9 +260,8 @@ impl crate::UnityEngine::SpookyHash {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (x, k))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (x, k))? };
         Ok(__cordl_ret.into())
     }
     pub fn Short(
@@ -299,37 +270,28 @@ impl crate::UnityEngine::SpookyHash {
         hash1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         hash2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            u64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("Short")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        u64,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Void, 4usize>("Short")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Short",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Short",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (message, length, hash1, hash2))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (message, length, hash1, hash2))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShortEnd(
@@ -338,31 +300,28 @@ impl crate::UnityEngine::SpookyHash {
         h2: quest_hook::libil2cpp::ByRefMut<u64>,
         h3: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("ShortEnd")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                    ), quest_hook::libil2cpp::Void, 4usize>("ShortEnd")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ShortEnd", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ShortEnd",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (h0, h1, h2, h3))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (h0, h1, h2, h3))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShortMix(
@@ -371,31 +330,28 @@ impl crate::UnityEngine::SpookyHash {
         h2: quest_hook::libil2cpp::ByRefMut<u64>,
         h3: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("ShortMix")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                    ), quest_hook::libil2cpp::Void, 4usize>("ShortMix")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ShortMix", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ShortMix",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (h0, h1, h2, h3))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (h0, h1, h2, h3))? };
         Ok(__cordl_ret.into())
     }
     pub fn memset(
@@ -403,32 +359,27 @@ impl crate::UnityEngine::SpookyHash {
         value: i32,
         numberOfBytes: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            u64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("memset")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                        u64,
+                    ), quest_hook::libil2cpp::Void, 3usize>("memset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "memset",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "memset",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (dst, value, numberOfBytes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (dst, value, numberOfBytes))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -442,8 +393,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::SpookyHash {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+SpookyHash+U")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct SpookyHash_U {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
@@ -467,13 +418,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SpookyHash_U {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+SpookyHash+U")]
@@ -507,9 +455,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SpookyHash_U
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -542,9 +488,10 @@ impl crate::UnityEngine::SpookyHash_U {
         &mut self,
         p8: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -559,9 +506,8 @@ impl crate::UnityEngine::SpookyHash_U {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (p8))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (p8))? };
         Ok(__cordl_ret.into())
     }
 }

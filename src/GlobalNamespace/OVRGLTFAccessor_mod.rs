@@ -35,7 +35,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGLTFAcces
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRGLTFAccessor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -68,38 +69,39 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
     pub type GLTFBuffer = crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer;
     #[cfg(feature = "OVRGLTFAccessor+GLTFBufferView")]
     pub type GLTFBufferView = crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView;
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDataCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetDataCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetDataCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetDataCount",
+                            0usize
                         )
                     })
             });
@@ -110,52 +112,48 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         &mut self,
         _cordl_type: crate::GlobalNamespace::OVRGLTFComponentType,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::GlobalNamespace::OVRGLTFComponentType),
-                        f32,
-                        1usize,
-                    >("GetMaxValueForType")
+                    .find_method::<(crate::GlobalNamespace::OVRGLTFComponentType), f32, 1usize>(
+                        "GetMaxValueForType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetMaxValueForType", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetMaxValueForType",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStrideForType(
         &mut self,
         _cordl_type: crate::GlobalNamespace::OVRGLTFComponentType,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::GlobalNamespace::OVRGLTFComponentType),
-                        i32,
-                        1usize,
-                    >("GetStrideForType")
+                    .find_method::<(crate::GlobalNamespace::OVRGLTFComponentType), i32, 1usize>(
+                        "GetStrideForType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetStrideForType", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetStrideForType",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -166,78 +164,71 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         binaryChinkStart: i32,
         binaryChunkLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    accessorsRoot,
-                    bufferViewsRoot,
-                    buffersRoot,
-                    binaryChunkReader,
-                    binaryChinkStart,
-                    binaryChunkLength,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                accessorsRoot,
+                bufferViewsRoot,
+                buffersRoot,
+                binaryChunkReader,
+                binaryChinkStart,
+                binaryChunkLength,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn ReadAsFloat(
         reader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
         _cordl_type: crate::GlobalNamespace::OVRGLTFComponentType,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
-                            crate::GlobalNamespace::OVRGLTFComponentType,
-                        ),
-                        f32,
-                        2usize,
-                    >("ReadAsFloat")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
+                        crate::GlobalNamespace::OVRGLTFComponentType,
+                    ), f32, 2usize>("ReadAsFloat")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadAsFloat", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadAsFloat",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, _cordl_type))?
-        };
+        let __cordl_ret: f32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAsInt(
         reader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
         _cordl_type: crate::GlobalNamespace::OVRGLTFComponentType,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
-                            crate::GlobalNamespace::OVRGLTFComponentType,
-                        ),
-                        i32,
-                        2usize,
-                    >("ReadAsInt")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
+                        crate::GlobalNamespace::OVRGLTFComponentType,
+                    ), i32, 2usize>("ReadAsInt")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadAsInt", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadAsInt",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (reader, _cordl_type))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadBuffer(
@@ -246,9 +237,10 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -265,34 +257,29 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (bufferViewIndex))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bufferViewIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadColor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
-                        >,
-                        0usize,
-                    >("ReadColor")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+                    >, 0usize>("ReadColor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadColor", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadColor",
+                            0usize
                         )
                     })
             });
@@ -306,9 +293,10 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -325,9 +313,8 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<f32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadInt(
@@ -335,9 +322,10 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -354,9 +342,8 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadJoints(
@@ -367,32 +354,27 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::BoneWeight,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("ReadJoints")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::BoneWeight>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>("ReadJoints")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadJoints", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadJoints",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (resultsBoneWeights))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (resultsBoneWeights))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadMatrix4x4(
@@ -403,24 +385,20 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Vector3),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::Matrix4x4,
-                            >,
-                        >,
-                        1usize,
-                    >("ReadMatrix4x4")
+                    .find_method::<(crate::UnityEngine::Vector3), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+                    >, 1usize>("ReadMatrix4x4")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadMatrix4x4", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadMatrix4x4",
+                            1usize
                         )
                     })
             });
@@ -437,59 +415,47 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Quaternion>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Vector4),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::Quaternion,
-                            >,
-                        >,
-                        1usize,
-                    >("ReadQuaterion")
+                    .find_method::<(crate::UnityEngine::Vector4), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Quaternion>,
+                    >, 1usize>("ReadQuaterion")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadQuaterion", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadQuaterion",
+                            1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Quaternion>,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (gltfToUnitySpaceRotation))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (gltfToUnitySpaceRotation))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadVector2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::Vector2,
-                            >,
-                        >,
-                        0usize,
-                    >("ReadVector2")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                    >, 0usize>("ReadVector2")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadVector2", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadVector2",
+                            0usize
                         )
                     })
             });
@@ -502,28 +468,22 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         &mut self,
         conversionScale: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Vector3),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::Vector3,
-                            >,
-                        >,
-                        1usize,
-                    >("ReadVector3")
+                    .find_method::<(crate::UnityEngine::Vector3), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >, 1usize>("ReadVector3")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadVector3", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadVector3",
+                            1usize
                         )
                     })
             });
@@ -536,28 +496,22 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         &mut self,
         conversionScale: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Vector4),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::Vector4,
-                            >,
-                        >,
-                        1usize,
-                    >("ReadVector4")
+                    .find_method::<(crate::UnityEngine::Vector4), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+                    >, 1usize>("ReadVector4")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadVector4", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadVector4",
+                            1usize
                         )
                     })
             });
@@ -574,32 +528,27 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::BoneWeight,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("ReadWeights")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::BoneWeight>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>("ReadWeights")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadWeights", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadWeights",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (resultsBoneWeights))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (resultsBoneWeights))? };
         Ok(__cordl_ret.into())
     }
     pub fn Seek(
@@ -607,60 +556,55 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         accessorIndex: i32,
         onlyBufferView: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, bool),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Seek")
+                    .find_method::<(i32, bool), quest_hook::libil2cpp::Void, 2usize>("Seek")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Seek",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Seek",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (accessorIndex, onlyBufferView))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (accessorIndex, onlyBufferView))? };
         Ok(__cordl_ret.into())
     }
     pub fn SeekStride(
         &mut self,
         strideIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SeekStride")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("SeekStride")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SeekStride", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SeekStride",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (strideIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (strideIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToOVRType(
         _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRGLTFType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -675,9 +619,8 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRGLTFType = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_type))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRGLTFType =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryCreate(
@@ -689,45 +632,40 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAccessor>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::OVRGLTFAccessor,
-                                >,
-                            >,
-                        ),
-                        bool,
-                        5usize,
-                    >("TryCreate")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAccessor>,
+                        >,
+                    ), bool, 5usize>("TryCreate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryCreate", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryCreate",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        accessorsRoot,
-                        bufferViewsRoot,
-                        buffersRoot,
-                        binaryChunk,
-                        dataAccessor,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    accessorsRoot,
+                    bufferViewsRoot,
+                    buffersRoot,
+                    binaryChunk,
+                    dataAccessor,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -740,43 +678,40 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         binaryChinkStart: i32,
         binaryChunkLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                        quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        accessorsRoot,
-                        bufferViewsRoot,
-                        buffersRoot,
-                        binaryChunkReader,
-                        binaryChinkStart,
-                        binaryChunkLength,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    accessorsRoot,
+                    bufferViewsRoot,
+                    buffersRoot,
+                    binaryChunkReader,
+                    binaryChinkStart,
+                    binaryChunkLength,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -803,8 +738,8 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRGLTFAccess
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFAccessor")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRGLTFAccessor_GLTFAccessor {
     pub Type: crate::GlobalNamespace::OVRGLTFType,
     pub ComponentType: crate::GlobalNamespace::OVRGLTFComponentType,
@@ -816,8 +751,7 @@ pub struct OVRGLTFAccessor_GLTFAccessor {
     pub Max: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFAccessor")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -836,18 +770,16 @@ for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFAccessor")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {
+    for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -858,7 +790,8 @@ for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFAccessor")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {
+    for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -872,22 +805,20 @@ for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFAccessor")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {
+    for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFAccessor")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -901,7 +832,8 @@ for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFAccessor")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {
+    for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -913,14 +845,13 @@ for crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {
 #[cfg(feature = "OVRGLTFAccessor+GLTFAccessor")]
 impl crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {}
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBuffer")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRGLTFAccessor_GLTFBuffer {
     pub ByteLength: i32,
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBuffer")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -939,18 +870,14 @@ for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBuffer")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -961,7 +888,8 @@ for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
+    for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -974,23 +902,19 @@ for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBuffer")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBuffer")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1004,7 +928,8 @@ for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
+    for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1016,8 +941,8 @@ for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {
 #[cfg(feature = "OVRGLTFAccessor+GLTFBuffer")]
 impl crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {}
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBufferView")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRGLTFAccessor_GLTFBufferView {
     pub BufferIndex: i32,
     pub ByteOffset: i32,
@@ -1025,8 +950,7 @@ pub struct OVRGLTFAccessor_GLTFBufferView {
     pub ByteStride: i32,
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBufferView")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1045,18 +969,16 @@ for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBufferView")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView {
+    for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1067,7 +989,8 @@ for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBufferView")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView {
+    for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1081,22 +1004,22 @@ for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBufferView")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView {
+    for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBufferView")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView {
+    for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1110,7 +1033,8 @@ for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBufferView")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView {
+    for crate::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

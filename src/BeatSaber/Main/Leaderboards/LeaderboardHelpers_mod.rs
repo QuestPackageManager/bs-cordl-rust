@@ -6,13 +6,15 @@ pub struct LeaderboardHelpers {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Main+Leaderboards+LeaderboardHelpers")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::Main::Leaderboards::LeaderboardHelpers {
+    for crate::BeatSaber::Main::Leaderboards::LeaderboardHelpers
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.Main.Leaderboards";
     const CLASS_NAME: &'static str = "LeaderboardHelpers";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,15 +42,14 @@ impl std::ops::DerefMut for crate::BeatSaber::Main::Leaderboards::LeaderboardHel
 #[cfg(feature = "BeatSaber+Main+Leaderboards+LeaderboardHelpers")]
 impl crate::BeatSaber::Main::Leaderboards::LeaderboardHelpers {
     pub fn ConvertCharacteristic(
-        characteristicName: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        characteristicName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatSaber::Main::GraphQL::Enums::XOCBeatGamesBeatmapCharacteristic,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -63,9 +64,8 @@ impl crate::BeatSaber::Main::Leaderboards::LeaderboardHelpers {
                         )
                     })
             });
-        let __cordl_ret: crate::BeatSaber::Main::GraphQL::Enums::XOCBeatGamesBeatmapCharacteristic = unsafe {
-            cordl_method_info.invoke_unchecked((), (characteristicName))?
-        };
+        let __cordl_ret: crate::BeatSaber::Main::GraphQL::Enums::XOCBeatGamesBeatmapCharacteristic =
+            unsafe { cordl_method_info.invoke_unchecked((), (characteristicName))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertDifficulty(
@@ -73,9 +73,10 @@ impl crate::BeatSaber::Main::Leaderboards::LeaderboardHelpers {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatSaber::Main::GraphQL::Enums::XOCBeatGamesBeatmapDifficulty,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::BeatmapDifficulty),
@@ -90,15 +91,15 @@ impl crate::BeatSaber::Main::Leaderboards::LeaderboardHelpers {
                         )
                     })
             });
-        let __cordl_ret: crate::BeatSaber::Main::GraphQL::Enums::XOCBeatGamesBeatmapDifficulty = unsafe {
-            cordl_method_info.invoke_unchecked((), (difficulty))?
-        };
+        let __cordl_ret: crate::BeatSaber::Main::GraphQL::Enums::XOCBeatGamesBeatmapDifficulty =
+            unsafe { cordl_method_info.invoke_unchecked((), (difficulty))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Main+Leaderboards+LeaderboardHelpers")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BeatSaber::Main::Leaderboards::LeaderboardHelpers {
+    for crate::BeatSaber::Main::Leaderboards::LeaderboardHelpers
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

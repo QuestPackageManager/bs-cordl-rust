@@ -3,60 +3,44 @@
 #[derive(Debug)]
 pub struct GameplayCoreInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _beatLineManagerPrefab: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatLineManager,
-    >,
-    pub _songTimeTweeningManager: quest_hook::libil2cpp::Gc<
-        crate::Tweening::SongTimeTweeningManager,
-    >,
-    pub _playerHeightDetectorPrefab: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlayerHeightDetector,
-    >,
-    pub _noteCutScoreSpawnerPrefab: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::NoteCutScoreSpawner,
-    >,
-    pub _badNoteCutEffectSpawnerPrefab: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BadNoteCutEffectSpawner,
-    >,
-    pub _missedNoteEffectSpawnerPrefab: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MissedNoteEffectSpawner,
-    >,
-    pub _effectPoolsManualInstaller: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::EffectPoolsManualInstaller,
-    >,
-    pub _arcAndObstacleHapticManagerEffectPrefab: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ArcAndObstacleHapticEffectManager,
-    >,
-    pub _songProfilingControllerPrefab: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SongProfilingController,
-    >,
+    pub _beatLineManagerPrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatLineManager>,
+    pub _songTimeTweeningManager:
+        quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
+    pub _playerHeightDetectorPrefab:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerHeightDetector>,
+    pub _noteCutScoreSpawnerPrefab:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutScoreSpawner>,
+    pub _badNoteCutEffectSpawnerPrefab:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BadNoteCutEffectSpawner>,
+    pub _missedNoteEffectSpawnerPrefab:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissedNoteEffectSpawner>,
+    pub _effectPoolsManualInstaller:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EffectPoolsManualInstaller>,
+    pub _arcAndObstacleHapticManagerEffectPrefab:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArcAndObstacleHapticEffectManager>,
+    pub _songProfilingControllerPrefab:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongProfilingController>,
     pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManager>,
-    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GameplayCoreSceneSetupData,
-    >,
-    pub _perceivedLoudnessPerLevelModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PerceivedLoudnessPerLevelModel,
-    >,
+    pub _sceneSetupData:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayCoreSceneSetupData>,
+    pub _perceivedLoudnessPerLevelModel:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerceivedLoudnessPerLevelModel>,
     pub _commandLineArguments: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
-    pub _settingsManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SettingsManager,
-    >,
-    pub _gameplayAdditionalInformationSetupData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GameplayAdditionalInformationSetupData,
-    >,
-    pub _performanceToolConfig: crate::System::Nullable_1<
-        crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig,
-    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
+    pub _gameplayAdditionalInformationSetupData:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayAdditionalInformationSetupData>,
+    pub _performanceToolConfig:
+        crate::System::Nullable_1<crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig>,
 }
 #[cfg(feature = "cordl_class_GameplayCoreInstaller")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GameplayCoreInstaller {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameplayCoreInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "GameplayCoreInstaller";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -86,60 +70,55 @@ impl crate::GlobalNamespace::GameplayCoreInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("InstallBindings")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InstallBindings")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InstallBindings", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InstallBindings",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_GameplayCoreInstaller")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::GameplayCoreInstaller {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameplayCoreInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

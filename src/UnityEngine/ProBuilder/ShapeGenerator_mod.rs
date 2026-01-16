@@ -5,14 +5,14 @@ pub struct ShapeGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ShapeGenerator")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ProBuilder::ShapeGenerator {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::ShapeGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
     const CLASS_NAME: &'static str = "ShapeGenerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,9 +45,10 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -67,9 +68,8 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (shape, pivotType))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> =
+            unsafe { cordl_method_info.invoke_unchecked((), (shape, pivotType))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateArch(
@@ -87,9 +87,10 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -118,26 +119,23 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        pivotType,
-                        angle,
-                        radius,
-                        width,
-                        depth,
-                        radialCuts,
-                        insideFaces,
-                        outsideFaces,
-                        frontFaces,
-                        backFaces,
-                        endCaps,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    pivotType,
+                    angle,
+                    radius,
+                    width,
+                    depth,
+                    radialCuts,
+                    insideFaces,
+                    outsideFaces,
+                    frontFaces,
+                    backFaces,
+                    endCaps,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -149,9 +147,10 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::ProBuilder::PivotLocation, f32, f32, i32),
@@ -168,11 +167,8 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (pivotType, radius, height, subdivAxis))?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> = unsafe {
+            cordl_method_info.invoke_unchecked((), (pivotType, radius, height, subdivAxis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -182,9 +178,10 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -204,9 +201,8 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (pivotType, _cordl_size))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> =
+            unsafe { cordl_method_info.invoke_unchecked((), (pivotType, _cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateCurvedStair(
@@ -220,9 +216,10 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -247,22 +244,19 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        pivotType,
-                        stairWidth,
-                        height,
-                        innerRadius,
-                        circumference,
-                        steps,
-                        buildSides,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    pivotType,
+                    stairWidth,
+                    height,
+                    innerRadius,
+                    circumference,
+                    steps,
+                    buildSides,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -276,9 +270,10 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -302,14 +297,18 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (pivotType, axisDivisions, radius, height, heightCuts, smoothing),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    pivotType,
+                    axisDivisions,
+                    radius,
+                    height,
+                    heightCuts,
+                    smoothing,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -323,9 +322,10 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -349,14 +349,18 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (pivotType, totalWidth, totalHeight, ledgeHeight, legWidth, depth),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    pivotType,
+                    totalWidth,
+                    totalHeight,
+                    ledgeHeight,
+                    legWidth,
+                    depth,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -369,9 +373,10 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -394,14 +399,11 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (pivotType, radius, subdivisions, weldVertices, manualUvs),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (pivotType, radius, subdivisions, weldVertices, manualUvs),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -415,9 +417,10 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -441,14 +444,18 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (pivotType, radius, height, thickness, subdivAxis, subdivHeight),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    pivotType,
+                    radius,
+                    height,
+                    thickness,
+                    subdivAxis,
+                    subdivHeight,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -462,9 +469,10 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -488,14 +496,9 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (pivotType, width, height, widthCuts, heightCuts, axis),
-                )?
+                .invoke_unchecked((), (pivotType, width, height, widthCuts, heightCuts, axis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -505,9 +508,10 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -527,9 +531,8 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (pivotType, _cordl_size))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> =
+            unsafe { cordl_method_info.invoke_unchecked((), (pivotType, _cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateStair_Vector3_i32__cordl_bool0(
@@ -540,9 +543,10 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -564,11 +568,8 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (pivotType, _cordl_size, steps, buildSides))?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> = unsafe {
+            cordl_method_info.invoke_unchecked((), (pivotType, _cordl_size, steps, buildSides))?
         };
         Ok(__cordl_ret.into())
     }
@@ -584,9 +585,10 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -612,23 +614,20 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        pivotType,
-                        steps,
-                        width,
-                        height,
-                        depth,
-                        sidesGoToFloor,
-                        generateBack,
-                        platformsOnly,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    pivotType,
+                    steps,
+                    width,
+                    height,
+                    depth,
+                    sidesGoToFloor,
+                    generateBack,
+                    platformsOnly,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -645,9 +644,10 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -674,24 +674,21 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        pivotType,
-                        rows,
-                        columns,
-                        innerRadius,
-                        outerRadius,
-                        smooth,
-                        horizontalCircumference,
-                        verticalCircumference,
-                        manualUvs,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    pivotType,
+                    rows,
+                    columns,
+                    innerRadius,
+                    outerRadius,
+                    smooth,
+                    horizontalCircumference,
+                    verticalCircumference,
+                    manualUvs,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -702,13 +699,12 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
         rotation: crate::UnityEngine::Quaternion,
         offset: f32,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, f32, f32, crate::UnityEngine::Quaternion, f32),
@@ -731,10 +727,7 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         > = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (segments, radius, circumference, rotation, offset),
-                )?
+                .invoke_unchecked((), (segments, radius, circumference, rotation, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -744,35 +737,27 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
         >,
         radius: f32,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::Vector3,
-                            >,
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
                         >,
-                        2usize,
-                    >("SubdivideIcosahedron")
+                        f32,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >, 2usize>("SubdivideIcosahedron")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SubdivideIcosahedron", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SubdivideIcosahedron",
+                            2usize
                         )
                     })
             });
@@ -783,8 +768,7 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ShapeGenerator")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ProBuilder::ShapeGenerator {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::ShapeGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

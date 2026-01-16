@@ -3,12 +3,9 @@
 #[derive(Debug)]
 pub struct LightTranslationGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tweeningManager: quest_hook::libil2cpp::Gc<
-        crate::Tweening::SongTimeTweeningManager,
-    >,
-    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapCallbacksController,
-    >,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
+    pub _beatmapCallbacksController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCallbacksController>,
     pub _transformMask: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             crate::System::ValueTuple_2<
@@ -20,25 +17,22 @@ pub struct LightTranslationGroupEffect {
     pub _xTranslationTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
     pub _yTranslationTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
     pub _zTranslationTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
-    pub _lightTranslationXBeatmapEventCallbackWrapper: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    >,
-    pub _lightTranslationYBeatmapEventCallbackWrapper: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    >,
-    pub _lightTranslationZBeatmapEventCallbackWrapper: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    >,
+    pub _lightTranslationXBeatmapEventCallbackWrapper:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallbackWrapper>,
+    pub _lightTranslationYBeatmapEventCallbackWrapper:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallbackWrapper>,
+    pub _lightTranslationZBeatmapEventCallbackWrapper:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallbackWrapper>,
 }
 #[cfg(feature = "cordl_class_LightTranslationGroupEffect")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LightTranslationGroupEffect {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LightTranslationGroupEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LightTranslationGroupEffect";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -67,25 +61,24 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LightTranslationGroupEffect 
 impl crate::GlobalNamespace::LightTranslationGroupEffect {
     #[cfg(feature = "LightTranslationGroupEffect+InitData")]
     pub type InitData = crate::GlobalNamespace::LightTranslationGroupEffect_InitData;
-    pub fn Cleanup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Cleanup(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Cleanup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Cleanup",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Cleanup",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeTranslation(
@@ -95,41 +88,38 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
         distributionLimits: crate::UnityEngine::Vector2,
         mirrored: bool,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            f32,
-                            crate::UnityEngine::Vector2,
-                            f32,
-                            crate::UnityEngine::Vector2,
-                            bool,
-                        ),
+                    .find_static_method::<(
                         f32,
-                        5usize,
-                    >("ComputeTranslation")
+                        crate::UnityEngine::Vector2,
+                        f32,
+                        crate::UnityEngine::Vector2,
+                        bool,
+                    ), f32, 5usize>("ComputeTranslation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ComputeTranslation", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ComputeTranslation",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        translation,
-                        translationLimits,
-                        distribution,
-                        distributionLimits,
-                        mirrored,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    translation,
+                    translationLimits,
+                    distribution,
+                    distributionLimits,
+                    mirrored,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -142,52 +132,50 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapDataCallback_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LightTranslationBeatmapEventData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightTranslationBeatmapEventData>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::Vector2,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::BeatmapDataCallback_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LightTranslationBeatmapEventData,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
+                        crate::UnityEngine::Vector2,
+                        crate::UnityEngine::Vector2,
+                        bool,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapDataCallback_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::LightTranslationBeatmapEventData,
                             >,
                         >,
-                        4usize,
-                    >("GetTranslationEventHandler")
+                    >, 4usize>("GetTranslationEventHandler")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTranslationEventHandler", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetTranslationEventHandler",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapDataCallback_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LightTranslationBeatmapEventData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightTranslationBeatmapEventData>,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (translationTween, translationLimits, distributionLimits, mirrored),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    translationTween,
+                    translationLimits,
+                    distributionLimits,
+                    mirrored,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -195,46 +183,40 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
         initData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LightTranslationGroupEffect_InitData,
         >,
-        tweeningManager: quest_hook::libil2cpp::Gc<
-            crate::Tweening::SongTimeTweeningManager,
-        >,
+        tweeningManager: quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
         beatmapCallbacksController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCallbacksController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (initData, tweeningManager, beatmapCallbacksController),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (initData, tweeningManager, beatmapCallbacksController),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn SetTranslation(
         &mut self,
         _cordl__: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetTranslation")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("SetTranslation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTranslation", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetTranslation",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl__))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl__))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetTweenData(
@@ -245,27 +227,25 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
         endTime: f32,
         easeType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
-                            f32,
-                            f32,
-                            f32,
-                            f32,
-                            crate::GlobalNamespace::EaseType,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("SetTweenData")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
+                        f32,
+                        f32,
+                        f32,
+                        f32,
+                        crate::GlobalNamespace::EaseType,
+                    ), quest_hook::libil2cpp::Void, 6usize>("SetTweenData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTweenData", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetTweenData",
+                            6usize
                         )
                     })
             });
@@ -280,53 +260,45 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
         initData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LightTranslationGroupEffect_InitData,
         >,
-        tweeningManager: quest_hook::libil2cpp::Gc<
-            crate::Tweening::SongTimeTweeningManager,
-        >,
+        tweeningManager: quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
         beatmapCallbacksController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCallbacksController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LightTranslationGroupEffect_InitData,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Tweening::SongTimeTweeningManager,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapCallbacksController,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::LightTranslationGroupEffect_InitData,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapCallbacksController,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (initData, tweeningManager, beatmapCallbacksController),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (initData, tweeningManager, beatmapCallbacksController),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_LightTranslationGroupEffect")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LightTranslationGroupEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightTranslationGroupEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -356,13 +328,15 @@ pub struct LightTranslationGroupEffect_InitData {
 }
 #[cfg(feature = "cordl_class_LightTranslationGroupEffect+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LightTranslationGroupEffect_InitData {
+    for crate::GlobalNamespace::LightTranslationGroupEffect_InitData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LightTranslationGroupEffect/InitData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -382,8 +356,7 @@ impl std::ops::Deref for crate::GlobalNamespace::LightTranslationGroupEffect_Ini
     }
 }
 #[cfg(feature = "LightTranslationGroupEffect+InitData")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::LightTranslationGroupEffect_InitData {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightTranslationGroupEffect_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -406,28 +379,27 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect_InitData {
         zTranslationLimits: crate::UnityEngine::Vector2,
         zDistributionLimits: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    groupId,
-                    elementId,
-                    xMirrored,
-                    yMirrored,
-                    zMirrored,
-                    xTransform,
-                    yTransform,
-                    zTransform,
-                    xTranslationLimits,
-                    xDistributionLimits,
-                    yTranslationLimits,
-                    yDistributionLimits,
-                    zTranslationLimits,
-                    zDistributionLimits,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                groupId,
+                elementId,
+                xMirrored,
+                yMirrored,
+                zMirrored,
+                xTransform,
+                yTransform,
+                zTransform,
+                xTranslationLimits,
+                xDistributionLimits,
+                yTranslationLimits,
+                yDistributionLimits,
+                zTranslationLimits,
+                zDistributionLimits,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -447,66 +419,64 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect_InitData {
         zTranslationLimits: crate::UnityEngine::Vector2,
         zDistributionLimits: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            bool,
-                            bool,
-                            bool,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::Vector2,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        14usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        bool,
+                        bool,
+                        bool,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                        crate::UnityEngine::Vector2,
+                        crate::UnityEngine::Vector2,
+                        crate::UnityEngine::Vector2,
+                        crate::UnityEngine::Vector2,
+                        crate::UnityEngine::Vector2,
+                        crate::UnityEngine::Vector2,
+                    ), quest_hook::libil2cpp::Void, 14usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             14usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        groupId,
-                        elementId,
-                        xMirrored,
-                        yMirrored,
-                        zMirrored,
-                        xTransform,
-                        yTransform,
-                        zTransform,
-                        xTranslationLimits,
-                        xDistributionLimits,
-                        yTranslationLimits,
-                        yDistributionLimits,
-                        zTranslationLimits,
-                        zDistributionLimits,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    groupId,
+                    elementId,
+                    xMirrored,
+                    yMirrored,
+                    zMirrored,
+                    xTransform,
+                    yTransform,
+                    zTransform,
+                    xTranslationLimits,
+                    xDistributionLimits,
+                    yTranslationLimits,
+                    yDistributionLimits,
+                    zTranslationLimits,
+                    zDistributionLimits,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_LightTranslationGroupEffect+InitData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LightTranslationGroupEffect_InitData {
+    for crate::GlobalNamespace::LightTranslationGroupEffect_InitData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

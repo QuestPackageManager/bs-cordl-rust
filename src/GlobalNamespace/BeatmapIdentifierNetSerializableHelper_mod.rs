@@ -6,13 +6,15 @@ pub struct BeatmapIdentifierNetSerializableHelper {
 }
 #[cfg(feature = "cordl_class_BeatmapIdentifierNetSerializableHelper")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
+    for crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapIdentifierNetSerializableHelper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,8 +34,7 @@ impl std::ops::Deref for crate::GlobalNamespace::BeatmapIdentifierNetSerializabl
     }
 }
 #[cfg(feature = "BeatmapIdentifierNetSerializableHelper")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -48,36 +49,35 @@ impl crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
             crate::GlobalNamespace::BeatmapCharacteristicCollection,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapKey> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapKeyNetSerializable,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapCharacteristicCollection,
-                            >,
-                        ),
-                        crate::GlobalNamespace::BeatmapKey,
-                        2usize,
-                    >("ToBeatmapKey")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapKeyNetSerializable,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapCharacteristicCollection,
+                        >,
+                    ), crate::GlobalNamespace::BeatmapKey, 2usize>(
+                        "ToBeatmapKey"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToBeatmapKey", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ToBeatmapKey",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::BeatmapKey = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (beatmapKeySerializable, beatmapCharacteristicCollection),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (beatmapKeySerializable, beatmapCharacteristicCollection),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -86,9 +86,10 @@ impl crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::BeatmapKey),
@@ -113,7 +114,8 @@ impl crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
 }
 #[cfg(feature = "cordl_class_BeatmapIdentifierNetSerializableHelper")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
+    for crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

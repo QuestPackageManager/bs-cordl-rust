@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::InjectUtil {
     const NAMESPACE: &'static str = "Zenject";
     const CLASS_NAME: &'static str = "InjectUtil";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,30 +50,24 @@ impl crate::Zenject::InjectUtil {
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::Zenject::TypeValuePair,
-                            >,
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         >,
-                        1usize,
-                    >("CreateArgList")
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+                    >, 1usize>("CreateArgList")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateArgList", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateArgList",
+                            1usize
                         )
                     })
             });
@@ -89,27 +84,24 @@ impl crate::Zenject::InjectUtil {
         >,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (T),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::Zenject::TypeValuePair,
-                            >,
-                        >,
-                        1usize,
-                    >("CreateArgListExplicit")
+                    .find_static_method::<(T), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+                    >, 1usize>("CreateArgListExplicit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateArgListExplicit", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateArgListExplicit",
+                            1usize
                         )
                     })
             });
@@ -127,29 +119,27 @@ impl crate::Zenject::InjectUtil {
         >,
     >
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (TParam1, TParam2),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::Zenject::TypeValuePair,
-                            >,
-                        >,
-                        2usize,
-                    >("CreateArgListExplicit")
+                    .find_static_method::<(TParam1, TParam2), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+                    >, 2usize>("CreateArgListExplicit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateArgListExplicit", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateArgListExplicit",
+                            2usize
                         )
                     })
             });
@@ -168,31 +158,30 @@ impl crate::Zenject::InjectUtil {
         >,
     >
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (TParam1, TParam2, TParam3),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::Zenject::TypeValuePair,
-                            >,
-                        >,
-                        3usize,
-                    >("CreateArgListExplicit")
+                    .find_static_method::<(TParam1, TParam2, TParam3), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+                    >, 3usize>("CreateArgListExplicit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateArgListExplicit", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateArgListExplicit",
+                            3usize
                         )
                     })
             });
@@ -217,18 +206,23 @@ impl crate::Zenject::InjectUtil {
         >,
     >
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (TParam1, TParam2, TParam3, TParam4),
@@ -249,9 +243,7 @@ impl crate::Zenject::InjectUtil {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (param1, param2, param3, param4))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (param1, param2, param3, param4))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateArgListExplicit_TParam1_TParam2_TParam3_TParam4_TParam5_4<
@@ -272,20 +264,26 @@ impl crate::Zenject::InjectUtil {
         >,
     >
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (TParam1, TParam2, TParam3, TParam4, TParam5),
@@ -307,8 +305,7 @@ impl crate::Zenject::InjectUtil {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (param1, param2, param3, param4, param5))?
+            cordl_method_info.invoke_unchecked((), (param1, param2, param3, param4, param5))?
         };
         Ok(__cordl_ret.into())
     }
@@ -332,22 +329,29 @@ impl crate::Zenject::InjectUtil {
         >,
     >
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (TParam1, TParam2, TParam3, TParam4, TParam5, TParam6),
@@ -378,29 +382,29 @@ impl crate::Zenject::InjectUtil {
         param: T,
     ) -> quest_hook::libil2cpp::Result<crate::Zenject::TypeValuePair>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (T),
-                        crate::Zenject::TypeValuePair,
-                        1usize,
-                    >("CreateTypePair")
+                    .find_static_method::<(T), crate::Zenject::TypeValuePair, 1usize>(
+                        "CreateTypePair",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateTypePair", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateTypePair",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::Zenject::TypeValuePair = unsafe {
-            cordl_method_info.invoke_unchecked((), (param))?
-        };
+        let __cordl_ret: crate::Zenject::TypeValuePair =
+            unsafe { cordl_method_info.invoke_unchecked((), (param))? };
         Ok(__cordl_ret.into())
     }
     pub fn PopValueWithType(
@@ -412,38 +416,33 @@ impl crate::Zenject::InjectUtil {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::Zenject::TypeValuePair,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::Zenject::TypeValuePair,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("PopValueWithType")
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        >,
+                    ), bool, 3usize>("PopValueWithType")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PopValueWithType", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PopValueWithType",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (extraArgMap, injectedFieldType, value))?
+            cordl_method_info.invoke_unchecked((), (extraArgMap, injectedFieldType, value))?
         };
         Ok(__cordl_ret.into())
     }

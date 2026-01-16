@@ -1,13 +1,14 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DateTimeOffsetAdapter")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct DateTimeOffsetAdapter {
     pub utcDateTime: crate::System::DateTime,
     pub offsetMinutes: i16,
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DateTimeOffsetAdapter")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
+    for crate::System::Runtime::Serialization::DateTimeOffsetAdapter
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Runtime.Serialization";
@@ -26,18 +27,16 @@ for crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DateTimeOffsetAdapter")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
+    for crate::System::Runtime::Serialization::DateTimeOffsetAdapter
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -48,7 +47,8 @@ for crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DateTimeOffsetAdapter")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
+    for crate::System::Runtime::Serialization::DateTimeOffsetAdapter
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -62,22 +62,22 @@ for crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DateTimeOffsetAdapter")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
+    for crate::System::Runtime::Serialization::DateTimeOffsetAdapter
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DateTimeOffsetAdapter")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
+    for crate::System::Runtime::Serialization::DateTimeOffsetAdapter
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -91,7 +91,8 @@ for crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DateTimeOffsetAdapter")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
+    for crate::System::Runtime::Serialization::DateTimeOffsetAdapter
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -105,9 +106,10 @@ impl crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
     pub fn GetDateTimeOffset(
         value: crate::System::Runtime::Serialization::DateTimeOffsetAdapter,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Runtime::Serialization::DateTimeOffsetAdapter),
@@ -122,19 +124,18 @@ impl crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
                         )
                     })
             });
-        let __cordl_ret: crate::System::DateTimeOffset = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: crate::System::DateTimeOffset =
+            unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDateTimeOffsetAdapter(
         value: crate::System::DateTimeOffset,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Runtime::Serialization::DateTimeOffsetAdapter,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Runtime::Serialization::DateTimeOffsetAdapter>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::DateTimeOffset),
@@ -149,20 +150,19 @@ impl crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Runtime::Serialization::DateTimeOffsetAdapter = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: crate::System::Runtime::Serialization::DateTimeOffsetAdapter =
+            unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
@@ -177,9 +177,8 @@ impl crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (provider))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (provider))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -187,9 +186,10 @@ impl crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
         dateTime: crate::System::DateTime,
         offsetMinutes: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTime, i16),
@@ -204,51 +204,47 @@ impl crate::System::Runtime::Serialization::DateTimeOffsetAdapter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (dateTime, offsetMinutes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (dateTime, offsetMinutes))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_OffsetMinutes(&mut self) -> quest_hook::libil2cpp::Result<i16> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i16, 0usize>("get_OffsetMinutes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_OffsetMinutes", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_OffsetMinutes",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: i16 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_UtcDateTime(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_UtcDateTime(&mut self) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::System::DateTime,
-                        0usize,
-                    >("get_UtcDateTime")
+                    .find_method::<(), crate::System::DateTime, 0usize>("get_UtcDateTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_UtcDateTime", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_UtcDateTime",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::DateTime = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::DateTime =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

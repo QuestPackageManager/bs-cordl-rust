@@ -17,7 +17,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScreenCaptur
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "ScreenCaptureCache";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,12 +50,12 @@ impl crate::GlobalNamespace::ScreenCaptureCache {
     pub fn GetLastScreenshot(
         &mut self,
         screenshotType: crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType),
@@ -69,14 +70,13 @@ impl crate::GlobalNamespace::ScreenCaptureCache {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (screenshotType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (screenshotType))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -86,50 +86,46 @@ impl crate::GlobalNamespace::ScreenCaptureCache {
         screenshotType: crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType,
         texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("StoreScreenshot")
+                    .find_method::<(
+                        crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("StoreScreenshot")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StoreScreenshot", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "StoreScreenshot",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (screenshotType, texture))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (screenshotType, texture))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -143,8 +139,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScreenCapture
     }
 }
 #[cfg(feature = "cordl_class_ScreenCaptureCache+ScreenshotType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ScreenCaptureCache_ScreenshotType {
     #[default]
     Game = 0i32,
@@ -153,7 +149,8 @@ pub enum ScreenCaptureCache_ScreenshotType {
 }
 #[cfg(feature = "cordl_class_ScreenCaptureCache+ScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
+    for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -172,18 +169,16 @@ for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_ScreenCaptureCache+ScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
+    for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -194,7 +189,8 @@ for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
 }
 #[cfg(feature = "cordl_class_ScreenCaptureCache+ScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
+    for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -208,22 +204,22 @@ for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
 }
 #[cfg(feature = "cordl_class_ScreenCaptureCache+ScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
+    for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_ScreenCaptureCache+ScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
+    for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

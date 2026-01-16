@@ -3,9 +3,8 @@
 #[derive(Debug)]
 pub struct GraphQLClient {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub requestResponseTransport: quest_hook::libil2cpp::Gc<
-        crate::OculusStudios::GraphQL::Client::IGraphQLClientTransport,
-    >,
+    pub requestResponseTransport:
+        quest_hook::libil2cpp::Gc<crate::OculusStudios::GraphQL::Client::IGraphQLClientTransport>,
     pub externalEvents: quest_hook::libil2cpp::Gc<
         crate::OculusStudios::GraphQL::ClientInterface::IGraphQLClientEvents,
     >,
@@ -20,33 +19,28 @@ pub struct GraphQLClient {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     >,
-    pub mainThreadExecutor: quest_hook::libil2cpp::Gc<
-        crate::OculusStudios::GraphQL::Client::MinimalMainThreadExecutor,
-    >,
-    pub requestQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Concurrent::ConcurrentQueue_1<i64>,
-    >,
+    pub mainThreadExecutor:
+        quest_hook::libil2cpp::Gc<crate::OculusStudios::GraphQL::Client::MinimalMainThreadExecutor>,
+    pub requestQueue:
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Concurrent::ConcurrentQueue_1<i64>>,
     pub pendingRequests: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Concurrent::ConcurrentDictionary_2<
             i64,
-            quest_hook::libil2cpp::Gc<
-                crate::OculusStudios::GraphQL::ClientInterface::Request,
-            >,
+            quest_hook::libil2cpp::Gc<crate::OculusStudios::GraphQL::ClientInterface::Request>,
         >,
     >,
-    pub inProgressRequests: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<i64>,
-    >,
+    pub inProgressRequests:
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<i64>>,
 }
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+GraphQLClient")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::OculusStudios::GraphQL::Client::GraphQLClient {
+unsafe impl quest_hook::libil2cpp::Type for crate::OculusStudios::GraphQL::Client::GraphQLClient {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OculusStudios.GraphQL.Client";
     const CLASS_NAME: &'static str = "GraphQLClient";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -81,116 +75,102 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
     pub fn CleanupRequest(
         &mut self,
         requestId: i64,
-        request: quest_hook::libil2cpp::Gc<
-            crate::OculusStudios::GraphQL::ClientInterface::Request,
-        >,
+        request: quest_hook::libil2cpp::Gc<crate::OculusStudios::GraphQL::ClientInterface::Request>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i64,
-                            quest_hook::libil2cpp::Gc<
-                                crate::OculusStudios::GraphQL::ClientInterface::Request,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CleanupRequest")
+                    .find_method::<(
+                        i64,
+                        quest_hook::libil2cpp::Gc<
+                            crate::OculusStudios::GraphQL::ClientInterface::Request,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("CleanupRequest")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CleanupRequest", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CleanupRequest",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (requestId, request))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (requestId, request))? };
         Ok(__cordl_ret.into())
     }
     pub fn CleanupRequestAsync(
         &mut self,
         requestId: i64,
-        request: quest_hook::libil2cpp::Gc<
-            crate::OculusStudios::GraphQL::ClientInterface::Request,
-        >,
+        request: quest_hook::libil2cpp::Gc<crate::OculusStudios::GraphQL::ClientInterface::Request>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i64,
-                            quest_hook::libil2cpp::Gc<
-                                crate::OculusStudios::GraphQL::ClientInterface::Request,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-                        2usize,
-                    >("CleanupRequestAsync")
+                    .find_method::<(
+                        i64,
+                        quest_hook::libil2cpp::Gc<
+                            crate::OculusStudios::GraphQL::ClientInterface::Request,
+                        >,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>, 2usize>(
+                        "CleanupRequestAsync",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CleanupRequestAsync", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CleanupRequestAsync",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (requestId, request))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (requestId, request))? };
         Ok(__cordl_ret.into())
     }
     pub fn ErrorOutMutation<T>(
         &mut self,
-        request: quest_hook::libil2cpp::Gc<
-            crate::OculusStudios::GraphQL::Client::MutationRequest,
-        >,
+        request: quest_hook::libil2cpp::Gc<crate::OculusStudios::GraphQL::Client::MutationRequest>,
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::OculusStudios::GraphQL::Client::MutationRequest,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Exception>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ErrorOutMutation")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::OculusStudios::GraphQL::Client::MutationRequest,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ErrorOutMutation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ErrorOutMutation", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ErrorOutMutation",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (request, e))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (request, e))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExecuteAsync(
         &mut self,
-        request: quest_hook::libil2cpp::Gc<
-            crate::OculusStudios::GraphQL::Client::GraphQLRequest,
-        >,
+        request: quest_hook::libil2cpp::Gc<crate::OculusStudios::GraphQL::Client::GraphQLRequest>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
@@ -200,28 +180,26 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::OculusStudios::GraphQL::Client::GraphQLRequest,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::OculusStudios::GraphQL::Client::GraphQLResponseStream,
-                                >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::OculusStudios::GraphQL::Client::GraphQLRequest,
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::OculusStudios::GraphQL::Client::GraphQLResponseStream,
                             >,
                         >,
-                        1usize,
-                    >("ExecuteAsync")
+                    >, 1usize>("ExecuteAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExecuteAsync", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExecuteAsync",
+                            1usize
                         )
                     })
             });
@@ -236,51 +214,49 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
     }
     pub fn InternalMutateData<T>(
         &mut self,
-        request: quest_hook::libil2cpp::Gc<
-            crate::OculusStudios::GraphQL::Client::MutationRequest,
-        >,
+        request: quest_hook::libil2cpp::Gc<crate::OculusStudios::GraphQL::Client::MutationRequest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::OculusStudios::GraphQL::Client::MutationRequest,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("InternalMutateData")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::OculusStudios::GraphQL::Client::MutationRequest,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "InternalMutateData"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InternalMutateData", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InternalMutateData",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (request))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (request))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalQueryData<TBackend>(
         &mut self,
-        request: quest_hook::libil2cpp::Gc<
-            crate::OculusStudios::GraphQL::Client::QueryRequest,
-        >,
+        request: quest_hook::libil2cpp::Gc<crate::OculusStudios::GraphQL::Client::QueryRequest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TBackend: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TBackend: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -297,9 +273,8 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (request))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (request))? };
         Ok(__cordl_ret.into())
     }
     pub fn LogRequestState(
@@ -307,29 +282,26 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
         requestId: i64,
         requestState: crate::OculusStudios::GraphQL::ClientInterface::RequestState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i64,
-                            crate::OculusStudios::GraphQL::ClientInterface::RequestState,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("LogRequestState")
+                    .find_method::<(
+                        i64,
+                        crate::OculusStudios::GraphQL::ClientInterface::RequestState,
+                    ), quest_hook::libil2cpp::Void, 2usize>("LogRequestState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LogRequestState", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LogRequestState",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (requestId, requestState))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (requestId, requestState))? };
         Ok(__cordl_ret.into())
     }
     pub fn Mutate_IMutationRequest0<TBackend>(
@@ -341,12 +313,14 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TBackend>>,
     >
     where
-        TBackend: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TBackend: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -379,14 +353,17 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TFrontend>>,
     >
     where
-        TBackend: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TBackend: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TFrontend: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TFrontend: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -411,8 +388,8 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -431,39 +408,30 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
             crate::OculusStudios::GraphQL::ClientInterface::IGraphQLClientEvents,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::OculusStudios::GraphQL::ClientInterface::IGraphQLClientEvents,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("OculusStudios.GraphQL.ClientInterface.IGraphQLClient.Initialize")
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::OculusStudios::GraphQL::ClientInterface::IGraphQLClientEvents,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "OculusStudios.GraphQL.ClientInterface.IGraphQLClient.Initialize",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            <Self as quest_hook::libil2cpp::Type>::class(),
                             "OculusStudios.GraphQL.ClientInterface.IGraphQLClient.Initialize",
                             4usize
                         )
@@ -471,86 +439,76 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (endpoint, accessToken, customAppHeaders, logger),
-                )?
+                .invoke_unchecked(self, (endpoint, accessToken, customAppHeaders, logger))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn OnApplicationResumed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("OnApplicationResumed")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnApplicationResumed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnApplicationResumed", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnApplicationResumed",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn OnApplicationSuspended(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("OnApplicationSuspended")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "OnApplicationSuspended",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnApplicationSuspended", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnApplicationSuspended",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn PauseRequestQueue(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("PauseRequestQueue")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("PauseRequestQueue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PauseRequestQueue", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PauseRequestQueue",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessRequest(
@@ -559,9 +517,10 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64),
@@ -576,9 +535,8 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (requestId))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (requestId))? };
         Ok(__cordl_ret.into())
     }
     pub fn Query_IQueryRequest0<TBackend>(
@@ -590,12 +548,14 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TBackend>>,
     >
     where
-        TBackend: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TBackend: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -628,14 +588,17 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TFrontend>>,
     >
     where
-        TBackend: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TBackend: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TFrontend: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TFrontend: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -661,171 +624,158 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
     }
     pub fn ResetRequestForUserInitiatedRetryAsync(
         &mut self,
-        request: quest_hook::libil2cpp::Gc<
-            crate::OculusStudios::GraphQL::ClientInterface::Request,
-        >,
+        request: quest_hook::libil2cpp::Gc<crate::OculusStudios::GraphQL::ClientInterface::Request>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::OculusStudios::GraphQL::ClientInterface::Request,
-                        >),
-                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-                        1usize,
-                    >("ResetRequestForUserInitiatedRetryAsync")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::OculusStudios::GraphQL::ClientInterface::Request,
+                    >), quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>, 1usize>(
+                        "ResetRequestForUserInitiatedRetryAsync",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ResetRequestForUserInitiatedRetryAsync", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ResetRequestForUserInitiatedRetryAsync",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (request))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (request))? };
         Ok(__cordl_ret.into())
     }
     pub fn ResumeRequestQueue(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ResumeRequestQueue")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ResumeRequestQueue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ResumeRequestQueue", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ResumeRequestQueue",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RetryOrErrorOutMutationAsync<T>(
         &mut self,
-        request: quest_hook::libil2cpp::Gc<
-            crate::OculusStudios::GraphQL::Client::MutationRequest,
-        >,
+        request: quest_hook::libil2cpp::Gc<crate::OculusStudios::GraphQL::Client::MutationRequest>,
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::OculusStudios::GraphQL::Client::MutationRequest,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Exception>,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-                        2usize,
-                    >("RetryOrErrorOutMutationAsync")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::OculusStudios::GraphQL::Client::MutationRequest,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>, 2usize>(
+                        "RetryOrErrorOutMutationAsync",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RetryOrErrorOutMutationAsync", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RetryOrErrorOutMutationAsync",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (request, e))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (request, e))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetApplicationOffline(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("SetApplicationOffline")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetApplicationOffline")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetApplicationOffline", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetApplicationOffline",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetApplicationOnline(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("SetApplicationOnline")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetApplicationOnline")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetApplicationOnline", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetApplicationOnline",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
         deltaTime: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Update",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (deltaTime))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (deltaTime))? };
         Ok(__cordl_ret.into())
     }
     pub fn WaitUntilRequestQueueIsResumed(
@@ -835,134 +785,122 @@ impl crate::OculusStudios::GraphQL::Client::GraphQLClient {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Threading::CancellationToken,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-                        2usize,
-                    >("WaitUntilRequestQueueIsResumed")
+                    .find_method::<(
+                        crate::System::Threading::CancellationToken,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>, 2usize>(
+                        "WaitUntilRequestQueueIsResumed",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WaitUntilRequestQueueIsResumed", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WaitUntilRequestQueueIsResumed",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> = unsafe {
             cordl_method_info.invoke_unchecked(self, (cancellationToken, operationType))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn add_onRequestCreated(
         value: quest_hook::libil2cpp::Gc<
             crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::OculusStudios::GraphQL::ClientInterface::Request,
-                >,
+                quest_hook::libil2cpp::Gc<crate::OculusStudios::GraphQL::ClientInterface::Request>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::OculusStudios::GraphQL::ClientInterface::Request,
-                                >,
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::OculusStudios::GraphQL::ClientInterface::Request,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_onRequestCreated")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_onRequestCreated"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_onRequestCreated", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_onRequestCreated",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_onRequestCreated(
         value: quest_hook::libil2cpp::Gc<
             crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::OculusStudios::GraphQL::ClientInterface::Request,
-                >,
+                quest_hook::libil2cpp::Gc<crate::OculusStudios::GraphQL::ClientInterface::Request>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::OculusStudios::GraphQL::ClientInterface::Request,
-                                >,
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::OculusStudios::GraphQL::ClientInterface::Request,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_onRequestCreated")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_onRequestCreated"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_onRequestCreated", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_onRequestCreated",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+GraphQLClient")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::OculusStudios::GraphQL::Client::GraphQLClient {
+impl quest_hook::libil2cpp::ObjectType for crate::OculusStudios::GraphQL::Client::GraphQLClient {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -972,17 +910,17 @@ for crate::OculusStudios::GraphQL::Client::GraphQLClient {
 }
 #[cfg(feature = "OculusStudios+GraphQL+Client+GraphQLClient")]
 impl AsRef<crate::OculusStudios::GraphQL::ClientInterface::IGraphQLClient>
-for crate::OculusStudios::GraphQL::Client::GraphQLClient {
+    for crate::OculusStudios::GraphQL::Client::GraphQLClient
+{
     fn as_ref(&self) -> &crate::OculusStudios::GraphQL::ClientInterface::IGraphQLClient {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusStudios+GraphQL+Client+GraphQLClient")]
 impl AsMut<crate::OculusStudios::GraphQL::ClientInterface::IGraphQLClient>
-for crate::OculusStudios::GraphQL::Client::GraphQLClient {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::OculusStudios::GraphQL::ClientInterface::IGraphQLClient {
+    for crate::OculusStudios::GraphQL::Client::GraphQLClient
+{
+    fn as_mut(&mut self) -> &mut crate::OculusStudios::GraphQL::ClientInterface::IGraphQLClient {
         unsafe { std::mem::transmute(self) }
     }
 }

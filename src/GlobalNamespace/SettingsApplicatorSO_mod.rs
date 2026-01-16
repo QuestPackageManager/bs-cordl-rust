@@ -3,44 +3,32 @@
 #[derive(Debug)]
 pub struct SettingsApplicatorSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _mirrorRendererGraphicsSettingsPresets: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets,
-    >,
-    pub _mainEffectGraphicsSettingsPresets: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO,
-    >,
-    pub _bloomPrePassGraphicsSettingsPresets: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO,
-    >,
-    pub _mirrorRenderer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MirrorRendererSO,
-    >,
-    pub _mainEffectContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MainEffectContainerSO,
-    >,
-    pub _bloomPrePassEffectContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BloomPrePassEffectContainerSO,
-    >,
-    pub _hapticFeedbackManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::HapticFeedbackManager,
-    >,
+    pub _mirrorRendererGraphicsSettingsPresets:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets>,
+    pub _mainEffectGraphicsSettingsPresets:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO>,
+    pub _bloomPrePassGraphicsSettingsPresets:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO>,
+    pub _mirrorRenderer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirrorRendererSO>,
+    pub _mainEffectContainer:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainEffectContainerSO>,
+    pub _bloomPrePassEffectContainer:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassEffectContainerSO>,
+    pub _hapticFeedbackManager:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticFeedbackManager>,
     pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManager>,
-    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IVRPlatformHelper,
-    >,
-    pub roomTransformOffsetDidUpdateEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action,
-    >,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>,
+    pub roomTransformOffsetDidUpdateEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "cordl_class_SettingsApplicatorSO")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::SettingsApplicatorSO {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SettingsApplicatorSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "SettingsApplicatorSO";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -71,9 +59,10 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
         &mut self,
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -90,9 +79,8 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (settings))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (settings))? };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyGraphicSettings(
@@ -100,42 +88,38 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         sceneType: crate::GlobalNamespace::SceneType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::BeatSaber::Settings::Settings,
-                            >,
-                            crate::GlobalNamespace::SceneType,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ApplyGraphicSettings")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
+                        crate::GlobalNamespace::SceneType,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "ApplyGraphicSettings"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ApplyGraphicSettings", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ApplyGraphicSettings",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (settings, sceneType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (settings, sceneType))? };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyWindowSettings(
         &mut self,
-        settings: quest_hook::libil2cpp::ByRefMut<
-            crate::BeatSaber::Settings::WindowSettings,
-        >,
+        settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::WindowSettings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -152,14 +136,13 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (settings))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (settings))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -167,56 +150,55 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
     pub fn NotifyRoomTransformOffsetWasUpdated(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("NotifyRoomTransformOffsetWasUpdated")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "NotifyRoomTransformOffsetWasUpdated",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "NotifyRoomTransformOffsetWasUpdated", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "NotifyRoomTransformOffsetWasUpdated",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn add_roomTransformOffsetDidUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
@@ -231,18 +213,18 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_roomTransformOffsetDidUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
@@ -257,9 +239,8 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }

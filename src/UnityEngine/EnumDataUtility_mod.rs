@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::EnumDataUtility 
     const NAMESPACE: &'static str = "UnityEngine";
     const CLASS_NAME: &'static str = "EnumDataUtility";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,31 +45,26 @@ impl crate::UnityEngine::EnumDataUtility {
         field: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
         cachedType: crate::UnityEngine::EnumDataUtility_CachedType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::FieldInfo,
-                            >,
-                            crate::UnityEngine::EnumDataUtility_CachedType,
-                        ),
-                        bool,
-                        2usize,
-                    >("CheckObsoleteAddition")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+                        crate::UnityEngine::EnumDataUtility_CachedType,
+                    ), bool, 2usize>("CheckObsoleteAddition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckObsoleteAddition", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckObsoleteAddition",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (field, cachedType))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (field, cachedType))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnumNameFromEnumField(
@@ -79,53 +75,45 @@ impl crate::UnityEngine::EnumDataUtility {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::FieldInfo,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        2usize,
-                    >("EnumNameFromEnumField")
+                        >,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, 2usize>(
+                        "EnumNameFromEnumField",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EnumNameFromEnumField", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EnumNameFromEnumField",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (field, nicifyName))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (field, nicifyName))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnumTooltipFromEnumField(
         field: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -142,9 +130,8 @@ impl crate::UnityEngine::EnumDataUtility {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (field))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (field))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCachedEnumData(
@@ -157,101 +144,88 @@ impl crate::UnityEngine::EnumDataUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EnumData> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            crate::UnityEngine::EnumDataUtility_CachedType,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        crate::UnityEngine::EnumDataUtility_CachedType,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                        ),
-                        crate::UnityEngine::EnumData,
-                        3usize,
-                    >("GetCachedEnumData")
+                        >,
+                    ), crate::UnityEngine::EnumData, 3usize>("GetCachedEnumData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCachedEnumData", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCachedEnumData",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::EnumData = unsafe {
-            cordl_method_info.invoke_unchecked((), (enumType, cachedType, nicifyName))?
-        };
+        let __cordl_ret: crate::UnityEngine::EnumData =
+            unsafe { cordl_method_info.invoke_unchecked((), (enumType, cachedType, nicifyName))? };
         Ok(__cordl_ret.into())
     }
     pub fn HandleInspectorOrderAttribute(
         enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         enumData: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::EnumData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::EnumData>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleInspectorOrderAttribute")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::EnumData>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "HandleInspectorOrderAttribute"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleInspectorOrderAttribute", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleInspectorOrderAttribute",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (enumType, enumData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (enumType, enumData))? };
         Ok(__cordl_ret.into())
     }
     pub fn _EnumNameFromEnumField_g__NicifyName_8_0(
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        1usize,
-                    >("<EnumNameFromEnumField>g__NicifyName|8_0")
+                    .find_static_method::<(quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, 1usize>(
+                        "<EnumNameFromEnumField>g__NicifyName|8_0",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<EnumNameFromEnumField>g__NicifyName|8_0", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "<EnumNameFromEnumField>g__NicifyName|8_0",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> = unsafe {
             cordl_method_info.invoke_unchecked((), (_cordl_fixed_empty_name_whitespace))?
         };
         Ok(__cordl_ret.into())
@@ -267,8 +241,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::EnumDataUtility {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+EnumDataUtility+CachedType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum EnumDataUtility_CachedType {
     #[default]
     ExcludeObsolete = 0i32,
@@ -276,8 +250,7 @@ pub enum EnumDataUtility_CachedType {
     IncludeObsoleteExceptErrors = 1i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+EnumDataUtility+CachedType")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::EnumDataUtility_CachedType {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::EnumDataUtility_CachedType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
@@ -296,18 +269,14 @@ for crate::UnityEngine::EnumDataUtility_CachedType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+EnumDataUtility+CachedType")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::EnumDataUtility_CachedType {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::EnumDataUtility_CachedType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -317,8 +286,7 @@ for crate::UnityEngine::EnumDataUtility_CachedType {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+EnumDataUtility+CachedType")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::EnumDataUtility_CachedType {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::EnumDataUtility_CachedType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -331,23 +299,19 @@ for crate::UnityEngine::EnumDataUtility_CachedType {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+EnumDataUtility+CachedType")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::EnumDataUtility_CachedType {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::EnumDataUtility_CachedType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+EnumDataUtility+CachedType")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::EnumDataUtility_CachedType {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::EnumDataUtility_CachedType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

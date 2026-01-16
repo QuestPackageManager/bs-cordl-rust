@@ -10,13 +10,15 @@ pub struct GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt16 {
     feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualUInt16"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt16 {
+    for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt16
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions.Interpreter";
     const CLASS_NAME: &'static str = "GreaterThanOrEqualInstruction/GreaterThanOrEqualUInt16";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,7 +34,8 @@ for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt
     feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualUInt16"
 )]
 impl std::ops::Deref
-for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt16 {
+    for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt16
+{
     type Target = crate::System::Linq::Expressions::Interpreter::GreaterThanOrEqualInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -42,7 +45,8 @@ for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt
     feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualUInt16"
 )]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt16 {
+    for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt16
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -54,8 +58,8 @@ impl crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUIn
     pub fn New(
         nullValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (nullValue))?;
         Ok(__cordl_object.into())
@@ -66,37 +70,34 @@ impl crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUIn
             crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
-                        >),
-                        i32,
-                        1usize,
-                    >("Run")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+                    >), i32, 1usize>("Run")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Run",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Run",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (frame))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (frame))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         nullValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -111,9 +112,8 @@ impl crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUIn
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (nullValue))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (nullValue))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -121,7 +121,8 @@ impl crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUIn
     feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualUInt16"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt16 {
+    for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt16
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

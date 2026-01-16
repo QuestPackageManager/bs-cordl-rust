@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SaberTypeExt
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "SaberTypeExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,63 +42,60 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
     pub fn MainSaber(
         leftHanded: bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SaberType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (bool),
-                        crate::GlobalNamespace::SaberType,
-                        1usize,
-                    >("MainSaber")
+                    .find_static_method::<(bool), crate::GlobalNamespace::SaberType, 1usize>(
+                        "MainSaber",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MainSaber", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MainSaber",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::SaberType = unsafe {
-            cordl_method_info.invoke_unchecked((), (leftHanded))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::SaberType =
+            unsafe { cordl_method_info.invoke_unchecked((), (leftHanded))? };
         Ok(__cordl_ret.into())
     }
     pub fn MatchesColorType(
         saberType: crate::GlobalNamespace::SaberType,
         colorType: crate::GlobalNamespace::ColorType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::SaberType,
-                            crate::GlobalNamespace::ColorType,
-                        ),
-                        bool,
-                        2usize,
-                    >("MatchesColorType")
+                    .find_static_method::<(
+                        crate::GlobalNamespace::SaberType,
+                        crate::GlobalNamespace::ColorType,
+                    ), bool, 2usize>("MatchesColorType")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MatchesColorType", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MatchesColorType",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (saberType, colorType))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (saberType, colorType))? };
         Ok(__cordl_ret.into())
     }
     pub fn Node(
         saberType: crate::GlobalNamespace::SaberType,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::XRNode> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::SaberType),
@@ -112,17 +110,17 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::XR::XRNode = unsafe {
-            cordl_method_info.invoke_unchecked((), (saberType))?
-        };
+        let __cordl_ret: crate::UnityEngine::XR::XRNode =
+            unsafe { cordl_method_info.invoke_unchecked((), (saberType))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToColorType(
         saberType: crate::GlobalNamespace::SaberType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::SaberType),
@@ -137,17 +135,17 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::ColorType = unsafe {
-            cordl_method_info.invoke_unchecked((), (saberType))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::ColorType =
+            unsafe { cordl_method_info.invoke_unchecked((), (saberType))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToSaberType(
         colorType: crate::GlobalNamespace::ColorType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SaberType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::ColorType),
@@ -162,9 +160,8 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::SaberType = unsafe {
-            cordl_method_info.invoke_unchecked((), (colorType))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::SaberType =
+            unsafe { cordl_method_info.invoke_unchecked((), (colorType))? };
         Ok(__cordl_ret.into())
     }
 }

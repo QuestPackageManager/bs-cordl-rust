@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Extensions+PerformanceSettings+PerformanceNotificationLevel"
 )]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum PerformanceNotificationLevel {
     #[default]
     Impaired = 75i32,

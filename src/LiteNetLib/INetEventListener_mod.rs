@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+INetEventListener")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct INetEventListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::INetEventListener
     const NAMESPACE: &'static str = "LiteNetLib";
     const CLASS_NAME: &'static str = "INetEventListener";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,9 +43,10 @@ impl crate::LiteNetLib::INetEventListener {
         &mut self,
         request: quest_hook::libil2cpp::Gc<crate::LiteNetLib::ConnectionRequest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -61,9 +63,8 @@ impl crate::LiteNetLib::INetEventListener {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (request))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (request))? };
         Ok(__cordl_ret.into())
     }
     pub fn OnNetworkError(
@@ -71,29 +72,26 @@ impl crate::LiteNetLib::INetEventListener {
         endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         socketError: crate::System::Net::Sockets::SocketError,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-                            crate::System::Net::Sockets::SocketError,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("OnNetworkError")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                        crate::System::Net::Sockets::SocketError,
+                    ), quest_hook::libil2cpp::Void, 2usize>("OnNetworkError")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnNetworkError", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnNetworkError",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (endPoint, socketError))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (endPoint, socketError))? };
         Ok(__cordl_ret.into())
     }
     pub fn OnNetworkLatencyUpdate(
@@ -101,9 +99,10 @@ impl crate::LiteNetLib::INetEventListener {
         peer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
         latency: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>, i32),
@@ -118,9 +117,8 @@ impl crate::LiteNetLib::INetEventListener {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (peer, latency))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (peer, latency))? };
         Ok(__cordl_ret.into())
     }
     pub fn OnNetworkReceive(
@@ -129,32 +127,27 @@ impl crate::LiteNetLib::INetEventListener {
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketReader>,
         deliveryMethod: crate::LiteNetLib::DeliveryMethod,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::LiteNetLib::NetPacketReader,
-                            >,
-                            crate::LiteNetLib::DeliveryMethod,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("OnNetworkReceive")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketReader>,
+                        crate::LiteNetLib::DeliveryMethod,
+                    ), quest_hook::libil2cpp::Void, 3usize>("OnNetworkReceive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnNetworkReceive", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnNetworkReceive",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (peer, reader, deliveryMethod))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (peer, reader, deliveryMethod))? };
         Ok(__cordl_ret.into())
     }
     pub fn OnNetworkReceiveUnconnected(
@@ -163,32 +156,29 @@ impl crate::LiteNetLib::INetEventListener {
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketReader>,
         messageType: crate::LiteNetLib::UnconnectedMessageType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::LiteNetLib::NetPacketReader,
-                            >,
-                            crate::LiteNetLib::UnconnectedMessageType,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("OnNetworkReceiveUnconnected")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketReader>,
+                        crate::LiteNetLib::UnconnectedMessageType,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "OnNetworkReceiveUnconnected"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnNetworkReceiveUnconnected", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnNetworkReceiveUnconnected",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (remoteEndPoint, reader, messageType))?
+            cordl_method_info.invoke_unchecked(self, (remoteEndPoint, reader, messageType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -196,9 +186,10 @@ impl crate::LiteNetLib::INetEventListener {
         &mut self,
         peer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>),
@@ -213,9 +204,8 @@ impl crate::LiteNetLib::INetEventListener {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (peer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (peer))? };
         Ok(__cordl_ret.into())
     }
     pub fn OnPeerDisconnected(
@@ -223,34 +213,29 @@ impl crate::LiteNetLib::INetEventListener {
         peer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
         disconnectInfo: crate::LiteNetLib::DisconnectInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-                            crate::LiteNetLib::DisconnectInfo,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("OnPeerDisconnected")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+                        crate::LiteNetLib::DisconnectInfo,
+                    ), quest_hook::libil2cpp::Void, 2usize>("OnPeerDisconnected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnPeerDisconnected", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnPeerDisconnected",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (peer, disconnectInfo))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (peer, disconnectInfo))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }

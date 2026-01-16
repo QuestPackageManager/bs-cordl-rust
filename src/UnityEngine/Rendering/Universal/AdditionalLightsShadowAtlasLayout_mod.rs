@@ -1,8 +1,6 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct AdditionalLightsShadowAtlasLayout {
     pub m_SortedShadowResolutionRequests: crate::Unity::Collections::NativeArray_1<
         crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout_ShadowResolutionRequest,
@@ -16,11 +14,10 @@ pub struct AdditionalLightsShadowAtlasLayout {
     pub m_ShadowSlicesScaleFactor: i32,
     pub m_AtlasSize: i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout {
+    for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
@@ -39,20 +36,16 @@ for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout 
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout {
+    for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -61,11 +54,10 @@ for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout {
+    for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -77,28 +69,24 @@ for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout 
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout {
+    for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout {
+    for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -110,11 +98,10 @@ for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout 
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout {
+    for crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -129,29 +116,26 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
         feature = "UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout+ShadowResolutionRequest"
     )]
     pub type ShadowResolutionRequest = crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout_ShadowResolutionRequest;
-    pub fn ClearStaticCaches() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Void,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ClearStaticCaches() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ClearStaticCaches")
+                    .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "ClearStaticCaches",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ClearStaticCaches", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ClearStaticCaches",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCompareShadowResolutionRequesPredicate() -> quest_hook::libil2cpp::Result<
@@ -162,8 +146,9 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
                 i32,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -204,7 +189,8 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
         endIndex: i32,
         atlasSize: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -236,16 +222,18 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
         Ok(__cordl_ret.into())
     }
     pub fn GetAtlasSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetAtlasSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetAtlasSize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetAtlasSize",
+                            0usize
                         )
                     })
             });
@@ -253,16 +241,18 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
         Ok(__cordl_ret.into())
     }
     pub fn GetShadowSlicesScaleFactor(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetShadowSlicesScaleFactor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetShadowSlicesScaleFactor", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetShadowSlicesScaleFactor",
+                            0usize
                         )
                     })
             });
@@ -275,8 +265,9 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
         sliceIndex: i32,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout_ShadowResolutionRequest,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -304,8 +295,9 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
         sortedShadowResolutionRequestIndex: i32,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout_ShadowResolutionRequest,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -328,23 +320,19 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetTotalShadowResolutionRequestCount(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetTotalShadowResolutionRequestCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        i32,
-                        0usize,
-                    >("GetTotalShadowResolutionRequestCount")
+                    .find_method::<(), i32, 0usize>("GetTotalShadowResolutionRequestCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTotalShadowResolutionRequestCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetTotalShadowResolutionRequestCount",
+                            0usize
                         )
                     })
             });
@@ -352,16 +340,18 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
         Ok(__cordl_ret.into())
     }
     pub fn GetTotalShadowSlicesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetTotalShadowSlicesCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTotalShadowSlicesCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetTotalShadowSlicesCount",
+                            0usize
                         )
                     })
             });
@@ -372,35 +362,38 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
         &mut self,
         originalVisibleLightIndex: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("HasSpaceForLight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HasSpaceForLight", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HasSpaceForLight",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (originalVisibleLightIndex))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (originalVisibleLightIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasTooManyShadowMaps(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("HasTooManyShadowMaps")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HasTooManyShadowMaps", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HasTooManyShadowMaps",
+                            0usize
                         )
                     })
             });
@@ -419,36 +412,33 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
             crate::UnityEngine::Rendering::Universal::UniversalCameraData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::Universal::UniversalLightData,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::Universal::UniversalShadowData,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::Universal::UniversalCameraData,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::Universal::UniversalLightData,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::Universal::UniversalShadowData,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::Universal::UniversalCameraData,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (lightData, shadowData, cameraData))?
+            cordl_method_info.invoke_unchecked(self, (lightData, shadowData, cameraData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -456,8 +446,8 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout+ShadowResolutionRequest"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct AdditionalLightsShadowAtlasLayout_ShadowResolutionRequest {
     pub visibleLightIndex: u16,
     pub perLightShadowSliceIndex: u16,
@@ -672,8 +662,8 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout+ShadowResolutionRequest+SettingsOptions"
 )]
-#[repr(u16)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(u16)]
 pub enum ShadowResolutionRequest_AdditionalLightsShadowAtlasLayout_SettingsOptions {
     #[default]
     All = 65535u16,

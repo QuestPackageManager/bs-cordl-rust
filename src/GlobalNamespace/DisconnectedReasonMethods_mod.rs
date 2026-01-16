@@ -5,14 +5,14 @@ pub struct DisconnectedReasonMethods {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_DisconnectedReasonMethods")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::DisconnectedReasonMethods {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DisconnectedReasonMethods {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "DisconnectedReasonMethods";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,7 +40,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DisconnectedReasonMethods {
 #[cfg(feature = "DisconnectedReasonMethods")]
 impl crate::GlobalNamespace::DisconnectedReasonMethods {
     pub const kDisconnectedKicked: &'static str = "DISCONNECTED_KICKED";
-    pub const kDisconnectedMasterServerUnreachable: &'static str = "DISCONNECTED_MASTER_SERVER_UNREACHABLE";
+    pub const kDisconnectedMasterServerUnreachable: &'static str =
+        "DISCONNECTED_MASTER_SERVER_UNREACHABLE";
     pub const kDisconnectedServerAtCapacity: &'static str = "DISCONNECTED_SERVER_AT_CAPACITY";
     pub const kDisconnectedServerConnectionClosed: &'static str = "DISCONNECTED_SERVER_SHUT_DOWN";
     pub const kDisconnectedServerTerminated: &'static str = "DISCONNECTED_SERVER_SHUT_DOWN";
@@ -49,12 +50,12 @@ impl crate::GlobalNamespace::DisconnectedReasonMethods {
     pub const kDisconnectedUserInitiated: &'static str = "DISCONNECTED_USER_INITIATED";
     pub fn ErrorCode(
         disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::DisconnectedReason),
@@ -69,19 +70,18 @@ impl crate::GlobalNamespace::DisconnectedReasonMethods {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (disconnectedReason))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (disconnectedReason))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocalizedKey(
         connectionFailedReason: crate::GlobalNamespace::DisconnectedReason,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::DisconnectedReason),
@@ -96,15 +96,13 @@ impl crate::GlobalNamespace::DisconnectedReasonMethods {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (connectionFailedReason))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (connectionFailedReason))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_DisconnectedReasonMethods")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::DisconnectedReasonMethods {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DisconnectedReasonMethods {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

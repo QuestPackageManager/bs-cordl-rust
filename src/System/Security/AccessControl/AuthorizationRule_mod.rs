@@ -3,9 +3,7 @@
 #[derive(Debug)]
 pub struct AuthorizationRule {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub identity: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Principal::IdentityReference,
-    >,
+    pub identity: quest_hook::libil2cpp::Gc<crate::System::Security::Principal::IdentityReference>,
     pub accessMask: i32,
     pub isInherited: bool,
     pub inheritanceFlags: crate::System::Security::AccessControl::InheritanceFlags,
@@ -13,13 +11,15 @@ pub struct AuthorizationRule {
 }
 #[cfg(feature = "cordl_class_System+Security+AccessControl+AuthorizationRule")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Security::AccessControl::AuthorizationRule {
+    for crate::System::Security::AccessControl::AuthorizationRule
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Security.AccessControl";
     const CLASS_NAME: &'static str = "AuthorizationRule";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,84 +47,84 @@ impl std::ops::DerefMut for crate::System::Security::AccessControl::Authorizatio
 #[cfg(feature = "System+Security+AccessControl+AuthorizationRule")]
 impl crate::System::Security::AccessControl::AuthorizationRule {
     pub fn New(
-        identity: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Principal::IdentityReference,
-        >,
+        identity: quest_hook::libil2cpp::Gc<crate::System::Security::Principal::IdentityReference>,
         accessMask: i32,
         isInherited: bool,
         inheritanceFlags: crate::System::Security::AccessControl::InheritanceFlags,
         propagationFlags: crate::System::Security::AccessControl::PropagationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (identity, accessMask, isInherited, inheritanceFlags, propagationFlags),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                identity,
+                accessMask,
+                isInherited,
+                inheritanceFlags,
+                propagationFlags,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        identity: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Principal::IdentityReference,
-        >,
+        identity: quest_hook::libil2cpp::Gc<crate::System::Security::Principal::IdentityReference>,
         accessMask: i32,
         isInherited: bool,
         inheritanceFlags: crate::System::Security::AccessControl::InheritanceFlags,
         propagationFlags: crate::System::Security::AccessControl::PropagationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Security::Principal::IdentityReference,
-                            >,
-                            i32,
-                            bool,
-                            crate::System::Security::AccessControl::InheritanceFlags,
-                            crate::System::Security::AccessControl::PropagationFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Security::Principal::IdentityReference,
+                        >,
+                        i32,
+                        bool,
+                        crate::System::Security::AccessControl::InheritanceFlags,
+                        crate::System::Security::AccessControl::PropagationFlags,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        identity,
-                        accessMask,
-                        isInherited,
-                        inheritanceFlags,
-                        propagationFlags,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    identity,
+                    accessMask,
+                    isInherited,
+                    inheritanceFlags,
+                    propagationFlags,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_AccessMask(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_AccessMask")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_AccessMask", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_AccessMask",
+                            0usize
                         )
                     })
             });
@@ -134,7 +134,8 @@ impl crate::System::Security::AccessControl::AuthorizationRule {
 }
 #[cfg(feature = "cordl_class_System+Security+AccessControl+AuthorizationRule")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Security::AccessControl::AuthorizationRule {
+    for crate::System::Security::AccessControl::AuthorizationRule
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

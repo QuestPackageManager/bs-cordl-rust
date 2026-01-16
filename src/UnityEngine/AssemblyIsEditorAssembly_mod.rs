@@ -5,14 +5,14 @@ pub struct AssemblyIsEditorAssembly {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(feature = "cordl_class_UnityEngine+AssemblyIsEditorAssembly")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::AssemblyIsEditorAssembly {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AssemblyIsEditorAssembly {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine";
     const CLASS_NAME: &'static str = "AssemblyIsEditorAssembly";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false

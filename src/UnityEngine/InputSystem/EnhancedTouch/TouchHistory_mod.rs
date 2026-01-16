@@ -1,22 +1,21 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TouchHistory {
     pub m_History: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
             crate::UnityEngine::InputSystem::LowLevel::TouchState,
         >,
     >,
-    pub m_Finger: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-    >,
+    pub m_Finger: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::EnhancedTouch::Finger>,
     pub m_Count: i32,
     pub m_StartIndex: i32,
     pub m_Version: u32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.EnhancedTouch";
@@ -35,18 +34,16 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -57,7 +54,8 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -71,22 +69,22 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -100,7 +98,8 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -113,25 +112,24 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
 impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
     #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
     pub type Enumerator = crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator;
-    pub fn CheckValid(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn CheckValid(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CheckValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckValid", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckValid",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
@@ -143,24 +141,22 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<
-                                crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerator_1<
+                            crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
                         >,
-                        0usize,
-                    >("GetEnumerator")
+                    >, 0usize>("GetEnumerator")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetEnumerator", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetEnumerator",
+                            0usize
                         )
                     })
             });
@@ -176,9 +172,10 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -195,16 +192,13 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEnumerator,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        finger: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-        >,
+        finger: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::EnhancedTouch::Finger>,
         history: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
                 crate::UnityEngine::InputSystem::LowLevel::TouchState,
@@ -213,51 +207,50 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
         startIndex: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
+                                crate::UnityEngine::InputSystem::LowLevel::TouchState,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
-                                    crate::UnityEngine::InputSystem::LowLevel::TouchState,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                        >,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (finger, history, startIndex, count))?
+            cordl_method_info.invoke_unchecked(self, (finger, history, startIndex, count))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Count", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Count",
+                            0usize
                         )
                     })
             });
@@ -267,12 +260,11 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
     pub fn get_Item(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::EnhancedTouch::Touch> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -287,18 +279,19 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::Touch = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::Touch =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    >,
-> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+impl
+    AsRef<
+        crate::System::Collections::Generic::IEnumerable_1<
+            crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+        >,
+    > for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory
+{
     fn as_ref(
         &self,
     ) -> &crate::System::Collections::Generic::IEnumerable_1<
@@ -308,11 +301,13 @@ impl AsRef<
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    >,
-> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+impl
+    AsMut<
+        crate::System::Collections::Generic::IEnumerable_1<
+            crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+        >,
+    > for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
@@ -322,11 +317,13 @@ impl AsMut<
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl AsRef<
-    crate::System::Collections::Generic::IReadOnlyCollection_1<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    >,
-> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+impl
+    AsRef<
+        crate::System::Collections::Generic::IReadOnlyCollection_1<
+            crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+        >,
+    > for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory
+{
     fn as_ref(
         &self,
     ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<
@@ -336,11 +333,13 @@ impl AsRef<
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl AsMut<
-    crate::System::Collections::Generic::IReadOnlyCollection_1<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    >,
-> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+impl
+    AsMut<
+        crate::System::Collections::Generic::IReadOnlyCollection_1<
+            crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+        >,
+    > for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<
@@ -350,11 +349,13 @@ impl AsMut<
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl AsRef<
-    crate::System::Collections::Generic::IReadOnlyList_1<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    >,
-> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+impl
+    AsRef<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+        >,
+    > for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory
+{
     fn as_ref(
         &self,
     ) -> &crate::System::Collections::Generic::IReadOnlyList_1<
@@ -364,11 +365,13 @@ impl AsRef<
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl AsMut<
-    crate::System::Collections::Generic::IReadOnlyList_1<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    >,
-> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+impl
+    AsMut<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+        >,
+    > for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Collections::Generic::IReadOnlyList_1<
@@ -379,21 +382,21 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 impl AsRef<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory
+{
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 impl AsMut<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory
+{
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         todo!()
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TouchHistory_Enumerator {
@@ -401,17 +404,17 @@ pub struct TouchHistory_Enumerator {
     pub m_Owner: crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
     pub m_Index: i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.EnhancedTouch";
     const CLASS_NAME: &'static str = "TouchHistory/Enumerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -424,8 +427,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
-impl std::ops::Deref
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
+impl std::ops::Deref for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -433,45 +435,47 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 impl std::ops::DerefMut
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("MoveNext")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MoveNext", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MoveNext",
+                            0usize
                         )
                     })
             });
@@ -481,41 +485,40 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
     pub fn New(
         owner: crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (owner))?;
         Ok(__cordl_object.into())
     }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reset",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -530,18 +533,18 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         owner: crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory),
@@ -556,19 +559,17 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (owner))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (owner))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::EnhancedTouch::Touch> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -583,17 +584,15 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::Touch = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::Touch =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -602,11 +601,13 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
-impl AsRef<
-    crate::System::Collections::Generic::IEnumerator_1<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    >,
-> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
+impl
+    AsRef<
+        crate::System::Collections::Generic::IEnumerator_1<
+            crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+        >,
+    > for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator
+{
     fn as_ref(
         &self,
     ) -> &crate::System::Collections::Generic::IEnumerator_1<
@@ -616,11 +617,13 @@ impl AsRef<
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
-impl AsMut<
-    crate::System::Collections::Generic::IEnumerator_1<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    >,
-> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
+impl
+    AsMut<
+        crate::System::Collections::Generic::IEnumerator_1<
+            crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+        >,
+    > for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
@@ -631,28 +634,32 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 impl AsRef<crate::System::Collections::IEnumerator>
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator
+{
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 impl AsMut<crate::System::Collections::IEnumerator>
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator
+{
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
+    for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }

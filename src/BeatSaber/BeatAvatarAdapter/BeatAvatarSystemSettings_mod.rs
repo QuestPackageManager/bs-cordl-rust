@@ -3,34 +3,30 @@
 #[derive(Debug)]
 pub struct BeatAvatarSystemSettings {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _avatarGameplayPrefab: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-    >,
-    pub _avatarResultsPrefab: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-    >,
-    pub _avatarHologramPrefab: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-    >,
-    pub _avatarEditorPrefab: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-    >,
-    pub _avatarSelectionViewPrefab: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-    >,
-    pub _avatarForUnityEditorPrefab: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-    >,
+    pub _avatarGameplayPrefab:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReferenceGameObject>,
+    pub _avatarResultsPrefab:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReferenceGameObject>,
+    pub _avatarHologramPrefab:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReferenceGameObject>,
+    pub _avatarEditorPrefab:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReferenceGameObject>,
+    pub _avatarSelectionViewPrefab:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReferenceGameObject>,
+    pub _avatarForUnityEditorPrefab:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReferenceGameObject>,
 }
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarAdapter+BeatAvatarSystemSettings")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
+    for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.BeatAvatarAdapter";
     const CLASS_NAME: &'static str = "BeatAvatarSystemSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -50,8 +46,7 @@ impl std::ops::Deref for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSe
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarSystemSettings")]
-impl std::ops::DerefMut
-for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
+impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -59,56 +54,51 @@ for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarSystemSettings")]
 impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_avatarEditorPrefab(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReferenceGameObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-                        >,
-                        0usize,
-                    >("get_avatarEditorPrefab")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+                    >, 0usize>("get_avatarEditorPrefab")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_avatarEditorPrefab", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_avatarEditorPrefab",
+                            0usize
                         )
                     })
             });
@@ -120,26 +110,22 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
     pub fn get_avatarForUnityEditorPrefab(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReferenceGameObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-                        >,
-                        0usize,
-                    >("get_avatarForUnityEditorPrefab")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+                    >, 0usize>("get_avatarForUnityEditorPrefab")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_avatarForUnityEditorPrefab", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_avatarForUnityEditorPrefab",
+                            0usize
                         )
                     })
             });
@@ -151,26 +137,22 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
     pub fn get_avatarGameplayPrefab(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReferenceGameObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-                        >,
-                        0usize,
-                    >("get_avatarGameplayPrefab")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+                    >, 0usize>("get_avatarGameplayPrefab")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_avatarGameplayPrefab", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_avatarGameplayPrefab",
+                            0usize
                         )
                     })
             });
@@ -182,26 +164,22 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
     pub fn get_avatarHologramPrefab(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReferenceGameObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-                        >,
-                        0usize,
-                    >("get_avatarHologramPrefab")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+                    >, 0usize>("get_avatarHologramPrefab")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_avatarHologramPrefab", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_avatarHologramPrefab",
+                            0usize
                         )
                     })
             });
@@ -213,26 +191,22 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
     pub fn get_avatarResultsPrefab(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReferenceGameObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-                        >,
-                        0usize,
-                    >("get_avatarResultsPrefab")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+                    >, 0usize>("get_avatarResultsPrefab")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_avatarResultsPrefab", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_avatarResultsPrefab",
+                            0usize
                         )
                     })
             });
@@ -244,26 +218,22 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
     pub fn get_avatarSelectionViewPrefab(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReferenceGameObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-                        >,
-                        0usize,
-                    >("get_avatarSelectionViewPrefab")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+                    >, 0usize>("get_avatarSelectionViewPrefab")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_avatarSelectionViewPrefab", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_avatarSelectionViewPrefab",
+                            0usize
                         )
                     })
             });
@@ -275,7 +245,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
 }
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarAdapter+BeatAvatarSystemSettings")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
+    for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -5,14 +5,14 @@ pub struct AddressablesExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+AddressablesExtensions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::BGLib::UnityExtension::AddressablesExtensions {
+unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::UnityExtension::AddressablesExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BGLib.UnityExtension";
     const CLASS_NAME: &'static str = "AddressablesExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,14 +43,14 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
         asyncOperationHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             T,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Runtime::CompilerServices::TaskAwaiter_1<T>,
-    >
+    ) -> quest_hook::libil2cpp::Result<crate::System::Runtime::CompilerServices::TaskAwaiter_1<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -69,9 +69,8 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (asyncOperationHandle))?
-        };
+        let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<T> =
+            unsafe { cordl_method_info.invoke_unchecked((), (asyncOperationHandle))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadContent<T>(
@@ -80,12 +79,14 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -108,52 +109,45 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn LoadContentAsync<T>(
-        label: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::IKeyEvaluator,
-        >,
+        label: quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::IKeyEvaluator>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IList_1<T>,
-                >,
+                quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
             >,
         >,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AddressableAssets::IKeyEvaluator,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IList_1<T>,
-                                >,
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::AddressableAssets::IKeyEvaluator,
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<T>,
                             >,
                         >,
-                        1usize,
-                    >("LoadContentAsync")
+                    >, 1usize>("LoadContentAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LoadContentAsync", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LoadContentAsync",
+                            1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IList_1<T>,
-                >,
+                quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (label))? };
         Ok(__cordl_ret.into())
@@ -166,10 +160,12 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
         >,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -197,8 +193,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
     }
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+AddressablesExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::BGLib::UnityExtension::AddressablesExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::BGLib::UnityExtension::AddressablesExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

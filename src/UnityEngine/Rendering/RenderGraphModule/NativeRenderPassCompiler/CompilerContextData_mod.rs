@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+CompilerContextData+NativePassIterator"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CompilerContextData_NativePassIterator {
     pub m_Ctx: Blacklisted,
     pub m_Index: i32,

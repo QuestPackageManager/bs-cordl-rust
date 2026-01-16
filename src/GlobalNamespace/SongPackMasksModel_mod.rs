@@ -5,9 +5,7 @@ pub struct SongPackMasksModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub content: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMasksModelSO>,
     pub allSongPackMask: crate::GlobalNamespace::SongPackMask,
-    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapLevelsModel,
-    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelsModel>,
     pub _songPackSerializedNameToMaskInfoDict: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -28,7 +26,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SongPackMask
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "SongPackMasksModel";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -62,12 +61,12 @@ impl crate::GlobalNamespace::SongPackMasksModel {
     pub fn GetSongPackMaskText(
         &mut self,
         songPackMask: crate::GlobalNamespace::SongPackMask,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMasksModel_LocalizedText>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::SongPackMask),
@@ -82,42 +81,36 @@ impl crate::GlobalNamespace::SongPackMasksModel {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::SongPackMasksModel_LocalizedText = unsafe {
-            cordl_method_info.invoke_unchecked(self, (songPackMask))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::SongPackMasksModel_LocalizedText =
+            unsafe { cordl_method_info.invoke_unchecked(self, (songPackMask))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        songPackMasks: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SongPackMasksModelSO,
-        >,
-        beatmapLevelsModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapLevelsModel,
-        >,
+        songPackMasks: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMasksModelSO>,
+        beatmapLevelsModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelsModel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (songPackMasks, beatmapLevelsModel))?;
         Ok(__cordl_object.into())
@@ -125,12 +118,12 @@ impl crate::GlobalNamespace::SongPackMasksModel {
     pub fn ToLocalizedName(
         &mut self,
         serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMasksModel_LocalizedText>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -145,20 +138,19 @@ impl crate::GlobalNamespace::SongPackMasksModel {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::SongPackMasksModel_LocalizedText = unsafe {
-            cordl_method_info.invoke_unchecked(self, (serializedName))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::SongPackMasksModel_LocalizedText =
+            unsafe { cordl_method_info.invoke_unchecked(self, (serializedName))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToSerializedName(
         &mut self,
         songPackMask: crate::GlobalNamespace::SongPackMask,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::SongPackMask),
@@ -173,18 +165,18 @@ impl crate::GlobalNamespace::SongPackMasksModel {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (songPackMask))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (songPackMask))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToSongPackMask(
         &mut self,
         serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -199,47 +191,35 @@ impl crate::GlobalNamespace::SongPackMasksModel {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::SongPackMask = unsafe {
-            cordl_method_info.invoke_unchecked(self, (serializedName))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::SongPackMask =
+            unsafe { cordl_method_info.invoke_unchecked(self, (serializedName))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        songPackMasks: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SongPackMasksModelSO,
-        >,
-        beatmapLevelsModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapLevelsModel,
-        >,
+        songPackMasks: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMasksModelSO>,
+        beatmapLevelsModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelsModel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SongPackMasksModelSO,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevelsModel,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMasksModelSO>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelsModel>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (songPackMasks, beatmapLevelsModel))?
+            cordl_method_info.invoke_unchecked(self, (songPackMasks, beatmapLevelsModel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -254,15 +234,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPackMasks
     }
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct SongPackMasksModel_LocalizedText {
     pub textKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub isPlural: bool,
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
+    for crate::GlobalNamespace::SongPackMasksModel_LocalizedText
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -281,18 +262,16 @@ for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
+    for crate::GlobalNamespace::SongPackMasksModel_LocalizedText
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -303,7 +282,8 @@ for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
+    for crate::GlobalNamespace::SongPackMasksModel_LocalizedText
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -317,22 +297,22 @@ for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
+    for crate::GlobalNamespace::SongPackMasksModel_LocalizedText
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
+    for crate::GlobalNamespace::SongPackMasksModel_LocalizedText
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -346,7 +326,8 @@ for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
+    for crate::GlobalNamespace::SongPackMasksModel_LocalizedText
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -362,41 +343,36 @@ impl crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
         textKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isPlural: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (textKey, isPlural))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (textKey, isPlural))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_text(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -411,22 +387,20 @@ impl crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct SongPackMasksModel_MaskInfo {
     pub localizedText: crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
     pub mask: crate::GlobalNamespace::SongPackMask,
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -445,18 +419,16 @@ for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
+    for crate::GlobalNamespace::SongPackMasksModel_MaskInfo
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -467,7 +439,8 @@ for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
+    for crate::GlobalNamespace::SongPackMasksModel_MaskInfo
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -481,22 +454,20 @@ for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
+    for crate::GlobalNamespace::SongPackMasksModel_MaskInfo
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -510,7 +481,8 @@ for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
+    for crate::GlobalNamespace::SongPackMasksModel_MaskInfo
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -526,29 +498,26 @@ impl crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
         localizedText: crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
         mask: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
-                            crate::GlobalNamespace::SongPackMask,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
+                        crate::GlobalNamespace::SongPackMask,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (localizedText, mask))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (localizedText, mask))? };
         Ok(__cordl_ret.into())
     }
 }

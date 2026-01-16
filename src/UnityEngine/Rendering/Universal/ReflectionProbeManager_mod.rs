@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe+_dataIndices_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CachedProbe_ReflectionProbeManager__dataIndices_e__FixedBuffer {
     pub FixedElementField: i32,
 }
@@ -120,8 +120,8 @@ impl crate::UnityEngine::Rendering::Universal::CachedProbe_ReflectionProbeManage
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe+_levels_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CachedProbe_ReflectionProbeManager__levels_e__FixedBuffer {
     pub FixedElementField: i32,
 }
@@ -237,15 +237,13 @@ for crate::UnityEngine::Rendering::Universal::CachedProbe_ReflectionProbeManager
 )]
 impl crate::UnityEngine::Rendering::Universal::CachedProbe_ReflectionProbeManager__levels_e__FixedBuffer {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ReflectionProbeManager {
     pub m_Resolution: crate::Unity::Mathematics::int2,
     pub m_AtlasTexture0: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     pub m_AtlasTexture1: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-    pub m_AtlasTexture0Handle: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::RTHandle,
-    >,
+    pub m_AtlasTexture0Handle: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
     pub m_AtlasAllocator: crate::UnityEngine::Rendering::Universal::BuddyAllocator,
     pub m_Cache: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
@@ -253,31 +251,23 @@ pub struct ReflectionProbeManager {
             crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe,
         >,
     >,
-    pub m_WarningCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-    >,
-    pub m_NeedsUpdate: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
-    pub m_NeedsRemove: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
-    pub m_BoxMax: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    >,
-    pub m_BoxMin: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    >,
-    pub m_ProbePosition: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    >,
-    pub m_MipScaleOffset: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    >,
+    pub m_WarningCache:
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Dictionary_2<i32, i32>>,
+    pub m_NeedsUpdate: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+    pub m_NeedsRemove: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+    pub m_BoxMax:
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>>,
+    pub m_BoxMin:
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>>,
+    pub m_ProbePosition:
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>>,
+    pub m_MipScaleOffset:
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
@@ -296,18 +286,16 @@ for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -318,7 +306,8 @@ for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -332,22 +321,22 @@ for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -361,7 +350,8 @@ for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -374,20 +364,19 @@ for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
 impl crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
     pub const k_MaxMipCount: i32 = 7i32;
     pub const k_ReflectionProbeAtlasName: &'static str = "URP Reflection Probe Atlas";
-    #[cfg(
-        feature = "UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe"
-    )]
-    pub type CachedProbe = crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe;
-    #[cfg(
-        feature = "UnityEngine+Rendering+Universal+ReflectionProbeManager+ShaderProperties"
-    )]
-    pub type ShaderProperties = crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_ShaderProperties;
+    #[cfg(feature = "UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe")]
+    pub type CachedProbe =
+        crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe;
+    #[cfg(feature = "UnityEngine+Rendering+Universal+ReflectionProbeManager+ShaderProperties")]
+    pub type ShaderProperties =
+        crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_ShaderProperties;
     pub fn Create() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::Universal::ReflectionProbeManager,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -402,30 +391,28 @@ impl crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::Universal::ReflectionProbeManager = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::Universal::ReflectionProbeManager =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetScaleOffset(
@@ -435,9 +422,10 @@ impl crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
         includePadding: bool,
         yflip: bool,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, bool, bool),
@@ -453,76 +441,67 @@ impl crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
                     })
             });
         let __cordl_ret: crate::Unity::Mathematics::float4 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (level, dataIndex, includePadding, yflip))?
+            cordl_method_info.invoke_unchecked(self, (level, dataIndex, includePadding, yflip))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateGpuData(
         &mut self,
         cmd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
-        cullResults: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Rendering::CullingResults,
-        >,
+        cullResults: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rendering::CullingResults>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::CullingResults,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateGpuData")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::CullingResults,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UpdateGpuData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateGpuData", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateGpuData",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (cmd, cullResults))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cmd, cullResults))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_atlasRT(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -537,9 +516,8 @@ impl crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_atlasRTHandle(
@@ -547,9 +525,10 @@ impl crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -566,31 +545,30 @@ impl crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::RTHandle,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+ReflectionProbeManager")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+ReflectionProbeManager")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ReflectionProbeManager_CachedProbe {
     pub updateCount: u32,
     pub imageContentsHash: crate::UnityEngine::Hash128,
@@ -602,11 +580,10 @@ pub struct ReflectionProbeManager_CachedProbe {
     pub lastUsed: i32,
     pub hdrData: crate::UnityEngine::Vector4,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
@@ -625,20 +602,16 @@ for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -647,11 +620,10 @@ for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -663,28 +635,24 @@ for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -696,11 +664,10 @@ for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProbe
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -732,13 +699,15 @@ pub struct ReflectionProbeManager_ShaderProperties {
     feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+ShaderProperties"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_ShaderProperties {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_ShaderProperties
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
     const CLASS_NAME: &'static str = "ReflectionProbeManager/ShaderProperties";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -750,34 +719,31 @@ for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_ShaderPrope
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+Universal+ReflectionProbeManager+ShaderProperties"
-)]
+#[cfg(feature = "UnityEngine+Rendering+Universal+ReflectionProbeManager+ShaderProperties")]
 impl std::ops::Deref
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_ShaderProperties {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_ShaderProperties
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+Universal+ReflectionProbeManager+ShaderProperties"
-)]
+#[cfg(feature = "UnityEngine+Rendering+Universal+ReflectionProbeManager+ShaderProperties")]
 impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_ShaderProperties {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_ShaderProperties
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+Universal+ReflectionProbeManager+ShaderProperties"
-)]
+#[cfg(feature = "UnityEngine+Rendering+Universal+ReflectionProbeManager+ShaderProperties")]
 impl crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_ShaderProperties {}
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+ShaderProperties"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_ShaderProperties {
+    for crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_ShaderProperties
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

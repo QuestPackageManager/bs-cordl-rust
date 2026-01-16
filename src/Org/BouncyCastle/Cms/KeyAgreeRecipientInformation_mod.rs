@@ -3,22 +3,20 @@
 #[derive(Debug)]
 pub struct KeyAgreeRecipientInformation {
     __cordl_parent: crate::Org::BouncyCastle::Cms::RecipientInformation,
-    pub info: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
-    >,
-    pub encryptedKey: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    >,
+    pub info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo>,
+    pub encryptedKey: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+KeyAgreeRecipientInformation")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
+    for crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Cms";
     const CLASS_NAME: &'static str = "KeyAgreeRecipientInformation";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -55,36 +53,30 @@ impl crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-                            >,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+                            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
                         >,
-                        3usize,
-                    >("CalculateAgreedWrapKey")
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                        >,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+                    >, 3usize>("CalculateAgreedWrapKey")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculateAgreedWrapKey", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CalculateAgreedWrapKey",
+                            3usize
                         )
                     })
             });
@@ -98,15 +90,14 @@ impl crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
     }
     pub fn GetContentStream(
         &mut self,
-        key: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        >,
+        key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsTypedStream>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -125,22 +116,20 @@ impl crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Cms::CmsTypedStream,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsTypedStream> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPublicKeyFromOriginatorID(
         &mut self,
         origID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::OriginatorID>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -173,41 +162,36 @@ impl crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
             crate::Org::BouncyCastle::Asn1::Cms::OriginatorPublicKey,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Asn1::Cms::OriginatorPublicKey,
-                            >,
-                        ),
+                    .find_method::<(
                         quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
                         >,
-                        2usize,
-                    >("GetPublicKeyFromOriginatorPublicKey")
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::Cms::OriginatorPublicKey,
+                        >,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                    >, 2usize>("GetPublicKeyFromOriginatorPublicKey")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPublicKeyFromOriginatorPublicKey", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPublicKeyFromOriginatorPublicKey",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (receiverPrivateKey, originatorPublicKey))?
+            cordl_method_info.invoke_unchecked(self, (receiverPrivateKey, originatorPublicKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -220,41 +204,35 @@ impl crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
             crate::Org::BouncyCastle::Asn1::Cms::OriginatorIdentifierOrKey,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Asn1::Cms::OriginatorIdentifierOrKey,
-                            >,
-                        ),
+                    .find_method::<(
                         quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
                         >,
-                        2usize,
-                    >("GetSenderPublicKey")
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::Cms::OriginatorIdentifierOrKey,
+                        >,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                    >, 2usize>("GetSenderPublicKey")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSenderPublicKey", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSenderPublicKey",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (receiverPrivateKey, originator))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (receiverPrivateKey, originator))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSessionKey(
@@ -263,28 +241,24 @@ impl crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-                        >,
-                        1usize,
-                    >("GetSessionKey")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+                    >, 1usize>("GetSessionKey")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSessionKey", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSessionKey",
+                            1usize
                         )
                     })
             });
@@ -294,60 +268,45 @@ impl crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        info: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
-        >,
+        info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo>,
         rid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::RecipientID>,
-        encryptedKey: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-        >,
-        secureReadable: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Cms::CmsSecureReadable,
-        >,
+        encryptedKey: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
+        secureReadable: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSecureReadable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, rid, encryptedKey, secureReadable))?;
         Ok(__cordl_object.into())
     }
     pub fn ReadRecipientInfo(
         infos: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-        info: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
-        >,
-        secureReadable: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Cms::CmsSecureReadable,
-        >,
+        info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo>,
+        secureReadable: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSecureReadable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Cms::CmsSecureReadable,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("ReadRecipientInfo")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSecureReadable>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("ReadRecipientInfo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadRecipientInfo", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadRecipientInfo",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (infos, info, secureReadable))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (infos, info, secureReadable))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnwrapSessionKey(
@@ -357,33 +316,27 @@ impl crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
             crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-                            >,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
                         >,
-                        2usize,
-                    >("UnwrapSessionKey")
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+                    >, 2usize>("UnwrapSessionKey")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnwrapSessionKey", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnwrapSessionKey",
+                            2usize
                         )
                     })
             });
@@ -394,57 +347,43 @@ impl crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
     }
     pub fn _ctor(
         &mut self,
-        info: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
-        >,
+        info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo>,
         rid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::RecipientID>,
-        encryptedKey: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-        >,
-        secureReadable: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Cms::CmsSecureReadable,
-        >,
+        encryptedKey: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
+        secureReadable: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSecureReadable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Cms::RecipientID,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Cms::CmsSecureReadable,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::RecipientID>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
+                        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSecureReadable>,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (info, rid, encryptedKey, secureReadable))?
+            cordl_method_info.invoke_unchecked(self, (info, rid, encryptedKey, secureReadable))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+KeyAgreeRecipientInformation")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
+    for crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

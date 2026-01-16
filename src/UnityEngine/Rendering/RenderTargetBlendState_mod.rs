@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTargetBlendState")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct RenderTargetBlendState {
     pub m_WriteMask: u8,
     pub m_SourceColorBlendMode: u8,
@@ -12,8 +12,7 @@ pub struct RenderTargetBlendState {
     pub m_Padding: u8,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTargetBlendState")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::RenderTargetBlendState {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::RenderTargetBlendState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -32,18 +31,16 @@ for crate::UnityEngine::Rendering::RenderTargetBlendState {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTargetBlendState")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::RenderTargetBlendState {
+    for crate::UnityEngine::Rendering::RenderTargetBlendState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -54,7 +51,8 @@ for crate::UnityEngine::Rendering::RenderTargetBlendState {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTargetBlendState")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::RenderTargetBlendState {
+    for crate::UnityEngine::Rendering::RenderTargetBlendState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -68,22 +66,22 @@ for crate::UnityEngine::Rendering::RenderTargetBlendState {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTargetBlendState")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::RenderTargetBlendState {
+    for crate::UnityEngine::Rendering::RenderTargetBlendState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTargetBlendState")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::RenderTargetBlendState {
+    for crate::UnityEngine::Rendering::RenderTargetBlendState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -97,7 +95,8 @@ for crate::UnityEngine::Rendering::RenderTargetBlendState {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTargetBlendState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::RenderTargetBlendState {
+    for crate::UnityEngine::Rendering::RenderTargetBlendState
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -112,9 +111,10 @@ impl crate::UnityEngine::Rendering::RenderTargetBlendState {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -129,18 +129,17 @@ impl crate::UnityEngine::Rendering::RenderTargetBlendState {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_RenderTargetBlendState0(
         &mut self,
         other: crate::UnityEngine::Rendering::RenderTargetBlendState,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Rendering::RenderTargetBlendState),
@@ -155,22 +154,22 @@ impl crate::UnityEngine::Rendering::RenderTargetBlendState {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -187,54 +186,51 @@ impl crate::UnityEngine::Rendering::RenderTargetBlendState {
         colorBlendOperation: crate::UnityEngine::Rendering::BlendOp,
         alphaBlendOperation: crate::UnityEngine::Rendering::BlendOp,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Rendering::ColorWriteMask,
-                            crate::UnityEngine::Rendering::BlendMode,
-                            crate::UnityEngine::Rendering::BlendMode,
-                            crate::UnityEngine::Rendering::BlendMode,
-                            crate::UnityEngine::Rendering::BlendMode,
-                            crate::UnityEngine::Rendering::BlendOp,
-                            crate::UnityEngine::Rendering::BlendOp,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::ColorWriteMask,
+                        crate::UnityEngine::Rendering::BlendMode,
+                        crate::UnityEngine::Rendering::BlendMode,
+                        crate::UnityEngine::Rendering::BlendMode,
+                        crate::UnityEngine::Rendering::BlendMode,
+                        crate::UnityEngine::Rendering::BlendOp,
+                        crate::UnityEngine::Rendering::BlendOp,
+                    ), quest_hook::libil2cpp::Void, 7usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        writeMask,
-                        sourceColorBlendMode,
-                        destinationColorBlendMode,
-                        sourceAlphaBlendMode,
-                        destinationAlphaBlendMode,
-                        colorBlendOperation,
-                        alphaBlendOperation,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    writeMask,
+                    sourceColorBlendMode,
+                    destinationColorBlendMode,
+                    sourceAlphaBlendMode,
+                    destinationAlphaBlendMode,
+                    colorBlendOperation,
+                    alphaBlendOperation,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn get_defaultValue() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Rendering::RenderTargetBlendState,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_defaultValue(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::RenderTargetBlendState> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -249,33 +245,29 @@ impl crate::UnityEngine::Rendering::RenderTargetBlendState {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::RenderTargetBlendState = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::RenderTargetBlendState =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderTargetBlendState")]
-impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::Rendering::RenderTargetBlendState>,
-> for crate::UnityEngine::Rendering::RenderTargetBlendState {
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::RenderTargetBlendState>>
+    for crate::UnityEngine::Rendering::RenderTargetBlendState
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::UnityEngine::Rendering::RenderTargetBlendState,
-    > {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Rendering::RenderTargetBlendState> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderTargetBlendState")]
-impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::Rendering::RenderTargetBlendState>,
-> for crate::UnityEngine::Rendering::RenderTargetBlendState {
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::RenderTargetBlendState>>
+    for crate::UnityEngine::Rendering::RenderTargetBlendState
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::UnityEngine::Rendering::RenderTargetBlendState,
-    > {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Rendering::RenderTargetBlendState>
+    {
         todo!()
     }
 }

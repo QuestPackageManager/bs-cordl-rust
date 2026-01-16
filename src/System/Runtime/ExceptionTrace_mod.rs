@@ -4,9 +4,8 @@
 pub struct ExceptionTrace {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub eventSourceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub diagnosticTrace: quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Diagnostics::EtwDiagnosticTrace,
-    >,
+    pub diagnosticTrace:
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Diagnostics::EtwDiagnosticTrace>,
 }
 #[cfg(feature = "cordl_class_System+Runtime+ExceptionTrace")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Runtime::ExceptionTrace {
@@ -15,7 +14,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Runtime::ExceptionTra
     const NAMESPACE: &'static str = "System.Runtime";
     const CLASS_NAME: &'static str = "ExceptionTrace";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -50,9 +50,10 @@ impl crate::System::Runtime::ExceptionTrace {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ArgumentOutOfRangeException>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -79,20 +80,18 @@ impl crate::System::Runtime::ExceptionTrace {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::ArgumentOutOfRangeException,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (paramName, actualValue, message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::ArgumentOutOfRangeException> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (paramName, actualValue, message))? };
         Ok(__cordl_ret.into())
     }
     pub fn BreakOnException(
         &mut self,
         exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Exception>),
@@ -107,9 +106,8 @@ impl crate::System::Runtime::ExceptionTrace {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (exception))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (exception))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -118,8 +116,8 @@ impl crate::System::Runtime::ExceptionTrace {
             crate::System::Runtime::Diagnostics::EtwDiagnosticTrace,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (eventSourceName, diagnosticTrace))?;
         Ok(__cordl_object.into())
@@ -130,34 +128,30 @@ impl crate::System::Runtime::ExceptionTrace {
         eventSource: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<TException>
     where
-        TException: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TException: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            TException,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
+                    .find_method::<(
                         TException,
-                        2usize,
-                    >("TraceException")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), TException, 2usize>("TraceException")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TraceException", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TraceException",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: TException = unsafe {
-            cordl_method_info.invoke_unchecked(self, (exception, eventSource))?
-        };
+        let __cordl_ret: TException =
+            unsafe { cordl_method_info.invoke_unchecked(self, (exception, eventSource))? };
         Ok(__cordl_ret.into())
     }
     pub fn TraceException_TException0<TException>(
@@ -165,25 +159,27 @@ impl crate::System::Runtime::ExceptionTrace {
         exception: TException,
     ) -> quest_hook::libil2cpp::Result<TException>
     where
-        TException: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TException: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(TException), TException, 1usize>("TraceException")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TraceException", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TraceException",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: TException = unsafe {
-            cordl_method_info.invoke_unchecked(self, (exception))?
-        };
+        let __cordl_ret: TException =
+            unsafe { cordl_method_info.invoke_unchecked(self, (exception))? };
         Ok(__cordl_ret.into())
     }
     pub fn TraceHandledException(
@@ -191,29 +187,28 @@ impl crate::System::Runtime::ExceptionTrace {
         exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         traceEventType: crate::System::Diagnostics::TraceEventType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Exception>,
-                            crate::System::Diagnostics::TraceEventType,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("TraceHandledException")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                        crate::System::Diagnostics::TraceEventType,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "TraceHandledException"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TraceHandledException", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TraceHandledException",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (exception, traceEventType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (exception, traceEventType))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -223,26 +218,22 @@ impl crate::System::Runtime::ExceptionTrace {
             crate::System::Runtime::Diagnostics::EtwDiagnosticTrace,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::Diagnostics::EtwDiagnosticTrace,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::Diagnostics::EtwDiagnosticTrace,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })

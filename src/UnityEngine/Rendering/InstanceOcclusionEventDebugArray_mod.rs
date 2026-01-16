@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct InstanceOcclusionEventDebugArray {
     pub m_CounterBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     pub m_PendingInfo: crate::Unity::Collections::LowLevel::Unsafe::UnsafeList_1<
@@ -17,7 +17,8 @@ pub struct InstanceOcclusionEventDebugArray {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -36,18 +37,16 @@ for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -58,7 +57,8 @@ for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -72,22 +72,22 @@ for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -101,7 +101,8 @@ for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -118,46 +119,44 @@ impl crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
     pub type Info = crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info;
     #[cfg(feature = "UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request")]
     pub type Request = crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request;
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MoveToDebugStatsAndClear(
@@ -166,28 +165,27 @@ impl crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
             crate::UnityEngine::Rendering::DebugRendererBatcherStats,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::DebugRendererBatcherStats,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("MoveToDebugStatsAndClear")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Rendering::DebugRendererBatcherStats,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "MoveToDebugStatsAndClear"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MoveToDebugStatsAndClear", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MoveToDebugStatsAndClear",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (debugStats))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (debugStats))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryAdd(
@@ -198,52 +196,49 @@ impl crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
         subviewMask: i32,
         occlusionTest: crate::UnityEngine::Rendering::OcclusionTest,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            crate::UnityEngine::Rendering::InstanceOcclusionEventType,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Rendering::OcclusionTest,
-                        ),
+                    .find_method::<(
                         i32,
-                        5usize,
-                    >("TryAdd")
+                        crate::UnityEngine::Rendering::InstanceOcclusionEventType,
+                        i32,
+                        i32,
+                        crate::UnityEngine::Rendering::OcclusionTest,
+                    ), i32, 5usize>("TryAdd")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "TryAdd",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryAdd",
                             5usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        viewInstanceID,
-                        eventType,
-                        occluderVersion,
-                        subviewMask,
-                        occlusionTest,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    viewInstanceID,
+                    eventType,
+                    occluderVersion,
+                    subviewMask,
+                    occlusionTest,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_CounterBuffer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -258,31 +253,30 @@ impl crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+InstanceOcclusionEventDebugArray")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+InstanceOcclusionEventDebugArray")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct InstanceOcclusionEventDebugArray_Info {
     pub viewInstanceID: i32,
     pub eventType: crate::UnityEngine::Rendering::InstanceOcclusionEventType,
@@ -290,11 +284,10 @@ pub struct InstanceOcclusionEventDebugArray_Info {
     pub subviewMask: i32,
     pub occlusionTest: crate::UnityEngine::Rendering::OcclusionTest,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -313,20 +306,16 @@ for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -335,11 +324,10 @@ for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -351,28 +339,24 @@ for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -384,11 +368,10 @@ for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -400,16 +383,18 @@ for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info {
 #[cfg(feature = "UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info")]
 impl crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info {
     pub fn HasVersion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("HasVersion")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HasVersion", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HasVersion",
+                            0usize
                         )
                     })
             });
@@ -417,22 +402,19 @@ impl crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct InstanceOcclusionEventDebugArray_Request {
     pub info: crate::Unity::Collections::LowLevel::Unsafe::UnsafeList_1<
         crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info,
     >,
     pub readback: crate::UnityEngine::Rendering::AsyncGPUReadbackRequest,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -451,20 +433,16 @@ for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -473,11 +451,10 @@ for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -489,28 +466,24 @@ for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -522,11 +495,10 @@ for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request {
+    for crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Request
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

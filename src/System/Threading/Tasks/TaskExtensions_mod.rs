@@ -5,14 +5,14 @@ pub struct TaskExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+TaskExtensions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Threading::Tasks::TaskExtensions {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Tasks::TaskExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Threading.Tasks";
     const CLASS_NAME: &'static str = "TaskExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,21 +42,21 @@ impl crate::System::Threading::Tasks::TaskExtensions {
     pub fn Unwrap<TResult>(
         task: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::Tasks::Task_1<TResult>,
-                >,
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
     >
     where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TResult: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -86,8 +86,7 @@ impl crate::System::Threading::Tasks::TaskExtensions {
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+TaskExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Threading::Tasks::TaskExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Tasks::TaskExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

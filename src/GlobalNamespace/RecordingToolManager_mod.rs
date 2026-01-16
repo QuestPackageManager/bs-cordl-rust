@@ -6,33 +6,27 @@ pub struct RecordingToolManager {
     pub recordingToolEnabled: bool,
     pub performanceRecordingEnabled: bool,
     pub configJsonData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub recordingToolSettings: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::RecordingToolSettings,
-    >,
+    pub recordingToolSettings:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecordingToolSettings>,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-    pub _configurationProcessor: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::RecordingToolConfigurationProcessor,
-    >,
-    pub _menuTransitionsHelper: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MenuTransitionsHelper,
-    >,
-    pub _environmentsListModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::EnvironmentsListModel,
-    >,
-    pub _playerDataModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlayerDataModel,
-    >,
+    pub _configurationProcessor:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecordingToolConfigurationProcessor>,
+    pub _menuTransitionsHelper:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuTransitionsHelper>,
+    pub _environmentsListModel:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentsListModel>,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
     pub _currentRecordingIndex: i32,
 }
 #[cfg(feature = "cordl_class_RecordingToolManager")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::RecordingToolManager {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RecordingToolManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "RecordingToolManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -76,43 +70,41 @@ impl crate::GlobalNamespace::RecordingToolManager {
         environmentsListModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentsListModel,
         >,
-        playerDataModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerDataModel,
-        >,
+        playerDataModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    processor,
-                    beatmapCharacteristicCollection,
-                    diContainer,
-                    menuTransitionsHelper,
-                    environmentsListModel,
-                    playerDataModel,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                processor,
+                beatmapCharacteristicCollection,
+                diContainer,
+                menuTransitionsHelper,
+                environmentsListModel,
+                playerDataModel,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn Run(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Run")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Run",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Run",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetupNextSettings(
@@ -120,9 +112,10 @@ impl crate::GlobalNamespace::RecordingToolManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecordingSettings>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -139,9 +132,8 @@ impl crate::GlobalNamespace::RecordingToolManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::RecordingSettings,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecordingSettings> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _Run_b__15_0(
@@ -153,36 +145,34 @@ impl crate::GlobalNamespace::RecordingToolManager {
             crate::GlobalNamespace::LevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("<Run>b__15_0")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("<Run>b__15_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Run>b__15_0", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "<Run>b__15_0",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (StandardLevelScenesTransitionSetupDataSO, LevelCompletionResults),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    StandardLevelScenesTransitionSetupDataSO,
+                    LevelCompletionResults,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -201,71 +191,62 @@ impl crate::GlobalNamespace::RecordingToolManager {
         environmentsListModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentsListModel,
         >,
-        playerDataModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerDataModel,
-        >,
+        playerDataModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::RecordingToolConfigurationProcessor,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapCharacteristicCollection,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MenuTransitionsHelper,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::EnvironmentsListModel,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerDataModel,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::RecordingToolConfigurationProcessor,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapCharacteristicCollection,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuTransitionsHelper>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentsListModel>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+                    ), quest_hook::libil2cpp::Void, 6usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        processor,
-                        beatmapCharacteristicCollection,
-                        diContainer,
-                        menuTransitionsHelper,
-                        environmentsListModel,
-                        playerDataModel,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    processor,
+                    beatmapCharacteristicCollection,
+                    diContainer,
+                    menuTransitionsHelper,
+                    environmentsListModel,
+                    playerDataModel,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_showRecordingToolScene(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_showRecordingToolScene")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_showRecordingToolScene", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_showRecordingToolScene",
+                            0usize
                         )
                     })
             });
@@ -283,15 +264,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RecordingTool
     }
 }
 #[cfg(feature = "cordl_class_RecordingToolManager+SetupData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct RecordingToolManager_SetupData {
     pub profileSong: bool,
     pub runAutopilot: bool,
 }
 #[cfg(feature = "cordl_class_RecordingToolManager+SetupData")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::RecordingToolManager_SetupData {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RecordingToolManager_SetupData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -310,18 +290,16 @@ for crate::GlobalNamespace::RecordingToolManager_SetupData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::RecordingToolManager_SetupData {
+    for crate::GlobalNamespace::RecordingToolManager_SetupData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -332,7 +310,8 @@ for crate::GlobalNamespace::RecordingToolManager_SetupData {
 }
 #[cfg(feature = "cordl_class_RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::RecordingToolManager_SetupData {
+    for crate::GlobalNamespace::RecordingToolManager_SetupData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -346,22 +325,22 @@ for crate::GlobalNamespace::RecordingToolManager_SetupData {
 }
 #[cfg(feature = "cordl_class_RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::RecordingToolManager_SetupData {
+    for crate::GlobalNamespace::RecordingToolManager_SetupData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::RecordingToolManager_SetupData {
+    for crate::GlobalNamespace::RecordingToolManager_SetupData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -375,7 +354,8 @@ for crate::GlobalNamespace::RecordingToolManager_SetupData {
 }
 #[cfg(feature = "cordl_class_RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::RecordingToolManager_SetupData {
+    for crate::GlobalNamespace::RecordingToolManager_SetupData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

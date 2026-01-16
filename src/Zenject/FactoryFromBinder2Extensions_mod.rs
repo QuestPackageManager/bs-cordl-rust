@@ -5,14 +5,14 @@ pub struct FactoryFromBinder2Extensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Zenject+FactoryFromBinder2Extensions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Zenject::FactoryFromBinder2Extensions {
+unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::FactoryFromBinder2Extensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject";
     const CLASS_NAME: &'static str = "FactoryFromBinder2Extensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -58,14 +58,18 @@ impl crate::Zenject::FactoryFromBinder2Extensions {
         quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
     >
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -103,11 +107,8 @@ impl crate::Zenject::FactoryFromBinder2Extensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (fromBinder, factoryBindGenerator))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder> =
+            unsafe { cordl_method_info.invoke_unchecked((), (fromBinder, factoryBindGenerator))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromMonoPoolableMemoryPool_Action_1_1<TParam1, TParam2, TContract>(
@@ -125,16 +126,20 @@ impl crate::Zenject::FactoryFromBinder2Extensions {
         quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
     >
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -168,11 +173,8 @@ impl crate::Zenject::FactoryFromBinder2Extensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (fromBinder, poolBindGenerator))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder> =
+            unsafe { cordl_method_info.invoke_unchecked((), (fromBinder, poolBindGenerator))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromMonoPoolableMemoryPool_FactoryFromBinder_3_0<TParam1, TParam2, TContract>(
@@ -183,16 +185,20 @@ impl crate::Zenject::FactoryFromBinder2Extensions {
         quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
     >
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -215,9 +221,8 @@ impl crate::Zenject::FactoryFromBinder2Extensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (fromBinder))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder> =
+            unsafe { cordl_method_info.invoke_unchecked((), (fromBinder))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromPoolableMemoryPool_Action_1_1<TParam1, TParam2, TContract>(
@@ -235,16 +240,20 @@ impl crate::Zenject::FactoryFromBinder2Extensions {
         quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
     >
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -278,11 +287,8 @@ impl crate::Zenject::FactoryFromBinder2Extensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (fromBinder, poolBindGenerator))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder> =
+            unsafe { cordl_method_info.invoke_unchecked((), (fromBinder, poolBindGenerator))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromPoolableMemoryPool_Action_1_3<TParam1, TParam2, TContract, TMemoryPool>(
@@ -300,18 +306,23 @@ impl crate::Zenject::FactoryFromBinder2Extensions {
         quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
     >
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TMemoryPool: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TMemoryPool: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -345,11 +356,8 @@ impl crate::Zenject::FactoryFromBinder2Extensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (fromBinder, poolBindGenerator))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder> =
+            unsafe { cordl_method_info.invoke_unchecked((), (fromBinder, poolBindGenerator))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromPoolableMemoryPool_FactoryFromBinder_3_0<TParam1, TParam2, TContract>(
@@ -360,16 +368,20 @@ impl crate::Zenject::FactoryFromBinder2Extensions {
         quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
     >
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -392,17 +404,11 @@ impl crate::Zenject::FactoryFromBinder2Extensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (fromBinder))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder> =
+            unsafe { cordl_method_info.invoke_unchecked((), (fromBinder))? };
         Ok(__cordl_ret.into())
     }
-    pub fn FromPoolableMemoryPool_FactoryFromBinder_3_2<
-        TParam1,
-        TParam2,
-        TContract,
-        TMemoryPool,
-    >(
+    pub fn FromPoolableMemoryPool_FactoryFromBinder_3_2<TParam1, TParam2, TContract, TMemoryPool>(
         fromBinder: quest_hook::libil2cpp::Gc<
             crate::Zenject::FactoryFromBinder_3<TParam1, TParam2, TContract>,
         >,
@@ -410,18 +416,23 @@ impl crate::Zenject::FactoryFromBinder2Extensions {
         quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
     >
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TMemoryPool: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TMemoryPool: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -444,9 +455,8 @@ impl crate::Zenject::FactoryFromBinder2Extensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (fromBinder))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder> =
+            unsafe { cordl_method_info.invoke_unchecked((), (fromBinder))? };
         Ok(__cordl_ret.into())
     }
 }

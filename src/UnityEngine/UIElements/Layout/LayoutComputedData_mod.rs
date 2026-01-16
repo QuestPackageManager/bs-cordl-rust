@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LayoutComputedData {
     pub Position: crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer,
     pub Dimensions: crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer,
@@ -18,7 +18,8 @@ pub struct LayoutComputedData {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Layout";
@@ -37,18 +38,16 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -59,7 +58,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -73,22 +73,22 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -102,7 +102,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -113,38 +114,33 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData {
 }
 #[cfg(feature = "UnityEngine+UIElements+Layout+LayoutComputedData")]
 impl crate::UnityEngine::UIElements::Layout::LayoutComputedData {
-    #[cfg(
-        feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Border_e__FixedBuffer"
-    )]
-    pub type _Border_e__FixedBuffer = crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer;
-    #[cfg(
-        feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Dimensions_e__FixedBuffer"
-    )]
-    pub type _Dimensions_e__FixedBuffer = crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer;
-    #[cfg(
-        feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Margin_e__FixedBuffer"
-    )]
-    pub type _Margin_e__FixedBuffer = crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer;
+    #[cfg(feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Border_e__FixedBuffer")]
+    pub type _Border_e__FixedBuffer =
+        crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer;
+    #[cfg(feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Dimensions_e__FixedBuffer")]
+    pub type _Dimensions_e__FixedBuffer =
+        crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer;
+    #[cfg(feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Margin_e__FixedBuffer")]
+    pub type _Margin_e__FixedBuffer =
+        crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer;
     #[cfg(
         feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_MeasuredDimensions_e__FixedBuffer"
     )]
     pub type _MeasuredDimensions_e__FixedBuffer = crate::UnityEngine::UIElements::Layout::LayoutComputedData__MeasuredDimensions_e__FixedBuffer;
-    #[cfg(
-        feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Padding_e__FixedBuffer"
-    )]
-    pub type _Padding_e__FixedBuffer = crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer;
-    #[cfg(
-        feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Position_e__FixedBuffer"
-    )]
-    pub type _Position_e__FixedBuffer = crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer;
+    #[cfg(feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Padding_e__FixedBuffer")]
+    pub type _Padding_e__FixedBuffer =
+        crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer;
+    #[cfg(feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Position_e__FixedBuffer")]
+    pub type _Position_e__FixedBuffer =
+        crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer;
     pub fn get_BorderBuffer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -159,17 +155,17 @@ impl crate::UnityEngine::UIElements::Layout::LayoutComputedData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_Default() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::Layout::LayoutComputedData,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_Default(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Layout::LayoutComputedData>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -184,19 +180,18 @@ impl crate::UnityEngine::UIElements::Layout::LayoutComputedData {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::Layout::LayoutComputedData = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::Layout::LayoutComputedData =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_MarginBuffer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -211,19 +206,18 @@ impl crate::UnityEngine::UIElements::Layout::LayoutComputedData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PaddingBuffer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -238,17 +232,16 @@ impl crate::UnityEngine::UIElements::Layout::LayoutComputedData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Border_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LayoutComputedData__Border_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -256,7 +249,8 @@ pub struct LayoutComputedData__Border_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Border_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Layout";
@@ -275,20 +269,18 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedB
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Border_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -301,7 +293,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedB
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Border_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -317,16 +310,15 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedB
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Border_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -334,7 +326,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedB
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Border_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -350,7 +343,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedB
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Border_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -359,15 +353,13 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedB
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Border_e__FixedBuffer"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Border_e__FixedBuffer")]
 impl crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__FixedBuffer {}
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Dimensions_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LayoutComputedData__Dimensions_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -375,7 +367,8 @@ pub struct LayoutComputedData__Dimensions_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Dimensions_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Layout";
@@ -394,20 +387,18 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__Fi
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Dimensions_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -420,7 +411,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__Fi
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Dimensions_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -436,16 +428,15 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__Fi
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Dimensions_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -453,7 +444,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__Fi
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Dimensions_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -469,7 +461,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__Fi
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Dimensions_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -478,15 +471,13 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__Fi
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Dimensions_e__FixedBuffer"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Dimensions_e__FixedBuffer")]
 impl crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__FixedBuffer {}
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Margin_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LayoutComputedData__Margin_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -494,7 +485,8 @@ pub struct LayoutComputedData__Margin_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Margin_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Layout";
@@ -513,20 +505,18 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedB
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Margin_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -539,7 +529,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedB
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Margin_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -555,16 +546,15 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedB
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Margin_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -572,7 +562,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedB
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Margin_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -588,7 +579,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedB
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Margin_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -597,15 +589,13 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedB
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Margin_e__FixedBuffer"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Margin_e__FixedBuffer")]
 impl crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__FixedBuffer {}
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_MeasuredDimensions_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LayoutComputedData__MeasuredDimensions_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -723,8 +713,8 @@ impl crate::UnityEngine::UIElements::Layout::LayoutComputedData__MeasuredDimensi
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Padding_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LayoutComputedData__Padding_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -732,7 +722,8 @@ pub struct LayoutComputedData__Padding_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Padding_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Layout";
@@ -751,20 +742,18 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__Fixed
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Padding_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -777,7 +766,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__Fixed
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Padding_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -793,16 +783,15 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__Fixed
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Padding_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -810,7 +799,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__Fixed
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Padding_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -826,7 +816,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__Fixed
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Padding_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -835,15 +826,13 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__Fixed
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Padding_e__FixedBuffer"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Padding_e__FixedBuffer")]
 impl crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__FixedBuffer {}
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Position_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LayoutComputedData__Position_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -851,7 +840,8 @@ pub struct LayoutComputedData__Position_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Position_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Layout";
@@ -870,20 +860,18 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__Fixe
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Position_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -896,7 +884,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__Fixe
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Position_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -912,16 +901,15 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__Fixe
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Position_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -929,7 +917,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__Fixe
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Position_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -945,7 +934,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__Fixe
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Position_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer {
+    for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -954,7 +944,5 @@ for crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__Fixe
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Position_e__FixedBuffer"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Layout+LayoutComputedData+_Position_e__FixedBuffer")]
 impl crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer {}

@@ -1,19 +1,11 @@
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BeatmapLevelChecksums {
-    pub beatmapLevelChecksum: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub coverImageChecksum: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub songAudioClipChecksum: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub audioDataAssetChecksum: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub beatmapLevelChecksum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub coverImageChecksum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub songAudioClipChecksum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub audioDataAssetChecksum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub difficultyBeatmapsChecksums: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums,
@@ -21,8 +13,7 @@ pub struct BeatmapLevelChecksums {
     >,
 }
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapLevelChecksums {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapLevelChecksums {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -41,18 +32,14 @@ for crate::GlobalNamespace::BeatmapLevelChecksums {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::BeatmapLevelChecksums {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::BeatmapLevelChecksums {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -62,8 +49,7 @@ for crate::GlobalNamespace::BeatmapLevelChecksums {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::BeatmapLevelChecksums {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::BeatmapLevelChecksums {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -76,23 +62,19 @@ for crate::GlobalNamespace::BeatmapLevelChecksums {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::BeatmapLevelChecksums {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::BeatmapLevelChecksums {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::BeatmapLevelChecksums {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::BeatmapLevelChecksums {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -105,8 +87,7 @@ for crate::GlobalNamespace::BeatmapLevelChecksums {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::BeatmapLevelChecksums {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::BeatmapLevelChecksums {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -118,21 +99,19 @@ for crate::GlobalNamespace::BeatmapLevelChecksums {
 #[cfg(feature = "BeatmapLevelChecksums")]
 impl crate::GlobalNamespace::BeatmapLevelChecksums {
     #[cfg(feature = "BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
-    pub type DifficultyBeatmapChecksums = crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums;
+    pub type DifficultyBeatmapChecksums =
+        crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums;
     pub fn GetOrAddDifficultyBeatmapChecksums(
         &mut self,
-        beatmapDifficulty: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
-        beatmapCharacteristic: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        beatmapDifficulty: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        beatmapCharacteristic: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -155,67 +134,49 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (beatmapDifficulty, beatmapCharacteristic))?
+            cordl_method_info.invoke_unchecked(self, (beatmapDifficulty, beatmapCharacteristic))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetDifficultyBeatmapChecksums(
         &mut self,
-        beatmapDifficulty: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
-        beatmapCharacteristic: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
-        beatmapAssetChecksum: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
-        lightshowAssetChecksum: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        beatmapDifficulty: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        beatmapCharacteristic: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        beatmapAssetChecksum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        lightshowAssetChecksum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetDifficultyBeatmapChecksums")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "SetDifficultyBeatmapChecksums"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetDifficultyBeatmapChecksums", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetDifficultyBeatmapChecksums",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        beatmapDifficulty,
-                        beatmapCharacteristic,
-                        beatmapAssetChecksum,
-                        lightshowAssetChecksum,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    beatmapDifficulty,
+                    beatmapCharacteristic,
+                    beatmapAssetChecksum,
+                    lightshowAssetChecksum,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -223,9 +184,10 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums {
         &mut self,
         other: crate::GlobalNamespace::BeatmapLevelChecksums,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::BeatmapLevelChecksums),
@@ -240,32 +202,24 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BeatmapLevelChecksums_DifficultyBeatmapChecksums {
-    pub beatmapDifficulty: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub beatmapCharacteristic: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub beatmapAssetChecksum: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub lightshowAssetChecksum: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub beatmapDifficulty: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub beatmapCharacteristic: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub beatmapAssetChecksum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub lightshowAssetChecksum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
+    for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -284,18 +238,16 @@ for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
+    for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -306,7 +258,8 @@ for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
 }
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
+    for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -320,22 +273,22 @@ for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
 }
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
+    for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
+    for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -349,7 +302,8 @@ for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
 }
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
+    for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -364,9 +318,10 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
         &mut self,
         other: crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums),
@@ -381,67 +336,47 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_Il2CppString_Il2CppString_Il2CppString0(
         &mut self,
-        beatmapDifficulty: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
-        beatmapCharacteristic: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
-        beatmapAssetChecksum: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
-        lightshowAssetChecksum: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        beatmapDifficulty: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        beatmapCharacteristic: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        beatmapAssetChecksum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        lightshowAssetChecksum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        beatmapDifficulty,
-                        beatmapCharacteristic,
-                        beatmapAssetChecksum,
-                        lightshowAssetChecksum,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    beatmapDifficulty,
+                    beatmapCharacteristic,
+                    beatmapAssetChecksum,
+                    lightshowAssetChecksum,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }

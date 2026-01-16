@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::UnityTlsConversi
     const NAMESPACE: &'static str = "Mono.Unity";
     const CLASS_NAME: &'static str = "UnityTlsConversions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,9 +42,10 @@ impl crate::Mono::Unity::UnityTlsConversions {
     pub fn ConvertProtocolVersion(
         protocol: crate::Mono::Unity::UnityTls_unitytls_protocol,
     ) -> quest_hook::libil2cpp::Result<crate::Mono::Security::Interface::TlsProtocols> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Mono::Unity::UnityTls_unitytls_protocol),
@@ -58,17 +60,17 @@ impl crate::Mono::Unity::UnityTlsConversions {
                         )
                     })
             });
-        let __cordl_ret: crate::Mono::Security::Interface::TlsProtocols = unsafe {
-            cordl_method_info.invoke_unchecked((), (protocol))?
-        };
+        let __cordl_ret: crate::Mono::Security::Interface::TlsProtocols =
+            unsafe { cordl_method_info.invoke_unchecked((), (protocol))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMaxProtocol(
         protocols: crate::System::Security::Authentication::SslProtocols,
     ) -> quest_hook::libil2cpp::Result<crate::Mono::Unity::UnityTls_unitytls_protocol> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Security::Authentication::SslProtocols),
@@ -83,17 +85,17 @@ impl crate::Mono::Unity::UnityTlsConversions {
                         )
                     })
             });
-        let __cordl_ret: crate::Mono::Unity::UnityTls_unitytls_protocol = unsafe {
-            cordl_method_info.invoke_unchecked((), (protocols))?
-        };
+        let __cordl_ret: crate::Mono::Unity::UnityTls_unitytls_protocol =
+            unsafe { cordl_method_info.invoke_unchecked((), (protocols))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMinProtocol(
         protocols: crate::System::Security::Authentication::SslProtocols,
     ) -> quest_hook::libil2cpp::Result<crate::Mono::Unity::UnityTls_unitytls_protocol> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Security::Authentication::SslProtocols),
@@ -108,40 +110,36 @@ impl crate::Mono::Unity::UnityTlsConversions {
                         )
                     })
             });
-        let __cordl_ret: crate::Mono::Unity::UnityTls_unitytls_protocol = unsafe {
-            cordl_method_info.invoke_unchecked((), (protocols))?
-        };
+        let __cordl_ret: crate::Mono::Unity::UnityTls_unitytls_protocol =
+            unsafe { cordl_method_info.invoke_unchecked((), (protocols))? };
         Ok(__cordl_ret.into())
     }
     pub fn VerifyResultToAlertDescription(
         verifyResult: crate::Mono::Unity::UnityTls_unitytls_x509verify_result,
         defaultAlert: crate::Mono::Security::Interface::AlertDescription,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Mono::Security::Interface::AlertDescription,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::Mono::Security::Interface::AlertDescription> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Mono::Unity::UnityTls_unitytls_x509verify_result,
-                            crate::Mono::Security::Interface::AlertDescription,
-                        ),
+                    .find_static_method::<(
+                        crate::Mono::Unity::UnityTls_unitytls_x509verify_result,
                         crate::Mono::Security::Interface::AlertDescription,
-                        2usize,
-                    >("VerifyResultToAlertDescription")
+                    ), crate::Mono::Security::Interface::AlertDescription, 2usize>(
+                        "VerifyResultToAlertDescription",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "VerifyResultToAlertDescription", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "VerifyResultToAlertDescription",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::Mono::Security::Interface::AlertDescription = unsafe {
-            cordl_method_info.invoke_unchecked((), (verifyResult, defaultAlert))?
-        };
+        let __cordl_ret: crate::Mono::Security::Interface::AlertDescription =
+            unsafe { cordl_method_info.invoke_unchecked((), (verifyResult, defaultAlert))? };
         Ok(__cordl_ret.into())
     }
     pub fn VerifyResultToChainStatus(
@@ -149,7 +147,8 @@ impl crate::Mono::Unity::UnityTlsConversions {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -174,9 +173,10 @@ impl crate::Mono::Unity::UnityTlsConversions {
     pub fn VerifyResultToPolicyErrror(
         verifyResult: crate::Mono::Unity::UnityTls_unitytls_x509verify_result,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::Security::SslPolicyErrors> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Mono::Unity::UnityTls_unitytls_x509verify_result),
@@ -191,9 +191,8 @@ impl crate::Mono::Unity::UnityTlsConversions {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Net::Security::SslPolicyErrors = unsafe {
-            cordl_method_info.invoke_unchecked((), (verifyResult))?
-        };
+        let __cordl_ret: crate::System::Net::Security::SslPolicyErrors =
+            unsafe { cordl_method_info.invoke_unchecked((), (verifyResult))? };
         Ok(__cordl_ret.into())
     }
 }

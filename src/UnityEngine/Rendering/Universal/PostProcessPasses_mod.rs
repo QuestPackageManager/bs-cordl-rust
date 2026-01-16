@@ -1,33 +1,26 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPasses")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PostProcessPasses {
     pub m_ColorGradingLutPass: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::Universal::Internal::ColorGradingLutPass,
     >,
-    pub m_PostProcessPass: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::Universal::PostProcessPass,
-    >,
-    pub m_FinalPostProcessPass: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::Universal::PostProcessPass,
-    >,
-    pub m_AfterPostProcessColor: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::RTHandle,
-    >,
-    pub m_ColorGradingLut: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::RTHandle,
-    >,
-    pub m_RendererPostProcessData: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::Universal::PostProcessData,
-    >,
-    pub m_CurrentPostProcessData: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::Universal::PostProcessData,
-    >,
+    pub m_PostProcessPass:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::Universal::PostProcessPass>,
+    pub m_FinalPostProcessPass:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::Universal::PostProcessPass>,
+    pub m_AfterPostProcessColor: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
+    pub m_ColorGradingLut: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
+    pub m_RendererPostProcessData:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::Universal::PostProcessData>,
+    pub m_CurrentPostProcessData:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::Universal::PostProcessData>,
     pub m_BlitMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPasses")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::PostProcessPasses {
+    for crate::UnityEngine::Rendering::Universal::PostProcessPasses
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
@@ -46,18 +39,16 @@ for crate::UnityEngine::Rendering::Universal::PostProcessPasses {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPasses")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::Universal::PostProcessPasses {
+    for crate::UnityEngine::Rendering::Universal::PostProcessPasses
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -68,7 +59,8 @@ for crate::UnityEngine::Rendering::Universal::PostProcessPasses {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPasses")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::Universal::PostProcessPasses {
+    for crate::UnityEngine::Rendering::Universal::PostProcessPasses
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -82,22 +74,22 @@ for crate::UnityEngine::Rendering::Universal::PostProcessPasses {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPasses")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::Universal::PostProcessPasses {
+    for crate::UnityEngine::Rendering::Universal::PostProcessPasses
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPasses")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::Universal::PostProcessPasses {
+    for crate::UnityEngine::Rendering::Universal::PostProcessPasses
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -111,7 +103,8 @@ for crate::UnityEngine::Rendering::Universal::PostProcessPasses {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPasses")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::Universal::PostProcessPasses {
+    for crate::UnityEngine::Rendering::Universal::PostProcessPasses
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -122,88 +115,79 @@ for crate::UnityEngine::Rendering::Universal::PostProcessPasses {
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+PostProcessPasses")]
 impl crate::UnityEngine::Rendering::Universal::PostProcessPasses {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Recreate(
         &mut self,
-        data: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::Universal::PostProcessData,
-        >,
+        data: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::Universal::PostProcessData>,
         ppParams: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Rendering::Universal::PostProcessParams,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::Universal::PostProcessData,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::Universal::PostProcessParams,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Recreate")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::Universal::PostProcessData,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::Universal::PostProcessParams,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Recreate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Recreate", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Recreate",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (data, ppParams))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (data, ppParams))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReleaseRenderTargets(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ReleaseRenderTargets")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ReleaseRenderTargets")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReleaseRenderTargets", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReleaseRenderTargets",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -215,26 +199,24 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPasses {
             crate::UnityEngine::Rendering::Universal::PostProcessParams,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::Universal::PostProcessData,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::Universal::PostProcessParams,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::Universal::PostProcessData,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::Universal::PostProcessParams,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
@@ -250,9 +232,10 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPasses {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -269,9 +252,8 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPasses {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::RTHandle,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_colorGradingLut(
@@ -279,9 +261,10 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPasses {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -298,9 +281,8 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPasses {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::RTHandle,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_colorGradingLutPass(
@@ -310,22 +292,20 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPasses {
             crate::UnityEngine::Rendering::Universal::Internal::ColorGradingLutPass,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::Universal::Internal::ColorGradingLutPass,
-                        >,
-                        0usize,
-                    >("get_colorGradingLutPass")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Rendering::Universal::Internal::ColorGradingLutPass,
+                    >, 0usize>("get_colorGradingLutPass")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_colorGradingLutPass", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_colorGradingLutPass",
+                            0usize
                         )
                     })
             });
@@ -337,26 +317,22 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPasses {
     pub fn get_finalPostProcessPass(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::Universal::PostProcessPass,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::Universal::PostProcessPass>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::Universal::PostProcessPass,
-                        >,
-                        0usize,
-                    >("get_finalPostProcessPass")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Rendering::Universal::PostProcessPass,
+                    >, 0usize>("get_finalPostProcessPass")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_finalPostProcessPass", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_finalPostProcessPass",
+                            0usize
                         )
                     })
             });
@@ -366,16 +342,18 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPasses {
         Ok(__cordl_ret.into())
     }
     pub fn get_isCreated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isCreated")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isCreated", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isCreated",
+                            0usize
                         )
                     })
             });
@@ -385,26 +363,22 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPasses {
     pub fn get_postProcessPass(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::Universal::PostProcessPass,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::Universal::PostProcessPass>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::Universal::PostProcessPass,
-                        >,
-                        0usize,
-                    >("get_postProcessPass")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Rendering::Universal::PostProcessPass,
+                    >, 0usize>("get_postProcessPass")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_postProcessPass", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_postProcessPass",
+                            0usize
                         )
                     })
             });
@@ -416,14 +390,16 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPasses {
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+PostProcessPasses")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::Universal::PostProcessPasses {
+    for crate::UnityEngine::Rendering::Universal::PostProcessPasses
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+PostProcessPasses")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::Universal::PostProcessPasses {
+    for crate::UnityEngine::Rendering::Universal::PostProcessPasses
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }

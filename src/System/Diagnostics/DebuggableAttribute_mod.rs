@@ -6,14 +6,14 @@ pub struct DebuggableAttribute {
     pub m_debuggingModes: crate::System::Diagnostics::DebuggableAttribute_DebuggingModes,
 }
 #[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Diagnostics::DebuggableAttribute {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Diagnostics::DebuggableAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Diagnostics";
     const CLASS_NAME: &'static str = "DebuggableAttribute";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,8 +45,8 @@ impl crate::System::Diagnostics::DebuggableAttribute {
     pub fn New(
         modes: crate::System::Diagnostics::DebuggableAttribute_DebuggingModes,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (modes))?;
         Ok(__cordl_object.into())
@@ -55,9 +55,10 @@ impl crate::System::Diagnostics::DebuggableAttribute {
         &mut self,
         modes: crate::System::Diagnostics::DebuggableAttribute_DebuggingModes,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Diagnostics::DebuggableAttribute_DebuggingModes),
@@ -72,15 +73,13 @@ impl crate::System::Diagnostics::DebuggableAttribute {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (modes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (modes))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Diagnostics::DebuggableAttribute {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Diagnostics::DebuggableAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -89,8 +88,8 @@ for crate::System::Diagnostics::DebuggableAttribute {
     }
 }
 #[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute+DebuggingModes")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum DebuggableAttribute_DebuggingModes {
     #[default]
     Default = 1i32,
@@ -101,7 +100,8 @@ pub enum DebuggableAttribute_DebuggingModes {
 }
 #[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute+DebuggingModes")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
+    for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Diagnostics";
@@ -120,18 +120,16 @@ for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute+DebuggingModes")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
+    for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -142,7 +140,8 @@ for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
 }
 #[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute+DebuggingModes")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
+    for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -156,22 +155,22 @@ for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
 }
 #[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute+DebuggingModes")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
+    for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute+DebuggingModes")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
+    for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

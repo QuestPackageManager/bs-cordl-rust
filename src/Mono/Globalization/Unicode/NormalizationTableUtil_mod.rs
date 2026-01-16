@@ -6,13 +6,15 @@ pub struct NormalizationTableUtil {
 }
 #[cfg(feature = "cordl_class_Mono+Globalization+Unicode+NormalizationTableUtil")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Mono::Globalization::Unicode::NormalizationTableUtil {
+    for crate::Mono::Globalization::Unicode::NormalizationTableUtil
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Globalization.Unicode";
     const CLASS_NAME: &'static str = "NormalizationTableUtil";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,15 +42,17 @@ impl std::ops::DerefMut for crate::Mono::Globalization::Unicode::NormalizationTa
 #[cfg(feature = "Mono+Globalization+Unicode+NormalizationTableUtil")]
 impl crate::Mono::Globalization::Unicode::NormalizationTableUtil {
     pub fn MapIdx(cp: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("MapIdx")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "MapIdx",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MapIdx",
                             1usize
                         )
                     })
@@ -57,15 +61,17 @@ impl crate::Mono::Globalization::Unicode::NormalizationTableUtil {
         Ok(__cordl_ret.into())
     }
     pub fn PropIdx(cp: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("PropIdx")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "PropIdx",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PropIdx",
                             1usize
                         )
                     })
@@ -76,7 +82,8 @@ impl crate::Mono::Globalization::Unicode::NormalizationTableUtil {
 }
 #[cfg(feature = "cordl_class_Mono+Globalization+Unicode+NormalizationTableUtil")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Mono::Globalization::Unicode::NormalizationTableUtil {
+    for crate::Mono::Globalization::Unicode::NormalizationTableUtil
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

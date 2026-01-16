@@ -1,6 +1,4 @@
-#[cfg(
-    feature = "cordl_class_System+Net+NetworkInformation+UnicastIPAddressInformationCollection"
-)]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnicastIPAddressInformationCollection {
@@ -13,17 +11,17 @@ pub struct UnicastIPAddressInformationCollection {
         >,
     >,
 }
-#[cfg(
-    feature = "cordl_class_System+Net+NetworkInformation+UnicastIPAddressInformationCollection"
-)]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
+    for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.NetworkInformation";
     const CLASS_NAME: &'static str = "UnicastIPAddressInformationCollection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -37,7 +35,8 @@ for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollectio
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
 impl std::ops::Deref
-for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
+    for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -45,7 +44,8 @@ for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollectio
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
 impl std::ops::DerefMut
-for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
+    for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -58,49 +58,45 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
             crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Add")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+                    >), quest_hook::libil2cpp::Void, 1usize>("Add")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Add",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (address))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (address))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Clear",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Contains(
@@ -109,28 +105,24 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
             crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-                        >),
-                        bool,
-                        1usize,
-                    >("Contains")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+                    >), bool, 1usize>("Contains")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Contains", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Contains",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (address))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (address))? };
         Ok(__cordl_ret.into())
     }
     pub fn CopyTo(
@@ -144,7 +136,8 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
         >,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -170,9 +163,8 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (array, offset))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (array, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
@@ -186,26 +178,24 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-                                >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerator_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
                             >,
                         >,
-                        0usize,
-                    >("GetEnumerator")
+                    >, 0usize>("GetEnumerator")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetEnumerator", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetEnumerator",
+                            0usize
                         )
                     })
             });
@@ -224,33 +214,30 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
             crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("InternalAdd")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+                    >), quest_hook::libil2cpp::Void, 1usize>("InternalAdd")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InternalAdd", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InternalAdd",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (address))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (address))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -261,28 +248,24 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
             crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-                        >),
-                        bool,
-                        1usize,
-                    >("Remove")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+                    >), bool, 1usize>("Remove")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Remove",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Remove",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (address))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (address))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
@@ -290,9 +273,10 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -309,43 +293,43 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEnumerator,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Count", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Count",
+                            0usize
                         )
                     })
             });
@@ -353,16 +337,18 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
         Ok(__cordl_ret.into())
     }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsReadOnly")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsReadOnly", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsReadOnly",
+                            0usize
                         )
                     })
             });
@@ -370,11 +356,10 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+NetworkInformation+UnicastIPAddressInformationCollection"
-)]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
+    for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -383,13 +368,15 @@ for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollectio
     }
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
-impl AsRef<
-    crate::System::Collections::Generic::ICollection_1<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+impl
+    AsRef<
+        crate::System::Collections::Generic::ICollection_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+            >,
         >,
-    >,
-> for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
+    > for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection
+{
     fn as_ref(
         &self,
     ) -> &crate::System::Collections::Generic::ICollection_1<
@@ -401,13 +388,15 @@ impl AsRef<
     }
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
-impl AsMut<
-    crate::System::Collections::Generic::ICollection_1<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+impl
+    AsMut<
+        crate::System::Collections::Generic::ICollection_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+            >,
         >,
-    >,
-> for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
+    > for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Collections::Generic::ICollection_1<
@@ -419,13 +408,15 @@ impl AsMut<
     }
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
-impl AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+impl
+    AsRef<
+        crate::System::Collections::Generic::IEnumerable_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+            >,
         >,
-    >,
-> for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
+    > for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection
+{
     fn as_ref(
         &self,
     ) -> &crate::System::Collections::Generic::IEnumerable_1<
@@ -437,13 +428,15 @@ impl AsRef<
     }
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
-impl AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+impl
+    AsMut<
+        crate::System::Collections::Generic::IEnumerable_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+            >,
         >,
-    >,
-> for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
+    > for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
@@ -456,14 +449,16 @@ impl AsMut<
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
 impl AsRef<crate::System::Collections::IEnumerable>
-for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
+    for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection
+{
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
 impl AsMut<crate::System::Collections::IEnumerable>
-for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
+    for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection
+{
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }

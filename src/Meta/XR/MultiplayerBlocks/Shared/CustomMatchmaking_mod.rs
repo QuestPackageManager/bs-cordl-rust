@@ -13,9 +13,7 @@ pub struct CustomMatchmaking {
             crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult,
         >,
     >,
-    pub onRoomLeaveFinished: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Events::UnityEvent,
-    >,
+    pub onRoomLeaveFinished: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
     pub lobbyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub isPrivate: bool,
     pub maxPlayersPerRoom: i32,
@@ -26,13 +24,15 @@ pub struct CustomMatchmaking {
 }
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Meta.XR.MultiplayerBlocks.Shared";
     const CLASS_NAME: &'static str = "CustomMatchmaking";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -52,8 +52,7 @@ impl std::ops::Deref for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatch
     }
 }
 #[cfg(feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking")]
-impl std::ops::DerefMut
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
+impl std::ops::DerefMut for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -64,15 +63,14 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
     #[cfg(
         feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+ICustomMatchmakingBehaviour"
     )]
-    type ICustomMatchmakingBehaviour = crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchmakingBehaviour;
-    #[cfg(
-        feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomCreationOptions"
-    )]
-    pub type RoomCreationOptions = crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions;
-    #[cfg(
-        feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomOperationResult"
-    )]
-    pub type RoomOperationResult = crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult;
+    type ICustomMatchmakingBehaviour =
+        crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchmakingBehaviour;
+    #[cfg(feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomCreationOptions")]
+    pub type RoomCreationOptions =
+        crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions;
+    #[cfg(feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomOperationResult")]
+    pub type RoomOperationResult =
+        crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult;
     pub fn CreateRoom_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -82,7 +80,8 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -120,7 +119,8 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -150,12 +150,12 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
     }
     pub fn GenerateRoomPassword(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -170,9 +170,8 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn JoinOpenRoom(
@@ -185,7 +184,8 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -224,7 +224,8 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -256,89 +257,84 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
             crate::System::Threading::Tasks::Task_1<
                 crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (roomToken, roomPassword))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (roomToken, roomPassword))? };
         Ok(__cordl_ret.into())
     }
-    pub fn LeaveRoom(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn LeaveRoom(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LeaveRoom")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LeaveRoom", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LeaveRoom",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnEnable(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnEnable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnEnable",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ConnectedRoomToken(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -353,22 +349,23 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsConnected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsConnected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsConnected", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsConnected",
+                            0usize
                         )
                     })
             });
@@ -376,16 +373,18 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsPasswordProtected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsPasswordProtected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsPasswordProtected", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsPasswordProtected",
+                            0usize
                         )
                     })
             });
@@ -393,16 +392,18 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsPrivate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsPrivate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsPrivate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsPrivate",
+                            0usize
                         )
                     })
             });
@@ -411,12 +412,12 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
     }
     pub fn get_LobbyName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -431,22 +432,23 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_MaxPlayersPerRoom(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_MaxPlayersPerRoom")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_MaxPlayersPerRoom", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_MaxPlayersPerRoom",
+                            0usize
                         )
                     })
             });
@@ -454,16 +456,18 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
         Ok(__cordl_ret.into())
     }
     pub fn get_SupportsRoomPassword(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_SupportsRoomPassword")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_SupportsRoomPassword", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_SupportsRoomPassword",
+                            0usize
                         )
                     })
             });
@@ -474,61 +478,58 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_IsPasswordProtected")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_IsPasswordProtected",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_IsPasswordProtected", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_IsPasswordProtected",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_IsPrivate(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_IsPrivate")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_IsPrivate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_IsPrivate", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_IsPrivate",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_LobbyName(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -543,41 +544,40 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_MaxPlayersPerRoom(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_MaxPlayersPerRoom")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_MaxPlayersPerRoom",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_MaxPlayersPerRoom", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_MaxPlayersPerRoom",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -588,8 +588,8 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking {
 #[cfg(
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+ICustomMatchmakingBehaviour"
 )]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct CustomMatchmaking_ICustomMatchmakingBehaviour {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -597,13 +597,15 @@ pub struct CustomMatchmaking_ICustomMatchmakingBehaviour {
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+ICustomMatchmakingBehaviour"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchmakingBehaviour {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchmakingBehaviour
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Meta.XR.MultiplayerBlocks.Shared";
     const CLASS_NAME: &'static str = "CustomMatchmaking/ICustomMatchmakingBehaviour";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -615,28 +617,24 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchma
         false
     }
 }
-#[cfg(
-    feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+ICustomMatchmakingBehaviour"
-)]
+#[cfg(feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+ICustomMatchmakingBehaviour")]
 impl std::ops::Deref
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchmakingBehaviour {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchmakingBehaviour
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+ICustomMatchmakingBehaviour"
-)]
+#[cfg(feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+ICustomMatchmakingBehaviour")]
 impl std::ops::DerefMut
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchmakingBehaviour {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchmakingBehaviour
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+ICustomMatchmakingBehaviour"
-)]
+#[cfg(feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+ICustomMatchmakingBehaviour")]
 impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchmakingBehaviour {
     pub fn CreateRoom(
         &mut self,
@@ -648,7 +646,8 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchm
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -686,7 +685,8 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchm
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -725,7 +725,8 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchm
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -757,45 +758,40 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchm
             crate::System::Threading::Tasks::Task_1<
                 crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (roomToken, roomPassword))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (roomToken, roomPassword))? };
         Ok(__cordl_ret.into())
     }
-    pub fn LeaveRoom(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn LeaveRoom(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LeaveRoom")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LeaveRoom", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LeaveRoom",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_ConnectedRoomToken(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -810,22 +806,23 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchm
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsConnected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsConnected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsConnected", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsConnected",
+                            0usize
                         )
                     })
             });
@@ -833,16 +830,18 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchm
         Ok(__cordl_ret.into())
     }
     pub fn get_SupportsRoomPassword(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_SupportsRoomPassword")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_SupportsRoomPassword", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_SupportsRoomPassword",
+                            0usize
                         )
                     })
             });
@@ -854,7 +853,8 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchm
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+ICustomMatchmakingBehaviour"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchmakingBehaviour {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchmakingBehaviour
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -865,8 +865,8 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_ICustomMatchma
 #[cfg(
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomCreationOptions"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CustomMatchmaking_RoomCreationOptions {
     pub RoomPassword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub MaxPlayersPerRoom: i32,
@@ -877,7 +877,8 @@ pub struct CustomMatchmaking_RoomCreationOptions {
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomCreationOptions"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Meta.XR.MultiplayerBlocks.Shared";
@@ -896,20 +897,18 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOp
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomCreationOptions"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -922,7 +921,8 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOp
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomCreationOptions"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -938,16 +938,15 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOp
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomCreationOptions"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -955,7 +954,8 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOp
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomCreationOptions"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -971,7 +971,8 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOp
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomCreationOptions"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -980,15 +981,13 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOp
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomCreationOptions"
-)]
+#[cfg(feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomCreationOptions")]
 impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationOptions {}
 #[cfg(
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomOperationResult"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CustomMatchmaking_RoomOperationResult {
     pub ErrorMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub RoomToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -998,7 +997,8 @@ pub struct CustomMatchmaking_RoomOperationResult {
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomOperationResult"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Meta.XR.MultiplayerBlocks.Shared";
@@ -1017,20 +1017,18 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationR
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomOperationResult"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1043,7 +1041,8 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationR
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomOperationResult"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1059,16 +1058,15 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationR
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomOperationResult"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -1076,7 +1074,8 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationR
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomOperationResult"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1092,7 +1091,8 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationR
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomOperationResult"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult {
+    for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1101,21 +1101,21 @@ for crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationR
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomOperationResult"
-)]
+#[cfg(feature = "Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomOperationResult")]
 impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomOperationResult {
     pub fn get_IsSuccess(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsSuccess")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsSuccess", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsSuccess",
+                            0usize
                         )
                     })
             });

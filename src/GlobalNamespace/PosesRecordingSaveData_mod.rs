@@ -20,14 +20,14 @@ pub struct PosesRecordingSaveData {
     >,
 }
 #[cfg(feature = "cordl_class_PosesRecordingSaveData")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PosesRecordingSaveData {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PosesRecordingSaveData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PosesRecordingSaveData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -55,11 +55,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PosesRecordingSaveData {
 #[cfg(feature = "PosesRecordingSaveData")]
 impl crate::GlobalNamespace::PosesRecordingSaveData {
     #[cfg(feature = "PosesRecordingSaveData+ExternalCameraCalibrationSaveData")]
-    pub type ExternalCameraCalibrationSaveData = crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData;
+    pub type ExternalCameraCalibrationSaveData =
+        crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData;
     #[cfg(feature = "PosesRecordingSaveData+PoseSaveData")]
     pub type PoseSaveData = crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData;
     #[cfg(feature = "PosesRecordingSaveData+TransformsSaveKeyframe")]
-    pub type TransformsSaveKeyframe = crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe;
+    pub type TransformsSaveKeyframe =
+        crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe;
     pub fn New(
         objectIds: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -77,8 +79,8 @@ impl crate::GlobalNamespace::PosesRecordingSaveData {
             crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (objectIds, keyframes, externalCameraCalibration))?;
         Ok(__cordl_object.into())
@@ -101,7 +103,8 @@ impl crate::GlobalNamespace::PosesRecordingSaveData {
             crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -138,17 +141,13 @@ impl crate::GlobalNamespace::PosesRecordingSaveData {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (objectIds, keyframes, externalCameraCalibration),
-                )?
+                .invoke_unchecked(self, (objectIds, keyframes, externalCameraCalibration))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_PosesRecordingSaveData")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PosesRecordingSaveData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PosesRecordingSaveData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -169,13 +168,15 @@ pub struct PosesRecordingSaveData_ExternalCameraCalibrationSaveData {
 }
 #[cfg(feature = "cordl_class_PosesRecordingSaveData+ExternalCameraCalibrationSaveData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData {
+    for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PosesRecordingSaveData/ExternalCameraCalibrationSaveData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -189,7 +190,8 @@ for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSave
 }
 #[cfg(feature = "PosesRecordingSaveData+ExternalCameraCalibrationSaveData")]
 impl std::ops::Deref
-for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData {
+    for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -197,7 +199,8 @@ for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSave
 }
 #[cfg(feature = "PosesRecordingSaveData+ExternalCameraCalibrationSaveData")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData {
+    for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -211,13 +214,12 @@ impl crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSav
         hmdOffset: f32,
         nearOffset: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (fieldOfVision, nearClip, farClip, hmdOffset, nearOffset),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (fieldOfVision, nearClip, farClip, hmdOffset, nearOffset),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -228,36 +230,36 @@ impl crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSav
         hmdOffset: f32,
         nearOffset: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32, f32, f32, f32, f32),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(f32, f32, f32, f32, f32), quest_hook::libil2cpp::Void, 5usize>(
+                        ".ctor",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (fieldOfVision, nearClip, farClip, hmdOffset, nearOffset),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (fieldOfVision, nearClip, farClip, hmdOffset, nearOffset),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_PosesRecordingSaveData+ExternalCameraCalibrationSaveData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData {
+    for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -280,13 +282,15 @@ pub struct PosesRecordingSaveData_PoseSaveData {
 }
 #[cfg(feature = "cordl_class_PosesRecordingSaveData+PoseSaveData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
+    for crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PosesRecordingSaveData/PoseSaveData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -322,8 +326,8 @@ impl crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
         rotZ: f32,
         rotW: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (posX, posY, posZ, rotX, rotY, rotZ, rotW))?;
         Ok(__cordl_object.into())
@@ -338,9 +342,10 @@ impl crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
         rotZ: f32,
         rotW: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, f32, f32, f32, f32, f32, f32),
@@ -356,15 +361,15 @@ impl crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (posX, posY, posZ, rotX, rotY, rotZ, rotW))?
+            cordl_method_info.invoke_unchecked(self, (posX, posY, posZ, rotX, rotY, rotZ, rotW))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_PosesRecordingSaveData+PoseSaveData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
+    for crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -379,22 +384,22 @@ pub struct PosesRecordingSaveData_TransformsSaveKeyframe {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub poses: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData>,
         >,
     >,
     pub _cordl_time: f32,
 }
 #[cfg(feature = "cordl_class_PosesRecordingSaveData+TransformsSaveKeyframe")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
+    for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PosesRecordingSaveData/TransformsSaveKeyframe";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -407,16 +412,14 @@ for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
     }
 }
 #[cfg(feature = "PosesRecordingSaveData+TransformsSaveKeyframe")]
-impl std::ops::Deref
-for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
+impl std::ops::Deref for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PosesRecordingSaveData+TransformsSaveKeyframe")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
+impl std::ops::DerefMut for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -433,8 +436,8 @@ impl crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
         >,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (poses, _cordl_time))?;
         Ok(__cordl_object.into())
@@ -450,41 +453,39 @@ impl crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
         >,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData,
-                                    >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData,
                                 >,
                             >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                        >,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (poses, _cordl_time))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (poses, _cordl_time))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_PosesRecordingSaveData+TransformsSaveKeyframe")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
+    for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

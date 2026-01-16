@@ -6,28 +6,22 @@ pub struct PyramidBloomRendererSO {
     pub _shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _pyramid: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            crate::GlobalNamespace::PyramidBloomRendererSO_Level,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::PyramidBloomRendererSO_Level>,
     >,
-    pub kIsScreenspaceEffectKeyword: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub kLegacyAutoExposureKeyword: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub kIsScreenspaceEffectKeyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub kLegacyAutoExposureKeyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _legacyAutoExposureGlobalKeyword: crate::UnityEngine::Rendering::GlobalKeyword,
     pub _initialized: bool,
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PyramidBloomRendererSO {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PyramidBloomRendererSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PyramidBloomRendererSO";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -60,52 +54,50 @@ impl crate::GlobalNamespace::PyramidBloomRendererSO {
     #[cfg(feature = "PyramidBloomRendererSO+Pass")]
     pub type Pass = crate::GlobalNamespace::PyramidBloomRendererSO_Pass;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDisable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDisable(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDisable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDisable",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnEnable(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnEnable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnEnable",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RenderBloom__cordl_bool__cordl_bool__cordl_bool0(
@@ -118,45 +110,42 @@ impl crate::GlobalNamespace::PyramidBloomRendererSO {
         gammaCorrection: bool,
         legacyAutoExposure: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                            f32,
-                            bool,
-                            bool,
-                            bool,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("RenderBloom")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                        f32,
+                        bool,
+                        bool,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 7usize>("RenderBloom")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RenderBloom", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RenderBloom",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        src,
-                        dest,
-                        radius,
-                        alphaWeights,
-                        betterQuality,
-                        gammaCorrection,
-                        legacyAutoExposure,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    src,
+                    dest,
+                    radius,
+                    alphaWeights,
+                    betterQuality,
+                    gammaCorrection,
+                    legacyAutoExposure,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -181,95 +170,90 @@ impl crate::GlobalNamespace::PyramidBloomRendererSO {
         legacyAutoExposure: bool,
         isScreenspaceEffect: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                            f32,
-                            f32,
-                            f32,
-                            f32,
-                            bool,
-                            bool,
-                            f32,
-                            f32,
-                            f32,
-                            f32,
-                            crate::GlobalNamespace::PyramidBloomRendererSO_Pass,
-                            crate::GlobalNamespace::PyramidBloomRendererSO_Pass,
-                            crate::GlobalNamespace::PyramidBloomRendererSO_Pass,
-                            crate::GlobalNamespace::PyramidBloomRendererSO_Pass,
-                            bool,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        18usize,
-                    >("RenderBloom")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                        f32,
+                        f32,
+                        f32,
+                        f32,
+                        bool,
+                        bool,
+                        f32,
+                        f32,
+                        f32,
+                        f32,
+                        crate::GlobalNamespace::PyramidBloomRendererSO_Pass,
+                        crate::GlobalNamespace::PyramidBloomRendererSO_Pass,
+                        crate::GlobalNamespace::PyramidBloomRendererSO_Pass,
+                        crate::GlobalNamespace::PyramidBloomRendererSO_Pass,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 18usize>("RenderBloom")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RenderBloom", 18usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RenderBloom",
+                            18usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        src,
-                        dest,
-                        radius,
-                        intensity,
-                        autoExposureLimit,
-                        downIntensityOffset,
-                        uniformPyramidWeights,
-                        downsampleOnFirstPass,
-                        pyramidWeightsParam,
-                        alphaWeights,
-                        firstUpsampleBrightness,
-                        finalUpsampleBrightness,
-                        preFilterPass,
-                        downsamplePass,
-                        upsamplePass,
-                        finalUpsamplePass,
-                        legacyAutoExposure,
-                        isScreenspaceEffect,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    src,
+                    dest,
+                    radius,
+                    intensity,
+                    autoExposureLimit,
+                    downIntensityOffset,
+                    uniformPyramidWeights,
+                    downsampleOnFirstPass,
+                    pyramidWeightsParam,
+                    alphaWeights,
+                    firstUpsampleBrightness,
+                    finalUpsampleBrightness,
+                    preFilterPass,
+                    downsamplePass,
+                    upsamplePass,
+                    finalUpsamplePass,
+                    legacyAutoExposure,
+                    isScreenspaceEffect,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PyramidBloomRendererSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PyramidBloomRendererSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -278,15 +262,14 @@ for crate::GlobalNamespace::PyramidBloomRendererSO {
     }
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PyramidBloomRendererSO_Level {
     pub down: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     pub up: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -305,18 +288,16 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
+    for crate::GlobalNamespace::PyramidBloomRendererSO_Level
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -327,7 +308,8 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
+    for crate::GlobalNamespace::PyramidBloomRendererSO_Level
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -341,22 +323,20 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
+    for crate::GlobalNamespace::PyramidBloomRendererSO_Level
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -370,7 +350,8 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
+    for crate::GlobalNamespace::PyramidBloomRendererSO_Level
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -382,8 +363,8 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
 #[cfg(feature = "PyramidBloomRendererSO+Level")]
 impl crate::GlobalNamespace::PyramidBloomRendererSO_Level {}
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Pass")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum PyramidBloomRendererSO_Pass {
     #[default]
     Bilinear = 9i32,
@@ -402,8 +383,7 @@ pub enum PyramidBloomRendererSO_Pass {
     UpsampleTentGamma = 7i32,
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Pass")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -422,18 +402,16 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
+    for crate::GlobalNamespace::PyramidBloomRendererSO_Pass
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -444,7 +422,8 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
+    for crate::GlobalNamespace::PyramidBloomRendererSO_Pass
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -458,22 +437,20 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
+    for crate::GlobalNamespace::PyramidBloomRendererSO_Pass
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Pass")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

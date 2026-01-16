@@ -41,67 +41,62 @@ pub struct FactoryToChoiceBinder_11<
 }
 #[cfg(feature = "cordl_class_Zenject+FactoryToChoiceBinder_11")]
 unsafe impl<
-    TParam1: quest_hook::libil2cpp::Type,
-    TParam2: quest_hook::libil2cpp::Type,
-    TParam3: quest_hook::libil2cpp::Type,
-    TParam4: quest_hook::libil2cpp::Type,
-    TParam5: quest_hook::libil2cpp::Type,
-    TParam6: quest_hook::libil2cpp::Type,
-    TParam7: quest_hook::libil2cpp::Type,
-    TParam8: quest_hook::libil2cpp::Type,
-    TParam9: quest_hook::libil2cpp::Type,
-    TParam10: quest_hook::libil2cpp::Type,
-    TContract: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Type
-for crate::Zenject::FactoryToChoiceBinder_11<
-    TParam1,
-    TParam2,
-    TParam3,
-    TParam4,
-    TParam5,
-    TParam6,
-    TParam7,
-    TParam8,
-    TParam9,
-    TParam10,
-    TContract,
-> {
+        TParam1: quest_hook::libil2cpp::Type,
+        TParam2: quest_hook::libil2cpp::Type,
+        TParam3: quest_hook::libil2cpp::Type,
+        TParam4: quest_hook::libil2cpp::Type,
+        TParam5: quest_hook::libil2cpp::Type,
+        TParam6: quest_hook::libil2cpp::Type,
+        TParam7: quest_hook::libil2cpp::Type,
+        TParam8: quest_hook::libil2cpp::Type,
+        TParam9: quest_hook::libil2cpp::Type,
+        TParam10: quest_hook::libil2cpp::Type,
+        TContract: quest_hook::libil2cpp::Type,
+    > quest_hook::libil2cpp::Type
+    for crate::Zenject::FactoryToChoiceBinder_11<
+        TParam1,
+        TParam2,
+        TParam3,
+        TParam4,
+        TParam5,
+        TParam6,
+        TParam7,
+        TParam8,
+        TParam9,
+        TParam10,
+        TContract,
+    >
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject";
     const CLASS_NAME: &'static str = "FactoryToChoiceBinder`11";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "Zenject",
-                        "FactoryToChoiceBinder`11",
-                    )
-                    .unwrap()
-                    .make_generic::<
-                        (
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TParam5,
-                            TParam6,
-                            TParam7,
-                            TParam8,
-                            TParam9,
-                            TParam10,
-                            TContract,
-                        ),
-                    >()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find("Zenject", "FactoryToChoiceBinder`11")
+                .unwrap()
+                .make_generic::<(
+                    TParam1,
+                    TParam2,
+                    TParam3,
+                    TParam4,
+                    TParam5,
+                    TParam6,
+                    TParam7,
+                    TParam8,
+                    TParam9,
+                    TParam10,
+                    TContract,
+                )>()
+                .unwrap()
+                .unwrap()
+        })
     }
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -115,31 +110,32 @@ for crate::Zenject::FactoryToChoiceBinder_11<
 }
 #[cfg(feature = "Zenject+FactoryToChoiceBinder_11")]
 impl<
-    TParam1: quest_hook::libil2cpp::Type,
-    TParam2: quest_hook::libil2cpp::Type,
-    TParam3: quest_hook::libil2cpp::Type,
-    TParam4: quest_hook::libil2cpp::Type,
-    TParam5: quest_hook::libil2cpp::Type,
-    TParam6: quest_hook::libil2cpp::Type,
-    TParam7: quest_hook::libil2cpp::Type,
-    TParam8: quest_hook::libil2cpp::Type,
-    TParam9: quest_hook::libil2cpp::Type,
-    TParam10: quest_hook::libil2cpp::Type,
-    TContract: quest_hook::libil2cpp::Type,
-> std::ops::Deref
-for crate::Zenject::FactoryToChoiceBinder_11<
-    TParam1,
-    TParam2,
-    TParam3,
-    TParam4,
-    TParam5,
-    TParam6,
-    TParam7,
-    TParam8,
-    TParam9,
-    TParam10,
-    TContract,
-> {
+        TParam1: quest_hook::libil2cpp::Type,
+        TParam2: quest_hook::libil2cpp::Type,
+        TParam3: quest_hook::libil2cpp::Type,
+        TParam4: quest_hook::libil2cpp::Type,
+        TParam5: quest_hook::libil2cpp::Type,
+        TParam6: quest_hook::libil2cpp::Type,
+        TParam7: quest_hook::libil2cpp::Type,
+        TParam8: quest_hook::libil2cpp::Type,
+        TParam9: quest_hook::libil2cpp::Type,
+        TParam10: quest_hook::libil2cpp::Type,
+        TContract: quest_hook::libil2cpp::Type,
+    > std::ops::Deref
+    for crate::Zenject::FactoryToChoiceBinder_11<
+        TParam1,
+        TParam2,
+        TParam3,
+        TParam4,
+        TParam5,
+        TParam6,
+        TParam7,
+        TParam8,
+        TParam9,
+        TParam10,
+        TContract,
+    >
+{
     type Target = crate::Zenject::FactoryFromBinder_11<
         TParam1,
         TParam2,
@@ -159,92 +155,117 @@ for crate::Zenject::FactoryToChoiceBinder_11<
 }
 #[cfg(feature = "Zenject+FactoryToChoiceBinder_11")]
 impl<
-    TParam1: quest_hook::libil2cpp::Type,
-    TParam2: quest_hook::libil2cpp::Type,
-    TParam3: quest_hook::libil2cpp::Type,
-    TParam4: quest_hook::libil2cpp::Type,
-    TParam5: quest_hook::libil2cpp::Type,
-    TParam6: quest_hook::libil2cpp::Type,
-    TParam7: quest_hook::libil2cpp::Type,
-    TParam8: quest_hook::libil2cpp::Type,
-    TParam9: quest_hook::libil2cpp::Type,
-    TParam10: quest_hook::libil2cpp::Type,
-    TContract: quest_hook::libil2cpp::Type,
-> std::ops::DerefMut
-for crate::Zenject::FactoryToChoiceBinder_11<
-    TParam1,
-    TParam2,
-    TParam3,
-    TParam4,
-    TParam5,
-    TParam6,
-    TParam7,
-    TParam8,
-    TParam9,
-    TParam10,
-    TContract,
-> {
+        TParam1: quest_hook::libil2cpp::Type,
+        TParam2: quest_hook::libil2cpp::Type,
+        TParam3: quest_hook::libil2cpp::Type,
+        TParam4: quest_hook::libil2cpp::Type,
+        TParam5: quest_hook::libil2cpp::Type,
+        TParam6: quest_hook::libil2cpp::Type,
+        TParam7: quest_hook::libil2cpp::Type,
+        TParam8: quest_hook::libil2cpp::Type,
+        TParam9: quest_hook::libil2cpp::Type,
+        TParam10: quest_hook::libil2cpp::Type,
+        TContract: quest_hook::libil2cpp::Type,
+    > std::ops::DerefMut
+    for crate::Zenject::FactoryToChoiceBinder_11<
+        TParam1,
+        TParam2,
+        TParam3,
+        TParam4,
+        TParam5,
+        TParam6,
+        TParam7,
+        TParam8,
+        TParam9,
+        TParam10,
+        TContract,
+    >
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+FactoryToChoiceBinder_11")]
 impl<
-    TParam1: quest_hook::libil2cpp::Type,
-    TParam2: quest_hook::libil2cpp::Type,
-    TParam3: quest_hook::libil2cpp::Type,
-    TParam4: quest_hook::libil2cpp::Type,
-    TParam5: quest_hook::libil2cpp::Type,
-    TParam6: quest_hook::libil2cpp::Type,
-    TParam7: quest_hook::libil2cpp::Type,
-    TParam8: quest_hook::libil2cpp::Type,
-    TParam9: quest_hook::libil2cpp::Type,
-    TParam10: quest_hook::libil2cpp::Type,
-    TContract: quest_hook::libil2cpp::Type,
-> crate::Zenject::FactoryToChoiceBinder_11<
-    TParam1,
-    TParam2,
-    TParam3,
-    TParam4,
-    TParam5,
-    TParam6,
-    TParam7,
-    TParam8,
-    TParam9,
-    TParam10,
-    TContract,
-> {
+        TParam1: quest_hook::libil2cpp::Type,
+        TParam2: quest_hook::libil2cpp::Type,
+        TParam3: quest_hook::libil2cpp::Type,
+        TParam4: quest_hook::libil2cpp::Type,
+        TParam5: quest_hook::libil2cpp::Type,
+        TParam6: quest_hook::libil2cpp::Type,
+        TParam7: quest_hook::libil2cpp::Type,
+        TParam8: quest_hook::libil2cpp::Type,
+        TParam9: quest_hook::libil2cpp::Type,
+        TParam10: quest_hook::libil2cpp::Type,
+        TContract: quest_hook::libil2cpp::Type,
+    >
+    crate::Zenject::FactoryToChoiceBinder_11<
+        TParam1,
+        TParam2,
+        TParam3,
+        TParam4,
+        TParam5,
+        TParam6,
+        TParam7,
+        TParam8,
+        TParam9,
+        TParam10,
+        TContract,
+    >
+{
     pub fn New(
         bindContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
         factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam7: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam8: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam9: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam10: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam7: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam8: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam9: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam10: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindContainer, bindInfo, factoryBindInfo))?;
         Ok(__cordl_object.into())
@@ -269,58 +290,79 @@ impl<
         >,
     >
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam7: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam8: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam9: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam10: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TConcrete: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam7: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam8: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam9: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam10: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TConcrete: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::FactoryFromBinder_11<
-                                TParam1,
-                                TParam2,
-                                TParam3,
-                                TParam4,
-                                TParam5,
-                                TParam6,
-                                TParam7,
-                                TParam8,
-                                TParam9,
-                                TParam10,
-                                TConcrete,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::FactoryFromBinder_11<
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TParam4,
+                            TParam5,
+                            TParam6,
+                            TParam7,
+                            TParam8,
+                            TParam9,
+                            TParam10,
+                            TConcrete,
                         >,
-                        0usize,
-                    >("To")
+                    >, 0usize>("To")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "To",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "To",
                             0usize
                         )
                     })
@@ -362,56 +404,76 @@ impl<
         >,
     >
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam7: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam8: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam9: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam10: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam7: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam8: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam9: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam10: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::FactoryFromBinder_11<
-                                TParam1,
-                                TParam2,
-                                TParam3,
-                                TParam4,
-                                TParam5,
-                                TParam6,
-                                TParam7,
-                                TParam8,
-                                TParam9,
-                                TParam10,
-                                TContract,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::FactoryFromBinder_11<
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TParam4,
+                            TParam5,
+                            TParam6,
+                            TParam7,
+                            TParam8,
+                            TParam9,
+                            TParam10,
+                            TContract,
                         >,
-                        0usize,
-                    >("ToSelf")
+                    >, 0usize>("ToSelf")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToSelf",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ToSelf",
                             0usize
                         )
                     })
@@ -440,84 +502,104 @@ impl<
         factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam7: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam8: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam9: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam10: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TParam1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam7: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam8: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam9: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam10: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (bindContainer, bindInfo, factoryBindInfo))?
+            cordl_method_info.invoke_unchecked(self, (bindContainer, bindInfo, factoryBindInfo))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Zenject+FactoryToChoiceBinder_11")]
 impl<
-    TParam1: quest_hook::libil2cpp::Type,
-    TParam2: quest_hook::libil2cpp::Type,
-    TParam3: quest_hook::libil2cpp::Type,
-    TParam4: quest_hook::libil2cpp::Type,
-    TParam5: quest_hook::libil2cpp::Type,
-    TParam6: quest_hook::libil2cpp::Type,
-    TParam7: quest_hook::libil2cpp::Type,
-    TParam8: quest_hook::libil2cpp::Type,
-    TParam9: quest_hook::libil2cpp::Type,
-    TParam10: quest_hook::libil2cpp::Type,
-    TContract: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ObjectType
-for crate::Zenject::FactoryToChoiceBinder_11<
-    TParam1,
-    TParam2,
-    TParam3,
-    TParam4,
-    TParam5,
-    TParam6,
-    TParam7,
-    TParam8,
-    TParam9,
-    TParam10,
-    TContract,
-> {
+        TParam1: quest_hook::libil2cpp::Type,
+        TParam2: quest_hook::libil2cpp::Type,
+        TParam3: quest_hook::libil2cpp::Type,
+        TParam4: quest_hook::libil2cpp::Type,
+        TParam5: quest_hook::libil2cpp::Type,
+        TParam6: quest_hook::libil2cpp::Type,
+        TParam7: quest_hook::libil2cpp::Type,
+        TParam8: quest_hook::libil2cpp::Type,
+        TParam9: quest_hook::libil2cpp::Type,
+        TParam10: quest_hook::libil2cpp::Type,
+        TContract: quest_hook::libil2cpp::Type,
+    > quest_hook::libil2cpp::ObjectType
+    for crate::Zenject::FactoryToChoiceBinder_11<
+        TParam1,
+        TParam2,
+        TParam3,
+        TParam4,
+        TParam5,
+        TParam6,
+        TParam7,
+        TParam8,
+        TParam9,
+        TParam10,
+        TContract,
+    >
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

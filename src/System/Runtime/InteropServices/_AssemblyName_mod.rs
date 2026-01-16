@@ -1,18 +1,18 @@
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+_AssemblyName")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct _AssemblyName {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+_AssemblyName")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::InteropServices::_AssemblyName {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Runtime::InteropServices::_AssemblyName {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.InteropServices";
     const CLASS_NAME: &'static str = "_AssemblyName";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,15 +39,12 @@ impl std::ops::DerefMut for crate::System::Runtime::InteropServices::_AssemblyNa
 }
 #[cfg(feature = "System+Runtime+InteropServices+_AssemblyName")]
 impl crate::System::Runtime::InteropServices::_AssemblyName {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+_AssemblyName")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::InteropServices::_AssemblyName {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::InteropServices::_AssemblyName {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

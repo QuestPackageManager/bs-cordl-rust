@@ -4,39 +4,30 @@
 pub struct MetaRemoteAssetsManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _platformStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub _initializationCancellationTokenSource: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::CancellationTokenSource,
-    >,
-    pub _initializationTask: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<bool>,
-    >,
-    pub _updateCatalogTask: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task,
-    >,
-    pub _graphAccessToken: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub _initializationCancellationTokenSource:
+        quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationTokenSource>,
+    pub _initializationTask:
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    pub _updateCatalogTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    pub _graphAccessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _graphAppId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub _platform: quest_hook::libil2cpp::Gc<
-        crate::OculusStudios::Platform::Core::IPlatform,
-    >,
-    pub _remoteCatalogLoader: quest_hook::libil2cpp::Gc<
-        crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
-    >,
-    pub _inBuildGameVersion: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub _platform: quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IPlatform>,
+    pub _remoteCatalogLoader:
+        quest_hook::libil2cpp::Gc<crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader>,
+    pub _inBuildGameVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub didCatalogLoadOrUpdateEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
+    for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BGLib.MetaRemoteAssets";
     const CLASS_NAME: &'static str = "MetaRemoteAssetsManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -64,12 +55,12 @@ impl std::ops::DerefMut for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsMana
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
 impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     pub const MetaServerHost: &'static str = "https://oculus.com";
-    pub const kMetaServerCatalogPath: &'static str = "beat-saber/remote-assets/download/catalog.json";
+    pub const kMetaServerCatalogPath: &'static str =
+        "beat-saber/remote-assets/download/catalog.json";
     pub const kPlatformInjectId: &'static str = "MetaRemoteAssetsManager_platform_injectId";
-    #[cfg(
-        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
-    )]
-    pub type AddResourceLocatorInput = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput;
+    #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput")]
+    pub type AddResourceLocatorInput =
+        crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput;
     pub fn CreateAddResourceLocatorInput(
         resourceLocator: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
@@ -80,7 +71,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
             crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -106,51 +98,47 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (resourceLocator, isRemote))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (resourceLocator, isRemote))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Initialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Initialize(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Initialize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Initialize",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeInternalAsync(
@@ -159,9 +147,10 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
@@ -178,19 +167,18 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalIdTransformFunc(
         resourceLocation: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -209,62 +197,54 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (resourceLocation))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (resourceLocation))? };
         Ok(__cordl_ret.into())
     }
-    pub fn MakeRemoteCatalogTopPriority() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Void,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn MakeRemoteCatalogTopPriority(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("MakeRemoteCatalogTopPriority")
+                    .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "MakeRemoteCatalogTopPriority",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeRemoteCatalogTopPriority", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MakeRemoteCatalogTopPriority",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         networkConfig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>,
-        platform: quest_hook::libil2cpp::Gc<
-            crate::OculusStudios::Platform::Core::IPlatform,
-        >,
+        platform: quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IPlatform>,
         remoteCatalogLoader: quest_hook::libil2cpp::Gc<
             crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
         >,
         platformStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        inBuildGameVersion: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        inBuildGameVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    networkConfig,
-                    platform,
-                    remoteCatalogLoader,
-                    platformStr,
-                    inBuildGameVersion,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                networkConfig,
+                platform,
+                remoteCatalogLoader,
+                platformStr,
+                inBuildGameVersion,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn UpdateCatalogsAsync(
@@ -273,9 +253,10 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
@@ -290,9 +271,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateCatalogsInternalAsync(
@@ -301,9 +281,10 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
@@ -318,9 +299,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn WaitInitAsync(
@@ -328,9 +308,10 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -347,20 +328,18 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn WebRequestOverride(
         &mut self,
-        request: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Networking::UnityWebRequest,
-        >,
+        request: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -377,70 +356,54 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (request))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (request))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         networkConfig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>,
-        platform: quest_hook::libil2cpp::Gc<
-            crate::OculusStudios::Platform::Core::IPlatform,
-        >,
+        platform: quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IPlatform>,
         remoteCatalogLoader: quest_hook::libil2cpp::Gc<
             crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
         >,
         platformStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        inBuildGameVersion: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        inBuildGameVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::INetworkConfig,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::OculusStudios::Platform::Core::IPlatform,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>,
+                        quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IPlatform>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        networkConfig,
-                        platform,
-                        remoteCatalogLoader,
-                        platformStr,
-                        inBuildGameVersion,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    networkConfig,
+                    platform,
+                    remoteCatalogLoader,
+                    platformStr,
+                    inBuildGameVersion,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -448,9 +411,10 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
@@ -465,17 +429,17 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_RemoteCatalogPath() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_RemoteCatalogPath(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -490,18 +454,18 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_didCatalogLoadOrUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
@@ -516,15 +480,13 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
+impl quest_hook::libil2cpp::ObjectType for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -533,29 +495,29 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     }
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
-impl AsRef<crate::System::IDisposable>
-for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
+impl AsRef<crate::System::IDisposable> for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
-impl AsMut<crate::System::IDisposable>
-for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
+impl AsMut<crate::System::IDisposable> for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
 impl AsRef<crate::Zenject::IInitializable>
-for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
+    for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager
+{
     fn as_ref(&self) -> &crate::Zenject::IInitializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
 impl AsMut<crate::Zenject::IInitializable>
-for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
+    for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager
+{
     fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
         unsafe { std::mem::transmute(self) }
     }
@@ -579,13 +541,15 @@ pub struct MetaRemoteAssetsManager_AddResourceLocatorInput {
     feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput {
+    for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BGLib.MetaRemoteAssets";
     const CLASS_NAME: &'static str = "MetaRemoteAssetsManager/AddResourceLocatorInput";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -597,28 +561,24 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorIn
         false
     }
 }
-#[cfg(
-    feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
-)]
+#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput")]
 impl std::ops::Deref
-for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput {
+    for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
-)]
+#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput")]
 impl std::ops::DerefMut
-for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput {
+    for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
-)]
+#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput")]
 impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput {
     pub fn New(
         resourceLocator: quest_hook::libil2cpp::Gc<
@@ -629,8 +589,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorI
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (resourceLocator, localHash, catalogLocation))?;
         Ok(__cordl_object.into())
@@ -645,7 +605,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorI
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -683,7 +644,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorI
     feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput {
+    for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

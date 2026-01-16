@@ -5,14 +5,14 @@ pub struct X509CertificateUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_X509CertificateUtility")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::X509CertificateUtility {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::X509CertificateUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "X509CertificateUtility";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,51 +42,42 @@ impl crate::GlobalNamespace::X509CertificateUtility {
     #[cfg(feature = "X509CertificateUtility+PasswordFinder")]
     pub type PasswordFinder = crate::GlobalNamespace::X509CertificateUtility_PasswordFinder;
     #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
-    pub type RSACertificateEncryptionProvider = crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider;
+    pub type RSACertificateEncryptionProvider =
+        crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider;
     pub fn GetCertificateEncryptionProvider(
         privateKeyPem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ICertificateEncryptionProvider>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ICertificateEncryptionProvider,
-                        >,
-                        2usize,
-                    >("GetCertificateEncryptionProvider")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::ICertificateEncryptionProvider,
+                    >, 2usize>("GetCertificateEncryptionProvider")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCertificateEncryptionProvider", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCertificateEncryptionProvider",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ICertificateEncryptionProvider,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (privateKeyPem, password))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (privateKeyPem, password))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCertificateList(
         certificatePem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        certificateChainPem: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        certificateChainPem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
@@ -96,7 +87,8 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -133,8 +125,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
                 >,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (certificatePem, certificateChainPem))?
+            cordl_method_info.invoke_unchecked((), (certificatePem, certificateChainPem))?
         };
         Ok(__cordl_ret.into())
     }
@@ -148,7 +139,8 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -176,15 +168,12 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (privateKeyPem, passwordFinder))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (privateKeyPem, passwordFinder))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_X509CertificateUtility")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::X509CertificateUtility {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::X509CertificateUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -201,13 +190,15 @@ pub struct X509CertificateUtility_PasswordFinder {
 }
 #[cfg(feature = "cordl_class_X509CertificateUtility+PasswordFinder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
+    for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "X509CertificateUtility/PasswordFinder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -227,8 +218,7 @@ impl std::ops::Deref for crate::GlobalNamespace::X509CertificateUtility_Password
     }
 }
 #[cfg(feature = "X509CertificateUtility+PasswordFinder")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
+impl std::ops::DerefMut for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -240,9 +230,10 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -259,16 +250,15 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<char>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppArray0(
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (password))?;
         Ok(__cordl_object.into())
@@ -276,8 +266,8 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
     pub fn New_Il2CppString1(
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (password))?;
         Ok(__cordl_object.into())
@@ -286,9 +276,10 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
         &mut self,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -305,18 +296,18 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (password))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (password))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString1(
         &mut self,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -331,15 +322,15 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (password))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (password))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_X509CertificateUtility+PasswordFinder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
+    for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -349,14 +340,16 @@ for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
 }
 #[cfg(feature = "X509CertificateUtility+PasswordFinder")]
 impl AsRef<crate::Org::BouncyCastle::OpenSsl::IPasswordFinder>
-for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
+    for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder
+{
     fn as_ref(&self) -> &crate::Org::BouncyCastle::OpenSsl::IPasswordFinder {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "X509CertificateUtility+PasswordFinder")]
 impl AsMut<crate::Org::BouncyCastle::OpenSsl::IPasswordFinder>
-for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
+    for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder
+{
     fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::OpenSsl::IPasswordFinder {
         unsafe { std::mem::transmute(self) }
     }
@@ -370,13 +363,15 @@ pub struct X509CertificateUtility_RSACertificateEncryptionProvider {
 }
 #[cfg(feature = "cordl_class_X509CertificateUtility+RSACertificateEncryptionProvider")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
+    for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "X509CertificateUtility/RSACertificateEncryptionProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -390,7 +385,8 @@ for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvi
 }
 #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl std::ops::Deref
-for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
+    for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -398,32 +394,32 @@ for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvi
 }
 #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
+    for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -431,8 +427,8 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
             crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (privateKey))?;
         Ok(__cordl_object.into())
@@ -445,34 +441,29 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<u8>,
-                        >,
-                        3usize,
-                    >("SignData")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, 3usize>(
+                        "SignData",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SignData", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SignData",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (data, offset, length))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (data, offset, length))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -481,34 +472,32 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
             crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (privateKey))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (privateKey))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
+    for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -518,28 +507,32 @@ for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvi
 }
 #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl AsRef<crate::GlobalNamespace::ICertificateEncryptionProvider>
-for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
+    for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::ICertificateEncryptionProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl AsMut<crate::GlobalNamespace::ICertificateEncryptionProvider>
-for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
+    for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ICertificateEncryptionProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl AsRef<crate::System::IDisposable>
-for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
+    for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl AsMut<crate::System::IDisposable>
-for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
+    for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }

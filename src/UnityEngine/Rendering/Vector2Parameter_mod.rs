@@ -2,19 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector2Parameter {
-    __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<
-        crate::UnityEngine::Vector2,
-    >,
+    __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<crate::UnityEngine::Vector2>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Vector2Parameter")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Vector2Parameter {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Vector2Parameter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "Vector2Parameter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -28,9 +26,7 @@ for crate::UnityEngine::Rendering::Vector2Parameter {
 }
 #[cfg(feature = "UnityEngine+Rendering+Vector2Parameter")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::Vector2Parameter {
-    type Target = crate::UnityEngine::Rendering::VolumeParameter_1<
-        crate::UnityEngine::Vector2,
-    >;
+    type Target = crate::UnityEngine::Rendering::VolumeParameter_1<crate::UnityEngine::Vector2>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,34 +45,35 @@ impl crate::UnityEngine::Rendering::Vector2Parameter {
         to: crate::UnityEngine::Vector2,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2, f32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Interp")
+                    .find_method::<(
+                        crate::UnityEngine::Vector2,
+                        crate::UnityEngine::Vector2,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Interp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Interp",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Interp",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (from, to, t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (from, to, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         value: crate::UnityEngine::Vector2,
         overrideState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (value, overrideState))?;
         Ok(__cordl_object.into())
@@ -86,9 +83,10 @@ impl crate::UnityEngine::Rendering::Vector2Parameter {
         value: crate::UnityEngine::Vector2,
         overrideState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2, bool),
@@ -103,15 +101,13 @@ impl crate::UnityEngine::Rendering::Vector2Parameter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value, overrideState))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value, overrideState))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Vector2Parameter")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::Vector2Parameter {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Vector2Parameter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

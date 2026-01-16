@@ -7,13 +7,15 @@ pub struct EventTraceActivity {
 }
 #[cfg(feature = "cordl_class_System+Runtime+Diagnostics+EventTraceActivity")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Diagnostics::EventTraceActivity {
+    for crate::System::Runtime::Diagnostics::EventTraceActivity
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Diagnostics";
     const CLASS_NAME: &'static str = "EventTraceActivity";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,8 +43,7 @@ impl std::ops::DerefMut for crate::System::Runtime::Diagnostics::EventTraceActiv
 #[cfg(feature = "System+Runtime+Diagnostics+EventTraceActivity")]
 impl crate::System::Runtime::Diagnostics::EventTraceActivity {}
 #[cfg(feature = "cordl_class_System+Runtime+Diagnostics+EventTraceActivity")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Diagnostics::EventTraceActivity {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Diagnostics::EventTraceActivity {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

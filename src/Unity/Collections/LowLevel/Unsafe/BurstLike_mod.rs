@@ -5,14 +5,14 @@ pub struct BurstLike {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Collections.LowLevel.Unsafe";
     const CLASS_NAME: &'static str = "BurstLike";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,13 +42,11 @@ impl crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
     #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
     pub type SharedStatic = crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic;
     #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
-    pub type SharedStatic_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<
-        T,
-    >;
+    pub type SharedStatic_1<T: quest_hook::libil2cpp::Type> =
+        crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T>;
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
+impl quest_hook::libil2cpp::ObjectType for crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -64,13 +62,15 @@ pub struct BurstLike_SharedStatic {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
+    for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Collections.LowLevel.Unsafe";
     const CLASS_NAME: &'static str = "BurstLike/SharedStatic";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -83,16 +83,14 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
-impl std::ops::Deref
-for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
+impl std::ops::Deref for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
-impl std::ops::DerefMut
-for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
+impl std::ops::DerefMut for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -104,12 +102,12 @@ impl crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
         getSubHashCode64: i64,
         sizeOf: u32,
         alignment: u32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i64, i64, u32, u32),
@@ -124,21 +122,17 @@ impl crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (getHashCode64, getSubHashCode64, sizeOf, alignment),
-                )?
+                .invoke_unchecked((), (getHashCode64, getSubHashCode64, sizeOf, alignment))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
+    for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -146,39 +140,34 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BurstLike_SharedStatic_1<T: quest_hook::libil2cpp::Type> {
     pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
+    for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T>
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections.LowLevel.Unsafe";
     const CLASS_NAME: &'static str = "BurstLike/SharedStatic`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "Unity.Collections.LowLevel.Unsafe",
-                        "BurstLike/SharedStatic`1",
-                    )
-                    .unwrap()
-                    .make_generic::<(T)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find(
+                "Unity.Collections.LowLevel.Unsafe",
+                "BurstLike/SharedStatic`1",
+            )
+            .unwrap()
+            .make_generic::<(T)>()
+            .unwrap()
+            .unwrap()
+        })
     }
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
@@ -194,20 +183,16 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
+    for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -216,11 +201,10 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
+    for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -232,28 +216,24 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
+    for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
-for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
+    for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -265,11 +245,10 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
+    for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T>
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -279,23 +258,27 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
+impl<T: quest_hook::libil2cpp::Type>
+    crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T>
+{
     pub fn GetOrCreate<TContext>(
         alignment: u32,
     ) -> quest_hook::libil2cpp::Result<
         crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TContext: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TContext: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
@@ -312,9 +295,8 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<
-            T,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (alignment))? };
+        let __cordl_ret: crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> =
+            unsafe { cordl_method_info.invoke_unchecked((), (alignment))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -322,12 +304,15 @@ impl<
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -342,38 +327,34 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (buffer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (buffer))? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_Data(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
+    pub fn get_Data(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::ByRefMut<T>,
-                        0usize,
-                    >("get_Data")
+                    .find_method::<(), quest_hook::libil2cpp::ByRefMut<T>, 0usize>("get_Data")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Data", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Data",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

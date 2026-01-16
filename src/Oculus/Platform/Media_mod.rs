@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Media {
     const NAMESPACE: &'static str = "Oculus.Platform";
     const CLASS_NAME: &'static str = "Media";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,60 +40,47 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Media {
 #[cfg(feature = "Oculus+Platform+Media")]
 impl crate::Oculus::Platform::Media {
     pub fn ShareToFacebook(
-        postTextSuggestion: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        postTextSuggestion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         contentType: crate::Oculus::Platform::MediaContentType,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ShareMediaResult,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ShareMediaResult>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::Oculus::Platform::MediaContentType,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::Oculus::Platform::MediaContentType,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::ShareMediaResult,
-                                >,
+                                crate::Oculus::Platform::Models::ShareMediaResult,
                             >,
                         >,
-                        3usize,
-                    >("ShareToFacebook")
+                    >, 3usize>("ShareToFacebook")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ShareToFacebook", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ShareToFacebook",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ShareMediaResult,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ShareMediaResult>,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (postTextSuggestion, filePath, contentType))?
+            cordl_method_info.invoke_unchecked((), (postTextSuggestion, filePath, contentType))?
         };
         Ok(__cordl_ret.into())
     }

@@ -4,22 +4,22 @@
 pub struct DHKekGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
-    pub algorithm: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    >,
+    pub algorithm: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
     pub keySize: i32,
     pub z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub partyAInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+Kdf+DHKekGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
+    for crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Agreement.Kdf";
     const CLASS_NAME: &'static str = "DHKekGenerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,16 +32,14 @@ for crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Kdf+DHKekGenerator")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Kdf+DHKekGenerator")]
-impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
+impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -54,69 +52,59 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
         outOff: i32,
         len: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                            i32,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         i32,
-                        3usize,
-                    >("GenerateBytes")
+                        i32,
+                    ), i32, 3usize>("GenerateBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GenerateBytes", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GenerateBytes",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (outBytes, outOff, len))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (outBytes, outOff, len))? };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
-        param: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::IDerivationParameters,
-        >,
+        param: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationParameters>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Crypto::IDerivationParameters,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Init")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::IDerivationParameters,
+                    >), quest_hook::libil2cpp::Void, 1usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (param))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (param))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (digest))?;
         Ok(__cordl_object.into())
@@ -125,9 +113,10 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
         &mut self,
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -144,9 +133,8 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (digest))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (digest))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Digest(
@@ -154,9 +142,10 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -173,15 +162,15 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::IDigest,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+Kdf+DHKekGenerator")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
+    for crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -191,14 +180,16 @@ for crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Kdf+DHKekGenerator")]
 impl AsRef<crate::Org::BouncyCastle::Crypto::IDerivationFunction>
-for crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
+    for crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator
+{
     fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDerivationFunction {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Kdf+DHKekGenerator")]
 impl AsMut<crate::Org::BouncyCastle::Crypto::IDerivationFunction>
-for crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator {
+    for crate::Org::BouncyCastle::Crypto::Agreement::Kdf::DHKekGenerator
+{
     fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDerivationFunction {
         unsafe { std::mem::transmute(self) }
     }

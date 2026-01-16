@@ -10,9 +10,7 @@ pub struct NetEvent {
     pub Latency: i32,
     pub ErrorCode: crate::System::Net::Sockets::SocketError,
     pub DisconnectReason: crate::LiteNetLib::DisconnectReason,
-    pub ConnectionRequest: quest_hook::libil2cpp::Gc<
-        crate::LiteNetLib::ConnectionRequest,
-    >,
+    pub ConnectionRequest: quest_hook::libil2cpp::Gc<crate::LiteNetLib::ConnectionRequest>,
     pub DeliveryMethod: crate::LiteNetLib::DeliveryMethod,
     pub DataReader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketReader>,
 }
@@ -23,7 +21,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetEvent {
     const NAMESPACE: &'static str = "LiteNetLib";
     const CLASS_NAME: &'static str = "NetEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -55,8 +54,8 @@ impl crate::LiteNetLib::NetEvent {
     pub fn New(
         manager: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (manager))?;
         Ok(__cordl_object.into())
@@ -65,9 +64,10 @@ impl crate::LiteNetLib::NetEvent {
         &mut self,
         manager: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>),
@@ -82,9 +82,8 @@ impl crate::LiteNetLib::NetEvent {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (manager))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (manager))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -98,8 +97,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetEvent {
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLib+NetEvent+EType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum NetEvent_EType {
     #[default]
     Broadcast = 6i32,
@@ -132,13 +131,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetEvent_EType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLib+NetEvent+EType")]
@@ -172,9 +168,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LiteNetLib::NetEvent_ETyp
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }

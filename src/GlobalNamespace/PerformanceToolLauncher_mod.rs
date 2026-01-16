@@ -6,14 +6,14 @@ pub struct PerformanceToolLauncher {
     pub _assets: crate::GlobalNamespace::PerformanceToolLauncher_Assets,
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PerformanceToolLauncher {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PerformanceToolLauncher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PerformanceToolLauncher";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,29 +46,17 @@ impl crate::GlobalNamespace::PerformanceToolLauncher {
     pub type OverrideConfig = crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig;
     pub fn Initialize(
         &mut self,
-        settingsManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SettingsManager,
-        >,
-        playerDataModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerDataModel,
-        >,
+        settingsManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
+        playerDataModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
         mainCamera: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainCamera>,
-        recPlayState: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::RecPlayBehaviour_State,
-        >,
-        songController: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SongController,
-        >,
-        timeSync: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::AudioTimeSyncController,
-        >,
+        recPlayState: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecPlayBehaviour_State>,
+        songController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongController>,
+        timeSync: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioTimeSyncController>,
         gamePause: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
         sceneSetupData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayCoreSceneSetupData,
         >,
-        objectManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapObjectManager,
-        >,
+        objectManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectManager>,
         callbackController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCallbacksController,
         >,
@@ -76,81 +64,62 @@ impl crate::GlobalNamespace::PerformanceToolLauncher {
             crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SettingsManager,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerDataModel,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MainCamera,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::RecPlayBehaviour_State,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SongController,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::AudioTimeSyncController,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IGamePause,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::GameplayCoreSceneSetupData,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapObjectManager,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapCallbacksController,
-                            >,
-                            crate::System::Nullable_1<
-                                crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        11usize,
-                    >("Initialize")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainCamera>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecPlayBehaviour_State>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongController>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioTimeSyncController>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::GameplayCoreSceneSetupData,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectManager>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapCallbacksController,
+                        >,
+                        crate::System::Nullable_1<
+                            crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 11usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Initialize", 11usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Initialize",
+                            11usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        settingsManager,
-                        playerDataModel,
-                        mainCamera,
-                        recPlayState,
-                        songController,
-                        timeSync,
-                        gamePause,
-                        sceneSetupData,
-                        objectManager,
-                        callbackController,
-                        overrideConfig,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    settingsManager,
+                    playerDataModel,
+                    mainCamera,
+                    recPlayState,
+                    songController,
+                    timeSync,
+                    gamePause,
+                    sceneSetupData,
+                    objectManager,
+                    callbackController,
+                    overrideConfig,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -159,60 +128,51 @@ impl crate::GlobalNamespace::PerformanceToolLauncher {
         recorder: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerformanceRecorder>,
         songController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PerformanceRecorder,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SongController,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Run")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerformanceRecorder>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongController>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Run")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Run",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Run",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (recorder, songController))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (recorder, songController))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PerformanceToolLauncher {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PerformanceToolLauncher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -221,17 +181,14 @@ for crate::GlobalNamespace::PerformanceToolLauncher {
     }
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher+Assets")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PerformanceToolLauncher_Assets {
-    pub visualizer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PerformanceVisualizer,
-    >,
+    pub visualizer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerformanceVisualizer>,
     pub recorder: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerformanceRecorder>,
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher+Assets")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -250,18 +207,16 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
+    for crate::GlobalNamespace::PerformanceToolLauncher_Assets
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -272,7 +227,8 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
+    for crate::GlobalNamespace::PerformanceToolLauncher_Assets
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -286,22 +242,22 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
+    for crate::GlobalNamespace::PerformanceToolLauncher_Assets
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
+    for crate::GlobalNamespace::PerformanceToolLauncher_Assets
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -315,7 +271,8 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
+    for crate::GlobalNamespace::PerformanceToolLauncher_Assets
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -327,15 +284,16 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
 #[cfg(feature = "PerformanceToolLauncher+Assets")]
 impl crate::GlobalNamespace::PerformanceToolLauncher_Assets {}
 #[cfg(feature = "cordl_class_PerformanceToolLauncher+OverrideConfig")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PerformanceToolLauncher_OverrideConfig {
     pub enableAutoplay: bool,
     pub enableRecording: bool,
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
+    for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -354,18 +312,16 @@ for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
+    for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -376,7 +332,8 @@ for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
+    for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -390,22 +347,22 @@ for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
+    for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
+    for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -419,7 +376,8 @@ for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
 }
 #[cfg(feature = "cordl_class_PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
+    for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

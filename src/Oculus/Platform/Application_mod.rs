@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Application
     const NAMESPACE: &'static str = "Oculus.Platform";
     const CLASS_NAME: &'static str = "Application";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,40 +42,34 @@ impl crate::Oculus::Platform::Application {
     pub fn CancelAppDownload() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AppDownloadResult,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AppDownloadResult>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AppDownloadResult,
-                                >,
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AppDownloadResult,
                             >,
                         >,
-                        0usize,
-                    >("CancelAppDownload")
+                    >, 0usize>("CancelAppDownload")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CancelAppDownload", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CancelAppDownload",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AppDownloadResult,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AppDownloadResult>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -88,26 +83,24 @@ impl crate::Oculus::Platform::Application {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AppDownloadProgressResult,
-                                >,
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AppDownloadProgressResult,
                             >,
                         >,
-                        0usize,
-                    >("CheckAppDownloadProgress")
+                    >, 0usize>("CheckAppDownloadProgress")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckAppDownloadProgress", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckAppDownloadProgress",
+                            0usize
                         )
                     })
             });
@@ -123,60 +116,51 @@ impl crate::Oculus::Platform::Application {
     pub fn GetVersion() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ApplicationVersion,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationVersion>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::ApplicationVersion,
-                                >,
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::ApplicationVersion,
                             >,
                         >,
-                        0usize,
-                    >("GetVersion")
+                    >, 0usize>("GetVersion")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetVersion", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetVersion",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ApplicationVersion,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationVersion>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InstallAppUpdateAndRelaunch(
-        deeplink_options: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::ApplicationOptions,
-        >,
+        deeplink_options: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::ApplicationOptions>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AppDownloadResult,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AppDownloadResult>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -201,18 +185,14 @@ impl crate::Oculus::Platform::Application {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AppDownloadResult,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AppDownloadResult>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (deeplink_options))? };
         Ok(__cordl_ret.into())
     }
     pub fn LaunchOtherApp(
         appID: u64,
-        deeplink_options: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::ApplicationOptions,
-        >,
+        deeplink_options: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::ApplicationOptions>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
@@ -220,31 +200,25 @@ impl crate::Oculus::Platform::Application {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            u64,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::ApplicationOptions,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
+                    .find_static_method::<(
+                        u64,
+                        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::ApplicationOptions>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         >,
-                        2usize,
-                    >("LaunchOtherApp")
+                    >, 2usize>("LaunchOtherApp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LaunchOtherApp", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LaunchOtherApp",
+                            2usize
                         )
                     })
             });
@@ -252,48 +226,40 @@ impl crate::Oculus::Platform::Application {
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (appID, deeplink_options))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (appID, deeplink_options))? };
         Ok(__cordl_ret.into())
     }
     pub fn StartAppDownload() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AppDownloadResult,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AppDownloadResult>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AppDownloadResult,
-                                >,
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AppDownloadResult,
                             >,
                         >,
-                        0usize,
-                    >("StartAppDownload")
+                    >, 0usize>("StartAppDownload")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StartAppDownload", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "StartAppDownload",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AppDownloadResult,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AppDownloadResult>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

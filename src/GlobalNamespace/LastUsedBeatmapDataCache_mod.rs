@@ -1,24 +1,17 @@
 #[cfg(feature = "cordl_class_LastUsedBeatmapDataCache")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LastUsedBeatmapDataCache {
-    pub cachedReadonlyBeatmapData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IReadonlyBeatmapData,
-    >,
+    pub cachedReadonlyBeatmapData:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
     pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
-    pub _environmentInfo: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IEnvironmentInfo,
-    >,
-    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GameplayModifiers,
-    >,
-    pub _playerSpecificSettings: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlayerSpecificSettings,
-    >,
+    pub _environmentInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+    pub _playerSpecificSettings:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
 }
 #[cfg(feature = "cordl_class_LastUsedBeatmapDataCache")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LastUsedBeatmapDataCache {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -37,18 +30,14 @@ for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_LastUsedBeatmapDataCache")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::LastUsedBeatmapDataCache {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -58,8 +47,7 @@ for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     }
 }
 #[cfg(feature = "cordl_class_LastUsedBeatmapDataCache")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::LastUsedBeatmapDataCache {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -72,23 +60,19 @@ for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     }
 }
 #[cfg(feature = "cordl_class_LastUsedBeatmapDataCache")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::LastUsedBeatmapDataCache {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_LastUsedBeatmapDataCache")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::LastUsedBeatmapDataCache {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -102,7 +86,8 @@ for crate::GlobalNamespace::LastUsedBeatmapDataCache {
 }
 #[cfg(feature = "cordl_class_LastUsedBeatmapDataCache")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::LastUsedBeatmapDataCache {
+    for crate::GlobalNamespace::LastUsedBeatmapDataCache
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -117,184 +102,136 @@ impl crate::GlobalNamespace::LastUsedBeatmapDataCache {
         first: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
         second: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::GameplayModifiers,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::GameplayModifiers,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("AreRequiredGameplayModifiersSame")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+                    ), bool, 2usize>("AreRequiredGameplayModifiersSame")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AreRequiredGameplayModifiersSame", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AreRequiredGameplayModifiersSame",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (first, second))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (first, second))? };
         Ok(__cordl_ret.into())
     }
     pub fn AreRequiredPlayerSettingsSame(
         first: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
         second: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerSpecificSettings,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerSpecificSettings,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("AreRequiredPlayerSettingsSame")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
+                    ), bool, 2usize>("AreRequiredPlayerSettingsSame")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AreRequiredPlayerSettingsSame", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AreRequiredPlayerSettingsSame",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (first, second))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (first, second))? };
         Ok(__cordl_ret.into())
     }
     pub fn AreSameBeatmapDataCached(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-        environmentInfo: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IEnvironmentInfo,
-        >,
-        gameplayModifiers: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        >,
+        environmentInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
         playerSpecificSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::BeatmapKey,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IEnvironmentInfo,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::GameplayModifiers,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerSpecificSettings,
-                            >,
-                        ),
-                        bool,
-                        4usize,
-                    >("AreSameBeatmapDataCached")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
+                    ), bool, 4usize>("AreSameBeatmapDataCached")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AreSameBeatmapDataCached", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AreSameBeatmapDataCached",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        beatmapKey,
-                        environmentInfo,
-                        gameplayModifiers,
-                        playerSpecificSettings,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    beatmapKey,
+                    environmentInfo,
+                    gameplayModifiers,
+                    playerSpecificSettings,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        beatmapData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IReadonlyBeatmapData,
-        >,
+        beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
         beatmapKey: crate::GlobalNamespace::BeatmapKey,
-        environmentInfo: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IEnvironmentInfo,
-        >,
-        gameplayModifiers: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        >,
+        environmentInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
         playerSpecificSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IReadonlyBeatmapData,
-                            >,
-                            crate::GlobalNamespace::BeatmapKey,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IEnvironmentInfo,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::GameplayModifiers,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerSpecificSettings,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
+                        crate::GlobalNamespace::BeatmapKey,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        beatmapData,
-                        beatmapKey,
-                        environmentInfo,
-                        gameplayModifiers,
-                        playerSpecificSettings,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    beatmapData,
+                    beatmapKey,
+                    environmentInfo,
+                    gameplayModifiers,
+                    playerSpecificSettings,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }

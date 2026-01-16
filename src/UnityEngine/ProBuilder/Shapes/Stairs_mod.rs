@@ -12,14 +12,14 @@ pub struct Stairs {
     pub m_InnerRadius: f32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Stairs")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ProBuilder::Shapes::Stairs {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Shapes::Stairs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder.Shapes";
     const CLASS_NAME: &'static str = "Stairs";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -52,32 +52,27 @@ impl crate::UnityEngine::ProBuilder::Shapes::Stairs {
         _cordl_size: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                        ),
-                        crate::UnityEngine::Bounds,
-                        3usize,
-                    >("BuildCurvedStairs")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                    ), crate::UnityEngine::Bounds, 3usize>("BuildCurvedStairs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BuildCurvedStairs", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BuildCurvedStairs",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Bounds = unsafe {
-            cordl_method_info.invoke_unchecked(self, (mesh, _cordl_size, rotation))?
-        };
+        let __cordl_ret: crate::UnityEngine::Bounds =
+            unsafe { cordl_method_info.invoke_unchecked(self, (mesh, _cordl_size, rotation))? };
         Ok(__cordl_ret.into())
     }
     pub fn BuildStairs(
@@ -86,41 +81,37 @@ impl crate::UnityEngine::ProBuilder::Shapes::Stairs {
         _cordl_size: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                        ),
-                        crate::UnityEngine::Bounds,
-                        3usize,
-                    >("BuildStairs")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                    ), crate::UnityEngine::Bounds, 3usize>("BuildStairs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BuildStairs", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BuildStairs",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Bounds = unsafe {
-            cordl_method_info.invoke_unchecked(self, (mesh, _cordl_size, rotation))?
-        };
+        let __cordl_ret: crate::UnityEngine::Bounds =
+            unsafe { cordl_method_info.invoke_unchecked(self, (mesh, _cordl_size, rotation))? };
         Ok(__cordl_ret.into())
     }
     pub fn CopyShape(
         &mut self,
         shape: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Shapes::Shape>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -137,14 +128,13 @@ impl crate::UnityEngine::ProBuilder::Shapes::Stairs {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (shape))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (shape))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -155,32 +145,27 @@ impl crate::UnityEngine::ProBuilder::Shapes::Stairs {
         _cordl_size: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                        ),
-                        crate::UnityEngine::Bounds,
-                        3usize,
-                    >("RebuildMesh")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                    ), crate::UnityEngine::Bounds, 3usize>("RebuildMesh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RebuildMesh", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RebuildMesh",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Bounds = unsafe {
-            cordl_method_info.invoke_unchecked(self, (mesh, _cordl_size, rotation))?
-        };
+        let __cordl_ret: crate::UnityEngine::Bounds =
+            unsafe { cordl_method_info.invoke_unchecked(self, (mesh, _cordl_size, rotation))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateBounds(
@@ -190,68 +175,64 @@ impl crate::UnityEngine::ProBuilder::Shapes::Stairs {
         rotation: crate::UnityEngine::Quaternion,
         bounds: crate::UnityEngine::Bounds,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                            crate::UnityEngine::Bounds,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
                         crate::UnityEngine::Bounds,
-                        4usize,
-                    >("UpdateBounds")
+                    ), crate::UnityEngine::Bounds, 4usize>("UpdateBounds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateBounds", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateBounds",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::Bounds = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (mesh, _cordl_size, rotation, bounds))?
+            cordl_method_info.invoke_unchecked(self, (mesh, _cordl_size, rotation, bounds))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_sides(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_sides")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_sides", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_sides",
+                            0usize
                         )
                     })
             });
@@ -262,32 +243,28 @@ impl crate::UnityEngine::ProBuilder::Shapes::Stairs {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_sides")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_sides")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_sides", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_sides",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Stairs")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ProBuilder::Shapes::Stairs {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Shapes::Stairs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

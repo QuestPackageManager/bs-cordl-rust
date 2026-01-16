@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+IDtdParserAdapterV1")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IDtdParserAdapterV1 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::IDtdParserAdapte
     const NAMESPACE: &'static str = "System.Xml";
     const CLASS_NAME: &'static str = "IDtdParserAdapterV1";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -38,22 +39,22 @@ impl std::ops::DerefMut for crate::System::Xml::IDtdParserAdapterV1 {
 }
 #[cfg(feature = "System+Xml+IDtdParserAdapterV1")]
 impl crate::System::Xml::IDtdParserAdapterV1 {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_Namespaces(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Namespaces")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Namespaces", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Namespaces",
+                            0usize
                         )
                     })
             });
@@ -61,16 +62,18 @@ impl crate::System::Xml::IDtdParserAdapterV1 {
         Ok(__cordl_ret.into())
     }
     pub fn get_Normalization(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Normalization")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Normalization", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Normalization",
+                            0usize
                         )
                     })
             });
@@ -78,16 +81,18 @@ impl crate::System::Xml::IDtdParserAdapterV1 {
         Ok(__cordl_ret.into())
     }
     pub fn get_V1CompatibilityMode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_V1CompatibilityMode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_V1CompatibilityMode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_V1CompatibilityMode",
+                            0usize
                         )
                     })
             });
@@ -105,29 +110,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::IDtdParserAdapter
     }
 }
 #[cfg(feature = "System+Xml+IDtdParserAdapterV1")]
-impl AsRef<crate::System::Xml::IDtdParserAdapter>
-for crate::System::Xml::IDtdParserAdapterV1 {
+impl AsRef<crate::System::Xml::IDtdParserAdapter> for crate::System::Xml::IDtdParserAdapterV1 {
     fn as_ref(&self) -> &crate::System::Xml::IDtdParserAdapter {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+IDtdParserAdapterV1")]
-impl AsMut<crate::System::Xml::IDtdParserAdapter>
-for crate::System::Xml::IDtdParserAdapterV1 {
+impl AsMut<crate::System::Xml::IDtdParserAdapter> for crate::System::Xml::IDtdParserAdapterV1 {
     fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParserAdapter {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+IDtdParserAdapterV1")]
 impl AsRef<crate::System::Xml::IDtdParserAdapterWithValidation>
-for crate::System::Xml::IDtdParserAdapterV1 {
+    for crate::System::Xml::IDtdParserAdapterV1
+{
     fn as_ref(&self) -> &crate::System::Xml::IDtdParserAdapterWithValidation {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+IDtdParserAdapterV1")]
 impl AsMut<crate::System::Xml::IDtdParserAdapterWithValidation>
-for crate::System::Xml::IDtdParserAdapterV1 {
+    for crate::System::Xml::IDtdParserAdapterV1
+{
     fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParserAdapterWithValidation {
         unsafe { std::mem::transmute(self) }
     }

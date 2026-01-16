@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CurveData {
     pub startPoint: crate::UnityEngine::Vector3,
     pub endPoint: crate::UnityEngine::Vector3,
@@ -8,8 +8,7 @@ pub struct CurveData {
     pub endControlPoint: crate::UnityEngine::Vector3,
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveData")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::BGLib::UnityExtension::BezierCurves::CurveData {
+unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::UnityExtension::BezierCurves::CurveData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BGLib.UnityExtension.BezierCurves";
@@ -28,18 +27,16 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::BGLib::UnityExtension::BezierCurves::CurveData {
+    for crate::BGLib::UnityExtension::BezierCurves::CurveData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -50,7 +47,8 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveData {
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::BGLib::UnityExtension::BezierCurves::CurveData {
+    for crate::BGLib::UnityExtension::BezierCurves::CurveData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -64,22 +62,22 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveData {
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::BGLib::UnityExtension::BezierCurves::CurveData {
+    for crate::BGLib::UnityExtension::BezierCurves::CurveData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::BGLib::UnityExtension::BezierCurves::CurveData {
+    for crate::BGLib::UnityExtension::BezierCurves::CurveData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -93,7 +91,8 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveData {
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::BGLib::UnityExtension::BezierCurves::CurveData {
+    for crate::BGLib::UnityExtension::BezierCurves::CurveData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -108,26 +107,23 @@ impl crate::BGLib::UnityExtension::BezierCurves::CurveData {
         &mut self,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        crate::UnityEngine::Vector3,
-                        1usize,
-                    >("Evaluate")
+                    .find_method::<(f32), crate::UnityEngine::Vector3, 1usize>("Evaluate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Evaluate", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Evaluate",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (t))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (t))? };
         Ok(__cordl_ret.into())
     }
     pub fn RotatePointAroundPivot(
@@ -135,42 +131,40 @@ impl crate::BGLib::UnityExtension::BezierCurves::CurveData {
         pivot: crate::UnityEngine::Vector3,
         rot: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                        ),
+                    .find_static_method::<(
                         crate::UnityEngine::Vector3,
-                        3usize,
-                    >("RotatePointAroundPivot")
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                    ), crate::UnityEngine::Vector3, 3usize>(
+                        "RotatePointAroundPivot"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RotatePointAroundPivot", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RotatePointAroundPivot",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (point, pivot, rot))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (point, pivot, rot))? };
         Ok(__cordl_ret.into())
     }
     pub fn RotatePointsAroundPivot(
         &mut self,
         pivot: crate::UnityEngine::Vector3,
         rot: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::BGLib::UnityExtension::BezierCurves::CurveData,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::BGLib::UnityExtension::BezierCurves::CurveData> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3, crate::UnityEngine::Quaternion),
@@ -185,9 +179,8 @@ impl crate::BGLib::UnityExtension::BezierCurves::CurveData {
                         )
                     })
             });
-        let __cordl_ret: crate::BGLib::UnityExtension::BezierCurves::CurveData = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pivot, rot))?
-        };
+        let __cordl_ret: crate::BGLib::UnityExtension::BezierCurves::CurveData =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pivot, rot))? };
         Ok(__cordl_ret.into())
     }
 }

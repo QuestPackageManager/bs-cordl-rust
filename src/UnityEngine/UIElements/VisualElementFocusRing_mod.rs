@@ -4,7 +4,8 @@
 pub struct VisualElementFocusRing {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-    pub _defaultFocusOrder_k__BackingField: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
+    pub _defaultFocusOrder_k__BackingField:
+        crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
     pub m_FocusRing: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             quest_hook::libil2cpp::Gc<
@@ -14,14 +15,14 @@ pub struct VisualElementFocusRing {
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::VisualElementFocusRing {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::VisualElementFocusRing {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "VisualElementFocusRing";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,9 +50,11 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElementFocusRi
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing")]
 impl crate::UnityEngine::UIElements::VisualElementFocusRing {
     #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder")]
-    pub type DefaultFocusOrder = crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder;
+    pub type DefaultFocusOrder =
+        crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder;
     #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
-    pub type FocusRingRecord = crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord;
+    pub type FocusRingRecord =
+        crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord;
     pub fn BuildRingForScopeRecursive(
         &mut self,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -64,7 +67,8 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -93,30 +97,28 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (ve, scopeIndex, scopeList))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (ve, scopeIndex, scopeList))? };
         Ok(__cordl_ret.into())
     }
-    pub fn DoUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn DoUpdate(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("DoUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DoUpdate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DoUpdate",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FocusRingAutoIndexSort(
@@ -128,33 +130,29 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("FocusRingAutoIndexSort")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+                        >,
+                    ), i32, 2usize>("FocusRingAutoIndexSort")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FocusRingAutoIndexSort", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FocusRingAutoIndexSort",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (a, b))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn FocusRingSort(
@@ -166,47 +164,42 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("FocusRingSort")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+                        >,
+                    ), i32, 2usize>("FocusRingSort")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FocusRingSort", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FocusRingSort",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (a, b))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFocusChangeDirection(
         &mut self,
-        currentFocusable: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Focusable,
-        >,
+        currentFocusable: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusChangeDirection>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -239,9 +232,10 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
         &mut self,
         f: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -263,18 +257,15 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
     }
     pub fn GetNextFocusable(
         &mut self,
-        currentFocusable: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Focusable,
-        >,
-        direction: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::FocusChangeDirection,
-        >,
+        currentFocusable: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
+        direction: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusChangeDirection>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -298,23 +289,19 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Focusable,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (currentFocusable, direction))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (currentFocusable, direction))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextFocusableInTree(
-        currentFocusable: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        >,
+        currentFocusable: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -333,21 +320,19 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Focusable,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (currentFocusable))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable> =
+            unsafe { cordl_method_info.invoke_unchecked((), (currentFocusable))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreviousFocusableInTree(
-        currentFocusable: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        >,
+        currentFocusable: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -366,17 +351,16 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Focusable,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (currentFocusable))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable> =
+            unsafe { cordl_method_info.invoke_unchecked((), (currentFocusable))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         dfo: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (root, dfo))?;
         Ok(__cordl_object.into())
@@ -391,7 +375,8 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -414,9 +399,8 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (rootScopeList))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (rootScopeList))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -424,31 +408,26 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         dfo: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
-                            >,
-                            crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                        crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (root, dfo))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (root, dfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_defaultFocusOrder(
@@ -456,9 +435,10 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -473,9 +453,8 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_focusController(
@@ -483,9 +462,10 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusController>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -511,9 +491,10 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
         &mut self,
         value: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder),
@@ -528,15 +509,13 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::VisualElementFocusRing {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::VisualElementFocusRing {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -546,34 +525,33 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing")]
 impl AsRef<crate::UnityEngine::UIElements::IFocusRing>
-for crate::UnityEngine::UIElements::VisualElementFocusRing {
+    for crate::UnityEngine::UIElements::VisualElementFocusRing
+{
     fn as_ref(&self) -> &crate::UnityEngine::UIElements::IFocusRing {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing")]
 impl AsMut<crate::UnityEngine::UIElements::IFocusRing>
-for crate::UnityEngine::UIElements::VisualElementFocusRing {
+    for crate::UnityEngine::UIElements::VisualElementFocusRing
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IFocusRing {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum VisualElementFocusRing_DefaultFocusOrder {
     #[default]
     ChildOrder = 0i32,
     PositionXY = 1i32,
     PositionYX = 2i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder {
+    for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -592,20 +570,16 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder {
+    for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -614,11 +588,10 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder {
+    for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -630,28 +603,24 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder {
+    for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder {
+    for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -663,17 +632,13 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElementFocusRing_FocusRingRecord {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AutoIndex: i32,
-    pub m_Focusable: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::Focusable,
-    >,
+    pub m_Focusable: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
     pub m_IsSlot: bool,
     pub m_ScopeNavigationOrder: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
@@ -683,17 +648,17 @@ pub struct VisualElementFocusRing_FocusRingRecord {
         >,
     >,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
+    for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "VisualElementFocusRing/FocusRingRecord";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -706,16 +671,14 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
-impl std::ops::Deref
-for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
+impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
+impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -723,39 +686,37 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
 impl crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
+    for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

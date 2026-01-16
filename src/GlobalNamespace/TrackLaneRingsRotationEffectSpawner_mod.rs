@@ -3,32 +3,32 @@
 #[derive(Debug)]
 pub struct TrackLaneRingsRotationEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _trackLaneRingsRotationEffect: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::TrackLaneRingsRotationEffect,
-    >,
+    pub _trackLaneRingsRotationEffect:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TrackLaneRingsRotationEffect>,
     pub _beatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _rotation: f32,
     pub _rotationStep: f32,
-    pub _rotationStepType: crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType,
+    pub _rotationStepType:
+        crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType,
     pub _rotationPropagationSpeed: i32,
     pub _rotationFlexySpeed: f32,
-    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapCallbacksController,
-    >,
+    pub _beatmapCallbacksController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCallbacksController>,
     pub _random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
-    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    >,
+    pub _beatmapDataCallbackWrapper:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallbackWrapper>,
 }
 #[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
+    for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "TrackLaneRingsRotationEffectSpawner";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -56,16 +56,18 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TrackLaneRingsRotationEffect
 #[cfg(feature = "TrackLaneRingsRotationEffectSpawner")]
 impl crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
     #[cfg(feature = "TrackLaneRingsRotationEffectSpawner+RotationStepType")]
-    pub type RotationStepType = crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType;
+    pub type RotationStepType =
+        crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType;
     pub fn HandleBeatmapEvent(
         &mut self,
         basicBeatmapEventData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BasicBeatmapEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -82,85 +84,82 @@ impl crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (basicBeatmapEventData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (basicBeatmapEventData))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDestroy(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDestroy", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDestroy",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Start",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
+    for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -169,8 +168,8 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
     }
 }
 #[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner+RotationStepType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum TrackLaneRingsRotationEffectSpawner_RotationStepType {
     #[default]
     MaxOr0 = 2i32,
@@ -179,7 +178,8 @@ pub enum TrackLaneRingsRotationEffectSpawner_RotationStepType {
 }
 #[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner+RotationStepType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType {
+    for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -198,18 +198,16 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner+RotationStepType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType {
+    for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -220,7 +218,8 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType
 }
 #[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner+RotationStepType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType {
+    for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -234,22 +233,22 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType
 }
 #[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner+RotationStepType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType {
+    for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner+RotationStepType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType {
+    for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

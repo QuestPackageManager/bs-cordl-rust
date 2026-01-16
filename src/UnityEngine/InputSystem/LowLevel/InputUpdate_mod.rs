@@ -5,14 +5,14 @@ pub struct InputUpdate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
     const CLASS_NAME: &'static str = "InputUpdate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,17 +40,19 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::LowLevel::InputUpda
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
     #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
-    pub type SerializedState = crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState;
+    pub type SerializedState =
+        crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState;
     #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
-    pub type UpdateStepCount = crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount;
+    pub type UpdateStepCount =
+        crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount;
     pub fn GetUpdateTypeForPlayer(
         mask: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::LowLevel::InputUpdateType>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::InputSystem::LowLevel::InputUpdateType),
@@ -65,17 +67,17 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType = unsafe {
-            cordl_method_info.invoke_unchecked((), (mask))?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType =
+            unsafe { cordl_method_info.invoke_unchecked((), (mask))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsPlayerUpdate(
         updateType: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::InputSystem::LowLevel::InputUpdateType),
@@ -90,17 +92,16 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (updateType))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (updateType))? };
         Ok(__cordl_ret.into())
     }
     pub fn OnBeforeUpdate(
         _cordl_type: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::InputSystem::LowLevel::InputUpdateType),
@@ -115,17 +116,17 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_type))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn OnUpdate(
         _cordl_type: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::InputSystem::LowLevel::InputUpdateType),
@@ -140,17 +141,17 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_type))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn Restore(
         state: crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState),
@@ -165,17 +166,17 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (state))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (state))? };
         Ok(__cordl_ret.into())
     }
     pub fn Save() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -190,15 +191,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -206,20 +205,18 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct InputUpdate_SerializedState {
     pub lastUpdateType: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-    pub playerUpdateStepCount: crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount,
+    pub playerUpdateStepCount:
+        crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
+    for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
@@ -238,20 +235,16 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
+    for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -260,11 +253,10 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
+    for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -276,28 +268,24 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
+    for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
+    for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -309,11 +297,10 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
+    for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -324,20 +311,17 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {}
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct InputUpdate_UpdateStepCount {
     pub m_WasUpdated: bool,
     pub _value_k__BackingField: u32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
+    for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
@@ -356,20 +340,16 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
+    for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -378,11 +358,10 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
+    for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -394,28 +373,24 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
+    for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
+    for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -427,11 +402,10 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
+    for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -442,63 +416,59 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
-    pub fn OnBeforeUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnBeforeUpdate(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("OnBeforeUpdate")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnBeforeUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnBeforeUpdate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnBeforeUpdate",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn OnUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnUpdate(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnUpdate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnUpdate",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_value")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_value", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_value",
+                            0usize
                         )
                     })
             });
@@ -509,26 +479,23 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
         &mut self,
         value: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_value")
+                    .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>("set_value")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_value", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_value",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }

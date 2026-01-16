@@ -7,13 +7,15 @@ pub struct XmlChoiceIdentifierAttribute {
 }
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlChoiceIdentifierAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
+    for crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml.Serialization";
     const CLASS_NAME: &'static str = "XmlChoiceIdentifierAttribute";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -26,16 +28,14 @@ for crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
     }
 }
 #[cfg(feature = "System+Xml+Serialization+XmlChoiceIdentifierAttribute")]
-impl std::ops::Deref
-for crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
+impl std::ops::Deref for crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Serialization+XmlChoiceIdentifierAttribute")]
-impl std::ops::DerefMut
-for crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
+impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -46,9 +46,10 @@ impl crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
         &mut self,
         sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>),
@@ -63,19 +64,18 @@ impl crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (sb))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (sb))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_MemberName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -90,15 +90,15 @@ impl crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlChoiceIdentifierAttribute")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
+    for crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

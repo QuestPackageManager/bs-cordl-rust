@@ -1,6 +1,4 @@
-#[cfg(
-    feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerHandler {
@@ -9,17 +7,17 @@ pub struct PointerHandler {
         crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::InteractableController,
     >,
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Meta.XR.ImmersiveDebugger.UserInterface.Generic";
     const CLASS_NAME: &'static str = "PointerHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -33,7 +31,8 @@ for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 impl std::ops::Deref
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler
+{
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -41,7 +40,8 @@ for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 impl std::ops::DerefMut
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -49,21 +49,20 @@ for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 impl crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
     pub fn OnPointerClick(
         &mut self,
-        eventData: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::PointerEventData,
-        >,
+        eventData: quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -80,20 +79,18 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler 
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (eventData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (eventData))? };
         Ok(__cordl_ret.into())
     }
     pub fn OnPointerEnter(
         &mut self,
-        eventData: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::PointerEventData,
-        >,
+        eventData: quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -110,20 +107,18 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler 
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (eventData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (eventData))? };
         Ok(__cordl_ret.into())
     }
     pub fn OnPointerExit(
         &mut self,
-        eventData: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::PointerEventData,
-        >,
+        eventData: quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -140,30 +135,28 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler 
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (eventData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (eventData))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Controller(
@@ -173,7 +166,8 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler 
             crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::InteractableController,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -203,7 +197,8 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler 
             crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::InteractableController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -222,17 +217,15 @@ impl crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler 
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -242,56 +235,64 @@ for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler
+{
     fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler
+{
     fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler
+{
     fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 impl AsRef<crate::UnityEngine::EventSystems::IPointerExitHandler>
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler
+{
     fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerExitHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 impl AsMut<crate::UnityEngine::EventSystems::IPointerExitHandler>
-for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler {
+    for crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::PointerHandler
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerExitHandler {
         unsafe { std::mem::transmute(self) }
     }

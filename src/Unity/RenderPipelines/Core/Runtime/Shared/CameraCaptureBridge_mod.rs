@@ -1,22 +1,20 @@
-#[cfg(
-    feature = "cordl_class_Unity+RenderPipelines+Core+Runtime+Shared+CameraCaptureBridge"
-)]
+#[cfg(feature = "cordl_class_Unity+RenderPipelines+Core+Runtime+Shared+CameraCaptureBridge")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CameraCaptureBridge {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(
-    feature = "cordl_class_Unity+RenderPipelines+Core+Runtime+Shared+CameraCaptureBridge"
-)]
+#[cfg(feature = "cordl_class_Unity+RenderPipelines+Core+Runtime+Shared+CameraCaptureBridge")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::RenderPipelines::Core::Runtime::Shared::CameraCaptureBridge {
+    for crate::Unity::RenderPipelines::Core::Runtime::Shared::CameraCaptureBridge
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.RenderPipelines.Core.Runtime.Shared";
     const CLASS_NAME: &'static str = "CameraCaptureBridge";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -29,8 +27,7 @@ for crate::Unity::RenderPipelines::Core::Runtime::Shared::CameraCaptureBridge {
     }
 }
 #[cfg(feature = "Unity+RenderPipelines+Core+Runtime+Shared+CameraCaptureBridge")]
-impl std::ops::Deref
-for crate::Unity::RenderPipelines::Core::Runtime::Shared::CameraCaptureBridge {
+impl std::ops::Deref for crate::Unity::RenderPipelines::Core::Runtime::Shared::CameraCaptureBridge {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -38,7 +35,8 @@ for crate::Unity::RenderPipelines::Core::Runtime::Shared::CameraCaptureBridge {
 }
 #[cfg(feature = "Unity+RenderPipelines+Core+Runtime+Shared+CameraCaptureBridge")]
 impl std::ops::DerefMut
-for crate::Unity::RenderPipelines::Core::Runtime::Shared::CameraCaptureBridge {
+    for crate::Unity::RenderPipelines::Core::Runtime::Shared::CameraCaptureBridge
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -53,17 +51,16 @@ impl crate::Unity::RenderPipelines::Core::Runtime::Shared::CameraCaptureBridge {
                 quest_hook::libil2cpp::Gc<
                     crate::System::Action_2<
                         crate::UnityEngine::Rendering::RenderTargetIdentifier,
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::CommandBuffer,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
                     >,
                 >,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>),
@@ -94,9 +91,7 @@ impl crate::Unity::RenderPipelines::Core::Runtime::Shared::CameraCaptureBridge {
                 quest_hook::libil2cpp::Gc<
                     crate::System::Action_2<
                         crate::UnityEngine::Rendering::RenderTargetIdentifier,
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::CommandBuffer,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
                     >,
                 >,
             >,
@@ -104,11 +99,10 @@ impl crate::Unity::RenderPipelines::Core::Runtime::Shared::CameraCaptureBridge {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+RenderPipelines+Core+Runtime+Shared+CameraCaptureBridge"
-)]
+#[cfg(feature = "cordl_class_Unity+RenderPipelines+Core+Runtime+Shared+CameraCaptureBridge")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Unity::RenderPipelines::Core::Runtime::Shared::CameraCaptureBridge {
+    for crate::Unity::RenderPipelines::Core::Runtime::Shared::CameraCaptureBridge
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

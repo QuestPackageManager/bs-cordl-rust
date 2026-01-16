@@ -4,9 +4,7 @@
 pub struct GraphAPIClient {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _graphUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub _graphAccessToken: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub _graphAccessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _client: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpClient>,
 }
 #[cfg(feature = "cordl_class_GraphAPIClient")]
@@ -16,7 +14,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GraphAPIClie
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "GraphAPIClient";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,9 +48,10 @@ impl crate::GlobalNamespace::GraphAPIClient {
         numAttempts: i32,
         postOptions: crate::GlobalNamespace::GraphAPIClient_PostOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::GlobalNamespace::GraphAPIClient_PostOptions),
@@ -66,17 +66,16 @@ impl crate::GlobalNamespace::GraphAPIClient {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (numAttempts, postOptions))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (numAttempts, postOptions))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         graphUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         graphAccessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (graphUrl, graphAccessToken))?;
         Ok(__cordl_object.into())
@@ -91,14 +90,17 @@ impl crate::GlobalNamespace::GraphAPIClient {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResponse>>,
     >
     where
-        TRequest: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TRequest: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TResponse: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TResponse: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -144,14 +146,17 @@ impl crate::GlobalNamespace::GraphAPIClient {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResponse>>,
     >
     where
-        TRequest: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TRequest: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TResponse: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TResponse: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -181,11 +186,10 @@ impl crate::GlobalNamespace::GraphAPIClient {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<TResponse>,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (path, accessToken, request, postOptions, cancellationToken),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (path, accessToken, request, postOptions, cancellationToken),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -199,12 +203,14 @@ impl crate::GlobalNamespace::GraphAPIClient {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResponse>>,
     >
     where
-        TResponse: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TResponse: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -234,10 +240,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
             crate::System::Threading::Tasks::Task_1<TResponse>,
         > = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (uri, accessToken, httpContent, cancellationToken),
-                )?
+                .invoke_unchecked(self, (uri, accessToken, httpContent, cancellationToken))?
         };
         Ok(__cordl_ret.into())
     }
@@ -246,33 +249,26 @@ impl crate::GlobalNamespace::GraphAPIClient {
         graphUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         graphAccessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (graphUrl, graphAccessToken))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (graphUrl, graphAccessToken))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -286,16 +282,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GraphAPIClien
     }
 }
 #[cfg(feature = "cordl_class_GraphAPIClient+PostOptions")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GraphAPIClient_PostOptions {
     pub MaxRetries: i32,
     pub MinWaitTimeForRetryMs: i32,
     pub WithExponentialBackoff: bool,
 }
 #[cfg(feature = "cordl_class_GraphAPIClient+PostOptions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GraphAPIClient_PostOptions {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -314,18 +309,14 @@ for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_GraphAPIClient+PostOptions")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::GraphAPIClient_PostOptions {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -336,7 +327,8 @@ for crate::GlobalNamespace::GraphAPIClient_PostOptions {
 }
 #[cfg(feature = "cordl_class_GraphAPIClient+PostOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::GraphAPIClient_PostOptions {
+    for crate::GlobalNamespace::GraphAPIClient_PostOptions
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -349,23 +341,19 @@ for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     }
 }
 #[cfg(feature = "cordl_class_GraphAPIClient+PostOptions")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::GraphAPIClient_PostOptions {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_GraphAPIClient+PostOptions")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::GraphAPIClient_PostOptions {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -379,7 +367,8 @@ for crate::GlobalNamespace::GraphAPIClient_PostOptions {
 }
 #[cfg(feature = "cordl_class_GraphAPIClient+PostOptions")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::GraphAPIClient_PostOptions {
+    for crate::GlobalNamespace::GraphAPIClient_PostOptions
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

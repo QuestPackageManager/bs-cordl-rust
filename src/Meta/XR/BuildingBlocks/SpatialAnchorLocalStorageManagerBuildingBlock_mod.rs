@@ -1,25 +1,22 @@
-#[cfg(
-    feature = "cordl_class_Meta+XR+BuildingBlocks+SpatialAnchorLocalStorageManagerBuildingBlock"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+SpatialAnchorLocalStorageManagerBuildingBlock")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpatialAnchorLocalStorageManagerBuildingBlock {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _spatialAnchorCore: quest_hook::libil2cpp::Gc<
-        crate::Meta::XR::BuildingBlocks::SpatialAnchorCoreBuildingBlock,
-    >,
+    pub _spatialAnchorCore:
+        quest_hook::libil2cpp::Gc<crate::Meta::XR::BuildingBlocks::SpatialAnchorCoreBuildingBlock>,
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+BuildingBlocks+SpatialAnchorLocalStorageManagerBuildingBlock"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+SpatialAnchorLocalStorageManagerBuildingBlock")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::BuildingBlocks::SpatialAnchorLocalStorageManagerBuildingBlock {
+    for crate::Meta::XR::BuildingBlocks::SpatialAnchorLocalStorageManagerBuildingBlock
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Meta.XR.BuildingBlocks";
     const CLASS_NAME: &'static str = "SpatialAnchorLocalStorageManagerBuildingBlock";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -33,7 +30,8 @@ for crate::Meta::XR::BuildingBlocks::SpatialAnchorLocalStorageManagerBuildingBlo
 }
 #[cfg(feature = "Meta+XR+BuildingBlocks+SpatialAnchorLocalStorageManagerBuildingBlock")]
 impl std::ops::Deref
-for crate::Meta::XR::BuildingBlocks::SpatialAnchorLocalStorageManagerBuildingBlock {
+    for crate::Meta::XR::BuildingBlocks::SpatialAnchorLocalStorageManagerBuildingBlock
+{
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -41,7 +39,8 @@ for crate::Meta::XR::BuildingBlocks::SpatialAnchorLocalStorageManagerBuildingBlo
 }
 #[cfg(feature = "Meta+XR+BuildingBlocks+SpatialAnchorLocalStorageManagerBuildingBlock")]
 impl std::ops::DerefMut
-for crate::Meta::XR::BuildingBlocks::SpatialAnchorLocalStorageManagerBuildingBlock {
+    for crate::Meta::XR::BuildingBlocks::SpatialAnchorLocalStorageManagerBuildingBlock
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -55,58 +54,54 @@ impl crate::Meta::XR::BuildingBlocks::SpatialAnchorLocalStorageManagerBuildingBl
             crate::System::Collections::Generic::List_1<crate::System::Guid>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::System::Guid,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("GetAnchorAnchorUuidFromLocalStorage")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<crate::System::Guid>,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "GetAnchorAnchorUuidFromLocalStorage"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetAnchorAnchorUuidFromLocalStorage", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetAnchorAnchorUuidFromLocalStorage",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (uuids))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (uuids))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDestroy(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDestroy", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDestroy",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveAnchorFromLocalStorage(
@@ -114,52 +109,48 @@ impl crate::Meta::XR::BuildingBlocks::SpatialAnchorLocalStorageManagerBuildingBl
         anchor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpatialAnchor>,
         result: crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRSpatialAnchor,
-                            >,
-                            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("RemoveAnchorFromLocalStorage")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpatialAnchor>,
+                        crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "RemoveAnchorFromLocalStorage"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RemoveAnchorFromLocalStorage", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RemoveAnchorFromLocalStorage",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (anchor, result))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (anchor, result))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reset",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SaveAnchorUuidToLocalStorage(
@@ -167,81 +158,75 @@ impl crate::Meta::XR::BuildingBlocks::SpatialAnchorLocalStorageManagerBuildingBl
         anchor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpatialAnchor>,
         result: crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRSpatialAnchor,
-                            >,
-                            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SaveAnchorUuidToLocalStorage")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpatialAnchor>,
+                        crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "SaveAnchorUuidToLocalStorage"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SaveAnchorUuidToLocalStorage", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SaveAnchorUuidToLocalStorage",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (anchor, result))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (anchor, result))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Start",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+BuildingBlocks+SpatialAnchorLocalStorageManagerBuildingBlock"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+SpatialAnchorLocalStorageManagerBuildingBlock")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Meta::XR::BuildingBlocks::SpatialAnchorLocalStorageManagerBuildingBlock {
+    for crate::Meta::XR::BuildingBlocks::SpatialAnchorLocalStorageManagerBuildingBlock
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutDataAccess")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LayoutDataAccess {
     pub m_Manager: i32,
     pub m_Nodes: crate::UnityEngine::UIElements::Layout::LayoutDataStore,
@@ -8,7 +8,8 @@ pub struct LayoutDataAccess {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutDataAccess")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
+    for crate::UnityEngine::UIElements::Layout::LayoutDataAccess
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Layout";
@@ -27,18 +28,16 @@ for crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutDataAccess")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
+    for crate::UnityEngine::UIElements::Layout::LayoutDataAccess
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -49,7 +48,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutDataAccess")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
+    for crate::UnityEngine::UIElements::Layout::LayoutDataAccess
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -63,22 +63,22 @@ for crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutDataAccess")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
+    for crate::UnityEngine::UIElements::Layout::LayoutDataAccess
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutDataAccess")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
+    for crate::UnityEngine::UIElements::Layout::LayoutDataAccess
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -92,7 +92,8 @@ for crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutDataAccess")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
+    for crate::UnityEngine::UIElements::Layout::LayoutDataAccess
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -107,13 +108,12 @@ impl crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
         &mut self,
         handle: crate::UnityEngine::UIElements::Layout::LayoutHandle,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Layout::LayoutBaselineFunction,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Layout::LayoutBaselineFunction>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::Layout::LayoutHandle),
@@ -139,13 +139,12 @@ impl crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
         &mut self,
         handle: crate::UnityEngine::UIElements::Layout::LayoutHandle,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::Layout::LayoutComputedData,
-        >,
+        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Layout::LayoutComputedData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::Layout::LayoutHandle),
@@ -171,13 +170,12 @@ impl crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
         &mut self,
         handle: crate::UnityEngine::UIElements::Layout::LayoutHandle,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::Layout::LayoutConfigData,
-        >,
+        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Layout::LayoutConfigData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::Layout::LayoutHandle),
@@ -203,13 +201,12 @@ impl crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
         &mut self,
         handle: crate::UnityEngine::UIElements::Layout::LayoutHandle,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Layout::LayoutMeasureFunction,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Layout::LayoutMeasureFunction>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::Layout::LayoutHandle),
@@ -235,13 +232,12 @@ impl crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
         &mut self,
         handle: crate::UnityEngine::UIElements::Layout::LayoutHandle,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::Layout::LayoutNodeData,
-        >,
+        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Layout::LayoutNodeData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::Layout::LayoutHandle),
@@ -269,9 +265,10 @@ impl crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::Layout::LayoutHandle),
@@ -288,22 +285,20 @@ impl crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (handle))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStyleData(
         &mut self,
         handle: crate::UnityEngine::UIElements::Layout::LayoutHandle,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::Layout::LayoutStyleData,
-        >,
+        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Layout::LayoutStyleData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::Layout::LayoutHandle),
@@ -331,32 +326,32 @@ impl crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
         _cordl_type: crate::UnityEngine::UIElements::Layout::LayoutConfigDataType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::Layout::LayoutHandle,
-                            crate::UnityEngine::UIElements::Layout::LayoutConfigDataType,
-                        ),
-                        quest_hook::libil2cpp::ByRefMut<T>,
-                        2usize,
-                    >("GetTypedConfigDataRef")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::Layout::LayoutHandle,
+                        crate::UnityEngine::UIElements::Layout::LayoutConfigDataType,
+                    ), quest_hook::libil2cpp::ByRefMut<T>, 2usize>(
+                        "GetTypedConfigDataRef"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTypedConfigDataRef", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetTypedConfigDataRef",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handle, _cordl_type))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (handle, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTypedNodeDataRef<T>(
@@ -365,32 +360,32 @@ impl crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
         _cordl_type: crate::UnityEngine::UIElements::Layout::LayoutNodeDataType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::Layout::LayoutHandle,
-                            crate::UnityEngine::UIElements::Layout::LayoutNodeDataType,
-                        ),
-                        quest_hook::libil2cpp::ByRefMut<T>,
-                        2usize,
-                    >("GetTypedNodeDataRef")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::Layout::LayoutHandle,
+                        crate::UnityEngine::UIElements::Layout::LayoutNodeDataType,
+                    ), quest_hook::libil2cpp::ByRefMut<T>, 2usize>(
+                        "GetTypedNodeDataRef"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTypedNodeDataRef", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetTypedNodeDataRef",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handle, _cordl_type))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (handle, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetMeasureFunction(
@@ -400,31 +395,28 @@ impl crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
             crate::UnityEngine::UIElements::Layout::LayoutMeasureFunction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::Layout::LayoutHandle,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::Layout::LayoutMeasureFunction,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetMeasureFunction")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::Layout::LayoutHandle,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::Layout::LayoutMeasureFunction,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SetMeasureFunction")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetMeasureFunction", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetMeasureFunction",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handle, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (handle, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetOwner(
@@ -432,31 +424,26 @@ impl crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
         handle: crate::UnityEngine::UIElements::Layout::LayoutHandle,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::Layout::LayoutHandle,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetOwner")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::Layout::LayoutHandle,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SetOwner")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetOwner", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetOwner",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handle, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (handle, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -465,43 +452,42 @@ impl crate::UnityEngine::UIElements::Layout::LayoutDataAccess {
         nodes: crate::UnityEngine::UIElements::Layout::LayoutDataStore,
         configs: crate::UnityEngine::UIElements::Layout::LayoutDataStore,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            crate::UnityEngine::UIElements::Layout::LayoutDataStore,
-                            crate::UnityEngine::UIElements::Layout::LayoutDataStore,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        crate::UnityEngine::UIElements::Layout::LayoutDataStore,
+                        crate::UnityEngine::UIElements::Layout::LayoutDataStore,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (manager, nodes, configs))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (manager, nodes, configs))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsValid", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsValid",
+                            0usize
                         )
                     })
             });

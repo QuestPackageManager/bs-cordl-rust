@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+NetworkInterfaceComponent")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum NetworkInterfaceComponent {
     #[default]
     IPv4 = 0i32,
@@ -8,7 +8,8 @@ pub enum NetworkInterfaceComponent {
 }
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+NetworkInterfaceComponent")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Net::NetworkInformation::NetworkInterfaceComponent {
+    for crate::System::Net::NetworkInformation::NetworkInterfaceComponent
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net.NetworkInformation";
@@ -27,18 +28,16 @@ for crate::System::Net::NetworkInformation::NetworkInterfaceComponent {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+NetworkInterfaceComponent")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Net::NetworkInformation::NetworkInterfaceComponent {
+    for crate::System::Net::NetworkInformation::NetworkInterfaceComponent
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -49,7 +48,8 @@ for crate::System::Net::NetworkInformation::NetworkInterfaceComponent {
 }
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+NetworkInterfaceComponent")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Net::NetworkInformation::NetworkInterfaceComponent {
+    for crate::System::Net::NetworkInformation::NetworkInterfaceComponent
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -63,22 +63,22 @@ for crate::System::Net::NetworkInformation::NetworkInterfaceComponent {
 }
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+NetworkInterfaceComponent")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Net::NetworkInformation::NetworkInterfaceComponent {
+    for crate::System::Net::NetworkInformation::NetworkInterfaceComponent
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+NetworkInterfaceComponent")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Net::NetworkInformation::NetworkInterfaceComponent {
+    for crate::System::Net::NetworkInformation::NetworkInterfaceComponent
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

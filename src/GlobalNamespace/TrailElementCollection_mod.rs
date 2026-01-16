@@ -13,14 +13,14 @@ pub struct TrailElementCollection {
     pub _totalDistance: f32,
 }
 #[cfg(feature = "cordl_class_TrailElementCollection")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::TrailElementCollection {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TrailElementCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "TrailElementCollection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -55,9 +55,10 @@ impl crate::GlobalNamespace::TrailElementCollection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TrailElement>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -72,9 +73,8 @@ impl crate::GlobalNamespace::TrailElementCollection {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::TrailElement,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TrailElement> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn InitSnapshots(
@@ -83,29 +83,30 @@ impl crate::GlobalNamespace::TrailElementCollection {
         defaultEndPosition: crate::UnityEngine::Vector3,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, f32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("InitSnapshots")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("InitSnapshots")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InitSnapshots", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InitSnapshots",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (defaultStartPosition, defaultEndPosition, _cordl_time),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (defaultStartPosition, defaultEndPosition, _cordl_time),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -119,28 +120,26 @@ impl crate::GlobalNamespace::TrailElementCollection {
         normal: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         _cordl_time: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::TrailElementCollection_InterpolationState,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Interpolate")
+                    .find_method::<(
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::TrailElementCollection_InterpolationState,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Interpolate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Interpolate", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Interpolate",
+                            5usize
                         )
                     })
             });
@@ -150,29 +149,24 @@ impl crate::GlobalNamespace::TrailElementCollection {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn MoveTailToHead(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn MoveTailToHead(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("MoveTailToHead")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("MoveTailToHead")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MoveTailToHead", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MoveTailToHead",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -181,13 +175,17 @@ impl crate::GlobalNamespace::TrailElementCollection {
         defaultEndPosition: crate::UnityEngine::Vector3,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (capacity, defaultStartPosition, defaultEndPosition, _cordl_time),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                capacity,
+                defaultStartPosition,
+                defaultEndPosition,
+                _cordl_time,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn SetHeadData(
@@ -196,51 +194,49 @@ impl crate::GlobalNamespace::TrailElementCollection {
         end: crate::UnityEngine::Vector3,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, f32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("SetHeadData")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("SetHeadData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetHeadData", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetHeadData",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (start, end, _cordl_time))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (start, end, _cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateDistances(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("UpdateDistances")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdateDistances")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateDistances", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateDistances",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateLerpState(
@@ -250,31 +246,28 @@ impl crate::GlobalNamespace::TrailElementCollection {
             crate::GlobalNamespace::TrailElementCollection_InterpolationState,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::TrailElementCollection_InterpolationState,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateLerpState")
+                    .find_method::<(
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::TrailElementCollection_InterpolationState,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UpdateLerpState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateLerpState", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateLerpState",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (t, interpolationState))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (t, interpolationState))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -284,41 +277,42 @@ impl crate::GlobalNamespace::TrailElementCollection {
         defaultEndPosition: crate::UnityEngine::Vector3,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (capacity, defaultStartPosition, defaultEndPosition, _cordl_time),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    capacity,
+                    defaultStartPosition,
+                    defaultEndPosition,
+                    _cordl_time,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_TrailElementCollection")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::TrailElementCollection {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TrailElementCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -327,15 +321,16 @@ for crate::GlobalNamespace::TrailElementCollection {
     }
 }
 #[cfg(feature = "cordl_class_TrailElementCollection+InterpolationState")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TrailElementCollection_InterpolationState {
     pub segmentIndex: i32,
     pub segmentLerp: f32,
 }
 #[cfg(feature = "cordl_class_TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
+    for crate::GlobalNamespace::TrailElementCollection_InterpolationState
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -354,18 +349,16 @@ for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
+    for crate::GlobalNamespace::TrailElementCollection_InterpolationState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -376,7 +369,8 @@ for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
 }
 #[cfg(feature = "cordl_class_TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
+    for crate::GlobalNamespace::TrailElementCollection_InterpolationState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -390,22 +384,22 @@ for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
 }
 #[cfg(feature = "cordl_class_TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
+    for crate::GlobalNamespace::TrailElementCollection_InterpolationState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
+    for crate::GlobalNamespace::TrailElementCollection_InterpolationState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -419,7 +413,8 @@ for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
 }
 #[cfg(feature = "cordl_class_TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
+    for crate::GlobalNamespace::TrailElementCollection_InterpolationState
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

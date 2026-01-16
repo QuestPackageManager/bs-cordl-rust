@@ -10,13 +10,15 @@ pub struct URPShaderStrippingSetting {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+URPShaderStrippingSetting")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting {
+    for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
     const CLASS_NAME: &'static str = "URPShaderStrippingSetting";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -29,16 +31,14 @@ for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+URPShaderStrippingSetting")]
-impl std::ops::Deref
-for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting {
+impl std::ops::Deref for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+URPShaderStrippingSetting")]
-impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting {
+impl std::ops::DerefMut for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -48,73 +48,64 @@ impl crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting {
     #[cfg(feature = "UnityEngine+Rendering+Universal+URPShaderStrippingSetting+Version")]
     pub type Version = crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting_Version;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_stripScreenCoordOverrideVariants(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_stripScreenCoordOverrideVariants(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        bool,
-                        0usize,
-                    >("get_stripScreenCoordOverrideVariants")
+                    .find_method::<(), bool, 0usize>("get_stripScreenCoordOverrideVariants")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_stripScreenCoordOverrideVariants", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_stripScreenCoordOverrideVariants",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_stripUnusedPostProcessingVariants(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_stripUnusedPostProcessingVariants(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        bool,
-                        0usize,
-                    >("get_stripUnusedPostProcessingVariants")
+                    .find_method::<(), bool, 0usize>("get_stripUnusedPostProcessingVariants")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_stripUnusedPostProcessingVariants", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_stripUnusedPostProcessingVariants",
+                            0usize
                         )
                     })
             });
@@ -122,16 +113,18 @@ impl crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting {
         Ok(__cordl_ret.into())
     }
     pub fn get_stripUnusedVariants(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_stripUnusedVariants")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_stripUnusedVariants", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_stripUnusedVariants",
+                            0usize
                         )
                     })
             });
@@ -139,16 +132,18 @@ impl crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting {
         Ok(__cordl_ret.into())
     }
     pub fn get_version(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_version")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_version", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_version",
+                            0usize
                         )
                     })
             });
@@ -159,84 +154,82 @@ impl crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_stripScreenCoordOverrideVariants")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_stripScreenCoordOverrideVariants",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_stripScreenCoordOverrideVariants", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_stripScreenCoordOverrideVariants",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_stripUnusedPostProcessingVariants(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_stripUnusedPostProcessingVariants")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_stripUnusedPostProcessingVariants",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_stripUnusedPostProcessingVariants", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_stripUnusedPostProcessingVariants",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_stripUnusedVariants(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_stripUnusedVariants")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_stripUnusedVariants",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_stripUnusedVariants", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_stripUnusedVariants",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+URPShaderStrippingSetting")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting {
+    for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -246,34 +239,31 @@ for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting {
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+URPShaderStrippingSetting")]
 impl AsRef<crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings>
-for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting {
+    for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting
+{
     fn as_ref(&self) -> &crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+URPShaderStrippingSetting")]
 impl AsMut<crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings>
-for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings {
+    for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting
+{
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+URPShaderStrippingSetting+Version"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+URPShaderStrippingSetting+Version")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum URPShaderStrippingSetting_Version {
     #[default]
     Initial = 0i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+URPShaderStrippingSetting+Version"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+URPShaderStrippingSetting+Version")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting_Version {
+    for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting_Version
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
@@ -292,20 +282,16 @@ for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting_Version 
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+URPShaderStrippingSetting+Version"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+URPShaderStrippingSetting+Version")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting_Version {
+    for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting_Version
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -314,11 +300,10 @@ for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting_Version 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+URPShaderStrippingSetting+Version"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+URPShaderStrippingSetting+Version")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting_Version {
+    for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting_Version
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -330,28 +315,24 @@ for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting_Version 
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+URPShaderStrippingSetting+Version"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+URPShaderStrippingSetting+Version")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting_Version {
+    for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting_Version
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+URPShaderStrippingSetting+Version"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+URPShaderStrippingSetting+Version")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting_Version {
+    for crate::UnityEngine::Rendering::Universal::URPShaderStrippingSetting_Version
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

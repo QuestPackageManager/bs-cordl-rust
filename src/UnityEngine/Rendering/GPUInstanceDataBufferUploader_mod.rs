@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GPUInstanceDataBufferUploader {
     pub m_UintPerInstance: i32,
     pub m_Capacity: i32,
@@ -14,7 +14,8 @@ pub struct GPUInstanceDataBufferUploader {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -33,18 +34,16 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -55,7 +54,8 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -69,22 +69,22 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -98,7 +98,8 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -110,124 +111,121 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
 #[cfg(feature = "UnityEngine+Rendering+GPUInstanceDataBufferUploader")]
 impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
     #[cfg(feature = "UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources")]
-    pub type GPUResources = crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources;
-    #[cfg(
-        feature = "UnityEngine+Rendering+GPUInstanceDataBufferUploader+UploadKernelIDs"
-    )]
-    pub type UploadKernelIDs = crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_UploadKernelIDs;
+    pub type GPUResources =
+        crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources;
+    #[cfg(feature = "UnityEngine+Rendering+GPUInstanceDataBufferUploader+UploadKernelIDs")]
+    pub type UploadKernelIDs =
+        crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_UploadKernelIDs;
     #[cfg(
         feature = "UnityEngine+Rendering+GPUInstanceDataBufferUploader+WriteInstanceDataParameterJob"
     )]
-    pub type WriteInstanceDataParameterJob = crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob;
+    pub type WriteInstanceDataParameterJob =
+        crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob;
     pub fn AllocateUploadHandles(
         &mut self,
         handlesLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("AllocateUploadHandles")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "AllocateUploadHandles",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AllocateUploadHandles", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AllocateUploadHandles",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handlesLength))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (handlesLength))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetParamUIntOffset(
         &mut self,
         parameterIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("GetParamUIntOffset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetParamUIntOffset", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetParamUIntOffset",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (parameterIndex))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (parameterIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUIntPerInstance(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetUIntPerInstance")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetUIntPerInstance", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetUIntPerInstance",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetUploadBufferPtr(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetUploadBufferPtr(&mut self) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::System::IntPtr,
-                        0usize,
-                    >("GetUploadBufferPtr")
+                    .find_method::<(), crate::System::IntPtr, 0usize>("GetUploadBufferPtr")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetUploadBufferPtr", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetUploadBufferPtr",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::IntPtr = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::IntPtr =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn PrepareParamWrite<T>(
@@ -235,25 +233,27 @@ impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
         parameterIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("PrepareParamWrite")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PrepareParamWrite", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PrepareParamWrite",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (parameterIndex))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (parameterIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn SubmitToGpu_GPUInstanceDataBuffer_NativeArray_1_ByRefMut__cordl_bool0(
@@ -269,7 +269,8 @@ impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
         >,
         submitOnlyWrittenParams: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -298,16 +299,15 @@ impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        instanceDataBuffer,
-                        gpuInstanceIndices,
-                        gpuResources,
-                        submitOnlyWrittenParams,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    instanceDataBuffer,
+                    gpuInstanceIndices,
+                    gpuResources,
+                    submitOnlyWrittenParams,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -324,7 +324,8 @@ impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
         >,
         submitOnlyWrittenParams: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -353,16 +354,15 @@ impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        instanceDataBuffer,
-                        instances,
-                        gpuResources,
-                        submitOnlyWrittenParams,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    instanceDataBuffer,
+                    instances,
+                    gpuResources,
+                    submitOnlyWrittenParams,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -373,27 +373,28 @@ impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
         gatherIndices: crate::Unity::Collections::NativeArray_1<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            crate::Unity::Collections::NativeArray_1<T>,
-                            crate::Unity::Collections::NativeArray_1<i32>,
-                        ),
-                        crate::Unity::Jobs::JobHandle,
-                        3usize,
-                    >("WriteInstanceDataJob")
+                    .find_method::<(
+                        i32,
+                        crate::Unity::Collections::NativeArray_1<T>,
+                        crate::Unity::Collections::NativeArray_1<i32>,
+                    ), crate::Unity::Jobs::JobHandle, 3usize>(
+                        "WriteInstanceDataJob"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteInstanceDataJob", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteInstanceDataJob",
+                            3usize
                         )
                     })
             });
@@ -409,12 +410,14 @@ impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
         instanceData: crate::Unity::Collections::NativeArray_1<T>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::Unity::Collections::NativeArray_1<T>),
@@ -429,9 +432,8 @@ impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
-            cordl_method_info.invoke_unchecked(self, (parameterIndex, instanceData))?
-        };
+        let __cordl_ret: crate::Unity::Jobs::JobHandle =
+            unsafe { cordl_method_info.invoke_unchecked(self, (parameterIndex, instanceData))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -444,66 +446,59 @@ impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
         capacity: i32,
         instanceType: crate::UnityEngine::Rendering::InstanceType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeArray_1<
-                                    crate::UnityEngine::Rendering::GPUInstanceComponentDesc,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeArray_1<
+                                crate::UnityEngine::Rendering::GPUInstanceComponentDesc,
                             >,
-                            i32,
-                            crate::UnityEngine::Rendering::InstanceType,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                        >,
+                        i32,
+                        crate::UnityEngine::Rendering::InstanceType,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (descriptions, capacity, instanceType))?
+            cordl_method_info.invoke_unchecked(self, (descriptions, capacity, instanceType))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+GPUInstanceDataBufferUploader")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+GPUInstanceDataBufferUploader")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GPUInstanceDataBufferUploader_GPUResources {
     pub instanceData: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
     pub instanceIndices: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
-    pub inputComponentOffsets: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ComputeBuffer,
-    >,
-    pub validComponentIndices: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ComputeBuffer,
-    >,
+    pub inputComponentOffsets: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
+    pub validComponentIndices: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
     pub cs: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,
     pub kernelId: i32,
     pub m_InstanceDataByteSize: i32,
@@ -511,11 +506,10 @@ pub struct GPUInstanceDataBufferUploader_GPUResources {
     pub m_ComponentCounts: i32,
     pub m_ValidComponentIndicesCount: i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -534,20 +528,16 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -556,11 +546,10 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -572,28 +561,24 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -605,11 +590,10 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -627,56 +611,54 @@ impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources {
         newComponentCounts: i32,
         validComponentIndicesCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("CreateResources")
+                    .find_method::<(i32, i32, i32, i32), quest_hook::libil2cpp::Void, 4usize>(
+                        "CreateResources",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateResources", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateResources",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        newInstanceCount,
-                        sizePerInstance,
-                        newComponentCounts,
-                        validComponentIndicesCount,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    newInstanceCount,
+                    sizePerInstance,
+                    newComponentCounts,
+                    validComponentIndicesCount,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadShaders(
@@ -685,64 +667,61 @@ impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources {
             crate::UnityEngine::Rendering::GPUResidentDrawerResources,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::GPUResidentDrawerResources,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("LoadShaders")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Rendering::GPUResidentDrawerResources,
+                    >), quest_hook::libil2cpp::Void, 1usize>("LoadShaders")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LoadShaders", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LoadShaders",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (resources))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (resources))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_GPUResources
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+UploadKernelIDs"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+UploadKernelIDs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GPUInstanceDataBufferUploader_UploadKernelIDs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+UploadKernelIDs"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+UploadKernelIDs")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_UploadKernelIDs {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_UploadKernelIDs
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "GPUInstanceDataBufferUploader/UploadKernelIDs";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -756,7 +735,8 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_UploadKernelIDs
 }
 #[cfg(feature = "UnityEngine+Rendering+GPUInstanceDataBufferUploader+UploadKernelIDs")]
 impl std::ops::Deref
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_UploadKernelIDs {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_UploadKernelIDs
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -764,18 +744,18 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_UploadKernelIDs
 }
 #[cfg(feature = "UnityEngine+Rendering+GPUInstanceDataBufferUploader+UploadKernelIDs")]
 impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_UploadKernelIDs {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_UploadKernelIDs
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+GPUInstanceDataBufferUploader+UploadKernelIDs")]
 impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_UploadKernelIDs {}
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+UploadKernelIDs"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+UploadKernelIDs")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_UploadKernelIDs {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_UploadKernelIDs
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -786,8 +766,8 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_UploadKernelIDs
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+WriteInstanceDataParameterJob"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob {
     pub gatherData: bool,
     pub parameterIndex: i32,
@@ -802,7 +782,8 @@ pub struct GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob {
     feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+WriteInstanceDataParameterJob"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -821,20 +802,18 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDa
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+WriteInstanceDataParameterJob"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -847,7 +826,8 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDa
     feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+WriteInstanceDataParameterJob"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -863,16 +843,15 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDa
     feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+WriteInstanceDataParameterJob"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -880,7 +859,8 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDa
     feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+WriteInstanceDataParameterJob"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -896,7 +876,8 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDa
     feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+WriteInstanceDataParameterJob"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -914,22 +895,23 @@ impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceD
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -937,7 +919,8 @@ impl crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceD
     feature = "UnityEngine+Rendering+GPUInstanceDataBufferUploader+WriteInstanceDataParameterJob"
 )]
 impl AsRef<crate::Unity::Jobs::IJobParallelFor>
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob
+{
     fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }
@@ -946,7 +929,8 @@ for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDa
     feature = "UnityEngine+Rendering+GPUInstanceDataBufferUploader+WriteInstanceDataParameterJob"
 )]
 impl AsMut<crate::Unity::Jobs::IJobParallelFor>
-for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob {
+    for crate::UnityEngine::Rendering::GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }

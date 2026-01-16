@@ -5,14 +5,14 @@ pub struct StpUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+StpUtils")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::StpUtils {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Universal::StpUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
     const CLASS_NAME: &'static str = "StpUtils";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,30 +44,27 @@ impl crate::UnityEngine::Rendering::Universal::StpUtils {
         jitter: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
         allowScaling: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
-                            quest_hook::libil2cpp::ByRefMut<bool>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CalculateJitter")
+                    .find_static_method::<(
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+                        quest_hook::libil2cpp::ByRefMut<bool>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("CalculateJitter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculateJitter", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CalculateJitter",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (frameIndex, jitter, allowScaling))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (frameIndex, jitter, allowScaling))? };
         Ok(__cordl_ret.into())
     }
     pub fn Execute(
@@ -86,53 +83,50 @@ impl crate::UnityEngine::Rendering::Universal::StpUtils {
         destination: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
         noiseTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::Universal::UniversalResourceData,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::Universal::UniversalCameraData,
-                            >,
-                            crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
-                            crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
-                            crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
-                            crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        8usize,
-                    >("Execute")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::Universal::UniversalResourceData,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::Universal::UniversalCameraData,
+                        >,
+                        crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
+                        crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
+                        crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
+                        crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                    ), quest_hook::libil2cpp::Void, 8usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             8usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        renderGraph,
-                        resourceData,
-                        cameraData,
-                        inputColor,
-                        inputDepth,
-                        inputMotion,
-                        destination,
-                        noiseTexture,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    renderGraph,
+                    resourceData,
+                    cameraData,
+                    inputColor,
+                    inputDepth,
+                    inputMotion,
+                    destination,
+                    noiseTexture,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -147,64 +141,56 @@ impl crate::UnityEngine::Rendering::Universal::StpUtils {
         debugView: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
         destination: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
         noiseTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-        config: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Rendering::STP_Config,
-        >,
+        config: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rendering::STP_Config>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::Universal::UniversalCameraData,
-                            >,
-                            crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
-                            crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
-                            crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
-                            i32,
-                            crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
-                            crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::STP_Config,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        9usize,
-                    >("PopulateStpConfig")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::Universal::UniversalCameraData,
+                        >,
+                        crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
+                        crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
+                        crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
+                        i32,
+                        crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
+                        crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rendering::STP_Config>,
+                    ), quest_hook::libil2cpp::Void, 9usize>("PopulateStpConfig")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PopulateStpConfig", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PopulateStpConfig",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        cameraData,
-                        inputColor,
-                        inputDepth,
-                        inputMotion,
-                        debugViewIndex,
-                        debugView,
-                        destination,
-                        noiseTexture,
-                        config,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    cameraData,
+                    inputColor,
+                    inputDepth,
+                    inputMotion,
+                    debugViewIndex,
+                    debugView,
+                    destination,
+                    noiseTexture,
+                    config,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+StpUtils")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::Universal::StpUtils {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Universal::StpUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

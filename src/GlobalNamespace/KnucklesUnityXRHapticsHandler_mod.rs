@@ -10,14 +10,14 @@ pub struct KnucklesUnityXRHapticsHandler {
     pub _amplitude: f32,
 }
 #[cfg(feature = "cordl_class_KnucklesUnityXRHapticsHandler")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "KnucklesUnityXRHapticsHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,25 +45,24 @@ impl std::ops::DerefMut for crate::GlobalNamespace::KnucklesUnityXRHapticsHandle
 #[cfg(feature = "KnucklesUnityXRHapticsHandler")]
 impl crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
     pub const kRate: f32 = 0.0125f32;
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HapticsCoroutine(
@@ -71,9 +70,10 @@ impl crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -90,44 +90,38 @@ impl crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEnumerator,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         node: crate::UnityEngine::XR::XRNode,
         coroutineRunner: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (node, coroutineRunner))?;
         Ok(__cordl_object.into())
     }
-    pub fn StopHaptics(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn StopHaptics(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("StopHaptics")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("StopHaptics")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StopHaptics", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "StopHaptics",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn TriggerHapticPulse(
@@ -135,26 +129,25 @@ impl crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
         strength: f32,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32, f32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("TriggerHapticPulse")
+                    .find_method::<(f32, f32), quest_hook::libil2cpp::Void, 2usize>(
+                        "TriggerHapticPulse",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TriggerHapticPulse", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TriggerHapticPulse",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (strength, duration))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (strength, duration))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -162,35 +155,31 @@ impl crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
         node: crate::UnityEngine::XR::XRNode,
         coroutineRunner: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::XR::XRNode,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::UnityEngine::XR::XRNode,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (node, coroutineRunner))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (node, coroutineRunner))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_KnucklesUnityXRHapticsHandler")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -200,28 +189,28 @@ for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
 }
 #[cfg(feature = "KnucklesUnityXRHapticsHandler")]
 impl AsRef<crate::GlobalNamespace::IUnityXRHapticsHandler>
-for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
+    for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IUnityXRHapticsHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "KnucklesUnityXRHapticsHandler")]
 impl AsMut<crate::GlobalNamespace::IUnityXRHapticsHandler>
-for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
+    for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IUnityXRHapticsHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "KnucklesUnityXRHapticsHandler")]
-impl AsRef<crate::System::IDisposable>
-for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "KnucklesUnityXRHapticsHandler")]
-impl AsMut<crate::System::IDisposable>
-for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }

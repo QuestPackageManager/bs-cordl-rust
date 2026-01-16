@@ -5,14 +5,14 @@ pub struct KeyframeUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+KeyframeUtility")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::KeyframeUtility {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::KeyframeUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "KeyframeUtility";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,26 +46,26 @@ impl crate::UnityEngine::Rendering::KeyframeUtility {
         rhsKey: crate::UnityEngine::Keyframe,
         desiredTime: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                            crate::UnityEngine::Keyframe,
-                            crate::UnityEngine::Keyframe,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("EvalCurveSegmentAndDeriv")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                        crate::UnityEngine::Keyframe,
+                        crate::UnityEngine::Keyframe,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "EvalCurveSegmentAndDeriv"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EvalCurveSegmentAndDeriv", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EvalCurveSegmentAndDeriv",
+                            5usize
                         )
                     })
             });
@@ -83,38 +83,31 @@ impl crate::UnityEngine::Rendering::KeyframeUtility {
         endTime: f32,
         currTime: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Keyframe> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::NativeArray_1<
-                                crate::UnityEngine::Keyframe,
-                            >,
-                            i32,
-                            i32,
-                            f32,
-                            f32,
-                            f32,
-                        ),
-                        crate::UnityEngine::Keyframe,
-                        6usize,
-                    >("EvalKeyAtTime")
+                    .find_static_method::<(
+                        crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Keyframe>,
+                        i32,
+                        i32,
+                        f32,
+                        f32,
+                        f32,
+                    ), crate::UnityEngine::Keyframe, 6usize>("EvalKeyAtTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EvalKeyAtTime", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EvalKeyAtTime",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::Keyframe = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (keys, lhsIndex, rhsIndex, startTime, endTime, currTime),
-                )?
+                .invoke_unchecked((), (keys, lhsIndex, rhsIndex, startTime, endTime, currTime))?
         };
         Ok(__cordl_ret.into())
     }
@@ -124,27 +117,25 @@ impl crate::UnityEngine::Rendering::KeyframeUtility {
         segmentStartTime: f32,
         segmentEndTime: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Keyframe> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::NativeArray_1<
-                                crate::UnityEngine::Keyframe,
-                            >,
-                            i32,
-                            f32,
-                            f32,
-                        ),
-                        crate::UnityEngine::Keyframe,
-                        4usize,
-                    >("FetchKeyFromIndexClampEdge")
+                    .find_static_method::<(
+                        crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Keyframe>,
+                        i32,
+                        f32,
+                        f32,
+                    ), crate::UnityEngine::Keyframe, 4usize>(
+                        "FetchKeyFromIndexClampEdge"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FetchKeyFromIndexClampEdge", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FetchKeyFromIndexClampEdge",
+                            4usize
                         )
                     })
             });
@@ -158,31 +149,28 @@ impl crate::UnityEngine::Rendering::KeyframeUtility {
         keys: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Keyframe>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Keyframe> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::NativeArray_1<
-                                crate::UnityEngine::Keyframe,
-                            >,
-                            i32,
-                        ),
-                        crate::UnityEngine::Keyframe,
-                        2usize,
-                    >("GetKeyframeAndClampEdge")
+                    .find_static_method::<(
+                        crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Keyframe>,
+                        i32,
+                    ), crate::UnityEngine::Keyframe, 2usize>(
+                        "GetKeyframeAndClampEdge"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetKeyframeAndClampEdge", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetKeyframeAndClampEdge",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Keyframe = unsafe {
-            cordl_method_info.invoke_unchecked((), (keys, index))?
-        };
+        let __cordl_ret: crate::UnityEngine::Keyframe =
+            unsafe { cordl_method_info.invoke_unchecked((), (keys, index))? };
         Ok(__cordl_ret.into())
     }
     pub fn InterpAnimationCurve(
@@ -192,36 +180,31 @@ impl crate::UnityEngine::Rendering::KeyframeUtility {
         rhsCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::AnimationCurve,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::AnimationCurve,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("InterpAnimationCurve")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "InterpAnimationCurve"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InterpAnimationCurve", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InterpAnimationCurve",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhsAndResultCurve, rhsCurve, t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (lhsAndResultCurve, rhsCurve, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn LerpSingleKeyframe(
@@ -229,35 +212,34 @@ impl crate::UnityEngine::Rendering::KeyframeUtility {
         rhs: crate::UnityEngine::Keyframe,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Keyframe> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Keyframe,
-                            crate::UnityEngine::Keyframe,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::UnityEngine::Keyframe,
-                        3usize,
-                    >("LerpSingleKeyframe")
+                        crate::UnityEngine::Keyframe,
+                        f32,
+                    ), crate::UnityEngine::Keyframe, 3usize>(
+                        "LerpSingleKeyframe"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LerpSingleKeyframe", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LerpSingleKeyframe",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Keyframe = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs, t))?
-        };
+        let __cordl_ret: crate::UnityEngine::Keyframe =
+            unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -265,9 +247,10 @@ impl crate::UnityEngine::Rendering::KeyframeUtility {
     pub fn ResetAnimationCurve(
         curve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>),
@@ -282,36 +265,33 @@ impl crate::UnityEngine::Rendering::KeyframeUtility {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (curve))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (curve))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+KeyframeUtility")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::KeyframeUtility {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::KeyframeUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

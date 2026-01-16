@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Interface+MonoSslPolicyErrors")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum MonoSslPolicyErrors {
     #[default]
     None = 0i32,
@@ -9,8 +9,7 @@ pub enum MonoSslPolicyErrors {
     RemoteCertificateNotAvailable = 1i32,
 }
 #[cfg(feature = "cordl_class_Mono+Security+Interface+MonoSslPolicyErrors")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Mono::Security::Interface::MonoSslPolicyErrors {
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::Interface::MonoSslPolicyErrors {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Security.Interface";
@@ -29,18 +28,16 @@ for crate::Mono::Security::Interface::MonoSslPolicyErrors {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Mono+Security+Interface+MonoSslPolicyErrors")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Mono::Security::Interface::MonoSslPolicyErrors {
+    for crate::Mono::Security::Interface::MonoSslPolicyErrors
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -51,7 +48,8 @@ for crate::Mono::Security::Interface::MonoSslPolicyErrors {
 }
 #[cfg(feature = "cordl_class_Mono+Security+Interface+MonoSslPolicyErrors")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Mono::Security::Interface::MonoSslPolicyErrors {
+    for crate::Mono::Security::Interface::MonoSslPolicyErrors
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -65,22 +63,22 @@ for crate::Mono::Security::Interface::MonoSslPolicyErrors {
 }
 #[cfg(feature = "cordl_class_Mono+Security+Interface+MonoSslPolicyErrors")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Mono::Security::Interface::MonoSslPolicyErrors {
+    for crate::Mono::Security::Interface::MonoSslPolicyErrors
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Mono+Security+Interface+MonoSslPolicyErrors")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Mono::Security::Interface::MonoSslPolicyErrors {
+    for crate::Mono::Security::Interface::MonoSslPolicyErrors
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

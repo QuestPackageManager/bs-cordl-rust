@@ -1,6 +1,4 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerEditorConnectionEvents {
@@ -27,17 +25,17 @@ pub struct PlayerEditorConnectionEvents {
         crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_ConnectionChangeEvent,
     >,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents {
+    for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Networking.PlayerConnection";
     const CLASS_NAME: &'static str = "PlayerEditorConnectionEvents";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -51,7 +49,8 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
 }
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
 impl std::ops::Deref
-for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents {
+    for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -59,7 +58,8 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
 }
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
 impl std::ops::DerefMut
-for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents {
+    for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -73,7 +73,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
     #[cfg(
         feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
     )]
-    pub type MessageEvent = crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent;
+    pub type MessageEvent =
+        crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent;
     #[cfg(
         feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
     )]
@@ -90,26 +91,24 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::System::Guid),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Events::UnityEvent_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
-                                >,
+                    .find_method::<(crate::System::Guid), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Events::UnityEvent_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
                             >,
                         >,
-                        1usize,
-                    >("AddAndCreate")
+                    >, 1usize>("AddAndCreate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddAndCreate", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddAndCreate",
+                            1usize
                         )
                     })
             });
@@ -122,29 +121,24 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         > = unsafe { cordl_method_info.invoke_unchecked(self, (messageId))? };
         Ok(__cordl_ret.into())
     }
-    pub fn BuildLookup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn BuildLookup(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("BuildLookup")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("BuildLookup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BuildLookup", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BuildLookup",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeMessageIdSubscribers(
@@ -153,37 +147,34 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         playerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Guid,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("InvokeMessageIdSubscribers")
+                    .find_method::<(
+                        crate::System::Guid,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "InvokeMessageIdSubscribers"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InvokeMessageIdSubscribers", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InvokeMessageIdSubscribers",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (messageId, data, playerId))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (messageId, data, playerId))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -199,7 +190,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -225,30 +217,28 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (messageId, callback))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (messageId, callback))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_messageTypeSubscribers(
@@ -261,8 +251,9 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
                 >,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -295,11 +286,10 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents {
+    for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -417,13 +407,15 @@ pub struct PlayerEditorConnectionEvents_MessageEvent {
     feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent {
+    for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Networking.PlayerConnection";
     const CLASS_NAME: &'static str = "PlayerEditorConnectionEvents/MessageEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -439,7 +431,8 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
 )]
 impl std::ops::Deref
-for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent {
+    for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent
+{
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
@@ -453,7 +446,8 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
 )]
 impl std::ops::DerefMut
-for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent {
+    for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -463,31 +457,30 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
 )]
 impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -495,7 +488,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
     feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent {
+    for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

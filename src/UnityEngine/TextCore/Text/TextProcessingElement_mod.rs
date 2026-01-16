@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextProcessingElement")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TextProcessingElement {
     pub elementType: crate::UnityEngine::TextCore::Text::TextProcessingElementType,
     pub unicode: u32,
@@ -9,7 +9,8 @@ pub struct TextProcessingElement {
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextProcessingElement")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::TextCore::Text::TextProcessingElement {
+    for crate::UnityEngine::TextCore::Text::TextProcessingElement
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.TextCore.Text";
@@ -28,18 +29,16 @@ for crate::UnityEngine::TextCore::Text::TextProcessingElement {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextProcessingElement")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::TextCore::Text::TextProcessingElement {
+    for crate::UnityEngine::TextCore::Text::TextProcessingElement
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -50,7 +49,8 @@ for crate::UnityEngine::TextCore::Text::TextProcessingElement {
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextProcessingElement")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::TextCore::Text::TextProcessingElement {
+    for crate::UnityEngine::TextCore::Text::TextProcessingElement
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -64,22 +64,22 @@ for crate::UnityEngine::TextCore::Text::TextProcessingElement {
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextProcessingElement")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::TextCore::Text::TextProcessingElement {
+    for crate::UnityEngine::TextCore::Text::TextProcessingElement
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextProcessingElement")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::TextCore::Text::TextProcessingElement {
+    for crate::UnityEngine::TextCore::Text::TextProcessingElement
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -93,7 +93,8 @@ for crate::UnityEngine::TextCore::Text::TextProcessingElement {
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextProcessingElement")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::TextCore::Text::TextProcessingElement {
+    for crate::UnityEngine::TextCore::Text::TextProcessingElement
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

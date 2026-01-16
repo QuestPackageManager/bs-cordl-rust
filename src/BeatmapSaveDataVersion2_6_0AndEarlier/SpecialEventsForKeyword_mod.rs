@@ -1,28 +1,24 @@
-#[cfg(
-    feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventsForKeyword"
-)]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventsForKeyword")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpecialEventsForKeyword {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _specialEvents: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::BeatmapSaveDataCommon::BeatmapEventType,
-        >,
+        crate::System::Collections::Generic::List_1<crate::BeatmapSaveDataCommon::BeatmapEventType>,
     >,
 }
-#[cfg(
-    feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventsForKeyword"
-)]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventsForKeyword")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
+    for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatmapSaveDataVersion2_6_0AndEarlier";
     const CLASS_NAME: &'static str = "SpecialEventsForKeyword";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -35,16 +31,14 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventsForKeyword")]
-impl std::ops::Deref
-for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
+impl std::ops::Deref for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventsForKeyword")]
-impl std::ops::DerefMut
-for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
+impl std::ops::DerefMut for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -59,8 +53,8 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (keyword, specialEvents))?;
         Ok(__cordl_object.into())
@@ -74,45 +68,40 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::BeatmapSaveDataCommon::BeatmapEventType,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::BeatmapSaveDataCommon::BeatmapEventType,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (keyword, specialEvents))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (keyword, specialEvents))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_keyword(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -127,9 +116,8 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_specialEvents(
@@ -141,24 +129,22 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::BeatmapSaveDataCommon::BeatmapEventType,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::BeatmapSaveDataCommon::BeatmapEventType,
                         >,
-                        0usize,
-                    >("get_specialEvents")
+                    >, 0usize>("get_specialEvents")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_specialEvents", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_specialEvents",
+                            0usize
                         )
                     })
             });
@@ -170,11 +156,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventsForKeyword"
-)]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventsForKeyword")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
+    for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

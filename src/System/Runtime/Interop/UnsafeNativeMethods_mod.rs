@@ -5,14 +5,14 @@ pub struct UnsafeNativeMethods {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Interop::UnsafeNativeMethods {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Runtime::Interop::UnsafeNativeMethods {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Interop";
     const CLASS_NAME: &'static str = "UnsafeNativeMethods";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,36 +40,34 @@ impl std::ops::DerefMut for crate::System::Runtime::Interop::UnsafeNativeMethods
 #[cfg(feature = "System+Runtime+Interop+UnsafeNativeMethods")]
 impl crate::System::Runtime::Interop::UnsafeNativeMethods {
     #[cfg(feature = "System+Runtime+Interop+UnsafeNativeMethods+EtwEnableCallback")]
-    pub type EtwEnableCallback = crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback;
+    pub type EtwEnableCallback =
+        crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback;
     #[cfg(feature = "System+Runtime+Interop+UnsafeNativeMethods+EventData")]
     pub type EventData = crate::System::Runtime::Interop::UnsafeNativeMethods_EventData;
     pub fn EventActivityIdControl(
         ControlCode: quest_hook::libil2cpp::ByRef<i32>,
         ActivityId: quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRef<i32>,
-                            quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
-                        ),
-                        u32,
-                        2usize,
-                    >("EventActivityIdControl")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRef<i32>,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
+                    ), u32, 2usize>("EventActivityIdControl")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EventActivityIdControl", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EventActivityIdControl",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (ControlCode, ActivityId))?
-        };
+        let __cordl_ret: u32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (ControlCode, ActivityId))? };
         Ok(__cordl_ret.into())
     }
     pub fn EventEnabled(
@@ -78,31 +76,28 @@ impl crate::System::Runtime::Interop::UnsafeNativeMethods {
             crate::System::Runtime::Diagnostics::EventDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRef<i64>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Runtime::Diagnostics::EventDescriptor,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("EventEnabled")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRef<i64>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Runtime::Diagnostics::EventDescriptor,
+                        >,
+                    ), bool, 2usize>("EventEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EventEnabled", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EventEnabled",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (registrationHandle, eventDescriptor))?
+            cordl_method_info.invoke_unchecked((), (registrationHandle, eventDescriptor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -118,7 +113,8 @@ impl crate::System::Runtime::Interop::UnsafeNativeMethods {
         >,
         registrationHandle: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -149,37 +145,40 @@ impl crate::System::Runtime::Interop::UnsafeNativeMethods {
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (providerId, enableCallback, callbackContext, registrationHandle),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    providerId,
+                    enableCallback,
+                    callbackContext,
+                    registrationHandle,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EventUnregister(
         registrationHandle: quest_hook::libil2cpp::ByRef<i64>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRef<i64>),
-                        u32,
-                        1usize,
-                    >("EventUnregister")
+                    .find_static_method::<(quest_hook::libil2cpp::ByRef<i64>), u32, 1usize>(
+                        "EventUnregister",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EventUnregister", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EventUnregister",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (registrationHandle))?
-        };
+        let __cordl_ret: u32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (registrationHandle))? };
         Ok(__cordl_ret.into())
     }
     pub fn EventWrite(
@@ -192,40 +191,35 @@ impl crate::System::Runtime::Interop::UnsafeNativeMethods {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRef<i64>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Runtime::Diagnostics::EventDescriptor,
-                            >,
-                            quest_hook::libil2cpp::ByRef<u32>,
-                            quest_hook::libil2cpp::ByRef<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
-                        ),
-                        u32,
-                        4usize,
-                    >("EventWrite")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRef<i64>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Runtime::Diagnostics::EventDescriptor,
+                        >,
+                        quest_hook::libil2cpp::ByRef<u32>,
+                        quest_hook::libil2cpp::ByRef<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        >,
+                    ), u32, 4usize>("EventWrite")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EventWrite", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EventWrite",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (registrationHandle, eventDescriptor, userDataCount, userData),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (registrationHandle, eventDescriptor, userDataCount, userData),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -233,47 +227,35 @@ impl crate::System::Runtime::Interop::UnsafeNativeMethods {
         uncServerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sourceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Interop::SafeEventLogWriteHandle,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Interop::SafeEventLogWriteHandle>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::Interop::SafeEventLogWriteHandle,
-                        >,
-                        2usize,
-                    >("RegisterEventSource")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Interop::SafeEventLogWriteHandle,
+                    >, 2usize>("RegisterEventSource")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterEventSource", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RegisterEventSource",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Interop::SafeEventLogWriteHandle,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (uncServerName, sourceName))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (uncServerName, sourceName))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReportEvent(
-        hEventLog: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::InteropServices::SafeHandle,
-        >,
+        hEventLog: quest_hook::libil2cpp::Gc<crate::System::Runtime::InteropServices::SafeHandle>,
         _cordl_type: u16,
         category: u16,
         eventID: u32,
@@ -283,62 +265,54 @@ impl crate::System::Runtime::Interop::UnsafeNativeMethods {
         strings: crate::System::Runtime::InteropServices::HandleRef,
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::InteropServices::SafeHandle,
-                            >,
-                            u16,
-                            u16,
-                            u32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            u16,
-                            u32,
-                            crate::System::Runtime::InteropServices::HandleRef,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
-                        bool,
-                        9usize,
-                    >("ReportEvent")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::InteropServices::SafeHandle,
+                        >,
+                        u16,
+                        u16,
+                        u32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        u16,
+                        u32,
+                        crate::System::Runtime::InteropServices::HandleRef,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    ), bool, 9usize>("ReportEvent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReportEvent", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReportEvent",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        hEventLog,
-                        _cordl_type,
-                        category,
-                        eventID,
-                        userSID,
-                        numStrings,
-                        dataLen,
-                        strings,
-                        rawData,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    hEventLog,
+                    _cordl_type,
+                    category,
+                    eventID,
+                    userSID,
+                    numStrings,
+                    dataLen,
+                    strings,
+                    rawData,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Interop::UnsafeNativeMethods {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Interop::UnsafeNativeMethods {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -346,25 +320,23 @@ for crate::System::Runtime::Interop::UnsafeNativeMethods {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EtwEnableCallback"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EtwEnableCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnsafeNativeMethods_EtwEnableCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EtwEnableCallback"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EtwEnableCallback")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback {
+    for crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Interop";
     const CLASS_NAME: &'static str = "UnsafeNativeMethods/EtwEnableCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -377,16 +349,14 @@ for crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback {
     }
 }
 #[cfg(feature = "System+Runtime+Interop+UnsafeNativeMethods+EtwEnableCallback")]
-impl std::ops::Deref
-for crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback {
+impl std::ops::Deref for crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+Interop+UnsafeNativeMethods+EtwEnableCallback")]
-impl std::ops::DerefMut
-for crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback {
+impl std::ops::DerefMut for crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -407,53 +377,46 @@ impl crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
-                            quest_hook::libil2cpp::ByRef<i32>,
-                            quest_hook::libil2cpp::ByRef<u8>,
-                            quest_hook::libil2cpp::ByRef<i64>,
-                            quest_hook::libil2cpp::ByRef<i64>,
-                            quest_hook::libil2cpp::ByRef<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::ByRef<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("Invoke")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
+                        quest_hook::libil2cpp::ByRef<i32>,
+                        quest_hook::libil2cpp::ByRef<u8>,
+                        quest_hook::libil2cpp::ByRef<i64>,
+                        quest_hook::libil2cpp::ByRef<i64>,
+                        quest_hook::libil2cpp::ByRef<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        >,
+                        quest_hook::libil2cpp::ByRef<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 7usize>("Invoke")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Invoke",
                             7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        sourceId,
-                        isEnabled,
-                        level,
-                        matchAnyKeywords,
-                        matchAllKeywords,
-                        filterData,
-                        callbackContext,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    sourceId,
+                    isEnabled,
+                    level,
+                    matchAnyKeywords,
+                    matchAllKeywords,
+                    filterData,
+                    callbackContext,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -461,8 +424,8 @@ impl crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object.into())
@@ -472,39 +435,33 @@ impl crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            crate::System::IntPtr,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        crate::System::IntPtr,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (object, method))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (object, method))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EtwEnableCallback"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EtwEnableCallback")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback {
+    for crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -513,14 +470,15 @@ for crate::System::Runtime::Interop::UnsafeNativeMethods_EtwEnableCallback {
     }
 }
 #[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EventData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct UnsafeNativeMethods_EventData {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
 #[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EventData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData {
+    for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Runtime.Interop";
@@ -539,18 +497,16 @@ for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EventData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData {
+    for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -561,7 +517,8 @@ for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData {
 }
 #[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EventData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData {
+    for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -575,22 +532,22 @@ for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData {
 }
 #[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EventData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData {
+    for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EventData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData {
+    for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -604,7 +561,8 @@ for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData {
 }
 #[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EventData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData {
+    for crate::System::Runtime::Interop::UnsafeNativeMethods_EventData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi {
     const NAMESPACE: &'static str = "Oculus.Haptics";
     const CLASS_NAME: &'static str = "Ffi";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -57,31 +58,29 @@ impl crate::Oculus::Haptics::Ffi {
     pub fn Failed(
         result: crate::Oculus::Haptics::Ffi_Result,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::Oculus::Haptics::Ffi_Result),
-                        bool,
-                        1usize,
-                    >("Failed")
+                    .find_static_method::<(crate::Oculus::Haptics::Ffi_Result), bool, 1usize>(
+                        "Failed",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Failed",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Failed",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (result))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -89,56 +88,54 @@ impl crate::Oculus::Haptics::Ffi {
     pub fn Succeeded(
         result: crate::Oculus::Haptics::Ffi_Result,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::Oculus::Haptics::Ffi_Result),
-                        bool,
-                        1usize,
-                    >("Succeeded")
+                    .find_static_method::<(crate::Oculus::Haptics::Ffi_Result), bool, 1usize>(
+                        "Succeeded",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Succeeded", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Succeeded",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (result))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (result))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn clip_duration(
         clipId: i32,
         clip_duration: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<f32>),
@@ -153,17 +150,17 @@ impl crate::Oculus::Haptics::Ffi {
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (clipId, clip_duration))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (clipId, clip_duration))? };
         Ok(__cordl_ret.into())
     }
     pub fn create_player(
         player_id: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<i32>),
@@ -178,17 +175,17 @@ impl crate::Oculus::Haptics::Ffi {
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (player_id))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (player_id))? };
         Ok(__cordl_ret.into())
     }
-    pub fn error_message() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn error_message(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -203,17 +200,16 @@ impl crate::Oculus::Haptics::Ffi {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_null_backend_statistics() -> quest_hook::libil2cpp::Result<
-        crate::Oculus::Haptics::Ffi_NullBackendStatistics,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_null_backend_statistics(
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_NullBackendStatistics> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -228,51 +224,45 @@ impl crate::Oculus::Haptics::Ffi {
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_NullBackendStatistics = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_NullBackendStatistics =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn haptics_sdk_error_message() -> quest_hook::libil2cpp::Result<
-        crate::System::IntPtr,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn haptics_sdk_error_message() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::System::IntPtr,
-                        0usize,
-                    >("haptics_sdk_error_message")
+                    .find_static_method::<(), crate::System::IntPtr, 0usize>(
+                        "haptics_sdk_error_message",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "haptics_sdk_error_message", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "haptics_sdk_error_message",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::IntPtr = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::System::IntPtr =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn haptics_sdk_error_message_length() -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        i32,
-                        0usize,
-                    >("haptics_sdk_error_message_length")
+                    .find_static_method::<(), i32, 0usize>("haptics_sdk_error_message_length")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "haptics_sdk_error_message_length", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "haptics_sdk_error_message_length",
+                            0usize
                         )
                     })
             });
@@ -282,9 +272,10 @@ impl crate::Oculus::Haptics::Ffi {
     pub fn initialize_logging(
         logCallback: quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::Ffi_LogCallback>,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -301,115 +292,100 @@ impl crate::Oculus::Haptics::Ffi {
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (logCallback))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (logCallback))? };
         Ok(__cordl_ret.into())
     }
     pub fn initialize_with_callback_backend(
         context: crate::System::IntPtr,
-        playCallback: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Haptics::Ffi_HapticsSdkPlayCallback,
-        >,
+        playCallback: quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::Ffi_HapticsSdkPlayCallback>,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Haptics::Ffi_HapticsSdkPlayCallback,
-                            >,
-                        ),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        2usize,
-                    >("initialize_with_callback_backend")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Haptics::Ffi_HapticsSdkPlayCallback,
+                        >,
+                    ), crate::Oculus::Haptics::Ffi_Result, 2usize>(
+                        "initialize_with_callback_backend",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "initialize_with_callback_backend", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "initialize_with_callback_backend",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (context, playCallback))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (context, playCallback))? };
         Ok(__cordl_ret.into())
     }
-    pub fn initialize_with_null_backend() -> quest_hook::libil2cpp::Result<
-        crate::Oculus::Haptics::Ffi_Result,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn initialize_with_null_backend(
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        0usize,
-                    >("initialize_with_null_backend")
+                    .find_static_method::<(), crate::Oculus::Haptics::Ffi_Result, 0usize>(
+                        "initialize_with_null_backend",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "initialize_with_null_backend", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "initialize_with_null_backend",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn initialize_with_ovr_plugin(
         game_engine_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        game_engine_version: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        game_engine_version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         game_engine_haptics_sdk_version: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        3usize,
-                    >("initialize_with_ovr_plugin")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::Oculus::Haptics::Ffi_Result, 3usize>(
+                        "initialize_with_ovr_plugin"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "initialize_with_ovr_plugin", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "initialize_with_ovr_plugin",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        game_engine_name,
-                        game_engine_version,
-                        game_engine_haptics_sdk_version,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    game_engine_name,
+                    game_engine_version,
+                    game_engine_haptics_sdk_version,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -424,58 +400,52 @@ impl crate::Oculus::Haptics::Ffi {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRef<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<u8>,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::ByRef<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<u8>,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::ByRef<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<u8>,
-                                >,
-                            >,
-                        ),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        3usize,
-                    >("initialize_with_ovr_plugin_bytes")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRef<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        >,
+                        quest_hook::libil2cpp::ByRef<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        >,
+                        quest_hook::libil2cpp::ByRef<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        >,
+                    ), crate::Oculus::Haptics::Ffi_Result, 3usize>(
+                        "initialize_with_ovr_plugin_bytes",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "initialize_with_ovr_plugin_bytes", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "initialize_with_ovr_plugin_bytes",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        game_engine_name,
-                        game_engine_version,
-                        game_engine_haptics_sdk_version,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    game_engine_name,
+                    game_engine_version,
+                    game_engine_haptics_sdk_version,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn initialized(
         initialized: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<bool>),
@@ -490,40 +460,34 @@ impl crate::Oculus::Haptics::Ffi {
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (initialized))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (initialized))? };
         Ok(__cordl_ret.into())
     }
     pub fn load_clip(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         clip_id_out: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        2usize,
-                    >("load_clip")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), crate::Oculus::Haptics::Ffi_Result, 2usize>("load_clip")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "load_clip", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "load_clip",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (data, clip_id_out))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (data, clip_id_out))? };
         Ok(__cordl_ret.into())
     }
     pub fn load_clip_bytes(
@@ -533,43 +497,41 @@ impl crate::Oculus::Haptics::Ffi {
         data_length: u32,
         clip_id_out: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRef<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<u8>,
-                                >,
-                            >,
-                            u32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        3usize,
-                    >("load_clip_bytes")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRef<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        >,
+                        u32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), crate::Oculus::Haptics::Ffi_Result, 3usize>(
+                        "load_clip_bytes"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "load_clip_bytes", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "load_clip_bytes",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (data, data_length, clip_id_out))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (data, data_length, clip_id_out))? };
         Ok(__cordl_ret.into())
     }
     pub fn player_amplitude(
         playerId: i32,
         amplitude: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<f32>),
@@ -584,18 +546,18 @@ impl crate::Oculus::Haptics::Ffi {
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId, amplitude))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId, amplitude))? };
         Ok(__cordl_ret.into())
     }
     pub fn player_frequency_shift(
         playerId: i32,
         frequency_shift: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<f32>),
@@ -610,18 +572,18 @@ impl crate::Oculus::Haptics::Ffi {
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId, frequency_shift))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId, frequency_shift))? };
         Ok(__cordl_ret.into())
     }
     pub fn player_looping_enabled(
         playerId: i32,
         looping_enabled: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<bool>),
@@ -636,43 +598,42 @@ impl crate::Oculus::Haptics::Ffi {
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId, looping_enabled))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId, looping_enabled))? };
         Ok(__cordl_ret.into())
     }
     pub fn player_pause(
         playerId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        1usize,
-                    >("player_pause")
+                    .find_static_method::<(i32), crate::Oculus::Haptics::Ffi_Result, 1usize>(
+                        "player_pause",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "player_pause", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "player_pause",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId))? };
         Ok(__cordl_ret.into())
     }
     pub fn player_play(
         playerId: i32,
         controller: crate::Oculus::Haptics::Ffi_Controller,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Oculus::Haptics::Ffi_Controller),
@@ -687,18 +648,18 @@ impl crate::Oculus::Haptics::Ffi {
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId, controller))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId, controller))? };
         Ok(__cordl_ret.into())
     }
     pub fn player_priority(
         playerId: i32,
         priority: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<u32>),
@@ -713,340 +674,322 @@ impl crate::Oculus::Haptics::Ffi {
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId, priority))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId, priority))? };
         Ok(__cordl_ret.into())
     }
     pub fn player_resume(
         playerId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        1usize,
-                    >("player_resume")
+                    .find_static_method::<(i32), crate::Oculus::Haptics::Ffi_Result, 1usize>(
+                        "player_resume",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "player_resume", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "player_resume",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId))? };
         Ok(__cordl_ret.into())
     }
     pub fn player_seek(
         playerId: i32,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, f32),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        2usize,
-                    >("player_seek")
+                    .find_static_method::<(i32, f32), crate::Oculus::Haptics::Ffi_Result, 2usize>(
+                        "player_seek",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "player_seek", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "player_seek",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId, _cordl_time))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId, _cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn player_set_amplitude(
         playerId: i32,
         amplitude: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, f32),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        2usize,
-                    >("player_set_amplitude")
+                    .find_static_method::<(i32, f32), crate::Oculus::Haptics::Ffi_Result, 2usize>(
+                        "player_set_amplitude",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "player_set_amplitude", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "player_set_amplitude",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId, amplitude))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId, amplitude))? };
         Ok(__cordl_ret.into())
     }
     pub fn player_set_clip(
         playerId: i32,
         clipId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        2usize,
-                    >("player_set_clip")
+                    .find_static_method::<(i32, i32), crate::Oculus::Haptics::Ffi_Result, 2usize>(
+                        "player_set_clip",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "player_set_clip", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "player_set_clip",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId, clipId))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId, clipId))? };
         Ok(__cordl_ret.into())
     }
     pub fn player_set_frequency_shift(
         playerId: i32,
         amount: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, f32),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        2usize,
-                    >("player_set_frequency_shift")
+                    .find_static_method::<(i32, f32), crate::Oculus::Haptics::Ffi_Result, 2usize>(
+                        "player_set_frequency_shift",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "player_set_frequency_shift", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "player_set_frequency_shift",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId, amount))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId, amount))? };
         Ok(__cordl_ret.into())
     }
     pub fn player_set_looping_enabled(
         playerId: i32,
         enabled: bool,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, bool),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        2usize,
-                    >("player_set_looping_enabled")
+                    .find_static_method::<(i32, bool), crate::Oculus::Haptics::Ffi_Result, 2usize>(
+                        "player_set_looping_enabled",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "player_set_looping_enabled", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "player_set_looping_enabled",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId, enabled))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId, enabled))? };
         Ok(__cordl_ret.into())
     }
     pub fn player_set_priority(
         playerId: i32,
         priority: u32,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, u32),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        2usize,
-                    >("player_set_priority")
+                    .find_static_method::<(i32, u32), crate::Oculus::Haptics::Ffi_Result, 2usize>(
+                        "player_set_priority",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "player_set_priority", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "player_set_priority",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId, priority))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId, priority))? };
         Ok(__cordl_ret.into())
     }
     pub fn player_stop(
         playerId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        1usize,
-                    >("player_stop")
+                    .find_static_method::<(i32), crate::Oculus::Haptics::Ffi_Result, 1usize>(
+                        "player_stop",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "player_stop", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "player_stop",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId))? };
         Ok(__cordl_ret.into())
     }
     pub fn release_clip(
         clipId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        1usize,
-                    >("release_clip")
+                    .find_static_method::<(i32), crate::Oculus::Haptics::Ffi_Result, 1usize>(
+                        "release_clip",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "release_clip", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "release_clip",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (clipId))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (clipId))? };
         Ok(__cordl_ret.into())
     }
     pub fn release_player(
         playerId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        1usize,
-                    >("release_player")
+                    .find_static_method::<(i32), crate::Oculus::Haptics::Ffi_Result, 1usize>(
+                        "release_player",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "release_player", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "release_player",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (playerId))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (playerId))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_suspended(
         suspended: bool,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (bool),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        1usize,
-                    >("set_suspended")
+                    .find_static_method::<(bool), crate::Oculus::Haptics::Ffi_Result, 1usize>(
+                        "set_suspended",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_suspended", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_suspended",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (suspended))?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), (suspended))? };
         Ok(__cordl_ret.into())
     }
-    pub fn uninitialize() -> quest_hook::libil2cpp::Result<
-        crate::Oculus::Haptics::Ffi_Result,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn uninitialize() -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::Oculus::Haptics::Ffi_Result,
-                        0usize,
-                    >("uninitialize")
+                    .find_static_method::<(), crate::Oculus::Haptics::Ffi_Result, 0usize>(
+                        "uninitialize",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "uninitialize", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn version() -> quest_hook::libil2cpp::Result<
-        crate::Oculus::Haptics::Ffi_SdkVersion,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::Oculus::Haptics::Ffi_SdkVersion,
-                        0usize,
-                    >("version")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "version",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "uninitialize",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_SdkVersion = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn version() -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_SdkVersion> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(), crate::Oculus::Haptics::Ffi_SdkVersion, 0usize>(
+                        "version",
+                    )
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "version",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_SdkVersion =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1060,8 +1003,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Haptics::Ffi {
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Controller")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum Ffi_Controller {
     #[default]
     Both = 2i32,
@@ -1088,13 +1031,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_Controll
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Controller")]
@@ -1128,9 +1068,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Ffi_Cont
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -1154,14 +1092,14 @@ pub struct Ffi_HapticsSdkPlayCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+HapticsSdkPlayCallback")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Oculus::Haptics::Ffi_HapticsSdkPlayCallback {
+unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_HapticsSdkPlayCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Oculus.Haptics";
     const CLASS_NAME: &'static str = "Ffi/HapticsSdkPlayCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1196,41 +1134,36 @@ impl crate::Oculus::Haptics::Ffi_HapticsSdkPlayCallback {
         amplitude: f32,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::IntPtr,
-                            crate::Oculus::Haptics::Ffi_Controller,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        6usize,
-                    >("BeginInvoke")
+                    .find_method::<(
+                        crate::System::IntPtr,
+                        crate::Oculus::Haptics::Ffi_Controller,
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 6usize>(
+                        "BeginInvoke",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginInvoke", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginInvoke",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (context, controller, duration, amplitude, callback, object),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (context, controller, duration, amplitude, callback, object),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1238,9 +1171,10 @@ impl crate::Oculus::Haptics::Ffi_HapticsSdkPlayCallback {
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
@@ -1255,9 +1189,8 @@ impl crate::Oculus::Haptics::Ffi_HapticsSdkPlayCallback {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (result))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -1267,31 +1200,28 @@ impl crate::Oculus::Haptics::Ffi_HapticsSdkPlayCallback {
         duration: f32,
         amplitude: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::IntPtr,
-                            crate::Oculus::Haptics::Ffi_Controller,
-                            f32,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("Invoke")
+                    .find_method::<(
+                        crate::System::IntPtr,
+                        crate::Oculus::Haptics::Ffi_Controller,
+                        f32,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("Invoke")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Invoke",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (context, controller, duration, amplitude))?
+            cordl_method_info.invoke_unchecked(self, (context, controller, duration, amplitude))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1299,8 +1229,8 @@ impl crate::Oculus::Haptics::Ffi_HapticsSdkPlayCallback {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object.into())
@@ -1310,37 +1240,31 @@ impl crate::Oculus::Haptics::Ffi_HapticsSdkPlayCallback {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            crate::System::IntPtr,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        crate::System::IntPtr,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (object, method))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (object, method))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+HapticsSdkPlayCallback")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Oculus::Haptics::Ffi_HapticsSdkPlayCallback {
+impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Haptics::Ffi_HapticsSdkPlayCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1361,7 +1285,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_LogCallb
     const NAMESPACE: &'static str = "Oculus.Haptics";
     const CLASS_NAME: &'static str = "Ffi/LogCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1394,32 +1319,26 @@ impl crate::Oculus::Haptics::Ffi_LogCallback {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::Oculus::Haptics::Ffi_LogLevel,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        4usize,
-                    >("BeginInvoke")
+                    .find_method::<(
+                        crate::Oculus::Haptics::Ffi_LogLevel,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 4usize>(
+                        "BeginInvoke",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginInvoke", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginInvoke",
+                            4usize
                         )
                     })
             });
@@ -1432,9 +1351,10 @@ impl crate::Oculus::Haptics::Ffi_LogCallback {
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
@@ -1449,9 +1369,8 @@ impl crate::Oculus::Haptics::Ffi_LogCallback {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (result))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -1459,39 +1378,34 @@ impl crate::Oculus::Haptics::Ffi_LogCallback {
         level: crate::Oculus::Haptics::Ffi_LogLevel,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::Oculus::Haptics::Ffi_LogLevel,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Invoke")
+                    .find_method::<(
+                        crate::Oculus::Haptics::Ffi_LogLevel,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Invoke")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Invoke",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (level, message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (level, message))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object.into())
@@ -1501,31 +1415,26 @@ impl crate::Oculus::Haptics::Ffi_LogCallback {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            crate::System::IntPtr,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        crate::System::IntPtr,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (object, method))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (object, method))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1539,8 +1448,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Haptics::Ffi_LogCallba
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogLevel")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum Ffi_LogLevel {
     #[default]
     Debug = 1i32,
@@ -1569,13 +1478,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_LogLevel
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogLevel")]
@@ -1609,9 +1515,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Ffi_LogL
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -1629,15 +1533,14 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_LogLev
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Ffi_NullBackendStatistics {
     pub stream_count: i64,
     pub play_call_count: i64,
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
+unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Oculus.Haptics";
@@ -1656,18 +1559,14 @@ for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1677,8 +1576,7 @@ for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1691,23 +1589,19 @@ for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
+unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1721,7 +1615,8 @@ for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
+    for crate::Oculus::Haptics::Ffi_NullBackendStatistics
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1733,8 +1628,8 @@ for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
 #[cfg(feature = "Oculus+Haptics+Ffi+NullBackendStatistics")]
 impl crate::Oculus::Haptics::Ffi_NullBackendStatistics {}
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Result")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum Ffi_Result {
     #[default]
     ClipIdInvalid = -9i32,
@@ -1775,13 +1670,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_Result {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Result")]
@@ -1815,9 +1707,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Ffi_Resu
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -1835,8 +1725,8 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_Result
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+SdkVersion")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Ffi_SdkVersion {
     pub major: u16,
     pub minor: u16,
@@ -1862,13 +1752,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_SdkVersi
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+SdkVersion")]
@@ -1902,9 +1789,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Ffi_SdkV
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -1922,8 +1807,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_SdkVer
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+SdkVersion")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Oculus::Haptics::Ffi_SdkVersion {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Oculus::Haptics::Ffi_SdkVersion {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

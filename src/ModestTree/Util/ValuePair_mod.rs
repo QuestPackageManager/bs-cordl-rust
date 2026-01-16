@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ModestTree::Util::ValuePair {
     const NAMESPACE: &'static str = "ModestTree.Util";
     const CLASS_NAME: &'static str = "ValuePair";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,14 +46,17 @@ impl crate::ModestTree::Util::ValuePair {
         quest_hook::libil2cpp::Gc<crate::ModestTree::Util::ValuePair_2<T1, T2>>,
     >
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T1, T2),
@@ -69,9 +73,8 @@ impl crate::ModestTree::Util::ValuePair {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::ModestTree::Util::ValuePair_2<T1, T2>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (first, second))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::ModestTree::Util::ValuePair_2<T1, T2>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (first, second))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_T3_1<T1, T2, T3>(
@@ -82,16 +85,20 @@ impl crate::ModestTree::Util::ValuePair {
         quest_hook::libil2cpp::Gc<crate::ModestTree::Util::ValuePair_3<T1, T2, T3>>,
     >
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T1, T2, T3),
@@ -122,18 +129,23 @@ impl crate::ModestTree::Util::ValuePair {
         quest_hook::libil2cpp::Gc<crate::ModestTree::Util::ValuePair_4<T1, T2, T3, T4>>,
     >
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T1, T2, T3, T4),
@@ -152,9 +164,7 @@ impl crate::ModestTree::Util::ValuePair {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::ModestTree::Util::ValuePair_4<T1, T2, T3, T4>,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (first, second, third, fourth))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (first, second, third, fourth))? };
         Ok(__cordl_ret.into())
     }
 }

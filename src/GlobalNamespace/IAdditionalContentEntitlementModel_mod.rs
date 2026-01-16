@@ -1,18 +1,20 @@
 #[cfg(feature = "cordl_class_IAdditionalContentEntitlementModel")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IAdditionalContentEntitlementModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_IAdditionalContentEntitlementModel")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::IAdditionalContentEntitlementModel {
+    for crate::GlobalNamespace::IAdditionalContentEntitlementModel
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "IAdditionalContentEntitlementModel";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -53,9 +55,10 @@ impl crate::GlobalNamespace::IAdditionalContentEntitlementModel {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
@@ -102,29 +105,25 @@ impl crate::GlobalNamespace::IAdditionalContentEntitlementModel {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::System::Threading::CancellationToken,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::BeatmapLevelDataVersion,
-                            >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::System::Threading::CancellationToken,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            crate::GlobalNamespace::BeatmapLevelDataVersion,
                         >,
-                        2usize,
-                    >("GetLevelDataVersionAsync")
+                    >, 2usize>("GetLevelDataVersionAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLevelDataVersionAsync", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLevelDataVersionAsync",
+                            2usize
                         )
                     })
             });
@@ -141,41 +140,33 @@ impl crate::GlobalNamespace::IAdditionalContentEntitlementModel {
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
+            crate::System::Threading::Tasks::Task_1<crate::GlobalNamespace::EntitlementStatus>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::System::Threading::CancellationToken,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::EntitlementStatus,
-                            >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::System::Threading::CancellationToken,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            crate::GlobalNamespace::EntitlementStatus,
                         >,
-                        2usize,
-                    >("GetLevelEntitlementStatusAsync")
+                    >, 2usize>("GetLevelEntitlementStatusAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLevelEntitlementStatusAsync", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLevelEntitlementStatusAsync",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
+            crate::System::Threading::Tasks::Task_1<crate::GlobalNamespace::EntitlementStatus>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (levelId, token))? };
         Ok(__cordl_ret.into())
     }
@@ -185,53 +176,44 @@ impl crate::GlobalNamespace::IAdditionalContentEntitlementModel {
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
+            crate::System::Threading::Tasks::Task_1<crate::GlobalNamespace::EntitlementStatus>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::System::Threading::CancellationToken,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::EntitlementStatus,
-                            >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::System::Threading::CancellationToken,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            crate::GlobalNamespace::EntitlementStatus,
                         >,
-                        2usize,
-                    >("GetPackEntitlementStatusAsync")
+                    >, 2usize>("GetPackEntitlementStatusAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPackEntitlementStatusAsync", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPackEntitlementStatusAsync",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
+            crate::System::Threading::Tasks::Task_1<crate::GlobalNamespace::EntitlementStatus>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (levelPackId, token))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_IAdditionalContentEntitlementModel")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::IAdditionalContentEntitlementModel {
+    for crate::GlobalNamespace::IAdditionalContentEntitlementModel
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -241,14 +223,16 @@ for crate::GlobalNamespace::IAdditionalContentEntitlementModel {
 }
 #[cfg(feature = "IAdditionalContentEntitlementModel")]
 impl AsRef<crate::GlobalNamespace::IAdditionalContentModel>
-for crate::GlobalNamespace::IAdditionalContentEntitlementModel {
+    for crate::GlobalNamespace::IAdditionalContentEntitlementModel
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IAdditionalContentModel {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IAdditionalContentEntitlementModel")]
 impl AsMut<crate::GlobalNamespace::IAdditionalContentModel>
-for crate::GlobalNamespace::IAdditionalContentEntitlementModel {
+    for crate::GlobalNamespace::IAdditionalContentEntitlementModel
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAdditionalContentModel {
         unsafe { std::mem::transmute(self) }
     }

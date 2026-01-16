@@ -5,14 +5,14 @@ pub struct HashCodeCalculator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+HashCodeCalculator")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Net::Http::Headers::HashCodeCalculator {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Http::Headers::HashCodeCalculator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Http.Headers";
     const CLASS_NAME: &'static str = "HashCodeCalculator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,42 +40,36 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::HashCodeCalculato
 #[cfg(feature = "System+Net+Http+Headers+HashCodeCalculator")]
 impl crate::System::Net::Http::Headers::HashCodeCalculator {
     pub fn Calculate<T>(
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<T>,
-        >,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::ICollection_1<T>>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::ICollection_1<T>,
-                        >),
-                        i32,
-                        1usize,
-                    >("Calculate")
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::ICollection_1<T>,
+                    >), i32, 1usize>("Calculate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Calculate", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Calculate",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (list))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+HashCodeCalculator")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Net::Http::Headers::HashCodeCalculator {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::Headers::HashCodeCalculator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

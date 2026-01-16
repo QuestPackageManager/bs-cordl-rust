@@ -51,23 +51,17 @@ pub struct BeatmapSaveData {
     >,
     pub colorBoostBeatmapEvents: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion3::ColorBoostEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::ColorBoostEventData>,
         >,
     >,
     pub lightColorEventBoxGroups: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup>,
         >,
     >,
     pub lightRotationEventBoxGroups: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup>,
         >,
     >,
     pub lightTranslationEventBoxGroups: quest_hook::libil2cpp::Gc<
@@ -82,23 +76,21 @@ pub struct BeatmapSaveData {
             quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBoxGroup>,
         >,
     >,
-    pub _fxEventsCollection: quest_hook::libil2cpp::Gc<
-        crate::BeatmapSaveDataVersion3::FxEventsCollection,
-    >,
-    pub basicEventTypesWithKeywords: quest_hook::libil2cpp::Gc<
-        crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
-    >,
+    pub _fxEventsCollection:
+        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventsCollection>,
+    pub basicEventTypesWithKeywords:
+        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords>,
     pub useNormalEventsAsCompatibleEvents: bool,
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+BeatmapSaveData")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatmapSaveDataVersion3::BeatmapSaveData {
+unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion3::BeatmapSaveData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatmapSaveDataVersion3";
     const CLASS_NAME: &'static str = "BeatmapSaveData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -129,16 +121,12 @@ impl crate::BeatmapSaveDataVersion3::BeatmapSaveData {
     pub fn New(
         bpmEvents: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::BpmChangeEventData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BpmChangeEventData>,
             >,
         >,
         rotationEvents: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::RotationEventData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::RotationEventData>,
             >,
         >,
         colorNotes: quest_hook::libil2cpp::Gc<
@@ -163,9 +151,7 @@ impl crate::BeatmapSaveDataVersion3::BeatmapSaveData {
         >,
         burstSliders: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::BurstSliderData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BurstSliderData>,
             >,
         >,
         waypoints: quest_hook::libil2cpp::Gc<
@@ -180,16 +166,12 @@ impl crate::BeatmapSaveDataVersion3::BeatmapSaveData {
         >,
         colorBoostBeatmapEvents: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::ColorBoostEventData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::ColorBoostEventData>,
             >,
         >,
         lightColorEventBoxGroups: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup>,
             >,
         >,
         lightRotationEventBoxGroups: quest_hook::libil2cpp::Gc<
@@ -208,9 +190,7 @@ impl crate::BeatmapSaveDataVersion3::BeatmapSaveData {
         >,
         vfxEventBoxGroups: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::FxEventBoxGroup,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBoxGroup>,
             >,
         >,
         fxEventsCollection: quest_hook::libil2cpp::Gc<
@@ -221,11 +201,240 @@ impl crate::BeatmapSaveDataVersion3::BeatmapSaveData {
         >,
         useNormalEventsAsCompatibleEvents: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                bpmEvents,
+                rotationEvents,
+                colorNotes,
+                bombNotes,
+                obstacles,
+                sliders,
+                burstSliders,
+                waypoints,
+                basicBeatmapEvents,
+                colorBoostBeatmapEvents,
+                lightColorEventBoxGroups,
+                lightRotationEventBoxGroups,
+                lightTranslationEventBoxGroups,
+                vfxEventBoxGroups,
+                fxEventsCollection,
+                basicEventTypesWithKeywords,
+                useNormalEventsAsCompatibleEvents,
+            ),
+        )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+        bpmEvents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BpmChangeEventData>,
+            >,
+        >,
+        rotationEvents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::RotationEventData>,
+            >,
+        >,
+        colorNotes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::ColorNoteData>,
+            >,
+        >,
+        bombNotes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BombNoteData>,
+            >,
+        >,
+        obstacles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::ObstacleData>,
+            >,
+        >,
+        sliders: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::SliderData>,
+            >,
+        >,
+        burstSliders: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BurstSliderData>,
+            >,
+        >,
+        waypoints: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::WaypointData>,
+            >,
+        >,
+        basicBeatmapEvents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BasicEventData>,
+            >,
+        >,
+        colorBoostBeatmapEvents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::ColorBoostEventData>,
+            >,
+        >,
+        lightColorEventBoxGroups: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup>,
+            >,
+        >,
+        lightRotationEventBoxGroups: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
+                >,
+            >,
+        >,
+        lightTranslationEventBoxGroups: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup,
+                >,
+            >,
+        >,
+        vfxEventBoxGroups: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBoxGroup>,
+            >,
+        >,
+        fxEventsCollection: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::FxEventsCollection,
+        >,
+        basicEventTypesWithKeywords: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
+        >,
+        useNormalEventsAsCompatibleEvents: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::BpmChangeEventData,
+                                >,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::RotationEventData,
+                                >,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::ColorNoteData,
+                                >,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::BombNoteData,
+                                >,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::ObstacleData,
+                                >,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::SliderData,
+                                >,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::BurstSliderData,
+                                >,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::WaypointData,
+                                >,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::BasicEventData,
+                                >,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::ColorBoostEventData,
+                                >,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup,
+                                >,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
+                                >,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup,
+                                >,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::FxEventBoxGroup,
+                                >,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::BeatmapSaveDataVersion3::FxEventsCollection,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
+                        >,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 17usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
+                            17usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(
+                self,
                 (
                     bpmEvents,
                     rotationEvents,
@@ -245,259 +454,13 @@ impl crate::BeatmapSaveDataVersion3::BeatmapSaveData {
                     basicEventTypesWithKeywords,
                     useNormalEventsAsCompatibleEvents,
                 ),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn _ctor(
-        &mut self,
-        bpmEvents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::BpmChangeEventData,
-                >,
-            >,
-        >,
-        rotationEvents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::RotationEventData,
-                >,
-            >,
-        >,
-        colorNotes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::ColorNoteData>,
-            >,
-        >,
-        bombNotes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BombNoteData>,
-            >,
-        >,
-        obstacles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::ObstacleData>,
-            >,
-        >,
-        sliders: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::SliderData>,
-            >,
-        >,
-        burstSliders: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::BurstSliderData,
-                >,
-            >,
-        >,
-        waypoints: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::WaypointData>,
-            >,
-        >,
-        basicBeatmapEvents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BasicEventData>,
-            >,
-        >,
-        colorBoostBeatmapEvents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::ColorBoostEventData,
-                >,
-            >,
-        >,
-        lightColorEventBoxGroups: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup,
-                >,
-            >,
-        >,
-        lightRotationEventBoxGroups: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
-                >,
-            >,
-        >,
-        lightTranslationEventBoxGroups: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup,
-                >,
-            >,
-        >,
-        vfxEventBoxGroups: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::FxEventBoxGroup,
-                >,
-            >,
-        >,
-        fxEventsCollection: quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion3::FxEventsCollection,
-        >,
-        basicEventTypesWithKeywords: quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
-        >,
-        useNormalEventsAsCompatibleEvents: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::BpmChangeEventData,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::RotationEventData,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::ColorNoteData,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::BombNoteData,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::ObstacleData,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::SliderData,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::BurstSliderData,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::WaypointData,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::BasicEventData,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::ColorBoostEventData,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::FxEventBoxGroup,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataVersion3::FxEventsCollection,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        17usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            17usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        bpmEvents,
-                        rotationEvents,
-                        colorNotes,
-                        bombNotes,
-                        obstacles,
-                        sliders,
-                        burstSliders,
-                        waypoints,
-                        basicBeatmapEvents,
-                        colorBoostBeatmapEvents,
-                        lightColorEventBoxGroups,
-                        lightRotationEventBoxGroups,
-                        lightTranslationEventBoxGroups,
-                        vfxEventBoxGroups,
-                        fxEventsCollection,
-                        basicEventTypesWithKeywords,
-                        useNormalEventsAsCompatibleEvents,
-                    ),
-                )?
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+BeatmapSaveData")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::BeatmapSaveDataVersion3::BeatmapSaveData {
+impl quest_hook::libil2cpp::ObjectType for crate::BeatmapSaveDataVersion3::BeatmapSaveData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

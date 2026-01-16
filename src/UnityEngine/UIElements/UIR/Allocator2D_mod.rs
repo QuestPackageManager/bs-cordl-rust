@@ -9,28 +9,24 @@ pub struct Allocator2D {
     pub m_RowHeightBias: i32,
     pub m_Rows: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
         >,
     >,
     pub m_Areas: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Area>,
         >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::UIR::Allocator2D {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::UIR::Allocator2D {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
     const CLASS_NAME: &'static str = "Allocator2D";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -66,44 +62,39 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
     pub fn BuildAreas(
         areas: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
-                >,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Area>,
             >,
         >,
         minSize: crate::UnityEngine::Vector2Int,
         maxSize: crate::UnityEngine::Vector2Int,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
-                                    >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
                                 >,
                             >,
-                            crate::UnityEngine::Vector2Int,
-                            crate::UnityEngine::Vector2Int,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("BuildAreas")
+                        >,
+                        crate::UnityEngine::Vector2Int,
+                        crate::UnityEngine::Vector2Int,
+                    ), quest_hook::libil2cpp::Void, 3usize>("BuildAreas")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BuildAreas", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BuildAreas",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (areas, minSize, maxSize))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (areas, minSize, maxSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn BuildRowArray(
@@ -112,94 +103,84 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-                >,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-                                >,
+                    .find_static_method::<(i32, i32), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
                             >,
                         >,
-                        2usize,
-                    >("BuildRowArray")
+                    >, 2usize>("BuildRowArray")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BuildRowArray", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BuildRowArray",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-                >,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (maxRowHeight, rowHeightBias))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (maxRowHeight, rowHeightBias))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeMaxAllocSize(
         areas: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
-                >,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Area>,
             >,
         >,
         rowHeightBias: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2Int> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
-                                    >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
                                 >,
                             >,
-                            i32,
-                        ),
-                        crate::UnityEngine::Vector2Int,
-                        2usize,
-                    >("ComputeMaxAllocSize")
+                        >,
+                        i32,
+                    ), crate::UnityEngine::Vector2Int, 2usize>(
+                        "ComputeMaxAllocSize"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ComputeMaxAllocSize", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ComputeMaxAllocSize",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector2Int = unsafe {
-            cordl_method_info.invoke_unchecked((), (areas, rowHeightBias))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector2Int =
+            unsafe { cordl_method_info.invoke_unchecked((), (areas, rowHeightBias))? };
         Ok(__cordl_ret.into())
     }
     pub fn Free(
         &mut self,
         alloc2D: crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D),
@@ -214,9 +195,8 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (alloc2D))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (alloc2D))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -224,8 +204,8 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
         maxSize: crate::UnityEngine::Vector2Int,
         rowHeightBias: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (minSize, maxSize, rowHeightBias))?;
         Ok(__cordl_object.into())
@@ -238,32 +218,29 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
             crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("TryAllocate")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D,
+                        >,
+                    ), bool, 3usize>("TryAllocate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryAllocate", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryAllocate",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (width, height, alloc2D))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (width, height, alloc2D))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -272,36 +249,32 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
         maxSize: crate::UnityEngine::Vector2Int,
         rowHeightBias: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector2Int,
-                            crate::UnityEngine::Vector2Int,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::UnityEngine::Vector2Int,
+                        crate::UnityEngine::Vector2Int,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (minSize, maxSize, rowHeightBias))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (minSize, maxSize, rowHeightBias))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::UIR::Allocator2D {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::Allocator2D {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -310,18 +283,17 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Allocator2D_Alloc2D {
     pub rect: crate::UnityEngine::RectInt,
-    pub row: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-    >,
+    pub row: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
     pub alloc: crate::UnityEngine::UIElements::UIR::Alloc,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
+    for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
@@ -340,18 +312,16 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
+    for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -362,7 +332,8 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
+    for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -376,22 +347,22 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
+    for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
+    for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -405,7 +376,8 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
+    for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -418,40 +390,35 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
 impl crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
     pub fn _ctor(
         &mut self,
-        row: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-        >,
+        row: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
         alloc: crate::UnityEngine::UIElements::UIR::Alloc,
         width: i32,
         height: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-                            >,
-                            crate::UnityEngine::UIElements::UIR::Alloc,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+                        >,
+                        crate::UnityEngine::UIElements::UIR::Alloc,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (row, alloc, width, height))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (row, alloc, width, height))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -461,19 +428,17 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
 pub struct Allocator2D_Area {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rect: crate::UnityEngine::RectInt,
-    pub allocator: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::BestFitAllocator,
-    >,
+    pub allocator: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::BestFitAllocator>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Area")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
     const CLASS_NAME: &'static str = "Allocator2D/Area";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -503,8 +468,8 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
     pub fn New(
         rect: crate::UnityEngine::RectInt,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (rect))?;
         Ok(__cordl_object.into())
@@ -513,9 +478,10 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
         &mut self,
         rect: crate::UnityEngine::RectInt,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::RectInt),
@@ -530,15 +496,13 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (rect))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (rect))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Area")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -554,26 +518,20 @@ pub struct Allocator2D_Row {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
     >,
     pub rect: crate::UnityEngine::RectInt,
-    pub area: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
-    >,
-    pub allocator: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::BestFitAllocator,
-    >,
+    pub area: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Area>,
+    pub allocator: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::BestFitAllocator>,
     pub alloc: crate::UnityEngine::UIElements::UIR::Alloc,
-    pub next: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-    >,
+    pub next: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Row")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
     const CLASS_NAME: &'static str = "Allocator2D/Row";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -605,9 +563,10 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
     pub fn Create() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -630,66 +589,59 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
     pub fn Reset(
-        row: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-        >,
+        row: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Reset")
+                    .find_static_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+                    >), quest_hook::libil2cpp::Void, 1usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reset",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (row))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (row))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Row")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

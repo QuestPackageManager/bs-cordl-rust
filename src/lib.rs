@@ -1,19 +1,18 @@
 
-        #![feature(inherent_associated_types)]  
+#![feature(inherent_associated_types)]
+#![allow(clippy::all)]
+#![allow(unused)]
+#![allow(non_snake_case)]
+#![allow(non_camel_case_types)]
+#![allow(non_upper_case_globals)]
+#![allow(non_ascii_idents)]
+#![allow(bad_style)]
+#![allow(clippy::module_name_repetitions)]
+#![allow(clippy::similar_names)]
+#![allow(clippy::case_sensitive_file_name)]
+#![allow(clippy::enum_variant_names)]
+#![allow(clippy::large_enum_variant)]
 
-        #![allow(clippy::all)]
-        #![allow(unused)]
-        #![allow(non_snake_case)]
-        #![allow(non_camel_case_types)]
-        #![allow(non_upper_case_globals)]
-        #![allow(non_ascii_idents)]
-        #![allow(bad_style)]
-        #![allow(clippy::module_name_repetitions)]
-        #![allow(clippy::similar_names)]
-        #![allow(clippy::case_sensitive_file_name)]
-        #![allow(clippy::enum_variant_names)]
-        #![allow(clippy::large_enum_variant)]
-        
 // namespace AOT;
 pub mod AOT;
 // namespace AYellowpaper;

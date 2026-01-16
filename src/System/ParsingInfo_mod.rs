@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ParsingInfo")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ParsingInfo {
     pub calendar: quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
     pub dayOfWeek: i32,
@@ -10,9 +10,8 @@ pub struct ParsingInfo {
     pub fAllowInnerWhite: bool,
     pub fAllowTrailingWhite: bool,
     pub fCustomNumberParser: bool,
-    pub parseNumberDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::DateTimeParse_MatchNumberDelegate,
-    >,
+    pub parseNumberDelegate:
+        quest_hook::libil2cpp::Gc<crate::System::DateTimeParse_MatchNumberDelegate>,
 }
 #[cfg(feature = "cordl_class_System+ParsingInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ParsingInfo {
@@ -34,13 +33,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ParsingInfo {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+ParsingInfo")]
@@ -74,9 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::ParsingInfo {
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -105,25 +99,24 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::ParsingInfo {
 }
 #[cfg(feature = "System+ParsingInfo")]
 impl crate::System::ParsingInfo {
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

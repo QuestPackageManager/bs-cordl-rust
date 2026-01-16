@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+Settings+MiscSettings")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct MiscSettings {
     pub language: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub pauseButtonResponse: crate::BeatSaber::Settings::MiscSettings_ResponseLevel,
@@ -25,18 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::MiscSett
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+MiscSettings")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::BeatSaber::Settings::MiscSettings {
+unsafe impl quest_hook::libil2cpp::Argument for crate::BeatSaber::Settings::MiscSettings {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -46,8 +42,7 @@ for crate::BeatSaber::Settings::MiscSettings {
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+MiscSettings")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::BeatSaber::Settings::MiscSettings {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatSaber::Settings::MiscSettings {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -60,17 +55,14 @@ for crate::BeatSaber::Settings::MiscSettings {
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+MiscSettings")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::BeatSaber::Settings::MiscSettings {
+unsafe impl quest_hook::libil2cpp::Returned for crate::BeatSaber::Settings::MiscSettings {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -88,8 +80,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::BeatSaber::Settings::MiscSe
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+MiscSettings")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::BeatSaber::Settings::MiscSettings {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::BeatSaber::Settings::MiscSettings {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -104,16 +95,15 @@ impl crate::BeatSaber::Settings::MiscSettings {
     pub type ResponseLevel = crate::BeatSaber::Settings::MiscSettings_ResponseLevel;
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+MiscSettings+ResponseLevel")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum MiscSettings_ResponseLevel {
     #[default]
     Instant = 0i32,
     Long = 1i32,
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+MiscSettings+ResponseLevel")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
+unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
@@ -132,18 +122,16 @@ for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+MiscSettings+ResponseLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
+    for crate::BeatSaber::Settings::MiscSettings_ResponseLevel
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -154,7 +142,8 @@ for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+MiscSettings+ResponseLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
+    for crate::BeatSaber::Settings::MiscSettings_ResponseLevel
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -168,22 +157,22 @@ for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+MiscSettings+ResponseLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
+    for crate::BeatSaber::Settings::MiscSettings_ResponseLevel
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+MiscSettings+ResponseLevel")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
+    for crate::BeatSaber::Settings::MiscSettings_ResponseLevel
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

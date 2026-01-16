@@ -6,13 +6,15 @@ pub struct BinaryStorageBuffer {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
     const CLASS_NAME: &'static str = "BinaryStorageBuffer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -25,16 +27,14 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
-impl std::ops::Deref
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
+impl std::ops::Deref for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
-impl std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
+impl std::ops::DerefMut for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -47,31 +47,31 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     #[cfg(
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
     )]
-    pub type BuiltinTypesSerializer = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer;
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
-    )]
-    pub type DynamicString = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString;
+    pub type BuiltinTypesSerializer =
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer;
+    #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
+    pub type DynamicString =
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString;
     #[cfg(
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
     )]
-    type ISerializationAdapter = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter;
+    type ISerializationAdapter =
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter;
     #[cfg(
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
     )]
-    type ISerializationAdapter_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-        T,
-    >;
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
-    )]
-    pub type ObjectTypeData = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData;
+    type ISerializationAdapter_1<T: quest_hook::libil2cpp::Type> =
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+            T,
+        >;
+    #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData")]
+    pub type ObjectTypeData =
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData;
     #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
     pub type Reader = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader;
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
-    )]
-    pub type TypeSerializer = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer;
+    #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer")]
+    pub type TypeSerializer =
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer;
     #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
     pub type Writer = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer;
     pub fn AddSerializationAdapter(
@@ -88,7 +88,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
         >,
         forceOverride: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -129,34 +130,27 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
         _cordl_size: u64,
         hash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            u64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("ComputeHash")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        u64,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("ComputeHash")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ComputeHash", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ComputeHash",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (pData, _cordl_size, hash))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (pData, _cordl_size, hash))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSerializationAdapter(
@@ -175,7 +169,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -207,43 +202,42 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (serializationAdapters, t, adapter))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (serializationAdapters, t, adapter))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -263,13 +257,15 @@ pub struct BinaryStorageBuffer_BuiltinTypesSerializer {
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
     const CLASS_NAME: &'static str = "BinaryStorageBuffer/BuiltinTypesSerializer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -281,28 +277,24 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTyp
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
 impl std::ops::Deref
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
 impl std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
 impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
     #[cfg(
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
@@ -315,10 +307,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
         >,
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
         offset: u32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -341,9 +333,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (reader, t, offset))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reader, t, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindBestSeparator(
@@ -351,38 +342,30 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         seps: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<char> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<char>,
-                            >,
-                        ),
-                        char,
-                        2usize,
-                    >("FindBestSeparator")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                    ), char, 2usize>("FindBestSeparator")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindBestSeparator", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindBestSeparator",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: char = unsafe {
-            cordl_method_info.invoke_unchecked(self, (str, seps))?
-        };
+        let __cordl_ret: char = unsafe { cordl_method_info.invoke_unchecked(self, (str, seps))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -394,7 +377,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
         >,
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -418,30 +402,27 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer, val))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (writer, val))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Dependencies(
@@ -454,8 +435,9 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
                 >,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -492,7 +474,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -500,207 +483,193 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTyp
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsRef<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
->
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
+impl AsRef<crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter>
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
+    ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter
+    {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsMut<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
->
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
+impl AsMut<crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter>
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter
+    {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsRef<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-        bool,
-    >,
->
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
+impl
+    AsRef<
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+            bool,
+        >,
+    > for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     fn as_ref(
         &self,
     ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         bool,
-    > {
+    >{
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsMut<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-        bool,
-    >,
->
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
+impl
+    AsMut<
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+            bool,
+        >,
+    > for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         bool,
-    > {
+    >{
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsRef<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-        crate::UnityEngine::Hash128,
-    >,
->
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
+impl
+    AsRef<
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+            crate::UnityEngine::Hash128,
+        >,
+    > for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     fn as_ref(
         &self,
     ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         crate::UnityEngine::Hash128,
-    > {
+    >{
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsMut<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-        crate::UnityEngine::Hash128,
-    >,
->
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
+impl
+    AsMut<
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+            crate::UnityEngine::Hash128,
+        >,
+    > for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         crate::UnityEngine::Hash128,
-    > {
+    >{
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsRef<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-        i32,
-    >,
->
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
+impl
+    AsRef<
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+            i32,
+        >,
+    > for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     fn as_ref(
         &self,
     ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         i32,
-    > {
+    >{
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsMut<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-        i32,
-    >,
->
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
+impl
+    AsMut<
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+            i32,
+        >,
+    > for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         i32,
-    > {
+    >{
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsRef<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-        i64,
-    >,
->
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
+impl
+    AsRef<
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+            i64,
+        >,
+    > for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     fn as_ref(
         &self,
     ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         i64,
-    > {
+    >{
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsMut<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-        i64,
-    >,
->
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
+impl
+    AsMut<
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+            i64,
+        >,
+    > for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         i64,
-    > {
+    >{
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsRef<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
->
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
+impl
+    AsRef<
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     fn as_ref(
         &self,
     ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
+    >{
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsMut<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
->
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer")]
+impl
+    AsMut<
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
+    >{
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BinaryStorageBuffer_DynamicString {
     pub stringId: u32,
     pub nextId: u32,
@@ -709,7 +678,8 @@ pub struct BinaryStorageBuffer_DynamicString {
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
@@ -728,20 +698,18 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -754,7 +722,8 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -770,16 +739,15 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -787,7 +755,8 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -803,7 +772,8 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -817,8 +787,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicSt
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
 )]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct BinaryStorageBuffer_ISerializationAdapter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -826,13 +796,15 @@ pub struct BinaryStorageBuffer_ISerializationAdapter {
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
     const CLASS_NAME: &'static str = "BinaryStorageBuffer/ISerializationAdapter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -844,28 +816,24 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter")]
 impl std::ops::Deref
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter")]
 impl std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter")]
 impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
     pub fn Deserialize(
         &mut self,
@@ -874,10 +842,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializ
         >,
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
         offset: u32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -900,9 +868,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializ
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (reader, t, offset))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reader, t, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn Serialize(
@@ -912,7 +879,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializ
         >,
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -936,14 +904,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializ
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer, val))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (writer, val))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_Dependencies(
@@ -956,8 +920,9 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializ
                 >,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -994,7 +959,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializ
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1005,8 +971,8 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
 )]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct BinaryStorageBuffer_ISerializationAdapter_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -1015,31 +981,29 @@ pub struct BinaryStorageBuffer_ISerializationAdapter_1<T: quest_hook::libil2cpp:
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
 )]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-    T,
-> {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<T>
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
     const CLASS_NAME: &'static str = "BinaryStorageBuffer/ISerializationAdapter`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "UnityEngine.ResourceManagement.Util",
-                        "BinaryStorageBuffer/ISerializationAdapter`1",
-                    )
-                    .unwrap()
-                    .make_generic::<(T)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find(
+                "UnityEngine.ResourceManagement.Util",
+                "BinaryStorageBuffer/ISerializationAdapter`1",
+            )
+            .unwrap()
+            .make_generic::<(T)>()
+            .unwrap()
+            .unwrap()
+        })
     }
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1051,40 +1015,28 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-    T,
-> {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<T>
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-    T,
-> {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<T>
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
-)]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-    T,
-> {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1")]
+impl<T: quest_hook::libil2cpp::Type>
+    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<T>
+{
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
@@ -1092,9 +1044,8 @@ impl<
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
 )]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-    T,
-> {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<T>
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1102,45 +1053,35 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
-)]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
->
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-    T,
-> {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1")]
+impl<T: quest_hook::libil2cpp::Type>
+    AsRef<crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter>
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<T>
+{
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
+    ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter
+    {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
-)]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
->
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-    T,
-> {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1")]
+impl<T: quest_hook::libil2cpp::Type>
+    AsMut<crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter>
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<T>
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter
+    {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BinaryStorageBuffer_ObjectTypeData {
     pub typeId: u32,
     pub objectId: u32,
@@ -1149,7 +1090,8 @@ pub struct BinaryStorageBuffer_ObjectTypeData {
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
@@ -1168,20 +1110,18 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1194,7 +1134,8 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1210,16 +1151,15 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -1227,7 +1167,8 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1243,7 +1184,8 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1252,13 +1194,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData")]
 impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {}
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryStorageBuffer_Reader {
@@ -1278,17 +1216,17 @@ pub struct BinaryStorageBuffer_Reader {
     >,
     pub stringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
     const CLASS_NAME: &'static str = "BinaryStorageBuffer/Reader";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1301,8 +1239,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
-impl std::ops::Deref
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
+impl std::ops::Deref for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1310,7 +1247,8 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
 impl std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1327,7 +1265,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -1346,9 +1285,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (a))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeStringLength(
@@ -1356,44 +1294,41 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         id: u32,
         sep: char,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32, char), i32, 2usize>("ComputeStringLength")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ComputeStringLength", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ComputeStringLength",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (id, sep))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (id, sep))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetAutoEncodedStringLength(
-        &mut self,
-        id: u32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetAutoEncodedStringLength(&mut self, id: u32) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), i32, 1usize>("GetAutoEncodedStringLength")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetAutoEncodedStringLength", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetAutoEncodedStringLength",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (id))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (id))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBuffer(
@@ -1401,9 +1336,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1420,9 +1356,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCacheStats(
@@ -1430,29 +1365,26 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         reqCount: quest_hook::libil2cpp::ByRefMut<i32>,
         reqHits: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("GetCacheStats")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("GetCacheStats")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCacheStats", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCacheStats",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (reqCount, reqHits))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reqCount, reqHits))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDynamicStringLength(
@@ -1460,22 +1392,22 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         id: u32,
         sep: char,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32, char), i32, 2usize>("GetDynamicStringLength")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetDynamicStringLength", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetDynamicStringLength",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (id, sep))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (id, sep))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringLengthInternal(
@@ -1483,26 +1415,25 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         offset: u32,
         enc: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32, quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>),
-                        i32,
-                        2usize,
-                    >("GetStringLengthInternal")
+                    .find_method::<(
+                        u32,
+                        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+                    ), i32, 2usize>("GetStringLengthInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetStringLengthInternal", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetStringLengthInternal",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (offset, enc))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (offset, enc))? };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -1517,7 +1448,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -1562,8 +1494,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (data, maxCachedObjects, adapters))?;
         Ok(__cordl_object.into())
@@ -1580,13 +1512,12 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (inputStream, bufferSize, maxCachedObjects, adapters),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (inputStream, bufferSize, maxCachedObjects, adapters),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn ProcessObjectArray<T, C>(
@@ -1597,36 +1528,35 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         cacheValues: bool,
     ) -> quest_hook::libil2cpp::Result<u32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        C: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        C: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            u32,
-                            C,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_2<T, C>>,
-                            bool,
-                        ),
+                    .find_method::<(
                         u32,
-                        4usize,
-                    >("ProcessObjectArray")
+                        C,
+                        quest_hook::libil2cpp::Gc<crate::System::Action_2<T, C>>,
+                        bool,
+                    ), u32, 4usize>("ProcessObjectArray")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessObjectArray", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessObjectArray",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (id, context, procFunc, cacheValues))?
+            cordl_method_info.invoke_unchecked(self, (id, context, procFunc, cacheValues))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1634,12 +1564,12 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         &mut self,
         id: u32,
         cacheValue: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32, bool),
@@ -1654,9 +1584,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (id, cacheValue))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (id, cacheValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadDynamicString(
@@ -1664,12 +1593,12 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         id: u32,
         sep: char,
         cacheValue: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32, char, bool),
@@ -1684,9 +1613,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (id, sep, cacheValue))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (id, sep, cacheValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadObjectArray_ByRefMut_u32_0<T>(
@@ -1698,37 +1626,35 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         cacheValues: bool,
     ) -> quest_hook::libil2cpp::Result<u32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<T>,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
                             >,
-                            u32,
-                            bool,
-                        ),
+                        >,
                         u32,
-                        3usize,
-                    >("ReadObjectArray")
+                        bool,
+                    ), u32, 3usize>("ReadObjectArray")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadObjectArray", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadObjectArray",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (results, id, cacheValues))?
-        };
+        let __cordl_ret: u32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (results, id, cacheValues))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadObjectArray_Type_u32__cordl_bool2(
@@ -1744,31 +1670,27 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            u32,
-                            bool,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        u32,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         >,
-                        4usize,
-                    >("ReadObjectArray")
+                    >, 4usize>("ReadObjectArray")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadObjectArray", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadObjectArray",
+                            4usize
                         )
                     })
             });
@@ -1777,8 +1699,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (t, id, cacheValues, cacheFullArray))?
+            cordl_method_info.invoke_unchecked(self, (t, id, cacheValues, cacheFullArray))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1794,26 +1715,22 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32, bool, bool),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
+                    .find_method::<(u32, bool, bool), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         >,
-                        3usize,
-                    >("ReadObjectArray")
+                    >, 3usize>("ReadObjectArray")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadObjectArray", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadObjectArray",
+                            3usize
                         )
                     })
             });
@@ -1821,9 +1738,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (id, cacheValues, cacheFullArray))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (id, cacheValues, cacheFullArray))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadObjectArray_u32__cordl_bool3<T>(
@@ -1835,12 +1750,14 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32, bool, bool),
@@ -1855,11 +1772,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<T>,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (id, cacheValues, cacheFullArray))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (id, cacheValues, cacheFullArray))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadObject_Type_u32__cordl_bool2(
@@ -1867,12 +1781,12 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
         id: u32,
         cacheValue: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, u32, bool),
@@ -1887,21 +1801,20 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (t, id, cacheValue))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (t, id, cacheValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadObject_u32__cordl_bool0(
         &mut self,
         id: u32,
         cacheValue: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32, bool),
@@ -1916,9 +1829,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (id, cacheValue))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (id, cacheValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadObject_u32__cordl_bool1<T>(
@@ -1927,25 +1839,27 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         cacheValue: bool,
     ) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32, bool), T, 2usize>("ReadObject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadObject", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadObject",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: T = unsafe {
-            cordl_method_info.invoke_unchecked(self, (offset, cacheValue))?
-        };
+        let __cordl_ret: T =
+            unsafe { cordl_method_info.invoke_unchecked(self, (offset, cacheValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadString(
@@ -1953,12 +1867,12 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         id: u32,
         sep: char,
         cacheValue: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32, char, bool),
@@ -1973,9 +1887,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (id, sep, cacheValue))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (id, sep, cacheValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadStringInternal(
@@ -1983,52 +1896,51 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         offset: u32,
         enc: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
         cacheValue: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            u32,
-                            quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        3usize,
-                    >("ReadStringInternal")
+                    .find_method::<(
+                        u32,
+                        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+                        bool,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, 3usize>(
+                        "ReadStringInternal",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadStringInternal", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadStringInternal",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (offset, enc, cacheValue))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (offset, enc, cacheValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadValue<T>(&mut self, id: u32) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), T, 1usize>("ReadValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadValue", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReadValue",
+                            1usize
                         )
                     })
             });
@@ -2043,12 +1955,14 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32, bool),
@@ -2063,9 +1977,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (id, cacheValue))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (id, cacheValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetCachedValue<T>(
@@ -2074,29 +1987,28 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         val: quest_hook::libil2cpp::ByRefMut<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32, quest_hook::libil2cpp::ByRefMut<T>),
-                        bool,
-                        2usize,
-                    >("TryGetCachedValue")
+                    .find_method::<(u32, quest_hook::libil2cpp::ByRefMut<T>), bool, 2usize>(
+                        "TryGetCachedValue",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetCachedValue", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetCachedValue",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (offset, val))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (offset, val))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ReadDynamicString_b__29_0(
@@ -2104,7 +2016,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         chars: crate::System::Span_1<char>,
         state: crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -2124,9 +2037,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (chars, state))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (chars, state))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray_i32_Il2CppArray0(
@@ -2141,7 +2053,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -2188,7 +2101,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -2218,19 +2132,15 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (inputStream, bufferSize, maxCachedObjects, adapters),
-                )?
+                .invoke_unchecked(self, (inputStream, bufferSize, maxCachedObjects, adapters))?
         };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2250,13 +2160,15 @@ pub struct BinaryStorageBuffer_TypeSerializer {
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
     const CLASS_NAME: &'static str = "BinaryStorageBuffer/TypeSerializer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2268,33 +2180,28 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerial
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer")]
 impl std::ops::Deref
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer")]
 impl std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer")]
 impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
-    )]
-    pub type Data = crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data;
+    #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data")]
+    pub type Data =
+        crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data;
     pub fn Deserialize(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<
@@ -2302,10 +2209,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSeria
         >,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         offset: u32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -2328,16 +2235,13 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSeria
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (reader, _cordl_type, offset))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reader, _cordl_type, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -2349,7 +2253,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSeria
         >,
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -2373,30 +2278,27 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSeria
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer, val))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (writer, val))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Dependencies(
@@ -2409,8 +2311,9 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSeria
                 >,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -2447,7 +2350,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSeria
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2455,65 +2359,61 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerial
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
-)]
-impl AsRef<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
-> for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer")]
+impl AsRef<crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter>
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer
+{
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
+    ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter
+    {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
-)]
-impl AsMut<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
-> for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer")]
+impl AsMut<crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter>
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter
+    {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
-)]
-impl AsRef<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
-    >,
-> for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer")]
+impl
+    AsRef<
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
+    > for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer
+{
     fn as_ref(
         &self,
     ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         quest_hook::libil2cpp::Gc<crate::System::Type>,
-    > {
+    >{
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
-)]
-impl AsMut<
-    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
-    >,
-> for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer")]
+impl
+    AsMut<
+        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
+    > for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         quest_hook::libil2cpp::Gc<crate::System::Type>,
-    > {
+    >{
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryStorageBuffer_Writer {
@@ -2542,17 +2442,17 @@ pub struct BinaryStorageBuffer_Writer {
         >,
     >,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
     const CLASS_NAME: &'static str = "BinaryStorageBuffer/Writer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2565,8 +2465,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
-impl std::ops::Deref
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
+impl std::ops::Deref for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -2574,50 +2473,42 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
 impl std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
 impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk"
-    )]
+    #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
     pub type Chunk = crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk;
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
-    )]
-    pub type StringParts = crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts;
+    #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts")]
+    pub type StringParts =
+        crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts;
     pub fn ComputeStringSize(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isUnicode: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<bool>,
-                        ),
-                        u32,
-                        2usize,
-                    >("ComputeStringSize")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<bool>,
+                    ), u32, 2usize>("ComputeStringSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ComputeStringSize", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ComputeStringSize",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (str, isUnicode))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), (str, isUnicode))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindChunkWithSpace(
@@ -2628,7 +2519,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
             crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -2655,9 +2547,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     pub fn IsUnicode(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -2672,9 +2565,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (str))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (str))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -2687,8 +2578,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (chunkSize, adapters))?;
         Ok(__cordl_object.into())
@@ -2704,7 +2595,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         sep: char,
         minSize: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -2730,9 +2622,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (parts, index, sep, minSize))?
-        };
+        let __cordl_ret: u32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (parts, index, sep, minSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReserveInternal(
@@ -2740,38 +2631,42 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         dataSize: u32,
         prefixSize: bool,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32, bool), u32, 2usize>("ReserveInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReserveInternal", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReserveInternal",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (dataSize, prefixSize))?
-        };
+        let __cordl_ret: u32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (dataSize, prefixSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn Reserve_0<T>(&mut self) -> quest_hook::libil2cpp::Result<u32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("Reserve")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reserve",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reserve",
                             0usize
                         )
                     })
@@ -2781,25 +2676,26 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     }
     pub fn Reserve_u32_1<T>(&mut self, count: u32) -> quest_hook::libil2cpp::Result<u32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), u32, 1usize>("Reserve")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reserve",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reserve",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (count))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (count))? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializeToByteArray(
@@ -2807,9 +2703,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2826,18 +2723,18 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializeToStream(
         &mut self,
         str: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
@@ -2852,18 +2749,17 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (str))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (str))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteAutoEncodedString(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -2878,9 +2774,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (str))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (str))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteDynamicString(
@@ -2888,31 +2782,25 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sep: char,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            char,
-                        ),
-                        u32,
-                        2usize,
-                    >("WriteDynamicString")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        char,
+                    ), u32, 2usize>("WriteDynamicString")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteDynamicString", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteDynamicString",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (str, sep))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (str, sep))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteInternal_Il2CppObject_u32__cordl_bool0(
@@ -2921,32 +2809,27 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         dataSize: u32,
         prefixSize: bool,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            u32,
-                            bool,
-                        ),
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         u32,
-                        3usize,
-                    >("WriteInternal")
+                        bool,
+                    ), u32, 3usize>("WriteInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteInternal", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteInternal",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pData, dataSize, prefixSize))?
-        };
+        let __cordl_ret: u32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pData, dataSize, prefixSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteInternal_u32_Il2CppObject_u32__cordl_bool1(
@@ -2956,33 +2839,28 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         dataSize: u32,
         prefixSize: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            u32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            u32,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("WriteInternal")
+                    .find_method::<(
+                        u32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        u32,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 4usize>("WriteInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteInternal", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteInternal",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (id, pData, dataSize, prefixSize))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (id, pData, dataSize, prefixSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteObject(
@@ -2990,69 +2868,60 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         serializeTypeData: bool,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            bool,
-                        ),
-                        u32,
-                        2usize,
-                    >("WriteObject")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        bool,
+                    ), u32, 2usize>("WriteObject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteObject", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteObject",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj, serializeTypeData))?
-        };
+        let __cordl_ret: u32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (obj, serializeTypeData))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteObjects<T>(
         &mut self,
-        objs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        objs: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
         serizalizeTypeData: bool,
     ) -> quest_hook::libil2cpp::Result<u32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
-                            bool,
-                        ),
-                        u32,
-                        2usize,
-                    >("WriteObjects")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<T>,
+                        >,
+                        bool,
+                    ), u32, 2usize>("WriteObjects")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteObjects", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteObjects",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (objs, serizalizeTypeData))?
-        };
+        let __cordl_ret: u32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (objs, serizalizeTypeData))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteString(
@@ -3060,31 +2929,25 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sep: char,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            char,
-                        ),
-                        u32,
-                        2usize,
-                    >("WriteString")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        char,
+                    ), u32, 2usize>("WriteString")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteString", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteString",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (str, sep))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (str, sep))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteStringInternal(
@@ -3092,40 +2955,35 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         enc: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-                        ),
-                        u32,
-                        2usize,
-                    >("WriteStringInternal")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+                    ), u32, 2usize>("WriteStringInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteStringInternal", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WriteStringInternal",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (val, enc))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (val, enc))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteUnicodeString(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -3140,9 +2998,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (str))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (str))? };
         Ok(__cordl_ret.into())
     }
     pub fn Write_ByRefMut0<T>(
@@ -3150,29 +3006,26 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         val: quest_hook::libil2cpp::ByRefMut<T>,
     ) -> quest_hook::libil2cpp::Result<u32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<T>),
-                        u32,
-                        1usize,
-                    >("Write")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<T>), u32, 1usize>("Write")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Write",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (val))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn Write_Il2CppArray__cordl_bool4<T>(
@@ -3181,57 +3034,54 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         hashElements: bool,
     ) -> quest_hook::libil2cpp::Result<u32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
-                            >,
-                            bool,
-                        ),
-                        u32,
-                        2usize,
-                    >("Write")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                        bool,
+                    ), u32, 2usize>("Write")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Write",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (values, hashElements))?
-        };
+        let __cordl_ret: u32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (values, hashElements))? };
         Ok(__cordl_ret.into())
     }
     pub fn Write_T1<T>(&mut self, val: T) -> quest_hook::libil2cpp::Result<u32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(T), u32, 1usize>("Write")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Write",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (val))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn Write_u32_ByRefMut2<T>(
@@ -3240,29 +3090,26 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         val: quest_hook::libil2cpp::ByRefMut<T>,
     ) -> quest_hook::libil2cpp::Result<u32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32, quest_hook::libil2cpp::ByRefMut<T>),
-                        u32,
-                        2usize,
-                    >("Write")
+                    .find_method::<(u32, quest_hook::libil2cpp::ByRefMut<T>), u32, 2usize>("Write")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Write",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (offset, val))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (offset, val))? };
         Ok(__cordl_ret.into())
     }
     pub fn Write_u32_Il2CppArray__cordl_bool5<T>(
@@ -3272,62 +3119,55 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         hashElements: bool,
     ) -> quest_hook::libil2cpp::Result<u32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            u32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
-                            >,
-                            bool,
-                        ),
+                    .find_method::<(
                         u32,
-                        3usize,
-                    >("Write")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                        bool,
+                    ), u32, 3usize>("Write")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Write",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (offset, values, hashElements))?
-        };
+        let __cordl_ret: u32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (offset, values, hashElements))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Write_u32_T3<T>(
-        &mut self,
-        offset: u32,
-        val: T,
-    ) -> quest_hook::libil2cpp::Result<u32>
+    pub fn Write_u32_T3<T>(&mut self, offset: u32, val: T) -> quest_hook::libil2cpp::Result<u32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32, T), u32, 2usize>("Write")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Write",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (offset, val))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, (offset, val))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -3341,7 +3181,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -3367,22 +3208,23 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (chunkSize, adapters))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (chunkSize, adapters))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_Length")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Length", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Length",
+                            0usize
                         )
                     })
             });
@@ -3390,11 +3232,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
+    for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3405,8 +3246,8 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
     pub stringId: u32,
     pub separator: char,
@@ -3525,8 +3366,8 @@ impl crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_Binary
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Reader_BinaryStorageBuffer_StringCreationState {
     pub id: u32,
     pub sep: char,
@@ -3536,7 +3377,8 @@ pub struct Reader_BinaryStorageBuffer_StringCreationState {
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState {
+    for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
@@ -3555,20 +3397,18 @@ for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_Str
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState {
+    for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -3581,7 +3421,8 @@ for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_Str
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState {
+    for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -3597,16 +3438,15 @@ for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_Str
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState {
+    for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -3614,7 +3454,8 @@ for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_Str
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState {
+    for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -3630,7 +3471,8 @@ for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_Str
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState {
+    for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -3646,8 +3488,8 @@ impl crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_St
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TypeSerializer_BinaryStorageBuffer_Data {
     pub assemblyId: u32,
     pub classId: u32,
@@ -3656,7 +3498,8 @@ pub struct TypeSerializer_BinaryStorageBuffer_Data {
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
+    for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
@@ -3675,20 +3518,18 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
+    for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -3701,7 +3542,8 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
+    for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -3717,16 +3559,15 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
+    for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -3734,7 +3575,8 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
+    for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -3750,7 +3592,8 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
+    for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -3759,13 +3602,9 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data")]
 impl crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {}
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Writer_BinaryStorageBuffer_Chunk {
@@ -3773,17 +3612,17 @@ pub struct Writer_BinaryStorageBuffer_Chunk {
     pub position: u32,
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk {
+    for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
     const CLASS_NAME: &'static str = "BinaryStorageBuffer/Writer/Chunk";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -3797,7 +3636,8 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chu
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
 impl std::ops::Deref
-for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk {
+    for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -3805,7 +3645,8 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chu
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
 impl std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk {
+    for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -3813,39 +3654,37 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chu
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
 impl crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk {
+    for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3856,8 +3695,8 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chu
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Writer_BinaryStorageBuffer_StringParts {
     pub str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub dataSize: u32,
@@ -3867,7 +3706,8 @@ pub struct Writer_BinaryStorageBuffer_StringParts {
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
+    for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
@@ -3886,20 +3726,18 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
+    for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -3912,7 +3750,8 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
+    for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -3928,16 +3767,15 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
+    for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -3945,7 +3783,8 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
+    for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -3961,7 +3800,8 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
+    for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -3970,7 +3810,5 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts")]
 impl crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {}

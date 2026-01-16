@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Line")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Line {
     pub m: crate::Unity::Mathematics::float3,
     pub t: crate::Unity::Mathematics::float3,
@@ -25,13 +25,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Line 
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Line")]
@@ -65,9 +62,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Rendering::L
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -100,87 +95,84 @@ impl crate::UnityEngine::Rendering::Line {
         a: crate::Unity::Mathematics::float4,
         b: crate::Unity::Mathematics::float4,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::Line> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Mathematics::float4,
-                            crate::Unity::Mathematics::float4,
-                        ),
-                        crate::UnityEngine::Rendering::Line,
-                        2usize,
-                    >("LineOfPlaneIntersectingPlane")
+                    .find_static_method::<(
+                        crate::Unity::Mathematics::float4,
+                        crate::Unity::Mathematics::float4,
+                    ), crate::UnityEngine::Rendering::Line, 2usize>(
+                        "LineOfPlaneIntersectingPlane"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LineOfPlaneIntersectingPlane", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LineOfPlaneIntersectingPlane",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::Line = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b))?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::Line =
+            unsafe { cordl_method_info.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn PlaneContainingLineAndPoint(
         a: crate::UnityEngine::Rendering::Line,
         b: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Rendering::Line,
-                            crate::Unity::Mathematics::float3,
-                        ),
-                        crate::Unity::Mathematics::float4,
-                        2usize,
-                    >("PlaneContainingLineAndPoint")
+                    .find_static_method::<(
+                        crate::UnityEngine::Rendering::Line,
+                        crate::Unity::Mathematics::float3,
+                    ), crate::Unity::Mathematics::float4, 2usize>(
+                        "PlaneContainingLineAndPoint"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PlaneContainingLineAndPoint", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PlaneContainingLineAndPoint",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Mathematics::float4 = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b))?
-        };
+        let __cordl_ret: crate::Unity::Mathematics::float4 =
+            unsafe { cordl_method_info.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn PlaneContainingLineWithNormalPerpendicularToVector(
         a: crate::UnityEngine::Rendering::Line,
         b: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Rendering::Line,
-                            crate::Unity::Mathematics::float3,
-                        ),
-                        crate::Unity::Mathematics::float4,
-                        2usize,
-                    >("PlaneContainingLineWithNormalPerpendicularToVector")
+                    .find_static_method::<(
+                        crate::UnityEngine::Rendering::Line,
+                        crate::Unity::Mathematics::float3,
+                    ), crate::Unity::Mathematics::float4, 2usize>(
+                        "PlaneContainingLineWithNormalPerpendicularToVector",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PlaneContainingLineWithNormalPerpendicularToVector", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PlaneContainingLineWithNormalPerpendicularToVector",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Mathematics::float4 = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b))?
-        };
+        let __cordl_ret: crate::Unity::Mathematics::float4 =
+            unsafe { cordl_method_info.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
 }

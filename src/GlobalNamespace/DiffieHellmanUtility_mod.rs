@@ -5,14 +5,14 @@ pub struct DiffieHellmanUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::DiffieHellmanUtility {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DiffieHellmanUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "DiffieHellmanUtility";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,9 +42,11 @@ impl crate::GlobalNamespace::DiffieHellmanUtility {
     pub const kMaxDiffieHellmanPublicKeyLength: i32 = 2048i32;
     pub const kMaxElipticalCurvePublicKeyLength: i32 = 256i32;
     #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
-    pub type DiffieHellmanKeyPair = crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair;
+    pub type DiffieHellmanKeyPair =
+        crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair;
     #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
-    pub type ElipticalCurveKeyPair = crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair;
+    pub type ElipticalCurveKeyPair =
+        crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair;
     #[cfg(feature = "DiffieHellmanUtility+KeyType")]
     pub type KeyType = crate::GlobalNamespace::DiffieHellmanUtility_KeyType;
     #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
@@ -54,22 +56,20 @@ impl crate::GlobalNamespace::DiffieHellmanUtility {
             crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair,
-                        >,
-                        0usize,
-                    >("GenerateDiffieHellmanKeys")
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair,
+                    >, 0usize>("GenerateDiffieHellmanKeys")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GenerateDiffieHellmanKeys", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GenerateDiffieHellmanKeys",
+                            0usize
                         )
                     })
             });
@@ -83,22 +83,20 @@ impl crate::GlobalNamespace::DiffieHellmanUtility {
             crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair,
-                        >,
-                        0usize,
-                    >("GenerateElipticalCurveKeys")
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair,
+                    >, 0usize>("GenerateElipticalCurveKeys")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GenerateElipticalCurveKeys", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GenerateElipticalCurveKeys",
+                            0usize
                         )
                     })
             });
@@ -112,9 +110,10 @@ impl crate::GlobalNamespace::DiffieHellmanUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDiffieHellmanKeyPair>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::DiffieHellmanUtility_KeyType),
@@ -131,9 +130,8 @@ impl crate::GlobalNamespace::DiffieHellmanUtility {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IDiffieHellmanKeyPair,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (keyType))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDiffieHellmanKeyPair> =
+            unsafe { cordl_method_info.invoke_unchecked((), (keyType))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateKeysAsync(
@@ -147,30 +145,28 @@ impl crate::GlobalNamespace::DiffieHellmanUtility {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
-                            crate::System::Threading::CancellationToken,
-                            crate::GlobalNamespace::DiffieHellmanUtility_KeyType,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IDiffieHellmanKeyPair,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
+                        crate::System::Threading::CancellationToken,
+                        crate::GlobalNamespace::DiffieHellmanUtility_KeyType,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IDiffieHellmanKeyPair,
                             >,
                         >,
-                        3usize,
-                    >("GenerateKeysAsync")
+                    >, 3usize>("GenerateKeysAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GenerateKeysAsync", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GenerateKeysAsync",
+                            3usize
                         )
                     })
             });
@@ -179,8 +175,7 @@ impl crate::GlobalNamespace::DiffieHellmanUtility {
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDiffieHellmanKeyPair>,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (taskUtility, cancellationToken, keyType))?
+            cordl_method_info.invoke_unchecked((), (taskUtility, cancellationToken, keyType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -188,86 +183,68 @@ impl crate::GlobalNamespace::DiffieHellmanUtility {
         dhBasicAgreement: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement,
         >,
-        clientPublicKey: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
+        clientPublicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<u8>,
+                            crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement,
                         >,
-                        2usize,
-                    >("GetPreMasterSecret")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, 2usize>(
+                        "GetPreMasterSecret",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPreMasterSecret", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPreMasterSecret",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (dhBasicAgreement, clientPublicKey))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (dhBasicAgreement, clientPublicKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreMasterSecret_ECDHBasicAgreement1(
         ecdhBasicAgreement: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement,
         >,
-        clientPublicKey: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
+        clientPublicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<u8>,
+                            crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement,
                         >,
-                        2usize,
-                    >("GetPreMasterSecret")
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, 2usize>(
+                        "GetPreMasterSecret",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPreMasterSecret", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPreMasterSecret",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (ecdhBasicAgreement, clientPublicKey))?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> = unsafe {
+            cordl_method_info.invoke_unchecked((), (ecdhBasicAgreement, clientPublicKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -286,20 +263,21 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DiffieHellman
 #[derive(Debug)]
 pub struct DiffieHellmanUtility_DiffieHellmanKeyPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dhBasicAgreement: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement,
-    >,
+    pub _dhBasicAgreement:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement>,
     pub _publicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+DiffieHellmanKeyPair")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
+    for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "DiffieHellmanUtility/DiffieHellmanKeyPair";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -312,16 +290,14 @@ for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
-impl std::ops::Deref
-for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
+impl std::ops::Deref for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
+impl std::ops::DerefMut for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -330,15 +306,14 @@ for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
 impl crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
     pub fn GetPreMasterSecret(
         &mut self,
-        clientPublicKey: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
+        clientPublicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -357,17 +332,14 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (clientPublicKey))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (clientPublicKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreMasterSecretAsync(
         &mut self,
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
-        clientPublicKey: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
+        clientPublicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
@@ -375,31 +347,25 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<u8>,
-                                >,
-                            >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         >,
-                        2usize,
-                    >("GetPreMasterSecretAsync")
+                    >, 2usize>("GetPreMasterSecretAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPreMasterSecretAsync", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPreMasterSecretAsync",
+                            2usize
                         )
                     })
             });
@@ -407,9 +373,7 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (taskUtility, clientPublicKey))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (taskUtility, clientPublicKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -418,8 +382,8 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
         >,
         publicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (privateKeyParameters, publicKey))?;
         Ok(__cordl_object.into())
@@ -431,33 +395,28 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
         >,
         publicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (privateKeyParameters, publicKey))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (privateKeyParameters, publicKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_publicKey(
@@ -465,9 +424,10 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -484,15 +444,15 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+DiffieHellmanKeyPair")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
+    for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -502,14 +462,16 @@ for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
 }
 #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
 impl AsRef<crate::GlobalNamespace::IDiffieHellmanKeyPair>
-for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
+    for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IDiffieHellmanKeyPair {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
 impl AsMut<crate::GlobalNamespace::IDiffieHellmanKeyPair>
-for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
+    for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IDiffieHellmanKeyPair {
         unsafe { std::mem::transmute(self) }
     }
@@ -519,20 +481,21 @@ for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
 #[derive(Debug)]
 pub struct DiffieHellmanUtility_ElipticalCurveKeyPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _ecdhBasicAgreement: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement,
-    >,
+    pub _ecdhBasicAgreement:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement>,
     pub _publicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+ElipticalCurveKeyPair")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
+    for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "DiffieHellmanUtility/ElipticalCurveKeyPair";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -545,16 +508,14 @@ for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
-impl std::ops::Deref
-for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
+impl std::ops::Deref for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
+impl std::ops::DerefMut for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -563,15 +524,14 @@ for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
 impl crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
     pub fn GetPreMasterSecret(
         &mut self,
-        clientPublicKey: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
+        clientPublicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -590,17 +550,14 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (clientPublicKey))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (clientPublicKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreMasterSecretAsync(
         &mut self,
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
-        clientPublicKey: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
+        clientPublicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
@@ -608,31 +565,25 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<u8>,
-                                >,
-                            >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         >,
-                        2usize,
-                    >("GetPreMasterSecretAsync")
+                    >, 2usize>("GetPreMasterSecretAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPreMasterSecretAsync", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPreMasterSecretAsync",
+                            2usize
                         )
                     })
             });
@@ -640,9 +591,7 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (taskUtility, clientPublicKey))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (taskUtility, clientPublicKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -651,8 +600,8 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
         >,
         publicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (privateKeyParameters, publicKey))?;
         Ok(__cordl_object.into())
@@ -664,33 +613,28 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
         >,
         publicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (privateKeyParameters, publicKey))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (privateKeyParameters, publicKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_publicKey(
@@ -698,9 +642,10 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -717,15 +662,15 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+ElipticalCurveKeyPair")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
+    for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -735,29 +680,30 @@ for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
 }
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
 impl AsRef<crate::GlobalNamespace::IDiffieHellmanKeyPair>
-for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
+    for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IDiffieHellmanKeyPair {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
 impl AsMut<crate::GlobalNamespace::IDiffieHellmanKeyPair>
-for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
+    for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IDiffieHellmanKeyPair {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+KeyType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum DiffieHellmanUtility_KeyType {
     #[default]
     DiffieHellman = 0i32,
     ElipticalCurve = 1i32,
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+KeyType")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -776,18 +722,16 @@ for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+KeyType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
+    for crate::GlobalNamespace::DiffieHellmanUtility_KeyType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -798,7 +742,8 @@ for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+KeyType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
+    for crate::GlobalNamespace::DiffieHellmanUtility_KeyType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -812,22 +757,20 @@ for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+KeyType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
+    for crate::GlobalNamespace::DiffieHellmanUtility_KeyType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+KeyType")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -849,13 +792,15 @@ pub struct DiffieHellmanUtility_OperationTimer {
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+OperationTimer")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
+    for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "DiffieHellmanUtility/OperationTimer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -882,32 +827,31 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DiffieHellmanUtility_Operati
 }
 #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
 impl crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         operationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (operationName))?;
         Ok(__cordl_object.into())
@@ -915,13 +859,12 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
     pub fn Time(
         operation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -947,9 +890,10 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
         &mut self,
         operationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -964,15 +908,15 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (operationName))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (operationName))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+OperationTimer")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
+    for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -982,14 +926,16 @@ for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
 }
 #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
 impl AsRef<crate::System::IDisposable>
-for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
+    for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
 impl AsMut<crate::System::IDisposable>
-for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
+    for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }

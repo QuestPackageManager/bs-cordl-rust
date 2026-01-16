@@ -3,19 +3,13 @@
 #[derive(Debug)]
 pub struct FloatFxGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tweeningManager: quest_hook::libil2cpp::Gc<
-        crate::Tweening::SongTimeTweeningManager,
-    >,
-    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapCallbacksController,
-    >,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
+    pub _beatmapCallbacksController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCallbacksController>,
     pub _floatTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
-    pub _floatFxBeatmapEventCallbackWrapper: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    >,
-    pub _initData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FloatFxGroupEffect_InitData,
-    >,
+    pub _floatFxBeatmapEventCallbackWrapper:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallbackWrapper>,
+    pub _initData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxGroupEffect_InitData>,
 }
 #[cfg(feature = "cordl_class_FloatFxGroupEffect")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FloatFxGroupEffect {
@@ -24,7 +18,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FloatFxGroup
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "FloatFxGroupEffect";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -53,36 +48,34 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FloatFxGroupEffect {
 impl crate::GlobalNamespace::FloatFxGroupEffect {
     #[cfg(feature = "FloatFxGroupEffect+InitData")]
     pub type InitData = crate::GlobalNamespace::FloatFxGroupEffect_InitData;
-    pub fn Cleanup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Cleanup(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Cleanup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Cleanup",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Cleanup",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HandleFloatFxBeatmapEventCallback(
         &mut self,
-        currentEvent: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::FloatFxBeatmapEventData,
-        >,
+        currentEvent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBeatmapEventData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -99,102 +92,84 @@ impl crate::GlobalNamespace::FloatFxGroupEffect {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (currentEvent))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (currentEvent))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        initData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::FloatFxGroupEffect_InitData,
-        >,
-        tweeningManager: quest_hook::libil2cpp::Gc<
-            crate::Tweening::SongTimeTweeningManager,
-        >,
+        initData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxGroupEffect_InitData>,
+        tweeningManager: quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
         beatmapCallbacksController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCallbacksController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (initData, tweeningManager, beatmapCallbacksController),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (initData, tweeningManager, beatmapCallbacksController),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn SetValue(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetValue")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("SetValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetValue", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetValue",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        initData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::FloatFxGroupEffect_InitData,
-        >,
-        tweeningManager: quest_hook::libil2cpp::Gc<
-            crate::Tweening::SongTimeTweeningManager,
-        >,
+        initData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxGroupEffect_InitData>,
+        tweeningManager: quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
         beatmapCallbacksController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCallbacksController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::FloatFxGroupEffect_InitData,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Tweening::SongTimeTweeningManager,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapCallbacksController,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::FloatFxGroupEffect_InitData,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapCallbacksController,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (initData, tweeningManager, beatmapCallbacksController),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (initData, tweeningManager, beatmapCallbacksController),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -215,19 +190,17 @@ pub struct FloatFxGroupEffect_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub groupId: i32,
     pub elementId: i32,
-    pub target: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    >,
+    pub target: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxGroupEffectTarget>,
 }
 #[cfg(feature = "cordl_class_FloatFxGroupEffect+InitData")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::FloatFxGroupEffect_InitData {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FloatFxGroupEffect_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "FloatFxGroupEffect/InitData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -257,12 +230,10 @@ impl crate::GlobalNamespace::FloatFxGroupEffect_InitData {
     pub fn New(
         groupId: i32,
         elementId: i32,
-        target: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::FloatFxGroupEffectTarget,
-        >,
+        target: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxGroupEffectTarget>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (groupId, elementId, target))?;
         Ok(__cordl_object.into())
@@ -271,42 +242,34 @@ impl crate::GlobalNamespace::FloatFxGroupEffect_InitData {
         &mut self,
         groupId: i32,
         elementId: i32,
-        target: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::FloatFxGroupEffectTarget,
-        >,
+        target: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxGroupEffectTarget>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::FloatFxGroupEffectTarget,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxGroupEffectTarget>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (groupId, elementId, target))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (groupId, elementId, target))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_FloatFxGroupEffect+InitData")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::FloatFxGroupEffect_InitData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FloatFxGroupEffect_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

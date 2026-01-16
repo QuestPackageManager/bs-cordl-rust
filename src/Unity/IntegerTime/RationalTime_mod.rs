@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+IntegerTime+RationalTime")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct RationalTime {
     pub m_Count: i64,
     pub m_TicksPerSecond: crate::Unity::IntegerTime::RationalTime_TicksPerSecond,
@@ -25,13 +25,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::IntegerTime::RationalT
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+IntegerTime+RationalTime")]
@@ -45,8 +42,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::IntegerTime::Ratio
     }
 }
 #[cfg(feature = "cordl_class_Unity+IntegerTime+RationalTime")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::IntegerTime::RationalTime {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::IntegerTime::RationalTime {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -66,9 +62,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::IntegerTime::Ratio
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -86,8 +80,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::IntegerTime::Rationa
     }
 }
 #[cfg(feature = "cordl_class_Unity+IntegerTime+RationalTime")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::IntegerTime::RationalTime {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::IntegerTime::RationalTime {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -101,16 +94,18 @@ impl crate::Unity::IntegerTime::RationalTime {
     #[cfg(feature = "Unity+IntegerTime+RationalTime+TicksPerSecond")]
     pub type TicksPerSecond = crate::Unity::IntegerTime::RationalTime_TicksPerSecond;
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_Count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Count", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Count",
+                            0usize
                         )
                     })
             });
@@ -120,9 +115,10 @@ impl crate::Unity::IntegerTime::RationalTime {
     pub fn op_Explicit(
         t: crate::Unity::IntegerTime::RationalTime,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::IntegerTime::DiscreteTime> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::IntegerTime::RationalTime),
@@ -137,22 +133,20 @@ impl crate::Unity::IntegerTime::RationalTime {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::IntegerTime::DiscreteTime = unsafe {
-            cordl_method_info.invoke_unchecked((), (t))?
-        };
+        let __cordl_ret: crate::Unity::IntegerTime::DiscreteTime =
+            unsafe { cordl_method_info.invoke_unchecked((), (t))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Unity+IntegerTime+RationalTime+TicksPerSecond")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct RationalTime_TicksPerSecond {
     pub m_Numerator: u32,
     pub m_Denominator: u32,
 }
 #[cfg(feature = "cordl_class_Unity+IntegerTime+RationalTime+TicksPerSecond")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.IntegerTime";
@@ -171,18 +165,16 @@ for crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+IntegerTime+RationalTime+TicksPerSecond")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
+    for crate::Unity::IntegerTime::RationalTime_TicksPerSecond
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -193,7 +185,8 @@ for crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
 }
 #[cfg(feature = "cordl_class_Unity+IntegerTime+RationalTime+TicksPerSecond")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
+    for crate::Unity::IntegerTime::RationalTime_TicksPerSecond
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -207,22 +200,22 @@ for crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
 }
 #[cfg(feature = "cordl_class_Unity+IntegerTime+RationalTime+TicksPerSecond")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
+    for crate::Unity::IntegerTime::RationalTime_TicksPerSecond
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+IntegerTime+RationalTime+TicksPerSecond")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
+    for crate::Unity::IntegerTime::RationalTime_TicksPerSecond
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -236,7 +229,8 @@ for crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
 }
 #[cfg(feature = "cordl_class_Unity+IntegerTime+RationalTime+TicksPerSecond")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
+    for crate::Unity::IntegerTime::RationalTime_TicksPerSecond
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -251,9 +245,10 @@ impl crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
         &mut self,
         rhs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -268,18 +263,17 @@ impl crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (rhs))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_RationalTime_TicksPerSecond0(
         &mut self,
         rhs: crate::Unity::IntegerTime::RationalTime_TicksPerSecond,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::IntegerTime::RationalTime_TicksPerSecond),
@@ -294,41 +288,41 @@ impl crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (rhs))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn Gcd(a: u32, b: u32) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u32), u32, 2usize>("Gcd")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Gcd",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Gcd",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -339,29 +333,26 @@ impl crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
         num: quest_hook::libil2cpp::ByRefMut<u32>,
         den: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<u32>,
-                            quest_hook::libil2cpp::ByRefMut<u32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Simplify")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<u32>,
+                        quest_hook::libil2cpp::ByRefMut<u32>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Simplify")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Simplify", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Simplify",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (num, den))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (num, den))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -369,50 +360,44 @@ impl crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
         num: u32,
         den: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32, u32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(u32, u32), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (num, den))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (num, den))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+IntegerTime+RationalTime+TicksPerSecond")]
-impl AsRef<
-    crate::System::IEquatable_1<crate::Unity::IntegerTime::RationalTime_TicksPerSecond>,
-> for crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
+impl AsRef<crate::System::IEquatable_1<crate::Unity::IntegerTime::RationalTime_TicksPerSecond>>
+    for crate::Unity::IntegerTime::RationalTime_TicksPerSecond
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::Unity::IntegerTime::RationalTime_TicksPerSecond,
-    > {
+    ) -> &crate::System::IEquatable_1<crate::Unity::IntegerTime::RationalTime_TicksPerSecond> {
         todo!()
     }
 }
 #[cfg(feature = "Unity+IntegerTime+RationalTime+TicksPerSecond")]
-impl AsMut<
-    crate::System::IEquatable_1<crate::Unity::IntegerTime::RationalTime_TicksPerSecond>,
-> for crate::Unity::IntegerTime::RationalTime_TicksPerSecond {
+impl AsMut<crate::System::IEquatable_1<crate::Unity::IntegerTime::RationalTime_TicksPerSecond>>
+    for crate::Unity::IntegerTime::RationalTime_TicksPerSecond
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::Unity::IntegerTime::RationalTime_TicksPerSecond,
-    > {
+    ) -> &mut crate::System::IEquatable_1<crate::Unity::IntegerTime::RationalTime_TicksPerSecond>
+    {
         todo!()
     }
 }

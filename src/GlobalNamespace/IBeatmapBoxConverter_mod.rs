@@ -1,18 +1,18 @@
 #[cfg(feature = "cordl_class_IBeatmapBoxConverter")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IBeatmapBoxConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_IBeatmapBoxConverter")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::IBeatmapBoxConverter {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IBeatmapBoxConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "IBeatmapBoxConverter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,41 +42,38 @@ impl crate::GlobalNamespace::IBeatmapBoxConverter {
     pub fn ConvertBoxEventGroupId(
         &mut self,
         output: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::ValueTuple_2<i32, i32>,
-            >,
+            crate::System::Collections::Generic::List_1<crate::System::ValueTuple_2<i32, i32>>,
         >,
         groupId: i32,
         boxEventType: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::System::ValueTuple_2<i32, i32>,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::System::ValueTuple_2<i32, i32>,
                             >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("ConvertBoxEventGroupId")
+                        >,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "ConvertBoxEventGroupId"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConvertBoxEventGroupId", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ConvertBoxEventGroupId",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (output, groupId, boxEventType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (output, groupId, boxEventType))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertRotationEvent(
@@ -87,9 +84,10 @@ impl crate::GlobalNamespace::IBeatmapBoxConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightRotationBaseData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -110,17 +108,12 @@ impl crate::GlobalNamespace::IBeatmapBoxConverter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LightRotationBaseData,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (beat, lightRotationEvent, eventBox))?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightRotationBaseData> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (beat, lightRotationEvent, eventBox))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }

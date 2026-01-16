@@ -3,19 +3,18 @@
 #[derive(Debug)]
 pub struct StaticJumpOffsetYProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _initData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData,
-    >,
+    pub _initData:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData>,
 }
 #[cfg(feature = "cordl_class_StaticJumpOffsetYProvider")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::StaticJumpOffsetYProvider {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::StaticJumpOffsetYProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "StaticJumpOffsetYProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,44 +44,45 @@ impl crate::GlobalNamespace::StaticJumpOffsetYProvider {
     #[cfg(feature = "StaticJumpOffsetYProvider+InitData")]
     pub type InitData = crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_jumpOffsetY(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_jumpOffsetY")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_jumpOffsetY", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_jumpOffsetY",
+                            0usize
                         )
                     })
             });
@@ -91,8 +91,7 @@ impl crate::GlobalNamespace::StaticJumpOffsetYProvider {
     }
 }
 #[cfg(feature = "cordl_class_StaticJumpOffsetYProvider")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::StaticJumpOffsetYProvider {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::StaticJumpOffsetYProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -102,14 +101,16 @@ for crate::GlobalNamespace::StaticJumpOffsetYProvider {
 }
 #[cfg(feature = "StaticJumpOffsetYProvider")]
 impl AsRef<crate::GlobalNamespace::IJumpOffsetYProvider>
-for crate::GlobalNamespace::StaticJumpOffsetYProvider {
+    for crate::GlobalNamespace::StaticJumpOffsetYProvider
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IJumpOffsetYProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "StaticJumpOffsetYProvider")]
 impl AsMut<crate::GlobalNamespace::IJumpOffsetYProvider>
-for crate::GlobalNamespace::StaticJumpOffsetYProvider {
+    for crate::GlobalNamespace::StaticJumpOffsetYProvider
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IJumpOffsetYProvider {
         unsafe { std::mem::transmute(self) }
     }
@@ -123,13 +124,15 @@ pub struct StaticJumpOffsetYProvider_InitData {
 }
 #[cfg(feature = "cordl_class_StaticJumpOffsetYProvider+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData {
+    for crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "StaticJumpOffsetYProvider/InitData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -159,8 +162,8 @@ impl crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData {
     pub fn New(
         jumpyYOffset: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (jumpyYOffset))?;
         Ok(__cordl_object.into())
@@ -169,28 +172,30 @@ impl crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData {
         &mut self,
         jumpyYOffset: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (jumpyYOffset))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (jumpyYOffset))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_StaticJumpOffsetYProvider+InitData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData {
+    for crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

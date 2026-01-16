@@ -7,9 +7,8 @@ pub struct OVRGLTFAnimatinonNode {
     pub m_jsonData: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     pub m_gameObj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_inputNodeState: crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState,
-    pub m_morphTargetHandler: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
-    >,
+    pub m_morphTargetHandler:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler>,
     pub m_translations: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
     >,
@@ -19,20 +18,18 @@ pub struct OVRGLTFAnimatinonNode {
     pub m_scales: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
     >,
-    pub m_weights: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<f32>,
-    >,
+    pub m_weights: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<f32>>,
     pub m_additiveWeightIndex: i32,
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRGLTFAnimatinonNode";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -62,52 +59,51 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     #[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
     pub type InputNodeState = crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState;
     #[cfg(feature = "OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
-    pub type OVRGLTFTransformType = crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType;
+    pub type OVRGLTFTransformType =
+        crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType;
     #[cfg(feature = "OVRGLTFAnimatinonNode+OVRInterpolationType")]
-    pub type OVRInterpolationType = crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType;
+    pub type OVRInterpolationType =
+        crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType;
     #[cfg(feature = "OVRGLTFAnimatinonNode+ThumbstickDirection")]
-    pub type ThumbstickDirection = crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection;
+    pub type ThumbstickDirection =
+        crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection;
     pub fn AddChannel(
         &mut self,
         channel: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         samplers: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         dataAccessor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAccessor>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRGLTFAccessor,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("AddChannel")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAccessor>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("AddChannel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddChannel", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddChannel",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (channel, samplers, dataAccessor))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (channel, samplers, dataAccessor))? };
         Ok(__cordl_ret.into())
     }
     pub fn CloneQuaternion(
         &mut self,
         q: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Quaternion),
@@ -122,18 +118,18 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
-            cordl_method_info.invoke_unchecked(self, (q))?
-        };
+        let __cordl_ret: crate::UnityEngine::Quaternion =
+            unsafe { cordl_method_info.invoke_unchecked(self, (q))? };
         Ok(__cordl_ret.into())
     }
     pub fn CloneVector3(
         &mut self,
         v: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3),
@@ -148,9 +144,8 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (v))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn CopyData<T>(
@@ -161,38 +156,34 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<T>,
-                                >,
-                            >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
+                                crate::System::Collections::Generic::List_1<T>,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CopyData")
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("CopyData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CopyData", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CopyData",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (dest, src))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (dest, src))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCardinalThumbsticks(
@@ -206,25 +197,23 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Vector2),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Tuple_2<
-                                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-                                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-                            >,
+                    .find_method::<(crate::UnityEngine::Vector2), quest_hook::libil2cpp::Gc<
+                        crate::System::Tuple_2<
+                            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
                         >,
-                        1usize,
-                    >("GetCardinalThumbsticks")
+                    >, 1usize>("GetCardinalThumbsticks")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCardinalThumbsticks", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCardinalThumbsticks",
+                            1usize
                         )
                     })
             });
@@ -246,34 +235,31 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector2,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Tuple_2<
-                                    crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-                                    crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-                                >,
-                            >,
-                        ),
+                    .find_method::<(
                         crate::UnityEngine::Vector2,
-                        2usize,
-                    >("GetCardinalWeights")
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Tuple_2<
+                                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                            >,
+                        >,
+                    ), crate::UnityEngine::Vector2, 2usize>("GetCardinalWeights")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCardinalWeights", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCardinalWeights",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (joystick, cardinals))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector2 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (joystick, cardinals))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTransformType(
@@ -282,9 +268,10 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -299,9 +286,8 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType = unsafe {
-            cordl_method_info.invoke_unchecked(self, (transform))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType =
+            unsafe { cordl_method_info.invoke_unchecked(self, (transform))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -311,8 +297,8 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (inputNodeType, gameObj, morphTargetHandler))?;
         Ok(__cordl_object.into())
@@ -325,37 +311,34 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         extras: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         _dataAccessor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAccessor>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            i32,
-                            crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType,
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRGLTFAccessor,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("ProcessAnimationSampler")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                        i32,
+                        crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType,
+                        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAccessor>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "ProcessAnimationSampler"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessAnimationSampler", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessAnimationSampler",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (samplerNode, nodeId, transformType, extras, _dataAccessor),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (samplerNode, nodeId, transformType, extras, _dataAccessor),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -363,9 +346,10 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         &mut self,
         scale: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3),
@@ -380,9 +364,8 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (scale))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (scale))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToOVRInterpolationType(
@@ -391,9 +374,10 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -408,18 +392,18 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType = unsafe {
-            cordl_method_info.invoke_unchecked(self, (interpolationType))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType =
+            unsafe { cordl_method_info.invoke_unchecked(self, (interpolationType))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdatePose_Vector2_2(
         &mut self,
         joystick: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
@@ -434,35 +418,31 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (joystick))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (joystick))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdatePose__cordl_bool0(
         &mut self,
         down: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("UpdatePose")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("UpdatePose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdatePose", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdatePose",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (down))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (down))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdatePose_f32__cordl_bool1(
@@ -470,26 +450,23 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         t: f32,
         applyDeadZone: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32, bool),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdatePose")
+                    .find_method::<(f32, bool), quest_hook::libil2cpp::Void, 2usize>("UpdatePose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdatePose", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdatePose",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (t, applyDeadZone))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (t, applyDeadZone))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -500,25 +477,23 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::OVRGLTFInputNode,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::GlobalNamespace::OVRGLTFInputNode,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
@@ -531,8 +506,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -541,8 +515,8 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRGLTFAnimatinonNode_InputNodeState {
     pub down: bool,
     pub t: f32,
@@ -550,7 +524,8 @@ pub struct OVRGLTFAnimatinonNode_InputNodeState {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -569,18 +544,16 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -591,7 +564,8 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -605,22 +579,22 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -634,7 +608,8 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -646,8 +621,8 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
 #[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
 impl crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {}
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum OVRGLTFAnimatinonNode_OVRGLTFTransformType {
     #[default]
     None = 0i32,
@@ -658,7 +633,8 @@ pub enum OVRGLTFAnimatinonNode_OVRGLTFTransformType {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -677,18 +653,16 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -699,7 +673,8 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -713,22 +688,22 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -741,8 +716,8 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRInterpolationType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum OVRGLTFAnimatinonNode_OVRInterpolationType {
     #[default]
     CUBICSPLINE = 3i32,
@@ -752,7 +727,8 @@ pub enum OVRGLTFAnimatinonNode_OVRInterpolationType {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRInterpolationType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -771,18 +747,16 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRInterpolationType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -793,7 +767,8 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRInterpolationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -807,22 +782,22 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRInterpolationType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRInterpolationType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -835,8 +810,8 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+ThumbstickDirection")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum OVRGLTFAnimatinonNode_ThumbstickDirection {
     #[default]
     East = 3i32,
@@ -851,7 +826,8 @@ pub enum OVRGLTFAnimatinonNode_ThumbstickDirection {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+ThumbstickDirection")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -870,18 +846,16 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+ThumbstickDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -892,7 +866,8 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+ThumbstickDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -906,22 +881,22 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+ThumbstickDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+ThumbstickDirection")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
+    for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

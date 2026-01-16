@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+WordWrapState")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct WordWrapState {
     pub previousWordBreak: i32,
     pub totalCharacterCount: i32,
@@ -32,9 +32,7 @@ pub struct WordWrapState {
     pub currentFontSize: f32,
     pub baselineOffset: f32,
     pub lineOffset: f32,
-    pub textInfo: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::TextCore::Text::TextInfo,
-    >,
+    pub textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     pub lineInfo: crate::UnityEngine::TextCore::Text::LineInfo,
     pub vertexColor: crate::UnityEngine::Color32,
     pub underlineColor: crate::UnityEngine::Color32,
@@ -43,18 +41,14 @@ pub struct WordWrapState {
     pub highlightState: crate::UnityEngine::TextCore::Text::HighlightState,
     pub basicStyleStack: crate::UnityEngine::TextCore::Text::FontStyleStack,
     pub italicAngleStack: crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
-    pub colorStack: crate::UnityEngine::TextCore::Text::TextProcessingStack_1<
-        crate::UnityEngine::Color32,
-    >,
-    pub underlineColorStack: crate::UnityEngine::TextCore::Text::TextProcessingStack_1<
-        crate::UnityEngine::Color32,
-    >,
-    pub strikethroughColorStack: crate::UnityEngine::TextCore::Text::TextProcessingStack_1<
-        crate::UnityEngine::Color32,
-    >,
-    pub highlightColorStack: crate::UnityEngine::TextCore::Text::TextProcessingStack_1<
-        crate::UnityEngine::Color32,
-    >,
+    pub colorStack:
+        crate::UnityEngine::TextCore::Text::TextProcessingStack_1<crate::UnityEngine::Color32>,
+    pub underlineColorStack:
+        crate::UnityEngine::TextCore::Text::TextProcessingStack_1<crate::UnityEngine::Color32>,
+    pub strikethroughColorStack:
+        crate::UnityEngine::TextCore::Text::TextProcessingStack_1<crate::UnityEngine::Color32>,
+    pub highlightColorStack:
+        crate::UnityEngine::TextCore::Text::TextProcessingStack_1<crate::UnityEngine::Color32>,
     pub highlightStateStack: crate::UnityEngine::TextCore::Text::TextProcessingStack_1<
         crate::UnityEngine::TextCore::Text::HighlightState,
     >,
@@ -77,12 +71,9 @@ pub struct WordWrapState {
     >,
     pub lastBaseGlyphIndex: i32,
     pub spriteAnimationId: i32,
-    pub currentFontAsset: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::TextCore::Text::FontAsset,
-    >,
-    pub currentSpriteAsset: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::TextCore::Text::SpriteAsset,
-    >,
+    pub currentFontAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+    pub currentSpriteAsset:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
     pub currentMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub currentMaterialIndex: i32,
     pub meshExtents: crate::UnityEngine::TextCore::Text::Extents,
@@ -93,8 +84,7 @@ pub struct WordWrapState {
     pub fxRotation: crate::UnityEngine::Quaternion,
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+WordWrapState")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::TextCore::Text::WordWrapState {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextCore::Text::WordWrapState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.TextCore.Text";
@@ -113,18 +103,14 @@ for crate::UnityEngine::TextCore::Text::WordWrapState {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+WordWrapState")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::TextCore::Text::WordWrapState {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextCore::Text::WordWrapState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -134,8 +120,7 @@ for crate::UnityEngine::TextCore::Text::WordWrapState {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+WordWrapState")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::TextCore::Text::WordWrapState {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TextCore::Text::WordWrapState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -148,23 +133,19 @@ for crate::UnityEngine::TextCore::Text::WordWrapState {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+WordWrapState")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::TextCore::Text::WordWrapState {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextCore::Text::WordWrapState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+WordWrapState")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::TextCore::Text::WordWrapState {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TextCore::Text::WordWrapState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -178,7 +159,8 @@ for crate::UnityEngine::TextCore::Text::WordWrapState {
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+WordWrapState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::TextCore::Text::WordWrapState {
+    for crate::UnityEngine::TextCore::Text::WordWrapState
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

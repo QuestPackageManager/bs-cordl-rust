@@ -6,13 +6,15 @@ pub struct AsyncTaskCache {
 }
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+AsyncTaskCache")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::CompilerServices::AsyncTaskCache {
+    for crate::System::Runtime::CompilerServices::AsyncTaskCache
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.CompilerServices";
     const CLASS_NAME: &'static str = "AsyncTaskCache";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,12 +47,14 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
     >
     where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TResult: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (TResult),
@@ -79,26 +83,22 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Threading::Tasks::Task_1<i32>,
-                                >,
-                            >,
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
                         >,
-                        0usize,
-                    >("CreateInt32Tasks")
+                    >, 0usize>("CreateInt32Tasks")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateInt32Tasks", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateInt32Tasks",
+                            0usize
                         )
                     })
             });
@@ -112,7 +112,8 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
 }
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+AsyncTaskCache")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::CompilerServices::AsyncTaskCache {
+    for crate::System::Runtime::CompilerServices::AsyncTaskCache
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

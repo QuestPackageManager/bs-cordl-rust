@@ -7,29 +7,26 @@ pub struct FromBinderGeneric_1<TContract: quest_hook::libil2cpp::Type> {
 }
 #[cfg(feature = "cordl_class_Zenject+FromBinderGeneric_1")]
 unsafe impl<TContract: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::Zenject::FromBinderGeneric_1<TContract> {
+    for crate::Zenject::FromBinderGeneric_1<TContract>
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject";
     const CLASS_NAME: &'static str = "FromBinderGeneric`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "Zenject",
-                        "FromBinderGeneric`1",
-                    )
-                    .unwrap()
-                    .make_generic::<(TContract)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find("Zenject", "FromBinderGeneric`1")
+                .unwrap()
+                .make_generic::<(TContract)>()
+                .unwrap()
+                .unwrap()
+        })
     }
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,7 +40,8 @@ for crate::Zenject::FromBinderGeneric_1<TContract> {
 }
 #[cfg(feature = "Zenject+FromBinderGeneric_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
-for crate::Zenject::FromBinderGeneric_1<TContract> {
+    for crate::Zenject::FromBinderGeneric_1<TContract>
+{
     type Target = crate::Zenject::FromBinder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -51,57 +49,50 @@ for crate::Zenject::FromBinderGeneric_1<TContract> {
 }
 #[cfg(feature = "Zenject+FromBinderGeneric_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for crate::Zenject::FromBinderGeneric_1<TContract> {
+    for crate::Zenject::FromBinderGeneric_1<TContract>
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+FromBinderGeneric_1")]
-impl<
-    TContract: quest_hook::libil2cpp::Type,
-> crate::Zenject::FromBinderGeneric_1<TContract> {
+impl<TContract: quest_hook::libil2cpp::Type> crate::Zenject::FromBinderGeneric_1<TContract> {
     pub fn FromComponentsInChildren_Func_2__cordl_bool0(
         &mut self,
         predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TContract, bool>>,
         includeInactive: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<TContract, bool>,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-                        >,
-                        2usize,
-                    >("FromComponentsInChildren")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Func_2<TContract, bool>>,
+                        bool,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                    >, 2usize>("FromComponentsInChildren")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FromComponentsInChildren", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FromComponentsInChildren",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (predicate, includeInactive))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (predicate, includeInactive))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromComponentsInChildren__cordl_bool_Func_2__cordl_bool1(
@@ -110,44 +101,39 @@ impl<
         predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TContract, bool>>,
         includeInactive: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<TContract, bool>,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-                        >,
-                        3usize,
-                    >("FromComponentsInChildren")
+                    .find_method::<(
+                        bool,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_2<TContract, bool>>,
+                        bool,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                    >, 3usize>("FromComponentsInChildren")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FromComponentsInChildren", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FromComponentsInChildren",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (excludeSelf, predicate, includeInactive))?
+            cordl_method_info.invoke_unchecked(self, (excludeSelf, predicate, includeInactive))?
         };
         Ok(__cordl_ret.into())
     }
@@ -156,74 +142,67 @@ impl<
         predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TContract, bool>>,
         includeInactive: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<TContract, bool>,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-                        >,
-                        2usize,
-                    >("FromComponentsInHierarchy")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Func_2<TContract, bool>>,
+                        bool,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                    >, 2usize>("FromComponentsInHierarchy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FromComponentsInHierarchy", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FromComponentsInHierarchy",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (predicate, includeInactive))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (predicate, includeInactive))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromFactory<TFactory>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TFactory: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TFactory: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-                        >,
-                        0usize,
-                    >("FromFactory")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                    >, 0usize>("FromFactory")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FromFactory", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FromFactory",
+                            0usize
                         )
                     })
             });
@@ -244,40 +223,38 @@ impl<
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::ConcreteBinderGeneric_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::Zenject::IFactory_1<TContract>,
-                                        >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Zenject::ConcreteBinderGeneric_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Zenject::IFactory_1<TContract>,
                                     >,
                                 >,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
                         >,
-                        1usize,
-                    >("FromIFactory")
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                    >, 1usize>("FromIFactory")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FromIFactory", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FromIFactory",
+                            1usize
                         )
                     })
             });
@@ -290,30 +267,28 @@ impl<
         &mut self,
         instance: TContract,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (TContract),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-                        >,
-                        1usize,
-                    >("FromInstance")
+                    .find_method::<(TContract), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                    >, 1usize>("FromInstance")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FromInstance", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FromInstance",
+                            1usize
                         )
                     })
             });
@@ -333,39 +308,35 @@ impl<
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IEnumerable_1<
-                                        TContract,
-                                    >,
-                                >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Func_2<
+                            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<TContract>,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
                         >,
-                        1usize,
-                    >("FromMethodMultiple")
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                    >, 1usize>("FromMethodMultiple")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FromMethodMultiple", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FromMethodMultiple",
+                            1usize
                         )
                     })
             });
@@ -378,17 +349,18 @@ impl<
         &mut self,
         method: quest_hook::libil2cpp::Gc<crate::System::Func_1<TContract>>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Func_1<TContract>>),
@@ -419,35 +391,33 @@ impl<
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                                TContract,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Func_2<
+                            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                            TContract,
                         >,
-                        1usize,
-                    >("FromMethod")
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                    >, 1usize>("FromMethod")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FromMethod", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FromMethod",
+                            1usize
                         )
                     })
             });
@@ -460,19 +430,21 @@ impl<
         &mut self,
         method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TObj: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -501,39 +473,34 @@ impl<
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TObj: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<TObj, TContract>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-                        >,
-                        2usize,
-                    >("FromResolveAllGetter")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                    >, 2usize>("FromResolveAllGetter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FromResolveAllGetter", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FromResolveAllGetter",
+                            2usize
                         )
                     })
             });
@@ -548,67 +515,62 @@ impl<
         method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
         source: crate::Zenject::InjectSources,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TObj: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<TObj, TContract>,
-                            >,
-                            crate::Zenject::InjectSources,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-                        >,
-                        3usize,
-                    >("FromResolveAllGetter")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
+                        crate::Zenject::InjectSources,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                    >, 3usize>("FromResolveAllGetter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FromResolveAllGetter", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FromResolveAllGetter",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (identifier, method, source))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (identifier, method, source))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromResolveGetter_Func_2_0<TObj>(
         &mut self,
         method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TObj: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -637,39 +599,34 @@ impl<
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TObj: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<TObj, TContract>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-                        >,
-                        2usize,
-                    >("FromResolveGetter")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                    >, 2usize>("FromResolveGetter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FromResolveGetter", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FromResolveGetter",
+                            2usize
                         )
                     })
             });
@@ -684,48 +641,41 @@ impl<
         method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
         source: crate::Zenject::InjectSources,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TObj: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<TObj, TContract>,
-                            >,
-                            crate::Zenject::InjectSources,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-                        >,
-                        3usize,
-                    >("FromResolveGetter")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
+                        crate::Zenject::InjectSources,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                    >, 3usize>("FromResolveGetter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FromResolveGetter", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FromResolveGetter",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (identifier, method, source))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (identifier, method, source))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -734,11 +684,13 @@ impl<
         bindStatement: quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindContainer, bindInfo, bindStatement))?;
         Ok(__cordl_object.into())
@@ -750,40 +702,40 @@ impl<
         bindStatement: quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (bindContainer, bindInfo, bindStatement))?
+            cordl_method_info.invoke_unchecked(self, (bindContainer, bindInfo, bindStatement))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Zenject+FromBinderGeneric_1")]
 impl<TContract: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for crate::Zenject::FromBinderGeneric_1<TContract> {
+    for crate::Zenject::FromBinderGeneric_1<TContract>
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKControllerState")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct SDKControllerState {
     pub hmdposition: crate::LIV::SDK::Unity::SDKVector3,
     pub hmdrotation: crate::LIV::SDK::Unity::SDKQuaternion,
@@ -33,18 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKControlle
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKControllerState")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::LIV::SDK::Unity::SDKControllerState {
+unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKControllerState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -54,8 +50,7 @@ for crate::LIV::SDK::Unity::SDKControllerState {
     }
 }
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKControllerState")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::LIV::SDK::Unity::SDKControllerState {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKControllerState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -68,23 +63,19 @@ for crate::LIV::SDK::Unity::SDKControllerState {
     }
 }
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKControllerState")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::LIV::SDK::Unity::SDKControllerState {
+unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKControllerState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKControllerState")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::LIV::SDK::Unity::SDKControllerState {
+unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKControllerState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -97,8 +88,7 @@ for crate::LIV::SDK::Unity::SDKControllerState {
     }
 }
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKControllerState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::LIV::SDK::Unity::SDKControllerState {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::LIV::SDK::Unity::SDKControllerState {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -111,12 +101,12 @@ for crate::LIV::SDK::Unity::SDKControllerState {
 impl crate::LIV::SDK::Unity::SDKControllerState {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -131,34 +121,31 @@ impl crate::LIV::SDK::Unity::SDKControllerState {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_empty() -> quest_hook::libil2cpp::Result<
-        crate::LIV::SDK::Unity::SDKControllerState,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_empty() -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKControllerState>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::LIV::SDK::Unity::SDKControllerState,
-                        0usize,
-                    >("get_empty")
+                    .find_static_method::<(), crate::LIV::SDK::Unity::SDKControllerState, 0usize>(
+                        "get_empty",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_empty", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_empty",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKControllerState = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKControllerState =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

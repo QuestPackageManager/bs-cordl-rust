@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Collections::FixedStri
     const NAMESPACE: &'static str = "Unity.Collections";
     const CLASS_NAME: &'static str = "FixedStringUtils";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,9 +46,10 @@ impl crate::Unity::Collections::FixedStringUtils {
         mantissa10: u64,
         exponent10: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::ParseError> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<f32>, u64, i32),
@@ -62,9 +64,8 @@ impl crate::Unity::Collections::FixedStringUtils {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::ParseError = unsafe {
-            cordl_method_info.invoke_unchecked((), (output, mantissa10, exponent10))?
-        };
+        let __cordl_ret: crate::Unity::Collections::ParseError =
+            unsafe { cordl_method_info.invoke_unchecked((), (output, mantissa10, exponent10))? };
         Ok(__cordl_ret.into())
     }
     pub fn Base2ToBase10(
@@ -72,30 +73,27 @@ impl crate::Unity::Collections::FixedStringUtils {
         exponent10: quest_hook::libil2cpp::ByRefMut<i32>,
         input: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<u64>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Base2ToBase10")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<u64>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Base2ToBase10")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Base2ToBase10", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Base2ToBase10",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (mantissa10, exponent10, input))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (mantissa10, exponent10, input))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -109,14 +107,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Collections::FixedStrin
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+FixedStringUtils+UintFloatUnion")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct FixedStringUtils_UintFloatUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
 }
 #[cfg(feature = "cordl_class_Unity+Collections+FixedStringUtils+UintFloatUnion")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::FixedStringUtils_UintFloatUnion {
+    for crate::Unity::Collections::FixedStringUtils_UintFloatUnion
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections";
@@ -135,18 +134,16 @@ for crate::Unity::Collections::FixedStringUtils_UintFloatUnion {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+FixedStringUtils+UintFloatUnion")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::FixedStringUtils_UintFloatUnion {
+    for crate::Unity::Collections::FixedStringUtils_UintFloatUnion
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -157,7 +154,8 @@ for crate::Unity::Collections::FixedStringUtils_UintFloatUnion {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+FixedStringUtils+UintFloatUnion")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::FixedStringUtils_UintFloatUnion {
+    for crate::Unity::Collections::FixedStringUtils_UintFloatUnion
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -171,22 +169,22 @@ for crate::Unity::Collections::FixedStringUtils_UintFloatUnion {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+FixedStringUtils+UintFloatUnion")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::FixedStringUtils_UintFloatUnion {
+    for crate::Unity::Collections::FixedStringUtils_UintFloatUnion
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+FixedStringUtils+UintFloatUnion")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Collections::FixedStringUtils_UintFloatUnion {
+    for crate::Unity::Collections::FixedStringUtils_UintFloatUnion
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -200,7 +198,8 @@ for crate::Unity::Collections::FixedStringUtils_UintFloatUnion {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+FixedStringUtils+UintFloatUnion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::FixedStringUtils_UintFloatUnion {
+    for crate::Unity::Collections::FixedStringUtils_UintFloatUnion
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

@@ -26,7 +26,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteData {
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "NoteData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -61,9 +62,10 @@ impl crate::GlobalNamespace::NoteData {
         &mut self,
         newCutDirection: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::NoteCutDirection),
@@ -78,59 +80,54 @@ impl crate::GlobalNamespace::NoteData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (newCutDirection))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (newCutDirection))? };
         Ok(__cordl_ret.into())
     }
     pub fn ChangeToBurstSliderHead(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ChangeToBurstSliderHead")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "ChangeToBurstSliderHead",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ChangeToBurstSliderHead", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ChangeToBurstSliderHead",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ChangeToGameNote(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ChangeToGameNote")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ChangeToGameNote")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ChangeToGameNote", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ChangeToGameNote",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CopyWith(
@@ -140,95 +137,75 @@ impl crate::GlobalNamespace::NoteData {
         rotation: crate::System::Nullable_1<i32>,
         lineIndex: crate::System::Nullable_1<i32>,
         noteLineLayer: crate::System::Nullable_1<crate::GlobalNamespace::NoteLineLayer>,
-        beforeJumpNoteLineLayer: crate::System::Nullable_1<
-            crate::GlobalNamespace::NoteLineLayer,
-        >,
-        gameplayType: crate::System::Nullable_1<
-            crate::GlobalNamespace::NoteData_GameplayType,
-        >,
-        scoringType: crate::System::Nullable_1<
-            crate::GlobalNamespace::NoteData_ScoringType,
-        >,
+        beforeJumpNoteLineLayer: crate::System::Nullable_1<crate::GlobalNamespace::NoteLineLayer>,
+        gameplayType: crate::System::Nullable_1<crate::GlobalNamespace::NoteData_GameplayType>,
+        scoringType: crate::System::Nullable_1<crate::GlobalNamespace::NoteData_ScoringType>,
         colorType: crate::System::Nullable_1<crate::GlobalNamespace::ColorType>,
-        cutDirection: crate::System::Nullable_1<
-            crate::GlobalNamespace::NoteCutDirection,
-        >,
+        cutDirection: crate::System::Nullable_1<crate::GlobalNamespace::NoteCutDirection>,
         timeToNextColorNote: crate::System::Nullable_1<f32>,
         timeToPrevColorNote: crate::System::Nullable_1<f32>,
         flipLineIndex: crate::System::Nullable_1<i32>,
         flipYSide: crate::System::Nullable_1<f32>,
         cutDirectionAngleOffset: crate::System::Nullable_1<f32>,
         cutSfxVolumeMultiplier: crate::System::Nullable_1<f32>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Nullable_1<f32>,
-                            crate::System::Nullable_1<i32>,
-                            crate::System::Nullable_1<i32>,
-                            crate::System::Nullable_1<i32>,
-                            crate::System::Nullable_1<
-                                crate::GlobalNamespace::NoteLineLayer,
-                            >,
-                            crate::System::Nullable_1<
-                                crate::GlobalNamespace::NoteLineLayer,
-                            >,
-                            crate::System::Nullable_1<
-                                crate::GlobalNamespace::NoteData_GameplayType,
-                            >,
-                            crate::System::Nullable_1<
-                                crate::GlobalNamespace::NoteData_ScoringType,
-                            >,
-                            crate::System::Nullable_1<crate::GlobalNamespace::ColorType>,
-                            crate::System::Nullable_1<
-                                crate::GlobalNamespace::NoteCutDirection,
-                            >,
-                            crate::System::Nullable_1<f32>,
-                            crate::System::Nullable_1<f32>,
-                            crate::System::Nullable_1<i32>,
-                            crate::System::Nullable_1<f32>,
-                            crate::System::Nullable_1<f32>,
-                            crate::System::Nullable_1<f32>,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                        16usize,
-                    >("CopyWith")
+                    .find_method::<(
+                        crate::System::Nullable_1<f32>,
+                        crate::System::Nullable_1<i32>,
+                        crate::System::Nullable_1<i32>,
+                        crate::System::Nullable_1<i32>,
+                        crate::System::Nullable_1<crate::GlobalNamespace::NoteLineLayer>,
+                        crate::System::Nullable_1<crate::GlobalNamespace::NoteLineLayer>,
+                        crate::System::Nullable_1<crate::GlobalNamespace::NoteData_GameplayType>,
+                        crate::System::Nullable_1<crate::GlobalNamespace::NoteData_ScoringType>,
+                        crate::System::Nullable_1<crate::GlobalNamespace::ColorType>,
+                        crate::System::Nullable_1<crate::GlobalNamespace::NoteCutDirection>,
+                        crate::System::Nullable_1<f32>,
+                        crate::System::Nullable_1<f32>,
+                        crate::System::Nullable_1<i32>,
+                        crate::System::Nullable_1<f32>,
+                        crate::System::Nullable_1<f32>,
+                        crate::System::Nullable_1<f32>,
+                    ), quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>, 16usize>(
+                        "CopyWith",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CopyWith", 16usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CopyWith",
+                            16usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        _cordl_time,
-                        beat,
-                        rotation,
-                        lineIndex,
-                        noteLineLayer,
-                        beforeJumpNoteLineLayer,
-                        gameplayType,
-                        scoringType,
-                        colorType,
-                        cutDirection,
-                        timeToNextColorNote,
-                        timeToPrevColorNote,
-                        flipLineIndex,
-                        flipYSide,
-                        cutDirectionAngleOffset,
-                        cutSfxVolumeMultiplier,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    _cordl_time,
+                    beat,
+                    rotation,
+                    lineIndex,
+                    noteLineLayer,
+                    beforeJumpNoteLineLayer,
+                    gameplayType,
+                    scoringType,
+                    colorType,
+                    cutDirection,
+                    timeToNextColorNote,
+                    timeToPrevColorNote,
+                    flipLineIndex,
+                    flipYSide,
+                    cutDirectionAngleOffset,
+                    cutSfxVolumeMultiplier,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -240,48 +217,46 @@ impl crate::GlobalNamespace::NoteData {
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
         colorType: crate::GlobalNamespace::ColorType,
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            f32,
-                            f32,
-                            i32,
-                            i32,
-                            crate::GlobalNamespace::NoteLineLayer,
-                            crate::GlobalNamespace::ColorType,
-                            crate::GlobalNamespace::NoteCutDirection,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                        7usize,
-                    >("CreateBasicNoteData")
+                    .find_static_method::<(
+                        f32,
+                        f32,
+                        i32,
+                        i32,
+                        crate::GlobalNamespace::NoteLineLayer,
+                        crate::GlobalNamespace::ColorType,
+                        crate::GlobalNamespace::NoteCutDirection,
+                    ), quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>, 7usize>(
+                        "CreateBasicNoteData",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateBasicNoteData", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateBasicNoteData",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        _cordl_time,
-                        beat,
-                        rotation,
-                        lineIndex,
-                        noteLineLayer,
-                        colorType,
-                        cutDirection,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    _cordl_time,
+                    beat,
+                    rotation,
+                    lineIndex,
+                    noteLineLayer,
+                    colorType,
+                    cutDirection,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -291,12 +266,12 @@ impl crate::GlobalNamespace::NoteData {
         rotation: i32,
         lineIndex: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, i32, i32, crate::GlobalNamespace::NoteLineLayer),
@@ -313,10 +288,7 @@ impl crate::GlobalNamespace::NoteData {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData> = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (_cordl_time, beat, rotation, lineIndex, noteLineLayer),
-                )?
+                .invoke_unchecked((), (_cordl_time, beat, rotation, lineIndex, noteLineLayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -330,52 +302,50 @@ impl crate::GlobalNamespace::NoteData {
         colorType: crate::GlobalNamespace::ColorType,
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
         cutSfxVolumeMultiplier: f32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            f32,
-                            f32,
-                            i32,
-                            i32,
-                            crate::GlobalNamespace::NoteLineLayer,
-                            crate::GlobalNamespace::NoteLineLayer,
-                            crate::GlobalNamespace::ColorType,
-                            crate::GlobalNamespace::NoteCutDirection,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                        9usize,
-                    >("CreateBurstSliderNoteData")
+                    .find_static_method::<(
+                        f32,
+                        f32,
+                        i32,
+                        i32,
+                        crate::GlobalNamespace::NoteLineLayer,
+                        crate::GlobalNamespace::NoteLineLayer,
+                        crate::GlobalNamespace::ColorType,
+                        crate::GlobalNamespace::NoteCutDirection,
+                        f32,
+                    ), quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>, 9usize>(
+                        "CreateBurstSliderNoteData",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateBurstSliderNoteData", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateBurstSliderNoteData",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        _cordl_time,
-                        beat,
-                        rotation,
-                        lineIndex,
-                        noteLineLayer,
-                        beforeJumpNoteLineLayer,
-                        colorType,
-                        cutDirection,
-                        cutSfxVolumeMultiplier,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    _cordl_time,
+                    beat,
+                    rotation,
+                    lineIndex,
+                    noteLineLayer,
+                    beforeJumpNoteLineLayer,
+                    colorType,
+                    cutDirection,
+                    cutSfxVolumeMultiplier,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -384,9 +354,10 @@ impl crate::GlobalNamespace::NoteData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -403,28 +374,23 @@ impl crate::GlobalNamespace::NoteData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataItem,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetCutDirectionAngleOffsetForSlider(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetCutDirectionAngleOffsetForSlider(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        f32,
-                        0usize,
-                    >("GetCutDirectionAngleOffsetForSlider")
+                    .find_method::<(), f32, 0usize>("GetCutDirectionAngleOffsetForSlider")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCutDirectionAngleOffsetForSlider", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCutDirectionAngleOffsetForSlider",
+                            0usize
                         )
                     })
             });
@@ -434,73 +400,68 @@ impl crate::GlobalNamespace::NoteData {
     pub fn MarkAsSliderHead(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("MarkAsSliderHead")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("MarkAsSliderHead")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkAsSliderHead", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkAsSliderHead",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MarkAsSliderTail(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("MarkAsSliderTail")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("MarkAsSliderTail")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkAsSliderTail", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkAsSliderTail",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Mirror(
         &mut self,
         lineCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Mirror")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Mirror",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Mirror",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (lineCount))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (lineCount))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -521,64 +482,59 @@ impl crate::GlobalNamespace::NoteData {
         cutDirectionAngleOffset: f32,
         cutSfxVolumeMultiplier: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    _cordl_time,
-                    beat,
-                    rotation,
-                    lineIndex,
-                    noteLineLayer,
-                    beforeJumpNoteLineLayer,
-                    gameplayType,
-                    scoringType,
-                    colorType,
-                    cutDirection,
-                    timeToNextColorNote,
-                    timeToPrevColorNote,
-                    flipLineIndex,
-                    flipYSide,
-                    cutDirectionAngleOffset,
-                    cutSfxVolumeMultiplier,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                _cordl_time,
+                beat,
+                rotation,
+                lineIndex,
+                noteLineLayer,
+                beforeJumpNoteLineLayer,
+                gameplayType,
+                scoringType,
+                colorType,
+                cutDirection,
+                timeToNextColorNote,
+                timeToPrevColorNote,
+                flipLineIndex,
+                flipYSide,
+                cutDirectionAngleOffset,
+                cutSfxVolumeMultiplier,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
-    pub fn ResetNoteFlip(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ResetNoteFlip(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ResetNoteFlip")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ResetNoteFlip")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ResetNoteFlip", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ResetNoteFlip",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetBeforeJumpNoteLineLayer(
         &mut self,
         lineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::NoteLineLayer),
@@ -593,44 +549,43 @@ impl crate::GlobalNamespace::NoteData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (lineLayer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (lineLayer))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetCutDirectionAngleOffset(
         &mut self,
         cutDirectionAngleOffset: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetCutDirectionAngleOffset")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(
+                        "SetCutDirectionAngleOffset",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetCutDirectionAngleOffset", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetCutDirectionAngleOffset",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (cutDirectionAngleOffset))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cutDirectionAngleOffset))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetNoteFlipToNote(
         &mut self,
         targetNote: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>),
@@ -645,84 +600,79 @@ impl crate::GlobalNamespace::NoteData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (targetNote))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (targetNote))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetNoteToAnyCutDirection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("SetNoteToAnyCutDirection")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "SetNoteToAnyCutDirection",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetNoteToAnyCutDirection", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetNoteToAnyCutDirection",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SubtypeIdentifier(
         colorType: crate::GlobalNamespace::ColorType,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::GlobalNamespace::ColorType),
-                        i32,
-                        1usize,
-                    >("SubtypeIdentifier")
+                    .find_static_method::<(crate::GlobalNamespace::ColorType), i32, 1usize>(
+                        "SubtypeIdentifier",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SubtypeIdentifier", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SubtypeIdentifier",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (colorType))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (colorType))? };
         Ok(__cordl_ret.into())
     }
     pub fn TransformNoteAOrBToRandomType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("TransformNoteAOrBToRandomType")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "TransformNoteAOrBToRandomType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TransformNoteAOrBToRandomType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TransformNoteAOrBToRandomType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -744,152 +694,146 @@ impl crate::GlobalNamespace::NoteData {
         cutDirectionAngleOffset: f32,
         cutSfxVolumeMultiplier: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            f32,
-                            f32,
-                            i32,
-                            i32,
-                            crate::GlobalNamespace::NoteLineLayer,
-                            crate::GlobalNamespace::NoteLineLayer,
-                            crate::GlobalNamespace::NoteData_GameplayType,
-                            crate::GlobalNamespace::NoteData_ScoringType,
-                            crate::GlobalNamespace::ColorType,
-                            crate::GlobalNamespace::NoteCutDirection,
-                            f32,
-                            f32,
-                            i32,
-                            f32,
-                            f32,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        16usize,
-                    >(".ctor")
+                    .find_method::<(
+                        f32,
+                        f32,
+                        i32,
+                        i32,
+                        crate::GlobalNamespace::NoteLineLayer,
+                        crate::GlobalNamespace::NoteLineLayer,
+                        crate::GlobalNamespace::NoteData_GameplayType,
+                        crate::GlobalNamespace::NoteData_ScoringType,
+                        crate::GlobalNamespace::ColorType,
+                        crate::GlobalNamespace::NoteCutDirection,
+                        f32,
+                        f32,
+                        i32,
+                        f32,
+                        f32,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 16usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             16usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        _cordl_time,
-                        beat,
-                        rotation,
-                        lineIndex,
-                        noteLineLayer,
-                        beforeJumpNoteLineLayer,
-                        gameplayType,
-                        scoringType,
-                        colorType,
-                        cutDirection,
-                        timeToNextColorNote,
-                        timeToPrevColorNote,
-                        flipLineIndex,
-                        flipYSide,
-                        cutDirectionAngleOffset,
-                        cutSfxVolumeMultiplier,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    _cordl_time,
+                    beat,
+                    rotation,
+                    lineIndex,
+                    noteLineLayer,
+                    beforeJumpNoteLineLayer,
+                    gameplayType,
+                    scoringType,
+                    colorType,
+                    cutDirection,
+                    timeToNextColorNote,
+                    timeToPrevColorNote,
+                    flipLineIndex,
+                    flipYSide,
+                    cutDirectionAngleOffset,
+                    cutSfxVolumeMultiplier,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_beforeJumpNoteLineLayer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteLineLayer> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::GlobalNamespace::NoteLineLayer,
-                        0usize,
-                    >("get_beforeJumpNoteLineLayer")
+                    .find_method::<(), crate::GlobalNamespace::NoteLineLayer, 0usize>(
+                        "get_beforeJumpNoteLineLayer",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_beforeJumpNoteLineLayer", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_beforeJumpNoteLineLayer",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::NoteLineLayer =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_colorType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::GlobalNamespace::ColorType,
-                        0usize,
-                    >("get_colorType")
+                    .find_method::<(), crate::GlobalNamespace::ColorType, 0usize>("get_colorType")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_colorType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_colorType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::ColorType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::ColorType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_cutDirection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::GlobalNamespace::NoteCutDirection,
-                        0usize,
-                    >("get_cutDirection")
+                    .find_method::<(), crate::GlobalNamespace::NoteCutDirection, 0usize>(
+                        "get_cutDirection",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_cutDirection", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_cutDirection",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::NoteCutDirection =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_cutDirectionAngleOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_cutDirectionAngleOffset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_cutDirectionAngleOffset", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_cutDirectionAngleOffset",
+                            0usize
                         )
                     })
             });
@@ -897,16 +841,18 @@ impl crate::GlobalNamespace::NoteData {
         Ok(__cordl_ret.into())
     }
     pub fn get_cutSfxVolumeMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_cutSfxVolumeMultiplier")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_cutSfxVolumeMultiplier", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_cutSfxVolumeMultiplier",
+                            0usize
                         )
                     })
             });
@@ -914,16 +860,18 @@ impl crate::GlobalNamespace::NoteData {
         Ok(__cordl_ret.into())
     }
     pub fn get_flipLineIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_flipLineIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_flipLineIndex", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_flipLineIndex",
+                            0usize
                         )
                     })
             });
@@ -931,16 +879,18 @@ impl crate::GlobalNamespace::NoteData {
         Ok(__cordl_ret.into())
     }
     pub fn get_flipYSide(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_flipYSide")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_flipYSide", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_flipYSide",
+                            0usize
                         )
                     })
             });
@@ -950,39 +900,40 @@ impl crate::GlobalNamespace::NoteData {
     pub fn get_gameplayType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteData_GameplayType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::GlobalNamespace::NoteData_GameplayType,
-                        0usize,
-                    >("get_gameplayType")
+                    .find_method::<(), crate::GlobalNamespace::NoteData_GameplayType, 0usize>(
+                        "get_gameplayType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_gameplayType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_gameplayType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::NoteData_GameplayType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::NoteData_GameplayType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isArcHead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isArcHead")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isArcHead", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isArcHead",
+                            0usize
                         )
                     })
             });
@@ -990,16 +941,18 @@ impl crate::GlobalNamespace::NoteData {
         Ok(__cordl_ret.into())
     }
     pub fn get_isArcTail(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isArcTail")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isArcTail", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isArcTail",
+                            0usize
                         )
                     })
             });
@@ -1007,16 +960,18 @@ impl crate::GlobalNamespace::NoteData {
         Ok(__cordl_ret.into())
     }
     pub fn get_lineIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_lineIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_lineIndex", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_lineIndex",
+                            0usize
                         )
                     })
             });
@@ -1026,64 +981,64 @@ impl crate::GlobalNamespace::NoteData {
     pub fn get_noteLineLayer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteLineLayer> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::GlobalNamespace::NoteLineLayer,
-                        0usize,
-                    >("get_noteLineLayer")
+                    .find_method::<(), crate::GlobalNamespace::NoteLineLayer, 0usize>(
+                        "get_noteLineLayer",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_noteLineLayer", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_noteLineLayer",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::NoteLineLayer =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_scoringType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteData_ScoringType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::GlobalNamespace::NoteData_ScoringType,
-                        0usize,
-                    >("get_scoringType")
+                    .find_method::<(), crate::GlobalNamespace::NoteData_ScoringType, 0usize>(
+                        "get_scoringType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_scoringType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_scoringType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::NoteData_ScoringType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::NoteData_ScoringType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_subtypeGroupIdentifier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_subtypeGroupIdentifier")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_subtypeGroupIdentifier", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_subtypeGroupIdentifier",
+                            0usize
                         )
                     })
             });
@@ -1091,16 +1046,18 @@ impl crate::GlobalNamespace::NoteData {
         Ok(__cordl_ret.into())
     }
     pub fn get_timeToNextColorNote(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_timeToNextColorNote")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_timeToNextColorNote", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_timeToNextColorNote",
+                            0usize
                         )
                     })
             });
@@ -1108,16 +1065,18 @@ impl crate::GlobalNamespace::NoteData {
         Ok(__cordl_ret.into())
     }
     pub fn get_timeToPrevColorNote(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_timeToPrevColorNote")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_timeToPrevColorNote", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_timeToPrevColorNote",
+                            0usize
                         )
                     })
             });
@@ -1128,9 +1087,10 @@ impl crate::GlobalNamespace::NoteData {
         &mut self,
         value: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::NoteLineLayer),
@@ -1145,18 +1105,18 @@ impl crate::GlobalNamespace::NoteData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_colorType(
         &mut self,
         value: crate::GlobalNamespace::ColorType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::ColorType),
@@ -1171,18 +1131,18 @@ impl crate::GlobalNamespace::NoteData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_cutDirection(
         &mut self,
         value: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::NoteCutDirection),
@@ -1197,122 +1157,114 @@ impl crate::GlobalNamespace::NoteData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_cutDirectionAngleOffset(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_cutDirectionAngleOffset")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_cutDirectionAngleOffset",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_cutDirectionAngleOffset", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_cutDirectionAngleOffset",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_cutSfxVolumeMultiplier(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_cutSfxVolumeMultiplier")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_cutSfxVolumeMultiplier",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_cutSfxVolumeMultiplier", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_cutSfxVolumeMultiplier",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_flipLineIndex(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_flipLineIndex")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_flipLineIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_flipLineIndex", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_flipLineIndex",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_flipYSide(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_flipYSide")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("set_flipYSide")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_flipYSide", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_flipYSide",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_gameplayType(
         &mut self,
         value: crate::GlobalNamespace::NoteData_GameplayType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::NoteData_GameplayType),
@@ -1327,96 +1279,87 @@ impl crate::GlobalNamespace::NoteData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_isArcHead(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_isArcHead")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_isArcHead")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_isArcHead", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_isArcHead",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_isArcTail(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_isArcTail")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_isArcTail")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_isArcTail", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_isArcTail",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_lineIndex(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_lineIndex")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_lineIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_lineIndex", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_lineIndex",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_noteLineLayer(
         &mut self,
         value: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::NoteLineLayer),
@@ -1431,18 +1374,18 @@ impl crate::GlobalNamespace::NoteData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_scoringType(
         &mut self,
         value: crate::GlobalNamespace::NoteData_ScoringType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::NoteData_ScoringType),
@@ -1457,61 +1400,58 @@ impl crate::GlobalNamespace::NoteData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_timeToNextColorNote(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_timeToNextColorNote")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_timeToNextColorNote",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_timeToNextColorNote", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_timeToNextColorNote",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_timeToPrevColorNote(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_timeToPrevColorNote")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_timeToPrevColorNote",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_timeToPrevColorNote", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_timeToPrevColorNote",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1525,8 +1465,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteData {
     }
 }
 #[cfg(feature = "cordl_class_NoteData+GameplayType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum NoteData_GameplayType {
     #[default]
     Bomb = 1i32,
@@ -1535,8 +1475,7 @@ pub enum NoteData_GameplayType {
     Normal = 0i32,
 }
 #[cfg(feature = "cordl_class_NoteData+GameplayType")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::NoteData_GameplayType {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteData_GameplayType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1555,18 +1494,14 @@ for crate::GlobalNamespace::NoteData_GameplayType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_NoteData+GameplayType")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::NoteData_GameplayType {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NoteData_GameplayType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1576,8 +1511,7 @@ for crate::GlobalNamespace::NoteData_GameplayType {
     }
 }
 #[cfg(feature = "cordl_class_NoteData+GameplayType")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::NoteData_GameplayType {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::NoteData_GameplayType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1590,23 +1524,19 @@ for crate::GlobalNamespace::NoteData_GameplayType {
     }
 }
 #[cfg(feature = "cordl_class_NoteData+GameplayType")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::NoteData_GameplayType {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NoteData_GameplayType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_NoteData+GameplayType")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::NoteData_GameplayType {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NoteData_GameplayType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1619,8 +1549,8 @@ for crate::GlobalNamespace::NoteData_GameplayType {
     }
 }
 #[cfg(feature = "cordl_class_NoteData+ScoringType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum NoteData_ScoringType {
     #[default]
     ArcHead = 2i32,
@@ -1637,8 +1567,7 @@ pub enum NoteData_ScoringType {
     Normal = 1i32,
 }
 #[cfg(feature = "cordl_class_NoteData+ScoringType")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::NoteData_ScoringType {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteData_ScoringType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1657,18 +1586,14 @@ for crate::GlobalNamespace::NoteData_ScoringType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_NoteData+ScoringType")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::NoteData_ScoringType {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NoteData_ScoringType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1678,8 +1603,7 @@ for crate::GlobalNamespace::NoteData_ScoringType {
     }
 }
 #[cfg(feature = "cordl_class_NoteData+ScoringType")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::NoteData_ScoringType {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::NoteData_ScoringType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1692,23 +1616,19 @@ for crate::GlobalNamespace::NoteData_ScoringType {
     }
 }
 #[cfg(feature = "cordl_class_NoteData+ScoringType")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::NoteData_ScoringType {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NoteData_ScoringType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_NoteData+ScoringType")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::NoteData_ScoringType {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NoteData_ScoringType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

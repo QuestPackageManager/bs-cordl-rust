@@ -1,18 +1,15 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+ImportResourceParams"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+ImportResourceParams")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ImportResourceParams {
     pub clearOnFirstUse: bool,
     pub clearColor: crate::UnityEngine::Color,
     pub discardOnLastUse: bool,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+ImportResourceParams"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+ImportResourceParams")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams {
+    for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.RenderGraphModule";
@@ -31,20 +28,16 @@ for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+ImportResourceParams"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+ImportResourceParams")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams {
+    for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -53,11 +46,10 @@ for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+ImportResourceParams"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+ImportResourceParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams {
+    for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -69,28 +61,24 @@ for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+ImportResourceParams"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+ImportResourceParams")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams {
+    for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+ImportResourceParams"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+ImportResourceParams")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams {
+    for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -102,11 +90,10 @@ for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+ImportResourceParams"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+ImportResourceParams")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams {
+    for crate::UnityEngine::Rendering::RenderGraphModule::ImportResourceParams
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

@@ -1,26 +1,22 @@
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Activation+AppDomainLevelActivator"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AppDomainLevelActivator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _activationUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub _next: quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Activation::IActivator,
-    >,
+    pub _next: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Activation::IActivator>,
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Activation+AppDomainLevelActivator"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
+    for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Remoting.Activation";
     const CLASS_NAME: &'static str = "AppDomainLevelActivator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -33,16 +29,14 @@ for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
-impl std::ops::Deref
-for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
+impl std::ops::Deref for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
-impl std::ops::DerefMut
-for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
+impl std::ops::DerefMut for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -59,24 +53,22 @@ impl crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
             crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage,
-                        >,
-                        1usize,
-                    >("Activate")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage,
+                    >, 1usize>("Activate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Activate", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Activate",
+                            1usize
                         )
                     })
             });
@@ -87,12 +79,10 @@ impl crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
     }
     pub fn New(
         activationUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        next: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Activation::IActivator,
-        >,
+        next: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Activation::IActivator>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (activationUrl, next))?;
         Ok(__cordl_object.into())
@@ -100,62 +90,51 @@ impl crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
     pub fn _ctor(
         &mut self,
         activationUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        next: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Activation::IActivator,
-        >,
+        next: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Activation::IActivator>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::Remoting::Activation::IActivator,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::Remoting::Activation::IActivator,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (activationUrl, next))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (activationUrl, next))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_NextActivator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Activation::IActivator,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Activation::IActivator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::Remoting::Activation::IActivator,
-                        >,
-                        0usize,
-                    >("get_NextActivator")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Remoting::Activation::IActivator,
+                    >, 0usize>("get_NextActivator")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_NextActivator", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_NextActivator",
+                            0usize
                         )
                     })
             });
@@ -165,11 +144,10 @@ impl crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Activation+AppDomainLevelActivator"
-)]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
+    for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -179,17 +157,17 @@ for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
 }
 #[cfg(feature = "System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
 impl AsRef<crate::System::Runtime::Remoting::Activation::IActivator>
-for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
+    for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator
+{
     fn as_ref(&self) -> &crate::System::Runtime::Remoting::Activation::IActivator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
 impl AsMut<crate::System::Runtime::Remoting::Activation::IActivator>
-for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Runtime::Remoting::Activation::IActivator {
+    for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator
+{
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::Activation::IActivator {
         unsafe { std::mem::transmute(self) }
     }
 }

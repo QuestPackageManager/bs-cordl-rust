@@ -3,9 +3,7 @@
 #[derive(Debug)]
 pub struct BeatToTimeConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bpmTimeProcessor: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IBeatToTimeConverter,
-    >,
+    pub _bpmTimeProcessor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatToTimeConverter>,
 }
 #[cfg(feature = "cordl_class_BeatToTimeConverter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatToTimeConverter {
@@ -14,7 +12,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatToTimeCo
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatToTimeConverter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,44 +41,41 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatToTimeConverter {
 #[cfg(feature = "BeatToTimeConverter")]
 impl crate::GlobalNamespace::BeatToTimeConverter {
     pub fn BeatToTime(&mut self, beat: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), f32, 1usize>("BeatToTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeatToTime", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeatToTime",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (beat))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, (beat))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        bpmTimeProcessor: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IBeatToTimeConverter,
-        >,
+        bpmTimeProcessor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatToTimeConverter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bpmTimeProcessor))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        bpmTimeProcessor: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IBeatToTimeConverter,
-        >,
+        bpmTimeProcessor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatToTimeConverter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -96,9 +92,8 @@ impl crate::GlobalNamespace::BeatToTimeConverter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bpmTimeProcessor))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bpmTimeProcessor))? };
         Ok(__cordl_ret.into())
     }
 }

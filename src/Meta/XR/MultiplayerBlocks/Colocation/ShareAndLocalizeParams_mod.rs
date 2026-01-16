@@ -1,19 +1,16 @@
-#[cfg(
-    feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+ShareAndLocalizeParams"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+ShareAndLocalizeParams")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ShareAndLocalizeParams {
     pub requestingPlayerId: u64,
     pub requestingPlayerOculusId: u64,
     pub anchorUUID: crate::System::Guid,
     pub anchorFlowSucceeded: bool,
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+ShareAndLocalizeParams"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+ShareAndLocalizeParams")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Meta.XR.MultiplayerBlocks.Colocation";
@@ -32,20 +29,16 @@ for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+ShareAndLocalizeParams"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+ShareAndLocalizeParams")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -54,11 +47,10 @@ for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+ShareAndLocalizeParams"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+ShareAndLocalizeParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -70,28 +62,24 @@ for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+ShareAndLocalizeParams"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+ShareAndLocalizeParams")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+ShareAndLocalizeParams"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+ShareAndLocalizeParams")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -103,11 +91,10 @@ for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+ShareAndLocalizeParams"
-)]
+#[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+ShareAndLocalizeParams")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -120,12 +107,12 @@ for crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
 impl crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -140,9 +127,8 @@ impl crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool1(
@@ -152,9 +138,10 @@ impl crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
         anchorUUID: crate::System::Guid,
         anchorFlowSucceeded: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u64, u64, crate::System::Guid, bool),
@@ -170,16 +157,15 @@ impl crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        requestingPlayerId,
-                        requestingPlayerOculusId,
-                        anchorUUID,
-                        anchorFlowSucceeded,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    requestingPlayerId,
+                    requestingPlayerOculusId,
+                    anchorUUID,
+                    anchorFlowSucceeded,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -189,9 +175,10 @@ impl crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
         requestingPlayerOculusId: u64,
         anchorUUID: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u64, u64, crate::System::Guid),
@@ -207,11 +194,10 @@ impl crate::Meta::XR::MultiplayerBlocks::Colocation::ShareAndLocalizeParams {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (requestingPlayerId, requestingPlayerOculusId, anchorUUID),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (requestingPlayerId, requestingPlayerOculusId, anchorUUID),
+            )?
         };
         Ok(__cordl_ret.into())
     }

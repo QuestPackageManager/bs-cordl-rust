@@ -3,15 +3,9 @@
 #[derive(Debug)]
 pub struct LanguageFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _playerDataModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlayerDataModel,
-    >,
-    pub _settingsManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SettingsManager,
-    >,
-    pub _platform: quest_hook::libil2cpp::Gc<
-        crate::OculusStudios::Platform::Core::IPlatform,
-    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
+    pub _platform: quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IPlatform>,
 }
 #[cfg(feature = "cordl_class_LanguageFactory")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LanguageFactory {
@@ -20,7 +14,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LanguageFact
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LanguageFactory";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -50,80 +45,59 @@ impl crate::GlobalNamespace::LanguageFactory {
     pub fn Create(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::LocalizationLanguage> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::BGLib::Polyglot::LocalizationLanguage,
-                        0usize,
-                    >("Create")
+                    .find_method::<(), crate::BGLib::Polyglot::LocalizationLanguage, 0usize>(
+                        "Create",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Create",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: crate::BGLib::Polyglot::LocalizationLanguage = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::BGLib::Polyglot::LocalizationLanguage =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        playerDataModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerDataModel,
-        >,
-        settingsManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SettingsManager,
-        >,
-        platform: quest_hook::libil2cpp::Gc<
-            crate::OculusStudios::Platform::Core::IPlatform,
-        >,
+        playerDataModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+        settingsManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
+        platform: quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IPlatform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (playerDataModel, settingsManager, platform))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        playerDataModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerDataModel,
-        >,
-        settingsManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SettingsManager,
-        >,
-        platform: quest_hook::libil2cpp::Gc<
-            crate::OculusStudios::Platform::Core::IPlatform,
-        >,
+        playerDataModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+        settingsManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
+        platform: quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IPlatform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerDataModel,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SettingsManager,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::OculusStudios::Platform::Core::IPlatform,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
+                        quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IPlatform>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
@@ -158,16 +132,16 @@ impl AsMut<crate::Zenject::IFactory> for crate::GlobalNamespace::LanguageFactory
 }
 #[cfg(feature = "LanguageFactory")]
 impl AsRef<crate::Zenject::IFactory_1<crate::BGLib::Polyglot::LocalizationLanguage>>
-for crate::GlobalNamespace::LanguageFactory {
-    fn as_ref(
-        &self,
-    ) -> &crate::Zenject::IFactory_1<crate::BGLib::Polyglot::LocalizationLanguage> {
+    for crate::GlobalNamespace::LanguageFactory
+{
+    fn as_ref(&self) -> &crate::Zenject::IFactory_1<crate::BGLib::Polyglot::LocalizationLanguage> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LanguageFactory")]
 impl AsMut<crate::Zenject::IFactory_1<crate::BGLib::Polyglot::LocalizationLanguage>>
-for crate::GlobalNamespace::LanguageFactory {
+    for crate::GlobalNamespace::LanguageFactory
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::Zenject::IFactory_1<crate::BGLib::Polyglot::LocalizationLanguage> {

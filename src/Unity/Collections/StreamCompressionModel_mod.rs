@@ -1,16 +1,16 @@
 #[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct StreamCompressionModel {
     pub m_Initialized: u8,
     pub encodeTable: crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer,
     pub decodeTable: crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer,
     pub bucketSizes: crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer,
-    pub bucketOffsets: crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer,
+    pub bucketOffsets:
+        crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer,
 }
 #[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::StreamCompressionModel {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Collections::StreamCompressionModel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections";
@@ -29,18 +29,14 @@ for crate::Unity::Collections::StreamCompressionModel {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::StreamCompressionModel {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Collections::StreamCompressionModel {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -50,8 +46,7 @@ for crate::Unity::Collections::StreamCompressionModel {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::StreamCompressionModel {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Collections::StreamCompressionModel {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -64,23 +59,19 @@ for crate::Unity::Collections::StreamCompressionModel {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::StreamCompressionModel {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Collections::StreamCompressionModel {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Collections::StreamCompressionModel {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Collections::StreamCompressionModel {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -94,7 +85,8 @@ for crate::Unity::Collections::StreamCompressionModel {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::StreamCompressionModel {
+    for crate::Unity::Collections::StreamCompressionModel
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -108,120 +100,112 @@ impl crate::Unity::Collections::StreamCompressionModel {
     pub const k_AlphabetSize: i32 = 16i32;
     pub const k_MaxContexts: i32 = 1i32;
     pub const k_MaxHuffmanSymbolLength: i32 = 6i32;
-    #[cfg(
-        feature = "Unity+Collections+StreamCompressionModel+SharedStaticCompressionModel"
-    )]
-    pub type SharedStaticCompressionModel = crate::Unity::Collections::StreamCompressionModel_SharedStaticCompressionModel;
-    #[cfg(
-        feature = "Unity+Collections+StreamCompressionModel+_bucketOffsets_e__FixedBuffer"
-    )]
-    pub type _bucketOffsets_e__FixedBuffer = crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer;
-    #[cfg(
-        feature = "Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer"
-    )]
-    pub type _bucketSizes_e__FixedBuffer = crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer;
-    #[cfg(
-        feature = "Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer"
-    )]
-    pub type _decodeTable_e__FixedBuffer = crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer;
-    #[cfg(
-        feature = "Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer"
-    )]
-    pub type _encodeTable_e__FixedBuffer = crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer;
+    #[cfg(feature = "Unity+Collections+StreamCompressionModel+SharedStaticCompressionModel")]
+    pub type SharedStaticCompressionModel =
+        crate::Unity::Collections::StreamCompressionModel_SharedStaticCompressionModel;
+    #[cfg(feature = "Unity+Collections+StreamCompressionModel+_bucketOffsets_e__FixedBuffer")]
+    pub type _bucketOffsets_e__FixedBuffer =
+        crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer;
+    #[cfg(feature = "Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer")]
+    pub type _bucketSizes_e__FixedBuffer =
+        crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer;
+    #[cfg(feature = "Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer")]
+    pub type _decodeTable_e__FixedBuffer =
+        crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer;
+    #[cfg(feature = "Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer")]
+    pub type _encodeTable_e__FixedBuffer =
+        crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer;
     pub fn CalculateBucket(&mut self, value: u32) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), i32, 1usize>("CalculateBucket")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculateBucket", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CalculateBucket",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckAlphabetAndMaxCodeLength(
         alphabetSize: i32,
         maxCodeLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CheckAlphabetAndMaxCodeLength")
+                    .find_static_method::<(i32, i32), quest_hook::libil2cpp::Void, 2usize>(
+                        "CheckAlphabetAndMaxCodeLength",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckAlphabetAndMaxCodeLength", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckAlphabetAndMaxCodeLength",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (alphabetSize, maxCodeLength))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (alphabetSize, maxCodeLength))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckAlphabetSize(
         alphabetSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("CheckAlphabetSize")
+                    .find_static_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "CheckAlphabetSize",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckAlphabetSize", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckAlphabetSize",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (alphabetSize))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (alphabetSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckExceedMaxCodeLength(
         length: i32,
         maxCodeLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("CheckExceedMaxCodeLength")
+                    .find_static_method::<(i32, i32), quest_hook::libil2cpp::Void, 2usize>(
+                        "CheckExceedMaxCodeLength",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckExceedMaxCodeLength", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckExceedMaxCodeLength",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (length, maxCodeLength))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (length, maxCodeLength))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckSymbolLength(
@@ -230,9 +214,10 @@ impl crate::Unity::Collections::StreamCompressionModel {
         symbol: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::NativeArray_1<u8>, i32, i32, i32),
@@ -249,10 +234,7 @@ impl crate::Unity::Collections::StreamCompressionModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (symbolLengths, symbolLengthsOffset, symbol, length),
-                )?
+                .invoke_unchecked((), (symbolLengths, symbolLengthsOffset, symbol, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -264,43 +246,42 @@ impl crate::Unity::Collections::StreamCompressionModel {
         alphabetSize: i32,
         maxCodeLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::NativeArray_1<u8>,
-                            i32,
-                            crate::Unity::Collections::NativeArray_1<u8>,
-                            i32,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("GenerateHuffmanCodes")
+                    .find_static_method::<(
+                        crate::Unity::Collections::NativeArray_1<u8>,
+                        i32,
+                        crate::Unity::Collections::NativeArray_1<u8>,
+                        i32,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "GenerateHuffmanCodes"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GenerateHuffmanCodes", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GenerateHuffmanCodes",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        symbolCodes,
-                        symbolCodesOffset,
-                        symbolLengths,
-                        symbolLengthsOffset,
-                        alphabetSize,
-                        maxCodeLength,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    symbolCodes,
+                    symbolCodesOffset,
+                    symbolLengths,
+                    symbolLengthsOffset,
+                    alphabetSize,
+                    maxCodeLength,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -312,116 +293,110 @@ impl crate::Unity::Collections::StreamCompressionModel {
         alphabetSize: i32,
         maxCodeLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::NativeArray_1<u16>,
-                            i32,
-                            crate::Unity::Collections::NativeArray_1<u8>,
-                            crate::Unity::Collections::NativeArray_1<u8>,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("GenerateHuffmanDecodeTable")
+                    .find_static_method::<(
+                        crate::Unity::Collections::NativeArray_1<u16>,
+                        i32,
+                        crate::Unity::Collections::NativeArray_1<u8>,
+                        crate::Unity::Collections::NativeArray_1<u8>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "GenerateHuffmanDecodeTable"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GenerateHuffmanDecodeTable", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GenerateHuffmanDecodeTable",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        decodeTable,
-                        decodeTableOffset,
-                        symbolLengths,
-                        symbolCodes,
-                        alphabetSize,
-                        maxCodeLength,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    decodeTable,
+                    decodeTableOffset,
+                    symbolLengths,
+                    symbolCodes,
+                    alphabetSize,
+                    maxCodeLength,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetCompressedSizeInBits(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetCompressedSizeInBits(&mut self, value: u32) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), i32, 1usize>("GetCompressedSizeInBits")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCompressedSizeInBits", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCompressedSizeInBits",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("Initialize")
+                    .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Initialize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Initialize",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ReverseBits(value: u32, num_bits: i32) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, i32), u32, 2usize>("ReverseBits")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReverseBits", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReverseBits",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (value, num_bits))?
-        };
+        let __cordl_ret: u32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (value, num_bits))? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_Default() -> quest_hook::libil2cpp::Result<
-        crate::Unity::Collections::StreamCompressionModel,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_Default(
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::StreamCompressionModel> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -436,9 +411,8 @@ impl crate::Unity::Collections::StreamCompressionModel {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::StreamCompressionModel = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::Unity::Collections::StreamCompressionModel =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -454,13 +428,15 @@ pub struct StreamCompressionModel_SharedStaticCompressionModel {
     feature = "cordl_class_Unity+Collections+StreamCompressionModel+SharedStaticCompressionModel"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::StreamCompressionModel_SharedStaticCompressionModel {
+    for crate::Unity::Collections::StreamCompressionModel_SharedStaticCompressionModel
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Collections";
     const CLASS_NAME: &'static str = "StreamCompressionModel/SharedStaticCompressionModel";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -474,7 +450,8 @@ for crate::Unity::Collections::StreamCompressionModel_SharedStaticCompressionMod
 }
 #[cfg(feature = "Unity+Collections+StreamCompressionModel+SharedStaticCompressionModel")]
 impl std::ops::Deref
-for crate::Unity::Collections::StreamCompressionModel_SharedStaticCompressionModel {
+    for crate::Unity::Collections::StreamCompressionModel_SharedStaticCompressionModel
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -482,7 +459,8 @@ for crate::Unity::Collections::StreamCompressionModel_SharedStaticCompressionMod
 }
 #[cfg(feature = "Unity+Collections+StreamCompressionModel+SharedStaticCompressionModel")]
 impl std::ops::DerefMut
-for crate::Unity::Collections::StreamCompressionModel_SharedStaticCompressionModel {
+    for crate::Unity::Collections::StreamCompressionModel_SharedStaticCompressionModel
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -493,7 +471,8 @@ impl crate::Unity::Collections::StreamCompressionModel_SharedStaticCompressionMo
     feature = "cordl_class_Unity+Collections+StreamCompressionModel+SharedStaticCompressionModel"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Unity::Collections::StreamCompressionModel_SharedStaticCompressionModel {
+    for crate::Unity::Collections::StreamCompressionModel_SharedStaticCompressionModel
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -504,8 +483,8 @@ for crate::Unity::Collections::StreamCompressionModel_SharedStaticCompressionMod
 #[cfg(
     feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketOffsets_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct StreamCompressionModel__bucketOffsets_e__FixedBuffer {
     pub FixedElementField: u32,
 }
@@ -513,7 +492,8 @@ pub struct StreamCompressionModel__bucketOffsets_e__FixedBuffer {
     feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketOffsets_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections";
@@ -532,20 +512,18 @@ for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuf
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketOffsets_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -558,7 +536,8 @@ for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuf
     feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketOffsets_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -574,16 +553,15 @@ for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuf
     feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketOffsets_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -591,7 +569,8 @@ for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuf
     feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketOffsets_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -607,7 +586,8 @@ for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuf
     feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketOffsets_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -616,23 +596,18 @@ for crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuf
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "Unity+Collections+StreamCompressionModel+_bucketOffsets_e__FixedBuffer"
-)]
+#[cfg(feature = "Unity+Collections+StreamCompressionModel+_bucketOffsets_e__FixedBuffer")]
 impl crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer {}
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct StreamCompressionModel__bucketSizes_e__FixedBuffer {
     pub FixedElementField: u8,
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections";
@@ -651,20 +626,16 @@ for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffe
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -673,11 +644,10 @@ for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffe
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -689,28 +659,24 @@ for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffe
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -722,11 +688,10 @@ for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffe
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -737,19 +702,16 @@ for crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffe
 }
 #[cfg(feature = "Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer")]
 impl crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer {}
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct StreamCompressionModel__decodeTable_e__FixedBuffer {
     pub FixedElementField: u16,
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections";
@@ -768,20 +730,16 @@ for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffe
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -790,11 +748,10 @@ for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffe
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -806,28 +763,24 @@ for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffe
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -839,11 +792,10 @@ for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffe
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -854,19 +806,16 @@ for crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffe
 }
 #[cfg(feature = "Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer")]
 impl crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer {}
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct StreamCompressionModel__encodeTable_e__FixedBuffer {
     pub FixedElementField: u16,
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections";
@@ -885,20 +834,16 @@ for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffe
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -907,11 +852,10 @@ for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffe
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -923,28 +867,24 @@ for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffe
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -956,11 +896,10 @@ for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffe
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer"
-)]
+#[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer {
+    for crate::Unity::Collections::StreamCompressionModel__encodeTable_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

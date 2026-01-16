@@ -1,18 +1,20 @@
 #[cfg(feature = "cordl_class_INoteControllerNoteDidStartDissolvingEvent")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct INoteControllerNoteDidStartDissolvingEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_INoteControllerNoteDidStartDissolvingEvent")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
+    for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "INoteControllerNoteDidStartDissolvingEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -25,16 +27,14 @@ for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
     }
 }
 #[cfg(feature = "INoteControllerNoteDidStartDissolvingEvent")]
-impl std::ops::Deref
-for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
+impl std::ops::Deref for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteControllerNoteDidStartDissolvingEvent")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
+impl std::ops::DerefMut for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -43,47 +43,41 @@ for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
 impl crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
     pub fn HandleNoteControllerNoteDidStartDissolving(
         &mut self,
-        noteController: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::NoteControllerBase,
-        >,
+        noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteControllerBase,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleNoteControllerNoteDidStartDissolving")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>,
+                        f32,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "HandleNoteControllerNoteDidStartDissolving",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleNoteControllerNoteDidStartDissolving", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleNoteControllerNoteDidStartDissolving",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (noteController, duration))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (noteController, duration))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_INoteControllerNoteDidStartDissolvingEvent")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
+    for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

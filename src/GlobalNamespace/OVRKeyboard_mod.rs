@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRKeyboard 
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRKeyboard";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,12 +43,13 @@ impl crate::GlobalNamespace::OVRKeyboard {
     pub type TrackedKeyboardInfo = crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo;
     #[cfg(feature = "OVRKeyboard+TrackedKeyboardState")]
     pub type TrackedKeyboardState = crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState;
-    pub fn GetKeyboardState() -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetKeyboardState(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -62,9 +64,8 @@ impl crate::GlobalNamespace::OVRKeyboard {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSystemKeyboardInfo(
@@ -73,39 +74,37 @@ impl crate::GlobalNamespace::OVRKeyboard {
             crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::OVRPlugin_TrackedKeyboardQueryFlags,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("GetSystemKeyboardInfo")
+                    .find_static_method::<(
+                        crate::GlobalNamespace::OVRPlugin_TrackedKeyboardQueryFlags,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo,
+                        >,
+                    ), bool, 2usize>("GetSystemKeyboardInfo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSystemKeyboardInfo", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSystemKeyboardInfo",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (keyboardQueryFlags, keyboardInfo))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (keyboardQueryFlags, keyboardInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn StopKeyboardTracking(
         keyboardInfo: crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo),
@@ -120,9 +119,7 @@ impl crate::GlobalNamespace::OVRKeyboard {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (keyboardInfo))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (keyboardInfo))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -136,18 +133,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRKeyboard {
     }
 }
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardInfo")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRKeyboard_TrackedKeyboardInfo {
     pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Identifier: u64,
     pub Dimensions: crate::UnityEngine::Vector3,
     pub KeyboardFlags: crate::GlobalNamespace::OVRPlugin_TrackedKeyboardFlags,
-    pub SupportedPresentationStyles: crate::GlobalNamespace::OVRPlugin_TrackedKeyboardPresentationStyles,
+    pub SupportedPresentationStyles:
+        crate::GlobalNamespace::OVRPlugin_TrackedKeyboardPresentationStyles,
 }
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardInfo")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
+    for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -166,18 +165,16 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
+    for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -188,7 +185,8 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
 }
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
+    for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -202,22 +200,22 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
 }
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
+    for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardInfo")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
+    for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -231,7 +229,8 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
 }
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
+    for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -243,8 +242,8 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
 #[cfg(feature = "OVRKeyboard+TrackedKeyboardInfo")]
 impl crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {}
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardState")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRKeyboard_TrackedKeyboardState {
     pub isPositionValid: bool,
     pub isPositionTracked: bool,
@@ -256,7 +255,8 @@ pub struct OVRKeyboard_TrackedKeyboardState {
 }
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardState")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
+    for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -275,18 +275,16 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardState")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
+    for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -297,7 +295,8 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
 }
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardState")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
+    for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -311,22 +310,22 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
 }
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardState")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
+    for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardState")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
+    for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -340,7 +339,8 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
 }
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
+    for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

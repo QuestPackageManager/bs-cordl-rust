@@ -3,19 +3,17 @@
 #[derive(Debug)]
 pub struct TubeLightIntensityAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
-    pub _template: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::TubeLightIntensityBehaviour,
-    >,
+    pub _template: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeLightIntensityBehaviour>,
 }
 #[cfg(feature = "cordl_class_TubeLightIntensityAsset")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::TubeLightIntensityAsset {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TubeLightIntensityAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "TubeLightIntensityAsset";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,88 +45,84 @@ impl crate::GlobalNamespace::TubeLightIntensityAsset {
         graph: crate::UnityEngine::Playables::PlayableGraph,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Playables::PlayableGraph,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                        ),
-                        crate::UnityEngine::Playables::Playable,
-                        2usize,
-                    >("CreatePlayable")
+                    .find_method::<(
+                        crate::UnityEngine::Playables::PlayableGraph,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    ), crate::UnityEngine::Playables::Playable, 2usize>(
+                        "CreatePlayable"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreatePlayable", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreatePlayable",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
-            cordl_method_info.invoke_unchecked(self, (graph, go))?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::Playable =
+            unsafe { cordl_method_info.invoke_unchecked(self, (graph, go))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_clipCaps(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::ClipCaps> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::Timeline::ClipCaps,
-                        0usize,
-                    >("get_clipCaps")
+                    .find_method::<(), crate::UnityEngine::Timeline::ClipCaps, 0usize>(
+                        "get_clipCaps",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_clipCaps", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_clipCaps",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Timeline::ClipCaps = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Timeline::ClipCaps =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_TubeLightIntensityAsset")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::TubeLightIntensityAsset {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TubeLightIntensityAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -138,14 +132,16 @@ for crate::GlobalNamespace::TubeLightIntensityAsset {
 }
 #[cfg(feature = "TubeLightIntensityAsset")]
 impl AsRef<crate::UnityEngine::Timeline::ITimelineClipAsset>
-for crate::GlobalNamespace::TubeLightIntensityAsset {
+    for crate::GlobalNamespace::TubeLightIntensityAsset
+{
     fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineClipAsset {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TubeLightIntensityAsset")]
 impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
-for crate::GlobalNamespace::TubeLightIntensityAsset {
+    for crate::GlobalNamespace::TubeLightIntensityAsset
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ITimelineClipAsset {
         unsafe { std::mem::transmute(self) }
     }

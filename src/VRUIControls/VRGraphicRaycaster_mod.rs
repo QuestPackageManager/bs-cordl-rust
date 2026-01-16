@@ -4,18 +4,16 @@
 pub struct VRGraphicRaycaster {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseRaycaster,
     pub _blockingMask: crate::UnityEngine::LayerMask,
-    pub _physicsRaycaster: quest_hook::libil2cpp::Gc<
-        crate::VRUIControls::PhysicsRaycasterWithCache,
-    >,
+    pub _physicsRaycaster:
+        quest_hook::libil2cpp::Gc<crate::VRUIControls::PhysicsRaycasterWithCache>,
     pub _canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     pub _raycastResults: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
         >,
     >,
-    pub _curvedCanvasSettingsHelper: quest_hook::libil2cpp::Gc<
-        crate::HMUI::CurvedCanvasSettingsHelper,
-    >,
+    pub _curvedCanvasSettingsHelper:
+        quest_hook::libil2cpp::Gc<crate::HMUI::CurvedCanvasSettingsHelper>,
 }
 #[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster")]
 unsafe impl quest_hook::libil2cpp::Type for crate::VRUIControls::VRGraphicRaycaster {
@@ -24,7 +22,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::VRUIControls::VRGraphicRaycas
     const NAMESPACE: &'static str = "VRUIControls";
     const CLASS_NAME: &'static str = "VRGraphicRaycaster";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -53,75 +52,70 @@ impl std::ops::DerefMut for crate::VRUIControls::VRGraphicRaycaster {
 impl crate::VRUIControls::VRGraphicRaycaster {
     pub const kPhysics3DRaycastDistance: f32 = 6f32;
     #[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
-    pub type VRGraphicRaycastResult = crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult;
+    pub type VRGraphicRaycastResult =
+        crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnEnable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnEnable(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnEnable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnEnable",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Raycast(
         &mut self,
-        eventData: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::PointerEventData,
-        >,
+        eventData: quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         resultAppendList: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 crate::UnityEngine::EventSystems::RaycastResult,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::EventSystems::PointerEventData,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::PointerEventData,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::EventSystems::RaycastResult,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::EventSystems::RaycastResult,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Raycast")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Raycast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Raycast",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (eventData, resultAppendList))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (eventData, resultAppendList))? };
         Ok(__cordl_ret.into())
     }
     pub fn RaycastCanvas(
@@ -135,71 +129,64 @@ impl crate::VRUIControls::VRGraphicRaycaster {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
-                            crate::UnityEngine::Ray,
-                            f32,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+                        crate::UnityEngine::Ray,
+                        f32,
+                        f32,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("RaycastCanvas")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 5usize>("RaycastCanvas")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RaycastCanvas", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RaycastCanvas",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (canvas, ray, hitDistance, curvedUIRadius, results),
-                )?
+                .invoke_unchecked((), (canvas, ray, hitDistance, curvedUIRadius, results))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_eventCamera(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -214,9 +201,8 @@ impl crate::VRUIControls::VRGraphicRaycaster {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -230,8 +216,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::VRUIControls::VRGraphicRaycast
     }
 }
 #[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct VRGraphicRaycaster_VRGraphicRaycastResult {
     pub graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     pub distance: f32,
@@ -240,7 +226,8 @@ pub struct VRGraphicRaycaster_VRGraphicRaycastResult {
 }
 #[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
+    for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "VRUIControls";
@@ -259,18 +246,16 @@ for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
+    for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -281,7 +266,8 @@ for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
 }
 #[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
+    for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -295,22 +281,22 @@ for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
 }
 #[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
+    for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
+    for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -324,7 +310,8 @@ for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
 }
 #[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
+    for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -342,34 +329,31 @@ impl crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
         position: crate::UnityEngine::Vector3,
         insideRootCanvasPosition: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector2,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector2,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (graphic, distance, position, insideRootCanvasPosition),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (graphic, distance, position, insideRootCanvasPosition),
+            )?
         };
         Ok(__cordl_ret.into())
     }

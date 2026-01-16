@@ -1,18 +1,18 @@
 #[cfg(feature = "cordl_class_System+Net+Http+IMonoHttpClientHandler")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IMonoHttpClientHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_System+Net+Http+IMonoHttpClientHandler")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Net::Http::IMonoHttpClientHandler {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Http::IMonoHttpClientHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Http";
     const CLASS_NAME: &'static str = "IMonoHttpClientHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -50,31 +50,27 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpRequestMessage>,
+                        crate::System::Threading::CancellationToken,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Http::HttpRequestMessage,
-                            >,
-                            crate::System::Threading::CancellationToken,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Net::Http::HttpResponseMessage,
-                                >,
+                                crate::System::Net::Http::HttpResponseMessage,
                             >,
                         >,
-                        2usize,
-                    >("SendAsync")
+                    >, 2usize>("SendAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendAsync", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendAsync",
+                            2usize
                         )
                     })
             });
@@ -82,65 +78,56 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (request, cancellationToken))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (request, cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetWebRequestTimeout(
         &mut self,
         timeout: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::System::TimeSpan),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetWebRequestTimeout")
+                    .find_method::<(crate::System::TimeSpan), quest_hook::libil2cpp::Void, 1usize>(
+                        "SetWebRequestTimeout",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetWebRequestTimeout", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetWebRequestTimeout",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (timeout))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (timeout))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_SslOptions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::Security::SslClientAuthenticationOptions,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslClientAuthenticationOptions>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Net::Security::SslClientAuthenticationOptions,
-                        >,
-                        0usize,
-                    >("get_SslOptions")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Security::SslClientAuthenticationOptions,
+                    >, 0usize>("get_SslOptions")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_SslOptions", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_SslOptions",
+                            0usize
                         )
                     })
             });
@@ -153,26 +140,25 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_AllowAutoRedirect")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_AllowAutoRedirect",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_AllowAutoRedirect", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_AllowAutoRedirect",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_SslOptions(
@@ -181,60 +167,53 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
             crate::System::Net::Security::SslClientAuthenticationOptions,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Net::Security::SslClientAuthenticationOptions,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_SslOptions")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Security::SslClientAuthenticationOptions,
+                    >), quest_hook::libil2cpp::Void, 1usize>("set_SslOptions")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_SslOptions", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_SslOptions",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_UseProxy(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_UseProxy")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_UseProxy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_UseProxy", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_UseProxy",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Http+IMonoHttpClientHandler")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Net::Http::IMonoHttpClientHandler {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::IMonoHttpClientHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -243,15 +222,13 @@ for crate::System::Net::Http::IMonoHttpClientHandler {
     }
 }
 #[cfg(feature = "System+Net+Http+IMonoHttpClientHandler")]
-impl AsRef<crate::System::IDisposable>
-for crate::System::Net::Http::IMonoHttpClientHandler {
+impl AsRef<crate::System::IDisposable> for crate::System::Net::Http::IMonoHttpClientHandler {
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Http+IMonoHttpClientHandler")]
-impl AsMut<crate::System::IDisposable>
-for crate::System::Net::Http::IMonoHttpClientHandler {
+impl AsMut<crate::System::IDisposable> for crate::System::Net::Http::IMonoHttpClientHandler {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }

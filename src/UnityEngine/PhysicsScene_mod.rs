@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+PhysicsScene")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PhysicsScene {
     pub m_Handle: i32,
 }
@@ -24,13 +24,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PhysicsScene {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+PhysicsScene")]
@@ -64,9 +61,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::PhysicsScene
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -102,33 +97,28 @@ impl crate::UnityEngine::PhysicsScene {
         direction: crate::UnityEngine::Vector3,
         hitInfo: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                        ),
-                        bool,
-                        4usize,
-                    >("BoxCast")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                    ), bool, 4usize>("BoxCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "BoxCast",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BoxCast",
                             4usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (center, halfExtents, direction, hitInfo))?
+            cordl_method_info.invoke_unchecked(self, (center, halfExtents, direction, hitInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -143,49 +133,44 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            crate::UnityEngine::Quaternion,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        8usize,
-                    >("BoxCast")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        crate::UnityEngine::Quaternion,
+                        f32,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 8usize>("BoxCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "BoxCast",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BoxCast",
                             8usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        center,
-                        halfExtents,
-                        direction,
-                        hitInfo,
-                        orientation,
-                        maxDistance,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    center,
+                    halfExtents,
+                    direction,
+                    hitInfo,
+                    orientation,
+                    maxDistance,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -198,35 +183,30 @@ impl crate::UnityEngine::PhysicsScene {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit,
-                                >,
-                            >,
-                        ),
-                        i32,
-                        4usize,
-                    >("BoxCast")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+                        >,
+                    ), i32, 4usize>("BoxCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "BoxCast",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BoxCast",
                             4usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (center, halfExtents, direction, results))?
+            cordl_method_info.invoke_unchecked(self, (center, halfExtents, direction, results))?
         };
         Ok(__cordl_ret.into())
     }
@@ -243,51 +223,46 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit,
-                                >,
-                            >,
-                            crate::UnityEngine::Quaternion,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+                        >,
+                        crate::UnityEngine::Quaternion,
+                        f32,
                         i32,
-                        8usize,
-                    >("BoxCast")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 8usize>("BoxCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "BoxCast",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BoxCast",
                             8usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        center,
-                        halfExtents,
-                        direction,
-                        results,
-                        orientation,
-                        maxDistance,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    center,
+                    halfExtents,
+                    direction,
+                    results,
+                    orientation,
+                    maxDistance,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -302,49 +277,44 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        8usize,
-                    >("CapsuleCast")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        f32,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 8usize>("CapsuleCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CapsuleCast", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CapsuleCast",
+                            8usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        point1,
-                        point2,
-                        radius,
-                        direction,
-                        hitInfo,
-                        maxDistance,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    point1,
+                    point2,
+                    radius,
+                    direction,
+                    hitInfo,
+                    maxDistance,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -361,51 +331,46 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit,
-                                >,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+                        >,
+                        f32,
                         i32,
-                        8usize,
-                    >("CapsuleCast")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 8usize>("CapsuleCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CapsuleCast", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CapsuleCast",
+                            8usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        point1,
-                        point2,
-                        radius,
-                        direction,
-                        results,
-                        maxDistance,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    point1,
+                    point2,
+                    radius,
+                    direction,
+                    results,
+                    maxDistance,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -413,9 +378,10 @@ impl crate::UnityEngine::PhysicsScene {
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -430,48 +396,44 @@ impl crate::UnityEngine::PhysicsScene {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_PhysicsScene1(
         &mut self,
         other: crate::UnityEngine::PhysicsScene,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::PhysicsScene),
-                        bool,
-                        1usize,
-                    >("Equals")
+                    .find_method::<(crate::UnityEngine::PhysicsScene), bool, 1usize>("Equals")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Equals",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -489,51 +451,46 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        9usize,
-                    >("Internal_BoxCast")
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        f32,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 9usize>("Internal_BoxCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_BoxCast", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_BoxCast",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        center,
-                        halfExtents,
-                        orientation,
-                        direction,
-                        hitInfo,
-                        maxDistance,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    center,
+                    halfExtents,
+                    orientation,
+                    direction,
+                    hitInfo,
+                    maxDistance,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -550,53 +507,48 @@ impl crate::UnityEngine::PhysicsScene {
         mask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit,
-                                >,
-                            >,
-                            crate::UnityEngine::Quaternion,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+                        >,
+                        crate::UnityEngine::Quaternion,
+                        f32,
                         i32,
-                        9usize,
-                    >("Internal_BoxCastNonAlloc")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 9usize>("Internal_BoxCastNonAlloc")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_BoxCastNonAlloc", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_BoxCastNonAlloc",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        center,
-                        halfExtents,
-                        direction,
-                        raycastHits,
-                        orientation,
-                        maxDistance,
-                        mask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    center,
+                    halfExtents,
+                    direction,
+                    raycastHits,
+                    orientation,
+                    maxDistance,
+                    mask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -613,55 +565,48 @@ impl crate::UnityEngine::PhysicsScene {
         mask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::PhysicsScene,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Quaternion,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+                        f32,
                         i32,
-                        9usize,
-                    >("Internal_BoxCastNonAlloc_Injected")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 9usize>("Internal_BoxCastNonAlloc_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_BoxCastNonAlloc_Injected", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_BoxCastNonAlloc_Injected",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        center,
-                        halfExtents,
-                        direction,
-                        raycastHits,
-                        orientation,
-                        maxDistance,
-                        mask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    center,
+                    halfExtents,
+                    direction,
+                    raycastHits,
+                    orientation,
+                    maxDistance,
+                    mask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -676,51 +621,46 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        9usize,
-                    >("Internal_CapsuleCast")
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        f32,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 9usize>("Internal_CapsuleCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_CapsuleCast", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_CapsuleCast",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        point1,
-                        point2,
-                        radius,
-                        direction,
-                        hitInfo,
-                        maxDistance,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    point1,
+                    point2,
+                    radius,
+                    direction,
+                    hitInfo,
+                    maxDistance,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -737,53 +677,48 @@ impl crate::UnityEngine::PhysicsScene {
         mask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit,
-                                >,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+                        >,
+                        f32,
                         i32,
-                        9usize,
-                    >("Internal_CapsuleCastNonAlloc")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 9usize>("Internal_CapsuleCastNonAlloc")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_CapsuleCastNonAlloc", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_CapsuleCastNonAlloc",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        p0,
-                        p1,
-                        radius,
-                        direction,
-                        raycastHits,
-                        maxDistance,
-                        mask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    p0,
+                    p1,
+                    radius,
+                    direction,
+                    raycastHits,
+                    maxDistance,
+                    mask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -800,53 +735,48 @@ impl crate::UnityEngine::PhysicsScene {
         mask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::PhysicsScene,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >,
+                        f32,
                         i32,
-                        9usize,
-                    >("Internal_CapsuleCastNonAlloc_Injected")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 9usize>("Internal_CapsuleCastNonAlloc_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_CapsuleCastNonAlloc_Injected", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_CapsuleCastNonAlloc_Injected",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        p0,
-                        p1,
-                        radius,
-                        direction,
-                        raycastHits,
-                        maxDistance,
-                        mask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    p0,
+                    p1,
+                    radius,
+                    direction,
+                    raycastHits,
+                    maxDistance,
+                    mask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -858,45 +788,40 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Ray,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        6usize,
-                    >("Internal_Raycast")
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Ray,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 6usize>("Internal_Raycast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_Raycast", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_Raycast",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        ray,
-                        maxDistance,
-                        hit,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    ray,
+                    maxDistance,
+                    hit,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -910,47 +835,42 @@ impl crate::UnityEngine::PhysicsScene {
         mask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Ray,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit,
-                                >,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Ray,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+                        >,
+                        f32,
                         i32,
-                        6usize,
-                    >("Internal_RaycastNonAlloc")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 6usize>("Internal_RaycastNonAlloc")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_RaycastNonAlloc", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_RaycastNonAlloc",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        ray,
-                        raycastHits,
-                        maxDistance,
-                        mask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    ray,
+                    raycastHits,
+                    maxDistance,
+                    mask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -964,47 +884,42 @@ impl crate::UnityEngine::PhysicsScene {
         mask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::PhysicsScene,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Ray>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Ray>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >,
+                        f32,
                         i32,
-                        6usize,
-                    >("Internal_RaycastNonAlloc_Injected")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 6usize>("Internal_RaycastNonAlloc_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_RaycastNonAlloc_Injected", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_RaycastNonAlloc_Injected",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        ray,
-                        raycastHits,
-                        maxDistance,
-                        mask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    ray,
+                    raycastHits,
+                    maxDistance,
+                    mask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1015,35 +930,38 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Ray,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        5usize,
-                    >("Internal_RaycastTest")
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Ray,
+                        f32,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 5usize>("Internal_RaycastTest")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_RaycastTest", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_RaycastTest",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (physicsScene, ray, maxDistance, layerMask, queryTriggerInteraction),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    ray,
+                    maxDistance,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1054,37 +972,38 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::PhysicsScene,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Ray>,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        5usize,
-                    >("Internal_RaycastTest_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Ray>,
+                        f32,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 5usize>("Internal_RaycastTest_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_RaycastTest_Injected", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_RaycastTest_Injected",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (physicsScene, ray, maxDistance, layerMask, queryTriggerInteraction),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    ray,
+                    maxDistance,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1096,47 +1015,40 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::PhysicsScene,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Ray>,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        6usize,
-                    >("Internal_Raycast_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Ray>,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 6usize>("Internal_Raycast_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_Raycast_Injected", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_Raycast_Injected",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        ray,
-                        maxDistance,
-                        hit,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    ray,
+                    maxDistance,
+                    hit,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1150,49 +1062,44 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        8usize,
-                    >("Internal_SphereCast")
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        f32,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 8usize>("Internal_SphereCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_SphereCast", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_SphereCast",
+                            8usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        origin,
-                        radius,
-                        direction,
-                        hitInfo,
-                        maxDistance,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    origin,
+                    radius,
+                    direction,
+                    hitInfo,
+                    maxDistance,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1208,51 +1115,46 @@ impl crate::UnityEngine::PhysicsScene {
         mask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit,
-                                >,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+                        >,
+                        f32,
                         i32,
-                        8usize,
-                    >("Internal_SphereCastNonAlloc")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 8usize>("Internal_SphereCastNonAlloc")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_SphereCastNonAlloc", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_SphereCastNonAlloc",
+                            8usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        origin,
-                        radius,
-                        direction,
-                        raycastHits,
-                        maxDistance,
-                        mask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    origin,
+                    radius,
+                    direction,
+                    raycastHits,
+                    maxDistance,
+                    mask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1268,89 +1170,83 @@ impl crate::UnityEngine::PhysicsScene {
         mask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::PhysicsScene,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >,
+                        f32,
                         i32,
-                        8usize,
-                    >("Internal_SphereCastNonAlloc_Injected")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 8usize>("Internal_SphereCastNonAlloc_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_SphereCastNonAlloc_Injected", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_SphereCastNonAlloc_Injected",
+                            8usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        origin,
-                        radius,
-                        direction,
-                        raycastHits,
-                        maxDistance,
-                        mask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    origin,
+                    radius,
+                    direction,
+                    raycastHits,
+                    maxDistance,
+                    mask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InterpolateBodies(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("InterpolateBodies")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InterpolateBodies")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InterpolateBodies", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InterpolateBodies",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsEmpty")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsEmpty",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsEmpty",
                             0usize
                         )
                     })
@@ -1361,34 +1257,33 @@ impl crate::UnityEngine::PhysicsScene {
     pub fn IsEmpty_Internal(
         physicsScene: crate::UnityEngine::PhysicsScene,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::UnityEngine::PhysicsScene),
-                        bool,
-                        1usize,
-                    >("IsEmpty_Internal")
+                    .find_static_method::<(crate::UnityEngine::PhysicsScene), bool, 1usize>(
+                        "IsEmpty_Internal",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsEmpty_Internal", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsEmpty_Internal",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (physicsScene))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (physicsScene))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsEmpty_Internal_Injected(
         physicsScene: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -1405,21 +1300,21 @@ impl crate::UnityEngine::PhysicsScene {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (physicsScene))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (physicsScene))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsValid",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsValid",
                             0usize
                         )
                     })
@@ -1430,34 +1325,33 @@ impl crate::UnityEngine::PhysicsScene {
     pub fn IsValid_Internal(
         physicsScene: crate::UnityEngine::PhysicsScene,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::UnityEngine::PhysicsScene),
-                        bool,
-                        1usize,
-                    >("IsValid_Internal")
+                    .find_static_method::<(crate::UnityEngine::PhysicsScene), bool, 1usize>(
+                        "IsValid_Internal",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsValid_Internal", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsValid_Internal",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (physicsScene))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (physicsScene))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValid_Internal_Injected(
         physicsScene: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -1474,9 +1368,7 @@ impl crate::UnityEngine::PhysicsScene {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (physicsScene))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (physicsScene))? };
         Ok(__cordl_ret.into())
     }
     pub fn OverlapBoxNonAlloc_Internal(
@@ -1492,49 +1384,46 @@ impl crate::UnityEngine::PhysicsScene {
         mask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-                                >,
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
                             >,
-                            crate::UnityEngine::Quaternion,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                        >,
+                        crate::UnityEngine::Quaternion,
                         i32,
-                        7usize,
-                    >("OverlapBoxNonAlloc_Internal")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 7usize>("OverlapBoxNonAlloc_Internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OverlapBoxNonAlloc_Internal", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OverlapBoxNonAlloc_Internal",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        center,
-                        halfExtents,
-                        results,
-                        orientation,
-                        mask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    center,
+                    halfExtents,
+                    results,
+                    orientation,
+                    mask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1551,53 +1440,46 @@ impl crate::UnityEngine::PhysicsScene {
         mask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::PhysicsScene,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
                             >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Quaternion,
-                            >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
                         i32,
-                        7usize,
-                    >("OverlapBoxNonAlloc_Internal_Injected")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 7usize>("OverlapBoxNonAlloc_Internal_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OverlapBoxNonAlloc_Internal_Injected", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OverlapBoxNonAlloc_Internal_Injected",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        center,
-                        halfExtents,
-                        results,
-                        orientation,
-                        mask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    center,
+                    halfExtents,
+                    results,
+                    orientation,
+                    mask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1614,47 +1496,44 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-                                >,
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
                             >,
-                            crate::UnityEngine::Quaternion,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                        >,
+                        crate::UnityEngine::Quaternion,
                         i32,
-                        6usize,
-                    >("OverlapBox")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 6usize>("OverlapBox")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OverlapBox", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OverlapBox",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        center,
-                        halfExtents,
-                        results,
-                        orientation,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    center,
+                    halfExtents,
+                    results,
+                    orientation,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1668,34 +1547,31 @@ impl crate::UnityEngine::PhysicsScene {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-                                >,
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
                             >,
-                        ),
-                        i32,
-                        3usize,
-                    >("OverlapBox")
+                        >,
+                    ), i32, 3usize>("OverlapBox")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OverlapBox", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OverlapBox",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (center, halfExtents, results))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (center, halfExtents, results))? };
         Ok(__cordl_ret.into())
     }
     pub fn OverlapCapsule(
@@ -1711,40 +1587,44 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-                                >,
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
                             >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                        >,
                         i32,
-                        6usize,
-                    >("OverlapCapsule")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 6usize>("OverlapCapsule")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OverlapCapsule", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OverlapCapsule",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (point0, point1, radius, results, layerMask, queryTriggerInteraction),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    point0,
+                    point1,
+                    radius,
+                    results,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1761,49 +1641,46 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-                                >,
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
                             >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                        >,
                         i32,
-                        7usize,
-                    >("OverlapCapsuleNonAlloc_Internal")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 7usize>("OverlapCapsuleNonAlloc_Internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OverlapCapsuleNonAlloc_Internal", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OverlapCapsuleNonAlloc_Internal",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        point0,
-                        point1,
-                        radius,
-                        results,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    point0,
+                    point1,
+                    radius,
+                    results,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1820,51 +1697,46 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::PhysicsScene,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        f32,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
                             >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-                                >,
-                            >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                        >,
                         i32,
-                        7usize,
-                    >("OverlapCapsuleNonAlloc_Internal_Injected")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 7usize>("OverlapCapsuleNonAlloc_Internal_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OverlapCapsuleNonAlloc_Internal_Injected", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OverlapCapsuleNonAlloc_Internal_Injected",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        point0,
-                        point1,
-                        radius,
-                        results,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    point0,
+                    point1,
+                    radius,
+                    results,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1880,39 +1752,42 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-                                >,
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
                             >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                        >,
                         i32,
-                        5usize,
-                    >("OverlapSphere")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 5usize>("OverlapSphere")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OverlapSphere", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OverlapSphere",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (position, radius, results, layerMask, queryTriggerInteraction),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    position,
+                    radius,
+                    results,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1928,47 +1803,44 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-                                >,
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
                             >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                        >,
                         i32,
-                        6usize,
-                    >("OverlapSphereNonAlloc_Internal")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 6usize>("OverlapSphereNonAlloc_Internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OverlapSphereNonAlloc_Internal", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OverlapSphereNonAlloc_Internal",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        position,
-                        radius,
-                        results,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    position,
+                    radius,
+                    results,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1984,49 +1856,44 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::PhysicsScene,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        f32,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
                             >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-                                >,
-                            >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                        >,
                         i32,
-                        6usize,
-                    >("OverlapSphereNonAlloc_Internal_Injected")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 6usize>("OverlapSphereNonAlloc_Internal_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OverlapSphereNonAlloc_Internal_Injected", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OverlapSphereNonAlloc_Internal_Injected",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        position,
-                        radius,
-                        results,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    position,
+                    radius,
+                    results,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2041,51 +1908,46 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        9usize,
-                    >("Query_BoxCast")
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 9usize>("Query_BoxCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Query_BoxCast", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Query_BoxCast",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        center,
-                        halfExtents,
-                        direction,
-                        orientation,
-                        maxDistance,
-                        outHit,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    center,
+                    halfExtents,
+                    direction,
+                    orientation,
+                    maxDistance,
+                    outHit,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2100,55 +1962,46 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::PhysicsScene,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Quaternion,
-                            >,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        9usize,
-                    >("Query_BoxCast_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 9usize>("Query_BoxCast_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Query_BoxCast_Injected", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Query_BoxCast_Injected",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        center,
-                        halfExtents,
-                        direction,
-                        orientation,
-                        maxDistance,
-                        outHit,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    center,
+                    halfExtents,
+                    direction,
+                    orientation,
+                    maxDistance,
+                    outHit,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2163,51 +2016,46 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        9usize,
-                    >("Query_CapsuleCast")
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 9usize>("Query_CapsuleCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Query_CapsuleCast", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Query_CapsuleCast",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        point1,
-                        point2,
-                        radius,
-                        direction,
-                        maxDistance,
-                        hitInfo,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    point1,
+                    point2,
+                    radius,
+                    direction,
+                    maxDistance,
+                    hitInfo,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2222,53 +2070,46 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::PhysicsScene,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        9usize,
-                    >("Query_CapsuleCast_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 9usize>("Query_CapsuleCast_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Query_CapsuleCast_Injected", 9usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Query_CapsuleCast_Injected",
+                            9usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        point1,
-                        point2,
-                        radius,
-                        direction,
-                        maxDistance,
-                        hitInfo,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    point1,
+                    point2,
+                    radius,
+                    direction,
+                    maxDistance,
+                    hitInfo,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2282,49 +2123,44 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        8usize,
-                    >("Query_SphereCast")
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 8usize>("Query_SphereCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Query_SphereCast", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Query_SphereCast",
+                            8usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        origin,
-                        radius,
-                        direction,
-                        maxDistance,
-                        hitInfo,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    origin,
+                    radius,
+                    direction,
+                    maxDistance,
+                    hitInfo,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2338,51 +2174,44 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::PhysicsScene,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        8usize,
-                    >("Query_SphereCast_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                        f32,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 8usize>("Query_SphereCast_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Query_SphereCast_Injected", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Query_SphereCast_Injected",
+                            8usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        physicsScene,
-                        origin,
-                        radius,
-                        direction,
-                        maxDistance,
-                        hitInfo,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    physicsScene,
+                    origin,
+                    radius,
+                    direction,
+                    maxDistance,
+                    hitInfo,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2395,45 +2224,40 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        6usize,
-                    >("Raycast")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        f32,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 6usize>("Raycast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Raycast",
                             6usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        origin,
-                        direction,
-                        hitInfo,
-                        maxDistance,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    origin,
+                    direction,
+                    hitInfo,
+                    maxDistance,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2448,47 +2272,42 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit,
-                                >,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+                        >,
+                        f32,
                         i32,
-                        6usize,
-                    >("Raycast")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 6usize>("Raycast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Raycast",
                             6usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        origin,
-                        direction,
-                        raycastHits,
-                        maxDistance,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    origin,
+                    direction,
+                    raycastHits,
+                    maxDistance,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2500,61 +2319,63 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        5usize,
-                    >("Raycast")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 5usize>("Raycast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Raycast",
                             5usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (origin, direction, maxDistance, layerMask, queryTriggerInteraction),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    origin,
+                    direction,
+                    maxDistance,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ResetInterpolationPoses(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ResetInterpolationPoses")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "ResetInterpolationPoses",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ResetInterpolationPoses", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ResetInterpolationPoses",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RunSimulationStages(
@@ -2563,56 +2384,52 @@ impl crate::UnityEngine::PhysicsScene {
         stages: crate::UnityEngine::SimulationStage,
         options: crate::UnityEngine::SimulationOption,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            f32,
-                            crate::UnityEngine::SimulationStage,
-                            crate::UnityEngine::SimulationOption,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("RunSimulationStages")
+                    .find_method::<(
+                        f32,
+                        crate::UnityEngine::SimulationStage,
+                        crate::UnityEngine::SimulationOption,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "RunSimulationStages"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RunSimulationStages", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RunSimulationStages",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (step, stages, options))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (step, stages, options))? };
         Ok(__cordl_ret.into())
     }
     pub fn Simulate(
         &mut self,
         step: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Simulate")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("Simulate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Simulate", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Simulate",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (step))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (step))? };
         Ok(__cordl_ret.into())
     }
     pub fn SphereCast_ByRefMut0(
@@ -2625,47 +2442,42 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::RaycastHit,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
-                        bool,
-                        7usize,
-                    >("SphereCast")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit>,
+                        f32,
+                        i32,
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), bool, 7usize>("SphereCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SphereCast", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SphereCast",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        origin,
-                        radius,
-                        direction,
-                        hitInfo,
-                        maxDistance,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    origin,
+                    radius,
+                    direction,
+                    hitInfo,
+                    maxDistance,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2681,60 +2493,55 @@ impl crate::UnityEngine::PhysicsScene {
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit,
-                                >,
-                            >,
-                            f32,
-                            i32,
-                            crate::UnityEngine::QueryTriggerInteraction,
-                        ),
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+                        >,
+                        f32,
                         i32,
-                        7usize,
-                    >("SphereCast")
+                        crate::UnityEngine::QueryTriggerInteraction,
+                    ), i32, 7usize>("SphereCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SphereCast", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SphereCast",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        origin,
-                        radius,
-                        direction,
-                        results,
-                        maxDistance,
-                        layerMask,
-                        queryTriggerInteraction,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    origin,
+                    radius,
+                    direction,
+                    results,
+                    maxDistance,
+                    layerMask,
+                    queryTriggerInteraction,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2749,83 +2556,74 @@ impl crate::UnityEngine::PhysicsScene {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Equality(
         lhs: crate::UnityEngine::PhysicsScene,
         rhs: crate::UnityEngine::PhysicsScene,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::PhysicsScene,
-                        ),
-                        bool,
-                        2usize,
-                    >("op_Equality")
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::PhysicsScene,
+                    ), bool, 2usize>("op_Equality")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Equality", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Equality",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Inequality(
         lhs: crate::UnityEngine::PhysicsScene,
         rhs: crate::UnityEngine::PhysicsScene,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::PhysicsScene,
-                            crate::UnityEngine::PhysicsScene,
-                        ),
-                        bool,
-                        2usize,
-                    >("op_Inequality")
+                    .find_static_method::<(
+                        crate::UnityEngine::PhysicsScene,
+                        crate::UnityEngine::PhysicsScene,
+                    ), bool, 2usize>("op_Inequality")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Inequality", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Inequality",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+PhysicsScene")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene>>
-for crate::UnityEngine::PhysicsScene {
+    for crate::UnityEngine::PhysicsScene
+{
     fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+PhysicsScene")]
 impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene>>
-for crate::UnityEngine::PhysicsScene {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene> {
+    for crate::UnityEngine::PhysicsScene
+{
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene> {
         todo!()
     }
 }

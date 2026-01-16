@@ -6,13 +6,15 @@ pub struct ProxyAttribute {
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Proxies+ProxyAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
+    for crate::System::Runtime::Remoting::Proxies::ProxyAttribute
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Remoting.Proxies";
     const CLASS_NAME: &'static str = "ProxyAttribute";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,12 +44,12 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
     pub fn CreateInstance(
         &mut self,
         serverType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
@@ -62,9 +64,8 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (serverType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (serverType))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateProxy(
@@ -78,9 +79,10 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Proxies::RealProxy>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -112,10 +114,7 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
             crate::System::Runtime::Remoting::Proxies::RealProxy,
         > = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (objRef, serverType, serverObject, serverContext),
-                )?
+                .invoke_unchecked(self, (objRef, serverType, serverObject, serverContext))?
         };
         Ok(__cordl_ret.into())
     }
@@ -125,72 +124,66 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
             crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("GetPropertiesForNewContext")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "GetPropertiesForNewContext"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPropertiesForNewContext", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetPropertiesForNewContext",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (msg))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsContextOK(
         &mut self,
-        ctx: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Contexts::Context,
-        >,
+        ctx: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Contexts::Context>,
         msg: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::Remoting::Contexts::Context,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsContextOK")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::Remoting::Contexts::Context,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
+                        >,
+                    ), bool, 2usize>("IsContextOK")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsContextOK", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsContextOK",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (ctx, msg))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (ctx, msg))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Proxies+ProxyAttribute")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
+    for crate::System::Runtime::Remoting::Proxies::ProxyAttribute
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -200,17 +193,17 @@ for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
 }
 #[cfg(feature = "System+Runtime+Remoting+Proxies+ProxyAttribute")]
 impl AsRef<crate::System::Runtime::Remoting::Contexts::IContextAttribute>
-for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
+    for crate::System::Runtime::Remoting::Proxies::ProxyAttribute
+{
     fn as_ref(&self) -> &crate::System::Runtime::Remoting::Contexts::IContextAttribute {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Proxies+ProxyAttribute")]
 impl AsMut<crate::System::Runtime::Remoting::Contexts::IContextAttribute>
-for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Runtime::Remoting::Contexts::IContextAttribute {
+    for crate::System::Runtime::Remoting::Proxies::ProxyAttribute
+{
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::Contexts::IContextAttribute {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -6,13 +6,15 @@ pub struct DtlsClientProtocol {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
+    for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Tls";
     const CLASS_NAME: &'static str = "DtlsClientProtocol";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,10 +41,9 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientPro
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol")]
 impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
-    #[cfg(
-        feature = "Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol+ClientHandshakeState"
-    )]
-    pub type ClientHandshakeState = crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState;
+    #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol+ClientHandshakeState")]
+    pub type ClientHandshakeState =
+        crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState;
     pub fn AbortClientHandshake(
         &mut self,
         state: quest_hook::libil2cpp::Gc<
@@ -53,7 +54,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         >,
         alertDescription: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -79,8 +81,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (state, recordLayer, alertDescription))?
+            cordl_method_info.invoke_unchecked(self, (state, recordLayer, alertDescription))?
         };
         Ok(__cordl_ret.into())
     }
@@ -95,7 +96,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -128,18 +130,17 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
     }
     pub fn Connect(
         &mut self,
-        client: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Tls::TlsClient,
-        >,
+        client: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsClient>,
         transport: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -179,7 +180,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -205,11 +207,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (state, certificateVerify))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (state, certificateVerify))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateClientHello(
@@ -217,13 +216,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         state: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState,
         >,
-        client: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Tls::TlsClient,
-        >,
+        client: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsClient>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -249,9 +247,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (state, client))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (state, client))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateClientKeyExchange(
@@ -262,7 +259,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -283,9 +281,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (state))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (state))? };
         Ok(__cordl_ret.into())
     }
     pub fn InvalidateSession(
@@ -294,7 +291,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
             crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -313,61 +311,47 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (state))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (state))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        secureRandom: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Security::SecureRandom,
-        >,
+        secureRandom: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (secureRandom))?;
         Ok(__cordl_object.into())
     }
     pub fn PatchClientHelloWithCookie(
-        clientHelloBody: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
+        clientHelloBody: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         cookie: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<u8>,
-                        >,
-                        2usize,
-                    >("PatchClientHelloWithCookie")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, 2usize>(
+                        "PatchClientHelloWithCookie",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PatchClientHelloWithCookie", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PatchClientHelloWithCookie",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (clientHelloBody, cookie))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (clientHelloBody, cookie))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessCertificateRequest(
@@ -377,7 +361,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         >,
         body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -401,9 +386,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (state, body))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (state, body))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessCertificateStatus(
@@ -413,7 +397,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         >,
         body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -437,9 +422,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (state, body))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (state, body))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessHelloVerifyRequest(
@@ -451,7 +435,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -477,9 +462,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (state, body))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (state, body))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessNewSessionTicket(
@@ -489,7 +473,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         >,
         body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -513,9 +498,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (state, body))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (state, body))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessServerCertificate(
@@ -527,7 +511,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::Certificate>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -565,7 +550,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         >,
         body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -589,9 +575,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (state, body))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (state, body))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessServerKeyExchange(
@@ -601,7 +586,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         >,
         body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -625,9 +611,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (state, body))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (state, body))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessServerSupplementalData(
@@ -637,7 +622,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         >,
         body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -661,9 +647,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (state, body))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (state, body))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReportServerVersion(
@@ -675,7 +660,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
             crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -699,20 +685,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (state, server_version))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (state, server_version))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        secureRandom: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Security::SecureRandom,
-        >,
+        secureRandom: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -729,15 +713,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (secureRandom))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (secureRandom))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
+    for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -745,71 +729,49 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol+ClientHandshakeState"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol+ClientHandshakeState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsClientProtocol_ClientHandshakeState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub client: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsClient,
-    >,
-    pub clientContext: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl,
-    >,
-    pub tlsSession: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsSession,
-    >,
-    pub sessionParameters: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::SessionParameters,
-    >,
-    pub sessionParametersBuilder: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder,
-    >,
-    pub offeredCipherSuites: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<i32>,
-    >,
-    pub clientExtensions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::IDictionary,
-    >,
-    pub serverExtensions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::IDictionary,
-    >,
-    pub selectedSessionID: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<u8>,
-    >,
+    pub client: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsClient>,
+    pub clientContext:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl>,
+    pub tlsSession: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsSession>,
+    pub sessionParameters:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::SessionParameters>,
+    pub sessionParametersBuilder:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder>,
+    pub offeredCipherSuites: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub clientExtensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub serverExtensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub selectedSessionID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub resumedSession: bool,
     pub secure_renegotiation: bool,
     pub allowCertificateStatus: bool,
     pub expectSessionTicket: bool,
-    pub keyExchange: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsKeyExchange,
-    >,
-    pub authentication: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsAuthentication,
-    >,
-    pub certificateStatus: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::CertificateStatus,
-    >,
-    pub certificateRequest: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
-    >,
-    pub clientCredentials: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
-    >,
+    pub keyExchange:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsKeyExchange>,
+    pub authentication:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsAuthentication>,
+    pub certificateStatus:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::CertificateStatus>,
+    pub certificateRequest:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest>,
+    pub clientCredentials:
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials>,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol+ClientHandshakeState"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol+ClientHandshakeState")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState {
+    for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Tls";
     const CLASS_NAME: &'static str = "DtlsClientProtocol/ClientHandshakeState";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -823,7 +785,8 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeSta
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol+ClientHandshakeState")]
 impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState {
+    for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -831,7 +794,8 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeSta
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol+ClientHandshakeState")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState {
+    for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -839,39 +803,37 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeSta
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol+ClientHandshakeState")]
 impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol+ClientHandshakeState"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol+ClientHandshakeState")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState {
+    for crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

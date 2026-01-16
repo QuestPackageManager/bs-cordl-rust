@@ -2,9 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Task_WhenAllPromise {
-    __cordl_parent: crate::System::Threading::Tasks::Task_1<
-        crate::System::Threading::Tasks::VoidTaskResult,
-    >,
+    __cordl_parent:
+        crate::System::Threading::Tasks::Task_1<crate::System::Threading::Tasks::VoidTaskResult>,
     pub m_tasks: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -19,7 +18,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Task_WhenAll
     const NAMESPACE: &'static str = "System.Threading.Tasks";
     const CLASS_NAME: &'static str = "Task/WhenAllPromise";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -33,9 +33,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Task_WhenAll
 }
 #[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise")]
 impl std::ops::Deref for crate::GlobalNamespace::Task_WhenAllPromise {
-    type Target = crate::System::Threading::Tasks::Task_1<
-        crate::System::Threading::Tasks::VoidTaskResult,
-    >;
+    type Target =
+        crate::System::Threading::Tasks::Task_1<crate::System::Threading::Tasks::VoidTaskResult>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,9 +51,10 @@ impl crate::GlobalNamespace::Task_WhenAllPromise {
         &mut self,
         ignored: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -71,9 +71,8 @@ impl crate::GlobalNamespace::Task_WhenAllPromise {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (ignored))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (ignored))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -83,8 +82,8 @@ impl crate::GlobalNamespace::Task_WhenAllPromise {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (tasks))?;
         Ok(__cordl_object.into())
@@ -97,47 +96,42 @@ impl crate::GlobalNamespace::Task_WhenAllPromise {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Threading::Tasks::Task,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (tasks))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (tasks))? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_InvokeMayRunArbitraryCode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_InvokeMayRunArbitraryCode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_InvokeMayRunArbitraryCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_InvokeMayRunArbitraryCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_InvokeMayRunArbitraryCode",
+                            0usize
                         )
                     })
             });
@@ -147,20 +141,18 @@ impl crate::GlobalNamespace::Task_WhenAllPromise {
     pub fn get_ShouldNotifyDebuggerOfWaitCompletion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        bool,
-                        0usize,
-                    >("get_ShouldNotifyDebuggerOfWaitCompletion")
+                    .find_method::<(), bool, 0usize>("get_ShouldNotifyDebuggerOfWaitCompletion")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ShouldNotifyDebuggerOfWaitCompletion", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ShouldNotifyDebuggerOfWaitCompletion",
+                            0usize
                         )
                     })
             });
@@ -179,14 +171,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Task_WhenAllP
 }
 #[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise")]
 impl AsRef<crate::System::Threading::Tasks::ITaskCompletionAction>
-for crate::GlobalNamespace::Task_WhenAllPromise {
+    for crate::GlobalNamespace::Task_WhenAllPromise
+{
     fn as_ref(&self) -> &crate::System::Threading::Tasks::ITaskCompletionAction {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise")]
 impl AsMut<crate::System::Threading::Tasks::ITaskCompletionAction>
-for crate::GlobalNamespace::Task_WhenAllPromise {
+    for crate::GlobalNamespace::Task_WhenAllPromise
+{
     fn as_mut(&mut self) -> &mut crate::System::Threading::Tasks::ITaskCompletionAction {
         unsafe { std::mem::transmute(self) }
     }

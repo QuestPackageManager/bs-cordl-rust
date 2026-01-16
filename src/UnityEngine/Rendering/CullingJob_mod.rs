@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CullingJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CullingJob {
     pub binningConfig: crate::UnityEngine::Rendering::BinningConfig,
     pub viewType: crate::UnityEngine::Rendering::BatchCullingViewType,
@@ -18,18 +18,16 @@ pub struct CullingJob {
     pub frustumSplitInfos: crate::Unity::Collections::NativeArray_1<
         crate::UnityEngine::Rendering::FrustumPlaneCuller_SplitInfo,
     >,
-    pub lightFacingFrustumPlanes: crate::Unity::Collections::NativeArray_1<
-        crate::UnityEngine::Plane,
-    >,
+    pub lightFacingFrustumPlanes:
+        crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Plane>,
     pub receiverSplitInfos: crate::Unity::Collections::NativeArray_1<
         crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo,
     >,
     pub worldToLightSpaceRotation: crate::Unity::Mathematics::float3x3,
     pub instanceData: crate::UnityEngine::Rendering::CPUInstanceData_ReadOnly,
     pub sharedInstanceData: crate::UnityEngine::Rendering::CPUSharedInstanceData_ReadOnly,
-    pub lodGroupCullingData: crate::Unity::Collections::NativeList_1<
-        crate::UnityEngine::Rendering::LODGroupCullingData,
-    >,
+    pub lodGroupCullingData:
+        crate::Unity::Collections::NativeList_1<crate::UnityEngine::Rendering::LODGroupCullingData>,
     pub occlusionBuffer: crate::System::IntPtr,
     pub rendererVisibilityMasks: crate::Unity::Collections::NativeArray_1<u8>,
     pub rendererCrossFadeValues: crate::Unity::Collections::NativeArray_1<u8>,
@@ -54,18 +52,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Culli
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CullingJob")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::CullingJob {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Rendering::CullingJob {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -75,8 +69,7 @@ for crate::UnityEngine::Rendering::CullingJob {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CullingJob")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::CullingJob {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Rendering::CullingJob {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -89,17 +82,14 @@ for crate::UnityEngine::Rendering::CullingJob {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CullingJob")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::CullingJob {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Rendering::CullingJob {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -117,8 +107,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::Cul
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CullingJob")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::CullingJob {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Rendering::CullingJob {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -143,9 +132,10 @@ impl crate::UnityEngine::Rendering::CullingJob {
         sharedInstanceIndex: i32,
         instanceFlags: crate::UnityEngine::Rendering::InstanceFlags,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, crate::UnityEngine::Rendering::InstanceFlags),
@@ -162,10 +152,7 @@ impl crate::UnityEngine::Rendering::CullingJob {
             });
         let __cordl_ret: f32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (instanceIndex, sharedInstanceIndex, instanceFlags),
-                )?
+                .invoke_unchecked(self, (instanceIndex, sharedInstanceIndex, instanceFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -175,9 +162,10 @@ impl crate::UnityEngine::Rendering::CullingJob {
         sharedInstanceIndex: i32,
         instanceFlags: crate::UnityEngine::Rendering::InstanceFlags,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, crate::UnityEngine::Rendering::InstanceFlags),
@@ -194,10 +182,7 @@ impl crate::UnityEngine::Rendering::CullingJob {
             });
         let __cordl_ret: u32 = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (instanceIndex, sharedInstanceIndex, instanceFlags),
-                )?
+                .invoke_unchecked(self, (instanceIndex, sharedInstanceIndex, instanceFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -205,61 +190,60 @@ impl crate::UnityEngine::Rendering::CullingJob {
         &mut self,
         instanceIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (instanceIndex))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (instanceIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn PackFloatToUint8(percent: f32) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), u32, 1usize>("PackFloatToUint8")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PackFloatToUint8", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PackFloatToUint8",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (percent))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), (percent))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+CullingJob")]
-impl AsRef<crate::Unity::Jobs::IJobParallelFor>
-for crate::UnityEngine::Rendering::CullingJob {
+impl AsRef<crate::Unity::Jobs::IJobParallelFor> for crate::UnityEngine::Rendering::CullingJob {
     fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+CullingJob")]
-impl AsMut<crate::Unity::Jobs::IJobParallelFor>
-for crate::UnityEngine::Rendering::CullingJob {
+impl AsMut<crate::Unity::Jobs::IJobParallelFor> for crate::UnityEngine::Rendering::CullingJob {
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CullingJob+CrossFadeType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum CullingJob_CrossFadeType {
     #[default]
     kCrossFadeIn = 2i32,
@@ -269,7 +253,8 @@ pub enum CullingJob_CrossFadeType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CullingJob+CrossFadeType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::CullingJob_CrossFadeType {
+    for crate::UnityEngine::Rendering::CullingJob_CrossFadeType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -288,18 +273,16 @@ for crate::UnityEngine::Rendering::CullingJob_CrossFadeType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CullingJob+CrossFadeType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::CullingJob_CrossFadeType {
+    for crate::UnityEngine::Rendering::CullingJob_CrossFadeType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -310,7 +293,8 @@ for crate::UnityEngine::Rendering::CullingJob_CrossFadeType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CullingJob+CrossFadeType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::CullingJob_CrossFadeType {
+    for crate::UnityEngine::Rendering::CullingJob_CrossFadeType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -324,22 +308,22 @@ for crate::UnityEngine::Rendering::CullingJob_CrossFadeType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CullingJob+CrossFadeType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::CullingJob_CrossFadeType {
+    for crate::UnityEngine::Rendering::CullingJob_CrossFadeType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CullingJob+CrossFadeType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::CullingJob_CrossFadeType {
+    for crate::UnityEngine::Rendering::CullingJob_CrossFadeType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

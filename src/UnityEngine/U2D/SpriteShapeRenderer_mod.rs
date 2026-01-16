@@ -5,14 +5,14 @@ pub struct SpriteShapeRenderer {
     __cordl_parent: crate::UnityEngine::Renderer,
 }
 #[cfg(feature = "cordl_class_UnityEngine+U2D+SpriteShapeRenderer")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::U2D::SpriteShapeRenderer {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::U2D::SpriteShapeRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.U2D";
     const CLASS_NAME: &'static str = "SpriteShapeRenderer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false

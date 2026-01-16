@@ -14,7 +14,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IOSelectorJob {
     const NAMESPACE: &'static str = "System";
     const CLASS_NAME: &'static str = "IOSelectorJob";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,29 +42,24 @@ impl std::ops::DerefMut for crate::System::IOSelectorJob {
 }
 #[cfg(feature = "System+IOSelectorJob")]
 impl crate::System::IOSelectorJob {
-    pub fn MarkDisposed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn MarkDisposed(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("MarkDisposed")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("MarkDisposed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarkDisposed", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarkDisposed",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -71,8 +67,8 @@ impl crate::System::IOSelectorJob {
         callback: quest_hook::libil2cpp::Gc<crate::System::IOAsyncCallback>,
         state: quest_hook::libil2cpp::Gc<crate::System::IOAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (operation, callback, state))?;
         Ok(__cordl_object.into())
@@ -80,36 +76,35 @@ impl crate::System::IOSelectorJob {
     pub fn System_Threading_IThreadPoolWorkItem_ExecuteWorkItem(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("System.Threading.IThreadPoolWorkItem.ExecuteWorkItem")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "System.Threading.IThreadPoolWorkItem.ExecuteWorkItem",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            <Self as quest_hook::libil2cpp::Type>::class(),
                             "System.Threading.IThreadPoolWorkItem.ExecuteWorkItem",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Threading_IThreadPoolWorkItem_MarkAborted(
         &mut self,
         tae: quest_hook::libil2cpp::Gc<crate::System::Threading::ThreadAbortException>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -126,9 +121,8 @@ impl crate::System::IOSelectorJob {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (tae))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (tae))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -137,30 +131,27 @@ impl crate::System::IOSelectorJob {
         callback: quest_hook::libil2cpp::Gc<crate::System::IOAsyncCallback>,
         state: quest_hook::libil2cpp::Gc<crate::System::IOAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::IOOperation,
-                            quest_hook::libil2cpp::Gc<crate::System::IOAsyncCallback>,
-                            quest_hook::libil2cpp::Gc<crate::System::IOAsyncResult>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::System::IOOperation,
+                        quest_hook::libil2cpp::Gc<crate::System::IOAsyncCallback>,
+                        quest_hook::libil2cpp::Gc<crate::System::IOAsyncResult>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (operation, callback, state))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (operation, callback, state))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -174,15 +165,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IOSelectorJob {
     }
 }
 #[cfg(feature = "System+IOSelectorJob")]
-impl AsRef<crate::System::Threading::IThreadPoolWorkItem>
-for crate::System::IOSelectorJob {
+impl AsRef<crate::System::Threading::IThreadPoolWorkItem> for crate::System::IOSelectorJob {
     fn as_ref(&self) -> &crate::System::Threading::IThreadPoolWorkItem {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+IOSelectorJob")]
-impl AsMut<crate::System::Threading::IThreadPoolWorkItem>
-for crate::System::IOSelectorJob {
+impl AsMut<crate::System::Threading::IThreadPoolWorkItem> for crate::System::IOSelectorJob {
     fn as_mut(&mut self) -> &mut crate::System::Threading::IThreadPoolWorkItem {
         unsafe { std::mem::transmute(self) }
     }

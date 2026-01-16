@@ -1,12 +1,11 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+ForceAsyncAwaiter")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ForceAsyncAwaiter {
     pub _task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+ForceAsyncAwaiter")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Threading::Tasks::ForceAsyncAwaiter {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Tasks::ForceAsyncAwaiter {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Threading.Tasks";
@@ -25,18 +24,14 @@ for crate::System::Threading::Tasks::ForceAsyncAwaiter {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+ForceAsyncAwaiter")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Threading::Tasks::ForceAsyncAwaiter {
+unsafe impl quest_hook::libil2cpp::Argument for crate::System::Threading::Tasks::ForceAsyncAwaiter {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,7 +42,8 @@ for crate::System::Threading::Tasks::ForceAsyncAwaiter {
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+ForceAsyncAwaiter")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Threading::Tasks::ForceAsyncAwaiter {
+    for crate::System::Threading::Tasks::ForceAsyncAwaiter
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -60,23 +56,19 @@ for crate::System::Threading::Tasks::ForceAsyncAwaiter {
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+ForceAsyncAwaiter")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Threading::Tasks::ForceAsyncAwaiter {
+unsafe impl quest_hook::libil2cpp::Returned for crate::System::Threading::Tasks::ForceAsyncAwaiter {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+ForceAsyncAwaiter")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Threading::Tasks::ForceAsyncAwaiter {
+unsafe impl quest_hook::libil2cpp::Return for crate::System::Threading::Tasks::ForceAsyncAwaiter {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -90,7 +82,8 @@ for crate::System::Threading::Tasks::ForceAsyncAwaiter {
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+ForceAsyncAwaiter")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Threading::Tasks::ForceAsyncAwaiter {
+    for crate::System::Threading::Tasks::ForceAsyncAwaiter
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -103,59 +96,56 @@ for crate::System::Threading::Tasks::ForceAsyncAwaiter {
 impl crate::System::Threading::Tasks::ForceAsyncAwaiter {
     pub fn GetAwaiter(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Threading::Tasks::ForceAsyncAwaiter,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ForceAsyncAwaiter> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::System::Threading::Tasks::ForceAsyncAwaiter,
-                        0usize,
-                    >("GetAwaiter")
+                    .find_method::<(), crate::System::Threading::Tasks::ForceAsyncAwaiter, 0usize>(
+                        "GetAwaiter",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetAwaiter", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetAwaiter",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Threading::Tasks::ForceAsyncAwaiter = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Threading::Tasks::ForceAsyncAwaiter =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetResult(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetResult(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("GetResult")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetResult", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetResult",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn OnCompleted(
         &mut self,
         action: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
@@ -170,18 +160,18 @@ impl crate::System::Threading::Tasks::ForceAsyncAwaiter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (action))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (action))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnsafeOnCompleted(
         &mut self,
         action: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
@@ -196,18 +186,18 @@ impl crate::System::Threading::Tasks::ForceAsyncAwaiter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (action))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (action))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -224,22 +214,23 @@ impl crate::System::Threading::Tasks::ForceAsyncAwaiter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (task))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (task))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsCompleted")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsCompleted", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsCompleted",
+                            0usize
                         )
                     })
             });
@@ -249,16 +240,16 @@ impl crate::System::Threading::Tasks::ForceAsyncAwaiter {
 }
 #[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
 impl AsRef<crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion>
-for crate::System::Threading::Tasks::ForceAsyncAwaiter {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
+    for crate::System::Threading::Tasks::ForceAsyncAwaiter
+{
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
         todo!()
     }
 }
 #[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
 impl AsMut<crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion>
-for crate::System::Threading::Tasks::ForceAsyncAwaiter {
+    for crate::System::Threading::Tasks::ForceAsyncAwaiter
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
@@ -267,17 +258,17 @@ for crate::System::Threading::Tasks::ForceAsyncAwaiter {
 }
 #[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
 impl AsRef<crate::System::Runtime::CompilerServices::INotifyCompletion>
-for crate::System::Threading::Tasks::ForceAsyncAwaiter {
+    for crate::System::Threading::Tasks::ForceAsyncAwaiter
+{
     fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::INotifyCompletion {
         todo!()
     }
 }
 #[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
 impl AsMut<crate::System::Runtime::CompilerServices::INotifyCompletion>
-for crate::System::Threading::Tasks::ForceAsyncAwaiter {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Runtime::CompilerServices::INotifyCompletion {
+    for crate::System::Threading::Tasks::ForceAsyncAwaiter
+{
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::CompilerServices::INotifyCompletion {
         todo!()
     }
 }

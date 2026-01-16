@@ -13,7 +13,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BitMaskArray
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BitMaskArray";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,9 +45,10 @@ impl crate::GlobalNamespace::BitMaskArray {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -63,18 +65,18 @@ impl crate::GlobalNamespace::BitMaskArray {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (reader))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reader))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -91,39 +93,32 @@ impl crate::GlobalNamespace::BitMaskArray {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetBits(
-        &mut self,
-        offset: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn GetBits(&mut self, offset: i32, count: i32) -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), u64, 2usize>("GetBits")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetBits",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetBits",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (offset, count))?
-        };
+        let __cordl_ret: u64 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (offset, count))? };
         Ok(__cordl_ret.into())
     }
-    pub fn New(
-        bitCount: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+    pub fn New(bitCount: i32) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bitCount))?;
         Ok(__cordl_object.into())
@@ -132,9 +127,10 @@ impl crate::GlobalNamespace::BitMaskArray {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -151,9 +147,8 @@ impl crate::GlobalNamespace::BitMaskArray {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (writer))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetBits(
@@ -163,9 +158,10 @@ impl crate::GlobalNamespace::BitMaskArray {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, u64),
@@ -180,19 +176,18 @@ impl crate::GlobalNamespace::BitMaskArray {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BitMaskArray,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (offset, bits))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (offset, bits))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -207,44 +202,46 @@ impl crate::GlobalNamespace::BitMaskArray {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         bitCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bitCount))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bitCount))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_bitCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_bitCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_bitCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_bitCount",
+                            0usize
                         )
                     })
             });
@@ -262,11 +259,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BitMaskArray 
     }
 }
 #[cfg(feature = "BitMaskArray")]
-impl AsRef<
-    crate::GlobalNamespace::IBitMask_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
-    >,
-> for crate::GlobalNamespace::BitMaskArray {
+impl
+    AsRef<
+        crate::GlobalNamespace::IBitMask_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
+        >,
+    > for crate::GlobalNamespace::BitMaskArray
+{
     fn as_ref(
         &self,
     ) -> &crate::GlobalNamespace::IBitMask_1<
@@ -276,11 +275,13 @@ impl AsRef<
     }
 }
 #[cfg(feature = "BitMaskArray")]
-impl AsMut<
-    crate::GlobalNamespace::IBitMask_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
-    >,
-> for crate::GlobalNamespace::BitMaskArray {
+impl
+    AsMut<
+        crate::GlobalNamespace::IBitMask_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
+        >,
+    > for crate::GlobalNamespace::BitMaskArray
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::GlobalNamespace::IBitMask_1<
@@ -290,39 +291,40 @@ impl AsMut<
     }
 }
 #[cfg(feature = "BitMaskArray")]
-impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
-for crate::GlobalNamespace::BitMaskArray {
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable> for crate::GlobalNamespace::BitMaskArray {
     fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BitMaskArray")]
-impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
-for crate::GlobalNamespace::BitMaskArray {
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable> for crate::GlobalNamespace::BitMaskArray {
     fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BitMaskArray")]
-impl AsRef<
-    crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
-    >,
-> for crate::GlobalNamespace::BitMaskArray {
+impl
+    AsRef<
+        crate::System::IEquatable_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
+        >,
+    > for crate::GlobalNamespace::BitMaskArray
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
-    > {
+    ) -> &crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>>
+    {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BitMaskArray")]
-impl AsMut<
-    crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
-    >,
-> for crate::GlobalNamespace::BitMaskArray {
+impl
+    AsMut<
+        crate::System::IEquatable_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
+        >,
+    > for crate::GlobalNamespace::BitMaskArray
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::IEquatable_1<

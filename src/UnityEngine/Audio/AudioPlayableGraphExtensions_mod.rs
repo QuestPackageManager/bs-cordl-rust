@@ -6,13 +6,15 @@ pub struct AudioPlayableGraphExtensions {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Audio+AudioPlayableGraphExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Audio::AudioPlayableGraphExtensions {
+    for crate::UnityEngine::Audio::AudioPlayableGraphExtensions
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Audio";
     const CLASS_NAME: &'static str = "AudioPlayableGraphExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,93 +42,78 @@ impl std::ops::DerefMut for crate::UnityEngine::Audio::AudioPlayableGraphExtensi
 #[cfg(feature = "UnityEngine+Audio+AudioPlayableGraphExtensions")]
 impl crate::UnityEngine::Audio::AudioPlayableGraphExtensions {
     pub fn InternalCreateAudioOutput(
-        graph: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Playables::PlayableGraph,
-        >,
+        graph: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Playables::PlayableGraph>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         handle: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Playables::PlayableOutputHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Playables::PlayableGraph,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Playables::PlayableOutputHandle,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("InternalCreateAudioOutput")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Playables::PlayableGraph,
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Playables::PlayableOutputHandle,
+                        >,
+                    ), bool, 3usize>("InternalCreateAudioOutput")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InternalCreateAudioOutput", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InternalCreateAudioOutput",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (graph, name, handle))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (graph, name, handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalCreateAudioOutput_Injected(
-        graph: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Playables::PlayableGraph,
-        >,
-        name: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Bindings::ManagedSpanWrapper,
-        >,
+        graph: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Playables::PlayableGraph>,
+        name: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bindings::ManagedSpanWrapper>,
         handle: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Playables::PlayableOutputHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Playables::PlayableGraph,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Playables::PlayableOutputHandle,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("InternalCreateAudioOutput_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Playables::PlayableGraph,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Playables::PlayableOutputHandle,
+                        >,
+                    ), bool, 3usize>("InternalCreateAudioOutput_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InternalCreateAudioOutput_Injected", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InternalCreateAudioOutput_Injected",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (graph, name, handle))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (graph, name, handle))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Audio+AudioPlayableGraphExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Audio::AudioPlayableGraphExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Audio::AudioPlayableGraphExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

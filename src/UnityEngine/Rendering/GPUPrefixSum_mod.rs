@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GPUPrefixSum {
     pub resources: crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources,
 }
@@ -24,18 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::GPUPr
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::GPUPrefixSum {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Rendering::GPUPrefixSum {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -45,8 +41,7 @@ for crate::UnityEngine::Rendering::GPUPrefixSum {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::GPUPrefixSum {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Rendering::GPUPrefixSum {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -59,23 +54,19 @@ for crate::UnityEngine::Rendering::GPUPrefixSum {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::GPUPrefixSum {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Rendering::GPUPrefixSum {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::GPUPrefixSum {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::GPUPrefixSum {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -88,8 +79,7 @@ for crate::UnityEngine::Rendering::GPUPrefixSum {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::GPUPrefixSum {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Rendering::GPUPrefixSum {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -107,7 +97,8 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum {
     #[cfg(feature = "UnityEngine+Rendering+GPUPrefixSum+LevelOffsets")]
     pub type LevelOffsets = crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets;
     #[cfg(feature = "UnityEngine+Rendering+GPUPrefixSum+RenderGraphResources")]
-    pub type RenderGraphResources = crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources;
+    pub type RenderGraphResources =
+        crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources;
     #[cfg(feature = "UnityEngine+Rendering+GPUPrefixSum+ShaderDefs")]
     pub type ShaderDefs = crate::UnityEngine::Rendering::GPUPrefixSum_ShaderDefs;
     #[cfg(feature = "UnityEngine+Rendering+GPUPrefixSum+ShaderIDs")]
@@ -118,125 +109,104 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum {
     pub type SystemResources = crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources;
     pub fn DispatchDirect(
         &mut self,
-        cmdBuffer: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::CommandBuffer,
-        >,
+        cmdBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
         arguments: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("DispatchDirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("DispatchDirect")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DispatchDirect", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DispatchDirect",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (cmdBuffer, arguments))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cmdBuffer, arguments))? };
         Ok(__cordl_ret.into())
     }
     pub fn DispatchIndirect(
         &mut self,
-        cmdBuffer: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::CommandBuffer,
-        >,
+        cmdBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
         arguments: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("DispatchIndirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("DispatchIndirect")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DispatchIndirect", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DispatchIndirect",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (cmdBuffer, arguments))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cmdBuffer, arguments))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExecuteCommonIndirect(
         &mut self,
-        cmdBuffer: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::CommandBuffer,
-        >,
+        cmdBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
         inputBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
         supportResources: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources,
         >,
         isExclusive: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::CommandBuffer,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("ExecuteCommonIndirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources,
+                        >,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "ExecuteCommonIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExecuteCommonIndirect", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExecuteCommonIndirect",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (cmdBuffer, inputBuffer, supportResources, isExclusive),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (cmdBuffer, inputBuffer, supportResources, isExclusive),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -247,35 +217,35 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32, i32),
-                        crate::UnityEngine::Vector4,
-                        4usize,
-                    >("PackPrefixSumArgs")
+                    .find_method::<(i32, i32, i32, i32), crate::UnityEngine::Vector4, 4usize>(
+                        "PackPrefixSumArgs",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PackPrefixSumArgs", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PackPrefixSumArgs",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (a, b, c, d))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector4 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (a, b, c, d))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         resources: crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources),
@@ -290,15 +260,14 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (resources))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (resources))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+DirectArgs")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GPUPrefixSum_DirectArgs {
     pub exclusive: bool,
     pub inputCount: i32,
@@ -306,8 +275,7 @@ pub struct GPUPrefixSum_DirectArgs {
     pub supportResources: crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+DirectArgs")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -326,18 +294,16 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+DirectArgs")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -348,7 +314,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+DirectArgs")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -362,22 +329,22 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+DirectArgs")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+DirectArgs")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -391,7 +358,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+DirectArgs")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -403,8 +371,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs {
 #[cfg(feature = "UnityEngine+Rendering+GPUPrefixSum+DirectArgs")]
 impl crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+IndirectDirectArgs")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GPUPrefixSum_IndirectDirectArgs {
     pub exclusive: bool,
     pub inputCountBufferByteOffset: i32,
@@ -414,7 +382,8 @@ pub struct GPUPrefixSum_IndirectDirectArgs {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+IndirectDirectArgs")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -433,18 +402,16 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+IndirectDirectArgs")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -455,7 +422,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+IndirectDirectArgs")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -469,22 +437,22 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+IndirectDirectArgs")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+IndirectDirectArgs")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -498,7 +466,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+IndirectDirectArgs")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -510,8 +479,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs {
 #[cfg(feature = "UnityEngine+Rendering+GPUPrefixSum+IndirectDirectArgs")]
 impl crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+LevelOffsets")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GPUPrefixSum_LevelOffsets {
     pub count: u32,
     pub offset: u32,
@@ -519,7 +488,8 @@ pub struct GPUPrefixSum_LevelOffsets {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+LevelOffsets")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -538,18 +508,16 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+LevelOffsets")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -560,7 +528,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+LevelOffsets")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -574,22 +543,22 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+LevelOffsets")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+LevelOffsets")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -603,7 +572,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+LevelOffsets")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -615,8 +585,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets {
 #[cfg(feature = "UnityEngine+Rendering+GPUPrefixSum+LevelOffsets")]
 impl crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+RenderGraphResources")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GPUPrefixSum_RenderGraphResources {
     pub alignedElementCount: i32,
     pub maxBufferCount: i32,
@@ -629,7 +599,8 @@ pub struct GPUPrefixSum_RenderGraphResources {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+RenderGraphResources")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -648,18 +619,16 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+RenderGraphResources")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -670,7 +639,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+RenderGraphResources")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -684,22 +654,22 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+RenderGraphResources")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+RenderGraphResources")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -713,7 +683,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+RenderGraphResources")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -734,36 +705,33 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
-                            >,
-                            crate::UnityEngine::Rendering::RenderGraphModule::RenderGraphBuilder,
-                            bool,
-                        ),
-                        crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources,
-                        4usize,
-                    >("Create")
+                    .find_static_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
+                        >,
+                        crate::UnityEngine::Rendering::RenderGraphModule::RenderGraphBuilder,
+                        bool,
+                    ), crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources, 4usize>(
+                        "Create",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Create",
                             4usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (newMaxElementCount, renderGraph, builder, outputIsTemp),
-                )?
+                .invoke_unchecked((), (newMaxElementCount, renderGraph, builder, outputIsTemp))?
         };
         Ok(__cordl_ret.into())
     }
@@ -776,47 +744,44 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources {
         builder: crate::UnityEngine::Rendering::RenderGraphModule::RenderGraphBuilder,
         outputIsTemp: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
-                            >,
-                            crate::UnityEngine::Rendering::RenderGraphModule::RenderGraphBuilder,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("Initialize")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
+                        >,
+                        crate::UnityEngine::Rendering::RenderGraphModule::RenderGraphBuilder,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 4usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Initialize", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Initialize",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (newMaxElementCount, renderGraph, builder, outputIsTemp),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (newMaxElementCount, renderGraph, builder, outputIsTemp),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_output(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Rendering::RenderGraphModule::BufferHandle,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::RenderGraphModule::BufferHandle>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -831,9 +796,8 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::RenderGraphModule::BufferHandle = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::RenderGraphModule::BufferHandle =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -844,14 +808,14 @@ pub struct GPUPrefixSum_ShaderDefs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+ShaderDefs")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::GPUPrefixSum_ShaderDefs {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::GPUPrefixSum_ShaderDefs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "GPUPrefixSum/ShaderDefs";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -883,22 +847,22 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum_ShaderDefs {
     pub const ArgsBufferUpper: i32 = 0i32;
     pub const GroupSize: i32 = 128i32;
     pub fn AlignUpGroup(value: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("AlignUpGroup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AlignUpGroup", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AlignUpGroup",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateTotalBufferSize(
@@ -906,56 +870,54 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum_ShaderDefs {
         totalSize: quest_hook::libil2cpp::ByRefMut<i32>,
         levelCounts: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CalculateTotalBufferSize")
+                    .find_static_method::<(
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "CalculateTotalBufferSize"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculateTotalBufferSize", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CalculateTotalBufferSize",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (maxElementCount, totalSize, levelCounts))?
+            cordl_method_info.invoke_unchecked((), (maxElementCount, totalSize, levelCounts))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DivUpGroup(value: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("DivUpGroup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DivUpGroup", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DivUpGroup",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+ShaderDefs")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::GPUPrefixSum_ShaderDefs {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::GPUPrefixSum_ShaderDefs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -970,14 +932,14 @@ pub struct GPUPrefixSum_ShaderIDs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+ShaderIDs")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::GPUPrefixSum_ShaderIDs {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::GPUPrefixSum_ShaderIDs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "GPUPrefixSum/ShaderIDs";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1005,8 +967,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::GPUPrefixSum_ShaderID
 #[cfg(feature = "UnityEngine+Rendering+GPUPrefixSum+ShaderIDs")]
 impl crate::UnityEngine::Rendering::GPUPrefixSum_ShaderIDs {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+ShaderIDs")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::GPUPrefixSum_ShaderIDs {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::GPUPrefixSum_ShaderIDs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1015,8 +976,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_ShaderIDs {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SupportResources")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GPUPrefixSum_SupportResources {
     pub ownsResources: bool,
     pub alignedElementCount: i32,
@@ -1024,17 +985,14 @@ pub struct GPUPrefixSum_SupportResources {
     pub maxLevelCount: i32,
     pub prefixBuffer0: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     pub prefixBuffer1: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
-    pub totalLevelCountBuffer: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::GraphicsBuffer,
-    >,
+    pub totalLevelCountBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     pub levelOffsetBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
-    pub indirectDispatchArgsBuffer: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::GraphicsBuffer,
-    >,
+    pub indirectDispatchArgsBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SupportResources")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -1053,18 +1011,16 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SupportResources")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1075,7 +1031,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SupportResources")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1089,22 +1046,22 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SupportResources")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SupportResources")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1118,7 +1075,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SupportResources")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1131,12 +1089,12 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
 impl crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
     pub fn Create(
         maxElementCount: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
@@ -1151,40 +1109,38 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources = unsafe {
-            cordl_method_info.invoke_unchecked((), (maxElementCount))?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources =
+            unsafe { cordl_method_info.invoke_unchecked((), (maxElementCount))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Load(
         shaderGraphResources: crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources),
@@ -1199,18 +1155,18 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources = unsafe {
-            cordl_method_info.invoke_unchecked((), (shaderGraphResources))?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources =
+            unsafe { cordl_method_info.invoke_unchecked((), (shaderGraphResources))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFromShaderGraph(
         &mut self,
         shaderGraphResources: crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources),
@@ -1225,39 +1181,40 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (shaderGraphResources))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (shaderGraphResources))? };
         Ok(__cordl_ret.into())
     }
     pub fn Resize(
         &mut self,
         newMaxElementCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Resize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Resize",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Resize",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (newMaxElementCount))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (newMaxElementCount))? };
         Ok(__cordl_ret.into())
     }
     pub fn _Dispose_g__TryFreeBuffer_15_0(
         resource: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>),
@@ -1272,19 +1229,18 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (resource))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (resource))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_output(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1299,15 +1255,14 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SystemResources")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GPUPrefixSum_SystemResources {
     pub computeAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,
     pub kernelCalculateLevelDispatchArgsFromConst: i32,
@@ -1320,7 +1275,8 @@ pub struct GPUPrefixSum_SystemResources {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SystemResources")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -1339,18 +1295,16 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SystemResources")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1361,7 +1315,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SystemResources")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1375,22 +1330,22 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SystemResources")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SystemResources")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1404,7 +1359,8 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SystemResources")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources {
+    for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1415,29 +1371,24 @@ for crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources {
 }
 #[cfg(feature = "UnityEngine+Rendering+GPUPrefixSum+SystemResources")]
 impl crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources {
-    pub fn LoadKernels(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn LoadKernels(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("LoadKernels")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LoadKernels")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LoadKernels", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LoadKernels",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

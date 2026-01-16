@@ -3,25 +3,17 @@
 #[derive(Debug)]
 pub struct OcclusionCullingCommon {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_DebugOcclusionTestMaterial: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Material,
-    >,
-    pub m_OccluderDebugViewMaterial: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Material,
-    >,
+    pub m_DebugOcclusionTestMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub m_OccluderDebugViewMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub m_OcclusionDebugCS: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,
     pub m_ClearOcclusionDebugKernel: i32,
-    pub m_OccluderDepthPyramidCS: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ComputeShader,
-    >,
+    pub m_OccluderDepthPyramidCS: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,
     pub m_OccluderDepthDownscaleKernel: i32,
     pub m_FrameIndex: i32,
     pub m_SilhouettePlaneCache: crate::UnityEngine::Rendering::SilhouettePlaneCache,
     pub m_ViewIDToIndexMap: crate::Unity::Collections::NativeParallelHashMap_2<i32, i32>,
     pub m_OccluderContextData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::Rendering::OccluderContext,
-        >,
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Rendering::OccluderContext>,
     >,
     pub m_OccluderContextSlots: crate::Unity::Collections::NativeList_1<
         crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot,
@@ -30,34 +22,27 @@ pub struct OcclusionCullingCommon {
     pub m_CommonShaderVariables: crate::Unity::Collections::NativeArray_1<
         crate::UnityEngine::Rendering::OcclusionCullingCommonShaderVariables,
     >,
-    pub m_CommonConstantBuffer: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ComputeBuffer,
-    >,
+    pub m_CommonConstantBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
     pub m_DebugShaderVariables: crate::Unity::Collections::NativeArray_1<
         crate::UnityEngine::Rendering::OcclusionCullingDebugShaderVariables,
     >,
-    pub m_DebugConstantBuffer: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ComputeBuffer,
-    >,
-    pub m_ProfilingSamplerUpdateOccluders: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::ProfilingSampler,
-    >,
-    pub m_ProfilingSamplerOcclusionTestOverlay: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::ProfilingSampler,
-    >,
-    pub m_ProfilingSamplerOccluderOverlay: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::ProfilingSampler,
-    >,
+    pub m_DebugConstantBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
+    pub m_ProfilingSamplerUpdateOccluders:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ProfilingSampler>,
+    pub m_ProfilingSamplerOcclusionTestOverlay:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ProfilingSampler>,
+    pub m_ProfilingSamplerOccluderOverlay:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ProfilingSampler>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::OcclusionCullingCommon {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::OcclusionCullingCommon {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "OcclusionCullingCommon";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -84,35 +69,31 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::OcclusionCullingCommo
 }
 #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon")]
 impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
-    #[cfg(
-        feature = "UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData"
-    )]
-    pub type DebugOccluderViewData = crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData;
+    #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData")]
+    pub type DebugOccluderViewData =
+        crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData;
     #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot")]
-    pub type OccluderContextSlot = crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot;
-    #[cfg(
-        feature = "UnityEngine+Rendering+OcclusionCullingCommon+OccluderOverlayPassData"
-    )]
-    pub type OccluderOverlayPassData = crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderOverlayPassData;
-    #[cfg(
-        feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlayPassData"
-    )]
-    pub type OcclusionTestOverlayPassData = crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlayPassData;
+    pub type OccluderContextSlot =
+        crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot;
+    #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+OccluderOverlayPassData")]
+    pub type OccluderOverlayPassData =
+        crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderOverlayPassData;
+    #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlayPassData")]
+    pub type OcclusionTestOverlayPassData =
+        crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlayPassData;
     #[cfg(
         feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlaySetupPassData"
     )]
-    pub type OcclusionTestOverlaySetupPassData = crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlaySetupPassData;
+    pub type OcclusionTestOverlaySetupPassData =
+        crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlaySetupPassData;
     #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+ShaderIDs")]
     pub type ShaderIDs = crate::UnityEngine::Rendering::OcclusionCullingCommon_ShaderIDs;
-    #[cfg(
-        feature = "UnityEngine+Rendering+OcclusionCullingCommon+UpdateOccludersPassData"
-    )]
-    pub type UpdateOccludersPassData = crate::UnityEngine::Rendering::OcclusionCullingCommon_UpdateOccludersPassData;
+    #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+UpdateOccludersPassData")]
+    pub type UpdateOccludersPassData =
+        crate::UnityEngine::Rendering::OcclusionCullingCommon_UpdateOccludersPassData;
     pub fn CreateFarDepthPyramid(
         &mut self,
-        cmd: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::ComputeCommandBuffer,
-        >,
+        cmd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ComputeCommandBuffer>,
         occluderParams: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Rendering::OccluderParameters,
         >,
@@ -123,42 +104,41 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
             crate::UnityEngine::Rendering::OccluderHandles,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::ComputeCommandBuffer,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::OccluderParameters,
-                            >,
-                            crate::System::ReadOnlySpan_1<
-                                crate::UnityEngine::Rendering::OccluderSubviewUpdate,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::OccluderHandles,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("CreateFarDepthPyramid")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::ComputeCommandBuffer,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::OccluderParameters,
+                        >,
+                        crate::System::ReadOnlySpan_1<
+                            crate::UnityEngine::Rendering::OccluderSubviewUpdate,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::OccluderHandles,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "CreateFarDepthPyramid"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateFarDepthPyramid", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateFarDepthPyramid",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (cmd, occluderParams, occluderSubviewUpdates, occluderHandles),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (cmd, occluderParams, occluderSubviewUpdates, occluderHandles),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -166,81 +146,72 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
         &mut self,
         viewInstanceID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("DeleteContext")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("DeleteContext")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DeleteContext", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DeleteContext",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (viewInstanceID))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (viewInstanceID))? };
         Ok(__cordl_ret.into())
     }
     pub fn DispatchDebugClear(
         &mut self,
-        cmd: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::ComputeCommandBuffer,
-        >,
+        cmd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ComputeCommandBuffer>,
         viewInstanceID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::ComputeCommandBuffer,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("DispatchDebugClear")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::ComputeCommandBuffer,
+                        >,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 2usize>("DispatchDebugClear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DispatchDebugClear", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DispatchDebugClear",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (cmd, viewInstanceID))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cmd, viewInstanceID))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOccluderContext(
@@ -250,42 +221,39 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
             crate::UnityEngine::Rendering::OccluderContext,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::OccluderContext,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("GetOccluderContext")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::OccluderContext,
+                        >,
+                    ), bool, 2usize>("GetOccluderContext")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetOccluderContext", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetOccluderContext",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (viewInstanceID, occluderContext))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (viewInstanceID, occluderContext))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOcclusionTestDebugOutput(
         &mut self,
         viewInstanceID: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Rendering::OcclusionCullingDebugOutput,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::OcclusionCullingDebugOutput>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -300,31 +268,31 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::OcclusionCullingDebugOutput = unsafe {
-            cordl_method_info.invoke_unchecked(self, (viewInstanceID))?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::OcclusionCullingDebugOutput =
+            unsafe { cordl_method_info.invoke_unchecked(self, (viewInstanceID))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasOccluderContext(
         &mut self,
         viewInstanceID: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("HasOccluderContext")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HasOccluderContext", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HasOccluderContext",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (viewInstanceID))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (viewInstanceID))? };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -333,64 +301,57 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
             crate::UnityEngine::Rendering::GPUResidentDrawerResources,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::GPUResidentDrawerResources,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Init")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Rendering::GPUResidentDrawerResources,
+                    >), quest_hook::libil2cpp::Void, 1usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (resources))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (resources))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn NewContext(
-        &mut self,
-        viewInstanceID: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn NewContext(&mut self, viewInstanceID: i32) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("NewContext")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "NewContext", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "NewContext",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (viewInstanceID))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (viewInstanceID))? };
         Ok(__cordl_ret.into())
     }
     pub fn PrepareCulling(
         &mut self,
-        cmd: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::ComputeCommandBuffer,
-        >,
+        cmd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ComputeCommandBuffer>,
         occluderCtx: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Rendering::OccluderContext,
         >,
@@ -405,53 +366,50 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
         >,
         useOcclusionDebug: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::ComputeCommandBuffer,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::OccluderContext,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::OcclusionCullingSettings,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::OcclusionTestComputeShader,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("PrepareCulling")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::ComputeCommandBuffer,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::OccluderContext,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::OcclusionCullingSettings,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::InstanceOcclusionTestSubviewSettings,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::OcclusionTestComputeShader,
+                        >,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 6usize>("PrepareCulling")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PrepareCulling", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PrepareCulling",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        cmd,
-                        occluderCtx,
-                        settings,
-                        subviewSettings,
-                        shader,
-                        useOcclusionDebug,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    cmd,
+                    occluderCtx,
+                    settings,
+                    subviewSettings,
+                    shader,
+                    useOcclusionDebug,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -464,33 +422,32 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
             crate::UnityEngine::Rendering::OccluderParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::OccluderHandles> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::OccluderParameters,
-                            >,
-                        ),
-                        crate::UnityEngine::Rendering::OccluderHandles,
-                        2usize,
-                    >("PrepareOccluders")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::OccluderParameters,
+                        >,
+                    ), crate::UnityEngine::Rendering::OccluderHandles, 2usize>(
+                        "PrepareOccluders"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PrepareOccluders", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PrepareOccluders",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::OccluderHandles = unsafe {
-            cordl_method_info.invoke_unchecked(self, (renderGraph, occluderParams))?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::OccluderHandles =
+            unsafe { cordl_method_info.invoke_unchecked(self, (renderGraph, occluderParams))? };
         Ok(__cordl_ret.into())
     }
     pub fn RenderDebugOccluderOverlay(
@@ -505,39 +462,44 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
         maxHeight: f32,
         colorBuffer: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::DebugDisplayGPUResidentDrawer,
-                            >,
-                            crate::UnityEngine::Vector2,
-                            f32,
-                            crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("RenderDebugOccluderOverlay")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::DebugDisplayGPUResidentDrawer,
+                        >,
+                        crate::UnityEngine::Vector2,
+                        f32,
+                        crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "RenderDebugOccluderOverlay"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RenderDebugOccluderOverlay", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RenderDebugOccluderOverlay",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (renderGraph, debugSettings, screenPos, maxHeight, colorBuffer),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    renderGraph,
+                    debugSettings,
+                    screenPos,
+                    maxHeight,
+                    colorBuffer,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -552,45 +514,42 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
         viewInstanceID: i32,
         colorBuffer: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::DebugDisplayGPUResidentDrawer,
-                            >,
-                            i32,
-                            crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("RenderDebugOcclusionTestOverlay")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::DebugDisplayGPUResidentDrawer,
+                        >,
+                        i32,
+                        crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
+                    ), quest_hook::libil2cpp::Void, 4usize>(
+                        "RenderDebugOcclusionTestOverlay"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RenderDebugOcclusionTestOverlay", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RenderDebugOcclusionTestOverlay",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (renderGraph, debugSettings, viewInstanceID, colorBuffer),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (renderGraph, debugSettings, viewInstanceID, colorBuffer),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetDebugPyramid(
-        cmd: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::ComputeCommandBuffer,
-        >,
+        cmd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ComputeCommandBuffer>,
         shader: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Rendering::OcclusionTestComputeShader,
         >,
@@ -599,44 +558,39 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
             crate::UnityEngine::Rendering::OccluderHandles,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::ComputeCommandBuffer,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::OcclusionTestComputeShader,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::OccluderHandles,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetDebugPyramid")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::ComputeCommandBuffer,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::OcclusionTestComputeShader,
+                        >,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::OccluderHandles,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>("SetDebugPyramid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetDebugPyramid", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetDebugPyramid",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (cmd, shader, kernel, occluderHandles))?
+            cordl_method_info.invoke_unchecked((), (cmd, shader, kernel, occluderHandles))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetDepthPyramid(
-        cmd: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::ComputeCommandBuffer,
-        >,
+        cmd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ComputeCommandBuffer>,
         shader: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Rendering::OcclusionTestComputeShader,
         >,
@@ -645,63 +599,55 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
             crate::UnityEngine::Rendering::OccluderHandles,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::ComputeCommandBuffer,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::OcclusionTestComputeShader,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::OccluderHandles,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetDepthPyramid")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::ComputeCommandBuffer,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::OcclusionTestComputeShader,
+                        >,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::OccluderHandles,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>("SetDepthPyramid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetDepthPyramid", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetDepthPyramid",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (cmd, shader, kernel, occluderHandles))?
+            cordl_method_info.invoke_unchecked((), (cmd, shader, kernel, occluderHandles))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateFrame(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn UpdateFrame(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("UpdateFrame")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdateFrame")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateFrame", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateFrame",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateInstanceOccluders(
@@ -716,39 +662,34 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
             crate::UnityEngine::Rendering::OccluderSubviewUpdate,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::OccluderParameters,
-                            >,
-                            crate::System::ReadOnlySpan_1<
-                                crate::UnityEngine::Rendering::OccluderSubviewUpdate,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("UpdateInstanceOccluders")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::OccluderParameters,
+                        >,
+                        crate::System::ReadOnlySpan_1<
+                            crate::UnityEngine::Rendering::OccluderSubviewUpdate,
+                        >,
+                    ), bool, 3usize>("UpdateInstanceOccluders")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateInstanceOccluders", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateInstanceOccluders",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (renderGraph, occluderParams, occluderSubviewUpdates),
-                )?
+                .invoke_unchecked(self, (renderGraph, occluderParams, occluderSubviewUpdates))?
         };
         Ok(__cordl_ret.into())
     }
@@ -758,28 +699,27 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
             crate::UnityEngine::Rendering::DebugRendererBatcherStats,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::DebugRendererBatcherStats,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("UpdateOccluderStats")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Rendering::DebugRendererBatcherStats,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "UpdateOccluderStats"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateOccluderStats", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateOccluderStats",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (debugStats))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (debugStats))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateSilhouettePlanes(
@@ -787,31 +727,28 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
         viewInstanceID: i32,
         planes: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Plane>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            crate::Unity::Collections::NativeArray_1<
-                                crate::UnityEngine::Plane,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateSilhouettePlanes")
+                    .find_method::<(
+                        i32,
+                        crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Plane>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "UpdateSilhouettePlanes"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateSilhouettePlanes", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateSilhouettePlanes",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (viewInstanceID, planes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (viewInstanceID, planes))? };
         Ok(__cordl_ret.into())
     }
     pub fn UseOcclusionDebug(
@@ -819,28 +756,24 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
             crate::UnityEngine::Rendering::OccluderContext,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::Rendering::OccluderContext,
-                        >),
-                        bool,
-                        1usize,
-                    >("UseOcclusionDebug")
+                    .find_static_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::Rendering::OccluderContext,
+                    >), bool, 1usize>("UseOcclusionDebug")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UseOcclusionDebug", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UseOcclusionDebug",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (occluderCtx))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (occluderCtx))? };
         Ok(__cordl_ret.into())
     }
     pub fn _RenderDebugOcclusionTestOverlay_b__29_1(
@@ -850,7 +783,8 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
         >,
         ctx: crate::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -872,36 +806,33 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (data, ctx))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (data, ctx))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::OcclusionCullingCommon {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::OcclusionCullingCommon {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -910,34 +841,29 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon")]
-impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::OcclusionCullingCommon {
+impl AsRef<crate::System::IDisposable> for crate::UnityEngine::Rendering::OcclusionCullingCommon {
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon")]
-impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::OcclusionCullingCommon {
+impl AsMut<crate::System::IDisposable> for crate::UnityEngine::Rendering::OcclusionCullingCommon {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OcclusionCullingCommon_DebugOccluderViewData {
     pub passIndex: i32,
     pub viewport: crate::UnityEngine::Rect,
     pub valid: bool,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -956,20 +882,16 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData 
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -978,11 +900,10 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -994,28 +915,24 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData 
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1027,11 +944,10 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData 
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1042,21 +958,18 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData 
 }
 #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData")]
 impl crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData {}
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OcclusionCullingCommon_OccluderContextSlot {
     pub valid: bool,
     pub lastUsedFrameIndex: i32,
     pub viewInstanceID: i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -1075,20 +988,16 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1097,11 +1006,10 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1113,28 +1021,24 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1146,11 +1050,10 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1161,32 +1064,28 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot {
 }
 #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot")]
 impl crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot {}
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderOverlayPassData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderOverlayPassData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OcclusionCullingCommon_OccluderOverlayPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub debugMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-    pub occluderTexture: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Rendering::RTHandle,
-    >,
+    pub occluderTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
     pub viewport: crate::UnityEngine::Rect,
     pub passIndex: i32,
     pub validRange: crate::UnityEngine::Vector2,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderOverlayPassData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderOverlayPassData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderOverlayPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderOverlayPassData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "OcclusionCullingCommon/OccluderOverlayPassData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1200,7 +1099,8 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderOverlayPassDat
 }
 #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+OccluderOverlayPassData")]
 impl std::ops::Deref
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderOverlayPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderOverlayPassData
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1208,7 +1108,8 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderOverlayPassDat
 }
 #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+OccluderOverlayPassData")]
 impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderOverlayPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderOverlayPassData
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1216,39 +1117,37 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderOverlayPassDat
 #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+OccluderOverlayPassData")]
 impl crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderOverlayPassData {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderOverlayPassData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderOverlayPassData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderOverlayPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderOverlayPassData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1269,13 +1168,15 @@ pub struct OcclusionCullingCommon_OcclusionTestOverlayPassData {
     feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlayPassData"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlayPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlayPassData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "OcclusionCullingCommon/OcclusionTestOverlayPassData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1287,55 +1188,50 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlayPa
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlayPassData"
-)]
+#[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlayPassData")]
 impl std::ops::Deref
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlayPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlayPassData
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlayPassData"
-)]
+#[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlayPassData")]
 impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlayPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlayPassData
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlayPassData"
-)]
+#[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlayPassData")]
 impl crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlayPassData {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1343,7 +1239,8 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlayP
     feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlayPassData"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlayPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlayPassData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1364,13 +1261,15 @@ pub struct OcclusionCullingCommon_OcclusionTestOverlaySetupPassData {
     feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlaySetupPassData"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlaySetupPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlaySetupPassData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "OcclusionCullingCommon/OcclusionTestOverlaySetupPassData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1382,55 +1281,50 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlaySe
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlaySetupPassData"
-)]
+#[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlaySetupPassData")]
 impl std::ops::Deref
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlaySetupPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlaySetupPassData
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlaySetupPassData"
-)]
+#[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlaySetupPassData")]
 impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlaySetupPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlaySetupPassData
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlaySetupPassData"
-)]
+#[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlaySetupPassData")]
 impl crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlaySetupPassData {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1438,7 +1332,8 @@ impl crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlayS
     feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlaySetupPassData"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlaySetupPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_OcclusionTestOverlaySetupPassData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1454,13 +1349,15 @@ pub struct OcclusionCullingCommon_ShaderIDs {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+ShaderIDs")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_ShaderIDs {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_ShaderIDs
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "OcclusionCullingCommon/ShaderIDs";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1473,16 +1370,14 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_ShaderIDs {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+ShaderIDs")]
-impl std::ops::Deref
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_ShaderIDs {
+impl std::ops::Deref for crate::UnityEngine::Rendering::OcclusionCullingCommon_ShaderIDs {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+ShaderIDs")]
-impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_ShaderIDs {
+impl std::ops::DerefMut for crate::UnityEngine::Rendering::OcclusionCullingCommon_ShaderIDs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1491,7 +1386,8 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_ShaderIDs {
 impl crate::UnityEngine::Rendering::OcclusionCullingCommon_ShaderIDs {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+ShaderIDs")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_ShaderIDs {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_ShaderIDs
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1499,9 +1395,7 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_ShaderIDs {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+UpdateOccludersPassData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+UpdateOccludersPassData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OcclusionCullingCommon_UpdateOccludersPassData {
@@ -1514,17 +1408,17 @@ pub struct OcclusionCullingCommon_UpdateOccludersPassData {
     >,
     pub occluderHandles: crate::UnityEngine::Rendering::OccluderHandles,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+UpdateOccludersPassData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+UpdateOccludersPassData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_UpdateOccludersPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_UpdateOccludersPassData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "OcclusionCullingCommon/UpdateOccludersPassData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1538,7 +1432,8 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_UpdateOccludersPassDat
 }
 #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+UpdateOccludersPassData")]
 impl std::ops::Deref
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_UpdateOccludersPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_UpdateOccludersPassData
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1546,7 +1441,8 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_UpdateOccludersPassDat
 }
 #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+UpdateOccludersPassData")]
 impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_UpdateOccludersPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_UpdateOccludersPassData
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1554,39 +1450,37 @@ for crate::UnityEngine::Rendering::OcclusionCullingCommon_UpdateOccludersPassDat
 #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+UpdateOccludersPassData")]
 impl crate::UnityEngine::Rendering::OcclusionCullingCommon_UpdateOccludersPassData {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+UpdateOccludersPassData"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+UpdateOccludersPassData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::OcclusionCullingCommon_UpdateOccludersPassData {
+    for crate::UnityEngine::Rendering::OcclusionCullingCommon_UpdateOccludersPassData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

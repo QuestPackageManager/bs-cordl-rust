@@ -6,9 +6,7 @@ pub struct BeatmapBasicData {
     pub noteJumpMovementSpeed: f32,
     pub noteJumpStartBeatOffset: f32,
     pub environmentName: crate::GlobalNamespace::EnvironmentName,
-    pub beatmapColorScheme: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ColorScheme,
-    >,
+    pub beatmapColorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
     pub notesCount: i32,
     pub cuttableObjectsCount: i32,
     pub obstaclesCount: i32,
@@ -31,7 +29,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapBasic
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "BeatmapBasicData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -62,9 +61,7 @@ impl crate::GlobalNamespace::BeatmapBasicData {
         noteJumpMovementSpeed: f32,
         noteJumpStartBeatOffset: f32,
         environmentName: crate::GlobalNamespace::EnvironmentName,
-        beatmapColorScheme: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ColorScheme,
-        >,
+        beatmapColorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
         notesCount: i32,
         cuttableObjectsCount: i32,
         obstaclesCount: i32,
@@ -80,24 +77,23 @@ impl crate::GlobalNamespace::BeatmapBasicData {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    noteJumpMovementSpeed,
-                    noteJumpStartBeatOffset,
-                    environmentName,
-                    beatmapColorScheme,
-                    notesCount,
-                    cuttableObjectsCount,
-                    obstaclesCount,
-                    bombsCount,
-                    mappers,
-                    lighters,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                noteJumpMovementSpeed,
+                noteJumpStartBeatOffset,
+                environmentName,
+                beatmapColorScheme,
+                notesCount,
+                cuttableObjectsCount,
+                obstaclesCount,
+                bombsCount,
+                mappers,
+                lighters,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -105,9 +101,7 @@ impl crate::GlobalNamespace::BeatmapBasicData {
         noteJumpMovementSpeed: f32,
         noteJumpStartBeatOffset: f32,
         environmentName: crate::GlobalNamespace::EnvironmentName,
-        beatmapColorScheme: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ColorScheme,
-        >,
+        beatmapColorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
         notesCount: i32,
         cuttableObjectsCount: i32,
         obstaclesCount: i32,
@@ -123,65 +117,56 @@ impl crate::GlobalNamespace::BeatmapBasicData {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            f32,
-                            f32,
-                            crate::GlobalNamespace::EnvironmentName,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ColorScheme,
+                    .find_method::<(
+                        f32,
+                        f32,
+                        crate::GlobalNamespace::EnvironmentName,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        10usize,
-                    >(".ctor")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 10usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             10usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        noteJumpMovementSpeed,
-                        noteJumpStartBeatOffset,
-                        environmentName,
-                        beatmapColorScheme,
-                        notesCount,
-                        cuttableObjectsCount,
-                        obstaclesCount,
-                        bombsCount,
-                        mappers,
-                        lighters,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    noteJumpMovementSpeed,
+                    noteJumpStartBeatOffset,
+                    environmentName,
+                    beatmapColorScheme,
+                    notesCount,
+                    cuttableObjectsCount,
+                    obstaclesCount,
+                    bombsCount,
+                    mappers,
+                    lighters,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderKeywordSet")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ShaderKeywordSet {
     pub m_KeywordState: crate::System::IntPtr,
     pub m_Shader: crate::System::IntPtr,
@@ -8,8 +8,7 @@ pub struct ShaderKeywordSet {
     pub m_StateIndex: u64,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderKeywordSet")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::ShaderKeywordSet {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::ShaderKeywordSet {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -28,18 +27,14 @@ for crate::UnityEngine::Rendering::ShaderKeywordSet {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderKeywordSet")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::ShaderKeywordSet {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Rendering::ShaderKeywordSet {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -49,8 +44,7 @@ for crate::UnityEngine::Rendering::ShaderKeywordSet {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderKeywordSet")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::ShaderKeywordSet {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Rendering::ShaderKeywordSet {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -63,23 +57,19 @@ for crate::UnityEngine::Rendering::ShaderKeywordSet {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderKeywordSet")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::ShaderKeywordSet {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Rendering::ShaderKeywordSet {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderKeywordSet")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::ShaderKeywordSet {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::ShaderKeywordSet {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -93,7 +83,8 @@ for crate::UnityEngine::Rendering::ShaderKeywordSet {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderKeywordSet")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::ShaderKeywordSet {
+    for crate::UnityEngine::Rendering::ShaderKeywordSet
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -108,9 +99,10 @@ impl crate::UnityEngine::Rendering::ShaderKeywordSet {
         &mut self,
         keyword: crate::UnityEngine::Rendering::ShaderKeyword,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Rendering::ShaderKeyword),
@@ -125,103 +117,86 @@ impl crate::UnityEngine::Rendering::ShaderKeywordSet {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (keyword))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (keyword))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsEnabled(
         &mut self,
         keyword: crate::UnityEngine::Rendering::ShaderKeyword,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Rendering::ShaderKeyword),
-                        bool,
-                        1usize,
-                    >("IsEnabled")
+                    .find_method::<(crate::UnityEngine::Rendering::ShaderKeyword), bool, 1usize>(
+                        "IsEnabled",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsEnabled", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsEnabled",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (keyword))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (keyword))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsKeywordNameEnabled(
         state: crate::UnityEngine::Rendering::ShaderKeywordSet,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Rendering::ShaderKeywordSet,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsKeywordNameEnabled")
+                    .find_static_method::<(
+                        crate::UnityEngine::Rendering::ShaderKeywordSet,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), bool, 2usize>("IsKeywordNameEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsKeywordNameEnabled", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsKeywordNameEnabled",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (state, name))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (state, name))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsKeywordNameEnabled_Injected(
-        state: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Rendering::ShaderKeywordSet,
-        >,
-        name: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Bindings::ManagedSpanWrapper,
-        >,
+        state: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rendering::ShaderKeywordSet>,
+        name: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bindings::ManagedSpanWrapper>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::ShaderKeywordSet,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsKeywordNameEnabled_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::ShaderKeywordSet,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >,
+                    ), bool, 2usize>("IsKeywordNameEnabled_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsKeywordNameEnabled_Injected", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsKeywordNameEnabled_Injected",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (state, name))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (state, name))? };
         Ok(__cordl_ret.into())
     }
 }

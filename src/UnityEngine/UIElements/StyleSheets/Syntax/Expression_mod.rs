@@ -18,13 +18,15 @@ pub struct Expression {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+Expression")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression {
+    for crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.StyleSheets.Syntax";
     const CLASS_NAME: &'static str = "Expression";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -37,16 +39,14 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+Expression")]
-impl std::ops::Deref
-for crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression {
+impl std::ops::Deref for crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+Expression")]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression {
+impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -56,8 +56,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression {
     pub fn New(
         _cordl_type: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_type))?;
         Ok(__cordl_object.into())
@@ -66,9 +66,10 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression {
         &mut self,
         _cordl_type: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionType),
@@ -83,15 +84,15 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+Expression")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression {
+    for crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

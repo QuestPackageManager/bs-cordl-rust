@@ -1,13 +1,12 @@
 #[cfg(feature = "cordl_class_System+Net+Sockets+IPPacketInformation")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct IPPacketInformation {
     pub address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
     pub networkInterface: i32,
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+IPPacketInformation")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Net::Sockets::IPPacketInformation {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::IPPacketInformation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net.Sockets";
@@ -26,18 +25,14 @@ for crate::System::Net::Sockets::IPPacketInformation {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+IPPacketInformation")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Net::Sockets::IPPacketInformation {
+unsafe impl quest_hook::libil2cpp::Argument for crate::System::Net::Sockets::IPPacketInformation {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,8 +42,7 @@ for crate::System::Net::Sockets::IPPacketInformation {
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+IPPacketInformation")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Net::Sockets::IPPacketInformation {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Net::Sockets::IPPacketInformation {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -61,23 +55,19 @@ for crate::System::Net::Sockets::IPPacketInformation {
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+IPPacketInformation")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Net::Sockets::IPPacketInformation {
+unsafe impl quest_hook::libil2cpp::Returned for crate::System::Net::Sockets::IPPacketInformation {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+IPPacketInformation")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Net::Sockets::IPPacketInformation {
+unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::Sockets::IPPacketInformation {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -91,7 +81,8 @@ for crate::System::Net::Sockets::IPPacketInformation {
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+IPPacketInformation")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Net::Sockets::IPPacketInformation {
+    for crate::System::Net::Sockets::IPPacketInformation
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -106,9 +97,10 @@ impl crate::System::Net::Sockets::IPPacketInformation {
         &mut self,
         comparand: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -123,22 +115,22 @@ impl crate::System::Net::Sockets::IPPacketInformation {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (comparand))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (comparand))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });

@@ -31,13 +31,15 @@ pub struct SteamLevelProductCollectionModel {
 }
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::SteamLevelProductCollectionModel {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "SteamLevelProductCollectionModel";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -65,13 +67,17 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SteamLevelProductCollectionM
 #[cfg(feature = "SteamLevelProductCollectionModel")]
 impl crate::GlobalNamespace::SteamLevelProductCollectionModel {
     #[cfg(feature = "SteamLevelProductCollectionModel+LevelDepotData")]
-    pub type LevelDepotData = crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData;
+    pub type LevelDepotData =
+        crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData;
     #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
-    pub type LevelPackProductData = crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData;
+    pub type LevelPackProductData =
+        crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData;
     #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackRedirectionData")]
-    pub type LevelPackRedirectionData = crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData;
+    pub type LevelPackRedirectionData =
+        crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData;
     #[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
-    pub type LevelProductData = crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData;
+    pub type LevelProductData =
+        crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData;
     pub fn GetLevelPackProductData(
         &mut self,
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -80,7 +86,8 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel {
             crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -112,7 +119,8 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel {
             crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -144,7 +152,8 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel {
             crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -171,14 +180,12 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel {
     pub fn New(
         levelProductsSOs: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::SteamLevelProductPacksSO,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SteamLevelProductPacksSO>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (levelProductsSOs))?;
         Ok(__cordl_object.into())
@@ -187,51 +194,48 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel {
         &mut self,
         levelProductsSOs: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::SteamLevelProductPacksSO,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SteamLevelProductPacksSO>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::SteamLevelProductPacksSO,
-                                >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SteamLevelProductPacksSO,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (levelProductsSOs))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (levelProductsSOs))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_levelProductDataCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_levelProductDataCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_levelProductDataCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_levelProductDataCount",
+                            0usize
                         )
                     })
             });
@@ -249,7 +253,8 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -284,7 +289,8 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel {
 }
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::SteamLevelProductCollectionModel {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -302,13 +308,15 @@ pub struct SteamLevelProductCollectionModel_LevelDepotData {
 }
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelDepotData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "SteamLevelProductCollectionModel/LevelDepotData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -321,8 +329,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
     }
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelDepotData")]
-impl std::ops::Deref
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
+impl std::ops::Deref for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -330,7 +337,8 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelDepotData")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -338,37 +346,37 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelDepotData")]
 impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelDepotData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -393,13 +401,15 @@ pub struct SteamLevelProductCollectionModel_LevelPackProductData {
 }
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackProductData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "SteamLevelProductCollectionModel/LevelPackProductData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -413,7 +423,8 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDat
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
 impl std::ops::Deref
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -421,7 +432,8 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDat
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -439,8 +451,8 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDa
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (levelPackId, bundleId, levelProducts))?;
         Ok(__cordl_object.into())
@@ -457,7 +469,8 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDa
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -487,22 +500,23 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDa
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (levelPackId, bundleId, levelProducts))?
+            cordl_method_info.invoke_unchecked(self, (levelPackId, bundleId, levelProducts))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_bundleId(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_bundleId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_bundleId", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_bundleId",
+                            0usize
                         )
                     })
             });
@@ -511,12 +525,12 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDa
     }
     pub fn get_levelPackId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -531,9 +545,8 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDa
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_levelProductsData(
@@ -547,7 +560,8 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDa
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -582,7 +596,8 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDa
 }
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackProductData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -591,13 +606,15 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDat
     }
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
-impl AsRef<
-    crate::GlobalNamespace::ILevelPackProductData_1<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+impl
+    AsRef<
+        crate::GlobalNamespace::ILevelPackProductData_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+            >,
         >,
-    >,
-> for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData {
+    > for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData
+{
     fn as_ref(
         &self,
     ) -> &crate::GlobalNamespace::ILevelPackProductData_1<
@@ -609,13 +626,15 @@ impl AsRef<
     }
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
-impl AsMut<
-    crate::GlobalNamespace::ILevelPackProductData_1<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+impl
+    AsMut<
+        crate::GlobalNamespace::ILevelPackProductData_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+            >,
         >,
-    >,
-> for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData {
+    > for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::GlobalNamespace::ILevelPackProductData_1<
@@ -631,24 +650,22 @@ impl AsMut<
 #[derive(Debug)]
 pub struct SteamLevelProductCollectionModel_LevelPackRedirectionData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _targetLevelPackId: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub _shouldOwnLevelPackId: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub _targetLevelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _shouldOwnLevelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _redirectedBundleId: u32,
     pub _validUntilDate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackRedirectionData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "SteamLevelProductCollectionModel/LevelPackRedirectionData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -662,7 +679,8 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectio
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackRedirectionData")]
 impl std::ops::Deref
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -670,7 +688,8 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectio
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackRedirectionData")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -678,44 +697,45 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectio
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackRedirectionData")]
 impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_redirectedBundleId(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_redirectedBundleId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_redirectedBundleId", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_redirectedBundleId",
+                            0usize
                         )
                     })
             });
@@ -724,12 +744,12 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirecti
     }
     pub fn get_shouldOwnLevelPackId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -744,19 +764,18 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirecti
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_targetLevelPackId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -771,19 +790,18 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirecti
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_validUntilDate(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -798,15 +816,15 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirecti
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackRedirectionData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -827,13 +845,15 @@ pub struct SteamLevelProductCollectionModel_LevelProductData {
 }
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelProductData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "SteamLevelProductCollectionModel/LevelProductData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -846,8 +866,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
     }
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
-impl std::ops::Deref
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
+impl std::ops::Deref for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -855,7 +874,8 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -866,8 +886,8 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         appId: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (levelId, appId))?;
         Ok(__cordl_object.into())
@@ -877,44 +897,41 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         appId: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            u32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        u32,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (levelId, appId))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (levelId, appId))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_appId(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_appId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_appId", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_appId",
+                            0usize
                         )
                     })
             });
@@ -928,22 +945,20 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
             crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData,
-                        >,
-                        0usize,
-                    >("get_levelDepotData")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData,
+                    >, 0usize>("get_levelDepotData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_levelDepotData", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_levelDepotData",
+                            0usize
                         )
                     })
             });
@@ -954,12 +969,12 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
     }
     pub fn get_levelId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -974,15 +989,15 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelProductData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -992,14 +1007,16 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
 impl AsRef<crate::GlobalNamespace::ILevelProductData>
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::ILevelProductData {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
 impl AsMut<crate::GlobalNamespace::ILevelProductData>
-for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
+    for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelProductData {
         unsafe { std::mem::transmute(self) }
     }

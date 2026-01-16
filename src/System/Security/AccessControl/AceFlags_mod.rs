@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+AccessControl+AceFlags")]
-#[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(u8)]
 pub enum AceFlags {
     #[default]
     AuditFlags = 192u8,
@@ -15,8 +15,7 @@ pub enum AceFlags {
     SuccessfulAccess = 64u8,
 }
 #[cfg(feature = "cordl_class_System+Security+AccessControl+AceFlags")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Security::AccessControl::AceFlags {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Security::AccessControl::AceFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Security.AccessControl";
@@ -35,18 +34,14 @@ for crate::System::Security::AccessControl::AceFlags {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Security+AccessControl+AceFlags")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Security::AccessControl::AceFlags {
+unsafe impl quest_hook::libil2cpp::Argument for crate::System::Security::AccessControl::AceFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -56,8 +51,7 @@ for crate::System::Security::AccessControl::AceFlags {
     }
 }
 #[cfg(feature = "cordl_class_System+Security+AccessControl+AceFlags")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Security::AccessControl::AceFlags {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Security::AccessControl::AceFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -70,23 +64,19 @@ for crate::System::Security::AccessControl::AceFlags {
     }
 }
 #[cfg(feature = "cordl_class_System+Security+AccessControl+AceFlags")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Security::AccessControl::AceFlags {
+unsafe impl quest_hook::libil2cpp::Returned for crate::System::Security::AccessControl::AceFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Security+AccessControl+AceFlags")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Security::AccessControl::AceFlags {
+unsafe impl quest_hook::libil2cpp::Return for crate::System::Security::AccessControl::AceFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

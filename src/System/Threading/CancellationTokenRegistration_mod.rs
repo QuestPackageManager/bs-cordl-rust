@@ -1,17 +1,17 @@
 #[cfg(feature = "cordl_class_System+Threading+CancellationTokenRegistration")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CancellationTokenRegistration {
-    pub m_callbackInfo: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::CancellationCallbackInfo,
-    >,
+    pub m_callbackInfo:
+        quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationCallbackInfo>,
     pub m_registrationInfo: crate::System::Threading::SparselyPopulatedArrayAddInfo_1<
         quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationCallbackInfo>,
     >,
 }
 #[cfg(feature = "cordl_class_System+Threading+CancellationTokenRegistration")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Threading::CancellationTokenRegistration {
+    for crate::System::Threading::CancellationTokenRegistration
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Threading";
@@ -30,18 +30,16 @@ for crate::System::Threading::CancellationTokenRegistration {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+CancellationTokenRegistration")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Threading::CancellationTokenRegistration {
+    for crate::System::Threading::CancellationTokenRegistration
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -52,7 +50,8 @@ for crate::System::Threading::CancellationTokenRegistration {
 }
 #[cfg(feature = "cordl_class_System+Threading+CancellationTokenRegistration")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Threading::CancellationTokenRegistration {
+    for crate::System::Threading::CancellationTokenRegistration
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -66,22 +65,22 @@ for crate::System::Threading::CancellationTokenRegistration {
 }
 #[cfg(feature = "cordl_class_System+Threading+CancellationTokenRegistration")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Threading::CancellationTokenRegistration {
+    for crate::System::Threading::CancellationTokenRegistration
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+CancellationTokenRegistration")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Threading::CancellationTokenRegistration {
+    for crate::System::Threading::CancellationTokenRegistration
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -95,7 +94,8 @@ for crate::System::Threading::CancellationTokenRegistration {
 }
 #[cfg(feature = "cordl_class_System+Threading+CancellationTokenRegistration")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Threading::CancellationTokenRegistration {
+    for crate::System::Threading::CancellationTokenRegistration
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -106,59 +106,58 @@ for crate::System::Threading::CancellationTokenRegistration {
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
 impl crate::System::Threading::CancellationTokenRegistration {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DisposeAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::System::Threading::Tasks::ValueTask,
-                        0usize,
-                    >("DisposeAsync")
+                    .find_method::<(), crate::System::Threading::Tasks::ValueTask, 0usize>(
+                        "DisposeAsync",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DisposeAsync", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DisposeAsync",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Threading::Tasks::ValueTask =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_CancellationTokenRegistration1(
         &mut self,
         other: crate::System::Threading::CancellationTokenRegistration,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationTokenRegistration),
@@ -173,18 +172,17 @@ impl crate::System::Threading::CancellationTokenRegistration {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -199,22 +197,22 @@ impl crate::System::Threading::CancellationTokenRegistration {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -222,16 +220,18 @@ impl crate::System::Threading::CancellationTokenRegistration {
         Ok(__cordl_ret.into())
     }
     pub fn Unregister(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("Unregister")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Unregister", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Unregister",
+                            0usize
                         )
                     })
             });
@@ -240,94 +240,86 @@ impl crate::System::Threading::CancellationTokenRegistration {
     }
     pub fn _ctor(
         &mut self,
-        callbackInfo: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::CancellationCallbackInfo,
-        >,
+        callbackInfo: quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationCallbackInfo>,
         registrationInfo: crate::System::Threading::SparselyPopulatedArrayAddInfo_1<
             quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationCallbackInfo>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::CancellationCallbackInfo,
+                        >,
+                        crate::System::Threading::SparselyPopulatedArrayAddInfo_1<
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Threading::CancellationCallbackInfo,
                             >,
-                            crate::System::Threading::SparselyPopulatedArrayAddInfo_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Threading::CancellationCallbackInfo,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (callbackInfo, registrationInfo))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (callbackInfo, registrationInfo))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
 impl AsRef<crate::System::IAsyncDisposable>
-for crate::System::Threading::CancellationTokenRegistration {
+    for crate::System::Threading::CancellationTokenRegistration
+{
     fn as_ref(&self) -> &crate::System::IAsyncDisposable {
         todo!()
     }
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
 impl AsMut<crate::System::IAsyncDisposable>
-for crate::System::Threading::CancellationTokenRegistration {
+    for crate::System::Threading::CancellationTokenRegistration
+{
     fn as_mut(&mut self) -> &mut crate::System::IAsyncDisposable {
         todo!()
     }
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
-impl AsRef<crate::System::IDisposable>
-for crate::System::Threading::CancellationTokenRegistration {
+impl AsRef<crate::System::IDisposable> for crate::System::Threading::CancellationTokenRegistration {
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
-impl AsMut<crate::System::IDisposable>
-for crate::System::Threading::CancellationTokenRegistration {
+impl AsMut<crate::System::IDisposable> for crate::System::Threading::CancellationTokenRegistration {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
-impl AsRef<
-    crate::System::IEquatable_1<crate::System::Threading::CancellationTokenRegistration>,
-> for crate::System::Threading::CancellationTokenRegistration {
+impl AsRef<crate::System::IEquatable_1<crate::System::Threading::CancellationTokenRegistration>>
+    for crate::System::Threading::CancellationTokenRegistration
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::System::Threading::CancellationTokenRegistration,
-    > {
+    ) -> &crate::System::IEquatable_1<crate::System::Threading::CancellationTokenRegistration> {
         todo!()
     }
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
-impl AsMut<
-    crate::System::IEquatable_1<crate::System::Threading::CancellationTokenRegistration>,
-> for crate::System::Threading::CancellationTokenRegistration {
+impl AsMut<crate::System::IEquatable_1<crate::System::Threading::CancellationTokenRegistration>>
+    for crate::System::Threading::CancellationTokenRegistration
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::System::Threading::CancellationTokenRegistration,
-    > {
+    ) -> &mut crate::System::IEquatable_1<crate::System::Threading::CancellationTokenRegistration>
+    {
         todo!()
     }
 }

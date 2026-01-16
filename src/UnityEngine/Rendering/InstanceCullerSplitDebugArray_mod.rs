@@ -1,18 +1,17 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceCullerSplitDebugArray")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct InstanceCullerSplitDebugArray {
     pub m_Info: crate::Unity::Collections::NativeList_1<
         crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info,
     >,
     pub m_Counters: crate::Unity::Collections::NativeArray_1<i32>,
-    pub m_CounterSync: crate::Unity::Collections::NativeQueue_1<
-        crate::Unity::Jobs::JobHandle,
-    >,
+    pub m_CounterSync: crate::Unity::Collections::NativeQueue_1<crate::Unity::Jobs::JobHandle>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceCullerSplitDebugArray")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
+    for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -31,18 +30,16 @@ for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceCullerSplitDebugArray")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
+    for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -53,7 +50,8 @@ for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceCullerSplitDebugArray")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
+    for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -67,22 +65,22 @@ for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceCullerSplitDebugArray")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
+    for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceCullerSplitDebugArray")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
+    for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -96,7 +94,8 @@ for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceCullerSplitDebugArray")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
+    for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -115,9 +114,10 @@ impl crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
         baseIndex: i32,
         jobHandle: crate::Unity::Jobs::JobHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::Unity::Jobs::JobHandle),
@@ -132,51 +132,48 @@ impl crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (baseIndex, jobHandle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (baseIndex, jobHandle))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MoveToDebugStatsAndClear(
@@ -185,28 +182,27 @@ impl crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
             crate::UnityEngine::Rendering::DebugRendererBatcherStats,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::DebugRendererBatcherStats,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("MoveToDebugStatsAndClear")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Rendering::DebugRendererBatcherStats,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "MoveToDebugStatsAndClear"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MoveToDebugStatsAndClear", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MoveToDebugStatsAndClear",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (debugStats))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (debugStats))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryAddSplits(
@@ -215,72 +211,74 @@ impl crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
         viewInstanceID: i32,
         splitCount: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Rendering::BatchCullingViewType, i32, i32),
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::BatchCullingViewType,
                         i32,
-                        3usize,
-                    >("TryAddSplits")
+                        i32,
+                    ), i32, 3usize>("TryAddSplits")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryAddSplits", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryAddSplits",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (viewType, viewInstanceID, splitCount))?
+            cordl_method_info.invoke_unchecked(self, (viewType, viewInstanceID, splitCount))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Counters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<i32>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::Unity::Collections::NativeArray_1<i32>,
-                        0usize,
-                    >("get_Counters")
+                    .find_method::<(), crate::Unity::Collections::NativeArray_1<i32>, 0usize>(
+                        "get_Counters",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Counters", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Counters",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::NativeArray_1<i32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<i32> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+InstanceCullerSplitDebugArray")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
+    for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+InstanceCullerSplitDebugArray")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray {
+    for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceCullerSplitDebugArray+Info")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct InstanceCullerSplitDebugArray_Info {
     pub viewType: crate::UnityEngine::Rendering::BatchCullingViewType,
     pub viewInstanceID: i32,
@@ -288,7 +286,8 @@ pub struct InstanceCullerSplitDebugArray_Info {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceCullerSplitDebugArray+Info")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info {
+    for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -307,18 +306,16 @@ for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceCullerSplitDebugArray+Info")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info {
+    for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -329,7 +326,8 @@ for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceCullerSplitDebugArray+Info")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info {
+    for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -343,22 +341,22 @@ for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceCullerSplitDebugArray+Info")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info {
+    for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceCullerSplitDebugArray+Info")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info {
+    for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -372,7 +370,8 @@ for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceCullerSplitDebugArray+Info")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info {
+    for crate::UnityEngine::Rendering::InstanceCullerSplitDebugArray_Info
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

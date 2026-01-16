@@ -85,13 +85,15 @@ pub struct EnvironmentTrackDefinitionModel {
     feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel {
+    for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.TrackDefinitions.DataModels";
     const CLASS_NAME: &'static str = "EnvironmentTrackDefinitionModel";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -105,7 +107,8 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
 }
 #[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel")]
 impl std::ops::Deref
-for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel {
+    for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -113,7 +116,8 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
 }
 #[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel")]
 impl std::ops::DerefMut
-for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel {
+    for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -139,8 +143,9 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
                 >,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -184,8 +189,9 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
                 >,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -229,7 +235,8 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -262,8 +269,8 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
             crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (trackDefinition))?;
         Ok(__cordl_object.into())
@@ -274,28 +281,25 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
             crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (trackDefinition))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (trackDefinition))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item_BasicBeatmapEventType0(
@@ -306,7 +310,8 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
             crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -341,8 +346,9 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
                 >,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -387,8 +393,9 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
                 >,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -432,8 +439,9 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
                 >,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -479,8 +487,9 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
                 >,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -530,8 +539,9 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
                 >,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -570,25 +580,20 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
             crate::System::Collections::Generic::IReadOnlyDictionary_2<i32, i32>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyDictionary_2<
-                                i32,
-                                i32,
-                            >,
-                        >,
-                        0usize,
-                    >("get_groupIdToPageMap")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyDictionary_2<i32, i32>,
+                    >, 0usize>("get_groupIdToPageMap")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_groupIdToPageMap", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_groupIdToPageMap",
+                            0usize
                         )
                     })
             });
@@ -608,8 +613,9 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
                 >,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -644,16 +650,18 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
         Ok(__cordl_ret.into())
     }
     pub fn get_pageCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_pageCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_pageCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_pageCount",
+                            0usize
                         )
                     })
             });
@@ -670,8 +678,9 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
                 >,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -708,7 +717,8 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
     feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel {
+    for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

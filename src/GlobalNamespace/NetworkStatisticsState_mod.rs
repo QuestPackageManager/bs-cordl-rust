@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NetworkStatisticsState")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct NetworkStatisticsState {
     pub packetsSent: i64,
     pub packetsReceived: i64,
@@ -17,8 +17,7 @@ pub struct NetworkStatisticsState {
     pub decryptionProcessingTime: i64,
 }
 #[cfg(feature = "cordl_class_NetworkStatisticsState")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::NetworkStatisticsState {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NetworkStatisticsState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -37,18 +36,14 @@ for crate::GlobalNamespace::NetworkStatisticsState {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_NetworkStatisticsState")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::NetworkStatisticsState {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NetworkStatisticsState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -58,8 +53,7 @@ for crate::GlobalNamespace::NetworkStatisticsState {
     }
 }
 #[cfg(feature = "cordl_class_NetworkStatisticsState")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::NetworkStatisticsState {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::NetworkStatisticsState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -72,23 +66,19 @@ for crate::GlobalNamespace::NetworkStatisticsState {
     }
 }
 #[cfg(feature = "cordl_class_NetworkStatisticsState")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::NetworkStatisticsState {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NetworkStatisticsState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_NetworkStatisticsState")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::NetworkStatisticsState {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NetworkStatisticsState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -101,8 +91,7 @@ for crate::GlobalNamespace::NetworkStatisticsState {
     }
 }
 #[cfg(feature = "cordl_class_NetworkStatisticsState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::NetworkStatisticsState {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::NetworkStatisticsState {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -114,7 +103,8 @@ for crate::GlobalNamespace::NetworkStatisticsState {
 #[cfg(feature = "NetworkStatisticsState")]
 impl crate::GlobalNamespace::NetworkStatisticsState {
     #[cfg(feature = "NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
-    pub type NetworkStatisticsUpdateDelegate = crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate;
+    pub type NetworkStatisticsUpdateDelegate =
+        crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate;
     pub fn _ctor(
         &mut self,
         packetsSent: i64,
@@ -131,95 +121,87 @@ impl crate::GlobalNamespace::NetworkStatisticsState {
         encryptionProcessingTime: i64,
         decryptionProcessingTime: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i64,
-                            i64,
-                            i64,
-                            i64,
-                            i64,
-                            i64,
-                            i64,
-                            i64,
-                            i64,
-                            i64,
-                            i64,
-                            i64,
-                            i64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        13usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i64,
+                        i64,
+                        i64,
+                        i64,
+                        i64,
+                        i64,
+                        i64,
+                        i64,
+                        i64,
+                        i64,
+                        i64,
+                        i64,
+                        i64,
+                    ), quest_hook::libil2cpp::Void, 13usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             13usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        packetsSent,
-                        packetsReceived,
-                        bytesSent,
-                        bytesReceived,
-                        packetsLost,
-                        packetsSentEncrypted,
-                        packetsSentPlaintext,
-                        packetsSentRejected,
-                        packetsReceivedEncrypted,
-                        packetsReceivedPlaintext,
-                        packetsReceivedRejected,
-                        encryptionProcessingTime,
-                        decryptionProcessingTime,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    packetsSent,
+                    packetsReceived,
+                    bytesSent,
+                    bytesReceived,
+                    packetsLost,
+                    packetsSentEncrypted,
+                    packetsSentPlaintext,
+                    packetsSentRejected,
+                    packetsReceivedEncrypted,
+                    packetsReceivedPlaintext,
+                    packetsReceivedRejected,
+                    encryptionProcessingTime,
+                    decryptionProcessingTime,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Subtraction(
-        a: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::NetworkStatisticsState,
-        >,
-        b: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::NetworkStatisticsState,
-        >,
+        a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NetworkStatisticsState>,
+        b: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NetworkStatisticsState>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NetworkStatisticsDelta> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::NetworkStatisticsState,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::NetworkStatisticsState,
-                            >,
-                        ),
-                        crate::GlobalNamespace::NetworkStatisticsDelta,
-                        2usize,
-                    >("op_Subtraction")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::NetworkStatisticsState,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::NetworkStatisticsState,
+                        >,
+                    ), crate::GlobalNamespace::NetworkStatisticsDelta, 2usize>(
+                        "op_Subtraction"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Subtraction", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Subtraction",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::NetworkStatisticsDelta = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::NetworkStatisticsDelta =
+            unsafe { cordl_method_info.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -231,13 +213,15 @@ pub struct NetworkStatisticsState_NetworkStatisticsUpdateDelegate {
 }
 #[cfg(feature = "cordl_class_NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate {
+    for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "NetworkStatisticsState/NetworkStatisticsUpdateDelegate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -251,7 +235,8 @@ for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelega
 }
 #[cfg(feature = "NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
 impl std::ops::Deref
-for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate {
+    for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate
+{
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -259,7 +244,8 @@ for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelega
 }
 #[cfg(feature = "NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate {
+    for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -273,37 +259,32 @@ impl crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDeleg
         >,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::NetworkStatisticsState,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        3usize,
-                    >("BeginInvoke")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::NetworkStatisticsState,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 3usize>(
+                        "BeginInvoke",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginInvoke", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginInvoke",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (statisticsState, callback, object))?
+            cordl_method_info.invoke_unchecked(self, (statisticsState, callback, object))?
         };
         Ok(__cordl_ret.into())
     }
@@ -314,31 +295,28 @@ impl crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDeleg
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::NetworkStatisticsState,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("EndInvoke")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::NetworkStatisticsState,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("EndInvoke")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EndInvoke", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EndInvoke",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (statisticsState, result))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (statisticsState, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -347,36 +325,33 @@ impl crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDeleg
             crate::GlobalNamespace::NetworkStatisticsState,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::GlobalNamespace::NetworkStatisticsState,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Invoke")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::GlobalNamespace::NetworkStatisticsState,
+                    >), quest_hook::libil2cpp::Void, 1usize>("Invoke")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Invoke",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (statisticsState))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (statisticsState))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object.into())
@@ -386,37 +361,33 @@ impl crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDeleg
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            crate::System::IntPtr,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        crate::System::IntPtr,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (object, method))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (object, method))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate {
+    for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

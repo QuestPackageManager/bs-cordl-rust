@@ -5,14 +5,14 @@ pub struct CoreMatrixUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreMatrixUtils")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::CoreMatrixUtils {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::CoreMatrixUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "CoreMatrixUtils";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,40 +43,38 @@ impl crate::UnityEngine::Rendering::CoreMatrixUtils {
         inOutMatrix: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
         translation: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Matrix4x4,
-                            >,
-                            crate::UnityEngine::Vector3,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("MatrixTimesTranslation")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+                        crate::UnityEngine::Vector3,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "MatrixTimesTranslation"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MatrixTimesTranslation", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MatrixTimesTranslation",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (inOutMatrix, translation))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (inOutMatrix, translation))? };
         Ok(__cordl_ret.into())
     }
     pub fn MultiplyGenericOrthoMatrix(
         ortho: crate::UnityEngine::Matrix4x4,
         rhs: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Matrix4x4, crate::UnityEngine::Matrix4x4),
@@ -91,9 +89,8 @@ impl crate::UnityEngine::Rendering::CoreMatrixUtils {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            cordl_method_info.invoke_unchecked((), (ortho, rhs))?
-        };
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 =
+            unsafe { cordl_method_info.invoke_unchecked((), (ortho, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn MultiplyOrthoMatrix(
@@ -101,39 +98,39 @@ impl crate::UnityEngine::Rendering::CoreMatrixUtils {
         rhs: crate::UnityEngine::Matrix4x4,
         centered: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Matrix4x4,
-                            crate::UnityEngine::Matrix4x4,
-                            bool,
-                        ),
+                    .find_static_method::<(
                         crate::UnityEngine::Matrix4x4,
-                        3usize,
-                    >("MultiplyOrthoMatrix")
+                        crate::UnityEngine::Matrix4x4,
+                        bool,
+                    ), crate::UnityEngine::Matrix4x4, 3usize>(
+                        "MultiplyOrthoMatrix"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MultiplyOrthoMatrix", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MultiplyOrthoMatrix",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            cordl_method_info.invoke_unchecked((), (ortho, rhs, centered))?
-        };
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 =
+            unsafe { cordl_method_info.invoke_unchecked((), (ortho, rhs, centered))? };
         Ok(__cordl_ret.into())
     }
     pub fn MultiplyOrthoMatrixCentered(
         ortho: crate::UnityEngine::Matrix4x4,
         rhs: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Matrix4x4, crate::UnityEngine::Matrix4x4),
@@ -148,18 +145,18 @@ impl crate::UnityEngine::Rendering::CoreMatrixUtils {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            cordl_method_info.invoke_unchecked((), (ortho, rhs))?
-        };
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 =
+            unsafe { cordl_method_info.invoke_unchecked((), (ortho, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn MultiplyPerspectiveMatrix(
         perspective: crate::UnityEngine::Matrix4x4,
         rhs: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Matrix4x4, crate::UnityEngine::Matrix4x4),
@@ -174,9 +171,8 @@ impl crate::UnityEngine::Rendering::CoreMatrixUtils {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            cordl_method_info.invoke_unchecked((), (perspective, rhs))?
-        };
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 =
+            unsafe { cordl_method_info.invoke_unchecked((), (perspective, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn MultiplyProjectionMatrix(
@@ -184,67 +180,62 @@ impl crate::UnityEngine::Rendering::CoreMatrixUtils {
         rhs: crate::UnityEngine::Matrix4x4,
         orthoCentered: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Matrix4x4,
-                            crate::UnityEngine::Matrix4x4,
-                            bool,
-                        ),
+                    .find_static_method::<(
                         crate::UnityEngine::Matrix4x4,
-                        3usize,
-                    >("MultiplyProjectionMatrix")
+                        crate::UnityEngine::Matrix4x4,
+                        bool,
+                    ), crate::UnityEngine::Matrix4x4, 3usize>(
+                        "MultiplyProjectionMatrix"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MultiplyProjectionMatrix", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MultiplyProjectionMatrix",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            cordl_method_info.invoke_unchecked((), (projMatrix, rhs, orthoCentered))?
-        };
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 =
+            unsafe { cordl_method_info.invoke_unchecked((), (projMatrix, rhs, orthoCentered))? };
         Ok(__cordl_ret.into())
     }
     pub fn TranslationTimesMatrix(
         inOutMatrix: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
         translation: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Matrix4x4,
-                            >,
-                            crate::UnityEngine::Vector3,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("TranslationTimesMatrix")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+                        crate::UnityEngine::Vector3,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "TranslationTimesMatrix"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TranslationTimesMatrix", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TranslationTimesMatrix",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (inOutMatrix, translation))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (inOutMatrix, translation))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreMatrixUtils")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::CoreMatrixUtils {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::CoreMatrixUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

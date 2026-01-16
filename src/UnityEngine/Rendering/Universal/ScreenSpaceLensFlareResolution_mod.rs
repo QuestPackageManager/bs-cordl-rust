@@ -1,19 +1,16 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceLensFlareResolution"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceLensFlareResolution")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ScreenSpaceLensFlareResolution {
     #[default]
     Eighth = 8i32,
     Half = 2i32,
     Quarter = 4i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceLensFlareResolution"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceLensFlareResolution")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::ScreenSpaceLensFlareResolution {
+    for crate::UnityEngine::Rendering::Universal::ScreenSpaceLensFlareResolution
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
@@ -32,20 +29,16 @@ for crate::UnityEngine::Rendering::Universal::ScreenSpaceLensFlareResolution {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceLensFlareResolution"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceLensFlareResolution")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::Universal::ScreenSpaceLensFlareResolution {
+    for crate::UnityEngine::Rendering::Universal::ScreenSpaceLensFlareResolution
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -54,11 +47,10 @@ for crate::UnityEngine::Rendering::Universal::ScreenSpaceLensFlareResolution {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceLensFlareResolution"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceLensFlareResolution")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::Universal::ScreenSpaceLensFlareResolution {
+    for crate::UnityEngine::Rendering::Universal::ScreenSpaceLensFlareResolution
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -70,28 +62,24 @@ for crate::UnityEngine::Rendering::Universal::ScreenSpaceLensFlareResolution {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceLensFlareResolution"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceLensFlareResolution")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::Universal::ScreenSpaceLensFlareResolution {
+    for crate::UnityEngine::Rendering::Universal::ScreenSpaceLensFlareResolution
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceLensFlareResolution"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceLensFlareResolution")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::Universal::ScreenSpaceLensFlareResolution {
+    for crate::UnityEngine::Rendering::Universal::ScreenSpaceLensFlareResolution
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

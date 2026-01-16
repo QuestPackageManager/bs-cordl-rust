@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct QualitySettings {
     pub renderViewportScale: f32,
     pub vrResolutionScale: f32,
@@ -39,18 +39,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::QualityS
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::BeatSaber::Settings::QualitySettings {
+unsafe impl quest_hook::libil2cpp::Argument for crate::BeatSaber::Settings::QualitySettings {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -60,8 +56,7 @@ for crate::BeatSaber::Settings::QualitySettings {
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::BeatSaber::Settings::QualitySettings {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatSaber::Settings::QualitySettings {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -74,23 +69,19 @@ for crate::BeatSaber::Settings::QualitySettings {
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::BeatSaber::Settings::QualitySettings {
+unsafe impl quest_hook::libil2cpp::Returned for crate::BeatSaber::Settings::QualitySettings {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::BeatSaber::Settings::QualitySettings {
+unsafe impl quest_hook::libil2cpp::Return for crate::BeatSaber::Settings::QualitySettings {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -103,8 +94,7 @@ for crate::BeatSaber::Settings::QualitySettings {
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::BeatSaber::Settings::QualitySettings {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::BeatSaber::Settings::QualitySettings {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -125,8 +115,8 @@ impl crate::BeatSaber::Settings::QualitySettings {
     pub type ObstacleQuality = crate::BeatSaber::Settings::QualitySettings_ObstacleQuality;
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+BloomQuality")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum QualitySettings_BloomQuality {
     #[default]
     Game = 0i32,
@@ -134,7 +124,8 @@ pub enum QualitySettings_BloomQuality {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+BloomQuality")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
+    for crate::BeatSaber::Settings::QualitySettings_BloomQuality
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
@@ -153,18 +144,16 @@ for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+BloomQuality")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
+    for crate::BeatSaber::Settings::QualitySettings_BloomQuality
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -175,7 +164,8 @@ for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+BloomQuality")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
+    for crate::BeatSaber::Settings::QualitySettings_BloomQuality
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -189,22 +179,22 @@ for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+BloomQuality")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
+    for crate::BeatSaber::Settings::QualitySettings_BloomQuality
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+BloomQuality")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
+    for crate::BeatSaber::Settings::QualitySettings_BloomQuality
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -217,8 +207,8 @@ for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MainEffectOption")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum QualitySettings_MainEffectOption {
     #[default]
     Game = 1i32,
@@ -227,7 +217,8 @@ pub enum QualitySettings_MainEffectOption {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MainEffectOption")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
+    for crate::BeatSaber::Settings::QualitySettings_MainEffectOption
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
@@ -246,18 +237,16 @@ for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MainEffectOption")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
+    for crate::BeatSaber::Settings::QualitySettings_MainEffectOption
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -268,7 +257,8 @@ for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MainEffectOption")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
+    for crate::BeatSaber::Settings::QualitySettings_MainEffectOption
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -282,22 +272,22 @@ for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MainEffectOption")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
+    for crate::BeatSaber::Settings::QualitySettings_MainEffectOption
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MainEffectOption")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
+    for crate::BeatSaber::Settings::QualitySettings_MainEffectOption
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -310,8 +300,8 @@ for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MirrorQuality")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum QualitySettings_MirrorQuality {
     #[default]
     High = 3i32,
@@ -321,7 +311,8 @@ pub enum QualitySettings_MirrorQuality {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MirrorQuality")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
+    for crate::BeatSaber::Settings::QualitySettings_MirrorQuality
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
@@ -340,18 +331,16 @@ for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MirrorQuality")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
+    for crate::BeatSaber::Settings::QualitySettings_MirrorQuality
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -362,7 +351,8 @@ for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MirrorQuality")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
+    for crate::BeatSaber::Settings::QualitySettings_MirrorQuality
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -376,22 +366,22 @@ for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MirrorQuality")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
+    for crate::BeatSaber::Settings::QualitySettings_MirrorQuality
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MirrorQuality")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
+    for crate::BeatSaber::Settings::QualitySettings_MirrorQuality
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -404,8 +394,8 @@ for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+ObstacleQuality")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum QualitySettings_ObstacleQuality {
     #[default]
     High = 2i32,
@@ -414,7 +404,8 @@ pub enum QualitySettings_ObstacleQuality {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
+    for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
@@ -433,18 +424,16 @@ for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
+    for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -455,7 +444,8 @@ for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
+    for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -469,22 +459,22 @@ for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
+    for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
+    for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

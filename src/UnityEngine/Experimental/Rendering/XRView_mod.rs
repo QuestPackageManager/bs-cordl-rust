@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+XRView")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct XRView {
     pub projMatrix: crate::UnityEngine::Matrix4x4,
     pub viewMatrix: crate::UnityEngine::Matrix4x4,
@@ -12,8 +12,7 @@ pub struct XRView {
     pub isPrevViewMatrixValid: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+XRView")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Experimental::Rendering::XRView {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Experimental::Rendering::XRView {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Experimental.Rendering";
@@ -32,18 +31,16 @@ for crate::UnityEngine::Experimental::Rendering::XRView {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+XRView")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Experimental::Rendering::XRView {
+    for crate::UnityEngine::Experimental::Rendering::XRView
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -54,7 +51,8 @@ for crate::UnityEngine::Experimental::Rendering::XRView {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+XRView")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Experimental::Rendering::XRView {
+    for crate::UnityEngine::Experimental::Rendering::XRView
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -68,22 +66,20 @@ for crate::UnityEngine::Experimental::Rendering::XRView {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+XRView")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Experimental::Rendering::XRView {
+    for crate::UnityEngine::Experimental::Rendering::XRView
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+XRView")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Experimental::Rendering::XRView {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Experimental::Rendering::XRView {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -97,7 +93,8 @@ for crate::UnityEngine::Experimental::Rendering::XRView {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+XRView")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Experimental::Rendering::XRView {
+    for crate::UnityEngine::Experimental::Rendering::XRView
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -111,9 +108,10 @@ impl crate::UnityEngine::Experimental::Rendering::XRView {
     pub fn ComputeEyeCenterUV(
         proj: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Matrix4x4),
@@ -128,9 +126,8 @@ impl crate::UnityEngine::Experimental::Rendering::XRView {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            cordl_method_info.invoke_unchecked((), (proj))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector2 =
+            unsafe { cordl_method_info.invoke_unchecked((), (proj))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -143,45 +140,42 @@ impl crate::UnityEngine::Experimental::Rendering::XRView {
         occlusionMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         textureArraySlice: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Matrix4x4,
-                            crate::UnityEngine::Matrix4x4,
-                            crate::UnityEngine::Matrix4x4,
-                            bool,
-                            crate::UnityEngine::Rect,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::UnityEngine::Matrix4x4,
+                        crate::UnityEngine::Matrix4x4,
+                        crate::UnityEngine::Matrix4x4,
+                        bool,
+                        crate::UnityEngine::Rect,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 7usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        projMatrix,
-                        viewMatrix,
-                        prevViewMatrix,
-                        isPrevViewMatrixValid,
-                        viewport,
-                        occlusionMesh,
-                        textureArraySlice,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    projMatrix,
+                    viewMatrix,
+                    prevViewMatrix,
+                    isPrevViewMatrixValid,
+                    viewport,
+                    occlusionMesh,
+                    textureArraySlice,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }

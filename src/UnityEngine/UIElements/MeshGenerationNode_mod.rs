@@ -1,12 +1,11 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationNode")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct MeshGenerationNode {
     pub m_UnsafeNode: crate::UnityEngine::UIElements::UnsafeMeshGenerationNode,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationNode")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::MeshGenerationNode {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::MeshGenerationNode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -25,18 +24,14 @@ for crate::UnityEngine::UIElements::MeshGenerationNode {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationNode")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::MeshGenerationNode {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::MeshGenerationNode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,7 +42,8 @@ for crate::UnityEngine::UIElements::MeshGenerationNode {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationNode")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::MeshGenerationNode {
+    for crate::UnityEngine::UIElements::MeshGenerationNode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -60,23 +56,19 @@ for crate::UnityEngine::UIElements::MeshGenerationNode {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationNode")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::MeshGenerationNode {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::MeshGenerationNode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationNode")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::MeshGenerationNode {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::MeshGenerationNode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -90,7 +82,8 @@ for crate::UnityEngine::UIElements::MeshGenerationNode {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationNode")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::MeshGenerationNode {
+    for crate::UnityEngine::UIElements::MeshGenerationNode
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -103,35 +96,30 @@ for crate::UnityEngine::UIElements::MeshGenerationNode {
 impl crate::UnityEngine::UIElements::MeshGenerationNode {
     pub fn Create(
         handle: crate::System::Runtime::InteropServices::GCHandle,
-        node: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::MeshGenerationNode,
-        >,
+        node: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::MeshGenerationNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::Runtime::InteropServices::GCHandle,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::MeshGenerationNode,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Create")
+                    .find_static_method::<(
+                        crate::System::Runtime::InteropServices::GCHandle,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::MeshGenerationNode,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Create")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Create",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle, node))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (handle, node))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetParentEntry(
@@ -139,9 +127,10 @@ impl crate::UnityEngine::UIElements::MeshGenerationNode {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Entry>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -158,9 +147,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationNode {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::Entry,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Entry> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -10,14 +10,14 @@ pub struct PackedPlayModeBuildLogs {
     >,
 }
 #[cfg(feature = "cordl_class_PackedPlayModeBuildLogs")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PackedPlayModeBuildLogs {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PackedPlayModeBuildLogs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PackedPlayModeBuildLogs";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,31 +47,30 @@ impl crate::GlobalNamespace::PackedPlayModeBuildLogs {
     #[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
     pub type RuntimeBuildLog = crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_RuntimeBuildLogs(
@@ -83,24 +82,22 @@ impl crate::GlobalNamespace::PackedPlayModeBuildLogs {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
                         >,
-                        0usize,
-                    >("get_RuntimeBuildLogs")
+                    >, 0usize>("get_RuntimeBuildLogs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_RuntimeBuildLogs", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_RuntimeBuildLogs",
+                            0usize
                         )
                     })
             });
@@ -119,36 +116,34 @@ impl crate::GlobalNamespace::PackedPlayModeBuildLogs {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_RuntimeBuildLogs")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_RuntimeBuildLogs"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_RuntimeBuildLogs", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_RuntimeBuildLogs",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_PackedPlayModeBuildLogs")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PackedPlayModeBuildLogs {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackedPlayModeBuildLogs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -157,15 +152,16 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs {
     }
 }
 #[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PackedPlayModeBuildLogs_RuntimeBuildLog {
     pub Type: crate::UnityEngine::LogType,
     pub Message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
+    for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -184,18 +180,16 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
+    for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -206,7 +200,8 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
 }
 #[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
+    for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -220,22 +215,22 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
 }
 #[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
+    for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
+    for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -249,7 +244,8 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
 }
 #[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
+    for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -265,31 +261,26 @@ impl crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
         _cordl_type: crate::UnityEngine::LogType,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::LogType,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::UnityEngine::LogType,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type, message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type, message))? };
         Ok(__cordl_ret.into())
     }
 }

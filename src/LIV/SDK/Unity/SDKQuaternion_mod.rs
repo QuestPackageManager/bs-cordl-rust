@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKQuaternion")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct SDKQuaternion {
     pub x: f32,
     pub y: f32,
@@ -27,13 +27,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKQuaternio
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKQuaternion")]
@@ -67,9 +64,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKQuate
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -87,8 +82,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKQuatern
     }
 }
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKQuaternion")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::LIV::SDK::Unity::SDKQuaternion {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::LIV::SDK::Unity::SDKQuaternion {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -104,9 +98,10 @@ impl crate::LIV::SDK::Unity::SDKQuaternion {
         yaw: f32,
         roll: f32,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKQuaternion> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32),
@@ -121,19 +116,18 @@ impl crate::LIV::SDK::Unity::SDKQuaternion {
                         )
                     })
             });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKQuaternion = unsafe {
-            cordl_method_info.invoke_unchecked((), (pitch, yaw, roll))?
-        };
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKQuaternion =
+            unsafe { cordl_method_info.invoke_unchecked((), (pitch, yaw, roll))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -148,42 +142,39 @@ impl crate::LIV::SDK::Unity::SDKQuaternion {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_identity() -> quest_hook::libil2cpp::Result<
-        crate::LIV::SDK::Unity::SDKQuaternion,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get_identity() -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKQuaternion> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::LIV::SDK::Unity::SDKQuaternion,
-                        0usize,
-                    >("get_identity")
+                    .find_static_method::<(), crate::LIV::SDK::Unity::SDKQuaternion, 0usize>(
+                        "get_identity",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_identity", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_identity",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKQuaternion = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKQuaternion =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_Quaternion1(
         v: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKQuaternion> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Quaternion),
@@ -198,17 +189,17 @@ impl crate::LIV::SDK::Unity::SDKQuaternion {
                         )
                     })
             });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKQuaternion = unsafe {
-            cordl_method_info.invoke_unchecked((), (v))?
-        };
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKQuaternion =
+            unsafe { cordl_method_info.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_SDKQuaternion0(
         v: crate::LIV::SDK::Unity::SDKQuaternion,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::LIV::SDK::Unity::SDKQuaternion),
@@ -223,67 +214,62 @@ impl crate::LIV::SDK::Unity::SDKQuaternion {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
-            cordl_method_info.invoke_unchecked((), (v))?
-        };
+        let __cordl_ret: crate::UnityEngine::Quaternion =
+            unsafe { cordl_method_info.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Multiply_SDKQuaternion0(
         lhs: crate::LIV::SDK::Unity::SDKQuaternion,
         rhs: crate::LIV::SDK::Unity::SDKQuaternion,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKQuaternion> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::LIV::SDK::Unity::SDKQuaternion,
-                            crate::LIV::SDK::Unity::SDKQuaternion,
-                        ),
+                    .find_static_method::<(
                         crate::LIV::SDK::Unity::SDKQuaternion,
-                        2usize,
-                    >("op_Multiply")
+                        crate::LIV::SDK::Unity::SDKQuaternion,
+                    ), crate::LIV::SDK::Unity::SDKQuaternion, 2usize>(
+                        "op_Multiply"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Multiply", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Multiply",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKQuaternion = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
-        };
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKQuaternion =
+            unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Multiply_SDKVector3_1(
         lhs: crate::LIV::SDK::Unity::SDKQuaternion,
         rhs: crate::LIV::SDK::Unity::SDKVector3,
     ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::LIV::SDK::Unity::SDKQuaternion,
-                            crate::LIV::SDK::Unity::SDKVector3,
-                        ),
+                    .find_static_method::<(
+                        crate::LIV::SDK::Unity::SDKQuaternion,
                         crate::LIV::SDK::Unity::SDKVector3,
-                        2usize,
-                    >("op_Multiply")
+                    ), crate::LIV::SDK::Unity::SDKVector3, 2usize>("op_Multiply")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Multiply", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Multiply",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
-        };
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -1,18 +1,18 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+IRasterCommandBuffer")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IRasterCommandBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+IRasterCommandBuffer")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::IRasterCommandBuffer {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::IRasterCommandBuffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "IRasterCommandBuffer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,25 +46,23 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         depth: f32,
         stencil: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Rendering::RTClearFlags,
-                            crate::UnityEngine::Color,
-                            f32,
-                            u32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("ClearRenderTarget")
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::RTClearFlags,
+                        crate::UnityEngine::Color,
+                        f32,
+                        u32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("ClearRenderTarget")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ClearRenderTarget", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ClearRenderTarget",
+                            4usize
                         )
                     })
             });
@@ -83,29 +81,25 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         depth: f32,
         stencil: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Rendering::RTClearFlags,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::Color,
-                                >,
-                            >,
-                            f32,
-                            u32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("ClearRenderTarget")
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::RTClearFlags,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+                        >,
+                        f32,
+                        u32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("ClearRenderTarget")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ClearRenderTarget", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ClearRenderTarget",
+                            4usize
                         )
                     })
             });
@@ -121,9 +115,10 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         clearColor: bool,
         backgroundColor: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool, crate::UnityEngine::Color),
@@ -139,8 +134,7 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (clearDepth, clearColor, backgroundColor))?
+            cordl_method_info.invoke_unchecked(self, (clearDepth, clearColor, backgroundColor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -151,9 +145,10 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         backgroundColor: crate::UnityEngine::Color,
         depth: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool, crate::UnityEngine::Color, f32),
@@ -170,10 +165,7 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (clearDepth, clearColor, backgroundColor, depth),
-                )?
+                .invoke_unchecked(self, (clearDepth, clearColor, backgroundColor, depth))?
         };
         Ok(__cordl_ret.into())
     }
@@ -185,9 +177,10 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         depth: f32,
         stencil: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool, crate::UnityEngine::Color, f32, u32),
@@ -203,11 +196,10 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (clearDepth, clearColor, backgroundColor, depth, stencil),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (clearDepth, clearColor, backgroundColor, depth, stencil),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -215,26 +207,25 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         &mut self,
         platformData: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::System::IntPtr),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("ConfigureFoveatedRendering")
+                    .find_method::<(crate::System::IntPtr), quest_hook::libil2cpp::Void, 1usize>(
+                        "ConfigureFoveatedRendering",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConfigureFoveatedRendering", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ConfigureFoveatedRendering",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (platformData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (platformData))? };
         Ok(__cordl_ret.into())
     }
     pub fn DrawMeshInstancedIndirect_ComputeBuffer2(
@@ -245,35 +236,34 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         shaderPass: i32,
         bufferWithArgs: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("DrawMeshInstancedIndirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "DrawMeshInstancedIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMeshInstancedIndirect", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMeshInstancedIndirect",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (mesh, submeshIndex, material, shaderPass, bufferWithArgs),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (mesh, submeshIndex, material, shaderPass, bufferWithArgs),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -286,43 +276,42 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         bufferWithArgs: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
         argsOffset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("DrawMeshInstancedIndirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "DrawMeshInstancedIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMeshInstancedIndirect", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMeshInstancedIndirect",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        mesh,
-                        submeshIndex,
-                        material,
-                        shaderPass,
-                        bufferWithArgs,
-                        argsOffset,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    mesh,
+                    submeshIndex,
+                    material,
+                    shaderPass,
+                    bufferWithArgs,
+                    argsOffset,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -336,47 +325,44 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         argsOffset: i32,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::MaterialPropertyBlock,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("DrawMeshInstancedIndirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
+                    ), quest_hook::libil2cpp::Void, 7usize>(
+                        "DrawMeshInstancedIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMeshInstancedIndirect", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMeshInstancedIndirect",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        mesh,
-                        submeshIndex,
-                        material,
-                        shaderPass,
-                        bufferWithArgs,
-                        argsOffset,
-                        properties,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    mesh,
+                    submeshIndex,
+                    material,
+                    shaderPass,
+                    bufferWithArgs,
+                    argsOffset,
+                    properties,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -388,35 +374,34 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         shaderPass: i32,
         bufferWithArgs: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("DrawMeshInstancedIndirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "DrawMeshInstancedIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMeshInstancedIndirect", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMeshInstancedIndirect",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (mesh, submeshIndex, material, shaderPass, bufferWithArgs),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (mesh, submeshIndex, material, shaderPass, bufferWithArgs),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -429,45 +414,42 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         bufferWithArgs: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
         argsOffset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("DrawMeshInstancedIndirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "DrawMeshInstancedIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMeshInstancedIndirect", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMeshInstancedIndirect",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        mesh,
-                        submeshIndex,
-                        material,
-                        shaderPass,
-                        bufferWithArgs,
-                        argsOffset,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    mesh,
+                    submeshIndex,
+                    material,
+                    shaderPass,
+                    bufferWithArgs,
+                    argsOffset,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -481,49 +463,44 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         argsOffset: i32,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::MaterialPropertyBlock,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("DrawMeshInstancedIndirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
+                    ), quest_hook::libil2cpp::Void, 7usize>(
+                        "DrawMeshInstancedIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMeshInstancedIndirect", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMeshInstancedIndirect",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        mesh,
-                        submeshIndex,
-                        material,
-                        shaderPass,
-                        bufferWithArgs,
-                        argsOffset,
-                        properties,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    mesh,
+                    submeshIndex,
+                    material,
+                    shaderPass,
+                    bufferWithArgs,
+                    argsOffset,
+                    properties,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -536,38 +513,35 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         count: i32,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::MaterialPropertyBlock,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("DrawMeshInstancedProcedural")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "DrawMeshInstancedProcedural"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMeshInstancedProcedural", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMeshInstancedProcedural",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (mesh, submeshIndex, material, shaderPass, count, properties),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (mesh, submeshIndex, material, shaderPass, count, properties),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -581,39 +555,32 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::Matrix4x4,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("DrawMeshInstanced")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 5usize>("DrawMeshInstanced")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMeshInstanced", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMeshInstanced",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (mesh, submeshIndex, material, shaderPass, matrices),
-                )?
+                .invoke_unchecked(self, (mesh, submeshIndex, material, shaderPass, matrices))?
         };
         Ok(__cordl_ret.into())
     }
@@ -628,40 +595,35 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::Matrix4x4,
-                                >,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("DrawMeshInstanced")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+                        >,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>("DrawMeshInstanced")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMeshInstanced", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMeshInstanced",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (mesh, submeshIndex, material, shaderPass, matrices, count),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (mesh, submeshIndex, material, shaderPass, matrices, count),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -677,51 +639,44 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         count: i32,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::Matrix4x4,
-                                >,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::MaterialPropertyBlock,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("DrawMeshInstanced")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+                        >,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
+                    ), quest_hook::libil2cpp::Void, 7usize>("DrawMeshInstanced")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMeshInstanced", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMeshInstanced",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        mesh,
-                        submeshIndex,
-                        material,
-                        shaderPass,
-                        matrices,
-                        count,
-                        properties,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    mesh,
+                    submeshIndex,
+                    material,
+                    shaderPass,
+                    matrices,
+                    count,
+                    properties,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -731,30 +686,27 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         matrix: crate::UnityEngine::Matrix4x4,
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("DrawMesh")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("DrawMesh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMesh", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMesh",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (mesh, matrix, material))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (mesh, matrix, material))? };
         Ok(__cordl_ret.into())
     }
     pub fn DrawMesh_i32_2(
@@ -764,31 +716,28 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         submeshIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("DrawMesh")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("DrawMesh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMesh", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMesh",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (mesh, matrix, material, submeshIndex))?
+            cordl_method_info.invoke_unchecked(self, (mesh, matrix, material, submeshIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -800,35 +749,30 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         submeshIndex: i32,
         shaderPass: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("DrawMesh")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("DrawMesh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMesh", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMesh",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (mesh, matrix, material, submeshIndex, shaderPass),
-                )?
+                .invoke_unchecked(self, (mesh, matrix, material, submeshIndex, shaderPass))?
         };
         Ok(__cordl_ret.into())
     }
@@ -841,38 +785,33 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         shaderPass: i32,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::MaterialPropertyBlock,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("DrawMesh")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
+                    ), quest_hook::libil2cpp::Void, 6usize>("DrawMesh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMesh", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMesh",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (mesh, matrix, material, submeshIndex, shaderPass, properties),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (mesh, matrix, material, submeshIndex, shaderPass, properties),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -882,69 +821,56 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
         >,
         meshes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>>,
         >,
-        subsetIndices: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<i32>,
-        >,
+        subsetIndices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         count: i32,
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         shaderPass: i32,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::Matrix4x4,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<i32>,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::MaterialPropertyBlock,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("DrawMultipleMeshes")
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
+                    ), quest_hook::libil2cpp::Void, 7usize>("DrawMultipleMeshes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawMultipleMeshes", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawMultipleMeshes",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        matrices,
-                        meshes,
-                        subsetIndices,
-                        count,
-                        material,
-                        shaderPass,
-                        properties,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    matrices,
+                    meshes,
+                    subsetIndices,
+                    count,
+                    material,
+                    shaderPass,
+                    properties,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -952,9 +878,10 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         &mut self,
         normalizedCamViewport: crate::UnityEngine::RectInt,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::RectInt),
@@ -969,9 +896,8 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (normalizedCamViewport))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (normalizedCamViewport))? };
         Ok(__cordl_ret.into())
     }
     pub fn DrawProceduralIndirect_GraphicsBuffer_Matrix4x4_Material_i32_MeshTopology_ComputeBuffer5(
@@ -983,38 +909,42 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         topology: crate::UnityEngine::MeshTopology,
         bufferWithArgs: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("DrawProceduralIndirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "DrawProceduralIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProceduralIndirect", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProceduralIndirect",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (indexBuffer, matrix, material, shaderPass, topology, bufferWithArgs),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    indexBuffer,
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    bufferWithArgs,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1028,47 +958,44 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         bufferWithArgs: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
         argsOffset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("DrawProceduralIndirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 7usize>(
+                        "DrawProceduralIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProceduralIndirect", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProceduralIndirect",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        indexBuffer,
-                        matrix,
-                        material,
-                        shaderPass,
-                        topology,
-                        bufferWithArgs,
-                        argsOffset,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    indexBuffer,
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    bufferWithArgs,
+                    argsOffset,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1083,51 +1010,46 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         argsOffset: i32,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::MaterialPropertyBlock,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        8usize,
-                    >("DrawProceduralIndirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
+                    ), quest_hook::libil2cpp::Void, 8usize>(
+                        "DrawProceduralIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProceduralIndirect", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProceduralIndirect",
+                            8usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        indexBuffer,
-                        matrix,
-                        material,
-                        shaderPass,
-                        topology,
-                        bufferWithArgs,
-                        argsOffset,
-                        properties,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    indexBuffer,
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    bufferWithArgs,
+                    argsOffset,
+                    properties,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1140,38 +1062,42 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         topology: crate::UnityEngine::MeshTopology,
         bufferWithArgs: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("DrawProceduralIndirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "DrawProceduralIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProceduralIndirect", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProceduralIndirect",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (indexBuffer, matrix, material, shaderPass, topology, bufferWithArgs),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    indexBuffer,
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    bufferWithArgs,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1185,49 +1111,44 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         bufferWithArgs: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
         argsOffset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("DrawProceduralIndirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 7usize>(
+                        "DrawProceduralIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProceduralIndirect", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProceduralIndirect",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        indexBuffer,
-                        matrix,
-                        material,
-                        shaderPass,
-                        topology,
-                        bufferWithArgs,
-                        argsOffset,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    indexBuffer,
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    bufferWithArgs,
+                    argsOffset,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1242,53 +1163,46 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         argsOffset: i32,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::MaterialPropertyBlock,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        8usize,
-                    >("DrawProceduralIndirect")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
+                    ), quest_hook::libil2cpp::Void, 8usize>(
+                        "DrawProceduralIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProceduralIndirect", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProceduralIndirect",
+                            8usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        indexBuffer,
-                        matrix,
-                        material,
-                        shaderPass,
-                        topology,
-                        bufferWithArgs,
-                        argsOffset,
-                        properties,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    indexBuffer,
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    bufferWithArgs,
+                    argsOffset,
+                    properties,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1300,35 +1214,34 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         topology: crate::UnityEngine::MeshTopology,
         bufferWithArgs: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("DrawProceduralIndirect")
+                    .find_method::<(
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "DrawProceduralIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProceduralIndirect", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProceduralIndirect",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (matrix, material, shaderPass, topology, bufferWithArgs),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (matrix, material, shaderPass, topology, bufferWithArgs),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1341,36 +1254,42 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         bufferWithArgs: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
         argsOffset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("DrawProceduralIndirect")
+                    .find_method::<(
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "DrawProceduralIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProceduralIndirect", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProceduralIndirect",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (matrix, material, shaderPass, topology, bufferWithArgs, argsOffset),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    bufferWithArgs,
+                    argsOffset,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1384,47 +1303,44 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         argsOffset: i32,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::MaterialPropertyBlock,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("DrawProceduralIndirect")
+                    .find_method::<(
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
+                    ), quest_hook::libil2cpp::Void, 7usize>(
+                        "DrawProceduralIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProceduralIndirect", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProceduralIndirect",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        matrix,
-                        material,
-                        shaderPass,
-                        topology,
-                        bufferWithArgs,
-                        argsOffset,
-                        properties,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    bufferWithArgs,
+                    argsOffset,
+                    properties,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1436,35 +1352,34 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         topology: crate::UnityEngine::MeshTopology,
         bufferWithArgs: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("DrawProceduralIndirect")
+                    .find_method::<(
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "DrawProceduralIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProceduralIndirect", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProceduralIndirect",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (matrix, material, shaderPass, topology, bufferWithArgs),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (matrix, material, shaderPass, topology, bufferWithArgs),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1477,38 +1392,42 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         bufferWithArgs: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
         argsOffset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("DrawProceduralIndirect")
+                    .find_method::<(
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>(
+                        "DrawProceduralIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProceduralIndirect", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProceduralIndirect",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (matrix, material, shaderPass, topology, bufferWithArgs, argsOffset),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    bufferWithArgs,
+                    argsOffset,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1522,49 +1441,44 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         argsOffset: i32,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::MaterialPropertyBlock,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("DrawProceduralIndirect")
+                    .find_method::<(
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
+                    ), quest_hook::libil2cpp::Void, 7usize>(
+                        "DrawProceduralIndirect"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProceduralIndirect", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProceduralIndirect",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        matrix,
-                        material,
-                        shaderPass,
-                        topology,
-                        bufferWithArgs,
-                        argsOffset,
-                        properties,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    bufferWithArgs,
+                    argsOffset,
+                    properties,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1577,38 +1491,40 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         topology: crate::UnityEngine::MeshTopology,
         indexCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("DrawProcedural")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>("DrawProcedural")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProcedural", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProcedural",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (indexBuffer, matrix, material, shaderPass, topology, indexCount),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    indexBuffer,
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    indexCount,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1622,47 +1538,42 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         indexCount: i32,
         instanceCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("DrawProcedural")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 7usize>("DrawProcedural")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProcedural", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProcedural",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        indexBuffer,
-                        matrix,
-                        material,
-                        shaderPass,
-                        topology,
-                        indexCount,
-                        instanceCount,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    indexBuffer,
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    indexCount,
+                    instanceCount,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1677,51 +1588,44 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         instanceCount: i32,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::GraphicsBuffer,
-                            >,
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::MaterialPropertyBlock,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        8usize,
-                    >("DrawProcedural")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
+                    ), quest_hook::libil2cpp::Void, 8usize>("DrawProcedural")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProcedural", 8usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProcedural",
+                            8usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        indexBuffer,
-                        matrix,
-                        material,
-                        shaderPass,
-                        topology,
-                        indexCount,
-                        instanceCount,
-                        properties,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    indexBuffer,
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    indexCount,
+                    instanceCount,
+                    properties,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1733,35 +1637,30 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         topology: crate::UnityEngine::MeshTopology,
         vertexCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("DrawProcedural")
+                    .find_method::<(
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 5usize>("DrawProcedural")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProcedural", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProcedural",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (matrix, material, shaderPass, topology, vertexCount),
-                )?
+                .invoke_unchecked(self, (matrix, material, shaderPass, topology, vertexCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1774,36 +1673,40 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         vertexCount: i32,
         instanceCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("DrawProcedural")
+                    .find_method::<(
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>("DrawProcedural")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProcedural", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProcedural",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (matrix, material, shaderPass, topology, vertexCount, instanceCount),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    vertexCount,
+                    instanceCount,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1817,47 +1720,42 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         instanceCount: i32,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Matrix4x4,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::MaterialPropertyBlock,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("DrawProcedural")
+                    .find_method::<(
+                        crate::UnityEngine::Matrix4x4,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        crate::UnityEngine::MeshTopology,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
+                    ), quest_hook::libil2cpp::Void, 7usize>("DrawProcedural")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawProcedural", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawProcedural",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        matrix,
-                        material,
-                        shaderPass,
-                        topology,
-                        vertexCount,
-                        instanceCount,
-                        properties,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    matrix,
+                    material,
+                    shaderPass,
+                    topology,
+                    vertexCount,
+                    instanceCount,
+                    properties,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1865,9 +1763,10 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         &mut self,
         rendererList: crate::UnityEngine::Rendering::RendererList,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Rendering::RendererList),
@@ -1882,9 +1781,8 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (rendererList))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (rendererList))? };
         Ok(__cordl_ret.into())
     }
     pub fn DrawRenderer_Renderer_Material2(
@@ -1892,29 +1790,26 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("DrawRenderer")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("DrawRenderer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawRenderer", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawRenderer",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (renderer, material))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (renderer, material))? };
         Ok(__cordl_ret.into())
     }
     pub fn DrawRenderer_i32_1(
@@ -1923,24 +1818,22 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         submeshIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("DrawRenderer")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("DrawRenderer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawRenderer", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawRenderer",
+                            3usize
                         )
                     })
             });
@@ -1956,25 +1849,23 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         submeshIndex: i32,
         shaderPass: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("DrawRenderer")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 4usize>("DrawRenderer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawRenderer", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DrawRenderer",
+                            4usize
                         )
                     })
             });
@@ -1988,9 +1879,10 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
         &mut self,
         foveatedRenderingMode: crate::UnityEngine::Rendering::FoveatedRenderingMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Rendering::FoveatedRenderingMode),
@@ -2005,72 +1897,64 @@ impl crate::UnityEngine::Rendering::IRasterCommandBuffer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (foveatedRenderingMode))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (foveatedRenderingMode))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetInstanceMultiplier(
         &mut self,
         multiplier: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetInstanceMultiplier")
+                    .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>(
+                        "SetInstanceMultiplier",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetInstanceMultiplier", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetInstanceMultiplier",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (multiplier))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (multiplier))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetWireframe(
         &mut self,
         enable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetWireframe")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("SetWireframe")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetWireframe", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetWireframe",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (enable))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (enable))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+IRasterCommandBuffer")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::IRasterCommandBuffer {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::IRasterCommandBuffer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2080,14 +1964,16 @@ for crate::UnityEngine::Rendering::IRasterCommandBuffer {
 }
 #[cfg(feature = "UnityEngine+Rendering+IRasterCommandBuffer")]
 impl AsRef<crate::UnityEngine::Rendering::IBaseCommandBuffer>
-for crate::UnityEngine::Rendering::IRasterCommandBuffer {
+    for crate::UnityEngine::Rendering::IRasterCommandBuffer
+{
     fn as_ref(&self) -> &crate::UnityEngine::Rendering::IBaseCommandBuffer {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+IRasterCommandBuffer")]
 impl AsMut<crate::UnityEngine::Rendering::IBaseCommandBuffer>
-for crate::UnityEngine::Rendering::IRasterCommandBuffer {
+    for crate::UnityEngine::Rendering::IRasterCommandBuffer
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::Rendering::IBaseCommandBuffer {
         unsafe { std::mem::transmute(self) }
     }

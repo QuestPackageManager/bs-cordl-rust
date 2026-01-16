@@ -1,18 +1,18 @@
 #[cfg(feature = "cordl_class_System+Security+Principal+IPrincipal")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IPrincipal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_System+Security+Principal+IPrincipal")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Security::Principal::IPrincipal {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Security::Principal::IPrincipal {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Security.Principal";
     const CLASS_NAME: &'static str = "IPrincipal";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,15 +39,12 @@ impl std::ops::DerefMut for crate::System::Security::Principal::IPrincipal {
 }
 #[cfg(feature = "System+Security+Principal+IPrincipal")]
 impl crate::System::Security::Principal::IPrincipal {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_System+Security+Principal+IPrincipal")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Security::Principal::IPrincipal {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Security::Principal::IPrincipal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

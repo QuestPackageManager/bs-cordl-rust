@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Proj
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
     const CLASS_NAME: &'static str = "Projection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,78 +43,69 @@ impl crate::UnityEngine::ProBuilder::Projection {
         points: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+        indexes: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Plane> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::Vector3,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<i32>,
-                            >,
-                        ),
-                        crate::UnityEngine::Plane,
-                        2usize,
-                    >("FindBestPlane")
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<i32>,
+                        >,
+                    ), crate::UnityEngine::Plane, 2usize>("FindBestPlane")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindBestPlane", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindBestPlane",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Plane = unsafe {
-            cordl_method_info.invoke_unchecked((), (points, indexes))?
-        };
+        let __cordl_ret: crate::UnityEngine::Plane =
+            unsafe { cordl_method_info.invoke_unchecked((), (points, indexes))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindBestPlane_ProBuilderMesh_i32_1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         textureGroup: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Plane> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            i32,
-                        ),
-                        crate::UnityEngine::Plane,
-                        2usize,
-                    >("FindBestPlane")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+                        i32,
+                    ), crate::UnityEngine::Plane, 2usize>("FindBestPlane")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindBestPlane", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindBestPlane",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Plane = unsafe {
-            cordl_method_info.invoke_unchecked((), (mesh, textureGroup))?
-        };
+        let __cordl_ret: crate::UnityEngine::Plane =
+            unsafe { cordl_method_info.invoke_unchecked((), (mesh, textureGroup))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTangentToAxis(
         axis: crate::UnityEngine::ProBuilder::ProjectionAxis,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::ProBuilder::ProjectionAxis),
@@ -128,50 +120,41 @@ impl crate::UnityEngine::ProBuilder::Projection {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (axis))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (axis))? };
         Ok(__cordl_ret.into())
     }
     pub fn PlanarProject_IList_1_IList_1_0(
         positions: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+        indexes: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<i32>,
-                            >,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::Vector2,
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::Vector3,
                             >,
                         >,
-                        2usize,
-                    >("PlanarProject")
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<i32>,
+                        >,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                    >, 2usize>("PlanarProject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PlanarProject", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PlanarProject",
+                            2usize
                         )
                     })
             });
@@ -184,100 +167,85 @@ impl crate::UnityEngine::ProBuilder::Projection {
         positions: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+        indexes: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<i32>>,
         direction: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<i32>,
-                            >,
-                            crate::UnityEngine::Vector3,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::Vector2,
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::Vector3,
                             >,
                         >,
-                        3usize,
-                    >("PlanarProject")
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<i32>,
+                        >,
+                        crate::UnityEngine::Vector3,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                    >, 3usize>("PlanarProject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PlanarProject", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PlanarProject",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (positions, indexes, direction))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (positions, indexes, direction))? };
         Ok(__cordl_ret.into())
     }
     pub fn PlanarProject_IList_1_IList_1_Vector3_List_1_2(
         positions: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+        indexes: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<i32>>,
         direction: crate::UnityEngine::Vector3,
         results: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::Vector3,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<i32>,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<i32>,
+                        >,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::Vector2,
                             >,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector2,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("PlanarProject")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>("PlanarProject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PlanarProject", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PlanarProject",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (positions, indexes, direction, results))?
+            cordl_method_info.invoke_unchecked((), (positions, indexes, direction, results))?
         };
         Ok(__cordl_ret.into())
     }
@@ -286,34 +254,27 @@ impl crate::UnityEngine::ProBuilder::Projection {
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         projection: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Face,
-                            >,
-                            crate::UnityEngine::Vector3,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("PlanarProject")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                        crate::UnityEngine::Vector3,
+                    ), quest_hook::libil2cpp::Void, 3usize>("PlanarProject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PlanarProject", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PlanarProject",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (mesh, face, projection))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (mesh, face, projection))? };
         Ok(__cordl_ret.into())
     }
     pub fn PlanarProject_ProBuilderMesh_i32_AutoUnwrapSettings3(
@@ -321,26 +282,22 @@ impl crate::UnityEngine::ProBuilder::Projection {
         textureGroup: i32,
         unwrapSettings: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            i32,
-                            crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("PlanarProject")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+                        i32,
+                        crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+                    ), quest_hook::libil2cpp::Void, 3usize>("PlanarProject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PlanarProject", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PlanarProject",
+                            3usize
                         )
                     })
             });
@@ -352,9 +309,10 @@ impl crate::UnityEngine::ProBuilder::Projection {
     pub fn ProjectionAxisToVector(
         axis: crate::UnityEngine::ProBuilder::ProjectionAxis,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::ProBuilder::ProjectionAxis),
@@ -369,9 +327,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (axis))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked((), (axis))? };
         Ok(__cordl_ret.into())
     }
     pub fn Sort(
@@ -384,30 +341,26 @@ impl crate::UnityEngine::ProBuilder::Projection {
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::Vector2,
-                                >,
-                            >,
-                            crate::UnityEngine::ProBuilder::SortMethod,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IList_1<
                                 crate::UnityEngine::Vector2,
                             >,
                         >,
-                        2usize,
-                    >("Sort")
+                        crate::UnityEngine::ProBuilder::SortMethod,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+                    >, 2usize>("Sort")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Sort",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Sort",
                             2usize
                         )
                     })
@@ -421,41 +374,33 @@ impl crate::UnityEngine::ProBuilder::Projection {
         vertices: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+        indexes: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<i32>,
-                            >,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::Vector2,
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::Vector3,
                             >,
                         >,
-                        2usize,
-                    >("SphericalProject")
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<i32>,
+                        >,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                    >, 2usize>("SphericalProject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SphericalProject", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SphericalProject",
+                            2usize
                         )
                     })
             });
@@ -467,9 +412,10 @@ impl crate::UnityEngine::ProBuilder::Projection {
     pub fn VectorToProjectionAxis(
         direction: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::ProjectionAxis> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector3),
@@ -484,9 +430,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::ProBuilder::ProjectionAxis = unsafe {
-            cordl_method_info.invoke_unchecked((), (direction))?
-        };
+        let __cordl_ret: crate::UnityEngine::ProBuilder::ProjectionAxis =
+            unsafe { cordl_method_info.invoke_unchecked((), (direction))? };
         Ok(__cordl_ret.into())
     }
 }

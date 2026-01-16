@@ -11,26 +11,17 @@ pub struct TextSegmentedControl {
     pub _hideCellBackground: bool,
     pub _enableWordWrapping: bool,
     pub _textOverflowMode: crate::TMPro::TextOverflowModes,
-    pub _firstCellPrefab: quest_hook::libil2cpp::Gc<
-        crate::HMUI::TextSegmentedControlCell,
-    >,
-    pub _lastCellPrefab: quest_hook::libil2cpp::Gc<
-        crate::HMUI::TextSegmentedControlCell,
-    >,
-    pub _singleCellPrefab: quest_hook::libil2cpp::Gc<
-        crate::HMUI::TextSegmentedControlCell,
-    >,
-    pub _middleCellPrefab: quest_hook::libil2cpp::Gc<
-        crate::HMUI::TextSegmentedControlCell,
-    >,
+    pub _firstCellPrefab: quest_hook::libil2cpp::Gc<crate::HMUI::TextSegmentedControlCell>,
+    pub _lastCellPrefab: quest_hook::libil2cpp::Gc<crate::HMUI::TextSegmentedControlCell>,
+    pub _singleCellPrefab: quest_hook::libil2cpp::Gc<crate::HMUI::TextSegmentedControlCell>,
+    pub _middleCellPrefab: quest_hook::libil2cpp::Gc<crate::HMUI::TextSegmentedControlCell>,
     pub _texts: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::IReadOnlyList_1<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     >,
-    pub _disabledIndexes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<i32>,
-    >,
+    pub _disabledIndexes:
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<i32>>,
 }
 #[cfg(feature = "cordl_class_HMUI+TextSegmentedControl")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TextSegmentedControl {
@@ -39,7 +30,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TextSegmentedControl {
     const NAMESPACE: &'static str = "HMUI";
     const CLASS_NAME: &'static str = "TextSegmentedControl";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -69,12 +61,12 @@ impl crate::HMUI::TextSegmentedControl {
     pub fn CellForCellNumber(
         &mut self,
         cellNumber: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -89,29 +81,30 @@ impl crate::HMUI::TextSegmentedControl {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (cellNumber))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cellNumber))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
     pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("NumberOfCells")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "NumberOfCells", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "NumberOfCells",
+                            0usize
                         )
                     })
             });
@@ -129,58 +122,52 @@ impl crate::HMUI::TextSegmentedControl {
             crate::System::Collections::Generic::HashSet_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<i32>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetTexts")
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<i32>,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SetTexts")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTexts", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetTexts",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (texts, disabledIndexes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (texts, disabledIndexes))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -194,15 +181,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TextSegmentedControl {
     }
 }
 #[cfg(feature = "HMUI+TextSegmentedControl")]
-impl AsRef<crate::HMUI::SegmentedControl_IDataSource>
-for crate::HMUI::TextSegmentedControl {
+impl AsRef<crate::HMUI::SegmentedControl_IDataSource> for crate::HMUI::TextSegmentedControl {
     fn as_ref(&self) -> &crate::HMUI::SegmentedControl_IDataSource {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+TextSegmentedControl")]
-impl AsMut<crate::HMUI::SegmentedControl_IDataSource>
-for crate::HMUI::TextSegmentedControl {
+impl AsMut<crate::HMUI::SegmentedControl_IDataSource> for crate::HMUI::TextSegmentedControl {
     fn as_mut(&mut self) -> &mut crate::HMUI::SegmentedControl_IDataSource {
         unsafe { std::mem::transmute(self) }
     }

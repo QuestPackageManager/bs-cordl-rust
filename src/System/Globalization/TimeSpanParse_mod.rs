@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::TimeSp
     const NAMESPACE: &'static str = "System.Globalization";
     const CLASS_NAME: &'static str = "TimeSpanParse";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,7 +50,8 @@ impl crate::System::Globalization::TimeSpanParse {
     #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanResult")]
     pub type TimeSpanResult = crate::System::Globalization::TimeSpanParse_TimeSpanResult;
     #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
-    pub type TimeSpanStandardStyles = crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles;
+    pub type TimeSpanStandardStyles =
+        crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles;
     #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanToken")]
     pub type TimeSpanToken = crate::System::Globalization::TimeSpanParse_TimeSpanToken;
     #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
@@ -58,29 +60,26 @@ impl crate::System::Globalization::TimeSpanParse {
         input: crate::System::ReadOnlySpan_1<char>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::ReadOnlySpan_1<char>,
-                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                        ),
-                        crate::System::TimeSpan,
-                        2usize,
-                    >("Parse")
+                    .find_static_method::<(
+                        crate::System::ReadOnlySpan_1<char>,
+                        quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                    ), crate::System::TimeSpan, 2usize>("Parse")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Parse",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Parse",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::TimeSpan = unsafe {
-            cordl_method_info.invoke_unchecked((), (input, formatProvider))?
-        };
+        let __cordl_ret: crate::System::TimeSpan =
+            unsafe { cordl_method_info.invoke_unchecked((), (input, formatProvider))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseExactDigits_ByRefMut0(
@@ -90,32 +89,29 @@ impl crate::System::Globalization::TimeSpanParse {
         minDigitLength: i32,
         result: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        bool,
-                        3usize,
-                    >("ParseExactDigits")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
+                        >,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), bool, 3usize>("ParseExactDigits")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ParseExactDigits", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ParseExactDigits",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (tokenizer, minDigitLength, result))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (tokenizer, minDigitLength, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseExactDigits_i32_ByRefMut_ByRefMut1(
@@ -127,37 +123,34 @@ impl crate::System::Globalization::TimeSpanParse {
         zeroes: quest_hook::libil2cpp::ByRefMut<i32>,
         result: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
-                            >,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        bool,
-                        5usize,
-                    >("ParseExactDigits")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
+                        >,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), bool, 5usize>("ParseExactDigits")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ParseExactDigits", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ParseExactDigits",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (tokenizer, minDigitLength, maxDigitLength, zeroes, result),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (tokenizer, minDigitLength, maxDigitLength, zeroes, result),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -167,43 +160,42 @@ impl crate::System::Globalization::TimeSpanParse {
         >,
         enquotedString: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-                        ),
-                        bool,
-                        2usize,
-                    >("ParseExactLiteral")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    ), bool, 2usize>("ParseExactLiteral")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ParseExactLiteral", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ParseExactLiteral",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (tokenizer, enquotedString))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (tokenizer, enquotedString))? };
         Ok(__cordl_ret.into())
     }
     pub fn Pow10(pow: i32) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i64, 1usize>("Pow10")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Pow10",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Pow10",
                             1usize
                         )
                     })
@@ -220,34 +212,31 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
-                            >,
-                            crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("ProcessTerminalState")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+                        >,
+                        crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 3usize>("ProcessTerminalState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessTerminalState", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessTerminalState",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (raw, style, result))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (raw, style, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessTerminal_D(
@@ -259,34 +248,31 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
-                            >,
-                            crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("ProcessTerminal_D")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+                        >,
+                        crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 3usize>("ProcessTerminal_D")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessTerminal_D", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessTerminal_D",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (raw, style, result))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (raw, style, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessTerminal_DHMSF(
@@ -298,34 +284,31 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
-                            >,
-                            crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("ProcessTerminal_DHMSF")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+                        >,
+                        crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 3usize>("ProcessTerminal_DHMSF")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessTerminal_DHMSF", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessTerminal_DHMSF",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (raw, style, result))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (raw, style, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessTerminal_HM(
@@ -337,34 +320,31 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
-                            >,
-                            crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("ProcessTerminal_HM")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+                        >,
+                        crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 3usize>("ProcessTerminal_HM")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessTerminal_HM", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessTerminal_HM",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (raw, style, result))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (raw, style, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessTerminal_HMS_F_D(
@@ -376,34 +356,31 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
-                            >,
-                            crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("ProcessTerminal_HMS_F_D")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+                        >,
+                        crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 3usize>("ProcessTerminal_HMS_F_D")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessTerminal_HMS_F_D", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessTerminal_HMS_F_D",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (raw, style, result))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (raw, style, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessTerminal_HM_S_D(
@@ -415,34 +392,31 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
-                            >,
-                            crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("ProcessTerminal_HM_S_D")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+                        >,
+                        crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 3usize>("ProcessTerminal_HM_S_D")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessTerminal_HM_S_D", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessTerminal_HM_S_D",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (raw, style, result))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (raw, style, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryParseByFormat(
@@ -453,33 +427,30 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::ReadOnlySpan_1<char>,
-                            crate::System::ReadOnlySpan_1<char>,
-                            crate::System::Globalization::TimeSpanStyles,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        4usize,
-                    >("TryParseByFormat")
+                    .find_static_method::<(
+                        crate::System::ReadOnlySpan_1<char>,
+                        crate::System::ReadOnlySpan_1<char>,
+                        crate::System::Globalization::TimeSpanStyles,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 4usize>("TryParseByFormat")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryParseByFormat", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryParseByFormat",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (input, format, styles, result))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (input, format, styles, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryParseExact(
@@ -489,26 +460,24 @@ impl crate::System::Globalization::TimeSpanParse {
         styles: crate::System::Globalization::TimeSpanStyles,
         result: quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::ReadOnlySpan_1<char>,
-                            crate::System::ReadOnlySpan_1<char>,
-                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                            crate::System::Globalization::TimeSpanStyles,
-                            quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
-                        ),
-                        bool,
-                        5usize,
-                    >("TryParseExact")
+                    .find_static_method::<(
+                        crate::System::ReadOnlySpan_1<char>,
+                        crate::System::ReadOnlySpan_1<char>,
+                        quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                        crate::System::Globalization::TimeSpanStyles,
+                        quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
+                    ), bool, 5usize>("TryParseExact")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryParseExact", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryParseExact",
+                            5usize
                         )
                     })
             });
@@ -527,28 +496,26 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::ReadOnlySpan_1<char>,
-                            crate::System::ReadOnlySpan_1<char>,
-                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                            crate::System::Globalization::TimeSpanStyles,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        5usize,
-                    >("TryParseExactTimeSpan")
+                    .find_static_method::<(
+                        crate::System::ReadOnlySpan_1<char>,
+                        crate::System::ReadOnlySpan_1<char>,
+                        quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                        crate::System::Globalization::TimeSpanStyles,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 5usize>("TryParseExactTimeSpan")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryParseExactTimeSpan", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryParseExactTimeSpan",
+                            5usize
                         )
                     })
             });
@@ -566,33 +533,30 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::ReadOnlySpan_1<char>,
-                            crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
-                            quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        4usize,
-                    >("TryParseTimeSpan")
+                    .find_static_method::<(
+                        crate::System::ReadOnlySpan_1<char>,
+                        crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+                        quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 4usize>("TryParseTimeSpan")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryParseTimeSpan", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryParseTimeSpan",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (input, style, formatProvider, result))?
+            cordl_method_info.invoke_unchecked((), (input, style, formatProvider, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -602,31 +566,27 @@ impl crate::System::Globalization::TimeSpanParse {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::ReadOnlySpan_1<char>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryParseTimeSpanConstant")
+                    .find_static_method::<(
+                        crate::System::ReadOnlySpan_1<char>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 2usize>("TryParseTimeSpanConstant")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryParseTimeSpanConstant", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryParseTimeSpanConstant",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (input, result))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (input, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryTimeToTicks(
@@ -638,37 +598,34 @@ impl crate::System::Globalization::TimeSpanParse {
         fraction: crate::System::Globalization::TimeSpanParse_TimeSpanToken,
         result: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            bool,
-                            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                            quest_hook::libil2cpp::ByRefMut<i64>,
-                        ),
+                    .find_static_method::<(
                         bool,
-                        7usize,
-                    >("TryTimeToTicks")
+                        crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                        crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                        crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                        crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                        crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                        quest_hook::libil2cpp::ByRefMut<i64>,
+                    ), bool, 7usize>("TryTimeToTicks")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryTimeToTicks", 7usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryTimeToTicks",
+                            7usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (positive, days, hours, minutes, seconds, fraction, result),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (positive, days, hours, minutes, seconds, fraction, result),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -683,8 +640,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpa
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+ParseFailureKind")]
-#[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(u8)]
 pub enum TimeSpanParse_ParseFailureKind {
     #[default]
     ArgumentNull = 1u8,
@@ -695,7 +652,8 @@ pub enum TimeSpanParse_ParseFailureKind {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
+    for crate::System::Globalization::TimeSpanParse_ParseFailureKind
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
@@ -714,18 +672,16 @@ for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
+    for crate::System::Globalization::TimeSpanParse_ParseFailureKind
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -736,7 +692,8 @@ for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
+    for crate::System::Globalization::TimeSpanParse_ParseFailureKind
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -750,22 +707,22 @@ for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
+    for crate::System::Globalization::TimeSpanParse_ParseFailureKind
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
+    for crate::System::Globalization::TimeSpanParse_ParseFailureKind
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -778,8 +735,8 @@ for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TimeSpanParse_StringParser {
     pub _str: crate::System::ReadOnlySpan_1<char>,
     pub _ch: char,
@@ -788,7 +745,8 @@ pub struct TimeSpanParse_StringParser {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Globalization::TimeSpanParse_StringParser {
+    for crate::System::Globalization::TimeSpanParse_StringParser
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
@@ -807,18 +765,16 @@ for crate::System::Globalization::TimeSpanParse_StringParser {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Globalization::TimeSpanParse_StringParser {
+    for crate::System::Globalization::TimeSpanParse_StringParser
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -829,7 +785,8 @@ for crate::System::Globalization::TimeSpanParse_StringParser {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Globalization::TimeSpanParse_StringParser {
+    for crate::System::Globalization::TimeSpanParse_StringParser
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -843,22 +800,22 @@ for crate::System::Globalization::TimeSpanParse_StringParser {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Globalization::TimeSpanParse_StringParser {
+    for crate::System::Globalization::TimeSpanParse_StringParser
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Globalization::TimeSpanParse_StringParser {
+    for crate::System::Globalization::TimeSpanParse_StringParser
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -872,7 +829,8 @@ for crate::System::Globalization::TimeSpanParse_StringParser {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Globalization::TimeSpanParse_StringParser {
+    for crate::System::Globalization::TimeSpanParse_StringParser
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -883,38 +841,39 @@ for crate::System::Globalization::TimeSpanParse_StringParser {
 }
 #[cfg(feature = "System+Globalization+TimeSpanParse+StringParser")]
 impl crate::System::Globalization::TimeSpanParse_StringParser {
-    pub fn NextChar(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn NextChar(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("NextChar")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "NextChar", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "NextChar",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn NextNonDigit(&mut self) -> quest_hook::libil2cpp::Result<char> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), char, 0usize>("NextNonDigit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "NextNonDigit", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "NextNonDigit",
+                            0usize
                         )
                     })
             });
@@ -929,32 +888,29 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("ParseInt")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 3usize>("ParseInt")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ParseInt", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ParseInt",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (max, i, result))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (max, i, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseTime(
@@ -964,52 +920,48 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<i64>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("ParseTime")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<i64>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 2usize>("ParseTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ParseTime", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ParseTime",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_time, result))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_time, result))? };
         Ok(__cordl_ret.into())
     }
-    pub fn SkipBlanks(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn SkipBlanks(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SkipBlanks")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SkipBlanks", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SkipBlanks",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn TryParse(
@@ -1019,37 +971,34 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::ReadOnlySpan_1<char>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("TryParse")
+                    .find_method::<(
+                        crate::System::ReadOnlySpan_1<char>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 2usize>("TryParse")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryParse", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryParse",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (input, result))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (input, result))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TTT")]
-#[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(u8)]
 pub enum TimeSpanParse_TTT {
     #[default]
     End = 1u8,
@@ -1059,8 +1008,7 @@ pub enum TimeSpanParse_TTT {
     Sep = 3u8,
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TTT")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Globalization::TimeSpanParse_TTT {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::TimeSpanParse_TTT {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
@@ -1079,18 +1027,14 @@ for crate::System::Globalization::TimeSpanParse_TTT {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TTT")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Globalization::TimeSpanParse_TTT {
+unsafe impl quest_hook::libil2cpp::Argument for crate::System::Globalization::TimeSpanParse_TTT {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1100,8 +1044,7 @@ for crate::System::Globalization::TimeSpanParse_TTT {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TTT")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Globalization::TimeSpanParse_TTT {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Globalization::TimeSpanParse_TTT {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1114,23 +1057,19 @@ for crate::System::Globalization::TimeSpanParse_TTT {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TTT")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Globalization::TimeSpanParse_TTT {
+unsafe impl quest_hook::libil2cpp::Returned for crate::System::Globalization::TimeSpanParse_TTT {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TTT")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Globalization::TimeSpanParse_TTT {
+unsafe impl quest_hook::libil2cpp::Return for crate::System::Globalization::TimeSpanParse_TTT {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1143,8 +1082,8 @@ for crate::System::Globalization::TimeSpanParse_TTT {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TimeSpanParse_TimeSpanRawInfo {
     pub _lastSeenTTT: crate::System::Globalization::TimeSpanParse_TTT,
     pub _tokenCount: i32,
@@ -1170,7 +1109,8 @@ pub struct TimeSpanParse_TimeSpanRawInfo {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
@@ -1189,18 +1129,16 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1211,7 +1149,8 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1225,22 +1164,22 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1254,7 +1193,8 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1272,31 +1212,27 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("AddNum")
+                    .find_method::<(
+                        crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 2usize>("AddNum")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddNum",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddNum",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (num, result))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (num, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddSep(
@@ -1306,40 +1242,37 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::ReadOnlySpan_1<char>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("AddSep")
+                    .find_method::<(
+                        crate::System::ReadOnlySpan_1<char>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 2usize>("AddSep")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddSep",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddSep",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (sep, result))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (sep, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn FullAppCompatMatch(
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
@@ -1354,18 +1287,17 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pattern))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
     }
     pub fn FullDHMMatch(
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
@@ -1380,18 +1312,17 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pattern))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
     }
     pub fn FullDHMSMatch(
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
@@ -1406,18 +1337,17 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pattern))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
     }
     pub fn FullDMatch(
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
@@ -1432,18 +1362,17 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pattern))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
     }
     pub fn FullHMMatch(
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
@@ -1458,18 +1387,17 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pattern))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
     }
     pub fn FullHMSFMatch(
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
@@ -1484,18 +1412,17 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pattern))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
     }
     pub fn FullHMSMatch(
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
@@ -1510,18 +1437,17 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pattern))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
     }
     pub fn FullMatch(
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
@@ -1536,18 +1462,17 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pattern))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
         dtfi: quest_hook::libil2cpp::Gc<crate::System::Globalization::DateTimeFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -1564,18 +1489,18 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (dtfi))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (dtfi))? };
         Ok(__cordl_ret.into())
     }
     pub fn PartialAppCompatMatch(
         &mut self,
         pattern: crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Globalization::TimeSpanFormat_FormatLiterals),
@@ -1590,9 +1515,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pattern))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (pattern))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessToken(
@@ -1604,43 +1527,39 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
             crate::System::Globalization::TimeSpanParse_TimeSpanResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::TimeSpanParse_TimeSpanResult,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("ProcessToken")
+                    .find_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+                        >,
+                    ), bool, 2usize>("ProcessToken")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessToken", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessToken",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (tok, result))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (tok, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_NegativeInvariant(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::TimeSpanFormat_FormatLiterals>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1655,19 +1574,18 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_NegativeLocalized(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::TimeSpanFormat_FormatLiterals>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1682,19 +1600,18 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PositiveInvariant(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::TimeSpanFormat_FormatLiterals>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1709,19 +1626,18 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PositiveLocalized(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::TimeSpanFormat_FormatLiterals>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1736,22 +1652,22 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TimeSpanParse_TimeSpanResult {
     pub parsedTimeSpan: crate::System::TimeSpan,
     pub _throwOnFailure: bool,
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanResult
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
@@ -1770,18 +1686,16 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanResult
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1792,7 +1706,8 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanResult
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1806,22 +1721,22 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanResult
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanResult
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1835,7 +1750,8 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanResult
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1853,40 +1769,29 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanResult {
         messageArgument: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         argumentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Globalization::TimeSpanParse_ParseFailureKind,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        bool,
-                        4usize,
-                    >("SetFailure")
+                    .find_method::<(
+                        crate::System::Globalization::TimeSpanParse_ParseFailureKind,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), bool, 4usize>("SetFailure")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetFailure", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetFailure",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (kind, resourceKey, messageArgument, argumentName),
-                )?
+                .invoke_unchecked(self, (kind, resourceKey, messageArgument, argumentName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1894,28 +1799,29 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanResult {
         &mut self,
         throwOnFailure: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (throwOnFailure))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (throwOnFailure))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
-#[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(u8)]
 pub enum TimeSpanParse_TimeSpanStandardStyles {
     #[default]
     Any = 3u8,
@@ -1926,7 +1832,8 @@ pub enum TimeSpanParse_TimeSpanStandardStyles {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
@@ -1945,18 +1852,16 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1967,7 +1872,8 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1981,22 +1887,22 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2009,8 +1915,8 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TimeSpanParse_TimeSpanToken {
     pub _ttt: crate::System::Globalization::TimeSpanParse_TTT,
     pub _num: i32,
@@ -2019,7 +1925,8 @@ pub struct TimeSpanParse_TimeSpanToken {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanToken
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
@@ -2038,18 +1945,16 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanToken
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2060,7 +1965,8 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanToken
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2074,22 +1980,22 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanToken
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanToken
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2103,7 +2009,8 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanToken
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2115,16 +2022,18 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
 #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanToken")]
 impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
     pub fn IsInvalidFraction(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsInvalidFraction")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsInvalidFraction", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsInvalidFraction",
+                            0usize
                         )
                     })
             });
@@ -2135,9 +2044,10 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         &mut self,
         _cordl_type: crate::System::Globalization::TimeSpanParse_TTT,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Globalization::TimeSpanParse_TTT),
@@ -2152,9 +2062,8 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_TimeSpanParse_TTT_i32_i32_ReadOnlySpan_1_3(
@@ -2164,24 +2073,22 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         leadingZeroes: i32,
         separator: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::System::Globalization::TimeSpanParse_TTT,
-                            i32,
-                            i32,
-                            crate::System::ReadOnlySpan_1<char>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::System::Globalization::TimeSpanParse_TTT,
+                        i32,
+                        i32,
+                        crate::System::ReadOnlySpan_1<char>,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
@@ -2196,22 +2103,23 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         &mut self,
         number: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (number))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (number))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_2(
@@ -2219,39 +2127,37 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         number: i32,
         leadingZeroes: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(i32, i32), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (number, leadingZeroes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (number, leadingZeroes))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TimeSpanParse_TimeSpanTokenizer {
     pub _value: crate::System::ReadOnlySpan_1<char>,
     pub _pos: i32,
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
@@ -2270,18 +2176,16 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2292,7 +2196,8 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2306,22 +2211,22 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2335,7 +2240,8 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
+    for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2346,35 +2252,34 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
 }
 #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
-    pub fn BackOne(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn BackOne(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("BackOne")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "BackOne",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BackOne",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextToken(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Globalization::TimeSpanParse_TimeSpanToken,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::TimeSpanParse_TimeSpanToken>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2389,18 +2294,18 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
                         )
                     })
             });
-        let __cordl_ret: crate::System::Globalization::TimeSpanParse_TimeSpanToken = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Globalization::TimeSpanParse_TimeSpanToken =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_ReadOnlySpan_1_0(
         &mut self,
         input: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::ReadOnlySpan_1<char>),
@@ -2415,9 +2320,8 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (input))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_1(
@@ -2425,9 +2329,10 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         input: crate::System::ReadOnlySpan_1<char>,
         startPosition: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::ReadOnlySpan_1<char>, i32),
@@ -2442,21 +2347,22 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (input, startPosition))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (input, startPosition))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_EOL(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_EOL")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_EOL",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_EOL",
                             0usize
                         )
                     })
@@ -2465,16 +2371,18 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         Ok(__cordl_ret.into())
     }
     pub fn get_NextChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), char, 0usize>("get_NextChar")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_NextChar", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_NextChar",
+                            0usize
                         )
                     })
             });

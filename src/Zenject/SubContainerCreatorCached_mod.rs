@@ -14,7 +14,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SubContainerCreatorC
     const NAMESPACE: &'static str = "Zenject";
     const CLASS_NAME: &'static str = "SubContainerCreatorCached";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,43 +48,40 @@ impl crate::Zenject::SubContainerCreatorCached {
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::Zenject::TypeValuePair,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::Zenject::TypeValuePair,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                        2usize,
-                    >("CreateSubContainer")
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                    ), quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>, 2usize>(
+                        "CreateSubContainer",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateSubContainer", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateSubContainer",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (args, context))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (args, context))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         subCreator: quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (subCreator))?;
         Ok(__cordl_object.into())
@@ -92,9 +90,10 @@ impl crate::Zenject::SubContainerCreatorCached {
         &mut self,
         subCreator: quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -111,9 +110,8 @@ impl crate::Zenject::SubContainerCreatorCached {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (subCreator))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (subCreator))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -127,15 +125,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::SubContainerCreatorCa
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorCached")]
-impl AsRef<crate::Zenject::ISubContainerCreator>
-for crate::Zenject::SubContainerCreatorCached {
+impl AsRef<crate::Zenject::ISubContainerCreator> for crate::Zenject::SubContainerCreatorCached {
     fn as_ref(&self) -> &crate::Zenject::ISubContainerCreator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorCached")]
-impl AsMut<crate::Zenject::ISubContainerCreator>
-for crate::Zenject::SubContainerCreatorCached {
+impl AsMut<crate::Zenject::ISubContainerCreator> for crate::Zenject::SubContainerCreatorCached {
     fn as_mut(&mut self) -> &mut crate::Zenject::ISubContainerCreator {
         unsafe { std::mem::transmute(self) }
     }

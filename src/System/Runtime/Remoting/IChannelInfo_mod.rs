@@ -1,18 +1,18 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+IChannelInfo")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IChannelInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+IChannelInfo")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Remoting::IChannelInfo {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Runtime::Remoting::IChannelInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Remoting";
     const CLASS_NAME: &'static str = "IChannelInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,9 +39,7 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::IChannelInfo {
 }
 #[cfg(feature = "System+Runtime+Remoting+IChannelInfo")]
 impl crate::System::Runtime::Remoting::IChannelInfo {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_ChannelData(
@@ -53,26 +51,22 @@ impl crate::System::Runtime::Remoting::IChannelInfo {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         >,
-                        0usize,
-                    >("get_ChannelData")
+                    >, 0usize>("get_ChannelData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ChannelData", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ChannelData",
+                            0usize
                         )
                     })
             });
@@ -85,8 +79,7 @@ impl crate::System::Runtime::Remoting::IChannelInfo {
     }
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+IChannelInfo")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Remoting::IChannelInfo {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Remoting::IChannelInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

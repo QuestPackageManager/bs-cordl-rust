@@ -1,13 +1,12 @@
 #[cfg(feature = "cordl_class_Unity+Collections+NativeHashMapDispose")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct NativeHashMapDispose {
     pub m_HashMapData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Allocator: crate::Unity::Collections::AllocatorManager_AllocatorHandle,
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeHashMapDispose")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::NativeHashMapDispose {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Collections::NativeHashMapDispose {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections";
@@ -26,18 +25,14 @@ for crate::Unity::Collections::NativeHashMapDispose {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeHashMapDispose")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Collections::NativeHashMapDispose {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Collections::NativeHashMapDispose {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,8 +42,7 @@ for crate::Unity::Collections::NativeHashMapDispose {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeHashMapDispose")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Collections::NativeHashMapDispose {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Collections::NativeHashMapDispose {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -61,23 +55,19 @@ for crate::Unity::Collections::NativeHashMapDispose {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeHashMapDispose")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Collections::NativeHashMapDispose {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Collections::NativeHashMapDispose {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeHashMapDispose")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Collections::NativeHashMapDispose {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Collections::NativeHashMapDispose {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -91,7 +81,8 @@ for crate::Unity::Collections::NativeHashMapDispose {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeHashMapDispose")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Collections::NativeHashMapDispose {
+    for crate::Unity::Collections::NativeHashMapDispose
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -102,25 +93,24 @@ for crate::Unity::Collections::NativeHashMapDispose {
 }
 #[cfg(feature = "Unity+Collections+NativeHashMapDispose")]
 impl crate::Unity::Collections::NativeHashMapDispose {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

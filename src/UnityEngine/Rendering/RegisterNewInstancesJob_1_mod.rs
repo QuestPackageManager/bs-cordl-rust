@@ -1,37 +1,33 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RegisterNewInstancesJob_1")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct RegisterNewInstancesJob_1<T: quest_hook::libil2cpp::Type> {
     pub instanceIDs: crate::Unity::Collections::NativeArray_1<i32>,
     pub batchIDs: crate::Unity::Collections::NativeArray_1<T>,
-    pub hashMap: crate::Unity::Collections::NativeParallelHashMap_2_ParallelWriter<
-        i32,
-        T,
-    >,
+    pub hashMap: crate::Unity::Collections::NativeParallelHashMap_2_ParallelWriter<i32, T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RegisterNewInstancesJob_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
+    for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T>
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "RegisterNewInstancesJob`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "UnityEngine.Rendering",
-                        "RegisterNewInstancesJob`1",
-                    )
-                    .unwrap()
-                    .make_generic::<(T)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find(
+                "UnityEngine.Rendering",
+                "RegisterNewInstancesJob`1",
+            )
+            .unwrap()
+            .make_generic::<(T)>()
+            .unwrap()
+            .unwrap()
+        })
     }
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
@@ -47,18 +43,16 @@ for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RegisterNewInstancesJob_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
+    for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -69,7 +63,8 @@ for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RegisterNewInstancesJob_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
+    for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -83,22 +78,22 @@ for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RegisterNewInstancesJob_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
+    for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RegisterNewInstancesJob_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
+    for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -112,7 +107,8 @@ for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RegisterNewInstancesJob_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
+    for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T>
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -122,47 +118,50 @@ for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+RegisterNewInstancesJob_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
+impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
     pub const k_BatchSize: i32 = 128i32;
     pub fn Execute(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+RegisterNewInstancesJob_1")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::Unity::Jobs::IJobParallelFor>
-for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
+    for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T>
+{
     fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+RegisterNewInstancesJob_1")]
 impl<T: quest_hook::libil2cpp::Type> AsMut<crate::Unity::Jobs::IJobParallelFor>
-for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T> {
+    for crate::UnityEngine::Rendering::RegisterNewInstancesJob_1<T>
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }

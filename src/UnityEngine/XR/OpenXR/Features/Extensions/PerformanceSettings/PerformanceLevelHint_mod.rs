@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Extensions+PerformanceSettings+PerformanceLevelHint"
 )]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum PerformanceLevelHint {
     #[default]
     Boost = 75i32,

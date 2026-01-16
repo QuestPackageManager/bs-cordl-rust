@@ -3,12 +3,8 @@
 #[derive(Debug)]
 pub struct HierarchyIconAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub gameObjectTooltip: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub gameObjectIconPath: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub gameObjectTooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub gameObjectIconPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub gameObjectIconTint: crate::UnityEngine::Color,
     pub parentTooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub parentIconPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -16,13 +12,15 @@ pub struct HierarchyIconAttribute {
 }
 #[cfg(feature = "cordl_class_OculusStudios+HierarchyIcons+HierarchyIconAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::OculusStudios::HierarchyIcons::HierarchyIconAttribute {
+    for crate::OculusStudios::HierarchyIcons::HierarchyIconAttribute
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OculusStudios.HierarchyIcons";
     const CLASS_NAME: &'static str = "HierarchyIconAttribute";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,8 +40,7 @@ impl std::ops::Deref for crate::OculusStudios::HierarchyIcons::HierarchyIconAttr
     }
 }
 #[cfg(feature = "OculusStudios+HierarchyIcons+HierarchyIconAttribute")]
-impl std::ops::DerefMut
-for crate::OculusStudios::HierarchyIcons::HierarchyIconAttribute {
+impl std::ops::DerefMut for crate::OculusStudios::HierarchyIcons::HierarchyIconAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -51,195 +48,148 @@ for crate::OculusStudios::HierarchyIcons::HierarchyIconAttribute {
 #[cfg(feature = "OculusStudios+HierarchyIcons+HierarchyIconAttribute")]
 impl crate::OculusStudios::HierarchyIcons::HierarchyIconAttribute {
     pub fn New_Icon_Icon1(
-        gameObjectTooltip: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        gameObjectTooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         gameObjectIconPath: crate::OculusStudios::HierarchyIcons::Icon,
-        gameObjectIconHex: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        gameObjectIconHex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentTooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentIconPath: crate::OculusStudios::HierarchyIcons::Icon,
         parentIconHex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    gameObjectTooltip,
-                    gameObjectIconPath,
-                    gameObjectIconHex,
-                    parentTooltip,
-                    parentIconPath,
-                    parentIconHex,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                gameObjectTooltip,
+                gameObjectIconPath,
+                gameObjectIconHex,
+                parentTooltip,
+                parentIconPath,
+                parentIconHex,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn New_Il2CppString_Il2CppString0(
-        gameObjectTooltip: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
-        gameObjectIconPath: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
-        gameObjectIconHex: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        gameObjectTooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        gameObjectIconPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        gameObjectIconHex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentTooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentIconPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentIconHex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    gameObjectTooltip,
-                    gameObjectIconPath,
-                    gameObjectIconHex,
-                    parentTooltip,
-                    parentIconPath,
-                    parentIconHex,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                gameObjectTooltip,
+                gameObjectIconPath,
+                gameObjectIconHex,
+                parentTooltip,
+                parentIconPath,
+                parentIconHex,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor_Icon_Icon1(
         &mut self,
-        gameObjectTooltip: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        gameObjectTooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         gameObjectIconPath: crate::OculusStudios::HierarchyIcons::Icon,
-        gameObjectIconHex: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        gameObjectIconHex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentTooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentIconPath: crate::OculusStudios::HierarchyIcons::Icon,
         parentIconHex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::OculusStudios::HierarchyIcons::Icon,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::OculusStudios::HierarchyIcons::Icon,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::OculusStudios::HierarchyIcons::Icon,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::OculusStudios::HierarchyIcons::Icon,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 6usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        gameObjectTooltip,
-                        gameObjectIconPath,
-                        gameObjectIconHex,
-                        parentTooltip,
-                        parentIconPath,
-                        parentIconHex,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    gameObjectTooltip,
+                    gameObjectIconPath,
+                    gameObjectIconHex,
+                    parentTooltip,
+                    parentIconPath,
+                    parentIconHex,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_Il2CppString0(
         &mut self,
-        gameObjectTooltip: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
-        gameObjectIconPath: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
-        gameObjectIconHex: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        gameObjectTooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        gameObjectIconPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        gameObjectIconHex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentTooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentIconPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentIconHex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 6usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        gameObjectTooltip,
-                        gameObjectIconPath,
-                        gameObjectIconHex,
-                        parentTooltip,
-                        parentIconPath,
-                        parentIconHex,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    gameObjectTooltip,
+                    gameObjectIconPath,
+                    gameObjectIconHex,
+                    parentTooltip,
+                    parentIconPath,
+                    parentIconHex,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_OculusStudios+HierarchyIcons+HierarchyIconAttribute")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::OculusStudios::HierarchyIcons::HierarchyIconAttribute {
+    for crate::OculusStudios::HierarchyIcons::HierarchyIconAttribute
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

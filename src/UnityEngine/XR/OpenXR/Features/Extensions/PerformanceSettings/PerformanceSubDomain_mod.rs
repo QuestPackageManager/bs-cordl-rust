@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Extensions+PerformanceSettings+PerformanceSubDomain"
 )]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum PerformanceSubDomain {
     #[default]
     Compositing = 1i32,

@@ -2,22 +2,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorParameter {
-    __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<
-        crate::UnityEngine::Color,
-    >,
+    __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<crate::UnityEngine::Color>,
     pub hdr: bool,
     pub showAlpha: bool,
     pub showEyeDropper: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ColorParameter")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::ColorParameter {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::ColorParameter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "ColorParameter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -31,9 +29,7 @@ for crate::UnityEngine::Rendering::ColorParameter {
 }
 #[cfg(feature = "UnityEngine+Rendering+ColorParameter")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::ColorParameter {
-    type Target = crate::UnityEngine::Rendering::VolumeParameter_1<
-        crate::UnityEngine::Color,
-    >;
+    type Target = crate::UnityEngine::Rendering::VolumeParameter_1<crate::UnityEngine::Color>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,9 +48,10 @@ impl crate::UnityEngine::Rendering::ColorParameter {
         to: crate::UnityEngine::Color,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color, crate::UnityEngine::Color, f32),
@@ -69,17 +66,16 @@ impl crate::UnityEngine::Rendering::ColorParameter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (from, to, t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (from, to, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_Color__cordl_bool0(
         value: crate::UnityEngine::Color,
         overrideState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (value, overrideState))?;
         Ok(__cordl_object.into())
@@ -91,13 +87,12 @@ impl crate::UnityEngine::Rendering::ColorParameter {
         showEyeDropper: bool,
         overrideState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (value, hdr, showAlpha, showEyeDropper, overrideState),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (value, hdr, showAlpha, showEyeDropper, overrideState),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor_Color__cordl_bool0(
@@ -105,9 +100,10 @@ impl crate::UnityEngine::Rendering::ColorParameter {
         value: crate::UnityEngine::Color,
         overrideState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color, bool),
@@ -122,9 +118,8 @@ impl crate::UnityEngine::Rendering::ColorParameter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value, overrideState))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value, overrideState))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool__cordl_bool__cordl_bool1(
@@ -135,9 +130,10 @@ impl crate::UnityEngine::Rendering::ColorParameter {
         showEyeDropper: bool,
         overrideState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color, bool, bool, bool, bool),
@@ -154,17 +150,13 @@ impl crate::UnityEngine::Rendering::ColorParameter {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (value, hdr, showAlpha, showEyeDropper, overrideState),
-                )?
+                .invoke_unchecked(self, (value, hdr, showAlpha, showEyeDropper, overrideState))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ColorParameter")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::ColorParameter {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::ColorParameter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

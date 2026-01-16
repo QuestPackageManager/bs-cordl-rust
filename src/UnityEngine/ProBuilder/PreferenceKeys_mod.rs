@@ -5,14 +5,14 @@ pub struct PreferenceKeys {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PreferenceKeys")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ProBuilder::PreferenceKeys {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::PreferenceKeys {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
     const CLASS_NAME: &'static str = "PreferenceKeys";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -114,7 +114,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceKeys {
     pub const pbShowCollider: &'static str = "pbShowCollider";
     pub const pbShowDetail: &'static str = "pbShowDetail";
     pub const pbShowEditorNotifications: &'static str = "pbShowEditorNotifications";
-    pub const pbShowMissingLightmapUvWarning: &'static str = "pb_Lightmapping::showMissingLightmapUvWarning";
+    pub const pbShowMissingLightmapUvWarning: &'static str =
+        "pb_Lightmapping::showMissingLightmapUvWarning";
     pub const pbShowMover: &'static str = "pbShowMover";
     pub const pbShowNoDraw: &'static str = "pbShowNoDraw";
     pub const pbShowOccluder: &'static str = "pbShowOccluder";
@@ -142,8 +143,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceKeys {
     pub const pluginTitle: &'static str = "ProBuilder";
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PreferenceKeys")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ProBuilder::PreferenceKeys {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::PreferenceKeys {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

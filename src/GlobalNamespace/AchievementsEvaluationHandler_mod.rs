@@ -3,100 +3,68 @@
 #[derive(Debug)]
 pub struct AchievementsEvaluationHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _clearedLevel100Achievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _totalScore100MillionAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _24HoursPlayedAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _kilometersTravelled100Achievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _15ExpertLevelsRankSAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _15ExpertLevelsFullComboAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _15HardLevelsRankSAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _15HardLevelsFullComboAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _expertLevelClearedWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _fullComboExpertWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _goodCuts10000Achievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _resultMinRankANormalWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _resultMinRankSHardWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _resultMinRankSSExpertWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _combo50NormalWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _combo100HardWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _combo500ExpertWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _clearedLevelWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _clearedLevelWithSongSpeedFasterModifierAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _clearedLevelWithInstaFailModifierAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _clearedLevelWithDisappearingArrowsModifierAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _clearedLevelWithBatteryEnergyModifierAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _cleared30MissionsAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _finalMissionClearedAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _allMissionClearedAchievement: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementSO,
-    >,
-    pub _playerDataModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlayerDataModel,
-    >,
-    pub _missionNodesManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMissionNodesManager,
-    >,
-    pub _platform: quest_hook::libil2cpp::Gc<
-        crate::OculusStudios::Platform::Core::IPlatform,
-    >,
+    pub _clearedLevel100Achievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _totalScore100MillionAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _24HoursPlayedAchievement: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _kilometersTravelled100Achievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _15ExpertLevelsRankSAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _15ExpertLevelsFullComboAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _15HardLevelsRankSAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _15HardLevelsFullComboAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _expertLevelClearedWithoutModifiersAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _fullComboExpertWithoutModifiersAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _goodCuts10000Achievement: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _resultMinRankANormalWithoutModifiersAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _resultMinRankSHardWithoutModifiersAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _resultMinRankSSExpertWithoutModifiersAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _combo50NormalWithoutModifiersAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _combo100HardWithoutModifiersAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _combo500ExpertWithoutModifiersAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _clearedLevelWithoutModifiersAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _clearedLevelWithSongSpeedFasterModifierAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _clearedLevelWithInstaFailModifierAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _clearedLevelWithDisappearingArrowsModifierAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _clearedLevelWithBatteryEnergyModifierAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _cleared30MissionsAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _finalMissionClearedAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _allMissionClearedAchievement:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+    pub _missionNodesManager:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNodesManager>,
+    pub _platform: quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IPlatform>,
 }
 #[cfg(feature = "cordl_class_AchievementsEvaluationHandler")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::AchievementsEvaluationHandler {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AchievementsEvaluationHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "AchievementsEvaluationHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -130,33 +98,28 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
         >,
         missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MissionCompletionResults,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMissionNode,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleCampaignOverallStatsDataDidUpdate")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "HandleCampaignOverallStatsDataDidUpdate",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleCampaignOverallStatsDataDidUpdate", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleCampaignOverallStatsDataDidUpdate",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (missionCompletionResults, missionNode))?
+            cordl_method_info.invoke_unchecked(self, (missionCompletionResults, missionNode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -167,31 +130,28 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
         >,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
-                            >,
-                            crate::GlobalNamespace::BeatmapDifficulty,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandlePartyFreePlayOverallStatsDataDidUpdate")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+                        crate::GlobalNamespace::BeatmapDifficulty,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "HandlePartyFreePlayOverallStatsDataDidUpdate",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandlePartyFreePlayOverallStatsDataDidUpdate", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandlePartyFreePlayOverallStatsDataDidUpdate",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (levelCompletionResults, beatmapDifficulty))?
+            cordl_method_info.invoke_unchecked(self, (levelCompletionResults, beatmapDifficulty))?
         };
         Ok(__cordl_ret.into())
     }
@@ -202,60 +162,56 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
         >,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
-                            >,
-                            crate::GlobalNamespace::BeatmapDifficulty,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleSoloFreePlayOverallStatsDataDidUpdate")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+                        crate::GlobalNamespace::BeatmapDifficulty,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "HandleSoloFreePlayOverallStatsDataDidUpdate",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleSoloFreePlayOverallStatsDataDidUpdate", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleSoloFreePlayOverallStatsDataDidUpdate",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (levelCompletionResults, beatmapDifficulty))?
+            cordl_method_info.invoke_unchecked(self, (levelCompletionResults, beatmapDifficulty))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDestroy(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDestroy", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDestroy",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessLevelFinishData(
@@ -265,31 +221,28 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
             crate::GlobalNamespace::LevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::BeatmapDifficulty,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ProcessLevelFinishData")
+                    .find_method::<(
+                        crate::GlobalNamespace::BeatmapDifficulty,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "ProcessLevelFinishData"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessLevelFinishData", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessLevelFinishData",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (beatmapDifficulty, levelCompletionResults))?
+            cordl_method_info.invoke_unchecked(self, (beatmapDifficulty, levelCompletionResults))?
         };
         Ok(__cordl_ret.into())
     }
@@ -300,33 +253,28 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
             crate::GlobalNamespace::MissionCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMissionNode,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MissionCompletionResults,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ProcessMissionFinishData")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "ProcessMissionFinishData"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessMissionFinishData", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessMissionFinishData",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (missionNode, missionCompletionResults))?
+            cordl_method_info.invoke_unchecked(self, (missionNode, missionCompletionResults))?
         };
         Ok(__cordl_ret.into())
     }
@@ -337,80 +285,74 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
             crate::GlobalNamespace::LevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::BeatmapDifficulty,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ProcessSoloFreePlayLevelFinishData")
+                    .find_method::<(
+                        crate::GlobalNamespace::BeatmapDifficulty,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "ProcessSoloFreePlayLevelFinishData"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessSoloFreePlayLevelFinishData", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessSoloFreePlayLevelFinishData",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (beatmapDifficulty, levelCompletionResults))?
+            cordl_method_info.invoke_unchecked(self, (beatmapDifficulty, levelCompletionResults))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Start",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_AchievementsEvaluationHandler")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::AchievementsEvaluationHandler {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AchievementsEvaluationHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

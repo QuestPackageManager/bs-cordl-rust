@@ -26,7 +26,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameplayModi
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "GameplayModifiers";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -63,9 +64,10 @@ impl crate::GlobalNamespace::GameplayModifiers {
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -82,16 +84,12 @@ impl crate::GlobalNamespace::GameplayModifiers {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn CopyWith(
         &mut self,
-        energyType: crate::System::Nullable_1<
-            crate::GlobalNamespace::GameplayModifiers_EnergyType,
-        >,
+        energyType: crate::System::Nullable_1<crate::GlobalNamespace::GameplayModifiers_EnergyType>,
         noFailOn0Energy: crate::System::Nullable_1<bool>,
         instaFail: crate::System::Nullable_1<bool>,
         failOnSaberClash: crate::System::Nullable_1<bool>,
@@ -102,9 +100,7 @@ impl crate::GlobalNamespace::GameplayModifiers {
         fastNotes: crate::System::Nullable_1<bool>,
         strictAngles: crate::System::Nullable_1<bool>,
         disappearingArrows: crate::System::Nullable_1<bool>,
-        songSpeed: crate::System::Nullable_1<
-            crate::GlobalNamespace::GameplayModifiers_SongSpeed,
-        >,
+        songSpeed: crate::System::Nullable_1<crate::GlobalNamespace::GameplayModifiers_SongSpeed>,
         noArrows: crate::System::Nullable_1<bool>,
         ghostNotes: crate::System::Nullable_1<bool>,
         proMode: crate::System::Nullable_1<bool>,
@@ -113,9 +109,10 @@ impl crate::GlobalNamespace::GameplayModifiers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -154,30 +151,27 @@ impl crate::GlobalNamespace::GameplayModifiers {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        energyType,
-                        noFailOn0Energy,
-                        instaFail,
-                        failOnSaberClash,
-                        enabledObstacleType,
-                        noBombs,
-                        fastNotes,
-                        strictAngles,
-                        disappearingArrows,
-                        songSpeed,
-                        noArrows,
-                        ghostNotes,
-                        proMode,
-                        zenMode,
-                        smallCubes,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    energyType,
+                    noFailOn0Energy,
+                    instaFail,
+                    failOnSaberClash,
+                    enabledObstacleType,
+                    noBombs,
+                    fastNotes,
+                    strictAngles,
+                    disappearingArrows,
+                    songSpeed,
+                    noArrows,
+                    ghostNotes,
+                    proMode,
+                    zenMode,
+                    smallCubes,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -186,9 +180,10 @@ impl crate::GlobalNamespace::GameplayModifiers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -207,9 +202,8 @@ impl crate::GlobalNamespace::GameplayModifiers {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (reader))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers> =
+            unsafe { cordl_method_info.invoke_unchecked((), (reader))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromGameplayModifierMask(
@@ -217,9 +211,10 @@ impl crate::GlobalNamespace::GameplayModifiers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::GameplayModifierMask),
@@ -236,22 +231,23 @@ impl crate::GlobalNamespace::GameplayModifiers {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (mask))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers> =
+            unsafe { cordl_method_info.invoke_unchecked((), (mask))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsWithoutModifiers(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsWithoutModifiers")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsWithoutModifiers", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsWithoutModifiers",
+                            0usize
                         )
                     })
             });
@@ -264,7 +260,8 @@ impl crate::GlobalNamespace::GameplayModifiers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -288,14 +285,13 @@ impl crate::GlobalNamespace::GameplayModifiers {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (reader))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reader))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -317,38 +313,38 @@ impl crate::GlobalNamespace::GameplayModifiers {
         zenMode: bool,
         smallCubes: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    energyType,
-                    noFailOn0Energy,
-                    instaFail,
-                    failOnSaberClash,
-                    enabledObstacleType,
-                    noBombs,
-                    fastNotes,
-                    strictAngles,
-                    disappearingArrows,
-                    songSpeed,
-                    noArrows,
-                    ghostNotes,
-                    proMode,
-                    zenMode,
-                    smallCubes,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                energyType,
+                noFailOn0Energy,
+                instaFail,
+                failOnSaberClash,
+                enabledObstacleType,
+                noBombs,
+                fastNotes,
+                strictAngles,
+                disappearingArrows,
+                songSpeed,
+                noArrows,
+                ghostNotes,
+                proMode,
+                zenMode,
+                smallCubes,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn Serialize(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -365,30 +361,28 @@ impl crate::GlobalNamespace::GameplayModifiers {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (writer))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor_0(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_GameplayModifiers_EnergyType__cordl_bool__cordl_bool__cordl_bool_GameplayModifiers_EnabledObstacleType__cordl_bool__cordl_bool__cordl_bool__cordl_bool_GameplayModifiers_SongSpeed__cordl_bool__cordl_bool__cordl_bool__cordl_bool__cordl_bool1(
@@ -409,75 +403,74 @@ impl crate::GlobalNamespace::GameplayModifiers {
         zenMode: bool,
         smallCubes: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::GameplayModifiers_EnergyType,
-                            bool,
-                            bool,
-                            bool,
-                            crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType,
-                            bool,
-                            bool,
-                            bool,
-                            bool,
-                            crate::GlobalNamespace::GameplayModifiers_SongSpeed,
-                            bool,
-                            bool,
-                            bool,
-                            bool,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        15usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::GlobalNamespace::GameplayModifiers_EnergyType,
+                        bool,
+                        bool,
+                        bool,
+                        crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType,
+                        bool,
+                        bool,
+                        bool,
+                        bool,
+                        crate::GlobalNamespace::GameplayModifiers_SongSpeed,
+                        bool,
+                        bool,
+                        bool,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 15usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             15usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        energyType,
-                        noFailOn0Energy,
-                        instaFail,
-                        failOnSaberClash,
-                        enabledObstacleType,
-                        noBombs,
-                        fastNotes,
-                        strictAngles,
-                        disappearingArrows,
-                        songSpeed,
-                        noArrows,
-                        ghostNotes,
-                        proMode,
-                        zenMode,
-                        smallCubes,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    energyType,
+                    noFailOn0Energy,
+                    instaFail,
+                    failOnSaberClash,
+                    enabledObstacleType,
+                    noBombs,
+                    fastNotes,
+                    strictAngles,
+                    disappearingArrows,
+                    songSpeed,
+                    noArrows,
+                    ghostNotes,
+                    proMode,
+                    zenMode,
+                    smallCubes,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_cutAngleTolerance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_cutAngleTolerance")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_cutAngleTolerance", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_cutAngleTolerance",
+                            0usize
                         )
                     })
             });
@@ -485,16 +478,18 @@ impl crate::GlobalNamespace::GameplayModifiers {
         Ok(__cordl_ret.into())
     }
     pub fn get_disappearingArrows(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_disappearingArrows")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_disappearingArrows", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_disappearingArrows",
+                            0usize
                         )
                     })
             });
@@ -503,12 +498,12 @@ impl crate::GlobalNamespace::GameplayModifiers {
     }
     pub fn get_enabledObstacleType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -523,19 +518,17 @@ impl crate::GlobalNamespace::GameplayModifiers {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_energyType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::GameplayModifiers_EnergyType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::GameplayModifiers_EnergyType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -550,22 +543,23 @@ impl crate::GlobalNamespace::GameplayModifiers {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::GameplayModifiers_EnergyType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::GameplayModifiers_EnergyType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_failOnSaberClash(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_failOnSaberClash")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_failOnSaberClash", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_failOnSaberClash",
+                            0usize
                         )
                     })
             });
@@ -573,16 +567,18 @@ impl crate::GlobalNamespace::GameplayModifiers {
         Ok(__cordl_ret.into())
     }
     pub fn get_fastNotes(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_fastNotes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_fastNotes", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_fastNotes",
+                            0usize
                         )
                     })
             });
@@ -590,16 +586,18 @@ impl crate::GlobalNamespace::GameplayModifiers {
         Ok(__cordl_ret.into())
     }
     pub fn get_ghostNotes(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ghostNotes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ghostNotes", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ghostNotes",
+                            0usize
                         )
                     })
             });
@@ -607,16 +605,18 @@ impl crate::GlobalNamespace::GameplayModifiers {
         Ok(__cordl_ret.into())
     }
     pub fn get_instaFail(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_instaFail")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_instaFail", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_instaFail",
+                            0usize
                         )
                     })
             });
@@ -624,16 +624,18 @@ impl crate::GlobalNamespace::GameplayModifiers {
         Ok(__cordl_ret.into())
     }
     pub fn get_noArrows(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_noArrows")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_noArrows", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_noArrows",
+                            0usize
                         )
                     })
             });
@@ -641,16 +643,18 @@ impl crate::GlobalNamespace::GameplayModifiers {
         Ok(__cordl_ret.into())
     }
     pub fn get_noBombs(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_noBombs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_noBombs", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_noBombs",
+                            0usize
                         )
                     })
             });
@@ -658,16 +662,18 @@ impl crate::GlobalNamespace::GameplayModifiers {
         Ok(__cordl_ret.into())
     }
     pub fn get_noFailOn0Energy(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_noFailOn0Energy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_noFailOn0Energy", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_noFailOn0Energy",
+                            0usize
                         )
                     })
             });
@@ -675,16 +681,18 @@ impl crate::GlobalNamespace::GameplayModifiers {
         Ok(__cordl_ret.into())
     }
     pub fn get_notesUniformScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_notesUniformScale")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_notesUniformScale", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_notesUniformScale",
+                            0usize
                         )
                     })
             });
@@ -692,16 +700,18 @@ impl crate::GlobalNamespace::GameplayModifiers {
         Ok(__cordl_ret.into())
     }
     pub fn get_proMode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_proMode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_proMode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_proMode",
+                            0usize
                         )
                     })
             });
@@ -709,16 +719,18 @@ impl crate::GlobalNamespace::GameplayModifiers {
         Ok(__cordl_ret.into())
     }
     pub fn get_smallCubes(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_smallCubes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_smallCubes", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_smallCubes",
+                            0usize
                         )
                     })
             });
@@ -727,42 +739,41 @@ impl crate::GlobalNamespace::GameplayModifiers {
     }
     pub fn get_songSpeed(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::GameplayModifiers_SongSpeed,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::GameplayModifiers_SongSpeed> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::GlobalNamespace::GameplayModifiers_SongSpeed,
-                        0usize,
-                    >("get_songSpeed")
+                    .find_method::<(), crate::GlobalNamespace::GameplayModifiers_SongSpeed, 0usize>(
+                        "get_songSpeed",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_songSpeed", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_songSpeed",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::GameplayModifiers_SongSpeed = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::GameplayModifiers_SongSpeed =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_songSpeedMul(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_songSpeedMul")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_songSpeedMul", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_songSpeedMul",
+                            0usize
                         )
                     })
             });
@@ -770,16 +781,18 @@ impl crate::GlobalNamespace::GameplayModifiers {
         Ok(__cordl_ret.into())
     }
     pub fn get_strictAngles(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_strictAngles")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_strictAngles", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_strictAngles",
+                            0usize
                         )
                     })
             });
@@ -787,16 +800,18 @@ impl crate::GlobalNamespace::GameplayModifiers {
         Ok(__cordl_ret.into())
     }
     pub fn get_zenMode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_zenMode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_zenMode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_zenMode",
+                            0usize
                         )
                     })
             });
@@ -815,24 +830,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameplayModif
 }
 #[cfg(feature = "GameplayModifiers")]
 impl AsRef<crate::LiteNetLib::Utils::INetImmutableSerializable>
-for crate::GlobalNamespace::GameplayModifiers {
+    for crate::GlobalNamespace::GameplayModifiers
+{
     fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetImmutableSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "GameplayModifiers")]
 impl AsMut<crate::LiteNetLib::Utils::INetImmutableSerializable>
-for crate::GlobalNamespace::GameplayModifiers {
+    for crate::GlobalNamespace::GameplayModifiers
+{
     fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "GameplayModifiers")]
-impl AsRef<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
-    >,
-> for crate::GlobalNamespace::GameplayModifiers {
+impl
+    AsRef<
+        crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+        >,
+    > for crate::GlobalNamespace::GameplayModifiers
+{
     fn as_ref(
         &self,
     ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
@@ -842,11 +861,13 @@ impl AsRef<
     }
 }
 #[cfg(feature = "GameplayModifiers")]
-impl AsMut<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
-    >,
-> for crate::GlobalNamespace::GameplayModifiers {
+impl
+    AsMut<
+        crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+        >,
+    > for crate::GlobalNamespace::GameplayModifiers
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
@@ -856,8 +877,8 @@ impl AsMut<
     }
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+EnabledObstacleType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum GameplayModifiers_EnabledObstacleType {
     #[default]
     All = 0i32,
@@ -866,7 +887,8 @@ pub enum GameplayModifiers_EnabledObstacleType {
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
+    for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -885,18 +907,16 @@ for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
+    for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -907,7 +927,8 @@ for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
+    for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -921,22 +942,22 @@ for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
+    for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
+    for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -949,16 +970,15 @@ for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
     }
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+EnergyType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum GameplayModifiers_EnergyType {
     #[default]
     Bar = 0i32,
     Battery = 1i32,
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+EnergyType")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GameplayModifiers_EnergyType {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameplayModifiers_EnergyType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -977,18 +997,16 @@ for crate::GlobalNamespace::GameplayModifiers_EnergyType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::GameplayModifiers_EnergyType {
+    for crate::GlobalNamespace::GameplayModifiers_EnergyType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -999,7 +1017,8 @@ for crate::GlobalNamespace::GameplayModifiers_EnergyType {
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::GameplayModifiers_EnergyType {
+    for crate::GlobalNamespace::GameplayModifiers_EnergyType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1013,22 +1032,20 @@ for crate::GlobalNamespace::GameplayModifiers_EnergyType {
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::GameplayModifiers_EnergyType {
+    for crate::GlobalNamespace::GameplayModifiers_EnergyType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+EnergyType")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::GameplayModifiers_EnergyType {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::GameplayModifiers_EnergyType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1041,8 +1058,8 @@ for crate::GlobalNamespace::GameplayModifiers_EnergyType {
     }
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+SongSpeed")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum GameplayModifiers_SongSpeed {
     #[default]
     Faster = 1i32,
@@ -1051,8 +1068,7 @@ pub enum GameplayModifiers_SongSpeed {
     SuperFast = 3i32,
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+SongSpeed")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1071,18 +1087,16 @@ for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
+    for crate::GlobalNamespace::GameplayModifiers_SongSpeed
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1093,7 +1107,8 @@ for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
+    for crate::GlobalNamespace::GameplayModifiers_SongSpeed
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1107,22 +1122,20 @@ for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
+    for crate::GlobalNamespace::GameplayModifiers_SongSpeed
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+SongSpeed")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

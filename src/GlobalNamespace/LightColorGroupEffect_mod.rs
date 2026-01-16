@@ -5,22 +5,14 @@ pub struct LightColorGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _lightId: i32,
-    pub _lightManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LightWithIdManager,
-    >,
-    pub _tweeningManager: quest_hook::libil2cpp::Gc<
-        crate::Tweening::SongTimeTweeningManager,
-    >,
-    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapCallbacksController,
-    >,
-    pub _bpmController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IBpmController,
-    >,
+    pub _lightManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIdManager>,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
+    pub _beatmapCallbacksController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCallbacksController>,
+    pub _bpmController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBpmController>,
     pub _floatTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
-    pub _lightColorBeatmapEventCallbackWrapper: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    >,
+    pub _lightColorBeatmapEventCallbackWrapper:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallbackWrapper>,
     pub _fromColor: crate::UnityEngine::Color,
     pub _toColor: crate::UnityEngine::Color,
     pub _alternativeFromColor: crate::UnityEngine::Color,
@@ -33,14 +25,14 @@ pub struct LightColorGroupEffect {
     pub _usingBoostColors: bool,
 }
 #[cfg(feature = "cordl_class_LightColorGroupEffect")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LightColorGroupEffect {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LightColorGroupEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LightColorGroupEffect";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -69,25 +61,24 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LightColorGroupEffect {
 impl crate::GlobalNamespace::LightColorGroupEffect {
     #[cfg(feature = "LightColorGroupEffect+InitData")]
     pub type InitData = crate::GlobalNamespace::LightColorGroupEffect_InitData;
-    pub fn Cleanup(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Cleanup(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Cleanup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Cleanup",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Cleanup",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetColor(
@@ -96,9 +87,10 @@ impl crate::GlobalNamespace::LightColorGroupEffect {
         colorBoost: bool,
         brightness: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::EnvironmentColorType, bool, f32),
@@ -114,8 +106,7 @@ impl crate::GlobalNamespace::LightColorGroupEffect {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (colorType, colorBoost, brightness))?
+            cordl_method_info.invoke_unchecked(self, (colorType, colorBoost, brightness))?
         };
         Ok(__cordl_ret.into())
     }
@@ -125,9 +116,10 @@ impl crate::GlobalNamespace::LightColorGroupEffect {
             crate::GlobalNamespace::LightColorBeatmapEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -144,67 +136,56 @@ impl crate::GlobalNamespace::LightColorGroupEffect {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (currentEventData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (currentEventData))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        initData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LightColorGroupEffect_InitData,
-        >,
-        lightManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LightWithIdManager,
-        >,
-        tweeningManager: quest_hook::libil2cpp::Gc<
-            crate::Tweening::SongTimeTweeningManager,
-        >,
+        initData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorGroupEffect_InitData>,
+        lightManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIdManager>,
+        tweeningManager: quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
         colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
         beatmapCallbacksController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCallbacksController,
         >,
         bpmController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBpmController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    initData,
-                    lightManager,
-                    tweeningManager,
-                    colorManager,
-                    beatmapCallbacksController,
-                    bpmController,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                initData,
+                lightManager,
+                tweeningManager,
+                colorManager,
+                beatmapCallbacksController,
+                bpmController,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn SetColor(
         &mut self,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (f32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetColor")
+                    .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("SetColor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetColor", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetColor",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (t))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetData(
@@ -219,49 +200,46 @@ impl crate::GlobalNamespace::LightColorGroupEffect {
         toStrobeBrightness: f32,
         strobeFade: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
-                            f32,
-                            f32,
-                            f32,
-                            f32,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        9usize,
-                    >("SetData")
+                    .find_method::<(
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::Color,
+                        crate::UnityEngine::Color,
+                        f32,
+                        f32,
+                        f32,
+                        f32,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 9usize>("SetData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetData",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetData",
                             9usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        fromColor,
-                        toColor,
-                        alternativeFromColor,
-                        alternativeToColor,
-                        fromStrobeBeatFrequency,
-                        toStrobeBeatFrequency,
-                        fromStrobeBrightness,
-                        toStrobeBrightness,
-                        strobeFade,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    fromColor,
+                    toColor,
+                    alternativeFromColor,
+                    alternativeToColor,
+                    fromStrobeBeatFrequency,
+                    toStrobeBeatFrequency,
+                    fromStrobeBrightness,
+                    toStrobeBrightness,
+                    strobeFade,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -269,101 +247,80 @@ impl crate::GlobalNamespace::LightColorGroupEffect {
         &mut self,
         useBoostColors: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("UseBoostColors")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("UseBoostColors")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UseBoostColors", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UseBoostColors",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (useBoostColors))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (useBoostColors))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        initData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LightColorGroupEffect_InitData,
-        >,
-        lightManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LightWithIdManager,
-        >,
-        tweeningManager: quest_hook::libil2cpp::Gc<
-            crate::Tweening::SongTimeTweeningManager,
-        >,
+        initData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorGroupEffect_InitData>,
+        lightManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIdManager>,
+        tweeningManager: quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
         colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
         beatmapCallbacksController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCallbacksController,
         >,
         bpmController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBpmController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LightColorGroupEffect_InitData,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LightWithIdManager,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Tweening::SongTimeTweeningManager,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ColorManager,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapCallbacksController,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IBpmController,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::LightColorGroupEffect_InitData,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIdManager>,
+                        quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapCallbacksController,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBpmController>,
+                    ), quest_hook::libil2cpp::Void, 6usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        initData,
-                        lightManager,
-                        tweeningManager,
-                        colorManager,
-                        beatmapCallbacksController,
-                        bpmController,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    initData,
+                    lightManager,
+                    tweeningManager,
+                    colorManager,
+                    beatmapCallbacksController,
+                    bpmController,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_LightColorGroupEffect")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LightColorGroupEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightColorGroupEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -381,14 +338,14 @@ pub struct LightColorGroupEffect_InitData {
     pub lightId: i32,
 }
 #[cfg(feature = "cordl_class_LightColorGroupEffect+InitData")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::LightColorGroupEffect_InitData {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LightColorGroupEffect_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "LightColorGroupEffect/InitData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -420,8 +377,8 @@ impl crate::GlobalNamespace::LightColorGroupEffect_InitData {
         elementId: i32,
         lightId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (groupId, elementId, lightId))?;
         Ok(__cordl_object.into())
@@ -432,32 +389,28 @@ impl crate::GlobalNamespace::LightColorGroupEffect_InitData {
         elementId: i32,
         lightId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (groupId, elementId, lightId))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (groupId, elementId, lightId))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_LightColorGroupEffect+InitData")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LightColorGroupEffect_InitData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightColorGroupEffect_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

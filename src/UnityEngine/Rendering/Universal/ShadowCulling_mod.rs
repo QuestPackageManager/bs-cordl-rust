@@ -6,13 +6,15 @@ pub struct ShadowCulling {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ShadowCulling")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::ShadowCulling {
+    for crate::UnityEngine::Rendering::Universal::ShadowCulling
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
     const CLASS_NAME: &'static str = "ShadowCulling";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -58,7 +60,8 @@ impl crate::UnityEngine::Rendering::Universal::ShadowCulling {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -94,17 +97,16 @@ impl crate::UnityEngine::Rendering::Universal::ShadowCulling {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        shadowData,
-                        shadowAtlasLayout,
-                        cullingResults,
-                        shadowCullingInfos,
-                        urpVisibleLightsShadowCullingInfos,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    shadowData,
+                    shadowAtlasLayout,
+                    cullingResults,
+                    shadowCullingInfos,
+                    urpVisibleLightsShadowCullingInfos,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -118,15 +120,14 @@ impl crate::UnityEngine::Rendering::Universal::ShadowCulling {
         shadowAtlasLayout: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout,
         >,
-        cullResults: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Rendering::CullingResults,
-        >,
+        cullResults: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rendering::CullingResults>,
     ) -> quest_hook::libil2cpp::Result<
         crate::Unity::Collections::NativeArray_1<
             crate::UnityEngine::Rendering::Universal::URPLightShadowCullingInfos,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -162,21 +163,18 @@ impl crate::UnityEngine::Rendering::Universal::ShadowCulling {
             crate::UnityEngine::Rendering::Universal::URPLightShadowCullingInfos,
         > = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (context, shadowData, shadowAtlasLayout, cullResults),
-                )?
+                .invoke_unchecked((), (context, shadowData, shadowAtlasLayout, cullResults))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetCullingProjectionType(
         _cordl_type: crate::UnityEngine::LightType,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Rendering::BatchCullingProjectionType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::BatchCullingProjectionType>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::LightType),
@@ -191,15 +189,13 @@ impl crate::UnityEngine::Rendering::Universal::ShadowCulling {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::BatchCullingProjectionType = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_type))?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::BatchCullingProjectionType =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ShadowCulling")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::Universal::ShadowCulling {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Universal::ShadowCulling {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

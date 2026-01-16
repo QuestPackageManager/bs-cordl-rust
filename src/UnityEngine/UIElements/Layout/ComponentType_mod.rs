@@ -1,12 +1,11 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+ComponentType")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ComponentType {
     pub Size: i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+ComponentType")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Layout::ComponentType {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Layout::ComponentType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Layout";
@@ -25,18 +24,16 @@ for crate::UnityEngine::UIElements::Layout::ComponentType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+ComponentType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::Layout::ComponentType {
+    for crate::UnityEngine::UIElements::Layout::ComponentType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,7 +44,8 @@ for crate::UnityEngine::UIElements::Layout::ComponentType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+ComponentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::Layout::ComponentType {
+    for crate::UnityEngine::UIElements::Layout::ComponentType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -61,22 +59,22 @@ for crate::UnityEngine::UIElements::Layout::ComponentType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+ComponentType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::Layout::ComponentType {
+    for crate::UnityEngine::UIElements::Layout::ComponentType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+ComponentType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::Layout::ComponentType {
+    for crate::UnityEngine::UIElements::Layout::ComponentType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -90,7 +88,8 @@ for crate::UnityEngine::UIElements::Layout::ComponentType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+ComponentType")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Layout::ComponentType {
+    for crate::UnityEngine::UIElements::Layout::ComponentType
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -101,16 +100,17 @@ for crate::UnityEngine::UIElements::Layout::ComponentType {
 }
 #[cfg(feature = "UnityEngine+UIElements+Layout+ComponentType")]
 impl crate::UnityEngine::UIElements::Layout::ComponentType {
-    pub fn Create<T>() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::Layout::ComponentType,
-    >
+    pub fn Create<T>(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Layout::ComponentType>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -125,9 +125,8 @@ impl crate::UnityEngine::UIElements::Layout::ComponentType {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::Layout::ComponentType = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::Layout::ComponentType =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

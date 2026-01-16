@@ -1,18 +1,20 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ISTPEnabledRenderPipeline")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct ISTPEnabledRenderPipeline {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ISTPEnabledRenderPipeline")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::ISTPEnabledRenderPipeline {
+    for crate::UnityEngine::Rendering::ISTPEnabledRenderPipeline
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "ISTPEnabledRenderPipeline";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,22 +41,22 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::ISTPEnabledRenderPipe
 }
 #[cfg(feature = "UnityEngine+Rendering+ISTPEnabledRenderPipeline")]
 impl crate::UnityEngine::Rendering::ISTPEnabledRenderPipeline {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_isStpUsed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isStpUsed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isStpUsed", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isStpUsed",
+                            0usize
                         )
                     })
             });
@@ -64,7 +66,8 @@ impl crate::UnityEngine::Rendering::ISTPEnabledRenderPipeline {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ISTPEnabledRenderPipeline")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::ISTPEnabledRenderPipeline {
+    for crate::UnityEngine::Rendering::ISTPEnabledRenderPipeline
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

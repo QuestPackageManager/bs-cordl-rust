@@ -8,14 +8,14 @@ pub struct ScoreMultiplierCounter {
     pub _multiplierIncreaseMaxProgress: i32,
 }
 #[cfg(feature = "cordl_class_ScoreMultiplierCounter")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ScoreMultiplierCounter {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScoreMultiplierCounter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "ScoreMultiplierCounter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,10 +43,11 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ScoreMultiplierCounter {
 #[cfg(feature = "ScoreMultiplierCounter")]
 impl crate::GlobalNamespace::ScoreMultiplierCounter {
     #[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
-    pub type MultiplierEventType = crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType;
+    pub type MultiplierEventType =
+        crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -55,9 +56,10 @@ impl crate::GlobalNamespace::ScoreMultiplierCounter {
         &mut self,
         multiplierEventType: crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType),
@@ -72,64 +74,63 @@ impl crate::GlobalNamespace::ScoreMultiplierCounter {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (multiplierEventType))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (multiplierEventType))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reset",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_multiplier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_multiplier")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_multiplier", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_multiplier",
+                            0usize
                         )
                     })
             });
@@ -137,16 +138,18 @@ impl crate::GlobalNamespace::ScoreMultiplierCounter {
         Ok(__cordl_ret.into())
     }
     pub fn get_normalizedProgress(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_normalizedProgress")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_normalizedProgress", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_normalizedProgress",
+                            0usize
                         )
                     })
             });
@@ -155,8 +158,7 @@ impl crate::GlobalNamespace::ScoreMultiplierCounter {
     }
 }
 #[cfg(feature = "cordl_class_ScoreMultiplierCounter")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::ScoreMultiplierCounter {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreMultiplierCounter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -165,8 +167,8 @@ for crate::GlobalNamespace::ScoreMultiplierCounter {
     }
 }
 #[cfg(feature = "cordl_class_ScoreMultiplierCounter+MultiplierEventType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ScoreMultiplierCounter_MultiplierEventType {
     #[default]
     Negative = 2i32,
@@ -175,7 +177,8 @@ pub enum ScoreMultiplierCounter_MultiplierEventType {
 }
 #[cfg(feature = "cordl_class_ScoreMultiplierCounter+MultiplierEventType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
+    for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -194,18 +197,16 @@ for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_ScoreMultiplierCounter+MultiplierEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
+    for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -216,7 +217,8 @@ for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
 }
 #[cfg(feature = "cordl_class_ScoreMultiplierCounter+MultiplierEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
+    for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -230,22 +232,22 @@ for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
 }
 #[cfg(feature = "cordl_class_ScoreMultiplierCounter+MultiplierEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
+    for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_ScoreMultiplierCounter+MultiplierEventType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
+    for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

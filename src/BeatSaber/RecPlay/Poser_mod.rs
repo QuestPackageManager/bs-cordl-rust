@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::RecPlay::Poser {
     const NAMESPACE: &'static str = "BeatSaber.RecPlay";
     const CLASS_NAME: &'static str = "Poser";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,38 +44,36 @@ impl crate::BeatSaber::RecPlay::Poser {
         b: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
-                            f32,
-                        ),
-                        crate::UnityEngine::Pose,
-                        3usize,
-                    >("InterpolatePose")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+                        f32,
+                    ), crate::UnityEngine::Pose, 3usize>("InterpolatePose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InterpolatePose", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InterpolatePose",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b, t))?
-        };
+        let __cordl_ret: crate::UnityEngine::Pose =
+            unsafe { cordl_method_info.invoke_unchecked((), (a, b, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn InvertPose(
         pose: crate::UnityEngine::Pose,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Pose),
@@ -89,17 +88,17 @@ impl crate::BeatSaber::RecPlay::Poser {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            cordl_method_info.invoke_unchecked((), (pose))?
-        };
+        let __cordl_ret: crate::UnityEngine::Pose =
+            unsafe { cordl_method_info.invoke_unchecked((), (pose))? };
         Ok(__cordl_ret.into())
     }
     pub fn MirrorPoseYZ(
         pose: crate::UnityEngine::Pose,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Pose),
@@ -114,9 +113,8 @@ impl crate::BeatSaber::RecPlay::Poser {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            cordl_method_info.invoke_unchecked((), (pose))?
-        };
+        let __cordl_ret: crate::UnityEngine::Pose =
+            unsafe { cordl_method_info.invoke_unchecked((), (pose))? };
         Ok(__cordl_ret.into())
     }
 }

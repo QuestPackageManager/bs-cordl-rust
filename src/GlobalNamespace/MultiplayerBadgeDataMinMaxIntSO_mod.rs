@@ -8,13 +8,15 @@ pub struct MultiplayerBadgeDataMinMaxIntSO {
 }
 #[cfg(feature = "cordl_class_MultiplayerBadgeDataMinMaxIntSO")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
+    for crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "MultiplayerBadgeDataMinMaxIntSO";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,22 +47,19 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
         &mut self,
         resultsData: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerPlayerResultsData>,
             >,
         >,
-        playerDataModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerDataModel,
-        >,
+        playerDataModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         randomMultiplier: f32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeAwardData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -95,11 +94,10 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerBadgeAwardData,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (resultsData, playerDataModel, beatmapKey, randomMultiplier),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (resultsData, playerDataModel, beatmapKey, randomMultiplier),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -107,18 +105,17 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
         &mut self,
         resultsData: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerPlayerResultsData>,
             >,
         >,
         randomMultiplier: f32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeAwardData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -146,27 +143,24 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerBadgeAwardData,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (resultsData, randomMultiplier))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (resultsData, randomMultiplier))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateMin(
         &mut self,
         resultsData: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerPlayerResultsData>,
             >,
         >,
         randomMultiplier: f32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeAwardData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -194,73 +188,63 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerBadgeAwardData,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (resultsData, randomMultiplier))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (resultsData, randomMultiplier))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValue(
         &mut self,
-        result: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerPlayerResultsData,
-        >,
+        result: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerPlayerResultsData>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                        >),
-                        i32,
-                        1usize,
-                    >("GetValue")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::MultiplayerPlayerResultsData,
+                    >), i32, 1usize>("GetValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetValue", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetValue",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (result))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_MultiplayerBadgeDataMinMaxIntSO")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

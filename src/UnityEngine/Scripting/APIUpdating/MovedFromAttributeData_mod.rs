@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct MovedFromAttributeData {
     pub className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub nameSpace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -12,7 +12,8 @@ pub struct MovedFromAttributeData {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
+    for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Scripting.APIUpdating";
@@ -31,18 +32,16 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
+    for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -53,7 +52,8 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
+    for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -67,22 +67,22 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
+    for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
+    for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -96,7 +96,8 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
+    for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -114,40 +115,36 @@ impl crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
         sourceAssembly: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sourceClassName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("Set")
+                    .find_method::<(
+                        bool,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 4usize>("Set")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Set",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Set",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (autoUpdateAPI, sourceNamespace, sourceAssembly, sourceClassName),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    autoUpdateAPI,
+                    sourceNamespace,
+                    sourceAssembly,
+                    sourceClassName,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }

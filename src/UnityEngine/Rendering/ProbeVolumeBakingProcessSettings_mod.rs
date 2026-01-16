@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ProbeVolumeBakingProcessSettings {
     pub m_Version: crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVersion,
     pub dilationSettings: crate::UnityEngine::Rendering::ProbeDilationSettings,
@@ -8,7 +8,8 @@ pub struct ProbeVolumeBakingProcessSettings {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
+    for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -27,18 +28,16 @@ for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
+    for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -49,7 +48,8 @@ for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
+    for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -63,22 +63,22 @@ for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
+    for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
+    for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -92,7 +92,8 @@ for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
+    for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -103,54 +104,47 @@ for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
 }
 #[cfg(feature = "UnityEngine+Rendering+ProbeVolumeBakingProcessSettings")]
 impl crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
-    #[cfg(
-        feature = "UnityEngine+Rendering+ProbeVolumeBakingProcessSettings+SettingsVersion"
-    )]
-    pub type SettingsVersion = crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVersion;
-    pub fn SetDefaults(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    #[cfg(feature = "UnityEngine+Rendering+ProbeVolumeBakingProcessSettings+SettingsVersion")]
+    pub type SettingsVersion =
+        crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVersion;
+    pub fn SetDefaults(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("SetDefaults")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetDefaults")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetDefaults", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetDefaults",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Upgrade(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Upgrade(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Upgrade")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Upgrade",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Upgrade",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -158,38 +152,36 @@ impl crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
         dilationSettings: crate::UnityEngine::Rendering::ProbeDilationSettings,
         virtualOffsetSettings: crate::UnityEngine::Rendering::VirtualOffsetSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Rendering::ProbeDilationSettings,
-                            crate::UnityEngine::Rendering::VirtualOffsetSettings,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::UnityEngine::Rendering::ProbeDilationSettings,
+                        crate::UnityEngine::Rendering::VirtualOffsetSettings,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (dilationSettings, virtualOffsetSettings))?
+            cordl_method_info.invoke_unchecked(self, (dilationSettings, virtualOffsetSettings))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Default() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -204,17 +196,16 @@ impl crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings+SettingsVersion"
 )]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ProbeVolumeBakingProcessSettings_SettingsVersion {
     #[default]
     Current = 1i32,
@@ -225,7 +216,8 @@ pub enum ProbeVolumeBakingProcessSettings_SettingsVersion {
     feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings+SettingsVersion"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVersion {
+    for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVersion
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -244,20 +236,18 @@ for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVers
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings+SettingsVersion"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVersion {
+    for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVersion
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -270,7 +260,8 @@ for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVers
     feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings+SettingsVersion"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVersion {
+    for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVersion
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -286,16 +277,15 @@ for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVers
     feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings+SettingsVersion"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVersion {
+    for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVersion
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -303,7 +293,8 @@ for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVers
     feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings+SettingsVersion"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVersion {
+    for crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVersion
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

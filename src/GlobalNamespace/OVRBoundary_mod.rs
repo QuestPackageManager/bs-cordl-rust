@@ -14,7 +14,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBoundary 
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRBoundary";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -48,16 +49,18 @@ impl crate::GlobalNamespace::OVRBoundary {
     #[cfg(feature = "OVRBoundary+Node")]
     pub type Node = crate::GlobalNamespace::OVRBoundary_Node;
     pub fn GetConfigured(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("GetConfigured")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetConfigured", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetConfigured",
+                            0usize
                         )
                     })
             });
@@ -68,9 +71,10 @@ impl crate::GlobalNamespace::OVRBoundary {
         &mut self,
         boundaryType: crate::GlobalNamespace::OVRBoundary_BoundaryType,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRBoundary_BoundaryType),
@@ -85,22 +89,20 @@ impl crate::GlobalNamespace::OVRBoundary {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (boundaryType))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector3 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (boundaryType))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGeometry(
         &mut self,
         boundaryType: crate::GlobalNamespace::OVRBoundary_BoundaryType,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRBoundary_BoundaryType),
@@ -125,16 +127,18 @@ impl crate::GlobalNamespace::OVRBoundary {
         Ok(__cordl_ret.into())
     }
     pub fn GetVisible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("GetVisible")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetVisible", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetVisible",
+                            0usize
                         )
                     })
             });
@@ -142,8 +146,8 @@ impl crate::GlobalNamespace::OVRBoundary {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -152,111 +156,101 @@ impl crate::GlobalNamespace::OVRBoundary {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetVisible")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("SetVisible")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetVisible", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetVisible",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn TestNode(
         &mut self,
         node: crate::GlobalNamespace::OVRBoundary_Node,
         boundaryType: crate::GlobalNamespace::OVRBoundary_BoundaryType,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRBoundary_BoundaryTestResult,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRBoundary_BoundaryTestResult> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::OVRBoundary_Node,
-                            crate::GlobalNamespace::OVRBoundary_BoundaryType,
-                        ),
-                        crate::GlobalNamespace::OVRBoundary_BoundaryTestResult,
-                        2usize,
-                    >("TestNode")
+                    .find_method::<(
+                        crate::GlobalNamespace::OVRBoundary_Node,
+                        crate::GlobalNamespace::OVRBoundary_BoundaryType,
+                    ), crate::GlobalNamespace::OVRBoundary_BoundaryTestResult, 2usize>(
+                        "TestNode"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TestNode", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TestNode",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRBoundary_BoundaryTestResult = unsafe {
-            cordl_method_info.invoke_unchecked(self, (node, boundaryType))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRBoundary_BoundaryTestResult =
+            unsafe { cordl_method_info.invoke_unchecked(self, (node, boundaryType))? };
         Ok(__cordl_ret.into())
     }
     pub fn TestPoint(
         &mut self,
         point: crate::UnityEngine::Vector3,
         boundaryType: crate::GlobalNamespace::OVRBoundary_BoundaryType,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRBoundary_BoundaryTestResult,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRBoundary_BoundaryTestResult> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::GlobalNamespace::OVRBoundary_BoundaryType,
-                        ),
-                        crate::GlobalNamespace::OVRBoundary_BoundaryTestResult,
-                        2usize,
-                    >("TestPoint")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::GlobalNamespace::OVRBoundary_BoundaryType,
+                    ), crate::GlobalNamespace::OVRBoundary_BoundaryTestResult, 2usize>(
+                        "TestPoint"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TestPoint", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TestPoint",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRBoundary_BoundaryTestResult = unsafe {
-            cordl_method_info.invoke_unchecked(self, (point, boundaryType))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRBoundary_BoundaryTestResult =
+            unsafe { cordl_method_info.invoke_unchecked(self, (point, boundaryType))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -270,8 +264,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRBoundary {
     }
 }
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRBoundary_BoundaryTestResult {
     pub IsTriggering: bool,
     pub ClosestDistance: f32,
@@ -279,8 +273,7 @@ pub struct OVRBoundary_BoundaryTestResult {
     pub ClosestPointNormal: crate::UnityEngine::Vector3,
 }
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -299,18 +292,16 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
+    for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -321,7 +312,8 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
 }
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
+    for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -335,22 +327,22 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
 }
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
+    for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
+    for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -364,7 +356,8 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
 }
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
+    for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -376,16 +369,15 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
 #[cfg(feature = "OVRBoundary+BoundaryTestResult")]
 impl crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {}
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum OVRBoundary_BoundaryType {
     #[default]
     OuterBoundary = 1i32,
     PlayArea = 256i32,
 }
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryType")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRBoundary_BoundaryType {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -404,18 +396,14 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryType")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRBoundary_BoundaryType {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -425,8 +413,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     }
 }
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryType")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRBoundary_BoundaryType {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -439,23 +426,19 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     }
 }
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryType")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRBoundary_BoundaryType {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryType")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRBoundary_BoundaryType {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -468,8 +451,8 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     }
 }
 #[cfg(feature = "cordl_class_OVRBoundary+Node")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum OVRBoundary_Node {
     #[default]
     HandLeft = 3i32,
@@ -496,18 +479,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBoundary_
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRBoundary+Node")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRBoundary_Node {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRBoundary_Node {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -517,8 +496,7 @@ for crate::GlobalNamespace::OVRBoundary_Node {
     }
 }
 #[cfg(feature = "cordl_class_OVRBoundary+Node")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRBoundary_Node {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRBoundary_Node {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -531,17 +509,14 @@ for crate::GlobalNamespace::OVRBoundary_Node {
     }
 }
 #[cfg(feature = "cordl_class_OVRBoundary+Node")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRBoundary_Node {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRBoundary_Node {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }

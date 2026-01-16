@@ -5,14 +5,14 @@ pub struct SharedBetweenAnimatorsAttribute {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(feature = "cordl_class_UnityEngine+SharedBetweenAnimatorsAttribute")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::SharedBetweenAnimatorsAttribute {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SharedBetweenAnimatorsAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine";
     const CLASS_NAME: &'static str = "SharedBetweenAnimatorsAttribute";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,8 +40,7 @@ impl std::ops::DerefMut for crate::UnityEngine::SharedBetweenAnimatorsAttribute 
 #[cfg(feature = "UnityEngine+SharedBetweenAnimatorsAttribute")]
 impl crate::UnityEngine::SharedBetweenAnimatorsAttribute {}
 #[cfg(feature = "cordl_class_UnityEngine+SharedBetweenAnimatorsAttribute")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::SharedBetweenAnimatorsAttribute {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::SharedBetweenAnimatorsAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

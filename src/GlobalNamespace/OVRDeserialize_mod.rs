@@ -1,9 +1,10 @@
 #[cfg(
     feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryResultData+_AdvertisementMetadata_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
-pub struct ColocationSessionDiscoveryResultData_OVRDeserialize__AdvertisementMetadata_e__FixedBuffer {
+#[repr(C)]
+pub struct ColocationSessionDiscoveryResultData_OVRDeserialize__AdvertisementMetadata_e__FixedBuffer
+{
     pub FixedElementField: u8,
 }
 #[cfg(
@@ -130,7 +131,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRDeseriali
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRDeserialize";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -158,33 +160,46 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRDeserialize {
 #[cfg(feature = "OVRDeserialize")]
 impl crate::GlobalNamespace::OVRDeserialize {
     #[cfg(feature = "OVRDeserialize+BoundaryVisibilityChangedData")]
-    pub type BoundaryVisibilityChangedData = crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData;
+    pub type BoundaryVisibilityChangedData =
+        crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData;
     #[cfg(feature = "OVRDeserialize+ColocationSessionAdvertisementCompleteData")]
-    pub type ColocationSessionAdvertisementCompleteData = crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData;
+    pub type ColocationSessionAdvertisementCompleteData =
+        crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData;
     #[cfg(feature = "OVRDeserialize+ColocationSessionDiscoveryCompleteData")]
-    pub type ColocationSessionDiscoveryCompleteData = crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData;
+    pub type ColocationSessionDiscoveryCompleteData =
+        crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData;
     #[cfg(feature = "OVRDeserialize+ColocationSessionDiscoveryResultData")]
-    pub type ColocationSessionDiscoveryResultData = crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData;
+    pub type ColocationSessionDiscoveryResultData =
+        crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData;
     #[cfg(feature = "OVRDeserialize+CreateDynamicObjectTrackerResultData")]
-    pub type CreateDynamicObjectTrackerResultData = crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData;
+    pub type CreateDynamicObjectTrackerResultData =
+        crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData;
     #[cfg(feature = "OVRDeserialize+DisplayRefreshRateChangedData")]
-    pub type DisplayRefreshRateChangedData = crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData;
+    pub type DisplayRefreshRateChangedData =
+        crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData;
     #[cfg(feature = "OVRDeserialize+PassthroughLayerResumedData")]
-    pub type PassthroughLayerResumedData = crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData;
+    pub type PassthroughLayerResumedData =
+        crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData;
     #[cfg(feature = "OVRDeserialize+SceneCaptureCompleteData")]
-    pub type SceneCaptureCompleteData = crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData;
+    pub type SceneCaptureCompleteData =
+        crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData;
     #[cfg(feature = "OVRDeserialize+SetDynamicObjectTrackedClassesResultData")]
-    pub type SetDynamicObjectTrackedClassesResultData = crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData;
+    pub type SetDynamicObjectTrackedClassesResultData =
+        crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData;
     #[cfg(feature = "OVRDeserialize+ShareSpacesToGroupsCompleteData")]
-    pub type ShareSpacesToGroupsCompleteData = crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData;
+    pub type ShareSpacesToGroupsCompleteData =
+        crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData;
     #[cfg(feature = "OVRDeserialize+SpaceDiscoveryCompleteData")]
-    pub type SpaceDiscoveryCompleteData = crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData;
+    pub type SpaceDiscoveryCompleteData =
+        crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData;
     #[cfg(feature = "OVRDeserialize+SpaceDiscoveryResultsData")]
-    pub type SpaceDiscoveryResultsData = crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData;
+    pub type SpaceDiscoveryResultsData =
+        crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData;
     #[cfg(feature = "OVRDeserialize+SpaceEraseCompleteData")]
     pub type SpaceEraseCompleteData = crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData;
     #[cfg(feature = "OVRDeserialize+SpaceListSaveResultData")]
-    pub type SpaceListSaveResultData = crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData;
+    pub type SpaceListSaveResultData =
+        crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData;
     #[cfg(feature = "OVRDeserialize+SpaceQueryCompleteData")]
     pub type SpaceQueryCompleteData = crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData;
     #[cfg(feature = "OVRDeserialize+SpaceQueryResultsData")]
@@ -192,7 +207,8 @@ impl crate::GlobalNamespace::OVRDeserialize {
     #[cfg(feature = "OVRDeserialize+SpaceSaveCompleteData")]
     pub type SpaceSaveCompleteData = crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData;
     #[cfg(feature = "OVRDeserialize+SpaceSetComponentStatusCompleteData")]
-    pub type SpaceSetComponentStatusCompleteData = crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData;
+    pub type SpaceSetComponentStatusCompleteData =
+        crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData;
     #[cfg(feature = "OVRDeserialize+SpaceShareResultData")]
     pub type SpaceShareResultData = crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData;
     #[cfg(feature = "OVRDeserialize+SpacesEraseResultData")]
@@ -200,25 +216,32 @@ impl crate::GlobalNamespace::OVRDeserialize {
     #[cfg(feature = "OVRDeserialize+SpacesSaveResultData")]
     pub type SpacesSaveResultData = crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData;
     #[cfg(feature = "OVRDeserialize+SpatialAnchorCreateCompleteData")]
-    pub type SpatialAnchorCreateCompleteData = crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData;
+    pub type SpatialAnchorCreateCompleteData =
+        crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData;
     #[cfg(feature = "OVRDeserialize+StartColocationSessionAdvertisementCompleteData")]
-    pub type StartColocationSessionAdvertisementCompleteData = crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData;
+    pub type StartColocationSessionAdvertisementCompleteData =
+        crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData;
     #[cfg(feature = "OVRDeserialize+StartColocationSessionDiscoveryCompleteData")]
-    pub type StartColocationSessionDiscoveryCompleteData = crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData;
+    pub type StartColocationSessionDiscoveryCompleteData =
+        crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData;
     #[cfg(feature = "OVRDeserialize+StopColocationSessionAdvertisementCompleteData")]
-    pub type StopColocationSessionAdvertisementCompleteData = crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData;
+    pub type StopColocationSessionAdvertisementCompleteData =
+        crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData;
     #[cfg(feature = "OVRDeserialize+StopColocationSessionDiscoveryCompleteData")]
-    pub type StopColocationSessionDiscoveryCompleteData = crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryCompleteData;
+    pub type StopColocationSessionDiscoveryCompleteData =
+        crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryCompleteData;
     pub fn ByteArrayToStructure<T>(
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -243,32 +266,30 @@ impl crate::GlobalNamespace::OVRDeserialize {
         allocator: crate::Unity::Collections::Allocator,
     ) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::OVRPlugin_EventDataBuffer,
-                            crate::Unity::Collections::Allocator,
-                        ),
-                        T,
-                        2usize,
-                    >("MarshalEntireStructAs")
+                    .find_static_method::<(
+                        crate::GlobalNamespace::OVRPlugin_EventDataBuffer,
+                        crate::Unity::Collections::Allocator,
+                    ), T, 2usize>("MarshalEntireStructAs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MarshalEntireStructAs", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MarshalEntireStructAs",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: T = unsafe {
-            cordl_method_info.invoke_unchecked((), (eventDataBuffer, allocator))?
-        };
+        let __cordl_ret: T =
+            unsafe { cordl_method_info.invoke_unchecked((), (eventDataBuffer, allocator))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -282,14 +303,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRDeserializ
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+BoundaryVisibilityChangedData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_BoundaryVisibilityChangedData {
     pub BoundaryVisibility: crate::GlobalNamespace::OVRPlugin_BoundaryVisibility,
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+BoundaryVisibilityChangedData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData {
+    for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -308,18 +330,16 @@ for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+BoundaryVisibilityChangedData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData {
+    for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -330,7 +350,8 @@ for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+BoundaryVisibilityChangedData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData {
+    for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -344,22 +365,22 @@ for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+BoundaryVisibilityChangedData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData {
+    for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+BoundaryVisibilityChangedData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData {
+    for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -373,7 +394,8 @@ for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+BoundaryVisibilityChangedData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData {
+    for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -385,8 +407,8 @@ for crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData {
 #[cfg(feature = "OVRDeserialize+BoundaryVisibilityChangedData")]
 impl crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionAdvertisementCompleteData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_ColocationSessionAdvertisementCompleteData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
     pub RequestId: u64,
@@ -394,7 +416,8 @@ pub struct OVRDeserialize_ColocationSessionAdvertisementCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -413,18 +436,16 @@ for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementComplet
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -435,7 +456,8 @@ for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementComplet
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -449,22 +471,22 @@ for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementComplet
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -478,7 +500,8 @@ for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementComplet
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -490,8 +513,8 @@ for crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementComplet
 #[cfg(feature = "OVRDeserialize+ColocationSessionAdvertisementCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryCompleteData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_ColocationSessionDiscoveryCompleteData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
     pub RequestId: u64,
@@ -499,7 +522,8 @@ pub struct OVRDeserialize_ColocationSessionDiscoveryCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -518,18 +542,16 @@ for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteDat
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -540,7 +562,8 @@ for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteDat
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -554,22 +577,22 @@ for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteDat
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -583,7 +606,8 @@ for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteDat
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -595,8 +619,8 @@ for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteDat
 #[cfg(feature = "OVRDeserialize+ColocationSessionDiscoveryCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryResultData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_ColocationSessionDiscoveryResultData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
     pub RequestId: u64,
@@ -606,7 +630,8 @@ pub struct OVRDeserialize_ColocationSessionDiscoveryResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryResultData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -625,18 +650,16 @@ for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData 
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryResultData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -647,7 +670,8 @@ for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData 
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryResultData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -661,22 +685,22 @@ for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData 
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryResultData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryResultData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -690,7 +714,8 @@ for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData 
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryResultData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData {
+    for crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -707,8 +732,8 @@ impl crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData
     pub type _AdvertisementMetadata_e__FixedBuffer = crate::GlobalNamespace::ColocationSessionDiscoveryResultData_OVRDeserialize__AdvertisementMetadata_e__FixedBuffer;
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+CreateDynamicObjectTrackerResultData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_CreateDynamicObjectTrackerResultData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
     pub Tracker: u64,
@@ -716,7 +741,8 @@ pub struct OVRDeserialize_CreateDynamicObjectTrackerResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+CreateDynamicObjectTrackerResultData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData {
+    for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -735,18 +761,16 @@ for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData 
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+CreateDynamicObjectTrackerResultData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData {
+    for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -757,7 +781,8 @@ for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData 
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+CreateDynamicObjectTrackerResultData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData {
+    for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -771,22 +796,22 @@ for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData 
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+CreateDynamicObjectTrackerResultData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData {
+    for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+CreateDynamicObjectTrackerResultData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData {
+    for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -800,7 +825,8 @@ for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData 
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+CreateDynamicObjectTrackerResultData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData {
+    for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -812,15 +838,16 @@ for crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData 
 #[cfg(feature = "OVRDeserialize+CreateDynamicObjectTrackerResultData")]
 impl crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+DisplayRefreshRateChangedData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_DisplayRefreshRateChangedData {
     pub FromRefreshRate: f32,
     pub ToRefreshRate: f32,
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+DisplayRefreshRateChangedData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
+    for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -839,18 +866,16 @@ for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+DisplayRefreshRateChangedData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
+    for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -861,7 +886,8 @@ for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+DisplayRefreshRateChangedData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
+    for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -875,22 +901,22 @@ for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+DisplayRefreshRateChangedData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
+    for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+DisplayRefreshRateChangedData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
+    for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -904,7 +930,8 @@ for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+DisplayRefreshRateChangedData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
+    for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -916,14 +943,15 @@ for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
 #[cfg(feature = "OVRDeserialize+DisplayRefreshRateChangedData")]
 impl crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+PassthroughLayerResumedData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_PassthroughLayerResumedData {
     pub LayerId: i32,
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+PassthroughLayerResumedData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData {
+    for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -942,18 +970,16 @@ for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+PassthroughLayerResumedData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData {
+    for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -964,7 +990,8 @@ for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+PassthroughLayerResumedData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData {
+    for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -978,22 +1005,22 @@ for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+PassthroughLayerResumedData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData {
+    for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+PassthroughLayerResumedData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData {
+    for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1007,7 +1034,8 @@ for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+PassthroughLayerResumedData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData {
+    for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1019,15 +1047,16 @@ for crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData {
 #[cfg(feature = "OVRDeserialize+PassthroughLayerResumedData")]
 impl crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SceneCaptureCompleteData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_SceneCaptureCompleteData {
     pub RequestId: u64,
     pub Result: i32,
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SceneCaptureCompleteData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1046,18 +1075,16 @@ for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SceneCaptureCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1068,7 +1095,8 @@ for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SceneCaptureCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1082,22 +1110,22 @@ for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SceneCaptureCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SceneCaptureCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1111,7 +1139,8 @@ for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SceneCaptureCompleteData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1123,8 +1152,8 @@ for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
 #[cfg(feature = "OVRDeserialize+SceneCaptureCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SetDynamicObjectTrackedClassesResultData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_SetDynamicObjectTrackedClassesResultData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
     pub Tracker: u64,
@@ -1132,7 +1161,8 @@ pub struct OVRDeserialize_SetDynamicObjectTrackedClassesResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SetDynamicObjectTrackedClassesResultData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1151,18 +1181,16 @@ for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultD
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SetDynamicObjectTrackedClassesResultData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1173,7 +1201,8 @@ for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultD
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SetDynamicObjectTrackedClassesResultData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1187,22 +1216,22 @@ for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultD
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SetDynamicObjectTrackedClassesResultData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SetDynamicObjectTrackedClassesResultData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1216,7 +1245,8 @@ for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultD
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SetDynamicObjectTrackedClassesResultData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1228,8 +1258,8 @@ for crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultD
 #[cfg(feature = "OVRDeserialize+SetDynamicObjectTrackedClassesResultData")]
 impl crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+ShareSpacesToGroupsCompleteData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_ShareSpacesToGroupsCompleteData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
     pub RequestId: u64,
@@ -1237,7 +1267,8 @@ pub struct OVRDeserialize_ShareSpacesToGroupsCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ShareSpacesToGroupsCompleteData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1256,18 +1287,16 @@ for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ShareSpacesToGroupsCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1278,7 +1307,8 @@ for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ShareSpacesToGroupsCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1292,22 +1322,22 @@ for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ShareSpacesToGroupsCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ShareSpacesToGroupsCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1321,7 +1351,8 @@ for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+ShareSpacesToGroupsCompleteData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1333,15 +1364,16 @@ for crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData {
 #[cfg(feature = "OVRDeserialize+ShareSpacesToGroupsCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryCompleteData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_SpaceDiscoveryCompleteData {
     pub RequestId: u64,
     pub Result: i32,
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1360,18 +1392,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1382,7 +1412,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1396,22 +1427,22 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1425,7 +1456,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1437,14 +1469,15 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData {
 #[cfg(feature = "OVRDeserialize+SpaceDiscoveryCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryResultsData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_SpaceDiscoveryResultsData {
     pub RequestId: u64,
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryResultsData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1463,18 +1496,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryResultsData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1485,7 +1516,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryResultsData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1499,22 +1531,22 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryResultsData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryResultsData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1528,7 +1560,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryResultsData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1540,8 +1573,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData {
 #[cfg(feature = "OVRDeserialize+SpaceDiscoveryResultsData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceEraseCompleteData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_SpaceEraseCompleteData {
     pub RequestId: u64,
     pub Result: i32,
@@ -1550,7 +1583,8 @@ pub struct OVRDeserialize_SpaceEraseCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceEraseCompleteData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1569,18 +1603,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceEraseCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1591,7 +1623,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceEraseCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1605,22 +1638,22 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceEraseCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceEraseCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1634,7 +1667,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceEraseCompleteData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1646,15 +1680,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
 #[cfg(feature = "OVRDeserialize+SpaceEraseCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceListSaveResultData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_SpaceListSaveResultData {
     pub RequestId: u64,
     pub Result: i32,
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceListSaveResultData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1673,18 +1708,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceListSaveResultData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1695,7 +1728,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceListSaveResultData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1709,22 +1743,22 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceListSaveResultData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceListSaveResultData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1738,7 +1772,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceListSaveResultData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1750,15 +1785,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
 #[cfg(feature = "OVRDeserialize+SpaceListSaveResultData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryCompleteData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_SpaceQueryCompleteData {
     pub RequestId: u64,
     pub Result: i32,
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1777,18 +1813,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1799,7 +1833,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1813,22 +1848,22 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1842,7 +1877,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryCompleteData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1854,14 +1890,15 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
 #[cfg(feature = "OVRDeserialize+SpaceQueryCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryResultsData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_SpaceQueryResultsData {
     pub RequestId: u64,
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryResultsData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1880,18 +1917,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryResultsData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1902,7 +1937,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryResultsData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1916,22 +1952,22 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryResultsData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryResultsData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1945,7 +1981,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryResultsData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1957,8 +1994,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
 #[cfg(feature = "OVRDeserialize+SpaceQueryResultsData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSaveCompleteData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_SpaceSaveCompleteData {
     pub RequestId: u64,
     pub Space: u64,
@@ -1967,7 +2004,8 @@ pub struct OVRDeserialize_SpaceSaveCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSaveCompleteData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -1986,18 +2024,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSaveCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2008,7 +2044,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSaveCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2022,22 +2059,22 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSaveCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSaveCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2051,7 +2088,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSaveCompleteData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2063,8 +2101,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
 #[cfg(feature = "OVRDeserialize+SpaceSaveCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSetComponentStatusCompleteData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_SpaceSetComponentStatusCompleteData {
     pub RequestId: u64,
     pub Result: i32,
@@ -2075,7 +2113,8 @@ pub struct OVRDeserialize_SpaceSetComponentStatusCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSetComponentStatusCompleteData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -2094,18 +2133,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSetComponentStatusCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2116,7 +2153,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSetComponentStatusCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2130,22 +2168,22 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSetComponentStatusCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSetComponentStatusCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2159,7 +2197,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSetComponentStatusCompleteData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2171,15 +2210,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
 #[cfg(feature = "OVRDeserialize+SpaceSetComponentStatusCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceShareResultData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_SpaceShareResultData {
     pub RequestId: u64,
     pub Result: i32,
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceShareResultData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -2198,18 +2238,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceShareResultData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2220,7 +2258,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceShareResultData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2234,22 +2273,22 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceShareResultData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceShareResultData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2263,7 +2302,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceShareResultData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2275,15 +2315,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
 #[cfg(feature = "OVRDeserialize+SpaceShareResultData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesEraseResultData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_SpacesEraseResultData {
     pub RequestId: u64,
     pub Result: crate::GlobalNamespace::OVRAnchor_EraseResult,
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesEraseResultData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -2302,18 +2343,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesEraseResultData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2324,7 +2363,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesEraseResultData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2338,22 +2378,22 @@ for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesEraseResultData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesEraseResultData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2367,7 +2407,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesEraseResultData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2379,15 +2420,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData {
 #[cfg(feature = "OVRDeserialize+SpacesEraseResultData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesSaveResultData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_SpacesSaveResultData {
     pub RequestId: u64,
     pub Result: crate::GlobalNamespace::OVRAnchor_SaveResult,
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesSaveResultData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -2406,18 +2448,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesSaveResultData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2428,7 +2468,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesSaveResultData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2442,22 +2483,22 @@ for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesSaveResultData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesSaveResultData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2471,7 +2512,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesSaveResultData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData {
+    for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2483,8 +2525,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData {
 #[cfg(feature = "OVRDeserialize+SpacesSaveResultData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpatialAnchorCreateCompleteData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_SpatialAnchorCreateCompleteData {
     pub RequestId: u64,
     pub Result: i32,
@@ -2493,7 +2535,8 @@ pub struct OVRDeserialize_SpatialAnchorCreateCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpatialAnchorCreateCompleteData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -2512,18 +2555,16 @@ for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpatialAnchorCreateCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2534,7 +2575,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpatialAnchorCreateCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2548,22 +2590,22 @@ for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpatialAnchorCreateCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpatialAnchorCreateCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2577,7 +2619,8 @@ for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+SpatialAnchorCreateCompleteData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2588,26 +2631,24 @@ for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
 }
 #[cfg(feature = "OVRDeserialize+SpatialAnchorCreateCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {}
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_StartColocationSessionAdvertisementCompleteData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
     pub RequestId: u64,
     pub Result: crate::GlobalNamespace::OVRPlugin_Result,
     pub AdvertisementUuid: crate::System::Guid,
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRDeserialize/StartColocationSessionAdvertisementCompleteData";
+    const CLASS_NAME: &'static str =
+        "OVRDeserialize/StartColocationSessionAdvertisementCompleteData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2622,20 +2663,16 @@ for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCo
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2644,11 +2681,10 @@ for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2660,28 +2696,24 @@ for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCo
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2693,11 +2725,10 @@ for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCo
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2708,21 +2739,18 @@ for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCo
 }
 #[cfg(feature = "OVRDeserialize+StartColocationSessionAdvertisementCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData {}
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_StartColocationSessionDiscoveryCompleteData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
     pub RequestId: u64,
     pub Result: crate::GlobalNamespace::OVRPlugin_Result,
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -2741,20 +2769,16 @@ for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryComple
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2763,11 +2787,10 @@ for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryComple
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2779,28 +2802,24 @@ for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryComple
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2812,11 +2831,10 @@ for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryComple
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2827,25 +2845,23 @@ for crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryComple
 }
 #[cfg(feature = "OVRDeserialize+StartColocationSessionDiscoveryCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData {}
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_StopColocationSessionAdvertisementCompleteData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
     pub RequestId: u64,
     pub Result: crate::GlobalNamespace::OVRPlugin_Result,
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRDeserialize/StopColocationSessionAdvertisementCompleteData";
+    const CLASS_NAME: &'static str =
+        "OVRDeserialize/StopColocationSessionAdvertisementCompleteData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2860,20 +2876,16 @@ for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCom
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2882,11 +2894,10 @@ for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCom
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -2898,28 +2909,24 @@ for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCom
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -2931,11 +2938,10 @@ for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCom
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData"
-)]
+#[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -2947,8 +2953,8 @@ for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCom
 #[cfg(feature = "OVRDeserialize+StopColocationSessionAdvertisementCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionDiscoveryCompleteData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct OVRDeserialize_StopColocationSessionDiscoveryCompleteData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
     pub RequestId: u64,
@@ -2956,7 +2962,8 @@ pub struct OVRDeserialize_StopColocationSessionDiscoveryCompleteData {
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryCompleteData
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -2975,18 +2982,16 @@ for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryComplet
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -2997,7 +3002,8 @@ for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryComplet
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -3011,22 +3017,22 @@ for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryComplet
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryCompleteData
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryCompleteData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -3040,7 +3046,8 @@ for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryComplet
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionDiscoveryCompleteData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryCompleteData {
+    for crate::GlobalNamespace::OVRDeserialize_StopColocationSessionDiscoveryCompleteData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

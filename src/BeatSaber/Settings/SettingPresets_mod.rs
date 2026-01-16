@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::SettingP
     const NAMESPACE: &'static str = "BeatSaber.Settings";
     const CLASS_NAME: &'static str = "SettingPresets";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,34 +42,33 @@ impl crate::BeatSaber::Settings::SettingPresets {
     pub fn DefaultAudioSettingsWithLatency(
         latency: f32,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Settings::AudioSettings> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (f32),
-                        crate::BeatSaber::Settings::AudioSettings,
-                        1usize,
-                    >("DefaultAudioSettingsWithLatency")
+                    .find_static_method::<(f32), crate::BeatSaber::Settings::AudioSettings, 1usize>(
+                        "DefaultAudioSettingsWithLatency",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DefaultAudioSettingsWithLatency", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DefaultAudioSettingsWithLatency",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::BeatSaber::Settings::AudioSettings = unsafe {
-            cordl_method_info.invoke_unchecked((), (latency))?
-        };
+        let __cordl_ret: crate::BeatSaber::Settings::AudioSettings =
+            unsafe { cordl_method_info.invoke_unchecked((), (latency))? };
         Ok(__cordl_ret.into())
     }
-    pub fn DefaultControllerSettings() -> quest_hook::libil2cpp::Result<
-        crate::BeatSaber::Settings::ControllerSettings,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn DefaultControllerSettings(
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Settings::ControllerSettings> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -83,67 +83,62 @@ impl crate::BeatSaber::Settings::SettingPresets {
                         )
                     })
             });
-        let __cordl_ret: crate::BeatSaber::Settings::ControllerSettings = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::BeatSaber::Settings::ControllerSettings =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn DefaultMiscSettings() -> quest_hook::libil2cpp::Result<
-        crate::BeatSaber::Settings::MiscSettings,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn DefaultMiscSettings(
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Settings::MiscSettings> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::BeatSaber::Settings::MiscSettings,
-                        0usize,
-                    >("DefaultMiscSettings")
+                    .find_static_method::<(), crate::BeatSaber::Settings::MiscSettings, 0usize>(
+                        "DefaultMiscSettings",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DefaultMiscSettings", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DefaultMiscSettings",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::BeatSaber::Settings::MiscSettings = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::BeatSaber::Settings::MiscSettings =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn DefaultQuestSettings() -> quest_hook::libil2cpp::Result<
-        crate::BeatSaber::Settings::QuestSettings,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn DefaultQuestSettings(
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Settings::QuestSettings> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::BeatSaber::Settings::QuestSettings,
-                        0usize,
-                    >("DefaultQuestSettings")
+                    .find_static_method::<(), crate::BeatSaber::Settings::QuestSettings, 0usize>(
+                        "DefaultQuestSettings",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DefaultQuestSettings", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DefaultQuestSettings",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::BeatSaber::Settings::QuestSettings = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::BeatSaber::Settings::QuestSettings =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn DefaultSmoothCameraSettings() -> quest_hook::libil2cpp::Result<
-        crate::BeatSaber::Settings::SmoothCameraSettings,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn DefaultSmoothCameraSettings(
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Settings::SmoothCameraSettings> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -158,34 +153,31 @@ impl crate::BeatSaber::Settings::SettingPresets {
                         )
                     })
             });
-        let __cordl_ret: crate::BeatSaber::Settings::SmoothCameraSettings = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::BeatSaber::Settings::SmoothCameraSettings =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn DefaultWindowSettings() -> quest_hook::libil2cpp::Result<
-        crate::BeatSaber::Settings::WindowSettings,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn DefaultWindowSettings(
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Settings::WindowSettings> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::BeatSaber::Settings::WindowSettings,
-                        0usize,
-                    >("DefaultWindowSettings")
+                    .find_static_method::<(), crate::BeatSaber::Settings::WindowSettings, 0usize>(
+                        "DefaultWindowSettings",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DefaultWindowSettings", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DefaultWindowSettings",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::BeatSaber::Settings::WindowSettings = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::BeatSaber::Settings::WindowSettings =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteCutInfo")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct NoteCutInfo {
     pub noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
     pub speedOK: bool,
@@ -20,9 +20,7 @@ pub struct NoteCutInfo {
     pub inverseWorldRotation: crate::UnityEngine::Quaternion,
     pub noteRotation: crate::UnityEngine::Quaternion,
     pub notePosition: crate::UnityEngine::Vector3,
-    pub saberMovementData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ISaberMovementData,
-    >,
+    pub saberMovementData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISaberMovementData>,
 }
 #[cfg(feature = "cordl_class_NoteCutInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutInfo {
@@ -44,13 +42,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutInfo 
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_NoteCutInfo")]
@@ -84,9 +79,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NoteCutI
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -137,89 +130,84 @@ impl crate::GlobalNamespace::NoteCutInfo {
         inverseWorldRotation: crate::UnityEngine::Quaternion,
         noteRotation: crate::UnityEngine::Quaternion,
         notePosition: crate::UnityEngine::Vector3,
-        saberMovementData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISaberMovementData,
-        >,
+        saberMovementData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISaberMovementData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                            bool,
-                            bool,
-                            bool,
-                            bool,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            crate::GlobalNamespace::SaberType,
-                            f32,
-                            f32,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            f32,
-                            crate::UnityEngine::Quaternion,
-                            crate::UnityEngine::Quaternion,
-                            crate::UnityEngine::Quaternion,
-                            crate::UnityEngine::Vector3,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ISaberMovementData,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        19usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+                        bool,
+                        bool,
+                        bool,
+                        bool,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        crate::GlobalNamespace::SaberType,
+                        f32,
+                        f32,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        f32,
+                        crate::UnityEngine::Quaternion,
+                        crate::UnityEngine::Quaternion,
+                        crate::UnityEngine::Quaternion,
+                        crate::UnityEngine::Vector3,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISaberMovementData>,
+                    ), quest_hook::libil2cpp::Void, 19usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             19usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        noteData,
-                        speedOK,
-                        directionOK,
-                        saberTypeOK,
-                        wasCutTooSoon,
-                        saberSpeed,
-                        saberDir,
-                        saberType,
-                        timeDeviation,
-                        cutDirDeviation,
-                        cutPoint,
-                        cutNormal,
-                        cutDistanceToCenter,
-                        cutAngle,
-                        worldRotation,
-                        inverseWorldRotation,
-                        noteRotation,
-                        notePosition,
-                        saberMovementData,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    noteData,
+                    speedOK,
+                    directionOK,
+                    saberTypeOK,
+                    wasCutTooSoon,
+                    saberSpeed,
+                    saberDir,
+                    saberType,
+                    timeDeviation,
+                    cutDirDeviation,
+                    cutPoint,
+                    cutNormal,
+                    cutDistanceToCenter,
+                    cutAngle,
+                    worldRotation,
+                    inverseWorldRotation,
+                    noteRotation,
+                    notePosition,
+                    saberMovementData,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_allExceptSaberTypeIsOK(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_allExceptSaberTypeIsOK")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_allExceptSaberTypeIsOK", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_allExceptSaberTypeIsOK",
+                            0usize
                         )
                     })
             });
@@ -227,16 +215,18 @@ impl crate::GlobalNamespace::NoteCutInfo {
         Ok(__cordl_ret.into())
     }
     pub fn get_allIsOK(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_allIsOK")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_allIsOK", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_allIsOK",
+                            0usize
                         )
                     })
             });
@@ -246,32 +236,31 @@ impl crate::GlobalNamespace::NoteCutInfo {
     pub fn get_failReason(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutInfo_FailReason> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::GlobalNamespace::NoteCutInfo_FailReason,
-                        0usize,
-                    >("get_failReason")
+                    .find_method::<(), crate::GlobalNamespace::NoteCutInfo_FailReason, 0usize>(
+                        "get_failReason",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_failReason", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_failReason",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::NoteCutInfo_FailReason = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::NoteCutInfo_FailReason =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_NoteCutInfo+FailReason")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum NoteCutInfo_FailReason {
     #[default]
     CutHarder = 3i32,
@@ -281,8 +270,7 @@ pub enum NoteCutInfo_FailReason {
     WrongDirection = 4i32,
 }
 #[cfg(feature = "cordl_class_NoteCutInfo+FailReason")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::NoteCutInfo_FailReason {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutInfo_FailReason {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -301,18 +289,14 @@ for crate::GlobalNamespace::NoteCutInfo_FailReason {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_NoteCutInfo+FailReason")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::NoteCutInfo_FailReason {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NoteCutInfo_FailReason {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -322,8 +306,7 @@ for crate::GlobalNamespace::NoteCutInfo_FailReason {
     }
 }
 #[cfg(feature = "cordl_class_NoteCutInfo+FailReason")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::NoteCutInfo_FailReason {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::NoteCutInfo_FailReason {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -336,23 +319,19 @@ for crate::GlobalNamespace::NoteCutInfo_FailReason {
     }
 }
 #[cfg(feature = "cordl_class_NoteCutInfo+FailReason")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::NoteCutInfo_FailReason {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NoteCutInfo_FailReason {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_NoteCutInfo+FailReason")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::NoteCutInfo_FailReason {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NoteCutInfo_FailReason {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

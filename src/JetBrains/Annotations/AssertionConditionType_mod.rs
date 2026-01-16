@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionConditionType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum AssertionConditionType {
     #[default]
     IS_FALSE = 1i32,
@@ -9,8 +9,7 @@ pub enum AssertionConditionType {
     IS_TRUE = 0i32,
 }
 #[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionConditionType")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::JetBrains::Annotations::AssertionConditionType {
+unsafe impl quest_hook::libil2cpp::Type for crate::JetBrains::Annotations::AssertionConditionType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "JetBrains.Annotations";
@@ -29,18 +28,16 @@ for crate::JetBrains::Annotations::AssertionConditionType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionConditionType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::JetBrains::Annotations::AssertionConditionType {
+    for crate::JetBrains::Annotations::AssertionConditionType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -51,7 +48,8 @@ for crate::JetBrains::Annotations::AssertionConditionType {
 }
 #[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionConditionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::JetBrains::Annotations::AssertionConditionType {
+    for crate::JetBrains::Annotations::AssertionConditionType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -65,22 +63,22 @@ for crate::JetBrains::Annotations::AssertionConditionType {
 }
 #[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionConditionType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::JetBrains::Annotations::AssertionConditionType {
+    for crate::JetBrains::Annotations::AssertionConditionType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionConditionType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::JetBrains::Annotations::AssertionConditionType {
+    for crate::JetBrains::Annotations::AssertionConditionType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

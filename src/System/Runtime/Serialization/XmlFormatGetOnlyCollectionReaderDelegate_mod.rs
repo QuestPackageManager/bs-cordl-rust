@@ -10,13 +10,15 @@ pub struct XmlFormatGetOnlyCollectionReaderDelegate {
     feature = "cordl_class_System+Runtime+Serialization+XmlFormatGetOnlyCollectionReaderDelegate"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Serialization::XmlFormatGetOnlyCollectionReaderDelegate {
+    for crate::System::Runtime::Serialization::XmlFormatGetOnlyCollectionReaderDelegate
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Serialization";
     const CLASS_NAME: &'static str = "XmlFormatGetOnlyCollectionReaderDelegate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -30,7 +32,8 @@ for crate::System::Runtime::Serialization::XmlFormatGetOnlyCollectionReaderDeleg
 }
 #[cfg(feature = "System+Runtime+Serialization+XmlFormatGetOnlyCollectionReaderDelegate")]
 impl std::ops::Deref
-for crate::System::Runtime::Serialization::XmlFormatGetOnlyCollectionReaderDelegate {
+    for crate::System::Runtime::Serialization::XmlFormatGetOnlyCollectionReaderDelegate
+{
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -38,7 +41,8 @@ for crate::System::Runtime::Serialization::XmlFormatGetOnlyCollectionReaderDeleg
 }
 #[cfg(feature = "System+Runtime+Serialization+XmlFormatGetOnlyCollectionReaderDelegate")]
 impl std::ops::DerefMut
-for crate::System::Runtime::Serialization::XmlFormatGetOnlyCollectionReaderDelegate {
+    for crate::System::Runtime::Serialization::XmlFormatGetOnlyCollectionReaderDelegate
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -54,52 +58,49 @@ impl crate::System::Runtime::Serialization::XmlFormatGetOnlyCollectionReaderDele
             crate::System::Runtime::Serialization::XmlObjectSerializerReadContext,
         >,
         itemName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDictionaryString>,
-        itemNamespace: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::XmlDictionaryString,
-        >,
+        itemNamespace: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDictionaryString>,
         collectionContract: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::CollectionDataContract,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::Serialization::XmlReaderDelegator,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::Serialization::XmlObjectSerializerReadContext,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::XmlDictionaryString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::XmlDictionaryString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::Serialization::CollectionDataContract,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Invoke")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::Serialization::XmlReaderDelegator,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::Serialization::XmlObjectSerializerReadContext,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDictionaryString>,
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDictionaryString>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::Serialization::CollectionDataContract,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 5usize>("Invoke")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Invoke",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (xmlReader, context, itemName, itemNamespace, collectionContract),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    xmlReader,
+                    context,
+                    itemName,
+                    itemNamespace,
+                    collectionContract,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -107,8 +108,8 @@ impl crate::System::Runtime::Serialization::XmlFormatGetOnlyCollectionReaderDele
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object.into())
@@ -118,31 +119,26 @@ impl crate::System::Runtime::Serialization::XmlFormatGetOnlyCollectionReaderDele
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            crate::System::IntPtr,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        crate::System::IntPtr,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (object, method))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (object, method))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -150,7 +146,8 @@ impl crate::System::Runtime::Serialization::XmlFormatGetOnlyCollectionReaderDele
     feature = "cordl_class_System+Runtime+Serialization+XmlFormatGetOnlyCollectionReaderDelegate"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Serialization::XmlFormatGetOnlyCollectionReaderDelegate {
+    for crate::System::Runtime::Serialization::XmlFormatGetOnlyCollectionReaderDelegate
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+Anchor")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Anchor {
     pub isAutomaticAnchor: bool,
     pub isAlignmentAnchor: bool,
@@ -9,8 +9,7 @@ pub struct Anchor {
     pub automaticAnchorUuid: crate::System::Guid,
 }
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+Anchor")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
+unsafe impl quest_hook::libil2cpp::Type for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Meta.XR.MultiplayerBlocks.Colocation";
@@ -29,18 +28,16 @@ for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+Anchor")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -51,7 +48,8 @@ for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
 }
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+Anchor")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -65,22 +63,22 @@ for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
 }
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+Anchor")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+Anchor")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -94,7 +92,8 @@ for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
 }
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+Anchor")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -109,9 +108,10 @@ impl crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
         &mut self,
         other: crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor),
@@ -126,9 +126,7 @@ impl crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -139,9 +137,10 @@ impl crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
         colocationGroupId: u32,
         automaticAnchorUuid: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool, u64, u32, crate::System::Guid),
@@ -157,42 +156,38 @@ impl crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        isAutomaticAnchor,
-                        isAlignmentAnchor,
-                        ownerOculusId,
-                        colocationGroupId,
-                        automaticAnchorUuid,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    isAutomaticAnchor,
+                    isAlignmentAnchor,
+                    ownerOculusId,
+                    colocationGroupId,
+                    automaticAnchorUuid,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Meta+XR+MultiplayerBlocks+Colocation+Anchor")]
-impl AsRef<
-    crate::System::IEquatable_1<crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor>,
-> for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
+impl AsRef<crate::System::IEquatable_1<crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor>>
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor,
-    > {
+    ) -> &crate::System::IEquatable_1<crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor> {
         todo!()
     }
 }
 #[cfg(feature = "Meta+XR+MultiplayerBlocks+Colocation+Anchor")]
-impl AsMut<
-    crate::System::IEquatable_1<crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor>,
-> for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor {
+impl AsMut<crate::System::IEquatable_1<crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor>>
+    for crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor,
-    > {
+    ) -> &mut crate::System::IEquatable_1<crate::Meta::XR::MultiplayerBlocks::Colocation::Anchor>
+    {
         todo!()
     }
 }

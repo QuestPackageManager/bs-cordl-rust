@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobRanges")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct JobRanges {
     pub BatchSize: i32,
     pub NumJobs: i32,
@@ -8,8 +8,7 @@ pub struct JobRanges {
     pub StartEndIndex: crate::System::IntPtr,
 }
 #[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobRanges")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Jobs.LowLevel.Unsafe";
@@ -28,18 +27,14 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobRanges")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -49,8 +44,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobRanges")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -63,23 +57,19 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobRanges")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobRanges")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -93,7 +83,8 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
 }
 #[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobRanges")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
+    for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

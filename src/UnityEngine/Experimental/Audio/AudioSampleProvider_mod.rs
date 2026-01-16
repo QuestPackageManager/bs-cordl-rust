@@ -12,13 +12,15 @@ pub struct AudioSampleProvider {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Experimental::Audio::AudioSampleProvider {
+    for crate::UnityEngine::Experimental::Audio::AudioSampleProvider
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Experimental.Audio";
     const CLASS_NAME: &'static str = "AudioSampleProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -38,74 +40,71 @@ impl std::ops::Deref for crate::UnityEngine::Experimental::Audio::AudioSamplePro
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Audio+AudioSampleProvider")]
-impl std::ops::DerefMut
-for crate::UnityEngine::Experimental::Audio::AudioSampleProvider {
+impl std::ops::DerefMut for crate::UnityEngine::Experimental::Audio::AudioSampleProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Audio+AudioSampleProvider")]
 impl crate::UnityEngine::Experimental::Audio::AudioSampleProvider {
-    #[cfg(
-        feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
-    )]
-    pub type SampleFramesHandler = crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler;
+    #[cfg(feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler")]
+    pub type SampleFramesHandler =
+        crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler;
     pub fn InvokeSampleFramesAvailable(
         &mut self,
         sampleFrameCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("InvokeSampleFramesAvailable")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "InvokeSampleFramesAvailable",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InvokeSampleFramesAvailable", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InvokeSampleFramesAvailable",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (sampleFrameCount))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (sampleFrameCount))? };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeSampleFramesOverflow(
         &mut self,
         droppedSampleFrameCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("InvokeSampleFramesOverflow")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(
+                        "InvokeSampleFramesOverflow",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InvokeSampleFramesOverflow", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InvokeSampleFramesOverflow",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (droppedSampleFrameCount))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (droppedSampleFrameCount))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Experimental::Audio::AudioSampleProvider {
+    for crate::UnityEngine::Experimental::Audio::AudioSampleProvider
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -125,13 +124,15 @@ pub struct AudioSampleProvider_SampleFramesHandler {
     feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler {
+    for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Experimental.Audio";
     const CLASS_NAME: &'static str = "AudioSampleProvider/SampleFramesHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -143,28 +144,24 @@ for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHan
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
-)]
+#[cfg(feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler")]
 impl std::ops::Deref
-for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler {
+    for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler
+{
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
-)]
+#[cfg(feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler")]
 impl std::ops::DerefMut
-for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler {
+    for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
-)]
+#[cfg(feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler")]
 impl crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler {
     pub fn Invoke(
         &mut self,
@@ -173,39 +170,36 @@ impl crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHa
         >,
         sampleFrameCount: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Experimental::Audio::AudioSampleProvider,
-                            >,
-                            u32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Invoke")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Experimental::Audio::AudioSampleProvider,
+                        >,
+                        u32,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Invoke")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Invoke",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (provider, sampleFrameCount))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (provider, sampleFrameCount))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object.into())
@@ -215,31 +209,26 @@ impl crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHa
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            crate::System::IntPtr,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        crate::System::IntPtr,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (object, method))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (object, method))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -247,7 +236,8 @@ impl crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHa
     feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler {
+    for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

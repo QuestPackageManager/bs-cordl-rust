@@ -17,9 +17,7 @@ pub struct GhostEffectBehaviour {
     pub _endBehavior: crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior,
     pub progress: f32,
     pub textMeshPros: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>>,
     >,
     pub _canvasGroups: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -32,14 +30,14 @@ pub struct GhostEffectBehaviour {
     pub _finished: bool,
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GhostEffectBehaviour {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GhostEffectBehaviour {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "GhostEffectBehaviour";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -74,31 +72,28 @@ impl crate::GlobalNamespace::GhostEffectBehaviour {
         &mut self,
         on: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("EnableObjects")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("EnableObjects")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EnableObjects", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "EnableObjects",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (on))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (on))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -108,29 +103,26 @@ impl crate::GlobalNamespace::GhostEffectBehaviour {
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Playables::Playable,
-                            crate::UnityEngine::Playables::FrameData,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("OnBehaviourPlay")
+                    .find_method::<(
+                        crate::UnityEngine::Playables::Playable,
+                        crate::UnityEngine::Playables::FrameData,
+                    ), quest_hook::libil2cpp::Void, 2usize>("OnBehaviourPlay")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnBehaviourPlay", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnBehaviourPlay",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (playable, info))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (playable, info))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessFrame(
@@ -139,53 +131,47 @@ impl crate::GlobalNamespace::GhostEffectBehaviour {
         info: crate::UnityEngine::Playables::FrameData,
         playerData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Playables::Playable,
-                            crate::UnityEngine::Playables::FrameData,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("ProcessFrame")
+                    .find_method::<(
+                        crate::UnityEngine::Playables::Playable,
+                        crate::UnityEngine::Playables::FrameData,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("ProcessFrame")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessFrame", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessFrame",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (playable, info, playerData))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (playable, info, playerData))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -199,8 +185,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GhostEffectBe
     }
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour+EndBehavior")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum GhostEffectBehaviour_EndBehavior {
     #[default]
     DisableAll = 0i32,
@@ -209,7 +195,8 @@ pub enum GhostEffectBehaviour_EndBehavior {
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour+EndBehavior")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
+    for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -228,18 +215,16 @@ for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour+EndBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
+    for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -250,7 +235,8 @@ for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour+EndBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
+    for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -264,22 +250,22 @@ for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour+EndBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
+    for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour+EndBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
+    for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -292,8 +278,8 @@ for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
     }
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour+GhostEffectType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum GhostEffectBehaviour_GhostEffectType {
     #[default]
     Canvas = 1i32,
@@ -301,7 +287,8 @@ pub enum GhostEffectBehaviour_GhostEffectType {
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour+GhostEffectType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
+    for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -320,18 +307,16 @@ for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour+GhostEffectType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
+    for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -342,7 +327,8 @@ for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour+GhostEffectType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
+    for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -356,22 +342,22 @@ for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour+GhostEffectType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
+    for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour+GhostEffectType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
+    for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

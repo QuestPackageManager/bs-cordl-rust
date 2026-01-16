@@ -1,22 +1,20 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultAllocationStrategy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
+    for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
     const CLASS_NAME: &'static str = "DefaultAllocationStrategy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -29,8 +27,7 @@ for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy")]
-impl std::ops::Deref
-for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
+impl std::ops::Deref for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -38,7 +35,8 @@ for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy")]
 impl std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
+    for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -49,12 +47,12 @@ impl crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         typeHash: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, i32),
@@ -69,16 +67,13 @@ impl crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type, typeHash))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type, typeHash))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -88,60 +83,53 @@ impl crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
         typeHash: i32,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Release")
+                    .find_method::<(
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Release")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Release",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Release",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (typeHash, obj))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (typeHash, obj))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
+    for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -151,19 +139,17 @@ for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy")]
 impl AsRef<crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy>
-for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
-    fn as_ref(
-        &self,
-    ) -> &crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy {
+    for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy
+{
+    fn as_ref(&self) -> &crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy")]
 impl AsMut<crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy>
-for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy {
+    for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy
+{
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy {
         unsafe { std::mem::transmute(self) }
     }
 }

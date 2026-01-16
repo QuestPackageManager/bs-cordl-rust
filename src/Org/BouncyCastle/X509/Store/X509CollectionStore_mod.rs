@@ -7,13 +7,15 @@ pub struct X509CollectionStore {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+X509CollectionStore")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::X509::Store::X509CollectionStore {
+    for crate::Org::BouncyCastle::X509::Store::X509CollectionStore
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.X509.Store";
     const CLASS_NAME: &'static str = "X509CollectionStore";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,43 +44,38 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::Store::X509Collectio
 impl crate::Org::BouncyCastle::X509::Store::X509CollectionStore {
     pub fn GetMatches(
         &mut self,
-        selector: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::X509::Store::IX509Selector,
-        >,
+        selector: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::Store::IX509Selector>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::X509::Store::IX509Selector,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ICollection,
-                        >,
-                        1usize,
-                    >("GetMatches")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::X509::Store::IX509Selector,
+                    >), quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>, 1usize>(
+                        "GetMatches",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetMatches", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetMatches",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ICollection,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (selector))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         collection: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (collection))?;
         Ok(__cordl_object.into())
@@ -87,9 +84,10 @@ impl crate::Org::BouncyCastle::X509::Store::X509CollectionStore {
         &mut self,
         collection: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -106,15 +104,15 @@ impl crate::Org::BouncyCastle::X509::Store::X509CollectionStore {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (collection))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (collection))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+X509CollectionStore")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::X509::Store::X509CollectionStore {
+    for crate::Org::BouncyCastle::X509::Store::X509CollectionStore
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -124,14 +122,16 @@ for crate::Org::BouncyCastle::X509::Store::X509CollectionStore {
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509CollectionStore")]
 impl AsRef<crate::Org::BouncyCastle::X509::Store::IX509Store>
-for crate::Org::BouncyCastle::X509::Store::X509CollectionStore {
+    for crate::Org::BouncyCastle::X509::Store::X509CollectionStore
+{
     fn as_ref(&self) -> &crate::Org::BouncyCastle::X509::Store::IX509Store {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509CollectionStore")]
 impl AsMut<crate::Org::BouncyCastle::X509::Store::IX509Store>
-for crate::Org::BouncyCastle::X509::Store::X509CollectionStore {
+    for crate::Org::BouncyCastle::X509::Store::X509CollectionStore
+{
     fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::X509::Store::IX509Store {
         unsafe { std::mem::transmute(self) }
     }

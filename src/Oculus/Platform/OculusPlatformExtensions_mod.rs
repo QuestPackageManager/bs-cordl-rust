@@ -5,14 +5,14 @@ pub struct OculusPlatformExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+OculusPlatformExtensions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Oculus::Platform::OculusPlatformExtensions {
+unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::OculusPlatformExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Oculus.Platform";
     const CLASS_NAME: &'static str = "OculusPlatformExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,9 +46,10 @@ impl crate::Oculus::Platform::OculusPlatformExtensions {
             quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>),
@@ -78,12 +79,14 @@ impl crate::Oculus::Platform::OculusPlatformExtensions {
         >,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -120,34 +123,29 @@ impl crate::Oculus::Platform::OculusPlatformExtensions {
         >,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Request_1<T>,
-                            >,
-                            crate::System::Threading::CancellationToken,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Message_1<T>,
-                                >,
-                            >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request_1<T>>,
+                        crate::System::Threading::CancellationToken,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1<T>>,
                         >,
-                        2usize,
-                    >("WaitAsync")
+                    >, 2usize>("WaitAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WaitAsync", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WaitAsync",
+                            2usize
                         )
                     })
             });
@@ -155,9 +153,7 @@ impl crate::Oculus::Platform::OculusPlatformExtensions {
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1<T>>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (oculusRequest, cancellationToken))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (oculusRequest, cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn WaitWithTimeoutAsync<T>(
@@ -172,35 +168,30 @@ impl crate::Oculus::Platform::OculusPlatformExtensions {
         >,
     >
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Request_1<T>,
-                            >,
-                            crate::System::TimeSpan,
-                            crate::System::Threading::CancellationToken,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Message_1<T>,
-                                >,
-                            >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request_1<T>>,
+                        crate::System::TimeSpan,
+                        crate::System::Threading::CancellationToken,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1<T>>,
                         >,
-                        3usize,
-                    >("WaitWithTimeoutAsync")
+                    >, 3usize>("WaitWithTimeoutAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WaitWithTimeoutAsync", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "WaitWithTimeoutAsync",
+                            3usize
                         )
                     })
             });
@@ -209,15 +200,13 @@ impl crate::Oculus::Platform::OculusPlatformExtensions {
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1<T>>,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (oculusRequest, timeout, cancellationToken))?
+            cordl_method_info.invoke_unchecked((), (oculusRequest, timeout, cancellationToken))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+OculusPlatformExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Oculus::Platform::OculusPlatformExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::OculusPlatformExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

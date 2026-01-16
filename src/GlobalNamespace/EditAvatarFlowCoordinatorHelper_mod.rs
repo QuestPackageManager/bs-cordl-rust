@@ -3,15 +3,11 @@
 #[derive(Debug)]
 pub struct EditAvatarFlowCoordinatorHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _avatarSystemSelectionFlowCoordinator: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
-    >,
-    pub _playerDataModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlayerDataModel,
-    >,
-    pub _avatarSystemCollection: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::AvatarCore::AvatarSystemCollection,
-    >,
+    pub _avatarSystemSelectionFlowCoordinator:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator>,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+    pub _avatarSystemCollection:
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::AvatarSystemCollection>,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_2<
@@ -20,19 +16,20 @@ pub struct EditAvatarFlowCoordinatorHelper {
         >,
     >,
     pub _parentFlowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-    pub _singleAvatarEditorFlowCoordinator: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-    >,
+    pub _singleAvatarEditorFlowCoordinator:
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator>,
 }
 #[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
+    for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "EditAvatarFlowCoordinatorHelper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -71,28 +68,28 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
         >,
         finishAction: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                            >,
-                            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("HandleAvatarEditorFlowCoordinatorDidFinish")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                        >,
+                        crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "HandleAvatarEditorFlowCoordinatorDidFinish",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleAvatarEditorFlowCoordinatorDidFinish", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleAvatarEditorFlowCoordinatorDidFinish",
+                            3usize
                         )
                     })
             });
@@ -109,57 +106,55 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
         >,
         finishAction: crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
-                            >,
-                            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleAvatarSystemSelectionFlowCoordinatorDidFinish")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+                        >,
+                        crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "HandleAvatarSystemSelectionFlowCoordinatorDidFinish",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleAvatarSystemSelectionFlowCoordinatorDidFinish", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleAvatarSystemSelectionFlowCoordinatorDidFinish",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (flowCoordinator, finishAction))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (flowCoordinator, finishAction))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Initialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Initialize(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Initialize", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Initialize",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -174,43 +169,42 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
         immediately: bool,
         replaceTopViewController: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-                            >,
-                            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
-                            quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-                            bool,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("PresentAvatarEditorFlowCoordinator")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+                        >,
+                        crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+                        quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 5usize>(
+                        "PresentAvatarEditorFlowCoordinator"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PresentAvatarEditorFlowCoordinator", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PresentAvatarEditorFlowCoordinator",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        flowCoordinator,
-                        editMode,
-                        parentFlowCoordinator,
-                        immediately,
-                        replaceTopViewController,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    flowCoordinator,
+                    editMode,
+                    parentFlowCoordinator,
+                    immediately,
+                    replaceTopViewController,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -221,61 +215,57 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
         immediately: bool,
         replaceTopViewController: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-                            bool,
-                            bool,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("Show")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                        bool,
+                        bool,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 4usize>("Show")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Show",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Show",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        parentFlowCoordinator,
-                        backButtonVisible,
-                        immediately,
-                        replaceTopViewController,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    parentFlowCoordinator,
+                    backButtonVisible,
+                    immediately,
+                    replaceTopViewController,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn add_didFinishEvent(
@@ -287,46 +277,45 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-                                crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_didFinishEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_2<
+                            quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_didFinishEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_didFinishEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_didFinishEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
-    pub fn get__hasOnlyOneAvatarSystem(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn get__hasOnlyOneAvatarSystem(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get__hasOnlyOneAvatarSystem")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get__hasOnlyOneAvatarSystem", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get__hasOnlyOneAvatarSystem",
+                            0usize
                         )
                     })
             });
@@ -342,37 +331,35 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-                                crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_didFinishEvent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_2<
+                            quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_didFinishEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_didFinishEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_didFinishEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -381,8 +368,8 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     }
 }
 #[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper+FinishAction")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum EditAvatarFlowCoordinatorHelper_FinishAction {
     #[default]
     Back = 1i32,
@@ -390,7 +377,8 @@ pub enum EditAvatarFlowCoordinatorHelper_FinishAction {
 }
 #[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
+    for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -409,18 +397,16 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
+    for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -431,7 +417,8 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
 }
 #[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
+    for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -445,22 +432,22 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
 }
 #[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
+    for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
+    for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

@@ -6,13 +6,15 @@ pub struct CollectionExtensions {
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+CollectionExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Collections::Generic::CollectionExtensions {
+    for crate::System::Collections::Generic::CollectionExtensions
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Generic";
     const CLASS_NAME: &'static str = "CollectionExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,39 +48,38 @@ impl crate::System::Collections::Generic::CollectionExtensions {
         key: TKey,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TKey: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyDictionary_2<
-                                    TKey,
-                                    TValue,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IReadOnlyDictionary_2<
+                                TKey,
+                                TValue,
                             >,
-                            TKey,
-                        ),
-                        TValue,
-                        2usize,
-                    >("GetValueOrDefault")
+                        >,
+                        TKey,
+                    ), TValue, 2usize>("GetValueOrDefault")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetValueOrDefault", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetValueOrDefault",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: TValue = unsafe {
-            cordl_method_info.invoke_unchecked((), (dictionary, key))?
-        };
+        let __cordl_ret: TValue =
+            unsafe { cordl_method_info.invoke_unchecked((), (dictionary, key))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValueOrDefault_TValue1<TKey, TValue>(
@@ -89,46 +90,46 @@ impl crate::System::Collections::Generic::CollectionExtensions {
         defaultValue: TValue,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TKey: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyDictionary_2<
-                                    TKey,
-                                    TValue,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IReadOnlyDictionary_2<
+                                TKey,
+                                TValue,
                             >,
-                            TKey,
-                            TValue,
-                        ),
+                        >,
+                        TKey,
                         TValue,
-                        3usize,
-                    >("GetValueOrDefault")
+                    ), TValue, 3usize>("GetValueOrDefault")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetValueOrDefault", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetValueOrDefault",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: TValue = unsafe {
-            cordl_method_info.invoke_unchecked((), (dictionary, key, defaultValue))?
-        };
+        let __cordl_ret: TValue =
+            unsafe { cordl_method_info.invoke_unchecked((), (dictionary, key, defaultValue))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+CollectionExtensions")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Collections::Generic::CollectionExtensions {
+    for crate::System::Collections::Generic::CollectionExtensions
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

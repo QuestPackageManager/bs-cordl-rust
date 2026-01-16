@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ValueTuple_6")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ValueTuple_6<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -24,29 +24,28 @@ pub struct ValueTuple_6<
 }
 #[cfg(feature = "cordl_class_System+ValueTuple_6")]
 unsafe impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Type for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > quest_hook::libil2cpp::Type for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
     const CLASS_NAME: &'static str = "ValueTuple`6";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System", "ValueTuple`6")
-                    .unwrap()
-                    .make_generic::<(T1, T2, T3, T4, T5, T6)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find("System", "ValueTuple`6")
+                .unwrap()
+                .make_generic::<(T1, T2, T3, T4, T5, T6)>()
+                .unwrap()
+                .unwrap()
+        })
     }
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
@@ -62,25 +61,22 @@ unsafe impl<
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+ValueTuple_6")]
 unsafe impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Argument
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > quest_hook::libil2cpp::Argument for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -91,14 +87,14 @@ for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
 }
 #[cfg(feature = "cordl_class_System+ValueTuple_6")]
 unsafe impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Parameter
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > quest_hook::libil2cpp::Parameter for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -112,35 +108,34 @@ for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
 }
 #[cfg(feature = "cordl_class_System+ValueTuple_6")]
 unsafe impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Returned
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > quest_hook::libil2cpp::Returned for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+ValueTuple_6")]
 unsafe impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Return for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > quest_hook::libil2cpp::Return for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -154,14 +149,14 @@ unsafe impl<
 }
 #[cfg(feature = "cordl_class_System+ValueTuple_6")]
 unsafe impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ThisArgument
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > quest_hook::libil2cpp::ThisArgument for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -172,34 +167,48 @@ for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     pub fn CompareTo(
         &mut self,
         other: crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>),
@@ -214,9 +223,7 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
@@ -224,22 +231,35 @@ impl<
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -254,9 +274,7 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_ValueTuple_6_1(
@@ -264,22 +282,35 @@ impl<
         other: crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>),
@@ -294,36 +325,48 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -332,27 +375,38 @@ impl<
     }
     pub fn GetHashCodeCore(
         &mut self,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEqualityComparer,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -369,9 +423,7 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (comparer))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IStructuralComparable_CompareTo(
@@ -380,121 +432,144 @@ impl<
         comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::IComparer,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("System.Collections.IStructuralComparable.CompareTo")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+                    ), i32, 2usize>(
+                        "System.Collections.IStructuralComparable.CompareTo"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "System.Collections.IStructuralComparable.CompareTo", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "System.Collections.IStructuralComparable.CompareTo",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other, comparer))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked(self, (other, comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IStructuralEquatable_Equals(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEqualityComparer,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::IEqualityComparer,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("System.Collections.IStructuralEquatable.Equals")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer>,
+                    ), bool, 2usize>(
+                        "System.Collections.IStructuralEquatable.Equals"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "System.Collections.IStructuralEquatable.Equals", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "System.Collections.IStructuralEquatable.Equals",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other, comparer))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (other, comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IStructuralEquatable_GetHashCode(
         &mut self,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEqualityComparer,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -511,9 +586,7 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (comparer))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_IComparable_CompareTo(
@@ -521,22 +594,35 @@ impl<
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -551,34 +637,43 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_IValueTupleInternal_GetHashCode(
         &mut self,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEqualityComparer,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -595,33 +690,42 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (comparer))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_IValueTupleInternal_ToStringEnd(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -636,42 +740,53 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Runtime_CompilerServices_ITuple_get_Length(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        i32,
-                        0usize,
-                    >("System.Runtime.CompilerServices.ITuple.get_Length")
+                    .find_method::<(), i32, 0usize>(
+                        "System.Runtime.CompilerServices.ITuple.get_Length",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "System.Runtime.CompilerServices.ITuple.get_Length", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "System.Runtime.CompilerServices.ITuple.get_Length",
+                            0usize
                         )
                     })
             });
@@ -680,26 +795,37 @@ impl<
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
     where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T4: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T5: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T6: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -714,222 +840,224 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IStructuralComparable>
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > AsRef<crate::System::Collections::IStructuralComparable>
+    for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     fn as_ref(&self) -> &crate::System::Collections::IStructuralComparable {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IStructuralComparable>
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > AsMut<crate::System::Collections::IStructuralComparable>
+    for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     fn as_mut(&mut self) -> &mut crate::System::Collections::IStructuralComparable {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IStructuralEquatable>
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > AsRef<crate::System::Collections::IStructuralEquatable>
+    for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     fn as_ref(&self) -> &crate::System::Collections::IStructuralEquatable {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IStructuralEquatable>
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > AsMut<crate::System::Collections::IStructuralEquatable>
+    for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     fn as_mut(&mut self) -> &mut crate::System::Collections::IStructuralEquatable {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IComparable>
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > AsRef<crate::System::IComparable> for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     fn as_ref(&self) -> &crate::System::IComparable {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IComparable>
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > AsMut<crate::System::IComparable> for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     fn as_mut(&mut self) -> &mut crate::System::IComparable {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> AsRef<
-    crate::System::IComparable_1<crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>>,
-> for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > AsRef<crate::System::IComparable_1<crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>>>
+    for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
-        crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>,
-    > {
+    ) -> &crate::System::IComparable_1<crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>> {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> AsMut<
-    crate::System::IComparable_1<crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>>,
-> for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > AsMut<crate::System::IComparable_1<crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>>>
+    for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
-        crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>,
-    > {
+    ) -> &mut crate::System::IComparable_1<crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>>
+    {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IEquatable_1<crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>>>
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > AsRef<crate::System::IEquatable_1<crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>>>
+    for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>,
-    > {
+    ) -> &crate::System::IEquatable_1<crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>> {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IEquatable_1<crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>>>
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > AsMut<crate::System::IEquatable_1<crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>>>
+    for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>,
-    > {
+    ) -> &mut crate::System::IEquatable_1<crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>> {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IValueTupleInternal>
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > AsRef<crate::System::IValueTupleInternal>
+    for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     fn as_ref(&self) -> &crate::System::IValueTupleInternal {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IValueTupleInternal>
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > AsMut<crate::System::IValueTupleInternal>
+    for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     fn as_mut(&mut self) -> &mut crate::System::IValueTupleInternal {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Runtime::CompilerServices::ITuple>
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > AsRef<crate::System::Runtime::CompilerServices::ITuple>
+    for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::ITuple {
         todo!()
     }
 }
 #[cfg(feature = "System+ValueTuple_6")]
 impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Runtime::CompilerServices::ITuple>
-for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6> {
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+        T3: quest_hook::libil2cpp::Type,
+        T4: quest_hook::libil2cpp::Type,
+        T5: quest_hook::libil2cpp::Type,
+        T6: quest_hook::libil2cpp::Type,
+    > AsMut<crate::System::Runtime::CompilerServices::ITuple>
+    for crate::System::ValueTuple_6<T1, T2, T3, T4, T5, T6>
+{
     fn as_mut(&mut self) -> &mut crate::System::Runtime::CompilerServices::ITuple {
         todo!()
     }

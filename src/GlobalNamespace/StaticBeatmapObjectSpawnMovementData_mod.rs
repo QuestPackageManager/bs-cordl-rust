@@ -6,13 +6,15 @@ pub struct StaticBeatmapObjectSpawnMovementData {
 }
 #[cfg(feature = "cordl_class_StaticBeatmapObjectSpawnMovementData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
+    for crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "StaticBeatmapObjectSpawnMovementData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,8 +34,7 @@ impl std::ops::Deref for crate::GlobalNamespace::StaticBeatmapObjectSpawnMovemen
     }
 }
 #[cfg(feature = "StaticBeatmapObjectSpawnMovementData")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
+impl std::ops::DerefMut for crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -48,9 +49,10 @@ impl crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
         noteLinesCount: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, crate::GlobalNamespace::NoteLineLayer),
@@ -74,32 +76,31 @@ impl crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
     pub fn LineYPosForLineLayer(
         lineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::GlobalNamespace::NoteLineLayer),
-                        f32,
-                        1usize,
-                    >("LineYPosForLineLayer")
+                    .find_static_method::<(crate::GlobalNamespace::NoteLineLayer), f32, 1usize>(
+                        "LineYPosForLineLayer",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LineYPosForLineLayer", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LineYPosForLineLayer",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (lineLayer))?
-        };
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (lineLayer))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_StaticBeatmapObjectSpawnMovementData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
+    for crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

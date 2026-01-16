@@ -5,14 +5,14 @@ pub struct ArrayPoolEventSource {
     __cordl_parent: crate::System::Diagnostics::Tracing::EventSource,
 }
 #[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Buffers::ArrayPoolEventSource {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Buffers::ArrayPoolEventSource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Buffers";
     const CLASS_NAME: &'static str = "ArrayPoolEventSource";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,7 +40,8 @@ impl std::ops::DerefMut for crate::System::Buffers::ArrayPoolEventSource {
 #[cfg(feature = "System+Buffers+ArrayPoolEventSource")]
 impl crate::System::Buffers::ArrayPoolEventSource {
     #[cfg(feature = "System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
-    pub type BufferAllocatedReason = crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason;
+    pub type BufferAllocatedReason =
+        crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason;
     pub fn BufferAllocated(
         &mut self,
         bufferId: i32,
@@ -49,35 +50,30 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         bucketId: i32,
         reason: crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                            crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("BufferAllocated")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                        crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason,
+                    ), quest_hook::libil2cpp::Void, 5usize>("BufferAllocated")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BufferAllocated", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BufferAllocated",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (bufferId, bufferSize, poolId, bucketId, reason),
-                )?
+                .invoke_unchecked(self, (bufferId, bufferSize, poolId, bucketId, reason))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,26 +84,25 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         poolId: i32,
         bucketId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("BufferRented")
+                    .find_method::<(i32, i32, i32, i32), quest_hook::libil2cpp::Void, 4usize>(
+                        "BufferRented",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BufferRented", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BufferRented",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (bufferId, bufferSize, poolId, bucketId))?
+            cordl_method_info.invoke_unchecked(self, (bufferId, bufferSize, poolId, bucketId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -117,26 +112,25 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         bufferSize: i32,
         poolId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("BufferReturned")
+                    .find_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(
+                        "BufferReturned",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BufferReturned", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BufferReturned",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bufferId, bufferSize, poolId))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bufferId, bufferSize, poolId))? };
         Ok(__cordl_ret.into())
     }
     pub fn BufferTrimPoll(
@@ -144,26 +138,25 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         milliseconds: i32,
         pressure: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("BufferTrimPoll")
+                    .find_method::<(i32, i32), quest_hook::libil2cpp::Void, 2usize>(
+                        "BufferTrimPoll",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BufferTrimPoll", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BufferTrimPoll",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (milliseconds, pressure))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (milliseconds, pressure))? };
         Ok(__cordl_ret.into())
     }
     pub fn BufferTrimmed(
@@ -172,54 +165,52 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         bufferSize: i32,
         poolId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("BufferTrimmed")
+                    .find_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(
+                        "BufferTrimmed",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BufferTrimmed", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BufferTrimmed",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bufferId, bufferSize, poolId))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (bufferId, bufferSize, poolId))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -233,8 +224,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Buffers::ArrayPoolEven
     }
 }
 #[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ArrayPoolEventSource_BufferAllocatedReason {
     #[default]
     OverMaximumSize = 1i32,
@@ -243,7 +234,8 @@ pub enum ArrayPoolEventSource_BufferAllocatedReason {
 }
 #[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
+    for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Buffers";
@@ -262,18 +254,16 @@ for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
+    for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -284,7 +274,8 @@ for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
 }
 #[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
+    for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -298,22 +289,22 @@ for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
 }
 #[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
+    for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
+    for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

@@ -7,13 +7,15 @@ pub struct MockRuntime {
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.XR.OpenXR.Features.Mock";
     const CLASS_NAME: &'static str = "MockRuntime";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,88 +44,80 @@ impl std::ops::DerefMut for crate::UnityEngine::XR::OpenXR::Features::Mock::Mock
 impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
     pub const extLib: &'static str = "mock_api";
     pub const featureId: &'static str = "com.unity.openxr.feature.mockruntime";
-    #[cfg(
-        feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+AfterFunctionDelegate"
-    )]
-    pub type AfterFunctionDelegate = crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDelegate;
-    #[cfg(
-        feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+BeforeFunctionDelegate"
-    )]
-    pub type BeforeFunctionDelegate = crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDelegate;
+    #[cfg(feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+AfterFunctionDelegate")]
+    pub type AfterFunctionDelegate =
+        crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDelegate;
+    #[cfg(feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+BeforeFunctionDelegate")]
+    pub type BeforeFunctionDelegate =
+        crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDelegate;
     #[cfg(feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEvent")]
     pub type ScriptEvent = crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent;
-    #[cfg(
-        feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEventDelegate"
-    )]
-    pub type ScriptEventDelegate = crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDelegate;
+    #[cfg(feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEventDelegate")]
+    pub type ScriptEventDelegate =
+        crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDelegate;
     pub fn ActivateSecondaryView(
         viewConfigurationType: crate::UnityEngine::XR::OpenXR::NativeTypes::XrViewConfigurationType,
         activate: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::XR::OpenXR::NativeTypes::XrViewConfigurationType,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ActivateSecondaryView")
+                    .find_static_method::<(
+                        crate::UnityEngine::XR::OpenXR::NativeTypes::XrViewConfigurationType,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "ActivateSecondaryView"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ActivateSecondaryView", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ActivateSecondaryView",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (viewConfigurationType, activate))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (viewConfigurationType, activate))? };
         Ok(__cordl_ret.into())
     }
     pub fn AfterFunctionCallback(
         function: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         result: crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("AfterFunctionCallback")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "AfterFunctionCallback"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AfterFunctionCallback", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AfterFunctionCallback",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (function, result))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (function, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn BeforeFunctionCallback(
         function: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -138,84 +132,76 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult = unsafe {
-            cordl_method_info.invoke_unchecked((), (function))?
-        };
+        let __cordl_ret: crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult =
+            unsafe { cordl_method_info.invoke_unchecked((), (function))? };
         Ok(__cordl_ret.into())
     }
-    pub fn CauseInstanceLoss() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Void,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn CauseInstanceLoss() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("CauseInstanceLoss")
+                    .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "CauseInstanceLoss",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CauseInstanceLoss", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CauseInstanceLoss",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CauseUserPresenceChange(
         hasUserPresent: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("CauseUserPresenceChange")
+                    .find_static_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "CauseUserPresenceChange",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CauseUserPresenceChange", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CauseUserPresenceChange",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (hasUserPresent))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (hasUserPresent))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ClearFunctionCallbacks() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Void,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ClearFunctionCallbacks() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ClearFunctionCallbacks")
+                    .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "ClearFunctionCallbacks",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ClearFunctionCallbacks", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ClearFunctionCallbacks",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAfterFunctionCallback(
@@ -225,7 +211,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
             crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDelegate,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -256,7 +243,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
             crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDelegate,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -284,47 +272,42 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
         primaryLayerCount: quest_hook::libil2cpp::ByRefMut<i32>,
         secondaryLayerCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("GetEndFrameStats")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                        quest_hook::libil2cpp::ByRefMut<i32>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("GetEndFrameStats")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetEndFrameStats", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetEndFrameStats",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (primaryLayerCount, secondaryLayerCount))?
+            cordl_method_info.invoke_unchecked((), (primaryLayerCount, secondaryLayerCount))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetRegisteredAndroidThreadsCount() -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        u64,
-                        0usize,
-                    >("GetRegisteredAndroidThreadsCount")
+                    .find_static_method::<(), u64, 0usize>("GetRegisteredAndroidThreadsCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetRegisteredAndroidThreadsCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetRegisteredAndroidThreadsCount",
+                            0usize
                         )
                     })
             });
@@ -334,57 +317,55 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
     pub fn HookCreateInstance(
         func: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::System::IntPtr),
-                        crate::System::IntPtr,
-                        1usize,
-                    >("HookCreateInstance")
+                    .find_static_method::<(crate::System::IntPtr), crate::System::IntPtr, 1usize>(
+                        "HookCreateInstance",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HookCreateInstance", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HookCreateInstance",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::IntPtr = unsafe {
-            cordl_method_info.invoke_unchecked((), (func))?
-        };
+        let __cordl_ret: crate::System::IntPtr =
+            unsafe { cordl_method_info.invoke_unchecked((), (func))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Internal_GetRegisteredAndroidThreadsCount() -> quest_hook::libil2cpp::Result<
-        u64,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Internal_GetRegisteredAndroidThreadsCount() -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        u64,
-                        0usize,
-                    >("Internal_GetRegisteredAndroidThreadsCount")
+                    .find_static_method::<(), u64, 0usize>(
+                        "Internal_GetRegisteredAndroidThreadsCount",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_GetRegisteredAndroidThreadsCount", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_GetRegisteredAndroidThreadsCount",
+                            0usize
                         )
                     })
             });
         let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Internal_GetSessionState() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::XR::OpenXR::NativeTypes::XrSessionState,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Internal_GetSessionState(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::OpenXR::NativeTypes::XrSessionState>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -399,44 +380,40 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::XR::OpenXR::NativeTypes::XrSessionState = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::XR::OpenXR::NativeTypes::XrSessionState =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_IsAndroidThreadTypeRegistered(
         threadType: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u32),
-                        bool,
-                        1usize,
-                    >("Internal_IsAndroidThreadTypeRegistered")
+                    .find_static_method::<(u32), bool, 1usize>(
+                        "Internal_IsAndroidThreadTypeRegistered",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_IsAndroidThreadTypeRegistered", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_IsAndroidThreadTypeRegistered",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (threadType))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (threadType))? };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_RegisterScriptEventCallback(
         callback: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDelegate,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -455,63 +432,53 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult = unsafe {
-            cordl_method_info.invoke_unchecked((), (callback))?
-        };
+        let __cordl_ret: crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult =
+            unsafe { cordl_method_info.invoke_unchecked((), (callback))? };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_TransitionToState(
         state: crate::UnityEngine::XR::OpenXR::NativeTypes::XrSessionState,
         forceTransition: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::XR::OpenXR::NativeTypes::XrSessionState,
-                            bool,
-                        ),
+                    .find_static_method::<(
+                        crate::UnityEngine::XR::OpenXR::NativeTypes::XrSessionState,
                         bool,
-                        2usize,
-                    >("Internal_TransitionToState")
+                    ), bool, 2usize>("Internal_TransitionToState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_TransitionToState", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Internal_TransitionToState",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (state, forceTransition))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (state, forceTransition))? };
         Ok(__cordl_ret.into())
     }
-    pub fn IsAndroidThreadTypeRegistered(
-        threadType: u32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn IsAndroidThreadTypeRegistered(threadType: u32) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u32),
-                        bool,
-                        1usize,
-                    >("IsAndroidThreadTypeRegistered")
+                    .find_static_method::<(u32), bool, 1usize>("IsAndroidThreadTypeRegistered")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsAndroidThreadTypeRegistered", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsAndroidThreadTypeRegistered",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (threadType))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (threadType))? };
         Ok(__cordl_ret.into())
     }
     pub fn MetaPerformanceMetrics_SeedCounterOnce_Float(
@@ -519,32 +486,29 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
         value: f32,
         unit: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            f32,
-                            u32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("MetaPerformanceMetrics_SeedCounterOnce_Float")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        f32,
+                        u32,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "MetaPerformanceMetrics_SeedCounterOnce_Float",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MetaPerformanceMetrics_SeedCounterOnce_Float", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MetaPerformanceMetrics_SeedCounterOnce_Float",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (xrPathString, value, unit))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (xrPathString, value, unit))? };
         Ok(__cordl_ret.into())
     }
     pub fn MockRuntime_RegisterFunctionCallbacks(
@@ -555,7 +519,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
             crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDelegate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -579,14 +544,13 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (hookBefore, hookAfter))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (hookBefore, hookAfter))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -595,26 +559,23 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
         &mut self,
         instance: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u64),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("OnInstanceDestroy")
+                    .find_method::<(u64), quest_hook::libil2cpp::Void, 1usize>("OnInstanceDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnInstanceDestroy", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnInstanceDestroy",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (instance))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (instance))? };
         Ok(__cordl_ret.into())
     }
     pub fn PerformanceSettings_CauseNotification(
@@ -622,7 +583,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
         subDomain: crate::UnityEngine::XR::OpenXR::Features::Extensions::PerformanceSettings::PerformanceSubDomain,
         level: crate::UnityEngine::XR::OpenXR::Features::Extensions::PerformanceSettings::PerformanceNotificationLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -643,17 +605,17 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (domain, subDomain, level))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (domain, subDomain, level))? };
         Ok(__cordl_ret.into())
     }
     pub fn PerformanceSettings_GetPerformanceLevelHint(
         domain: crate::UnityEngine::XR::OpenXR::Features::Extensions::PerformanceSettings::PerformanceDomain,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::XR::OpenXR::Features::Extensions::PerformanceSettings::PerformanceLevelHint,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -679,79 +641,68 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
         evt: crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent,
         param: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent,
-                            u64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ReceiveScriptEvent")
+                    .find_static_method::<(
+                        crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent,
+                        u64,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ReceiveScriptEvent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReceiveScriptEvent", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ReceiveScriptEvent",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (evt, param))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (evt, param))? };
         Ok(__cordl_ret.into())
     }
-    pub fn RequestExitSession() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Void,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn RequestExitSession() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("RequestExitSession")
+                    .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "RequestExitSession",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RequestExitSession", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "RequestExitSession",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn ResetDefaults() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Void,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn ResetDefaults() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ResetDefaults")
+                    .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("ResetDefaults")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ResetDefaults", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ResetDefaults",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetFunctionCallback_MockRuntime_AfterFunctionDelegate2(
@@ -760,7 +711,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
             crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDelegate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -784,9 +736,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (function, afterCallback))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (function, afterCallback))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetFunctionCallback_MockRuntime_BeforeFunctionDelegate1(
@@ -795,7 +746,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
             crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDelegate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -819,9 +771,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (function, beforeCallback))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (function, beforeCallback))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetFunctionCallback_MockRuntime_BeforeFunctionDelegate_MockRuntime_AfterFunctionDelegate0(
@@ -833,7 +784,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
             crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDelegate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -861,63 +813,60 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (function, beforeCallback, afterCallback))?
+            cordl_method_info.invoke_unchecked((), (function, beforeCallback, afterCallback))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetKeepFunctionCallbacks(
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetKeepFunctionCallbacks")
+                    .find_static_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "SetKeepFunctionCallbacks",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetKeepFunctionCallbacks", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetKeepFunctionCallbacks",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetReferenceSpaceBounds(
         referenceSpace: crate::UnityEngine::XR::OpenXR::NativeTypes::XrReferenceSpaceType,
         bounds: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::XR::OpenXR::NativeTypes::XrReferenceSpaceType,
-                            crate::UnityEngine::Vector2,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetReferenceSpaceBounds")
+                    .find_static_method::<(
+                        crate::UnityEngine::XR::OpenXR::NativeTypes::XrReferenceSpaceType,
+                        crate::UnityEngine::Vector2,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "SetReferenceSpaceBounds"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetReferenceSpaceBounds", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetReferenceSpaceBounds",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (referenceSpace, bounds))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (referenceSpace, bounds))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSpace_XrReferenceSpaceType0(
@@ -926,34 +875,29 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
         orientation: crate::UnityEngine::Quaternion,
         locationFlags: crate::UnityEngine::XR::OpenXR::NativeTypes::XrSpaceLocationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::XR::OpenXR::NativeTypes::XrReferenceSpaceType,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                            crate::UnityEngine::XR::OpenXR::NativeTypes::XrSpaceLocationFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetSpace")
+                    .find_static_method::<(
+                        crate::UnityEngine::XR::OpenXR::NativeTypes::XrReferenceSpaceType,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                        crate::UnityEngine::XR::OpenXR::NativeTypes::XrSpaceLocationFlags,
+                    ), quest_hook::libil2cpp::Void, 4usize>("SetSpace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetSpace", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetSpace",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (referenceSpace, position, orientation, locationFlags),
-                )?
+                .invoke_unchecked((), (referenceSpace, position, orientation, locationFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -963,34 +907,29 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
         orientation: crate::UnityEngine::Quaternion,
         locationFlags: crate::UnityEngine::XR::OpenXR::NativeTypes::XrSpaceLocationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            u64,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                            crate::UnityEngine::XR::OpenXR::NativeTypes::XrSpaceLocationFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetSpace")
+                    .find_static_method::<(
+                        u64,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                        crate::UnityEngine::XR::OpenXR::NativeTypes::XrSpaceLocationFlags,
+                    ), quest_hook::libil2cpp::Void, 4usize>("SetSpace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetSpace", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetSpace",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (actionHandle, position, orientation, locationFlags),
-                )?
+                .invoke_unchecked((), (actionHandle, position, orientation, locationFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1001,35 +940,32 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
         orientation: crate::UnityEngine::Quaternion,
         fov: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::XR::OpenXR::NativeTypes::XrViewConfigurationType,
-                            i32,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                            crate::UnityEngine::Vector4,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("SetViewPose")
+                    .find_static_method::<(
+                        crate::UnityEngine::XR::OpenXR::NativeTypes::XrViewConfigurationType,
+                        i32,
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                        crate::UnityEngine::Vector4,
+                    ), quest_hook::libil2cpp::Void, 5usize>("SetViewPose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetViewPose", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetViewPose",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (viewConfigurationType, viewIndex, position, orientation, fov),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (viewConfigurationType, viewIndex, position, orientation, fov),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1037,51 +973,47 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
         viewConfigurationType: crate::UnityEngine::XR::OpenXR::NativeTypes::XrViewConfigurationType,
         viewStateFlags: crate::UnityEngine::XR::OpenXR::NativeTypes::XrViewStateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::XR::OpenXR::NativeTypes::XrViewConfigurationType,
-                            crate::UnityEngine::XR::OpenXR::NativeTypes::XrViewStateFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetViewState")
+                    .find_static_method::<(
+                        crate::UnityEngine::XR::OpenXR::NativeTypes::XrViewConfigurationType,
+                        crate::UnityEngine::XR::OpenXR::NativeTypes::XrViewStateFlags,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SetViewState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetViewState", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SetViewState",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (viewConfigurationType, viewStateFlags))?
+            cordl_method_info.invoke_unchecked((), (viewConfigurationType, viewStateFlags))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn add_onScriptEvent(
@@ -1089,7 +1021,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
             crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDelegate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -1108,32 +1041,27 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Instance() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime,
-                        >,
-                        0usize,
-                    >("get_Instance")
+                    .find_static_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime,
+                    >, 0usize>("get_Instance")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Instance", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Instance",
+                            0usize
                         )
                     })
             });
@@ -1147,7 +1075,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
             crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDelegate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -1166,15 +1095,15 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1194,13 +1123,15 @@ pub struct MockRuntime_AfterFunctionDelegate {
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+AfterFunctionDelegate"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDelegate {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDelegate
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.XR.OpenXR.Features.Mock";
     const CLASS_NAME: &'static str = "MockRuntime/AfterFunctionDelegate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1214,7 +1145,8 @@ for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDel
 }
 #[cfg(feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+AfterFunctionDelegate")]
 impl std::ops::Deref
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDelegate {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDelegate
+{
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1222,7 +1154,8 @@ for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDel
 }
 #[cfg(feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+AfterFunctionDelegate")]
 impl std::ops::DerefMut
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDelegate {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDelegate
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1235,38 +1168,31 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDe
         result: crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        4usize,
-                    >("BeginInvoke")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 4usize>(
+                        "BeginInvoke",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginInvoke", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginInvoke",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (functionName, result, callback, object))?
+            cordl_method_info.invoke_unchecked(self, (functionName, result, callback, object))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1274,9 +1200,10 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDe
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
@@ -1291,9 +1218,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDe
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (result))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -1301,39 +1227,34 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDe
         functionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         result: crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Invoke")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Invoke")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Invoke",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (functionName, result))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (functionName, result))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object.into())
@@ -1343,31 +1264,26 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDe
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            crate::System::IntPtr,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        crate::System::IntPtr,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (object, method))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (object, method))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1375,7 +1291,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDe
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+AfterFunctionDelegate"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDelegate {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_AfterFunctionDelegate
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1395,13 +1312,15 @@ pub struct MockRuntime_BeforeFunctionDelegate {
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+BeforeFunctionDelegate"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDelegate {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDelegate
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.XR.OpenXR.Features.Mock";
     const CLASS_NAME: &'static str = "MockRuntime/BeforeFunctionDelegate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1413,76 +1332,64 @@ for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDe
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+BeforeFunctionDelegate"
-)]
+#[cfg(feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+BeforeFunctionDelegate")]
 impl std::ops::Deref
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDelegate {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDelegate
+{
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+BeforeFunctionDelegate"
-)]
+#[cfg(feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+BeforeFunctionDelegate")]
 impl std::ops::DerefMut
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDelegate {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDelegate
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+BeforeFunctionDelegate"
-)]
+#[cfg(feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+BeforeFunctionDelegate")]
 impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDelegate {
     pub fn BeginInvoke(
         &mut self,
         functionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        3usize,
-                    >("BeginInvoke")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 3usize>(
+                        "BeginInvoke",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginInvoke", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginInvoke",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (functionName, callback, object))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (functionName, callback, object))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
@@ -1497,20 +1404,18 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionD
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult = unsafe {
-            cordl_method_info.invoke_unchecked(self, (result))?
-        };
+        let __cordl_ret: crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult =
+            unsafe { cordl_method_info.invoke_unchecked(self, (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         functionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -1525,17 +1430,16 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionD
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult = unsafe {
-            cordl_method_info.invoke_unchecked(self, (functionName))?
-        };
+        let __cordl_ret: crate::UnityEngine::XR::OpenXR::NativeTypes::XrResult =
+            unsafe { cordl_method_info.invoke_unchecked(self, (functionName))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object.into())
@@ -1545,31 +1449,26 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionD
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            crate::System::IntPtr,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        crate::System::IntPtr,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (object, method))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (object, method))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1577,7 +1476,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionD
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+BeforeFunctionDelegate"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDelegate {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDelegate
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1585,11 +1485,9 @@ for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_BeforeFunctionDe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEvent"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEvent")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum MockRuntime_ScriptEvent {
     #[default]
     EndFrame = 1i32,
@@ -1597,11 +1495,10 @@ pub enum MockRuntime_ScriptEvent {
     HapticStop = 3i32,
     Unknown = 0i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEvent"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEvent")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.XR.OpenXR.Features.Mock";
@@ -1620,20 +1517,16 @@ for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEvent"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1642,11 +1535,10 @@ for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEvent"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1658,28 +1550,24 @@ for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEvent"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEvent"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEvent")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1691,25 +1579,23 @@ for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEventDelegate"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEventDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockRuntime_ScriptEventDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEventDelegate"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEventDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDelegate {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDelegate
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.XR.OpenXR.Features.Mock";
     const CLASS_NAME: &'static str = "MockRuntime/ScriptEventDelegate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1723,7 +1609,8 @@ for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDeleg
 }
 #[cfg(feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEventDelegate")]
 impl std::ops::Deref
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDelegate {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDelegate
+{
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1731,7 +1618,8 @@ for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDeleg
 }
 #[cfg(feature = "UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEventDelegate")]
 impl std::ops::DerefMut
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDelegate {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDelegate
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1744,45 +1632,41 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDele
         param: u64,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent,
-                            u64,
-                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
-                        4usize,
-                    >("BeginInvoke")
+                    .find_method::<(
+                        crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent,
+                        u64,
+                        quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>, 4usize>(
+                        "BeginInvoke",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BeginInvoke", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "BeginInvoke",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (evt, param, callback, object))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (evt, param, callback, object))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
@@ -1797,9 +1681,8 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDele
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (result))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -1807,37 +1690,34 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDele
         evt: crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent,
         param: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent,
-                            u64,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Invoke")
+                    .find_method::<(
+                        crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEvent,
+                        u64,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Invoke")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Invoke",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (evt, param))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (evt, param))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
         Ok(__cordl_object.into())
@@ -1847,39 +1727,33 @@ impl crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDele
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            crate::System::IntPtr,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        crate::System::IntPtr,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (object, method))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (object, method))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEventDelegate"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEventDelegate")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDelegate {
+    for crate::UnityEngine::XR::OpenXR::Features::Mock::MockRuntime_ScriptEventDelegate
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

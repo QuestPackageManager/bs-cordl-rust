@@ -3,22 +3,20 @@
 #[derive(Debug)]
 pub struct RsaOaepWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub algId: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    >,
-    pub engine: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
-    >,
+    pub algId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier>,
+    pub engine: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher>,
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+RsaOaepWrapper")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper {
+    for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Operators";
     const CLASS_NAME: &'static str = "RsaOaepWrapper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,15 +45,11 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Operators::RsaOaep
 impl crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper {
     pub fn New(
         forWrapping: bool,
-        parameters: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        >,
-        digestOid: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
+        parameters: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+        digestOid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (forWrapping, parameters, digestOid))?;
         Ok(__cordl_object.into())
@@ -68,9 +62,10 @@ impl crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockResult>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -93,11 +88,8 @@ impl crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::IBlockResult,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (cipherText, offset, length))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockResult> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cipherText, offset, length))? };
         Ok(__cordl_ret.into())
     }
     pub fn Wrap(
@@ -106,9 +98,10 @@ impl crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockResult>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -127,60 +120,52 @@ impl crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::IBlockResult,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (keyData))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockResult> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (keyData))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         forWrapping: bool,
-        parameters: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        >,
-        digestOid: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
+        parameters: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+        digestOid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Crypto::ICipherParameters,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        bool,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (forWrapping, parameters, digestOid))?
+            cordl_method_info.invoke_unchecked(self, (forWrapping, parameters, digestOid))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_AlgorithmDetails(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -195,15 +180,15 @@ impl crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+RsaOaepWrapper")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper {
+    for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -213,28 +198,32 @@ for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapper")]
 impl AsRef<crate::Org::BouncyCastle::Crypto::IKeyUnwrapper>
-for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper {
+    for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper
+{
     fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IKeyUnwrapper {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapper")]
 impl AsMut<crate::Org::BouncyCastle::Crypto::IKeyUnwrapper>
-for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper {
+    for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper
+{
     fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IKeyUnwrapper {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapper")]
 impl AsRef<crate::Org::BouncyCastle::Crypto::IKeyWrapper>
-for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper {
+    for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper
+{
     fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IKeyWrapper {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapper")]
 impl AsMut<crate::Org::BouncyCastle::Crypto::IKeyWrapper>
-for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper {
+    for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapper
+{
     fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IKeyWrapper {
         unsafe { std::mem::transmute(self) }
     }

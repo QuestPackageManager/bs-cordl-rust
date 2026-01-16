@@ -1,25 +1,21 @@
-#[cfg(
-    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaViewLocationFormatAttribute"
-)]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcAreaViewLocationFormatAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AspMvcAreaViewLocationFormatAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Format_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub _Format_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(
-    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaViewLocationFormatAttribute"
-)]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcAreaViewLocationFormatAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::JetBrains::Annotations::AspMvcAreaViewLocationFormatAttribute {
+    for crate::JetBrains::Annotations::AspMvcAreaViewLocationFormatAttribute
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "JetBrains.Annotations";
     const CLASS_NAME: &'static str = "AspMvcAreaViewLocationFormatAttribute";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,16 +28,14 @@ for crate::JetBrains::Annotations::AspMvcAreaViewLocationFormatAttribute {
     }
 }
 #[cfg(feature = "JetBrains+Annotations+AspMvcAreaViewLocationFormatAttribute")]
-impl std::ops::Deref
-for crate::JetBrains::Annotations::AspMvcAreaViewLocationFormatAttribute {
+impl std::ops::Deref for crate::JetBrains::Annotations::AspMvcAreaViewLocationFormatAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "JetBrains+Annotations+AspMvcAreaViewLocationFormatAttribute")]
-impl std::ops::DerefMut
-for crate::JetBrains::Annotations::AspMvcAreaViewLocationFormatAttribute {
+impl std::ops::DerefMut for crate::JetBrains::Annotations::AspMvcAreaViewLocationFormatAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -51,8 +45,8 @@ impl crate::JetBrains::Annotations::AspMvcAreaViewLocationFormatAttribute {
     pub fn New(
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (format))?;
         Ok(__cordl_object.into())
@@ -61,9 +55,10 @@ impl crate::JetBrains::Annotations::AspMvcAreaViewLocationFormatAttribute {
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -78,19 +73,18 @@ impl crate::JetBrains::Annotations::AspMvcAreaViewLocationFormatAttribute {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (format))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (format))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Format(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -105,18 +99,18 @@ impl crate::JetBrains::Annotations::AspMvcAreaViewLocationFormatAttribute {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Format(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -131,17 +125,15 @@ impl crate::JetBrains::Annotations::AspMvcAreaViewLocationFormatAttribute {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaViewLocationFormatAttribute"
-)]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcAreaViewLocationFormatAttribute")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::JetBrains::Annotations::AspMvcAreaViewLocationFormatAttribute {
+    for crate::JetBrains::Annotations::AspMvcAreaViewLocationFormatAttribute
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

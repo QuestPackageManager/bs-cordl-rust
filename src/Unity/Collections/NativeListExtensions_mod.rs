@@ -5,14 +5,14 @@ pub struct NativeListExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeListExtensions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::NativeListExtensions {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Collections::NativeListExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Collections";
     const CLASS_NAME: &'static str = "NativeListExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,113 +41,97 @@ impl std::ops::DerefMut for crate::Unity::Collections::NativeListExtensions {
 impl crate::Unity::Collections::NativeListExtensions {
     pub fn ArraysEqual_NativeArray_1_0<T>(
         container: crate::Unity::Collections::NativeArray_1<T>,
-        other: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeList_1<T>,
-        >,
+        other: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeList_1<T>>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::NativeArray_1<T>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeList_1<T>,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("ArraysEqual")
+                    .find_static_method::<(
+                        crate::Unity::Collections::NativeArray_1<T>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeList_1<T>>,
+                    ), bool, 2usize>("ArraysEqual")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ArraysEqual", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ArraysEqual",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ArraysEqual_NativeList_1_1<T>(
         container: crate::Unity::Collections::NativeList_1<T>,
-        other: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeArray_1<T>,
-        >,
+        other: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeArray_1<T>>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::NativeList_1<T>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeArray_1<T>,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("ArraysEqual")
+                    .find_static_method::<(
+                        crate::Unity::Collections::NativeList_1<T>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeArray_1<T>,
+                        >,
+                    ), bool, 2usize>("ArraysEqual")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ArraysEqual", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ArraysEqual",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ArraysEqual_NativeList_1_2<T>(
         container: crate::Unity::Collections::NativeList_1<T>,
-        other: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeList_1<T>,
-        >,
+        other: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeList_1<T>>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::NativeList_1<T>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeList_1<T>,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("ArraysEqual")
+                    .find_static_method::<(
+                        crate::Unity::Collections::NativeList_1<T>,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeList_1<T>>,
+                    ), bool, 2usize>("ArraysEqual")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ArraysEqual", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ArraysEqual",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ArraysEqual_NativeList_1_3<T>(
@@ -157,34 +141,32 @@ impl crate::Unity::Collections::NativeListExtensions {
         >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::NativeList_1<T>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::LowLevel::Unsafe::UnsafeList_1<T>,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("ArraysEqual")
+                    .find_static_method::<(
+                        crate::Unity::Collections::NativeList_1<T>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::LowLevel::Unsafe::UnsafeList_1<T>,
+                        >,
+                    ), bool, 2usize>("ArraysEqual")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ArraysEqual", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ArraysEqual",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Contains<T, U>(
@@ -192,14 +174,17 @@ impl crate::Unity::Collections::NativeListExtensions {
         value: U,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        U: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::NativeList_1<T>, U),
@@ -214,9 +199,7 @@ impl crate::Unity::Collections::NativeListExtensions {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (list, value))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (list, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf<T, U>(
@@ -224,14 +207,17 @@ impl crate::Unity::Collections::NativeListExtensions {
         value: U,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-        U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        U: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::NativeList_1<T>, U),
@@ -246,15 +232,12 @@ impl crate::Unity::Collections::NativeListExtensions {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (list, value))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (list, value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeListExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Unity::Collections::NativeListExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::Unity::Collections::NativeListExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

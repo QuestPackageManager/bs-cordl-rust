@@ -1,13 +1,14 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessParams")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PostProcessParams {
     pub blitMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub requestColorFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessParams")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::PostProcessParams {
+    for crate::UnityEngine::Rendering::Universal::PostProcessParams
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
@@ -26,18 +27,16 @@ for crate::UnityEngine::Rendering::Universal::PostProcessParams {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessParams")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::Universal::PostProcessParams {
+    for crate::UnityEngine::Rendering::Universal::PostProcessParams
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -48,7 +47,8 @@ for crate::UnityEngine::Rendering::Universal::PostProcessParams {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::Universal::PostProcessParams {
+    for crate::UnityEngine::Rendering::Universal::PostProcessParams
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -62,22 +62,22 @@ for crate::UnityEngine::Rendering::Universal::PostProcessParams {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessParams")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::Universal::PostProcessParams {
+    for crate::UnityEngine::Rendering::Universal::PostProcessParams
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessParams")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::Universal::PostProcessParams {
+    for crate::UnityEngine::Rendering::Universal::PostProcessParams
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -91,7 +91,8 @@ for crate::UnityEngine::Rendering::Universal::PostProcessParams {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessParams")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::Universal::PostProcessParams {
+    for crate::UnityEngine::Rendering::Universal::PostProcessParams
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -102,12 +103,13 @@ for crate::UnityEngine::Rendering::Universal::PostProcessParams {
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+PostProcessParams")]
 impl crate::UnityEngine::Rendering::Universal::PostProcessParams {
-    pub fn Create() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Rendering::Universal::PostProcessParams,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Create(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::Universal::PostProcessParams>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -122,9 +124,8 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessParams {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::Universal::PostProcessParams = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::Universal::PostProcessParams =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

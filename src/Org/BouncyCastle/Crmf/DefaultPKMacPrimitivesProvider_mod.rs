@@ -6,13 +6,15 @@ pub struct DefaultPKMacPrimitivesProvider {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+DefaultPKMacPrimitivesProvider")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesProvider {
+    for crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesProvider
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crmf";
     const CLASS_NAME: &'static str = "DefaultPKMacPrimitivesProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,8 +34,7 @@ impl std::ops::Deref for crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesP
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+DefaultPKMacPrimitivesProvider")]
-impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesProvider {
+impl std::ops::DerefMut for crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -48,9 +49,10 @@ impl crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -69,9 +71,8 @@ impl crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesProvider {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::IDigest,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (digestAlg))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (digestAlg))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateMac(
@@ -82,64 +83,61 @@ impl crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Org::BouncyCastle::Crypto::IMac,
-                        >,
-                        1usize,
-                    >("CreateMac")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+                    >), quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>, 1usize>(
+                        "CreateMac",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateMac", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateMac",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::IMac,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (macAlg))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (macAlg))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+DefaultPKMacPrimitivesProvider")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesProvider {
+    for crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesProvider
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -149,17 +147,17 @@ for crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesProvider {
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+DefaultPKMacPrimitivesProvider")]
 impl AsRef<crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider>
-for crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesProvider {
+    for crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesProvider
+{
     fn as_ref(&self) -> &crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+DefaultPKMacPrimitivesProvider")]
 impl AsMut<crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider>
-for crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesProvider {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider {
+    for crate::Org::BouncyCastle::Crmf::DefaultPKMacPrimitivesProvider
+{
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider {
         unsafe { std::mem::transmute(self) }
     }
 }

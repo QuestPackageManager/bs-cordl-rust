@@ -5,14 +5,14 @@ pub struct Lerp {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Experimental+Lerp")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Experimental::Lerp {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Experimental::Lerp {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Experimental";
     const CLASS_NAME: &'static str = "Lerp";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,9 +44,10 @@ impl crate::UnityEngine::UIElements::Experimental::Lerp {
         end: crate::UnityEngine::Color,
         ratio: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, crate::UnityEngine::Color, f32),
@@ -61,42 +62,39 @@ impl crate::UnityEngine::UIElements::Experimental::Lerp {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            cordl_method_info.invoke_unchecked((), (start, end, ratio))?
-        };
+        let __cordl_ret: crate::UnityEngine::Color =
+            unsafe { cordl_method_info.invoke_unchecked((), (start, end, ratio))? };
         Ok(__cordl_ret.into())
     }
     pub fn Interpolate_StyleValues_StyleValues2(
         start: crate::UnityEngine::UIElements::Experimental::StyleValues,
         end: crate::UnityEngine::UIElements::Experimental::StyleValues,
         ratio: f32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::Experimental::StyleValues,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Experimental::StyleValues>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::UIElements::Experimental::StyleValues,
-                            crate::UnityEngine::UIElements::Experimental::StyleValues,
-                            f32,
-                        ),
+                    .find_static_method::<(
                         crate::UnityEngine::UIElements::Experimental::StyleValues,
-                        3usize,
-                    >("Interpolate")
+                        crate::UnityEngine::UIElements::Experimental::StyleValues,
+                        f32,
+                    ), crate::UnityEngine::UIElements::Experimental::StyleValues, 3usize>(
+                        "Interpolate",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Interpolate", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Interpolate",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::Experimental::StyleValues = unsafe {
-            cordl_method_info.invoke_unchecked((), (start, end, ratio))?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::Experimental::StyleValues =
+            unsafe { cordl_method_info.invoke_unchecked((), (start, end, ratio))? };
         Ok(__cordl_ret.into())
     }
     pub fn Interpolate_f32_f32_0(
@@ -104,28 +102,28 @@ impl crate::UnityEngine::UIElements::Experimental::Lerp {
         end: f32,
         ratio: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32, f32), f32, 3usize>("Interpolate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Interpolate", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Interpolate",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (start, end, ratio))?
-        };
+        let __cordl_ret: f32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (start, end, ratio))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Experimental+Lerp")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::Experimental::Lerp {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Experimental::Lerp {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

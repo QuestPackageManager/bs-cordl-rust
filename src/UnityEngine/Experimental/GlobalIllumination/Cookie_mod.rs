@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Cookie")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Cookie {
     pub instanceID: i32,
     pub scale: f32,
@@ -8,7 +8,8 @@ pub struct Cookie {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Cookie")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
+    for crate::UnityEngine::Experimental::GlobalIllumination::Cookie
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Experimental.GlobalIllumination";
@@ -27,18 +28,16 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Cookie")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
+    for crate::UnityEngine::Experimental::GlobalIllumination::Cookie
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -49,7 +48,8 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Cookie")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
+    for crate::UnityEngine::Experimental::GlobalIllumination::Cookie
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -63,22 +63,22 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Cookie")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
+    for crate::UnityEngine::Experimental::GlobalIllumination::Cookie
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Cookie")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
+    for crate::UnityEngine::Experimental::GlobalIllumination::Cookie
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -92,7 +92,8 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Cookie")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
+    for crate::UnityEngine::Experimental::GlobalIllumination::Cookie
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -103,12 +104,13 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
 }
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Cookie")]
 impl crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
-    pub fn Defaults() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Experimental::GlobalIllumination::Cookie,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Defaults(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Experimental::GlobalIllumination::Cookie>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -123,9 +125,8 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Experimental::GlobalIllumination::Cookie = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Experimental::GlobalIllumination::Cookie =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

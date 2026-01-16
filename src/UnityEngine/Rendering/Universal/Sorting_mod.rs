@@ -1,10 +1,9 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Sorting")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct Sorting {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Sorting")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::Sorting {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Universal::Sorting {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
@@ -23,18 +22,14 @@ for crate::UnityEngine::Rendering::Universal::Sorting {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Sorting")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::Universal::Sorting {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Rendering::Universal::Sorting {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -44,8 +39,7 @@ for crate::UnityEngine::Rendering::Universal::Sorting {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Sorting")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::Universal::Sorting {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Rendering::Universal::Sorting {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -58,23 +52,19 @@ for crate::UnityEngine::Rendering::Universal::Sorting {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Sorting")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::Universal::Sorting {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Rendering::Universal::Sorting {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Sorting")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::Universal::Sorting {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::Universal::Sorting {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -88,7 +78,8 @@ for crate::UnityEngine::Rendering::Universal::Sorting {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Sorting")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::Universal::Sorting {
+    for crate::UnityEngine::Rendering::Universal::Sorting
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -104,34 +95,30 @@ impl crate::UnityEngine::Rendering::Universal::Sorting {
         compare: quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("InsertionSort")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("InsertionSort")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InsertionSort", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InsertionSort",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (data, compare))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (data, compare))? };
         Ok(__cordl_ret.into())
     }
     pub fn InsertionSort_i32_i32_Func_3_1<T>(
@@ -141,36 +128,32 @@ impl crate::UnityEngine::Rendering::Universal::Sorting {
         compare: quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
-                            >,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("InsertionSort")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
+                    ), quest_hook::libil2cpp::Void, 4usize>("InsertionSort")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InsertionSort", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InsertionSort",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (data, start, end, compare))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (data, start, end, compare))? };
         Ok(__cordl_ret.into())
     }
     pub fn Median3Pivot<T>(
@@ -181,37 +164,33 @@ impl crate::UnityEngine::Rendering::Universal::Sorting {
         compare: quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
-                            >,
-                            i32,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
-                        ),
-                        T,
-                        5usize,
-                    >("Median3Pivot")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                        i32,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
+                    ), T, 5usize>("Median3Pivot")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Median3Pivot", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Median3Pivot",
+                            5usize
                         )
                     })
             });
-        let __cordl_ret: T = unsafe {
-            cordl_method_info.invoke_unchecked((), (data, start, pivot, end, compare))?
-        };
+        let __cordl_ret: T =
+            unsafe { cordl_method_info.invoke_unchecked((), (data, start, pivot, end, compare))? };
         Ok(__cordl_ret.into())
     }
     pub fn Partition<T>(
@@ -221,36 +200,32 @@ impl crate::UnityEngine::Rendering::Universal::Sorting {
         compare: quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
-                            >,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
-                        ),
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
                         i32,
-                        4usize,
-                    >("Partition")
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
+                    ), i32, 4usize>("Partition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Partition", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Partition",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (data, start, end, compare))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (data, start, end, compare))? };
         Ok(__cordl_ret.into())
     }
     pub fn QuickSort_Func_3_0<T>(
@@ -258,34 +233,30 @@ impl crate::UnityEngine::Rendering::Universal::Sorting {
         compare: quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("QuickSort")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("QuickSort")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "QuickSort", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "QuickSort",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (data, compare))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (data, compare))? };
         Ok(__cordl_ret.into())
     }
     pub fn QuickSort_i32_i32_Func_3_1<T>(
@@ -295,36 +266,32 @@ impl crate::UnityEngine::Rendering::Universal::Sorting {
         compare: quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
-                            >,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("QuickSort")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, i32>>,
+                    ), quest_hook::libil2cpp::Void, 4usize>("QuickSort")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "QuickSort", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "QuickSort",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (data, start, end, compare))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (data, start, end, compare))? };
         Ok(__cordl_ret.into())
     }
     pub fn _Median3Pivot_g__Swap_4_0<T>(
@@ -335,37 +302,35 @@ impl crate::UnityEngine::Rendering::Universal::Sorting {
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject<T>,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("<Median3Pivot>g__Swap|4_0")
+                    .find_static_method::<(
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject<T>>,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "<Median3Pivot>g__Swap|4_0"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Median3Pivot>g__Swap|4_0", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "<Median3Pivot>g__Swap|4_0",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (a, b, _cordl_fixed_empty_name_whitespace))?
+            cordl_method_info.invoke_unchecked((), (a, b, _cordl_fixed_empty_name_whitespace))?
         };
         Ok(__cordl_ret.into())
     }

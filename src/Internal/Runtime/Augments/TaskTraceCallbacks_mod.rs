@@ -5,14 +5,14 @@ pub struct TaskTraceCallbacks {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Internal+Runtime+Augments+TaskTraceCallbacks")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Internal::Runtime::Augments::TaskTraceCallbacks {
+unsafe impl quest_hook::libil2cpp::Type for crate::Internal::Runtime::Augments::TaskTraceCallbacks {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Internal.Runtime.Augments";
     const CLASS_NAME: &'static str = "TaskTraceCallbacks";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,35 +47,34 @@ impl crate::Internal::Runtime::Augments::TaskTraceCallbacks {
         CreatingTaskID: i32,
         TaskCreationOptions: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("TaskScheduled")
+                    .find_method::<(i32, i32, i32, i32, i32), quest_hook::libil2cpp::Void, 5usize>(
+                        "TaskScheduled",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TaskScheduled", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TaskScheduled",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        OriginatingTaskSchedulerID,
-                        OriginatingTaskID,
-                        TaskID,
-                        CreatingTaskID,
-                        TaskCreationOptions,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    OriginatingTaskSchedulerID,
+                    OriginatingTaskID,
+                    TaskID,
+                    CreatingTaskID,
+                    TaskCreationOptions,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -85,29 +84,28 @@ impl crate::Internal::Runtime::Augments::TaskTraceCallbacks {
         OriginatingTaskID: i32,
         TaskID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("TaskWaitBegin_Asynchronous")
+                    .find_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(
+                        "TaskWaitBegin_Asynchronous",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TaskWaitBegin_Asynchronous", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TaskWaitBegin_Asynchronous",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -117,29 +115,28 @@ impl crate::Internal::Runtime::Augments::TaskTraceCallbacks {
         OriginatingTaskID: i32,
         TaskID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("TaskWaitBegin_Synchronous")
+                    .find_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(
+                        "TaskWaitBegin_Synchronous",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TaskWaitBegin_Synchronous", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TaskWaitBegin_Synchronous",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -149,43 +146,44 @@ impl crate::Internal::Runtime::Augments::TaskTraceCallbacks {
         OriginatingTaskID: i32,
         TaskID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("TaskWaitEnd")
+                    .find_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(
+                        "TaskWaitEnd",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TaskWaitEnd", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TaskWaitEnd",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Enabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Enabled", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Enabled",
+                            0usize
                         )
                     })
             });
@@ -194,8 +192,7 @@ impl crate::Internal::Runtime::Augments::TaskTraceCallbacks {
     }
 }
 #[cfg(feature = "cordl_class_Internal+Runtime+Augments+TaskTraceCallbacks")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Internal::Runtime::Augments::TaskTraceCallbacks {
+impl quest_hook::libil2cpp::ObjectType for crate::Internal::Runtime::Augments::TaskTraceCallbacks {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

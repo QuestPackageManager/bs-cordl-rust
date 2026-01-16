@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RayTracingAccelerationStructureHandle"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct RayTracingAccelerationStructureHandle {
     pub handle: crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
 }
@@ -10,7 +10,8 @@ pub struct RayTracingAccelerationStructureHandle {
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RayTracingAccelerationStructureHandle"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle {
+    for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.RenderGraphModule";
@@ -29,20 +30,18 @@ for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStru
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RayTracingAccelerationStructureHandle"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle {
+    for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -55,7 +54,8 @@ for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStru
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RayTracingAccelerationStructureHandle"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle {
+    for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -71,16 +71,15 @@ for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStru
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RayTracingAccelerationStructureHandle"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle {
+    for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -88,7 +87,8 @@ for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStru
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RayTracingAccelerationStructureHandle"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle {
+    for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -104,7 +104,8 @@ for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStru
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RayTracingAccelerationStructureHandle"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle {
+    for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -113,20 +114,20 @@ for crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStru
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+RenderGraphModule+RayTracingAccelerationStructureHandle"
-)]
+#[cfg(feature = "UnityEngine+Rendering+RenderGraphModule+RayTracingAccelerationStructureHandle")]
 impl crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle {
     pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsValid",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsValid",
                             0usize
                         )
                     })
@@ -138,28 +139,30 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStr
         &mut self,
         handle: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_nullHandle() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -184,11 +187,10 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStr
     pub fn op_Implicit(
         handle: crate::UnityEngine::Rendering::RenderGraphModule::RayTracingAccelerationStructureHandle,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::RayTracingAccelerationStructure,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RayTracingAccelerationStructure>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()

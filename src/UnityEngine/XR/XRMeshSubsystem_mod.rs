@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::XRMeshSubsys
     const NAMESPACE: &'static str = "UnityEngine.XR";
     const CLASS_NAME: &'static str = "XRMeshSubsystem";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,27 +48,25 @@ impl crate::UnityEngine::XR::XRMeshSubsystem {
             crate::System::Action_1<crate::UnityEngine::XR::MeshGenerationResult>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::XR::MeshGenerationResult,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    crate::UnityEngine::XR::MeshGenerationResult,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("InvokeMeshReadyDelegate")
+                    .find_method::<(
+                        crate::UnityEngine::XR::MeshGenerationResult,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::UnityEngine::XR::MeshGenerationResult>,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "InvokeMeshReadyDelegate"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InvokeMeshReadyDelegate", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InvokeMeshReadyDelegate",
+                            2usize
                         )
                     })
             });
@@ -77,31 +76,30 @@ impl crate::UnityEngine::XR::XRMeshSubsystem {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -115,14 +113,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::XRMeshSubsyst
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct XRMeshSubsystem_MeshTransformList {
     pub m_Self: crate::System::IntPtr,
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
+    for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.XR";
@@ -141,18 +140,16 @@ for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
+    for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -163,7 +160,8 @@ for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
+    for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -177,22 +175,22 @@ for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
+    for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
+    for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -206,7 +204,8 @@ for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
+    for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -217,33 +216,33 @@ for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
 }
 #[cfg(feature = "UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 impl crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
-    pub fn Dispose_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose_0(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose_IntPtr1(
         _cordl_self: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
@@ -258,22 +257,23 @@ impl crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_self))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_self))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
+    for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList
+{
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
+    for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList
+{
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }

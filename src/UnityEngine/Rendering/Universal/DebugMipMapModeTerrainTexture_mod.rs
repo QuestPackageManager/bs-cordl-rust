@@ -1,8 +1,6 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+DebugMipMapModeTerrainTexture"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DebugMipMapModeTerrainTexture")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum DebugMipMapModeTerrainTexture {
     #[default]
     Control = 0i32,
@@ -11,11 +9,10 @@ pub enum DebugMipMapModeTerrainTexture {
     Layer2 = 3i32,
     Layer3 = 4i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+DebugMipMapModeTerrainTexture"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DebugMipMapModeTerrainTexture")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::Universal::DebugMipMapModeTerrainTexture {
+    for crate::UnityEngine::Rendering::Universal::DebugMipMapModeTerrainTexture
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.Universal";
@@ -34,20 +31,16 @@ for crate::UnityEngine::Rendering::Universal::DebugMipMapModeTerrainTexture {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+DebugMipMapModeTerrainTexture"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DebugMipMapModeTerrainTexture")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::Universal::DebugMipMapModeTerrainTexture {
+    for crate::UnityEngine::Rendering::Universal::DebugMipMapModeTerrainTexture
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -56,11 +49,10 @@ for crate::UnityEngine::Rendering::Universal::DebugMipMapModeTerrainTexture {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+DebugMipMapModeTerrainTexture"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DebugMipMapModeTerrainTexture")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::Universal::DebugMipMapModeTerrainTexture {
+    for crate::UnityEngine::Rendering::Universal::DebugMipMapModeTerrainTexture
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -72,28 +64,24 @@ for crate::UnityEngine::Rendering::Universal::DebugMipMapModeTerrainTexture {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+DebugMipMapModeTerrainTexture"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DebugMipMapModeTerrainTexture")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::Universal::DebugMipMapModeTerrainTexture {
+    for crate::UnityEngine::Rendering::Universal::DebugMipMapModeTerrainTexture
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+Universal+DebugMipMapModeTerrainTexture"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DebugMipMapModeTerrainTexture")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::Universal::DebugMipMapModeTerrainTexture {
+    for crate::UnityEngine::Rendering::Universal::DebugMipMapModeTerrainTexture
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

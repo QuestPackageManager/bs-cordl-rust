@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ProfilerRecorder {
     pub handle: u64,
 }
@@ -24,18 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Profiling::ProfilerRec
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Profiling::ProfilerRecorder {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Profiling::ProfilerRecorder {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -45,8 +41,7 @@ for crate::Unity::Profiling::ProfilerRecorder {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Profiling::ProfilerRecorder {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Profiling::ProfilerRecorder {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -59,17 +54,14 @@ for crate::Unity::Profiling::ProfilerRecorder {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Profiling::ProfilerRecorder {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Profiling::ProfilerRecorder {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -87,8 +79,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Profiling::ProfilerR
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Profiling::ProfilerRecorder {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Profiling::ProfilerRecorder {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -106,88 +97,77 @@ impl crate::Unity::Profiling::ProfilerRecorder {
     pub fn CheckInitializedAndThrow(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("CheckInitializedAndThrow")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "CheckInitializedAndThrow",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckInitializedAndThrow", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CheckInitializedAndThrow",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Control(
         handle: crate::Unity::Profiling::ProfilerRecorder,
         options: crate::Unity::Profiling::ProfilerRecorder_ControlOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Profiling::ProfilerRecorder,
-                            crate::Unity::Profiling::ProfilerRecorder_ControlOptions,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Control")
+                    .find_static_method::<(
+                        crate::Unity::Profiling::ProfilerRecorder,
+                        crate::Unity::Profiling::ProfilerRecorder_ControlOptions,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Control")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Control",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Control",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle, options))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (handle, options))? };
         Ok(__cordl_ret.into())
     }
     pub fn Control_Injected(
-        handle: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Profiling::ProfilerRecorder,
-        >,
+        handle: quest_hook::libil2cpp::ByRefMut<crate::Unity::Profiling::ProfilerRecorder>,
         options: crate::Unity::Profiling::ProfilerRecorder_ControlOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Profiling::ProfilerRecorder,
-                            >,
-                            crate::Unity::Profiling::ProfilerRecorder_ControlOptions,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Control_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Profiling::ProfilerRecorder>,
+                        crate::Unity::Profiling::ProfilerRecorder_ControlOptions,
+                    ), quest_hook::libil2cpp::Void, 2usize>("Control_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Control_Injected", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Control_Injected",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle, options))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (handle, options))? };
         Ok(__cordl_ret.into())
     }
     pub fn Create(
@@ -195,30 +175,29 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         maxSampleCount: i32,
         options: crate::Unity::Profiling::ProfilerRecorderOptions,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::ProfilerRecorder> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
-                            i32,
-                            crate::Unity::Profiling::ProfilerRecorderOptions,
-                        ),
-                        crate::Unity::Profiling::ProfilerRecorder,
-                        3usize,
-                    >("Create")
+                    .find_static_method::<(
+                        crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
+                        i32,
+                        crate::Unity::Profiling::ProfilerRecorderOptions,
+                    ), crate::Unity::Profiling::ProfilerRecorder, 3usize>(
+                        "Create"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Create",
                             3usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Profiling::ProfilerRecorder = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (statHandle, maxSampleCount, options))?
+            cordl_method_info.invoke_unchecked((), (statHandle, maxSampleCount, options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -230,154 +209,135 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         options: crate::Unity::Profiling::ProfilerRecorderOptions,
         ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Profiling::ProfilerRecorder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
-                            >,
-                            i32,
-                            crate::Unity::Profiling::ProfilerRecorderOptions,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Profiling::ProfilerRecorder,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("Create_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
+                        >,
+                        i32,
+                        crate::Unity::Profiling::ProfilerRecorderOptions,
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Profiling::ProfilerRecorder>,
+                    ), quest_hook::libil2cpp::Void, 4usize>("Create_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Create_Injected", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Create_Injected",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (statHandle, maxSampleCount, options, ret))?
+            cordl_method_info.invoke_unchecked((), (statHandle, maxSampleCount, options, ret))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCount(
         handle: crate::Unity::Profiling::ProfilerRecorder,
         countOptions: crate::Unity::Profiling::ProfilerRecorder_CountOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Profiling::ProfilerRecorder,
-                            crate::Unity::Profiling::ProfilerRecorder_CountOptions,
-                        ),
-                        i32,
-                        2usize,
-                    >("GetCount")
+                    .find_static_method::<(
+                        crate::Unity::Profiling::ProfilerRecorder,
+                        crate::Unity::Profiling::ProfilerRecorder_CountOptions,
+                    ), i32, 2usize>("GetCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCount", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCount",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle, countOptions))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (handle, countOptions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCount_Injected(
-        handle: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Profiling::ProfilerRecorder,
-        >,
+        handle: quest_hook::libil2cpp::ByRefMut<crate::Unity::Profiling::ProfilerRecorder>,
         countOptions: crate::Unity::Profiling::ProfilerRecorder_CountOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Profiling::ProfilerRecorder,
-                            >,
-                            crate::Unity::Profiling::ProfilerRecorder_CountOptions,
-                        ),
-                        i32,
-                        2usize,
-                    >("GetCount_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Profiling::ProfilerRecorder>,
+                        crate::Unity::Profiling::ProfilerRecorder_CountOptions,
+                    ), i32, 2usize>("GetCount_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCount_Injected", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCount_Injected",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle, countOptions))?
-        };
+        let __cordl_ret: i32 =
+            unsafe { cordl_method_info.invoke_unchecked((), (handle, countOptions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLastValue(
         handle: crate::Unity::Profiling::ProfilerRecorder,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::Unity::Profiling::ProfilerRecorder),
-                        i64,
-                        1usize,
-                    >("GetLastValue")
+                    .find_static_method::<(crate::Unity::Profiling::ProfilerRecorder), i64, 1usize>(
+                        "GetLastValue",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLastValue", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetLastValue",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle))?
-        };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked((), (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLastValue_Injected(
-        handle: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Profiling::ProfilerRecorder,
-        >,
+        handle: quest_hook::libil2cpp::ByRefMut<crate::Unity::Profiling::ProfilerRecorder>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -394,17 +354,16 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                         )
                     })
             });
-        let __cordl_ret: i64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle))?
-        };
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked((), (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRunning(
         handle: crate::Unity::Profiling::ProfilerRecorder,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Profiling::ProfilerRecorder),
@@ -419,19 +378,16 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRunning_Injected(
-        handle: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Profiling::ProfilerRecorder,
-        >,
+        handle: quest_hook::libil2cpp::ByRefMut<crate::Unity::Profiling::ProfilerRecorder>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -448,44 +404,42 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSample(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::ProfilerRecorderSample> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        crate::Unity::Profiling::ProfilerRecorderSample,
-                        1usize,
-                    >("GetSample")
+                    .find_method::<(i32), crate::Unity::Profiling::ProfilerRecorderSample, 1usize>(
+                        "GetSample",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSample", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSample",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Profiling::ProfilerRecorderSample = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: crate::Unity::Profiling::ProfilerRecorderSample =
+            unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSampleInternal(
         handle: crate::Unity::Profiling::ProfilerRecorder,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::ProfilerRecorderSample> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Profiling::ProfilerRecorder, i32),
@@ -500,56 +454,49 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Profiling::ProfilerRecorderSample = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle, index))?
-        };
+        let __cordl_ret: crate::Unity::Profiling::ProfilerRecorderSample =
+            unsafe { cordl_method_info.invoke_unchecked((), (handle, index))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSampleInternal_Injected(
-        handle: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Profiling::ProfilerRecorder,
-        >,
+        handle: quest_hook::libil2cpp::ByRefMut<crate::Unity::Profiling::ProfilerRecorder>,
         index: i32,
-        ret: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Profiling::ProfilerRecorderSample,
-        >,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Profiling::ProfilerRecorderSample>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Profiling::ProfilerRecorder,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Profiling::ProfilerRecorderSample,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("GetSampleInternal_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Profiling::ProfilerRecorder>,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Profiling::ProfilerRecorderSample,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(
+                        "GetSampleInternal_Injected"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetSampleInternal_Injected", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetSampleInternal_Injected",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle, index, ret))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (handle, index, ret))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValid(
         handle: crate::Unity::Profiling::ProfilerRecorder,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Profiling::ProfilerRecorder),
@@ -564,19 +511,16 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValid_Injected(
-        handle: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Profiling::ProfilerRecorder,
-        >,
+        handle: quest_hook::libil2cpp::ByRefMut<crate::Unity::Profiling::ProfilerRecorder>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -593,17 +537,16 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValueUnitType(
         handle: crate::Unity::Profiling::ProfilerRecorder,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::ProfilerMarkerDataUnit> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Profiling::ProfilerRecorder),
@@ -618,19 +561,17 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Profiling::ProfilerMarkerDataUnit = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle))?
-        };
+        let __cordl_ret: crate::Unity::Profiling::ProfilerMarkerDataUnit =
+            unsafe { cordl_method_info.invoke_unchecked((), (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValueUnitType_Injected(
-        handle: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Profiling::ProfilerRecorder,
-        >,
+        handle: quest_hook::libil2cpp::ByRefMut<crate::Unity::Profiling::ProfilerRecorder>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::ProfilerMarkerDataUnit> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -647,30 +588,28 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Profiling::ProfilerMarkerDataUnit = unsafe {
-            cordl_method_info.invoke_unchecked((), (handle))?
-        };
+        let __cordl_ret: crate::Unity::Profiling::ProfilerMarkerDataUnit =
+            unsafe { cordl_method_info.invoke_unchecked((), (handle))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Start",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn StartNew(
@@ -679,55 +618,51 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         capacity: i32,
         options: crate::Unity::Profiling::ProfilerRecorderOptions,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::ProfilerRecorder> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Profiling::ProfilerCategory,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            crate::Unity::Profiling::ProfilerRecorderOptions,
-                        ),
-                        crate::Unity::Profiling::ProfilerRecorder,
-                        4usize,
-                    >("StartNew")
+                    .find_static_method::<(
+                        crate::Unity::Profiling::ProfilerCategory,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        crate::Unity::Profiling::ProfilerRecorderOptions,
+                    ), crate::Unity::Profiling::ProfilerRecorder, 4usize>(
+                        "StartNew"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StartNew", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "StartNew",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Profiling::ProfilerRecorder = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (category, statName, capacity, options))?
+            cordl_method_info.invoke_unchecked((), (category, statName, capacity, options))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Stop(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Stop(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Stop")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Stop",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Stop",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_ProfilerCategory_Il2CppObject_i32_i32_ProfilerRecorderOptions0(
@@ -738,37 +673,30 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         capacity: i32,
         options: crate::Unity::Profiling::ProfilerRecorderOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::Unity::Profiling::ProfilerCategory,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            i32,
-                            i32,
-                            crate::Unity::Profiling::ProfilerRecorderOptions,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::Unity::Profiling::ProfilerCategory,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        i32,
+                        i32,
+                        crate::Unity::Profiling::ProfilerRecorderOptions,
+                    ), quest_hook::libil2cpp::Void, 5usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (category, statName, statNameLen, capacity, options),
-                )?
+                .invoke_unchecked(self, (category, statName, statNameLen, capacity, options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -778,43 +706,42 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         capacity: i32,
         options: crate::Unity::Profiling::ProfilerRecorderOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
-                            i32,
-                            crate::Unity::Profiling::ProfilerRecorderOptions,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
+                        i32,
+                        crate::Unity::Profiling::ProfilerRecorderOptions,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (statHandle, capacity, options))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (statHandle, capacity, options))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Count", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Count",
+                            0usize
                         )
                     })
             });
@@ -822,16 +749,18 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsRunning(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsRunning")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsRunning", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsRunning",
+                            0usize
                         )
                     })
             });
@@ -839,16 +768,18 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         Ok(__cordl_ret.into())
     }
     pub fn get_LastValue(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_LastValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_LastValue", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_LastValue",
+                            0usize
                         )
                     })
             });
@@ -858,39 +789,40 @@ impl crate::Unity::Profiling::ProfilerRecorder {
     pub fn get_UnitType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::ProfilerMarkerDataUnit> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::Unity::Profiling::ProfilerMarkerDataUnit,
-                        0usize,
-                    >("get_UnitType")
+                    .find_method::<(), crate::Unity::Profiling::ProfilerMarkerDataUnit, 0usize>(
+                        "get_UnitType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_UnitType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_UnitType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Profiling::ProfilerMarkerDataUnit = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::Unity::Profiling::ProfilerMarkerDataUnit =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Valid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Valid", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Valid",
+                            0usize
                         )
                     })
             });
@@ -911,8 +843,8 @@ impl AsMut<crate::System::IDisposable> for crate::Unity::Profiling::ProfilerReco
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder+ControlOptions")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ProfilerRecorder_ControlOptions {
     #[default]
     Release = 4i32,
@@ -924,7 +856,8 @@ pub enum ProfilerRecorder_ControlOptions {
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder+ControlOptions")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Profiling::ProfilerRecorder_ControlOptions {
+    for crate::Unity::Profiling::ProfilerRecorder_ControlOptions
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Profiling";
@@ -943,18 +876,16 @@ for crate::Unity::Profiling::ProfilerRecorder_ControlOptions {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder+ControlOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Profiling::ProfilerRecorder_ControlOptions {
+    for crate::Unity::Profiling::ProfilerRecorder_ControlOptions
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -965,7 +896,8 @@ for crate::Unity::Profiling::ProfilerRecorder_ControlOptions {
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder+ControlOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Profiling::ProfilerRecorder_ControlOptions {
+    for crate::Unity::Profiling::ProfilerRecorder_ControlOptions
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -979,22 +911,22 @@ for crate::Unity::Profiling::ProfilerRecorder_ControlOptions {
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder+ControlOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Profiling::ProfilerRecorder_ControlOptions {
+    for crate::Unity::Profiling::ProfilerRecorder_ControlOptions
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder+ControlOptions")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Profiling::ProfilerRecorder_ControlOptions {
+    for crate::Unity::Profiling::ProfilerRecorder_ControlOptions
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -1007,16 +939,15 @@ for crate::Unity::Profiling::ProfilerRecorder_ControlOptions {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder+CountOptions")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ProfilerRecorder_CountOptions {
     #[default]
     Count = 0i32,
     MaxCount = 1i32,
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder+CountOptions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Profiling::ProfilerRecorder_CountOptions {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Profiling::ProfilerRecorder_CountOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Profiling";
@@ -1035,18 +966,16 @@ for crate::Unity::Profiling::ProfilerRecorder_CountOptions {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder+CountOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Profiling::ProfilerRecorder_CountOptions {
+    for crate::Unity::Profiling::ProfilerRecorder_CountOptions
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -1057,7 +986,8 @@ for crate::Unity::Profiling::ProfilerRecorder_CountOptions {
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder+CountOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Profiling::ProfilerRecorder_CountOptions {
+    for crate::Unity::Profiling::ProfilerRecorder_CountOptions
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -1071,22 +1001,22 @@ for crate::Unity::Profiling::ProfilerRecorder_CountOptions {
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder+CountOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Profiling::ProfilerRecorder_CountOptions {
+    for crate::Unity::Profiling::ProfilerRecorder_CountOptions
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorder+CountOptions")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Profiling::ProfilerRecorder_CountOptions {
+    for crate::Unity::Profiling::ProfilerRecorder_CountOptions
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

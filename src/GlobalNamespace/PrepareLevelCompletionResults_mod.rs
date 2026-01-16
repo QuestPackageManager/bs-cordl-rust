@@ -3,43 +3,29 @@
 #[derive(Debug)]
 pub struct PrepareLevelCompletionResults {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameplayModifiersModelSO: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GameplayModifiersModelSO,
-    >,
-    pub _saberActivityCounter: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SaberActivityCounter,
-    >,
-    pub _beatmapObjectExecutionRatingsRecorder: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder,
-    >,
-    pub _scoreController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IScoreController,
-    >,
-    pub _gameEnergyCounter: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GameEnergyCounter,
-    >,
-    pub _beatmapData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IReadonlyBeatmapData,
-    >,
-    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AudioTimeSyncController,
-    >,
-    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GameplayModifiers,
-    >,
-    pub _comboController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ComboController,
-    >,
+    pub _gameplayModifiersModelSO:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiersModelSO>,
+    pub _saberActivityCounter:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberActivityCounter>,
+    pub _beatmapObjectExecutionRatingsRecorder:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder>,
+    pub _scoreController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IScoreController>,
+    pub _gameEnergyCounter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameEnergyCounter>,
+    pub _beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
+    pub _audioTimeSyncController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioTimeSyncController>,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+    pub _comboController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ComboController>,
 }
 #[cfg(feature = "cordl_class_PrepareLevelCompletionResults")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::PrepareLevelCompletionResults {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PrepareLevelCompletionResults {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "PrepareLevelCompletionResults";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -73,9 +59,10 @@ impl crate::GlobalNamespace::PrepareLevelCompletionResults {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -95,46 +82,41 @@ impl crate::GlobalNamespace::PrepareLevelCompletionResults {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelCompletionResults,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (levelEndStateType, levelEndAction))?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (levelEndStateType, levelEndAction))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_PrepareLevelCompletionResults")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PrepareLevelCompletionResults {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PrepareLevelCompletionResults {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

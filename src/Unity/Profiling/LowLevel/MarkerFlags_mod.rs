@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+MarkerFlags")]
-#[repr(u16)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(u16)]
 pub enum MarkerFlags {
     #[default]
     AvailabilityEditor = 4u16,
@@ -14,8 +14,7 @@ pub enum MarkerFlags {
     Warning = 16u16,
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+MarkerFlags")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Profiling::LowLevel::MarkerFlags {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Profiling::LowLevel::MarkerFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Profiling.LowLevel";
@@ -34,18 +33,14 @@ for crate::Unity::Profiling::LowLevel::MarkerFlags {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+MarkerFlags")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::Unity::Profiling::LowLevel::MarkerFlags {
+unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Profiling::LowLevel::MarkerFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -55,8 +50,7 @@ for crate::Unity::Profiling::LowLevel::MarkerFlags {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+MarkerFlags")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Unity::Profiling::LowLevel::MarkerFlags {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Profiling::LowLevel::MarkerFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -69,23 +63,19 @@ for crate::Unity::Profiling::LowLevel::MarkerFlags {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+MarkerFlags")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::Unity::Profiling::LowLevel::MarkerFlags {
+unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Profiling::LowLevel::MarkerFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+MarkerFlags")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::Unity::Profiling::LowLevel::MarkerFlags {
+unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Profiling::LowLevel::MarkerFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

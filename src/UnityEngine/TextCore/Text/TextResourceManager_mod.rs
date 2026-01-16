@@ -6,13 +6,15 @@ pub struct TextResourceManager {
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::TextCore::Text::TextResourceManager {
+    for crate::UnityEngine::TextCore::Text::TextResourceManager
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.TextCore.Text";
     const CLASS_NAME: &'static str = "TextResourceManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,13 +44,12 @@ impl crate::UnityEngine::TextCore::Text::TextResourceManager {
     #[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
     pub type FontAssetRef = crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef;
     pub fn AddFontAsset(
-        fontAsset: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::TextCore::Text::FontAsset,
-        >,
+        fontAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -65,15 +66,13 @@ impl crate::UnityEngine::TextCore::Text::TextResourceManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (fontAsset))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (fontAsset))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::TextCore::Text::TextResourceManager {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextCore::Text::TextResourceManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -81,25 +80,20 @@ for crate::UnityEngine::TextCore::Text::TextResourceManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TextResourceManager_FontAssetRef {
     pub nameHashCode: i32,
     pub familyNameHashCode: i32,
     pub styleNameHashCode: i32,
     pub familyNameAndStyleHashCode: i64,
-    pub fontAsset: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::TextCore::Text::FontAsset,
-    >,
+    pub fontAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
+    for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.TextCore.Text";
@@ -118,20 +112,16 @@ for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
+    for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -140,11 +130,10 @@ for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
+    for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -156,28 +145,24 @@ for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
+    for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
+    for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -189,11 +174,10 @@ for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
+    for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -209,40 +193,38 @@ impl crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
         nameHashCode: i32,
         familyNameHashCode: i32,
         styleNameHashCode: i32,
-        fontAsset: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::TextCore::Text::FontAsset,
-        >,
+        fontAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::TextCore::Text::FontAsset,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (nameHashCode, familyNameHashCode, styleNameHashCode, fontAsset),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    nameHashCode,
+                    familyNameHashCode,
+                    styleNameHashCode,
+                    fontAsset,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }

@@ -1,12 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+Animations+AnimationRemoveScalePlayable")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct AnimationRemoveScalePlayable {
     pub m_Handle: crate::UnityEngine::Playables::PlayableHandle,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Animations+AnimationRemoveScalePlayable")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
+    for crate::UnityEngine::Animations::AnimationRemoveScalePlayable
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Animations";
@@ -25,18 +26,16 @@ for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Animations+AnimationRemoveScalePlayable")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
+    for crate::UnityEngine::Animations::AnimationRemoveScalePlayable
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,7 +46,8 @@ for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Animations+AnimationRemoveScalePlayable")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
+    for crate::UnityEngine::Animations::AnimationRemoveScalePlayable
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -61,22 +61,22 @@ for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Animations+AnimationRemoveScalePlayable")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
+    for crate::UnityEngine::Animations::AnimationRemoveScalePlayable
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Animations+AnimationRemoveScalePlayable")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
+    for crate::UnityEngine::Animations::AnimationRemoveScalePlayable
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -90,7 +90,8 @@ for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Animations+AnimationRemoveScalePlayable")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
+    for crate::UnityEngine::Animations::AnimationRemoveScalePlayable
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -104,12 +105,12 @@ impl crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
     pub fn Create(
         graph: crate::UnityEngine::Playables::PlayableGraph,
         inputCount: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Animations::AnimationRemoveScalePlayable,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Animations::AnimationRemoveScalePlayable>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Playables::PlayableGraph, i32),
@@ -124,18 +125,18 @@ impl crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Animations::AnimationRemoveScalePlayable = unsafe {
-            cordl_method_info.invoke_unchecked((), (graph, inputCount))?
-        };
+        let __cordl_ret: crate::UnityEngine::Animations::AnimationRemoveScalePlayable =
+            unsafe { cordl_method_info.invoke_unchecked((), (graph, inputCount))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateHandle(
         graph: crate::UnityEngine::Playables::PlayableGraph,
         inputCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Playables::PlayableGraph, i32),
@@ -150,88 +151,74 @@ impl crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
-            cordl_method_info.invoke_unchecked((), (graph, inputCount))?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle =
+            unsafe { cordl_method_info.invoke_unchecked((), (graph, inputCount))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateHandleInternal(
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        handle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Playables::PlayableHandle,
-        >,
+        handle: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Playables::PlayableHandle>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Playables::PlayableGraph,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Playables::PlayableHandle,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("CreateHandleInternal")
+                    .find_static_method::<(
+                        crate::UnityEngine::Playables::PlayableGraph,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Playables::PlayableHandle,
+                        >,
+                    ), bool, 2usize>("CreateHandleInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateHandleInternal", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateHandleInternal",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (graph, handle))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (graph, handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateHandleInternal_Injected(
-        graph: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Playables::PlayableGraph,
-        >,
-        handle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Playables::PlayableHandle,
-        >,
+        graph: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Playables::PlayableGraph>,
+        handle: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Playables::PlayableHandle>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Playables::PlayableGraph,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Playables::PlayableHandle,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("CreateHandleInternal_Injected")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Playables::PlayableGraph,
+                        >,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Playables::PlayableHandle,
+                        >,
+                    ), bool, 2usize>("CreateHandleInternal_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateHandleInternal_Injected", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateHandleInternal_Injected",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (graph, handle))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (graph, handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::Animations::AnimationRemoveScalePlayable,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Animations::AnimationRemoveScalePlayable),
@@ -246,43 +233,41 @@ impl crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::Playables::PlayableHandle,
-                        0usize,
-                    >("GetHandle")
+                    .find_method::<(), crate::UnityEngine::Playables::PlayableHandle, 0usize>(
+                        "GetHandle",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHandle", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHandle",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         handle: crate::UnityEngine::Playables::PlayableHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Playables::PlayableHandle),
@@ -297,17 +282,17 @@ impl crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handle))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
         playable: crate::UnityEngine::Animations::AnimationRemoveScalePlayable,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Animations::AnimationRemoveScalePlayable),
@@ -322,32 +307,28 @@ impl crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
-            cordl_method_info.invoke_unchecked((), (playable))?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::Playable =
+            unsafe { cordl_method_info.invoke_unchecked((), (playable))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationRemoveScalePlayable")]
-impl AsRef<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::Animations::AnimationRemoveScalePlayable,
-    >,
-> for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
+impl
+    AsRef<crate::System::IEquatable_1<crate::UnityEngine::Animations::AnimationRemoveScalePlayable>>
+    for crate::UnityEngine::Animations::AnimationRemoveScalePlayable
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::UnityEngine::Animations::AnimationRemoveScalePlayable,
-    > {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Animations::AnimationRemoveScalePlayable>
+    {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationRemoveScalePlayable")]
-impl AsMut<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::Animations::AnimationRemoveScalePlayable,
-    >,
-> for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
+impl
+    AsMut<crate::System::IEquatable_1<crate::UnityEngine::Animations::AnimationRemoveScalePlayable>>
+    for crate::UnityEngine::Animations::AnimationRemoveScalePlayable
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::IEquatable_1<
@@ -358,14 +339,16 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationRemoveScalePlayable")]
 impl AsRef<crate::UnityEngine::Playables::IPlayable>
-for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
+    for crate::UnityEngine::Animations::AnimationRemoveScalePlayable
+{
     fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationRemoveScalePlayable")]
 impl AsMut<crate::UnityEngine::Playables::IPlayable>
-for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
+    for crate::UnityEngine::Animations::AnimationRemoveScalePlayable
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
         todo!()
     }

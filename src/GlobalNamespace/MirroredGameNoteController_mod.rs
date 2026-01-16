@@ -5,9 +5,8 @@ pub struct MirroredGameNoteController {
     __cordl_parent: crate::GlobalNamespace::MirroredNoteController_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameNoteMirrorable>,
     >,
-    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MaterialPropertyBlockController,
-    >,
+    pub _materialPropertyBlockController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MaterialPropertyBlockController>,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub cubeNoteControllerDidInitEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_1<
@@ -16,14 +15,14 @@ pub struct MirroredGameNoteController {
     >,
 }
 #[cfg(feature = "cordl_class_MirroredGameNoteController")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MirroredGameNoteController {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MirroredGameNoteController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "MirroredGameNoteController";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -56,13 +55,12 @@ impl crate::GlobalNamespace::MirroredGameNoteController {
     pub type Pool = crate::GlobalNamespace::MirroredGameNoteController_Pool;
     pub fn Mirror(
         &mut self,
-        noteController: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IGameNoteMirrorable,
-        >,
+        noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameNoteMirrorable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -79,75 +77,70 @@ impl crate::GlobalNamespace::MirroredGameNoteController {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (noteController))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (noteController))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn add_cubeNoteControllerDidInitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MirroredGameNoteController,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MirroredGameNoteController,
-                                >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MirroredGameNoteController,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_cubeNoteControllerDidInitEvent")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "add_cubeNoteControllerDidInitEvent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_cubeNoteControllerDidInitEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_cubeNoteControllerDidInitEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_noteMovement(
@@ -155,9 +148,10 @@ impl crate::GlobalNamespace::MirroredGameNoteController {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -172,78 +166,72 @@ impl crate::GlobalNamespace::MirroredGameNoteController {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::NoteMovement,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_noteVisualModifierType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteVisualModifierType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::GlobalNamespace::NoteVisualModifierType,
-                        0usize,
-                    >("get_noteVisualModifierType")
+                    .find_method::<(), crate::GlobalNamespace::NoteVisualModifierType, 0usize>(
+                        "get_noteVisualModifierType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_noteVisualModifierType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_noteVisualModifierType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::NoteVisualModifierType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::GlobalNamespace::NoteVisualModifierType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_cubeNoteControllerDidInitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MirroredGameNoteController,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MirroredGameNoteController,
-                                >,
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MirroredGameNoteController,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_cubeNoteControllerDidInitEvent")
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_cubeNoteControllerDidInitEvent",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_cubeNoteControllerDidInitEvent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_cubeNoteControllerDidInitEvent",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_MirroredGameNoteController")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::MirroredGameNoteController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MirroredGameNoteController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -252,11 +240,13 @@ for crate::GlobalNamespace::MirroredGameNoteController {
     }
 }
 #[cfg(feature = "MirroredGameNoteController")]
-impl AsRef<
-    crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
-    >,
-> for crate::GlobalNamespace::MirroredGameNoteController {
+impl
+    AsRef<
+        crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
+        >,
+    > for crate::GlobalNamespace::MirroredGameNoteController
+{
     fn as_ref(
         &self,
     ) -> &crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
@@ -266,11 +256,13 @@ impl AsRef<
     }
 }
 #[cfg(feature = "MirroredGameNoteController")]
-impl AsMut<
-    crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
-    >,
-> for crate::GlobalNamespace::MirroredGameNoteController {
+impl
+    AsMut<
+        crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
+        >,
+    > for crate::GlobalNamespace::MirroredGameNoteController
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
@@ -281,31 +273,33 @@ impl AsMut<
 }
 #[cfg(feature = "MirroredGameNoteController")]
 impl AsRef<crate::GlobalNamespace::INoteMovementProvider>
-for crate::GlobalNamespace::MirroredGameNoteController {
+    for crate::GlobalNamespace::MirroredGameNoteController
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::INoteMovementProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MirroredGameNoteController")]
 impl AsMut<crate::GlobalNamespace::INoteMovementProvider>
-for crate::GlobalNamespace::MirroredGameNoteController {
+    for crate::GlobalNamespace::MirroredGameNoteController
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteMovementProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MirroredGameNoteController")]
 impl AsRef<crate::GlobalNamespace::INoteVisualModifierTypeProvider>
-for crate::GlobalNamespace::MirroredGameNoteController {
+    for crate::GlobalNamespace::MirroredGameNoteController
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::INoteVisualModifierTypeProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MirroredGameNoteController")]
 impl AsMut<crate::GlobalNamespace::INoteVisualModifierTypeProvider>
-for crate::GlobalNamespace::MirroredGameNoteController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::GlobalNamespace::INoteVisualModifierTypeProvider {
+    for crate::GlobalNamespace::MirroredGameNoteController
+{
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteVisualModifierTypeProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -319,13 +313,15 @@ pub struct MirroredGameNoteController_Pool {
 }
 #[cfg(feature = "cordl_class_MirroredGameNoteController+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MirroredGameNoteController_Pool {
+    for crate::GlobalNamespace::MirroredGameNoteController_Pool
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "MirroredGameNoteController/Pool";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -355,37 +351,35 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MirroredGameNoteController_P
 #[cfg(feature = "MirroredGameNoteController+Pool")]
 impl crate::GlobalNamespace::MirroredGameNoteController_Pool {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_MirroredGameNoteController+Pool")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::MirroredGameNoteController_Pool {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MirroredGameNoteController_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

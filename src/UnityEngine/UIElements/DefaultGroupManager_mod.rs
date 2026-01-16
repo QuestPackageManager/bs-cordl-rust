@@ -8,20 +8,19 @@ pub struct DefaultGroupManager {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBoxOption>,
         >,
     >,
-    pub m_SelectedOption: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IGroupBoxOption,
-    >,
+    pub m_SelectedOption:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBoxOption>,
     pub m_GroupBox: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultGroupManager")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::DefaultGroupManager {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::DefaultGroupManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "DefaultGroupManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -52,9 +51,10 @@ impl crate::UnityEngine::UIElements::DefaultGroupManager {
         &mut self,
         groupBox: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -71,27 +71,25 @@ impl crate::UnityEngine::UIElements::DefaultGroupManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (groupBox))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (groupBox))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
     pub fn OnOptionSelectionChanged(
         &mut self,
-        selectedOption: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::IGroupBoxOption,
-        >,
+        selectedOption: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBoxOption>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -108,20 +106,18 @@ impl crate::UnityEngine::UIElements::DefaultGroupManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (selectedOption))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (selectedOption))? };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterOption(
         &mut self,
-        option: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::IGroupBoxOption,
-        >,
+        option: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBoxOption>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -138,20 +134,18 @@ impl crate::UnityEngine::UIElements::DefaultGroupManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (option))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (option))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterOption(
         &mut self,
-        option: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::IGroupBoxOption,
-        >,
+        option: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBoxOption>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -168,36 +162,33 @@ impl crate::UnityEngine::UIElements::DefaultGroupManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (option))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (option))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultGroupManager")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::DefaultGroupManager {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::DefaultGroupManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -207,14 +198,16 @@ for crate::UnityEngine::UIElements::DefaultGroupManager {
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultGroupManager")]
 impl AsRef<crate::UnityEngine::UIElements::IGroupManager>
-for crate::UnityEngine::UIElements::DefaultGroupManager {
+    for crate::UnityEngine::UIElements::DefaultGroupManager
+{
     fn as_ref(&self) -> &crate::UnityEngine::UIElements::IGroupManager {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultGroupManager")]
 impl AsMut<crate::UnityEngine::UIElements::IGroupManager>
-for crate::UnityEngine::UIElements::DefaultGroupManager {
+    for crate::UnityEngine::UIElements::DefaultGroupManager
+{
     fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IGroupManager {
         unsafe { std::mem::transmute(self) }
     }

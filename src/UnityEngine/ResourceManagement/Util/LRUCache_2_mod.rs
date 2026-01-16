@@ -1,10 +1,7 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
-pub struct LRUCache_2<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> {
+#[repr(C)]
+pub struct LRUCache_2<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type> {
     pub requestHits: i32,
     pub requestCount: i32,
     pub entryLimit: i32,
@@ -14,9 +11,7 @@ pub struct LRUCache_2<
             crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
         >,
     >,
-    pub lru: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LinkedList_1<TKey>,
-    >,
+    pub lru: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::LinkedList_1<TKey>>,
     pub nodeCache: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::Util::LinkedListNodeCache_1<TKey>,
     >,
@@ -24,30 +19,27 @@ pub struct LRUCache_2<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
-unsafe impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
+unsafe impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    quest_hook::libil2cpp::Type
+    for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue>
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
     const CLASS_NAME: &'static str = "LRUCache`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "UnityEngine.ResourceManagement.Util",
-                        "LRUCache`2",
-                    )
-                    .unwrap()
-                    .make_generic::<(TKey, TValue)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find(
+                "UnityEngine.ResourceManagement.Util",
+                "LRUCache`2",
+            )
+            .unwrap()
+            .make_generic::<(TKey, TValue)>()
+            .unwrap()
+            .unwrap()
+        })
     }
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
@@ -63,21 +55,17 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
-unsafe impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
+unsafe impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    quest_hook::libil2cpp::Argument
+    for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -87,11 +75,10 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
-unsafe impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
+unsafe impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    quest_hook::libil2cpp::Parameter
+    for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -104,29 +91,25 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
-unsafe impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
+unsafe impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    quest_hook::libil2cpp::Returned
+    for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
-unsafe impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Return
-for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
+unsafe impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    quest_hook::libil2cpp::Return
+    for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -139,11 +122,10 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
-unsafe impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
+unsafe impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    quest_hook::libil2cpp::ThisArgument
+    for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue>
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -153,42 +135,38 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
+impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue>
+{
     #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-    pub type Entry = crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<
-        TKey,
-        TValue,
-    >;
-    pub fn TryAdd(
-        &mut self,
-        id: TKey,
-        obj: TValue,
-    ) -> quest_hook::libil2cpp::Result<bool>
+    pub type Entry = crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>;
+    pub fn TryAdd(&mut self, id: TKey, obj: TValue) -> quest_hook::libil2cpp::Result<bool>
     where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TKey: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(TKey, TValue), bool, 2usize>("TryAdd")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "TryAdd",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryAdd",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (id, obj))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (id, obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGet(
@@ -197,31 +175,33 @@ impl<
         val: quest_hook::libil2cpp::ByRefMut<TValue>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TKey: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (TKey, quest_hook::libil2cpp::ByRefMut<TValue>),
-                        bool,
-                        2usize,
-                    >("TryGet")
+                    .find_method::<(TKey, quest_hook::libil2cpp::ByRefMut<TValue>), bool, 2usize>(
+                        "TryGet",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "TryGet",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGet",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (offset, val))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (offset, val))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -229,69 +209,68 @@ impl<
         limit: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TKey: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (limit))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (limit))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
-pub struct LRUCache_2_Entry<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> {
-    pub lruNode: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LinkedListNode_1<TKey>,
-    >,
+#[repr(C)]
+pub struct LRUCache_2_Entry<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+{
+    pub lruNode:
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::LinkedListNode_1<TKey>>,
     pub Value: TValue,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-unsafe impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Type
-for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
+unsafe impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    quest_hook::libil2cpp::Type
+    for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
     const CLASS_NAME: &'static str = "LRUCache`2/Entry";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "UnityEngine.ResourceManagement.Util",
-                        "LRUCache`2/Entry",
-                    )
-                    .unwrap()
-                    .make_generic::<(TKey, TValue)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find(
+                "UnityEngine.ResourceManagement.Util",
+                "LRUCache`2/Entry",
+            )
+            .unwrap()
+            .make_generic::<(TKey, TValue)>()
+            .unwrap()
+            .unwrap()
+        })
     }
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
@@ -307,21 +286,17 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-unsafe impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Argument
-for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
+unsafe impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    quest_hook::libil2cpp::Argument
+    for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -331,11 +306,10 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-unsafe impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
+unsafe impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    quest_hook::libil2cpp::Parameter
+    for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -348,29 +322,25 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-unsafe impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Returned
-for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
+unsafe impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    quest_hook::libil2cpp::Returned
+    for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-unsafe impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::Return
-for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
+unsafe impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    quest_hook::libil2cpp::Return
+    for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -383,11 +353,10 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-unsafe impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
+unsafe impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    quest_hook::libil2cpp::ThisArgument
+    for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -397,26 +366,27 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
+impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
+{
     pub fn Equals(
         &mut self,
-        other: crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<
-            TKey,
-            TValue,
-        >,
+        other: crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TKey: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<
@@ -434,28 +404,32 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TKey: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -464,14 +438,13 @@ impl<
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
-    >,
-> for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
+impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    AsRef<
+        crate::System::IEquatable_1<
+            crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
+        >,
+    > for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
+{
     fn as_ref(
         &self,
     ) -> &crate::System::IEquatable_1<
@@ -481,14 +454,13 @@ impl<
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
-    >,
-> for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
+impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
+    AsMut<
+        crate::System::IEquatable_1<
+            crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
+        >,
+    > for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::IEquatable_1<

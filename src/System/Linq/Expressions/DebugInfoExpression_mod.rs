@@ -3,19 +3,18 @@
 #[derive(Debug)]
 pub struct DebugInfoExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _Document_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::SymbolDocumentInfo,
-    >,
+    pub _Document_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::SymbolDocumentInfo>,
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+DebugInfoExpression")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Linq::Expressions::DebugInfoExpression {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Linq::Expressions::DebugInfoExpression {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
     const CLASS_NAME: &'static str = "DebugInfoExpression";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,9 +46,10 @@ impl crate::System::Linq::Expressions::DebugInfoExpression {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::SymbolDocumentInfo>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -72,16 +72,18 @@ impl crate::System::Linq::Expressions::DebugInfoExpression {
         Ok(__cordl_ret.into())
     }
     pub fn get_EndLine(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_EndLine")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_EndLine", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_EndLine",
+                            0usize
                         )
                     })
             });
@@ -89,16 +91,18 @@ impl crate::System::Linq::Expressions::DebugInfoExpression {
         Ok(__cordl_ret.into())
     }
     pub fn get_IsClear(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsClear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_IsClear", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_IsClear",
+                            0usize
                         )
                     })
             });
@@ -106,16 +110,18 @@ impl crate::System::Linq::Expressions::DebugInfoExpression {
         Ok(__cordl_ret.into())
     }
     pub fn get_StartLine(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_StartLine")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_StartLine", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_StartLine",
+                            0usize
                         )
                     })
             });
@@ -124,8 +130,7 @@ impl crate::System::Linq::Expressions::DebugInfoExpression {
     }
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+DebugInfoExpression")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Linq::Expressions::DebugInfoExpression {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Linq::Expressions::DebugInfoExpression {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

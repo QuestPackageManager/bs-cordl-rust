@@ -1,17 +1,19 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LODGroupCullingData {
     pub worldSpaceReferencePoint: crate::Unity::Mathematics::float3,
     pub lodCount: i32,
-    pub sqrDistances: crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer,
-    pub transitionDistances: crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer,
+    pub sqrDistances:
+        crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer,
+    pub transitionDistances:
+        crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer,
     pub worldSpaceSize: f32,
-    pub percentageFlags: crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer,
+    pub percentageFlags:
+        crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::LODGroupCullingData {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::LODGroupCullingData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -30,18 +32,14 @@ for crate::UnityEngine::Rendering::LODGroupCullingData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::LODGroupCullingData {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Rendering::LODGroupCullingData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -52,7 +50,8 @@ for crate::UnityEngine::Rendering::LODGroupCullingData {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::LODGroupCullingData {
+    for crate::UnityEngine::Rendering::LODGroupCullingData
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -65,23 +64,19 @@ for crate::UnityEngine::Rendering::LODGroupCullingData {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::LODGroupCullingData {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Rendering::LODGroupCullingData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::LODGroupCullingData {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::LODGroupCullingData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -95,7 +90,8 @@ for crate::UnityEngine::Rendering::LODGroupCullingData {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::LODGroupCullingData {
+    for crate::UnityEngine::Rendering::LODGroupCullingData
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -106,24 +102,23 @@ for crate::UnityEngine::Rendering::LODGroupCullingData {
 }
 #[cfg(feature = "UnityEngine+Rendering+LODGroupCullingData")]
 impl crate::UnityEngine::Rendering::LODGroupCullingData {
-    #[cfg(
-        feature = "UnityEngine+Rendering+LODGroupCullingData+_percentageFlags_e__FixedBuffer"
-    )]
-    pub type _percentageFlags_e__FixedBuffer = crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer;
-    #[cfg(
-        feature = "UnityEngine+Rendering+LODGroupCullingData+_sqrDistances_e__FixedBuffer"
-    )]
-    pub type _sqrDistances_e__FixedBuffer = crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer;
+    #[cfg(feature = "UnityEngine+Rendering+LODGroupCullingData+_percentageFlags_e__FixedBuffer")]
+    pub type _percentageFlags_e__FixedBuffer =
+        crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer;
+    #[cfg(feature = "UnityEngine+Rendering+LODGroupCullingData+_sqrDistances_e__FixedBuffer")]
+    pub type _sqrDistances_e__FixedBuffer =
+        crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer;
     #[cfg(
         feature = "UnityEngine+Rendering+LODGroupCullingData+_transitionDistances_e__FixedBuffer"
     )]
-    pub type _transitionDistances_e__FixedBuffer = crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer;
+    pub type _transitionDistances_e__FixedBuffer =
+        crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer;
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_percentageFlags_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LODGroupCullingData__percentageFlags_e__FixedBuffer {
     pub FixedElementField: bool,
 }
@@ -131,7 +126,8 @@ pub struct LODGroupCullingData__percentageFlags_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_percentageFlags_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -150,20 +146,18 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__Fixed
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_percentageFlags_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -176,7 +170,8 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_percentageFlags_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -192,16 +187,15 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_percentageFlags_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -209,7 +203,8 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_percentageFlags_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -225,7 +220,8 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__Fixed
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_percentageFlags_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -234,15 +230,13 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__Fixed
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+LODGroupCullingData+_percentageFlags_e__FixedBuffer"
-)]
+#[cfg(feature = "UnityEngine+Rendering+LODGroupCullingData+_percentageFlags_e__FixedBuffer")]
 impl crate::UnityEngine::Rendering::LODGroupCullingData__percentageFlags_e__FixedBuffer {}
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_sqrDistances_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LODGroupCullingData__sqrDistances_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -250,7 +244,8 @@ pub struct LODGroupCullingData__sqrDistances_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_sqrDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -269,20 +264,18 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuf
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_sqrDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -295,7 +288,8 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuf
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_sqrDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -311,16 +305,15 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuf
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_sqrDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -328,7 +321,8 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuf
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_sqrDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -344,7 +338,8 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuf
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_sqrDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -353,15 +348,13 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuf
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+LODGroupCullingData+_sqrDistances_e__FixedBuffer"
-)]
+#[cfg(feature = "UnityEngine+Rendering+LODGroupCullingData+_sqrDistances_e__FixedBuffer")]
 impl crate::UnityEngine::Rendering::LODGroupCullingData__sqrDistances_e__FixedBuffer {}
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_transitionDistances_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LODGroupCullingData__transitionDistances_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -369,7 +362,8 @@ pub struct LODGroupCullingData__transitionDistances_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_transitionDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -388,20 +382,18 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__F
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_transitionDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -414,7 +406,8 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__F
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_transitionDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -430,16 +423,15 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__F
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_transitionDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -447,7 +439,8 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__F
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_transitionDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -463,7 +456,8 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__F
     feature = "cordl_class_UnityEngine+Rendering+LODGroupCullingData+_transitionDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -472,7 +466,5 @@ for crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__F
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+LODGroupCullingData+_transitionDistances_e__FixedBuffer"
-)]
+#[cfg(feature = "UnityEngine+Rendering+LODGroupCullingData+_transitionDistances_e__FixedBuffer")]
 impl crate::UnityEngine::Rendering::LODGroupCullingData__transitionDistances_e__FixedBuffer {}

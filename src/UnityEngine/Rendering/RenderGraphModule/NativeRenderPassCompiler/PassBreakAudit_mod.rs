@@ -1,20 +1,23 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+PassBreakAudit"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PassBreakAudit {
-    pub reason: crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakReason,
+    pub reason:
+        crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakReason,
     pub breakPass: i32,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+PassBreakAudit"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakAudit {
+    for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakAudit
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
-    const NAMESPACE: &'static str = "UnityEngine.Rendering.RenderGraphModule.NativeRenderPassCompiler";
+    const NAMESPACE: &'static str =
+        "UnityEngine.Rendering.RenderGraphModule.NativeRenderPassCompiler";
     const CLASS_NAME: &'static str = "PassBreakAudit";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
@@ -30,20 +33,18 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+PassBreakAudit"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakAudit {
+    for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakAudit
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -56,7 +57,8 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+PassBreakAudit"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakAudit {
+    for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakAudit
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -72,16 +74,15 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+PassBreakAudit"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakAudit {
+    for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakAudit
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -89,7 +90,8 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+PassBreakAudit"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakAudit {
+    for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakAudit
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -105,7 +107,8 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+PassBreakAudit"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakAudit {
+    for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakAudit
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -114,16 +117,15 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+PassBreakAudit"
-)]
+#[cfg(feature = "UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+PassBreakAudit")]
 impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakAudit {
     pub fn _ctor(
         &mut self,
         reason: crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassBreakReason,
         breakPass: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -143,9 +145,8 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (reason, breakPass))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (reason, breakPass))? };
         Ok(__cordl_ret.into())
     }
 }

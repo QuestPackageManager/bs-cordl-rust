@@ -5,14 +5,14 @@ pub struct JobParallelIndexListExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Unity+Jobs+JobParallelIndexListExtensions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Jobs::JobParallelIndexListExtensions {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Jobs::JobParallelIndexListExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Jobs";
     const CLASS_NAME: &'static str = "JobParallelIndexListExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,38 +47,42 @@ impl crate::Unity::Jobs::JobParallelIndexListExtensions {
         dependsOn: crate::Unity::Jobs::JobHandle,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            T,
-                            crate::Unity::Collections::NativeList_1<i32>,
-                            i32,
-                            i32,
-                            crate::Unity::Jobs::JobHandle,
-                        ),
+                    .find_static_method::<(
+                        T,
+                        crate::Unity::Collections::NativeList_1<i32>,
+                        i32,
+                        i32,
                         crate::Unity::Jobs::JobHandle,
-                        5usize,
-                    >("ScheduleAppend")
+                    ), crate::Unity::Jobs::JobHandle, 5usize>("ScheduleAppend")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ScheduleAppend", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ScheduleAppend",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (jobData, indices, arrayLength, innerloopBatchCount, dependsOn),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    jobData,
+                    indices,
+                    arrayLength,
+                    innerloopBatchCount,
+                    dependsOn,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -89,44 +93,39 @@ impl crate::Unity::Jobs::JobParallelIndexListExtensions {
         dependsOn: crate::Unity::Jobs::JobHandle,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            T,
-                            crate::Unity::Collections::NativeList_1<i32>,
-                            i32,
-                            crate::Unity::Jobs::JobHandle,
-                        ),
+                    .find_static_method::<(
+                        T,
+                        crate::Unity::Collections::NativeList_1<i32>,
+                        i32,
                         crate::Unity::Jobs::JobHandle,
-                        4usize,
-                    >("ScheduleFilter")
+                    ), crate::Unity::Jobs::JobHandle, 4usize>("ScheduleFilter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ScheduleFilter", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ScheduleFilter",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (jobData, indices, innerloopBatchCount, dependsOn),
-                )?
+                .invoke_unchecked((), (jobData, indices, innerloopBatchCount, dependsOn))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Unity+Jobs+JobParallelIndexListExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Unity::Jobs::JobParallelIndexListExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::Unity::Jobs::JobParallelIndexListExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

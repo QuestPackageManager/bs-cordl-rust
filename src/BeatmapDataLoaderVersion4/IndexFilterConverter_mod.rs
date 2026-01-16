@@ -5,14 +5,14 @@ pub struct IndexFilterConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+IndexFilterConverter")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
+unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatmapDataLoaderVersion4";
     const CLASS_NAME: &'static str = "IndexFilterConverter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,12 +42,12 @@ impl crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
     pub fn Convert(
         indexFilter: crate::BeatmapSaveDataVersion4::IndexFilter,
         groupSize: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataVersion4::IndexFilter, i32),
@@ -62,18 +62,18 @@ impl crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IndexFilter,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (indexFilter, groupSize))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter> =
+            unsafe { cordl_method_info.invoke_unchecked((), (indexFilter, groupSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsIndexFilterValid(
         indexFilter: crate::BeatmapSaveDataVersion4::IndexFilter,
         groupSize: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataVersion4::IndexFilter, i32),
@@ -88,15 +88,13 @@ impl crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (indexFilter, groupSize))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (indexFilter, groupSize))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+IndexFilterConverter")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
+impl quest_hook::libil2cpp::ObjectType for crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

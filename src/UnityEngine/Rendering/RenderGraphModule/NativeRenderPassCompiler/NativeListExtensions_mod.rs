@@ -50,17 +50,21 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::
 #[cfg(
     feature = "UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+NativeListExtensions"
 )]
-impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::NativeListExtensions {
+impl
+    crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::NativeListExtensions
+{
     pub fn LastIndex<T>(
         list: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeList_1<T>>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -77,48 +81,42 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (list))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn MakeReadOnlySpan<T>(
-        list: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeList_1<T>,
-        >,
+        list: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeList_1<T>>,
         first: i32,
         numElements: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<T>>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeList_1<T>,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        crate::System::ReadOnlySpan_1<T>,
-                        3usize,
-                    >("MakeReadOnlySpan")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeList_1<T>>,
+                        i32,
+                        i32,
+                    ), crate::System::ReadOnlySpan_1<T>, 3usize>(
+                        "MakeReadOnlySpan"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeReadOnlySpan", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "MakeReadOnlySpan",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::ReadOnlySpan_1<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (list, first, numElements))?
-        };
+        let __cordl_ret: crate::System::ReadOnlySpan_1<T> =
+            unsafe { cordl_method_info.invoke_unchecked((), (list, first, numElements))? };
         Ok(__cordl_ret.into())
     }
 }

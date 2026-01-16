@@ -1,12 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceCommand")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct InputDeviceCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceCommand")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
+    for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
@@ -25,18 +26,16 @@ for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceCommand")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
+    for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -47,7 +46,8 @@ for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceCommand")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
+    for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -61,22 +61,22 @@ for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceCommand")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
+    for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceCommand")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
+    for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -90,7 +90,8 @@ for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceCommand")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
+    for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -109,9 +110,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
         _cordl_type: crate::UnityEngine::InputSystem::Utilities::FourCC,
         payloadSize: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<u8>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::InputSystem::Utilities::FourCC, i32),
@@ -126,9 +128,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::NativeArray_1<u8> = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_type, payloadSize))?
-        };
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<u8> =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type, payloadSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -136,9 +137,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
         _cordl_type: crate::UnityEngine::InputSystem::Utilities::FourCC,
         sizeInBytes: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::Utilities::FourCC, i32),
@@ -153,19 +155,18 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_type, sizeInBytes))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type, sizeInBytes))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_payloadPtr(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -180,22 +181,23 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_payloadSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_payloadSizeInBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_payloadSizeInBytes", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_payloadSizeInBytes",
+                            0usize
                         )
                     })
             });
@@ -204,44 +206,41 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
     }
     pub fn get_typeStatic(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::Utilities::FourCC> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::InputSystem::Utilities::FourCC,
-                        0usize,
-                    >("get_typeStatic")
+                    .find_method::<(), crate::UnityEngine::InputSystem::Utilities::FourCC, 0usize>(
+                        "get_typeStatic",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_typeStatic", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_typeStatic",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputDeviceCommand")]
 impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
-for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
-    fn as_ref(
-        &self,
-    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+    for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand
+{
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputDeviceCommand")]
 impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
-for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
+    for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {

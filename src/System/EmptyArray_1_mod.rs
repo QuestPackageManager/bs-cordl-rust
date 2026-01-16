@@ -7,26 +7,26 @@ pub struct EmptyArray_1<T: quest_hook::libil2cpp::Type> {
 }
 #[cfg(feature = "cordl_class_System+EmptyArray_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::System::EmptyArray_1<T> {
+    for crate::System::EmptyArray_1<T>
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System";
     const CLASS_NAME: &'static str = "EmptyArray`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System", "EmptyArray`1")
-                    .unwrap()
-                    .make_generic::<(T)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find("System", "EmptyArray`1")
+                .unwrap()
+                .make_generic::<(T)>()
+                .unwrap()
+                .unwrap()
+        })
     }
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,8 +46,7 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for crate::System::EmptyArr
     }
 }
 #[cfg(feature = "System+EmptyArray_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for crate::System::EmptyArray_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for crate::System::EmptyArray_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -56,7 +55,8 @@ for crate::System::EmptyArray_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::System::EmptyArray_1<T> {}
 #[cfg(feature = "cordl_class_System+EmptyArray_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for crate::System::EmptyArray_1<T> {
+    for crate::System::EmptyArray_1<T>
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

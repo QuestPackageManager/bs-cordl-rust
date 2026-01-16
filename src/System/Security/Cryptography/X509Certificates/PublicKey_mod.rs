@@ -3,23 +3,21 @@
 #[derive(Debug)]
 pub struct PublicKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _keyValue: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::AsnEncodedData,
-    >,
-    pub _params: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::AsnEncodedData,
-    >,
+    pub _keyValue: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::AsnEncodedData>,
+    pub _params: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::AsnEncodedData>,
     pub _oid: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
 }
 #[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+PublicKey")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Security::Cryptography::X509Certificates::PublicKey {
+    for crate::System::Security::Cryptography::X509Certificates::PublicKey
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Security.Cryptography.X509Certificates";
     const CLASS_NAME: &'static str = "PublicKey";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,16 +30,14 @@ for crate::System::Security::Cryptography::X509Certificates::PublicKey {
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+PublicKey")]
-impl std::ops::Deref
-for crate::System::Security::Cryptography::X509Certificates::PublicKey {
+impl std::ops::Deref for crate::System::Security::Cryptography::X509Certificates::PublicKey {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+PublicKey")]
-impl std::ops::DerefMut
-for crate::System::Security::Cryptography::X509Certificates::PublicKey {
+impl std::ops::DerefMut for crate::System::Security::Cryptography::X509Certificates::PublicKey {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -54,9 +50,10 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -80,11 +77,8 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::DSA,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (rawPublicKey, rawParameters))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA> =
+            unsafe { cordl_method_info.invoke_unchecked((), (rawPublicKey, rawParameters))? };
         Ok(__cordl_ret.into())
     }
     pub fn DecodeRSA(
@@ -92,9 +86,10 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -113,9 +108,8 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::RSA,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (rawPublicKey))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA> =
+            unsafe { cordl_method_info.invoke_unchecked((), (rawPublicKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUnsignedBigInteger(
@@ -123,9 +117,10 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -144,9 +139,8 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (integer))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>> =
+            unsafe { cordl_method_info.invoke_unchecked((), (integer))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -154,12 +148,10 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
         parameters: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::AsnEncodedData,
         >,
-        keyValue: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::AsnEncodedData,
-        >,
+        keyValue: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::AsnEncodedData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (oid, parameters, keyValue))?;
         Ok(__cordl_object.into())
@@ -170,40 +162,33 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
         parameters: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::AsnEncodedData,
         >,
-        keyValue: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::AsnEncodedData,
-        >,
+        keyValue: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::AsnEncodedData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Security::Cryptography::Oid,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Security::Cryptography::AsnEncodedData,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Security::Cryptography::AsnEncodedData,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Security::Cryptography::AsnEncodedData,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Security::Cryptography::AsnEncodedData,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (oid, parameters, keyValue))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (oid, parameters, keyValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_EncodedKeyValue(
@@ -211,9 +196,10 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::AsnEncodedData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -240,9 +226,10 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::AsnEncodedData>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -267,25 +254,21 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
     pub fn get_Key(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::AsymmetricAlgorithm,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::AsymmetricAlgorithm>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Security::Cryptography::AsymmetricAlgorithm,
-                        >,
-                        0usize,
-                    >("get_Key")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::AsymmetricAlgorithm,
+                    >, 0usize>("get_Key")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_Key",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_Key",
                             0usize
                         )
                     })
@@ -300,9 +283,10 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -319,15 +303,15 @@ impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::Oid,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+PublicKey")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Security::Cryptography::X509Certificates::PublicKey {
+    for crate::System::Security::Cryptography::X509Certificates::PublicKey
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

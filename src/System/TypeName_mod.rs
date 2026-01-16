@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+TypeName")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct TypeName {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeName {
     const NAMESPACE: &'static str = "System";
     const CLASS_NAME: &'static str = "TypeName";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -38,19 +39,17 @@ impl std::ops::DerefMut for crate::System::TypeName {
 }
 #[cfg(feature = "System+TypeName")]
 impl crate::System::TypeName {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_DisplayName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -65,9 +64,8 @@ impl crate::System::TypeName {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -81,26 +79,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeName {
     }
 }
 #[cfg(feature = "System+TypeName")]
-impl AsRef<
-    crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::TypeName>>,
-> for crate::System::TypeName {
+impl AsRef<crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::TypeName>>>
+    for crate::System::TypeName
+{
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<crate::System::TypeName>,
-    > {
+    ) -> &crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::TypeName>> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+TypeName")]
-impl AsMut<
-    crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::TypeName>>,
-> for crate::System::TypeName {
+impl AsMut<crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::TypeName>>>
+    for crate::System::TypeName
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<crate::System::TypeName>,
-    > {
+    ) -> &mut crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::TypeName>> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -8,50 +8,39 @@ pub struct ObjectsMovementRecorder {
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PoseObject>,
         >,
     >,
-    pub _livPoseObjectId: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PoseObjectIdSO,
-    >,
+    pub _livPoseObjectId: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PoseObjectIdSO>,
     pub _recorder: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecorder>,
     pub _playback: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesPlayback>,
-    pub _playbackScreenshotRecorder: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlaybackScreenshotRecorder,
-    >,
-    pub _playbackRender: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlaybackRenderer,
-    >,
+    pub _playbackScreenshotRecorder:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlaybackScreenshotRecorder>,
+    pub _playbackRender: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlaybackRenderer>,
     pub _externalCameraPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AudioTimeSyncController,
-    >,
+    pub _audioTimeSyncController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioTimeSyncController>,
     pub _hmdCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-    pub _initData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ObjectsMovementRecorder_InitData,
-    >,
+    pub _initData:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObjectsMovementRecorder_InitData>,
     pub _mode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
     pub _recordingPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
     pub _externalCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _playbackScreenshots: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot>,
         >,
     >,
     pub _logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
-    pub _posesSerializer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IPosesSerializer,
-    >,
+    pub _posesSerializer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPosesSerializer>,
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ObjectsMovementRecorder {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ObjectsMovementRecorder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "ObjectsMovementRecorder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -87,102 +76,97 @@ impl crate::GlobalNamespace::ObjectsMovementRecorder {
     pub fn HandleGameStateChanged(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("HandleGameStateChanged")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "HandleGameStateChanged",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleGameStateChanged", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleGameStateChanged",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn OnDestroy(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDestroy", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "OnDestroy",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::ObjectsMovementRecorder {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ObjectsMovementRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -191,8 +175,8 @@ for crate::GlobalNamespace::ObjectsMovementRecorder {
     }
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+CameraView")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ObjectsMovementRecorder_CameraView {
     #[default]
     FirstPerson = 0i32,
@@ -200,7 +184,8 @@ pub enum ObjectsMovementRecorder_CameraView {
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+CameraView")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
+    for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -219,18 +204,16 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+CameraView")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
+    for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -241,7 +224,8 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+CameraView")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
+    for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -255,22 +239,22 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+CameraView")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
+    for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+CameraView")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
+    for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -297,26 +281,24 @@ pub struct ObjectsMovementRecorder_InitData {
     pub framerate: i32,
     pub playbackScreenshots: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot>,
         >,
     >,
     pub saveToOldFormat: bool,
-    pub posesSerializer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IPosesSerializer,
-    >,
+    pub posesSerializer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPosesSerializer>,
     pub logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
+    for crate::GlobalNamespace::ObjectsMovementRecorder_InitData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "ObjectsMovementRecorder/InitData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -361,30 +343,27 @@ impl crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
         >,
         saveToOldFormat: bool,
         logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
-        posesSerializer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IPosesSerializer,
-        >,
+        posesSerializer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPosesSerializer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    mode,
-                    recordingPath,
-                    cameraView,
-                    addDateTimeSuffixToRecordingName,
-                    screenshotRecording,
-                    screenshotWidth,
-                    screenshotHeight,
-                    framerate,
-                    playbackScreenshots,
-                    saveToOldFormat,
-                    logger,
-                    posesSerializer,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                mode,
+                recordingPath,
+                cameraView,
+                addDateTimeSuffixToRecordingName,
+                screenshotRecording,
+                screenshotWidth,
+                screenshotHeight,
+                framerate,
+                playbackScreenshots,
+                saveToOldFormat,
+                logger,
+                posesSerializer,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -406,78 +385,68 @@ impl crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
         >,
         saveToOldFormat: bool,
         logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
-        posesSerializer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IPosesSerializer,
-        >,
+        posesSerializer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPosesSerializer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
-                            bool,
-                            bool,
-                            i32,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
-                                    >,
+                    .find_method::<(
+                        crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
+                        bool,
+                        bool,
+                        i32,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
                                 >,
                             >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IBeatSaberLogger,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IPosesSerializer,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        12usize,
-                    >(".ctor")
+                        >,
+                        bool,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPosesSerializer>,
+                    ), quest_hook::libil2cpp::Void, 12usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             12usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        mode,
-                        recordingPath,
-                        cameraView,
-                        addDateTimeSuffixToRecordingName,
-                        screenshotRecording,
-                        screenshotWidth,
-                        screenshotHeight,
-                        framerate,
-                        playbackScreenshots,
-                        saveToOldFormat,
-                        logger,
-                        posesSerializer,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    mode,
+                    recordingPath,
+                    cameraView,
+                    addDateTimeSuffixToRecordingName,
+                    screenshotRecording,
+                    screenshotWidth,
+                    screenshotHeight,
+                    framerate,
+                    playbackScreenshots,
+                    saveToOldFormat,
+                    logger,
+                    posesSerializer,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+InitData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
+    for crate::GlobalNamespace::ObjectsMovementRecorder_InitData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -486,8 +455,8 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
     }
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+Mode")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum ObjectsMovementRecorder_Mode {
     #[default]
     Off = 2i32,
@@ -495,8 +464,7 @@ pub enum ObjectsMovementRecorder_Mode {
     Record = 0i32,
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+Mode")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -515,18 +483,16 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
+    for crate::GlobalNamespace::ObjectsMovementRecorder_Mode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -537,7 +503,8 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
+    for crate::GlobalNamespace::ObjectsMovementRecorder_Mode
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -551,22 +518,20 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
+    for crate::GlobalNamespace::ObjectsMovementRecorder_Mode
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+Mode")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

@@ -10,29 +10,26 @@ pub struct DecoratorToChoiceFromBinder_1<TContract: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_Zenject+DecoratorToChoiceFromBinder_1")]
 unsafe impl<TContract: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
+    for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract>
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject";
     const CLASS_NAME: &'static str = "DecoratorToChoiceFromBinder`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
-        static CLASS: ::std::sync::OnceLock<
-            &'static quest_hook::libil2cpp::Il2CppClass,
-        > = ::std::sync::OnceLock::new();
-        CLASS
-            .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find(
-                        "Zenject",
-                        "DecoratorToChoiceFromBinder`1",
-                    )
-                    .unwrap()
-                    .make_generic::<(TContract)>()
-                    .unwrap()
-                    .unwrap()
-            })
+        static CLASS: ::std::sync::OnceLock<&'static quest_hook::libil2cpp::Il2CppClass> =
+            ::std::sync::OnceLock::new();
+        CLASS.get_or_init(|| {
+            quest_hook::libil2cpp::Il2CppClass::find("Zenject", "DecoratorToChoiceFromBinder`1")
+                .unwrap()
+                .make_generic::<(TContract)>()
+                .unwrap()
+                .unwrap()
+        })
     }
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -46,7 +43,8 @@ for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
 }
 #[cfg(feature = "Zenject+DecoratorToChoiceFromBinder_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
-for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
+    for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract>
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -54,26 +52,29 @@ for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
 }
 #[cfg(feature = "Zenject+DecoratorToChoiceFromBinder_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
+    for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract>
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+DecoratorToChoiceFromBinder_1")]
-impl<
-    TContract: quest_hook::libil2cpp::Type,
-> crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
+impl<TContract: quest_hook::libil2cpp::Type>
+    crate::Zenject::DecoratorToChoiceFromBinder_1<TContract>
+{
     pub fn New(
         bindContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
         factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindContainer, bindInfo, factoryBindInfo))?;
         Ok(__cordl_object.into())
@@ -81,31 +82,30 @@ impl<
     pub fn With<TConcrete>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_2<TContract, TConcrete>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::FactoryFromBinder_2<TContract, TConcrete>>,
     >
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TConcrete: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TConcrete: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::FactoryFromBinder_2<TContract, TConcrete>,
-                        >,
-                        0usize,
-                    >("With")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::Zenject::FactoryFromBinder_2<TContract, TConcrete>,
+                    >, 0usize>("With")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "With",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "With",
                             0usize
                         )
                     })
@@ -122,40 +122,40 @@ impl<
         factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (bindContainer, bindInfo, factoryBindInfo))?
+            cordl_method_info.invoke_unchecked(self, (bindContainer, bindInfo, factoryBindInfo))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Zenject+DecoratorToChoiceFromBinder_1")]
 impl<TContract: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
+    for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract>
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

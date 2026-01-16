@@ -6,14 +6,14 @@ pub struct BoolParameter {
     pub displayType: crate::UnityEngine::Rendering::BoolParameter_DisplayType,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BoolParameter")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::BoolParameter {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::BoolParameter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "BoolParameter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,8 +47,8 @@ impl crate::UnityEngine::Rendering::BoolParameter {
         displayType: crate::UnityEngine::Rendering::BoolParameter_DisplayType,
         overrideState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (value, displayType, overrideState))?;
         Ok(__cordl_object.into())
@@ -57,8 +57,8 @@ impl crate::UnityEngine::Rendering::BoolParameter {
         value: bool,
         overrideState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (value, overrideState))?;
         Ok(__cordl_object.into())
@@ -69,30 +69,27 @@ impl crate::UnityEngine::Rendering::BoolParameter {
         displayType: crate::UnityEngine::Rendering::BoolParameter_DisplayType,
         overrideState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            bool,
-                            crate::UnityEngine::Rendering::BoolParameter_DisplayType,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(
+                        bool,
+                        crate::UnityEngine::Rendering::BoolParameter_DisplayType,
+                        bool,
+                    ), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (value, displayType, overrideState))?
+            cordl_method_info.invoke_unchecked(self, (value, displayType, overrideState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,26 +98,23 @@ impl crate::UnityEngine::Rendering::BoolParameter {
         value: bool,
         overrideState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool, bool),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(bool, bool), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value, overrideState))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value, overrideState))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -134,8 +128,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::BoolPa
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BoolParameter+DisplayType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum BoolParameter_DisplayType {
     #[default]
     Checkbox = 0i32,
@@ -143,7 +137,8 @@ pub enum BoolParameter_DisplayType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BoolParameter+DisplayType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::BoolParameter_DisplayType {
+    for crate::UnityEngine::Rendering::BoolParameter_DisplayType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -162,18 +157,16 @@ for crate::UnityEngine::Rendering::BoolParameter_DisplayType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BoolParameter+DisplayType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::BoolParameter_DisplayType {
+    for crate::UnityEngine::Rendering::BoolParameter_DisplayType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -184,7 +177,8 @@ for crate::UnityEngine::Rendering::BoolParameter_DisplayType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BoolParameter+DisplayType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::BoolParameter_DisplayType {
+    for crate::UnityEngine::Rendering::BoolParameter_DisplayType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -198,22 +192,22 @@ for crate::UnityEngine::Rendering::BoolParameter_DisplayType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BoolParameter+DisplayType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::BoolParameter_DisplayType {
+    for crate::UnityEngine::Rendering::BoolParameter_DisplayType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BoolParameter+DisplayType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::BoolParameter_DisplayType {
+    for crate::UnityEngine::Rendering::BoolParameter_DisplayType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

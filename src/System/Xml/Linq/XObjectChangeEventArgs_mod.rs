@@ -6,14 +6,14 @@ pub struct XObjectChangeEventArgs {
     pub _objectChange: crate::System::Xml::Linq::XObjectChange,
 }
 #[cfg(feature = "cordl_class_System+Xml+Linq+XObjectChangeEventArgs")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Xml::Linq::XObjectChangeEventArgs {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::XObjectChangeEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml.Linq";
     const CLASS_NAME: &'static str = "XObjectChangeEventArgs";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,8 +43,8 @@ impl crate::System::Xml::Linq::XObjectChangeEventArgs {
     pub fn New(
         objectChange: crate::System::Xml::Linq::XObjectChange,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (objectChange))?;
         Ok(__cordl_object.into())
@@ -53,9 +53,10 @@ impl crate::System::Xml::Linq::XObjectChangeEventArgs {
         &mut self,
         objectChange: crate::System::Xml::Linq::XObjectChange,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::Linq::XObjectChange),
@@ -70,15 +71,13 @@ impl crate::System::Xml::Linq::XObjectChangeEventArgs {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (objectChange))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (objectChange))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Linq+XObjectChangeEventArgs")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::Linq::XObjectChangeEventArgs {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Linq::XObjectChangeEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

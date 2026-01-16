@@ -1,8 +1,8 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+FixedAttachmentArray_1"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct FixedAttachmentArray_1<DataType: quest_hook::libil2cpp::Type> {
     pub a0: DataType,
     pub a1: DataType,

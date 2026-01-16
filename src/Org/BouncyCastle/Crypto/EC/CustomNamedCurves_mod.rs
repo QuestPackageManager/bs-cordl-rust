@@ -6,13 +6,15 @@ pub struct CustomNamedCurves {
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,78 +42,111 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCur
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
 impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder")]
-    pub type Curve25519Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder;
+    pub type Curve25519Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder")]
-    pub type SM2P256V1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder;
+    pub type SM2P256V1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder")]
-    pub type SecP128R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder;
+    pub type SecP128R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder")]
-    pub type SecP160K1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder;
+    pub type SecP160K1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder")]
-    pub type SecP160R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder;
+    pub type SecP160R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder")]
-    pub type SecP160R2Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder;
+    pub type SecP160R2Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder")]
-    pub type SecP192K1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder;
+    pub type SecP192K1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder")]
-    pub type SecP192R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder;
+    pub type SecP192R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder")]
-    pub type SecP224K1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder;
+    pub type SecP224K1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder")]
-    pub type SecP224R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder;
+    pub type SecP224R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder")]
-    pub type SecP256K1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder;
+    pub type SecP256K1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder")]
-    pub type SecP256R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder;
+    pub type SecP256R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder")]
-    pub type SecP384R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder;
+    pub type SecP384R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder")]
-    pub type SecP521R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder;
+    pub type SecP521R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder")]
-    pub type SecT113R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder;
+    pub type SecT113R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder")]
-    pub type SecT113R2Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder;
+    pub type SecT113R2Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder")]
-    pub type SecT131R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder;
+    pub type SecT131R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder")]
-    pub type SecT131R2Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder;
+    pub type SecT131R2Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder")]
-    pub type SecT163K1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder;
+    pub type SecT163K1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder")]
-    pub type SecT163R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder;
+    pub type SecT163R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder")]
-    pub type SecT163R2Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder;
+    pub type SecT163R2Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder")]
-    pub type SecT193R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder;
+    pub type SecT193R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder")]
-    pub type SecT193R2Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder;
+    pub type SecT193R2Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder")]
-    pub type SecT233K1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder;
+    pub type SecT233K1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder")]
-    pub type SecT233R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder;
+    pub type SecT233R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder")]
-    pub type SecT239K1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder;
+    pub type SecT239K1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder")]
-    pub type SecT283K1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder;
+    pub type SecT283K1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder")]
-    pub type SecT283R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder;
+    pub type SecT283R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder")]
-    pub type SecT409K1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder;
+    pub type SecT409K1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder")]
-    pub type SecT409R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder;
+    pub type SecT409R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder")]
-    pub type SecT571K1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder;
+    pub type SecT571K1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder;
     #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder")]
-    pub type SecT571R1Holder = crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder;
+    pub type SecT571R1Holder =
+        crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder;
     pub fn ConfigureBasepoint(
         curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
         encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECPoint>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -135,9 +170,8 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X9::X9ECPoint,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (curve, encoding))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECPoint> =
+            unsafe { cordl_method_info.invoke_unchecked((), (curve, encoding))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConfigureCurve(
@@ -145,9 +179,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -166,22 +201,20 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::ECCurve,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (curve))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve> =
+            unsafe { cordl_method_info.invoke_unchecked((), (curve))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConfigureCurveGlv(
         c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
-        p: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters,
-        >,
+        p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -205,120 +238,96 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::ECCurve,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (c, p))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve> =
+            unsafe { cordl_method_info.invoke_unchecked((), (c, p))? };
         Ok(__cordl_ret.into())
     }
     pub fn DefineCurve(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        holder: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-        >,
+        holder: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("DefineCurve")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("DefineCurve")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DefineCurve", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DefineCurve",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (name, holder))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (name, holder))? };
         Ok(__cordl_ret.into())
     }
     pub fn DefineCurveAlias(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        oid: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
+        oid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("DefineCurveAlias")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>("DefineCurveAlias")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DefineCurveAlias", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DefineCurveAlias",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (name, oid))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (name, oid))? };
         Ok(__cordl_ret.into())
     }
     pub fn DefineCurveWithOid(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        oid: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
-        holder: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-        >,
+        oid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
+        holder: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("DefineCurveWithOid")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 3usize>("DefineCurveWithOid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DefineCurveWithOid", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DefineCurveWithOid",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (name, oid, holder))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (name, oid, holder))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetByName(
@@ -326,9 +335,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -351,15 +361,14 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
         Ok(__cordl_ret.into())
     }
     pub fn GetByOid(
-        oid: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
+        oid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -384,15 +393,13 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
         Ok(__cordl_ret.into())
     }
     pub fn GetName(
-        oid: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        oid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -409,9 +416,8 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (oid))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (oid))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOid(
@@ -419,9 +425,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
@@ -444,39 +451,39 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Names() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -493,15 +500,13 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEnumerable,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
+impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -509,25 +514,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_Curve25519Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/Curve25519Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -540,8 +543,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -549,7 +551,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -561,9 +564,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -586,39 +590,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -626,25 +628,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SM2P256V1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SM2P256V1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -657,8 +657,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -666,7 +665,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -678,9 +678,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -703,39 +704,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -743,25 +742,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP128R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecP128R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -774,8 +771,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -783,7 +779,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -795,9 +792,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -820,39 +818,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -860,25 +856,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP160K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecP160K1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -891,8 +885,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -900,7 +893,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -912,9 +906,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -937,39 +932,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -977,25 +970,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP160R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecP160R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1008,8 +999,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1017,7 +1007,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1029,9 +1020,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1054,39 +1046,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1094,25 +1084,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP160R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecP160R2Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1125,8 +1113,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1134,7 +1121,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1146,9 +1134,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1171,39 +1160,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1211,25 +1198,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP192K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecP192K1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1242,8 +1227,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1251,7 +1235,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1263,9 +1248,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1288,39 +1274,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1328,25 +1312,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP192R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecP192R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1359,8 +1341,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1368,7 +1349,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1380,9 +1362,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1405,39 +1388,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1445,25 +1426,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP224K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecP224K1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1476,8 +1455,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1485,7 +1463,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1497,9 +1476,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1522,39 +1502,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1562,25 +1540,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP224R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecP224R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1593,8 +1569,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1602,7 +1577,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1614,9 +1590,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1639,39 +1616,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1679,25 +1654,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP256K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecP256K1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1710,8 +1683,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1719,7 +1691,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1731,9 +1704,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1756,39 +1730,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1796,25 +1768,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP256R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecP256R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1827,8 +1797,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1836,7 +1805,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1848,9 +1818,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1873,39 +1844,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1913,25 +1882,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP384R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecP384R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -1944,8 +1911,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -1953,7 +1919,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -1965,9 +1932,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -1990,39 +1958,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2030,25 +1996,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP521R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecP521R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2061,8 +2025,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -2070,7 +2033,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2082,9 +2046,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2107,39 +2072,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2147,25 +2110,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT113R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT113R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2178,8 +2139,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -2187,7 +2147,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2199,9 +2160,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2224,39 +2186,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2264,25 +2224,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT113R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT113R2Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2295,8 +2253,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -2304,7 +2261,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2316,9 +2274,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2341,39 +2300,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2381,25 +2338,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT131R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT131R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2412,8 +2367,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -2421,7 +2375,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2433,9 +2388,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2458,39 +2414,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2498,25 +2452,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT131R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT131R2Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2529,8 +2481,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -2538,7 +2489,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2550,9 +2502,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2575,39 +2528,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2615,25 +2566,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT163K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT163K1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2646,8 +2595,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -2655,7 +2603,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2667,9 +2616,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2692,39 +2642,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2732,25 +2680,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT163R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT163R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2763,8 +2709,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -2772,7 +2717,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2784,9 +2730,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2809,39 +2756,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2849,25 +2794,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT163R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT163R2Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2880,8 +2823,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -2889,7 +2831,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -2901,9 +2844,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -2926,39 +2870,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -2966,25 +2908,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT193R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT193R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -2997,8 +2937,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -3006,7 +2945,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -3018,9 +2958,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3043,39 +2984,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3083,25 +3022,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT193R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT193R2Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -3114,8 +3051,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -3123,7 +3059,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -3135,9 +3072,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3160,39 +3098,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3200,25 +3136,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT233K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT233K1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -3231,8 +3165,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -3240,7 +3173,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -3252,9 +3186,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3277,39 +3212,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3317,25 +3250,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT233R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT233R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -3348,8 +3279,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -3357,7 +3287,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -3369,9 +3300,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3394,39 +3326,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3434,25 +3364,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT239K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT239K1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -3465,8 +3393,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -3474,7 +3401,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -3486,9 +3414,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3511,39 +3440,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3551,25 +3478,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT283K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT283K1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -3582,8 +3507,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -3591,7 +3515,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -3603,9 +3528,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3628,39 +3554,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3668,25 +3592,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT283R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT283R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -3699,8 +3621,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -3708,7 +3629,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -3720,9 +3642,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3745,39 +3668,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3785,25 +3706,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT409K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT409K1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -3816,8 +3735,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -3825,7 +3743,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -3837,9 +3756,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3862,39 +3782,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3902,25 +3820,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT409R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT409R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -3933,8 +3849,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -3942,7 +3857,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -3954,9 +3870,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -3979,39 +3896,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -4019,25 +3934,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT571K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT571K1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -4050,8 +3963,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -4059,7 +3971,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -4071,9 +3984,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -4096,39 +4010,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -4136,25 +4048,23 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT571R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
     const CLASS_NAME: &'static str = "CustomNamedCurves/SecT571R1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -4167,8 +4077,7 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -4176,7 +4085,8 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder")]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -4188,9 +4098,10 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -4213,39 +4124,37 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder"
-)]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
+    for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

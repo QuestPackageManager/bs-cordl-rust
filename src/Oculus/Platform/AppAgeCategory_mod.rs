@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+AppAgeCategory")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum AppAgeCategory {
     #[default]
     Ch = 1i32,
@@ -27,13 +27,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::AppAgeCateg
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+AppAgeCategory")]
@@ -47,8 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Platform::AppAgeC
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+AppAgeCategory")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::Oculus::Platform::AppAgeCategory {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Platform::AppAgeCategory {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -68,9 +64,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Platform::AppAgeC
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }

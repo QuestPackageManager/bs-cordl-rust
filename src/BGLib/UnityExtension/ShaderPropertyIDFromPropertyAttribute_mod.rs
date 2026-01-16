@@ -1,25 +1,21 @@
-#[cfg(
-    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromPropertyAttribute"
-)]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromPropertyAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderPropertyIDFromPropertyAttribute {
     __cordl_parent: crate::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute,
-    pub nestedPropertyName: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub nestedPropertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(
-    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromPropertyAttribute"
-)]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromPropertyAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BGLib::UnityExtension::ShaderPropertyIDFromPropertyAttribute {
+    for crate::BGLib::UnityExtension::ShaderPropertyIDFromPropertyAttribute
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BGLib.UnityExtension";
     const CLASS_NAME: &'static str = "ShaderPropertyIDFromPropertyAttribute";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,16 +28,14 @@ for crate::BGLib::UnityExtension::ShaderPropertyIDFromPropertyAttribute {
     }
 }
 #[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDFromPropertyAttribute")]
-impl std::ops::Deref
-for crate::BGLib::UnityExtension::ShaderPropertyIDFromPropertyAttribute {
+impl std::ops::Deref for crate::BGLib::UnityExtension::ShaderPropertyIDFromPropertyAttribute {
     type Target = crate::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDFromPropertyAttribute")]
-impl std::ops::DerefMut
-for crate::BGLib::UnityExtension::ShaderPropertyIDFromPropertyAttribute {
+impl std::ops::DerefMut for crate::BGLib::UnityExtension::ShaderPropertyIDFromPropertyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -50,12 +44,12 @@ for crate::BGLib::UnityExtension::ShaderPropertyIDFromPropertyAttribute {
 impl crate::BGLib::UnityExtension::ShaderPropertyIDFromPropertyAttribute {
     pub fn GetTargetName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -70,80 +64,64 @@ impl crate::BGLib::UnityExtension::ShaderPropertyIDFromPropertyAttribute {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        nestedPropertyName: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        nestedPropertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nameFilter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         filterPropType: crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (propertyName, nestedPropertyName, nameFilter, filterPropType),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (propertyName, nestedPropertyName, nameFilter, filterPropType),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        nestedPropertyName: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        nestedPropertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nameFilter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         filterPropType: crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (propertyName, nestedPropertyName, nameFilter, filterPropType),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (propertyName, nestedPropertyName, nameFilter, filterPropType),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromPropertyAttribute"
-)]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromPropertyAttribute")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BGLib::UnityExtension::ShaderPropertyIDFromPropertyAttribute {
+    for crate::BGLib::UnityExtension::ShaderPropertyIDFromPropertyAttribute
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,17 +1,14 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct AndroidGameControllerState {
     pub buttons: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__buttons_e__FixedBuffer,
     pub axis: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__axis_e__FixedBuffer,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
+    for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Android.LowLevel";
@@ -30,20 +27,16 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
+    for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -52,11 +45,10 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
+    for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -68,28 +60,24 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
+    for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
+    for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -101,11 +89,10 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
+    for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -119,10 +106,9 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     pub const MaxAxes: i32 = 48i32;
     pub const MaxButtons: i32 = 220i32;
     pub const kAxisOffset: u32 = 28u32;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
-    )]
-    pub type Variants = crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants;
+    #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants")]
+    pub type Variants =
+        crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants;
     #[cfg(
         feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
     )]
@@ -138,7 +124,8 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -170,7 +157,8 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -197,45 +185,42 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     }
     pub fn get_format(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::Utilities::FourCC> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::InputSystem::Utilities::FourCC,
-                        0usize,
-                    >("get_format")
+                    .find_method::<(), crate::UnityEngine::InputSystem::Utilities::FourCC, 0usize>(
+                        "get_format",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_format", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_format",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
 impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
-for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
+    for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState
+{
     fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
 impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
-for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
+    for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState
+{
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
         todo!()
     }
 }
@@ -251,13 +236,15 @@ pub struct AndroidGameControllerState_Variants {
     feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants {
+    for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Android.LowLevel";
     const CLASS_NAME: &'static str = "AndroidGameControllerState/Variants";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -269,59 +256,54 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants")]
 impl std::ops::Deref
-for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants {
+    for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants")]
 impl std::ops::DerefMut
-for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants {
+    for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants")]
 impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants {
     pub const DPadAxes: &'static str = "DpadAxes";
     pub const DPadButtons: &'static str = "DpadButtons";
     pub const Gamepad: &'static str = "Gamepad";
     pub const Joystick: &'static str = "Joystick";
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -329,7 +311,8 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants {
+    for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -340,8 +323,8 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct AndroidGameControllerState__axis_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -459,8 +442,8 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct AndroidGameControllerState__buttons_e__FixedBuffer {
     pub FixedElementField: u32,
 }

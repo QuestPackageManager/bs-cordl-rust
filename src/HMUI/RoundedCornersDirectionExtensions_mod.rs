@@ -5,14 +5,14 @@ pub struct RoundedCornersDirectionExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_HMUI+RoundedCornersDirectionExtensions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::HMUI::RoundedCornersDirectionExtensions {
+unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::RoundedCornersDirectionExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "HMUI";
     const CLASS_NAME: &'static str = "RoundedCornersDirectionExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,9 +42,10 @@ impl crate::HMUI::RoundedCornersDirectionExtensions {
     pub fn GetFlipAndSymmetry(
         direction: crate::HMUI::RoundedCornersDirection,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::HMUI::RoundedCornersDirection),
@@ -59,15 +60,13 @@ impl crate::HMUI::RoundedCornersDirectionExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            cordl_method_info.invoke_unchecked((), (direction))?
-        };
+        let __cordl_ret: crate::UnityEngine::Vector4 =
+            unsafe { cordl_method_info.invoke_unchecked((), (direction))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_HMUI+RoundedCornersDirectionExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::HMUI::RoundedCornersDirectionExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::HMUI::RoundedCornersDirectionExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

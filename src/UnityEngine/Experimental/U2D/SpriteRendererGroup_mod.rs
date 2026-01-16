@@ -6,13 +6,15 @@ pub struct SpriteRendererGroup {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+U2D+SpriteRendererGroup")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Experimental::U2D::SpriteRendererGroup {
+    for crate::UnityEngine::Experimental::U2D::SpriteRendererGroup
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Experimental.U2D";
     const CLASS_NAME: &'static str = "SpriteRendererGroup";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,7 +43,8 @@ impl std::ops::DerefMut for crate::UnityEngine::Experimental::U2D::SpriteRendere
 impl crate::UnityEngine::Experimental::U2D::SpriteRendererGroup {}
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+U2D+SpriteRendererGroup")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Experimental::U2D::SpriteRendererGroup {
+    for crate::UnityEngine::Experimental::U2D::SpriteRendererGroup
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

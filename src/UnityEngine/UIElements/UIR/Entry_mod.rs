@@ -5,24 +5,16 @@ pub struct Entry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::UnityEngine::UIElements::UIR::EntryType,
     pub flags: crate::UnityEngine::UIElements::UIR::EntryFlags,
-    pub vertices: crate::Unity::Collections::NativeSlice_1<
-        crate::UnityEngine::UIElements::Vertex,
-    >,
+    pub vertices: crate::Unity::Collections::NativeSlice_1<crate::UnityEngine::UIElements::Vertex>,
     pub indices: crate::Unity::Collections::NativeSlice_1<u16>,
     pub texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub textScale: f32,
     pub fontSharpness: f32,
-    pub gradientsOwner: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VectorImage,
-    >,
+    pub gradientsOwner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VectorImage>,
     pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub immediateCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub nextSibling: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::Entry,
-    >,
-    pub firstChild: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::Entry,
-    >,
+    pub nextSibling: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Entry>,
+    pub firstChild: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Entry>,
     pub lastChild: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Entry>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Entry")]
@@ -32,7 +24,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::UIR:
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
     const CLASS_NAME: &'static str = "Entry";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -60,52 +53,50 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Entry {
 #[cfg(feature = "UnityEngine+UIElements+UIR+Entry")]
 impl crate::UnityEngine::UIElements::UIR::Entry {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reset",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

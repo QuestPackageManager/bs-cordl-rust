@@ -5,14 +5,14 @@ pub struct AndroidAssetPacks {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Android::AndroidAssetPacks {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Android::AndroidAssetPacks {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Android";
     const CLASS_NAME: &'static str = "AndroidAssetPacks";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,24 +39,23 @@ impl std::ops::DerefMut for crate::UnityEngine::Android::AndroidAssetPacks {
 }
 #[cfg(feature = "UnityEngine+Android+AndroidAssetPacks")]
 impl crate::UnityEngine::Android::AndroidAssetPacks {
-    #[cfg(
-        feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback"
-    )]
-    pub type AssetPackManagerDownloadStatusCallback = crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback;
+    #[cfg(feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback")]
+    pub type AssetPackManagerDownloadStatusCallback =
+        crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback;
     #[cfg(
         feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerMobileDataConfirmationCallback"
     )]
     pub type AssetPackManagerMobileDataConfirmationCallback = crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataConfirmationCallback;
-    #[cfg(
-        feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback"
-    )]
-    pub type AssetPackManagerStatusQueryCallback = crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback;
+    #[cfg(feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback")]
+    pub type AssetPackManagerStatusQueryCallback =
+        crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback;
     pub fn GetAssetPackManager() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -71,15 +70,13 @@ impl crate::UnityEngine::Android::AndroidAssetPacks {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AndroidJavaObject,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Android::AndroidAssetPacks {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Android::AndroidAssetPacks {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -110,13 +107,15 @@ pub struct AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
     feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
+    for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Android";
     const CLASS_NAME: &'static str = "AndroidAssetPacks/AssetPackManagerDownloadStatusCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -128,35 +127,29 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatu
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback"
-)]
+#[cfg(feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback")]
 impl std::ops::Deref
-for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
+    for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback
+{
     type Target = crate::UnityEngine::AndroidJavaProxy;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback"
-)]
+#[cfg(feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback")]
 impl std::ops::DerefMut
-for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
+    for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback"
-)]
+#[cfg(feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback")]
 impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
     pub fn New(
         callback: quest_hook::libil2cpp::Gc<
             crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Android::AndroidAssetPackInfo,
-                >,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Android::AndroidAssetPackInfo>,
             >,
         >,
         assetPacks: quest_hook::libil2cpp::Gc<
@@ -165,8 +158,8 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStat
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (callback, assetPacks))?;
         Ok(__cordl_object.into())
@@ -175,9 +168,7 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStat
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
             crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Android::AndroidAssetPackInfo,
-                >,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Android::AndroidAssetPackInfo>,
             >,
         >,
         assetPacks: quest_hook::libil2cpp::Gc<
@@ -186,41 +177,36 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStat
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::Android::AndroidAssetPackInfo,
-                                    >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Android::AndroidAssetPackInfo,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (callback, assetPacks))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (callback, assetPacks))? };
         Ok(__cordl_ret.into())
     }
     pub fn onStatusUpdate(
@@ -232,45 +218,40 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStat
         assetPackTransferProgress: i32,
         assetPackErrorCode: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i64,
-                            i64,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("onStatusUpdate")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i64,
+                        i64,
+                        i32,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 6usize>("onStatusUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "onStatusUpdate", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "onStatusUpdate",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        assetPackName,
-                        assetPackStatus,
-                        assetPackSize,
-                        assetPackBytesDownloaded,
-                        assetPackTransferProgress,
-                        assetPackErrorCode,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    assetPackName,
+                    assetPackStatus,
+                    assetPackSize,
+                    assetPackBytesDownloaded,
+                    assetPackTransferProgress,
+                    assetPackErrorCode,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -279,7 +260,8 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStat
     feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
+    for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -356,8 +338,8 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCo
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (callback))?;
         Ok(__cordl_object.into())
@@ -372,7 +354,8 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCo
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -395,35 +378,33 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCo
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (callback))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (callback))? };
         Ok(__cordl_ret.into())
     }
     pub fn onMobileDataConfirmationResult(
         &mut self,
         allowed: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("onMobileDataConfirmationResult")
+                    .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(
+                        "onMobileDataConfirmationResult",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "onMobileDataConfirmationResult", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "onMobileDataConfirmationResult",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (allowed))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (allowed))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -451,9 +432,7 @@ pub struct AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
             u64,
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::Android::AndroidAssetPackState,
-                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Android::AndroidAssetPackState>,
                 >,
             >,
         >,
@@ -474,13 +453,15 @@ pub struct AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
     feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
+    for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Android";
     const CLASS_NAME: &'static str = "AndroidAssetPacks/AssetPackManagerStatusQueryCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -492,28 +473,24 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCa
         false
     }
 }
-#[cfg(
-    feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback"
-)]
+#[cfg(feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback")]
 impl std::ops::Deref
-for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
+    for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback
+{
     type Target = crate::UnityEngine::AndroidJavaProxy;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback"
-)]
+#[cfg(feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback")]
 impl std::ops::DerefMut
-for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
+    for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback"
-)]
+#[cfg(feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback")]
 impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
     pub fn New(
         callback: quest_hook::libil2cpp::Gc<
@@ -534,8 +511,8 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryC
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (callback, assetPacks))?;
         Ok(__cordl_object.into())
@@ -560,46 +537,41 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryC
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<
-                                    u64,
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppArray<
-                                            quest_hook::libil2cpp::Gc<
-                                                crate::UnityEngine::Android::AndroidAssetPackState,
-                                            >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Action_2<
+                                u64,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::UnityEngine::Android::AndroidAssetPackState,
                                         >,
                                     >,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (callback, assetPacks))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (callback, assetPacks))? };
         Ok(__cordl_ret.into())
     }
     pub fn onStatusResult(
@@ -610,51 +582,43 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryC
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
-        assetPackStatuses: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<i32>,
-        >,
-        assetPackErrorCodes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<i32>,
-        >,
+        assetPackStatuses: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        assetPackErrorCodes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                >,
+                    .find_method::<(
+                        i64,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<i32>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<i32>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("onStatusResult")
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    ), quest_hook::libil2cpp::Void, 4usize>("onStatusResult")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "onStatusResult", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "onStatusResult",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (totalBytes, assetPackNames, assetPackStatuses, assetPackErrorCodes),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    totalBytes,
+                    assetPackNames,
+                    assetPackStatuses,
+                    assetPackErrorCodes,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -663,7 +627,8 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryC
     feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
+    for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

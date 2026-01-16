@@ -1,18 +1,15 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+NavigationModel")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct NavigationModel {
     pub _cordl_move: crate::UnityEngine::Vector2,
     pub consecutiveMoveCount: i32,
     pub lastMoveDirection: crate::UnityEngine::EventSystems::MoveDirection,
     pub lastMoveTime: f32,
-    pub eventData: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::AxisEventData,
-    >,
+    pub eventData: quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::AxisEventData>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+NavigationModel")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::InputSystem::UI::NavigationModel {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::UI::NavigationModel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.UI";
@@ -31,18 +28,16 @@ for crate::UnityEngine::InputSystem::UI::NavigationModel {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+NavigationModel")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::InputSystem::UI::NavigationModel {
+    for crate::UnityEngine::InputSystem::UI::NavigationModel
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -53,7 +48,8 @@ for crate::UnityEngine::InputSystem::UI::NavigationModel {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+NavigationModel")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::InputSystem::UI::NavigationModel {
+    for crate::UnityEngine::InputSystem::UI::NavigationModel
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -67,22 +63,20 @@ for crate::UnityEngine::InputSystem::UI::NavigationModel {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+NavigationModel")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::InputSystem::UI::NavigationModel {
+    for crate::UnityEngine::InputSystem::UI::NavigationModel
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+NavigationModel")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::InputSystem::UI::NavigationModel {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::InputSystem::UI::NavigationModel {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -96,7 +90,8 @@ for crate::UnityEngine::InputSystem::UI::NavigationModel {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+NavigationModel")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::UI::NavigationModel {
+    for crate::UnityEngine::InputSystem::UI::NavigationModel
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -107,25 +102,24 @@ for crate::UnityEngine::InputSystem::UI::NavigationModel {
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+NavigationModel")]
 impl crate::UnityEngine::InputSystem::UI::NavigationModel {
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Reset",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

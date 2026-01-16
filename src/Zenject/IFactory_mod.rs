@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+IFactory")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::IFactory {
     const NAMESPACE: &'static str = "Zenject";
     const CLASS_NAME: &'static str = "IFactory";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -38,9 +39,7 @@ impl std::ops::DerefMut for crate::Zenject::IFactory {
 }
 #[cfg(feature = "Zenject+IFactory")]
 impl crate::Zenject::IFactory {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }

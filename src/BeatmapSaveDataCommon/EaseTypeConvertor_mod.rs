@@ -5,14 +5,14 @@ pub struct EaseTypeConvertor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataCommon+EaseTypeConvertor")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatmapSaveDataCommon::EaseTypeConvertor {
+unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataCommon::EaseTypeConvertor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatmapSaveDataCommon";
     const CLASS_NAME: &'static str = "EaseTypeConvertor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,9 +42,10 @@ impl crate::BeatmapSaveDataCommon::EaseTypeConvertor {
     pub fn Convert(
         easeType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::EaseType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::EaseType),
@@ -59,15 +60,13 @@ impl crate::BeatmapSaveDataCommon::EaseTypeConvertor {
                         )
                     })
             });
-        let __cordl_ret: crate::BeatmapSaveDataCommon::EaseType = unsafe {
-            cordl_method_info.invoke_unchecked((), (easeType))?
-        };
+        let __cordl_ret: crate::BeatmapSaveDataCommon::EaseType =
+            unsafe { cordl_method_info.invoke_unchecked((), (easeType))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataCommon+EaseTypeConvertor")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::BeatmapSaveDataCommon::EaseTypeConvertor {
+impl quest_hook::libil2cpp::ObjectType for crate::BeatmapSaveDataCommon::EaseTypeConvertor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

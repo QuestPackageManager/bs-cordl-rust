@@ -13,13 +13,15 @@ pub struct AnimationOutputWeightProcessor {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
+    for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
     const CLASS_NAME: &'static str = "AnimationOutputWeightProcessor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,8 +41,7 @@ impl std::ops::Deref for crate::UnityEngine::Timeline::AnimationOutputWeightProc
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor")]
-impl std::ops::DerefMut
-for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
+impl std::ops::DerefMut for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -49,46 +50,44 @@ for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
 impl crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
     #[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
     pub type WeightInfo = crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo;
-    pub fn Evaluate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Evaluate(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Evaluate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Evaluate", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Evaluate",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn FindMixers_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn FindMixers_0(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("FindMixers")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindMixers", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindMixers",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FindMixers_Playable_i32_Playable1(
@@ -97,37 +96,34 @@ impl crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
         port: i32,
         node: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Playables::Playable,
-                            i32,
-                            crate::UnityEngine::Playables::Playable,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("FindMixers")
+                    .find_method::<(
+                        crate::UnityEngine::Playables::Playable,
+                        i32,
+                        crate::UnityEngine::Playables::Playable,
+                    ), quest_hook::libil2cpp::Void, 3usize>("FindMixers")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindMixers", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FindMixers",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (parent, port, node))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (parent, port, node))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         output: crate::UnityEngine::Animations::AnimationPlayableOutput,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (output))?;
         Ok(__cordl_object.into())
@@ -136,9 +132,10 @@ impl crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
         &mut self,
         output: crate::UnityEngine::Animations::AnimationPlayableOutput,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Animations::AnimationPlayableOutput),
@@ -153,15 +150,15 @@ impl crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (output))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (output))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
+    for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -171,35 +168,32 @@ for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor")]
 impl AsRef<crate::UnityEngine::Timeline::ITimelineEvaluateCallback>
-for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
+    for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor
+{
     fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineEvaluateCallback {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor")]
 impl AsMut<crate::UnityEngine::Timeline::ITimelineEvaluateCallback>
-for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::Timeline::ITimelineEvaluateCallback {
+    for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor
+{
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ITimelineEvaluateCallback {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct AnimationOutputWeightProcessor_WeightInfo {
     pub mixer: crate::UnityEngine::Playables::Playable,
     pub parentMixer: crate::UnityEngine::Playables::Playable,
     pub port: i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
+    for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
@@ -218,20 +212,16 @@ for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
+    for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -240,11 +230,10 @@ for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
+    for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -256,28 +245,24 @@ for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
+    for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
+    for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -289,11 +274,10 @@ for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
+    for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

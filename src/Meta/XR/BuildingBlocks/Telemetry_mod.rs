@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Meta::XR::BuildingBlocks::Tel
     const NAMESPACE: &'static str = "Meta.XR.BuildingBlocks";
     const CLASS_NAME: &'static str = "Telemetry";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,62 +43,56 @@ impl crate::Meta::XR::BuildingBlocks::Telemetry {
         marker: crate::GlobalNamespace::OVRTelemetryMarker,
         block: quest_hook::libil2cpp::Gc<crate::Meta::XR::BuildingBlocks::BuildingBlock>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::OVRTelemetryMarker,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Meta::XR::BuildingBlocks::BuildingBlock,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::GlobalNamespace::OVRTelemetryMarker,
-                        2usize,
-                    >("AddBlockInfo")
+                        quest_hook::libil2cpp::Gc<crate::Meta::XR::BuildingBlocks::BuildingBlock>,
+                    ), crate::GlobalNamespace::OVRTelemetryMarker, 2usize>(
+                        "AddBlockInfo"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddBlockInfo", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddBlockInfo",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = unsafe {
-            cordl_method_info.invoke_unchecked((), (marker, block))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker =
+            unsafe { cordl_method_info.invoke_unchecked((), (marker, block))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddBlockVariantInfo(
         marker: crate::GlobalNamespace::OVRTelemetryMarker,
         block: quest_hook::libil2cpp::Gc<crate::Meta::XR::BuildingBlocks::BuildingBlock>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::OVRTelemetryMarker,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Meta::XR::BuildingBlocks::BuildingBlock,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::GlobalNamespace::OVRTelemetryMarker,
-                        2usize,
-                    >("AddBlockVariantInfo")
+                        quest_hook::libil2cpp::Gc<crate::Meta::XR::BuildingBlocks::BuildingBlock>,
+                    ), crate::GlobalNamespace::OVRTelemetryMarker, 2usize>(
+                        "AddBlockVariantInfo"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddBlockVariantInfo", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddBlockVariantInfo",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = unsafe {
-            cordl_method_info.invoke_unchecked((), (marker, block))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker =
+            unsafe { cordl_method_info.invoke_unchecked((), (marker, block))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddInstallationRoutineInfo(
@@ -106,60 +101,58 @@ impl crate::Meta::XR::BuildingBlocks::Telemetry {
             crate::Meta::XR::BuildingBlocks::InstallationRoutineCheckpoint,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::OVRTelemetryMarker,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Meta::XR::BuildingBlocks::InstallationRoutineCheckpoint,
-                            >,
-                        ),
+                    .find_static_method::<(
                         crate::GlobalNamespace::OVRTelemetryMarker,
-                        2usize,
-                    >("AddInstallationRoutineInfo")
+                        quest_hook::libil2cpp::Gc<
+                            crate::Meta::XR::BuildingBlocks::InstallationRoutineCheckpoint,
+                        >,
+                    ), crate::GlobalNamespace::OVRTelemetryMarker, 2usize>(
+                        "AddInstallationRoutineInfo",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddInstallationRoutineInfo", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddInstallationRoutineInfo",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = unsafe {
-            cordl_method_info.invoke_unchecked((), (marker, checkpoint))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker =
+            unsafe { cordl_method_info.invoke_unchecked((), (marker, checkpoint))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddSceneInfo(
         marker: crate::GlobalNamespace::OVRTelemetryMarker,
         scene: crate::UnityEngine::SceneManagement::Scene,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::OVRTelemetryMarker,
-                            crate::UnityEngine::SceneManagement::Scene,
-                        ),
+                    .find_static_method::<(
                         crate::GlobalNamespace::OVRTelemetryMarker,
-                        2usize,
-                    >("AddSceneInfo")
+                        crate::UnityEngine::SceneManagement::Scene,
+                    ), crate::GlobalNamespace::OVRTelemetryMarker, 2usize>(
+                        "AddSceneInfo"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddSceneInfo", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AddSceneInfo",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = unsafe {
-            cordl_method_info.invoke_unchecked((), (marker, scene))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker =
+            unsafe { cordl_method_info.invoke_unchecked((), (marker, scene))? };
         Ok(__cordl_ret.into())
     }
 }

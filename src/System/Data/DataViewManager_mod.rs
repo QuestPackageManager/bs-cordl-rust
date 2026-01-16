@@ -3,9 +3,8 @@
 #[derive(Debug)]
 pub struct DataViewManager {
     __cordl_parent: crate::System::ComponentModel::MarshalByValueComponent,
-    pub _dataViewSettingsCollection: quest_hook::libil2cpp::Gc<
-        crate::System::Data::DataViewSettingCollection,
-    >,
+    pub _dataViewSettingsCollection:
+        quest_hook::libil2cpp::Gc<crate::System::Data::DataViewSettingCollection>,
     pub _nViews: i32,
 }
 #[cfg(feature = "cordl_class_System+Data+DataViewManager")]
@@ -15,7 +14,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataViewManager
     const NAMESPACE: &'static str = "System.Data";
     const CLASS_NAME: &'static str = "DataViewManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -47,9 +47,10 @@ impl crate::System::Data::DataViewManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataViewSettingCollection>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -66,9 +67,8 @@ impl crate::System::Data::DataViewManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Data::DataViewSettingCollection,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::DataViewSettingCollection> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

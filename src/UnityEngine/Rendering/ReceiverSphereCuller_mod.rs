@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ReceiverSphereCuller {
     pub splitInfos: crate::Unity::Collections::NativeList_1<
         crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo,
@@ -8,8 +8,7 @@ pub struct ReceiverSphereCuller {
     pub worldToLightSpaceRotation: crate::Unity::Mathematics::float3x3,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::ReceiverSphereCuller {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::ReceiverSphereCuller {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -28,18 +27,16 @@ for crate::UnityEngine::Rendering::ReceiverSphereCuller {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::ReceiverSphereCuller {
+    for crate::UnityEngine::Rendering::ReceiverSphereCuller
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -50,7 +47,8 @@ for crate::UnityEngine::Rendering::ReceiverSphereCuller {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::ReceiverSphereCuller {
+    for crate::UnityEngine::Rendering::ReceiverSphereCuller
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -64,22 +62,20 @@ for crate::UnityEngine::Rendering::ReceiverSphereCuller {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::ReceiverSphereCuller {
+    for crate::UnityEngine::Rendering::ReceiverSphereCuller
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::ReceiverSphereCuller {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::ReceiverSphereCuller {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -93,7 +89,8 @@ for crate::UnityEngine::Rendering::ReceiverSphereCuller {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::ReceiverSphereCuller {
+    for crate::UnityEngine::Rendering::ReceiverSphereCuller
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -116,91 +113,78 @@ impl crate::UnityEngine::Rendering::ReceiverSphereCuller {
         worldToLightSpaceRotation: crate::Unity::Mathematics::float3x3,
         bounds: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rendering::AABB>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Collections::NativeArray_1<
-                                crate::UnityEngine::Plane,
-                            >,
-                            crate::Unity::Collections::NativeArray_1<
-                                crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo,
-                            >,
-                            crate::Unity::Mathematics::float3x3,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::AABB,
-                            >,
-                        ),
-                        u32,
-                        4usize,
-                    >("ComputeSplitVisibilityMask")
+                    .find_static_method::<(
+                        crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Plane>,
+                        crate::Unity::Collections::NativeArray_1<
+                            crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo,
+                        >,
+                        crate::Unity::Mathematics::float3x3,
+                        quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rendering::AABB>,
+                    ), u32, 4usize>("ComputeSplitVisibilityMask")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ComputeSplitVisibilityMask", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ComputeSplitVisibilityMask",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        lightFacingFrustumPlanes,
-                        splitInfos,
-                        worldToLightSpaceRotation,
-                        bounds,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    lightFacingFrustumPlanes,
+                    splitInfos,
+                    worldToLightSpaceRotation,
+                    bounds,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Create(
-        cc: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Rendering::BatchCullingContext,
-        >,
+        cc: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rendering::BatchCullingContext>,
         allocator: crate::Unity::Collections::Allocator,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Rendering::ReceiverSphereCuller,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::ReceiverSphereCuller> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::Rendering::BatchCullingContext,
-                            >,
-                            crate::Unity::Collections::Allocator,
-                        ),
-                        crate::UnityEngine::Rendering::ReceiverSphereCuller,
-                        2usize,
-                    >("Create")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Rendering::BatchCullingContext,
+                        >,
+                        crate::Unity::Collections::Allocator,
+                    ), crate::UnityEngine::Rendering::ReceiverSphereCuller, 2usize>(
+                        "Create"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Create",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::ReceiverSphereCuller = unsafe {
-            cordl_method_info.invoke_unchecked((), (cc, allocator))?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::ReceiverSphereCuller =
+            unsafe { cordl_method_info.invoke_unchecked((), (cc, allocator))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateEmptyForTesting(
         allocator: crate::Unity::Collections::Allocator,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Rendering::ReceiverSphereCuller,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::ReceiverSphereCuller> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::Allocator),
@@ -215,18 +199,18 @@ impl crate::UnityEngine::Rendering::ReceiverSphereCuller {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Rendering::ReceiverSphereCuller = unsafe {
-            cordl_method_info.invoke_unchecked((), (allocator))?
-        };
+        let __cordl_ret: crate::UnityEngine::Rendering::ReceiverSphereCuller =
+            unsafe { cordl_method_info.invoke_unchecked((), (allocator))? };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
         job: crate::Unity::Jobs::JobHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Jobs::JobHandle),
@@ -241,9 +225,8 @@ impl crate::UnityEngine::Rendering::ReceiverSphereCuller {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (job))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (job))? };
         Ok(__cordl_ret.into())
     }
     pub fn DistanceUntilCylinderFullyCrossesPlane(
@@ -252,48 +235,47 @@ impl crate::UnityEngine::Rendering::ReceiverSphereCuller {
         cylinderRadius: f32,
         plane: crate::UnityEngine::Plane,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::Unity::Mathematics::float3,
-                            crate::Unity::Mathematics::float3,
-                            f32,
-                            crate::UnityEngine::Plane,
-                        ),
+                    .find_static_method::<(
+                        crate::Unity::Mathematics::float3,
+                        crate::Unity::Mathematics::float3,
                         f32,
-                        4usize,
-                    >("DistanceUntilCylinderFullyCrossesPlane")
+                        crate::UnityEngine::Plane,
+                    ), f32, 4usize>("DistanceUntilCylinderFullyCrossesPlane")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DistanceUntilCylinderFullyCrossesPlane", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DistanceUntilCylinderFullyCrossesPlane",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: f32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (cylinderCenter, cylinderDirection, cylinderRadius, plane),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (cylinderCenter, cylinderDirection, cylinderRadius, plane),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UseReceiverPlanes(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("UseReceiverPlanes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UseReceiverPlanes", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UseReceiverPlanes",
+                            0usize
                         )
                     })
             });
@@ -302,15 +284,16 @@ impl crate::UnityEngine::Rendering::ReceiverSphereCuller {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller+SplitInfo")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct ReceiverSphereCuller_SplitInfo {
     pub receiverSphereLightSpace: crate::Unity::Mathematics::float4,
     pub cascadeBlendCullingFactor: f32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller+SplitInfo")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo {
+    for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -329,18 +312,16 @@ for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller+SplitInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo {
+    for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -351,7 +332,8 @@ for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller+SplitInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo {
+    for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -365,22 +347,22 @@ for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller+SplitInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo {
+    for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller+SplitInfo")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo {
+    for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -394,7 +376,8 @@ for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller+SplitInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo {
+    for crate::UnityEngine::Rendering::ReceiverSphereCuller_SplitInfo
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

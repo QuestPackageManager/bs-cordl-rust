@@ -1,22 +1,20 @@
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+IDerivedRendergraphContext"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+IDerivedRendergraphContext")]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IDerivedRendergraphContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+IDerivedRendergraphContext"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+IDerivedRendergraphContext")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContext {
+    for crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContext
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering.RenderGraphModule";
     const CLASS_NAME: &'static str = "IDerivedRendergraphContext";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -30,7 +28,8 @@ for crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContext
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderGraphModule+IDerivedRendergraphContext")]
 impl std::ops::Deref
-for crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContext {
+    for crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContext
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -38,7 +37,8 @@ for crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContext
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderGraphModule+IDerivedRendergraphContext")]
 impl std::ops::DerefMut
-for crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContext {
+    for crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContext
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -51,7 +51,8 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContex
             crate::UnityEngine::Rendering::RenderGraphModule::InternalRenderGraphContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -70,22 +71,18 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContex
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+IDerivedRendergraphContext"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+IDerivedRendergraphContext")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContext {
+    for crate::UnityEngine::Rendering::RenderGraphModule::IDerivedRendergraphContext
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

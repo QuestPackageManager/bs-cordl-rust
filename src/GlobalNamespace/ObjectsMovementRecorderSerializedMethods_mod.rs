@@ -6,13 +6,15 @@ pub struct ObjectsMovementRecorderSerializedMethods {
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorderSerializedMethods")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
+    for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "ObjectsMovementRecorderSerializedMethods";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -25,16 +27,14 @@ for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
     }
 }
 #[cfg(feature = "ObjectsMovementRecorderSerializedMethods")]
-impl std::ops::Deref
-for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
+impl std::ops::Deref for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObjectsMovementRecorderSerializedMethods")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
+impl std::ops::DerefMut for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -54,68 +54,55 @@ impl crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
             crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("CameraViewFromSerializedName")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
+                        >,
+                    ), bool, 2usize>("CameraViewFromSerializedName")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CameraViewFromSerializedName", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CameraViewFromSerializedName",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (name, cameraView))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (name, cameraView))? };
         Ok(__cordl_ret.into())
     }
     pub fn ModeFromSerializedName(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        mode: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-        >,
+        mode: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::ObjectsMovementRecorder_Mode>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("ModeFromSerializedName")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
+                        >,
+                    ), bool, 2usize>("ModeFromSerializedName")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ModeFromSerializedName", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ModeFromSerializedName",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (name, mode))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (name, mode))? };
         Ok(__cordl_ret.into())
     }
     pub fn PlaybackScreenshotTypeFromSerializedName(
@@ -124,43 +111,38 @@ impl crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
             crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("PlaybackScreenshotTypeFromSerializedName")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type,
+                        >,
+                    ), bool, 2usize>("PlaybackScreenshotTypeFromSerializedName")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PlaybackScreenshotTypeFromSerializedName", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "PlaybackScreenshotTypeFromSerializedName",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (name, _cordl_type))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked((), (name, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializedName_ObjectsMovementRecorder_CameraView1(
         cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::ObjectsMovementRecorder_CameraView),
@@ -175,19 +157,18 @@ impl crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (cameraView))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (cameraView))? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializedName_ObjectsMovementRecorder_Mode0(
         mode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::ObjectsMovementRecorder_Mode),
@@ -202,19 +183,18 @@ impl crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (mode))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (mode))? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializedName_PlaybackScreenshot_PlaybackRenderer_Type2(
         _cordl_type: crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type),
@@ -229,15 +209,15 @@ impl crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorderSerializedMethods")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
+    for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

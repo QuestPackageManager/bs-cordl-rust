@@ -8,13 +8,15 @@ pub struct BindingRestrictions_MergedRestriction {
 }
 #[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+MergedRestriction")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::BindingRestrictions_MergedRestriction {
+    for crate::GlobalNamespace::BindingRestrictions_MergedRestriction
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Dynamic";
     const CLASS_NAME: &'static str = "BindingRestrictions/MergedRestriction";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -34,8 +36,7 @@ impl std::ops::Deref for crate::GlobalNamespace::BindingRestrictions_MergedRestr
     }
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+MergedRestriction")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::BindingRestrictions_MergedRestriction {
+impl std::ops::DerefMut for crate::GlobalNamespace::BindingRestrictions_MergedRestriction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -47,9 +48,10 @@ impl crate::GlobalNamespace::BindingRestrictions_MergedRestriction {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -66,17 +68,16 @@ impl crate::GlobalNamespace::BindingRestrictions_MergedRestriction {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         left: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
         right: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (left, right))?;
         Ok(__cordl_object.into())
@@ -86,39 +87,33 @@ impl crate::GlobalNamespace::BindingRestrictions_MergedRestriction {
         left: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
         right: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Dynamic::BindingRestrictions,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Dynamic::BindingRestrictions,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
+                        quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (left, right))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (left, right))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+MergedRestriction")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::BindingRestrictions_MergedRestriction {
+    for crate::GlobalNamespace::BindingRestrictions_MergedRestriction
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

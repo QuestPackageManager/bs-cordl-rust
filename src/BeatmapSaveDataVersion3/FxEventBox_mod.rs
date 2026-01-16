@@ -16,7 +16,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion3::FxEv
     const NAMESPACE: &'static str = "BeatmapSaveDataVersion3";
     const CLASS_NAME: &'static str = "FxEventBox";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -44,9 +45,7 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::FxEventBox {
 #[cfg(feature = "BeatmapSaveDataVersion3+FxEventBox")]
 impl crate::BeatmapSaveDataVersion3::FxEventBox {
     pub fn New(
-        indexFilter: quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion3::IndexFilter,
-        >,
+        indexFilter: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
         beatDistributionParam: f32,
         beatDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
         vfxDistributionParam: f32,
@@ -57,29 +56,26 @@ impl crate::BeatmapSaveDataVersion3::FxEventBox {
             crate::System::Collections::Generic::List_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    indexFilter,
-                    beatDistributionParam,
-                    beatDistributionParamType,
-                    vfxDistributionParam,
-                    vfxDistributionParamType,
-                    vfxDistributionEaseType,
-                    vfxDistributionShouldAffectFirstBaseEvent,
-                    effectsBaseDataList,
-                ),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                indexFilter,
+                beatDistributionParam,
+                beatDistributionParamType,
+                vfxDistributionParam,
+                vfxDistributionParamType,
+                vfxDistributionEaseType,
+                vfxDistributionShouldAffectFirstBaseEvent,
+                effectsBaseDataList,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        indexFilter: quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion3::IndexFilter,
-        >,
+        indexFilter: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
         beatDistributionParam: f32,
         beatDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
         vfxDistributionParam: f32,
@@ -90,77 +86,66 @@ impl crate::BeatmapSaveDataVersion3::FxEventBox {
             crate::System::Collections::Generic::List_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataVersion3::IndexFilter,
-                            >,
-                            f32,
-                            crate::BeatmapSaveDataCommon::DistributionParamType,
-                            f32,
-                            crate::BeatmapSaveDataCommon::DistributionParamType,
-                            crate::BeatmapSaveDataCommon::EaseType,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        8usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
+                        f32,
+                        crate::BeatmapSaveDataCommon::DistributionParamType,
+                        f32,
+                        crate::BeatmapSaveDataCommon::DistributionParamType,
+                        crate::BeatmapSaveDataCommon::EaseType,
+                        bool,
+                        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+                    ), quest_hook::libil2cpp::Void, 8usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             8usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        indexFilter,
-                        beatDistributionParam,
-                        beatDistributionParamType,
-                        vfxDistributionParam,
-                        vfxDistributionParamType,
-                        vfxDistributionEaseType,
-                        vfxDistributionShouldAffectFirstBaseEvent,
-                        effectsBaseDataList,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    indexFilter,
+                    beatDistributionParam,
+                    beatDistributionParamType,
+                    vfxDistributionParam,
+                    vfxDistributionParamType,
+                    vfxDistributionEaseType,
+                    vfxDistributionShouldAffectFirstBaseEvent,
+                    effectsBaseDataList,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_vfxBaseDataList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<i32>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IReadOnlyList_1<i32>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<i32>,
-                        >,
-                        0usize,
-                    >("get_vfxBaseDataList")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<i32>,
+                    >, 0usize>("get_vfxBaseDataList")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_vfxBaseDataList", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_vfxBaseDataList",
+                            0usize
                         )
                     })
             });
@@ -172,39 +157,40 @@ impl crate::BeatmapSaveDataVersion3::FxEventBox {
     pub fn get_vfxDistributionEaseType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::EaseType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::BeatmapSaveDataCommon::EaseType,
-                        0usize,
-                    >("get_vfxDistributionEaseType")
+                    .find_method::<(), crate::BeatmapSaveDataCommon::EaseType, 0usize>(
+                        "get_vfxDistributionEaseType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_vfxDistributionEaseType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_vfxDistributionEaseType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::BeatmapSaveDataCommon::EaseType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::BeatmapSaveDataCommon::EaseType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_vfxDistributionParam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_vfxDistributionParam")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_vfxDistributionParam", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_vfxDistributionParam",
+                            0usize
                         )
                     })
             });
@@ -213,48 +199,45 @@ impl crate::BeatmapSaveDataVersion3::FxEventBox {
     }
     pub fn get_vfxDistributionParamType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::BeatmapSaveDataCommon::DistributionParamType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::DistributionParamType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::BeatmapSaveDataCommon::DistributionParamType,
-                        0usize,
-                    >("get_vfxDistributionParamType")
+                    .find_method::<(), crate::BeatmapSaveDataCommon::DistributionParamType, 0usize>(
+                        "get_vfxDistributionParamType",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_vfxDistributionParamType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_vfxDistributionParamType",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::BeatmapSaveDataCommon::DistributionParamType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::BeatmapSaveDataCommon::DistributionParamType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_vfxDistributionShouldAffectFirstBaseEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        bool,
-                        0usize,
-                    >("get_vfxDistributionShouldAffectFirstBaseEvent")
+                    .find_method::<(), bool, 0usize>(
+                        "get_vfxDistributionShouldAffectFirstBaseEvent",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_vfxDistributionShouldAffectFirstBaseEvent", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_vfxDistributionShouldAffectFirstBaseEvent",
+                            0usize
                         )
                     })
             });

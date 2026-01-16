@@ -5,14 +5,14 @@ pub struct LayoutNative {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Layout::LayoutNative {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Layout::LayoutNative {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Layout";
     const CLASS_NAME: &'static str = "LayoutNative";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,7 +42,8 @@ impl crate::UnityEngine::UIElements::Layout::LayoutNative {
     #[cfg(feature = "UnityEngine+UIElements+Layout+LayoutNative+LayoutLogData")]
     pub type LayoutLogData = crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogData;
     #[cfg(feature = "UnityEngine+UIElements+Layout+LayoutNative+LayoutLogEventType")]
-    pub type LayoutLogEventType = crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType;
+    pub type LayoutLogEventType =
+        crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType;
     pub fn CalculateLayout(
         node: crate::System::IntPtr,
         parentWidth: f32,
@@ -51,43 +52,40 @@ impl crate::UnityEngine::UIElements::Layout::LayoutNative {
         state: crate::System::IntPtr,
         exceptionGCHandle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            f32,
-                            f32,
-                            i32,
-                            crate::System::IntPtr,
-                            crate::System::IntPtr,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("CalculateLayout")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        f32,
+                        f32,
+                        i32,
+                        crate::System::IntPtr,
+                        crate::System::IntPtr,
+                    ), quest_hook::libil2cpp::Void, 6usize>("CalculateLayout")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculateLayout", 6usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CalculateLayout",
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        node,
-                        parentWidth,
-                        parentHeight,
-                        parentDirection,
-                        state,
-                        exceptionGCHandle,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    node,
+                    parentWidth,
+                    parentHeight,
+                    parentDirection,
+                    state,
+                    exceptionGCHandle,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -96,38 +94,32 @@ impl crate::UnityEngine::UIElements::Layout::LayoutNative {
         _cordl_type: crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("LayoutLog_Internal")
+                    .find_static_method::<(
+                        crate::System::IntPtr,
+                        crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("LayoutLog_Internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LayoutLog_Internal", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "LayoutLog_Internal",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (nodePtr, _cordl_type, message))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (nodePtr, _cordl_type, message))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::Layout::LayoutNative {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Layout::LayoutNative {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -146,13 +138,15 @@ pub struct LayoutNative_LayoutLogData {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogData {
+    for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Layout";
     const CLASS_NAME: &'static str = "LayoutNative/LayoutLogData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -165,16 +159,14 @@ for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogData {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Layout+LayoutNative+LayoutLogData")]
-impl std::ops::Deref
-for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogData {
+impl std::ops::Deref for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Layout+LayoutNative+LayoutLogData")]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogData {
+impl std::ops::DerefMut for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -182,37 +174,37 @@ for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogData {
 #[cfg(feature = "UnityEngine+UIElements+Layout+LayoutNative+LayoutLogData")]
 impl crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogData {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogData {
+    for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -220,11 +212,9 @@ for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogEventType"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogEventType")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum LayoutNative_LayoutLogEventType {
     #[default]
     BeginLayout = 5i32,
@@ -235,11 +225,10 @@ pub enum LayoutNative_LayoutLogEventType {
     Measure = 2i32,
     None = 0i32,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogEventType"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogEventType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType {
+    for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Layout";
@@ -258,20 +247,16 @@ for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogEventType"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType {
+    for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -280,11 +265,10 @@ for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogEventType"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType {
+    for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -296,28 +280,24 @@ for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogEventType"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType {
+    for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogEventType"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogEventType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType {
+    for crate::UnityEngine::UIElements::Layout::LayoutNative_LayoutLogEventType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

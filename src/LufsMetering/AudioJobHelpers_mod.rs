@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::AudioJobHelpers
     const NAMESPACE: &'static str = "LufsMetering";
     const CLASS_NAME: &'static str = "AudioJobHelpers";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,9 +44,10 @@ impl crate::LufsMetering::AudioJobHelpers {
         frequency: f32,
         rate: f32,
     ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::FilterCoefficients> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32),
@@ -60,9 +62,8 @@ impl crate::LufsMetering::AudioJobHelpers {
                         )
                     })
             });
-        let __cordl_ret: crate::LufsMetering::FilterCoefficients = unsafe {
-            cordl_method_info.invoke_unchecked((), (quality, frequency, rate))?
-        };
+        let __cordl_ret: crate::LufsMetering::FilterCoefficients =
+            unsafe { cordl_method_info.invoke_unchecked((), (quality, frequency, rate))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHighShelfDeManCoefficients(
@@ -71,9 +72,10 @@ impl crate::LufsMetering::AudioJobHelpers {
         frequency: f32,
         rate: f32,
     ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::FilterCoefficients> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32, f32),
@@ -88,9 +90,8 @@ impl crate::LufsMetering::AudioJobHelpers {
                         )
                     })
             });
-        let __cordl_ret: crate::LufsMetering::FilterCoefficients = unsafe {
-            cordl_method_info.invoke_unchecked((), (gain, quality, frequency, rate))?
-        };
+        let __cordl_ret: crate::LufsMetering::FilterCoefficients =
+            unsafe { cordl_method_info.invoke_unchecked((), (gain, quality, frequency, rate))? };
         Ok(__cordl_ret.into())
     }
 }

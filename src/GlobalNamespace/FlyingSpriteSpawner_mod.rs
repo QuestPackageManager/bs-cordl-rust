@@ -11,9 +11,8 @@ pub struct FlyingSpriteSpawner {
     pub _targetZPos: f32,
     pub _color: crate::UnityEngine::Color,
     pub _shake: bool,
-    pub _flyingSpriteEffectPool: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FlyingSpriteEffect_Pool,
-    >,
+    pub _flyingSpriteEffectPool:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FlyingSpriteEffect_Pool>,
 }
 #[cfg(feature = "cordl_class_FlyingSpriteSpawner")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingSpriteSpawner {
@@ -22,7 +21,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingSprite
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "FlyingSpriteSpawner";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -51,13 +51,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FlyingSpriteSpawner {
 impl crate::GlobalNamespace::FlyingSpriteSpawner {
     pub fn HandleFlyingObjectEffectDidFinish(
         &mut self,
-        flyingObjectEffect: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::FlyingObjectEffect,
-        >,
+        flyingObjectEffect: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FlyingObjectEffect>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -74,14 +73,13 @@ impl crate::GlobalNamespace::FlyingSpriteSpawner {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (flyingObjectEffect))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (flyingObjectEffect))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
@@ -92,51 +90,47 @@ impl crate::GlobalNamespace::FlyingSpriteSpawner {
         rotation: crate::UnityEngine::Quaternion,
         inverseRotation: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                            crate::UnityEngine::Quaternion,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("SpawnFlyingSprite")
+                    .find_method::<(
+                        crate::UnityEngine::Vector3,
+                        crate::UnityEngine::Quaternion,
+                        crate::UnityEngine::Quaternion,
+                    ), quest_hook::libil2cpp::Void, 3usize>("SpawnFlyingSprite")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SpawnFlyingSprite", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SpawnFlyingSprite",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pos, rotation, inverseRotation))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (pos, rotation, inverseRotation))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -151,17 +145,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingSpriteS
 }
 #[cfg(feature = "FlyingSpriteSpawner")]
 impl AsRef<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>
-for crate::GlobalNamespace::FlyingSpriteSpawner {
+    for crate::GlobalNamespace::FlyingSpriteSpawner
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "FlyingSpriteSpawner")]
 impl AsMut<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>
-for crate::GlobalNamespace::FlyingSpriteSpawner {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
+    for crate::GlobalNamespace::FlyingSpriteSpawner
+{
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -12,7 +12,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NullAllowed 
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "NullAllowed";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,33 +46,31 @@ impl crate::GlobalNamespace::NullAllowed {
         &mut self,
         context: crate::GlobalNamespace::NullAllowed_Context,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::GlobalNamespace::NullAllowed_Context),
-                        bool,
-                        1usize,
-                    >("IsNullAllowedFor")
+                    .find_method::<(crate::GlobalNamespace::NullAllowed_Context), bool, 1usize>(
+                        "IsNullAllowedFor",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsNullAllowedFor", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsNullAllowedFor",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         context: crate::GlobalNamespace::NullAllowed_Context,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (context))?;
         Ok(__cordl_object.into())
@@ -80,9 +79,10 @@ impl crate::GlobalNamespace::NullAllowed {
         &mut self,
         context: crate::GlobalNamespace::NullAllowed_Context,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::NullAllowed_Context),
@@ -97,9 +97,8 @@ impl crate::GlobalNamespace::NullAllowed {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -113,8 +112,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NullAllowed {
     }
 }
 #[cfg(feature = "cordl_class_NullAllowed+Context")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum NullAllowed_Context {
     #[default]
     Everywhere = 0i32,
@@ -140,18 +139,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NullAllowed_
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_NullAllowed+Context")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::NullAllowed_Context {
+unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NullAllowed_Context {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -161,8 +156,7 @@ for crate::GlobalNamespace::NullAllowed_Context {
     }
 }
 #[cfg(feature = "cordl_class_NullAllowed+Context")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::NullAllowed_Context {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::NullAllowed_Context {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -175,23 +169,19 @@ for crate::GlobalNamespace::NullAllowed_Context {
     }
 }
 #[cfg(feature = "cordl_class_NullAllowed+Context")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::NullAllowed_Context {
+unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NullAllowed_Context {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_NullAllowed+Context")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::NullAllowed_Context {
+unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NullAllowed_Context {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

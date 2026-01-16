@@ -6,13 +6,15 @@ pub struct ConfigurationPropertyCollection {
 }
 #[cfg(feature = "cordl_class_System+Configuration+ConfigurationPropertyCollection")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Configuration::ConfigurationPropertyCollection {
+    for crate::System::Configuration::ConfigurationPropertyCollection
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Configuration";
     const CLASS_NAME: &'static str = "ConfigurationPropertyCollection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -32,8 +34,7 @@ impl std::ops::Deref for crate::System::Configuration::ConfigurationPropertyColl
     }
 }
 #[cfg(feature = "System+Configuration+ConfigurationPropertyCollection")]
-impl std::ops::DerefMut
-for crate::System::Configuration::ConfigurationPropertyCollection {
+impl std::ops::DerefMut for crate::System::Configuration::ConfigurationPropertyCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -42,7 +43,8 @@ for crate::System::Configuration::ConfigurationPropertyCollection {
 impl crate::System::Configuration::ConfigurationPropertyCollection {}
 #[cfg(feature = "cordl_class_System+Configuration+ConfigurationPropertyCollection")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Configuration::ConfigurationPropertyCollection {
+    for crate::System::Configuration::ConfigurationPropertyCollection
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

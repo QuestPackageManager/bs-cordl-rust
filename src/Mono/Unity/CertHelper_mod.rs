@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::CertHelper {
     const NAMESPACE: &'static str = "Mono.Unity";
     const CLASS_NAME: &'static str = "CertHelper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,15 +40,14 @@ impl std::ops::DerefMut for crate::Mono::Unity::CertHelper {
 #[cfg(feature = "Mono+Unity+CertHelper")]
 impl crate::Mono::Unity::CertHelper {
     pub fn AddCertificateToNativeChain(
-        nativeCertificateChain: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        >,
+        nativeCertificateChain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         certificate: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         >,
         errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -81,15 +81,14 @@ impl crate::Mono::Unity::CertHelper {
         Ok(__cordl_ret.into())
     }
     pub fn AddCertificatesToNativeChain(
-        nativeCertificateChain: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        >,
+        nativeCertificateChain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         certificates: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         >,
         errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -118,10 +117,7 @@ impl crate::Mono::Unity::CertHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (nativeCertificateChain, certificates, errorState),
-                )?
+                .invoke_unchecked((), (nativeCertificateChain, certificates, errorState))?
         };
         Ok(__cordl_ret.into())
     }

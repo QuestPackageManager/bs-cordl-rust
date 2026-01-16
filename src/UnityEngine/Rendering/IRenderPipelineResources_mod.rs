@@ -1,18 +1,20 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+IRenderPipelineResources")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IRenderPipelineResources {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+IRenderPipelineResources")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::IRenderPipelineResources {
+    for crate::UnityEngine::Rendering::IRenderPipelineResources
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
     const CLASS_NAME: &'static str = "IRenderPipelineResources";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,15 +41,12 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::IRenderPipelineResour
 }
 #[cfg(feature = "UnityEngine+Rendering+IRenderPipelineResources")]
 impl crate::UnityEngine::Rendering::IRenderPipelineResources {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+IRenderPipelineResources")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Rendering::IRenderPipelineResources {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::IRenderPipelineResources {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -57,17 +56,17 @@ for crate::UnityEngine::Rendering::IRenderPipelineResources {
 }
 #[cfg(feature = "UnityEngine+Rendering+IRenderPipelineResources")]
 impl AsRef<crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings>
-for crate::UnityEngine::Rendering::IRenderPipelineResources {
+    for crate::UnityEngine::Rendering::IRenderPipelineResources
+{
     fn as_ref(&self) -> &crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+IRenderPipelineResources")]
 impl AsMut<crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings>
-for crate::UnityEngine::Rendering::IRenderPipelineResources {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings {
+    for crate::UnityEngine::Rendering::IRenderPipelineResources
+{
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings {
         unsafe { std::mem::transmute(self) }
     }
 }

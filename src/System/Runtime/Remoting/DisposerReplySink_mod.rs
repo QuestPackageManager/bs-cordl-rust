@@ -3,20 +3,18 @@
 #[derive(Debug)]
 pub struct DisposerReplySink {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _next: quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    >,
+    pub _next: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessageSink>,
     pub _disposable: quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+DisposerReplySink")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Remoting::DisposerReplySink {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Runtime::Remoting::DisposerReplySink {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Remoting";
     const CLASS_NAME: &'static str = "DisposerReplySink";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,40 +43,34 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::DisposerReplySink 
 impl crate::System::Runtime::Remoting::DisposerReplySink {
     pub fn AsyncProcessMessage(
         &mut self,
-        msg: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Messaging::IMessage,
-        >,
+        msg: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
         replySink: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessageCtrl>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::Remoting::Messaging::IMessage,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::Remoting::Messaging::IMessageSink,
-                            >,
-                        ),
+                    .find_method::<(
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+                            crate::System::Runtime::Remoting::Messaging::IMessage,
                         >,
-                        2usize,
-                    >("AsyncProcessMessage")
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::Remoting::Messaging::IMessageSink,
+                        >,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+                    >, 2usize>("AsyncProcessMessage")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AsyncProcessMessage", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AsyncProcessMessage",
+                            2usize
                         )
                     })
             });
@@ -88,28 +80,25 @@ impl crate::System::Runtime::Remoting::DisposerReplySink {
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        next: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Messaging::IMessageSink,
-        >,
+        next: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessageSink>,
         disposable: quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (next, disposable))?;
         Ok(__cordl_object.into())
     }
     pub fn SyncProcessMessage(
         &mut self,
-        msg: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Messaging::IMessage,
-        >,
+        msg: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -135,42 +124,36 @@ impl crate::System::Runtime::Remoting::DisposerReplySink {
     }
     pub fn _ctor(
         &mut self,
-        next: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Messaging::IMessageSink,
-        >,
+        next: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessageSink>,
         disposable: quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::Remoting::Messaging::IMessageSink,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::Remoting::Messaging::IMessageSink,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (next, disposable))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (next, disposable))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+DisposerReplySink")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Remoting::DisposerReplySink {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Remoting::DisposerReplySink {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -180,17 +163,17 @@ for crate::System::Runtime::Remoting::DisposerReplySink {
 }
 #[cfg(feature = "System+Runtime+Remoting+DisposerReplySink")]
 impl AsRef<crate::System::Runtime::Remoting::Messaging::IMessageSink>
-for crate::System::Runtime::Remoting::DisposerReplySink {
+    for crate::System::Runtime::Remoting::DisposerReplySink
+{
     fn as_ref(&self) -> &crate::System::Runtime::Remoting::Messaging::IMessageSink {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+DisposerReplySink")]
 impl AsMut<crate::System::Runtime::Remoting::Messaging::IMessageSink>
-for crate::System::Runtime::Remoting::DisposerReplySink {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Runtime::Remoting::Messaging::IMessageSink {
+    for crate::System::Runtime::Remoting::DisposerReplySink
+{
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::Messaging::IMessageSink {
         unsafe { std::mem::transmute(self) }
     }
 }

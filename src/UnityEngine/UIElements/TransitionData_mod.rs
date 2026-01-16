@@ -1,16 +1,12 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TransitionData {
     pub transitionDelay: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TimeValue,
-        >,
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::UIElements::TimeValue>,
     >,
     pub transitionDuration: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TimeValue,
-        >,
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::UIElements::TimeValue>,
     >,
     pub transitionProperty: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
@@ -18,14 +14,11 @@ pub struct TransitionData {
         >,
     >,
     pub transitionTimingFunction: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::EasingFunction,
-        >,
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::UIElements::EasingFunction>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionData")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::TransitionData {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::TransitionData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -44,18 +37,14 @@ for crate::UnityEngine::UIElements::TransitionData {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionData")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::TransitionData {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::TransitionData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -65,8 +54,7 @@ for crate::UnityEngine::UIElements::TransitionData {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionData")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::TransitionData {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements::TransitionData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -79,23 +67,19 @@ for crate::UnityEngine::UIElements::TransitionData {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionData")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::TransitionData {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::TransitionData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionData")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::TransitionData {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::TransitionData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -108,8 +92,7 @@ for crate::UnityEngine::UIElements::TransitionData {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::TransitionData {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::UIElements::TransitionData {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -123,65 +106,60 @@ impl crate::UnityEngine::UIElements::TransitionData {
     pub fn Copy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TransitionData> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::UIElements::TransitionData,
-                        0usize,
-                    >("Copy")
+                    .find_method::<(), crate::UnityEngine::UIElements::TransitionData, 0usize>(
+                        "Copy",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Copy",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Copy",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::TransitionData = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::TransitionData =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CopyFrom(
         &mut self,
-        other: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::TransitionData,
-        >,
+        other: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::TransitionData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::UIElements::TransitionData,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("CopyFrom")
+                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::TransitionData,
+                    >), quest_hook::libil2cpp::Void, 1usize>("CopyFrom")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CopyFrom", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CopyFrom",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
@@ -196,48 +174,46 @@ impl crate::UnityEngine::UIElements::TransitionData {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_TransitionData0(
         &mut self,
         other: crate::UnityEngine::UIElements::TransitionData,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::UIElements::TransitionData),
-                        bool,
-                        1usize,
-                    >("Equals")
+                    .find_method::<(crate::UnityEngine::UIElements::TransitionData), bool, 1usize>(
+                        "Equals",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Equals",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (other))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetHashCode", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetHashCode",
+                            0usize
                         )
                     })
             });
@@ -248,35 +224,32 @@ impl crate::UnityEngine::UIElements::TransitionData {
         lhs: crate::UnityEngine::UIElements::TransitionData,
         rhs: crate::UnityEngine::UIElements::TransitionData,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::UIElements::TransitionData,
-                            crate::UnityEngine::UIElements::TransitionData,
-                        ),
-                        bool,
-                        2usize,
-                    >("op_Equality")
+                    .find_static_method::<(
+                        crate::UnityEngine::UIElements::TransitionData,
+                        crate::UnityEngine::UIElements::TransitionData,
+                    ), bool, 2usize>("op_Equality")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Equality", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Equality",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TransitionData")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransitionData>>
-for crate::UnityEngine::UIElements::TransitionData {
+    for crate::UnityEngine::UIElements::TransitionData
+{
     fn as_ref(
         &self,
     ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransitionData> {
@@ -285,21 +258,22 @@ for crate::UnityEngine::UIElements::TransitionData {
 }
 #[cfg(feature = "UnityEngine+UIElements+TransitionData")]
 impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransitionData>>
-for crate::UnityEngine::UIElements::TransitionData {
+    for crate::UnityEngine::UIElements::TransitionData
+{
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::UnityEngine::UIElements::TransitionData,
-    > {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransitionData> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TransitionData")]
-impl AsRef<
-    crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::TransitionData,
-    >,
-> for crate::UnityEngine::UIElements::TransitionData {
+impl
+    AsRef<
+        crate::UnityEngine::UIElements::IStyleDataGroup_1<
+            crate::UnityEngine::UIElements::TransitionData,
+        >,
+    > for crate::UnityEngine::UIElements::TransitionData
+{
     fn as_ref(
         &self,
     ) -> &crate::UnityEngine::UIElements::IStyleDataGroup_1<
@@ -309,11 +283,13 @@ impl AsRef<
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TransitionData")]
-impl AsMut<
-    crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::TransitionData,
-    >,
-> for crate::UnityEngine::UIElements::TransitionData {
+impl
+    AsMut<
+        crate::UnityEngine::UIElements::IStyleDataGroup_1<
+            crate::UnityEngine::UIElements::TransitionData,
+        >,
+    > for crate::UnityEngine::UIElements::TransitionData
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::UnityEngine::UIElements::IStyleDataGroup_1<

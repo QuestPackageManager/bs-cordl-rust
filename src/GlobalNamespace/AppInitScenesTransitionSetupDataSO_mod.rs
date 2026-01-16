@@ -6,13 +6,15 @@ pub struct AppInitScenesTransitionSetupDataSO {
 }
 #[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
+    for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "AppInitScenesTransitionSetupDataSO";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,14 +43,17 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AppInitScenesTransitionSetup
 impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
     pub const kGameInitSceneName: &'static str = "GameInit";
     #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
-    pub type AppInitOverrideStartType = crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType;
+    pub type AppInitOverrideStartType =
+        crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType;
     #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitSceneSetupData")]
-    pub type AppInitSceneSetupData = crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData;
+    pub type AppInitSceneSetupData =
+        crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData;
     pub fn Init(
         &mut self,
         appInitOverrideStartType: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -65,118 +70,108 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (appInitOverrideStartType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (appInitOverrideStartType))? };
         Ok(__cordl_ret.into())
     }
-    pub fn InitAsDefault(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn InitAsDefault(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("InitAsDefault")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InitAsDefault")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InitAsDefault", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InitAsDefault",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InitAsMultiSceneEditor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("InitAsMultiSceneEditor")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "InitAsMultiSceneEditor",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InitAsMultiSceneEditor", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InitAsMultiSceneEditor",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InitDirectlyToMenu(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("InitDirectlyToMenu")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InitDirectlyToMenu")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InitDirectlyToMenu", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "InitDirectlyToMenu",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataSO")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
+    for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -184,11 +179,9 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType {
     #[default]
     Default = 1i32,
@@ -196,11 +189,10 @@ pub enum AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType {
     DoNotOverride = 0i32,
     MultiSceneEditor = 3i32,
 }
-#[cfg(
-    feature = "cordl_class_AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType"
-)]
+#[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType {
+    for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -219,20 +211,16 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideSt
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType"
-)]
+#[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType {
+    for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -241,11 +229,10 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideSt
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType"
-)]
+#[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType {
+    for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -257,28 +244,24 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideSt
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType"
-)]
+#[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType {
+    for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType"
-)]
+#[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType {
+    for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -295,17 +278,20 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideSt
 #[derive(Debug)]
 pub struct AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
-    pub _appInitOverrideStartType_k__BackingField: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
+    pub _appInitOverrideStartType_k__BackingField:
+        crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
 }
 #[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataSO+AppInitSceneSetupData")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData {
+    for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "AppInitScenesTransitionSetupDataSO/AppInitSceneSetupData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -319,7 +305,8 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetup
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitSceneSetupData")]
 impl std::ops::Deref
-for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData {
+    for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData
+{
     type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -327,7 +314,8 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetup
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitSceneSetupData")]
 impl std::ops::DerefMut
-for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData {
+    for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -337,8 +325,8 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetu
     pub fn New(
         appInitOverrideStartType: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (appInitOverrideStartType))?;
         Ok(__cordl_object.into())
@@ -347,7 +335,8 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetu
         &mut self,
         appInitOverrideStartType: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -364,9 +353,8 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetu
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (appInitOverrideStartType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (appInitOverrideStartType))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_appInitOverrideStartType(
@@ -374,7 +362,8 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetu
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -400,7 +389,8 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetu
         &mut self,
         value: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -417,15 +407,15 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetu
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataSO+AppInitSceneSetupData")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData {
+    for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

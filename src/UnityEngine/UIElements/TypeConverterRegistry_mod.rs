@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TypeConverterRegistry {
     pub m_Converters: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
@@ -10,8 +10,7 @@ pub struct TypeConverterRegistry {
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::TypeConverterRegistry {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::TypeConverterRegistry {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -30,18 +29,16 @@ for crate::UnityEngine::UIElements::TypeConverterRegistry {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::TypeConverterRegistry {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -52,7 +49,8 @@ for crate::UnityEngine::UIElements::TypeConverterRegistry {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::TypeConverterRegistry {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -66,22 +64,22 @@ for crate::UnityEngine::UIElements::TypeConverterRegistry {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::TypeConverterRegistry {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::TypeConverterRegistry {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -95,7 +93,8 @@ for crate::UnityEngine::UIElements::TypeConverterRegistry {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::TypeConverterRegistry {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -109,14 +108,16 @@ impl crate::UnityEngine::UIElements::TypeConverterRegistry {
     #[cfg(feature = "UnityEngine+UIElements+TypeConverterRegistry+ConverterKey")]
     pub type ConverterKey = crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey;
     #[cfg(feature = "UnityEngine+UIElements+TypeConverterRegistry+ConverterKeyComparer")]
-    pub type ConverterKeyComparer = crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer;
+    pub type ConverterKeyComparer =
+        crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer;
     pub fn Apply(
         &mut self,
         registry: crate::UnityEngine::UIElements::TypeConverterRegistry,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::TypeConverterRegistry),
@@ -131,17 +132,16 @@ impl crate::UnityEngine::UIElements::TypeConverterRegistry {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (registry))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (registry))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Create() -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::TypeConverterRegistry,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Create(
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TypeConverterRegistry> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
@@ -156,9 +156,8 @@ impl crate::UnityEngine::UIElements::TypeConverterRegistry {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::UIElements::TypeConverterRegistry = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: crate::UnityEngine::UIElements::TypeConverterRegistry =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
@@ -166,70 +165,64 @@ impl crate::UnityEngine::UIElements::TypeConverterRegistry {
         x: crate::UnityEngine::UIElements::TypeConverterRegistry,
         y: crate::UnityEngine::UIElements::TypeConverterRegistry,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::TypeConverterRegistry,
-                            crate::UnityEngine::UIElements::TypeConverterRegistry,
-                        ),
-                        bool,
-                        2usize,
-                    >("Equals")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::TypeConverterRegistry,
+                        crate::UnityEngine::UIElements::TypeConverterRegistry,
+                    ), bool, 2usize>("Equals")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Equals",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (x, y))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (x, y))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetConverter(
         &mut self,
         source: quest_hook::libil2cpp::Gc<crate::System::Type>,
         destination: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Delegate>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
-                        2usize,
-                    >("GetConverter")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Delegate>, 2usize>(
+                        "GetConverter"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetConverter", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetConverter",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (source, destination))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (source, destination))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(
         &mut self,
         obj: crate::UnityEngine::UIElements::TypeConverterRegistry,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::TypeConverterRegistry),
@@ -244,9 +237,7 @@ impl crate::UnityEngine::UIElements::TypeConverterRegistry {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn Register(
@@ -255,30 +246,27 @@ impl crate::UnityEngine::UIElements::TypeConverterRegistry {
         destination: quest_hook::libil2cpp::Gc<crate::System::Type>,
         converter: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Register")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Register")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Register", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Register",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (source, destination, converter))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (source, destination, converter))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetConverter(
@@ -289,32 +277,29 @@ impl crate::UnityEngine::UIElements::TypeConverterRegistry {
             quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::System::Delegate>,
-                            >,
-                        ),
-                        bool,
-                        3usize,
-                    >("TryGetConverter")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+                        >,
+                    ), bool, 3usize>("TryGetConverter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetConverter", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "TryGetConverter",
+                            3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (source, destination, converter))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (source, destination, converter))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -326,40 +311,39 @@ impl crate::UnityEngine::UIElements::TypeConverterRegistry {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey,
-                                quest_hook::libil2cpp::Gc<crate::System::Delegate>,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey,
+                            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (storage))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (storage))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TypeConverterRegistry")]
-impl AsRef<
-    crate::System::Collections::Generic::IEqualityComparer_1<
-        crate::UnityEngine::UIElements::TypeConverterRegistry,
-    >,
-> for crate::UnityEngine::UIElements::TypeConverterRegistry {
+impl
+    AsRef<
+        crate::System::Collections::Generic::IEqualityComparer_1<
+            crate::UnityEngine::UIElements::TypeConverterRegistry,
+        >,
+    > for crate::UnityEngine::UIElements::TypeConverterRegistry
+{
     fn as_ref(
         &self,
     ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
@@ -369,11 +353,13 @@ impl AsRef<
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TypeConverterRegistry")]
-impl AsMut<
-    crate::System::Collections::Generic::IEqualityComparer_1<
-        crate::UnityEngine::UIElements::TypeConverterRegistry,
-    >,
-> for crate::UnityEngine::UIElements::TypeConverterRegistry {
+impl
+    AsMut<
+        crate::System::Collections::Generic::IEqualityComparer_1<
+            crate::UnityEngine::UIElements::TypeConverterRegistry,
+        >,
+    > for crate::UnityEngine::UIElements::TypeConverterRegistry
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
@@ -383,15 +369,16 @@ impl AsMut<
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry+ConverterKey")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TypeConverterRegistry_ConverterKey {
     pub SourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub DestinationType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry+ConverterKey")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -410,18 +397,16 @@ for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry+ConverterKey")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -432,7 +417,8 @@ for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry+ConverterKey")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -446,22 +432,22 @@ for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry+ConverterKey")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry+ConverterKey")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -475,7 +461,8 @@ for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry+ConverterKey")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -491,51 +478,46 @@ impl crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey {
         source: quest_hook::libil2cpp::Gc<crate::System::Type>,
         destination: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (source, destination))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (source, destination))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry+ConverterKeyComparer"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry+ConverterKeyComparer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeConverterRegistry_ConverterKeyComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry+ConverterKeyComparer"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry+ConverterKeyComparer")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "TypeConverterRegistry/ConverterKeyComparer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -549,7 +531,8 @@ for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer {
 }
 #[cfg(feature = "UnityEngine+UIElements+TypeConverterRegistry+ConverterKeyComparer")]
 impl std::ops::Deref
-for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -557,7 +540,8 @@ for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer {
 }
 #[cfg(feature = "UnityEngine+UIElements+TypeConverterRegistry+ConverterKeyComparer")]
 impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -569,38 +553,35 @@ impl crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer 
         x: crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey,
         y: crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey,
-                            crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey,
-                        ),
-                        bool,
-                        2usize,
-                    >("Equals")
+                    .find_method::<(
+                        crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey,
+                        crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey,
+                    ), bool, 2usize>("Equals")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Equals",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (x, y))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (x, y))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(
         &mut self,
         obj: crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey),
@@ -615,45 +596,41 @@ impl crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer 
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (obj))?
-        };
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry+ConverterKeyComparer"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TypeConverterRegistry+ConverterKeyComparer")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer {
+    for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -662,11 +639,13 @@ for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TypeConverterRegistry+ConverterKeyComparer")]
-impl AsRef<
-    crate::System::Collections::Generic::IEqualityComparer_1<
-        crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey,
-    >,
-> for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer {
+impl
+    AsRef<
+        crate::System::Collections::Generic::IEqualityComparer_1<
+            crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey,
+        >,
+    > for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer
+{
     fn as_ref(
         &self,
     ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
@@ -676,11 +655,13 @@ impl AsRef<
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TypeConverterRegistry+ConverterKeyComparer")]
-impl AsMut<
-    crate::System::Collections::Generic::IEqualityComparer_1<
-        crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey,
-    >,
-> for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer {
+impl
+    AsMut<
+        crate::System::Collections::Generic::IEqualityComparer_1<
+            crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKey,
+        >,
+    > for crate::UnityEngine::UIElements::TypeConverterRegistry_ConverterKeyComparer
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<

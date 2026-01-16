@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVREnumExten
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVREnumExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -41,9 +42,10 @@ impl crate::GlobalNamespace::OVREnumExtensions {
     pub fn AsHandType_OVRMesh_MeshType1(
         meshType: crate::GlobalNamespace::OVRMesh_MeshType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRHand_Hand> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRMesh_MeshType),
@@ -58,17 +60,17 @@ impl crate::GlobalNamespace::OVREnumExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRHand_Hand = unsafe {
-            cordl_method_info.invoke_unchecked((), (meshType))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRHand_Hand =
+            unsafe { cordl_method_info.invoke_unchecked((), (meshType))? };
         Ok(__cordl_ret.into())
     }
     pub fn AsHandType_OVRSkeleton_SkeletonType0(
         skeletonType: crate::GlobalNamespace::OVRSkeleton_SkeletonType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRHand_Hand> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRSkeleton_SkeletonType),
@@ -83,46 +85,45 @@ impl crate::GlobalNamespace::OVREnumExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRHand_Hand = unsafe {
-            cordl_method_info.invoke_unchecked((), (skeletonType))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRHand_Hand =
+            unsafe { cordl_method_info.invoke_unchecked((), (skeletonType))? };
         Ok(__cordl_ret.into())
     }
     pub fn AsMeshType_OVRHandSkeletonVersion1(
         hand: crate::GlobalNamespace::OVRHand_Hand,
         version: crate::GlobalNamespace::OVRHandSkeletonVersion,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMesh_MeshType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::OVRHand_Hand,
-                            crate::GlobalNamespace::OVRHandSkeletonVersion,
-                        ),
-                        crate::GlobalNamespace::OVRMesh_MeshType,
-                        2usize,
-                    >("AsMeshType")
+                    .find_static_method::<(
+                        crate::GlobalNamespace::OVRHand_Hand,
+                        crate::GlobalNamespace::OVRHandSkeletonVersion,
+                    ), crate::GlobalNamespace::OVRMesh_MeshType, 2usize>(
+                        "AsMeshType"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AsMeshType", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AsMeshType",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRMesh_MeshType = unsafe {
-            cordl_method_info.invoke_unchecked((), (hand, version))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRMesh_MeshType =
+            unsafe { cordl_method_info.invoke_unchecked((), (hand, version))? };
         Ok(__cordl_ret.into())
     }
     pub fn AsMeshType_OVRHand_Hand0(
         hand: crate::GlobalNamespace::OVRHand_Hand,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMesh_MeshType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRHand_Hand),
@@ -137,50 +138,45 @@ impl crate::GlobalNamespace::OVREnumExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRMesh_MeshType = unsafe {
-            cordl_method_info.invoke_unchecked((), (hand))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRMesh_MeshType =
+            unsafe { cordl_method_info.invoke_unchecked((), (hand))? };
         Ok(__cordl_ret.into())
     }
     pub fn AsSkeletonType_OVRHandSkeletonVersion1(
         hand: crate::GlobalNamespace::OVRHand_Hand,
         version: crate::GlobalNamespace::OVRHandSkeletonVersion,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRSkeleton_SkeletonType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRSkeleton_SkeletonType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::OVRHand_Hand,
-                            crate::GlobalNamespace::OVRHandSkeletonVersion,
-                        ),
-                        crate::GlobalNamespace::OVRSkeleton_SkeletonType,
-                        2usize,
-                    >("AsSkeletonType")
+                    .find_static_method::<(
+                        crate::GlobalNamespace::OVRHand_Hand,
+                        crate::GlobalNamespace::OVRHandSkeletonVersion,
+                    ), crate::GlobalNamespace::OVRSkeleton_SkeletonType, 2usize>(
+                        "AsSkeletonType"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AsSkeletonType", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AsSkeletonType",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRSkeleton_SkeletonType = unsafe {
-            cordl_method_info.invoke_unchecked((), (hand, version))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRSkeleton_SkeletonType =
+            unsafe { cordl_method_info.invoke_unchecked((), (hand, version))? };
         Ok(__cordl_ret.into())
     }
     pub fn AsSkeletonType_OVRHand_Hand0(
         hand: crate::GlobalNamespace::OVRHand_Hand,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRSkeleton_SkeletonType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRSkeleton_SkeletonType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRHand_Hand),
@@ -195,42 +191,40 @@ impl crate::GlobalNamespace::OVREnumExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::OVRSkeleton_SkeletonType = unsafe {
-            cordl_method_info.invoke_unchecked((), (hand))?
-        };
+        let __cordl_ret: crate::GlobalNamespace::OVRSkeleton_SkeletonType =
+            unsafe { cordl_method_info.invoke_unchecked((), (hand))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsHand_OVRMesh_MeshType1(
         meshType: crate::GlobalNamespace::OVRMesh_MeshType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::GlobalNamespace::OVRMesh_MeshType),
-                        bool,
-                        1usize,
-                    >("IsHand")
+                    .find_static_method::<(crate::GlobalNamespace::OVRMesh_MeshType), bool, 1usize>(
+                        "IsHand",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsHand",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsHand",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (meshType))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (meshType))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsHand_OVRSkeleton_SkeletonType0(
         skeletonType: crate::GlobalNamespace::OVRSkeleton_SkeletonType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRSkeleton_SkeletonType),
@@ -245,42 +239,39 @@ impl crate::GlobalNamespace::OVREnumExtensions {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (skeletonType))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (skeletonType))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsLeft_OVRMesh_MeshType1(
         _cordl_type: crate::GlobalNamespace::OVRMesh_MeshType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::GlobalNamespace::OVRMesh_MeshType),
-                        bool,
-                        1usize,
-                    >("IsLeft")
+                    .find_static_method::<(crate::GlobalNamespace::OVRMesh_MeshType), bool, 1usize>(
+                        "IsLeft",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsLeft",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsLeft",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_type))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsLeft_OVRSkeleton_SkeletonType0(
         _cordl_type: crate::GlobalNamespace::OVRSkeleton_SkeletonType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRSkeleton_SkeletonType),
@@ -295,42 +286,39 @@ impl crate::GlobalNamespace::OVREnumExtensions {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (_cordl_type))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsOVRHandMesh(
         meshType: crate::GlobalNamespace::OVRMesh_MeshType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::GlobalNamespace::OVRMesh_MeshType),
-                        bool,
-                        1usize,
-                    >("IsOVRHandMesh")
+                    .find_static_method::<(crate::GlobalNamespace::OVRMesh_MeshType), bool, 1usize>(
+                        "IsOVRHandMesh",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsOVRHandMesh", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsOVRHandMesh",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (meshType))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (meshType))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsOVRHandSkeleton(
         skeletonType: crate::GlobalNamespace::OVRSkeleton_SkeletonType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRSkeleton_SkeletonType),
@@ -345,42 +333,39 @@ impl crate::GlobalNamespace::OVREnumExtensions {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (skeletonType))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (skeletonType))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsOpenXRHandMesh(
         meshType: crate::GlobalNamespace::OVRMesh_MeshType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::GlobalNamespace::OVRMesh_MeshType),
-                        bool,
-                        1usize,
-                    >("IsOpenXRHandMesh")
+                    .find_static_method::<(crate::GlobalNamespace::OVRMesh_MeshType), bool, 1usize>(
+                        "IsOpenXRHandMesh",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsOpenXRHandMesh", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsOpenXRHandMesh",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (meshType))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (meshType))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsOpenXRHandSkeleton(
         skeletonType: crate::GlobalNamespace::OVRSkeleton_SkeletonType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRSkeleton_SkeletonType),
@@ -395,9 +380,7 @@ impl crate::GlobalNamespace::OVREnumExtensions {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (skeletonType))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (skeletonType))? };
         Ok(__cordl_ret.into())
     }
 }

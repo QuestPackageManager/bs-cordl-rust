@@ -1,12 +1,14 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LODGroupData {
     pub valid: bool,
     pub lodCount: i32,
     pub rendererCount: i32,
-    pub screenRelativeTransitionHeights: crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer,
-    pub fadeTransitionWidth: crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer,
+    pub screenRelativeTransitionHeights:
+        crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer,
+    pub fadeTransitionWidth:
+        crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::LODGroupData {
@@ -28,18 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::LODGr
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupData")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::LODGroupData {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Rendering::LODGroupData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -49,8 +47,7 @@ for crate::UnityEngine::Rendering::LODGroupData {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupData")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::LODGroupData {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Rendering::LODGroupData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -63,23 +60,19 @@ for crate::UnityEngine::Rendering::LODGroupData {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupData")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::LODGroupData {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Rendering::LODGroupData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupData")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::LODGroupData {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::LODGroupData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -92,8 +85,7 @@ for crate::UnityEngine::Rendering::LODGroupData {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::LODGroupData {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Rendering::LODGroupData {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -105,20 +97,20 @@ for crate::UnityEngine::Rendering::LODGroupData {
 #[cfg(feature = "UnityEngine+Rendering+LODGroupData")]
 impl crate::UnityEngine::Rendering::LODGroupData {
     pub const k_MaxLODLevelsCount: i32 = 8i32;
-    #[cfg(
-        feature = "UnityEngine+Rendering+LODGroupData+_fadeTransitionWidth_e__FixedBuffer"
-    )]
-    pub type _fadeTransitionWidth_e__FixedBuffer = crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer;
+    #[cfg(feature = "UnityEngine+Rendering+LODGroupData+_fadeTransitionWidth_e__FixedBuffer")]
+    pub type _fadeTransitionWidth_e__FixedBuffer =
+        crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer;
     #[cfg(
         feature = "UnityEngine+Rendering+LODGroupData+_screenRelativeTransitionHeights_e__FixedBuffer"
     )]
-    pub type _screenRelativeTransitionHeights_e__FixedBuffer = crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer;
+    pub type _screenRelativeTransitionHeights_e__FixedBuffer =
+        crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer;
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_fadeTransitionWidth_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LODGroupData__fadeTransitionWidth_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -126,7 +118,8 @@ pub struct LODGroupData__fadeTransitionWidth_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_fadeTransitionWidth_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -145,20 +138,18 @@ for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuf
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_fadeTransitionWidth_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -171,7 +162,8 @@ for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuf
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_fadeTransitionWidth_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -187,16 +179,15 @@ for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuf
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_fadeTransitionWidth_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -204,7 +195,8 @@ for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuf
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_fadeTransitionWidth_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -220,7 +212,8 @@ for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuf
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_fadeTransitionWidth_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -229,15 +222,13 @@ for crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuf
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(
-    feature = "UnityEngine+Rendering+LODGroupData+_fadeTransitionWidth_e__FixedBuffer"
-)]
+#[cfg(feature = "UnityEngine+Rendering+LODGroupData+_fadeTransitionWidth_e__FixedBuffer")]
 impl crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBuffer {}
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_screenRelativeTransitionHeights_e__FixedBuffer"
 )]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -245,7 +236,8 @@ pub struct LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer {
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_screenRelativeTransitionHeights_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -264,20 +256,18 @@ for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_screenRelativeTransitionHeights_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -290,7 +280,8 @@ for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_screenRelativeTransitionHeights_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -306,16 +297,15 @@ for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_screenRelativeTransitionHeights_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -323,7 +313,8 @@ for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_screenRelativeTransitionHeights_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -339,7 +330,8 @@ for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_screenRelativeTransitionHeights_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer {
+    for crate::UnityEngine::Rendering::LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

@@ -21,14 +21,14 @@ pub struct TemplateAsset {
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::TemplateAsset {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::TemplateAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
     const CLASS_NAME: &'static str = "TemplateAsset";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -58,16 +58,18 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
     #[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
     pub type AttributeOverride = crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride;
     #[cfg(feature = "UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride")]
-    pub type UxmlSerializedDataOverride = crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride;
+    pub type UxmlSerializedDataOverride =
+        crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride;
     pub fn Instantiate(
         &mut self,
         cc: crate::UnityEngine::UIElements::CreationContext,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::CreationContext),
@@ -84,9 +86,8 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (cc))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cc))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_attributeOverrides(
@@ -98,24 +99,22 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
                         >,
-                        0usize,
-                    >("get_attributeOverrides")
+                    >, 0usize>("get_attributeOverrides")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_attributeOverrides", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_attributeOverrides",
+                            0usize
                         )
                     })
             });
@@ -135,7 +134,8 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -172,24 +172,22 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
                         >,
-                        0usize,
-                    >("get_slotUsages")
+                    >, 0usize>("get_slotUsages")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_slotUsages", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_slotUsages",
+                            0usize
                         )
                     })
             });
@@ -202,8 +200,7 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::TemplateAsset {
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TemplateAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -212,8 +209,8 @@ for crate::UnityEngine::UIElements::TemplateAsset {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TemplateAsset_AttributeOverride {
     pub m_ElementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_NamesPath: quest_hook::libil2cpp::Gc<
@@ -226,7 +223,8 @@ pub struct TemplateAsset_AttributeOverride {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
+    for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -245,18 +243,16 @@ for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
+    for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -267,7 +263,8 @@ for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
+    for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -281,22 +278,22 @@ for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
+    for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
+    for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -310,7 +307,8 @@ for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
+    for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -329,54 +327,44 @@ impl crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
-                        >),
-                        bool,
-                        1usize,
-                    >("NamesPathMatchesElementNamesPath")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        >,
+                    >), bool, 1usize>("NamesPathMatchesElementNamesPath")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "NamesPathMatchesElementNamesPath", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "NamesPathMatchesElementNamesPath",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (elementNamesPath))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (elementNamesPath))? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TemplateAsset_UxmlSerializedDataOverride {
     pub m_ElementId: i32,
-    pub m_ElementIdsPath: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
-    pub m_SerializedData: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlSerializedData,
-    >,
+    pub m_ElementIdsPath:
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+    pub m_SerializedData:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlSerializedData>,
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride {
+    for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
@@ -395,20 +383,16 @@ for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride {
+    for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -417,11 +401,10 @@ for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride {
+    for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -433,28 +416,24 @@ for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride {
+    for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride {
+    for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -466,11 +445,10 @@ for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride"
-)]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride {
+    for crate::UnityEngine::UIElements::TemplateAsset_UxmlSerializedDataOverride
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

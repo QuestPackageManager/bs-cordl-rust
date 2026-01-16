@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::Hebrew
     const NAMESPACE: &'static str = "System.Globalization";
     const CLASS_NAME: &'static str = "HebrewNumber";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,15 +46,17 @@ impl crate::System::Globalization::HebrewNumber {
     #[cfg(feature = "System+Globalization+HebrewNumber+HebrewValue")]
     pub type HebrewValue = crate::System::Globalization::HebrewNumber_HebrewValue;
     pub fn IsDigit(ch: char) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("IsDigit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsDigit",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsDigit",
                             1usize
                         )
                     })
@@ -66,44 +69,41 @@ impl crate::System::Globalization::HebrewNumber {
         context: quest_hook::libil2cpp::ByRefMut<
             crate::System::Globalization::HebrewNumberParsingContext,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Globalization::HebrewNumberParsingState,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::HebrewNumberParsingState> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            char,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::System::Globalization::HebrewNumberParsingContext,
-                            >,
-                        ),
-                        crate::System::Globalization::HebrewNumberParsingState,
-                        2usize,
-                    >("ParseByChar")
+                    .find_static_method::<(
+                        char,
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::System::Globalization::HebrewNumberParsingContext,
+                        >,
+                    ), crate::System::Globalization::HebrewNumberParsingState, 2usize>(
+                        "ParseByChar",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ParseByChar", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ParseByChar",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Globalization::HebrewNumberParsingState = unsafe {
-            cordl_method_info.invoke_unchecked((), (ch, context))?
-        };
+        let __cordl_ret: crate::System::Globalization::HebrewNumberParsingState =
+            unsafe { cordl_method_info.invoke_unchecked((), (ch, context))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
         Number: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
@@ -118,9 +118,8 @@ impl crate::System::Globalization::HebrewNumber {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (Number))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (Number))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -134,8 +133,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::HebrewN
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HS")]
-#[repr(i8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i8)]
 pub enum HebrewNumber_HS {
     #[default]
     END = 100i8,
@@ -159,8 +158,7 @@ pub enum HebrewNumber_HS {
     _err = -1i8,
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HS")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Globalization::HebrewNumber_HS {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::HebrewNumber_HS {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
@@ -179,18 +177,14 @@ for crate::System::Globalization::HebrewNumber_HS {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HS")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Globalization::HebrewNumber_HS {
+unsafe impl quest_hook::libil2cpp::Argument for crate::System::Globalization::HebrewNumber_HS {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -200,8 +194,7 @@ for crate::System::Globalization::HebrewNumber_HS {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HS")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Globalization::HebrewNumber_HS {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Globalization::HebrewNumber_HS {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -214,23 +207,19 @@ for crate::System::Globalization::HebrewNumber_HS {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HS")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Globalization::HebrewNumber_HS {
+unsafe impl quest_hook::libil2cpp::Returned for crate::System::Globalization::HebrewNumber_HS {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HS")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Globalization::HebrewNumber_HS {
+unsafe impl quest_hook::libil2cpp::Return for crate::System::Globalization::HebrewNumber_HS {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -243,8 +232,8 @@ for crate::System::Globalization::HebrewNumber_HS {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewToken")]
-#[repr(i16)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i16)]
 pub enum HebrewNumber_HebrewToken {
     #[default]
     Digit1 = 4i16,
@@ -260,8 +249,7 @@ pub enum HebrewNumber_HebrewToken {
     SingleQuote = 8i16,
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewToken")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Globalization::HebrewNumber_HebrewToken {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::HebrewNumber_HebrewToken {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
@@ -280,18 +268,16 @@ for crate::System::Globalization::HebrewNumber_HebrewToken {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewToken")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Globalization::HebrewNumber_HebrewToken {
+    for crate::System::Globalization::HebrewNumber_HebrewToken
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -302,7 +288,8 @@ for crate::System::Globalization::HebrewNumber_HebrewToken {
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewToken")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Globalization::HebrewNumber_HebrewToken {
+    for crate::System::Globalization::HebrewNumber_HebrewToken
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -316,22 +303,22 @@ for crate::System::Globalization::HebrewNumber_HebrewToken {
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewToken")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Globalization::HebrewNumber_HebrewToken {
+    for crate::System::Globalization::HebrewNumber_HebrewToken
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewToken")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Globalization::HebrewNumber_HebrewToken {
+    for crate::System::Globalization::HebrewNumber_HebrewToken
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -344,15 +331,14 @@ for crate::System::Globalization::HebrewNumber_HebrewToken {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewValue")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct HebrewNumber_HebrewValue {
     pub token: crate::System::Globalization::HebrewNumber_HebrewToken,
     pub value: i16,
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewValue")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Globalization::HebrewNumber_HebrewValue {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::HebrewNumber_HebrewValue {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
@@ -371,18 +357,16 @@ for crate::System::Globalization::HebrewNumber_HebrewValue {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewValue")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Globalization::HebrewNumber_HebrewValue {
+    for crate::System::Globalization::HebrewNumber_HebrewValue
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -393,7 +377,8 @@ for crate::System::Globalization::HebrewNumber_HebrewValue {
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewValue")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Globalization::HebrewNumber_HebrewValue {
+    for crate::System::Globalization::HebrewNumber_HebrewValue
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -407,22 +392,22 @@ for crate::System::Globalization::HebrewNumber_HebrewValue {
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewValue")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Globalization::HebrewNumber_HebrewValue {
+    for crate::System::Globalization::HebrewNumber_HebrewValue
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewValue")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Globalization::HebrewNumber_HebrewValue {
+    for crate::System::Globalization::HebrewNumber_HebrewValue
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -436,7 +421,8 @@ for crate::System::Globalization::HebrewNumber_HebrewValue {
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewValue")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Globalization::HebrewNumber_HebrewValue {
+    for crate::System::Globalization::HebrewNumber_HebrewValue
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -452,9 +438,10 @@ impl crate::System::Globalization::HebrewNumber_HebrewValue {
         token: crate::System::Globalization::HebrewNumber_HebrewToken,
         value: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Globalization::HebrewNumber_HebrewToken, i16),
@@ -469,9 +456,8 @@ impl crate::System::Globalization::HebrewNumber_HebrewValue {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (token, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (token, value))? };
         Ok(__cordl_ret.into())
     }
 }

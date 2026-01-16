@@ -6,13 +6,15 @@ pub struct TexturePacker_JsonArray {
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "TMPro.SpriteAssetUtilities";
     const CLASS_NAME: &'static str = "TexturePacker_JsonArray";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,46 +45,45 @@ impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray {
     pub type Frame = crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame;
     #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
     pub type Meta = crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta;
-    #[cfg(
-        feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject"
-    )]
-    pub type SpriteDataObject = crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject;
+    #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject")]
+    pub type SpriteDataObject =
+        crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject;
     #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
     pub type SpriteFrame = crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame;
     #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
     pub type SpriteSize = crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -91,8 +92,8 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray {
     }
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TexturePacker_JsonArray_Frame {
     pub filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub frame: crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame,
@@ -104,7 +105,8 @@ pub struct TexturePacker_JsonArray_Frame {
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro.SpriteAssetUtilities";
@@ -123,18 +125,16 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -145,7 +145,8 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -159,22 +160,22 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -188,7 +189,8 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -200,8 +202,8 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
 impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {}
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TexturePacker_JsonArray_Meta {
     pub app: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -213,7 +215,8 @@ pub struct TexturePacker_JsonArray_Meta {
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro.SpriteAssetUtilities";
@@ -232,18 +235,16 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -254,7 +255,8 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -268,22 +270,22 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -297,7 +299,8 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -308,9 +311,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
 impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {}
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TexturePacker_JsonArray_SpriteDataObject {
@@ -322,17 +323,17 @@ pub struct TexturePacker_JsonArray_SpriteDataObject {
     >,
     pub meta: crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta,
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "TMPro.SpriteAssetUtilities";
     const CLASS_NAME: &'static str = "TexturePacker_JsonArray/SpriteDataObject";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -346,7 +347,8 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject")]
 impl std::ops::Deref
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject
+{
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
@@ -354,7 +356,8 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject")]
 impl std::ops::DerefMut
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject
+{
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -362,39 +365,37 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject")]
 impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -402,22 +403,19 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TexturePacker_JsonArray_SpriteFrame {
     pub x: f32,
     pub y: f32,
     pub w: f32,
     pub h: f32,
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro.SpriteAssetUtilities";
@@ -436,20 +434,16 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -458,11 +452,10 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -474,28 +467,24 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -507,11 +496,10 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -524,12 +512,12 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
 impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -544,26 +532,22 @@ impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize"
-)]
-#[repr(C)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct TexturePacker_JsonArray_SpriteSize {
     pub w: f32,
     pub h: f32,
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro.SpriteAssetUtilities";
@@ -582,20 +566,16 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -604,11 +584,10 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -620,28 +599,24 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -653,11 +628,10 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
         actual
     }
 }
-#[cfg(
-    feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize"
-)]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
+    for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -670,12 +644,12 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
 impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -690,9 +664,8 @@ impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

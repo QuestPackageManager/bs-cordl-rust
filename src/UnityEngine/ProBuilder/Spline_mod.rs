@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Spli
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
     const CLASS_NAME: &'static str = "Spline";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -53,57 +54,54 @@ impl crate::UnityEngine::ProBuilder::Spline {
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Quaternion>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::Vector3,
+                            >,
+                        >,
+                        f32,
+                        i32,
+                        bool,
+                        bool,
+                        quest_hook::libil2cpp::ByRefMut<
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
-                            f32,
-                            i32,
-                            bool,
-                            bool,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                                >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::Quaternion,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::Quaternion,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("Extrude")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 7usize>("Extrude")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Extrude",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Extrude",
                             7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        points,
-                        radius,
-                        radiusRows,
-                        closeLoop,
-                        smooth,
-                        target,
-                        pointRotations,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    points,
+                    radius,
+                    radiusRows,
+                    closeLoop,
+                    smooth,
+                    target,
+                    pointRotations,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -121,9 +119,10 @@ impl crate::UnityEngine::ProBuilder::Spline {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -151,14 +150,9 @@ impl crate::UnityEngine::ProBuilder::Spline {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh> = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (points, radius, columns, rows, closeLoop, smooth),
-                )?
+                .invoke_unchecked((), (points, radius, columns, rows, closeLoop, smooth))?
         };
         Ok(__cordl_ret.into())
     }
@@ -177,45 +171,50 @@ impl crate::UnityEngine::ProBuilder::Spline {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::ProBuilder::BezierPoint,
+                            >,
+                        >,
+                        f32,
+                        i32,
+                        i32,
+                        bool,
+                        bool,
+                        quest_hook::libil2cpp::ByRefMut<
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::ProBuilder::BezierPoint,
-                                >,
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
-                            f32,
-                            i32,
-                            i32,
-                            bool,
-                            bool,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("Extrude")
+                        >,
+                    ), quest_hook::libil2cpp::Void, 7usize>("Extrude")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Extrude",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Extrude",
                             7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (bezierPoints, radius, columns, rows, closeLoop, smooth, target),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    bezierPoints,
+                    radius,
+                    columns,
+                    rows,
+                    closeLoop,
+                    smooth,
+                    target,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -235,48 +234,43 @@ impl crate::UnityEngine::ProBuilder::Spline {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::ProBuilder::BezierPoint,
-                                >,
-                            >,
-                            i32,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Quaternion,
-                                >,
-                            >,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Vector3,
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::ProBuilder::BezierPoint,
                             >,
                         >,
-                        4usize,
-                    >("GetControlPoints")
+                        i32,
+                        bool,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::Quaternion,
+                            >,
+                        >,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+                    >, 4usize>("GetControlPoints")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetControlPoints", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetControlPoints",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (bezierPoints, subdivisionsPerSegment, closeLoop, rotations),
-                )?
+            cordl_method_info.invoke_unchecked(
+                (),
+                (bezierPoints, subdivisionsPerSegment, closeLoop, rotations),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -288,35 +282,32 @@ impl crate::UnityEngine::ProBuilder::Spline {
         closeLoop: bool,
         secant: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::Vector3,
                             >,
-                            i32,
-                            bool,
-                            quest_hook::libil2cpp::ByRefMut<f32>,
-                        ),
-                        crate::UnityEngine::Quaternion,
-                        4usize,
-                    >("GetRingRotation")
+                        >,
+                        i32,
+                        bool,
+                        quest_hook::libil2cpp::ByRefMut<f32>,
+                    ), crate::UnityEngine::Quaternion, 4usize>("GetRingRotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetRingRotation", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetRingRotation",
+                            4usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
-            cordl_method_info.invoke_unchecked((), (points, i, closeLoop, secant))?
-        };
+        let __cordl_ret: crate::UnityEngine::Quaternion =
+            unsafe { cordl_method_info.invoke_unchecked((), (points, i, closeLoop, secant))? };
         Ok(__cordl_ret.into())
     }
     pub fn VertexRing(
@@ -325,41 +316,34 @@ impl crate::UnityEngine::ProBuilder::Spline {
         radius: f32,
         segments: i32,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Quaternion,
-                            crate::UnityEngine::Vector3,
-                            f32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::Vector3,
-                            >,
-                        >,
-                        4usize,
-                    >("VertexRing")
+                    .find_static_method::<(
+                        crate::UnityEngine::Quaternion,
+                        crate::UnityEngine::Vector3,
+                        f32,
+                        i32,
+                    ), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >, 4usize>("VertexRing")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "VertexRing", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "VertexRing",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (orientation, offset, radius, segments))?
+            cordl_method_info.invoke_unchecked((), (orientation, offset, radius, segments))?
         };
         Ok(__cordl_ret.into())
     }

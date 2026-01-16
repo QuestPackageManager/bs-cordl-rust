@@ -5,14 +5,14 @@ pub struct SystemCertificateValidator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+SystemCertificateValidator")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Mono::Net::Security::SystemCertificateValidator {
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Net::Security::SystemCertificateValidator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Net.Security";
     const CLASS_NAME: &'static str = "SystemCertificateValidator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,13 +40,12 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::SystemCertificateValidat
 #[cfg(feature = "Mono+Net+Security+SystemCertificateValidator")]
 impl crate::Mono::Net::Security::SystemCertificateValidator {
     pub fn NeedsChain(
-        settings: quest_hook::libil2cpp::Gc<
-            crate::Mono::Security::Interface::MonoTlsSettings,
-        >,
+        settings: quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -63,15 +62,12 @@ impl crate::Mono::Net::Security::SystemCertificateValidator {
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (settings))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (settings))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+SystemCertificateValidator")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Mono::Net::Security::SystemCertificateValidator {
+impl quest_hook::libil2cpp::ObjectType for crate::Mono::Net::Security::SystemCertificateValidator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

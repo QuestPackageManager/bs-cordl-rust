@@ -1,11 +1,10 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CreateDrawBatchesJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct CreateDrawBatchesJob {
     pub implicitInstanceIndices: bool,
-    pub instances: crate::Unity::Collections::NativeArray_1<
-        crate::UnityEngine::Rendering::InstanceHandle,
-    >,
+    pub instances:
+        crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Rendering::InstanceHandle>,
     pub rendererData: crate::UnityEngine::Rendering::GPUDrivenRendererGroupData,
     pub batchMeshHash: crate::Unity::Collections::NativeParallelHashMap_2_ReadOnly<
         i32,
@@ -23,23 +22,19 @@ pub struct CreateDrawBatchesJob {
         crate::UnityEngine::Rendering::RangeKey,
         i32,
     >,
-    pub drawRanges: crate::Unity::Collections::NativeList_1<
-        crate::UnityEngine::Rendering::DrawRange,
-    >,
+    pub drawRanges:
+        crate::Unity::Collections::NativeList_1<crate::UnityEngine::Rendering::DrawRange>,
     pub batchHash: crate::Unity::Collections::NativeParallelHashMap_2<
         crate::UnityEngine::Rendering::DrawKey,
         i32,
     >,
-    pub drawBatches: crate::Unity::Collections::NativeList_1<
-        crate::UnityEngine::Rendering::DrawBatch,
-    >,
-    pub drawInstances: crate::Unity::Collections::NativeList_1<
-        crate::UnityEngine::Rendering::DrawInstance,
-    >,
+    pub drawBatches:
+        crate::Unity::Collections::NativeList_1<crate::UnityEngine::Rendering::DrawBatch>,
+    pub drawInstances:
+        crate::Unity::Collections::NativeList_1<crate::UnityEngine::Rendering::DrawInstance>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CreateDrawBatchesJob")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -58,18 +53,16 @@ for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CreateDrawBatchesJob")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
+    for crate::UnityEngine::Rendering::CreateDrawBatchesJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -80,7 +73,8 @@ for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CreateDrawBatchesJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
+    for crate::UnityEngine::Rendering::CreateDrawBatchesJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -94,22 +88,20 @@ for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CreateDrawBatchesJob")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
+    for crate::UnityEngine::Rendering::CreateDrawBatchesJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CreateDrawBatchesJob")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -123,7 +115,8 @@ for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CreateDrawBatchesJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
+    for crate::UnityEngine::Rendering::CreateDrawBatchesJob
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -143,9 +136,10 @@ impl crate::UnityEngine::Rendering::CreateDrawBatchesJob {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rendering::DrawBatch>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
@@ -169,11 +163,8 @@ impl crate::UnityEngine::Rendering::CreateDrawBatchesJob {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Rendering::DrawBatch,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (key, subMeshDescriptor))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rendering::DrawBatch> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (key, subMeshDescriptor))? };
         Ok(__cordl_ret.into())
     }
     pub fn EditDrawRange(
@@ -182,9 +173,10 @@ impl crate::UnityEngine::Rendering::CreateDrawBatchesJob {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rendering::DrawRange>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
@@ -203,69 +195,62 @@ impl crate::UnityEngine::Rendering::CreateDrawBatchesJob {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::Rendering::DrawRange,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rendering::DrawRange> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Execute(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Execute(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessRenderer(
         &mut self,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("ProcessRenderer")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("ProcessRenderer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessRenderer", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessRenderer",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (i))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (i))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+CreateDrawBatchesJob")]
-impl AsRef<crate::Unity::Jobs::IJob>
-for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
+impl AsRef<crate::Unity::Jobs::IJob> for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
     fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+CreateDrawBatchesJob")]
-impl AsMut<crate::Unity::Jobs::IJob>
-for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
+impl AsMut<crate::Unity::Jobs::IJob> for crate::UnityEngine::Rendering::CreateDrawBatchesJob {
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
         todo!()
     }

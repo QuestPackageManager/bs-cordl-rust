@@ -5,14 +5,14 @@ pub struct HashSetExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Unity+Collections+HashSetExtensions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Unity::Collections::HashSetExtensions {
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Collections::HashSetExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Collections";
     const CLASS_NAME: &'static str = "HashSetExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,40 +40,36 @@ impl std::ops::DerefMut for crate::Unity::Collections::HashSetExtensions {
 #[cfg(feature = "Unity+Collections+HashSetExtensions")]
 impl crate::Unity::Collections::HashSetExtensions {
     pub fn ExceptWith_FixedList128Bytes_1_0<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList128Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList128Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList128Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_FixedList128Bytes_1_11<T>(
@@ -83,71 +79,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList128Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList128Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList128Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_FixedList32Bytes_1_1<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList32Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList32Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList32Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_FixedList32Bytes_1_12<T>(
@@ -157,34 +147,32 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList32Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList32Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList32Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_FixedList4096Bytes_1_13<T>(
@@ -194,71 +182,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList4096Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList4096Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList4096Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_FixedList4096Bytes_1_2<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList4096Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList4096Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList4096Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_FixedList512Bytes_1_14<T>(
@@ -268,71 +250,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList512Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList512Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList512Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_FixedList512Bytes_1_3<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList512Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList512Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList512Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_FixedList64Bytes_1_15<T>(
@@ -342,71 +318,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList64Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList64Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList64Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_FixedList64Bytes_1_4<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList64Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList64Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList64Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_NativeArray_1_16<T>(
@@ -416,71 +386,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeArray_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeArray_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeArray_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_NativeArray_1_5<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeArray_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeArray_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeArray_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_NativeHashSet_1_17<T>(
@@ -490,71 +454,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeHashSet_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeHashSet_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeHashSet_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_NativeHashSet_1_6<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeHashSet_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
                             crate::Unity::Collections::NativeHashSet_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                        >,
+                        crate::Unity::Collections::NativeHashSet_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_NativeHashSet_1_ReadOnly18<T>(
@@ -564,108 +522,98 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_NativeHashSet_1_ReadOnly7<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_NativeList_1_10<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeList_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeList_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeList_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_NativeList_1_21<T>(
@@ -675,34 +623,32 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeList_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeList_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeList_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_NativeParallelHashSet_1_19<T>(
@@ -712,71 +658,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeParallelHashSet_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
                             crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                        >,
+                        crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_NativeParallelHashSet_1_8<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeParallelHashSet_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_NativeParallelHashSet_1_ReadOnly20<T>(
@@ -786,112 +726,98 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<
-                                T,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptWith_NativeParallelHashSet_1_ReadOnly9<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<
-                                T,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("ExceptWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("ExceptWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExceptWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ExceptWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_FixedList128Bytes_1_0<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList128Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList128Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList128Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_FixedList128Bytes_1_11<T>(
@@ -901,71 +827,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList128Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList128Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList128Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_FixedList32Bytes_1_1<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList32Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList32Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList32Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_FixedList32Bytes_1_12<T>(
@@ -975,34 +895,32 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList32Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList32Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList32Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_FixedList4096Bytes_1_13<T>(
@@ -1012,71 +930,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList4096Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList4096Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList4096Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_FixedList4096Bytes_1_2<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList4096Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList4096Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList4096Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_FixedList512Bytes_1_14<T>(
@@ -1086,71 +998,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList512Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList512Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList512Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_FixedList512Bytes_1_3<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList512Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList512Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList512Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_FixedList64Bytes_1_15<T>(
@@ -1160,71 +1066,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList64Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList64Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList64Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_FixedList64Bytes_1_4<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList64Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList64Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList64Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_NativeArray_1_16<T>(
@@ -1234,71 +1134,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeArray_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeArray_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeArray_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_NativeArray_1_5<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeArray_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeArray_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeArray_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_NativeHashSet_1_17<T>(
@@ -1308,71 +1202,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeHashSet_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeHashSet_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeHashSet_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_NativeHashSet_1_6<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeHashSet_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
                             crate::Unity::Collections::NativeHashSet_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                        >,
+                        crate::Unity::Collections::NativeHashSet_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_NativeHashSet_1_ReadOnly18<T>(
@@ -1382,108 +1270,98 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_NativeHashSet_1_ReadOnly7<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_NativeList_1_10<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeList_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeList_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeList_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_NativeList_1_21<T>(
@@ -1493,34 +1371,32 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeList_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeList_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeList_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_NativeParallelHashSet_1_19<T>(
@@ -1530,71 +1406,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeParallelHashSet_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
                             crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                        >,
+                        crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_NativeParallelHashSet_1_8<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeParallelHashSet_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_NativeParallelHashSet_1_ReadOnly20<T>(
@@ -1604,112 +1474,98 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<
-                                T,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectWith_NativeParallelHashSet_1_ReadOnly9<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<
-                                T,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("IntersectWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("IntersectWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IntersectWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IntersectWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_FixedList128Bytes_1_0<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList128Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList128Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList128Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_FixedList128Bytes_1_11<T>(
@@ -1719,71 +1575,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList128Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList128Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList128Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_FixedList32Bytes_1_1<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList32Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList32Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList32Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_FixedList32Bytes_1_12<T>(
@@ -1793,34 +1643,32 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList32Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList32Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList32Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_FixedList4096Bytes_1_13<T>(
@@ -1830,71 +1678,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList4096Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList4096Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList4096Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_FixedList4096Bytes_1_2<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList4096Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList4096Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList4096Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_FixedList512Bytes_1_14<T>(
@@ -1904,71 +1746,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList512Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList512Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList512Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_FixedList512Bytes_1_3<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList512Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList512Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList512Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_FixedList64Bytes_1_15<T>(
@@ -1978,71 +1814,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::FixedList64Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList64Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList64Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_FixedList64Bytes_1_4<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::FixedList64Bytes_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::FixedList64Bytes_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::FixedList64Bytes_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_NativeArray_1_16<T>(
@@ -2052,71 +1882,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeArray_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeArray_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeArray_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_NativeArray_1_5<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeArray_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeArray_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeArray_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_NativeHashSet_1_17<T>(
@@ -2126,71 +1950,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeHashSet_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeHashSet_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeHashSet_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_NativeHashSet_1_6<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeHashSet_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
                             crate::Unity::Collections::NativeHashSet_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                        >,
+                        crate::Unity::Collections::NativeHashSet_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_NativeHashSet_1_ReadOnly18<T>(
@@ -2200,108 +2018,98 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_NativeHashSet_1_ReadOnly7<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeHashSet_1_ReadOnly<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_NativeList_1_10<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeList_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeList_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeList_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_NativeList_1_21<T>(
@@ -2311,34 +2119,32 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeList_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeList_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeList_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_NativeParallelHashSet_1_19<T>(
@@ -2348,71 +2154,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeParallelHashSet_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
                             crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                        >,
+                        crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_NativeParallelHashSet_1_8<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeParallelHashSet_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_NativeParallelHashSet_1_ReadOnly20<T>(
@@ -2422,75 +2222,65 @@ impl crate::Unity::Collections::HashSetExtensions {
         other: crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeParallelHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<
-                                T,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeParallelHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionWith_NativeParallelHashSet_1_ReadOnly9<T>(
-        container: quest_hook::libil2cpp::ByRefMut<
-            crate::Unity::Collections::NativeHashSet_1<T>,
-        >,
+        container: quest_hook::libil2cpp::ByRefMut<crate::Unity::Collections::NativeHashSet_1<T>>,
         other: crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::Unity::Collections::NativeHashSet_1<T>,
-                            >,
-                            crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<
-                                T,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UnionWith")
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Collections::NativeHashSet_1<T>,
+                        >,
+                        crate::Unity::Collections::NativeParallelHashSet_1_ReadOnly<T>,
+                    ), quest_hook::libil2cpp::Void, 2usize>("UnionWith")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnionWith", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UnionWith",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (container, other))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked((), (container, other))? };
         Ok(__cordl_ret.into())
     }
 }

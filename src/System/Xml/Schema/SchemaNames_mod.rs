@@ -15,12 +15,9 @@ pub struct SchemaNames {
     pub NsXsi: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub XsiType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub XsiNil: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub XsiSchemaLocation: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub XsiNoNamespaceSchemaLocation: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub XsiSchemaLocation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub XsiNoNamespaceSchemaLocation:
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub XsdSchema: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub XdrSchema: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub QnPCData: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -59,71 +56,47 @@ pub struct SchemaNames {
     pub QnEnumeration: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnDefault: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXdrSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnXdrElementType: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnXdrElementType: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXdrElement: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXdrGroup: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnXdrAttributeType: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnXdrAttributeType: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXdrAttribute: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXdrDataType: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnXdrDescription: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnXdrDescription: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXdrExtends: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnXdrAliasSchema: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnXdrAliasSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnDtType: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnDtValues: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnDtMaxLength: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnDtMinLength: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnDtMax: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnDtMin: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnDtMinExclusive: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
-    pub QnDtMaxExclusive: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
-    pub QnTargetNamespace: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnDtMinExclusive: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub QnDtMaxExclusive: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub QnTargetNamespace: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnVersion: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnFinalDefault: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnBlockDefault: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnFixed: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnAbstract: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnBlock: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnSubstitutionGroup: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnSubstitutionGroup: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnFinal: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnNillable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnRef: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnBase: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnDerivedBy: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnNamespace: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnProcessContents: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnProcessContents: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnRefer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnPublic: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnSystem: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnSchemaLocation: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnSchemaLocation: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnValue: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnUse: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnForm: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnElementFormDefault: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
-    pub QnAttributeFormDefault: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnElementFormDefault: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub QnAttributeFormDefault: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnItemType: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnMemberTypes: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXPath: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -133,12 +106,8 @@ pub struct SchemaNames {
     pub QnXsdImport: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdElement: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdAttribute: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnXsdAttributeGroup: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
-    pub QnXsdAnyAttribute: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnXsdAttributeGroup: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub QnXsdAnyAttribute: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdGroup: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdAll: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdChoice: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -146,53 +115,29 @@ pub struct SchemaNames {
     pub QnXsdAny: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdNotation: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdSimpleType: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnXsdComplexType: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnXsdComplexType: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdUnique: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdKey: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdKeyRef: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdSelector: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdField: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnXsdMinExclusive: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
-    pub QnXsdMinInclusive: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
-    pub QnXsdMaxInclusive: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
-    pub QnXsdMaxExclusive: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
-    pub QnXsdTotalDigits: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
-    pub QnXsdFractionDigits: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnXsdMinExclusive: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub QnXsdMinInclusive: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub QnXsdMaxInclusive: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub QnXsdMaxExclusive: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub QnXsdTotalDigits: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub QnXsdFractionDigits: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdLength: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdMinLength: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdMaxLength: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnXsdEnumeration: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnXsdEnumeration: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdPattern: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnXsdDocumentation: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnXsdDocumentation: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdAppinfo: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnSource: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    pub QnXsdComplexContent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
-    pub QnXsdSimpleContent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
-    pub QnXsdRestriction: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlQualifiedName,
-    >,
+    pub QnXsdComplexContent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub QnXsdSimpleContent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub QnXsdRestriction: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdExtension: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdUnion: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub QnXsdList: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -212,7 +157,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::SchemaNa
     const NAMESPACE: &'static str = "System.Xml.Schema";
     const CLASS_NAME: &'static str = "SchemaNames";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -244,26 +190,25 @@ impl crate::System::Xml::Schema::SchemaNames {
     pub fn CreateTokenToQNameTable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("CreateTokenToQNameTable")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "CreateTokenToQNameTable",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateTokenToQNameTable", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "CreateTokenToQNameTable",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsXDRRoot(
@@ -271,33 +216,26 @@ impl crate::System::Xml::Schema::SchemaNames {
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsXDRRoot")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), bool, 2usize>("IsXDRRoot")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsXDRRoot", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsXDRRoot",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (localName, ns))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (localName, ns))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsXSDRoot(
@@ -305,40 +243,33 @@ impl crate::System::Xml::Schema::SchemaNames {
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        bool,
-                        2usize,
-                    >("IsXSDRoot")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), bool, 2usize>("IsXSDRoot")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "IsXSDRoot", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "IsXSDRoot",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (localName, ns))?
-        };
+        let __cordl_ret: bool =
+            unsafe { cordl_method_info.invoke_unchecked(self, (localName, ns))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (nameTable))?;
         Ok(__cordl_object.into())
@@ -348,42 +279,38 @@ impl crate::System::Xml::Schema::SchemaNames {
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::SchemaType> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        crate::System::Xml::Schema::SchemaType,
-                        2usize,
-                    >("SchemaTypeFromRoot")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    ), crate::System::Xml::Schema::SchemaType, 2usize>(
+                        "SchemaTypeFromRoot"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SchemaTypeFromRoot", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SchemaTypeFromRoot",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Xml::Schema::SchemaType = unsafe {
-            cordl_method_info.invoke_unchecked(self, (localName, ns))?
-        };
+        let __cordl_ret: crate::System::Xml::Schema::SchemaType =
+            unsafe { cordl_method_info.invoke_unchecked(self, (localName, ns))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>),
@@ -398,9 +325,8 @@ impl crate::System::Xml::Schema::SchemaNames {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (nameTable))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (nameTable))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -414,8 +340,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaNam
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames+Token")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum SchemaNames_Token {
     #[default]
     Empty = 0i32,
@@ -543,8 +469,7 @@ pub enum SchemaNames_Token {
     xsdAttributeGroup = 80i32,
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames+Token")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Xml::Schema::SchemaNames_Token {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::SchemaNames_Token {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
@@ -563,18 +488,14 @@ for crate::System::Xml::Schema::SchemaNames_Token {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames+Token")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::System::Xml::Schema::SchemaNames_Token {
+unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Schema::SchemaNames_Token {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -584,8 +505,7 @@ for crate::System::Xml::Schema::SchemaNames_Token {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames+Token")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::System::Xml::Schema::SchemaNames_Token {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::Schema::SchemaNames_Token {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -598,23 +518,19 @@ for crate::System::Xml::Schema::SchemaNames_Token {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames+Token")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::System::Xml::Schema::SchemaNames_Token {
+unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Schema::SchemaNames_Token {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames+Token")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::System::Xml::Schema::SchemaNames_Token {
+unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::Schema::SchemaNames_Token {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

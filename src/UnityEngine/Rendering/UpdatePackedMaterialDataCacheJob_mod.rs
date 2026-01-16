@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UpdatePackedMaterialDataCacheJob")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct UpdatePackedMaterialDataCacheJob {
     pub materialIDs: crate::Unity::Collections::NativeArray_1_ReadOnly<i32>,
     pub packedMaterialDatas: crate::Unity::Collections::NativeArray_1_ReadOnly<
@@ -13,7 +13,8 @@ pub struct UpdatePackedMaterialDataCacheJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UpdatePackedMaterialDataCacheJob")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob {
+    for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -32,18 +33,16 @@ for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UpdatePackedMaterialDataCacheJob")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob {
+    for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -54,7 +53,8 @@ for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UpdatePackedMaterialDataCacheJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob {
+    for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -68,22 +68,22 @@ for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UpdatePackedMaterialDataCacheJob")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob {
+    for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UpdatePackedMaterialDataCacheJob")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob {
+    for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -97,7 +97,8 @@ for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UpdatePackedMaterialDataCacheJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob {
+    for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -108,64 +109,62 @@ for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob {
 }
 #[cfg(feature = "UnityEngine+Rendering+UpdatePackedMaterialDataCacheJob")]
 impl crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob {
-    pub fn Execute(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Execute(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Execute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Execute",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Execute",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessMaterial(
         &mut self,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("ProcessMaterial")
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("ProcessMaterial")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessMaterial", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ProcessMaterial",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (i))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (i))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+UpdatePackedMaterialDataCacheJob")]
 impl AsRef<crate::Unity::Jobs::IJob>
-for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob {
+    for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob
+{
     fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+UpdatePackedMaterialDataCacheJob")]
 impl AsMut<crate::Unity::Jobs::IJob>
-for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob {
+    for crate::UnityEngine::Rendering::UpdatePackedMaterialDataCacheJob
+{
     fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
         todo!()
     }

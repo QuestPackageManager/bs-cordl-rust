@@ -5,14 +5,14 @@ pub struct RunTimeUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+RunTimeUtils")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::Meta::XR::BuildingBlocks::RunTimeUtils {
+unsafe impl quest_hook::libil2cpp::Type for crate::Meta::XR::BuildingBlocks::RunTimeUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Meta.XR.BuildingBlocks";
     const CLASS_NAME: &'static str = "RunTimeUtils";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -45,12 +45,12 @@ impl crate::Meta::XR::BuildingBlocks::RunTimeUtils {
         includeUppercase: bool,
         includeNumeric: bool,
         includeSpecial: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, bool, bool, bool, bool),
@@ -65,20 +65,17 @@ impl crate::Meta::XR::BuildingBlocks::RunTimeUtils {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        _cordl_size,
-                        includeLowercase,
-                        includeUppercase,
-                        includeNumeric,
-                        includeSpecial,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    _cordl_size,
+                    includeLowercase,
+                    includeUppercase,
+                    includeNumeric,
+                    includeSpecial,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -86,12 +83,14 @@ impl crate::Meta::XR::BuildingBlocks::RunTimeUtils {
         monoBehaviour: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        T: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>),
@@ -106,15 +105,12 @@ impl crate::Meta::XR::BuildingBlocks::RunTimeUtils {
                         )
                     })
             });
-        let __cordl_ret: T = unsafe {
-            cordl_method_info.invoke_unchecked((), (monoBehaviour))?
-        };
+        let __cordl_ret: T = unsafe { cordl_method_info.invoke_unchecked((), (monoBehaviour))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+RunTimeUtils")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Meta::XR::BuildingBlocks::RunTimeUtils {
+impl quest_hook::libil2cpp::ObjectType for crate::Meta::XR::BuildingBlocks::RunTimeUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

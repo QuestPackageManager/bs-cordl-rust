@@ -5,14 +5,14 @@ pub struct ColorSchemeExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_ColorSchemeExtensions")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::ColorSchemeExtensions {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ColorSchemeExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "ColorSchemeExtensions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -53,9 +53,10 @@ impl crate::GlobalNamespace::ColorSchemeExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameplayColorScheme>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -83,19 +84,16 @@ impl crate::GlobalNamespace::ColorSchemeExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IGameplayColorScheme,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        playerOverrideColorScheme,
-                        beatmapOverrideColorScheme,
-                        environmentColorScheme,
-                        usingBeatmapDefaultEnvironment,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameplayColorScheme> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    playerOverrideColorScheme,
+                    beatmapOverrideColorScheme,
+                    environmentColorScheme,
+                    usingBeatmapDefaultEnvironment,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,9 +112,10 @@ impl crate::GlobalNamespace::ColorSchemeExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightshowColorScheme>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
@@ -145,88 +144,68 @@ impl crate::GlobalNamespace::ColorSchemeExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILightshowColorScheme,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        playerOverrideColorScheme,
-                        playerOverrideLightshowColors,
-                        beatmapOverrideColorScheme,
-                        environmentColorScheme,
-                        usingBeatmapDefaultEnvironment,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightshowColorScheme> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    playerOverrideColorScheme,
+                    playerOverrideLightshowColors,
+                    beatmapOverrideColorScheme,
+                    environmentColorScheme,
+                    usingBeatmapDefaultEnvironment,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ResolveColorScheme(
-        playerOverrideColorScheme: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ColorScheme,
-        >,
+        playerOverrideColorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
         playerOverrideLightshowColors: bool,
-        beatmapOverrideColorScheme: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ColorScheme,
-        >,
-        environmentColorScheme: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ColorScheme,
-        >,
+        beatmapOverrideColorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        environmentColorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
         usingBeatmapDefaultEnvironment: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ColorScheme,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ColorScheme,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ColorScheme,
-                            >,
-                            bool,
-                        ),
+                    .find_static_method::<(
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-                        5usize,
-                    >("ResolveColorScheme")
+                        bool,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+                        bool,
+                    ), quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>, 5usize>(
+                        "ResolveColorScheme",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ResolveColorScheme", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ResolveColorScheme",
+                            5usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ColorScheme,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        playerOverrideColorScheme,
-                        playerOverrideLightshowColors,
-                        beatmapOverrideColorScheme,
-                        environmentColorScheme,
-                        usingBeatmapDefaultEnvironment,
-                    ),
-                )?
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme> = unsafe {
+            cordl_method_info.invoke_unchecked(
+                (),
+                (
+                    playerOverrideColorScheme,
+                    playerOverrideLightshowColors,
+                    beatmapOverrideColorScheme,
+                    environmentColorScheme,
+                    usingBeatmapDefaultEnvironment,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_ColorSchemeExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::ColorSchemeExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSchemeExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

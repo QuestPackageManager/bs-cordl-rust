@@ -3,19 +3,18 @@
 #[derive(Debug)]
 pub struct MockScoreSyncStateSender {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
-    >,
+    pub _multiplayerSessionManager:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager>,
 }
 #[cfg(feature = "cordl_class_MockScoreSyncStateSender")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MockScoreSyncStateSender {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MockScoreSyncStateSender {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "MockScoreSyncStateSender";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,25 +41,24 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MockScoreSyncStateSender {
 }
 #[cfg(feature = "MockScoreSyncStateSender")]
 impl crate::GlobalNamespace::MockScoreSyncStateSender {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HandleScoreSyncStateUpdate(
@@ -68,37 +66,32 @@ impl crate::GlobalNamespace::MockScoreSyncStateSender {
         nodePose: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
         >,
-        connectedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
-        >,
+        connectedPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IConnectedPlayer,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleScoreSyncStateUpdate")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "HandleScoreSyncStateUpdate"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleScoreSyncStateUpdate", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HandleScoreSyncStateUpdate",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (nodePose, connectedPlayer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (nodePose, connectedPlayer))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -106,8 +99,8 @@ impl crate::GlobalNamespace::MockScoreSyncStateSender {
             crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (multiplayerSessionManager))?;
         Ok(__cordl_object.into())
@@ -120,35 +113,34 @@ impl crate::GlobalNamespace::MockScoreSyncStateSender {
         combo: i32,
         multiplier: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("SendScore")
+                    .find_method::<(i32, i32, i32, i32, i32), quest_hook::libil2cpp::Void, 5usize>(
+                        "SendScore",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SendScore", 5usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SendScore",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        modifiedScore,
-                        multipliedScore,
-                        immediateMaxPossibleMultipliedScore,
-                        combo,
-                        multiplier,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    modifiedScore,
+                    multipliedScore,
+                    immediateMaxPossibleMultipliedScore,
+                    combo,
+                    multiplier,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
@@ -158,34 +150,30 @@ impl crate::GlobalNamespace::MockScoreSyncStateSender {
             crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
+                    >), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (multiplayerSessionManager))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (multiplayerSessionManager))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_MockScoreSyncStateSender")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::MockScoreSyncStateSender {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockScoreSyncStateSender {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -194,15 +182,13 @@ for crate::GlobalNamespace::MockScoreSyncStateSender {
     }
 }
 #[cfg(feature = "MockScoreSyncStateSender")]
-impl AsRef<crate::System::IDisposable>
-for crate::GlobalNamespace::MockScoreSyncStateSender {
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::MockScoreSyncStateSender {
     fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockScoreSyncStateSender")]
-impl AsMut<crate::System::IDisposable>
-for crate::GlobalNamespace::MockScoreSyncStateSender {
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::MockScoreSyncStateSender {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+GlyphValueRecord_Legacy")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct GlyphValueRecord_Legacy {
     pub xPlacement: f32,
     pub yPlacement: f32,
@@ -27,13 +27,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::GlyphValueRecord_Legac
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_TMPro+GlyphValueRecord_Legacy")]
@@ -67,9 +64,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::GlyphValueRecord_L
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -87,8 +82,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::GlyphValueRecord_Leg
     }
 }
 #[cfg(feature = "cordl_class_TMPro+GlyphValueRecord_Legacy")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::TMPro::GlyphValueRecord_Legacy {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::GlyphValueRecord_Legacy {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -103,9 +97,10 @@ impl crate::TMPro::GlyphValueRecord_Legacy {
         &mut self,
         valueRecord: crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord),
@@ -120,38 +115,36 @@ impl crate::TMPro::GlyphValueRecord_Legacy {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (valueRecord))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (valueRecord))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Addition(
         a: crate::TMPro::GlyphValueRecord_Legacy,
         b: crate::TMPro::GlyphValueRecord_Legacy,
     ) -> quest_hook::libil2cpp::Result<crate::TMPro::GlyphValueRecord_Legacy> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::TMPro::GlyphValueRecord_Legacy,
-                            crate::TMPro::GlyphValueRecord_Legacy,
-                        ),
+                    .find_static_method::<(
                         crate::TMPro::GlyphValueRecord_Legacy,
-                        2usize,
-                    >("op_Addition")
+                        crate::TMPro::GlyphValueRecord_Legacy,
+                    ), crate::TMPro::GlyphValueRecord_Legacy, 2usize>(
+                        "op_Addition"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Addition", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "op_Addition",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: crate::TMPro::GlyphValueRecord_Legacy = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b))?
-        };
+        let __cordl_ret: crate::TMPro::GlyphValueRecord_Legacy =
+            unsafe { cordl_method_info.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
 }

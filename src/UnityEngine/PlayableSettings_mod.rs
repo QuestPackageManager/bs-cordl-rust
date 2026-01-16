@@ -1,10 +1,9 @@
 #[cfg(feature = "cordl_class_UnityEngine+PlayableSettings")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct PlayableSettings {
-    pub _element_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Audio::AudioContainerElement,
-    >,
+    pub _element_k__BackingField:
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Audio::AudioContainerElement>,
     pub _scheduledTime_k__BackingField: f64,
     pub _pitchOffset_k__BackingField: f32,
     pub _volumeOffset_k__BackingField: f32,
@@ -30,13 +29,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PlayableSettings
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayableSettings")]
@@ -70,9 +66,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::PlayableSett
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -90,8 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::PlayableSettin
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayableSettings")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::PlayableSettings {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::PlayableSettings {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

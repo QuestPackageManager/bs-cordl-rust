@@ -1,19 +1,16 @@
-#[cfg(
-    feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+FailureHandlingMethod"
-)]
-#[repr(i32)]
+#[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+FailureHandlingMethod")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum FailureHandlingMethod {
     #[default]
     GoOffline = 0i32,
     Retry = 1i32,
     Silent = 2i32,
 }
-#[cfg(
-    feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+FailureHandlingMethod"
-)]
+#[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+FailureHandlingMethod")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::OculusStudios::GraphQL::ClientInterface::FailureHandlingMethod {
+    for crate::OculusStudios::GraphQL::ClientInterface::FailureHandlingMethod
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "OculusStudios.GraphQL.ClientInterface";
@@ -32,20 +29,16 @@ for crate::OculusStudios::GraphQL::ClientInterface::FailureHandlingMethod {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
-#[cfg(
-    feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+FailureHandlingMethod"
-)]
+#[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+FailureHandlingMethod")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::OculusStudios::GraphQL::ClientInterface::FailureHandlingMethod {
+    for crate::OculusStudios::GraphQL::ClientInterface::FailureHandlingMethod
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -54,11 +47,10 @@ for crate::OculusStudios::GraphQL::ClientInterface::FailureHandlingMethod {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(
-    feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+FailureHandlingMethod"
-)]
+#[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+FailureHandlingMethod")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::OculusStudios::GraphQL::ClientInterface::FailureHandlingMethod {
+    for crate::OculusStudios::GraphQL::ClientInterface::FailureHandlingMethod
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -70,28 +62,24 @@ for crate::OculusStudios::GraphQL::ClientInterface::FailureHandlingMethod {
         self
     }
 }
-#[cfg(
-    feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+FailureHandlingMethod"
-)]
+#[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+FailureHandlingMethod")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::OculusStudios::GraphQL::ClientInterface::FailureHandlingMethod {
+    for crate::OculusStudios::GraphQL::ClientInterface::FailureHandlingMethod
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
-#[cfg(
-    feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+FailureHandlingMethod"
-)]
+#[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+FailureHandlingMethod")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::OculusStudios::GraphQL::ClientInterface::FailureHandlingMethod {
+    for crate::OculusStudios::GraphQL::ClientInterface::FailureHandlingMethod
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

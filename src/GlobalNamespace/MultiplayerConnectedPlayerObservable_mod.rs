@@ -3,19 +3,20 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerObservable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
-    >,
+    pub _connectedPlayer:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
 }
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObservable")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
+    for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "MultiplayerConnectedPlayerObservable";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -35,8 +36,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MultiplayerConnectedPlayerObser
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerObservable")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -48,8 +48,8 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
             crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (connectedPlayer))?;
         Ok(__cordl_object.into())
@@ -60,9 +60,10 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
             crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -79,22 +80,23 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (connectedPlayer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (connectedPlayer))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isFailed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isFailed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_isFailed", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_isFailed",
+                            0usize
                         )
                     })
             });
@@ -102,16 +104,18 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
         Ok(__cordl_ret.into())
     }
     pub fn get_offsetSyncTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_offsetSyncTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_offsetSyncTime", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_offsetSyncTime",
+                            0usize
                         )
                     })
             });
@@ -121,7 +125,8 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
 }
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObservable")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
+    for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -131,14 +136,16 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
 }
 #[cfg(feature = "MultiplayerConnectedPlayerObservable")]
 impl AsRef<crate::GlobalNamespace::IMultiplayerObservable>
-for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
+    for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerObservable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerObservable")]
 impl AsMut<crate::GlobalNamespace::IMultiplayerObservable>
-for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
+    for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable
+{
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMultiplayerObservable {
         unsafe { std::mem::transmute(self) }
     }

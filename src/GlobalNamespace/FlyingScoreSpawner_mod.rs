@@ -3,12 +3,9 @@
 #[derive(Debug)]
 pub struct FlyingScoreSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _flyingScoreEffectPool: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FlyingScoreEffect_Pool,
-    >,
-    pub _initData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FlyingScoreSpawner_InitData,
-    >,
+    pub _flyingScoreEffectPool:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FlyingScoreEffect_Pool>,
+    pub _initData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FlyingScoreSpawner_InitData>,
 }
 #[cfg(feature = "cordl_class_FlyingScoreSpawner")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingScoreSpawner {
@@ -17,7 +14,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingScoreS
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "FlyingScoreSpawner";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -50,13 +48,12 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
     pub type SpawnPosition = crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition;
     pub fn HandleFlyingObjectEffectDidFinish(
         &mut self,
-        flyingObjectEffect: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::FlyingObjectEffect,
-        >,
+        flyingObjectEffect: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FlyingObjectEffect>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -73,145 +70,122 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (flyingObjectEffect))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (flyingObjectEffect))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
     pub fn SpawnFlyingScore(
         &mut self,
-        cutScoreBuffer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IReadonlyCutScoreBuffer,
-        >,
+        cutScoreBuffer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyCutScoreBuffer>,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IReadonlyCutScoreBuffer,
-                            >,
-                            crate::UnityEngine::Color,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SpawnFlyingScore")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyCutScoreBuffer>,
+                        crate::UnityEngine::Color,
+                    ), quest_hook::libil2cpp::Void, 2usize>("SpawnFlyingScore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SpawnFlyingScore", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SpawnFlyingScore",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (cutScoreBuffer, color))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cutScoreBuffer, color))? };
         Ok(__cordl_ret.into())
     }
     pub fn SpawnFlyingScoreNextFrame(
         &mut self,
-        cutScoreBuffer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IReadonlyCutScoreBuffer,
-        >,
+        cutScoreBuffer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyCutScoreBuffer>,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IReadonlyCutScoreBuffer,
-                            >,
-                            crate::UnityEngine::Color,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SpawnFlyingScoreNextFrame")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyCutScoreBuffer>,
+                        crate::UnityEngine::Color,
+                    ), quest_hook::libil2cpp::Void, 2usize>(
+                        "SpawnFlyingScoreNextFrame"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SpawnFlyingScoreNextFrame", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SpawnFlyingScoreNextFrame",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (cutScoreBuffer, color))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cutScoreBuffer, color))? };
         Ok(__cordl_ret.into())
     }
     pub fn SpawnFlyingScoreNextFrameCoroutine(
         &mut self,
-        cutScoreBuffer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IReadonlyCutScoreBuffer,
-        >,
+        cutScoreBuffer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyCutScoreBuffer>,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IReadonlyCutScoreBuffer,
-                            >,
-                            crate::UnityEngine::Color,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::IEnumerator,
-                        >,
-                        2usize,
-                    >("SpawnFlyingScoreNextFrameCoroutine")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyCutScoreBuffer>,
+                        crate::UnityEngine::Color,
+                    ), quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>, 2usize>(
+                        "SpawnFlyingScoreNextFrameCoroutine",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SpawnFlyingScoreNextFrameCoroutine", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "SpawnFlyingScoreNextFrameCoroutine",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEnumerator,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (cutScoreBuffer, color))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (cutScoreBuffer, color))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -226,17 +200,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingScoreSp
 }
 #[cfg(feature = "FlyingScoreSpawner")]
 impl AsRef<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>
-for crate::GlobalNamespace::FlyingScoreSpawner {
+    for crate::GlobalNamespace::FlyingScoreSpawner
+{
     fn as_ref(&self) -> &crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "FlyingScoreSpawner")]
 impl AsMut<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>
-for crate::GlobalNamespace::FlyingScoreSpawner {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
+    for crate::GlobalNamespace::FlyingScoreSpawner
+{
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -248,14 +222,14 @@ pub struct FlyingScoreSpawner_InitData {
     pub spawnPosition: crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition,
 }
 #[cfg(feature = "cordl_class_FlyingScoreSpawner+InitData")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::FlyingScoreSpawner_InitData {
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingScoreSpawner_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "FlyingScoreSpawner/InitData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -285,8 +259,8 @@ impl crate::GlobalNamespace::FlyingScoreSpawner_InitData {
     pub fn New(
         spawnPosition: crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (spawnPosition))?;
         Ok(__cordl_object.into())
@@ -295,9 +269,10 @@ impl crate::GlobalNamespace::FlyingScoreSpawner_InitData {
         &mut self,
         spawnPosition: crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition),
@@ -312,15 +287,13 @@ impl crate::GlobalNamespace::FlyingScoreSpawner_InitData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (spawnPosition))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (spawnPosition))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_FlyingScoreSpawner+InitData")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::FlyingScoreSpawner_InitData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingScoreSpawner_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -329,8 +302,8 @@ for crate::GlobalNamespace::FlyingScoreSpawner_InitData {
     }
 }
 #[cfg(feature = "cordl_class_FlyingScoreSpawner+SpawnPosition")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum FlyingScoreSpawner_SpawnPosition {
     #[default]
     AboveGround = 1i32,
@@ -338,7 +311,8 @@ pub enum FlyingScoreSpawner_SpawnPosition {
 }
 #[cfg(feature = "cordl_class_FlyingScoreSpawner+SpawnPosition")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
+    for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -357,18 +331,16 @@ for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_FlyingScoreSpawner+SpawnPosition")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
+    for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -379,7 +351,8 @@ for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
 }
 #[cfg(feature = "cordl_class_FlyingScoreSpawner+SpawnPosition")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
+    for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -393,22 +366,22 @@ for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
 }
 #[cfg(feature = "cordl_class_FlyingScoreSpawner+SpawnPosition")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
+    for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_FlyingScoreSpawner+SpawnPosition")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
+    for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

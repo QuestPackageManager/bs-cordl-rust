@@ -1,18 +1,20 @@
 #[cfg(feature = "cordl_class_OVRHumanBodyBonesMappingsInterface")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct OVRHumanBodyBonesMappingsInterface {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_OVRHumanBodyBonesMappingsInterface")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRHumanBodyBonesMappingsInterface {
+    for crate::GlobalNamespace::OVRHumanBodyBonesMappingsInterface
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "OVRHumanBodyBonesMappingsInterface";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,9 +41,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRHumanBodyBonesMappingsInt
 }
 #[cfg(feature = "OVRHumanBodyBonesMappingsInterface")]
 impl crate::GlobalNamespace::OVRHumanBodyBonesMappingsInterface {
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_GetBoneIdToHumanBodyBone(
@@ -54,25 +54,23 @@ impl crate::GlobalNamespace::OVRHumanBodyBonesMappingsInterface {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                crate::GlobalNamespace::OVRSkeleton_BoneId,
-                                crate::UnityEngine::HumanBodyBones,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            crate::GlobalNamespace::OVRSkeleton_BoneId,
+                            crate::UnityEngine::HumanBodyBones,
                         >,
-                        0usize,
-                    >("get_GetBoneIdToHumanBodyBone")
+                    >, 0usize>("get_GetBoneIdToHumanBodyBone")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_GetBoneIdToHumanBodyBone", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_GetBoneIdToHumanBodyBone",
+                            0usize
                         )
                     })
             });
@@ -99,30 +97,28 @@ impl crate::GlobalNamespace::OVRHumanBodyBonesMappingsInterface {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                crate::GlobalNamespace::OVRSkeleton_BoneId,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Tuple_2<
-                                        crate::GlobalNamespace::OVRSkeleton_BoneId,
-                                        crate::GlobalNamespace::OVRSkeleton_BoneId,
-                                    >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            crate::GlobalNamespace::OVRSkeleton_BoneId,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Tuple_2<
+                                    crate::GlobalNamespace::OVRSkeleton_BoneId,
+                                    crate::GlobalNamespace::OVRSkeleton_BoneId,
                                 >,
                             >,
                         >,
-                        0usize,
-                    >("get_GetBoneIdToJointPair")
+                    >, 0usize>("get_GetBoneIdToJointPair")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_GetBoneIdToJointPair", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_GetBoneIdToJointPair",
+                            0usize
                         )
                     })
             });
@@ -148,8 +144,9 @@ impl crate::GlobalNamespace::OVRHumanBodyBonesMappingsInterface {
                 crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection,
             >,
         >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+    >{
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -194,30 +191,28 @@ impl crate::GlobalNamespace::OVRHumanBodyBonesMappingsInterface {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                crate::UnityEngine::HumanBodyBones,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Tuple_2<
-                                        crate::UnityEngine::HumanBodyBones,
-                                        crate::UnityEngine::HumanBodyBones,
-                                    >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            crate::UnityEngine::HumanBodyBones,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Tuple_2<
+                                    crate::UnityEngine::HumanBodyBones,
+                                    crate::UnityEngine::HumanBodyBones,
                                 >,
                             >,
                         >,
-                        0usize,
-                    >("get_GetBoneToJointPair")
+                    >, 0usize>("get_GetBoneToJointPair")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_GetBoneToJointPair", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_GetBoneToJointPair",
+                            0usize
                         )
                     })
             });
@@ -244,25 +239,23 @@ impl crate::GlobalNamespace::OVRHumanBodyBonesMappingsInterface {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                crate::GlobalNamespace::OVRSkeleton_BoneId,
-                                crate::UnityEngine::HumanBodyBones,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            crate::GlobalNamespace::OVRSkeleton_BoneId,
+                            crate::UnityEngine::HumanBodyBones,
                         >,
-                        0usize,
-                    >("get_GetFullBodyBoneIdToHumanBodyBone")
+                    >, 0usize>("get_GetFullBodyBoneIdToHumanBodyBone")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_GetFullBodyBoneIdToHumanBodyBone", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_GetFullBodyBoneIdToHumanBodyBone",
+                            0usize
                         )
                     })
             });
@@ -289,30 +282,28 @@ impl crate::GlobalNamespace::OVRHumanBodyBonesMappingsInterface {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                crate::GlobalNamespace::OVRSkeleton_BoneId,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Tuple_2<
-                                        crate::GlobalNamespace::OVRSkeleton_BoneId,
-                                        crate::GlobalNamespace::OVRSkeleton_BoneId,
-                                    >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            crate::GlobalNamespace::OVRSkeleton_BoneId,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Tuple_2<
+                                    crate::GlobalNamespace::OVRSkeleton_BoneId,
+                                    crate::GlobalNamespace::OVRSkeleton_BoneId,
                                 >,
                             >,
                         >,
-                        0usize,
-                    >("get_GetFullBodyBoneIdToJointPair")
+                    >, 0usize>("get_GetFullBodyBoneIdToJointPair")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_GetFullBodyBoneIdToJointPair", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_GetFullBodyBoneIdToJointPair",
+                            0usize
                         )
                     })
             });
@@ -332,7 +323,8 @@ impl crate::GlobalNamespace::OVRHumanBodyBonesMappingsInterface {
 }
 #[cfg(feature = "cordl_class_OVRHumanBodyBonesMappingsInterface")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRHumanBodyBonesMappingsInterface {
+    for crate::GlobalNamespace::OVRHumanBodyBonesMappingsInterface
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

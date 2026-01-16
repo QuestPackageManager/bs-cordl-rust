@@ -6,14 +6,14 @@ pub struct HttpContentHeaders {
     pub content: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>,
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpContentHeaders")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Net::Http::Headers::HttpContentHeaders {
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Http::Headers::HttpContentHeaders {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Http.Headers";
     const CLASS_NAME: &'static str = "HttpContentHeaders";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -43,8 +43,8 @@ impl crate::System::Net::Http::Headers::HttpContentHeaders {
     pub fn New(
         content: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (content))?;
         Ok(__cordl_object.into())
@@ -53,9 +53,10 @@ impl crate::System::Net::Http::Headers::HttpContentHeaders {
         &mut self,
         content: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -72,34 +73,29 @@ impl crate::System::Net::Http::Headers::HttpContentHeaders {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (content))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (content))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ContentDisposition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::Http::Headers::ContentDispositionHeaderValue,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::ContentDispositionHeaderValue>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Net::Http::Headers::ContentDispositionHeaderValue,
-                        >,
-                        0usize,
-                    >("get_ContentDisposition")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Http::Headers::ContentDispositionHeaderValue,
+                    >, 0usize>("get_ContentDisposition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ContentDisposition", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ContentDisposition",
+                            0usize
                         )
                     })
             });
@@ -111,51 +107,44 @@ impl crate::System::Net::Http::Headers::HttpContentHeaders {
     pub fn get_ContentLength(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i64>> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::System::Nullable_1<i64>,
-                        0usize,
-                    >("get_ContentLength")
+                    .find_method::<(), crate::System::Nullable_1<i64>, 0usize>("get_ContentLength")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ContentLength", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ContentLength",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::System::Nullable_1<i64> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::System::Nullable_1<i64> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ContentType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::Http::Headers::MediaTypeHeaderValue,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::MediaTypeHeaderValue>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Net::Http::Headers::MediaTypeHeaderValue,
-                        >,
-                        0usize,
-                    >("get_ContentType")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+                    >, 0usize>("get_ContentType")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ContentType", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_ContentType",
+                            0usize
                         )
                     })
             });
@@ -170,37 +159,37 @@ impl crate::System::Net::Http::Headers::HttpContentHeaders {
             crate::System::Net::Http::Headers::ContentDispositionHeaderValue,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Net::Http::Headers::ContentDispositionHeaderValue,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_ContentDisposition")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Http::Headers::ContentDispositionHeaderValue,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_ContentDisposition"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_ContentDisposition", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_ContentDisposition",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ContentLength(
         &mut self,
         value: crate::System::Nullable_1<i64>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Nullable_1<i64>),
@@ -215,45 +204,38 @@ impl crate::System::Net::Http::Headers::HttpContentHeaders {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ContentType(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Http::Headers::MediaTypeHeaderValue,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::MediaTypeHeaderValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Net::Http::Headers::MediaTypeHeaderValue,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_ContentType")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+                    >), quest_hook::libil2cpp::Void, 1usize>("set_ContentType")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_ContentType", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_ContentType",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpContentHeaders")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Net::Http::Headers::HttpContentHeaders {
+impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::Headers::HttpContentHeaders {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

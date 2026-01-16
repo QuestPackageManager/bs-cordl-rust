@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormat")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum GraphicsFormat {
     #[default]
     A10R10G10B10_XRSRGBPack32 = 85i32,
@@ -152,7 +152,8 @@ pub enum GraphicsFormat {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormat")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Experimental::Rendering::GraphicsFormat {
+    for crate::UnityEngine::Experimental::Rendering::GraphicsFormat
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Experimental.Rendering";
@@ -171,18 +172,16 @@ for crate::UnityEngine::Experimental::Rendering::GraphicsFormat {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormat")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Experimental::Rendering::GraphicsFormat {
+    for crate::UnityEngine::Experimental::Rendering::GraphicsFormat
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -193,7 +192,8 @@ for crate::UnityEngine::Experimental::Rendering::GraphicsFormat {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Experimental::Rendering::GraphicsFormat {
+    for crate::UnityEngine::Experimental::Rendering::GraphicsFormat
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -207,22 +207,22 @@ for crate::UnityEngine::Experimental::Rendering::GraphicsFormat {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormat")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Experimental::Rendering::GraphicsFormat {
+    for crate::UnityEngine::Experimental::Rendering::GraphicsFormat
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormat")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Experimental::Rendering::GraphicsFormat {
+    for crate::UnityEngine::Experimental::Rendering::GraphicsFormat
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

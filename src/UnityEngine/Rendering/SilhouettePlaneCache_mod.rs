@@ -1,22 +1,16 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct SilhouettePlaneCache {
-    pub m_SubviewIDToIndexMap: crate::Unity::Collections::NativeParallelHashMap_2<
-        i32,
-        i32,
-    >,
+    pub m_SubviewIDToIndexMap: crate::Unity::Collections::NativeParallelHashMap_2<i32, i32>,
     pub m_SlotFreeList: crate::Unity::Collections::NativeList_1<i32>,
     pub m_Slots: crate::Unity::Collections::NativeList_1<
         crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot,
     >,
-    pub m_PlaneStorage: crate::Unity::Collections::NativeList_1<
-        crate::UnityEngine::Plane,
-    >,
+    pub m_PlaneStorage: crate::Unity::Collections::NativeList_1<crate::UnityEngine::Plane>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::SilhouettePlaneCache {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::SilhouettePlaneCache {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -35,18 +29,16 @@ for crate::UnityEngine::Rendering::SilhouettePlaneCache {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::SilhouettePlaneCache {
+    for crate::UnityEngine::Rendering::SilhouettePlaneCache
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -57,7 +49,8 @@ for crate::UnityEngine::Rendering::SilhouettePlaneCache {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::SilhouettePlaneCache {
+    for crate::UnityEngine::Rendering::SilhouettePlaneCache
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -71,22 +64,20 @@ for crate::UnityEngine::Rendering::SilhouettePlaneCache {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::SilhouettePlaneCache {
+    for crate::UnityEngine::Rendering::SilhouettePlaneCache
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::SilhouettePlaneCache {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::SilhouettePlaneCache {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -100,7 +91,8 @@ for crate::UnityEngine::Rendering::SilhouettePlaneCache {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::SilhouettePlaneCache {
+    for crate::UnityEngine::Rendering::SilhouettePlaneCache
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -114,25 +106,24 @@ impl crate::UnityEngine::Rendering::SilhouettePlaneCache {
     pub const kMaxSilhouettePlanes: i32 = 6i32;
     #[cfg(feature = "UnityEngine+Rendering+SilhouettePlaneCache+Slot")]
     pub type Slot = crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot;
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Dispose(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Dispose",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FreeUnusedSlots(
@@ -140,26 +131,25 @@ impl crate::UnityEngine::Rendering::SilhouettePlaneCache {
         frameIndex: i32,
         maximumAge: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("FreeUnusedSlots")
+                    .find_method::<(i32, i32), quest_hook::libil2cpp::Void, 2usize>(
+                        "FreeUnusedSlots",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FreeUnusedSlots", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "FreeUnusedSlots",
+                            2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (frameIndex, maximumAge))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (frameIndex, maximumAge))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSubArray(
@@ -168,9 +158,10 @@ impl crate::UnityEngine::Rendering::SilhouettePlaneCache {
     ) -> quest_hook::libil2cpp::Result<
         crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Plane>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
@@ -187,30 +178,28 @@ impl crate::UnityEngine::Rendering::SilhouettePlaneCache {
                         )
                     })
             });
-        let __cordl_ret: crate::Unity::Collections::NativeArray_1<
-            crate::UnityEngine::Plane,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (viewInstanceID))? };
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Plane> =
+            unsafe { cordl_method_info.invoke_unchecked(self, (viewInstanceID))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Init",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Update(
@@ -219,53 +208,46 @@ impl crate::UnityEngine::Rendering::SilhouettePlaneCache {
         planes: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Plane>,
         frameIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            crate::Unity::Collections::NativeArray_1<
-                                crate::UnityEngine::Plane,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Update")
+                    .find_method::<(
+                        i32,
+                        crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Plane>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 3usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Update",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (viewInstanceID, planes, frameIndex))?
+            cordl_method_info.invoke_unchecked(self, (viewInstanceID, planes, frameIndex))?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+SilhouettePlaneCache")]
-impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::SilhouettePlaneCache {
+impl AsRef<crate::System::IDisposable> for crate::UnityEngine::Rendering::SilhouettePlaneCache {
     fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+SilhouettePlaneCache")]
-impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::Rendering::SilhouettePlaneCache {
+impl AsMut<crate::System::IDisposable> for crate::UnityEngine::Rendering::SilhouettePlaneCache {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache+Slot")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct SilhouettePlaneCache_Slot {
     pub isActive: bool,
     pub viewInstanceID: i32,
@@ -274,7 +256,8 @@ pub struct SilhouettePlaneCache_Slot {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache+Slot")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot {
+    for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
@@ -293,18 +276,16 @@ for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache+Slot")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot {
+    for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -315,7 +296,8 @@ for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache+Slot")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot {
+    for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -329,22 +311,22 @@ for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache+Slot")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot {
+    for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache+Slot")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot {
+    for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -358,7 +340,8 @@ for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache+Slot")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot {
+    for crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -375,26 +358,23 @@ impl crate::UnityEngine::Rendering::SilhouettePlaneCache_Slot {
         planeCount: i32,
         frameIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, i32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
+                    .find_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (viewInstanceID, planeCount, frameIndex))?
+            cordl_method_info.invoke_unchecked(self, (viewInstanceID, planeCount, frameIndex))?
         };
         Ok(__cordl_ret.into())
     }

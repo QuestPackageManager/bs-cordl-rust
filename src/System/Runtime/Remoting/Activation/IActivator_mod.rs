@@ -1,18 +1,20 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Activation+IActivator")]
-#[repr(C)]
 #[derive(Debug)]
+#[repr(C)]
 pub struct IActivator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Activation+IActivator")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::System::Runtime::Remoting::Activation::IActivator {
+    for crate::System::Runtime::Remoting::Activation::IActivator
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.Remoting.Activation";
     const CLASS_NAME: &'static str = "IActivator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -49,24 +51,22 @@ impl crate::System::Runtime::Remoting::Activation::IActivator {
             crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage,
-                        >,
-                        1usize,
-                    >("Activate")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
+                    >), quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage,
+                    >, 1usize>("Activate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Activate", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Activate",
+                            1usize
                         )
                     })
             });
@@ -75,34 +75,28 @@ impl crate::System::Runtime::Remoting::Activation::IActivator {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (msg))? };
         Ok(__cordl_ret.into())
     }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
+    pub fn from_object_mut(object_param: *mut quest_hook::libil2cpp::Il2CppObject) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_NextActivator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Activation::IActivator,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Activation::IActivator>,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::Remoting::Activation::IActivator,
-                        >,
-                        0usize,
-                    >("get_NextActivator")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Remoting::Activation::IActivator,
+                    >, 0usize>("get_NextActivator")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_NextActivator", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_NextActivator",
+                            0usize
                         )
                     })
             });
@@ -114,7 +108,8 @@ impl crate::System::Runtime::Remoting::Activation::IActivator {
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Activation+IActivator")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::Remoting::Activation::IActivator {
+    for crate::System::Runtime::Remoting::Activation::IActivator
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

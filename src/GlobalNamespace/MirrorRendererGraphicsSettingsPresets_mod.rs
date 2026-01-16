@@ -13,13 +13,15 @@ pub struct MirrorRendererGraphicsSettingsPresets {
 }
 #[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
+    for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "MirrorRendererGraphicsSettingsPresets";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -39,8 +41,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MirrorRendererGraphicsSettingsP
     }
 }
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
+impl std::ops::DerefMut for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -50,31 +51,30 @@ impl crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
     #[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
     pub type Preset = crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_namedPresets(
@@ -86,26 +86,22 @@ impl crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::NamedPreset,
-                                >,
-                            >,
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NamedPreset>,
                         >,
-                        0usize,
-                    >("get_namedPresets")
+                    >, 0usize>("get_namedPresets")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_namedPresets", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_namedPresets",
+                            0usize
                         )
                     })
             });
@@ -127,7 +123,8 @@ impl crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
@@ -162,7 +159,8 @@ impl crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
 }
 #[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
+    for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -186,13 +184,15 @@ pub struct MirrorRendererGraphicsSettingsPresets_Preset {
 }
 #[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
+    for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
     const CLASS_NAME: &'static str = "MirrorRendererGraphicsSettingsPresets/Preset";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -205,16 +205,14 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
     }
 }
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
-impl std::ops::Deref
-for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
+impl std::ops::Deref for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
     type Target = crate::GlobalNamespace::NamedPreset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
+impl std::ops::DerefMut for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -222,39 +220,40 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
 impl crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
     #[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
-    pub type MirrorType = crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType;
+    pub type MirrorType =
+        crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
+    for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -263,8 +262,8 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
     }
 }
 #[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
     #[default]
     FakeMirror = 1i32,
@@ -273,7 +272,8 @@ pub enum Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
 }
 #[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
+    for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
@@ -292,18 +292,16 @@ for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorT
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
+    for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -314,7 +312,8 @@ for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorT
 }
 #[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
+    for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -328,22 +327,22 @@ for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorT
 }
 #[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
+    for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
+    for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

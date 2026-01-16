@@ -16,13 +16,15 @@ pub struct AsyncInstallerRegistry {
 }
 #[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
+    for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BGLib.AppFlow.Initialization";
     const CLASS_NAME: &'static str = "AsyncInstallerRegistry";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -42,8 +44,7 @@ impl std::ops::Deref for crate::BGLib::AppFlow::Initialization::AsyncInstallerRe
     }
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
-impl std::ops::DerefMut
-for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
+impl std::ops::DerefMut for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -54,9 +55,10 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
         &mut self,
         newMonoInstaller: quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>),
@@ -71,9 +73,8 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (newMonoInstaller))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (newMonoInstaller))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddScriptableObjectInstaller(
@@ -82,9 +83,10 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
             crate::Zenject::ScriptableObjectInstaller,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -101,43 +103,42 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (newScriptableObjectInstaller))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (newScriptableObjectInstaller))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
+    for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -147,16 +148,16 @@ for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
 impl AsRef<crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry>
-for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
-    fn as_ref(
-        &self,
-    ) -> &crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
+    for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry
+{
+    fn as_ref(&self) -> &crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
 impl AsMut<crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry>
-for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
+    for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry
+{
     fn as_mut(
         &mut self,
     ) -> &mut crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {

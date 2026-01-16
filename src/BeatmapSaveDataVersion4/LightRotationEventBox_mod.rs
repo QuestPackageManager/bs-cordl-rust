@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightRotationEventBox")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct LightRotationEventBox {
     pub w: f32,
     pub d: crate::BeatmapSaveDataCommon::DistributionParamType,
@@ -12,8 +12,7 @@ pub struct LightRotationEventBox {
     pub f: i32,
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightRotationEventBox")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
+unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatmapSaveDataVersion4";
@@ -32,18 +31,16 @@ for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightRotationEventBox")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
+    for crate::BeatmapSaveDataVersion4::LightRotationEventBox
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -54,7 +51,8 @@ for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightRotationEventBox")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
+    for crate::BeatmapSaveDataVersion4::LightRotationEventBox
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -68,22 +66,22 @@ for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightRotationEventBox")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
+    for crate::BeatmapSaveDataVersion4::LightRotationEventBox
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightRotationEventBox")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
+    for crate::BeatmapSaveDataVersion4::LightRotationEventBox
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -97,7 +95,8 @@ for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightRotationEventBox")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
+    for crate::BeatmapSaveDataVersion4::LightRotationEventBox
+{
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)

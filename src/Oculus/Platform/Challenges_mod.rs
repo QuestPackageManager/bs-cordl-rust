@@ -11,7 +11,8 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Challenges 
     const NAMESPACE: &'static str = "Oculus.Platform";
     const CLASS_NAME: &'static str = "Challenges";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -40,9 +41,7 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Challenges {
 impl crate::Oculus::Platform::Challenges {
     pub fn Create(
         leaderboardName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        challengeOptions: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::ChallengeOptions,
-        >,
+        challengeOptions: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::ChallengeOptions>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
@@ -50,32 +49,24 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::ChallengeOptions,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::Challenge,
-                                >,
-                            >,
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::ChallengeOptions>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
                         >,
-                        2usize,
-                    >("Create")
+                    >, 2usize>("Create")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Create",
                             2usize
                         )
                     })
@@ -84,9 +75,7 @@ impl crate::Oculus::Platform::Challenges {
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (leaderboardName, challengeOptions))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (leaderboardName, challengeOptions))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeclineInvite(
@@ -98,26 +87,22 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u64),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::Challenge,
-                                >,
-                            >,
+                    .find_static_method::<(u64), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
                         >,
-                        1usize,
-                    >("DeclineInvite")
+                    >, 1usize>("DeclineInvite")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DeclineInvite", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "DeclineInvite",
+                            1usize
                         )
                     })
             });
@@ -130,12 +115,12 @@ impl crate::Oculus::Platform::Challenges {
     }
     pub fn Delete(
         challengeID: u64,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
@@ -150,9 +135,8 @@ impl crate::Oculus::Platform::Challenges {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
-            cordl_method_info.invoke_unchecked((), (challengeID))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> =
+            unsafe { cordl_method_info.invoke_unchecked((), (challengeID))? };
         Ok(__cordl_ret.into())
     }
     pub fn Get(
@@ -164,25 +148,21 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u64),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::Challenge,
-                                >,
-                            >,
+                    .find_static_method::<(u64), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
                         >,
-                        1usize,
-                    >("Get")
+                    >, 1usize>("Get")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Get",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Get",
                             1usize
                         )
                     })
@@ -202,49 +182,42 @@ impl crate::Oculus::Platform::Challenges {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ChallengeEntryList,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntryList>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            u64,
-                            i32,
-                            crate::Oculus::Platform::LeaderboardFilterType,
-                            crate::Oculus::Platform::LeaderboardStartAt,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::ChallengeEntryList,
-                                >,
+                    .find_static_method::<(
+                        u64,
+                        i32,
+                        crate::Oculus::Platform::LeaderboardFilterType,
+                        crate::Oculus::Platform::LeaderboardStartAt,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::ChallengeEntryList,
                             >,
                         >,
-                        4usize,
-                    >("GetEntries")
+                    >, 4usize>("GetEntries")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetEntries", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetEntries",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ChallengeEntryList,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntryList>,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (challengeID, limit, filter, startAt))?
+            cordl_method_info.invoke_unchecked((), (challengeID, limit, filter, startAt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -255,44 +228,36 @@ impl crate::Oculus::Platform::Challenges {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ChallengeEntryList,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntryList>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u64, i32, u64),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::ChallengeEntryList,
-                                >,
+                    .find_static_method::<(u64, i32, u64), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::ChallengeEntryList,
                             >,
                         >,
-                        3usize,
-                    >("GetEntriesAfterRank")
+                    >, 3usize>("GetEntriesAfterRank")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetEntriesAfterRank", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetEntriesAfterRank",
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ChallengeEntryList,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntryList>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (challengeID, limit, afterRank))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (challengeID, limit, afterRank))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEntriesByIds(
@@ -303,58 +268,47 @@ impl crate::Oculus::Platform::Challenges {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ChallengeEntryList,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntryList>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            u64,
-                            i32,
-                            crate::Oculus::Platform::LeaderboardStartAt,
+                    .find_static_method::<(
+                        u64,
+                        i32,
+                        crate::Oculus::Platform::LeaderboardStartAt,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u64>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::ChallengeEntryList,
-                                >,
+                                crate::Oculus::Platform::Models::ChallengeEntryList,
                             >,
                         >,
-                        4usize,
-                    >("GetEntriesByIds")
+                    >, 4usize>("GetEntriesByIds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetEntriesByIds", 4usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetEntriesByIds",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ChallengeEntryList,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntryList>,
             >,
         > = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (challengeID, limit, startAt, userIDs))?
+            cordl_method_info.invoke_unchecked((), (challengeID, limit, startAt, userIDs))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetList(
-        challengeOptions: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::ChallengeOptions,
-        >,
+        challengeOptions: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::ChallengeOptions>,
         limit: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -363,30 +317,26 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::ChallengeOptions>,
+                        i32,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
                             quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::ChallengeOptions,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::ChallengeList,
-                                >,
+                                crate::Oculus::Platform::Models::ChallengeList,
                             >,
                         >,
-                        2usize,
-                    >("GetList")
+                    >, 2usize>("GetList")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetList",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetList",
                             2usize
                         )
                     })
@@ -395,9 +345,7 @@ impl crate::Oculus::Platform::Challenges {
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (challengeOptions, limit))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (challengeOptions, limit))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextChallenges(
@@ -409,9 +357,10 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -442,21 +391,18 @@ impl crate::Oculus::Platform::Challenges {
         Ok(__cordl_ret.into())
     }
     pub fn GetNextEntries(
-        list: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Models::ChallengeEntryList,
-        >,
+        list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntryList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ChallengeEntryList,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntryList>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -481,9 +427,7 @@ impl crate::Oculus::Platform::Challenges {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ChallengeEntryList,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntryList>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
@@ -497,9 +441,10 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -530,21 +475,18 @@ impl crate::Oculus::Platform::Challenges {
         Ok(__cordl_ret.into())
     }
     pub fn GetPreviousEntries(
-        list: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Models::ChallengeEntryList,
-        >,
+        list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntryList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ChallengeEntryList,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntryList>,
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -569,9 +511,7 @@ impl crate::Oculus::Platform::Challenges {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ChallengeEntryList,
-                >,
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntryList>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
@@ -585,25 +525,21 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u64),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::Challenge,
-                                >,
-                            >,
+                    .find_static_method::<(u64), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
                         >,
-                        1usize,
-                    >("Join")
+                    >, 1usize>("Join")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Join",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Join",
                             1usize
                         )
                     })
@@ -624,25 +560,21 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u64),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::Challenge,
-                                >,
-                            >,
+                    .find_static_method::<(u64), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
                         >,
-                        1usize,
-                    >("Leave")
+                    >, 1usize>("Leave")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Leave",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Leave",
                             1usize
                         )
                     })
@@ -656,9 +588,7 @@ impl crate::Oculus::Platform::Challenges {
     }
     pub fn UpdateInfo(
         challengeID: u64,
-        challengeOptions: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::ChallengeOptions,
-        >,
+        challengeOptions: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::ChallengeOptions>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
@@ -666,31 +596,25 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            u64,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::ChallengeOptions,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::Challenge,
-                                >,
-                            >,
+                    .find_static_method::<(
+                        u64,
+                        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::ChallengeOptions>,
+                    ), quest_hook::libil2cpp::Gc<
+                        crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
                         >,
-                        2usize,
-                    >("UpdateInfo")
+                    >, 2usize>("UpdateInfo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateInfo", 2usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "UpdateInfo",
+                            2usize
                         )
                     })
             });
@@ -698,9 +622,7 @@ impl crate::Oculus::Platform::Challenges {
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
             >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked((), (challengeID, challengeOptions))?
-        };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (challengeID, challengeOptions))? };
         Ok(__cordl_ret.into())
     }
 }

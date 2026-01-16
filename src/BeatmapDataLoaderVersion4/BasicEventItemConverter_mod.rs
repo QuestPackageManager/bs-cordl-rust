@@ -6,22 +6,22 @@ pub struct BasicEventItemConverter {
     pub _basicEvents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::BasicEvent>,
     >,
-    pub _specialEventsFilter: quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion4::SpecialEventsFilter,
-    >,
-    pub _lightEventConverter: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IBeatmapLightEventConverter,
-    >,
+    pub _specialEventsFilter:
+        quest_hook::libil2cpp::Gc<crate::BeatmapDataLoaderVersion4::SpecialEventsFilter>,
+    pub _lightEventConverter:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLightEventConverter>,
 }
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+BasicEventItemConverter")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::BeatmapDataLoaderVersion4::BasicEventItemConverter {
+    for crate::BeatmapDataLoaderVersion4::BasicEventItemConverter
+{
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatmapDataLoaderVersion4";
     const CLASS_NAME: &'static str = "BasicEventItemConverter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class()
+            .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
     fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
         false
@@ -58,9 +58,10 @@ impl crate::BeatmapDataLoaderVersion4::BasicEventItemConverter {
             >,
         >,
     > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
@@ -92,96 +93,88 @@ impl crate::BeatmapDataLoaderVersion4::BasicEventItemConverter {
     }
     pub fn New(
         basicEvents: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                crate::BeatmapSaveDataVersion4::BasicEvent,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::BasicEvent>,
         >,
         specialEventsFilter: quest_hook::libil2cpp::Gc<
             crate::BeatmapDataLoaderVersion4::SpecialEventsFilter,
         >,
-        bpmTimeProcessor: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BpmTimeProcessor,
-        >,
+        bpmTimeProcessor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BpmTimeProcessor>,
         lightEventConverter: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatmapLightEventConverter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (basicEvents, specialEventsFilter, bpmTimeProcessor, lightEventConverter),
-            )?;
+        let __cordl_object: &mut Self =
+            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object).invoke_void(
+            ".ctor",
+            (
+                basicEvents,
+                specialEventsFilter,
+                bpmTimeProcessor,
+                lightEventConverter,
+            ),
+        )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         basicEvents: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                crate::BeatmapSaveDataVersion4::BasicEvent,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::BasicEvent>,
         >,
         specialEventsFilter: quest_hook::libil2cpp::Gc<
             crate::BeatmapDataLoaderVersion4::SpecialEventsFilter,
         >,
-        bpmTimeProcessor: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BpmTimeProcessor,
-        >,
+        bpmTimeProcessor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BpmTimeProcessor>,
         lightEventConverter: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatmapLightEventConverter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::BeatmapSaveDataVersion4::BasicEvent,
-                                >,
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::BeatmapSaveDataVersion4::BasicEvent,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapDataLoaderVersion4::SpecialEventsFilter,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BpmTimeProcessor,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IBeatmapLightEventConverter,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::BeatmapDataLoaderVersion4::SpecialEventsFilter,
+                        >,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BpmTimeProcessor>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::IBeatmapLightEventConverter,
+                        >,
+                    ), quest_hook::libil2cpp::Void, 4usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        basicEvents,
-                        specialEventsFilter,
-                        bpmTimeProcessor,
-                        lightEventConverter,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    basicEvents,
+                    specialEventsFilter,
+                    bpmTimeProcessor,
+                    lightEventConverter,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+BasicEventItemConverter")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::BeatmapDataLoaderVersion4::BasicEventItemConverter {
+    for crate::BeatmapDataLoaderVersion4::BasicEventItemConverter
+{
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

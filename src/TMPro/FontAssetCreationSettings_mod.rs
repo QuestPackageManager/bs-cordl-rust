@@ -1,13 +1,9 @@
 #[cfg(feature = "cordl_class_TMPro+FontAssetCreationSettings")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct FontAssetCreationSettings {
-    pub sourceFontFileName: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub sourceFontFileGUID: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub sourceFontFileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sourceFontFileGUID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub faceIndex: i32,
     pub pointSizeSamplingMode: i32,
     pub pointSize: i32,
@@ -17,15 +13,9 @@ pub struct FontAssetCreationSettings {
     pub atlasWidth: i32,
     pub atlasHeight: i32,
     pub characterSetSelectionMode: i32,
-    pub characterSequence: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub referencedFontAssetGUID: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub referencedTextAssetGUID: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub characterSequence: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub referencedFontAssetGUID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub referencedTextAssetGUID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub fontStyle: i32,
     pub fontStyleModifier: f32,
     pub renderMode: i32,
@@ -51,13 +41,10 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::FontAssetCreationSetti
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_TMPro+FontAssetCreationSettings")]
@@ -71,8 +58,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::FontAssetCreationS
     }
 }
 #[cfg(feature = "cordl_class_TMPro+FontAssetCreationSettings")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::TMPro::FontAssetCreationSettings {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::FontAssetCreationSettings {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -92,9 +78,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::FontAssetCreationS
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -112,8 +96,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::FontAssetCreationSet
     }
 }
 #[cfg(feature = "cordl_class_TMPro+FontAssetCreationSettings")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::TMPro::FontAssetCreationSettings {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::FontAssetCreationSettings {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -126,9 +109,7 @@ for crate::TMPro::FontAssetCreationSettings {
 impl crate::TMPro::FontAssetCreationSettings {
     pub fn _ctor(
         &mut self,
-        sourceFontFileGUID: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        sourceFontFileGUID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pointSize: i32,
         pointSizeSamplingMode: i32,
         padding: i32,
@@ -139,55 +120,48 @@ impl crate::TMPro::FontAssetCreationSettings {
         characterSet: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         renderMode: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        10usize,
-                    >(".ctor")
+                    .find_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    ), quest_hook::libil2cpp::Void, 10usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            ".ctor",
                             10usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        sourceFontFileGUID,
-                        pointSize,
-                        pointSizeSamplingMode,
-                        padding,
-                        packingMode,
-                        atlasWidth,
-                        atlasHeight,
-                        characterSelectionMode,
-                        characterSet,
-                        renderMode,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(
+                self,
+                (
+                    sourceFontFileGUID,
+                    pointSize,
+                    pointSizeSamplingMode,
+                    padding,
+                    packingMode,
+                    atlasWidth,
+                    atlasHeight,
+                    characterSelectionMode,
+                    characterSet,
+                    renderMode,
+                ),
+            )?
         };
         Ok(__cordl_ret.into())
     }

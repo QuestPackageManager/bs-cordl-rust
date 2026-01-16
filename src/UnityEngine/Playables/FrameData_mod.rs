@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData")]
-#[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
+#[repr(C)]
 pub struct FrameData {
     pub m_FrameID: u64,
     pub m_DeltaTime: f64,
@@ -32,18 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Playables::Frame
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Playables::FrameData {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Playables::FrameData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -53,8 +49,7 @@ for crate::UnityEngine::Playables::FrameData {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Playables::FrameData {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Playables::FrameData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -67,17 +62,14 @@ for crate::UnityEngine::Playables::FrameData {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Playables::FrameData {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Playables::FrameData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
@@ -95,8 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Playables::Fra
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Playables::FrameData {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Playables::FrameData {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -115,39 +106,39 @@ impl crate::UnityEngine::Playables::FrameData {
         &mut self,
         flag: crate::UnityEngine::Playables::FrameData_Flags,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Playables::FrameData_Flags),
-                        bool,
-                        1usize,
-                    >("HasFlags")
+                    .find_method::<(crate::UnityEngine::Playables::FrameData_Flags), bool, 1usize>(
+                        "HasFlags",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HasFlags", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "HasFlags",
+                            1usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (flag))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, (flag))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_deltaTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_deltaTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_deltaTime", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_deltaTime",
+                            0usize
                         )
                     })
             });
@@ -157,39 +148,40 @@ impl crate::UnityEngine::Playables::FrameData {
     pub fn get_effectivePlayState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayState> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::Playables::PlayState,
-                        0usize,
-                    >("get_effectivePlayState")
+                    .find_method::<(), crate::UnityEngine::Playables::PlayState, 0usize>(
+                        "get_effectivePlayState",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_effectivePlayState", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_effectivePlayState",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::PlayState = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::PlayState =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_effectiveSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_effectiveSpeed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_effectiveSpeed", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_effectiveSpeed",
+                            0usize
                         )
                     })
             });
@@ -198,12 +190,12 @@ impl crate::UnityEngine::Playables::FrameData {
     }
     pub fn get_evaluationType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::Playables::FrameData_EvaluationType,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::FrameData_EvaluationType>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
@@ -218,47 +210,47 @@ impl crate::UnityEngine::Playables::FrameData {
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::FrameData_EvaluationType = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::FrameData_EvaluationType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_output(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableOutput> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::Playables::PlayableOutput,
-                        0usize,
-                    >("get_output")
+                    .find_method::<(), crate::UnityEngine::Playables::PlayableOutput, 0usize>(
+                        "get_output",
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_output", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_output",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_seekOccurred(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_seekOccurred")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_seekOccurred", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_seekOccurred",
+                            0usize
                         )
                     })
             });
@@ -266,16 +258,18 @@ impl crate::UnityEngine::Playables::FrameData {
         Ok(__cordl_ret.into())
     }
     pub fn get_timeHeld(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_timeHeld")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_timeHeld", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_timeHeld",
+                            0usize
                         )
                     })
             });
@@ -283,16 +277,18 @@ impl crate::UnityEngine::Playables::FrameData {
         Ok(__cordl_ret.into())
     }
     pub fn get_timeLooped(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_timeLooped")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_timeLooped", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_timeLooped",
+                            0usize
                         )
                     })
             });
@@ -301,8 +297,8 @@ impl crate::UnityEngine::Playables::FrameData {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+EvaluationType")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum FrameData_EvaluationType {
     #[default]
     Evaluate = 0i32,
@@ -310,7 +306,8 @@ pub enum FrameData_EvaluationType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+EvaluationType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Playables::FrameData_EvaluationType {
+    for crate::UnityEngine::Playables::FrameData_EvaluationType
+{
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Playables";
@@ -329,18 +326,16 @@ for crate::UnityEngine::Playables::FrameData_EvaluationType {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+EvaluationType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Playables::FrameData_EvaluationType {
+    for crate::UnityEngine::Playables::FrameData_EvaluationType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -351,7 +346,8 @@ for crate::UnityEngine::Playables::FrameData_EvaluationType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+EvaluationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Playables::FrameData_EvaluationType {
+    for crate::UnityEngine::Playables::FrameData_EvaluationType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -365,22 +361,22 @@ for crate::UnityEngine::Playables::FrameData_EvaluationType {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+EvaluationType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Playables::FrameData_EvaluationType {
+    for crate::UnityEngine::Playables::FrameData_EvaluationType
+{
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+EvaluationType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Playables::FrameData_EvaluationType {
+    for crate::UnityEngine::Playables::FrameData_EvaluationType
+{
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -393,8 +389,8 @@ for crate::UnityEngine::Playables::FrameData_EvaluationType {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+Flags")]
-#[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[repr(i32)]
 pub enum FrameData_Flags {
     #[default]
     EffectivePlayStateDelayed = 16i32,
@@ -405,8 +401,7 @@ pub enum FrameData_Flags {
     SeekOccured = 2i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+Flags")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::UnityEngine::Playables::FrameData_Flags {
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Playables::FrameData_Flags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Playables";
@@ -425,18 +420,14 @@ for crate::UnityEngine::Playables::FrameData_Flags {
     }
     fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+            && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        ty.is_ref() && <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+Flags")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::Playables::FrameData_Flags {
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Playables::FrameData_Flags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -446,8 +437,7 @@ for crate::UnityEngine::Playables::FrameData_Flags {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+Flags")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::UnityEngine::Playables::FrameData_Flags {
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Playables::FrameData_Flags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -460,23 +450,19 @@ for crate::UnityEngine::Playables::FrameData_Flags {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+Flags")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::Playables::FrameData_Flags {
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Playables::FrameData_Flags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
     }
     fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
         unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
+            quest_hook::libil2cpp::raw::unbox(quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()))
         }
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+Flags")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::Playables::FrameData_Flags {
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Playables::FrameData_Flags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
